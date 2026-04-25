@@ -19,7 +19,7 @@ Plus two incremental skills (also under `.claude/skills/`):
 
 ## Hard rules
 
-- **Stay within scope.** When operating on a hypothesis, read/write only inside that hypothesis's folder + `commons/` + `.claude/`. Do not cross hypothesis boundaries.
+- **Stay within scope.** When operating on a hypothesis, read/write only inside that hypothesis's folder + `commons/` + `.claude/`. If maintaining agent parity, update `.codex/skills/` as well. Do not cross hypothesis boundaries.
 - **`raw/` is immutable.** Never modify a file in `raw/` after it's first written. Re-fetch into a new file if needed.
 - **Update logs.** Every meaningful operation appends to the per-hypothesis `session.log.md` and the wiki-internal `wiki/log.md`. Use the prefix format `## [YYYY-MM-DD HH:MM] <op> | <subject>` so logs stay grep-parseable.
 - **Schema is canonical.** Wiki pages must have valid YAML frontmatter per `context.md` §5. Wikilinks must resolve to real files (in this vault or in `commons/`).

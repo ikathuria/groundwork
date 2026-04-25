@@ -54,7 +54,7 @@ This is closer to a polished PI memo than a Wikipedia article. A real PI should 
 
 ## Running it
 
-Open Claude Code (or Codex) in the repo root. The agent auto-loads `CLAUDE.md` (or `AGENTS.md`), which redirects to [`context.md`](./context.md) — the canonical schema. Then run the pipeline as slash commands:
+Open Claude Code or Codex in the repo root. The agent auto-loads `CLAUDE.md` or `AGENTS.md`, which redirects to [`context.md`](./context.md) — the canonical schema. Claude Code uses `.claude/skills/`; Codex uses the mirrored `.codex/skills/`. Then run the pipeline as agent commands:
 
 ```
 > /pass-1 trehalose-hela-cryopreservation "Replacing sucrose with trehalose as a cryoprotectant will increase post-thaw HeLa viability by ≥15 percentage points vs DMSO."
@@ -62,9 +62,9 @@ Open Claude Code (or Codex) in the repo root. The agent auto-loads `CLAUDE.md` (
 > /pass-3 2026-04-25_trehalose-hela-cryopreservation
 ```
 
-Each pass writes inspectable artifacts under `hypotheses/<slug>/`. Open the repo as an Obsidian vault on the side to watch the wiki grow. For the live demo moments — single-paper ingest and scientist corrections — the Next.js app at `web/` spawns `claude -p --output-format stream-json` and streams progress back to the browser.
+Each pass writes inspectable artifacts under `hypotheses/<slug>/`. Open the repo as an Obsidian vault on the side to watch the wiki grow. The heavy work is done by Claude Code or Codex following the skill prompts, not by a separate pipeline script.
 
-The two incremental skills (`/ingest-source`, `/apply-correction`) are how the UI talks to the agent. See [`context.md`](./context.md) for the full schema and `.claude/skills/` for the skill prompts.
+The two incremental skills (`/ingest-source`, `/apply-correction`) are the live-demo primitives. See [`context.md`](./context.md) for the full schema, `.claude/skills/` for Claude Code prompts, and `.codex/skills/` for Codex prompts.
 
 ---
 
@@ -85,8 +85,8 @@ groundwork/
   commons/                # cross-hypothesis methods, reagents, failure modes
     methods/  reagents/  organisms/  failure-modes/  corrections.log.md
   web/                    # Next.js app — renders any hypothesis's Lab Brief
-  agents/
-    01_research.ts  02_wiki.ts  03_plan.ts  lint.ts  feedback.ts
+  .claude/skills/         # Claude Code pipeline prompts
+  .codex/skills/          # Codex pipeline prompt mirrors
 ```
 
 Open the whole repo in Obsidian. You see the full graph: hundreds of paper nodes, dozens of methods, every failure mode every hypothesis has ever surfaced, all connected.

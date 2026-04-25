@@ -96,6 +96,13 @@ groundwork/
 │       ├── pass-3-plan.md            # /pass-3 <slug>
 │       ├── ingest-source.md          # /ingest-source <slug> <path|url>
 │       └── apply-correction.md       # /apply-correction <correction.json>
+├── .codex/                           # Codex skill mirrors
+│   └── skills/
+│       ├── groundwork-pass-1-research/
+│       ├── groundwork-pass-2-wiki/
+│       ├── groundwork-pass-3-plan/
+│       ├── groundwork-ingest-source/
+│       └── groundwork-apply-correction/
 │
 ├── hypotheses/                       # one folder per hypothesis session
 │   └── 2026-04-25_trehalose-hela-cryopreservation/
@@ -132,18 +139,18 @@ groundwork/
 └── web/                              # Next.js + Tailwind, the Lab Brief UI (Layer B)
     ├── app/                          # Next.js app router
     │   ├── h/[slug]/page.tsx         # /h/<hypothesis-slug> renders the Lab Brief
-    │   └── api/                      # routes that spawn `claude -p` for live moments
+    │   └── api/                      # routes that invoke the selected agent CLI for live moments
     ├── components/
     ├── lib/
     │   ├── wiki.ts                   # parses wiki markdown for the UI
     │   ├── plan.ts                   # parses plan.json
-    │   └── claude.ts                 # subprocess helper for headless `claude -p`
+    │   └── agent.ts                  # subprocess helper for the selected headless agent
     ├── public/
     ├── package.json
     └── tailwind.config.ts
 ```
 
-> **The "agents" are not separate scripts.** GROUNDWORK is driven by Claude Code (or Codex) reading `CLAUDE.md` / `AGENTS.md`, which redirect here. The canonical pipeline entry points are the slash-command skills under `.claude/skills/`. For UI-triggered moments, the same skills are invoked headlessly via `claude -p --output-format stream-json` from Next.js routes in `web/`.
+> **The "agents" are not separate scripts.** GROUNDWORK is driven by Claude Code or Codex reading `CLAUDE.md` / `AGENTS.md`, which redirect here. Claude Code entry points live under `.claude/skills/`; Codex mirrors live under `.codex/skills/`. For future UI-triggered moments, the Next.js routes should invoke the selected headless agent adapter using the same skill prompt semantics.
 
 > **Important:** the entire `groundwork/` directory should be opened as a **single Obsidian vault**. This gives you a graph view across all hypotheses + commons. Per-hypothesis isolation is enforced by *agent operational discipline*, not by separate vaults.
 
@@ -427,9 +434,9 @@ Affects: all hypotheses linking to this failure mode.
 
 ## 7. Agent operations
 
-All passes run inside **Claude Code (default) or Codex**, via the auto-loaded `CLAUDE.md` / `AGENTS.md` and slash-command skills under `.claude/skills/`. Each skill appends to `session.log.md` for its hypothesis using the prefix `## [YYYY-MM-DD HH:MM] <op> | <subject>`.
+All passes run inside **Claude Code or Codex**, via the auto-loaded `CLAUDE.md` / `AGENTS.md`. Claude Code uses `.claude/skills/`; Codex uses `.codex/skills/`. Each skill appends to `session.log.md` for its hypothesis using the prefix `## [YYYY-MM-DD HH:MM] <op> | <subject>`.
 
-For UI-triggered moments (live single-paper ingest, scientist correction → re-render), the same skills are invoked **headlessly** via `claude -p --output-format stream-json`, spawned as a subprocess from a Next.js API route in `web/`. Output is streamed to the browser via Server-Sent Events.
+For future UI-triggered moments (live single-paper ingest, scientist correction → re-render), the route should invoke the selected agent headlessly and stream output to the browser. Keep the Claude Code and Codex skill prompts behaviorally identical so either tool can drive the same operation.
 
 ### 7.1 Pass 1 — Research skill (`/pass-1`)
 
@@ -627,7 +634,7 @@ Closer to a polished PI memo than a Wikipedia article. Three layers of depth on 
 ### Review interface (stretch)
 - Each section has an "edit / suggest" affordance.
 - Corrections capture: section ID, before, after, reason, reviewer.
-- POST to a feedback endpoint that calls `agents/feedback.ts`.
+- POST to a feedback endpoint that invokes the selected agent's `/apply-correction` skill semantics.
 
 ---
 
@@ -649,8 +656,8 @@ The third moment is the stretch-goal demo the brief explicitly asks for — *nex
 
 | Layer | Choice |
 |---|---|
-| Pipeline driver | Claude Code (default) or Codex; auto-loads `CLAUDE.md` / `AGENTS.md`; slash-command skills under `.claude/skills/` |
-| UI-triggered ops | `claude -p --output-format stream-json` subprocess spawned from Next.js routes (Layer B) |
+| Pipeline driver | Claude Code or Codex; auto-loads `CLAUDE.md` / `AGENTS.md`; skill prompts under `.claude/skills/` and `.codex/skills/` |
+| UI-triggered ops | Future selected-agent headless adapter spawned from Next.js routes (Layer B) |
 | LLM | Claude Sonnet/Opus default. Configurable. |
 | Literature search | Semantic Scholar API, arXiv API |
 | Protocol search | protocols.io API, Bio-protocol scrape |
@@ -668,7 +675,7 @@ The third moment is the stretch-goal demo the brief explicitly asks for — *nex
 If you are an AI coding agent (Claude Code, Codex, OpenCode, Cursor):
 
 1. **Read this file first.** Don't infer architecture from the code — the code may be incomplete. The schema in this file is canonical.
-2. **Stay within scope.** When operating on a single hypothesis, read/write only inside that hypothesis's folder + `commons/` (and `agents/`, `web/` if you're working on tooling). Do not cross hypothesis boundaries.
+2. **Stay within scope.** When operating on a single hypothesis, read/write only inside that hypothesis's folder + `commons/` (and `web/` if you're working on tooling). Do not cross hypothesis boundaries.
 3. **Never modify `raw/`** after a fetch. It's immutable by design. If you need to re-fetch, re-fetch into a new file.
 4. **Update `log.md` and `session.log.md`** for every meaningful operation (ingest, generation, correction, lint pass). Use the prefix format `## [YYYY-MM-DD HH:MM] <op> | <subject>` so logs stay grep-parseable.
 5. **Use the schema strictly.** All wiki pages must have valid frontmatter. All cross-references must be valid links (broken links should fail lint).
@@ -676,14 +683,14 @@ If you are an AI coding agent (Claude Code, Codex, OpenCode, Cursor):
 7. **When the schema is ambiguous, propose a refinement.** Edit this file rather than working around it.
 8. **Don't add features outside the spec without asking.** This is a hackathon project — scope discipline matters.
 9. **Every claim in a generated plan must trace to a wiki entity.** No free-floating facts.
-10. **Skills under `.claude/skills/` are the canonical entry points.** To extend the pipeline, add or modify a skill rather than writing a separate script. Skills declare their tools and arguments in YAML frontmatter; their bodies are the operational prompts.
+10. **Skills under `.claude/skills/` and `.codex/skills/` are the canonical entry points.** To extend the pipeline, update both skill mirrors rather than writing a separate script. Their bodies are the operational prompts.
 
 ---
 
 ## 13. Open decisions / TODOs
 
-- [x] LLM provider: Claude Code (default) with Codex as drop-in. Skills are tool-agnostic; only the auto-load file differs (`CLAUDE.md` vs `AGENTS.md`).
-- [ ] Build Layer B (Next.js app at `web/` with `claude -p --output-format stream-json` SSE route for live demo moments) — separate task.
+- [x] LLM provider: Claude Code and Codex both supported through mirrored skills. The auto-load file differs (`CLAUDE.md` vs `AGENTS.md`).
+- [ ] Build Layer B (Next.js app at `web/` with a selected-agent SSE route for live demo moments) — separate task.
 - [ ] PDF parsing strategy: pdftotext / pdfplumber / Claude vision. Probably text-first, vision fallback for figures.
 - [ ] Search API keys / rate limits: add `.env.example` and document acquisition.
 - [ ] Demo: confirmed pre-baked. Pick **which two** hypotheses to pre-bake.
