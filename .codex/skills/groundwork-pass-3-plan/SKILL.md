@@ -1,6 +1,6 @@
 ---
 name: groundwork-pass-3-plan
-description: Use when the user asks for GROUNDWORK Pass 3, /pass-3, or Lab Brief plan generation. Reads a compiled hypothesis wiki and commons, then writes plan/plan.json, plan/plan.md, and a versioned wiki/plans/plan-vN.md.
+description: Use when the user asks to run GROUNDWORK Pass 3 or generate a Lab Brief plan. Reads a compiled hypothesis wiki and commons, then writes plan/plan.json, plan/plan.md, and a versioned wiki/plans/plan-vN.md.
 ---
 
 # GROUNDWORK Pass 3 - Plan / Lab Brief
@@ -9,8 +9,8 @@ Read `context.md` first, especially sections 7.3, 8, and 9. The context file is 
 
 ## Trigger Forms
 
-- `/pass-3 <slug>`
 - `Run Pass 3 for <slug>`
+- `Run GROUNDWORK Pass 3 for <slug>`
 - `Generate the Lab Brief for <slug>`
 
 ## Input

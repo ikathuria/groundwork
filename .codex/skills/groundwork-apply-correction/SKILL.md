@@ -1,6 +1,6 @@
 ---
 name: groundwork-apply-correction
-description: Use when the user asks for /apply-correction or wants to apply a structured scientist correction to a GROUNDWORK wiki entity or commons entity. This is the Learning Loop primitive.
+description: Use when the user wants to apply a structured scientist correction to a GROUNDWORK wiki entity or commons entity. This is the Learning Loop primitive.
 ---
 
 # GROUNDWORK Apply Correction - Learning Loop
@@ -9,8 +9,8 @@ Read `context.md` first, especially sections 6 and 7.5. Corrections should be su
 
 ## Trigger Forms
 
-- `/apply-correction <correction.json>`
 - `Apply this correction: {...}`
+- `Run GROUNDWORK apply correction with {...}`
 - `Write this scientist correction into commons`
 
 ## Input

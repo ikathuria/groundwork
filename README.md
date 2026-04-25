@@ -54,12 +54,22 @@ This is closer to a polished PI memo than a Wikipedia article. A real PI should 
 
 ## Running it
 
-Open Claude Code or Codex in the repo root. The agent auto-loads `CLAUDE.md` or `AGENTS.md`, which redirects to [`context.md`](./context.md) — the canonical schema. Claude Code uses `.claude/skills/`; Codex uses the mirrored `.codex/skills/`. Then run the pipeline as agent commands:
+Open Claude Code or Codex in the repo root. The agent auto-loads `CLAUDE.md` or `AGENTS.md`, which redirects to [`context.md`](./context.md) — the canonical schema. Claude Code uses `.claude/skills/`; Codex uses the mirrored `.codex/skills/`.
+
+Claude Code supports custom slash-command style prompts:
 
 ```
 > /pass-1 trehalose-hela-cryopreservation "Replacing sucrose with trehalose as a cryoprotectant will increase post-thaw HeLa viability by ≥15 percentage points vs DMSO."
 > /pass-2 2026-04-25_trehalose-hela-cryopreservation
 > /pass-3 2026-04-25_trehalose-hela-cryopreservation
+```
+
+Codex does not register project custom `/` commands. Use natural-language skill triggers instead:
+
+```
+Run GROUNDWORK Pass 1 for slug trehalose-hela-cryopreservation with hypothesis: "Replacing sucrose with trehalose as a cryoprotectant will increase post-thaw HeLa viability by >=15 percentage points vs DMSO."
+Run GROUNDWORK Pass 2 for 2026-04-25_trehalose-hela-cryopreservation.
+Run GROUNDWORK Pass 3 for 2026-04-25_trehalose-hela-cryopreservation.
 ```
 
 Each pass writes inspectable artifacts under `hypotheses/<slug>/`. Open the repo as an Obsidian vault on the side to watch the wiki grow. The heavy work is done by Claude Code or Codex following the skill prompts, not by a separate pipeline script.

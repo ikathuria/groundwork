@@ -12,13 +12,13 @@ This is **GROUNDWORK**, an entry for Hack Nation Challenge 04 (The AI Scientist)
 
 Plus two incremental ops: ingest a single source, apply a scientist correction (Learning Loop).
 
-Codex skill mirrors live under `.codex/skills/`. Use them as the canonical Codex entry points:
+Codex does not register project-defined custom slash commands like Claude Code does. Use natural-language prompts that name the operation or skill. Codex skill mirrors live under `.codex/skills/`:
 
-- `/pass-1` → `.codex/skills/groundwork-pass-1-research/SKILL.md`
-- `/pass-2` → `.codex/skills/groundwork-pass-2-wiki/SKILL.md`
-- `/pass-3` → `.codex/skills/groundwork-pass-3-plan/SKILL.md`
-- `/ingest-source` → `.codex/skills/groundwork-ingest-source/SKILL.md`
-- `/apply-correction` → `.codex/skills/groundwork-apply-correction/SKILL.md`
+- `Run GROUNDWORK Pass 1...` → `.codex/skills/groundwork-pass-1-research/SKILL.md`
+- `Run GROUNDWORK Pass 2...` → `.codex/skills/groundwork-pass-2-wiki/SKILL.md`
+- `Run GROUNDWORK Pass 3...` → `.codex/skills/groundwork-pass-3-plan/SKILL.md`
+- `Ingest this source into GROUNDWORK...` → `.codex/skills/groundwork-ingest-source/SKILL.md`
+- `Apply this GROUNDWORK correction...` → `.codex/skills/groundwork-apply-correction/SKILL.md`
 
 Claude Code has equivalent command prompts under `.claude/skills/`. Keep both copies behaviorally aligned when changing the pipeline.
 

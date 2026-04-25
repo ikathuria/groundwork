@@ -1,6 +1,6 @@
 ---
 name: groundwork-ingest-source
-description: Use when the user asks for /ingest-source or incremental ingestion of one paper, protocol, retraction, catalog snippet, local raw file, or URL into an existing GROUNDWORK hypothesis wiki.
+description: Use when the user asks to ingest one paper, protocol, retraction, catalog snippet, local raw file, or URL into an existing GROUNDWORK hypothesis wiki.
 ---
 
 # GROUNDWORK Ingest Source - Incremental
@@ -9,8 +9,8 @@ Read `context.md` first, especially sections 5 and 7.2. This is a single-source 
 
 ## Trigger Forms
 
-- `/ingest-source <slug> <path|url>`
 - `Ingest this source into <slug>: <path|url>`
+- `Run GROUNDWORK ingest source for <slug>: <path|url>`
 - `Add this paper/retraction/protocol to the wiki`
 
 ## Inputs

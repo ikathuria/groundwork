@@ -1,6 +1,6 @@
 ---
 name: groundwork-pass-2-wiki
-description: Use when the user asks for GROUNDWORK Pass 2, /pass-2, or wiki compilation for a hypothesis. Reads hypotheses/<slug>/raw/ and produces an Obsidian-compatible wiki with source pages plus aggregated methods, reagents, organisms, and failure modes.
+description: Use when the user asks to run GROUNDWORK Pass 2 or compile the wiki for a hypothesis. Reads hypotheses/<slug>/raw/ and produces an Obsidian-compatible wiki with source pages plus aggregated methods, reagents, organisms, and failure modes.
 ---
 
 # GROUNDWORK Pass 2 - Wiki Compile
@@ -9,8 +9,8 @@ Read `context.md` first, especially sections 5, 6, and 7.2. The context file is 
 
 ## Trigger Forms
 
-- `/pass-2 <slug>`
 - `Run Pass 2 for <slug>`
+- `Run GROUNDWORK Pass 2 for <slug>`
 - `Compile the wiki for <slug>`
 
 ## Input
