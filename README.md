@@ -52,6 +52,22 @@ This is closer to a polished PI memo than a Wikipedia article. A real PI should 
 
 ---
 
+## Running it
+
+Open Claude Code (or Codex) in the repo root. The agent auto-loads `CLAUDE.md` (or `AGENTS.md`), which redirects to [`context.md`](./context.md) — the canonical schema. Then run the pipeline as slash commands:
+
+```
+> /pass-1 trehalose-hela-cryopreservation "Replacing sucrose with trehalose as a cryoprotectant will increase post-thaw HeLa viability by ≥15 percentage points vs DMSO."
+> /pass-2 2026-04-25_trehalose-hela-cryopreservation
+> /pass-3 2026-04-25_trehalose-hela-cryopreservation
+```
+
+Each pass writes inspectable artifacts under `hypotheses/<slug>/`. Open the repo as an Obsidian vault on the side to watch the wiki grow. For the live demo moments — single-paper ingest and scientist corrections — the Next.js app at `web/` spawns `claude -p --output-format stream-json` and streams progress back to the browser.
+
+The two incremental skills (`/ingest-source`, `/apply-correction`) are how the UI talks to the agent. See [`context.md`](./context.md) for the full schema and `.claude/skills/` for the skill prompts.
+
+---
+
 ## Per-Hypothesis Isolation + a Shared Commons
 
 Every hypothesis is its own self-contained session — its own `raw/`, its own `wiki/`, its own plan. No cross-talk, clean state, fully zippable.

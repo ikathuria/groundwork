@@ -84,7 +84,18 @@ Entities that recur across hypotheses (common methods, reagents, recurring failu
 ```
 groundwork/
 ├── README.md                         # public pitch
-├── context.md                        # this file
+├── context.md                        # this file (canonical schema)
+├── CLAUDE.md                         # auto-loaded by Claude Code → redirects to context.md
+├── AGENTS.md                         # auto-loaded by Codex → redirects to context.md
+├── .env.example                      # ANTHROPIC_API_KEY etc.
+├── .claude/                          # Claude Code skills & settings
+│   ├── settings.json
+│   └── skills/                       # pipeline entry points (slash commands)
+│       ├── pass-1-research.md        # /pass-1 <slug> "<hypothesis>"
+│       ├── pass-2-wiki.md            # /pass-2 <slug>
+│       ├── pass-3-plan.md            # /pass-3 <slug>
+│       ├── ingest-source.md          # /ingest-source <slug> <path|url>
+│       └── apply-correction.md       # /apply-correction <correction.json>
 │
 ├── hypotheses/                       # one folder per hypothesis session
 │   └── 2026-04-25_trehalose-hela-cryopreservation/
@@ -118,26 +129,21 @@ groundwork/
 │   ├── failure-modes/
 │   └── corrections.log.md            # scientist corrections, append-only
 │
-├── web/                              # Next.js + Tailwind, the Lab Brief UI
-│   ├── app/                          # Next.js app router
-│   │   ├── h/[slug]/page.tsx         # /h/<hypothesis-slug> renders the Lab Brief
-│   │   └── ...
-│   ├── components/
-│   ├── lib/
-│   │   ├── wiki.ts                   # parses wiki markdown for the UI
-│   │   └── plan.ts                   # parses plan.json
-│   ├── public/
-│   ├── package.json
-│   └── tailwind.config.ts
-│
-└── agents/                           # the pipeline agents
-    ├── 01_research.ts
-    ├── 02_wiki.ts
-    ├── 03_plan.ts
-    ├── lint.ts                       # cross-cutting wiki health check
-    ├── feedback.ts                   # ingest scientist corrections into commons
-    └── shared/                       # shared types, prompts, utils
+└── web/                              # Next.js + Tailwind, the Lab Brief UI (Layer B)
+    ├── app/                          # Next.js app router
+    │   ├── h/[slug]/page.tsx         # /h/<hypothesis-slug> renders the Lab Brief
+    │   └── api/                      # routes that spawn `claude -p` for live moments
+    ├── components/
+    ├── lib/
+    │   ├── wiki.ts                   # parses wiki markdown for the UI
+    │   ├── plan.ts                   # parses plan.json
+    │   └── claude.ts                 # subprocess helper for headless `claude -p`
+    ├── public/
+    ├── package.json
+    └── tailwind.config.ts
 ```
+
+> **The "agents" are not separate scripts.** GROUNDWORK is driven by Claude Code (or Codex) reading `CLAUDE.md` / `AGENTS.md`, which redirect here. The canonical pipeline entry points are the slash-command skills under `.claude/skills/`. For UI-triggered moments, the same skills are invoked headlessly via `claude -p --output-format stream-json` from Next.js routes in `web/`.
 
 > **Important:** the entire `groundwork/` directory should be opened as a **single Obsidian vault**. This gives you a graph view across all hypotheses + commons. Per-hypothesis isolation is enforced by *agent operational discipline*, not by separate vaults.
 
@@ -421,9 +427,11 @@ Affects: all hypotheses linking to this failure mode.
 
 ## 7. Agent operations
 
-All agents are LLM-driven (Claude default; SDK-agnostic enough to swap). They share an `agents/shared/` directory for types, prompts, and utilities. Each agent appends to `session.log.md` for its hypothesis.
+All passes run inside **Claude Code (default) or Codex**, via the auto-loaded `CLAUDE.md` / `AGENTS.md` and slash-command skills under `.claude/skills/`. Each skill appends to `session.log.md` for its hypothesis using the prefix `## [YYYY-MM-DD HH:MM] <op> | <subject>`.
 
-### 7.1 Pass 1 — Research agent (`agents/01_research.ts`)
+For UI-triggered moments (live single-paper ingest, scientist correction → re-render), the same skills are invoked **headlessly** via `claude -p --output-format stream-json`, spawned as a subprocess from a Next.js API route in `web/`. Output is streamed to the browser via Server-Sent Events.
+
+### 7.1 Pass 1 — Research skill (`/pass-1`)
 
 **Input:** plain-English hypothesis (CLI arg or stdin).
 
@@ -443,7 +451,7 @@ All agents are LLM-driven (Claude default; SDK-agnostic enough to swap). They sh
 - Never write into `wiki/` — that's Pass 2's job.
 - Default target: 30–100 sources. Configurable.
 
-### 7.2 Pass 2 — Wiki compiler (`agents/02_wiki.ts`)
+### 7.2 Pass 2 — Wiki compiler skill (`/pass-2`)
 
 **Input:** populated `raw/` for a single hypothesis.
 
@@ -463,7 +471,7 @@ All agents are LLM-driven (Claude default; SDK-agnostic enough to swap). They sh
 - Writes to `wiki/` only.
 - When a referenced entity already exists in `commons/`, link to it instead of creating a duplicate page. Does **not** write into commons (lint pass does that).
 
-### 7.3 Pass 3 — Plan agent (`agents/03_plan.ts`)
+### 7.3 Pass 3 — Plan skill (`/pass-3`)
 
 **Input:** populated `wiki/` for a single hypothesis.
 
@@ -490,7 +498,7 @@ All agents are LLM-driven (Claude default; SDK-agnostic enough to swap). They sh
 - Writes to `plan/` and (one file) into `wiki/plans/`.
 - **Every claim in the plan must be traceable to a wiki entity.** The UI surfaces those links.
 
-### 7.4 Lint pass (`agents/lint.ts`)
+### 7.4 Lint pass (run on demand)
 
 Cross-cutting health check. Run periodically and before any demo.
 
@@ -504,7 +512,7 @@ What it checks:
 
 Output: a `lint-report.md` per hypothesis or repo-wide.
 
-### 7.5 Feedback agent (`agents/feedback.ts`) — the Learning Loop
+### 7.5 Feedback skill (`/apply-correction`) — the Learning Loop
 
 **Input:** structured scientist correction from the Lab Brief UI's review interface.
 
@@ -641,7 +649,8 @@ The third moment is the stretch-goal demo the brief explicitly asks for — *nex
 
 | Layer | Choice |
 |---|---|
-| Research / wiki / plan agents | TypeScript, Node, Anthropic SDK (Claude) |
+| Pipeline driver | Claude Code (default) or Codex; auto-loads `CLAUDE.md` / `AGENTS.md`; slash-command skills under `.claude/skills/` |
+| UI-triggered ops | `claude -p --output-format stream-json` subprocess spawned from Next.js routes (Layer B) |
 | LLM | Claude Sonnet/Opus default. Configurable. |
 | Literature search | Semantic Scholar API, arXiv API |
 | Protocol search | protocols.io API, Bio-protocol scrape |
@@ -667,12 +676,14 @@ If you are an AI coding agent (Claude Code, Codex, OpenCode, Cursor):
 7. **When the schema is ambiguous, propose a refinement.** Edit this file rather than working around it.
 8. **Don't add features outside the spec without asking.** This is a hackathon project — scope discipline matters.
 9. **Every claim in a generated plan must trace to a wiki entity.** No free-floating facts.
+10. **Skills under `.claude/skills/` are the canonical entry points.** To extend the pipeline, add or modify a skill rather than writing a separate script. Skills declare their tools and arguments in YAML frontmatter; their bodies are the operational prompts.
 
 ---
 
 ## 13. Open decisions / TODOs
 
-- [ ] LLM provider: Claude default, but confirm. Decide before agent stubs are written.
+- [x] LLM provider: Claude Code (default) with Codex as drop-in. Skills are tool-agnostic; only the auto-load file differs (`CLAUDE.md` vs `AGENTS.md`).
+- [ ] Build Layer B (Next.js app at `web/` with `claude -p --output-format stream-json` SSE route for live demo moments) — separate task.
 - [ ] PDF parsing strategy: pdftotext / pdfplumber / Claude vision. Probably text-first, vision fallback for figures.
 - [ ] Search API keys / rate limits: add `.env.example` and document acquisition.
 - [ ] Demo: confirmed pre-baked. Pick **which two** hypotheses to pre-bake.
