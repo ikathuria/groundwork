@@ -8,7 +8,7 @@
 
 Science doesn't slow down at the idea stage. It slows down at the operations stage — designing protocols, sourcing materials, estimating costs, building timelines. A senior scientist who has run a similar experiment can scope it in hours. One who hasn't may take days. A plan with the wrong concentration or an unrealistic timeline can send a lab down the wrong path for weeks.
 
-GROUNDWORK compresses that process. You input a scientific hypothesis in plain language. GROUNDWORK returns a complete, operationally realistic experiment plan that a real lab could pick up on Monday and start running by Friday.
+GROUNDWORK compresses that process. You drop a scientific hypothesis in plain language. GROUNDWORK does **deep research** — pulling tens to hundreds of papers, protocols, retractions, and supplier catalogs — then **compiles a structured wiki** of everything it learned, then **renders a Lab Brief**: a complete, operationally realistic experiment plan a real lab could pick up on Monday and start running by Friday.
 
 But GROUNDWORK does one thing no other tool does: **before it tells you how to succeed, it shows you how others have failed.**
 
@@ -20,68 +20,81 @@ Every scientific database is optimised for positive results. Protocols that work
 
 The information that would save the most time — failed replications, retracted methodologies, known pitfalls at specific protocol steps — is scattered across Retraction Watch, PubPeer, AllTrials, and buried in supplementary materials. No tool synthesises it. No tool brings it into the planning stage.
 
-GROUNDWORK does.
+GROUNDWORK does. And because it builds a **persistent, compounding wiki** of every reagent, method, organism, and failure mode it has ever seen, the next plan is informed by every plan that came before it.
 
 ---
 
 ## How It Works
 
-### 1. Hypothesis Input
-Enter a scientific question in plain language. GROUNDWORK understands context, not just keywords.
+GROUNDWORK runs three agent passes per hypothesis. Each pass produces an inspectable artifact you can open and read.
 
-```
-"Supplementing C57BL/6 mice with Lactobacillus rhamnosus GG for 4 weeks will 
-reduce intestinal permeability by at least 30% compared to controls, measured 
-by FITC-dextran assay."
-```
+### Pass 1 — Deep Research → `raw/`
 
-### 2. Literature QC
-Before generating a plan, GROUNDWORK runs a fast novelty check across arXiv, Semantic Scholar, and protocol repositories. Output is a clean signal:
+Drop a hypothesis in plain English. The research agent fans out across arXiv, Semantic Scholar, protocols.io, Bio-protocol, Retraction Watch, PubPeer, and supplier catalogs. PDFs, protocol entries, and retraction notices are downloaded into a local `raw/` folder. **This is the immutable source of truth.** Tens to hundreds of sources, all on disk.
 
-- `NOT FOUND` — you may be breaking new ground
-- `SIMILAR WORK EXISTS` — 1–3 references surfaced for review  
-- `EXACT MATCH FOUND` — someone has already run this experiment
+### Pass 2 — Wiki Compilation → `wiki/`
 
-### 3. Failure Archaeology
-GROUNDWORK mines structured negative results — retractions, failed replications, known protocol pitfalls — specific to this class of experiment. It returns a **Failure Map**: the top failure modes for this experiment type, their estimated frequency, and the step at which they typically occur.
+The wiki agent reads every source in `raw/` and synthesises an Obsidian-compatible markdown vault. Every paper gets its own page. Every reagent, method, organism, and failure mode gets its own page. Everything is interlinked. You can open the vault in Obsidian and walk the graph — see how a known failure mode connects to the methods it affects, the reagents it implicates, the papers that document it.
 
-This is not a warning label. It is baked into the plan itself. Every step flagged in the Failure Map includes a specific mitigation in the protocol.
+The wiki is **the evidence layer**. Not hidden infrastructure — a first-class artifact you can browse.
 
-### 4. Experiment Plan Generation
-A complete operational plan, built around the Failure Map:
+### Pass 3 — Lab Brief → `plan/` + Web UI
 
-| Section | What's Included |
+The plan agent reads the wiki and renders the **Lab Brief**: a polished web page that delivers the experiment plan in three layers of depth on a single page.
+
+| Layer | What's there |
 |---|---|
-| **Protocol** | Step-by-step methodology grounded in real published protocols from protocols.io, Bio-protocol, Nature Protocols |
-| **Materials & Supply Chain** | Specific reagents, catalog numbers, verified suppliers (Thermo Fisher, Sigma-Aldrich, Promega) |
-| **Budget** | Realistic line-item cost estimate with supplier-referenced pricing |
-| **Timeline** | Phased breakdown with dependencies clearly marked |
-| **Validation** | Explicit success and failure criteria — how you will know if it worked |
-| **Failure Map** | Top failure modes for this experiment type, with step-level annotations in the protocol |
+| **Skim** (top) | Hypothesis, novelty verdict, total budget, total timeline, top failure modes — readable in 30 seconds |
+| **Plan** (spine) | Numbered protocol; each step is a rich block with reagents, timing, inline failure warnings, expandable for "why this step / how it can fail / sources." Side rail: timeline gantt + budget breakdown + materials cart. |
+| **Wiki drilldown** | Every reagent, method, failure mode, and citation links into the wiki. The Lab Brief is the *delivery format*; the wiki is the *evidence*. |
 
-### 5. AR Protocol Navigator *(Lab Mode)*
+This is closer to a polished PI memo than a Wikipedia article. A real PI should be able to scan it in 90 seconds, drill in for 5 minutes, and order materials.
 
-Once the plan is generated, tap **Launch Lab Mode** on mobile.
+---
 
-Point your camera at the printed step markers placed at each station in the lab. GROUNDWORK overlays the relevant protocol step, the exact reagent amounts, and — at steps flagged in the Failure Map — a live warning card:
+## Per-Hypothesis Isolation + a Shared Commons
+
+Every hypothesis is its own self-contained session — its own `raw/`, its own `wiki/`, its own plan. No cross-talk, clean state, fully zippable.
+
+But entities that recur across hypotheses — common methods, common reagents, recurring failure modes — get promoted to a shared `commons/` layer. Hypothesis wikis *link* to commons; the lint pass *promotes* recurring entities up. **This is what makes GROUNDWORK compound.**
 
 ```
-⚠️  KNOWN FAILURE POINT
-Step 4 of this protocol type fails in ~34% of replications
-due to reagent temperature drift. Verify temp before proceeding.
+groundwork/
+  hypotheses/
+    2026-04-25_trehalose-hela-cryopreservation/
+      hypothesis.md
+      raw/   wiki/   plan/   session.log.md
+    2026-04-25_lactobacillus-gut-permeability/
+      ...
+  commons/                # cross-hypothesis methods, reagents, failure modes
+    methods/  reagents/  organisms/  failure-modes/  corrections.log.md
+  web/                    # Next.js app — renders any hypothesis's Lab Brief
+  agents/
+    01_research.ts  02_wiki.ts  03_plan.ts  lint.ts  feedback.ts
 ```
 
-The plan does not stay on the screen. It follows you into the lab.
+Open the whole repo in Obsidian. You see the full graph: hundreds of paper nodes, dozens of methods, every failure mode every hypothesis has ever surfaced, all connected.
 
 ---
 
 ## Stretch Goal: The Learning Loop
 
-Every time a scientist reviews and corrects a generated plan, that feedback becomes a training signal. Structured corrections — wrong concentration, unrealistic timeline, unavailable reagent — are stored by experiment type and domain. Future plans for similar experiments incorporate prior feedback.
+The brief asks for a system where scientist corrections improve future plans without explicit re-prompting. The wiki gives us this for free.
 
-The demo: a judge watches GROUNDWORK generate a plan, a scientist leaves structured corrections, and the next plan for a similar experiment visibly reflects those corrections — without being explicitly re-prompted.
+When a scientist reviews a generated Lab Brief and corrects a section — wrong concentration, unrealistic timeline, unavailable reagent — that correction writes back into the relevant `commons/` page (or gets promoted up if it was hypothesis-local). Every future hypothesis that touches that method, reagent, or failure mode inherits the correction.
 
-The difference between a tool and a platform is whether it gets better every time someone uses it. GROUNDWORK gets better.
+**The demo:** judge watches GROUNDWORK generate a plan. Scientist corrects a single failure-mode page in `commons/`. A different hypothesis runs — the new plan visibly reflects the correction, with no explicit re-prompting. The wiki diff is visible in Obsidian as it happens.
+
+Every review makes the next plan better. That is the difference between a tool and a platform.
+
+---
+
+## Future / Experimental
+
+- **Voice navigation (ElevenLabs).** A voice agent walks the scientist through the Lab Brief, jumping between protocol steps and surfacing the underlying wiki pages on cue.
+- **AR Protocol Navigator (Lab Mode).** Point a phone camera at printed step markers placed at lab stations. GROUNDWORK overlays the relevant protocol step, exact reagent amounts, and step-flagged failure warnings live as the scientist works.
+
+Both are post-MVP. Core pipeline ships first.
 
 ---
 
@@ -100,30 +113,40 @@ The difference between a tool and a platform is whether it gets better every tim
 
 | Layer | Technology |
 |---|---|
-| Frontend | Next.js + Tailwind CSS |
-| AI Planning | Claude (Anthropic) via API |
-| Literature QC | Semantic Scholar API, arXiv API |
-| Failure Mining | Retraction Watch, PubPeer, AllTrials |
-| Supplier Pricing | Thermo Fisher, Sigma-Aldrich catalog references |
-| AR Layer | AR.js + A-Frame (WebAR, no app install required) |
-| Feedback Store | Structured JSON, tagged by experiment type and domain |
+| Research / wiki / plan agents | TypeScript + Node + Anthropic SDK (Claude) |
+| Literature search | Semantic Scholar API, arXiv API |
+| Protocols | protocols.io, Bio-protocol, Nature Protocols |
+| Negative results | Retraction Watch, PubPeer |
+| Supplier pricing | Thermo Fisher, Sigma-Aldrich, Promega catalog references |
+| Wiki format | Obsidian-compatible markdown + YAML frontmatter |
+| Lab Brief UI | Next.js (app router) + Tailwind CSS + shadcn/ui |
+| Future: voice | ElevenLabs API |
+| Future: AR | AR.js + A-Frame (WebAR, no app install) |
 
 ---
 
 ## Design Principles
 
-**Operational realism over aspiration.** Every reagent has a catalog number. Every timeline accounts for dependencies. Every budget has line items. The quality bar is not "does this look like a plan" — it is "would a real PI order the materials based on this."
+**Operational realism over aspiration.** Every reagent has a catalog number. Every timeline accounts for dependencies. Every budget has line items. The bar is not "does this look like a plan" — it is "would a real PI order the materials based on this."
 
-**Failure is first-class information.** The Failure Map is not a disclaimer appended at the end. It is the first thing generated and the last thing checked. Plans built around known failure modes are more trustworthy than plans that ignore them.
+**Failure is first-class information.** The Failure Map is not a disclaimer appended at the end. Failure modes are wiki entities, surfaced inline at the steps they affect, with concrete mitigations.
 
-**The plan should follow the scientist into the lab.** A document that lives on a screen is one step removed from the work. AR Protocol Navigator closes that gap — the plan becomes spatial, step-aware, and physically present at the moment it is needed.
+**The wiki is the evidence layer.** GROUNDWORK doesn't ask the user to trust the plan — it shows the wiki underneath it. Click any claim in the Lab Brief, see the source.
+
+**Compounding by construction.** Knowledge promoted to `commons/` is reused by every future hypothesis. The system gets demonstrably better over time, not as a vague future promise.
+
+---
+
+## For Contributors and AI Agents
+
+See **[`context.md`](./context.md)** for the full operational schema — folder conventions, page types, frontmatter, agent operations, and demo plan. AI agents (Claude Code, Codex, OpenCode, Cursor) should read `context.md` before making changes.
 
 ---
 
 ## Built For
 
-Hack Nation Global AI Hackathon — Challenge 04: The AI Scientist  
-Powered by Fulcrum Science  
+Hack Nation Global AI Hackathon — Challenge 04: The AI Scientist
+Powered by Fulcrum Science
 In collaboration with MIT Club of Northern California and MIT Club of Germany
 
 ---
