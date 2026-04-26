@@ -134,29 +134,16 @@ groundwork/
 │           ├── plan.md               # human-readable mirror
 │           └── assets/               # any local images/diagrams
 │
-├── commons/                          # cross-hypothesis shared layer
-│   ├── index.md
-│   ├── methods/
-│   ├── reagents/
-│   ├── organisms/
-│   ├── failure-modes/
-│   └── corrections.log.md            # scientist corrections, append-only
-│
-└── web/                              # Next.js + Tailwind, the Lab Brief UI (Layer B)
-    ├── app/                          # Next.js app router
-    │   ├── h/[slug]/page.tsx         # /h/<hypothesis-slug> renders the Lab Brief
-    │   └── api/                      # routes that invoke the selected agent CLI for live moments
-    ├── components/
-    ├── lib/
-    │   ├── wiki.ts                   # parses wiki markdown for the UI
-    │   ├── plan.ts                   # parses plan.json
-    │   └── agent.ts                  # subprocess helper for the selected headless agent
-    ├── public/
-    ├── package.json
-    └── tailwind.config.ts
+└── commons/                          # cross-hypothesis shared layer
+    ├── index.md
+    ├── methods/
+    ├── reagents/
+    ├── organisms/
+    ├── failure-modes/
+    └── corrections.log.md            # scientist corrections, append-only
 ```
 
-> **The "agents" are not separate scripts.** GROUNDWORK is driven by Claude Code or Codex reading `CLAUDE.md` / `AGENTS.md`, which redirect here. Claude Code entry points live under `.claude/skills/` as slash-command prompts; Codex mirrors live under `.codex/skills/` and are triggered with natural-language prompts like "Run GROUNDWORK Pass 1...". For future UI-triggered moments, the Next.js routes should invoke the selected headless agent adapter using the same skill prompt semantics.
+> **The "agents" are not separate scripts.** GROUNDWORK is driven by Claude Code or Codex reading `CLAUDE.md` / `AGENTS.md`, which redirect here. Claude Code entry points live under `.claude/skills/` as slash-command prompts; Codex mirrors live under `.codex/skills/` and are triggered with natural-language prompts like "Run GROUNDWORK Pass 1...". Pass 3 generates a fully bespoke single-file Lab Brief web page (`hypotheses/<slug>/plan/index.html`) per hypothesis — open it directly in any browser. There is no separate web app, no template, no build step.
 
 > **Important:** the entire `groundwork/` directory should be opened as a **single Obsidian vault**. This gives you a graph view across all hypotheses + commons. Per-hypothesis isolation is enforced by *agent operational discipline*, not by separate vaults.
 
@@ -442,7 +429,7 @@ Affects: all hypotheses linking to this failure mode.
 
 All passes run inside **Claude Code or Codex**, via the auto-loaded `CLAUDE.md` / `AGENTS.md`. Claude Code uses `.claude/skills/` slash-command prompts. Codex uses `.codex/skills/` with natural-language triggers; do not expect Codex to recognize project-defined `/pass-1` commands. Each skill appends to `session.log.md` for its hypothesis using the prefix `## [YYYY-MM-DD HH:MM] <op> | <subject>`.
 
-For future UI-triggered moments (live single-paper ingest, scientist correction → re-render), the route should invoke the selected agent headlessly and stream output to the browser. Keep the Claude Code and Codex skill prompts behaviorally identical so either tool can drive the same operation.
+Pass 3 produces the user-facing deliverable: a complete, polished, single-file Lab Brief web page (`hypotheses/<slug>/plan/index.html`) tailored to each hypothesis. There is no template — the agent generates the HTML bespoke each run, picking an aesthetic direction rooted in the experiment's subject. Keep the Claude Code and Codex skill prompts behaviorally identical so either tool produces equivalent artifacts.
 
 ### 7.1 Pass 1 — Research skill (`/pass-1`)
 
@@ -591,107 +578,147 @@ Output: a `lint-report.md` per hypothesis or repo-wide.
 
 ## 8. The Lab Brief artifact (`plan/`)
 
-`plan/plan.json` is the structured artifact the Next.js UI consumes. Tentative shape (refine as the UI is built):
+Pass 3 produces three artifacts in `hypotheses/<slug>/plan/`:
+
+- **`plan.json`** — canonical structured data. Schema below. Drives the rendered HTML; also reused by future Pass 4 (voice) / Pass 5 (AR).
+- **`plan/index.html`** — the user-facing Lab Brief, a **fully bespoke single-file web page** tailored to this hypothesis. The agent generates it from scratch each run (no template). Data is embedded inline in `<script type="application/json" id="plan-data">…</script>` so the file works via `file://`. See §9 for the UX spec.
+- **`plan/plan.md`** — Obsidian-readable markdown mirror of `plan.json`, with wikilinks for every entity reference.
+
+Plus `wiki/plans/plan-v<n>.md` filed back into the wiki graph.
+
+### Canonical `plan.json` schema
 
 ```json
 {
+  "meta": {
+    "slug": "2026-04-25_trehalose-hela-cryopreservation",
+    "version": 1,
+    "generated_at": "2026-04-25T15:42:00Z",
+    "domain": "Cell biology",
+    "status": "complete",
+    "corrections_applied": 0
+  },
   "hypothesis": {
-    "slug": "...",
     "original_question": "...",
     "refined": {
-      "intervention": "...",
-      "outcome": "...",
-      "threshold": "...",
-      "mechanism": "...",
-      "control": "..."
+      "intervention": "...", "outcome": "...", "threshold": "...",
+      "mechanism": "...",    "control": "..."
     }
   },
   "novelty": {
     "verdict": "similar-work-exists",
+    "verdict_text": "Plain-English explanation of the verdict.",
     "references": [
-      {
-        "title": "...",
-        "authors": "...",
-        "year": 2018,
-        "doi": "...",
-        "wiki_page": "sources/2018-..."
-      }
+      { "id": "...", "title": "...", "authors": "...", "year": 2018,
+        "doi": "...", "tag": "paper", "wiki_page": "sources/..." }
     ]
   },
   "summary": {
     "total_budget_usd": 12450,
     "total_timeline_weeks": 10,
-    "top_failure_modes": [
-      "temperature-drift-during-thaw",
-      "mycoplasma-contamination"
-    ]
+    "phases_count": 5,
+    "sources_count": 47,
+    "sources_breakdown": { "papers": 33, "protocols": 6, "retractions": 5, "catalogs": 3 },
+    "failure_modes_count": 8,
+    "failure_severity": { "high": 3, "medium": 4, "low": 1 },
+    "pull_quote": "One sentence framing the dominant failure modes."
   },
   "protocol": [
     {
       "step": 1,
-      "title": "Prepare freezing medium",
+      "title": "...",
       "duration_minutes": 30,
+      "rationale": "...",
       "reagents": [
-        {
-          "wiki_page": "reagents/trehalose",
-          "qty": "0.5 M",
-          "supplier": "Sigma-Aldrich",
-          "catalog": "T9531"
-        }
+        { "wiki_page": "reagents/trehalose", "name": "Trehalose",
+          "supplier": "Sigma-Aldrich", "catalog": "T9531", "qty": "0.5 M" }
       ],
       "failure_warnings": [
-        {
-          "wiki_page": "failure-modes/temperature-drift-during-thaw",
-          "severity": "high",
-          "mitigation": "..."
-        }
+        { "wiki_page": "failure-modes/...", "severity": "high",
+          "label": "...", "mitigation": "..." }
       ],
-      "rationale": "...",
-      "source_citations": ["sources/2018-zhao-..."]
+      "source_citations": ["2018-zhao-..."]
     }
   ],
-  "materials": [],
-  "budget": [],
-  "timeline": [],
-  "validation": {}
+  "materials": [
+    { "wiki_page": "reagents/...", "name": "...", "supplier": "...",
+      "catalog": "...", "qty": "...", "unit": "...", "price_usd": 595 }
+  ],
+  "budget": [
+    { "category": "...", "description": "...", "cost_usd": 2865 }
+  ],
+  "timeline": [
+    { "name": "Phase 1 · ...", "start_week": 0, "duration_weeks": 2,
+      "depends_on": [], "criticality": 1 }
+  ],
+  "validation": {
+    "success_criteria": ["..."],
+    "failure_criteria": ["..."],
+    "measurements": [
+      { "endpoint": "...", "method": "...", "threshold": "...", "n": "..." }
+    ]
+  },
+  "failure_map": [
+    { "id": "...", "label": "...", "severity": "high",
+      "frequency_estimate": "...", "applies_to": ["..."],
+      "applies_to_step": 4, "mitigation": "...",
+      "wiki_page": "failure-modes/..." }
+  ],
+  "sources": [
+    { "id": "...", "title": "...", "authors": "...", "year": 2018,
+      "doi": "...", "tag": "paper", "wiki_page": "sources/..." }
+  ],
+  "wiki_drilldowns": {
+    "failure-modes/temperature-drift-during-thaw": {
+      "title": "Temperature drift during slow freeze",
+      "subtitle": "FAILURE MODE · SEVERITY HIGH",
+      "body": "## What it is\n\n... markdown body extracted from the wiki page ..."
+    }
+  }
 }
 ```
 
-The UI renders this in three layers (Skim / Plan / Wiki drilldown — see §10).
+`wiki_drilldowns` populates the slide-in side panel in `plan/index.html` when a user clicks any reagent / failure mode / source. **Required** for every entry in `failure_map`. Reagents and sources can be populated for the most-cited entries; the renderer falls back to a stub for the rest.
 
 ---
 
-## 9. The Lab Brief UX (`web/`)
+## 9. The Lab Brief UX (`plan/index.html`)
+
+A complete, polished, interactive web page generated **bespoke per hypothesis** — there is no template. The Pass 3 agent picks an aesthetic direction rooted in the experiment's subject (cryobiology → cold/crystalline; microbiome → organic/networked; biosensor → signal-clean; bioelectrochemistry → industrial/electron-flow), then commits to it.
 
 Closer to a polished PI memo than a Wikipedia article. Three layers of depth on a single page.
 
-### Layer 1 — Skim (top, fixed)
-- Hypothesis (refined)
-- Novelty verdict (badge)
-- Total budget (USD)
-- Total timeline (weeks)
-- Top 3 failure modes (chips → click drilldown)
+### Layer 1 — Skim (top, sticky header)
+- Refined hypothesis (the title)
+- Domain + status + novelty verdict badges
+- Four big stat tiles: budget (USD) · timeline (weeks) · sources (count) · failure modes (count)
+- One-sentence pull quote framing the dominant failure modes
+- Readable in 30 seconds
 
 ### Layer 2 — Plan (spine)
-- Numbered protocol; each step is a rich block:
-  - Reagents (qty, supplier, catalog)
-  - Timing
-  - Inline failure warnings (red callout if severity ≥ medium)
-  - Expandable: "why this step / how it can fail / sources"
-- Side rail (sticky):
-  - Timeline gantt (phases + dependencies)
-  - Budget breakdown (table)
-  - Materials cart (qty × price)
+- Hypothesis breakdown (5 refined fields: intervention / outcome / threshold / mechanism / control)
+- Literature QC verdict + references
+- Numbered protocol steps; each step: title, duration, rationale, reagents (clickable chips → drilldown), inline failure-mode callouts (severity-coded), source citations as marginalia / footnotes
+- Materials table
+- Budget (line items + visualization — pie / doughnut / bar / treemap, designer's choice)
+- Timeline (phases + visualization — gantt / swim lane / strip)
+- Validation (success / failure / measurements)
+- Failure Map (the differentiator surface — visualization: network graph / heatmap / severity-ranked list)
 
-### Layer 3 — Wiki drilldown
-- Every reagent / method / failure mode / citation in the brief is a link.
-- Click → side panel or new view of the wiki page.
-- Wiki pages render in the same UI; the user can navigate the whole graph from the brief without leaving it.
+### Layer 3 — Wiki drilldown (side panel)
+- Click any reagent / failure-mode / source / method anywhere on the page → side panel slides in
+- Loads `wiki_drilldowns[wiki_page]` content (markdown rendered to HTML)
+- ESC or backdrop click closes
+- The user navigates the whole graph from the brief without leaving it
+
+### Required interactivity
+Sticky header with section nav · expandable protocol steps · scroll-triggered animations that *explain* (timeline phases build, failure-graph nodes settle, doughnut sweeps in) · keyboard accessible · respects `prefers-reduced-motion` · `@media print` hides decoration.
+
+### Tech (recommended, flexible)
+CDN-loaded only — no build step. Tailwind CSS Play CDN, Alpine.js 3, GSAP + ScrollTrigger, Chart.js 4, D3 7, marked.js. Distinctive Google Fonts pairing (avoid generic Inter / Roboto / Arial). Substitute freely (Three.js, p5.js, anime.js, Observable Plot, etc.) when a particular visualization or motion idiom genuinely fits the experiment.
 
 ### Review interface (stretch)
-- Each section has an "edit / suggest" affordance.
-- Corrections capture: section ID, before, after, reason, reviewer.
-- POST to a feedback endpoint that invokes the selected agent's `/apply-correction` skill semantics.
+Each section has an "edit / suggest" affordance. Corrections capture section ID, before, after, reason, reviewer. POST to a feedback endpoint that invokes the selected agent's `/apply-correction` skill semantics.
 
 ---
 
@@ -714,13 +741,12 @@ The third moment is the stretch-goal demo the brief explicitly asks for — *nex
 | Layer | Choice |
 |---|---|
 | Pipeline driver | Claude Code or Codex; auto-loads `CLAUDE.md` / `AGENTS.md`; skill prompts under `.claude/skills/` and `.codex/skills/` |
-| UI-triggered ops | Future selected-agent headless adapter spawned from Next.js routes (Layer B) |
 | LLM | Claude Sonnet/Opus default. Configurable. |
 | Literature search | Semantic Scholar API, arXiv API |
 | Protocol search | protocols.io API, Bio-protocol scrape |
 | Negative results | Retraction Watch (CSV / API), PubPeer scrape |
 | Wiki format | Obsidian-compatible markdown + YAML frontmatter |
-| Web UI | Next.js (app router) + Tailwind CSS + shadcn/ui |
+| Lab Brief renderer | Bespoke single-file HTML per hypothesis — Tailwind, Alpine.js, GSAP, Chart.js, D3, marked.js via CDN (no build step) |
 | Graph view | Obsidian itself (open on the side); future: in-app graph |
 | Future: voice | ElevenLabs API |
 | Future: AR | AR.js + A-Frame (WebAR, no app install) |
@@ -732,7 +758,7 @@ The third moment is the stretch-goal demo the brief explicitly asks for — *nex
 If you are an AI coding agent (Claude Code, Codex, OpenCode, Cursor):
 
 1. **Read this file first.** Don't infer architecture from the code — the code may be incomplete. The schema in this file is canonical.
-2. **Stay within scope.** When operating on a single hypothesis, read/write only inside that hypothesis's folder + `commons/` (and `web/` if you're working on tooling). Do not cross hypothesis boundaries.
+2. **Stay within scope.** When operating on a single hypothesis, read/write only inside that hypothesis's folder + `commons/` (and `.claude/skills/` / `.codex/skills/` if you're working on tooling). Do not cross hypothesis boundaries.
 3. **Never modify `raw/`** after a fetch. It's immutable by design. If you need to re-fetch, re-fetch into a new file.
 4. **Update `log.md` and `session.log.md`** for every meaningful operation (ingest, generation, correction, lint pass). Use the prefix format `## [YYYY-MM-DD HH:MM] <op> | <subject>` so logs stay grep-parseable.
 5. **Use the schema strictly.** All wiki pages must have valid frontmatter. All cross-references must be valid links (broken links should fail lint).
@@ -747,12 +773,9 @@ If you are an AI coding agent (Claude Code, Codex, OpenCode, Cursor):
 ## 13. Open decisions / TODOs
 
 - [x] LLM provider: Claude Code and Codex both supported through mirrored skills. The auto-load file differs (`CLAUDE.md` vs `AGENTS.md`).
-- [ ] Build Layer B (Next.js app at `web/` with a selected-agent SSE route for live demo moments) — separate task.
 - [ ] PDF parsing strategy: pdftotext / pdfplumber / Claude vision. Probably text-first, vision fallback for figures.
 - [ ] Search API keys / rate limits: add `.env.example` and document acquisition.
 - [ ] Demo: confirmed pre-baked. Pick **which two** hypotheses to pre-bake.
-- [ ] Web UI: confirm shadcn/ui + Tailwind v4, or alternatives.
-- [ ] Hosting for demo: local Next.js dev server or Vercel. Local is safer for offline conference Wi-Fi.
 - [ ] Voice / AR: not in MVP. Don't build until core ships.
 - [ ] Frontmatter fields are starting defaults — refine in v2 once we see how the wiki actually grows.
 

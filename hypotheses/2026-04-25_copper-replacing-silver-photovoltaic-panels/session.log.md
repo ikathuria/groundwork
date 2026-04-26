@@ -6,3 +6,6 @@ Pages: sources=14, methods=8, reagents=10, organisms=6, failure-modes=13. Promot
 
 ## [2026-04-25 20:10] plan | plan-v1
 Total budget: $93,500. Timeline: 12 weeks. Sources used: 14. Top failure modes: copper-diffusion-into-silicon, copper-outdiffusion-during-damp-heat, copper-contamination-of-shared-furnace. Novelty: similar-work-exists.
+
+## [2026-04-25 20:42] plan | lab-brief.html
+Added a standalone interactive HTML Lab Brief artifact under `plan/lab-brief.html`, derived from `plan.json` and `wiki/plans/plan-v1.md`. The artifact presents the copper-paste route, protocol gates, failure map, budget, timeline, deliverables, evidence filters, and under-supported areas in a single self-contained file.
