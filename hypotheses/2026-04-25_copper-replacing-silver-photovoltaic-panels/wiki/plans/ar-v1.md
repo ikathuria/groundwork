@@ -1,0 +1,60 @@
+---
+type: ar-spec
+id: ar-v1
+created: 2026-04-25
+derived_from: plan-v1.md
+slug: 2026-04-25_copper-replacing-silver-photovoltaic-panels
+stations: 11
+steps_bound: 9
+station_kinds:
+  - flat-instrument
+  - printer
+  - furnace
+  - microscope
+  - dish
+  - incubator
+  - solar-cell
+  - pv-module
+tags: [ar, lab-scene, plan-v1, photovoltaics]
+---
+
+# AR scene spec — ar-v1
+
+Mirror of [[../../plan/ar.json]] so the AR spec joins the wiki graph.
+The interactive page lives at `/ar?slug=2026-04-25_copper-replacing-silver-photovoltaic-panels` —
+two `solar-cell` coupons (Ag baseline + Cu test) and one `pv-module` are interactive
+3D objects the user can flip and inspect.
+
+```json
+{
+  "version": 1,
+  "slug": "2026-04-25_copper-replacing-silver-photovoltaic-panels",
+  "title": "Copper paste substitution with silver controls",
+  "scene": {
+    "stations": [
+      {"id": "planning-console", "label": "Design + procurement console", "kind": "flat-instrument", "color": "#60a5fa", "position": [-0.36, 0, -0.13], "wiki_page": "methods/photovoltaic-silver-use-roadmapping"},
+      {"id": "screen-printer", "label": "Screen-printing station", "kind": "printer", "color": "#22d3ee", "position": [-0.16, 0, -0.13], "wiki_page": "methods/copper-paste-screen-printing"},
+      {"id": "firing-furnace", "label": "Dry + fire furnace lane", "kind": "furnace", "color": "#f59e0b", "position": [0.06, 0, -0.13], "wiki_page": "methods/fire-through-copper-paste-metallization"},
+      {"id": "electrical-bench", "label": "I-V and contact-resistance bench", "kind": "flat-instrument", "color": "#a78bfa", "position": [0.30, 0, -0.13], "wiki_page": "failure-modes/contact-resistivity-drift"},
+      {"id": "silver-cell-coupon", "label": "Ag-paste control coupon", "kind": "solar-cell", "color": "#cbd5e1", "position": [-0.24, 0, 0.0], "wiki_page": "reagents/silver-conductive-paste"},
+      {"id": "copper-cell-coupon", "label": "Cu-paste test coupon", "kind": "solar-cell", "color": "#ea580c", "position": [-0.06, 0, 0.0], "wiki_page": "reagents/copper-metallization-paste"},
+      {"id": "migration-analysis", "label": "Cross-section + diffusion analysis", "kind": "microscope", "color": "#f472b6", "position": [-0.36, 0, 0.13], "wiki_page": "failure-modes/copper-diffusion-into-silicon"},
+      {"id": "module-packaging", "label": "Mini-module encapsulation bench", "kind": "dish", "color": "#34d399", "position": [-0.18, 0, 0.13]},
+      {"id": "mini-module", "label": "Encapsulated mini-module", "kind": "pv-module", "color": "#ea580c", "position": [0.04, 0, 0.13], "wiki_page": "organisms/photovoltaic-mini-module"},
+      {"id": "reliability-chamber", "label": "Damp-heat / cycling chamber", "kind": "incubator", "color": "#f87171", "position": [0.24, 0, 0.13], "wiki_page": "methods/damp-heat-and-thermal-cycling-pv-reliability-test"},
+      {"id": "decision-console", "label": "Post-stress decision dashboard", "kind": "flat-instrument", "color": "#14b8a6", "position": [0.40, 0, 0.13], "wiki_page": "organisms/photovoltaic-mini-module"}
+    ]
+  },
+  "step_bindings": [
+    {"step": 1, "focus_station": "planning-console", "animation": "none", "label_override": "Lock design, procurement gates, and contamination controls", "state_changes": [{"station": "planning-console", "property": "active", "to": true}]},
+    {"step": 2, "focus_station": "silver-cell-coupon", "animation": "observe", "label_override": "Inspect Ag-paste baseline coupon — pick it up and check both sides", "state_changes": [{"station": "silver-cell-coupon", "property": "active", "to": true}, {"station": "screen-printer", "property": "active", "to": true}]},
+    {"step": 3, "focus_station": "copper-cell-coupon", "animation": "observe", "label_override": "Print copper paste — inspect the matched Cu coupon next to the Ag baseline", "state_changes": [{"station": "copper-cell-coupon", "property": "active", "to": true}, {"station": "screen-printer", "property": "color", "to": "#ea580c"}]},
+    {"step": 4, "focus_station": "firing-furnace", "animation": "heat", "label_override": "Dry/fire lots while controlling shared-furnace copper risk", "state_changes": [{"station": "firing-furnace", "property": "active", "to": true}, {"station": "firing-furnace", "property": "color", "to": "#ef4444"}]},
+    {"step": 5, "focus_station": "electrical-bench", "animation": "measure", "label_override": "Run initial I-V, line-resistance, and EL checks on both coupons", "state_changes": [{"station": "electrical-bench", "property": "active", "to": true}, {"station": "silver-cell-coupon", "property": "active", "to": true}, {"station": "copper-cell-coupon", "property": "active", "to": true}]},
+    {"step": 6, "focus_station": "copper-cell-coupon", "animation": "observe", "label_override": "SIMS/EDS migration sentinel — flip the Cu coupon to inspect the contact", "state_changes": [{"station": "migration-analysis", "property": "active", "to": true}, {"station": "copper-cell-coupon", "property": "color", "to": "#dc2626"}]},
+    {"step": 7, "focus_station": "module-packaging", "animation": "transfer", "label_override": "Encapsulate matched mini-modules (EVA baseline, TPO optional)", "state_changes": [{"station": "module-packaging", "property": "active", "to": true}, {"station": "mini-module", "property": "active", "to": true}]},
+    {"step": 8, "focus_station": "reliability-chamber", "animation": "heat", "label_override": "Run accelerated damp-heat and thermal-cycling gates", "state_changes": [{"station": "reliability-chamber", "property": "active", "to": true}, {"station": "mini-module", "property": "color", "to": "#f87171"}]},
+    {"step": 9, "focus_station": "decision-console", "animation": "measure", "label_override": "Integrate reliability and cost evidence for go/no-go decision", "state_changes": [{"station": "decision-console", "property": "active", "to": true}]}
+  ]
+}
+```

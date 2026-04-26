@@ -68,8 +68,7 @@ hypothesis (plain English)
         │
         ▼
 ┌──────────────────────┐
-│ Pass 4: Wiki HTML +  │  → plan/wiki.html + plan/ar.json (web + AR)
-│        AR scene      │
+│ Pass 4: AR sim spec  │  → plan/ar.json (consumed by the live AR viewer)
 └──────────────────────┘
 ```
 
@@ -525,29 +524,31 @@ Pass 3 produces the user-facing deliverable: a complete, polished, single-file L
 - Writes to `plan/` and (one file) into `wiki/plans/`.
 - **Every claim in the plan must be traceable to a wiki entity.** The UI surfaces those links.
 
-### 7.4 Pass 4 — Wiki HTML + Custom AR Lab skill (`/pass-4`)
+### 7.4 Pass 4 — Custom AR Lab Simulation skill (`/pass-4`)
 
 **Input:** populated `wiki/` and `plan/plan.json` for a single hypothesis.
 
 **What it does:**
 1. Reads `hypothesis.md`, `plan/plan.json`, `plan/plan.md`, `wiki/index.md`, and the entity pages cited by the plan's protocol steps.
-2. Generates `plan/ar.json` — the **custom AR scene spec**: a list of `stations` (3–8 per experiment) tailored to the actual equipment / vessels the protocol uses, plus `step_bindings` mapping every protocol step to a station + animation. See `lib/plan-schema.ts` (`LabSceneSpec`) for the schema.
-3. Generates `plan/wiki.html` — a **single self-contained static HTML** rendering of the plan (refined hypothesis, novelty QC, summary, protocol with inline failure callouts, materials, budget, timeline, validation, failure map) plus a digest index of every wiki entity grouped by type. Inline CSS only, no external assets, no build step. Print-friendly. Openable from disk; also served by the Next.js `/h/[slug]` route.
-4. Files the AR spec back into the wiki at `wiki/plans/ar-v<n>.md` (frontmatter + fenced JSON), so it joins the Obsidian graph.
-5. Updates `hypothesis.md` frontmatter (`latest_ar`, `latest_wiki_html`).
-6. Appends `session.log.md`.
+2. Generates `plan/ar.json` — the **custom AR scene spec**: a list of `stations` (3–8 per experiment) tailored to the actual equipment / vessels the protocol uses, plus `step_bindings` mapping every protocol step to a station + animation + cumulative `state_changes`. See `lib/plan-schema.ts` (`LabSceneSpec`) for the schema and `.claude/commands/pass-4.md` (§Schema, §Runtime context, §Quality checklist) for the authoring contract.
+3. Files the AR spec back into the wiki at `wiki/plans/ar-v<n>.md` (frontmatter + fenced JSON), so it joins the Obsidian graph.
+4. Updates `hypothesis.md` frontmatter (`latest_ar`).
+5. Appends `session.log.md`.
 
-**Output:** `plan/ar.json`, `plan/wiki.html`, `wiki/plans/ar-v<n>.md`.
+**Pass 4 does NOT generate any HTML / static webpage / slide deck.** The live AR viewer in `components/ar/` (Three.js scene + Gemini Live voice assistant + on-screen pointer arrows + drag-and-drop bench) is the only renderer; `plan/ar.json` is the spec it consumes.
+
+**Output:** `plan/ar.json`, `wiki/plans/ar-v<n>.md`.
 
 **Constraints:**
 - Reads from `wiki/`, `plan/`, and `hypothesis.md` only.
-- Writes to `plan/ar.*`, `wiki/plans/ar-v<n>.md`, `hypothesis.md` frontmatter, and the session log. Nothing else.
-- **Every protocol step must have exactly one `step_bindings` entry.** No skipped steps.
-- **Every station must trace to a wiki entity** via `wiki_page`, OR be a generic vessel (`beaker`, `tube-rack`, `dish`, `pipette`) that doesn't need one.
-- `wiki.html` must contain only facts traceable to the plan or the wiki — no invented content.
-- Idempotent — re-running bumps the version (`ar-v2.md`) and overwrites `plan/ar.json` and `plan/wiki.html`.
+- Writes to `plan/ar.json`, `wiki/plans/ar-v<n>.md`, `hypothesis.md` frontmatter, and the session log. Nothing else.
+- **Every protocol step must have exactly one `step_bindings` entry** with a real `focus_station` (the runtime's gate-hint pointer arrow needs a target on every step).
+- **Every station must trace to a wiki entity** via `wiki_page`, OR be a generic vessel (`beaker`, `tube-rack`, `dish`, `pipette`, `scaffold`) that doesn't need one.
+- Station `id`s are kebab-case and read naturally when spoken — Gemini Live uses them as voice tool targets (`highlight_object`, `point_at`).
+- `kind` must come from the runtime's supported set: `printer | furnace | hotplate | microscope | incubator | plate-reader | dish | beaker | tube-rack | pipette | scaffold | tall-instrument | flat-instrument | solar-cell | pv-module`.
+- Idempotent — re-running bumps the version (`ar-v2.md`) and overwrites `plan/ar.json`.
 
-The Lab Brief UI (`web/`) consumes `plan/ar.json` via `/api/ar/[slug]` and serves `plan/wiki.html` at `/h/[slug]`.
+The Lab Brief UI (`web/`) consumes `plan/ar.json` via `/api/ar/[slug]`. The historical `/h/[slug]` static-HTML route still serves any pre-existing `plan/wiki.html` files but is no longer produced by Pass 4 — new hypotheses surface their experiment exclusively through the live AR simulation.
 
 ### 7.5 Lint pass (run on demand)
 

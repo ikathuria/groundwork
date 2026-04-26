@@ -1,0 +1,1200 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050811">
+<title>Lab Brief — Copper for Silver in Photovoltaic Panels</title>
+<style>
+  :root{
+    --bg:#050811; --bg-2:#0a0f1d; --bg-3:#111827;
+    --panel:#0f1626; --panel-2:#16213a; --panel-3:#1e293b;
+    --line:#1e293b; --line-2:#334155; --line-3:#475569;
+    --text:#e2e8f0; --text-dim:#cbd5e1; --muted:#94a3b8; --muted-2:#64748b;
+    --copper:#ea580c; --copper-2:#f59e0b; --copper-3:#fbbf24; --copper-glow:rgba(234,88,12,.45);
+    --silver:#cbd5e1; --silver-2:#94a3b8; --silver-glow:rgba(203,213,225,.35);
+    --solar:#fde047; --solar-2:#facc15;
+    --accent:#22d3ee; --accent-2:#06b6d4; --accent-glow:rgba(34,211,238,.4);
+    --teal:#14b8a6;
+    --danger:#f87171; --danger-2:#ef4444; --critical:#dc2626;
+    --warn:#fbbf24; --ok:#34d399;
+    --link:#7dd3fc;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:14px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{background:radial-gradient(1200px 700px at 80% -200px,rgba(234,88,12,.10),transparent 60%),radial-gradient(900px 500px at -100px 600px,rgba(34,211,238,.08),transparent 70%),var(--bg)}
+  a{color:var(--link);text-decoration:none}
+  a:hover{text-decoration:underline}
+  ::selection{background:var(--copper);color:#fff}
+  code,kbd,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85em}
+  kbd{background:var(--panel-2);border:1px solid var(--line-2);border-bottom-width:2px;border-radius:4px;padding:1px 5px;font-size:11px;color:var(--text-dim)}
+
+  /* === sticky progress header === */
+  .topbar{position:sticky;top:0;z-index:30;backdrop-filter:saturate(140%) blur(10px);background:rgba(5,8,17,.78);border-bottom:1px solid var(--line)}
+  .topbar-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:10px 24px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:12px;color:var(--copper-2)}
+  .brand .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--solar),var(--copper));box-shadow:0 0 12px var(--copper-glow)}
+  .brand .sep{color:var(--muted-2)}
+  .topbar h2{margin:0;font-size:13px;color:var(--text-dim);font-weight:500;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .progress-bar{flex:0 0 200px;height:5px;background:var(--panel);border-radius:99px;overflow:hidden;border:1px solid var(--line)}
+  .progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--copper),var(--solar));transition:width .4s ease}
+  .progress-meta{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;color:var(--muted);min-width:74px;text-align:right;letter-spacing:.06em}
+
+  /* === hero === */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero-inner{max-width:1280px;margin:0 auto;padding:48px 24px 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--copper-2);margin-bottom:14px}
+  .kicker::before{content:"";display:inline-block;width:24px;height:1px;background:var(--copper-2)}
+  .hero h1{font-size:clamp(28px,3.6vw,46px);line-height:1.05;margin:0 0 14px;color:#fff;letter-spacing:-.02em;font-weight:800}
+  .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--copper-2),var(--solar));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.lead{color:var(--text-dim);font-size:16px;line-height:1.55;margin:0 0 22px;max-width:62ch}
+  .hero .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border:1px solid var(--line-2);border-radius:99px;background:var(--panel);font-size:12px;color:var(--text-dim)}
+  .pill.copper{border-color:rgba(234,88,12,.5);color:var(--copper-3);background:rgba(234,88,12,.08)}
+  .pill.silver{border-color:var(--line-2);color:var(--silver);background:rgba(203,213,225,.06)}
+  .pill.warn{border-color:rgba(251,191,36,.4);color:var(--warn);background:rgba(251,191,36,.08)}
+  .pill.ok{border-color:rgba(52,211,153,.4);color:var(--ok);background:rgba(52,211,153,.08)}
+  .pill .dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:6px}
+  .stat{background:linear-gradient(180deg,var(--panel),var(--bg-2));border:1px solid var(--line);border-radius:12px;padding:14px 16px;position:relative;overflow:hidden}
+  .stat::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,transparent,var(--copper-2),transparent);opacity:.5}
+  .stat .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .stat .val{font-size:24px;font-weight:700;color:#fff;margin-top:2px;font-variant-numeric:tabular-nums}
+  .stat .val small{font-size:13px;color:var(--muted-2);font-weight:500;margin-left:3px}
+  .stat .sub{font-size:11px;color:var(--muted-2);margin-top:2px}
+
+  /* hero schematic */
+  .hero-art{position:relative;aspect-ratio:1.1/1;max-width:520px;justify-self:end;width:100%}
+  .hero-art svg{width:100%;height:100%;display:block;filter:drop-shadow(0 16px 40px rgba(0,0,0,.55))}
+  .pv-cell .ribbon{stroke-dasharray:6 4;animation:march 1.6s linear infinite}
+  @keyframes march{to{stroke-dashoffset:-30}}
+  .pv-cell .photon{animation:photon 3.5s ease-in infinite}
+  .pv-cell .photon:nth-child(2){animation-delay:.7s}
+  .pv-cell .photon:nth-child(3){animation-delay:1.5s}
+  .pv-cell .photon:nth-child(4){animation-delay:2.3s}
+  @keyframes photon{0%{transform:translateY(-180px);opacity:0}10%{opacity:1}80%{opacity:1}100%{transform:translateY(0);opacity:0}}
+  .pv-cell .copper-finger{animation:cu-glow 2.2s ease-in-out infinite}
+  @keyframes cu-glow{0%,100%{filter:drop-shadow(0 0 2px var(--copper))}50%{filter:drop-shadow(0 0 10px var(--copper-2))}}
+  .pv-cell .silver-finger{opacity:.4}
+
+  /* === layout with TOC === */
+  .layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:200px 1fr;gap:32px;padding:32px 24px 80px}
+  nav.toc{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;padding-right:8px}
+  nav.toc strong{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  nav.toc a{display:block;color:var(--muted-2);padding:6px 10px;border-radius:6px;font-size:13px;border-left:2px solid transparent;transition:.15s}
+  nav.toc a:hover{color:var(--text);background:var(--panel);text-decoration:none}
+  nav.toc a.active{color:var(--copper-2);border-left-color:var(--copper-2);background:linear-gradient(90deg,rgba(234,88,12,.12),transparent)}
+  main{min-width:0}
+
+  /* === section headings === */
+  .sec{margin:48px 0 16px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .sec-num{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--copper-2);letter-spacing:.18em;font-weight:700}
+  .sec h2{margin:0;font-size:22px;color:#fff;letter-spacing:-.01em;font-weight:700}
+  .sec .sec-meta{flex:1;text-align:right;color:var(--muted-2);font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .sec-rule{height:1px;background:linear-gradient(90deg,var(--copper-2) 0,var(--line) 60px,var(--line) 100%);margin-bottom:18px}
+
+  /* === panels & cards === */
+  .panel{background:linear-gradient(180deg,var(--panel),var(--bg-2));border:1px solid var(--line);border-radius:14px;padding:18px 20px;position:relative}
+  .panel.tight{padding:14px 16px}
+  .panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:880px){.panel-grid{grid-template-columns:1fr}.hero-inner{grid-template-columns:1fr}.layout{grid-template-columns:1fr}.toc{position:static;max-height:none}.stat-grid{grid-template-columns:repeat(2,1fr)}}
+  .field{display:grid;grid-template-columns:130px 1fr;gap:14px;align-items:start;padding:10px 0;border-bottom:1px dashed var(--line-2)}
+  .field:last-child{border-bottom:none}
+  .field dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+  .field dd{margin:0;color:var(--text-dim)}
+  .copper-tag{display:inline-block;padding:1px 7px;background:rgba(234,88,12,.16);color:var(--copper-3);border:1px solid rgba(234,88,12,.4);border-radius:4px;font-size:11px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin-right:4px}
+  .silver-tag{display:inline-block;padding:1px 7px;background:rgba(203,213,225,.1);color:var(--silver);border:1px solid var(--line-2);border-radius:4px;font-size:11px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin-right:4px}
+
+  /* === novelty === */
+  .verdict{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+  .verdict.similar{background:linear-gradient(90deg,rgba(251,191,36,.18),rgba(234,88,12,.12));color:var(--solar);border:1px solid rgba(251,191,36,.4)}
+  .verdict.exact{background:rgba(248,113,113,.16);color:var(--danger);border:1px solid rgba(248,113,113,.4)}
+  .verdict.notfound{background:rgba(52,211,153,.16);color:var(--ok);border:1px solid rgba(52,211,153,.4)}
+  .verdict::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 10px currentColor}
+  .ref-card{padding:12px 0;border-bottom:1px dashed var(--line-2)}
+  .ref-card:last-child{border-bottom:none}
+  .ref-card .t{color:#fff;font-weight:600;font-size:14px}
+  .ref-card .m{font-size:12px;color:var(--muted);margin-top:3px}
+
+  /* === interactive AR launch CTA === */
+  .ar-launch{position:relative;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;padding:18px 22px;margin:6px 0 16px;border:1px solid rgba(234,88,12,.45);border-radius:16px;background:linear-gradient(135deg,rgba(234,88,12,.13),rgba(15,22,38,.85) 55%,rgba(34,211,238,.10));text-decoration:none;color:inherit;cursor:pointer;overflow:hidden;transition:.25s;isolation:isolate}
+  .ar-launch:hover{border-color:var(--copper-2);transform:translateY(-1px);box-shadow:0 16px 40px rgba(234,88,12,.22),0 4px 12px rgba(0,0,0,.4);text-decoration:none}
+  .ar-launch:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .ar-launch-glow{position:absolute;inset:-2px;background:radial-gradient(360px 160px at 12% 50%,rgba(234,88,12,.35),transparent 70%),radial-gradient(360px 160px at 88% 50%,rgba(34,211,238,.22),transparent 70%);opacity:.55;z-index:-1;pointer-events:none;animation:ar-pulse 4.5s ease-in-out infinite}
+  @keyframes ar-pulse{0%,100%{opacity:.4}50%{opacity:.75}}
+  .ar-launch-icon{flex:0 0 auto;width:60px;height:60px;border-radius:14px;background:radial-gradient(circle at 30% 30%,rgba(253,224,71,.25),rgba(15,22,38,.9));display:flex;align-items:center;justify-content:center;border:1px solid rgba(251,191,36,.35);box-shadow:inset 0 0 16px rgba(234,88,12,.18)}
+  .ar-launch-text{display:flex;flex-direction:column;gap:3px;min-width:0}
+  .ar-launch-kicker{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--copper-2)}
+  .ar-launch-title{color:#fff;font-size:18px;font-weight:700;letter-spacing:-.01em}
+  .ar-launch-sub{color:var(--text-dim);font-size:13px;line-height:1.45}
+  .ar-launch-arrow{font-size:22px;color:var(--copper-2);font-weight:700;flex:0 0 auto;transition:.25s}
+  .ar-launch:hover .ar-launch-arrow{transform:translateX(4px);color:var(--solar)}
+  @media (max-width:640px){.ar-launch{grid-template-columns:auto 1fr;gap:12px;padding:14px 16px}.ar-launch-arrow{display:none}.ar-launch-title{font-size:16px}.ar-launch-sub{font-size:12px}}
+
+  /* === lab scene === */
+  .scene-card{margin:14px 0;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#0a1428,#070d1c);overflow:hidden;position:relative}
+  .scene-head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+  .scene-head h3{margin:0;font-size:14px;color:#fff;flex:1}
+  .scene-head .scene-meta{font-size:11px;color:var(--muted);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.1em}
+  .scene-stage{position:relative;background:radial-gradient(800px 400px at 50% 35%,rgba(234,88,12,.06),transparent 60%)}
+  .scene-svg{display:block;width:100%;height:auto;max-height:520px;background:repeating-linear-gradient(0deg,transparent 0,transparent 39px,rgba(255,255,255,.025) 40px),repeating-linear-gradient(90deg,transparent 0,transparent 39px,rgba(255,255,255,.025) 40px),#070d1c}
+  .scene-floor{stroke:rgba(148,163,184,.08);fill:rgba(15,22,38,.5)}
+  .scene-flow{stroke:var(--copper-2);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:8 8;animation:flow 1.4s linear infinite;filter:drop-shadow(0 0 6px var(--copper-glow));fill:none}
+  @keyframes flow{to{stroke-dashoffset:-32}}
+  .station{cursor:pointer;transition:transform .25s,opacity .25s}
+  .station:not(.focus){opacity:.42}
+  .station.active{opacity:1}
+  .station:hover{transform:translate(0,-2px)}
+  .station .body{stroke-width:1.5;transition:.2s}
+  .station.focus .body{stroke-width:3;filter:drop-shadow(0 0 14px currentColor)}
+  .station .glyph{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:.2s}
+  .station .label{fill:#cbd5e1;font-size:11px;font-family:ui-sans-serif,system-ui,sans-serif;text-anchor:middle;font-weight:600}
+  .station.focus .label{fill:#fff}
+  .station .id-tag{fill:var(--muted-2);font-size:9px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-anchor:middle;letter-spacing:.1em}
+  .station .pulse{fill:none;stroke:currentColor;stroke-width:2;opacity:0}
+  .station.focus .pulse{animation:pulse 1.6s ease-out infinite}
+  @keyframes pulse{0%{r:42;opacity:.7}100%{r:78;opacity:0}}
+  .station.anim-operate .glyph{transform-origin:60px 40px;animation:op 1.3s ease-in-out infinite}
+  .station.anim-heat .body{animation:heat 1.4s ease-in-out infinite}
+  .station.anim-measure .glyph{animation:meas 1.2s ease-in-out infinite}
+  .station.anim-observe .glyph{animation:obs 1.6s ease-in-out infinite;transform-origin:60px 40px}
+  .station.anim-transfer .glyph{animation:xfer 1.2s ease-in-out infinite}
+  .station.anim-mix .glyph{transform-origin:60px 40px;animation:mix 3s linear infinite}
+  @keyframes op{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+  @keyframes heat{0%,100%{filter:drop-shadow(0 0 6px var(--danger))}50%{filter:drop-shadow(0 0 18px var(--danger-2))}}
+  @keyframes meas{0%,100%{stroke-dashoffset:0}50%{stroke-dashoffset:20}}
+  @keyframes obs{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.94)}}
+  @keyframes xfer{0%,100%{transform:translateX(-3px)}50%{transform:translateX(3px)}}
+  @keyframes mix{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+  .scene-controls{display:flex;align-items:center;gap:10px;padding:14px 20px;border-top:1px solid var(--line);background:rgba(7,13,28,.6);flex-wrap:wrap}
+  .ar-btn{appearance:none;background:var(--panel-2);color:var(--text);border:1px solid var(--line-2);border-radius:8px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:.15s}
+  .ar-btn:hover{background:var(--panel-3);border-color:var(--line-3)}
+  .ar-btn.primary{background:linear-gradient(135deg,var(--copper),var(--copper-2));color:#fff;border-color:transparent}
+  .ar-btn.primary:hover{filter:brightness(1.1)}
+  .ar-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .ar-readout{margin-left:auto;font-size:13px;color:var(--text-dim);text-align:right;flex:1 1 320px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .ar-readout strong{color:var(--copper-2);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.06em}
+  .ar-readout em{font-style:normal;color:#fff}
+  .ar-pips{display:flex;gap:6px;flex-wrap:wrap;padding:0 20px 16px}
+  .ar-pip{appearance:none;font:inherit;cursor:pointer;min-width:34px;height:34px;border-radius:8px;border:1px solid var(--line-2);background:var(--panel);color:var(--text-dim);font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;display:inline-flex;align-items:center;justify-content:center;transition:.15s;position:relative}
+  .ar-pip:hover{background:var(--panel-2);color:#fff}
+  .ar-pip.current{background:linear-gradient(135deg,var(--copper),var(--copper-2));color:#fff;border-color:transparent;box-shadow:0 4px 14px var(--copper-glow)}
+  .ar-pip.done{border-color:rgba(52,211,153,.4);color:var(--ok)}
+  .ar-pip .pip-tip{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--panel-3);border:1px solid var(--line-2);border-radius:6px;padding:5px 9px;font-size:11px;color:var(--text-dim);white-space:nowrap;opacity:0;pointer-events:none;transition:.15s;z-index:5;font-family:ui-sans-serif,system-ui,sans-serif}
+  .ar-pip:hover .pip-tip{opacity:1}
+  .scene-hint{padding:10px 20px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);background:rgba(7,13,28,.4)}
+  .scene-hint kbd{margin:0 2px}
+  .no-js .scene-controls,.no-js .ar-pips,.no-js .scene-hint{display:none}
+
+  /* === protocol timeline === */
+  .protocol{position:relative;margin-left:20px;padding-left:30px;border-left:2px dashed var(--line-2)}
+  .step{position:relative;padding:18px 22px;margin:14px 0;background:linear-gradient(180deg,var(--panel),var(--bg-2));border:1px solid var(--line);border-radius:14px;transition:.25s}
+  .step::before{content:"";position:absolute;left:-42px;top:24px;width:24px;height:24px;border-radius:50%;background:var(--panel-2);border:2px solid var(--line-2);display:flex;align-items:center;justify-content:center;transition:.25s}
+  .step::after{content:"";position:absolute;left:-32px;top:34px;width:18px;height:2px;background:var(--line-2);transition:.25s}
+  .step.current{border-color:var(--copper);box-shadow:0 0 0 1px var(--copper) inset,0 12px 30px rgba(234,88,12,.18)}
+  .step.current::before{background:linear-gradient(135deg,var(--copper),var(--copper-2));border-color:var(--copper-2);box-shadow:0 0 18px var(--copper-glow)}
+  .step.current::after{background:var(--copper-2)}
+  .step.done::before{background:rgba(52,211,153,.18);border-color:var(--ok)}
+  .step-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+  .step-num{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;color:var(--copper-2);letter-spacing:.14em;font-weight:700}
+  .step h3{margin:0;font-size:16px;color:#fff;flex:1;min-width:200px;font-weight:600}
+  .step .duration{font-size:11px;color:var(--muted);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--panel-2);padding:2px 8px;border-radius:99px;border:1px solid var(--line-2)}
+  .step .station-link{font-size:11px;color:var(--accent);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;cursor:pointer;background:none;border:none;padding:0}
+  .step .station-link:hover{text-decoration:underline}
+  .step p.rationale{color:var(--text-dim);margin:8px 0 12px;font-size:13.5px}
+  .step h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:12px 0 6px;font-weight:600}
+  .reagents{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:5px}
+  .reagents li{font-size:13px;color:var(--text-dim);padding:6px 10px;background:rgba(15,22,38,.55);border:1px solid var(--line);border-radius:6px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .reagents .r-link{color:var(--link);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;cursor:pointer;background:none;border:none;padding:0}
+  .reagents .r-qty{color:var(--copper-3);font-weight:600}
+  .reagents .r-sup{color:var(--muted);font-size:12px}
+  .callout{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin:6px 0;font-size:13px;align-items:start}
+  .callout.high{background:rgba(248,113,113,.07);border:1px solid rgba(248,113,113,.3);border-left:3px solid var(--danger)}
+  .callout.critical{background:rgba(220,38,38,.1);border:1px solid rgba(220,38,38,.4);border-left:3px solid var(--critical)}
+  .callout.medium{background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.3);border-left:3px solid var(--warn)}
+  .callout.low{background:rgba(52,211,153,.06);border:1px solid rgba(52,211,153,.25);border-left:3px solid var(--ok)}
+  .callout .sev-badge{flex:0 0 auto;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:2px 7px;border-radius:4px;background:currentColor;color:#0a0f1a}
+  .callout .sev-body{flex:1;min-width:0}
+  .callout .sev-body .lbl{color:#fff;font-weight:600;font-size:13px}
+  .callout .sev-body .lbl button{color:inherit;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;background:none;border:none;cursor:pointer;padding:0;text-decoration:underline}
+  .callout .sev-body .mit{margin-top:3px;color:var(--text-dim);font-size:13px}
+  .src-cites{font-size:11px;color:var(--muted);margin-top:10px;display:flex;flex-wrap:wrap;gap:5px}
+  .src-cite{display:inline-block;padding:2px 8px;background:var(--panel-2);border:1px solid var(--line-2);border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;color:var(--accent);cursor:pointer}
+  .src-cite:hover{background:var(--panel-3)}
+
+  /* === tables === */
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--panel)}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  tbody tr{transition:.15s}
+  tbody tr:hover{background:var(--panel)}
+  .tbl-wrap{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+  .tbl-total{background:linear-gradient(90deg,rgba(234,88,12,.12),transparent)!important;font-weight:700;color:#fff}
+
+  /* === budget chart === */
+  .budget-grid{display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:start}
+  @media (max-width:880px){.budget-grid{grid-template-columns:1fr}}
+  .donut{position:relative;aspect-ratio:1/1;max-width:280px}
+  .donut svg{width:100%;height:100%;display:block;transform:rotate(-90deg)}
+  .donut .donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .donut .donut-center .v{font-size:30px;font-weight:700;color:#fff;font-variant-numeric:tabular-nums;line-height:1}
+  .donut .donut-center .l{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+  .donut-seg{transition:.25s;cursor:pointer}
+  .donut-seg.dim{opacity:.25}
+  .donut-legend{display:grid;gap:6px;font-size:13px}
+  .donut-legend .row{display:grid;grid-template-columns:14px 1fr auto auto;gap:10px;align-items:center;padding:8px 12px;border-radius:6px;cursor:pointer;border:1px solid transparent}
+  .donut-legend .row:hover{background:var(--panel);border-color:var(--line)}
+  .donut-legend .sw{width:12px;height:12px;border-radius:3px}
+  .donut-legend .name{color:var(--text-dim)}
+  .donut-legend .pct{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--muted)}
+  .donut-legend .amt{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#fff;font-weight:600}
+
+  /* === gantt timeline === */
+  .gantt{padding:18px 22px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+  .gantt-head{display:grid;grid-template-columns:240px 1fr;gap:12px;align-items:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .gantt-axis{display:grid;grid-template-columns:repeat(12,1fr);gap:0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px;color:var(--muted-2);text-align:center}
+  .gantt-axis span{padding:4px 0;border-left:1px dashed var(--line)}
+  .gantt-row{display:grid;grid-template-columns:240px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line-2)}
+  .gantt-row:last-child{border-bottom:none}
+  .gantt-name{font-size:13px;color:var(--text-dim);min-width:0}
+  .gantt-name .small{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+  .gantt-bar-wrap{position:relative;height:28px;background:repeating-linear-gradient(90deg,var(--bg-2) 0,var(--bg-2) calc(100%/12 - 1px),var(--line) calc(100%/12 - 1px),var(--line) calc(100%/12));border-radius:6px}
+  .gantt-bar{position:absolute;top:4px;height:20px;background:linear-gradient(135deg,var(--copper),var(--copper-2));border-radius:5px;box-shadow:0 4px 12px rgba(234,88,12,.25);display:flex;align-items:center;padding:0 8px;color:#fff;font-size:11px;font-weight:600;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap;overflow:hidden}
+  .gantt-bar.crit{background:linear-gradient(135deg,var(--danger-2),var(--danger))}
+  .gantt-bar.lab{background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+  .gantt-bar.deci{background:linear-gradient(135deg,var(--ok),var(--teal))}
+  .gantt-bar.mod{background:linear-gradient(135deg,var(--solar),var(--copper-2))}
+
+  /* === validation === */
+  .val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media (max-width:880px){.val-grid{grid-template-columns:1fr}}
+  .val-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .val-card h4{margin:0 0 10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+  .val-card.success h4{color:var(--ok)}
+  .val-card.failure h4{color:var(--danger)}
+  .val-card.measure h4{color:var(--accent)}
+  .val-card ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+  .val-card li{font-size:13px;color:var(--text-dim);padding:8px 10px;background:var(--bg-2);border:1px solid var(--line);border-radius:6px;display:flex;gap:8px;align-items:start}
+  .val-card li::before{content:"";flex:0 0 6px;width:6px;height:6px;border-radius:50%;margin-top:7px}
+  .val-card.success li::before{background:var(--ok)}
+  .val-card.failure li::before{background:var(--danger)}
+  .val-card.measure li::before{background:var(--accent)}
+
+  /* === failure map === */
+  .fmap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+  .fcard{background:linear-gradient(180deg,var(--panel),var(--bg-2));border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;cursor:pointer;transition:.2s;position:relative;overflow:hidden}
+  .fcard:hover{transform:translateY(-2px);border-color:var(--line-3)}
+  .fcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--line-3)}
+  .fcard.critical::before{background:linear-gradient(180deg,var(--critical),var(--danger))}
+  .fcard.high::before{background:linear-gradient(180deg,var(--danger),var(--copper))}
+  .fcard.medium::before{background:linear-gradient(180deg,var(--warn),var(--copper-3))}
+  .fcard.low::before{background:linear-gradient(180deg,var(--ok),var(--teal))}
+  .fcard .f-head{display:flex;align-items:center;gap:8px}
+  .fcard .f-sev{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:3px 8px;border-radius:4px}
+  .fcard.critical .f-sev{background:var(--critical);color:#fff}
+  .fcard.high .f-sev{background:rgba(248,113,113,.18);color:var(--danger)}
+  .fcard.medium .f-sev{background:rgba(251,191,36,.18);color:var(--warn)}
+  .fcard.low .f-sev{background:rgba(52,211,153,.18);color:var(--ok)}
+  .fcard .f-id{font-size:13px;color:#fff;font-weight:600;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .fcard .f-mit{font-size:13px;color:var(--text-dim)}
+  .fcard .f-meta{font-size:11px;color:var(--muted);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+  /* === wiki digest === */
+  .wd-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+  .wd-tab{appearance:none;background:var(--panel);color:var(--text-dim);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:12px;cursor:pointer;font:inherit;font-size:12px;font-weight:500;transition:.15s;display:inline-flex;align-items:center;gap:6px}
+  .wd-tab:hover{background:var(--panel-2);color:#fff}
+  .wd-tab.active{background:linear-gradient(135deg,var(--copper),var(--copper-2));color:#fff;border-color:transparent}
+  .wd-tab .ct{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px;background:rgba(0,0,0,.2);padding:1px 6px;border-radius:99px}
+  .wd-tab.active .ct{background:rgba(255,255,255,.2)}
+  .wd-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px}
+  .wd-item{padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:10px;cursor:pointer;transition:.15s}
+  .wd-item:hover{border-color:var(--copper);background:var(--panel-2)}
+  .wd-item .wd-id{font-size:12px;color:var(--accent);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;display:block;margin-bottom:4px;font-weight:600}
+  .wd-item .wd-sum{font-size:12px;color:var(--text-dim)}
+  .wd-pane{display:none}
+  .wd-pane.active{display:block}
+
+  /* === drilldown side panel === */
+  .drill-backdrop{position:fixed;inset:0;background:rgba(5,8,17,.5);backdrop-filter:blur(4px);z-index:40;opacity:0;pointer-events:none;transition:.25s}
+  .drill-backdrop.show{opacity:1;pointer-events:auto}
+  .drill{position:fixed;top:0;right:0;bottom:0;width:min(480px,100%);background:var(--bg-2);border-left:1px solid var(--copper);box-shadow:-20px 0 60px rgba(0,0,0,.6);z-index:50;transform:translateX(100%);transition:.3s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
+  .drill.show{transform:translateX(0)}
+  .drill-head{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}
+  .drill-head .kind{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--copper-2);font-weight:700}
+  .drill-head h3{margin:0;font-size:16px;color:#fff;flex:1}
+  .drill-close{appearance:none;background:var(--panel);color:var(--text);border:1px solid var(--line-2);border-radius:6px;padding:4px 10px;cursor:pointer;font-size:18px;line-height:1;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .drill-close:hover{background:var(--panel-2);border-color:var(--copper)}
+  .drill-body{padding:18px 22px;overflow:auto;flex:1}
+  .drill-body .tag-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .drill-body p{color:var(--text-dim);font-size:14px;line-height:1.6}
+  .drill-body code{background:var(--panel);padding:2px 5px;border-radius:3px}
+  .drill-body .open-wiki{display:inline-flex;align-items:center;gap:6px;margin-top:10px;padding:8px 12px;background:linear-gradient(135deg,var(--copper),var(--copper-2));color:#fff;border-radius:6px;font-size:13px;font-weight:600}
+  .drill-body .open-wiki:hover{filter:brightness(1.1);text-decoration:none}
+
+  /* === footer === */
+  footer{max-width:1280px;margin:32px auto 0;padding:24px;font-size:12px;color:var(--muted-2);text-align:center;border-top:1px solid var(--line)}
+  footer .links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:8px}
+
+  /* === print === */
+  @media print{
+    body{background:#fff;color:#000}
+    .topbar,nav.toc,.scene-controls,.ar-pips,.scene-hint,.drill-backdrop,.drill,.wd-tabs button:not(.active),.ar-launch{display:none!important}
+    .layout{grid-template-columns:1fr;padding:0 16px}
+    .hero-art{display:none}.hero-inner{grid-template-columns:1fr;padding:16px}
+    .panel,.scene-card,.gantt,.fcard,.val-card,.wd-item{background:#fff;border:1px solid #999;color:#000;break-inside:avoid;page-break-inside:avoid}
+    .step,.scene-svg{break-inside:avoid;background:#fff}
+    h1,h2,h3,h4,.step h3{color:#000}
+    a{color:#000;text-decoration:underline}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><span class="dot"></span>GROUNDWORK <span class="sep">·</span> Lab Brief</div>
+    <h2 id="topbar-title">Copper for Silver in Photovoltaic Panels</h2>
+    <div class="progress-bar"><div class="progress-fill" id="topbar-fill"></div></div>
+    <div class="progress-meta" id="topbar-progress">step 1 / 9</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="kicker">Lab Brief · Plan v1 · Photovoltaics</div>
+      <h1>Replace silver with <em>copper</em> in c-Si photovoltaic metallization — without losing efficiency.</h1>
+      <p class="lead" id="hero-lead">Loading hypothesis…</p>
+      <div class="pill-row">
+        <span class="pill copper"><span class="dot"></span>Cu paste route</span>
+        <span class="pill silver"><span class="dot"></span>Ag paste control</span>
+        <span class="pill warn"><span class="dot"></span>Damp-heat gate</span>
+        <span class="pill ok"><span class="dot"></span>SIMS sentinel</span>
+      </div>
+      <div class="stat-grid">
+        <div class="stat"><div class="lbl">Total Budget</div><div class="val">$<span id="stat-budget">—</span><small>USD</small></div><div class="sub" id="stat-budget-sub">over 12 weeks</div></div>
+        <div class="stat"><div class="lbl">Timeline</div><div class="val"><span id="stat-weeks">—</span><small>weeks</small></div><div class="sub" id="stat-phases">— phases</div></div>
+        <div class="stat"><div class="lbl">Sources</div><div class="val" id="stat-sources">—</div><div class="sub">cited in plan</div></div>
+        <div class="stat"><div class="lbl">Failure Modes</div><div class="val" id="stat-fmodes">—</div><div class="sub">with mitigations</div></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 480 440" xmlns="http://www.w3.org/2000/svg" class="pv-cell">
+        <defs>
+          <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7dd3fc" stop-opacity=".25"/><stop offset="1" stop-color="#0ea5e9" stop-opacity=".05"/></linearGradient>
+          <linearGradient id="silicon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+          <linearGradient id="copperGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbbf24"/><stop offset=".5" stop-color="#ea580c"/><stop offset="1" stop-color="#9a3412"/></linearGradient>
+          <linearGradient id="silverGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#94a3b8"/></linearGradient>
+          <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fde047"/><stop offset=".7" stop-color="#facc15" stop-opacity=".4"/><stop offset="1" stop-color="#facc15" stop-opacity="0"/></radialGradient>
+        </defs>
+        <!-- sun -->
+        <circle cx="380" cy="60" r="44" fill="url(#sun)"/>
+        <circle cx="380" cy="60" r="22" fill="#fde047"/>
+        <!-- photons -->
+        <g stroke="#fde047" stroke-width="3" stroke-linecap="round" opacity=".8">
+          <line class="photon" x1="160" y1="120" x2="160" y2="140"/>
+          <line class="photon" x1="240" y1="120" x2="240" y2="140"/>
+          <line class="photon" x1="300" y1="120" x2="300" y2="140"/>
+          <line class="photon" x1="200" y1="120" x2="200" y2="140"/>
+        </g>
+        <!-- glass -->
+        <rect x="40" y="160" width="400" height="20" rx="3" fill="url(#glass)" stroke="#38bdf8" stroke-opacity=".3"/>
+        <text x="46" y="174" fill="#7dd3fc" font-size="9" font-family="ui-monospace,monospace" letter-spacing=".15em">GLASS</text>
+        <!-- encapsulant top -->
+        <rect x="40" y="184" width="400" height="14" rx="2" fill="#0e7490" fill-opacity=".25" stroke="#0e7490" stroke-opacity=".3"/>
+        <text x="46" y="195" fill="#67e8f9" font-size="8" font-family="ui-monospace,monospace" letter-spacing=".12em">EVA ENCAPSULANT</text>
+        <!-- metallization fingers (left=Ag baseline / right=Cu test) -->
+        <!-- Ag fingers -->
+        <g class="silver-finger">
+          <rect x="60" y="200" width="6" height="14" fill="url(#silverGrad)"/>
+          <rect x="84" y="200" width="6" height="14" fill="url(#silverGrad)"/>
+          <rect x="108" y="200" width="6" height="14" fill="url(#silverGrad)"/>
+          <rect x="132" y="200" width="6" height="14" fill="url(#silverGrad)"/>
+          <rect x="156" y="200" width="6" height="14" fill="url(#silverGrad)"/>
+          <rect x="180" y="200" width="6" height="14" fill="url(#silverGrad)"/>
+          <rect x="204" y="200" width="6" height="14" fill="url(#silverGrad)"/>
+          <text x="60" y="232" fill="#cbd5e1" font-size="10" font-family="ui-monospace,monospace" letter-spacing=".14em">Ag CONTROL</text>
+        </g>
+        <!-- Cu fingers -->
+        <g class="copper-finger">
+          <rect x="246" y="200" width="6" height="14" fill="url(#copperGrad)"/>
+          <rect x="270" y="200" width="6" height="14" fill="url(#copperGrad)"/>
+          <rect x="294" y="200" width="6" height="14" fill="url(#copperGrad)"/>
+          <rect x="318" y="200" width="6" height="14" fill="url(#copperGrad)"/>
+          <rect x="342" y="200" width="6" height="14" fill="url(#copperGrad)"/>
+          <rect x="366" y="200" width="6" height="14" fill="url(#copperGrad)"/>
+          <rect x="390" y="200" width="6" height="14" fill="url(#copperGrad)"/>
+          <text x="246" y="232" fill="#fbbf24" font-size="10" font-family="ui-monospace,monospace" letter-spacing=".14em">Cu TEST</text>
+        </g>
+        <!-- bus ribbons -->
+        <line class="ribbon" x1="40" y1="216" x2="440" y2="216" stroke="url(#copperGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- cell -->
+        <rect x="40" y="240" width="400" height="120" rx="6" fill="url(#silicon)" stroke="#1e3a8a"/>
+        <text x="50" y="258" fill="#94a3b8" font-size="9" font-family="ui-monospace,monospace" letter-spacing=".15em">c-Si CELL · n-type emitter / p-type base</text>
+        <!-- p-n junction -->
+        <line x1="40" y1="290" x2="440" y2="290" stroke="#22d3ee" stroke-opacity=".5" stroke-dasharray="3 3"/>
+        <text x="50" y="308" fill="#22d3ee" font-size="9" font-family="ui-monospace,monospace" letter-spacing=".15em">p–n JUNCTION</text>
+        <!-- electrons flowing -->
+        <circle cx="100" cy="320" r="3" fill="#22d3ee"><animate attributeName="cx" from="60" to="420" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="2.6s" repeatCount="indefinite"/></circle>
+        <circle cx="200" cy="335" r="3" fill="#22d3ee"><animate attributeName="cx" from="60" to="420" dur="3.2s" repeatCount="indefinite" begin="0.4s"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite" begin="0.4s"/></circle>
+        <circle cx="280" cy="350" r="3" fill="#22d3ee"><animate attributeName="cx" from="60" to="420" dur="3.6s" repeatCount="indefinite" begin="1.1s"/><animate attributeName="opacity" values="0;1;1;0" dur="3.6s" repeatCount="indefinite" begin="1.1s"/></circle>
+        <!-- back -->
+        <rect x="40" y="360" width="400" height="14" rx="2" fill="#475569"/>
+        <text x="46" y="372" fill="#cbd5e1" font-size="8" font-family="ui-monospace,monospace" letter-spacing=".12em">BACK CONTACT</text>
+        <rect x="40" y="378" width="400" height="14" rx="2" fill="#1e293b" stroke="#334155"/>
+        <text x="46" y="389" fill="#94a3b8" font-size="8" font-family="ui-monospace,monospace" letter-spacing=".12em">BACKSHEET</text>
+        <!-- comparison label -->
+        <line x1="226" y1="180" x2="226" y2="392" stroke="#475569" stroke-dasharray="2 4" opacity=".6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Section navigation">
+    <strong>On this page</strong>
+    <a href="#hypothesis">Hypothesis</a>
+    <a href="#novelty">Literature QC</a>
+    <a href="#lab-scene">Lab Scene <small style="color:var(--copper-2);font-family:monospace">·AR</small></a>
+    <a href="#protocol">Protocol</a>
+    <a href="#materials">Materials</a>
+    <a href="#budget">Budget</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#validation">Validation</a>
+    <a href="#failure-map">Failure Map</a>
+    <a href="#wiki">Wiki Digest</a>
+  </nav>
+
+  <main>
+    <div class="sec" id="hypothesis"><div class="sec-num">01</div><h2>Refined Hypothesis</h2><div class="sec-meta" id="hypo-meta"></div></div><div class="sec-rule"></div>
+    <div class="panel">
+      <dl style="margin:0" id="refined-list"></dl>
+    </div>
+
+    <div class="sec" id="novelty"><div class="sec-num">02</div><h2>Literature QC</h2><div class="sec-meta">novelty signal</div></div><div class="sec-rule"></div>
+    <div class="panel">
+      <div id="verdict-row" style="margin-bottom:12px"></div>
+      <p id="novelty-rationale" style="color:var(--text-dim);margin:8px 0 16px"></p>
+      <div id="novelty-refs"></div>
+    </div>
+
+    <div class="sec" id="lab-scene"><div class="sec-num">03</div><h2>Lab Scene</h2><div class="sec-meta" id="scene-meta">— stations · — bound steps</div></div><div class="sec-rule"></div>
+
+    <a class="ar-launch" id="ar-launch-cta" href="/ar?slug=2026-04-25_copper-replacing-silver-photovoltaic-panels" target="_blank" rel="noopener" aria-label="Launch the interactive 3D lab in a new tab">
+      <span class="ar-launch-glow" aria-hidden="true"></span>
+      <span class="ar-launch-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="40" height="40">
+          <defs>
+            <linearGradient id="ar-launch-cu" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde047"/><stop offset="1" stop-color="#9a3412"/></linearGradient>
+          </defs>
+          <rect x="10" y="14" width="44" height="36" rx="3" fill="#0f172a" stroke="#1e3a8a"/>
+          <g stroke="url(#ar-launch-cu)" stroke-width="1.6">
+            <line x1="14" y1="22" x2="50" y2="22"/><line x1="14" y1="28" x2="50" y2="28"/><line x1="14" y1="34" x2="50" y2="34"/><line x1="14" y1="40" x2="50" y2="40"/><line x1="14" y1="46" x2="50" y2="46"/>
+          </g>
+          <line x1="32" y1="14" x2="32" y2="50" stroke="#ea580c" stroke-width="2" opacity=".8"/>
+        </svg>
+      </span>
+      <span class="ar-launch-text">
+        <span class="ar-launch-kicker">3D Lab · WebXR + Camera Overlay</span>
+        <span class="ar-launch-title">Launch the interactive 3D lab</span>
+        <span class="ar-launch-sub">Pick up the <strong style="color:var(--copper-3)">copper-finger coupon</strong> and the <strong style="color:var(--silver)">silver-finger control</strong>, flip them, watch the furnace fire, and step through the protocol on a real bench.</span>
+      </span>
+      <span class="ar-launch-arrow" aria-hidden="true">→</span>
+    </a>
+
+    <div class="scene-card">
+      <div class="scene-head">
+        <h3>Top-down preview · Cu / Ag substitution workflow</h3>
+        <div class="scene-meta" id="scene-coords">SLUG <span id="scene-slug"></span></div>
+      </div>
+      <div class="scene-stage">
+        <svg class="scene-svg" id="ar-svg" viewBox="0 0 900 450" preserveAspectRatio="xMidYMid meet" aria-label="Top-down lab bench"></svg>
+      </div>
+      <div class="scene-controls">
+        <button class="ar-btn" id="ar-prev" aria-label="Previous step">◀ Prev</button>
+        <button class="ar-btn primary" id="ar-play" aria-label="Play / pause">⏸ Pause</button>
+        <button class="ar-btn" id="ar-next" aria-label="Next step">Next ▶</button>
+        <button class="ar-btn" id="ar-reset" aria-label="Reset to first step">↺ Reset</button>
+        <div class="ar-readout" id="ar-readout"></div>
+      </div>
+      <div class="ar-pips" id="ar-pips" role="tablist" aria-label="Jump to step"></div>
+      <div class="scene-hint">
+        <kbd>←</kbd> <kbd>→</kbd> step · <kbd>Space</kbd> play/pause · <kbd>R</kbd> reset · click any station to open its wiki entry
+      </div>
+    </div>
+
+    <div class="sec" id="protocol"><div class="sec-num">04</div><h2>Protocol</h2><div class="sec-meta" id="protocol-meta"></div></div><div class="sec-rule"></div>
+    <div class="protocol" id="protocol-list"></div>
+
+    <div class="sec" id="materials"><div class="sec-num">05</div><h2>Materials</h2><div class="sec-meta">supplier · catalog · qty</div></div><div class="sec-rule"></div>
+    <div class="tbl-wrap"><table id="materials-table"></table></div>
+
+    <div class="sec" id="budget"><div class="sec-num">06</div><h2>Budget</h2><div class="sec-meta">USD · plan-v1</div></div><div class="sec-rule"></div>
+    <div class="panel">
+      <div class="budget-grid">
+        <div class="donut">
+          <svg viewBox="-110 -110 220 220" id="donut-svg" aria-label="Budget donut chart"></svg>
+          <div class="donut-center"><div class="v" id="donut-total">$—</div><div class="l">total</div></div>
+        </div>
+        <div class="donut-legend" id="donut-legend"></div>
+      </div>
+    </div>
+
+    <div class="sec" id="timeline"><div class="sec-num">07</div><h2>Timeline</h2><div class="sec-meta">12-week phased gantt</div></div><div class="sec-rule"></div>
+    <div class="gantt" id="gantt"></div>
+
+    <div class="sec" id="validation"><div class="sec-num">08</div><h2>Validation</h2><div class="sec-meta">success · failure · measurements</div></div><div class="sec-rule"></div>
+    <div class="val-grid" id="val-grid"></div>
+
+    <div class="sec" id="failure-map"><div class="sec-num">09</div><h2>Failure Map</h2><div class="sec-meta" id="fmap-meta"></div></div><div class="sec-rule"></div>
+    <div class="fmap-grid" id="fmap-grid"></div>
+
+    <div class="sec" id="wiki"><div class="sec-num">10</div><h2>Wiki Digest</h2><div class="sec-meta" id="wd-meta"></div></div><div class="sec-rule"></div>
+    <div class="wd-tabs" id="wd-tabs" role="tablist"></div>
+    <div id="wd-panes"></div>
+
+    <footer>
+      Generated by GROUNDWORK · Pass 4 · plan-v1 · single-file static artifact · keyboard-navigable, print-ready.
+      <div class="links">
+        <a href="../hypothesis.md">hypothesis.md</a><a href="plan.md">plan.md</a><a href="plan.json">plan.json</a><a href="ar.json">ar.json</a><a href="../wiki/index.md">wiki/index.md</a>
+      </div>
+    </footer>
+  </main>
+</div>
+
+<div class="drill-backdrop" id="drill-backdrop"></div>
+<aside class="drill" id="drill" role="dialog" aria-modal="true" aria-labelledby="drill-title">
+  <div class="drill-head">
+    <span class="kind" id="drill-kind">WIKI</span>
+    <h3 id="drill-title">—</h3>
+    <button class="drill-close" id="drill-close" aria-label="Close drilldown">×</button>
+  </div>
+  <div class="drill-body" id="drill-body"></div>
+</aside>
+
+<script type="application/json" id="plan-data">
+{
+  "slug": "2026-04-25_copper-replacing-silver-photovoltaic-panels",
+  "domain": "photovoltaics-materials-science",
+  "original_question": "we want to change silver for copper in the fotovoltaic panels",
+  "refined": {
+    "intervention": "Replace silver-based photovoltaic metallization with a copper-paste route on crystalline silicon cells, using silver-paste controls and explicit copper-contamination safeguards.",
+    "outcome": "Maintain initial electrical performance and module-relevant reliability while reducing silver demand.",
+    "threshold": "Copper-metallized cells should show no more than 0.3 percentage point absolute efficiency loss versus silver-metallized controls and should show no copper-diffusion-linked degradation after reliability screening.",
+    "mechanism": "Copper reduces silver material intensity and cost pressure, but only works if contact resistance, oxidation, furnace contamination, and copper migration into silicon or module packaging are controlled.",
+    "control": "Matched crystalline silicon cells or coupons processed with commercial photovoltaic silver conductive paste."
+  },
+  "novelty": {
+    "verdict": "similar-work-exists",
+    "rationale": "The wiki contains direct prior demonstrations of copper paste and copper-plated silicon PV contacts, so the broad idea is not novel. The proposed plan is a focused validation and decision experiment: compare a copper-paste substitution route against a silver-paste control while explicitly testing the failure modes that have limited adoption.",
+    "references": [
+      {"title":"Thermal Stable High-Efficiency Copper Screen Printed Back Contact Solar Cells","authors":"Chen et al.","year":2022,"doi":"10.1002/solr.202200874","wiki_page":"sources/2022-chen-thermal-stable-copper-screen-printed-back-contact"},
+      {"title":"Copper Outdiffusion from Copper-Plated Solar Cell Contacts During Damp Heat Exposure","authors":"Karas et al.","year":2022,"doi":"","wiki_page":"sources/2022-karas-copper-outdiffusion-damp-heat"},
+      {"title":"International Technology Roadmap for Photovoltaic 2024: 15th Edition","authors":"VDMA Photovoltaics Equipment","year":2024,"doi":"","wiki_page":"sources/2024-itrpv-roadmap"}
+    ]
+  },
+  "summary":{"total_budget_usd":93500,"total_timeline_weeks":12,"phases_count":6,"sources_count":14,"failure_modes_count":13,"top_failure_modes":["copper-diffusion-into-silicon","copper-outdiffusion-during-damp-heat","copper-contamination-of-shared-furnace"]},
+  "protocol":[
+    {"step":1,"title":"Lock experimental design and procurement gates","duration_minutes":1440,"rationale":"The wiki supports copper paste as the most Monday-startable route, while the plating route lacks a complete nickel chemistry procurement trail.","reagents":[{"wiki_page":"reagents/copper-metallization-paste","qty":"50 g planning allowance","supplier":"TBD supplier-qualified copper PV paste","catalog":"quote required"},{"wiki_page":"reagents/silver-conductive-paste","qty":"50 g planning allowance","supplier":"DuPont","catalog":"Solamet family"},{"wiki_page":"organisms/perc-solar-cell","qty":"60 matched cells or process-ready precursors","supplier":"commercial PV cell vendor or partner lab","catalog":"quote required"}],"failure_warnings":[{"wiki_page":"failure-modes/plating-bath-procurement-gap","severity":"medium","mitigation":"Use the copper-paste route for plan-v1; ingest additional supplier sources before attempting a plating-first plan."},{"wiki_page":"failure-modes/copper-contamination-of-shared-furnace","severity":"high","mitigation":"Require a dedicated copper firing run, furnace witness wafers, or a documented decontamination sequence before processing silver controls after copper."}],"source_citations":["sources/2018-lee-conductive-copper-paste","sources/2025-stradins-front-side-copper-metallization-paste-crada","sources/catalog-dupont-solamet-photovoltaic-metallizations"]},
+    {"step":2,"title":"Prepare matched silver-control and copper-test lots","duration_minutes":2880,"rationale":"Matched lots isolate the metal substitution from cell-to-cell and layout variation.","reagents":[{"wiki_page":"reagents/silver-conductive-paste","qty":"control lot, same layout as copper group where feasible","supplier":"DuPont","catalog":"Solamet family"},{"wiki_page":"reagents/copper-metallization-paste","qty":"test lot, matched print geometry target","supplier":"TBD supplier-qualified copper PV paste","catalog":"quote required"}],"failure_warnings":[{"wiki_page":"failure-modes/contact-resistivity-drift","severity":"high","mitigation":"Use identical layouts where possible and pre-register fill-factor, series-resistance, and line-resistance comparisons."}],"source_citations":["sources/2022-chen-thermal-stable-copper-screen-printed-back-contact","sources/catalog-dupont-solamet-photovoltaic-metallizations"]},
+    {"step":3,"title":"Screen print copper paste and silver paste","duration_minutes":2880,"rationale":"Copper paste screen printing is the selected method because it is closest to existing silver-paste workflows and is supported by multiple wiki sources.","reagents":[{"wiki_page":"reagents/copper-metallization-paste","qty":"print all copper-test cells plus 3 witness coupons","supplier":"TBD supplier-qualified copper PV paste","catalog":"quote required"},{"wiki_page":"reagents/silver-conductive-paste","qty":"print all control cells plus 3 witness coupons","supplier":"DuPont","catalog":"Solamet family"}],"failure_warnings":[{"wiki_page":"failure-modes/copper-oxidation","severity":"medium","mitigation":"Follow supplier storage and atmosphere guidance; inspect paste print quality and reject visibly oxidized or discontinuous prints."},{"wiki_page":"failure-modes/contact-resistivity-drift","severity":"high","mitigation":"Measure finger width, height, line resistance, and post-fire I-V before moving to module stress."}],"source_citations":["sources/2018-lee-conductive-copper-paste","sources/2022-chen-thermal-stable-copper-screen-printed-back-contact","methods/copper-paste-screen-printing"]},
+    {"step":4,"title":"Dry, fire, and control furnace cross-contamination","duration_minutes":2880,"rationale":"The Stradins CRADA report makes furnace contamination a first-order process risk for copper paste adoption.","reagents":[{"wiki_page":"reagents/copper-metallization-paste","qty":"printed copper lot","supplier":"TBD supplier-qualified copper PV paste","catalog":"quote required"},{"wiki_page":"reagents/silver-conductive-paste","qty":"printed silver control lot","supplier":"DuPont","catalog":"Solamet family"}],"failure_warnings":[{"wiki_page":"failure-modes/copper-contamination-of-shared-furnace","severity":"high","mitigation":"Run copper after baseline silver controls or use a dedicated furnace; include blank witness wafers and a post-copper silver sentinel lot if equipment is shared."},{"wiki_page":"failure-modes/copper-diffusion-into-silicon","severity":"critical","mitigation":"Avoid direct copper-to-silicon contact in the initial plan unless using a validated silver/dielectric barrier geometry; reserve sacrificial cells for SIMS/EDS."}],"source_citations":["sources/2025-stradins-front-side-copper-metallization-paste-crada","failure-modes/copper-contamination-of-shared-furnace","failure-modes/copper-diffusion-into-silicon"]},
+    {"step":5,"title":"Initial electrical and contact characterization","duration_minutes":4320,"rationale":"The refined hypothesis requires performance parity before reliability claims are meaningful.","reagents":[{"wiki_page":"organisms/crystalline-silicon-solar-cell","qty":"all processed cells","supplier":"same as Step 1","catalog":"same lot"}],"failure_warnings":[{"wiki_page":"failure-modes/contact-resistivity-drift","severity":"high","mitigation":"Measure I-V, series resistance, fill factor, line resistance, and EL/PL images before stress; stop if copper group misses the 0.3 percentage point efficiency threshold."}],"source_citations":["sources/2022-chen-thermal-stable-copper-screen-printed-back-contact","methods/copper-paste-screen-printing","failure-modes/contact-resistivity-drift"]},
+    {"step":6,"title":"Copper migration sentinel analysis","duration_minutes":7200,"rationale":"Karas et al. show that copper migration can be the hidden failure mode even when copper contacts are electrically attractive.","reagents":[{"wiki_page":"reagents/copper-metallization-paste","qty":"3 sacrificial copper cells or coupons","supplier":"TBD supplier-qualified copper PV paste","catalog":"quote required"}],"failure_warnings":[{"wiki_page":"failure-modes/copper-diffusion-into-silicon","severity":"critical","mitigation":"Use SIMS depth profiling or SEM/EDS cross-sections on sacrificial samples before encapsulation; do not proceed if copper appears in silicon above control baseline."}],"source_citations":["sources/2022-karas-copper-outdiffusion-damp-heat","failure-modes/copper-diffusion-into-silicon"]},
+    {"step":7,"title":"Encapsulate mini-modules for reliability screen","duration_minutes":7200,"rationale":"Module packaging can change copper behavior; bare-cell success is not enough for a panel claim.","reagents":[{"wiki_page":"reagents/eva-encapsulant","qty":"10 mini-modules","supplier":"PV module materials supplier","catalog":"quote required"},{"wiki_page":"reagents/tpo-encapsulant","qty":"optional 10 mini-modules if budget allows","supplier":"PV module materials supplier","catalog":"quote required"}],"failure_warnings":[{"wiki_page":"failure-modes/damp-heat-module-corrosion","severity":"high","mitigation":"Package matched copper and silver cells; include EVA at minimum and TPO/POE if comparing encapsulant chemistry."},{"wiki_page":"failure-modes/copper-outdiffusion-during-damp-heat","severity":"high","mitigation":"Reserve post-stress cross-sections and SIMS/EDS budget for copper mini-modules."}],"source_citations":["sources/2021-park-combined-damp-heat-temperature-cycle-test","sources/2022-karas-copper-outdiffusion-damp-heat","sources/2024-lachowicz-aging-tests-copper-plated-heterojunction"]},
+    {"step":8,"title":"Run accelerated damp-heat and thermal-cycling gate","duration_minutes":60480,"rationale":"The wiki makes damp heat the non-negotiable gate for copper metallization reliability.","reagents":[{"wiki_page":"organisms/photovoltaic-mini-module","qty":"matched copper and silver mini-modules","supplier":"assembled in Step 7","catalog":"N/A"}],"failure_warnings":[{"wiki_page":"failure-modes/damp-heat-module-corrosion","severity":"high","mitigation":"Run 85 deg C / 85% RH exposure with early electrical checkpoints; compare copper mini-modules against silver controls."},{"wiki_page":"failure-modes/thermal-cycling-interconnect-stress","severity":"medium","mitigation":"Add -40 to +85 deg C thermal cycling if chamber access allows; otherwise record as a required follow-on before module-readiness claims."},{"wiki_page":"failure-modes/copper-outdiffusion-during-damp-heat","severity":"high","mitigation":"After stress, perform cross-section EDS/SIMS on copper mini-modules, especially if fill factor or EL changes."}],"source_citations":["methods/damp-heat-and-thermal-cycling-pv-reliability-test","sources/2021-park-combined-damp-heat-temperature-cycle-test","sources/2022-karas-copper-outdiffusion-damp-heat"]},
+    {"step":9,"title":"Post-stress decision analysis","duration_minutes":4320,"rationale":"The final decision must integrate cost/material reduction with the failure map; copper is useful only if it preserves performance and reliability.","reagents":[{"wiki_page":"reagents/copper","qty":"N/A analysis target","supplier":"N/A","catalog":"N/A"},{"wiki_page":"reagents/silver","qty":"N/A comparison target","supplier":"N/A","catalog":"N/A"}],"failure_warnings":[{"wiki_page":"failure-modes/silver-supply-and-cost-scaling-risk","severity":"high","mitigation":"Only claim commercial value if silver reduction is tied to unchanged performance and reliability metrics."},{"wiki_page":"failure-modes/contact-resistivity-drift","severity":"high","mitigation":"Reject copper substitution if post-stress series resistance or fill factor degrades beyond silver-control behavior."}],"source_citations":["sources/2024-itrpv-roadmap","sources/2021-goldschmidt-resource-efficient-terawatt-photovoltaics","failure-modes/contact-resistivity-drift"]}
+  ],
+  "materials":[
+    {"item":"Screen-printable copper metallization paste","wiki_page":"reagents/copper-metallization-paste","supplier":"TBD supplier-qualified copper PV paste","catalog":"quote required","qty":"50 g","price_usd":2500,"tag":"copper"},
+    {"item":"Photovoltaic silver conductive paste","wiki_page":"reagents/silver-conductive-paste","supplier":"DuPont","catalog":"Solamet family","qty":"50 g","price_usd":3000,"tag":"silver"},
+    {"item":"Matched crystalline silicon PERC cells or precursors","wiki_page":"organisms/perc-solar-cell","supplier":"commercial PV cell vendor or partner lab","catalog":"quote required","qty":"60 cells","price_usd":9000,"tag":"silicon"},
+    {"item":"Printing screens or stencils","wiki_page":"methods/copper-paste-screen-printing","supplier":"screen/stencil vendor","catalog":"custom layout","qty":"2 matched layouts","price_usd":5000,"tag":"tool"},
+    {"item":"Witness silicon wafers / coupons","wiki_page":"organisms/crystalline-silicon-solar-cell","supplier":"silicon wafer supplier","catalog":"quote required","qty":"25","price_usd":1500,"tag":"silicon"},
+    {"item":"Mini-module encapsulation materials","wiki_page":"organisms/photovoltaic-mini-module","supplier":"PV module materials supplier","catalog":"EVA/TPO, glass/backsheet/interconnect quote","qty":"20 mini-module sets","price_usd":6000,"tag":"module"},
+    {"item":"General consumables and safety supplies","wiki_page":"reagents/copper","supplier":"lab supplier","catalog":"assorted","qty":"one lot","price_usd":2500,"tag":"misc"}
+  ],
+  "budget":[
+    {"line_item":"Copper paste procurement allowance","amount_usd":2500,"wiki_page":"reagents/copper-metallization-paste","color":"#ea580c"},
+    {"line_item":"Silver paste control procurement","amount_usd":3000,"wiki_page":"reagents/silver-conductive-paste","color":"#cbd5e1"},
+    {"line_item":"PERC cells / process-ready precursors","amount_usd":9000,"wiki_page":"organisms/perc-solar-cell","color":"#22d3ee"},
+    {"line_item":"Screens / stencils and print setup","amount_usd":5000,"wiki_page":"methods/copper-paste-screen-printing","color":"#06b6d4"},
+    {"line_item":"Witness coupons and consumables","amount_usd":4000,"wiki_page":"failure-modes/copper-contamination-of-shared-furnace","color":"#94a3b8"},
+    {"line_item":"Mini-module encapsulation materials","amount_usd":6000,"wiki_page":"organisms/photovoltaic-mini-module","color":"#facc15"},
+    {"line_item":"I-V, EL/PL, and line-resistance characterization","amount_usd":10000,"wiki_page":"failure-modes/contact-resistivity-drift","color":"#a78bfa"},
+    {"line_item":"SEM/EDS cross-sections","amount_usd":6000,"wiki_page":"failure-modes/copper-diffusion-into-silicon","color":"#f472b6"},
+    {"line_item":"SIMS or equivalent copper depth profiling","amount_usd":12000,"wiki_page":"failure-modes/copper-diffusion-into-silicon","color":"#ec4899"},
+    {"line_item":"Damp-heat / thermal-cycling chamber time","amount_usd":30000,"wiki_page":"methods/damp-heat-and-thermal-cycling-pv-reliability-test","color":"#f87171"},
+    {"line_item":"Contingency for repeat prints and facility scheduling","amount_usd":6000,"wiki_page":"failure-modes/contact-resistivity-drift","color":"#34d399"}
+  ],
+  "timeline":[
+    {"phase":"Design lock & procurement","start":1,"end":2,"depends_on":[],"kind":"plan","outputs":["lot plan","quotes","contamination plan"]},
+    {"phase":"Print, dry, fire, witness controls","start":3,"end":3,"depends_on":["Design lock & procurement"],"kind":"lab","outputs":["silver control lot","copper test lot","witness wafers"]},
+    {"phase":"Initial characterization","start":4,"end":4,"depends_on":["Print, dry, fire, witness controls"],"kind":"lab","outputs":["I-V/EL dataset","go/no-go gate"]},
+    {"phase":"Mini-module assembly + Cu sentinel","start":5,"end":5,"depends_on":["Initial characterization"],"kind":"mod","outputs":["matched mini-modules","SIMS/EDS sentinel"]},
+    {"phase":"Accelerated reliability screen","start":6,"end":11,"depends_on":["Mini-module assembly + Cu sentinel"],"kind":"crit","outputs":["damp-heat data","cycling data","post-stress imaging"]},
+    {"phase":"Post-stress failure analysis & decision","start":12,"end":12,"depends_on":["Accelerated reliability screen"],"kind":"deci","outputs":["Cu migration assessment","silver-reduction decision","next iteration"]}
+  ],
+  "validation":{
+    "success":["Initial copper-cell efficiency is no more than 0.3 percentage point absolute below the matched silver-paste control.","Copper group shows no copper signal above silver-control baseline in sacrificial SIMS/EDS checks before mini-module stress.","After damp-heat screening, copper mini-modules do not degrade more than matched silver controls in maximum power, fill factor, series resistance, or EL-visible damage."],
+    "failure":["Stop before encapsulation if initial copper efficiency misses the 0.3 percentage point threshold.","Stop before reliability stress if copper is detected in silicon above control baseline.","Reject module-readiness claim if damp-heat degradation exceeds silver-control behavior or copper outdiffusion is observed."],
+    "measurements":["I-V under standard test conditions","Fill factor, series resistance, line resistance","EL or PL imaging before and after stress","SEM/EDS cross-sections of copper contacts","SIMS or equivalent copper depth profile on sacrificial and post-stress samples"]
+  },
+  "failure_map":[
+    {"wiki_page":"failure-modes/copper-diffusion-into-silicon","severity":"critical","steps":[4,6,8],"mitigation":"Use barrier-aware copper-paste geometry, sacrificial SIMS/EDS checks, and post-stress copper migration analysis."},
+    {"wiki_page":"failure-modes/copper-outdiffusion-during-damp-heat","severity":"high","steps":[7,8,9],"mitigation":"Run mini-module damp heat, inspect capping/contact regions, and compare EVA versus polyolefin encapsulation if budget allows."},
+    {"wiki_page":"failure-modes/copper-contamination-of-shared-furnace","severity":"high","steps":[1,4],"mitigation":"Use dedicated copper firing, furnace witness wafers, or documented decontamination and sentinel controls."},
+    {"wiki_page":"failure-modes/contact-resistivity-drift","severity":"high","steps":[2,3,5,8,9],"mitigation":"Track line/contact resistance, fill factor, series resistance, and EL images through every phase."},
+    {"wiki_page":"failure-modes/damp-heat-module-corrosion","severity":"high","steps":[7,8],"mitigation":"Use matched mini-modules and humidity-stress checkpoints before claiming module-ready copper substitution."}
+  ],
+  "wiki_digest":{
+    "methods":[
+      {"path":"methods/nickel-copper-plated-silicon-metallization","summary":"Plated Ni/Cu stacks for silicon contacts with strong conductivity and strong dependence on barrier quality."},
+      {"path":"methods/nickel-diffusion-barrier-plating","summary":"Nickel or nickel-silicide layers that block copper ingress into silicon and control junction reliability."},
+      {"path":"methods/light-induced-plating","summary":"Selective metal deposition under illumination, often discussed as a scale route for copper contacts."},
+      {"path":"methods/copper-paste-screen-printing","summary":"Copper paste route closest to existing silver-print workflows, enabling practical substitution trials."},
+      {"path":"methods/fire-through-copper-paste-metallization","summary":"Fire-through copper contacting strategy with process windows tied to adhesion and resistance drift."},
+      {"path":"methods/damp-heat-and-thermal-cycling-pv-reliability-test","summary":"Accelerated reliability gate for module-readiness claims under humidity and temperature stress."},
+      {"path":"methods/silicon-heterojunction-copper-plated-mini-module-aging","summary":"Aging-focused SHJ module method informing copper migration and cap-layer behavior."},
+      {"path":"methods/photovoltaic-silver-use-roadmapping","summary":"Roadmap context for silver demand, copper transition pressure, and manufacturability constraints."}
+    ],
+    "reagents":[
+      {"path":"reagents/copper","summary":"Lower-cost conductor candidate with high conductivity and contamination-management requirements."},
+      {"path":"reagents/silver","summary":"Incumbent contact material with strong performance and high cost / supply pressure."},
+      {"path":"reagents/nickel","summary":"Barrier / seed metal central to Cu migration control in plated stacks."},
+      {"path":"reagents/copper-sulfate-pentahydrate","summary":"Common Cu plating chemistry input used in referenced barrier and plating workflows."},
+      {"path":"reagents/nickel-sulfate-hexahydrate","summary":"Ni plating precursor tied to diffusion-barrier process development."},
+      {"path":"reagents/silver-conductive-paste","summary":"Commercial silver-paste control baseline for copper substitution decisions."},
+      {"path":"reagents/copper-metallization-paste","summary":"Screen-printable copper candidate; current wiki flags procurement / catalog gaps."},
+      {"path":"reagents/tin-capping-layer","summary":"Protective capping option for copper stacks to manage oxidation and outdiffusion."},
+      {"path":"reagents/eva-encapsulant","summary":"Common module encapsulant with known damp-heat relevance for corrosion behavior."},
+      {"path":"reagents/tpo-encapsulant","summary":"Polyolefin encapsulant alternative for comparative reliability packaging."}
+    ],
+    "organisms":[
+      {"path":"organisms/crystalline-silicon-solar-cell","summary":"Baseline PV device system used throughout the comparison design."},
+      {"path":"organisms/perc-solar-cell","summary":"Practical silicon testbed for near-term copper-paste demonstrations."},
+      {"path":"organisms/ibc-solar-cell","summary":"Back-contact architecture represented in copper-contact source evidence."},
+      {"path":"organisms/silicon-heterojunction-solar-cell","summary":"SHJ context where low-temperature metallization choices are critical."},
+      {"path":"organisms/topcon-solar-cell","summary":"Roadmap-dominant architecture with known copper transition opportunities and gaps."},
+      {"path":"organisms/photovoltaic-mini-module","summary":"Encapsulated test system required for damp-heat and thermal-cycle gates."}
+    ],
+    "failure-modes":[
+      {"path":"failure-modes/copper-diffusion-into-silicon","summary":"Critical failure mode that can erase electrical gains if barriers or stack design are inadequate."},
+      {"path":"failure-modes/copper-outdiffusion-during-damp-heat","summary":"Humidity-temperature stress can drive copper movement through contacts and package layers."},
+      {"path":"failure-modes/nickel-barrier-breakthrough","summary":"Barrier failures under thermal or process stress reopen Cu migration paths."},
+      {"path":"failure-modes/copper-oxidation","summary":"Oxidized contact surfaces degrade conductivity and print-to-print consistency."},
+      {"path":"failure-modes/contact-adhesion-loss","summary":"Delamination / finger lift causes increased series resistance and power losses."},
+      {"path":"failure-modes/background-plating","summary":"Off-pattern plating introduces shunt risk and process-yield loss."},
+      {"path":"failure-modes/contact-resistivity-drift","summary":"Drift in line / contact resistance drives efficiency loss over time or stress."},
+      {"path":"failure-modes/damp-heat-module-corrosion","summary":"Corrosion and package aging under damp heat challenge long-term field viability."},
+      {"path":"failure-modes/thermal-cycling-interconnect-stress","summary":"Repeated temperature swings fatigue interconnects and solder joints."},
+      {"path":"failure-modes/copper-contamination-of-shared-furnace","summary":"Shared thermal equipment can spread Cu contamination across process lines."},
+      {"path":"failure-modes/copper-hillock-electromigration-instability","summary":"Microstructural / current-driven instability can degrade fine-line contacts."},
+      {"path":"failure-modes/silver-supply-and-cost-scaling-risk","summary":"Economic and supply-chain pressure motivating lower-silver metallization."},
+      {"path":"failure-modes/plating-bath-procurement-gap","summary":"Procurement / data gap that currently limits plating-first execution readiness."}
+    ],
+    "sources":[
+      {"path":"sources/2014-rehman-ni-cu-plating-review","summary":"Review framing Ni/Cu plating opportunities and reliability caveats in silicon PV."},
+      {"path":"sources/2018-cheng-nickel-barrier-copper-metallization","summary":"Barrier-centric copper metallization evidence highlighting Ni role in diffusion blocking."},
+      {"path":"sources/2018-lee-conductive-copper-paste","summary":"Copper paste conductive route evidence relevant to screen-print substitution."},
+      {"path":"sources/2021-goldschmidt-resource-efficient-terawatt-photovoltaics","summary":"Resource-efficiency and terawatt-scale silver pressure context."},
+      {"path":"sources/2022-chen-thermal-stable-copper-screen-printed-back-contact","summary":"Direct copper screen-print performance benchmark against conventional controls."},
+      {"path":"sources/2022-karas-copper-outdiffusion-damp-heat","summary":"Damp-heat copper outdiffusion evidence supporting migration sentinels."},
+      {"path":"sources/2024-itrpv-roadmap","summary":"Manufacturing roadmap signal for silver demand and copper transition timelines."},
+      {"path":"sources/2024-lachowicz-aging-tests-copper-plated-heterojunction","summary":"Aging and reliability evidence on copper-plated SHJ mini-modules."},
+      {"path":"sources/2025-liang-progress-crystalline-silicon-heterojunction","summary":"SHJ progress context including metallization transition trends."},
+      {"path":"sources/2025-stradins-front-side-copper-metallization-paste-crada","summary":"Front-side copper paste CRADA evidence including furnace contamination concerns."},
+      {"path":"sources/2026-intal-critical-look-cu-fire-through","summary":"Critical view on fire-through Cu implementation and instability risks."},
+      {"path":"sources/2021-park-combined-damp-heat-temperature-cycle-test","summary":"Combined stress-test methodology grounding reliability gate design."},
+      {"path":"sources/catalog-dupont-solamet-photovoltaic-metallizations","summary":"Commercial silver control-paste catalog baseline."},
+      {"path":"sources/catalog-fisher-copper-sulfate-pentahydrate","summary":"Catalog evidence for Cu plating chemistry input."}
+    ]
+  }
+}
+</script>
+
+<script type="application/json" id="ar-data">
+{
+  "version": 1,
+  "slug": "2026-04-25_copper-replacing-silver-photovoltaic-panels",
+  "title": "Copper paste substitution with silver controls",
+  "scene": {
+    "stations": [
+      {"id":"planning-console","label":"Design + procurement console","kind":"flat-instrument","color":"#60a5fa","position":[-0.36,0,-0.13],"wiki_page":"methods/photovoltaic-silver-use-roadmapping"},
+      {"id":"screen-printer","label":"Screen-printing station","kind":"printer","color":"#22d3ee","position":[-0.16,0,-0.13],"wiki_page":"methods/copper-paste-screen-printing"},
+      {"id":"firing-furnace","label":"Dry + fire furnace lane","kind":"furnace","color":"#f59e0b","position":[0.06,0,-0.13],"wiki_page":"methods/fire-through-copper-paste-metallization"},
+      {"id":"electrical-bench","label":"I-V + contact-resistance bench","kind":"flat-instrument","color":"#a78bfa","position":[0.30,0,-0.13],"wiki_page":"failure-modes/contact-resistivity-drift"},
+      {"id":"silver-cell-coupon","label":"Ag-paste control coupon","kind":"solar-cell","color":"#cbd5e1","position":[-0.24,0,0.0],"wiki_page":"reagents/silver-conductive-paste"},
+      {"id":"copper-cell-coupon","label":"Cu-paste test coupon","kind":"solar-cell","color":"#ea580c","position":[-0.06,0,0.0],"wiki_page":"reagents/copper-metallization-paste"},
+      {"id":"migration-analysis","label":"Cross-section + diffusion analysis","kind":"microscope","color":"#f472b6","position":[-0.36,0,0.13],"wiki_page":"failure-modes/copper-diffusion-into-silicon"},
+      {"id":"module-packaging","label":"Mini-module encapsulation bench","kind":"dish","color":"#34d399","position":[-0.18,0,0.13]},
+      {"id":"mini-module","label":"Encapsulated mini-module","kind":"pv-module","color":"#ea580c","position":[0.04,0,0.13],"wiki_page":"organisms/photovoltaic-mini-module"},
+      {"id":"reliability-chamber","label":"Damp-heat / cycling chamber","kind":"incubator","color":"#f87171","position":[0.24,0,0.13],"wiki_page":"methods/damp-heat-and-thermal-cycling-pv-reliability-test"},
+      {"id":"decision-console","label":"Post-stress decision dashboard","kind":"flat-instrument","color":"#14b8a6","position":[0.40,0,0.13],"wiki_page":"organisms/photovoltaic-mini-module"}
+    ]
+  },
+  "step_bindings": [
+    {"step":1,"focus_station":"planning-console","animation":"none","label_override":"Lock design, procurement gates, and contamination controls","state_changes":[{"station":"planning-console","property":"active","to":true}]},
+    {"step":2,"focus_station":"silver-cell-coupon","animation":"observe","label_override":"Inspect Ag-paste baseline coupon — pick it up and check both sides","state_changes":[{"station":"silver-cell-coupon","property":"active","to":true},{"station":"screen-printer","property":"active","to":true}]},
+    {"step":3,"focus_station":"copper-cell-coupon","animation":"observe","label_override":"Print copper paste — inspect the matched Cu coupon next to the Ag baseline","state_changes":[{"station":"copper-cell-coupon","property":"active","to":true},{"station":"screen-printer","property":"color","to":"#ea580c"}]},
+    {"step":4,"focus_station":"firing-furnace","animation":"heat","label_override":"Dry/fire lots while controlling shared-furnace copper risk","state_changes":[{"station":"firing-furnace","property":"active","to":true},{"station":"firing-furnace","property":"color","to":"#ef4444"}]},
+    {"step":5,"focus_station":"electrical-bench","animation":"measure","label_override":"Run initial I-V, line-resistance, and EL checks on both coupons","state_changes":[{"station":"electrical-bench","property":"active","to":true},{"station":"silver-cell-coupon","property":"active","to":true},{"station":"copper-cell-coupon","property":"active","to":true}]},
+    {"step":6,"focus_station":"copper-cell-coupon","animation":"observe","label_override":"SIMS/EDS migration sentinel — flip the Cu coupon to inspect the contact","state_changes":[{"station":"migration-analysis","property":"active","to":true},{"station":"copper-cell-coupon","property":"color","to":"#dc2626"}]},
+    {"step":7,"focus_station":"module-packaging","animation":"transfer","label_override":"Encapsulate matched mini-modules (EVA baseline, TPO optional)","state_changes":[{"station":"module-packaging","property":"active","to":true},{"station":"mini-module","property":"active","to":true}]},
+    {"step":8,"focus_station":"reliability-chamber","animation":"heat","label_override":"Run accelerated damp-heat and thermal-cycling gates","state_changes":[{"station":"reliability-chamber","property":"active","to":true},{"station":"mini-module","property":"color","to":"#f87171"}]},
+    {"step":9,"focus_station":"decision-console","animation":"measure","label_override":"Integrate reliability and cost evidence for go/no-go decision","state_changes":[{"station":"decision-console","property":"active","to":true}]}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  document.documentElement.classList.remove('no-js');
+  const plan = JSON.parse(document.getElementById('plan-data').textContent);
+  const ar = JSON.parse(document.getElementById('ar-data').textContent);
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => [...document.querySelectorAll(s)];
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const minutes = (m) => m >= 1440 ? `${(m/1440).toFixed(m % 1440 ? 1 : 0)} d` : `${m} min`;
+  const anchor = (p) => p.replace(/\//g,'-');
+  const usd = (n) => `$${n.toLocaleString()}`;
+  const ALL_ENTITIES = new Map();
+  Object.entries(plan.wiki_digest).forEach(([type, arr]) => arr.forEach((e) => ALL_ENTITIES.set(e.path, {...e, type})));
+
+  // ── Hero stats ───────────────────────────────────────────────────────────
+  $('#hero-lead').innerHTML = `
+    Replace silver-based metallization with a copper-paste route on c-Si cells, using matched silver controls.
+    <strong style="color:var(--copper-3)">Threshold:</strong> &lt; 0.3 pp absolute efficiency loss with no copper-diffusion-linked degradation after damp-heat.
+    <strong style="color:var(--silver)">Control:</strong> commercial photovoltaic silver paste.
+  `;
+  $('#stat-budget').textContent = (plan.summary.total_budget_usd).toLocaleString();
+  $('#stat-budget-sub').textContent = `over ${plan.summary.total_timeline_weeks} weeks · ${plan.summary.phases_count} phases`;
+  $('#stat-weeks').textContent = plan.summary.total_timeline_weeks;
+  $('#stat-phases').textContent = `${plan.summary.phases_count} phases`;
+  $('#stat-sources').textContent = plan.summary.sources_count;
+  $('#stat-fmodes').textContent = plan.summary.failure_modes_count;
+  $('#hypo-meta').textContent = `${plan.domain} · plan-v1`;
+  $('#topbar-title').textContent = 'Cu/Ag PV Metallization · plan-v1';
+
+  // ── Refined hypothesis (definition list) ─────────────────────────────────
+  const REFINED_LBL = {intervention:'Intervention',outcome:'Outcome',threshold:'Threshold',mechanism:'Mechanism',control:'Control'};
+  $('#refined-list').innerHTML = Object.entries(plan.refined).map(([k,v]) => {
+    const tinted = v.replace(/copper/gi, '<span class="copper-tag">Cu</span>')
+                    .replace(/silver/gi, '<span class="silver-tag">Ag</span>');
+    return `<div class="field"><dt>${REFINED_LBL[k] || k}</dt><dd>${tinted}</dd></div>`;
+  }).join('');
+
+  // ── Novelty ──────────────────────────────────────────────────────────────
+  const verdictClass = {'similar-work-exists':'similar','exact-match-found':'exact','not-found':'notfound'}[plan.novelty.verdict] || 'similar';
+  $('#verdict-row').innerHTML = `<span class="verdict ${verdictClass}">${plan.novelty.verdict.replace(/-/g,' ')}</span>`;
+  $('#novelty-rationale').textContent = plan.novelty.rationale;
+  $('#novelty-refs').innerHTML = plan.novelty.references.map((r) => `
+    <div class="ref-card">
+      <div class="t">${esc(r.title)}</div>
+      <div class="m">${esc(r.authors||'')} · ${r.year||'n/a'} ${r.doi ? `· DOI <a href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener">${esc(r.doi)}</a>` : ''} · <button class="src-cite" data-entity="${esc(r.wiki_page)}">${esc(r.wiki_page)}</button></div>
+    </div>
+  `).join('');
+
+  // ── Lab Scene SVG ────────────────────────────────────────────────────────
+  $('#scene-meta').textContent = `${ar.scene.stations.length} stations · ${ar.step_bindings.length} bound steps`;
+  $('#scene-slug').textContent = ar.slug;
+  const svg = $('#ar-svg');
+  // background bench
+  const bench = document.createElementNS(SVGNS,'rect');
+  bench.setAttribute('x','24'); bench.setAttribute('y','24'); bench.setAttribute('width','852');
+  bench.setAttribute('height','402'); bench.setAttribute('rx','18'); bench.setAttribute('ry','18');
+  bench.setAttribute('class','scene-floor');
+  svg.appendChild(bench);
+  // bench label
+  const benchLbl = document.createElementNS(SVGNS,'text');
+  benchLbl.setAttribute('x','40'); benchLbl.setAttribute('y','46');
+  benchLbl.setAttribute('fill','#475569'); benchLbl.setAttribute('font-size','10');
+  benchLbl.setAttribute('font-family','ui-monospace,Menlo,monospace');
+  benchLbl.setAttribute('letter-spacing','.18em');
+  benchLbl.textContent = 'BENCH · 0.9 m × 0.45 m';
+  svg.appendChild(benchLbl);
+  // workflow rail (silver row top, copper row bottom)
+  const rail1 = document.createElementNS(SVGNS,'line');
+  rail1.setAttribute('x1','60'); rail1.setAttribute('y1','155'); rail1.setAttribute('x2','840'); rail1.setAttribute('y2','155');
+  rail1.setAttribute('stroke','rgba(203,213,225,.16)'); rail1.setAttribute('stroke-width','1'); rail1.setAttribute('stroke-dasharray','3 5');
+  svg.appendChild(rail1);
+  const rail2 = document.createElementNS(SVGNS,'line');
+  rail2.setAttribute('x1','60'); rail2.setAttribute('y1','390'); rail2.setAttribute('x2','840'); rail2.setAttribute('y2','390');
+  rail2.setAttribute('stroke','rgba(234,88,12,.16)'); rail2.setAttribute('stroke-width','1'); rail2.setAttribute('stroke-dasharray','3 5');
+  svg.appendChild(rail2);
+
+  // electron flow path between sequential focus stations
+  const flow = document.createElementNS(SVGNS,'path');
+  flow.setAttribute('class','scene-flow');
+  flow.setAttribute('id','scene-flow-path');
+  svg.appendChild(flow);
+
+  function glyph(kind){
+    if (kind === 'furnace')          return '<rect x="34" y="22" width="52" height="36" rx="6"/><path d="M48 30 q4 6 0 12 t0 12"/><path d="M60 30 q4 6 0 12 t0 12"/><path d="M72 30 q4 6 0 12 t0 12"/>';
+    if (kind === 'microscope')       return '<path d="M34 56h52"/><rect x="40" y="48" width="40" height="6" rx="1"/><path d="M52 22h12l8 16h-24z"/><circle cx="60" cy="44" r="4"/>';
+    if (kind === 'incubator')        return '<rect x="38" y="18" width="44" height="44" rx="5"/><path d="M44 32h32M44 42h32"/><circle cx="76" cy="22" r="2"/>';
+    if (kind === 'printer')          return '<rect x="30" y="26" width="60" height="26" rx="4"/><path d="M44 18h32M60 52v10M48 56h24"/>';
+    if (kind === 'dish')             return '<ellipse cx="60" cy="40" rx="26" ry="11"/><ellipse cx="60" cy="38" rx="22" ry="9"/>';
+    if (kind === 'flat-instrument')  return '<rect x="30" y="28" width="60" height="22" rx="3"/><circle cx="42" cy="39" r="2.5"/><circle cx="56" cy="39" r="2.5"/><path d="M68 36h16M68 42h12"/>';
+    if (kind === 'plate-reader')     return '<rect x="30" y="26" width="60" height="26" rx="3"/><g><circle cx="42" cy="34" r="2"/><circle cx="50" cy="34" r="2"/><circle cx="58" cy="34" r="2"/><circle cx="66" cy="34" r="2"/><circle cx="74" cy="34" r="2"/><circle cx="82" cy="34" r="2"/><circle cx="42" cy="44" r="2"/><circle cx="50" cy="44" r="2"/><circle cx="58" cy="44" r="2"/><circle cx="66" cy="44" r="2"/><circle cx="74" cy="44" r="2"/><circle cx="82" cy="44" r="2"/></g>';
+    if (kind === 'solar-cell')       return '<rect x="32" y="20" width="56" height="40" rx="2" fill="#0f1c3f" stroke="currentColor"/><line x1="36" y1="24" x2="36" y2="56" stroke="currentColor" stroke-width="1.4"/><line x1="42" y1="24" x2="42" y2="56" stroke="currentColor" stroke-width="1.4"/><line x1="48" y1="24" x2="48" y2="56" stroke="currentColor" stroke-width="1.4"/><line x1="54" y1="24" x2="54" y2="56" stroke="currentColor" stroke-width="1.4"/><line x1="60" y1="24" x2="60" y2="56" stroke="currentColor" stroke-width="1.4"/><line x1="66" y1="24" x2="66" y2="56" stroke="currentColor" stroke-width="1.4"/><line x1="72" y1="24" x2="72" y2="56" stroke="currentColor" stroke-width="1.4"/><line x1="78" y1="24" x2="78" y2="56" stroke="currentColor" stroke-width="1.4"/><line x1="84" y1="24" x2="84" y2="56" stroke="currentColor" stroke-width="1.4"/><rect x="32" y="32" width="56" height="2.4" fill="currentColor"/><rect x="32" y="46" width="56" height="2.4" fill="currentColor"/>';
+    if (kind === 'pv-module')        return '<rect x="22" y="20" width="76" height="40" rx="3" fill="#0f1c3f" stroke="currentColor"/><g stroke="currentColor" stroke-width="1.2"><line x1="28" y1="22" x2="28" y2="58"/><line x1="34" y1="22" x2="34" y2="58"/><line x1="46" y1="22" x2="46" y2="58"/><line x1="52" y1="22" x2="52" y2="58"/><line x1="64" y1="22" x2="64" y2="58"/><line x1="70" y1="22" x2="70" y2="58"/><line x1="82" y1="22" x2="82" y2="58"/><line x1="88" y1="22" x2="88" y2="58"/></g><rect x="22" y="38" width="76" height="2" fill="currentColor"/><rect x="40" y="20" width="2" height="40" fill="rgba(255,255,255,.18)"/><rect x="58" y="20" width="2" height="40" fill="rgba(255,255,255,.18)"/><rect x="76" y="20" width="2" height="40" fill="rgba(255,255,255,.18)"/>';
+    return '<rect x="34" y="22" width="52" height="36" rx="6"/><circle cx="60" cy="40" r="7"/>';
+  }
+  const stationEls = new Map();
+  ar.scene.stations.forEach((s, i) => {
+    const x = (s.position[0] + 0.45) * 1000 - 60;
+    const y = (s.position[2] + 0.225) * 1000 - 40;
+    const g = document.createElementNS(SVGNS,'g');
+    g.setAttribute('class','station active');
+    g.setAttribute('data-id', s.id);
+    g.setAttribute('transform', `translate(${x},${y})`);
+    g.style.color = s.color || '#94a3b8';
+    g.innerHTML = `
+      <circle class="pulse" cx="60" cy="40" r="42"/>
+      <rect class="body" x="0" y="0" width="120" height="80" rx="14" fill="currentColor" fill-opacity=".14" stroke="currentColor"/>
+      <g class="glyph">${glyph(s.kind)}</g>
+      <text class="id-tag" x="60" y="14">${esc(`S${i+1} · ${s.kind}`)}</text>
+      <text class="label" x="60" y="98">${esc(s.label.length > 28 ? s.label.slice(0,26)+'…' : s.label)}</text>
+    `;
+    g.addEventListener('click', () => {
+      if (s.wiki_page) openDrill(s.wiki_page, {pulse:s.id});
+    });
+    g.addEventListener('mouseenter', () => g.classList.add('hover'));
+    svg.appendChild(g);
+    stationEls.set(s.id, {el:g, x:x+60, y:y+40, station:s});
+  });
+
+  // ── State machine ────────────────────────────────────────────────────────
+  const maxStep = ar.step_bindings.length;
+  const visited = new Set([1]);
+  let step = 1;
+  let playing = true;
+  let timer = null;
+  const PLAY_MS = 3500;
+
+  function buildFlow(targetIds){
+    if (targetIds.length < 2) { flow.setAttribute('d',''); return; }
+    const pts = targetIds.map((id) => stationEls.get(id)).filter(Boolean);
+    if (pts.length < 2) { flow.setAttribute('d',''); return; }
+    let d = `M ${pts[0].x} ${pts[0].y}`;
+    for (let i = 1; i < pts.length; i++) {
+      const a = pts[i-1], b = pts[i];
+      const cx = (a.x + b.x) / 2;
+      d += ` C ${cx} ${a.y}, ${cx} ${b.y}, ${b.x} ${b.y}`;
+    }
+    flow.setAttribute('d', d);
+  }
+
+  function applyStep(n, opts={}){
+    step = Math.max(1, Math.min(maxStep, n));
+    visited.add(step);
+    const active = ar.step_bindings.find((b) => b.step === step);
+    // accumulated state
+    const state = {};
+    ar.scene.stations.forEach((s) => state[s.id] = {color:s.color||'#94a3b8',active:false,label:s.label});
+    ar.step_bindings.filter((b) => b.step <= step).forEach((b) =>
+      (b.state_changes||[]).forEach((c) => { if(state[c.station]) state[c.station][c.property] = c.to; }));
+    // apply to elements
+    ar.scene.stations.forEach((s) => {
+      const e = stationEls.get(s.id); if (!e) return;
+      const el = e.el;
+      el.classList.remove('focus','anim-operate','anim-heat','anim-measure','anim-observe','anim-transfer','anim-mix','anim-none');
+      el.style.color = state[s.id].color;
+      const isFocus = s.id === active.focus_station;
+      el.classList.toggle('focus', isFocus);
+      el.classList.toggle('active', !!state[s.id].active || isFocus);
+      if (isFocus && active.animation && active.animation !== 'none') {
+        el.classList.add(`anim-${active.animation}`);
+      }
+    });
+    // electron flow connecting visited focus stations up to current
+    const focusIds = ar.step_bindings.filter((b) => b.step <= step).map((b) => b.focus_station);
+    const dedup = focusIds.filter((id, i) => i === 0 || focusIds[i-1] !== id);
+    buildFlow(dedup);
+
+    // readout
+    $('#ar-readout').innerHTML = `<strong>STEP ${step}/${maxStep}</strong> · <em>${esc(active.label_override || active.focus_station)}</em>`;
+    $('#topbar-progress').textContent = `step ${step} / ${maxStep}`;
+    $('#topbar-fill').style.width = `${(step/maxStep)*100}%`;
+
+    // pips
+    $$('#ar-pips .ar-pip').forEach((b) => {
+      const n = Number(b.dataset.step);
+      b.classList.toggle('current', n === step);
+      b.classList.toggle('done', n < step);
+    });
+
+    // protocol step highlight
+    $$('.step').forEach((s) => {
+      const sn = Number(s.dataset.step);
+      s.classList.toggle('current', sn === step);
+      s.classList.toggle('done', sn < step);
+    });
+
+    if (opts.scrollProtocol) {
+      const target = document.querySelector(`.step[data-step="${step}"]`);
+      if (target) target.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+
+  function startTimer(){
+    stopTimer();
+    timer = setInterval(() => { applyStep(step === maxStep ? 1 : step + 1); }, PLAY_MS);
+  }
+  function stopTimer(){ if (timer) { clearInterval(timer); timer = null; } }
+  function setPlaying(v){ playing = v; $('#ar-play').textContent = playing ? '⏸ Pause' : '▶ Play'; if (playing) startTimer(); else stopTimer(); }
+
+  // pip buttons
+  const pips = $('#ar-pips');
+  for (let i = 1; i <= maxStep; i++) {
+    const b = document.createElement('button');
+    b.className = 'ar-pip';
+    b.dataset.step = i;
+    b.setAttribute('role','tab');
+    b.setAttribute('aria-label', `Jump to step ${i}`);
+    const binding = ar.step_bindings[i-1];
+    b.innerHTML = `${i}<span class="pip-tip">${esc(binding.label_override || binding.focus_station)}</span>`;
+    b.onclick = () => { applyStep(i, {scrollProtocol:false}); };
+    pips.appendChild(b);
+  }
+  $('#ar-prev').onclick = () => applyStep(step - 1);
+  $('#ar-next').onclick = () => applyStep(step + 1);
+  $('#ar-play').onclick = () => setPlaying(!playing);
+  $('#ar-reset').onclick = () => { applyStep(1); visited.clear(); visited.add(1); };
+
+  // keyboard
+  document.addEventListener('keydown', (e) => {
+    if (e.target.matches('input,textarea,select')) return;
+    if (e.key === 'ArrowRight') { applyStep(step + 1); e.preventDefault(); }
+    else if (e.key === 'ArrowLeft') { applyStep(step - 1); e.preventDefault(); }
+    else if (e.key === ' ') { setPlaying(!playing); e.preventDefault(); }
+    else if (e.key === 'r' || e.key === 'R') { applyStep(1); }
+    else if (e.key === 'Escape') { closeDrill(); }
+  });
+
+  // ── Protocol ─────────────────────────────────────────────────────────────
+  const byStep = new Map(ar.step_bindings.map((b) => [b.step, b]));
+  $('#protocol-meta').textContent = `${plan.protocol.length} steps · ${plan.protocol.reduce((a,s)=>a+s.duration_minutes,0)} min total`;
+  $('#protocol-list').innerHTML = plan.protocol.map((s) => {
+    const b = byStep.get(s.step);
+    return `<article class="step" data-step="${s.step}" data-station="${esc(b ? b.focus_station : '')}">
+      <div class="step-head">
+        <span class="step-num">STEP ${String(s.step).padStart(2,'0')} / ${plan.protocol.length}</span>
+        <h3>${esc(s.title)}</h3>
+        <span class="duration">${minutes(s.duration_minutes)}</span>
+        ${b ? `<button class="station-link" data-jump-step="${s.step}">▶ jump in scene · ${esc(b.focus_station)}</button>` : ''}
+      </div>
+      <p class="rationale">${esc(s.rationale)}</p>
+      ${s.reagents.length ? `<h4>Reagents</h4><ul class="reagents">${s.reagents.map((r) => `
+        <li><button class="r-link" data-entity="${esc(r.wiki_page)}">${esc(r.wiki_page)}</button>${r.qty ? `<span class="r-qty">${esc(r.qty)}</span>` : ''}<span class="r-sup">${esc(r.supplier||'')}${r.catalog ? ' · '+esc(r.catalog) : ''}</span></li>
+      `).join('')}</ul>` : ''}
+      ${s.failure_warnings.length ? `<h4>Failure Warnings</h4>${s.failure_warnings.map((w) => `
+        <div class="callout ${esc(w.severity)}">
+          <span class="sev-badge">${esc(w.severity)}</span>
+          <div class="sev-body">
+            <div class="lbl"><button data-entity="${esc(w.wiki_page)}">${esc(w.wiki_page.replace('failure-modes/',''))}</button></div>
+            <div class="mit">${esc(w.mitigation)}</div>
+          </div>
+        </div>
+      `).join('')}` : ''}
+      ${s.source_citations.length ? `<div class="src-cites">cites: ${s.source_citations.map((c) => `<button class="src-cite" data-entity="${esc(c)}">${esc(c.replace('sources/','').replace('methods/','m:').replace('failure-modes/','f:'))}</button>`).join('')}</div>` : ''}
+    </article>`;
+  }).join('');
+
+  // jump-step buttons
+  $$('[data-jump-step]').forEach((b) => b.addEventListener('click', () => {
+    applyStep(Number(b.dataset.jumpStep));
+    document.querySelector('#lab-scene').scrollIntoView({behavior:'smooth', block:'start'});
+  }));
+
+  // ── Materials ───────────────────────────────────────────────────────────
+  const matTotal = plan.materials.reduce((a,m) => a + (m.price_usd||0), 0);
+  $('#materials-table').innerHTML = `
+    <thead><tr><th>Item</th><th>Wiki</th><th>Supplier · Catalog</th><th>Qty</th><th class="num">USD</th></tr></thead>
+    <tbody>
+      ${plan.materials.map((m) => `<tr>
+        <td><div style="color:#fff;font-weight:600">${esc(m.item)}</div><div style="font-size:11px;color:var(--muted);margin-top:2px">${m.tag === 'copper' ? '<span class="copper-tag">Cu</span>' : m.tag === 'silver' ? '<span class="silver-tag">Ag</span>' : ''}${esc(m.tag||'')}</div></td>
+        <td><button class="src-cite" data-entity="${esc(m.wiki_page)}">${esc(m.wiki_page)}</button></td>
+        <td><div>${esc(m.supplier||'—')}</div><div style="font-size:11px;color:var(--muted);margin-top:2px">${esc(m.catalog||'')}</div></td>
+        <td>${esc(m.qty||'')}</td>
+        <td class="num">${m.price_usd ? usd(m.price_usd) : '—'}</td>
+      </tr>`).join('')}
+      <tr class="tbl-total"><td colspan="4">Materials subtotal</td><td class="num">${usd(matTotal)}</td></tr>
+    </tbody>`;
+
+  // ── Budget donut ────────────────────────────────────────────────────────
+  const total = plan.budget.reduce((a,b)=>a+b.amount_usd,0);
+  $('#donut-total').textContent = `$${(total/1000).toFixed(0)}K`;
+  const donut = $('#donut-svg');
+  const R_OUT = 100, R_IN = 64;
+  let acc = 0;
+  plan.budget.forEach((b, i) => {
+    const frac = b.amount_usd / total;
+    const a0 = acc * Math.PI * 2 - Math.PI/2;
+    const a1 = (acc + frac) * Math.PI * 2 - Math.PI/2;
+    acc += frac;
+    const xo0 = Math.cos(a0)*R_OUT, yo0 = Math.sin(a0)*R_OUT;
+    const xo1 = Math.cos(a1)*R_OUT, yo1 = Math.sin(a1)*R_OUT;
+    const xi0 = Math.cos(a0)*R_IN, yi0 = Math.sin(a0)*R_IN;
+    const xi1 = Math.cos(a1)*R_IN, yi1 = Math.sin(a1)*R_IN;
+    const large = frac > 0.5 ? 1 : 0;
+    const path = `M ${xo0} ${yo0} A ${R_OUT} ${R_OUT} 0 ${large} 1 ${xo1} ${yo1} L ${xi1} ${yi1} A ${R_IN} ${R_IN} 0 ${large} 0 ${xi0} ${yi0} Z`;
+    const p = document.createElementNS(SVGNS,'path');
+    p.setAttribute('d', path);
+    p.setAttribute('fill', b.color);
+    p.setAttribute('class','donut-seg');
+    p.setAttribute('data-i', i);
+    p.addEventListener('mouseenter', () => highlightSeg(i));
+    p.addEventListener('mouseleave', () => highlightSeg(null));
+    p.addEventListener('click', () => openDrill(b.wiki_page));
+    donut.appendChild(p);
+  });
+  $('#donut-legend').innerHTML = plan.budget.map((b, i) => `
+    <div class="row" data-i="${i}">
+      <span class="sw" style="background:${b.color}"></span>
+      <span class="name">${esc(b.line_item)}</span>
+      <span class="pct">${((b.amount_usd/total)*100).toFixed(1)}%</span>
+      <span class="amt">${usd(b.amount_usd)}</span>
+    </div>
+  `).join('');
+  $$('#donut-legend .row').forEach((r) => {
+    r.addEventListener('mouseenter', () => highlightSeg(Number(r.dataset.i)));
+    r.addEventListener('mouseleave', () => highlightSeg(null));
+    r.addEventListener('click', () => openDrill(plan.budget[Number(r.dataset.i)].wiki_page));
+  });
+  function highlightSeg(i){
+    $$('.donut-seg').forEach((p) => p.classList.toggle('dim', i !== null && Number(p.dataset.i) !== i));
+    $$('#donut-legend .row').forEach((r) => { r.style.background = i !== null && Number(r.dataset.i) === i ? 'var(--panel-2)' : ''; });
+  }
+
+  // ── Gantt timeline ──────────────────────────────────────────────────────
+  $('#gantt').innerHTML = `
+    <div class="gantt-head"><div>Phase</div>
+      <div class="gantt-axis">${Array.from({length:12},(_,i)=>`<span>w${i+1}</span>`).join('')}</div>
+    </div>
+    ${plan.timeline.map((t) => {
+      const left = ((t.start - 1) / 12) * 100;
+      const width = ((t.end - t.start + 1) / 12) * 100;
+      const kindCls = t.kind || 'plan';
+      return `<div class="gantt-row">
+        <div class="gantt-name">${esc(t.phase)}<span class="small">w${t.start}${t.start!==t.end ? '–'+t.end : ''} · depends: ${t.depends_on.length ? esc(t.depends_on.join(', ')) : 'none'}</span></div>
+        <div class="gantt-bar-wrap"><div class="gantt-bar ${esc(kindCls)}" style="left:${left}%;width:${width}%">${t.start}${t.start !== t.end ? '–'+t.end : ''}</div></div>
+      </div>`;
+    }).join('')}
+  `;
+
+  // ── Validation ──────────────────────────────────────────────────────────
+  $('#val-grid').innerHTML = `
+    <div class="val-card success"><h4>✓ Success Criteria</h4><ul>${plan.validation.success.map((x)=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+    <div class="val-card failure"><h4>✗ Stop Conditions</h4><ul>${plan.validation.failure.map((x)=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+    <div class="val-card measure"><h4>↗ Measurements</h4><ul>${plan.validation.measurements.map((x)=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+  `;
+
+  // ── Failure map ─────────────────────────────────────────────────────────
+  $('#fmap-meta').textContent = `${plan.failure_map.length} top failure modes · click to drill in`;
+  $('#fmap-grid').innerHTML = plan.failure_map.map((f) => `
+    <div class="fcard ${esc(f.severity)}" data-entity="${esc(f.wiki_page)}">
+      <div class="f-head">
+        <span class="f-sev">${esc(f.severity)}</span>
+        <span class="f-id">${esc(f.wiki_page.replace('failure-modes/',''))}</span>
+      </div>
+      <div class="f-mit">${esc(f.mitigation)}</div>
+      <div class="f-meta">applies to step${f.steps.length>1?'s':''}: ${f.steps.map((s)=>`<button class="src-cite" data-jump-step="${s}">${s}</button>`).join(' ')}</div>
+    </div>
+  `).join('');
+
+  // ── Wiki digest with tabs ───────────────────────────────────────────────
+  const ORDER = ['methods','reagents','organisms','failure-modes','sources'];
+  const ICONS = {methods:'⚗', reagents:'⌬', organisms:'⌖', 'failure-modes':'⚠', sources:'¶'};
+  const totalEntities = ORDER.reduce((a,k)=>a+(plan.wiki_digest[k]||[]).length,0);
+  $('#wd-meta').textContent = `${totalEntities} wiki entities`;
+  $('#wd-tabs').innerHTML = ORDER.map((k, i) => `<button class="wd-tab ${i===0?'active':''}" data-tab="${k}" role="tab">${ICONS[k]||''} ${k} <span class="ct">${(plan.wiki_digest[k]||[]).length}</span></button>`).join('');
+  $('#wd-panes').innerHTML = ORDER.map((k, i) => `
+    <div class="wd-pane ${i===0?'active':''}" data-pane="${k}">
+      <div class="wd-list">
+        ${(plan.wiki_digest[k]||[]).map((e) => `<div class="wd-item" data-entity="${esc(e.path)}"><span class="wd-id">${esc(e.path)}</span><span class="wd-sum">${esc(e.summary)}</span></div>`).join('')}
+      </div>
+    </div>
+  `).join('');
+  $$('.wd-tab').forEach((t) => t.addEventListener('click', () => {
+    $$('.wd-tab').forEach((x)=>x.classList.toggle('active', x === t));
+    $$('.wd-pane').forEach((p)=>p.classList.toggle('active', p.dataset.pane === t.dataset.tab));
+  }));
+
+  // ── Drilldown panel ─────────────────────────────────────────────────────
+  function openDrill(wikiPath){
+    const e = ALL_ENTITIES.get(wikiPath);
+    if (!e) {
+      // unknown entity (e.g. cited path not in digest) — render minimal stub
+      $('#drill-kind').textContent = wikiPath.split('/')[0].toUpperCase();
+      $('#drill-title').textContent = wikiPath;
+      $('#drill-body').innerHTML = `
+        <p style="color:var(--muted)">This entity is referenced by the plan but does not have a digest summary in this artifact.</p>
+        <p>Open the wiki page directly: <a href="../wiki/${esc(wikiPath)}.md"><code>wiki/${esc(wikiPath)}.md</code></a>.</p>
+      `;
+    } else {
+      const where = whereReferenced(wikiPath);
+      $('#drill-kind').textContent = e.type.toUpperCase();
+      $('#drill-title').textContent = e.path;
+      $('#drill-body').innerHTML = `
+        <div class="tag-row">
+          <span class="pill ${e.type==='failure-modes'?'warn':e.type==='sources'?'silver':'copper'}">${esc(e.type)}</span>
+          ${where.steps.length ? `<span class="pill">cited by step${where.steps.length>1?'s':''} ${where.steps.join(', ')}</span>` : ''}
+          ${where.budget ? `<span class="pill">in budget</span>` : ''}
+        </div>
+        <p>${esc(e.summary)}</p>
+        ${where.steps.length ? `<p style="color:var(--muted-2);font-size:12px;margin-top:18px">Used at: ${where.steps.map((s) => `<button class="src-cite" data-jump-step="${s}">step ${s}</button>`).join(' ')}</p>` : ''}
+        <a class="open-wiki" href="../wiki/${esc(e.path)}.md">Open wiki page →</a>
+      `;
+    }
+    $('#drill').classList.add('show'); $('#drill-backdrop').classList.add('show');
+    // wire up jump-step buttons inside drill
+    $$('.drill [data-jump-step]').forEach((b) => b.addEventListener('click', () => {
+      applyStep(Number(b.dataset.jumpStep));
+      closeDrill();
+      document.querySelector('#lab-scene').scrollIntoView({behavior:'smooth', block:'start'});
+    }));
+  }
+  function closeDrill(){ $('#drill').classList.remove('show'); $('#drill-backdrop').classList.remove('show'); }
+  function whereReferenced(path){
+    const steps = [];
+    plan.protocol.forEach((s) => {
+      const cited = [...s.reagents.map((r)=>r.wiki_page), ...s.failure_warnings.map((f)=>f.wiki_page), ...s.source_citations];
+      if (cited.includes(path)) steps.push(s.step);
+    });
+    const budget = plan.budget.some((b) => b.wiki_page === path);
+    return {steps, budget};
+  }
+  $('#drill-close').onclick = closeDrill;
+  $('#drill-backdrop').onclick = closeDrill;
+
+  // delegate clicks for any [data-entity]
+  document.body.addEventListener('click', (e) => {
+    const t = e.target.closest('[data-entity]');
+    if (!t) return;
+    const path = t.dataset.entity;
+    if (path) { e.preventDefault(); openDrill(path); }
+  });
+
+  // ── TOC scroll spy ──────────────────────────────────────────────────────
+  const tocLinks = $$('nav.toc a');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((x) => {
+        if (x.isIntersecting) tocLinks.forEach((l) => l.classList.toggle('active', l.getAttribute('href') === `#${x.target.id}`));
+      });
+    }, {rootMargin: '-40% 0px -55% 0px', threshold: 0});
+    tocLinks.forEach((a) => { const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) io.observe(el); });
+  }
+
+  // ── Init ────────────────────────────────────────────────────────────────
+  applyStep(1);
+  setPlaying(true);
+})();
+</script>
+</body>
+</html>

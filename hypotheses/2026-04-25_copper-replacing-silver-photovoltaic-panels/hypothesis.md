@@ -8,6 +8,8 @@ original_question: |
 created: 2026-04-25
 updated: 2026-04-25
 sources_count: 14
+latest_ar: wiki/plans/ar-v1
+latest_wiki_html: plan/wiki.html
 ---
 
 # Copper Replacing Silver in Photovoltaic Panels

@@ -14,10 +14,18 @@ const ARViewer = dynamic(() => import('@/components/ar/ARViewer'), {
   ),
 })
 
-export default function ARPage() {
+// /ar             — uses the SAMPLE_EXPERIMENT plan, or whatever's in sessionStorage.
+// /ar?slug=<slug> — fetches hypotheses/<slug>/plan/{plan,ar}.json from the server
+//                    so the wiki.html artifact can deep-link straight into a 3D lab.
+export default function ARPage({
+  searchParams,
+}: {
+  searchParams?: { slug?: string }
+}) {
+  const slug = searchParams?.slug?.trim() || undefined
   return (
     <main className="fixed inset-0 overflow-hidden">
-      <ARViewer plan={SAMPLE_EXPERIMENT} />
+      <ARViewer plan={SAMPLE_EXPERIMENT} slug={slug} />
     </main>
   )
 }

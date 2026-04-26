@@ -118,6 +118,8 @@ export type StationKind =
   | 'incubator'
   | 'furnace'
   | 'printer'
+  | 'solar-cell'
+  | 'pv-module'
 
 export type StationAnimation =
   | 'operate'

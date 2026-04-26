@@ -1,25 +1,28 @@
-export type LabObjectName =
-  | 'bench'
-  | 'beaker1'
-  | 'beaker2'
-  | 'beaker3'
-  | 'pipette'
-  | 'hotplate'
-  | 'tubes'
-  | 'none'
+import type { LabSceneSpec, StationAnimation } from './plan-schema'
+
+// A focus target is either a station id from the active LabSceneSpec, or the
+// sentinel 'none' for steps that don't bind to a specific station.
+export type LabObjectName = string
+
+// One short, gesture-first hint per step. Drives the "How" coach pill in the
+// AR HUD on mobile so the user knows whether to tap, drag, watch, etc.
+export type StepGesture = 'tap' | 'flip' | 'drag' | 'wait' | 'observe' | 'measure' | 'transfer' | 'heat' | 'mix'
 
 export interface ExperimentStep {
   id: number
   title: string
   instruction: string
   detail: string
-  focusObject: LabObjectName
-  animation?: 'pipette-transfer' | 'heat' | 'mix' | 'observe' | 'measure'
+  focusObject: LabObjectName // station id, or 'none'
+  focusLabel?: string // human label for the focus station, taken from the LabSceneSpec
+  animation?: StationAnimation
   isFailurePoint?: boolean
   failureWarning?: string
   failureFrequency?: string
-  duration?: string // e.g. "30 seconds", "5 minutes"
+  duration?: string
   reagents?: string[]
+  gesture?: StepGesture
+  interactionHint?: string // brief, mobile-friendly cue ("👆 Tap to fire the lots")
 }
 
 export interface ExperimentPlan {
@@ -28,6 +31,74 @@ export interface ExperimentPlan {
   domain: string
   totalDuration: string
   steps: ExperimentStep[]
+}
+
+// ─── Sample experiment + matching scene spec ────────────────────────────────
+//
+// Used as a fallback when no generated plan is in sessionStorage. Defines a
+// minimal 3-station scene (mixer, incubator, plate reader) so the live AR
+// route always has something concrete to render.
+
+export const SAMPLE_SCENE: LabSceneSpec = {
+  version: 1,
+  slug: 'sample-fitc-dextran',
+  title: 'Intestinal Permeability Assessment',
+  scene: {
+    stations: [
+      {
+        id: 'prep-bench',
+        label: 'Reagent prep bench',
+        kind: 'beaker',
+        color: '#fbbf24',
+        position: [-0.28, 0, -0.05],
+      },
+      {
+        id: 'tube-rack',
+        label: 'Standards tube rack',
+        kind: 'tube-rack',
+        color: '#4488ff',
+        position: [-0.05, 0, -0.05],
+      },
+      {
+        id: 'pipette',
+        label: 'Pipette',
+        kind: 'pipette',
+        color: '#f0f0f0',
+        position: [0.18, 0, -0.05],
+      },
+      {
+        id: 'incubator',
+        label: 'Incubator (4 h)',
+        kind: 'incubator',
+        color: '#34d399',
+        position: [-0.22, 0, 0.12],
+      },
+      {
+        id: 'centrifuge',
+        label: 'Centrifuge',
+        kind: 'flat-instrument',
+        color: '#a78bfa',
+        position: [0.0, 0, 0.12],
+      },
+      {
+        id: 'plate-reader',
+        label: 'Fluorescence plate reader',
+        kind: 'plate-reader',
+        color: '#22d3ee',
+        position: [0.25, 0, 0.12],
+      },
+    ],
+  },
+  step_bindings: [
+    { step: 1, focus_station: 'prep-bench', animation: 'mix' },
+    { step: 2, focus_station: 'tube-rack', animation: 'transfer' },
+    { step: 3, focus_station: 'pipette', animation: 'transfer' },
+    { step: 4, focus_station: 'incubator', animation: 'heat' },
+    { step: 5, focus_station: 'tube-rack', animation: 'measure' },
+    { step: 6, focus_station: 'centrifuge', animation: 'operate' },
+    { step: 7, focus_station: 'plate-reader', animation: 'measure' },
+    { step: 8, focus_station: 'plate-reader', animation: 'observe' },
+  ],
 }
 
 // Sample experiment: FITC-dextran gut permeability assay
@@ -44,7 +115,9 @@ export const SAMPLE_EXPERIMENT: ExperimentPlan = {
       instruction: 'Prepare 80mg/mL FITC-dextran (4kDa) in sterile PBS.',
       detail:
         'Weigh 80mg FITC-dextran (Sigma FD4) into the amber beaker. Add 1mL sterile PBS. Vortex until fully dissolved. Protect from light — wrap beaker in foil after mixing.',
-      focusObject: 'beaker1',
+      focusObject: 'prep-bench',
+      focusLabel: 'Reagent prep bench',
+      animation: 'mix',
       reagents: ['FITC-dextran 4kDa (Sigma FD4)', 'Sterile PBS (pH 7.4)'],
       duration: '5 minutes',
       isFailurePoint: true,
@@ -57,8 +130,9 @@ export const SAMPLE_EXPERIMENT: ExperimentPlan = {
       instruction: 'Prepare 8-point dilution series (0–100 µg/mL) in PBS.',
       detail:
         'Transfer 200µL of stock to tube 1. Serial dilute 1:1 across 7 tubes using the pipette. Tube 8 is PBS blank. Label each tube clearly.',
-      focusObject: 'tubes',
-      animation: 'pipette-transfer',
+      focusObject: 'tube-rack',
+      focusLabel: 'Standards tube rack',
+      animation: 'transfer',
       reagents: ['FITC-dextran stock', 'PBS'],
       duration: '10 minutes',
     },
@@ -69,7 +143,8 @@ export const SAMPLE_EXPERIMENT: ExperimentPlan = {
       detail:
         'Use a 20-gauge ball-tip gavage needle. Restrain mouse gently — do not compress thorax. Insert needle along the roof of the mouth, advance to stomach. Slow steady injection. Confirm no resistance.',
       focusObject: 'pipette',
-      animation: 'measure',
+      focusLabel: 'Pipette',
+      animation: 'transfer',
       duration: '2–3 minutes per animal',
       isFailurePoint: true,
       failureWarning: 'Aspiration into lungs causes immediate mortality',
@@ -81,7 +156,8 @@ export const SAMPLE_EXPERIMENT: ExperimentPlan = {
       instruction: 'Return mice to cages. Wait 4 hours. Maintain 37°C room temperature.',
       detail:
         'Set timer for 4 hours. Do not disturb animals during this period. Dim lighting to reduce stress. Monitor for any signs of distress every 30 minutes.',
-      focusObject: 'hotplate',
+      focusObject: 'incubator',
+      focusLabel: 'Incubator (4 h)',
       animation: 'heat',
       duration: '4 hours',
     },
@@ -91,7 +167,8 @@ export const SAMPLE_EXPERIMENT: ExperimentPlan = {
       instruction: 'Collect 200µL blood via cardiac puncture under isoflurane anaesthesia.',
       detail:
         'Anaesthetise with 2% isoflurane. Expose thorax. Insert 25G needle into left ventricle. Withdraw slowly. Transfer immediately to EDTA tube. Keep on ice.',
-      focusObject: 'tubes',
+      focusObject: 'tube-rack',
+      focusLabel: 'Standards tube rack',
       animation: 'measure',
       duration: '3–5 minutes per animal',
       isFailurePoint: true,
@@ -104,8 +181,9 @@ export const SAMPLE_EXPERIMENT: ExperimentPlan = {
       instruction: 'Centrifuge at 1,000g for 10 minutes at 4°C. Collect plasma supernatant.',
       detail:
         'Load EDTA tubes into centrifuge (balance opposite tubes). Set 1,000g, 10 min, 4°C. Remove carefully — do not disturb pellet. Transfer 100µL plasma to a new tube using the pipette.',
-      focusObject: 'pipette',
-      animation: 'pipette-transfer',
+      focusObject: 'centrifuge',
+      focusLabel: 'Centrifuge',
+      animation: 'operate',
       duration: '15 minutes',
     },
     {
@@ -114,8 +192,9 @@ export const SAMPLE_EXPERIMENT: ExperimentPlan = {
       instruction: 'Read plasma at Ex485/Em528nm on plate reader.',
       detail:
         'Add 100µL plasma and standards to 96-well black plate (black walls reduce scatter). Cover with foil. Read immediately — FITC bleaches under prolonged light exposure. Record raw fluorescence units.',
-      focusObject: 'beaker2',
-      animation: 'observe',
+      focusObject: 'plate-reader',
+      focusLabel: 'Fluorescence plate reader',
+      animation: 'measure',
       duration: '20 minutes',
       isFailurePoint: true,
       failureWarning: 'FITC photobleaches rapidly — read within 30 min of plating',
@@ -127,7 +206,8 @@ export const SAMPLE_EXPERIMENT: ExperimentPlan = {
       instruction: 'Interpolate plasma FITC-dextran concentration from standard curve.',
       detail:
         'Plot standards as fluorescence vs concentration. Fit linear regression (R² > 0.98 required). Interpolate sample values. Express as µg/mL FITC-dextran in plasma. Compare treated vs control groups by unpaired t-test (p < 0.05).',
-      focusObject: 'beaker3',
+      focusObject: 'plate-reader',
+      focusLabel: 'Fluorescence plate reader',
       animation: 'observe',
       duration: '30 minutes',
     },

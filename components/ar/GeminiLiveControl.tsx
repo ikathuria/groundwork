@@ -13,6 +13,9 @@ interface GeminiLiveControlProps {
   hypothesis: string
   currentStepText: string
   enabled: boolean
+  // Optional spatial intel handed to Gemini at session start so it knows which
+  // station ids it can target with highlight_object / point_at.
+  stations?: { id: string; label: string; kind: string }[]
   onToolCall: (call: ToolCall) => unknown | Promise<unknown>
 }
 
@@ -21,6 +24,7 @@ export default function GeminiLiveControl({
   hypothesis,
   currentStepText,
   enabled,
+  stations,
   onToolCall,
 }: GeminiLiveControlProps) {
   const sessionRef = useRef<GeminiLiveSession | null>(null)
@@ -45,7 +49,11 @@ export default function GeminiLiveControl({
     setModelText('')
 
     const session = new GeminiLiveSession({
-      systemInstruction: buildSystemInstruction(experimentTitle, hypothesis),
+      systemInstruction: buildSystemInstruction({
+        experimentTitle,
+        hypothesis,
+        stations,
+      }),
       callbacks: {
         onState: (s) => setState(s),
         onTranscript: (text, isUser) => {
@@ -59,7 +67,7 @@ export default function GeminiLiveControl({
 
     sessionRef.current = session
     await session.connect()
-  }, [experimentTitle, hypothesis])
+  }, [experimentTitle, hypothesis, stations])
 
   const disconnect = useCallback(() => {
     sessionRef.current?.disconnect()

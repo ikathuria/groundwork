@@ -11,12 +11,16 @@ import { captureCompositeFrame } from '@/lib/gemini-vision'
 
 export type ToolName =
   | 'highlight_object'
+  | 'point_at'
+  | 'clear_pointer'
   | 'advance_step'
   | 'previous_step'
   | 'play_animation'
   | 'reset_lab'
   | 'set_mode'
   | 'toggle_step_gate'
+  | 'open_panel'
+  | 'close_panel'
 
 export type ToolCall = {
   name: ToolName
@@ -47,18 +51,53 @@ const TOOL_DECLARATIONS: FunctionDeclaration[] = [
   {
     name: 'highlight_object',
     description:
-      'Pulse a green glow on a specific lab object to direct the user\'s attention to it. Use this when explaining or pointing things out.',
+      'Pulse a green glow on a specific lab station (by station id, e.g. "perfusion-bioreactor", "plate-reader", "dlp-printer") to direct the user\'s attention to it. The valid station ids for this experiment are listed in the system prompt. Use this for a soft "look here" cue. For an explicit deictic gesture (a literal arrow that points), use point_at instead.',
     parameters: {
       type: Type.OBJECT,
       properties: {
         object: {
           type: Type.STRING,
-          enum: ['beaker1', 'beaker2', 'beaker3', 'pipette', 'hotplate', 'tubes'],
-          description: 'Which lab object to highlight.',
+          description: 'Station id from the active LabSceneSpec (kebab-case).',
         },
       },
       required: ['object'],
     },
+  },
+  {
+    name: 'point_at',
+    description:
+      'Draw an animated arrow on the user\'s screen pointing at a specific element, then hold it for ~6 seconds. Use this whenever you mention "this one", "that button", "the highlighted station", etc. — point first, narrate second. The target is either a kebab-case station id (any value listed under STATIONS in the system prompt) OR one of the named UI affordances: "next-button", "prev-button", "mode-toggle", "gate-toggle", "reset-button", "lab-assistant", "step-sheet". You may include a short label (≤24 chars) that renders next to the arrow as a quick caption.',
+    parameters: {
+      type: Type.OBJECT,
+      properties: {
+        target: {
+          type: Type.STRING,
+          description: 'Station id OR named UI affordance (see description).',
+        },
+        label: {
+          type: Type.STRING,
+          description: 'Optional short caption to render next to the arrow (≤24 chars).',
+        },
+      },
+      required: ['target'],
+    },
+  },
+  {
+    name: 'clear_pointer',
+    description: 'Hide the pointer arrow before its auto-dismiss timer fires. Use this when you\'re finished drawing the user\'s attention to that target and want a clean screen.',
+    parameters: { type: Type.OBJECT, properties: {} },
+  },
+  {
+    name: 'open_panel',
+    description:
+      'Pull the bottom step panel into its expanded state so the user can read the full instruction, reagents, duration, and detailed protocol. Use when the user asks "what does this say?" or "show me the details".',
+    parameters: { type: Type.OBJECT, properties: {} },
+  },
+  {
+    name: 'close_panel',
+    description:
+      'Collapse the bottom step panel back to its peek state so the user can see more of the lab. Useful right after you\'ve answered a question or before pointing at something behind the panel.',
+    parameters: { type: Type.OBJECT, properties: {} },
   },
   {
     name: 'advance_step',
@@ -72,13 +111,14 @@ const TOOL_DECLARATIONS: FunctionDeclaration[] = [
   },
   {
     name: 'play_animation',
-    description: 'Play a demonstration animation on the lab to show the user what to do.',
+    description:
+      'Play a demonstration animation on the currently highlighted station. Choose one that matches the action (heat = warm/incubate, mix = vortex/wobble, transfer = pipette/seed, measure = read/quantify, observe = visualise, operate = run instrument).',
     parameters: {
       type: Type.OBJECT,
       properties: {
         animation: {
           type: Type.STRING,
-          enum: ['pipette-transfer', 'heat', 'mix', 'observe', 'measure'],
+          enum: ['operate', 'mix', 'heat', 'observe', 'measure', 'transfer', 'none'],
         },
       },
       required: ['animation'],
@@ -136,17 +176,26 @@ export class GeminiLiveSession {
 
     try {
       // Try ephemeral-token mint first (preferred — keeps server key off the wire).
-      // Fall back to NEXT_PUBLIC_GEMINI_API_KEY if the mint endpoint fails or the
-      // account doesn't have token-creation access yet.
+      // The /api/gemini-token route always responds 200; if `token` is null it
+      // also returns a `reason` we can surface for diagnostics. We then fall
+      // back to NEXT_PUBLIC_GEMINI_API_KEY without spamming the console for
+      // known-unsupported configurations (e.g. the new AQ.* key format).
       let apiKey: string | null = null
+      let mintReason: string | null = null
       try {
         const tokenRes = await fetch('/api/gemini-token', { method: 'POST' })
         if (tokenRes.ok) {
-          const data = await tokenRes.json()
+          const data = (await tokenRes.json()) as {
+            token: string | null
+            reason?: string
+          }
           apiKey = data.token
+          mintReason = data.reason ?? null
+        } else {
+          mintReason = `http-${tokenRes.status}`
         }
       } catch {
-        // network error — fall through
+        mintReason = 'network-error'
       }
 
       if (!apiKey) {
@@ -156,7 +205,13 @@ export class GeminiLiveSession {
             'No Gemini auth available — token mint failed and NEXT_PUBLIC_GEMINI_API_KEY is unset.',
           )
         }
-        console.warn('[gemini-live] Falling back to NEXT_PUBLIC_GEMINI_API_KEY (key visible in browser).')
+        // Quiet log: ephemeral mint isn't available today for AQ.* keys, so
+        // this is the expected path, not a misconfiguration.
+        if (mintReason && mintReason !== 'aq-key-unsupported') {
+          console.info(
+            `[gemini-live] Using NEXT_PUBLIC_GEMINI_API_KEY (mint reason: ${mintReason})`,
+          )
+        }
         apiKey = fallback
       }
 
@@ -389,34 +444,89 @@ export class GeminiLiveSession {
 
 // ─── System instruction builder ─────────────────────────────────────────────
 
-export function buildSystemInstruction(experimentTitle: string, hypothesis: string): string {
+export interface SystemInstructionOptions {
+  experimentTitle: string
+  hypothesis: string
+  // Sent at session start so Gemini knows which station ids it can pass to
+  // highlight_object / point_at and what each one is for. Updated via
+  // pushContextUpdate as stations get rearranged or activated.
+  stations?: { id: string; label: string; kind: string }[]
+}
+
+export function buildSystemInstruction(
+  opts: SystemInstructionOptions | string,
+  hypothesisLegacy?: string,
+): string {
+  // Backwards-compat: older callers pass (title, hypothesis) as positional args.
+  const o: SystemInstructionOptions =
+    typeof opts === 'string'
+      ? { experimentTitle: opts, hypothesis: hypothesisLegacy ?? '' }
+      : opts
+
+  const stationLines =
+    (o.stations ?? [])
+      .map((s) => `  - ${s.id}  (${s.kind})  →  "${s.label}"`)
+      .join('\n') || '  (none yet — you will be told when stations come online)'
+
   return `You are an AR lab assistant guiding a scientist through an experiment in real time.
 
-You can SEE both their physical environment (their camera) and the rendered 3D virtual lab (which beaker is glowing, what's loaded in the pipette, whether the hot plate is active).
+You can SEE everything on the user's screen — their camera feed, the 3D virtual lab, AND the HTML overlay (step panel, dock buttons, hover labels). The frame is composited every second so visual feedback lags by ~1s.
 
 You can HEAR them and respond with natural voice in real time.
 
-You have tools to:
-- highlight_object: pulse a green glow on a lab object to draw attention
-- advance_step / previous_step: move through the protocol
-- play_animation: demonstrate a step
-- set_mode: switch between guided (auto-demo) and interactive (user taps objects)
-- toggle_step_gate: turn the "must perform action to advance" gate on or off
-- reset_lab: start over
+────────────────────────────────────────────────────────────
+TOOLS — show, then tell
+────────────────────────────────────────────────────────────
+- point_at(target, label?): Draw an animated arrow at a station OR a named
+  UI affordance. **Use this whenever you say "this", "that", "here",
+  "the highlighted one", or describe a button by purpose.** Point FIRST,
+  narrate SECOND — the user's eyes follow the arrow while you talk.
+- clear_pointer: Hide the arrow when you've moved on.
+- highlight_object(object): Pulse a soft green glow on a 3D station. Good
+  for ambient "look this way" cues. point_at is more explicit.
+- play_animation(animation): Demonstrate a step on the currently highlighted
+  station (heat / mix / transfer / measure / observe / operate / none).
+- advance_step / previous_step: Move through the protocol.
+- open_panel / close_panel: Pull up / collapse the bottom step sheet.
+- set_mode("guided" | "interactive"): Guided auto-plays animations;
+  interactive lets the user trigger them.
+- toggle_step_gate(enabled): Lock/unlock the "do the gesture before
+  advancing" rule.
+- reset_lab: Start the experiment over.
 
+UI AFFORDANCE TARGETS for point_at (always available):
+  - "next-button"     — advances to the next step
+  - "prev-button"     — goes to the previous step
+  - "mode-toggle"     — guided ↔ interactive switch (right-edge dock)
+  - "gate-toggle"     — locks/unlocks the do-the-gesture-to-advance rule
+  - "reset-button"    — resets the whole lab
+  - "lab-assistant"   — the Gemini Live card (you, basically)
+  - "step-sheet"      — the bottom panel where step details live
+
+STATIONS in this lab (use these exact ids):
+${stationLines}
+
+────────────────────────────────────────────────────────────
 CURRENT EXPERIMENT
-Title: ${experimentTitle}
-Hypothesis: ${hypothesis}
+────────────────────────────────────────────────────────────
+Title: ${o.experimentTitle}
+Hypothesis: ${o.hypothesis}
 
+────────────────────────────────────────────────────────────
 STYLE
+────────────────────────────────────────────────────────────
 - Be conversational and warm, like a senior scientist mentoring a junior.
-- Keep responses brief — they have their hands full. Two sentences is usually enough.
+- Keep responses brief — two sentences is usually enough.
+- POINT BEFORE YOU TALK. When the user asks "what's next?", call point_at on
+  the relevant station or the next-button, THEN say "tap right here to ___."
 - React to what's happening on screen, don't lecture.
-- When they ask "what's next?" or sound ready, advance the step and narrate it briefly.
-- When they sound confused, highlight the relevant object before explaining.
-- When you see them perform an action correctly (in the camera or the virtual lab), acknowledge it briefly.
-- If you see a known failure point coming up, warn them BEFORE they do it, not after.
-- Never read out long protocol details — they can read those themselves.
+- When they ask "what's next?" or sound ready, point at the relevant target
+  and narrate the action; advance the step once they confirm or tap.
+- When you see them perform an action correctly, acknowledge briefly and
+  call clear_pointer.
+- If a failure point is approaching, warn them BEFORE they do it, point at
+  the offending station, and say what to watch for.
+- Never read long protocol detail — open_panel and tell them where to look.
 
 You start in the listening state. The user will speak first.`
 }

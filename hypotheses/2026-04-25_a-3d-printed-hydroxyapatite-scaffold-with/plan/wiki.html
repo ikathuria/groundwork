@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -85,6 +85,48 @@
   .source-cite:hover{background:#334155;text-decoration:none}
   .caution{border-left:3px solid var(--warn);background:#1a160a;padding:8px 12px;border-radius:4px;margin:6px 0;font-size:13px}
   .footer{color:var(--muted);font-size:12px;text-align:center;margin:3em 0 1em}
+  /* ---- Lab Scene (inline AR viewer) ---- */
+  .ar-section{margin:1em 0 2em}
+  .ar-frame{border:1px solid var(--border);border-radius:10px;background:#0a1422;padding:14px;position:relative;overflow:hidden}
+  .ar-svg{display:block;width:100%;height:auto;max-height:520px;background:#0a1422;border-radius:6px}
+  .ar-station{transition:opacity .25s,transform .25s}
+  .ar-station:not(.ar-focus){opacity:.55}
+  .ar-station.ar-active{opacity:1}
+  .ar-station.ar-focus .ar-body{stroke-width:3;filter:drop-shadow(0 0 8px currentColor)}
+  .ar-station[data-active="1"] .ar-body{fill-opacity:.32}
+  .ar-station .ar-label{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;pointer-events:none}
+  .ar-station[data-anchor]{cursor:pointer}
+  .ar-station[data-anchor]:hover .ar-body{fill-opacity:.42}
+  .ar-station[data-anchor]:hover .ar-label{fill:#fff}
+  @keyframes ar-pulse-op{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+  @keyframes ar-pulse-heat{0%,100%{filter:drop-shadow(0 0 4px #ef4444)}50%{filter:drop-shadow(0 0 14px #ef4444)}}
+  @keyframes ar-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+  @keyframes ar-pulse-obs{0%,100%{opacity:1}50%{opacity:.45}}
+  @keyframes ar-shimmer{0%,100%{filter:drop-shadow(0 0 4px currentColor)}50%{filter:drop-shadow(0 0 12px currentColor)}}
+  @keyframes ar-flow{0%{transform:translateX(-4px)}50%{transform:translateX(4px)}100%{transform:translateX(-4px)}}
+  .ar-station.ar-anim-operate .ar-glyph{transform-origin:60px 40px;animation:ar-pulse-op 1.4s ease-in-out infinite}
+  .ar-station.ar-anim-heat .ar-body{animation:ar-pulse-heat 1.6s ease-in-out infinite}
+  .ar-station.ar-anim-mix .ar-glyph{transform-origin:60px 40px;animation:ar-spin 3.2s linear infinite}
+  .ar-station.ar-anim-observe .ar-glyph{animation:ar-pulse-obs 1.6s ease-in-out infinite}
+  .ar-station.ar-anim-measure .ar-body{animation:ar-shimmer 1.4s ease-in-out infinite}
+  .ar-station.ar-anim-transfer .ar-glyph{animation:ar-flow 1.2s ease-in-out infinite}
+  .ar-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px;font-size:13px;color:#cbd5e1}
+  .ar-btn{background:#1f2937;color:#e2e8f0;border:1px solid var(--border);border-radius:6px;padding:6px 12px;cursor:pointer;font:inherit;font-size:13px}
+  .ar-btn:hover{background:#334155;border-color:#475569}
+  .ar-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .ar-step-readout{margin-left:auto;color:var(--muted);font-size:13px;flex:1 1 260px;min-width:0;text-align:right}
+  .ar-step-readout strong{color:var(--accent);font-weight:600}
+  .ar-step-readout em{color:#cbd5e1;font-style:normal}
+  .ar-pips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .ar-pip{min-width:30px;height:30px;padding:0 8px;border-radius:6px;border:1px solid var(--border);background:var(--bg-3);color:#cbd5e1;font:inherit;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+  .ar-pip:hover{background:#334155}
+  .ar-pip-current{background:var(--accent);color:#0a0f1a;border-color:var(--accent);font-weight:700}
+  .ar-bench-label{fill:#475569;font-size:11px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .ar-noscript{display:none;color:var(--muted);font-size:13px;margin-top:8px}
+  .no-js .ar-controls,.no-js .ar-pips{display:none}
+  .no-js .ar-noscript{display:block}
+  .step.ar-step-current{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+  .step.ar-step-current .step-num{background:var(--accent);color:#0a0f1a}
   @media print{
     nav.toc{display:none}
     .layout{grid-template-columns:1fr;padding:0}
@@ -95,6 +137,12 @@
     .badge,.chip{border:1px solid #999;color:#000;background:#fff}
     .step{border:1px solid #999;background:#fff}
     .callout{background:#fff;color:#000;border-left:3px solid #000}
+    .ar-controls,.ar-pips{display:none}
+    .ar-frame{break-inside:avoid;page-break-inside:avoid;background:#fff;border:1px solid #999}
+    .ar-svg{background:#fff}
+    .ar-station{opacity:1!important;animation:none!important}
+    .ar-station .ar-body{fill:#000;fill-opacity:.08;stroke:#000}
+    .ar-station .ar-label{fill:#000}
   }
 </style>
 </head>
@@ -106,6 +154,7 @@
     <li><a href="#hypothesis">Hypothesis</a></li>
     <li><a href="#novelty">Literature QC</a></li>
     <li><a href="#summary">Summary</a></li>
+    <li><a href="#lab-scene">Lab Scene</a></li>
     <li><a href="#protocol">Protocol</a></li>
     <li><a href="#materials">Materials</a></li>
     <li><a href="#budget">Budget</a></li>
@@ -180,9 +229,37 @@
   <span class="chip"><a href="#failure-modes-mc3t3-e1-subclone-variability">mc3t3-e1-subclone-variability</a></span>
 </p>
 
+<h2 id="lab-scene">Lab Scene</h2>
+<p style="color:#cbd5e1">Top-down view of the experimental bench. Each station maps to real equipment cited by the protocol — click a station to jump to its wiki entry. Step the timeline below to walk through how the bench evolves over the 12 protocol steps; clicking a step card in the Protocol section also drives the scene.</p>
+<div class="ar-section">
+  <div class="ar-frame">
+    <svg id="ar-svg" viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top-down lab bench, eight stations">
+      <defs>
+        <pattern id="ar-grid" width="50" height="50" patternUnits="userSpaceOnUse">
+          <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1e293b" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect x="2" y="2" width="896" height="446" rx="14" fill="#0b1220" stroke="#1e293b" stroke-width="2"/>
+      <rect x="2" y="2" width="896" height="446" fill="url(#ar-grid)" pointer-events="none"/>
+      <text class="ar-bench-label" x="14" y="22">bench · 0.9 × 0.45 m</text>
+      <text class="ar-bench-label" x="886" y="22" text-anchor="end">top-down view</text>
+      <g id="ar-stations"></g>
+      <g id="ar-focus" pointer-events="none"></g>
+    </svg>
+  </div>
+  <div class="ar-controls">
+    <button class="ar-btn" id="ar-prev" type="button" aria-label="Previous step">← Prev</button>
+    <button class="ar-btn" id="ar-play" type="button" aria-label="Play through steps">▶ Play</button>
+    <button class="ar-btn" id="ar-next" type="button" aria-label="Next step">Next →</button>
+    <span class="ar-step-readout">Step <strong id="ar-step-num">1</strong> / <span id="ar-step-total">12</span> — <em id="ar-step-label-text"></em></span>
+  </div>
+  <div class="ar-pips" id="ar-pips" aria-label="Jump to step"></div>
+  <p class="ar-noscript">JavaScript is required for the interactive Lab Scene; the full station + step mapping is also available as <a href="ar.json">ar.json</a>.</p>
+</div>
+
 <h2 id="protocol">Protocol</h2>
 
-<div class="step" id="step-1">
+<div class="step" id="step-1" data-station="dlp-printer">
   <header><span class="step-num">1</span><h3>Generate parametric CAD: gradient and uniform-pore scaffolds</h3><span class="duration">4 h</span></header>
   <p>The hypothesis specifies a continuous 100 → 500 μm radial gradient. Two cylindrical 6 mm Ø × 4 mm scaffolds are designed: (a) gradient — pore-size field d(r) = 100 μm at r = 3 mm increasing linearly to 500 μm at r = 0; (b) uniform — pore size 300 μm throughout. Both matched on total porosity (target 65 ± 3 pp) and outer geometry. The 4 mm height puts the diffusion-limited core threshold inside the scaffold so the gradient's diffusion-mitigation claim is testable. <a href="#methods-TPMS-scaffold-design">TPMS gyroid topology</a> is preferred for its CAD-to-physical fidelity.</p>
   <h4>Failure warnings</h4>
@@ -194,7 +271,7 @@
   <p class="citations"><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z" class="source-cite">2025-conoscenti</a><a href="#sources-2017-zhang-additively-manufactured-scaffolds-for-bo" class="source-cite">2017-zhang</a><a href="#sources-2020-chen-porous-scaffold-design-for-additive-manu" class="source-cite">2020-chen</a><a href="#sources-2025-liu-gradient-scaffolds-in-bone-soft-tissue-i" class="source-cite">2025-liu</a><a href="#sources-2026-liu-design-and-fabrication-of-biomimetic-gra" class="source-cite">2026-liu</a></p>
 </div>
 
-<div class="step" id="step-2">
+<div class="step" id="step-2" data-station="sintering-furnace">
   <header><span class="step-num">2</span><h3>Print + sinter calibration array; build CAD-to-measured shrinkage lookup</h3><span class="duration">24 h</span></header>
   <p>Every claim of "100 → 500 μm gradient" fails without μCT verification: AM resolution + slurry rheology + sintering shrinkage compound to shift pores 15–25 % and obliterate features below ~80 μm. Print and sinter a 6×6 array with CAD pores 50 / 100 / 150 / 200 / 300 / 500 / 700 μm; μCT post-sinter; compute S = d_post/d_CAD per pore bin; build a lookup so the experimental CAD is pre-compensated (e.g., 100 μm target → ~125 μm CAD if S ≈ 0.80). Bose 2017 cites 60–70 vol % HA loading minimises shrinkage. The output is a per-batch lookup that defines the actual experimental geometry for Step 3.</p>
   <h4>Reagents</h4>
@@ -213,7 +290,7 @@
   <p class="citations"><a href="#sources-2017-bose-additive-manufacturing-of-biomaterials" class="source-cite">2017-bose</a><a href="#sources-2020-garot-additive-manufacturing-of-material-scaff" class="source-cite">2020-garot</a><a href="#sources-2015-ishack-bone-regeneration-in-critical-bone-defec" class="source-cite">2015-ishack</a><a href="#sources-2022-yang-gaussian-curvature-driven-direction-of-c" class="source-cite">2022-yang</a><a href="#sources-2017-eliaz-calcium-phosphate-bioceramics-a-review-o" class="source-cite">2017-eliaz</a></p>
 </div>
 
-<div class="step" id="step-3">
+<div class="step" id="step-3" data-station="dlp-printer">
   <header><span class="step-num">3</span><h3>Fabricate experimental scaffolds (gradient and uniform)</h3><span class="duration">48 h</span></header>
   <p>Print n = 36 gradient + n = 36 uniform scaffolds (60 for the 5×6 time-point experiment + 12 spares for QC, characterization, and replacement). Use the Step-2 shrinkage lookup to pre-compensate CAD pore sizes. Same slurry, same debinding, same sintering run for both groups so post-sinter chemistry / surface state is matched. Half each batch printed cylinder-axis-vertical, half horizontal — controls for pore-anisotropy.</p>
   <h4>Reagents</h4>
@@ -231,7 +308,7 @@
   <p class="citations"><a href="#sources-2017-bose-additive-manufacturing-of-biomaterials" class="source-cite">2017-bose</a><a href="#sources-2022-yang-gaussian-curvature-driven-direction-of-c" class="source-cite">2022-yang</a><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a></p>
 </div>
 
-<div class="step" id="step-4">
+<div class="step" id="step-4" data-station="microct-imager">
   <header><span class="step-num">4</span><h3>Characterise each batch: μCT, XRD, BET, ICP-MS, mechanical</h3><span class="duration">48 h (parallel)</span></header>
   <p>Match-on-confound parameters must be verified, not assumed. μCT every experimental scaffold (≤ 10 μm voxel); thresholded pore-size histogram per radial bin (outer 0–500 μm, mid, core). XRD on one scaffold per batch (Cu-Kα, 2θ = 20–60°, 0.02° step, 2 s dwell, Rietveld); BET N₂ adsorption surface area; ICP-MS Ca/P; mercury intrusion on a sister scaffold; SEM-EDX cross-sections; mechanical compression on 3 sister scaffolds per group.</p>
   <p><strong>Acceptance gate:</strong> gradient and uniform groups within ±3 pp porosity, ±10 % BET, β-TCP &lt; 5 %, Ca/P 1.667 ± 0.05, mass within ±5 %.</p>
@@ -245,7 +322,7 @@
   <p class="citations"><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2026-thammarakcharoen-comprehensive-toxicological-evaluation-o" class="source-cite">2026-thammarakcharoen</a><a href="#sources-2017-eliaz-calcium-phosphate-bioceramics-a-review-o" class="source-cite">2017-eliaz</a><a href="#sources-2018-zhang-effect-of-microporosity-on-scaffolds-for" class="source-cite">2018-zhang</a></p>
 </div>
 
-<div class="step" id="step-5">
+<div class="step" id="step-5" data-station="cytotox-bench">
   <header><span class="step-num">5</span><h3>Sterilise scaffolds; ISO-10993-5 cytotoxicity pre-screen on L929</h3><span class="duration">24 h</span></header>
   <p>Soxhlet-style EtOH/water reflux leach for 24 h; vacuum dry; gamma-sterilise (25 kGy) or autoclave (121 °C × 30 min, dry cycle). Run ISO-10993-5 cytotoxicity on <a href="#organisms-L929-fibroblast">L929 fibroblasts</a> (24 h scaffold-conditioned medium, n = 6) — viability ≥ 80 % required to release the batch for MC3T3 work. Residual TPO is the dominant cytotoxicity risk for DLP HA scaffolds; Thammarakcharoen 2026 used this exact pipeline for binder-jet HA.</p>
   <h4>Reagents</h4>
@@ -258,7 +335,7 @@
   <p class="citations"><a href="#sources-2026-thammarakcharoen-comprehensive-toxicological-evaluation-o" class="source-cite">2026-thammarakcharoen</a><a href="#sources-2020-garot-additive-manufacturing-of-material-scaff" class="source-cite">2020-garot</a></p>
 </div>
 
-<div class="step" id="step-6">
+<div class="step" id="step-6" data-station="cell-incubator">
   <header><span class="step-num">6</span><h3>Receive cells, expand, STR-authenticate, mycoplasma-screen</h3><span class="duration">~96 h spread over 1 week</span></header>
   <p>Source <a href="#organisms-MC3T3-E1-subclone-4">MC3T3-E1 Subclone 4</a> from <strong>ATCC CRL-2593</strong> (CVCL_5440, high-mineraliser) — <em>not</em> parental CVCL_0409, <em>not</em> Subclone 14 (CVCL_5437, ATCC CRL-2594), and <em>not</em> the wiki's mis-labelled <code>cellosaurus-mc3t3-e1-subclone4-cvcl5437.json</code> file. STR-authenticate at receipt (mouse 9-locus); PlasmoTest mycoplasma; passage ≤ 10 throughout the study.</p>
   <h4>Reagents</h4>
@@ -277,7 +354,7 @@
   <p class="citations"><a href="#sources-cellosaurus-mc3t3-e1-cvcl0409" class="source-cite">cellosaurus-mc3t3-e1-cvcl0409</a><a href="#sources-cellosaurus-mc3t3-e1-subclone4-cvcl5437" class="source-cite">cellosaurus-subclone4 (mislabel)</a><a href="#sources-protocol-2025-amin-murine-osteoblast-and-osteoclast-co-cult" class="source-cite">protocol-2025-amin</a><a href="#sources-protocol-2025-sheikh-isolation-of-in-vitro-osteoblastic-deriv" class="source-cite">protocol-2025-sheikh</a></p>
 </div>
 
-<div class="step" id="step-7">
+<div class="step" id="step-7" data-station="perfusion-bioreactor">
   <header><span class="step-num">7</span><h3>Pre-coat scaffolds, dynamic-perfusion seed at 5 × 10⁴ MC3T3 per scaffold</h3><span class="duration">8 h</span></header>
   <p>Static seeding loses 30–60 % of cells through 500 μm pores and biases the readout in favour of small-pore scaffolds — falsely inflating the gradient effect. Pre-coat with 10 μg/mL fibronectin × 1 h at 37 °C; mount each scaffold in custom perfusion chamber; oscillating flow at 0.5 mL/min × 4 h; recover outlet medium and count by hemocytometer to compute per-scaffold seeding efficiency. Reject any scaffold where seeded count differs from group mean by &gt; 2 SD. Conoscenti 2025 reported 22.8 ± 1.3 % efficiency uniformly across a gradient.</p>
   <h4>Reagents</h4>
@@ -295,7 +372,7 @@
   <p class="citations"><a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z" class="source-cite">2025-conoscenti</a><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2008-palmer-biomimetic-systems-for-hydroxyapatite-mi" class="source-cite">2008-palmer</a></p>
 </div>
 
-<div class="step" id="step-8">
+<div class="step" id="step-8" data-station="perfusion-bioreactor">
   <header><span class="step-num">8</span><h3>Culture in proliferation medium (no osteogenic induction) with daily medium change</h3><span class="duration">21 d (504 h)</span></header>
   <p>The hypothesis is about proliferation, so the primary experiment runs in non-osteogenic α-MEM + 10 % FBS only — dexamethasone explicitly suppresses proliferation, β-glycerophosphate triggers spontaneous mineralisation that confounds DNA recovery. Daily medium change. n = 6 scaffolds per group per time point × 5 time points × 2 groups = 60 scaffolds; perfusion bioreactor with parallel chambers (≥ 1× scaffold-volume turnover/min).</p>
   <h4>Reagents</h4>
@@ -315,7 +392,7 @@
   <p class="citations"><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z" class="source-cite">2025-conoscenti</a><a href="#sources-2010-murphy-understanding-the-effect-of-mean-pore-size-on" class="source-cite">2010-murphy</a><a href="#sources-2008-chan-scaffolding-in-tissue-engineering-general-approaches" class="source-cite">2008-chan</a></p>
 </div>
 
-<div class="step" id="step-9">
+<div class="step" id="step-9" data-station="plate-reader">
   <header><span class="step-num">9</span><h3>Serial alamarBlue (non-destructive) at d1, d4, d7, d14, d21</h3><span class="duration">~6 h per time point</span></header>
   <p>10 % v/v alamarBlue in medium, 1 mL per scaffold, 1–4 h at 37 °C, read 560/590 nm fluorescence. Non-destructive — same scaffolds re-read at every time point and then sacrificed at the corresponding endpoint. The (alamarBlue / PicoGreen) ratio across time is itself diagnostic: if it drops, cells are shifting from proliferative to differentiating state, which would invalidate proliferation-only conclusions.</p>
   <h4>Reagents</h4>
@@ -331,7 +408,7 @@
   <p class="citations"><a href="#sources-thermo-picogreen-p11496" class="source-cite">thermo-picogreen-p11496</a><a href="#sources-protocol-2025-battistelli-a-quantitative-spectrophotometric-assay" class="source-cite">protocol-2025-battistelli</a></p>
 </div>
 
-<div class="step" id="step-10">
+<div class="step" id="step-10" data-station="plate-reader">
   <header><span class="step-num">10</span><h3>Terminal sampling at each time point: lyse, PicoGreen DNA, DAPI cross-section</h3><span class="duration">8 h per time point</span></header>
   <p>PicoGreen DNA is the primary proliferation endpoint. Chaotropic lysis (proteinase-K 200 μg/mL in TE, 56 °C × 30 min + 10 × 5 s sonication on ice + 1 % SDS); PicoGreen at 1:200 working dilution, 480/520 nm; scaffold-only no-cell blanks per geometry per plate. Validate ≥ 80 % recovery on 3 sentinel scaffolds (known seed → immediate lysis) before any group comparison. DAPI confocal cross-sections in 3 radial bins (outer / middle / inner) on n = 2 sentinel scaffolds per group at d1 / d7 / d14. Live/dead at d14 on n = 2 per group as sanity check.</p>
   <h4>Reagents</h4>
@@ -352,7 +429,7 @@
   <p class="citations"><a href="#sources-thermo-picogreen-p11496" class="source-cite">thermo-picogreen-p11496</a><a href="#sources-2025-de-carvalho-three-dimensional-printing-of-calcium-ph" class="source-cite">2025-de-carvalho</a><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a></p>
 </div>
 
-<div class="step" id="step-11">
+<div class="step" id="step-11" data-station="confocal-microscope">
   <header><span class="step-num">11</span><h3>Secondary differentiation panel (parallel cohort, osteogenic medium): ALP, RUNX2/COL1/OCN qPCR</h3><span class="duration">~24 h end-to-end</span></header>
   <p>Parallel cohort (n = 4 per group, separate scaffolds), osteogenic medium = α-MEM + 10 % FBS + 50 μg/mL AsAP + 10 mM β-GP + 10 nM dexamethasone. Readouts: ALP (d7, d14), qPCR for RUNX2 / COL1A1 / OCN / GAPDH (d14), ARS at d21 (semi-quantitative on HA scaffolds, cross-validated with von Kossa and SEM-EDX). Critically a separate cohort because differentiation media confound proliferation readout; the primary hypothesis stands or falls on Step 10's data alone.</p>
   <h4>Reagents</h4>
@@ -373,7 +450,7 @@
   <p class="citations"><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z" class="source-cite">2025-conoscenti</a><a href="#sources-protocol-2025-battistelli-a-quantitative-spectrophotometric-assay" class="source-cite">protocol-2025-battistelli</a><a href="#sources-protocol-2025-amin-murine-osteoblast-and-osteoclast-co-cult" class="source-cite">protocol-2025-amin</a></p>
 </div>
 
-<div class="step" id="step-12">
+<div class="step" id="step-12" data-station="confocal-microscope">
   <header><span class="step-num">12</span><h3>Statistics, data integrity, pre-registration</h3><span class="duration">~12 h</span></header>
   <p>Pre-register on OSF before Step 7 begins: primary endpoint = d14 PicoGreen, one-sided two-sample t-test, α = 0.05, n = 6 per group, expected effect size ≥ 25 %. Power analysis: detect 25 % mean difference with σ = 15 % (typical from Daskalakis 2024) at 80 % power → n = 6. Report n, exact p-values, effect sizes, and Bayes factors. Second-reviewer image audit before any submission.</p>
   <h4>Failure warnings</h4>
@@ -802,17 +879,305 @@
 
 </main>
 </div>
+<script type="application/json" id="ar-data">
+{
+  "version": 1,
+  "slug": "2026-04-25_a-3d-printed-hydroxyapatite-scaffold-with",
+  "title": "Gradient-pore HA scaffold vs uniform HA scaffold",
+  "scene": {
+    "stations": [
+      { "id": "dlp-printer", "label": "DLP slurry printer", "kind": "tall-instrument", "color": "#4a90e2", "position": [-0.35, 0, -0.05], "wiki_page": "methods/DLP-vat-photopolymerization" },
+      { "id": "sintering-furnace", "label": "Debinding + sintering furnace", "kind": "furnace", "color": "#f59e0b", "position": [-0.18, 0, -0.05], "wiki_page": "methods/ceramic-sintering" },
+      { "id": "microct-imager", "label": "μCT + characterisation bay", "kind": "tall-instrument", "color": "#22d3ee", "position": [0.0, 0, -0.05], "wiki_page": "methods/micro-CT-imaging" },
+      { "id": "cytotox-bench", "label": "Sterilisation + L929 cytotox dish", "kind": "dish", "color": "#fbbf24", "position": [0.18, 0, -0.05] },
+      { "id": "cell-incubator", "label": "Cell-culture incubator (MC3T3 expansion)", "kind": "incubator", "color": "#34d399", "position": [0.35, 0, -0.05], "wiki_page": "organisms/MC3T3-E1-subclone-4" },
+      { "id": "perfusion-bioreactor", "label": "Perfusion bioreactor (seeding + 21 d culture)", "kind": "tall-instrument", "color": "#10b981", "position": [-0.25, 0, 0.12], "wiki_page": "methods/cell-seeding-dynamic-perfusion" },
+      { "id": "plate-reader", "label": "Plate reader (alamarBlue + PicoGreen)", "kind": "plate-reader", "color": "#a78bfa", "position": [0.0, 0, 0.12], "wiki_page": "methods/alamarBlue-proliferation-assay" },
+      { "id": "confocal-microscope", "label": "Confocal microscope (DAPI / live-dead / image audit)", "kind": "microscope", "color": "#f472b6", "position": [0.25, 0, 0.12], "wiki_page": "methods/confocal-microscopy" }
+    ]
+  },
+  "step_bindings": [
+    { "step": 1, "focus_station": "dlp-printer", "animation": "none", "label_override": "CAD: continuous radial 100→500 μm gradient + uniform 300 μm",
+      "state_changes": [ { "station": "dlp-printer", "property": "active", "to": false }, { "station": "dlp-printer", "property": "label", "to": "DLP printer (awaiting CAD)" } ] },
+    { "step": 2, "focus_station": "sintering-furnace", "animation": "heat", "label_override": "Calibration array: print + sinter → S = d_post/d_CAD lookup",
+      "state_changes": [ { "station": "dlp-printer", "property": "active", "to": true }, { "station": "sintering-furnace", "property": "active", "to": true }, { "station": "sintering-furnace", "property": "color", "to": "#ef4444" } ] },
+    { "step": 3, "focus_station": "dlp-printer", "animation": "operate", "label_override": "Print 36 gradient + 36 uniform scaffolds (pre-compensated CAD)",
+      "state_changes": [ { "station": "dlp-printer", "property": "active", "to": true }, { "station": "dlp-printer", "property": "color", "to": "#3b82f6" } ] },
+    { "step": 4, "focus_station": "microct-imager", "animation": "measure", "label_override": "μCT every scaffold; XRD/BET/ICP-MS/SEM acceptance gate",
+      "state_changes": [ { "station": "microct-imager", "property": "active", "to": true }, { "station": "sintering-furnace", "property": "active", "to": false } ] },
+    { "step": 5, "focus_station": "cytotox-bench", "animation": "heat", "label_override": "EtOH leach + autoclave + L929 ISO-10993-5 viability ≥ 80 %",
+      "state_changes": [ { "station": "cytotox-bench", "property": "active", "to": true }, { "station": "microct-imager", "property": "active", "to": false } ] },
+    { "step": 6, "focus_station": "cell-incubator", "animation": "none", "label_override": "Receive MC3T3-E1 Subclone 4 (ATCC CRL-2593); STR + mycoplasma",
+      "state_changes": [ { "station": "cell-incubator", "property": "active", "to": true }, { "station": "cell-incubator", "property": "color", "to": "#22c55e" } ] },
+    { "step": 7, "focus_station": "perfusion-bioreactor", "animation": "transfer", "label_override": "Fibronectin pre-coat; perfusion seed 5×10⁴ cells / scaffold (4 h, 0.5 mL/min)",
+      "state_changes": [ { "station": "perfusion-bioreactor", "property": "active", "to": true }, { "station": "perfusion-bioreactor", "property": "color", "to": "#34d399" } ] },
+    { "step": 8, "focus_station": "perfusion-bioreactor", "animation": "mix", "label_override": "Perfusion culture × 21 d in proliferation medium (no β-GP/AsAP/dex)",
+      "state_changes": [ { "station": "perfusion-bioreactor", "property": "active", "to": true } ] },
+    { "step": 9, "focus_station": "plate-reader", "animation": "measure", "label_override": "Serial alamarBlue d1/d4/d7/d14/d21 (non-destructive, 560/590 nm)",
+      "state_changes": [ { "station": "plate-reader", "property": "active", "to": true }, { "station": "plate-reader", "property": "color", "to": "#8b5cf6" } ] },
+    { "step": 10, "focus_station": "plate-reader", "animation": "measure", "label_override": "Endpoint: PicoGreen DNA + DAPI confocal radial bins",
+      "state_changes": [ { "station": "plate-reader", "property": "active", "to": true }, { "station": "confocal-microscope", "property": "active", "to": true } ] },
+    { "step": 11, "focus_station": "confocal-microscope", "animation": "observe", "label_override": "Differentiation cohort: ALP + qPCR + ARS (parallel, osteogenic medium)",
+      "state_changes": [ { "station": "confocal-microscope", "property": "active", "to": true }, { "station": "perfusion-bioreactor", "property": "active", "to": false } ] },
+    { "step": 12, "focus_station": "confocal-microscope", "animation": "observe", "label_override": "Pre-registered statistics + second-reviewer image audit (8 retraction signatures)",
+      "state_changes": [ { "station": "confocal-microscope", "property": "color", "to": "#ec4899" }, { "station": "plate-reader", "property": "active", "to": false } ] }
+  ]
+}
+</script>
 <script>
+document.documentElement.classList.remove('no-js');
+document.documentElement.classList.add('js');
 (function(){
+  // ---- TOC smooth-scroll + scroll-spy ----
   document.querySelectorAll('nav.toc a[href^="#"]').forEach(function(a){
     a.addEventListener('click',function(e){
       var id=a.getAttribute('href').slice(1);var el=document.getElementById(id);
       if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'',a.getAttribute('href'))}
     });
   });
-  var sections=Array.from(document.querySelectorAll('main h2[id]'));var links=Array.from(document.querySelectorAll('nav.toc a'));
+  var sections=Array.from(document.querySelectorAll('main h2[id]'));
+  var links=Array.from(document.querySelectorAll('nav.toc a'));
   function onScroll(){var y=window.scrollY+120;var cur=sections[0];sections.forEach(function(s){if(s.offsetTop<=y)cur=s});links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur.id)})}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+})();
+(function(){
+  // ---- Lab Scene runtime ----
+  var dataEl=document.getElementById('ar-data');
+  if(!dataEl) return;
+  var spec;
+  try{ spec=JSON.parse(dataEl.textContent); }catch(e){ return; }
+  var stations=(spec.scene&&spec.scene.stations)||[];
+  var bindings=spec.step_bindings||[];
+  if(!stations.length||!bindings.length) return;
+
+  var SVG_NS='http://www.w3.org/2000/svg';
+  var stationsLayer=document.getElementById('ar-stations');
+  var pipsLayer=document.getElementById('ar-pips');
+  var stepNumEl=document.getElementById('ar-step-num');
+  var stepTotalEl=document.getElementById('ar-step-total');
+  var stepLabelEl=document.getElementById('ar-step-label-text');
+  var prevBtn=document.getElementById('ar-prev');
+  var nextBtn=document.getElementById('ar-next');
+  var playBtn=document.getElementById('ar-play');
+
+  function el(name,attrs,parent){
+    var n=document.createElementNS(SVG_NS,name);
+    if(attrs) for(var k in attrs) n.setAttribute(k,attrs[k]);
+    if(parent) parent.appendChild(n);
+    return n;
+  }
+  function rect(parent,a){return el('rect',a,parent);}
+  function circle(parent,a){return el('circle',a,parent);}
+  function line(parent,a){return el('line',a,parent);}
+  function path(parent,a){return el('path',a,parent);}
+
+  var GLYPHS={
+    'tall-instrument':function(g){
+      rect(g,{x:50,y:8,width:20,height:20,rx:2,fill:'currentColor','fill-opacity':0.55});
+      rect(g,{x:38,y:32,width:44,height:32,rx:3,fill:'currentColor','fill-opacity':0.32});
+    },
+    'flat-instrument':function(g){
+      rect(g,{x:32,y:30,width:56,height:22,rx:3,fill:'currentColor','fill-opacity':0.45});
+    },
+    'furnace':function(g){
+      rect(g,{x:38,y:14,width:44,height:50,rx:5,fill:'currentColor','fill-opacity':0.32});
+      path(g,{d:'M52,58 Q60,46 68,58 Q60,50 60,38 Q56,50 52,58Z',fill:'#ef4444','fill-opacity':0.85});
+    },
+    'microscope':function(g){
+      rect(g,{x:56,y:6,width:8,height:36,fill:'currentColor','fill-opacity':0.55});
+      circle(g,{cx:60,cy:50,r:14,fill:'currentColor','fill-opacity':0.32});
+      circle(g,{cx:60,cy:50,r:6,fill:'none',stroke:'currentColor','stroke-width':2});
+    },
+    'incubator':function(g){
+      rect(g,{x:38,y:10,width:44,height:54,rx:3,fill:'currentColor','fill-opacity':0.28});
+      line(g,{x1:40,y1:28,x2:80,y2:28,stroke:'currentColor','stroke-width':1.5,'stroke-opacity':0.7});
+      line(g,{x1:40,y1:44,x2:80,y2:44,stroke:'currentColor','stroke-width':1.5,'stroke-opacity':0.7});
+    },
+    'plate-reader':function(g){
+      var grid=el('g',{fill:'currentColor','fill-opacity':0.7},g);
+      for(var r=0;r<4;r++) for(var c=0;c<8;c++)
+        circle(grid,{cx:36+c*7,cy:22+r*10,r:2.5});
+    },
+    'dish':function(g){
+      circle(g,{cx:60,cy:38,r:22,fill:'currentColor','fill-opacity':0.22});
+      circle(g,{cx:60,cy:38,r:22,fill:'none',stroke:'currentColor','stroke-width':2});
+      circle(g,{cx:60,cy:38,r:8,fill:'none',stroke:'currentColor','stroke-width':1,'stroke-opacity':0.5});
+    },
+    'beaker':function(g){
+      path(g,{d:'M44,16 L76,16 L72,60 Q60,66 48,60 Z',fill:'currentColor','fill-opacity':0.3,stroke:'currentColor','stroke-width':2});
+    },
+    'tube-rack':function(g){
+      rect(g,{x:38,y:44,width:44,height:14,rx:2,fill:'currentColor','fill-opacity':0.5});
+      var tubes=el('g',{fill:'currentColor','fill-opacity':0.7},g);
+      for(var i=0;i<5;i++) rect(tubes,{x:42+i*8,y:18,width:6,height:24,rx:2});
+    },
+    'pipette':function(g){
+      rect(g,{x:56,y:8,width:8,height:48,fill:'currentColor','fill-opacity':0.55});
+      el('polygon',{points:'56,56 64,56 60,68',fill:'currentColor','fill-opacity':0.7},g);
+    },
+    'scaffold':function(g){
+      var mesh=el('g',{fill:'none',stroke:'currentColor','stroke-opacity':0.7,'stroke-width':1.5},g);
+      for(var r=0;r<3;r++) for(var c=0;c<5;c++) circle(mesh,{cx:34+c*13,cy:22+r*13,r:5});
+    },
+    'printer':function(g){
+      rect(g,{x:34,y:18,width:52,height:14,rx:2,fill:'currentColor','fill-opacity':0.5});
+      line(g,{x1:40,y1:32,x2:40,y2:60,stroke:'currentColor','stroke-width':2,'stroke-opacity':0.5});
+      line(g,{x1:80,y1:32,x2:80,y2:60,stroke:'currentColor','stroke-width':2,'stroke-opacity':0.5});
+      circle(g,{cx:60,cy:46,r:6,fill:'currentColor','fill-opacity':0.5});
+    }
+  };
+
+  function pageAnchor(p){
+    if(!p) return null;
+    var slash=String(p).indexOf('/');
+    if(slash<0) return null;
+    return '#'+p.slice(0,slash)+'-'+p.slice(slash+1);
+  }
+
+  // Build station nodes
+  var stationNodes={};
+  stations.forEach(function(s){
+    var pos=s.position||[0,0,0];
+    var x=(pos[0]+0.45)*1000;
+    var y=(pos[2]+0.225)*1000;
+    var defaultColor=s.color||'#7dd3fc';
+    var defaultLabel=s.label||s.id;
+    var g=el('g',{
+      'class':'ar-station',
+      'data-id':s.id,
+      transform:'translate('+(x-60)+','+(y-40)+')',
+      style:'color:'+defaultColor
+    },stationsLayer);
+    var body=rect(g,{
+      'class':'ar-body',
+      width:120,height:80,rx:10,
+      fill:'currentColor','fill-opacity':0.18,
+      stroke:'currentColor','stroke-width':2
+    });
+    var glyph=el('g',{'class':'ar-glyph'},g);
+    (GLYPHS[s.kind]||GLYPHS['tall-instrument'])(glyph);
+    var label=el('text',{
+      'class':'ar-label',
+      x:60,y:99,
+      'text-anchor':'middle',
+      fill:'#cbd5e1',
+      'font-size':12
+    },g);
+    label.textContent=defaultLabel;
+    var anchor=pageAnchor(s.wiki_page);
+    if(anchor){
+      g.setAttribute('data-anchor',anchor);
+      var titleEl=el('title',{},g);
+      titleEl.textContent=defaultLabel+' — click to open '+s.wiki_page;
+      g.addEventListener('click',function(){
+        var t=document.querySelector(anchor);
+        if(t){t.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'',anchor);}
+      });
+    } else {
+      var titleGen=el('title',{},g);
+      titleGen.textContent=defaultLabel;
+    }
+    stationNodes[s.id]={g:g,body:body,label:label,defaultColor:defaultColor,defaultLabel:defaultLabel};
+  });
+
+  // Step pips
+  var totalSteps=bindings.length;
+  stepTotalEl.textContent=String(totalSteps);
+  bindings.forEach(function(b,i){
+    var btn=document.createElement('button');
+    btn.type='button';
+    btn.className='ar-pip';
+    btn.dataset.idx=String(i);
+    btn.textContent=String(b.step||(i+1));
+    btn.title='Step '+(b.step||(i+1))+(b.label_override?' — '+b.label_override:'');
+    btn.addEventListener('click',function(){pause();goTo(i);});
+    pipsLayer.appendChild(btn);
+  });
+
+  var current=0;
+  var playing=false;
+  var playTimer=null;
+
+  function applyState(idx){
+    Object.keys(stationNodes).forEach(function(id){
+      var n=stationNodes[id];
+      n.g.classList.remove('ar-active','ar-focus','ar-anim-operate','ar-anim-mix','ar-anim-heat','ar-anim-observe','ar-anim-measure','ar-anim-transfer');
+      n.g.style.color=n.defaultColor;
+      n.label.textContent=n.defaultLabel;
+      n.g.dataset.active='0';
+    });
+    for(var i=0;i<=idx;i++){
+      var b=bindings[i]; if(!b) continue;
+      (b.state_changes||[]).forEach(function(c){
+        var n=stationNodes[c.station]; if(!n) return;
+        if(c.property==='color'&&c.to) n.g.style.color=c.to;
+        else if(c.property==='label'&&c.to) n.label.textContent=c.to;
+        else if(c.property==='active') n.g.dataset.active=c.to?'1':'0';
+      });
+    }
+    Object.keys(stationNodes).forEach(function(id){
+      var n=stationNodes[id];
+      if(n.g.dataset.active==='1') n.g.classList.add('ar-active');
+    });
+    var b=bindings[idx];
+    if(b){
+      var focus=stationNodes[b.focus_station];
+      if(focus){
+        focus.g.classList.add('ar-active','ar-focus');
+        var anim=b.animation||'none';
+        if(anim!=='none') focus.g.classList.add('ar-anim-'+anim);
+      }
+      stepNumEl.textContent=String(b.step||(idx+1));
+      stepLabelEl.textContent=b.label_override||'';
+    }
+    Array.prototype.forEach.call(pipsLayer.children,function(p,i){
+      p.classList.toggle('ar-pip-current',i===idx);
+    });
+    document.querySelectorAll('.step.ar-step-current').forEach(function(s){s.classList.remove('ar-step-current');});
+    var stepEl=document.getElementById('step-'+(b?b.step||(idx+1):''));
+    if(stepEl) stepEl.classList.add('ar-step-current');
+  }
+
+  function goTo(idx){
+    current=((idx%totalSteps)+totalSteps)%totalSteps;
+    applyState(current);
+  }
+
+  function play(){
+    playing=true;
+    playBtn.textContent='❚❚ Pause';
+    playBtn.setAttribute('aria-label','Pause');
+    playTimer=setInterval(function(){goTo(current+1);},1900);
+  }
+  function pause(){
+    playing=false;
+    playBtn.textContent='▶ Play';
+    playBtn.setAttribute('aria-label','Play');
+    if(playTimer) clearInterval(playTimer);
+    playTimer=null;
+  }
+
+  prevBtn.addEventListener('click',function(){pause();goTo(current-1);});
+  nextBtn.addEventListener('click',function(){pause();goTo(current+1);});
+  playBtn.addEventListener('click',function(){playing?pause():play();});
+
+  // Sync from clicking a protocol step card (header only — don't hijack inner-link clicks)
+  document.querySelectorAll('.step[id^="step-"]').forEach(function(stepEl){
+    var hdr=stepEl.querySelector('header');
+    if(!hdr) return;
+    hdr.style.cursor='pointer';
+    hdr.title='Focus this step in the Lab Scene';
+    hdr.addEventListener('click',function(e){
+      if(e.target.closest('a')) return;
+      var m=stepEl.id.match(/^step-(\d+)$/); if(!m) return;
+      var n=parseInt(m[1],10);
+      var idx=-1;
+      for(var i=0;i<bindings.length;i++){ if((bindings[i].step||(i+1))===n){ idx=i; break; } }
+      if(idx>=0){pause();goTo(idx);}
+    });
+  });
+
+  goTo(0);
 })();
 </script>
 </body>

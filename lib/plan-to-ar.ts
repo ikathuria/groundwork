@@ -1,20 +1,28 @@
-// Heuristic mapper: Lab Brief plan.json → ExperimentPlan that lab-scene consumes.
-// No LLM call — pure keyword/structure transforms.
+// Maps a Pass 3 LabBriefPlan + Pass 4 LabSceneSpec into an ExperimentPlan that
+// the live AR viewer consumes. The spec is the source of truth for which
+// station each step focuses on (via step_bindings) — no keyword guessing.
 
 import type {
   LabBriefPlan,
   ProtocolStep,
   FailureWarning,
+  LabSceneSpec,
+  StepBinding,
+  StationAnimation,
+  StationKind,
 } from './plan-schema'
 import type {
   ExperimentPlan,
   ExperimentStep,
-  LabObjectName,
+  StepGesture,
 } from './experiment-steps'
 
 // ─── Public API ─────────────────────────────────────────────────────────────
 
-export function mapLabBriefToExperiment(plan: LabBriefPlan): ExperimentPlan {
+export function mapLabBriefToExperiment(
+  plan: LabBriefPlan,
+  spec: LabSceneSpec | null,
+): ExperimentPlan {
   const protocol = plan.protocol ?? []
   if (protocol.length === 0) {
     return {
@@ -35,7 +43,16 @@ export function mapLabBriefToExperiment(plan: LabBriefPlan): ExperimentPlan {
     }
   }
 
-  const reagentMap = collectReagentBeakerAssignment(protocol)
+  const bindingByStep = new Map<number, StepBinding>()
+  const stationLabel = new Map<string, string>()
+  const stationKind = new Map<string, StationKind>()
+  if (spec) {
+    spec.step_bindings.forEach((b) => bindingByStep.set(b.step, b))
+    spec.scene.stations.forEach((s) => {
+      stationLabel.set(s.id, s.label)
+      stationKind.set(s.id, s.kind)
+    })
+  }
 
   return {
     title: shorten(
@@ -45,7 +62,7 @@ export function mapLabBriefToExperiment(plan: LabBriefPlan): ExperimentPlan {
     hypothesis: plan.hypothesis.original_question,
     domain: inferDomain(plan),
     totalDuration: formatTotalDuration(protocol),
-    steps: protocol.map((s) => mapStep(s, reagentMap)),
+    steps: protocol.map((s) => mapStep(s, bindingByStep.get(s.step), stationLabel, stationKind)),
   }
 }
 
@@ -53,88 +70,72 @@ export function mapLabBriefToExperiment(plan: LabBriefPlan): ExperimentPlan {
 
 function mapStep(
   step: ProtocolStep,
-  reagentMap: Map<string, LabObjectName>,
+  binding: StepBinding | undefined,
+  stationLabel: Map<string, string>,
+  stationKind: Map<string, StationKind>,
 ): ExperimentStep {
-  const focus = pickFocusObject(step, reagentMap)
-  const animation = animationFor(focus)
+  const focusObject = binding?.focus_station ?? 'none'
+  const focusLabel = focusObject !== 'none' ? stationLabel.get(focusObject) : undefined
+  const focusKind = focusObject !== 'none' ? stationKind.get(focusObject) : undefined
+  const animation: StationAnimation | undefined = binding?.animation ?? undefined
   const topWarning = topSeverity(step.failure_warnings ?? [])
+  const interaction = deriveInteraction(focusKind, animation, focusLabel)
 
   return {
     id: step.step,
     title: step.title,
-    instruction: firstSentence(step.rationale) || step.title,
+    instruction: binding?.label_override || firstSentence(step.rationale) || step.title,
     detail: step.rationale || '',
-    focusObject: focus,
+    focusObject,
+    focusLabel,
     animation,
     isFailurePoint: !!topWarning && topWarning.severity !== 'low',
     failureWarning: topWarning?.mitigation,
     failureFrequency: topWarning?.frequency_estimate,
     duration: formatDuration(step.duration_minutes),
     reagents: (step.reagents ?? []).map(formatReagent),
+    gesture: interaction.gesture,
+    interactionHint: interaction.hint,
   }
 }
 
-// ─── focusObject heuristic ──────────────────────────────────────────────────
+// ─── Per-step interaction hint ─────────────────────────────────────────────
+// Single-line, gesture-first cue tailored to the station kind + animation.
+// Solar-cell coupons get drag+tap copy because they're the headline interactive
+// elements; everything else is a single tap on a glowing station.
 
-const PIPETTE_RE = /\b(pipette|aliquot|transfer|dispense|pipetting)\b/i
-const HOTPLATE_RE = /\b(incubate|heat|warm|°C|degrees|temperature|reflux|boil)\b/i
-const TUBES_RE = /\b(tube|centrifuge|vortex|spin|microfuge|eppendorf|aliquot)\b/i
-const OBSERVE_RE = /\b(measure|read|fluorescence|absorbance|observe|image|microscop|plate reader|spectro)\b/i
+function deriveInteraction(
+  kind: StationKind | undefined,
+  anim: StationAnimation | undefined,
+  label: string | undefined,
+): { gesture: StepGesture; hint: string } {
+  const target = label ? `the ${label.toLowerCase()}` : 'the highlighted station'
 
-function pickFocusObject(
-  step: ProtocolStep,
-  reagentMap: Map<string, LabObjectName>,
-): LabObjectName {
-  const haystack = `${step.title} ${step.rationale}`
-
-  if (PIPETTE_RE.test(haystack)) return 'pipette'
-  if (HOTPLATE_RE.test(haystack)) return 'hotplate'
-  if (OBSERVE_RE.test(haystack)) return 'beaker3'
-  if (TUBES_RE.test(haystack)) return 'tubes'
-
-  // Otherwise pick the beaker assigned to the step's first reagent
-  const firstReagent = step.reagents?.[0]
-  if (firstReagent?.wiki_page) {
-    const assigned = reagentMap.get(firstReagent.wiki_page)
-    if (assigned) return assigned
-  }
-  return 'beaker1'
-}
-
-function animationFor(obj: LabObjectName): ExperimentStep['animation'] {
-  switch (obj) {
-    case 'pipette':
-      return 'pipette-transfer'
-    case 'hotplate':
-      return 'heat'
-    case 'tubes':
-      return 'measure'
-    case 'beaker3':
-      return 'observe'
-    case 'beaker1':
-    case 'beaker2':
-      return 'mix'
-    default:
-      return undefined
-  }
-}
-
-// Round-robin assign distinct reagents (in order of first appearance) to beaker1/2/3.
-// Reagents that don't fit into the first three keep mapping to beaker3.
-function collectReagentBeakerAssignment(
-  protocol: ProtocolStep[],
-): Map<string, LabObjectName> {
-  const slots: LabObjectName[] = ['beaker1', 'beaker2', 'beaker3']
-  const map = new Map<string, LabObjectName>()
-  let i = 0
-  for (const step of protocol) {
-    for (const r of step.reagents ?? []) {
-      if (!r.wiki_page || map.has(r.wiki_page)) continue
-      map.set(r.wiki_page, slots[Math.min(i, slots.length - 1)])
-      i++
+  if (kind === 'solar-cell' || kind === 'pv-module') {
+    return {
+      gesture: 'flip',
+      hint: `👆 Tap ${target} to flip it · drag with one finger to rotate and inspect both sides`,
     }
   }
-  return map
+
+  switch (anim) {
+    case 'heat':
+      return { gesture: 'heat', hint: `🔥 Tap ${target} to fire / heat the lots — watch the surface glow` }
+    case 'measure':
+      return { gesture: 'measure', hint: `📏 Tap ${target} to take the measurement — instrument lifts and flashes cyan` }
+    case 'observe':
+      return { gesture: 'observe', hint: `🔬 Tap ${target} to scan / observe — sample flashes white` }
+    case 'mix':
+      return { gesture: 'mix', hint: `🌀 Tap ${target} to mix the contents — watch it rock side to side` }
+    case 'operate':
+      return { gesture: 'tap', hint: `⚙ Tap ${target} to run it — head spins to indicate operation` }
+    case 'transfer':
+      return { gesture: 'transfer', hint: `💧 Tap ${target} to transfer / pipette — instrument lifts and returns` }
+    case 'none':
+    case undefined:
+    default:
+      return { gesture: 'wait', hint: `📋 No physical interaction this step — review the brief and tap Next ➜` }
+  }
 }
 
 // ─── Failure warning selection ──────────────────────────────────────────────
@@ -196,6 +197,8 @@ function shorten(text: string, max: number): string {
 // ─── Domain inference ──────────────────────────────────────────────────────
 
 const DOMAIN_KEYWORDS: Array<[string, RegExp]> = [
+  ['Photovoltaics', /\b(photovoltaic|solar cell|metalli[sz]ation|silver paste|copper paste|TOPCon|PERC|silicon heterojunction|SHJ|c-Si|damp[- ]?heat|busbar|fingers?)\b/i],
+  ['Biomaterials', /\b(scaffold|hydroxyapatite|HA|β-TCP|sintering|DLP|μCT|osteoblast|MC3T3|bone)\b/i],
   ['Cell Biology', /\b(HeLa|cell|cryopreservation|culture|line|trehalose|DMSO)\b/i],
   ['Gut Health', /\b(gut|intestin|microbiota|probiotic|FITC-dextran|permeability|Lactobacillus)\b/i],
   ['Diagnostics', /\b(biosensor|ELISA|CRP|antibod|detection|diagnosis|whole blood)\b/i],
