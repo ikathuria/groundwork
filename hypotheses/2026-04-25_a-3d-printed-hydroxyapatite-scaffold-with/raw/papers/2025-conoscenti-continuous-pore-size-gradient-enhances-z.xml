@@ -1,0 +1,1036 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">RSC Adv</journal-id><journal-id journal-id-type="iso-abbrev">RSC Adv</journal-id><journal-id journal-id-type="pmc-domain-id">4079</journal-id><journal-id journal-id-type="pmc-domain">rscadv</journal-id><journal-id journal-id-type="publisher-id">RA</journal-id><journal-title-group><journal-title>RSC Advances</journal-title></journal-title-group><issn pub-type="epub">2046-2069</issn><publisher><publisher-name>Royal Society of Chemistry</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12377023</article-id><article-id pub-id-type="pmcid-ver">PMC12377023.1</article-id><article-id pub-id-type="pmcaid">12377023</article-id><article-id pub-id-type="pmcaiid">12377023</article-id><article-id pub-id-type="pmid">40861966</article-id><article-id pub-id-type="doi">10.1039/d5ra00540j</article-id><article-id pub-id-type="publisher-id">d5ra00540j</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="heading"><subject>Chemistry</subject></subj-group></article-categories><title-group><article-title>Continuous pore size gradient enhances zonal-specific differentiation of stem cells in an osteochondral scaffold</article-title></title-group><contrib-group><contrib contrib-type="author"><name name-style="western"><surname>Conoscenti</surname><given-names initials="G">Gioacchino</given-names></name><xref rid="affa" ref-type="aff">a</xref><xref rid="affb" ref-type="aff">b</xref><xref rid="fn1" ref-type="author-notes">†</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-2878-8616</contrib-id><name name-style="western"><surname>Smith</surname><given-names initials="KWY">Kyra W. Y.</given-names></name><xref rid="affc" ref-type="aff">c</xref><xref rid="affd" ref-type="aff">d</xref><xref rid="fn1" ref-type="author-notes">†</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Pirosa</surname><given-names initials="A">Alessandro</given-names></name><xref rid="affb" ref-type="aff">b</xref><xref rid="fn2" ref-type="author-notes">‡</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Pavia</surname><given-names initials="FC">Francesco Carfì</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0009-7804-8366</contrib-id><name name-style="western"><surname>Zhang</surname><given-names initials="EY">Emily Y.</given-names></name><xref rid="affc" ref-type="aff">c</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>La Carrubba</surname><given-names initials="V">Vincenzo</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Brucato</surname><given-names initials="V">Valerio</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-6067-6705</contrib-id><name name-style="western"><surname>Tuan</surname><given-names initials="RS">Rocky S.</given-names></name><xref rid="affb" ref-type="aff">b</xref><xref rid="fn3" ref-type="author-notes">§</xref></contrib><contrib contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-8040-5531</contrib-id><name name-style="western"><surname>Gottardi</surname><given-names initials="R">Riccardo</given-names></name><xref rid="affb" ref-type="aff">b</xref><xref rid="affc" ref-type="aff">c</xref><xref rid="affd" ref-type="aff">d</xref><xref rid="affe" ref-type="aff">e</xref><xref rid="fn4" ref-type="author-notes">¶</xref></contrib><aff id="affa">
+<label>a</label>
+<institution>Department of Civil, Environmental, Aerospace, Materials Engineering, Università degli Studi di Palermo</institution>
+<city>Palermo</city>
+<country>Italy</country>
+</aff><aff id="affb">
+<label>b</label>
+<institution>Center for Cellular and Molecular Engineering, Department of Orthopaedic Surgery, University of Pittsburgh</institution>
+<city>Pittsburgh</city>
+<state>PA</state>
+<country>USA</country>
+<email>gottardir@chop.edu</email>
+</aff><aff id="affc">
+<label>c</label>
+<institution>Department of Bioengineering, University of Pennsylvania</institution>
+<city>Philadelphia</city>
+<state>PA</state>
+<country>USA</country>
+</aff><aff id="affd">
+<label>d</label>
+<institution>Department of Pulmonary and Sleep Medicine, Children's Hospital of Philadelphia</institution>
+<city>Philadelphia</city>
+<state>PA</state>
+<country>USA</country>
+</aff><aff id="affe">
+<label>e</label>
+<institution>Ri.MED Foundation</institution>
+<city>Palermo</city>
+<country>Italy</country>
+</aff></contrib-group><author-notes><fn id="fn1"><label>†</label><p>These authors contributed equally.</p></fn><fn id="fn2"><label>‡</label><p>Present address: European Society of Clinical Microbiology and Infectious Diseases, Basel, Switzerland.</p></fn><fn id="fn3"><label>§</label><p>Present address: Institute for Tissue Engineering and Regenerative Medicine, The Chinese University of Hong Kong, Shatin, Hong Kong SAR, China.</p></fn><fn id="fn4"><label>¶</label><p>Present address: Department of Pediatrics, University of Pennsylvania and Children's Hospital of Philadelphia, Philadelphia, PA, USA.</p></fn></author-notes><pub-date publication-format="electronic" date-type="pub" iso-8601-date="2025-08-11"><day>11</day><month>8</month><year>2025</year></pub-date><pub-date publication-format="electronic" date-type="collection" iso-8601-date="2025-08-11"><day>11</day><month>8</month><year>2025</year></pub-date><volume>15</volume><issue>35</issue><issue-id pub-id-type="pmc-issue-id">495506</issue-id><fpage>28452</fpage><lpage>28463</lpage><history><date date-type="received" iso-8601-date="2025-01-22"><day>22</day><month>1</month><year>2025</year></date><date date-type="accepted" iso-8601-date="2025-07-17"><day>17</day><month>7</month><year>2025</year></date></history><pub-history><event event-type="pmc-release"><date><day>11</day><month>08</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>26</day><month>08</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-08-27 23:25:44.953"><day>27</day><month>08</month><year>2025</year></date></event></pub-history><permissions><copyright-statement>This journal is © The Royal Society of Chemistry</copyright-statement><copyright-year>2025</copyright-year><copyright-holder>The Royal Society of Chemistry</copyright-holder><ali:free_to_read xmlns:ali="http://www.niso.org/schemas/ali/1.0/"/><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbynclicense" start_date="2025-08-11">https://creativecommons.org/licenses/by-nc/3.0/</ali:license_ref><license-p>This article is licensed under a <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-Non Commercial 3.0 Unported Licence</ext-link>. You can use material from this article in other publications without requesting further permissions from the RSC, provided that the correct acknowledgement is given and it is not used for commercial purposes.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="RA-015-D5RA00540J.pdf"/><abstract><p>Cartilage and bone in articular joints are intimately linked within the osteochondral (OC) unit. Scaffold-based regenerative approaches in the joint often target both cartilage and the subchondral bone, taking advantage of the endogenous bone marrow stem cells made available by breaching the OC junction. However, the production of scaffolds for OC regeneration is challenging, as scaffolds must provide mechanical strength while also mimicking the local cartilage and bone microenvironments. To create an osteochondral scaffold, we used Thermally Induced Phase Separation (TIPS) that allows us to create a wide range of morphologies in terms of pore size and distribution by tuning thermal history. We created a poly-<sc>l</sc>-lactic acid (PLLA) scaffold with a continuous pore size gradient from 70 μm diameter on the cartilage repair side to over 200 μm diameter on the bone repair side. We hypothesized that the smaller pore size will support chondrogenesis while the larger pore size will induce an osteogenic phenotype. This hypothesis was confirmed using an innovative biphasic bioreactor capable of providing distinct and separate signaling cues for cartilage and bone differentiation, while allowing communication across the osteochondral junction, similar to the <italic toggle="yes">in vivo</italic> environment. Our findings suggested that the PLLA continuous pore-gradient structure may offer a clinically translatable solution to osteochondral defect repair by supporting zone-specific differentiation.</p></abstract><abstract abstract-type="toc"><p>A continuous gradient porous PLLA scaffold offers a clinically feasible solution to osteochondral defects.<graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ga" position="float" orientation="portrait" xlink:href="d5ra00540j-ga.jpg"/></p></abstract><funding-group><award-group><funding-source>
+<institution-wrap><institution>National Heart, Lung, and Blood Institute</institution><institution-id institution-id-type="doi">10.13039/100000050</institution-id></institution-wrap>
+</funding-source><award-id>R01HL161583-01A1</award-id></award-group><award-group><funding-source>
+<institution-wrap><institution>National Institute of Arthritis and Musculoskeletal and Skin Diseases</institution><institution-id institution-id-type="doi">10.13039/100000069</institution-id></institution-wrap>
+</funding-source><award-id>P30AR069619</award-id><award-id>T32-AR007132</award-id></award-group><award-group><funding-source>
+<institution-wrap><institution>Children's Hospital of Philadelphia</institution><institution-id institution-id-type="doi">10.13039/100006458</institution-id></institution-wrap>
+</funding-source><award-id>Unassigned</award-id></award-group><award-group><funding-source>
+<institution-wrap><institution>Fondazione Ri.Med</institution><institution-id institution-id-type="doi">10.13039/501100009704</institution-id></institution-wrap>
+</funding-source><award-id>Unassigned</award-id></award-group></funding-group><counts><page-count count="12"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY-NC</meta-value></custom-meta><custom-meta><meta-name>pubstatus</meta-name><meta-value>Paginated Article</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec><title>Introduction</title><p>Osteochondral defects affect over 60% of patients that undergo knee surgery and present a major health and mobility concern.<sup><xref rid="cit1" ref-type="bibr">1</xref></sup> Such osteochondral lesions are characterized by damage to both articular cartilage and the underlying subchondral bone, which can occur from either acute trauma, underlying bone disorders, or long-term degeneration, such as osteoarthritis.<sup><xref rid="cit2" ref-type="bibr">2</xref></sup> Current standards of care do not restore the native tissue.<sup><xref rid="cit3" ref-type="bibr">3</xref></sup> For instance, microfracture leads to fibrocartilage formation,<sup><xref rid="cit4" ref-type="bibr">4</xref></sup> and allografts are subject to low donor availability and insufficient tissue size.<sup><xref rid="cit5" ref-type="bibr">5</xref></sup> Thus, tissue engineering represents an exciting alternative, but a common setback is the difficulty of creating engineered tissues representative of native tissue.<sup><xref rid="cit6" ref-type="bibr">6</xref></sup></p><p>Articular cartilage is a highly organized tissue with complex architecture that bestows compression resistance, high tensile strength, and frictionless joint movement.<sup><xref rid="cit7" ref-type="bibr">7</xref></sup> This complexity, however, is rarely matched by engineered cartilage. Furthermore, engineered cartilage, depending on the cell and processes used, may calcify or present a more fibrocartilaginous phenotype.<sup><xref rid="cit6" ref-type="bibr">6,8</xref></sup> The addition of growth factors such as transforming growth factor-β3 (TGF-β3), bone morphogenetic proteins (BMP), and fibroblast growth factor-2 (FGF-2), can help guide engineered cartilage formation. Sarsenova <italic toggle="yes">et al.</italic> showed that delivering TGF-β3 and BMP-4 alongside stem cells drastically improved osteochondral defect repair in a rabbit model compared to stem cells alone.<sup><xref rid="cit9" ref-type="bibr">9</xref></sup> Additionally, delivery of recombinant human FGF-2, clinically known as Sprifermin,<sup><xref rid="cit10" ref-type="bibr">10</xref></sup> is in phase II clinical trials showing a reduction of cartilage loss.<sup><xref rid="cit11" ref-type="bibr">11</xref></sup> Despite promise, there are very few growth factor delivery systems available on the market,<sup><xref rid="cit12" ref-type="bibr">12</xref></sup> and none for repair or regeneration of osteochondral defects.<sup><xref rid="cit13" ref-type="bibr">13</xref></sup> Apart from regulatory challenges,<sup><xref rid="cit14" ref-type="bibr">14</xref></sup> the translation of growth factor delivery to the clinic has several setbacks. Mainly, growth factors have short half-lives, diffuse rapidly from the delivery site, and are expensive.<sup><xref rid="cit15" ref-type="bibr">15,16</xref></sup> Thus, a tissue engineering strategy to repair osteochondral defects would be more translationally feasible with less dependency on growth factors.</p><p>A translationally feasible solution to osteochondral repair must have a few key traits: promote cartilage and bone growth in the correct orientation, guide differentiation <italic toggle="yes">in vivo</italic>, be affordable and accessible, fit a short clinical timeline, and as previously mentioned, not rely on <italic toggle="yes">in vivo</italic> delivery of growth factors. The main challenge is guiding accurate spatial specification without growth factors, but current literature shows that different pore sizes can be used to guide mesenchymal stem cell differentiation.<sup><xref rid="cit17" ref-type="bibr">17–21</xref></sup> Smaller pore sizes foster the dense cellular packing that drives chondrogenesis,<sup><xref rid="cit22" ref-type="bibr">22,23</xref></sup> whereas inversely, larger pore sizes allow invasion of vasculature that is critical for osteogenesis.<sup><xref rid="cit24" ref-type="bibr">24</xref></sup></p><p>To develop a translationally feasible osteochondral repair, we used Thermally Induced Phase Separation (TIPS) to create continuous gradient porous scaffolds that range from small pore size on one end (∼70 μm), to large pore sizes on the other (∼200 μm). TIPS is an ideal method to create these scaffolds as the pore size and distribution can easily be changed by modulating temperature profiles and polymer concentrations,<sup><xref rid="cit25" ref-type="bibr">25</xref></sup> as we have previously shown.<sup><xref rid="cit26" ref-type="bibr">26,27</xref></sup> Seeded scaffolds were then placed in an established biphasic micro-physiological bioreactor system. This system allows simultaneous chondrogenic and osteogenic differentiation in the small pore side and in the large pore side, respectively, by supplying the appropriate differentiation media.<sup><xref rid="cit28" ref-type="bibr">28,29</xref></sup> In this work, we show that TIPS can be used to create gradient porous scaffolds, and that tailored pore geometry can guide spatially relevant osteochondral differentiation of human mesenchymal stem cells (hMSCs).</p></sec><sec><title>Experimental</title><p>Products were purchased from Thermo Fisher Scientific (Waltham, MA) unless otherwise stated.</p><sec><title>Scaffold design and preparation</title><p>Poly-<sc>l</sc>-Lactic Acid (PLLA) Resomer TN L 209 S (Boehringer-Ingelheim), 1,4-dioxane (Sigma-Aldrich), and distilled water were used to produce the polymeric scaffold. The ternary solution employed has a PLLA concentration of 4% wt, in 87/13% wt/wt dioxane/water (solvent/non-solvent). The system was tested to produce scaffolds <italic toggle="yes">via</italic> TIPS and the cloud point temperature for this mixture was calculated at 41 °C.<sup><xref rid="cit30" ref-type="bibr">30</xref></sup> Different thermal histories were imposed on sample sides by an experimental apparatus made in-house using software-controlled Peltier cells.<sup><xref rid="cit31" ref-type="bibr">31</xref></sup> After keeping the solution at 60 °C for 10 minutes (well above the cloud point), one side (Slow Cooling Side – SCS) was cooled at 1 °C min<sup>−1</sup> to 30 °C and maintained for 20 minutes, whereas the other surface (Fast Cooling Side – FCS) was suddenly cooled to 30 °C and held for 50 minutes. Finally, the solution was rapidly quenched to −20 °C to freeze the obtained microstructure. To completely remove the solvents, the polymer slabs were washed in deionized water and dried under vacuum. To further evaluate temperature variations within a sample during TIPS, the process was modelled using COMSOL multiphysics modules “heat transfer in fluids” and “phase change.”</p></sec><sec><title>Scaffold characterization</title><p>The scaffold microstructure was observed by scanning electron microscopy (SEM) using a SEM-FEI QUANTA 200FEG. The sample cross sections were fractured in liquid nitrogen and gold sputtered for 40 s under argon. The mean pore size in each section was measured from the respective SEM image. The porosity of PLLA scaffold was evaluated <italic toggle="yes">via</italic> Boyle's pycnometer (pycnomatic ATC)<sup><xref rid="cit32" ref-type="bibr">32</xref></sup> according to the following formula<graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ugt1" position="float" orientation="portrait" xlink:href="d5ra00540j-t1.jpg"/>where <italic toggle="yes">ε</italic> is the porosity of the scaffold, <italic toggle="yes">V</italic><sub>e</sub> the external volume of the scaffold, and <italic toggle="yes">V</italic><sub>i</sub> the internal volume calculated by the pycnometer. Helium was adopted as a penetrating agent since its very small dimension can penetrate the smallest pores.</p><p>Micro-CT analysis (micro-CT Skyscan 1272, Bruker) was completed to acquire the 3D microarchitecture of the fabricated PLLA scaffold. Measurements were carried out at 40 kV and 250 mA, with no filter. The images were acquired with a pixel size of 6.25 μm by setting a rotation step of 0.2°. The acquired images were reconstructed with N-Recon software (version 1.6.10.2), eliminating artifacts and reducing noise in each slice. Finally, the raw image set was 3D visualized by the microCT rendering software CTVox (1.5.2 version).</p><p>Scaffold compression modulus was measured using a custom unconfined compression tester<sup><xref rid="cit33" ref-type="bibr">33</xref></sup> with the following tests and settings: creep (time = 300 s, load limit = 2 g, ramp velocity = 10 μm s<sup>−1</sup>), stress-relaxation (strain = 1%, number of ramps = 1, ramp velocity = 0.05% per s), and dynamic loading (number of cycles = 10, frequency = 0.5 Hz, amplitude = 1%). Mechanics data was analyzed using a custom MATLAB code to calculate the stress–strain curves and Young's Moduli.</p><p>Scafflod resorption and mass change was measured by first weighing the samples in their lyophilized state. Samples were then rehydrated with an ethanol gradient until 100% phosphate-buffered saline (PBS), cultured in growth media (GM) (DMEM, 10% fetal bovine serum (FBS, Invitrogen, Waltham, MA) 2% antibiotic-antimycotic (AA), 1% sodium pyruvate, 4.5 g L<sup>−1</sup><sc>d</sc>-glucose, 4 mM <sc>l</sc>-glutamine, and 25 mM HEPES) at 37 °C on a shaker at 100 rpm, and collected at D0, D2, D7, D14, and D21 post-rehydration. Collected samples were rinsed repeatedly with PBS then DI water, frozen, lyophilized, then re-weighed.</p></sec><sec><title>Bioreactor design and fabrication</title><p>The structures of the bioreactor were modelled using Solidworks 2014 (Dassault Systèmes, Vélizy-Villacoublay, France). All components were fabricated using a 3D Systems Viper (Rock Hill, SC) and WaterShed XC 11122 resin (DSM Somos®, Heerlen, Netherlands) as described in Nichols <italic toggle="yes">et al.</italic><sup><xref rid="cit34" ref-type="bibr">34</xref></sup> Accessories include: O-Rings and tubing (McMaster-Carr, Chicago, IL), luer-locks (Cole Parmer, Vernon Hills, IL), media bags (Kiyatec, Greenville, SC), and syringes (Fisherbrand, Pittsburgh, PA).</p></sec><sec><title>Cell expansion</title><p>Human bone-marrow-derived mesenchymal stem cells (BM-hMSCs) were isolated from the femoral heads of patients undergoing total joint arthroplasty with IRB approval (University of Pittsburgh). This work was exempt from the requirement of informed consents as all cells were derived from surgical waste and were de-identified. All experiments were performed in accordance with federal and state regulations and guidelines. An aliquot of bone marrow was harvested, filtered through a 40 μm strainer, and the flow-through was centrifuged at 300 g for 5 min to sediment the red blood cells. The pellets were suspended using GM and plated into 150 cm<sup>2</sup> tissue culture flasks at a density of 10<sup>6</sup> cells per flask. The medium was changed every 3 to 4 days. Cells were passaged at 70–80% confluency and colony formation and trilineage mesenchymal differentiation capacity was validated before use. To obtain strong experimental evidence of the capacity of the system to promote cell differentiation, BM-hMSCs from different patients were used. Biological replicates were created by pooling BM-hMSCs at passage 3 from diverse patients: 1st Pool (1 female patient 44 years old and 2 male patients 45 and 59 years old), 2nd (1 female patient 70 years old and 2 male patients 60 and 66 years old), 3rd (1 female patient 62 years old and 2 male patients 39 and 55 years old).</p></sec><sec><title>Cell culture</title><p>Cylindrical scaffolds (3.5 mm diameter and 8.5 mm height) were punched out and uniformly seeded with 80 000 BM-hMSCs. Prior to seeding, the scaffolds were rehydrated and sterilized overnight in 70% ethanol then preconditioned by soaking overnight in growth medium. Constructs normalized in growth medium for 7 days prior to differentiation. Chondrogenic medium (CM: GM without FBS, +10 ng ml<sup>−1</sup> TGF-β3 (PeproTech, East Windsor, NJ), 1% insulin-transferrin-selenium, 50 μM <sc>l</sc>-ascorbic acid 2-phosphate (AsA2-P), 40 μg ml<sup>−1</sup><sc>l</sc>-proline) was applied to constructs or regions undergoing chondrogenic differentiation, whereas osteogenic medium (OM: GM + 0.1 μM dexamethasone, 50 μg mL<sup>−1</sup> AsA2-P, 10 mM β-glycerophosphate) was applied to constructs of regions undergoing osteogenic differentiation.</p></sec><sec><title>Cell proliferation assay</title><p>Cell proliferation on the PLLA gradient scaffolds was evaluated <italic toggle="yes">via</italic> an MTS assay (Abcam, Cambridge, England). The MTS (3-(4,5-dimethylthiazol-2-yl)-5-(3-carocymethoxyphenyl)-2-4-(sulfophenyl)-2<italic toggle="yes">H</italic>-tetrazolium) compound is reduced to a formazan product that is applied in culture medium. After incubating for 4 hours at 37 °C and 5% CO<sub>2</sub>, three 100 μL samples were pipetted out from the scaffolds and absorbance was read at 490 nm. To convert the absorbance value to cell number, a preliminary calibration curve was calculated following the manufacturer's protocol.</p></sec><sec><title>Live/dead staining</title><p>Cell vitality of seeded scaffolds was determined after 1, 3, and 7 days. Live-dead staining was performed using Calcein-AM and ethidium homodimer-1, respectively. Seeded scaffolds were incubated in the staining solution and examined under DMi8 confocal laser scanning microscope (Leica, Wetzlar, Germany).</p></sec><sec><title>Gene expression</title><p>Chondral tissue from the upper part of the scaffold and osseous tissue from the lower part of the scaffold were separated. RNA was extracted using Trizol (Invitrogen, Waltham, MA) following the standard protocol after frozen hammering of the sample and purified with the RNeasy Plus mini kit (Qiagen, Hilden, Germany). SuperScript III kit (Invitrogen, Waltham, MA) was utilized with random hexamer primers to complete the reverse transcription. Real-time RT-qPCR was performed using the StepOnePlus thermocycler (Applied Biosystems, Foster City, CA) and SYBR Green Reaction Mix (Applied Biosystems, Foster City, CA). 18S was used as the housekeeping gene and the various gene expression levels were calculated using the comparative Ct method. SRY-box transcription factor (<italic toggle="yes">SOX9</italic>), aggrecan (<italic toggle="yes">ACAN</italic>), and collagen type 2 (<italic toggle="yes">COL2A1</italic>) were used as indicative genes for cartilage. Runt-related transcription factor 2 (<italic toggle="yes">RUNX2</italic>), bone sialoprotein 2 (<italic toggle="yes">BSP2</italic>), and osteopontin (<italic toggle="yes">OPN</italic>) were used as indicative genes for bone. The gene sequences are depicted in <xref rid="tab1" ref-type="table">Table 1</xref>.</p><table-wrap position="float" id="tab1" orientation="portrait"><label>Table 1</label><caption><title>Primers for RT-qPCR</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col span="1"/><col span="1"/><col span="1"/></colgroup><thead><tr><th rowspan="1" colspan="1">Gene</th><th rowspan="1" colspan="1">Forward (5′–3′)</th><th rowspan="1" colspan="1">Reverse (5′–3′)</th></tr></thead><tbody><tr><td rowspan="1" colspan="1">18S</td><td rowspan="1" colspan="1">GTAACCCGTTGAACCCCATT</td><td rowspan="1" colspan="1">CCATCCAATCGGTAGTAGCG</td></tr><tr><td rowspan="1" colspan="1">SOX9</td><td rowspan="1" colspan="1">CTGAGCAGCGACGTCATCTC</td><td rowspan="1" colspan="1">GTTGGGCGGCAGGTACTG</td></tr><tr><td rowspan="1" colspan="1">ACAN</td><td rowspan="1" colspan="1">GCTACACTGGCGAGCACTGTAACAT</td><td rowspan="1" colspan="1">GCGCCAGTTCTCAAATTGCATGGG</td></tr><tr><td rowspan="1" colspan="1">COL2A1</td><td rowspan="1" colspan="1">GGATGGCTGCACGAAACATACCGG</td><td rowspan="1" colspan="1">GGATGGCTGCACGAAACATACCGG</td></tr><tr><td rowspan="1" colspan="1">RUNX2</td><td rowspan="1" colspan="1">CAACCACAGAACCACAAGTGCG</td><td rowspan="1" colspan="1">TGTTTGATGCCATAGTCCCTCC</td></tr><tr><td rowspan="1" colspan="1">BSP2</td><td rowspan="1" colspan="1">CGAATACACGGGCGTCAATG</td><td rowspan="1" colspan="1">GTAGCTGTACTCATCTTCATAGGC</td></tr><tr><td rowspan="1" colspan="1">OPN</td><td rowspan="1" colspan="1">TCACCAGTCTGATGAGTCTCACCATTC</td><td rowspan="1" colspan="1">TAGCATCAGGGTACTGGATGTCAGGT</td></tr></tbody></table></table-wrap></sec><sec><title>Histology</title><p>Scaffolds were fixed in 10% paraformaldehyde overnight, dehydrated, and embedded in paraffin. The embedded samples were sectioned at 10 μm, mounted on slides and subsequently processed and stained. Alcian blue and Alizarin red staining were used to detect the glycosaminoglycan (GAG) production by chondrocytes and calcium deposition by osteoblasts, respectively.</p></sec><sec><title>Statistical analysis</title><p>All graph results expressed as mean ± standard deviation. Individual points are representative of different donor pools. Graphs were created and data was analyzed using GraphPad Prism 10. Mechanics data in <xref rid="fig3" ref-type="fig">Fig. 3</xref> and cell viability data for <xref rid="fig4" ref-type="fig">Fig. 4</xref> were analyzed using a one-way ANOVA. PCR data for <xref rid="fig6" ref-type="fig">Fig. 6</xref> was analyzed by a 2way ANOVA test with matched values, mixed-effects model, and Fisher's LSD test for multiple comparisons. PCR data for <xref rid="fig7" ref-type="fig">Fig. 7</xref> was analyzed using a paired Wilcoxon Test. Scaffold resorption data in SI, Fig. S1 was analysed using one-way ANOVA at day 7, and one sample <italic toggle="yes">T</italic>-tests at each time point compared to dry scaffolds. Statistical significance is determined at <italic toggle="yes">p</italic> &lt; 0.05 (*), <italic toggle="yes">p</italic> &lt; 0.01(**), <italic toggle="yes">p</italic> &lt; 0.001(***), <italic toggle="yes">p</italic> &lt; 0.0001(****).</p></sec></sec><sec><title>Results</title><sec><title>Development of a continuous gradient porous scaffold for osteochondral repair</title><sec><title>Scaffold design and preparation</title><p>PLLA scaffolds were formed by TIPS with the thermal histories depicted in <xref rid="fig1" ref-type="fig">Fig. 1</xref>. COMSOL modelling of the scaffold was used to analyze heat transfer during the TIPS process and guide the parameters needed to achieve different pore sizes at each end of the scaffold. The three-dimensional system was considered with a one-dimensional change, given the symmetry of the geometry (a rectangular prism with 1 cm width, 3 cm depth, and 3.5 cm height, which matches the dimension used during TIPS). The thermal history was applied to the 3 cm by 3.5 cm side, and the other sides were simulated as external natural convection. The outside fluid was 20 °C air, and the simulation fluid was 87%/13% wt/wt dioxane/water. Two thermal histories were reported to represent the system behaviour. The first thermal history is a step input from 60 °C to 35 °C to simulate the internal temperature profiles inside the fluid region. The second one is a step input from 35 °C to −20 °C, to show the temperature profiles when a phase change occurs. In both cases, temperature profiles on the external surface and in a “virtual” surface at the center of the samples were reported.</p><fig position="float" id="fig1" orientation="portrait"><label>Fig. 1</label><caption><title>Thermal histories of the Slow Cooling Side (SCS) and Fast Cooling Side (FCS) used to create the gradient porous PLLA scaffold.</title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="d5ra00540j-f1.jpg"/></fig><p>
+<xref rid="fig2" ref-type="fig">Fig. 2A</xref> shows that at <italic toggle="yes">t</italic> = 10 s, the temperature spans from 35 °C on one side of the slab to 46.2 °C at the center. It is possible to see that almost 500 μm of the slab is above 40 °C. At <italic toggle="yes">t</italic> = 20 s, the entire system is under 40 °C. The entire process can be considered concluded by <italic toggle="yes">t</italic> = 30 s.</p><fig position="float" id="fig2" orientation="portrait"><label>Fig. 2</label><caption><title>COMSOL modelling analysing heat transfer throughout the scaffold at (A) above freezing and (B) during a phase change and subsequent freezing.</title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="d5ra00540j-f2.jpg"/></fig><p>The phenomenon is completely different when a phase change occurs (<xref rid="fig2" ref-type="fig">Fig. 2B</xref>). More time is required for the system to reach the desired temperature. At <italic toggle="yes">t</italic> = 180 s, the 3 cm by 3.5 cm edges reach the set point quickly, while the freezing process occurs at the rest the system. By <italic toggle="yes">t</italic> = 720 s, the system is fully frozen and steady state is reached by <italic toggle="yes">t</italic> = 1200 s.</p></sec><sec><title>Scaffold characterization</title><p>
+<xref rid="fig3" ref-type="fig">Fig. 3A</xref> shows macroscopic images of the small, large, and gradient pore scaffold. MicroCT reconstruction (<xref rid="fig2" ref-type="fig">Fig. 2B</xref>) shows the pore network, highlighting that it is highly porous and interconnected. <xref rid="fig3" ref-type="fig">Fig. 3C</xref> shows the SEM micrograph of the PLLA scaffold. The compressive moduli of the scaffolds show that for both bulk and dynamic, the single pore-size scaffolds are stiffer, with the small pores being the stiffest. Importantly, all moduli are in the MPa range, which is stronger than other scaffold formulations and closer to the <italic toggle="yes">in vivo</italic> range.<sup><xref rid="cit35" ref-type="bibr">35</xref></sup> Scaffold resorption (SI, Fig. S1) was negligible compared to salt deposition and protein adsorption in the given time scale.</p><fig position="float" id="fig3" orientation="portrait"><label>Fig. 3</label><caption><title>Scaffold characterization: (A) macroscopic image of the different porous scaffolds. (B) MicroCT reconstruction showing pore network of the gradient scaffold. (C) SEM micrograph showing (i) pore sizes along the length of the scaffold and magnified images of (ii) small pores ∼70 μm, (iii) middle pores ∼150 μm, and (iv) large pores ∼200 μm. (D) Compressive modulus of the small pore scaffolds, large pore scaffold, and the small and large pore regions of the continuous gradient scaffold.</title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="d5ra00540j-f3.jpg"/></fig><p>The fast-cooling side (FCS) had an average pore diameter of 200 μm, and the slow-cooling side (SCS) had an average pore diameter of 70 μm. Previous studies about TIPS have highlighted that, when a nucleation-and-growth mechanism occurs, the pore dimension is primarily dictated by the thermal history.<sup><xref rid="cit36" ref-type="bibr">36</xref></sup> Thus, by varying the residence time in the metastable region, it was possible to control the pore dimension. The FCS spent more time in the metastable region than the SCS, so it was expected that the pore dimensions in the FCS are larger than the SCS. This allowed for a gradual change of pore dimension along the sample thickness. The porosity, evaluated <italic toggle="yes">via</italic> gas pycnometer, was 93 ± 0.5% in the whole scaffold.</p></sec><sec><title>Cell viability</title><p>Live-dead staining of the BM-hMSCs in the PLLA scaffold at days 1, 3, and 7 are shown in <xref rid="fig4" ref-type="fig">Fig. 4A</xref>. An MTS assay was used to calculate cell numbers in the scaffold (<xref rid="fig4" ref-type="fig">Fig. 4B</xref>). A cell seeding efficiency of 22.8% ± 1.3% is reported, and the cell counts more than double after 7 days, showing that the scaffold supports cell proliferation and there is no PLLA cytotoxicity.</p><fig position="float" id="fig4" orientation="portrait"><label>Fig. 4</label><caption><title>Gradient porous scaffold is non-cytotoxic and allows cell growth: (A) Calcein AM and ethidium homodimer-1 staining of the scaffold over 7 days to show live and dead cells. (B) MTS assay showed significant proliferation of cells on the scaffold over 7 days.</title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="d5ra00540j-f4.jpg"/></fig></sec></sec><sec><title>Continuous gradient porous scaffold support osteochondral differentiation</title><sec><title>Bioreactor and experimental layout</title><p>This bioreactor has been developed to replicate <italic toggle="yes">in vitro</italic> the physiological conditions of osteochondral tissue. A main problem with the reproduction of the osteochondral unit is the difficulty to supply distinct differentiation media to the same complex. The divergent environments in which cartilage and bone develop are a particularly troubling hurdle to overcome. Features such as growth factors and supplements, oxygen, pH, and mechanical stimulation are known to be important to histogenesis and tissue-specific formation for bone and cartilage. The bioreactor was designed to allow delivery of specific signalling cues to each side of a construct. As illustrated in <xref rid="fig5" ref-type="fig">Fig. 5A</xref>, the bioreactor is composed of four cells. Each cell contains a perforated removable insert, where the scaffold is placed. A detachable base under the wall facilitates the removal of the insert. A silicone O-ring around the insert divides the cell into two chambers and provides a leak-proof seal. Two channels, under and above the insert O-ring, allow the provision of specific media. The channels are connected to syringes in a syringe pump and collection bags: the former to supply the media, the latter to collect the spent media.</p><fig position="float" id="fig5" orientation="portrait"><label>Fig. 5</label><caption><title>Schematic showing (A) bioreactor components and structure and (B) experimental set up.</title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="d5ra00540j-f5.jpg"/></fig><p>Gradient PLLA scaffolds were seeded with cells, placed into the bioreactor with the small pore side upward, and perfused with growth medium (GM) for 7 days. On day 7, the medium for dual media osteochondral gradient experiments (<xref rid="fig5" ref-type="fig">Fig. 5B</xref>) was switched to chondrogenic medium (CM) in the upper chamber and osteogenic medium (OM) in the lower chamber. Simultaneous osteochondral biphasic differentiation of the gradient scaffold was performed to validate the ability to generate an osteochondral construct representative of native biology. The gradient scaffolds were also cultured with single media conditions to tease out the effect of the pore sizes on differentiation under the same conditions. Following the same timeline, the medium for single medium chondrogenic gradient experiments and single medium osteogenic gradient experiments was switched to CM and OM respectively. The constructs were differentiated for 3 weeks. All media was perfused at a rate of 80 μL h<sup>−1</sup>. After the experiment, the scaffolds were pushed out of the insert using a simple 3D printed plunger tool and processed for gene expression analysis or histochemical evaluation.</p></sec><sec><title>Dual media osteochondral gradient PCR and histology</title><p>The scaffolds were cut in two parts, corresponding to chondral (small pore, CM) and osseus (large pore, OM) region and each part was analyzed <italic toggle="yes">via</italic> RT-qPCR. The values are reported as fold changes from day 0 and 18S are compared to methacrylated gelatin (GelMA, non-porous control) scaffolds that underwent the same experimental conditions (<xref rid="fig6" ref-type="fig">Fig. 6A</xref>). In the chondrogenic region, the data showed upregulation of chondrogenic genes <italic toggle="yes">COL2</italic> in the scaffold group <italic toggle="yes">versus</italic> the GelMA group. Conversely, in the osteogenic region, the data showed significant upregulation of osteogenic gene <italic toggle="yes">OPN</italic> in the scaffold group <italic toggle="yes">versus</italic> the GelMA group. Additionally, there was significantly greater <italic toggle="yes">COL2</italic> expression in the scaffold <italic toggle="yes">versus</italic> the GelMA control. Percent change of gene expression fold change (FC) (<xref rid="fig6" ref-type="fig">Fig. 6B</xref>) between the chondral region and the osseus region of each construct for chondrogenic genes was calculated as:<graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ugt2" position="float" orientation="portrait" xlink:href="d5ra00540j-t2.jpg"/></p><fig position="float" id="fig6" orientation="portrait"><label>Fig. 6</label><caption><title>Gradient porous PLLA scaffold cultured biphasically in the bioreactor generates an osteochondral construct: (A) RT-qPCR data showing expression of chondrogenic and osteogenic genes in the scaffold and GelMA control in the small pore/chondrogenic side <italic toggle="yes">versus</italic> the large pore/osteogenic side. (B) Percent of the change between the small pore/chondrogenic side <italic toggle="yes">versus</italic> the large pore/osteogenic side normalized to the larger value. (C) Alcian blue staining of the small pore/chondrogenic side (scale = 200 μm). (D) Alizarin red staining of the large pore/osteogenic side (scale = 200 μm).</title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="d5ra00540j-f6.jpg"/></fig><p>For osteogenic genes, the regions in the equation were switched. For all genes, the scaffold groups showed a greater percent change between the chondral and osseus region than the GelMA groups, significantly so for <italic toggle="yes">SOX9</italic> and <italic toggle="yes">BSP2</italic>, strongly suggesting that the varying pore sizes provide differentiation cues beyond those afforded by the differentiation media. Although the statistical significance in the reported data is limited, given the relatively small donor sample size and the well-known variability of human donors, we found the observable trend indicative of the changes induced by the scaffold pore sizes.</p><p>
+<xref rid="fig6" ref-type="fig">Fig. 6C</xref> shows Alcian blue staining for GAGs of the chondral region of the PLLA scaffold, and <xref rid="fig6" ref-type="fig">Fig. 6D</xref> shows Alizarin red staining for calcium of the osseus region of the PLLA scaffold. Strong presence of GAGs and calcium indicated that differentiation is supported in the respective regions of the PLLA scaffold.</p></sec><sec><title>Single medium chondrogenic/osteogenic gradient PCR and histology</title><p>Single medium experiments, in which both sides of the gradient scaffold were exposed to the same medium, were carried out to discover how pore sizes affect the differentiation profile. Adopting the same protocol of previous test, the scaffold was cut in two parts, the small pore region and the large pore region. For scaffolds treated with CM, the small pore side showed upregulation of chondrogenic genes (<xref rid="fig7" ref-type="fig">Fig. 7A</xref>), and the inverse is true for the scaffolds treated with OM (<xref rid="fig7" ref-type="fig">Fig. 7B</xref>). Alcian blue staining of the scaffold treated with CM showed higher GAG presence in the small pore side (<xref rid="fig7" ref-type="fig">Fig. 7C</xref>), and Alizarin red staining of the scaffold treated with OM showed higher calcium deposition in the large pore size (<xref rid="fig7" ref-type="fig">Fig. 7D</xref>). In conclusion, small pores helped drive chondrogenic differentiation and resist calcification, leading to a robust cartilage phenotype at the chondral side of the osteochondral construct. This trend may be due to increased contact between cells in the small pores. The larger pores required more cells to fill the entire free space than the smaller pores.<sup><xref rid="cit37" ref-type="bibr">37,38</xref></sup> Filling the pores can increase the cell–cell interactions and simulate high density, providing a good three-dimensional microenvironment to promote chondrogenic differentiation and cartilage tissue formation.<sup><xref rid="cit39" ref-type="bibr">39</xref></sup></p><fig position="float" id="fig7" orientation="portrait"><label>Fig. 7</label><caption><title>Pore sizes drive local differentiation even in identical media conditions: (A) RT-qPCR data showing expression of chondrogenic genes in the small pore <italic toggle="yes">versus</italic> the large pore region under chondrogenic conditions. (B) RT-qPCR data showing expression of osteogenic genes in the small pore <italic toggle="yes">versus</italic> the large pore region under osteogenic conditions. (C) Alcian blue staining of gradient scaffold under chondrogenic conditions (scale = 200 μm). (D) Alizarin red staining of the gradient scaffold under osteogenic conditions (scale = 200 μm).</title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="d5ra00540j-f7.jpg"/></fig></sec></sec></sec><sec><title>Discussion</title><p>The objective of this study was to develop a scaffold for osteochondral defect repair that can drive local cell fate through surface topography. An ideal scaffold could be implanted <italic toggle="yes">in vivo</italic> and intrinsically drive tissue specific repair. This can be difficult to achieve in the osteochondral junction, as there are different tissue types throughout the tissue. Thus, we proposed a gradient porous scaffold to promote stem cell differentiation through pore geometry, so that it is less dependent on external factors such as growth factors, which are translationally challenging.<sup><xref rid="cit14" ref-type="bibr">14–16</xref></sup></p><p>We first developed and characterized the PLLA scaffold, showing that we can use TIPS to control the range of pore sizes from about 70 μm to about 200 μm. We chose to use PLLA as our polymer, since PLLA is biodegradable, has lower cytotoxicity than other synthetic polymers,<sup><xref rid="cit40" ref-type="bibr">40</xref></sup> and – when synthesized with low polydispersity – allows for tight control of nucleation using the previously described TIPS method. PLLA is both biodegradable, meaning that the polymer structure breaks down, and bioabsorbable, meaning that the body can excrete the broken down components.<sup><xref rid="cit41" ref-type="bibr">41</xref></sup> PLLA can take almost 2 year to completely degrade,<sup><xref rid="cit41" ref-type="bibr">41,42</xref></sup> leaving ample time for tissue regeneration to replace the scaffold and fill the defect. Critically, while PLLA can cause a minor foreign body response as do most biomaterials,<sup><xref rid="cit43" ref-type="bibr">43</xref></sup><italic toggle="yes">in vitro</italic> and <italic toggle="yes">in vivo</italic> experiments have shown minimal long-term inflammatory responses to PLLA-based biomaterials.<sup><xref rid="cit44" ref-type="bibr">44</xref></sup><italic toggle="yes">In vitro</italic> and <italic toggle="yes">in vivo</italic> assays show that PLLA-based biomaterials do not cause hemolysis.<sup><xref rid="cit41" ref-type="bibr">41,42</xref></sup> These qualities of PLLA justify why it has been successfully used as a biomaterial in both cartilage and bone tissue engineering.<sup><xref rid="cit45" ref-type="bibr">45–48</xref></sup> Ma <italic toggle="yes">et al.</italic> seeded chondrocytes on a PLLA and collagen scaffold and showed high cell proliferation and spreading.<sup><xref rid="cit49" ref-type="bibr">49</xref></sup> Liu <italic toggle="yes">et al.</italic> used PLLA nanofiber scaffolds as a base with piezoelectric charge and mechanical activation to repair hyaline cartilage in a rabbit model.<sup><xref rid="cit50" ref-type="bibr">50</xref></sup> Similarly, Polak <italic toggle="yes">et al.</italic> used piezoelectric, electrospun PLLA fibrous scaffolds to increase adhesion of osteoblasts.<sup><xref rid="cit51" ref-type="bibr">51</xref></sup> Ciapetti <italic toggle="yes">et al.</italic> mixed PLLA with various biomimetic cues to increase osteoconduction of MSCs,<sup><xref rid="cit52" ref-type="bibr">52</xref></sup> and Meng <italic toggle="yes">et al.</italic> mixed PLLA with PCL to generate membranes that promote adhesion and proliferation of osteoblasts.<sup><xref rid="cit53" ref-type="bibr">53</xref></sup> Previous work from our group showed that PLLA mixed with hydroxyapatite to promote bone differentiation can still undergo TIPS.<sup><xref rid="cit48" ref-type="bibr">48</xref></sup> Thus, PLLA is an ideal polymer for our system and has been previously shown to be successful in osteochondral tissue engineering.</p><p>For this study, focused on the role of pore size in supporting stem cell differentiation, we choose to use only PLLA in our scaffold, with pore sizes ranging from ∼70 μm to ∼200 μm to drive differentiation of MSCs into cartilage and bone, respectively. We chose to direct pore size to this specific diameter based on previous literature. In fact, geometry has been shown to direct stem cell fate and differentiation.<sup><xref rid="cit26" ref-type="bibr">26,54–56</xref></sup> Kilian <italic toggle="yes">et al.</italic> seeded stem cells on patterned adhesive islands of different shapes, showing that higher aspect ratio shapes promoted greater contractility and in turn, greater osteogenesis over adipogenesis.<sup><xref rid="cit57" ref-type="bibr">57</xref></sup> Specifically, it has been shown that smaller pores, can drive chondrogenic differentiation and matrix deposition. Our previous work using similar methods shows that PLLA scaffolds with 100 μm pores drives more chondrogenesis than 200 μm pores.<sup><xref rid="cit26" ref-type="bibr">26</xref></sup> Additionally, Zeng <italic toggle="yes">et al.</italic> used alginate hydrogels with microcavities to show that their smallest pore size promoted both cell proliferation and chondrogenic extracellular matrix synthesis.<sup><xref rid="cit58" ref-type="bibr">58</xref></sup> Duan <italic toggle="yes">et al.</italic> determined that pore sizes of 100–200 μm were optimal for cartilage growth, and sizes of 300–450 μm were optimal for bone growth.<sup><xref rid="cit59" ref-type="bibr">59</xref></sup> Similarly, Di Luca <italic toggle="yes">et al.</italic> showed that decreasing pore sizes drive chondrogenesis<sup><xref rid="cit60" ref-type="bibr">60</xref></sup> and that increasing pore sizes drive osteogenesis.<sup><xref rid="cit61" ref-type="bibr">61</xref></sup> We used this preexisting information and our preliminary experiments to determine the range of pores in our monolithic PLLA scaffold.</p><p>To achieve fine control of the pores in our scaffold, along with a continuous gradient, we determined that TIPS was the best method to generate our scaffold. TIPS can generate scaffolds that are highly porous and have an interconnected network of pores, ideal for recellularization. Our previous work has shown the capabilities of tuning pore size and structure of polymers using TIPS.<sup><xref rid="cit27" ref-type="bibr">27</xref></sup> Another benefit of TIPS is its clinical translatability, as it is highly scalable and an inexpensive production process.<sup><xref rid="cit25" ref-type="bibr">25</xref></sup> However, we wanted our scaffold to have a continuous gradient of pore sizes, instead of two distinct regions, to avoid the risk of delamination<sup><xref rid="cit62" ref-type="bibr">62–64</xref></sup> and more accurately represent the multilayer organization of the osteochondral junction.<sup><xref rid="cit45" ref-type="bibr">45</xref></sup> Specifically, we aimed to perform TIPS simultaneously with two different cooling profiles at either end of the PLLA slab. We used a previously described custom apparatus made in-house using two Peltier cells with heat sinks.<sup><xref rid="cit48" ref-type="bibr">48</xref></sup> The fast-cooling side created large pores, the slow-cooling side created small pores, and the pore size smoothly transitioned in between. Thus, we have a translatable procedure to create continuous porous gradient scaffolds in principle capable of enhancing stem cell differentiation.</p><p>To validate our scaffold <italic toggle="yes">in vitro</italic>, we used our established biphasic bioreactor to simultaneously differentiate the small-pore side chondrogenically, and the large-pore side osteogenically.<sup><xref rid="cit65" ref-type="bibr">65</xref></sup> The bioreactor allows perfusion of two different media streams with no mixing except through diffusion within the construct.<sup><xref rid="cit29" ref-type="bibr">29</xref></sup> This way, we can create <italic toggle="yes">in vitro</italic> two separate microenvironments representative of the native osteochondral junction.</p><p>We first considered cell adhesion, viability, and proliferation on the PLLA scaffold. PLLA is considered hydrophobic, which can warrant concerns about cell attachment.<sup><xref rid="cit40" ref-type="bibr">40,66</xref></sup> To overcome this, we preconditioned the scaffold by soaking it overnight in growth medium containing 10% FBS. The adsorbed protein and nutrients help drive cell infiltration and adhesion. While an FBS soak is not clinically translatable, we have also confirmed cell attachment and growth after preconditioning the scaffold in gelatin, collagen, or fibronectin (data not shown). These matrix proteins are well studied and already approved for clinic use in other application.<sup><xref rid="cit67" ref-type="bibr">67–70</xref></sup> We visualized the efficacy of the preconditioning using live-dead staining with Calcein-AM and ethidium homodimer 1, and MTS assay, seeing steady growth of cells on both pore sizes of the scaffold over 7 days, confirming cellularization, compatibility, and non-toxicity. We then placed the seeded PLLA scaffold into the bioreactor and perfused the small pore side with chondrogenic media and the large pore side with osteogenic media. We differentiated the scaffold for 3 weeks to validate our ability to generate an osteochondral construct. RT-qPCR for chondrogenic genes <italic toggle="yes">COL2</italic>, <italic toggle="yes">ACAN</italic>, and <italic toggle="yes">SOX9</italic>, and osteogenic genes <italic toggle="yes">RUNX2</italic>, <italic toggle="yes">BSP2</italic>, and <italic toggle="yes">OPN</italic>, showed upregulation of chondrogenic gene <italic toggle="yes">COL2</italic> in the scaffold in the small pore region <italic toggle="yes">versus</italic> the large pore region and significant upregulation of <italic toggle="yes">OPN</italic> in the large pore region <italic toggle="yes">versus</italic> the small pore region, indicating a differential cellular specification. We also seeded cells in a GelMA scaffold, cultured in the same way, to act as a control with uniform topography and no pores. Notably, we did not see significant upregulation of <italic toggle="yes">COL2</italic> in the upper chamber <italic toggle="yes">versus</italic> the lower chamber of the GelMA control, hinting that the PLLA scaffold positively affects differentiation. We also saw significantly greater <italic toggle="yes">COL2</italic> expression in the scaffold <italic toggle="yes">versus</italic> the GelMA control, suggesting the PLLA porous scaffolds can promote chondrogenesis greater than the hydrogel. We then stained for glycosaminoglycans, abundant in cartilage, with Alcian blue, and for calcium deposition, indicative of bone calcification, with Alizarin red. As expected, we saw more robust Alcian blue signal in the small pore region, and more abundant Alizarin red signal in the large pore region, with both stains stronger in the PLLA scaffold <italic toggle="yes">versus</italic> the corresponding GelMA control (SI, Fig. S2). To summarize these results, we compared the percent change of the PCR fold change results to show that there is greater difference in differentiation between the small pore/chondrogenic region and the large pore/osteogenic region in the PLLA scaffold <italic toggle="yes">versus</italic> the GelMA control. The difference of <italic toggle="yes">SOX9</italic> expression and <italic toggle="yes">BSP2</italic> expression is significantly greater in the PLLA scaffold than the GelMA control. This data implies that pores may play a critical role in driving differentiation.</p><p>To further determine the capabilities of pore size to drive differentiation, we then perfused a gradient scaffold with only CM or only OM and performed the same assays to look for difference due solely to pore size. We saw significant upregulation of <italic toggle="yes">COL2</italic> in the small pore region <italic toggle="yes">versus</italic> the large pore region, indicating that the small pores enhance chondrogenic differentiation. We also saw a higher fold change of <italic toggle="yes">RUNX2</italic> and <italic toggle="yes">OPN</italic>, albeit with high variability, suggesting that the small pores are not conductive to ossification even when exposed to osteogenic conditions. Histologically, we saw Alcian blue signal throughout the scaffold, with greater signal in the small pore region. Inversely, we saw Alizarin red signal primarily in the large pore region. The absence of calcium deposition in the small pore region w promising, as a great shortcoming of tissue engineered cartilage is its tendency to calcify.<sup><xref rid="cit6" ref-type="bibr">6,8</xref></sup></p><p>We have shown that our gradient porous scaffold can support local differentiation of stem cells into chondrogenic and osteogenic phenotypes, with the end goal of clinically translational osteochondral defect repair. Multi-tissue repair is a common concern, as few tissues operate in isolation <italic toggle="yes">in vivo</italic>. To work towards a solution, many researchers have proposed gradient scaffolds of their own. These gradients can be discrete or continuous, and can be a change in mechanical properties, biochemical components, or porosity, and can be achieved in many ways. Zhu <italic toggle="yes">et al.</italic> created a gradient scaffold for tendon repair by modulating crystallinity and microstructure of polyvinyl alcohol (PVA) along the length of the hydrogel.<sup><xref rid="cit71" ref-type="bibr">71</xref></sup> Du <italic toggle="yes">et al.</italic> used laser sintering to create a continuous cartilage-bone scaffold with poly(ε-caprolactone) (PCL) microspheres and PCL/hydroxyapatite microspheres, respectively.<sup><xref rid="cit72" ref-type="bibr">72</xref></sup> Wei <italic toggle="yes">et al.</italic> used multiple techniques to develop a successful layered hydrogel scaffold for osteochondral defect repair.<sup><xref rid="cit73" ref-type="bibr">73,74</xref></sup> A sodium alginate/gelatin hydrogel layered on a sodium alginate/gelatin and β-tricalcium phosphate hydrogel created different matrices for cartilage and bone growth respectively. There was also a gradient of kartogenin and pore sizes to further drive tissue specific differentiation. Evidently, there are many creative ways to develop gradient scaffolds for multiple tissue repair, and many researchers have had success. The benefit of our approach is that it is clinically translatable; it is affordable, easy to fabricate, and has potential for off-the-shelf applications. Additionally, the continuous nature of the gradient adds mechanical stability, as delamination is less likely to occur.<sup><xref rid="cit75" ref-type="bibr">75</xref></sup></p><p>A limitation of the study was the lack of significant changes in the osteogenic region of the scaffold. During osteogenesis, the OM only contained β-glycerophosphate as a morphogen that drives osteogenesis.<sup><xref rid="cit76" ref-type="bibr">76–78</xref></sup> While this is effective in 2D osteogenic assays, it is a weak morphogen in 3D differentiation. This is acceptable in our <italic toggle="yes">in vitro</italic> study aimed at exploring the role of pore size, however it would not be ideal for differentiation prior to <italic toggle="yes">in vivo</italic> deployment. The addition of Vitamin D3 <sup><xref rid="cit79" ref-type="bibr">79–81</xref></sup> or BMPs<sup><xref rid="cit82" ref-type="bibr">82</xref></sup> could help drive further osteogenesis during differentiation prior to <italic toggle="yes">in vivo</italic> implantation. Another question to consider is whether the PLLA scaffold can initiate differentiation with no chondro- or osteoinductive factors present. We expect that some initial morphogenic trigger might be necessary, in much the same way as TGF-β is necessary for cartilage formation during mesenchymal condensation in development.<sup><xref rid="cit47" ref-type="bibr">47</xref></sup> While beyond the scope of this study, we plan to test these conditions in preparation for our future <italic toggle="yes">in vivo</italic> studies.</p><p>While we have shown that small pores specifically contribute to chondrogenesis, an open question remains on the specific mechanism at play. We hypothesize that the small pores aid in chondrogenesis due to either hypoxia or by mimicking mesenchymal condensation. Small pores and tightly packed cells may limit the diffusion of gases and nutrient,<sup><xref rid="cit22" ref-type="bibr">22</xref></sup> including oxygen, and hypoxic conditions are known to enhance chondrogenesis.<sup><xref rid="cit83" ref-type="bibr">83</xref></sup> We hypothesize that at the same time, the small pores may effectively drive chondrogenesis by packing the cells together and creating a mesenchymal condensation-state. This process would be particularly interesting as the mechanisms of mesenchymal condensation are an active area of study<sup><xref rid="cit84" ref-type="bibr">84,85</xref></sup> as well as their application for chondrogenesis.<sup><xref rid="cit86" ref-type="bibr">86–88</xref></sup> In future studies, we plan to specifically dissect the contribution of hypoxia <italic toggle="yes">versus</italic> a condensation-like state to chondrogenesis in the small pore scaffolds.</p></sec><sec><title>Conclusions</title><p>We observed a spatially defined, biphasic differentiation of hMSCs within the engineered PLLA scaffold for osteochondral constructs. The pore gradient scaffold is obtained in a single fabrication step, using a single material, by thermally induced phase separation. This technique allowed for the fabrication of a gradient scaffold with a pore dimension appropriate to replicate the osteochondral junction from cartilage (70 micron) to bone (200 micron). Furthermore, the different cell types (chondrocytes and osteoblasts) are obtained from bone marrow derived hMSCs that are commonly used in cartilage and bone engineering and are the resident progenitor cells in osteochondral defect repair. A single unit biodegradable scaffold produced with local gradient pore structure may then be tailored for chondro- and osteoinduction and applied to improve osteochondral tissue repair, providing mechanical stability and local cues for cell differentiation.</p></sec><sec><title>Author contributions</title><p>GC: conceptualization, data curation, formal analysis, investigation, methodology, project administration, software, validation, visualization, writing – original draft. KWYS: data curation, formal analysis, investigation, project administration, validation, writing – original draft, writing – review &amp; editing. AP: conceptualization, investigation, validation, methodology. FCP: conceptualization, investigation. EYZ: investigation, validation. VLC: conceptualization, funding acquisition, supervision. VB: conceptualization, funding acquisition, supervision. RST: conceptualization, funding acquisition, resources, supervision. RG: conceptualization, data curation, funding acquisition, project administration, resources, writing – review &amp; editing.</p></sec><sec sec-type="COI-statement"><title>Conflicts of interest</title><p>RST and RG are co-inventor of an issued patent for the biphasic bioreactor technology.</p></sec><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material id="RA-015-D5RA00540J-s001" position="float" content-type="local-data" orientation="portrait"><label>RA-015-D5RA00540J-s001</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="RA-015-D5RA00540J-s001.pdf" id="d67e1187" position="anchor" orientation="portrait"/></supplementary-material><supplementary-material id="RA-015-D5RA00540J-s002" position="float" content-type="local-data" orientation="portrait"><label>RA-015-D5RA00540J-s002</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="RA-015-D5RA00540J-s002.xlsx" id="d67e1190" position="anchor" orientation="portrait"/></supplementary-material><supplementary-material id="RA-015-D5RA00540J-s003" position="float" content-type="local-data" orientation="portrait"><label>RA-015-D5RA00540J-s003</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="RA-015-D5RA00540J-s003.zip" id="d67e1193" position="anchor" orientation="portrait"/></supplementary-material></sec></body><back><ack><p>We would like to acknowledge T32-AR007132 (KWYS), the Fontaine Fellowship (KWYS), Children's Hospital of Philadelphia Research Institute (RG), the Frontier Program in Airway Disorders of the Children's Hospital of Philadelphia (RG), the Ri. MED Foundation (RG), NIH/NHLBI R01HL161583-01A1 (RG), and NIH/NIAMS P30AR069619 (RG).</p></ack><sec sec-type="data-availability"><title>Data availability</title><p>The data supporting this article have been included as part of the SI.</p><p>The supplementary information includes SI data for scaffold adsorption/resorption, histology of GelMA controls, COMSOL analysis files, mechanics raw data and analysis code, RT-qPCR raw data, MTS raw data, thermal history raw data, thermal history analysis code. See DOI: <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://doi.org/10.1039/d5ra00540j">https://doi.org/10.1039/d5ra00540j</uri>.</p></sec><ref-list><title>Notes and references</title><ref id="cit1"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Flanigan</surname><given-names>D. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Harris</surname><given-names>J. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Trinh</surname><given-names>T. Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Siston</surname><given-names>R. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Brophy</surname><given-names>R. H.</given-names></name>
+</person-group><source>Med. Sci. Sports Exercise</source><year>2010</year><volume>42</volume><issue>10</issue><fpage>1795</fpage><lpage>1801</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1249/MSS.0b013e3181d9eea0</pub-id><pub-id pub-id-type="pmid">20216470</pub-id></element-citation></ref><ref id="cit2"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Graham</surname><given-names>P.</given-names></name>
+</person-group><source>Orthop. Nurs.</source><year>2017</year><volume>36</volume><fpage>237</fpage><lpage>239</lpage><pub-id pub-id-type="pmid">28538540</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/NOR.0000000000000358</pub-id></element-citation></ref><ref id="cit3"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Bhardwaj</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Devi</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mandal</surname><given-names>B. B.</given-names></name>
+</person-group><source>Macromol. Biosci.</source><year>2015</year><volume>15</volume><fpage>153</fpage><lpage>182</lpage><pub-id pub-id-type="pmid">25283763</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/mabi.201400335</pub-id></element-citation></ref><ref id="cit4"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Howell</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liao</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gee</surname><given-names>C. W.</given-names></name>
+</person-group><source>Curr. Rev. Musculoskelet Med.</source><year>2021</year><volume>14</volume><fpage>60</fpage><lpage>66</lpage><pub-id pub-id-type="pmid">33587261</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s12178-020-09685-1</pub-id><pub-id pub-id-type="pmcid">PMC7930143</pub-id></element-citation></ref><ref id="cit5"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Martin</surname><given-names>I.</given-names></name>
+</person-group>, <person-group person-group-type="author"><name name-style="western"><surname>Schaefer</surname><given-names>D.</given-names></name></person-group> and <person-group person-group-type="author"><name name-style="western"><surname>Dozin</surname><given-names>B.</given-names></name></person-group>, in <source>Madame Curie Bioscience Database [Internet]</source>, <publisher-name>Landes Bioscience</publisher-name>, <year>2013</year></mixed-citation></ref><ref id="cit6"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Armiento</surname><given-names>A. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Alini</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Stoddart</surname><given-names>M. J.</given-names></name>
+</person-group><source>Adv. Drug Deliv. Rev.</source><year>2019</year><volume>146</volume><fpage>289</fpage><lpage>305</lpage><pub-id pub-id-type="pmid">30605736</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.addr.2018.12.015</pub-id></element-citation></ref><ref id="cit7"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Mandell</surname><given-names>B. F.</given-names></name>
+</person-group>, <source>Synovial Fluid Analysis and The Evaluation of Patients With Arthritis</source>, <year>2022</year></mixed-citation></ref><ref id="cit8"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Muthu</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Korpershoek</surname><given-names>J. V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Novais</surname><given-names>E. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tawy</surname><given-names>G. F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hollander</surname><given-names>A. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Martin</surname><given-names>I.</given-names></name>
+</person-group><source>Nat. Rev. Rheumatol.</source><year>2023</year><volume>19</volume><fpage>403</fpage><lpage>416</lpage><pub-id pub-id-type="pmid">37296196</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41584-023-00979-5</pub-id></element-citation></ref><ref id="cit9"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Sarsenova</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Raimagambetov</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Issabekova</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Karzhauov</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kudaibergen</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Akhmetkarimova</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Batpen</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ramankulov</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ogay</surname><given-names>V.</given-names></name>
+</person-group><source>Polymers</source><year>2022</year><volume>14</volume><fpage>5343</fpage><pub-id pub-id-type="pmid">36559710</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/polym14245343</pub-id><pub-id pub-id-type="pmcid">PMC9780905</pub-id></element-citation></ref><ref id="cit10"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Lohmander</surname><given-names>L. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hellot</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Dreher</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Krantz</surname><given-names>E. F. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kruger</surname><given-names>D. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Guermazi</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Eckstein</surname><given-names>F.</given-names></name>
+</person-group><source>Arthritis Rheumatol.</source><year>2014</year><volume>66</volume><fpage>1820</fpage><lpage>1831</lpage><pub-id pub-id-type="pmid">24740822</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/art.38614</pub-id></element-citation></ref><ref id="cit11"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Shah</surname><given-names>S. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mithoefer</surname><given-names>K.</given-names></name>
+</person-group><source>Curr. Rev. Musculoskelet. Med.</source><year>2020</year><volume>13</volume><fpage>641</fpage><lpage>650</lpage><pub-id pub-id-type="pmid">32710292</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s12178-020-09664-6</pub-id><pub-id pub-id-type="pmcid">PMC7661573</pub-id></element-citation></ref><ref id="cit12"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Ren</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhao</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lash</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Martino</surname><given-names>M. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Julier</surname><given-names>Z.</given-names></name>
+</person-group><source>Front. Bioeng. Biotechnol.</source><year>2020</year><volume>7</volume><fpage>1</fpage><lpage>9</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fbioe.2019.00469</pub-id><pub-id pub-id-type="pmcid">PMC6985039</pub-id><pub-id pub-id-type="pmid">32039177</pub-id></element-citation></ref><ref id="cit13"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Householder</surname><given-names>N. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Raghuram</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Agyare</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Thipaphay</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zumwalt</surname><given-names>M.</given-names></name>
+</person-group><source>Orthop. J. Sports Med.</source><year>2023</year><volume>11</volume><fpage>23259671231155950</fpage><pub-id pub-id-type="pmid">37138944</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/23259671231155950</pub-id><pub-id pub-id-type="pmcid">PMC10150434</pub-id></element-citation></ref><ref id="cit14"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>McGowan</surname><given-names>K. B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Stiegman</surname><given-names>G.</given-names></name>
+</person-group><source>Cartilage</source><year>2013</year><volume>4</volume><fpage>4</fpage><lpage>11</lpage><pub-id pub-id-type="pmid">26069647</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/1947603512460756</pub-id><pub-id pub-id-type="pmcid">PMC4297111</pub-id></element-citation></ref><ref id="cit15"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Huang</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lou</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zheng</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wu</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yao</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kou</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>D.</given-names></name>
+</person-group><source>Drug Deliv.</source><year>2022</year><volume>29</volume><fpage>767</fpage><lpage>791</lpage><pub-id pub-id-type="pmid">35261301</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/10717544.2022.2048130</pub-id><pub-id pub-id-type="pmcid">PMC8920370</pub-id></element-citation></ref><ref id="cit16"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Sridharan</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Sharma</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Detamore</surname><given-names>M. S.</given-names></name>
+</person-group><source>Tissue Eng., Part B</source><year>2016</year><volume>22</volume><fpage>15</fpage><lpage>33</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1089/ten.teb.2015.0147</pub-id><pub-id pub-id-type="pmcid">PMC4753577</pub-id><pub-id pub-id-type="pmid">26192161</pub-id></element-citation></ref><ref id="cit17"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Gupte</surname><given-names>M. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Swanson</surname><given-names>W. B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hu</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Jin</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ma</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Feng</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Feng</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xiao</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hatch</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mishina</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ma</surname><given-names>P. X.</given-names></name>
+</person-group><source>Acta Biomater.</source><year>2018</year><volume>82</volume><fpage>1</fpage><lpage>11</lpage><pub-id pub-id-type="pmid">30321630</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.actbio.2018.10.016</pub-id><pub-id pub-id-type="pmcid">PMC6258662</pub-id></element-citation></ref><ref id="cit18"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Murphy</surname><given-names>C. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Duffy</surname><given-names>G. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Schindeler</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>O'Brien</surname><given-names>F. J.</given-names></name>
+</person-group><source>J. Biomed. Mater. Res., Part A</source><year>2016</year><volume>104</volume><fpage>291</fpage><lpage>304</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jbm.a.35567</pub-id><pub-id pub-id-type="pmid">26386362</pub-id></element-citation></ref><ref id="cit19"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>P.-Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Clements</surname><given-names>L. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Thissen</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tsai</surname><given-names>W.-B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Voelcker</surname><given-names>N. H.</given-names></name>
+</person-group><source>Biomater. Sci.</source><year>2013</year><volume>1</volume><fpage>924</fpage><pub-id pub-id-type="pmid">32481961</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1039/c3bm60026b</pub-id></element-citation></ref><ref id="cit20"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>P. Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Thissen</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kingshott</surname><given-names>P.</given-names></name>
+</person-group><source>Acta Biomater.</source><year>2016</year><volume>45</volume><fpage>31</fpage><lpage>59</lpage><pub-id pub-id-type="pmid">27596488</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.actbio.2016.08.054</pub-id></element-citation></ref><ref id="cit21"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Bettinger</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Langer</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Borenstein</surname><given-names>J.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2009</year><volume>48</volume><fpage>5406</fpage><lpage>5415</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/anie.200805179</pub-id><pub-id pub-id-type="pmcid">PMC2834566</pub-id><pub-id pub-id-type="pmid">19492373</pub-id></element-citation></ref><ref id="cit22"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Nava</surname><given-names>M. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Draghi</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Giordano</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Pietrabissa</surname><given-names>R.</given-names></name>
+</person-group><source>J. Appl. Biomater.
+Funct. Mater.</source><year>2016</year><volume>14</volume><fpage>e223</fpage><lpage>e229</lpage><pub-id pub-id-type="pmid">27444061</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.5301/jabfm.5000302</pub-id></element-citation></ref><ref id="cit23"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Lin</surname><given-names>T. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>H. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Cheng</surname><given-names>W. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hsu</surname><given-names>H. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yeh</surname><given-names>M. L.</given-names></name>
+</person-group><source>Int. J. Mol. Sci.</source><year>2019</year><volume>20</volume><issue>2</issue><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms20020326</pub-id><pub-id pub-id-type="pmcid">PMC6359257</pub-id><pub-id pub-id-type="pmid">30650528</pub-id></element-citation></ref><ref id="cit24"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Nadine</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Fernandes</surname><given-names>I. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Correia</surname><given-names>C. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mano</surname><given-names>J. F.</given-names></name>
+</person-group><source>iScience</source><year>2022</year><volume>25</volume><fpage>105370</fpage><pub-id pub-id-type="pmid">36339269</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.isci.2022.105370</pub-id><pub-id pub-id-type="pmcid">PMC9626746</pub-id></element-citation></ref><ref id="cit25"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Zeinali</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Del Valle</surname><given-names>L. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Torras</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Puiggalí</surname><given-names>J.</given-names></name>
+</person-group><source>Int. J. Mol. Sci.</source><year>2021</year><volume>22</volume><issue>7</issue><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms22073504</pub-id><pub-id pub-id-type="pmcid">PMC8036748</pub-id><pub-id pub-id-type="pmid">33800709</pub-id></element-citation></ref><ref id="cit26"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Conoscenti</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Schneider</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Stoelzel</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Carfì Pavia</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Brucato</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Goegele</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>La Carrubba</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Schulze-Tanzil</surname><given-names>G.</given-names></name>
+</person-group><source>Mater. Sci. Eng., C</source><year>2017</year><volume>80</volume><fpage>449</fpage><lpage>459</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.msec.2017.06.011</pub-id><pub-id pub-id-type="pmid">28866186</pub-id></element-citation></ref><ref id="cit27"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Carfì Pavia</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>La Carrubba</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Piccarolo</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Brucato</surname><given-names>V.</given-names></name>
+</person-group><source>J. Biomed. Mater. Res., Part A</source><year>2008</year><volume>86</volume><fpage>459</fpage><lpage>466</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jbm.a.31621</pub-id><pub-id pub-id-type="pmid">17975822</pub-id></element-citation></ref><ref id="cit28"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Pirosa</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gottardi</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Alexander</surname><given-names>P. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Puppi</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chiellini</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tuan</surname><given-names>R. S.</given-names></name>
+</person-group><source>Biomaterials</source><year>2021</year><volume>272</volume><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.biomaterials.2021.120773</pub-id><pub-id pub-id-type="pmcid">PMC12872279</pub-id><pub-id pub-id-type="pmid">33798958</pub-id></element-citation></ref><ref id="cit29"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Iannetti</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>D’Urso</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Conoscenti</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Cutrì</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tuan</surname><given-names>R. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Raimondi</surname><given-names>M. T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gottardi</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zunino</surname><given-names>P.</given-names></name>
+</person-group><source>PLoS ONE</source><year>2016</year><volume>11</volume><issue>9</issue><pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0162774</pub-id><pub-id pub-id-type="pmcid">PMC5036894</pub-id><pub-id pub-id-type="pmid">27669413</pub-id></element-citation></ref><ref id="cit30"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Mannella</surname><given-names>G. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Carfì Pavia</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Conoscenti</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>La Carrubba</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Brucato</surname><given-names>V.</given-names></name>
+</person-group><source>J. Polym. Sci., Part B: Polym. Phys.</source><year>2014</year><volume>52</volume><fpage>979</fpage><lpage>983</lpage></element-citation></ref><ref id="cit31"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Mannella</surname><given-names>G. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Conoscenti</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Carfì Pavia</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>La Carrubba</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Brucato</surname><given-names>V.</given-names></name>
+</person-group><source>Mater. Lett.</source><year>2015</year><volume>160</volume><fpage>1</fpage><lpage>4</lpage></element-citation></ref><ref id="cit32"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Zein</surname><given-names>I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hutmacher</surname><given-names>D. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tan</surname><given-names>K. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Teoh</surname><given-names>S. H.</given-names></name>
+</person-group><source>Biomaterials</source><year>2002</year><volume>23</volume><fpage>1169</fpage><lpage>1185</lpage><pub-id pub-id-type="pmid">11791921</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/s0142-9612(01)00232-0</pub-id></element-citation></ref><ref id="cit33"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Mauck</surname><given-names>R. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Soltz</surname><given-names>M. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>C. C. B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wong</surname><given-names>D. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chao</surname><given-names>P.-H. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Valhmu</surname><given-names>W. B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hung</surname><given-names>C. T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ateshian</surname><given-names>G. A.</given-names></name>
+</person-group><source>J. Biomech. Eng.</source><year>2000</year><volume>122</volume><fpage>252</fpage><lpage>260</lpage><pub-id pub-id-type="pmid">10923293</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1115/1.429656</pub-id></element-citation></ref><ref id="cit34"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Nichols</surname><given-names>D. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Sondh</surname><given-names>I. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Litte</surname><given-names>S. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zunino</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gottardi</surname><given-names>R.</given-names></name>
+</person-group><source>Biomed. Microdevices</source><year>2018</year><volume>20</volume><fpage>4</fpage><lpage>11</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10544-018-0264-x</pub-id><pub-id pub-id-type="pmcid">PMC5813085</pub-id><pub-id pub-id-type="pmid">29445972</pub-id></element-citation></ref><ref id="cit35"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Hu</surname><given-names>Y. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yu</surname><given-names>Y. E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Cooper</surname><given-names>H. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Shah</surname><given-names>R. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Geller</surname><given-names>J. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lu</surname><given-names>X. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Shane</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Bathon</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lane</surname><given-names>N. E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Guo</surname><given-names>X. E.</given-names></name>
+</person-group><source>J. Bone Miner. Res.</source><year>2024</year><volume>39</volume><fpage>1120</fpage><lpage>1131</lpage><pub-id pub-id-type="pmid">38887013</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/jbmr/zjae094</pub-id><pub-id pub-id-type="pmcid">PMC12102592</pub-id></element-citation></ref><ref id="cit36"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>He</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zeng</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Quan</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liao</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zeng</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lu</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ramakrishna</surname><given-names>S.</given-names></name>
+</person-group><source>Polymer</source><year>2009</year><volume>50</volume><fpage>4128</fpage><lpage>4138</lpage></element-citation></ref><ref id="cit37"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Hirao</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tamai</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tsumaki</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yoshikawa</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Myoui</surname><given-names>A.</given-names></name>
+</person-group><source>J. Biol. Chem.</source><year>2006</year><volume>281</volume><fpage>31079</fpage><lpage>31092</lpage><pub-id pub-id-type="pmid">16905540</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1074/jbc.M602296200</pub-id></element-citation></ref><ref id="cit38"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Bornes</surname><given-names>T. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Jomha</surname><given-names>N. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mulet-sierra</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Adesida</surname><given-names>A. B.</given-names></name>
+</person-group><source>Stem Cell Res. Ther.</source><year>2015</year><volume>6</volume><issue>84</issue><pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s13287-015-0075-4</pub-id><pub-id pub-id-type="pmcid">PMC4431536</pub-id><pub-id pub-id-type="pmid">25900045</pub-id></element-citation></ref><ref id="cit39"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Zhu</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Feng</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Bian</surname><given-names>L.</given-names></name>
+</person-group><source>Acta Biomater.</source><year>2014</year><volume>10</volume><fpage>1333</fpage><lpage>1340</lpage><pub-id pub-id-type="pmid">24342044</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.actbio.2013.12.015</pub-id></element-citation></ref><ref id="cit40"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Capuana</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lopresti</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ceraulo</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>La Carrubba</surname><given-names>V.</given-names></name>
+</person-group><source>Polymers</source><year>2022</year><volume>14</volume><fpage>1153</fpage><pub-id pub-id-type="pmid">35335484</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/polym14061153</pub-id><pub-id pub-id-type="pmcid">PMC8955974</pub-id></element-citation></ref><ref id="cit41"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Xavier</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Farez</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Salvatierra</surname><given-names>P. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Jardini</surname><given-names>A. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kharmandayan</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Feldman</surname><given-names>S.</given-names></name>
+</person-group><source>F1000Research</source><year>2021</year><volume>10</volume><fpage>1275</fpage><pub-id pub-id-type="pmid">35035900</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.12688/f1000research.73754.1</pub-id><pub-id pub-id-type="pmcid">PMC8729025</pub-id></element-citation></ref><ref id="cit42"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wei</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xie</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tian</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yang</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhou</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>H.</given-names></name>
+</person-group><source>Int. J. Biol. Macromol.</source><year>2024</year><volume>272</volume><fpage>132876</fpage><pub-id pub-id-type="pmid">38838887</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ijbiomac.2024.132876</pub-id></element-citation></ref><ref id="cit43"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Nonhoff</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Puetzler</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hasselmann</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Fobker</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gosheger</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Schulze</surname><given-names>M.</given-names></name>
+</person-group><source>Polymers</source><year>2024</year><volume>16</volume><fpage>817</fpage><pub-id pub-id-type="pmid">38543422</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/polym16060817</pub-id><pub-id pub-id-type="pmcid">PMC10974195</pub-id></element-citation></ref><ref id="cit44"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Biggs</surname><given-names>D. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lengsfeld</surname><given-names>C. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hybertson</surname><given-names>B. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ng</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Manning</surname><given-names>M. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Randolph</surname><given-names>T. W.</given-names></name>
+</person-group><source>J. Controlled Release</source><year>2003</year><volume>92</volume><fpage>147</fpage><lpage>161</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/s0168-3659(03)00325-0</pub-id><pub-id pub-id-type="pmid">14499193</pub-id></element-citation></ref><ref id="cit45"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Nooeaid</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Salih</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Beier</surname><given-names>J. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Boccaccini</surname><given-names>A. R.</given-names></name>
+</person-group><source>J. Cell. Mol. Med.</source><year>2012</year><volume>16</volume><fpage>2247</fpage><lpage>2270</lpage><pub-id pub-id-type="pmid">22452848</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1582-4934.2012.01571.x</pub-id><pub-id pub-id-type="pmcid">PMC3823419</pub-id></element-citation></ref><ref id="cit46"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Song</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lou</surname><given-names>T.</given-names></name>
+</person-group><source>J. Mater. Sci. Mater. Med.</source><year>2010</year><volume>21</volume><fpage>183</fpage><lpage>188</lpage><pub-id pub-id-type="pmid">19705258</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10856-009-3855-5</pub-id></element-citation></ref><ref id="cit47"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Du</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hag Koh</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lei</surname><given-names>B.</given-names></name>
+</person-group><source>Mater. Lett.</source><year>2014</year><volume>122</volume><fpage>62</fpage><lpage>65</lpage></element-citation></ref><ref id="cit48"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Ghersi</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Carfì Pavia</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Conoscenti</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mannella</surname><given-names>G. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Greco</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Rigogliuso</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>La Carrubba</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Brucato</surname><given-names>V.</given-names></name>
+</person-group><source>Chem. Eng. Trans.</source><year>2016</year><volume>49</volume><fpage>301</fpage><lpage>306</lpage></element-citation></ref><ref id="cit49"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Ma</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gao</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gong</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Shen</surname><given-names>J.</given-names></name>
+</person-group><source>Biomaterials</source><year>2005</year><volume>26</volume><fpage>1253</fpage><lpage>1259</lpage><pub-id pub-id-type="pmid">15475055</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.biomaterials.2004.04.031</pub-id></element-citation></ref><ref id="cit50"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Dzidotor</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Le</surname><given-names>T. T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Vinikoor</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Morgan</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Curry</surname><given-names>E. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Das</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>McClinton</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Eisenberg</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Apuzzo</surname><given-names>L. N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tran</surname><given-names>K. T. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Prasad</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Flanagan</surname><given-names>T. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lee</surname><given-names>S.-W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kan</surname><given-names>H.-M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chorsi</surname><given-names>M. T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lo</surname><given-names>K. W. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Laurencin</surname><given-names>C. T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Nguyen</surname><given-names>T. D.</given-names></name>
+</person-group><source>Sci. Transl. Med.</source><year>2022</year><volume>14</volume><fpage>eabi7282</fpage><pub-id pub-id-type="pmid">35020409</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/scitranslmed.abi7282</pub-id></element-citation></ref><ref id="cit51"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Polak</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Berniak</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Szewczyk</surname><given-names>P. K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Karbowniczek</surname><given-names>J. E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Marzec</surname><given-names>M. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Stachewicz</surname><given-names>U.</given-names></name>
+</person-group><source>Appl. Surf. Sci.</source><year>2023</year><volume>621</volume><fpage>156835</fpage></element-citation></ref><ref id="cit52"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Ciapetti</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Granchi</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Devescovi</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Baglio</surname><given-names>S. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Leonardi</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Martini</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Jurado</surname><given-names>M. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Olalde</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Armentano</surname><given-names>I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kenny</surname><given-names>J. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Walboomers</surname><given-names>F. X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Alava</surname><given-names>J. I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Baldini</surname><given-names>N.</given-names></name>
+</person-group><source>Int. J. Mol. Sci.</source><year>2012</year><volume>13</volume><fpage>2439</fpage><lpage>2458</lpage><pub-id pub-id-type="pmid">22408463</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms13022439</pub-id><pub-id pub-id-type="pmcid">PMC3292032</pub-id></element-citation></ref><ref id="cit53"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Meng</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tang</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Meng</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wei</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gong</surname><given-names>R. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>
+</person-group><source>Int. J. Biol. Macromol.</source><year>2023</year><volume>235</volume><fpage>123781</fpage><pub-id pub-id-type="pmid">36849071</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ijbiomac.2023.123781</pub-id></element-citation></ref><ref id="cit54"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Chawla</surname><given-names>K.</given-names></name>
+</person-group><source>Mater. Sci. Eng., A</source><year>2012</year><volume>557</volume><fpage>45</fpage><lpage>53</lpage></element-citation></ref><ref id="cit55"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Akbarzadeh</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Minton</surname><given-names>J. a.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Janney</surname><given-names>C. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Smith</surname><given-names>T. a.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>James</surname><given-names>P. F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yousefi</surname><given-names>A.-M.</given-names></name>
+</person-group><source>J. Mater. Sci. Mater. Med.</source><year>2015</year><volume>26</volume><issue>2</issue><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10856-015-5453-z</pub-id><pub-id pub-id-type="pmid">25665851</pub-id></element-citation></ref><ref id="cit56"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Wise</surname><given-names>J. K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yarin</surname><given-names>A. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Megaridis</surname><given-names>C. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Cho</surname><given-names>M.</given-names></name>
+</person-group><source>Tissue Eng., Part A</source><year>2009</year><volume>15</volume><fpage>913</fpage><lpage>921</lpage><pub-id pub-id-type="pmid">18767972</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1089/ten.tea.2008.0109</pub-id><pub-id pub-id-type="pmcid">PMC2810270</pub-id></element-citation></ref><ref id="cit57"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Kilian</surname><given-names>K. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Bugarija</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lahn</surname><given-names>B. T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mrksich</surname><given-names>M.</given-names></name>
+</person-group><source>Proc. Natl. Acad. Sci. U. S. A.</source><year>2010</year><volume>107</volume><fpage>4872</fpage><lpage>4877</lpage><pub-id pub-id-type="pmid">20194780</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.0903269107</pub-id><pub-id pub-id-type="pmcid">PMC2841932</pub-id></element-citation></ref><ref id="cit58"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Zeng</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yao</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>D.-A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>X.</given-names></name>
+</person-group><source>Mater. Sci. Eng., C</source><year>2014</year><volume>34</volume><fpage>168</fpage><lpage>175</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.msec.2013.09.003</pub-id><pub-id pub-id-type="pmid">24268246</pub-id></element-citation></ref><ref id="cit59"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Duan</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Pan</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Cao</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>He</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Qu</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Dong</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ding</surname><given-names>J.</given-names></name>
+</person-group><source>J. Biomed. Mater. Res. A</source><year>2014</year><volume>102</volume><fpage>180</fpage><lpage>192</lpage><pub-id pub-id-type="pmid">23637068</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jbm.a.34683</pub-id></element-citation></ref><ref id="cit60"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Di Luca</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Szlazak</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lorenzo-Moldero</surname><given-names>I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ghebes</surname><given-names>C. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lepedda</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Swieszkowski</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Van Blitterswijk</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Moroni</surname><given-names>L.</given-names></name>
+</person-group><source>Acta Biomater.</source><year>2016</year><volume>36</volume><fpage>210</fpage><lpage>219</lpage><pub-id pub-id-type="pmid">26969523</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.actbio.2016.03.014</pub-id></element-citation></ref><ref id="cit61"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Di Luca</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Van Blitterswijk</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Moroni</surname><given-names>L.</given-names></name>
+</person-group><source>Birth Defects Res., Part C</source><year>2015</year><volume>105</volume><fpage>34</fpage><lpage>52</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/bdrc.21092</pub-id><pub-id pub-id-type="pmid">25777257</pub-id></element-citation></ref><ref id="cit62"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Gelinsky</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Eckert</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Despang</surname><given-names>F.</given-names></name>
+</person-group><source>Int. J. Mater. Res.</source><year>2007</year><volume>98</volume><fpage>749</fpage><lpage>755</lpage></element-citation></ref><ref id="cit63"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Atesok</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Doral</surname><given-names>M. N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Karlsson</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Egol</surname><given-names>K. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Jazrawi</surname><given-names>L. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Coelho</surname><given-names>P. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Martinez</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Matsumoto</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Owens</surname><given-names>B. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ochi</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hurwitz</surname><given-names>S. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Atala</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Fu</surname><given-names>F. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lu</surname><given-names>H. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Rodeo</surname><given-names>S. A.</given-names></name>
+</person-group><source>Knee Surg. Sports Traumatol. Arthrosc.</source><year>2014</year><volume>24</volume><issue>7</issue><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00167-014-3453-z</pub-id><pub-id pub-id-type="pmid">25466277</pub-id></element-citation></ref><ref id="cit64"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Sobral</surname><given-names>J. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Caridade</surname><given-names>S. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Sousa</surname><given-names>R. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mano</surname><given-names>J. F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Reis</surname><given-names>R. L.</given-names></name>
+</person-group><source>Acta Biomater.</source><year>2011</year><volume>7</volume><fpage>1009</fpage><lpage>1018</lpage><pub-id pub-id-type="pmid">21056125</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.actbio.2010.11.003</pub-id></element-citation></ref><ref id="cit65"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Lin</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lozito</surname><given-names>T. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Alexander</surname><given-names>P. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gottardi</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tuan</surname><given-names>R. S.</given-names></name>
+</person-group><source>Mol. Pharm.</source><year>2014</year><volume>11</volume><fpage>2203</fpage><lpage>2212</lpage><pub-id pub-id-type="pmid">24830762</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/mp500136b</pub-id><pub-id pub-id-type="pmcid">PMC4086740</pub-id></element-citation></ref><ref id="cit66"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Casalini</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Rossi</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Castrovinci</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Perale</surname><given-names>G.</given-names></name>
+</person-group><source>Front. Bioeng. Biotechnol.</source><year>2019</year><volume>7</volume><fpage>259</fpage><pub-id pub-id-type="pmid">31681741</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fbioe.2019.00259</pub-id><pub-id pub-id-type="pmcid">PMC6797553</pub-id></element-citation></ref><ref id="cit67"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Jie</surname><given-names>I. W. K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lee</surname><given-names>K. W. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yoon</surname><given-names>S. E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Song</surname><given-names>J. K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chan</surname><given-names>L. K. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lee</surname><given-names>C. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Jeong</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kim</surname><given-names>J.-H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yi</surname><given-names>K.-H.</given-names></name>
+</person-group><source>Life</source><year>2025</year><volume>15</volume><fpage>582</fpage><pub-id pub-id-type="pmid">40283137</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/life15040582</pub-id><pub-id pub-id-type="pmcid">PMC12028911</pub-id></element-citation></ref><ref id="cit68"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Milliron</surname><given-names>E. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Cavendish</surname><given-names>P. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Carey</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Barker</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Flanigan</surname><given-names>D. C.</given-names></name>
+</person-group><source>Cartilage</source><year>2025</year><fpage>19476035251319404</fpage><pub-id pub-id-type="pmid">40202752</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/19476035251319404</pub-id><pub-id pub-id-type="pmcid">PMC11982059</pub-id></element-citation></ref><ref id="cit69"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Sonwane</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Bonde</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Bonde</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chandarana</surname><given-names>C.</given-names></name>
+</person-group><source>J. Drug Deliv. Sci. Technol.</source><year>2025</year><volume>107</volume><fpage>106789</fpage></element-citation></ref><ref id="cit70"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>
+</person-group><source>Int. J. Biol. Macromol.</source><year>2024</year><volume>274</volume><fpage>133590</fpage><pub-id pub-id-type="pmid">38996884</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ijbiomac.2024.133590</pub-id></element-citation></ref><ref id="cit71"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Zhu</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ma</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Fan</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Dai</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Cai</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Qian</surname><given-names>K.</given-names></name>
+</person-group><source>Npj Flex. Electron.</source><year>2025</year><volume>9</volume><fpage>1</fpage><lpage>11</lpage></element-citation></ref><ref id="cit72"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Du</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yang</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Ma</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Noh</surname><given-names>I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mikos</surname><given-names>A. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>S.</given-names></name>
+</person-group><source>Biomaterials</source><year>2017</year><volume>137</volume><fpage>37</fpage><lpage>48</lpage><pub-id pub-id-type="pmid">28528301</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.biomaterials.2017.05.021</pub-id><pub-id pub-id-type="pmcid">PMC5544967</pub-id></element-citation></ref><ref id="cit73"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Fang</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lin</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xu</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tian</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>J. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xue</surname><given-names>J.</given-names></name>
+</person-group><source>Nano-Micro Lett.</source><year>2024</year><volume>17</volume><fpage>75</fpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s40820-024-01581-4</pub-id><pub-id pub-id-type="pmcid">PMC11602939</pub-id><pub-id pub-id-type="pmid">39601962</pub-id></element-citation></ref><ref id="cit74"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Wei</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kang</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yu</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Huang</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xie</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Dai</surname><given-names>H.</given-names></name>
+</person-group><source>Adv. Healthc. Mater.</source><year>2023</year><volume>12</volume><fpage>2300108</fpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/adhm.202300108</pub-id><pub-id pub-id-type="pmid">36763493</pub-id></element-citation></ref><ref id="cit75"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Cao</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Brand</surname><given-names>D. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zhou</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xiao</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Xia</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Czernuszka</surname><given-names>J. T.</given-names></name>
+</person-group><source>Adv. Healthc. Mater.</source><year>2022</year><volume>11</volume><fpage>2101643</fpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/adhm.202101643</pub-id><pub-id pub-id-type="pmid">35134274</pub-id></element-citation></ref><ref id="cit76"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Mertz</surname><given-names>E. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Makareeva</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mirigian</surname><given-names>L. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Leikin</surname><given-names>S.</given-names></name>
+</person-group><source>JBMR Plus</source><year>2023</year><volume>7</volume><fpage>e10701</fpage><pub-id pub-id-type="pmid">36699640</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jbm4.10701</pub-id><pub-id pub-id-type="pmcid">PMC9850442</pub-id></element-citation></ref><ref id="cit77"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Langenbach</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Handschel</surname><given-names>J.</given-names></name>
+</person-group><source>Stem Cell Res. Ther.</source><year>2013</year><volume>4</volume><fpage>117</fpage><pub-id pub-id-type="pmid">24073831</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/scrt328</pub-id><pub-id pub-id-type="pmcid">PMC3854789</pub-id></element-citation></ref><ref id="cit78"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Pirosa</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gottardi</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Alexander</surname><given-names>P. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tuan</surname><given-names>R. S.</given-names></name>
+</person-group><source>Stem Cell Res. Ther.</source><year>2018</year><volume>9</volume><issue>1</issue><pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s13287-018-0847-8</pub-id><pub-id pub-id-type="pmcid">PMC5910611</pub-id><pub-id pub-id-type="pmid">29678192</pub-id></element-citation></ref><ref id="cit79"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Lou</surname><given-names>Y.-R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Toh</surname><given-names>T. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tee</surname><given-names>Y. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yu</surname><given-names>H.</given-names></name>
+</person-group><source>Sci. Rep.</source><year>2017</year><volume>7</volume><fpage>42816</fpage><pub-id pub-id-type="pmid">28211493</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/srep42816</pub-id><pub-id pub-id-type="pmcid">PMC5314335</pub-id></element-citation></ref><ref id="cit80"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Alexander</surname><given-names>P. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gottardi</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lin</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Lozito</surname><given-names>T. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Tuan</surname><given-names>R. S.</given-names></name>
+</person-group><source>Exp. Biol. Med. Maywood NJ</source><year>2014</year><volume>239</volume><fpage>1080</fpage><lpage>1095</lpage><pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/1535370214539232</pub-id><pub-id pub-id-type="pmcid">PMC5413932</pub-id><pub-id pub-id-type="pmid">24994814</pub-id></element-citation></ref><ref id="cit81"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Borojević</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Jauković</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kukolj</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mojsilović</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Obradović</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Trivanović</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Živanović</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Zečević</surname><given-names>Ž.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Simić</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gobeljić</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Vujić</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Bugarski</surname><given-names>D.</given-names></name>
+</person-group><source>Biomolecules</source><year>2022</year><volume>12</volume><fpage>323</fpage><pub-id pub-id-type="pmid">35204824</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/biom12020323</pub-id><pub-id pub-id-type="pmcid">PMC8868595</pub-id></element-citation></ref><ref id="cit82"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Sun</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Yu</surname><given-names>Y.</given-names></name>
+</person-group><source>Mol. Med. Rep.</source><year>2015</year><volume>12</volume><fpage>4230</fpage><lpage>4237</lpage><pub-id pub-id-type="pmid">26096280</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3892/mmr.2015.3954</pub-id><pub-id pub-id-type="pmcid">PMC4526091</pub-id></element-citation></ref><ref id="cit83"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Lee</surname><given-names>H.-H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chang</surname><given-names>C.-C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Shieh</surname><given-names>M.-J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>J.-P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>Y.-T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Young</surname><given-names>T.-H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Hung</surname><given-names>S.-C.</given-names></name>
+</person-group><source>Sci. Rep.</source><year>2013</year><volume>3</volume><fpage>2683</fpage><pub-id pub-id-type="pmid">24042188</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/srep02683</pub-id><pub-id pub-id-type="pmcid">PMC3775095</pub-id></element-citation></ref><ref id="cit84"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Ray</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chapman</surname><given-names>S. C.</given-names></name>
+</person-group><source>PLoS ONE</source><year>2015</year><volume>10</volume><fpage>e0134702</fpage><pub-id pub-id-type="pmid">26237312</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0134702</pub-id><pub-id pub-id-type="pmcid">PMC4523177</pub-id></element-citation></ref><ref id="cit85"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Herberg</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Varghai</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Alt</surname><given-names>D. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Dang</surname><given-names>P. N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Park</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Cheng</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Shin</surname><given-names>J.-Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Dikina</surname><given-names>A. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Boerckel</surname><given-names>J. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Rolle</surname><given-names>M. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Alsberg</surname><given-names>E.</given-names></name>
+</person-group><source>Commun. Biol.</source><year>2021</year><volume>4</volume><fpage>89</fpage><pub-id pub-id-type="pmid">33469154</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s42003-020-01576-y</pub-id><pub-id pub-id-type="pmcid">PMC7815708</pub-id></element-citation></ref><ref id="cit86"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Onesto</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Barrell</surname><given-names>W. B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Okesola</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Amato</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Gentile</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>K. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chiappini</surname><given-names>C.</given-names></name>
+</person-group><source>Biomed. Microdevices</source><year>2019</year><volume>21</volume><fpage>44</fpage><pub-id pub-id-type="pmid">30963305</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10544-019-0390-0</pub-id><pub-id pub-id-type="pmcid">PMC6453869</pub-id></element-citation></ref><ref id="cit87"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Ghosh</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Laha</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Mondal</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Sengupta</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Kaplan</surname><given-names>D. L.</given-names></name>
+</person-group><source>Biomaterials</source><year>2009</year><volume>30</volume><fpage>6530</fpage><lpage>6540</lpage><pub-id pub-id-type="pmid">19732950</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.biomaterials.2009.08.019</pub-id><pub-id pub-id-type="pmcid">PMC2760153</pub-id></element-citation></ref><ref id="cit88"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name name-style="western"><surname>Wu</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Wu</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>Y.-P.</given-names></name>
+</person-group><source>Cell Res.</source><year>2024</year><volume>34</volume><fpage>101</fpage><lpage>123</lpage><pub-id pub-id-type="pmid">38267638</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41422-023-00918-9</pub-id><pub-id pub-id-type="pmcid">PMC10837209</pub-id></element-citation></ref></ref-list></back></article></pmc-articleset>

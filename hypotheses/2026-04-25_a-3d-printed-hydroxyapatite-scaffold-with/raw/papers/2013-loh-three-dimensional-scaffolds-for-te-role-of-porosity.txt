@@ -1,0 +1,1180 @@
+TISSUE ENGINEERING: Part B
+Volume 19, Number 6 2013
+ª Mary Ann Liebert, Inc.
+DOI: 10.1089/ten.teb.2012.0437
+
+                     Three-Dimensional Scaffolds
+                 for Tissue Engineering Applications:
+
+                    Role of Porosity and Pore Size
+
+               Qiu Li Loh, BEng, and Cleo Choong, DPhil (Oxon), MBA, MEng (Hons), CEng MIMMM
+
+Tissue engineering applications commonly encompass the use of three-dimensional (3D) scaffolds to provide a
+suitable microenvironment for the incorporation of cells or growth factors to regenerate damaged tissues or
+organs. These scaffolds serve to mimic the actual in vivo microenvironment where cells interact and behave
+according to the mechanical cues obtained from the surrounding 3D environment. Hence, the material properties
+of the scaffolds are vital in determining cellular response and fate. These 3D scaffolds are generally highly
+porous with interconnected pore networks to facilitate nutrient and oxygen diffusion and waste removal. This
+review focuses on the various fabrication techniques (e.g., conventional and rapid prototyping methods) that
+have been employed to fabricate 3D scaffolds of different pore sizes and porosity. The different pore size and
+porosity measurement methods will also be discussed. Scaffolds with graded porosity have also been studied for
+their ability to better represent the actual in vivo situation where cells are exposed to layers of different tissues
+with varying properties. In addition, the ability of pore size and porosity of scaffolds to direct cellular responses
+and alter the mechanical properties of scaffolds will be reviewed, followed by a look at nature's own scaffold, the
+extracellular matrix. Overall, the limitations of current scaffold fabrication approaches for tissue engineering
+applications and some novel and promising alternatives will be highlighted.
+
+Introduction                                                     Hence, a balance between the mechanical and mass transport
+                                                                 function of the scaffolds should exist for an optimal scaffold
+Three-dimensional (3D) scaffolds are commonly used               system. As a result, the final porosity and pore sizes of the
+     for drug delivery,1,2 investigation of cell behavior and    scaffold should be taken into account in accordance to the
+material studies in the field of tissue engineering.3­5 Three-   intended eventual application during scaffold design and
+dimensional scaffolds are typically porous, biocompatible        fabrication stages. This review is focused on the fabrication
+and biodegradable materials that serve to provide suitable       of porous 3D scaffolds, the methods for evaluating porosity
+microenvironments, that is, mechanical support, physical,        and pore sizes of 3D constructs, and some of the reported
+and biochemical stimuli for optimal cell growth and function     effects of pore size and porosity on cell behavior and over-
+(Fig. 1).6­9 The porosity and pore size of 3D scaffolds have     all mechanical properties. A more general overview of the
+direct implications on their functionality during biomedical     various scaffold fabrication and porosity measurement
+applications. Open porous and interconnected networks are        techniques has been covered in previous reviews.11,13­15
+essential for cell nutrition, proliferation, and migration for
+tissue vascularization and formation of new tissues (Fig.        Fabrication of 3D Porous Scaffolds
+2).6,7,10 A porous surface also serves to facilitate mechanical
+interlocking between the scaffolds and surrounding tissue to        Various techniques have been used for the fabrication of
+improve the mechanical stability of the implant.11 In addi-      3D scaffolds. Generally, conventional fabrication techniques
+tion, the network structure of the pores assists in guiding and  such as salt leaching, gas forming, phase separation, and
+promoting new tissue formation.9,12 Materials with high          freeze-drying (Fig. 3) do not enable precise control of internal
+porosity enable effective release of biofactors such as pro-     scaffold architecture or the fabrication of complex architec-
+teins, genes, or cells and provide good substrates for nutrient  tures that could be achieved by rapid prototyping techniques
+exchange. However, the mechanical property that is impor-        (Fig. 4) using computer-aided design (CAD) modeling.8
+tant in maintaining the structural stability of the biomaterial  These conventional techniques also require good fabrication
+is often compromised as the result of increased porosity.7       skills to maintain consistency in scaffold architecture.
+
+Division of Materials Technology, School of Materials Science and Engineering, Nanyang Technological University, Singapore, Singapore.
+                                                                             485
+486                                                             LOH AND CHOONG
+
+FIG. 1. Images of three-
+dimensional (3D) (A­C) scaf-
+folds, (D, E) hydrogels, and
+(F) microcarriers of various
+geometry, size and morphol-
+ogy used in tissue engineer-
+ing applications. Color
+images available online at
+www.liebertpub.com/teb
+
+Another limitation present is the use of toxic solvents, which  enables the fabrication of scaffolds with improved mechan-
+may result in cell death if they are not completely removed.16
+                                                                ical properties, with moduli ranging from soft to hard tis-
+Besides, scaffolds fabricated using these traditional proces-   sues.18,19 Conversely, rapid prototyping techniques have
+
+sing techniques have compressive moduli at a maximum            better design repeatability, part consistency, and control of
+                                                                scaffolds architecture at both micro and macro levels.16,20,21
+of 0.4 MPa, which is much lower than hard tissue (10­
+1500 MPa) or most soft tissues (0.4­350 MPa).7,17 Hence, the    Although rapid prototyping techniques may have several
+
+development of rapid prototyping fabrication techniques         advantages, some limitations and challenges still remain
+
+FIG. 2. Scanning electron micros-
+copy (SEM) images of (A, B) po-
+rous scaffolds and (C, D) human
+tissues with interconnected pores.
+Tissue engineered scaffolds should
+ideally mimic the porosity, pore
+size, and function of native human
+tissues.
+ROLE OF POROSITY AND PORE SIZE IN THREE-DIMENSIONAL SCAFFOLDS    487
+
+FIG. 3. Schematic illustrations of some conventional fabrication methods: (A) gas foaming/particulate leaching, (B) ther-
+mally induced phase separation, and (C) electrospinning used to obtain porous scaffolds. Images adapted and reproduced by
+permission of Elsevier and The Royal Society of Chemistry (http://dx.doi.org/10.1039/C2JM31290E).27­29 Color images
+available online at www.liebertpub.com/teb
+
+such as the limited number of biomaterials that can be pro-      for further modification postimplantation. The advantages
+                                                                 and disadvantages of these alternative approaches will also be
+cessed by rapid prototyping compared to conventional tech-       discussed in this section.
+niques.22 Other approaches that mimic the way that tissues are
+                                                                 Salt leaching
+formed in the body, and their nanofibrous structure can be
+                                                                    This method has been commonly used to fabricate scaf-
+found in modular assembly methods, and electrospinning           folds for tissue engineering applications.14,36,37 Using this
+methods.23­26Alternative approaches to prefabrication of
+
+scaffolds prior to cell seeding include cell encapsulation, and
+
+the development of tunable scaffolds that have the potential
+
+FIG. 4. Schematic illustrations and images of 3D scaffolds fabricated from rapid prototyping methods: (A) 3D printing, (B)
+selective laser sintering, (C) stereolithography, and (D) fused deposition modeling. Images adapted and reproduced by
+permission of Elsevier.30­35 Color images available online at www.liebertpub.com/teb
+488                                                                LOH AND CHOONG
+
+method, porogen or salt crystals (e.g., sodium chloride) are       folds can be controlled by varying the freezing tempera-
+placed into a mold and a polymer is then added to fill in the      ture.50 The advantages of this process are the elimination of
+remaining spaces. The polymer is subsequently hardened             several rinsing steps since dispersed water and polymer
+and the salt is removed via dissolution in a solvent such as       solvents can be removed directly.49 Moreover, polymer so-
+water or alcohol. A hardened polymer with pores will be            lutions can be used directly, instead of the need to cross-link
+formed once all the salt leaches out.38 The pore size of the       any monomers. However, the freeze-drying process should
+scaffolds can be controlled by the size of porogen used. The       be controlled to reduce heterogeneous freezing to increase
+porosity and pore size of the scaffold can also be controlled      scaffold homogeneity.50
+by varying the amount and size of the salt particles respec-
+tively.14 The main advantage of this technique is the use of       3D printing
+small amounts of polymer, which minimizes any polymer
+wastage unlike those methods that require large machinery             Three-dimensional printing involves the laying down of
+and produces unused material parts during fabrication such         successive layers of material to form 3D models, thus en-
+as some of the rapid prototyping techniques. However, the          abling better control of pore sizes, pore morphology, and
+interpore openings and pore shape of scaffolds produced by         porosity of matrix as compared with other fabrication
+this method is not controllable.14 Thus, by combining salt         methods.7,51 In general, the binder solution is added onto the
+leaching with other scaffold fabrication techniques, it may be     powder bed from an ``inkjet'' print head. A 2D layer will be
+possible to create scaffolds with better pore interconnectivity    printed and a new layer of powder will be laid down sub-
+and structure.39                                                   sequently. The process repeats and the layers will merge
+                                                                   when fresh binder solution is deposited each time. The fin-
+Gas forming                                                        ished component will be removed and any unbound powder
+                                                                   will be left behind. This technique allows more complex 3D
+   In this technique, gas is used as a porogen.40 Solid discs of   shapes with high resolution and controlled internal struc-
+polymers such as polyglycolide and poly-L-lactide are first        tures to be fabricated.52 There are two types of pores fabri-
+formed by compression molding at high temperatures prior           cated by this process, that is, pore by design and pore by
+to the application of high-pressure carbon dioxide gas             process. However, only a limited number of polymers can be
+through the discs for a few days before reducing the pressure      fabricated using this method given the high temperatures
+back to atmospheric level.41 The main advantage of using           involved in this method. In addition, ceramic scaffolds ob-
+this method is the elimination of the use of harsh chemical        tained by this method have better mechanical strengths, but
+solvents, thus removing the leaching step from the fabrica-        require a second sintering process at high temperatures to
+tion process, which subsequently reduces the overall fabri-        improve on the brittle toughness. Moreover, preprocessing of
+cation time. However, it is difficult to ensure pore               base biomaterials is necessary as they are usually not in
+connectivity and control of the pore sizes by gas forming.42,43    powdered form.53,54
+Further, the application of high temperatures during disc
+formation also prohibits the use of bioactive molecules in the     Selective laser sintering
+scaffolds.44 With this gas forming technique, scaffolds with
+porosity up to 93% and pore sizes up to 100 mm can be fab-            In the selective laser sintering (SLS) process, regions on the
+ricated.44                                                         powder bed are fused layer by layer using a computer con-
+                                                                   trolled laser beam to form a 3D solid mass.55­57 Due to the
+Phase separation                                                   stepwise addition of materials, SLS enables the construction
+                                                                   of scaffolds with complex geometries. Moreover, any pow-
+   In general, a polymer is first dissolved in a suitable solvent  dered biomaterial that will fuse but not decompose under a
+and subsequently placed in a mold that will be rapidly             laser beam can be used in this fabrication process. SLS is fast,
+cooled until the solvent freezes. The solvent is then removed      cost effective and does not require the use of any organic
+by freeze-drying and pores will be left behind in the poly-        solvents.58 However, the elevated temperatures needed re-
+mer. This method also does not necessitate an extra leaching       quire high local energy input. In addition, degradation of the
+step, but the addition of organic solvents such as ethanol or      material, for example, chain scission, cross-linking, and oxi-
+methanol inhibits the incorporation of bioactive molecules or      dation processes may occur due to exposure to the laser
+cells during scaffold fabrication. In addition, the small pore     beam.59
+sizes obtained is another limiting factor of scaffolds fabri-
+cated by phase separation.14,44 Different types of phase sep-      Stereolithography
+aration techniques available include thermally-induced,
+solid-liquid, and liquid­liquid phase separation.45­47                This is one of the earliest rapid prototyping techniques
+                                                                   and it involves the use of ultraviolet laser to polymerize
+Freeze-drying                                                      liquid ultraviolet curable photopolymer resin layer-by-layer,
+                                                                   which then solidifies to form a 3D model.60 The excess resin
+   When materials are freeze-dried, the frozen water is sub-       will be drained after the complete model is raised out of the
+limated directly into the gas phase, which results in pore         vat for curing in an oven. This rapid prototyping technique
+formation.48 This method was first used by Whang et al. to         allows quick fabrication of materials with a wide variety of
+fabricate PLGA scaffolds.49 The porosity and pore sizes of         shapes. The resolution of each layer is dependent on the
+the scaffolds fabricated are largely dependent on the pa-          resolution of the elevator layer and the spot size of the la-
+rameters such as ratio of water to polymer solution and            ser.61 However, due to the application of additional curing
+viscosity of the emulsion.44 The pore structure of the scaf-       step to improve the model's property, the final resolution is
+ROLE OF POROSITY AND PORE SIZE IN THREE-DIMENSIONAL SCAFFOLDS     489
+
+compromised of shrinkage that typically occurs in this            during fabrication, which can be harmful to cells.74 Thus,
+postprocessing step.62,63 Also, there is a limited variety of     melt electrospinning, which does not involve the use of or-
+photopolymerisable materials that are suitable for biomedi-       ganic solvents, is an alternative to solution electrospin-
+cal applications.                                                 ning.75,76 In melt electrospinning, the polymer is heated with
+                                                                  an electric heater or CO2 laser above its melting or glass
+Fused deposition modeling                                         transition temperature.77,78 However, as polymer melts have
+                                                                  lower charge density and are more viscous than its solution,
+   In fused deposition modeling, a small temperature con-         fibers obtained from melt electrospinning process are thicker
+trolled extruder is used to allow thermoplastic material to be    than those fabricated from solution electrospinning.75,79
+deposited onto a platform in a layer by layer manner to form
+a 3D material.64­66 The base platform will be lowered at the      Cell encapsulation
+end of each layer so that subsequent layers can then be ad-
+ded onto them. Like the other rapid prototyping methods,             Instead of prefabricating porous scaffolds and culturing
+fused deposition modeling makes use of computer generated         cells on them subsequently, an alternative is to incorporate
+solid or surface models to enable precise deposition of thin      cells during the scaffold fabrication process. Cell encapsula-
+layers of the semi-molten polymer. However, the disadvan-         tion, involving entrapping cells inside a material, has been
+tage of this method is the use of elevated temperatures,          commonly used to protect cells from the immune system.80
+which limits the type of biomaterials that can be used.           Generally, cells are mixed with the encapsulation material
+                                                                  before gelation occurs. Hence, the encapsulation material
+Electrospinning                                                   and gelation process need to be cytocompatible.81 Reviews
+                                                                  by Hunt & Grover and Nicodemus & Bryant discussed some
+   During solution electrospinning, a voltage is applied to       of the materials commonly used for cell encapsulation.82,83
+generate a potential difference between a polymeric solution      Using this method, cells can either be individually encap-
+and a collecting target.67,68 A polymeric jet of fluid will be    sulated or a fixed number of cells can be enclosed in a certain
+ejected from a spinneret or tip of a capillary when the surface   volume of material, in spherical or fiber forms.84­86 Cur-
+tension of the fluid is overcomed by the electrical charges.      rently, the main limitation of cell encapsulation is the balance
+The macromolecular entanglements present in the polymeric         between appropriate diffusion coefficient for the transport of
+solution will cause the fluid jet to be drawn toward the          oxygen and nutrients to the cells and to the retention of
+collector as it does not go through Rayleigh instabilities, that  immunoprotective properties.87 However, it has been shown
+is, formation of droplets due to breaking up of the fluid jet.67  by our group and others that processing conditions, the use
+As the fluid jet approaches the collector, twisting occurs due    of a coating layer, can play a role in modifying the porosity
+to the presence of higher surface charge density. Ultimately,     or permeability of the encapsulation material.88­90 Others
+a mesh of electrospun fibers will be collected. The diameter      have used superporous hydrogels (SPHs) instead of nonpo-
+of each fiber can be controlled by altering the concentration     rous hydrogels (NPHs) as their encapsulation material to
+and flow rate of the polymer solution, and varying the dis-       facilitate more favorable diffusion properties.42 SPHs have an
+tance between the needle and collector.68,69 Pham et al.          internal pore architecture that allow cell attachment and
+showed that the average pore size of electrospun scaffolds        proliferation following cell seeding. Conversely, if cells were
+increased with increasing fiber diameter.70 Some advantages       seeded onto the NPHs, they will only attach onto the surface
+of electrospun scaffolds include the presence of high surface     due to the absence of an internal pore architecture. For cell
+area for cell attachment and high porosity to facilitate nu-      encapsulation, cells will generally spread throughout the
+trient and waste exchange.71­73 Solution electrospinning is       NPHs, but will only be present inside the interpore connec-
+also a simple and inexpensive scaffold fabrication technique,     tions for SPHs (Fig. 5). Using superporous poly(ethylene
+and a wide range of polymeric solutions can be used to            glycol) diacrylate (PEGDA) hydrogel scaffolds, NIH-3T3
+fabricate the scaffolds. However, the main disadvantage of        fibroblast cells were encapsulated into superporous PEGDA
+electrospinning is the involvement of toxic organic solvents      hydrogels, instead of seeding cells directly onto prefabricated
+
+                                                                  FIG. 5. Schematic illustration of
+                                                                  cell culture for nonporous hydro-
+                                                                  gels (NPHs) and superporous hy-
+                                                                  drogels (SPHs). Cell seeding onto
+                                                                  NPHs will result in cells proliferat-
+                                                                  ing on the surface, while cell en-
+                                                                  capsulation entraps cells within the
+                                                                  scaffold. For SPHs, cells will prolif-
+                                                                  erate between the pores when they
+                                                                  are seeded onto the scaffolds, or
+                                                                  entrapped in the interior during the
+                                                                  encapsulation process. Color
+                                                                  images available online at
+                                                                  www.liebertpub.com/teb
+490                                                                                                       LOH AND CHOONG
+
+SPH scaffolds.42 These fibroblasts were also encapsulated in        collapse easily, for example, hydrogels.101 Moreover, mate-
+NPHs and it was observed that the decrease in number of
+viable cells was two-folds higher than in SPHs. The main            rials with thin cross sections may also be destroyed if they
+advantages of cell encapsulation are the ability to provide         are analyzed at high pressures.94 Another disadvantage is
+immunoshielding for cells and the possibility of fabricating
+injectable forms.                                                   the toxicity and cost of mercury.
+
+                                                                    Liquid displacement method
+
+Porosity and Pore Size Measurement Techniques                          The porosity of scaffolds can also be measured using a
+
+   Various equipment and computer software can be used to           displacement liquid that is a not a solvent of the polymers,
+measure porosity and pore size of scaffolds. The total po-
+rosity is related to the amount of pore space present in the        for example, ethanol, and is capable of penetrating into the
+scaffolds. Physical properties such as material or bulk den-
+sity of the scaffolds can be used to calculate the total po-        pores easily but do not cause size shrinkage or swelling to
+rosity. Fluid intrusion methods can also be indirectly used to      the material being tested.102 In brief, the scaffold will be
+measure the porosity of scaffolds. Besides using these
+physical characterization methods, imaging techniques can           placed in a cylinder with a known volume of the displace-
+also be employed for porosity measurements.
+                                                                    ment liquid and a series of evacuation­repressurization cy-
+                                                                    cles will be done to force the liquid into the pores (Fig. 6B).103
+
+                                                                    This is also another simple technique that can be carried out
+
+                                                                    easily, but is an indirect way of measuring porosity.
+
+                                                                       The open porosity can be calculated using the following
+                                                                    method (Eq. 3).104­106
+
+Gravimetric method                                                  Porosity                    ¼  V1  À  V3  (3)
+                                                                                                   V2  À  V3
+   The total porosity (P) of scaffolds can be determined by
+gravimetric method using the bulk and true density of the           where V1 = known volume of liquid that is used to submerge
+material as shown in Eq. 1 and 2 below.81,91­93                     the scaffold (but not a solvent for the scaffold), V2 = volume
+                                                                    of the liquid and liquid-impregnated scaffold, and V3 =
+     qscaffold  ¼   mass                 (1)                        remaining liquid volume when the liquid-impregnated
+                   volume
+     Total porosity (P) ¼ 1 À qscaffold                             scaffold is removed.
+                           qmaterial     (2)
+
+where rscaffold = apparent density of the scaffold and rmaterial =  Scanning electron microscopy analysis
+density of the material.
+                                                                       Various computer software such as SemAfore or ImageJ
+   The volume is calculated by measuring the length, width,         can be used to analyze scanning electron microscopy (SEM)
+                                                                    images to measure pore sizes (Fig. 6C) and porosity.107­111
+and height of the sample. Although this is a simple and fast        From the SEM images, an estimation of the cross-sectional
+                                                                    area, interconnectivity, and wall thickness can also be ob-
+method, it is a rough estimation of the actual porosity as          tained.112 However, to obtain accurate measurements, sec-
+                                                                    tioning should be done carefully so as to avoid compression
+significant errors can be made while determining the actual         of the scaffold cross section. ImageJ is an image processing
+volume of the scaffold.93 However, this method is preferred         program that can be used for various purposes with user-
+                                                                    written plugins, for example, 3D live-cell imaging or radio-
+for materials that cannot withstand the high pressures used         logical image processing. For porosity measurements, ImageJ
+                                                                    with jPOR macro has been recently established and used to
+in other porosity determination methods, for example, layers        quantify the total optical porosity of blue-stained thin sec-
+of nanofiber mats.94                                                tions.113 This technique allows rapid measurement of po-
+                                                                    rosity from thin section images. It is easy to use and does not
+Mercury porosimetry                                                 require specialist training.
+
+   This method allows the determination of the total pore           Microcomputed tomography imaging
+volume fraction, the average pore diameter, and pore size
+distribution of 3D materials.93,95,96 Scaffolds are placed in a        Microcomputed tomography (Micro-CT) imaging can be
+mercury penetrometer and subsequently infused with mer-             used to provide precise information on the 3D morphology
+cury under increasing pressures, up to a maximum of                 of scaffolds (Fig. 6D). During the imaging process, X-rays are
+414 MPa (Fig. 6A).11 The mercury is forced into the pores of        used to divide the scaffold into a series of 2D thin sections.
+the scaffolds under high pressures. Since mercury is non-           The emerging X-rays will be captured by a detector array
+wetting, it only fills the pores when the applied pressure is       that calculates the X-ray path and attenuation coefficients.112
+greater than the tension forces of the surface meniscus. Thus       The attenuation coefficient will be correlated to the material
+pores that are smaller will have higher tension forces due to       density to obtain a 2D map that shows the various material
+greater curvature of surface meniscus and they require              phases within the scaffold. Intricate details can be imaged at
+higher pressure to fill the pore volume with mercury. This          high resolutions, but longer time and more data storage
+technique has been used to analyze the pore characteristics of      space is required. Subsequently, 3D modeling programs, for
+various scaffold types, for example, hydroxyapatite scaf-           example, Velocity, Anatomics, and Mimics are used to create
+folds, poly (a-hydroxy acid) foam scaffold, and electrospun         3D models from the individual 2D maps obtained earlier.
+poly (e-caprolactone) nano- or micro-fiber scaffolds.70,81,97­100   Image thresholding should also be executed before 3D
+Although mercury intrusion is more reliable than others that
+require manual measurements that might vary based on in-
+dividuals, it has several drawbacks relating to the high
+pressures involved. Hence, it should be noted that lower
+pressures should be used for biomaterials that compress or
+ROLE OF POROSITY AND PORE SIZE IN THREE-DIMENSIONAL SCAFFOLDS  491
+
+FIG. 6. Schematic illustration of (A) mercury porosimetry, (B) three-step liquid displacement process, (C) SEM imaging
+technique, and (D) microcomputed tomography imaging used for porosity or pore size measurement of scaffolds. Images
+adapted and reproduced by permission of Elsevier and IOP Publishing Ltd. (DOI: 10.1088/1758-5082/3/3/034114).121,122 Color
+images available online at www.liebertpub.com/teb
+
+modeling, which would otherwise affect subsequent analy-       CAD models
+
+sis. This method is noninvasive and does not require any          CAD models can be used to design 3D scaffolds of des-
+                                                               ignated structure, pore size, and porosity.114 It is one of
+physical sectioning, which enables the scaffold to be reused   the commonly used technologies in the aspect of Computer-
+for other analysis after scanning.11 Moreover, it also elimi-  Aided Tissue Engineering, where 3D visualization and sim-
+nates the use of any toxic chemicals.112 Micro-CT is also      ulation are enabled for the manufacturing of 3D complex
+                                                               tissue models.115 Rapid prototyping techniques such as 3D
+suitable for scaffolds with intricate interior structures.     printing, stereolithography, and fused deposition modeling
+                                                               utilizes CAD models to reproducibly fabricate very precise
+However, this technique is not suitable for scaffolds that
+
+contains metals since X-rays will be heavily attenuated by
+
+them, which results in bright and dark grainy scan images
+that causes loss of important details.112
+492                                                                LOH AND CHOONG
+
+structures or biological tissue replicas.61 For CAD models,        cluding tissues, typically have a gradient porous structure
+porosity is calculated from Eq. 4.116                              (GPS), in which porosity is not uniform. Rather, it is dis-
+                                                                   tributed in such a manner so as to maximize the overall
+     Porosity ¼ 1 À  Vsolid  · 100%  (4)                           performance of the structure.123 Gradient porosity is ob-
+                     Vtotal                                        served in bone tissues and this optimizes the material's re-
+                                                                   sponse to external loading.15 Gradient porosity is also
+where Vsolid = volume of solid and Vtotal = total volume of        observed in tissues such as the skin, where the pore size
+scaffold.                                                          increases with distance away from the skin surface. Gradient
+                                                                   porosity also enables specific cell migration during tissue
+Permeability-based method                                          regeneration, and is also required for the treatment of artic-
+                                                                   ular cartilage defects in osteochondral tissue engineering. In
+   Scaffold permeability has been used to determine the pore       general, macropores are essential to provide space for vas-
+size and fiber diameter of electrospun fibrinogen scaffolds.117    cularization and tissue ingrowth, since gas diffusion, nutri-
+Using this method, Carr et al. used a flowmeter to pass a          ent supply, and waste removal is facilitated. However, a
+fluid through an electrospun scaffold to calculate the scaf-       denser structure will improve the mechanical properties of
+fold's pore properties.118,119 The amount of fluid that passes     scaffolds and enable better cell attachment and intracellular
+through the scaffold area over time is determined. Using this      signaling.124,125 Gradient porosity also enables specific cell
+flowmeter designed by Sell et al., the permeability (T) was        migration during tissue regeneration, and is also required for
+calculated using the equations shown in Eq. 5 and 6.117­119        the treatment of articular cartilage defects in osteochondral
+                                                                   tissue engineering.125,126 Hence, a fine balance between ad-
+     p ¼ qgh                         (5)                           equate porosity and mechanical stability is required. This
+                                                                   will be discussed in more detail in the ``Mechanical property''
+     T  ¼  Qghs                      (6)                           section of this review.
+            Ftp
+                                                                      As a potential application in bone tissue engineering, 45S5
+where p = applied head pressure (Pa), r = density of water,        BioglassÒ-derived glass­ceramic scaffolds with graded pore
+g = gravitational force, h = total height of the system (1.5 m),   sizes and different shapes have been produced by foam
+Q = volume of fluid that passed through the scaffold over a        replication technique, where preformed polyurethane (PU)
+period of time (t), g = viscosity of the fluid, hs = thickness of  foams have been used as sacrificial templates.125 These PU
+scaffold, and F = cross-sectional area of the scaffold perpen-     foam templates with tailored gradient porosity were com-
+dicular to fluid flow.                                             pressed using aluminium molds. Hydroxyapatite/tricalcium
+                                                                   phosphate (HA/TCP) ceramic scaffolds with gradient po-
+   After obtaining the scaffold permeability values, the pore      rosity were also fabricated using a room temperature cam-
+radius (r) of the scaffold can be calculated according to          phene-based freeze-casting method as a potential bone graft
+Eq. 7.                                                             substitute.127 Calcium phosphate-based ceramics, for exam-
+                                                                   ple, HA have excellent biocompatibility, bioactivity, and
+     r  ¼  0:5093                    (7)                           osteoconductivity, thus enabling them to be suitable mate-
+            TÀ21                                                   rials for bone tissue engineering applications. Freeze casting
+                                                                   allows the fabrication of graded scaffolds with better me-
+Capillary flow porometry                                           chanical properties than foam replication techniques as the
+                                                                   latter generally generates defects during the pyrolysis of the
+   This is a nondestructive method that can be used to             polymer foam template, which results in scaffolds with
+measure the pore size and distribution of scaffolds. In this       poorer mechanical properties.128 In the freeze casting pro-
+technique, a nonreacting gas is used to flow through the           cess, ceramic slurry that is usually aqueous based, is frozen
+scaffold.120 This method can be used on either a dry scaffold      in a mould at low temperatures, then demoulded, and sub-
+or a wet scaffold that is hydrated using a liquid with known       sequently sublimated for vehicle removal so as to obtain a
+surface tension. The change in flow rate is then calculated        green body.129 This freeze casting method showed potential
+using the difference in pressure for the dry and wet pro-          in generating defect-free scaffolds with controlled porosity
+cesses. This technique utilizes low pressure during the pro-       and pore sizes, and having appropriate compressive prop-
+cess, thus it is suitable for measuring the porous structure of    erties for tissue engineering applications.127
+nanofiber membranes. The pore size (D) can be calculated
+with a software (Porous Media, Inc.) using Eq. 8.                     Cylindrical polycaprolactone (PCL) scaffolds with gradu-
+                                                                   ally increasing pore sizes along the longitudinal direction
+     D  ¼  4Y cos    h               (8)                           were also successfully fabricated using a novel centrifugation
+              Dp                                                   method developed by Oh et al.130 These scaffolds with pore
+                                                                   size gradient were formed by adding fibril-like PCL into a
+where Y = surface tension of liquid, y = contact angle of liq-     cylindrical mold that was subjected to centrifugation and
+uid, and Dp = difference in pressure.                              subsequently heat-treated to enable fibril bonding. The
+                                                                   gradual increment of the centrifugal force along the cylin-
+Gradient Porosity                                                  drical axis causes the formation of a pore size gradient. The
+                                                                   centrifugal speed can also be adjusted to control the pore size
+   Tissue engineering scaffolds should ideally exhibit similar     range of the scaffolds. These scaffolds with gradient pore
+structural complexity as the native tissue to satisfy the in-      sizes are good tools that can be used for the systemic study of
+tended biological function. Natural porous materials, in-          cellular or tissue interaction with scaffolds.
+ROLE OF POROSITY AND PORE SIZE IN THREE-DIMENSIONAL SCAFFOLDS    493
+
+Effect of Porosity and Pore Size on Cell Behavior                greater than 12 mm) and higher porosity (i.e., approximately
+and Mechanical Property                                          96.7%) enhanced cell proliferation rate, which might be due
+                                                                 to facilitated transport of nutrients and oxygen in vitro. Thus
+Cell proliferation and differentiation                           cellular behavior can be affected by the material properties
+                                                                 (e.g., porosity, pore size, interconnectivity, and diameter of
+   Cell behavior is directly affected by the scaffold architec-  fibres) of these 3D nonwoven matrices fabricated from fibers.
+ture since the extracellular matrix (ECM) provides cues that
+influence the specific integrin­ligand interactions between         The effect of 3D silk fibroin scaffolds on cell proliferation
+cells and the surrounding (Fig. 7).131 Hence, the 3D scaffold    and migration of human foreskin fibroblast showed that
+environment can influence cell proliferation or direct cell      pore sizes of 200 to 250 mm and porosity of approximately
+differentiation. Ma et al. fabricated 3D polyethylene tere-      86% enabled better cell proliferation.134 However, cell pro-
+phthalate (PET) nonwoven fibrous matrix and modified the         liferation of these scaffolds with smaller pore sizes of 100 to
+pore size and porosity by using thermal compression.132 Two      150 mm can be improved by having higher porosity of ap-
+types of matrices were studied, namely low porosity (LP)         proximately 91%. Hence, by altering the pore size, porosity,
+and high porosity (HP). The LP matrices had a porosity of        or both parameters, the cell viability and proliferation can be
+0.849 and an average pore size of 30 mm, while HP matrices       enhanced.134­137 Besides affecting the cell proliferation ca-
+had a porosity of 0.896 and an average pore size of 39 mm.       pability, it has been shown that the amount of ECM pro-
+When trophoblast ED27 cells were cultured on these matrices,     duced, that is, the amount of glycosaminoglycan (GAG)
+the initial cell proliferation rate in the LP matrix was ob-     secretion and the expression of collagen gene markers is also
+served to be higher than those in the HP matrix. In addition,    affected by the pore size of scaffolds.138 The study by Lien
+cells cultured in the LP matrix were able to spread across       et al. demonstrated that chondrocytes showed preferential
+adjacent fibers more easily, which led to higher cell prolif-    proliferation and ECM production for scaffolds with pore
+eration rate. However, the smaller pore sizes of LP matrices     sizes between 250 and 500 mm.138 This pore size range was
+limited the formation of large cell aggregates and reduced       observed to be capable of maintaining the phenotype of cells,
+cell differentiation. Conversely, cells cultured in HP matrices  while pores ranging from 50 to 200 mm resulted in cell de-
+had a higher degree of cell differentiation and aggregation.     differentiation.138 In another study, synthetic human elastin
+Besides the trophoblast cells, Takahashi and Tabata also         (SHE) scaffolds with an average porosity of 34.4% and mean
+demonstrated the effect of 3D nonwoven matrix fabricated         pore size of 11 mm enabled infiltration of dermal fibroblasts,
+using PET fibers on the proliferation and osteogenic differ-     while a lower average porosity of 14.5% and mean pore size
+entiation of rat mesenchymal stem cells (MSCs).133 Thinner       of 8 mm only promoted cell proliferation across the scaffold
+PET fibers resulted in lower cell attachment and caused          surface.139 The fibroblasts cultured in these SHE scaffolds
+MSCs to have spherical morphologies due to their smaller         with higher porosity and larger mean pore sizes also de-
+diameters. Matrices with bigger PET fiber diameters (i.e.,       posited fibronectin and collagen type I over the period of cell
+
+FIG. 7. Effect of (A) pore size and (B) matrix stiffness on MSC behavior. Actin cyoskeleton and nucleus of MSCs were
+stained with rhodamine­phalloidin (red) and DAPI (blue). MSCs were observed to be flattened and grow on the wall of the
+scaffold with large pores ( > 100 mm). For collagen­glycosaminoglycan scaffold (red) scaffolds with small pores ( < 50 mm), cells
+may attach in three-dimensions and differentiate (green nuclei) due to smaller forces present (smaller arrows). When cultured
+on microenvironments with elasticity of elasticity of 0.1, 11, and 34 kPa, MSCs showed to become neuron-like, myocyte-like,
+and osteoblasts-like respectively. Images adapted and reproduced by permission of Elsevier.147 Color images available online
+at www.liebertpub.com/teb
+494                                                                 LOH AND CHOONG
+
+culture.139 Thus, the role of porosity and interconnectivity in     erties to a great extent. In general, scaffolds should have
+scaffolds is also to facilitate cell migration within the porous    sufficient mechanical strength to maintain integrity until new
+structure such that cell growth is enabled while over-              tissue regeneration. There should also be sufficient space for
+crowding is avoided.                                                cells to proliferate and to enable the transport of nutrients
+                                                                    and removal of wastes.20,21 Moreover, it is important that the
+   For bone tissue engineering, the optimal pore size for os-       material property of the scaffolds matches the native tissue
+teoblast activity in tissue engineered scaffolds is still con-      in vivo, for example, scaffolds fabricated for bone tissue en-
+troversial as there have been conflicting reports.140 In            gineering should have comparable strength to the native
+general, scaffolds with pore sizes of about 20 to 1500 mm           bone tissue to withstand physiological loadings and to pre-
+have been used.140­143 Akay et al. studied the behavior of          vent stress shielding from occurring.20 Although the me-
+osteoblasts in PolyHIPE polymer (PHP), a type of highly             chanical property of scaffolds is compromised with higher
+porous polymeric foam.144 The osteoblasts were shown to             porosity or pore sizes, the use of materials with high inherent
+populate more in smaller pores (40 mm) when they were               mechanical strength might be a solution to this issue.134
+grown in scaffolds with different pore sizes, but larger pore
+sizes (100 mm) facilitated cell migration. However, the dif-        Nature's Own Scaffold: The ECM
+ferent pore sizes did not have any effect on extent of min-
+eralization or cell penetration depth.144 Collagen­GAG (CG)            In native tissues, the ECM is a heterogeneous component
+scaffolds were also studied to determine its optimal pore size      of functional proteins, proteoglycans, and signaling mole-
+for bone tissue engineering purposes and the effect of pore         cules arranged in a specific 3D manner enriched with cellular
+size on a preosteoblastic cell line, MC3T3-E1.140 From the          components and a variety of growth factors, cytokines, ions,
+results, optimal cell proliferation and infiltration was found      and water to provide structural support to cells.171­173 The
+in CG scaffolds with mean pore sizes greater than 300 mm. In        ECM is an important component in growth and wound
+addition, the ability of larger pores to facilitate cell infiltra-  healing, and from recent studies it has been shown to be a
+tion was shown to override the beneficial effect of greater         vital factor in cell signaling.174­177 Newly formed ECM is
+initial cell attachment surface areas provided by smaller           secreted by exocytosis after the components are produced by
+pores. Hence, this study supported previous reports that            the resident cells. It has now been shown that the ECM is
+suggested the importance of having pore sizes greater than          capable of directing cell behavior such as proliferation, dif-
+300 mm for osteogenesis to occur.145 However, it should be          ferentiation, and migration via biomechanical interactions
+noted that cell differentiation is also dependent on the cell       and mechanical cues.69 Hence, the ECM is nature's own
+type, scaffold material, and fabrication conditions.146             multifunctional scaffold that not only imparts structural in-
+                                                                    tegrity to the tissues, but also modulates a wide range of
+Angiogenesis                                                        cellular behaviors.178 Reviews on the role of ECM properties
+                                                                    and mechanism of cell­ECM interactions on cell adhesion,
+   Angiogenesis is the growth of new blood vessels from             migration, and matrix assembly have been covered by sev-
+existing vasculature, which is essential to supply oxygen and       eral groups.179­181
+nutrients to developing tissues, and to facilitate wound
+healing.148 Scaffolds were seeded with stem cells and/or               The ultimate aim of tissue scaffolding strategies is to mimic
+endothelial cells or incorporated with angiogenic factors to        the actual 3D microenvironment that is the ECM. As with all
+promote angiogenesis.148­151 The minimum porosity neces-            scaffolds, it is important to consider the pore structure of the
+sary for the regeneration of a blood vessel is approximately        native ECM of the tissue that is to be replaced or re-
+30 to 40 mm to enable the exchange of metabolic components          constructed. Different tissues have their own unique ECM
+and to facilitate endothelial cell entrance.152,153 Artel et al.    composition and structure.182 In general, the ECM is a porous
+showed that larger pore sizes of approximately 160 to 270 mm        mesh network of proteins and GAGs that can be altered by
+facilitated angiogenesis throughout scaffold by using multi-        cross-linking and enhancing the barrier function of the ma-
+layered agent-based model simulation.154 This model was             trix.183 Cross-linking of the ECM is associated with local cross-
+used to investigate the relationship between angiogenesis           linking of collagen and elastin by lysyl oxidase.184­186 The
+and scaffold properties. The materials were assumed to be           increase in cross-linking also inevitably results in a reduction
+slowly degrading or nondegradable, such that the pore sizes         of the matrix porosity. Collagenases can increase the matrix
+remained constant. It has also been demonstrated that vas-          porosity by disrupting the ECM network through uncoiling
+cularization of constructs necessitates pores greater than          the triple-helical structure of collagen and exposing sites for
+300 mm.145,155 The range of pore size suitable for the different    proteolysis to occur. ECM degradation, which is associated
+types of cellular activities is summarized in Table 1.              with matrix metalloproteinases (MMPs), also leads to an in-
+                                                                    crease in porosity.187,188 Normally, remodeling of the ECM is
+Mechanical property                                                 dependent on the balance between MMPs and tissue inhibi-
+                                                                    tors of metalloproteinases. Remodeling of the ECM is essen-
+   Besides affecting the cell behavior and differentiation po-      tial to promote normal physiological processes such as
+tential, the porosity and pore sizes of the scaffolds also have     development, wound repair, and morphogenesis.174,187 In
+an effect on the mechanical properties. Although higher             fact, changes in ECM structure and composition is also an
+porosity and pore sizes may facilitate nutrient and oxygen          indication of tissue health and disease progression.189,190
+delivery or enable more cell ingrowth, the mechanical               Some groups have attempted to incorporate biological cues
+properties of the scaffolds will be compromised due to the          such as MMPs and vascular endothelial growth factor to
+large amount of void volume.11 Hence, there is a limit to the       facilitate ECM degradation, cell proliferation, angiogenesis, or
+amount of porosity or pore sizes that could be incorporated         regeneration.191­193 Amino acid sequence-Arg-Gly-Asp- (RGD)
+into a scaffold without compromising its mechanical prop-
+ROLE OF POROSITY AND PORE SIZE IN THREE-DIMENSIONAL SCAFFOLDS                                                   495
+
+Table 1. Pore Sizes and Porosity of Various Scaffold Types Required for Different Cellular Activities
+
+                                                                                            Pore size Porosity
+
+Function               Cell type used/in vivo tests                     Scaffold material   (lm)  (%) Reference
+
+Angiogenesis           Multilayered agent-based model              Porous PEG               160­270 --          154
+
+                       simulation/in vivo rat implantation
+
+Adipogenesis           Murine embryonic stem cells                 PCL                      6­70  88            156
+
+                       Rat BMCs                                    Silk gland fibroin from  90­110 97           157
+
+                                                                   nonmulberry
+
+                       Mice ASCs                                   Porcine type 1 collagen  70­110 --           158
+
+Cell infiltration      Dermal fibroblasts                          Synthetic human elastin  11    34.4          139
+
+                       Primary rat osteoblasts                     PHP                      100   --            144
+
+Chondrogenesis         Human ASCs                                  PCL                      370­400 95          146
+
+                       Porcine chondrocytes                        Chitosan                 70­120 80           159
+
+                       Rabbit MSCs                                 PLGA-GCH                 200   74            160
+
+                       Rabbit MSCs                                 PLGA                     200­500 --          161
+
+                       Porcine chondrocytes                        PCL                      750   30            162
+
+                       Porcine BMSCs                               PCL                      860   59            162
+
+Hepatogenesis          Human ASCs                                  PLGA                     120­200 --          163
+
+                       Rat bone marrow stem cells                  c-PLGA                   150­350 94          164
+
+Osteogenesis           In vivo rat implantation                    Hydroxyapatite-BMPs      300­400 --          145
+
+                       hMSCs                                       Coralline hydroxyapatite 200   75            136
+
+                       In vivo mice implantation                   b-tricalcium phosphate   2­100 75            165
+
+                       In vivo mice implantation                   Natural coral            150­200 35          166
+
+                       RBMSCs                                      Sintered titanium        250   86            167
+
+                       Fetal bovine osteoblasts                    PCL                      350   65            168
+
+Proliferation          hMSCs                                       Coralline hydroxyapatite 500   88            136
+
+                       Human trophoblast ED27                      PET                      30    84.9          132
+
+                       Rat MSCs                                    PET                      > 12  96.7          133
+
+                       Human foreskin fibroblasts                  Silk fibroin             200­250 86          134
+
+                       Human foreskin fibroblasts                  Silk fibroin             100­150 91          134
+
+                       Rat chondrocytes                            Type A gelatin           250­500 --          138
+
+                       MC3T3-E1 cells                              CG                       325   99            140
+
+                       Primary rat osteoblasts                     PHP                      40    --            144
+
+Skin regeneration      Guinea pig dermal and epidermal             CG                       20­125 --           169
+
+                       cells
+
+Smooth muscle          Dog BMSCs                                   PLGA                     50­200 --           170
+
+cell differentitation
+
+   BMCs, bone marrow cells; ASCs, adipose-derived stem cells; hMSCs, human mesenchymal stem cells; BMSCs, bone marrow stem cells;
+PEG, poly(ethylene glycol); PCL, polycaprolactone; PET, polyethylene terephthalate; CG, Collagen­glycosaminoglycan; PHP, PolyHIPE
+polymer; cPLGA-GCH, collagen-coated poly-lactide-co-glycolide­gelatin/chondroitin/hyaluronate; BMP, bone morphogenetic protein;
+RBMSCs, rat bone marrow stromal cells.
+
+peptide can also be attached to scaffolds to enhance cell at-      stricted cell migration and proliferation, and nutrient and
+tachment or mineralization.194­197Besides these biological         oxygen deficiencies within the developing tissue. On the
+factors, another approach taken to mimic the ECM properties        other hand, a scaffold that degrades too fast can compromise
+is to directly conjugate ECM molecules to the scaffolds during     mechanical and structural integrity of the implant before the
+fabrication or to use decellularized tissues as ECM scaf-          tissue is sufficiently well developed. In both cases, tissue
+folds.198­201 The ECM can be obtained from decellularized          regeneration is inhibited due to a mismatch between the
+tissues and organs, for example, nerve, liver, and respiratory     rates of tissue growth and scaffold degeneration. The engi-
+tract.202­205 The advantage of incorporating ECM into the          neering of a ``smart'' tunable scaffold system that can ac-
+scaffolds is to improve tissue specificity and to facilitate       commodate widely different regeneration rates of different
+maintenance of cell functions and phenotype.205 On the             tissues due to individual differences in age, dietary intake,
+whole, all these different approaches intend to create a           healing rates, and lifestyle-related factors is thus highly
+3D microenvironment that behaves like the actual tissue            crucial yet challenging. Such scaffolds with postfabrication
+ECM to be successfully used in various tissue engineering          tunability are essential so as to provide a suitable microen-
+applications.                                                      vironment for these dynamic changes, for example, migra-
+                                                                   tion and differentiation.206,207
+Tunable Scaffolds
+                                                                      Amongst limited literature, the use of photostimulus
+   Most conventional methods used to fabricate porous              seems to be popular for on-demand triggered functionalities
+scaffolds typically do not allow the porosity or pore size to      and tunability in scaffolds. Works reported by Kloxin et al.
+be tuned once the scaffold is created. In this situation, the use  have demonstrated the synthesis of photodegradable mac-
+of scaffolds that do not degrade fast enough results in re-        romers and their subsequent polymerization to form hy-
+                                                                   drogels whose physical, chemical, and biological properties
+496                                                                LOH AND CHOONG
+
+can be tuned in situ and in the presence of cells by ultraviolet,  cation. Also, to mimic the actual situation where the ECM
+visible, or two-photon irradiation.208,209 These macromers         undergoes continuous remodeling or healing processes,
+are cytocompatible and allows remote manipulation of gel           scaffolds with postfabrication tunability are essential so as
+properties in situ. Postgelation control of the gel properties     to provide a suitable microenvironment for these dynamic
+was demonstrated to introduce temporal changes, creation of        changes.
+arbitrarily shaped features, and on-demand pendant func-
+tionality release, which allows cell migration and chondro-           This review provides a general overview that facilitates
+genic differentiation of encapsulated stem cells in vitro. These   the understanding of porous scaffold fabrication and pore
+photodegradable gels can be used for culturing cells in three      size and porosity measurement techniques. In addition, the
+dimensions and allowing real-time, externally triggered            effect of porosity and pore size on cellular behavior and
+manipulation of the cell microenvironment to examine its           mechanical property of scaffolds was also covered to illus-
+dynamic effect on cell function. However, one disadvantage         trate the whole concept of the importance of the role of po-
+of this system is the longer degradation time with 365 nm          rosity and pore size in tissue engineering applications.
+light that may affect cell viability.208,210
+                                                                   Disclosure Statement
+   Various studies on reversible hydrogel fabrication by di-
+merization of nitrocinnamate have also been tested, but the           No competing financial interests exist.
+disadvantage of this system is the requirement of irradiation
+light in the cytotoxic range (254 nm).211,212 In another attempt   References
+to improve this system, Griffin and Kasko incorporated the
+photodegradable o-NB linker to various PEG-based macro-               1. Luu, Y.K., Kim, K., Hsiao, B.S., Chu, B., and Hadjiargyrou,
+mers such that they can photolyze over a broad range of                  M. Development of a nanostructured DNA delivery scaf-
+rates.212 These hydrogels have been used to encapsulate                  fold via electrospinning of PLGA and PLA-PEG block co-
+human MSCs (hMSCs) and the biased release of one stem                    polymers. J Control Release 89, 341, 2003.
+cell population (green-fluoroescent protein expressing
+hMSCs) over another (red-fluorescent protein expressing               2. Cabral, J., and Moratti, S.C. Hydrogels for biomedical ap-
+hMSCs) by exploiting the differences in reactivity of two                plications. Future Med Chem 3, 1877, 2011.
+different o-NB linkers was demonstrated.
+                                                                      3. Eiselt, P., Yeh, J., Latvala, R.K., Shea, L.D., and Mooney,
+Conclusion                                                               D.J. Porous carriers for biomedical applications based on
+                                                                         alginate hydrogels. Biomaterials 21, 1921, 2000.
+   Porous 3D scaffolds are commonly used in tissue engi-
+neering applications and can be fabricated from various               4. Kaigler, D., Wang, Z., Horger, K., Mooney, D.J., and
+conventional and rapid prototyping techniques, depending                 Krebsbach, P.H. VEGF scaffolds enhance angiogenesis and
+on the type of materials used or type of pore structures                 bone regeneration in irradiated osseous defects. J Bone
+needed. These scaffolds serve to provide suitable microen-               Miner Res 21, 735, 2006.
+vironments to support cell growth and function. The struc-
+tural properties of the scaffolds, for example, porosity and          5. Chiu, Y.C., Larson, J.C., Isom, A., and Brey, E.M. Genera-
+pore size have direct implications on their functionality both           tion of porous poly(ethylene glycol) hydrogels by salt
+in vitro and in vivo. Generally, interconnected porous scaffold          leaching. Tissue Eng Part C Methods 16, 905, 2010.
+networks that enable the transport of nutrients, removal of
+wastes, and facilitate proliferation and migration of cells are       6. Salerno, A., Di Maio, E., Iannace, S., and Netti, P. Tailoring
+essential. The porosity and pore size influences cell behavior           the pore structure of PCL scaffolds for tissue engineering
+and determine the final mechanical property of the scaffold.             prepared via gas foaming of multi-phase blends. J Porous
+Various techniques, equipments, or computer software have                Mater 19, 181, 2012.
+also been developed and used for pore size and porosity
+measurements.                                                         7. Hollister, S. Porous scaffold design for tissue engineering.
+                                                                         Nat Mater 4, 518, 2005.
+   The purpose of fabricating scaffolds is to produce tissue-
+like materials such that they can eventually perform like the         8. Liu Tsang, V., and Bhatia, S.N. Three-dimensional tissue
+native tissues. Currently, the idea of scaffold fabrication is           fabrication. Adv Drug Deliv Rev 56, 1635, 2004.
+based on creating materials with optimum pore size,
+structure, and porosity for various applications. Generally,          9. Chevalier, E., Chulia, D., Pouget, C., and Viana, M. Fabri-
+scaffolds are first created and cells are subsequently cul-              cation of porous substrates: a review of processes using
+tured on these scaffolds. As such, there are some existing               pore forming agents in the biomaterial field. J Pharm Sci 97,
+limitations to this current approach. These prefabricated                1135, 2008.
+scaffolds have certain material property that may or may
+not be suitable to support normal cell growth or differen-          10. Causa, F., Netti, P.A., and Ambrosio, L. A multi-functional
+tiation. Incompatibility of the scaffold with the cellular               scaffold for tissue regeneration: the need to engineer a tis-
+application will eventually lead to the failure of the entire            sue analogue. Biomaterials 28, 5093, 2007.
+tissue-engineered scaffolding system. Hence, an in-depth
+analysis is necessary to evaluate the exact porosity and pore       11. Karageorgiou, V., and Kaplan, D. Porosity of 3D bioma-
+size that is optimal for each scaffold system such that they             terial scaffolds and osteogenesis. Biomaterials 26, 5474,
+complement the intended type of tissue engineering appli-                2005.
+
+                                                                    12. Sung, H.J., Meredith, C., Johnson, C., and Galis, Z.S. The
+                                                                         effect of scaffold degradation rate on three-dimensional cell
+                                                                         growth and angiogenesis. Biomaterials 25, 5735, 2004.
+
+                                                                    13. Buckley, C., and O'Kelly, K. Regular scaffold fabrication
+                                                                         techniques for investigations in tissue engineering. In:
+                                                                         Prendergast, P.J., and McHugh, P.E., eds. Topics in bio-
+                                                                         mechanical engineering. Dublin, Ireland: Trinity Centre for
+                                                                         Bioengineering & National Centre for Biomedical En-
+                                                                         gineering Science, 2004, pp. 147­166.
+
+                                                                    14. Ma, P.X. Scaffolds for tissue fabrication. Mater Today 7, 30,
+                                                                         2004.
+ROLE OF POROSITY AND PORE SIZE IN THREE-DIMENSIONAL SCAFFOLDS          497
+
+15. Pompe, W., Worch, H., Epple, M., Friess, W., Gelinsky, M.,         31. Seck, T.M., Melchels, F.P.W., Feijen, J., and Grijpma, D.W.
+     Greil, P., Hempel, U., Scharnweber, D., and Schulte, K.                Designed biodegradable hydrogel structures prepared by
+     Functionally graded materials for biomedical applications.             stereolithography using poly(ethylene glycol)/poly(D,L-
+     Mater Sci Eng A 362, 40, 2003.                                         lactide)-based resins. J Control Release 148, 34, 2010.
+
+16. Yeong, W.Y., Chua, C.K., Leong, K.F., and Chandrasekar-            32. Yeong, W.Y., Sudarmadji, N., Yu, H.Y., Chua, C.K., Leong,
+     an, M. Rapid prototyping in tissue engineering: challenges             K.F., Venkatraman, S.S., Boey, Y.C.F., and Tan, L.P. Porous
+     and potential. Trends Biotechnol 22, 643, 2004.                        polycaprolactone scaffold for cardiac tissue engineering
+                                                                            fabricated by selective laser sintering. Acta Biomater 6,
+17. Goulet, R.W., Goldstein, S.A., Ciarelli, M.J., Kuhn, J.L.,              2028, 2010.
+     Brown, M.B., and Feldkamp, L.A. The relationship between
+     the structural and orthogonal compressive properties of           33. Melchels, F., Wiggenhauser, P.S., Warne, D., Barry, M.,
+     trabecular bone. J Biomech 27, 375, 1994.                              Ong, F.R., Chong, W.S., Hutmacher, D.W., and Schantz,
+                                                                            J.T. CAD/CAM-assisted breast reconstruction. Biofabrica-
+18. Chu, T.M.G., Orton, D.G., Hollister, S.J., Feinberg, S.E., and          tion 3, 034114, 2011.
+     Halloran, J.W. Mechanical and in vivo performance of hy-
+     droxyapatite implants with controlled architectures. Bio-         34. Duan, B., Wang, M., Zhou, W.Y., Cheung, W.L., Li, Z.Y.,
+     materials 23, 1283, 2002.                                              and Lu, W.W. Three-dimensional nanocomposite scaffolds
+                                                                            fabricated via selective laser sintering for bone tissue en-
+19. Sherwood, J.K., Riley, S.L., Palazzolo, R., Brown, S.C.,                gineering. Acta Biomater 6, 4495, 2010.
+     Monkhouse, D.C., Coates, M., Griffith, L.G., Landeen, L.K.,
+     and Ratcliffe, A. A three-dimensional osteochondral com-          35. Elomaa, L., Teixeira, S., Hakala, R., Korhonen, H., Grijpma,
+     posite scaffold for articular cartilage repair. Biomaterials 23,       D.W., and Seppa¨ la¨ , J.V. Preparation of poly(e-capro-
+     4739, 2002.                                                            lactone)-based tissue engineering scaffolds by stereo-
+                                                                            lithography. Acta Biomater 7, 3850, 2011.
+20. Leong, K.F., Chua, C.K., Sudarmadji, N., and Yeong, W.Y.
+     Engineering functionally graded tissue engineering scaf-          36. Ma, P.X., and Langer, R. Fabrication of biodegradable
+     folds. J Mech Behav Biomed Mater 1, 140, 2008.                         polymer foams for cell transplantation and tissue engi-
+                                                                            neering. Methods Mol Med 18, 47, 1999.
+21. Leong, K.F., Cheah, C.M., and Chua, C.K. Solid freeform
+     fabrication of three-dimensional scaffolds for engineering        37. Lu, L., Peter, S.J., Lyman, M.D., Lai, H.L., Leite, S.M.,
+     replacement tissues and organs. Biomaterials 24, 2363,                 Tamada, J.A., Vacanti, J.P., Langer, R., and Mikos, A.G.
+     2003.                                                                  In vitro degradation of porous poly(L-lactic acid) foams.
+                                                                            Biomaterials 21, 1595, 2000.
+22. Yang, S., Leong, K.F., Du, Z., and Chua, C.K. The design of
+     scaffolds for use in tissue engineering. Part II. Rapid pro-      38. Lee, S.B., Kim, Y.H., Chong, M.S., Hong, S.H., and Lee,
+     totyping techniques. Tissue Eng 8, 1, 2002.                            Y.M. Study of gelatin-containing artificial skin V: fabrica-
+                                                                            tion of gelatin scaffolds using a salt-leaching method. Bio-
+23. Nichol, J.W., and Khademhosseini, A. Modular tissue en-                 materials 26, 1961, 2005.
+     gineering: engineering biological tissues from the bottom
+     up. Soft Matter 5, 1312, 2009.                                    39. Chen, G., Ushida, T., and Tateishi, T. Scaffold design for
+                                                                            tissue engineering. Macromol Biosci 2, 67, 2002.
+24. Li, C., Vepari, C., Jin, H.J., Kim, H.J., and Kaplan, D.L.
+     Electrospun silk-BMP-2 scaffolds for bone tissue engineer-        40. Nam, Y.S., Yoon, J.J., and Park, T.G. A novel fabrication
+     ing. Biomaterials 27, 3115, 2006.                                      method of macroporous biodegradable polymer scaffolds
+                                                                            using gas foaming salt as a porogen additive. J Biomed
+25. Zong, X., Bien, H., Chung, C.Y., Yin, L., Fang, D., Hsiao,              Mater Res 53, 1, 2000.
+     B.S., Chu, B., and Entcheva, E. Electrospun fine-textured
+     scaffolds for heart tissue constructs. Biomaterials 26, 5330,     41. Mooney, D.J., Baldwin, D.F., Suh, N.P., Vacanti, J.P., and
+     2005.                                                                  Langer, R. Novel approach to fabricate porous sponges of
+                                                                            poly(D,L-lactic-co-glycolic acid) without the use of organic
+26. Kim, K., Yu, M., Zong, X., Chiu, J., Fang, D., Seo, Y.S.,               solvents. Biomaterials 17, 1417, 1996.
+     Hsiao, B.S., Chu, B., and Hadjiargyrou, M. Control of
+     degradation rate and hydrophilicity in electrospun non-           42. Keskar, V., Marion, N.W., Mao, J.J., and Gemeinhart, R.A.
+     woven poly(D,L-lactide) nanofiber scaffolds for biomedical             In vitro evaluation of macroporous hydrogels to facilitate
+     applications. Biomaterials 24, 4977, 2003.                             stem cell infiltration, growth, and mineralization. Tissue
+                                                                            Eng Part A 15, 1695, 2009.
+27. Chung, H.J., and Park, T.G. Surface engineered and drug
+     releasing pre-fabricated scaffolds for tissue engineering.        43. Wachiralarpphaithoon, C., Iwasaki, Y., and Akiyoshi, K.
+     Adv Drug Deliv Rev 59, 249, 2007.                                      Enzyme-degradable phosphorylcholine porous hydrogels
+                                                                            cross-linked with polyphosphoesters for cell matrices. Bio-
+28. Lei, B., Shin, K.H., Noh, D.Y., Jo, I.H., Koh, Y.H., Choi,              materials 28, 984, 2007.
+     W.Y., and Kim, H.E. Nanofibrous gelatin­silica hybrid
+     scaffolds mimicking the native extracellular matrix (ECM)         44. Mikos, A., and Temenoff, J. Formation of highly porous
+     using thermally induced phase separation. J Mater Chem                 biodegradable scaffolds for tissue engineering. Electron J
+     22, 14133, 2012.                                                       Biotechnol 3, 23, 2000.
+
+29. Montero, R.B., Vial, X., Nguyen, D.T., Farhand, S., Rear-          45. Nam, Y.S., and Park, T.G. Porous biodegradable polymeric
+     don, M., Pham, S.M., Tsechpenakis, G., and Andreopoulos,               scaffolds prepared by thermally induced phase separation.
+     F.M. bFGF-containing electrospun gelatin scaffolds with                J Biomed Mater Res 47, 8, 1999.
+     controlled nano-architectural features for directed angio-
+     genesis. Acta Biomater 8, 1778, 2012.                             46. Schugens, C., Maquet, V., and Grandfils, C. Biodegrad-
+                                                                            able and macroporous polylactide implants for cell trans-
+30. Seyednejad, H., Gawlitta, D., Kuiper, R.V., de Bruin, A.,               plantation: 1. Preparation of macroporous polylactide
+     van Nostrum, C.F., Vermonden, T., Dhert, W.J.A., and                   supports by solid-liquid phase separation. Polymer 37,
+     Hennink, W.E. In vivo biocompatibility and biodegrada-                 1027, 1996.
+     tion of 3D-printed porous scaffolds based on a hydroxyl-
+     functionalized poly(e-caprolactone). Biomaterials 33, 4309,       47. Schugens, C., Maquet, V., Grandfils, C., Jerome, R., and
+     2012.                                                                  Teyssie, P. Polylactide macroporous biodegradable im-
+                                                                            plants for cell transplantation. II. Preparation of polylactide
+498                                                                 LOH AND CHOONG
+
+     foams by liquid-liquid phase separation. J Biomed Mater        65. Xia, Z., Ye, H., Choong, C., Ferguson, D.J.P., Platt, N., Cui,
+     Res 30, 449, 1996.                                                  Z., and Triffitt, J.T. Macrophagic response to human mes-
+48. Sachlos, E., and Czernuszka, J.T. Making tissue engineering          enchymal stem cell and poly(e-caprolactone) implantation
+     scaffolds work. Review: the application of solid freeform           in nonobese diabetic/severe combined immunodeficient
+     fabrication technology to the production of tissue engi-            mice. J Biomed Mater Res A 71, 538, 2004.
+     neering scaffolds. Eur Cell Mater 5, 29, 2003.
+49. Whang, K., Thomas, C., Healy, K., and Nuber, G. A novel         66. Choong, C., Triffitt, J., and Cui, Z. Polycaprolactone scaf-
+     method to fabricate bioabsorbable scaffolds. Polymer 36,            folds for bone tissue engineering: effects of a calcium
+     837, 1995.                                                          phosphate coating layer on osteogenic cells. Food Biopro-
+50. O'Brien, F.J., Harley, B.A., Yannas, I.V., and Gibson, L.            ducts Proc 82, 117, 2004.
+     Influence of freezing rate on pore structure in freeze-dried
+     collagen-GAG scaffolds. Biomaterials 25, 1077, 2004.           67. Cipitria, A., Skelton, A., Dargaville, T., Dalton, P., and
+51. Wu, C., Luo, Y., Cuniberti, G., Xiao, Y., and Gelinsky, M.           Hutmacher, D. Design, fabrication and characterization of
+     Three-dimensional printing of hierarchical and tough me-            PCL electrospun scaffolds--a review. J Mater Chem 21,
+     soporous bioactive glass scaffolds with a controllable pore         9419, 2011.
+     architecture, excellent mechanical strength and minerali-
+     zation ability. Acta Biomater 7, 2644, 2011.                   68. Lim, S., and Mao, H. Electrospun scaffolds for stem cell
+52. Seitz, H., Rieder, W., Irsen, S., Leukers, B., and Tille, C.         engineering. Adv Drug Deliv Rev 61, 1084, 2009.
+     Three-dimensional printing of porous ceramic scaffolds for
+     bone tissue engineering. J Biomed Mater Res B Appl Bio-        69. Mi, F.L., Shyu, S.S., Chen, C.T., and Schoung, J.Y. Porous
+     mater 74, 782, 2005.                                                chitosan microsphere for controlling the antigen release of
+53. Curodeau, A., Sachs, E., and Caldarise, S. Design and                Newcastle disease vaccine: preparation of antigen-ad-
+     fabrication of cast orthopedic implants with freeform sur-          sorbed microsphere and in vitro release. Biomaterials 20,
+     face textures from 3-D printed ceramic shell. J Biomed              1603, 1999.
+     Mater Res 53, 525, 2000.
+54. Kim, S.S., Utsunomiya, H., Koski, J.A., Wu, B.M., Cima,         70. Pham, Q., Sharma, U., and Mikos, A. Electrospun poly
+     M.J., Sohn, J., Mukai, K., Griffith, L.G., and Vacanti, J.P.        (e-caprolactone) microfiber and multilayer nanofiber/
+     Survival and function of hepatocytes on a novel three-              microfiber scaffolds: characterization of scaffolds and
+     dimensional synthetic biodegradable polymer scaffold with           measurement of cellular infiltration. Biomacromolecules 7,
+     an intrinsic network of channels. Ann Surg 228, 8, 1998.            2796, 2006.
+55. Williams, J.M., Adewunmi, A., Schek, R.M., Flanagan, C.L.,
+     Krebsbach, P.H., Feinberg, S.E., Hollister, S.J., and Das, S.  71. Lannutti, J., Reneker, D., Ma, T., Tomasko, D., and Farson,
+     Bone tissue engineering using polycaprolactone scaffolds            D. Electrospinning for tissue engineering scaffolds. Mater
+     fabricated via selective laser sintering. Biomaterials 26,          Sci Eng C 27, 504, 2007.
+     4817, 2005.
+56. Hutmacher, D., Sittinger, M., and Risbud, M. Scaffold-          72. Liang, D., Hsiao, B., and Chu, B. Functional electrospun
+     based tissue engineering: rationale for computer-aided de-          nanofibrous scaffolds for biomedical applications. Adv
+     sign and solid free-form fabrication systems. Trends Bio-           Drug Deliv Rev 59, 1392, 2007.
+     technol 22, 354, 2004.
+57. Paul, B., and Baskaran, S. Issues in fabricating                73. Pramanik, S., Pingguan-Murphy, B., and Osman, N. Pro-
+     manufacturing tooling using powder-based additive free-             gress of key strategies in development of electrospun
+     form fabrication. J Mater Proc Technol 61, 168, 1996.               scaffolds: bone tissue. Sci Technol Adv Mater 13, 043002,
+58. Tan, K.H., Chua, C.K., Leong, K.F., Cheah, C.M., Cheang, P.,         2012.
+     Abu Bakar, M.S., and Cha, S.W. Scaffold development using
+     selective laser sintering of polyetheretherketone-hydroxy-     74. Lin, S., Bhattacharyya, D., Fakirov, S., Matthews, B., and
+     apatite biocomposite blends. Biomaterials 24, 3115, 2003.           Cornish, J. Comparison of nanoporous scaffolds manu-
+59. Rimell, J.T., and Marquis, P.M. Selective laser sintering of         factured by electrospinning and nanofibrillar composite
+     ultra high molecular weight polyethylene for clinical ap-           concept. 18th International Conference on Composite Ma-
+     plications. J Biomed Mater Res 53, 414, 2000.                       terials, Edinburgh, Scotland, 2009.
+60. Dhariwala, B., Hunt, E., and Boland, T. Rapid prototyping
+     of tissue-engineering constructs, using photopolymeriz-        75. Fang, J., Zhang, L., Sutton, D., Wang, X., and Lin, T. Nee-
+     able hydrogels and stereolithography. Tissue Eng 10, 1316,          dleless melt-electrospinning of polypropylene nanofibres. J
+     2004.                                                               Nanomater 2012, 16, 2012.
+61. Draget, K., Skjak-Braek, G., and Smidsrod, O. Alginate
+     based new materials. Int J Biol Macromol 21, 47, 1997.         76. Dalton, P.D., Grafahrend, D., Klinkhammer, K., Klee, D.,
+62. Wang, W.L., Cheah, C.M., Fuh, J.Y.H., and Lu, L. Influence           and Mo¨ ller, M. Electrospinning of polymer melts: phe-
+     of process parameters on stereolithography part shrinkage.          nomenological observations. Polymer 48, 6823, 2007.
+     Materials and Design 17, 205, 1996.
+63. Harris, R., Newlyn, H., Hague, R., and Dickens, P. Part         77. Lyons, J., Li, C., and Ko, F. Melt-electrospinning part I:
+     shrinkage anomilies from stereolithography injection                processing parameters and geometric properties. Polymer
+     mould tooling. Int J Mach Tools Manufacture 43, 879, 2003.          45, 7597, 2004.
+64. Zein, I., Hutmacher, D.W., Tan, K.C., and Teoh, S.H. Fused
+     deposition modeling of novel scaffold architectures for        78. Ogata, N., Yamaguchi, S., Shimada, N., Lu, G., Iwata, T.,
+     tissue engineering applications. Biomaterials 23, 1169, 2002.       Nakane, K., and Ogihara, T. Poly (lactide) nanofibers pro-
+                                                                         duced by a melt-electrospinning system with a laser melt-
+                                                                         ing device. J Appl Polym Sci 104, 1640, 2007.
+
+                                                                    79. Deng, R., Liu, Y., Ding, Y., Xie, P., Luo, L., and Yang, W.
+                                                                         Melt electrospinning of low-density polyethylene having a
+                                                                         low-melt flow index. J Appl Polym Sci 114, 166, 2009.
+
+                                                                    80. Orive, G., Herna´ndez, R.M., Gasco´ n, A.R., Calafiore, R.,
+                                                                         Chang, T.M.S., De Vos, P., Hortelano, G., Hunkeler, D.,
+                                                                         Lac´ik, I., Shapiro, A.M.J., and Pedraz, J.L. Cell encapsula-
+                                                                         tion: promise and progress. Nat Med 9, 104, 2003.
+
+                                                                    81. Hu, Y., Grainger, D.W., Winn, S.R., and Hollinger, J.O.
+                                                                         Fabrication of poly (a-hydroxy acid) foam scaffolds using
+                                                                         multiple solvent systems. J Biomed Mater Res 59, 563,
+                                                                         2002.
+ROLE OF POROSITY AND PORE SIZE IN THREE-DIMENSIONAL SCAFFOLDS         499
+
+82. Hunt, N., and Grover, L. Cell encapsulation using bio-            100. Min, B., Lee, G., Kim, S., Nam, Y., Lee, T., and Park, W.
+     polymer gels for regenerative medicine. Biotechnol Lett 32,            Electrospinning of silk fibroin nanofibers and its effect on
+     733, 2010.                                                             the adhesion and spreading of normal human keratinocytes
+                                                                            and fibroblasts in vitro. Biomaterials 25, 1289, 2004.
+83. Nicodemus, G.D., and Bryant, S.J. Cell encapsulation in
+     biodegradable hydrogels for tissue engineering applica-          101. y Leon, L., and Carlos, A. New perspectives in mercury
+     tions. Tissue Eng Part B Rev 14, 149, 2008.                            porosimetry. Adv Colloid Interface Sci 76, 341, 1998.
+
+84. Diaspro, A., Silvano, D., Krol, S., Cavalleri, O., and Gliozzi,   102. Shi, G., Cai, Q., Wang, C., Lu, N., Wang, S., and Bei, J.
+     A. Single living cell encapsulation in nano-organized                  Fabrication and biocompatibility of cell scaffolds of poly(L-
+     polyelectrolyte shells. Langmuir 18, 5047, 2002.                       lactic acid) and poly(L-lactic-co-glycolic acid). Polym Adv
+                                                                            Technol 13, 227, 2002.
+85. Karoubi, G., Ormiston, M.L., Stewart, D.J., and Courtman,
+     D.W. Single-cell hydrogel encapsulation for enhanced sur-        103. Zhang, Y., and Zhang, M. Synthesis and characterization of
+     vival of human marrow stromal cells. Biomaterials 30, 5445,            macroporous chitosan/calcium phosphate composite scaf-
+     2009.                                                                  folds for tissue engineering. J Biomed Mater Res 55, 304,
+                                                                            2001.
+86. Uludag, H., De Vos, P., and Tresco, P.A. Technology of
+     mammalian cell encapsulation. Adv Drug Deliv Rev 42, 29,         104. Zhao, F., Yin, Y., Lu, W.W., Leong, J.C., Zhang, W., Zhang, J.,
+     2000.                                                                  Zhang, M., and Yao, K. Preparation and histological evalua-
+                                                                            tion of biomimetic three-dimensional hydroxyapatite/
+87. de Vos, P., and Marchetti, P. Encapsulation of pancreatic               chitosan-gelatin network composite scaffolds. Biomaterials
+     islets for transplantation in diabetes: the untouchable islets.        23, 3227, 2002.
+     Trends Mol Med 8, 363, 2002.
+                                                                      105. Nazarov, R., Jin, H.J., and Kaplan, D.L. Porous 3-D scaf-
+88. Loh, Q.L., Wong, Y.Y., and Choong, C. Combinatorial                     folds from regenerated silk fibroin. Biomacromolecules 5,
+     effect of different alginate compositions, polycations, and            718, 2004.
+     gelling ions on microcapsule properties. Colloid Polymer
+     Sci 290, 619, 2012.                                              106. Zhang, R., and Ma, P.X. Poly(alpha-hydroxyl acids)/hy-
+                                                                            droxyapatite porous composites for bone-tissue engineer-
+89. Acarregui, A., Murua, A., Pedraz, J.L., Orive, G., and                  ing. I. Preparation and morphology. J Biomed Mater Res 44,
+     Herna´ndez, R.M. A perspective on bioactive cell microen-              446, 1999.
+     capsulation. BioDrugs 26, 283, 2012.
+                                                                      107. Oh, S.H., Kang, S.G., Kim, E.S., Cho, S.H., and Lee, J.H.
+90. Sta¨ dler, B., Price, A.D., and Zelikin, A.N. A critical look at        Fabrication and characterization of hydrophilic poly(lactic-
+     multilayered polymer capsules in biomedicine: drug carri-              co-glycolic acid)/poly(vinyl alcohol) blend cell scaffolds by
+     ers, artificial organelles, and cell mimics. Adv Funct Mater           melt-molding particulate-leaching method. Biomaterials 24,
+     21, 14, 2011.                                                          4011, 2003.
+
+91. Maspero, F.A., Ruffieux, K., Mu¨ ller, B., and Wintermantel,      108. Damien, E., Hing, K., Saeed, S., and Revell, P.A. A pre-
+     E. Resorbable defect analog PLGA scaffolds using CO2 as                liminary study on the enhancement of the osteointegration
+     solvent: structural characterization. J Biomed Mater Res 62,           of a novel synthetic hydroxyapatite scaffold in vivo. J
+     89, 2002.                                                              Biomed Mater Res A 66, 241, 2003.
+
+92. Kim, H.W., Knowles, J.C., and Kim, H.E. Hydroxyapatite/           109. El-Ghannam, A.R. Advanced bioceramic composite for
+     poly(e-caprolactone) composite coatings on hydroxyapatite              bone tissue engineering: design principles and structure-
+     porous bone scaffold for drug delivery. Biomaterials 25,               bioactivity relationship. J Biomed Mater Res A 69, 490,
+     1279, 2004.                                                            2004.
+
+93. Guarino, V., Causa, F., Taddei, P., di Foggia, M., Ciapetti,      110. Kim, H.D., and Valentini, R.F. Retention and activity of
+     G., Martini, D., Fagnano, C., Baldini, N., and Ambrosio,               BMP-2 in hyaluronic acid-based scaffolds in vitro. J Biomed
+     L. Polylactic acid fibre-reinforced polycaprolactone scaf-             Mater Res 59, 573, 2002.
+     folds for bone tissue engineering. Biomaterials 29, 3662,
+     2008.                                                            111. Park, S.N., Park, J.C., Kim, H.O., Song, M.J., and Suh, H.
+                                                                            Characterization of porous collagen/hyaluronic acid scaf-
+94. Ghasemi-Mobarakeh, L., Semnani, D., and Morshed, M. A                   fold modified by 1-ethyl-3-(3-dimethylaminopropyl)carbo-
+     novel method for porosity measurement of various surface               diimide cross-linking. Biomaterials 23, 1205, 2002.
+     layers of nanofibers mat using image analysis for tissue
+     engineering applications. J Appl Polym Sci 106, 2536, 2007.      112. Ho, S.T., and Hutmacher, D.W. A comparison of micro CT
+                                                                            with other techniques used in the characterization of scaf-
+95. Mayer, R., and Stowe, R. Mercury porosimetry--break-                    folds. Biomaterials 27, 1362, 2006.
+     through pressure for penetration between packed spheres.
+     J Colloid Sci 20, 893, 1965.                                     113. Grove, C., and Jerram, D.A. jPOR: an ImageJ macro to
+                                                                            quantify total optical porosity from blue-stained thin sec-
+96. Shum, A.W., Li, J., and Mak, A.F. Fabrication and structural            tions. Comput Geosci 37, 1850, 2011.
+     characterization of porous biodegradable poly(dl-lactic-co-
+     glycolic acid) scaffolds with controlled range of pore sizes.    114. Sun, W., Starly, B., Darling, A., and Gomez, C. Computer-
+     Polym Degrad Stability 87, 487, 2005.                                  aided tissue engineering: application to biomimetic mod-
+                                                                            elling and design of tissue scaffolds. Biotechnol Appl Bio-
+97. Ma, J., Wang, C., and Peng, K. Electrophoretic deposition of            chem 39, 49, 2004.
+     porous hydroxyapatite scaffold. Biomaterials 24, 3505, 2003.
+                                                                      115. Sun, W., Starly, B., Nam, J., and Darling, A. Bio-CAD
+98. Li, W., Laurencin, C., Caterson, E., Tuan, R., and Ko, F.               modeling and its applications in computer-aided tissue
+     Electrospun nanofibrous structure: a novel scaffold for tis-           engineering. Comput Aided Des 37, 1097, 2005.
+     sue engineering. J Biomed Mater Res 60, 613, 2002.
+                                                                      116. Lee, K., Wang, S., Lu, L., Jabbari, E., Currier, B., and Yas-
+99. Pham, Q., Sharma, U., and Mikos, A. Electrospun poly                    zemski, M. Fabrication and characterization of poly (pro-
+     (e-caprolactone) microfiber and multilayer nanofiber/                  pylene fumarate) scaffolds with controlled pore structures
+     microfiber scaffolds: characterization of scaffolds and                using 3-dimensional printing and injection molding. Tissue
+     measurement of cellular infiltration. Biomacromolecules 7,             Eng 12, 2801, 2006.
+     2796, 2006.
+500                                                                    LOH AND CHOONG
+
+117. Sell, S., Barnes, C., Simpson, D., and Bowlin, G. Scaffold        135. Kim, U.J., Park, J., Kim, H.J., Wada, M., and Kaplan, D.L.
+      permeability as a means to determine fiber diameter and                Three-dimensional aqueous-derived biomaterial scaffolds
+      pore size of electrospun fibrinogen. J Biomed Mater Res                from silk fibroin. Biomaterials 26, 2775, 2005.
+      Part A 85, 115, 2008.
+                                                                       136. Mygind, T., Stiehler, M., Baatrup, A., Li, H., Zou, X.,
+118. Carr, M., and Hardin, C. Fibrin has larger pores when                   Flyvbjerg, A., Kassem, M., and Bu¨ nger, C. Mesenchymal
+      formed in the presence of erythrocytes. Am J Physiol Heart             stem cell ingrowth and differentiation on coralline hy-
+      Circ Physiol 253, H1069, 1987.                                         droxyapatite scaffolds. Biomaterials 28, 1036, 2007.
+
+119. Carr, M., Shen, L., and Hermans, J. Mass--length ratio of         137. Kim, H., Kim, U., Vunjak-Novakovic, G., Min, B., and
+      fibrin fibers from gel permeation and light scattering. Bio-           Kaplan, D. Influence of macroporous protein scaffolds on
+      polymers 16, 1, 2004.                                                  bone tissue engineering from bone marrow stem cells.
+                                                                             Biomaterials 26, 4442, 2005.
+120. Ghasemi-Mobarakeh, L., Prabhakaran, M., Morshed, M.,
+      Nasr-Esfahani, M., and Ramakrishna, S. Electrospun poly          138. Lien, S.M., Ko, L.Y., and Huang, T.J. Effect of pore size
+      (e-caprolactone)/gelatin nanofibrous scaffolds for nerve               on ECM secretion and cell growth in gelatin scaffold for
+      tissue engineering. Biomaterials 29, 4532, 2008.                       articular cartilage tissue engineering. Acta Biomater 5,
+                                                                             670, 2009.
+121. Julve, D., Ramos, J., Pe´rez, J., and Mene´ndez, M. Analysis
+      of mercury porosimetry curves of precipitated silica, as an      139. Rnjak-Kovacina, J., Wise, S., Li, Z., Maitz, P., Young, C.,
+      example of compressible porous solids. J Noncrystalline                Wang, Y., and Weiss, A. Tailoring the porosity and pore
+      Solids 357, 1319, 2011.                                                size of electrospun synthetic human elastin scaffolds for
+                                                                             dermal tissue engineering. Biomaterials 32, 6729, 2011.
+122. Guldberg, R.E., Duvall, C.L., Peister, A., Oest, M.E., Lin,
+      A.S.P., Palmer, A.W., and Levenston, M.E. 3D imaging of          140. Murphy, C.M., Haugh, M.G., and O'Brien, F.J. The effect of
+      tissue integration with porous biomaterials. Biomaterials              mean pore size on cell attachment, proliferation and mi-
+      29, 3757, 2008.                                                        gration in collagen-glycosaminoglycan scaffolds for bone
+                                                                             tissue engineering. Biomaterials 31, 461, 2010.
+123. Smidsrød, O. Molecular basis for some physical properties
+      of alginates in the gel state. J Chem Soc Faraday Transact       141. Nehrer, S., Breinan, H.A., Ramappa, A., Young, G., Short-
+      57, 263, 1974.                                                         kroff, S., Louie, L.K., Sledge, C.B., Yannas, I.V., and Spec-
+                                                                             tor, M. Matrix collagen type and pore size influence
+124. van Tienen, T.G., Heijkants, R.G.J.C., Buma, P., de Groot, J.H.,        behaviour of seeded canine chondrocytes. Biomaterials 18,
+      Pennings, A.J., and Veth, R.P.H. Tissue ingrowth and deg-              769, 1997.
+      radation of two biodegradable porous polymers with differ-
+      ent porosities and pore sizes. Biomaterials 23, 1731, 2002.      142. Lee, S.J., Lee, I.W., Lee, Y.M., Lee, H.B., and Khang, G.
+                                                                             Macroporous biodegradable natural/synthetic hybrid
+125. Bretcanu, O., Samaille, C., and Boccaccini, A.R. Simple                 scaffolds as small intestine submucosa impregnated
+      methods to fabricate BioglassÒ-derived glass­ceramic scaf-             poly(D,L-lactide-co-glycolide) for tissue-engineered bone.
+      folds exhibiting porosity gradient. J Mater Sci 43, 4127, 2008.        J Biomater Sci Polym Ed 15, 1003, 2004.
+
+126. Harley, B.A., Hastings, A.Z., Yannas, I.V., and Sannino, A.       143. Baksh, D., Davies, J.E., and Kim, S. Three-dimensional
+      Fabricating tubular scaffolds with a radial pore size gra-             matrices of calcium polyphosphates support bone growth
+      dient by a spinning technique. Biomaterials 27, 866, 2006.             in vitro and in vivo. J Mater Sci Mater Med 9, 743, 1998.
+
+127. Macchetta, A., Turner, I.G., and Bowen, C.R. Fabrication of       144. Akay, G., Birch, M.A., and Bokhari, M.A. Microcellular
+      HA/TCP scaffolds with a graded and porous structure                    polyHIPE polymer supports osteoblast growth and bone
+      using a camphene-based freeze-casting method. Acta Bio-                formation in vitro. Biomaterials 25, 3991, 2004.
+      mater 5, 1319, 2009.
+                                                                       145. Kuboki, Y., Jin, Q., and Takita, H. Geometry of carriers
+128. Jun, I.K., Koh, Y.H., Song, J.H., Lee, S.H., and Kim, H.E.              controlling phenotypic expression in BMP-induced osteo-
+      Improved compressive strength of reticulated porous zir-               genesis and chondrogenesis. J Bone Joint Surg Am 83-A
+      conia using carbon coated polymeric sponge as novel                    Suppl 1, S105, 2001.
+      template. Mater Lett 60, 2507, 2006.
+                                                                       146. Oh, S.H., Kim, T.H., Im, G.I., and Lee, J.H. Investigation of
+129. Yoon, B.H., Koh, Y.H., Park, C.S., and Kim, H.E. Genera-                pore size effect on chondrogenic differentiation of adipose
+      tion of large pore channels for bone tissue engineering us-            stem cells using a pore size gradient scaffold. Biomacro-
+      ing camphene-based freeze casting. J Am Ceramic Soc 90,                molecules 11, 1948, 2010.
+      1744, 2007.
+                                                                       147. Reilly, G.C., and Engler, A.J. Intrinsic extracellular matrix
+130. Oh, S.H., Park, I.K., Kim, J.M., and Lee, J.H. In vitro and             properties regulate stem cell differentiation. J Biomech 43,
+      in vivo characteristics of PCL scaffolds with pore size gra-           55, 2010.
+      dient fabricated by a centrifugation method. Biomaterials
+      28, 1664, 2007.                                                  148. Sun, H., Wang, X., Hu, X., Yu, W., You, C., Hu, H., and
+                                                                             Han, C. Promotion of angiogenesis by sustained release of
+131. Murphy, C., Haugh, M., and O'Brien, F. The effect of mean               rhGM-CSF from heparinized collagen/chitosan scaffolds. J
+      pore size on cell attachment, proliferation and migration in           Biomed Mater Res B Appl Biomater 100, 788, 2012.
+      collagen--glycosaminoglycan scaffolds for bone tissue en-
+      gineering. Biomaterials 31, 461, 2010.                           149. Sun, B., Chen, B., Zhao, Y., Sun, W., Chen, K., Zhang, J.,
+                                                                             Wei, Z., Xiao, Z., and Dai, J. Crosslinking heparin to col-
+132. Ma, T., Li, Y., Yang, S.T., and Kniss, D.A. Effects of pore             lagen scaffolds for the delivery of human platelet-derived
+      size in 3-D fibrous matrix on human trophoblast tissue                 growth factor. J Biomed Mater Res B Appl Biomater 91,
+      development. Biotechnol Bioeng 70, 606, 2000.                          366, 2009.
+
+133. Takahashi, Y., and Tabata, Y. Effect of the fiber diameter        150. Nillesen, S.T.M., Geutjes, P.J., Wismans, R., Schalkwijk, J.,
+      and porosity of non-woven PET fabrics on the osteogenic                Daamen, W.F., and van Kuppevelt, T.H. Increased angio-
+      differentiation of mesenchymal stem cells. J Biomater Sci              genesis and blood vessel maturation in acellular collagen-
+      Polym Ed 15, 41, 2004.                                                 heparin scaffolds containing both FGF2 and VEGF. Bio-
+                                                                             materials 28, 1123, 2007.
+134. Mandal, B., and Kundu, S. Cell proliferation and migration
+      in silk fibroin 3D scaffolds. Biomaterials 30, 2956, 2009.
+ROLE OF POROSITY AND PORE SIZE IN THREE-DIMENSIONAL SCAFFOLDS          501
+
+151. Wissink, M.J., Beernink, R., Scharenborg, N.M., Poot, A.A.,             tion and osteogenic differentiation of human mesenchymal
+      Engbers, G.H., Beugeling, T., van Aken, W.G., and Feijen, J.           stem cells: an in vitro and in vivo study. Acta Biomater 4,
+      Endothelial cell seeding of (heparinized) collagen matrices:           1904, 2008.
+      effects of bFGF pre-loading on proliferation (after low          166. Chen, F., Mao, T., Tao, K., Chen, S., Ding, G., and Gu, X.
+      density seeding) and pro-coagulant factors. J Control Re-              Bone graft in the shape of human mandibular condyle re-
+      lease 67, 141, 2000.                                                   construction via seeding marrow-derived osteoblasts into
+                                                                             porous coral in a nude mice model. J Oral Maxillofac Surg
+152. Madden, L.R., Mortisen, D.J., Sussman, E.M., Dupras, S.K.,              60, 1155, 2002.
+      Fugate, J.A., Cuy, J.L., Hauch, K.D., Laflamme, M.A.,            167. van den Dolder, J., Farber, E., Spauwen, P.H.M., and Jan-
+      Murry, C.E., and Ratner, B.D. Proangiogenic scaffolds as               sen, J.A. Bone tissue reconstruction using titanium fiber
+      functional templates for cardiac tissue engineering. Proc              mesh combined with rat bone marrow stromal cells. Bio-
+      Natl Acad Sci U S A 107, 15211, 2010.                                  materials 24, 1745, 2003.
+                                                                       168. Shor, L., Gu¨ c¸eri, S., Chang, R., Gordon, J., Kang, Q., Hart-
+153. Oliviero, O., Ventre, M., and Netti, P.A. Functional porous             sock, L., An, Y., and Sun, W. Precision extruding deposition
+      hydrogels to study angiogenesis under the effect of con-               (PED) fabrication of polycaprolactone (PCL) scaffolds for
+      trolled release of vascular endothelial growth factor. Acta            bone tissue engineering. Biofabrication 1, 015003, 2009.
+      Biomater 8, 3294, 2012.                                          169. Yannas, I.V., Lee, E., Orgill, D.P., Skrabut, E.M., and Mur-
+                                                                             phy, G.F. Synthesis and characterization of a model extra-
+154. Artel, A., Mehdizadeh, H., Chiu, Y.C., Brey, E.M., and                  cellular matrix that induces partial regeneration of adult
+      Cinar, A. An agent-based model for the investigation of                mammalian skin. Proc Natl Acad Sci U S A 86, 933, 1989.
+      neovascularization within porous scaffolds. Tissue Eng           170. Cho, S.W., Kim, I.K., Lim, S.H., Kim, D.I., Kang, S.W., Kim,
+      Part A 17, 2133, 2011.                                                 S.H., Kim, Y.H., Lee, E.Y., Choi, C.Y., and Kim, B.S. Smooth
+                                                                             muscle-like tissues engineered with bone marrow stromal
+155. Murphy, C.M., and O'Brien, F.J. Understanding the effect                cells. Biomaterials 25, 2979, 2004.
+      of mean pore size on cell activity in collagen-glycosami-        171. Badylak, S.F. The extracellular matrix as a scaffold for tis-
+      noglycan scaffolds. Cell Adh Migr 4, 377, 2010.                        sue reconstruction. Semin Cell Dev Biol 13, 377, 2002.
+                                                                       172. Owen, S., and Shoichet, M. Design of three-dimensional
+156. Kang, X., Xie, Y., Powell, H.M., James Lee, L., Belury, M.A.,           biomimetic scaffolds. J Biomed Mater Res Part A 94, 1321,
+      Lannutti, J.J., and Kniss, D.A. Adipogenesis of murine                 2010.
+      embryonic stem cells in a three-dimensional culture system       173. Prakash, S., and Chang, T.M. Microencapsulated geneti-
+      using electrospun polymer scaffolds. Biomaterials 28, 450,             cally engineered live E. coli DH5 cells administered orally
+      2007.                                                                  to maintain plasma urea level in uremic rats. Nat Med 2,
+                                                                             883, 1996.
+157. Mandal, B.B., and Kundu, S.C. Osteogenic and adipogenic           174. Soon-Shiong, P., Otterlie, M., Skjak-Braek, G., Smidsrod, O.,
+      differentiation of rat bone marrow cells on non-mulberry               Heintz, R., Lanza, R.P., and Espevik, T. An immunologic
+      and mulberry silk gland fibroin 3D scaffolds. Biomaterials             basis for the fibrotic reaction to implanted microcapsules.
+      30, 5019, 2009.                                                        Transplant Proc 23, 758, 1991.
+                                                                       175. Draget, K.I., and Taylor, C. Chemical, physical and bio-
+158. Itoi, Y., Takatori, M., Hyakusoku, H., and Mizuno, H.                   logical properties of alginates and their biomedical impli-
+      Comparison of readily available scaffolds for adipose tissue           cations. Food Hydrocolloids 25, 251, 2009.
+      engineering using adipose-derived stem cells. J Plast Re-        176. Hunkeler, D. Polymers for bioartificial organs. Trends
+      constrAesthet Surg 63, 858, 2010.                                      Polym Sci 5, 286, 1999.
+                                                                       177. Lim, F., and Sun, A.M. Microencapsulated islets as bioar-
+159. Griffon, D.J., Sedighi, M.R., Schaeffer, D.V., Eurell, J.A., and        tificial endocrine pancreas. Science 210, 908, 1980.
+      Johnson, A.L. Chitosan scaffolds: interconnective pore size      178. Mørch, Y.A., Donati, I., Strand, B.L., and Skja° k-Braek, G.
+      and cartilage engineering. Acta Biomater 2, 313, 2006.                 Effect of Ca2 + , Ba2 + , and Sr2 + on alginate microbeads.
+                                                                             Biomacromolecules 7, 1471, 2006.
+160. Fan, H., Hu, Y., Zhang, C., Li, X., Lv, R., Qin, L., and Zhu,     179. Leung, A., Nielsen, L., Trau, M., and Timmins, N. Tissue
+      R. Cartilage regeneration using mesenchymal stem cells                 transplantation by stealth--coherent alginate microcap-
+      and a PLGA--gelatin/chondroitin/hyaluronate hybrid                     sules for immunoisolation. Biochem Eng J 48, 337, 2010.
+      scaffold. Biomaterials 27, 4573, 2006.                           180. Canaple, L., Nurdin, N., Angelova, N., Saugy, D., Hunkeler,
+                                                                             D., and Desvergne, B. Maintenance of primary murine he-
+161. Uematsu, K., Hattori, K., Ishimoto, Y., Yamauchi, J., Ha-               patocyte functions in multicomponent polymer capsules--
+      bata, T., Takakura, Y., Ohgushi, H., Fukuchi, T., and Sato,            in vitro cryopreservation studies. J Hepatol 34, 11, 2001.
+      M. Cartilage regeneration using mesenchymal stem cells           181. Rozario, T., and DeSimone, D. The extracellular matrix in
+      and a three-dimensional poly-lactic-glycolic acid (PLGA)               development and morphogenesis: a dynamic view. Dev
+      scaffold. Biomaterials 26, 4273, 2005.                                 Biol 341, 126, 2010.
+                                                                       182. Trivedi, N., Hollister-Lock, J., Lopez-Avalos, M.D., O'Neil,
+162. Kemppainen, J.M., and Hollister, S.J. Differential effects of           J.J., Keegan, M., Bonner-Weir, S., and Weir, G.C. Increase in
+      designed scaffold permeability on chondrogenesis by                    beta-cell mass in transplanted porcine neonatal pancreatic
+      chondrocytes and bone marrow stromal cells. Biomaterials               cell clusters is due to proliferation of beta-cells and differ-
+      31, 279, 2010.                                                         entiation of duct cells. Endocrinology 142, 2115, 2001.
+                                                                       183. Ximenes, H.M., Lortz, S., Jo¨ rns, A., and Lenzen, S. Triio-
+163. Wang, M., Pei, H., Zhang, L., Guan, L., Zhang, R., Jia, Y., Li,         dothyronine (T3)-mediated toxicity and induction of
+      B., Yue, W., Wang, Y., and Pei, X. Hepatogenesis of adi-
+      pose-derived stem cells on poly-lactide-co-glycolide scaf-
+      folds: in vitro and in vivo studies. Tissue Eng Part C
+      Methods 16, 1041, 2010.
+
+164. Li, J., Tao, R., Wu, W., Cao, H., Xin, J., Guo, J., Jiang, L.,
+      Gao, C., Demetriou, A.A., Farkas, D.L., and Li, L. 3D PLGA
+      scaffolds improve differentiation and function of bone
+      marrow mesenchymal stem cell-derived hepatocytes. Stem
+      Cells Dev 19, 1427, 2010.
+
+165. Kasten, P., Beyen, I., Niemeyer, P., Luginbu¨ hl, R., Bohner,
+      M., and Richter, W. Porosity and pore size of beta-
+      tricalcium phosphate scaffold can influence protein produc-
+502                                                                   LOH AND CHOONG
+
+      apoptosis in insulin-producing INS-1 cells. Life Sci 80,              J., Hamaty, C., Simpson, N.E., and Blackband, S.J. Non-
+      2045, 2007.                                                           invasive evaluation of alginate/poly-l-lysine/alginate mi-
+184. Asfari, M., Janjic, D., Meda, P., Li, G., Halban, P.A.,                crocapsules by magnetic resonance microscopy. Biomaterials
+      and Wollheim, C.B. Establishment of 2-mercaptoethanol-                28, 2438, 2007.
+      dependent differentiated insulin-secreting cell lines. En-      200. Stabler, C., Wilks, K., Sambanis, A., and Constantinidis, I.
+      docrinology 130, 167, 1992.                                           The effects of alginate composition on encapsulated bTC3
+185. Bollheimer, L.C., Wrede, C.E., Rockmann, F., Ottinger, I.,             cells. Biomaterials 22, 1301, 2001.
+      Scho¨ lmerich, J., and Buettner, R. Glucagon production of      201. Constantinidis, I., Rask, I., Long, R.C. Jr., and Sambanis, A.
+      the rat insulinoma cell line INS-1-A quantitative compari-            Effects of alginate composition on the metabolic, secretory,
+      son with primary rat pancreatic islets. Biochem Biophys               and growth characteristics of entrapped bTC3 mouse in-
+      Res Commun 330, 327, 2005.                                            sulinoma cells. Biomaterials 20, 2019, 1999.
+186. Pereverzev, A., Vajna, R., Pfitzer, G., Hescheler, J., Klo¨ ck-  202. Li, H.B., Jiang, H., Wang, C.Y., Duan, C.M., Ye, Y., Su, X.P.,
+      ner, U., and Schneider, T. Reduction of insulin secretion in          Kong, Q.X., Wu, J.F., and Guo, X.M. Comparison of two
+      the insulinoma cell line INS-1 by overexpression of a                 types of alginate microcapsules on stability and biocom-
+      Ca(v)2.3 (alpha1E) calcium channel antisense cassette. Eur J          patibility in vitro and in vivo. Biomed Mater 1, 42, 2006.
+      Endocrinol 146, 881, 2002.                                      203. Draget, K. I., Smidsrød, O., Skja° k-Bræk, G. Alginates from
+187. MacDonald, M.J., Longacre, M.J., Stoker, S.W., Brown, L.J.,            algae. Biopolymers Online 8, 215, 2005.
+      Hasan, N.M., and Kendrick, M.A. Acetoacetate and beta-          204. Kasimir, M.T., Rieder, E., Seebacher, G., Silberhumer, G.,
+      hydroxybutyrate in combination with other metabolites                 Wolner, E., Weigel, G., and Simon, P. Comparison of dif-
+      release insulin from INS-1 cells and provide clues about              ferent decellularization procedures of porcine heart valves.
+      pathways in insulin secretion. Am J Physiol Cell Physiol              Int J Artif Organs 26, 421, 2003.
+      294, C442, 2008.                                                205. Klokk, T.I., and Melvik, J.E. Controlling the size of alginate
+188. Visse, R., and Nagase, H. Matrix metalloproteinases and                gel beads by use of a high electrostatic potential. J Micro-
+      tissue inhibitors of metalloproteinases: structure, function,         encapsul 19, 415, 2002.
+      and biochemistry. Circ Res 92, 827, 2003.                       206. Kloxin, A., Tibbitt, M., and Anseth, K. Synthesis of photo-
+189. Sorokin, L. The impact of the extracellular matrix on in-              degradable hydrogels as dynamically tunable cell culture
+      flammation. Nat Rev Immunol 10, 712, 2010.                            platforms. Nat Protoc 5, 1867, 2010.
+190. Pathak, A., and Kumar, S. Independent regulation of tumor        207. Kloxin, A., Tibbitt, M., Kasko, A., Fairbairn, J., and Anseth,
+      cell migration by matrix stiffness and confinement. Proc              K. Tunable hydrogels for external manipulation of cellular
+      Natl Acad Sci U S A 109, 10334, 2012.                                 microenvironments through controlled photodegradation.
+191. Rayat, G.R., Rajotte, R.V., and Korbutt, G.S. Potential                Adv Mater 22, 61, 2009.
+      application of neonatal porcine islets as treatment for         208. Kloxin, A., Kasko, A., Salinas, C., and Anseth, K. Photo-
+      type 1 diabetes: a review. Ann N Y Acad Sci 875, 175,                 degradable hydrogels for dynamic tuning of physical and
+      1999.                                                                 chemical properties. Science 324, 59, 2009.
+192. Kin, T., Korbutt, G.S., Kobayashi, T., Dufour, J.M., and         209. Forman, J., Dietrich, M., and Monroe, W. Photobiological
+      Rajotte, R.V. Reversal of diabetes in pancreatectomized               and thermal effects of photoactivating UVA light doses on
+      pigs after transplantation of neonatal porcine islets. Dia-           cell cultures. Photochem Photobiol Sci 6, 649, 2007.
+      betes 54, 1032, 2005.                                           210. Andreopoulos, F.M., Deible, C.R., Stauffer, M.T., Weber,
+193. Korbutt, G.S., Elliott, J.F., Ao, Z., Smith, D.K., Warnock,            S.G., Wagner, W.R., Beckman, E.J., and Russell, A.J. Pho-
+      G.L., and Rajotte, R.V. Large scale isolation, growth, and            toscissable hydrogel synthesis via rapid photopolymeriza-
+      function of porcine neonatal islet cells. J Clin Invest 97,           tion of novel PEG-based polymers in the absence of
+      2119, 1996.                                                           photoinitiators. J Am Chem Soc 118, 6235, 1996.
+194. Hohmeier, H.E., and Newgard, C.B. Cell lines derived from        211. Luo, Y., and Shoichet, M. A photolabile hydrogel for gui-
+      pancreatic islets. Mol Cell Endocrinol 228, 121, 2004.                ded three-dimensional cell growth and migration. Nat
+195. Zimmermann, U., Mimietz, S., Zimmermann, H., Hillga¨ rtner,            Mater 3, 249, 2004.
+      M., Schneider, H., Ludwig, J., Hasse, C., Haase, A., Roth-      212. Griffin, D., and Kasko, A. Photodegradable macromers and
+      mund, M., and Fuhr, G. Hydrogel-based non-autologous cell             hydrogels for live cell encapsulation and release. J Am
+      and tissue therapy. Biotechniques 29, 564, 2000.                      Chem Soc 134, 13103, 2012.
+196. Thanos, C.G., Bintz, B.E., Bell, W.J., Qian, H., Schneider,
+      P.A., MacArthur, D.H., and Emerich, D.F. Intraperi-                                                        Address correspondence to:
+      toneal stability of alginate-polyornithine microcapsules in                      Cleo Choong, DPhil (Oxon), MBA, MEng (Hons),
+      rats: an FTIR and SEM analysis. Biomaterials 27, 3570,
+      2006.                                                                                                                       CEng MIMMM
+197. Ponce, S., Orive, G., Herna´ndez, R., Gasco´ n, A.R., Pedraz,                                           Division of Materials Technology
+      J.L., de Haan, B.J., Faas, M.M., Mathieu, H.J., and de Vos, P.                           School of Materials Science and Engineering
+      Chemistry and the biological response against immuno-                                                Nanyang Technological University
+      isolating alginate-polycation capsules of different compo-
+      sition. Biomaterials 27, 4831, 2006.                                                                                   50 Nanyang Avenue
+198. Simpson, N.E., Stabler, C.L., Simpson, C.P., Sambanis, A.,                                                                 Singapore 639798
+      and Constantinidis, I. The role of the CaCl2-guluronic acid                                                                         Singapore
+      interaction on alginate encapsulated betaTC3 cells. Bioma-
+      terials 25, 2603, 2004.                                                                                E-mail: cleochoong@ntu.edu.sg
+199. Constantinidis, I., Grant, S.C., Celper, S., Gauffin-
+      Holmberg, I., Agering, K., Oca-Cossio, J.A., Bui, J.D., Flint,                                                     Received: July 16, 2012
+                                                                                                                       Accepted: April 23, 2013
+                                                                                                     Online Publication Date: June 25, 2013
+

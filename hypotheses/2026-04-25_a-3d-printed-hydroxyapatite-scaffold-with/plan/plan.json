@@ -1,0 +1,1070 @@
+{
+  "schema_version": "groundwork-plan-1.0",
+  "plan_id": "plan-v1",
+  "created": "2026-04-25",
+  "hypothesis": {
+    "slug": "2026-04-25_a-3d-printed-hydroxyapatite-scaffold-with",
+    "wiki_page": "hypothesis",
+    "original_question": "A 3D-printed hydroxyapatite scaffold with a gradient pore size (from 100 μm to 500 μm) will exhibit higher osteoblast proliferation rates compared to a uniform pore structure because it better mimics the natural transition between cortical and cancellous bone.",
+    "refined": {
+      "intervention": "A 3D-printed phase-pure hydroxyapatite scaffold (cylinder, 6 mm Ø × 4 mm tall) with a continuous radial pore-size gradient from 100 μm at the outer surface to 500 μm at the central axis, fabricated by DLP vat-photopolymerization of an HA-loaded photocurable slurry, debinded and sintered to a phase-pure HA scaffold.",
+      "outcome": "Osteoblast (MC3T3-E1 Subclone 4, ATCC CRL-2593) proliferation rate quantified by total dsDNA content (PicoGreen) and orthogonally by metabolic activity (alamarBlue), with DAPI confocal cross-sections to verify spatial distribution.",
+      "threshold": "Day-14 dsDNA content per scaffold ≥ 25% higher (one-sided two-sample t-test, α = 0.05, n = 6 scaffolds per group per time point) on the gradient-pore scaffold than on a uniform 300 μm pore-size HA scaffold matched on total porosity (±3 pp), mass (±5%), surface area (BET, ±10%), HA phase purity (XRD, β-TCP fraction < 5%), and Ca/P ratio (ICP-MS, 1.667 ± 0.05).",
+      "mechanism": "A continuous 100→500 μm radial gradient (a) reproduces the cortical→cancellous architecture, (b) provides a small-pore outer shell for early attachment AND a large-pore core for nutrient/waste diffusion, (c) avoids the diffusion-limited necrotic core seen in uniform large-pore scaffolds and the cellular-skin / nutrient-bridge effect seen in uniform small-pore scaffolds, and (d) introduces graded curvature/permeability cues consistent with reported pore-curvature → osteogenesis findings (Yang 2022 TPMS β-TCP).",
+      "control": "Uniform 300 μm pore HA scaffold of equivalent outer geometry, total porosity, mass, surface area (BET), HA chemistry (XRD-verified phase-pure HA, ICP-MS Ca/P), and outer surface area, fabricated by the same DLP printer with the same slurry batch, debinding, and sintering schedule, seeded and cultured identically in parallel on the same plate / bioreactor."
+    }
+  },
+  "novelty": {
+    "verdict": "similar-work-exists",
+    "rationale": "Two close-but-imperfect precedents exist. Daskalakis 2024 (filename slug 2024-diez-escudero) fabricated extrusion-printed PCL/HA composite bone bricks with a three-zone radial pore-size gradient and reported a monotonic increase in cell number from inner (small-pore) to outer (large-pore) regions in hADSC d14 MTT — supporting a gradient effect, but in PCL/HA composite at 52% porosity, not pure-HA, and the gradient was three discrete zones rather than continuous. Conoscenti 2025 produced a continuous 70→200 μm pore-size gradient in PLLA via thermally-induced phase separation and showed pore size alone biases hMSC fate under identical media — the strongest direct mechanistic evidence for a continuous gradient effect, but in PLLA (osteochondral scaffold), not HA, and at a smaller pore range (70–200 μm) below the proposed 100–500 μm window. Wang 2024 extrusion-printed a CDHA gradient-pore scaffold (closest pure-CaP precedent) but the gradient parameters were not reported as 100–500 μm and the primary readouts were tumor and BMSC/HUVEC, not parametric osteoblast proliferation. No paper fabricates a continuous radial pure-HA pore gradient at 100→500 μm with osteoblast-proliferation as the primary endpoint. Hypothesis is plausibly novel.",
+    "references": [
+      {
+        "title": "In Vitro Evaluation of Pore Size Graded Bone Scaffolds with Different Material Composition",
+        "authors": "Daskalakis, Huang, Hassan, Omar, Vyas, Acar, Fallah, Cooper, Weightman, Blunn, Koc, Bartolo",
+        "year": 2024,
+        "doi": "10.1089/3dp.2022.0138",
+        "wiki_page": "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone",
+        "relevance": "Closest direct precedent: 3D-printed three-zone radial pore gradient PCL/HA bone bricks; PCL/HA wins d14 proliferation (243,413 ± 22,484 cells vs PCL 186,579 ± 14,221, p = 0.0003, +30%), and cell number monotonically increases inner→outer pore region."
+      },
+      {
+        "title": "Continuous pore size gradient enhances zonal-specific differentiation of stem cells in an osteochondral scaffold",
+        "authors": "Conoscenti, Smith, Pirosa, Pavia, Zhang, La Carrubba, Brucato, Tuan, Gottardi",
+        "year": 2025,
+        "doi": "10.1039/d5ra00540j",
+        "wiki_page": "sources/2025-conoscenti-continuous-pore-size-gradient-enhances-z",
+        "relevance": "Strongest mechanistic precedent for continuous pore gradient driving zonal cell response — pore size alone biases fate under identical media (PLLA TIPS, 70→200 μm)."
+      },
+      {
+        "title": "Polydopamine-functionalized calcium-deficient hydroxyapatite 3D-printed scaffold ...",
+        "authors": "Wang et al.",
+        "year": 2024,
+        "doi": "10.1016/j.mtbio.2024.101253",
+        "wiki_page": "sources/2024-wang-polydopamine-functionalized-calcium-defi",
+        "relevance": "Closest pure-CaP gradient-pore precedent: extrusion-printed CDHA scaffold with explicit gradient pore structure supports BMSC proliferation and ALP/RUNX2/OPN expression."
+      }
+    ],
+    "literature_cautions": [
+      {
+        "issue": "Pore-size optimum is genuinely contested across the literature (200–350 μm vs 300–500 μm vs 600 μm vs hierarchical).",
+        "wiki_page": "methods/gradient-pore-design"
+      },
+      {
+        "issue": "Native rabbit-femur Haversian/Volkmann canal diameters are 40–200 μm — the 500 μm core of the proposed gradient is closer to trabecular spacing than cortical canal diameter; mechanism statement should reflect this.",
+        "wiki_page": "sources/2026-zhao-longitudinal-and-radial-microgradients-i"
+      },
+      {
+        "issue": "Karageorgiou & Kaplan 2005 (canonical '100 μm minimum, ~300 μm optimal') is non-OA and not in raw/; cited transitively via Loh 2013, Polo-Corrales 2014, Baino 2015, Bruzauskaite 2016.",
+        "wiki_page": "failure-modes/paywalled-or-non-OA-canonical-source-not-captured"
+      },
+      {
+        "issue": "At least one HA-scaffold + osteogenesis claim (Wang 2020 grooved-HA / mitochondria) was retracted in 2025 for image-reuse; treat HA-osteogenesis claims with caution and cross-validate every imaging-based readout.",
+        "wiki_page": "failure-modes/image-reuse-unsupported-osteogenesis-claims"
+      }
+    ]
+  },
+  "summary": {
+    "total_budget_usd": 22500,
+    "total_timeline_weeks": 12,
+    "top_failure_modes": [
+      "cad-vs-actual-pore-size-mismatch",
+      "sintering-shrinkage-pore-deviation",
+      "HA-phase-decomposition-during-sintering",
+      "nutrient-diffusion-limitation-in-scaffold-core",
+      "cell-seeding-uniformity-loss-large-pores",
+      "HA-autofluorescence-confounds-livedead",
+      "incomplete-cell-lysis-3d-scaffold-picogreen",
+      "mc3t3-e1-subclone-variability"
+    ]
+  },
+  "protocol": [
+    {
+      "step": 1,
+      "title": "Generate parametric CAD: gradient and uniform-pore scaffolds",
+      "duration_minutes": 240,
+      "reagents": [],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/cad-vs-actual-pore-size-mismatch",
+          "severity": "medium",
+          "mitigation": "Treat the CAD pore-size axis as a target, not the truth. Build a parametric model that allows S = d_post/d_CAD compensation per pore-bin from Step 2's calibration; do not lock final scaffold geometry until Step 2 produces a measured shrinkage-factor lookup. TPMS / gyroid-style implicit-surface gradient is preferred (better CAD-to-physical fidelity) over an orthogonal lattice."
+        },
+        {
+          "wiki_page": "failure-modes/abrupt-interface-stress-concentration",
+          "severity": "medium",
+          "mitigation": "Use a continuous radial pore-size field (voxel-by-voxel), not a discrete-zone/biphasic design — continuous gradients avoid stress concentrators at zone boundaries (Liu 2025, Xie 2025)."
+        }
+      ],
+      "rationale": "The hypothesis specifies a continuous 100→500 μm radial gradient. Two cylindrical 6 mm Ø × 4 mm scaffolds are designed: (a) gradient — pore-size field d(r) = 100 μm at r = 3 mm (outer surface) increasing linearly to 500 μm at r = 0 (central axis); (b) uniform — pore size 300 μm throughout. Both are matched on total porosity (target 65 ± 3 pp by integration over the gradient profile), outer geometry, and mass. The 6 × 4 mm geometry caps the smallest dimension at 4 mm to limit but not eliminate the diffusion-limited-core failure mode (a 2D core thickness tests the gradient's diffusion-mitigation claim). TPMS gyroid topology is selected because of its well-characterised CAD-to-physical relationship.",
+      "source_citations": [
+        "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone",
+        "sources/2025-conoscenti-continuous-pore-size-gradient-enhances-z",
+        "sources/2017-zhang-additively-manufactured-scaffolds-for-bo",
+        "sources/2020-chen-porous-scaffold-design-for-additive-manu",
+        "sources/2025-liu-gradient-scaffolds-in-bone-soft-tissue-i",
+        "sources/2026-liu-design-and-fabrication-of-biomimetic-gra"
+      ],
+      "method_wiki_pages": [
+        "methods/gradient-pore-design",
+        "methods/TPMS-scaffold-design"
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Print and sinter calibration array; build CAD-to-measured shrinkage lookup",
+      "duration_minutes": 1440,
+      "reagents": [
+        {
+          "wiki_page": "reagents/hydroxyapatite",
+          "qty": "60 vol% slurry loading",
+          "supplier": "Plasma Biotal",
+          "catalog": "P88 / Captal",
+          "notes": "Sintering-validated medical-grade HA powder; Sigma 21223 acceptable as alternate."
+        },
+        {
+          "wiki_page": "reagents/photoinitiator-TPO",
+          "qty": "1 wt% of resin phase",
+          "supplier": "Sigma-Aldrich",
+          "catalog": "415952"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/sintering-shrinkage-pore-deviation",
+          "severity": "high",
+          "mitigation": "Print and sinter a 6×6 array with CAD pores 50/100/150/200/300/500/700 μm; μCT post-sinter; compute S = d_post/d_CAD per pore bin; build a lookup so the experimental CAD is pre-compensated (e.g., 100 μm target → ~125 μm CAD if S ≈ 0.80)."
+        },
+        {
+          "wiki_page": "failure-modes/HA-phase-decomposition-during-sintering",
+          "severity": "high",
+          "mitigation": "Cap sintering at 1200–1250 °C; verify Ca/P ratio of starting powder by ICP-MS = 1.667 ± 0.05; XRD post-sinter to confirm β-TCP fraction < 5%."
+        },
+        {
+          "wiki_page": "failure-modes/cytotoxic-residue-from-binders-or-photoinitiators",
+          "severity": "high",
+          "mitigation": "Slow debinding ramp 0.5 °C/min through 300–600 °C with ≥ 2 h soak; post-sinter EtOH/water reflux leach; ISO-10993-5 cytotoxicity screen on L929 fibroblasts before MC3T3 seeding."
+        },
+        {
+          "wiki_page": "failure-modes/cad-vs-actual-pore-size-mismatch",
+          "severity": "medium",
+          "mitigation": "Pair μCT (≤10 μm voxel, full-volume) with SEM cross-sections at 50–500× to verify thresholding; mercury intrusion porosimetry on a sister scaffold for an independent pore-throat distribution."
+        }
+      ],
+      "rationale": "Every claim of '100→500 μm gradient' fails without μCT verification: AM resolution + slurry rheology + sintering shrinkage compound to shift pores 15–25% and obliterate features below ~80 μm. Ishack 2015 robocasted HA/β-TCP at 1100 °C × 4 h. Yang 2022 used DLP-of-β-TCP with TPO photoinitiator. Bose 2017 cites 60–70 wt% HA loading minimises shrinkage. The output is a per-batch S = d_post/d_CAD lookup table that defines the actual experimental CAD geometry at Step 3.",
+      "source_citations": [
+        "sources/2017-bose-additive-manufacturing-of-biomaterials",
+        "sources/2020-garot-additive-manufacturing-of-material-scaff",
+        "sources/2015-ishack-bone-regeneration-in-critical-bone-defec",
+        "sources/2022-yang-gaussian-curvature-driven-direction-of-c",
+        "sources/2017-eliaz-calcium-phosphate-bioceramics-a-review-o"
+      ],
+      "method_wiki_pages": [
+        "methods/slurry-preparation-for-DLP",
+        "methods/DLP-vat-photopolymerization",
+        "methods/debinding-thermal-treatment",
+        "methods/ceramic-sintering",
+        "methods/micro-CT-imaging",
+        "methods/XRD-phase-analysis"
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Fabricate experimental scaffolds (gradient and uniform)",
+      "duration_minutes": 2880,
+      "reagents": [
+        {
+          "wiki_page": "reagents/hydroxyapatite",
+          "qty": "Same slurry batch as Step 2",
+          "supplier": "Plasma Biotal",
+          "catalog": "P88 / Captal"
+        },
+        {
+          "wiki_page": "reagents/photoinitiator-TPO",
+          "qty": "1 wt% of resin phase",
+          "supplier": "Sigma-Aldrich",
+          "catalog": "415952"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/pore-anisotropy-from-print-direction",
+          "severity": "medium",
+          "mitigation": "Print half of each batch with the cylinder axis vertical, half horizontal — Yang 2022 standard practice — and test for orientation effects on pore distribution and downstream cell response."
+        },
+        {
+          "wiki_page": "failure-modes/batch-to-batch-HA-stoichiometry-variation",
+          "severity": "medium",
+          "mitigation": "Use a single HA powder lot for the entire study; ICP-MS Ca/P at lot receipt; XRD on every sintered batch."
+        },
+        {
+          "wiki_page": "failure-modes/brittle-ceramic-mechanical-failure",
+          "severity": "medium",
+          "mitigation": "Compression test 3 sister scaffolds per group destructively; reject the batch if Young's modulus drops >2× from the design FE prediction (indicates microcracks)."
+        }
+      ],
+      "rationale": "Print n = 36 gradient + n = 36 uniform scaffolds (60 for the 5×6 time-point experiment + 12 spares for QC, characterization, and replacement). Use the Step-2 shrinkage lookup to pre-compensate CAD pore sizes. Same slurry, same debinding, same sintering run for both groups so post-sinter chemistry / surface state is matched.",
+      "source_citations": [
+        "sources/2017-bose-additive-manufacturing-of-biomaterials",
+        "sources/2022-yang-gaussian-curvature-driven-direction-of-c",
+        "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone"
+      ],
+      "method_wiki_pages": [
+        "methods/DLP-vat-photopolymerization",
+        "methods/slurry-preparation-for-DLP",
+        "methods/debinding-thermal-treatment",
+        "methods/ceramic-sintering"
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Characterise each batch: μCT, XRD, BET, ICP-MS, mechanical",
+      "duration_minutes": 2880,
+      "reagents": [],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/cad-vs-actual-pore-size-mismatch",
+          "severity": "high",
+          "mitigation": "μCT every experimental scaffold post-sinter at ≤ 10 μm voxel; threshold and compute pore-size histogram per radial bin. Reject any scaffold whose measured outer-zone pore mean falls outside 100 ± 25 μm or core mean outside 500 ± 50 μm."
+        },
+        {
+          "wiki_page": "failure-modes/HA-phase-decomposition-during-sintering",
+          "severity": "high",
+          "mitigation": "XRD on one scaffold per batch (Cu-Kα, 2θ = 20–60°, 0.02° step, 2 s dwell); Rietveld-quantify β-TCP/(HA + β-TCP). Reject batch if β-TCP fraction > 5%."
+        },
+        {
+          "wiki_page": "failure-modes/HA-stoichiometry-affects-resorption",
+          "severity": "medium",
+          "mitigation": "ICP-MS Ca/P on acid-digested scaffold (one per batch); confirm 1.667 ± 0.05."
+        }
+      ],
+      "rationale": "Match-on-confound parameters must be verified, not assumed: total porosity (gas pycnometer or μCT thresholding), surface area (BET N₂ adsorption), HA phase purity (XRD), Ca/P stoichiometry (ICP-MS). Mercury intrusion porosimetry on a sister scaffold cross-checks the μCT pore-size distribution. Mechanical compression test (3 sister scaffolds per group, destructive) confirms the gradient produces graded modulus. Acceptance criteria: gradient and uniform groups within ±3 pp porosity, ±10% BET, β-TCP < 5% by XRD, Ca/P 1.667 ± 0.05.",
+      "source_citations": [
+        "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone",
+        "sources/2026-thammarakcharoen-comprehensive-toxicological-evaluation-o",
+        "sources/2017-eliaz-calcium-phosphate-bioceramics-a-review-o",
+        "sources/2018-zhang-effect-of-microporosity-on-scaffolds-for"
+      ],
+      "method_wiki_pages": [
+        "methods/micro-CT-imaging",
+        "methods/XRD-phase-analysis",
+        "methods/BET-surface-area-analysis",
+        "methods/ICP-MS",
+        "methods/SEM-imaging",
+        "methods/mercury-intrusion-porosimetry",
+        "methods/mechanical-compression-testing"
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Sterilise scaffolds; ISO-10993-5 cytotoxicity pre-screen on L929",
+      "duration_minutes": 1440,
+      "reagents": [
+        {
+          "wiki_page": "reagents/PBS",
+          "qty": "1× sterile, 500 mL",
+          "supplier": "Gibco / Thermo Fisher",
+          "catalog": "10010-023"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/cytotoxic-residue-from-binders-or-photoinitiators",
+          "severity": "high",
+          "mitigation": "Soxhlet-style EtOH/water reflux leach for 24 h; vacuum dry; gamma-sterilise (25 kGy) or autoclave (121 °C × 30 min, dry cycle). Run ISO-10993-5 cytotoxicity on L929 fibroblasts (24 h scaffold-conditioned medium, n = 6) — viability ≥ 80% required to release the batch for MC3T3 work."
+        }
+      ],
+      "rationale": "Residual TPO is the dominant cytotoxicity risk for DLP HA scaffolds and is responsible for confounding 'gradient improves proliferation' claims when the uniform control happens to have residual photoinitiator. ISO-10993-5 is the standard pre-screen and Thammarakcharoen 2026 used this exact pipeline for binder-jet HA.",
+      "source_citations": [
+        "sources/2026-thammarakcharoen-comprehensive-toxicological-evaluation-o",
+        "sources/2020-garot-additive-manufacturing-of-material-scaff"
+      ],
+      "method_wiki_pages": [
+        "methods/live-dead-staining"
+      ]
+    },
+    {
+      "step": 6,
+      "title": "Receive cells, expand, STR-authenticate, mycoplasma-screen",
+      "duration_minutes": 5760,
+      "reagents": [
+        {
+          "wiki_page": "reagents/alpha-MEM",
+          "qty": "5 × 500 mL",
+          "supplier": "Gibco / Thermo Fisher",
+          "catalog": "12571-063",
+          "notes": "Ascorbic-acid-free formulation for parental MC3T3 maintenance."
+        },
+        {
+          "wiki_page": "reagents/FBS",
+          "qty": "1 × 500 mL, single-lot",
+          "supplier": "Gibco / Thermo Fisher",
+          "catalog": "16140-071",
+          "notes": "Lock a single FBS lot for the entire study."
+        },
+        {
+          "wiki_page": "reagents/penicillin-streptomycin",
+          "qty": "1 × 100 mL (100×)",
+          "supplier": "Gibco",
+          "catalog": "15140-122"
+        },
+        {
+          "wiki_page": "reagents/L-glutamine",
+          "qty": "1 × 100 mL (100× GlutaMAX)",
+          "supplier": "Gibco",
+          "catalog": "35050-061"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/mc3t3-e1-subclone-variability",
+          "severity": "high",
+          "mitigation": "Source MC3T3-E1 Subclone 4 explicitly from ATCC CRL-2593 (CVCL_5440) — high-mineraliser, the canonical bone-TE subclone. Do NOT use the parental line (CVCL_0409) or Subclone 14 (CVCL_5437, ATCC CRL-2594), and do NOT trust the wiki source file `cellosaurus-mc3t3-e1-subclone4-cvcl5437.json` whose CVCL ID is mis-labelled (it is Subclone 14, not 4) — Pass 2 flagged this."
+        },
+        {
+          "wiki_page": "failure-modes/cell-line-misidentification",
+          "severity": "high",
+          "mitigation": "STR-authenticate at receipt (mouse 9-locus panel; PubMed 37712227 reference profile); reject if any locus mismatches the ATCC reference."
+        }
+      ],
+      "rationale": "The wiki carries an explicit data-integrity flag: the catalog file labelled 'subclone 4' references CVCL_5437, which is actually Subclone 14. The hypothesis specifies osteoblasts (not osteo-precursors with subclone-dependent variability), so Subclone 4 (CRL-2593) is the canonical choice and STR authentication at receipt is non-negotiable. Use < passage 10 throughout the study to control for proliferation-rate drift.",
+      "source_citations": [
+        "sources/cellosaurus-mc3t3-e1-cvcl0409",
+        "sources/cellosaurus-mc3t3-e1-subclone4-cvcl5437",
+        "sources/protocol-2025-amin-murine-osteoblast-and-osteoclast-co-cult",
+        "sources/protocol-2025-sheikh-isolation-of-in-vitro-osteoblastic-deriv"
+      ],
+      "method_wiki_pages": [
+        "methods/STR-cell-line-authentication"
+      ],
+      "organism_wiki_pages": [
+        "organisms/MC3T3-E1-subclone-4",
+        "organisms/L929-fibroblast"
+      ]
+    },
+    {
+      "step": 7,
+      "title": "Pre-coat scaffolds, dynamic-perfusion seed at 5 × 10⁴ MC3T3 per scaffold",
+      "duration_minutes": 480,
+      "reagents": [
+        {
+          "wiki_page": "reagents/PBS",
+          "qty": "Wash buffer",
+          "supplier": "Gibco",
+          "catalog": "10010-023"
+        },
+        {
+          "wiki_page": "reagents/alpha-MEM",
+          "qty": "Seeding medium with 10% FBS + 1% P/S",
+          "supplier": "Gibco",
+          "catalog": "12571-063"
+        },
+        {
+          "wiki_page": "reagents/FBS",
+          "qty": "10% v/v in seeding medium",
+          "supplier": "Gibco",
+          "catalog": "16140-071"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/cell-seeding-uniformity-loss-large-pores",
+          "severity": "high",
+          "mitigation": "Static seeding loses 30–60% of cells through 500 μm pores. Use dynamic perfusion seeding (oscillating flow, 0.5 mL/min for 4 h, scaffold in custom holder) — Conoscenti 2025 reported 22.8 ± 1.3% efficiency uniformly across a gradient. Pre-coat scaffolds with 10 μg/mL fibronectin × 1 h at 37 °C to improve initial adhesion to large struts."
+        },
+        {
+          "wiki_page": "failure-modes/edge-effect-in-scaffold-cell-seeding",
+          "severity": "medium",
+          "mitigation": "Dynamic perfusion is the dominant mitigation. As secondary check, image one sentinel scaffold per group at 24 h with DAPI cross-sections to verify radial cell distribution before counting day-1 endpoints."
+        },
+        {
+          "wiki_page": "failure-modes/cell-seeding-efficiency-variation",
+          "severity": "medium",
+          "mitigation": "Recover medium from the perfusion outlet at 4 h and count by hemocytometer; report seeding efficiency per scaffold as primary QC. Reject any scaffold where seeded count differs from group mean by > 2 SD."
+        }
+      ],
+      "rationale": "Static seeding is a confound for any large-pore scaffold (>400 μm) and biases the readout in favour of small-pore scaffolds, which would falsely inflate the gradient effect (since the small-pore outer shell of the gradient seeds more efficiently than the uniform 300 μm control). Conoscenti 2025 demonstrated that dynamic perfusion gives uniform seeding across a 70→200 μm gradient. 5 × 10⁴ cells per scaffold matches the hypothesis specification.",
+      "source_citations": [
+        "sources/2025-conoscenti-continuous-pore-size-gradient-enhances-z",
+        "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone",
+        "sources/2008-palmer-biomimetic-systems-for-hydroxyapatite-mi"
+      ],
+      "method_wiki_pages": [
+        "methods/cell-seeding-dynamic-perfusion",
+        "methods/cell-seeding-static"
+      ]
+    },
+    {
+      "step": 8,
+      "title": "Culture in proliferation medium (no osteogenic induction) with daily medium change",
+      "duration_minutes": 30240,
+      "reagents": [
+        {
+          "wiki_page": "reagents/alpha-MEM",
+          "qty": "10 mL / scaffold / day",
+          "supplier": "Gibco",
+          "catalog": "12571-063"
+        },
+        {
+          "wiki_page": "reagents/FBS",
+          "qty": "10% v/v",
+          "supplier": "Gibco",
+          "catalog": "16140-071"
+        },
+        {
+          "wiki_page": "reagents/penicillin-streptomycin",
+          "qty": "1% v/v",
+          "supplier": "Gibco",
+          "catalog": "15140-122"
+        },
+        {
+          "wiki_page": "reagents/L-glutamine",
+          "qty": "1% v/v",
+          "supplier": "Gibco",
+          "catalog": "35050-061"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/nutrient-diffusion-limitation-in-scaffold-core",
+          "severity": "high",
+          "mitigation": "The 4 mm scaffold height is at the static-culture diffusion-limit threshold. Use perfusion bioreactor (0.5 mL/min continuous, ≥ 1× scaffold-volume turnover per minute) for ALL groups. Predict permeability a priori via CFD (target ≥ 10⁻⁹ m²); if uniform-pore control falls below threshold the experiment will look gradient-favouring purely due to diffusion confound."
+        },
+        {
+          "wiki_page": "failure-modes/proliferation-vs-differentiation-tradeoff",
+          "severity": "medium",
+          "mitigation": "Run the primary experiment in proliferation medium (NO β-glycerophosphate, NO ascorbic-acid-2-phosphate, NO dexamethasone) so cells stay in proliferative phase through d14. Differentiation markers are tracked separately (Step 11) on a parallel cohort with osteogenic medium."
+        },
+        {
+          "wiki_page": "failure-modes/short-term-proliferation-vs-long-term-bone-formation",
+          "severity": "low",
+          "mitigation": "Pre-register d14 as the primary endpoint; d21 is a secondary endpoint. Frame the paper's claim as 'gradient improves d14 in vitro proliferation', not 'gradient improves bone formation'. Long-term BV/TV would require an in-vivo follow-up (out of scope for this plan)."
+        }
+      ],
+      "rationale": "The hypothesis is about proliferation, so the primary experiment is in non-osteogenic α-MEM + 10% FBS only — dexamethasone explicitly suppresses proliferation, β-glycerophosphate triggers spontaneous mineralisation that confounds DNA recovery. Daily medium change. n = 6 scaffolds per group per time point × 5 time points × 2 groups = 60 scaffolds; perfusion bioreactor with parallel chambers.",
+      "source_citations": [
+        "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone",
+        "sources/2025-conoscenti-continuous-pore-size-gradient-enhances-z",
+        "sources/2010-murphy-understanding-the-effect-of-mean-pore-size-on",
+        "sources/2008-chan-scaffolding-in-tissue-engineering-general-approaches"
+      ],
+      "method_wiki_pages": [
+        "methods/cell-seeding-dynamic-perfusion",
+        "methods/computational-fluid-dynamics-permeability"
+      ]
+    },
+    {
+      "step": 9,
+      "title": "Serial alamarBlue (non-destructive) at d1, d4, d7, d14, d21",
+      "duration_minutes": 360,
+      "reagents": [
+        {
+          "wiki_page": "reagents/alamarBlue",
+          "qty": "10% v/v in medium, 1 mL per scaffold",
+          "supplier": "Bio-Rad / Thermo Fisher",
+          "catalog": "BUF012B / DAL1025"
+        },
+        {
+          "wiki_page": "reagents/PBS",
+          "qty": "Wash buffer",
+          "supplier": "Gibco",
+          "catalog": "10010-023"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/HA-autofluorescence-confounds-livedead",
+          "severity": "high",
+          "mitigation": "Run scaffold-only (no-cell) blanks per scaffold geometry every assay; subtract pixel/well-by-well. Read at 560/590 nm fluorescence with a low-laser-power / high-gain protocol. Verify signal-to-blank ratio > 3× before reporting."
+        }
+      ],
+      "rationale": "alamarBlue is the orthogonal metabolic readout to PicoGreen. Non-destructive — same scaffolds can be re-read at every time point and then sacrificed for terminal endpoints. The (alamarBlue / PicoGreen) ratio across time is itself diagnostic: if it drops, cells are shifting from proliferative to differentiating state, which would invalidate proliferation-only conclusions.",
+      "source_citations": [
+        "sources/thermo-picogreen-p11496",
+        "sources/protocol-2025-battistelli-a-quantitative-spectrophotometric-assay"
+      ],
+      "method_wiki_pages": [
+        "methods/alamarBlue-proliferation-assay"
+      ]
+    },
+    {
+      "step": 10,
+      "title": "Terminal sampling at each time point: lyse, PicoGreen DNA, DAPI cross-section",
+      "duration_minutes": 480,
+      "reagents": [
+        {
+          "wiki_page": "reagents/PicoGreen",
+          "qty": "1:200 working dilution from kit",
+          "supplier": "Thermo Fisher",
+          "catalog": "P11496"
+        },
+        {
+          "wiki_page": "reagents/DAPI",
+          "qty": "1 μg/mL",
+          "supplier": "Sigma / Thermo Fisher",
+          "catalog": "D9542 / 62248"
+        },
+        {
+          "wiki_page": "reagents/PBS",
+          "qty": "Wash + lysis buffer base",
+          "supplier": "Gibco",
+          "catalog": "10010-023"
+        },
+        {
+          "wiki_page": "reagents/calcein-AM",
+          "qty": "2 μM",
+          "supplier": "Thermo Fisher",
+          "catalog": "C1430"
+        },
+        {
+          "wiki_page": "reagents/ethidium-homodimer",
+          "qty": "4 μM",
+          "supplier": "Thermo Fisher",
+          "catalog": "E1169"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/incomplete-cell-lysis-3d-scaffold-picogreen",
+          "severity": "high",
+          "mitigation": "Use proteinase-K (200 μg/mL in TE, 56 °C × 30 min) + sonication (10 × 5 s pulses on ice) + 1% SDS chaotropic lysis — NOT single freeze-thaw + Triton, which recovers only 40–70% of dsDNA from 3D scaffolds. Validate recovery on 3 sentinel scaffolds (seed known cell number, immediately lyse, expect ≥ 80% recovery)."
+        },
+        {
+          "wiki_page": "failure-modes/HA-autofluorescence-confounds-livedead",
+          "severity": "high",
+          "mitigation": "Run scaffold-only (no-cell) PicoGreen blank per scaffold geometry and per batch (every plate); subtract before quantification. Calibrate the PicoGreen standard curve with kit-supplied calf-thymus dsDNA; run a 'scaffold + known DNA spike' control to detect HA quenching of dye signal."
+        },
+        {
+          "wiki_page": "failure-modes/cad-vs-actual-pore-size-mismatch",
+          "severity": "low",
+          "mitigation": "Sample DAPI cross-sections in three radial bins (outer, middle, inner) per scaffold, not just bulk; per-bin DNA differing > 2× outer→inner is a diffusion-limit signature even if total DNA is high (Step 8 mitigation cross-link)."
+        }
+      ],
+      "rationale": "PicoGreen DNA is the primary proliferation endpoint (specified by the hypothesis). DAPI confocal cross-sections are needed because the gradient hypothesis is intrinsically spatial — bulk PicoGreen alone cannot distinguish 'gradient redistributes cells' from 'gradient grows more total cells'. Live/dead at d14 only (one parallel scaffold per group) is a sanity check.",
+      "source_citations": [
+        "sources/thermo-picogreen-p11496",
+        "sources/2025-de-carvalho-three-dimensional-printing-of-calcium-ph",
+        "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone"
+      ],
+      "method_wiki_pages": [
+        "methods/PicoGreen-DNA-quantification",
+        "methods/DAPI-staining",
+        "methods/confocal-microscopy",
+        "methods/live-dead-staining"
+      ]
+    },
+    {
+      "step": 11,
+      "title": "Secondary differentiation panel (parallel cohort, osteogenic medium): ALP, RUNX2/COL1/OCN qPCR",
+      "duration_minutes": 1440,
+      "reagents": [
+        {
+          "wiki_page": "reagents/L-ascorbic-acid-2-phosphate",
+          "qty": "50 μg/mL in osteogenic medium",
+          "supplier": "Sigma",
+          "catalog": "A8960"
+        },
+        {
+          "wiki_page": "reagents/beta-glycerophosphate",
+          "qty": "10 mM in osteogenic medium",
+          "supplier": "Sigma",
+          "catalog": "G9422"
+        },
+        {
+          "wiki_page": "reagents/dexamethasone",
+          "qty": "10 nM in osteogenic medium",
+          "supplier": "Sigma",
+          "catalog": "D4902"
+        },
+        {
+          "wiki_page": "reagents/p-nitrophenyl-phosphate",
+          "qty": "ALP substrate, 5 mM",
+          "supplier": "Sigma",
+          "catalog": "N1891"
+        },
+        {
+          "wiki_page": "reagents/alizarin-red-S",
+          "qty": "40 mM, pH 4.1",
+          "supplier": "Sigma",
+          "catalog": "A5533",
+          "notes": "Quantitative readout deferred until scaffold-only blank is validated; see failure mode below."
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/proliferation-vs-differentiation-tradeoff",
+          "severity": "high",
+          "mitigation": "Daskalakis 2024: PCL/HA wins proliferation but PCL/Bioglass wins differentiation — the two markers can move in opposite directions across pore-architecture/composition. Report proliferation and differentiation as separate primary endpoints; do NOT attempt to combine them into a single 'osteogenicity score'."
+        },
+        {
+          "wiki_page": "failure-modes/ARS-binds-residual-scaffold-HA",
+          "severity": "high",
+          "mitigation": "ARS binds the scaffold itself (Battistelli 2025: standard curve is calibrated on synthetic HA). Always include scaffold-only no-cell blank; subtract. Cross-validate with von Kossa (silver phosphate stain) and EDX of cell-deposited mineral. Treat ARS as semi-quantitative on HA scaffolds."
+        },
+        {
+          "wiki_page": "failure-modes/spontaneous-dystrophic-mineralization-bglycerophosphate",
+          "severity": "medium",
+          "mitigation": "β-glycerophosphate at 10 mM can produce cell-free mineral precipitates; run a no-cell scaffold + osteogenic medium parallel control to subtract baseline."
+        }
+      ],
+      "rationale": "Secondary cohort runs in parallel with osteogenic medium (β-glycerophosphate + AsAP + dexamethasone) to track ALP activity (d7, d14), qPCR for RUNX2 / COL1A1 / OCN (d14), and ARS at d21 — answering the natural follow-up question 'does the proliferation effect translate to differentiation?'. Critically, this is a separate cohort because differentiation media confound proliferation readout; the primary hypothesis stands or falls on Step 10's proliferation data alone.",
+      "source_citations": [
+        "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone",
+        "sources/2025-conoscenti-continuous-pore-size-gradient-enhances-z",
+        "sources/protocol-2025-battistelli-a-quantitative-spectrophotometric-assay",
+        "sources/protocol-2025-amin-murine-osteoblast-and-osteoclast-co-cult"
+      ],
+      "method_wiki_pages": [
+        "methods/osteogenic-differentiation-induction",
+        "methods/ALP-activity-assay",
+        "methods/qPCR",
+        "methods/alizarin-red-staining",
+        "methods/spectrophotometric-calcium-assay"
+      ]
+    },
+    {
+      "step": 12,
+      "title": "Statistics, data integrity, pre-registration",
+      "duration_minutes": 720,
+      "reagents": [],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/image-reuse-unsupported-osteogenesis-claims",
+          "severity": "high",
+          "mitigation": "All representative images and quantification spreadsheets must be archived with original raw files. Do NOT splice or duplicate confocal panels — image-reuse is the most common retraction signature in this literature (8 retractions in raw/retractions/). Assign a second reviewer to spot-check images before any submission."
+        },
+        {
+          "wiki_page": "failure-modes/donor-variability-hMSC",
+          "severity": "low",
+          "mitigation": "MC3T3 (cell line) is not donor-variable, but if extending to hBMSC follow-up: pool ≥3 donors, report inter-donor variance separately."
+        }
+      ],
+      "rationale": "Pre-register the primary endpoint (d14 PicoGreen, one-sided two-sample t-test, α = 0.05, n = 6, expected effect size ≥ 25% per hypothesis) on OSF or equivalent before Step 7 begins. Report n, exact p-values, effect sizes, and Bayes factors. Power analysis target: detect 25% mean difference with σ = 15% (typical from Daskalakis 2024) at 80% power → n = 6 per group per time point.",
+      "source_citations": [
+        "sources/crossref-retraction-10-3892-mmr-2025-13519",
+        "sources/crossref-retraction-10-1111-clr-12656",
+        "sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone"
+      ],
+      "method_wiki_pages": []
+    }
+  ],
+  "materials": [
+    {
+      "category": "Scaffold raw material",
+      "reagent_wiki_page": "reagents/hydroxyapatite",
+      "supplier": "Plasma Biotal",
+      "catalog": "P88 / Captal series",
+      "qty": "500 g",
+      "price_usd": 600
+    },
+    {
+      "category": "Scaffold raw material",
+      "reagent_wiki_page": "reagents/photoinitiator-TPO",
+      "supplier": "Sigma-Aldrich",
+      "catalog": "415952",
+      "qty": "50 g",
+      "price_usd": 250
+    },
+    {
+      "category": "Scaffold raw material",
+      "reagent_wiki_page": "reagents/PEG-DA",
+      "supplier": "Sigma-Aldrich",
+      "catalog": "455008 (PEG-DA 700 Mn) + reactive diluents",
+      "qty": "500 mL",
+      "price_usd": 400
+    },
+    {
+      "category": "Cells",
+      "reagent_wiki_page": "organisms/MC3T3-E1-subclone-4",
+      "supplier": "ATCC",
+      "catalog": "CRL-2593",
+      "qty": "1 vial (Subclone 4, CVCL_5440)",
+      "price_usd": 625
+    },
+    {
+      "category": "Cells (cytotoxicity reference)",
+      "reagent_wiki_page": "organisms/L929-fibroblast",
+      "supplier": "ATCC",
+      "catalog": "CCL-1",
+      "qty": "1 vial",
+      "price_usd": 580
+    },
+    {
+      "category": "Cell-culture media",
+      "reagent_wiki_page": "reagents/alpha-MEM",
+      "supplier": "Gibco / Thermo Fisher",
+      "catalog": "12571-063",
+      "qty": "5 × 500 mL",
+      "price_usd": 250
+    },
+    {
+      "category": "Cell-culture media",
+      "reagent_wiki_page": "reagents/FBS",
+      "supplier": "Gibco / Thermo Fisher",
+      "catalog": "16140-071",
+      "qty": "1 × 500 mL (single lot)",
+      "price_usd": 500
+    },
+    {
+      "category": "Cell-culture media",
+      "reagent_wiki_page": "reagents/penicillin-streptomycin",
+      "supplier": "Gibco",
+      "catalog": "15140-122",
+      "qty": "1 × 100 mL",
+      "price_usd": 80
+    },
+    {
+      "category": "Cell-culture media",
+      "reagent_wiki_page": "reagents/L-glutamine",
+      "supplier": "Gibco",
+      "catalog": "35050-061 (GlutaMAX)",
+      "qty": "1 × 100 mL",
+      "price_usd": 40
+    },
+    {
+      "category": "Cell-culture media",
+      "reagent_wiki_page": "reagents/PBS",
+      "supplier": "Gibco",
+      "catalog": "10010-023",
+      "qty": "5 × 500 mL",
+      "price_usd": 100
+    },
+    {
+      "category": "Osteogenic supplements",
+      "reagent_wiki_page": "reagents/L-ascorbic-acid-2-phosphate",
+      "supplier": "Sigma-Aldrich",
+      "catalog": "A8960",
+      "qty": "5 g",
+      "price_usd": 80
+    },
+    {
+      "category": "Osteogenic supplements",
+      "reagent_wiki_page": "reagents/beta-glycerophosphate",
+      "supplier": "Sigma-Aldrich",
+      "catalog": "G9422",
+      "qty": "100 g",
+      "price_usd": 60
+    },
+    {
+      "category": "Osteogenic supplements",
+      "reagent_wiki_page": "reagents/dexamethasone",
+      "supplier": "Sigma-Aldrich",
+      "catalog": "D4902",
+      "qty": "100 mg",
+      "price_usd": 30
+    },
+    {
+      "category": "Assay kits",
+      "reagent_wiki_page": "reagents/PicoGreen",
+      "supplier": "Thermo Fisher",
+      "catalog": "P11496 (Quant-iT PicoGreen dsDNA Assay Kit)",
+      "qty": "1 kit",
+      "price_usd": 475
+    },
+    {
+      "category": "Assay kits",
+      "reagent_wiki_page": "reagents/alamarBlue",
+      "supplier": "Thermo Fisher",
+      "catalog": "DAL1025",
+      "qty": "100 mL",
+      "price_usd": 250
+    },
+    {
+      "category": "Assay reagents",
+      "reagent_wiki_page": "reagents/calcein-AM",
+      "supplier": "Thermo Fisher",
+      "catalog": "C1430",
+      "qty": "1 mg",
+      "price_usd": 200
+    },
+    {
+      "category": "Assay reagents",
+      "reagent_wiki_page": "reagents/ethidium-homodimer",
+      "supplier": "Thermo Fisher",
+      "catalog": "E1169",
+      "qty": "1 mL of 2 mM stock",
+      "price_usd": 100
+    },
+    {
+      "category": "Assay reagents",
+      "reagent_wiki_page": "reagents/DAPI",
+      "supplier": "Thermo Fisher",
+      "catalog": "62248",
+      "qty": "10 mL",
+      "price_usd": 30
+    },
+    {
+      "category": "Assay reagents",
+      "reagent_wiki_page": "reagents/alizarin-red-S",
+      "supplier": "Sigma-Aldrich",
+      "catalog": "A5533",
+      "qty": "100 g",
+      "price_usd": 60
+    },
+    {
+      "category": "Assay reagents",
+      "reagent_wiki_page": "reagents/p-nitrophenyl-phosphate",
+      "supplier": "Sigma-Aldrich",
+      "catalog": "N1891",
+      "qty": "ALP substrate kit",
+      "price_usd": 200
+    },
+    {
+      "category": "Molecular biology",
+      "reagent_wiki_page": null,
+      "supplier": "Various (Trizol, cDNA kit, qPCR mastermix, RUNX2/COL1A1/OCN/GAPDH primers)",
+      "catalog": "—",
+      "qty": "Bundle",
+      "price_usd": 800
+    },
+    {
+      "category": "Plasticware / consumables",
+      "reagent_wiki_page": null,
+      "supplier": "Various",
+      "catalog": "—",
+      "qty": "Bundle (well plates, dishes, tubes, pipette tips, perfusion-chamber tubing)",
+      "price_usd": 1500
+    },
+    {
+      "category": "Authentication / QC",
+      "reagent_wiki_page": null,
+      "supplier": "ATCC / IDEXX",
+      "catalog": "STR mouse 9-locus + PlasmoTest mycoplasma screen",
+      "qty": "1 STR + 4 mycoplasma screens",
+      "price_usd": 350
+    },
+    {
+      "category": "Equipment access (CMC fee)",
+      "reagent_wiki_page": null,
+      "supplier": "University CMC (e.g., Lithoz CeraFab 7500 / Tethon3D Bison)",
+      "catalog": "DLP slurry printer",
+      "qty": "5 days @ $200/day",
+      "price_usd": 1000
+    },
+    {
+      "category": "Equipment access (CMC fee)",
+      "reagent_wiki_page": null,
+      "supplier": "University CMC",
+      "catalog": "Debinding + sintering furnace",
+      "qty": "3 runs",
+      "price_usd": 300
+    },
+    {
+      "category": "Equipment access (CMC fee)",
+      "reagent_wiki_page": null,
+      "supplier": "University CMC (Bruker SkyScan / ScanCo μCT 100)",
+      "catalog": "μCT @ ≤10 μm voxel",
+      "qty": "24 scans @ $200/scan",
+      "price_usd": 4800
+    },
+    {
+      "category": "Equipment access (CMC fee)",
+      "reagent_wiki_page": null,
+      "supplier": "University CMC",
+      "catalog": "BET / XRD / ICP-MS / mercury intrusion / mechanical / SEM-EDX",
+      "qty": "Bundled per-sample fees",
+      "price_usd": 1700
+    },
+    {
+      "category": "Personnel",
+      "reagent_wiki_page": null,
+      "supplier": "—",
+      "catalog": "Postdoc 0.5 FTE × 12 weeks (academic rate)",
+      "qty": "—",
+      "price_usd": 5500
+    },
+    {
+      "category": "Statistics consult / pre-registration / overhead",
+      "reagent_wiki_page": null,
+      "supplier": "—",
+      "catalog": "OSF pre-registration; biostatistics consult; 15% buffer",
+      "qty": "—",
+      "price_usd": 2500
+    }
+  ],
+  "budget": [
+    { "category": "Scaffold raw materials (HA, photoinitiator, resin base)", "description": "Plasma Biotal P88 HA + TPO + PEG-DA / diluents", "cost_usd": 1250 },
+    { "category": "Cells", "description": "MC3T3-E1 Subclone 4 (ATCC CRL-2593) + L929 reference", "cost_usd": 1205 },
+    { "category": "Cell-culture media + supplements", "description": "α-MEM, FBS (single lot), P/S, L-glutamine, PBS, AsAP, β-GP, dexamethasone", "cost_usd": 1140 },
+    { "category": "Assay kits + reagents", "description": "PicoGreen P11496, alamarBlue, calcein-AM/EthD-1, DAPI, ARS, pNPP", "cost_usd": 1315 },
+    { "category": "Molecular biology", "description": "Trizol + cDNA + qPCR + RUNX2/COL1A1/OCN/GAPDH primers", "cost_usd": 800 },
+    { "category": "Plasticware", "description": "Well plates, perfusion tubing, tips, tubes", "cost_usd": 1500 },
+    { "category": "Cell-line authentication / mycoplasma", "description": "STR + PlasmoTest", "cost_usd": 350 },
+    { "category": "DLP printer access", "description": "5 days CMC fee", "cost_usd": 1000 },
+    { "category": "Furnace access", "description": "3 debinding + sintering runs", "cost_usd": 300 },
+    { "category": "μCT access", "description": "24 scans @ ≤10 μm voxel", "cost_usd": 4800 },
+    { "category": "Other characterisation", "description": "BET, XRD, ICP-MS, mercury porosimetry, mechanical, SEM-EDX", "cost_usd": 1700 },
+    { "category": "Personnel", "description": "Postdoc 0.5 FTE × 12 weeks (academic rate)", "cost_usd": 5500 },
+    { "category": "Statistics / pre-registration / 15% buffer", "description": "OSF pre-reg, biostatistics consult, overhead", "cost_usd": 2500 }
+  ],
+  "total_budget_usd": 23360,
+  "timeline": [
+    {
+      "phase": "Phase 1 — CAD design + slurry development",
+      "name": "design-and-slurry",
+      "duration_weeks": 2,
+      "depends_on": [],
+      "deliverables": ["Gradient + uniform CAD STL", "60 vol% HA / TPO / PEG-DA slurry passing rheology spec"]
+    },
+    {
+      "phase": "Phase 2 — Calibration array + shrinkage lookup",
+      "name": "calibration",
+      "duration_weeks": 2,
+      "depends_on": ["design-and-slurry"],
+      "deliverables": ["S = d_post/d_CAD lookup table per pore bin", "Pre-compensated experimental CAD"]
+    },
+    {
+      "phase": "Phase 3 — Scaffold fabrication + characterisation",
+      "name": "fabricate-and-characterise",
+      "duration_weeks": 2,
+      "depends_on": ["calibration"],
+      "deliverables": ["72 sintered scaffolds (36 gradient + 36 uniform + spares)", "μCT, XRD, BET, ICP-MS, SEM, mechanical QC reports", "Match-on-confound acceptance: porosity ±3 pp, BET ±10%, β-TCP <5%, Ca/P 1.667±0.05"]
+    },
+    {
+      "phase": "Phase 4 — Sterilise + ISO-10993 cyto pre-screen + cell expansion",
+      "name": "release-and-cells",
+      "duration_weeks": 1,
+      "depends_on": ["fabricate-and-characterise"],
+      "deliverables": ["Sterile scaffolds released for use", "STR-authenticated MC3T3 Subclone 4 stocks at passage ≤10", "Mycoplasma-negative status"]
+    },
+    {
+      "phase": "Phase 5 — Seeding + perfusion culture + serial alamarBlue",
+      "name": "culture",
+      "duration_weeks": 4,
+      "depends_on": ["release-and-cells"],
+      "deliverables": ["d1, d4, d7, d14, d21 alamarBlue series", "Per-scaffold seeding-efficiency QC"]
+    },
+    {
+      "phase": "Phase 6 — Endpoint sampling + analysis",
+      "name": "endpoint-and-stats",
+      "duration_weeks": 1,
+      "depends_on": ["culture"],
+      "deliverables": ["PicoGreen DNA per scaffold per time point", "DAPI confocal cross-sections (radial bins)", "ALP / qPCR / ARS for differentiation cohort", "Pre-registered statistical report"]
+    }
+  ],
+  "total_timeline_weeks": 12,
+  "validation": {
+    "primary_endpoint": "Day-14 dsDNA content per scaffold (PicoGreen, lysate, blank-subtracted) — gradient vs uniform 300 μm control.",
+    "success_criteria": [
+      "Gradient group d14 dsDNA ≥ 1.25× uniform-control d14 dsDNA (one-sided two-sample t-test, α = 0.05, n = 6 per group).",
+      "alamarBlue d14 fluorescence (blank-subtracted) directionally consistent with PicoGreen — ratio (alamarBlue / PicoGreen) within ±25% between groups, indicating both groups remained in proliferative phase.",
+      "Scaffold groups pass match-on-confound spec: total porosity within ±3 pp, BET within ±10%, XRD β-TCP fraction <5%, Ca/P 1.667 ± 0.05, mass within ±5%.",
+      "Seeding efficiency between groups within ±20%, no group-mean efficiency below 60% (perfusion).",
+      "L929 ISO-10993-5 viability ≥ 80% on scaffold-conditioned medium prior to cell-line release.",
+      "DAPI cross-sections show radial cell distribution consistent with the gradient design (gradient core cell density at least 50% of outer-zone density — confirms diffusion-mitigation claim)."
+    ],
+    "failure_criteria": [
+      "Gradient group d14 dsDNA < 1.25× uniform-control AND/OR p > 0.05: hypothesis falsified.",
+      "Match-on-confound spec violated (porosity > ±3 pp, BET > ±10%, β-TCP > 5%, Ca/P outside 1.617–1.717): result inadmissible — the gradient effect cannot be isolated from chemistry/porosity confound.",
+      "Seeding efficiency differs between groups > ±20% OR DAPI shows hollow large-pore core in gradient: cell-seeding-uniformity-loss-large-pores confound dominates — re-design seeding (longer perfusion, fibronectin coating).",
+      "Cytotoxic photoinitiator residue (L929 viability < 80% on conditioned medium): re-process scaffolds, do not seed MC3T3.",
+      "alamarBlue/PicoGreen ratio drifts > 50% by d14 — cells differentiating despite proliferation medium; revisit medium composition / cell passage.",
+      "Any imaging discrepancy or duplicated panel during second-reviewer image audit: full re-audit before any reporting (image-reuse-unsupported-osteogenesis-claims is the dominant retraction signature in this literature)."
+    ],
+    "measurements": [
+      { "name": "PicoGreen dsDNA per scaffold", "method_wiki_page": "methods/PicoGreen-DNA-quantification", "time_points_days": [1, 4, 7, 14, 21], "n_per_group_per_timepoint": 6 },
+      { "name": "alamarBlue fluorescence (non-destructive)", "method_wiki_page": "methods/alamarBlue-proliferation-assay", "time_points_days": [1, 4, 7, 14, 21], "n_per_group_per_timepoint": 6 },
+      { "name": "DAPI confocal cross-section radial cell density", "method_wiki_page": "methods/DAPI-staining", "time_points_days": [1, 7, 14], "n_per_group_per_timepoint": 2 },
+      { "name": "Live/dead (calcein-AM + EthD-1)", "method_wiki_page": "methods/live-dead-staining", "time_points_days": [14], "n_per_group_per_timepoint": 2 },
+      { "name": "ALP activity (osteogenic cohort)", "method_wiki_page": "methods/ALP-activity-assay", "time_points_days": [7, 14], "n_per_group_per_timepoint": 4 },
+      { "name": "qPCR RUNX2 / COL1A1 / OCN / GAPDH (osteogenic cohort)", "method_wiki_page": "methods/qPCR", "time_points_days": [14], "n_per_group_per_timepoint": 4 },
+      { "name": "Alizarin Red S (osteogenic cohort, semi-quantitative)", "method_wiki_page": "methods/alizarin-red-staining", "time_points_days": [21], "n_per_group_per_timepoint": 4 },
+      { "name": "μCT pore-size distribution per scaffold (acceptance)", "method_wiki_page": "methods/micro-CT-imaging", "time_points_days": [-7], "n_per_group_per_timepoint": 12 }
+    ]
+  },
+  "failure_map": [
+    {
+      "wiki_page": "failure-modes/cad-vs-actual-pore-size-mismatch",
+      "severity": "high",
+      "frequency_estimate": "dominant — every AM route shows ≥10% deviation between CAD and as-built post-sintered pore size",
+      "applies_to_step": 2,
+      "mitigation": "Per-batch shrinkage calibration (Step 2) + μCT every experimental scaffold (Step 4) + reject scaffolds outside 100 ± 25 μm outer / 500 ± 50 μm core."
+    },
+    {
+      "wiki_page": "failure-modes/sintering-shrinkage-pore-deviation",
+      "severity": "high",
+      "frequency_estimate": "dominant — 15–25% linear shrinkage of HA at 1200–1300 °C is the rule",
+      "applies_to_step": 2,
+      "mitigation": "Pre-compensate CAD by S = d_post/d_CAD ≈ 0.80; calibrate S per powder lot, slurry batch, sintering schedule; maximise HA solid loading (60–70 vol%)."
+    },
+    {
+      "wiki_page": "failure-modes/HA-phase-decomposition-during-sintering",
+      "severity": "high",
+      "frequency_estimate": "recurring — significant HA → β-TCP / α-TCP / CaO conversion above ~1300 °C",
+      "applies_to_step": 2,
+      "mitigation": "Cap sintering at 1200–1250 °C; verify Ca/P 1.667 ± 0.05 by ICP-MS pre and post; XRD per batch — reject if β-TCP fraction >5%."
+    },
+    {
+      "wiki_page": "failure-modes/cytotoxic-residue-from-binders-or-photoinitiators",
+      "severity": "high",
+      "frequency_estimate": "recurring for DLP HA — incomplete debinding leaves cytotoxic TPO/LAP residue",
+      "applies_to_step": 5,
+      "mitigation": "Slow 0.5 °C/min debinding ramp through 300–600 °C with ≥2 h soak + EtOH/water reflux leach + ISO-10993-5 L929 cytotoxicity gate (viability ≥80%)."
+    },
+    {
+      "wiki_page": "failure-modes/cell-seeding-uniformity-loss-large-pores",
+      "severity": "high",
+      "frequency_estimate": "recurring — pores >400 μm lose 30–60% of statically-seeded cells",
+      "applies_to_step": 7,
+      "mitigation": "Dynamic perfusion seeding (4 h at 0.5 mL/min) + 10 μg/mL fibronectin pre-coating + per-scaffold seeding-efficiency QC; reject scaffolds with seeded count > 2 SD from group mean."
+    },
+    {
+      "wiki_page": "failure-modes/nutrient-diffusion-limitation-in-scaffold-core",
+      "severity": "high",
+      "frequency_estimate": "dominant — affects nearly every static-cultured 3D scaffold >2 mm thick",
+      "applies_to_step": 8,
+      "mitigation": "Perfusion culture at ≥1× scaffold-volume turnover/min; CFD-predict permeability ≥10⁻⁹ m² before printing; DAPI cross-section radial bins to confirm core not necrotic."
+    },
+    {
+      "wiki_page": "failure-modes/HA-autofluorescence-confounds-livedead",
+      "severity": "high",
+      "frequency_estimate": "dominant — affects almost every fluorescence assay run on HA scaffolds without proper blanks",
+      "applies_to_step": 10,
+      "mitigation": "Scaffold-only no-cell blank per geometry per plate per time point; subtract; verify signal-to-blank > 3×; spectral imaging where possible."
+    },
+    {
+      "wiki_page": "failure-modes/incomplete-cell-lysis-3d-scaffold-picogreen",
+      "severity": "high",
+      "frequency_estimate": "dominant — single freeze-thaw + Triton recovers only 40–70% of dsDNA from 3D scaffolds",
+      "applies_to_step": 10,
+      "mitigation": "Proteinase-K (200 μg/mL, 56 °C, 30 min) + sonication + 1% SDS chaotropic lysis; recovery validation experiment (known cell number, expect ≥80% recovery) before any group comparison."
+    },
+    {
+      "wiki_page": "failure-modes/mc3t3-e1-subclone-variability",
+      "severity": "high",
+      "frequency_estimate": "high — parental vs Subclone 4 vs Subclone 14 differ by ≥10× in mineralisation",
+      "applies_to_step": 6,
+      "mitigation": "Source MC3T3-E1 Subclone 4 from ATCC CRL-2593 (NOT parental, NOT Subclone 14, NOT the wiki's mis-labelled cellosaurus-mc3t3-e1-subclone4-cvcl5437.json file); STR-authenticate at receipt; passage ≤10 throughout."
+    },
+    {
+      "wiki_page": "failure-modes/proliferation-vs-differentiation-tradeoff",
+      "severity": "medium",
+      "frequency_estimate": "frequent in pore-architecture / composition studies",
+      "applies_to_step": 8,
+      "mitigation": "Run primary experiment in non-osteogenic α-MEM + 10% FBS only (no β-GP, no AsAP, no dexamethasone); track differentiation in a parallel cohort (Step 11)."
+    },
+    {
+      "wiki_page": "failure-modes/ARS-binds-residual-scaffold-HA",
+      "severity": "high",
+      "frequency_estimate": "dominant for ARS-on-HA-scaffold quantification",
+      "applies_to_step": 11,
+      "mitigation": "Scaffold-only no-cell blank per ARS plate; calibrate standard curve on synthetic HA; cross-validate with von Kossa + EDX of cell-deposited mineral."
+    },
+    {
+      "wiki_page": "failure-modes/image-reuse-unsupported-osteogenesis-claims",
+      "severity": "high",
+      "frequency_estimate": "recurring retraction signature in this literature (8 retractions in raw/retractions/)",
+      "applies_to_step": 12,
+      "mitigation": "Archive all raw images with original filenames; second-reviewer image audit before submission; do not splice/duplicate panels."
+    }
+  ],
+  "scope_caveats": [
+    "Karageorgiou & Kaplan 2005 (canonical '100 μm minimum, ~300 μm optimal') is non-OA and not in raw/ — claims invoking 'the canonical pore-size optimum' rely on transitive citation through Loh 2013 / Polo-Corrales 2014 / Baino 2015 / Bruzauskaite 2016. This plan avoids invoking that figure as primary justification.",
+    "The plan covers in-vitro proliferation only. In-vivo bone formation (BV/TV at 8–12 weeks) is the natural follow-up but out of scope here — failure-modes/in-vivo-vs-in-vitro-discordance and short-term-proliferation-vs-long-term-bone-formation flag the gap.",
+    "Native rabbit-femur Haversian/Volkmann canal diameters are 40–200 μm (Zhao 2026); the 500 μm core of this gradient is closer to trabecular spacing than cortical canal diameter. The biomimetic claim should be stated as 'cortical→cancellous trabecular-spacing mimicry' rather than 'cortical canal mimicry'."
+  ],
+  "under_supported_by_wiki": [
+    "DLP slurry rheology / specific-gravity / cure-depth parameters for 60 vol% HA + TPO are not in raw/ — the wiki has the principles (slurry-preparation-for-DLP, DLP-vat-photopolymerization) but no protocol-level recipe; Step 2 calibration array is therefore broader than it would otherwise need to be. Pass-2 source for fix: a protocols.io HA-DLP recipe (not currently in raw/).",
+    "Quantitative shrinkage factor S for HA at 1250 °C is given as 0.75–0.85 in the wiki; Ishack 2015 used 1100 °C × 4 h on robocasted HA/β-TCP, which is a different system. Step 2 calibration is therefore essential, not optional.",
+    "ATCC and Sigma direct catalog pages were not captured in raw/ (failure-modes/ATCC-Sigma-vendor-pages-not-captured). The materials catalog numbers above are sourced from Cellosaurus / PubChem cross-references and standard published catalog conventions, not from live vendor snapshots — confirm at purchase.",
+    "Permeability CFD model parameters for HA scaffolds at 100→500 μm are not in any source page; Conoscenti 2025 used CFD for 70→200 μm PLLA. Step 8 mitigation references the principle but the lab will need to parameterise the model itself."
+  ]
+}

@@ -1,0 +1,932 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_0409"
+          }
+        ],
+        "age": "<1D",
+        "breed": "C57BL/6",
+        "category": "Spontaneously immortalized cell line",
+        "cell-type": {
+          "value": "Osteoblast",
+          "xref": {
+            "accession": "CL_0000062",
+            "category": "Anatomy/cell type resources",
+            "database": "CL",
+            "iri": "http://purl.obolibrary.org/obo/CL_0000062",
+            "label": "osteoblast",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCL_0000062"
+          }
+        },
+        "child-list": [
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_VT93"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 11"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_5437"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 14"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_VT94"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 17"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_VT95"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 20"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_5438"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 24"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_VT96"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 26"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_5439"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 30"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_VT97"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 35"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_5440"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 4"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_VT98"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 8"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_B6H0"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-NM4"
+            }
+          }
+        ],
+        "comment-list": [
+          {
+            "category": "Anecdotal",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=12638602"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=8612673"
+                }
+              }
+            ],
+            "value": "Have been flown in space on shuttle flights STS-56, STS-76, STS-81 and STS-84 to study growth and differentiation in microgravity (PubMed=8612673; PubMed=12638602)"
+          },
+          {
+            "category": "Group",
+            "value": "Space-flown cell line (cellonaut)"
+          }
+        ],
+        "created": "2012-04-04",
+        "derived-from": [
+          {
+            "accession": "CVCL_0D74",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "MC3T3",
+            "url": "https://www.cellosaurus.org/CVCL_0D74"
+          }
+        ],
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "In situ",
+              "value": "Bone, calvaria",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0004339",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0004339",
+                  "label": "vault of skull",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0004339"
+                }
+              ]
+            }
+          }
+        ],
+        "doubling-time-list": [
+          {
+            "doubling-time-value": "~1-2 days",
+            "source-list": [
+              {
+                "xref": {
+                  "accession": "ACC-210",
+                  "category": "Cell line collections (Providers)",
+                  "database": "DSMZ",
+                  "url": "https://www.dsmz.de/collection/catalogue/details/culture/ACC-210"
+                }
+              }
+            ]
+          }
+        ],
+        "doubling-time-range": {
+          "max": "48",
+          "min": "24",
+          "unit": "hour"
+        },
+        "entry-version": "31",
+        "last-updated": "2026-03-31",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "MC3T3-E1"
+          },
+          {
+            "type": "synonym",
+            "value": "Mc3T3-E1"
+          },
+          {
+            "type": "synonym",
+            "value": "MC3T3E1"
+          },
+          {
+            "type": "synonym",
+            "value": "MC-3T3-E1"
+          },
+          {
+            "type": "synonym",
+            "value": "MC 3T3-E1"
+          }
+        ],
+        "omics-list": [
+          {
+            "branch": "Variations",
+            "value": "SNP array analysis."
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "DOI=10.2330/joralbiosci1965.23.899"
+          },
+          {
+            "resource-internal-ref": "DOI=10.4051/ibc.2010.2.4.0014"
+          },
+          {
+            "resource-internal-ref": "PubMed=6826647"
+          },
+          {
+            "resource-internal-ref": "PubMed=8612673"
+          },
+          {
+            "resource-internal-ref": "PubMed=10352097"
+          },
+          {
+            "resource-internal-ref": "PubMed=11136541"
+          },
+          {
+            "resource-internal-ref": "PubMed=12638602"
+          },
+          {
+            "resource-internal-ref": "PubMed=25277546"
+          },
+          {
+            "resource-internal-ref": "PubMed=37712227"
+          }
+        ],
+        "sex": "Sex unspecified",
+        "species-list": [
+          {
+            "accession": "10090",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+            "label": "Mus musculus (Mouse)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=10090&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Mouse STR 12-1",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 15-3",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "22.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 18-3",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "15"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 4-2",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "20.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 5-5",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 6-7",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR X-1",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "28"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            {
+              "reference": {
+                "resource-internal-ref": "PubMed=37712227"
+              }
+            }
+          ]
+        },
+        "web-page-list": [
+          {
+            "category": "Info",
+            "institution": "Thermo Fisher",
+            "specifier": "-",
+            "url": "https://www.thermofisher.com/ch/en/home/technical-resources/cell-lines/m/cell-lines-detail-393.html"
+          },
+          {
+            "category": "Info",
+            "institution": "Wikipedia",
+            "specifier": "-",
+            "url": "https://en.wikipedia.org/wiki/MC3T3"
+          }
+        ],
+        "xref-list": [
+          {
+            "accession": "BTO_0001957",
+            "category": "Anatomy/cell type resources",
+            "database": "BTO",
+            "iri": "http://purl.obolibrary.org/obo/BTO_0001957",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/bto/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FBTO_0001957"
+          },
+          {
+            "accession": "CLO_0007582",
+            "category": "Cell line databases/resources",
+            "database": "CLO",
+            "iri": "http://purl.obolibrary.org/obo/CLO_0007582",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/clo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCLO_0007582"
+          },
+          {
+            "accession": "CLO_0050208",
+            "category": "Cell line databases/resources",
+            "database": "CLO",
+            "iri": "http://purl.obolibrary.org/obo/CLO_0050208",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/clo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCLO_0050208"
+          },
+          {
+            "accession": "MCC:0000303",
+            "category": "Cell line databases/resources",
+            "database": "MCCL"
+          },
+          {
+            "accession": "cl40",
+            "category": "Cell line databases/resources",
+            "database": "CLDB",
+            "url": "https://bioinformatics.hsanmartino.it/hypercldb/cl40.html"
+          },
+          {
+            "accession": "CRL-2953",
+            "category": "Cell line collections (Providers)",
+            "database": "ATCC",
+            "discontinued": "true"
+          },
+          {
+            "accession": "1101MOU-PUMC000012",
+            "category": "Cell line databases/resources",
+            "database": "CCRID",
+            "url": "http://www.cellresource.cn/cellsearch.aspx?sc=1&where=1101MOU-PUMC000012"
+          },
+          {
+            "accession": "GDC0188",
+            "category": "Cell line collections (Providers)",
+            "database": "CCTCC"
+          },
+          {
+            "accession": "CHEMBL4295391",
+            "category": "Chemistry resources",
+            "database": "ChEMBL-Cells",
+            "url": "https://www.ebi.ac.uk/chembldb/cell/inspect/CHEMBL4295391"
+          },
+          {
+            "accession": "CHEMBL4296463",
+            "category": "Chemistry resources",
+            "database": "ChEMBL-Targets",
+            "url": "https://www.ebi.ac.uk/chembldb/target/inspect/CHEMBL4296463"
+          },
+          {
+            "accession": "305187",
+            "category": "Cell line collections (Providers)",
+            "database": "CLS",
+            "url": "https://www.cytion.com/305187"
+          },
+          {
+            "accession": "ACC-210",
+            "category": "Cell line collections (Providers)",
+            "database": "DSMZ",
+            "url": "https://www.dsmz.de/collection/catalogue/details/culture/ACC-210"
+          },
+          {
+            "accession": "ACC-210",
+            "category": "Cell line databases/resources",
+            "database": "DSMZCellDive",
+            "url": "https://celldive.dsmz.de/celllines/ACC-210"
+          },
+          {
+            "accession": "99072810",
+            "category": "Cell line collections (Providers)",
+            "database": "ECACC",
+            "url": "https://www.culturecollections.org.uk/products/celllines/detail.jsp?refId=99072810"
+          },
+          {
+            "accession": "185-5-353-1-3-3",
+            "category": "Cell line databases/resources",
+            "database": "FCS-free",
+            "url": "https://fcs-free.org/fcs-database?185-5-353-1-3-3"
+          },
+          {
+            "accession": "521",
+            "category": "Cell line databases/resources",
+            "database": "Lonza",
+            "url": "https://knowledge.lonza.com/cell?id=521"
+          },
+          {
+            "accession": "CVCL_0409",
+            "category": "Chemistry resources",
+            "database": "PubChem_Cell_line",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/cell/CVCL_0409"
+          },
+          {
+            "accession": "RCB1126",
+            "category": "Cell line collections (Providers)",
+            "database": "RCB",
+            "url": "https://cellbank.brc.riken.jp/cell_bank/CellInfo/?cellNo=RCB1126&lang=En"
+          },
+          {
+            "accession": "Q54904201",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54904201"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Kaori",
+            "last-name": "Yoshino",
+            "name": "Yoshino K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kaoru",
+            "last-name": "Saijo",
+            "name": "Saijo K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Chikako",
+            "last-name": "Noro",
+            "name": "Noro C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yukio",
+            "last-name": "Nakamura",
+            "name": "Nakamura Y.",
+            "type": "person"
+          }
+        ],
+        "date": "2010",
+        "first-page": "14.1",
+        "internal-id": "DOI=10.4051/ibc.2010.2.4.0014",
+        "journal-name": "Interdisciplinary Bio Cent.",
+        "last-page": "14.9",
+        "title": "Development of a simple method to determine the mouse strain from which cultured cell lines originated.",
+        "type": "article",
+        "volume": "2",
+        "xref-list": [
+          {
+            "accession": "10.4051/ibc.2010.2.4.0014",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.4051/ibc.2010.2.4.0014"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Hiroko",
+            "last-name": "Sudo",
+            "name": "Sudo H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Hiro-aki",
+            "last-name": "Kodama",
+            "name": "Kodama H.-a.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yuji",
+            "last-name": "Amagai",
+            "name": "Amagai Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shigehisa",
+            "last-name": "Yamamoto",
+            "name": "Yamamoto S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shiro",
+            "last-name": "Kasai",
+            "name": "Kasai S.",
+            "type": "person"
+          }
+        ],
+        "date": "1983",
+        "first-page": "191",
+        "internal-id": "PubMed=6826647",
+        "journal-name": "J. Cell Biol.",
+        "last-page": "198",
+        "title": "In vitro differentiation and calcification in a new clonal osteogenic cell line derived from newborn mouse calvaria.",
+        "type": "article",
+        "volume": "96",
+        "xref-list": [
+          {
+            "accession": "PMC2112252",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2112252"
+          },
+          {
+            "accession": "10.1083/jcb.96.1.191",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1083/jcb.96.1.191"
+          },
+          {
+            "accession": "6826647",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/6826647"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Hiro-aki",
+            "last-name": "Kodama",
+            "name": "Kodama H.-a.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yuji",
+            "last-name": "Amagai",
+            "name": "Amagai Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Hiroko",
+            "last-name": "Sudo",
+            "name": "Sudo H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shiro",
+            "last-name": "Kasai",
+            "name": "Kasai S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shigehisa",
+            "last-name": "Yamamoto",
+            "name": "Yamamoto S.",
+            "type": "person"
+          }
+        ],
+        "date": "1981",
+        "first-page": "899",
+        "internal-id": "DOI=10.2330/joralbiosci1965.23.899",
+        "journal-name": "Jpn. J. Oral Biol.",
+        "last-page": "901",
+        "title": "Establishment of a clonal osteogenic cell line from newborn mouse calvaria.",
+        "type": "article",
+        "volume": "23",
+        "xref-list": [
+          {
+            "accession": "10.2330/joralbiosci1965.23.899",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.2330/joralbiosci1965.23.899"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Dian",
+            "last-name": "Wang",
+            "name": "Wang D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kurt",
+            "last-name": "Christensen",
+            "name": "Christensen K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kanwal",
+            "last-name": "Chawla",
+            "name": "Chawla K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Guo-Zhi",
+            "last-name": "Xiao",
+            "name": "Xiao G.-Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "Paul H.",
+            "last-name": "Krebsbach",
+            "name": "Krebsbach P.H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Renny Theodore",
+            "last-name": "Franceschi",
+            "name": "Franceschi R.T.",
+            "type": "person"
+          }
+        ],
+        "date": "1999",
+        "first-page": "893",
+        "internal-id": "PubMed=10352097",
+        "journal-name": "J. Bone Miner. Res.",
+        "last-page": "903",
+        "title": "Isolation and characterization of MC3T3-E1 preosteoblast subclones with distinct in vitro and in vivo differentiation/mineralization potential.",
+        "type": "article",
+        "volume": "14",
+        "xref-list": [
+          {
+            "accession": "10.1359/jbmr.1999.14.6.893",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1359/jbmr.1999.14.6.893"
+          },
+          {
+            "accession": "10352097",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/10352097"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Millie Elizabeth",
+            "last-name": "Hughes-Fulford",
+            "name": "Hughes-Fulford M.E.",
+            "type": "person"
+          }
+        ],
+        "date": "2001",
+        "first-page": "P1",
+        "internal-id": "PubMed=12638602",
+        "journal-name": "J. Gravit. Physiol.",
+        "last-page": "P4",
+        "title": "Changes in gene expression and signal transduction in microgravity.",
+        "type": "article",
+        "volume": "8",
+        "xref-list": [
+          {
+            "accession": "12638602",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/12638602"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "John Paul",
+            "last-name": "Didion",
+            "name": "Didion J.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ryan John",
+            "last-name": "Buus",
+            "name": "Buus R.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zohreh",
+            "last-name": "Naghashfar",
+            "name": "Naghashfar Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "David W.",
+            "last-name": "Threadgill",
+            "name": "Threadgill D.W.",
+            "type": "person"
+          },
+          {
+            "first-names": "Herbert Carpenter",
+            "last-name": "Morse",
+            "name": "Morse H.C. 3rd",
+            "name-suffix": "3rd",
+            "type": "person"
+          },
+          {
+            "first-names": "Fernando",
+            "last-name": "Pardo-Manuel de Villena",
+            "name": "Pardo-Manuel de Villena F.",
+            "type": "person"
+          }
+        ],
+        "date": "2014",
+        "first-page": "847.1",
+        "internal-id": "PubMed=25277546",
+        "journal-name": "BMC Genomics",
+        "last-page": "847.11",
+        "title": "SNP array profiling of mouse cell lines identifies their strains of origin and reveals cross-contamination and widespread aneuploidy.",
+        "type": "article",
+        "volume": "15",
+        "xref-list": [
+          {
+            "accession": "PMC4198738",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4198738"
+          },
+          {
+            "accession": "10.1186/1471-2164-15-847",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1186/1471-2164-15-847"
+          },
+          {
+            "accession": "25277546",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/25277546"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Totomi T.",
+            "last-name": "Baba",
+            "name": "Baba T.T.",
+            "type": "person"
+          }
+        ],
+        "date": "2000",
+        "first-page": "416",
+        "internal-id": "PubMed=11136541",
+        "journal-name": "Calcif. Tissue Int.",
+        "last-page": "421",
+        "title": "Restoration of mineral depositions by dexamethasone in the matrix of nonmineralizing osteoblastic cells subcloned from MC3T3-E1 cells.",
+        "type": "article",
+        "volume": "67",
+        "xref-list": [
+          {
+            "accession": "10.1007/s002230001157",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1007/s002230001157"
+          },
+          {
+            "accession": "11136541",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/11136541"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Millie Elizabeth",
+            "last-name": "Hughes-Fulford",
+            "name": "Hughes-Fulford M.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marian L.",
+            "last-name": "Lewis",
+            "name": "Lewis M.L.",
+            "type": "person"
+          }
+        ],
+        "date": "1996",
+        "first-page": "103",
+        "internal-id": "PubMed=8612673",
+        "journal-name": "Exp. Cell Res.",
+        "last-page": "109",
+        "title": "Effects of microgravity on osteoblast growth activation.",
+        "type": "article",
+        "volume": "224",
+        "xref-list": [
+          {
+            "accession": "10.1006/excr.1996.0116",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1006/excr.1996.0116"
+          },
+          {
+            "accession": "8612673",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/8612673"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Yi-Hsien",
+            "last-name": "Chen",
+            "name": "Chen Y.-H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jon P.",
+            "last-name": "Connelly",
+            "name": "Connelly J.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Colin P.",
+            "last-name": "Florian",
+            "name": "Florian C.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Xiao-Xia",
+            "last-name": "Cui",
+            "name": "Cui X.-X.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shondra M.",
+            "last-name": "Pruett-Miller",
+            "name": "Pruett-Miller S.M.",
+            "type": "person"
+          }
+        ],
+        "date": "2023",
+        "first-page": "dmm050150.1",
+        "internal-id": "PubMed=37712227",
+        "journal-name": "Dis. Model. Mech.",
+        "last-page": "dmm050150.10",
+        "title": "Short tandem repeat profiling via next-generation sequencing for cell line authentication.",
+        "type": "article",
+        "volume": "16",
+        "xref-list": [
+          {
+            "accession": "PMC10618599",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10618599"
+          },
+          {
+            "accession": "10.1242/dmm.050150",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1242/dmm.050150"
+          },
+          {
+            "accession": "37712227",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/37712227"
+          }
+        ]
+      }
+    ]
+  }
+}

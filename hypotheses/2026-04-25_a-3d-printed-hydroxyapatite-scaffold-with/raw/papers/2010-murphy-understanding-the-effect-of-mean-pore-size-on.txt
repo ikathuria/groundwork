@@ -1,0 +1,262 @@
+              Commentary & View                                                               Commentary & View
+
+Cell Adhesion & Migration 4:3, 377-381; July/August/September 2010; © 2010 Landes Bioscience
+
+Understanding the effect of mean pore size on cell activity
+in collagen-glycosaminoglycan scaffolds
+
+Ciara M. Murphy1 and Fergal J. O'Brien1,2,,*
+
+1Department of Anatomy; Royal College of Surgeons in Ireland; Dublin, Ireland; 2Trinity Centre for Bioengineering; Trinity College Dublin; College Green,
+Dublin, Ireland
+Present address: Department of Anatomy; Royal College of Surgeons in Ireland; Dublin, Ireland
+
+Key words: bone tissue engineering, cell   Mean pore size is an essential                     back as the 16th century when an Italian,
+adhesion, collagen, extracellular matrix,         aspect of scaffolds for tissue-             Gasparo Tagliacozzi (1546­99), Professor
+pore size, scaffold                        engineering. If pores are too small cells          of Surgery and Anatomy at the Bologna
+                                           cannot migrate in towards the center of            University, described a nose replacement
+Abbreviations: CG, collagen-               the construct limiting the diffusion of            that he had constructed from a forearm
+glycosaminoglycan; d, diameter of pore     nutrients and removal of waste products.           flap in his work "De Custorum Chirurigia
+size; ECM, extracellular matrix; SA,       Conversely, if pores are too large there is a      per Insitionem" (The Surgery of Defects
+surface area                               decrease in specific surface area available        by Implantation) which was published in
+                                           limiting cell attachment. However the              1597. In modern times, the techniques
+Submitted: 12/31/09                        relationship between scaffold pore size            of transplanting tissue from one site to
+                                           and cell activity is poorly understood             another in the same patient (an autograft)
+Accepted: 03/09/10                         and as a result there are conflicting              or from one individual to another (trans-
+                                           reports within the literature on the               plant or allograft) have been revolutionary
+Previously published online:               optimal pore size required for successful          and lifesaving. However major problems
+www.landesbioscience.com/journals/         tissue-engineering. Previous studies in            exist with both techniques. Harvesting
+celladhesion/article/11747                 bone tissue-engineering have indicated a           autografts is expensive, painful, con-
+                                           range of mean pore sizes (96­150 mm)               strained by anatomical limitations and
+DOI: 10.4161/cam.4.3.11747                 to facilitate optimal attachment. Other            associated with donor-site morbidity due
+                                           studies have shown a need for large                to infection and hemorrhage. Transplants
+*Correspondence to: Fergal J. O'Brien;     pores (300­800 mm) for successful bone             have serious constraints. The major prob-
+Email: fjobrien@rcsi.ie                    growth in scaffolds. These conflicting             lem is accessing enough tissue and organs
+                                           results indicate that a balance must be            for all of the patients who require them.
+                                           established between obtaining optimal              Transplants are strongly associated with
+                                           cell attachment and facilitating bone              rejection by the patient's immune system
+                                           growth. In this commentary we discuss              and they are also limited by the potential
+                                           our recent investigations into the                 risks of introducing infection or disease.
+                                           effect of mean pore size in collagen-
+                                           glycosaminoglycan (CG) scaffolds with                 Tissue engineering was born from the
+                                           pore sizes ranging from 85­325 mm and              belief that primary cells could be iso-
+                                           how it has provided an insight into the            lated from a patient, expanded in vitro
+                                           divergence within the literature.                  and seeded onto a substrate that could be
+                                                                                              grafted back into the patient.1 It provides
+                                           The goal of tissue engineering is to develop       a biological alternative to transplantations
+                                           cell, construct and living system technolo-        and prosthesis. One of the first scaffolds
+                                           gies to restore the structure and functional       pioneered for tissue regeneration was syn-
+                                           mechanical properties of damaged or                thesized as a graft co-polymer of type I
+                                           degenerated tissue. While the field of tissue      collagen and chondroitin 6-sulphate, a
+                                           engineering may be relatively new, the idea        glycosaminoglycan. The development of
+                                           of replacing tissue with another goes as far       these scaffolds, which are capable of sup-
+                                                                                              porting tissue synthesis when seeded with
+
+www.landesbioscience.com                   Cell Adhesion & Migration                                                                                       377
+cells, marks the beginning of the field of     development.2,8-12 Originally CG scaffolds     48 h post-seeding. Cell adhesion is the
+tissue engineering.2,3 Since this early work,  were fabricated using a rapid uncontrolled     binding of cells to their extracellular envi-
+there have been rapid advances in bone         quench process during lyophilisation           ronment via specific ligand-integrin inter-
+tissue engineering with the development of     which resulted in heterogeneous porous         actions. The results demonstrated that
+porous, biocompatible, three-dimensional       scaffolds with a large variation of pore size  cell adhesion decreased with increasing
+scaffolds. Regardless of the application,      within certain areas of the scaffold.2 When    pore size and that the highest levels of cell
+the scaffold should be biocompatible and       these scaffolds were used in previous          attachment were found on the scaffolds
+imitate both the physical and biological       studies they were visually examined            with the smallest pore size (96 mm). The
+function of the native extracellular matrix    so that the areas of variation could be        rationale for this result, as suggested by the
+(ECM), as the ECM provides a substrate         avoided resulting in subjective selection      authors, was the effect of specific surface
+with specific ligands for cell adhesion as     of scaffold samples for analysis.8 However,    area on cell adhesion due to the scaffolds
+well as physical support for cells.4 When      an improved lyophilisation technique           with larger pores having less available spe-
+designing scaffolds for any tissue engi-       was later developed which incorporated a       cific surface area and thus a lower ligand
+neering application, a major consideration     constant cooling rate which controlled the     density for initial cell attachment.5,6
+is the mean pore size. Scaffolds must be       formation and growth of ice-crystals thus
+permeable with interconnecting pores to        resulting in CG scaffolds with homogenous         The results of this study conflicted
+facilitate cell growth, migration and nutri-   pore structures.13 The traditional final       with other studies within the literature
+ent flow. A previous study demonstrated        temperature of freezing used to produce        which demonstrate a need for larger
+that permeability increases with increas-      these scaffolds is -40°C; however, further     pores. The relationship between scaf-
+ing pore size due to a reduction in specific   modifications to the lyophilisation process    fold pore size and cell activity is not fully
+surface area.5 If pores are too small, cell    demonstrated that by changing the final        understood and as a result, over the years
+migration is limited, resulting in the for-    temperature of freezing, it is possible to     there have been conflicting reports on
+mation of a cellular capsule around the        tailor the mean pore size in the scaffolds.    the optimal pore size required for bone
+edges of the scaffold. This in turn can limit  This study showed that by varying the          tissue engineering. Pores ranging from
+the distribution of nutrients and removal      temperature of freezing from -40 to -10°C      20­1,500 mm have been used in bone tis-
+of waste products resulting in necrotic        it was possible to produce homogenous          sue engineering applications.15-18 Initial
+regions within the construct. Conversely       CG scaffolds with mean pore sizes ranging      studies demonstrated that the minimum
+if pores are too large there is a decrease     from 96­151 mm.6                               pore size for significant bone growth is
+in specific surface area.3 It has been pro-                                                   75­100 mm with an optimal range of
+posed that a reduction in specific surface        A cellular solid is one made up of an       100­135 mm.15,19 Since this early work it
+area reduces the ligand density available      interconnecting porous network and cel-        has been reported that pores greater than
+for cells to bind to.6 Cellular activity is    lular solids modeling techniques can be        ~300 mm are essential for vascularisation
+influenced by specific integrin-ligand         used to describe both mechanical and           of constructs and bone ingrowth, while
+interactions between cells and surround-       microstructural (i.e., specific surface area)  pores smaller than ~300 mm can encour-
+ing ECM. Initial cell adhesion mediates        properties of scaffolds. A cellular solids     age osteochondral ossification.20-22
+all subsequent events such as prolifera-       model utilizing a tetrakaidecahedral unit
+tion, migration and differentiation within     cell (a 14-sided polyhedron that packs to         In a very recent study in our labora-
+the scaffold. As a result the mean pore        fill space) was used to determine the effect   tory, which utilized improved technical
+size within a scaffold affects cell adhesion   of mean pore size on specific surface area.    capability of our freeze-drying system
+and ensuing proliferation, migration and       Specific surface area can be related to the    and introduced a novel annealing step
+infiltration. Therefore maintaining a bal-     relative density of a scaffold and using a     during lyophilisation, we have been able
+ance between the optimal pore size for cell    tetrakaidecahedral unit cell it was possible   to further expand the range of mean
+migration and specific surface area for cell   to model the geometry of the CG scaf-          pore sizes produced in the CG scaffolds
+attachment is essential.4,7                    folds.5,6,14 As a result the specific surface  from 96­151 mm up to 85­325 mm.23
+                                               area (SA) per unit volume (V) available        We then investigated the effect of this
+   In our laboratory we use a composite        for cell adhesion in each of the scaffolds     new expanded range of scaffolds on ini-
+scaffold fabricated from collagen and          with different mean pore sizes (d) was esti-   tial cell attachment followed by migration
+a glycosaminoglycan (GAG) for bone             mated as:                                      and proliferation by monitoring cellu-
+tissue engineering applications produced                                                      lar activity up to 7 days post-seeding (as
+by a lyophilisation (freeze-drying)               SA/V = 0.718/d(1)                           opposed to 48 h in the earlier study6) to
+fabrication process. The first generation                                                     see whether the pattern of specific surface
+of this collagen-GAG (CG) scaffold was            This relationship demonstrates that the     area affecting initial cell adhesion as seen
+originally developed for skin regeneration     specific surface area is inversely propor-     in the previous studies would continue as
+but has since been applied to a number of      tional to the mean pore size. The authors      cells proliferated.24
+other tissue engineering applications, due     then carried out a simple experiment and
+to its high biological activity and resultant  seeded the scaffold range with osteoblasts        The results provide a possible insight
+ability to promote cell growth and tissue      and monitored initial cell adhesion up to      into why there are conflicting reports
+                                                                                              in the literature on the optimal scaffold
+                                                                                              pore size for bone tissue engineering. A
+
+378                                            Cell Adhesion & Migration                      Volume 4 Issue 3
+Figure 1. Effect of mean pore size on cell number at each time point. Cell number increases to a small peak 24 h post seeding in scaffolds with a
+pore size of 120 mm. This peak declines at later time points. Cell number significantly peaks in scaffolds with a mean pore size of 325 mm. *p < 0.001
+(reviewed in ref. 24).
+
+n on-linear effect of pore size was seen on      in scaffolds is important for optimal cell       with smaller pore sizes of 85 mm­120 mm
+                                                 attachment. However, when this range             limiting the number of cells infiltrating
+cell proliferation over the 7 day incubation     of pore sizes was expanded (85­325 mm)           the scaffold (Fig. 2A). Cell aggregations
+                                                 the linear relationship between mean pore        form a "skin" around the outer surface of
+period. Scaffolds with the largest pore size     size and specific surface area was no lon-       the scaffold which restricts the diffusion
+                                                 ger applicable (Fig. 1) and scaffolds with       of nutrients and removal of waste from
+of 325 mm facilitated higher cell number         the largest pores showed the highest cell        the cells colonizing the center of the scaf-
+                                                 numbers even though the surface area is          fold. As the mean pore size increased, cells
+at all time points in comparison to the          lower than that for the other scaffold vari-     migrated further away from the edges and
+                                                 ants. We propose that the effect of specific     in towards the center of the scaffold until
+other scaffold types. However, within the        surface area is overcome in larger pores by      cells were seen colonizing the center of the
+                                                 the improved potential for cell migration        scaffolds with the largest mean pore size
+lower range of pore sizes there was a small      and proliferation as was seen histologically     of 325 mm (Fig. 2B). An increase in cell
+                                                 in scaffolds with 325 mm.                        number was seen in 120 mm pore size,
+peak in cell number at 24 h and 48 h post-                                                        but the aggregations seen on the surface
+                                                    When seeding three-dimensional scaf-          of these scaffolds compound the hypoth-
+seeding in scaffolds with a mean pore size       folds it is desirable that the cells infiltrate  esis that this peak was related to initial cell
+                                                 and colonize the scaffold laying down            adhesion and the advantages of this pore
+of 120 mm. This peak disappeared by day          their own ECM. The CG scaffolds are              size were lost with subsequent cell prolif-
+                                                 highly porous (~99%)5 and it has pre-            eration and migration.
+7 (Fig. 1). This peak is consistent with         viously been shown that cell migration
+                                                 behavior decreases with increasing pore             The study24 had a number of limita-
+that seen in the earlier study6 and can          size.26 However, similarly to other studies,6    tions. It was not possible to determine
+                                                 these results were based on limited range        the upper pore size limit for cell activity
+therefore be explained by the effect of pore     of mean pore sizes incubated for less than       within a CG scaffold. If the pores become
+                                                 48 h. In this study, migration of cells was      too large the mechanical properties of
+surface area on cell attachment. Collagen,       assessed histologically after 7 days incuba-     the scaffold will be compromised due to
+                                                 tion. Cells were observed lining the pores       void volume7 and as pore size increases
+a natural component of bone ECM, con-            in all scaffolds. However, cell aggregations     further, the specific surface area will
+                                                 were seen along the edges of the scaffolds       eventually reduce to a level that will limit
+tains binding sites (ligands) that are rec-
+
+ognized by specific cell surface receptors
+
+(integrins), the main collagen integrins
+
+being  ab    and  a2b1.  Based  on  the  inter-
+         11
+
+actions between integrins and their cor-
+
+responding ligands, cells can detect subtle
+
+changes in ECM that can influence cell
+
+attachment and consequently determine
+
+cell proliferation, speed and migration.
+
+Our results reflected this within the
+
+smaller pore range (85­190 mm) when
+
+cell number was presented as a percent-
+
+age of the cells seeded onto the scaffolds,24
+
+indicating that high specific surface area
+
+www.landesbioscience.com                         Cell Adhesion & Migration                                                                              379
+Figure 2. Effect of mean pore size on cell infiltration and distribution CG scaffolds after 7 days. Scaffolds were stained with H&E: (A) 85 mm pore size at
+x40 magnification, (B) 325 mm pore size at x40 magnification. Collagen scaffold is stained pink and cell nuclei a deep purple. The arrow indicates cell
+aggregations along the edges of the scaffold. Aggregations disappeared and cell migration increased with increasing pore size (reviewed in ref. 24).
+
+cell adhesion. Furthermore, this study         The author acknowledges Science                               10. Farrell E, O'Brien FJ, Doyle P, Fischer J, Yannas
+has determined the optimal pore size for       Foundation Ireland, President of Ireland                           I, Harley BA, et al. A collagen-glycosaminoglycan
+MC3T3-E1 pre-osteoblast activity. It has       Young Researcher Award (04/Yl1/B531)                               scaffold supports adult rat mesenchymal stem cell
+been hypothesised that the optimal pore        for funding. Collagen materials were                               differentiation along osteogenic and chondrogenic
+size will vary with different cell types6 and  provided by Integra Life Sciences, Inc.,                           routes. Tissue Eng 2006; 12:459-68.
+another recent study from our laboratory       through a Material Transfer Agreement.
+has demonstrated that mesenchymal stem                                                                       11. Freyman TM, Yannas IV, Gibson LJ. Cellular mate-
+cells seeded on the smaller range of CG                             References                                    rials as porous scaffolds for tissue engineering. Prog
+scaffolds and maintained in osteogenic                                                                            Mater Sci 2001; 46:273-82.
+culture for 3 weeks showed improved             1. Yang S, Leong KF, Du Z, Chua CK. The design
+osteogenesis on the scaffolds with bigger            of scaffolds for use in tissue engineering. Part I.     12. Yannas IV, Lee E, Orgill DP, Skrabut EM, Murphy
+pores25. For this reason it is important to          Traditional factors. Tissue Eng 2001; 7:679-89.              GF. Synthesis and characterization of a model extra-
+repeat this study with different cell types.                                                                      cellular matrix that induces partial regeneration of
+However, regardless of these limitations,       2. Yannas IV. Tissue and organ regeneration in adults.            adult mammalian skin. Proc Natl Acad Sci USA
+this paper has demonstrated that mean                New York: Springer 2001.                                     1989; 86:933-7.
+pore size does affect cell behavior within
+a scaffold and that subtle changes in           3. Yannas IV. Tissue regeneration by use of collagen-        13. O'Brien FJ, Harley BA, Yannas IV, Gibson L.
+pore size can have a significant effect on           glycosaminoglycan copolymers. Clin Mater 1992;               Influence of freezing rate on pore structure in freeze-
+cell behavior. We also provide an insight            9:179-87.                                                    dried collagen-GAG scaffolds. Biomaterials 2004;
+into why the literature reports conflicting                                                                       25:1077-86.
+results on the optimal pore size required       4. Ma Z, Kotaki M, Inai R, Ramakrishna S. Potential
+for bone tissue engineering, whereby                 of nanofiber matrix as tissue-engineering scaffolds.    14. Harley BAC, Kim H-D, Zaman MH, Yannas IV,
+increased specific surface area provided             Tissue Eng 2005; 11:101-9.                                   Lauffenburger DA, Gibson LJ. Microarchitecture of
+by scaffolds with small pores has a benefi-                                                                       three-dimensional scaffolds influences cell migra-
+cial effect on initial cell attachment, but     5. O'Brien FJ, Harley BA, Waller MA, Yannas IV,                   tion behavior via junction Interactions. Biophysical
+this is overcome by the improved cellular            Gibson LJ, Prendergast PJ. The effect of pore size on        Journal 2008; 95:4013-24.
+infiltration provided by scaffolds with              permeability and cell attachment in collagen scaffolds
+larger pores suggesting that these scaffolds         for tissue engineering. Technol Health Care 2007;       15. Hulbert SF, Young FA, Mathews RS, Klawitter JJ,
+might be optimal for longer term in vitro            15:3-17.                                                     Talbert CD, Stelling FH. Potential of ceramic materi-
+culture with the aim of facilitating bone                                                                         als as permanently implantable skeletal prostheses. J
+tissue repair.                                  6. O'Brien FJ, Harley BA, Yannas IV, Gibson LJ. The               Biomed Mater Res 1970; 4:433-56.
+                                                     effect of pore size on cell adhesion in collagen-GAG
+               Acknowledgements                      scaffolds. Biomaterials 2005; 26:433-41.                16. Lee SJ, Lee IW, Lee YM, Lee HB, Khang G.
+                                                                                                                  Macroporous biodegradable natural/synthetic hybrid
+                                                7. Karageorgiou V, Kaplan D. Porosity of 3D biomate-              scaffolds as small intestine submucosa impregnated
+                                                     rial scaffolds and osteogenesis. Biomaterials 2005;          poly(D,L-lactide-co-glycolide) for tissue-engineered
+                                                     26:5474-91.                                                  bone. J Biomater Sci Polym Ed 2004; 15:1003-17.
+
+                                                8. Freyman TM, Yannas IV, Yokoo R, Gibson LJ.                17. Nehrer S, Breinan HA, Ramappa A, Young G,
+                                                     Fibroblast contraction of a collagen-GAG matrix.             Shortkroff S, Louie LK, et al. Matrix collagen type
+                                                     Biomaterials 2001; 22:2883-91.                               and pore size influence behaviour of seeded canine
+                                                                                                                  chondrocytes. Biomaterials 1997; 18:769-76.
+                                                9. Farrell E, Byrne EM, Fischer J, O'Brien FJ,
+                                                     O'Connell BC, Prendergast PJ, et al. A comparison       18. Williams JM, Adewunmi A, Schek RM, Flanagan
+                                                     of the osteogenic potential of adult rat mesenchymal         CL, Krebsbach PH, Feinberg SE, et al. Bone tissue
+                                                     stem cells cultured in 2-D and on 3-D collagen               engineering using polycaprolactone scaffolds fabri-
+                                                     glycosaminoglycan scaffolds. Technol Health Care             cated via selective laser sintering. Biomaterials 2005;
+                                                     2007; 15:19-31.                                              26:4817-27.
+
+                                                                                                             19. Klawitter JJ, Bagwell JG, Weinstein AM, Sauer
+                                                                                                                  BW. An evaluation of bone growth into porous high
+                                                                                                                  density polyethylene. J Biomed Mater Res 1976; 10:
+                                                                                                                  311-23.
+
+380                                            Cell Adhesion & Migration                                     Volume 4 Issue 3
+20. Kuboki Y, Jin Q, Takita H. Geometry of carriers        24. Murphy CM, Haugh MG, O'Brien FJ. The effect
+     controlling phenotypic expression in BMP-induced           of mean pore size on cell attachment, proliferation
+     osteogenesis and chondrogenesis. J Bone Joint Surg         and migration in collagen-glycosaminoglycan scaf-
+     Am 2001; 83:105-15.                                        folds for bone tissue engineering. Biomaterials 2010;
+                                                                31:461-6.
+21. Roosa SM, Kemppainen JM, Moffitt EN, Krebsbach
+     PH, Hollister SJ. The pore size of polycaprolactone   25. Byrne EM, Farrell E, McMahon LA, Haugh MG,
+     scaffolds has limited influence on bone regeneration       O'Brien FJ, Campbell VA, et al. Gene expression
+     in an in vivo model. J Biomed Mater Res A 2010;            by marrow stromal cells in a porous collagen-gly-
+     92:359-68.                                                 cosaminoglycan scaffold is affected by pore size and
+                                                                mechanical stimulation. J Mater Sci Mater Med
+22. Tsuruga E, Takita H, Itoh H, Wakisaka Y, Kuboki             2008; 19:3455-63.
+     Y. Pore size of porous hydroxyapatite as the cell-
+     substratum controls BMP-induced osteogenesis. J
+     Biochem 1997; 121:317-24.
+
+23. Haugh MG, Murphy CM, O'Brien FJ. Novel freeze-
+     drying methods to produce a range of collagen-GAG
+     scaffolds with tailored mean pores sizes. Tissue Eng
+     Part C Methods 2009, in press.
+
+www.landesbioscience.com                                   Cell Adhesion & Migration                                   381
+

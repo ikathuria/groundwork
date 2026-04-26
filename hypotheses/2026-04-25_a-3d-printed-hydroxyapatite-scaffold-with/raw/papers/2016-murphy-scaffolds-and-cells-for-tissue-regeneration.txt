@@ -1,0 +1,835 @@
+Cytotechnology (2016) 68:355­369
+DOI 10.1007/s10616-015-9895-4
+
+ REVIEW
+
+Scaffolds and cells for tissue regeneration: different scaffold
+pore sizes--different cell effects
+
+Ieva Bruzauskaite_ . Daiva Bironaite_ .
+Edvardas Bagdonas . Eiva Bernotiene_
+
+Received: 11 May 2015 / Accepted: 12 June 2015 / Published online: 20 June 2015
+Ó Springer Science+Business Media Dordrecht 2015
+
+Abstract During the last decade biomaterial sciences       sizes that play an essential role in nutrient and oxygen
+and tissue engineering have become new scientific          diffusion and waste removal. In addition, pore sizes
+fields supplying rising demand of regenerative therapy.    strongly influence cell adhesion, cell­cell interaction
+Tissue engineering requires consolidation of a broad       and cell transmigration across the membrane depending
+knowledge of cell biology and modern biotechnology         on the various purposes of tissue regeneration. There-
+investigating biocompatibility of materials and their      fore, this review will highlight contemporary tenden-
+application for the reconstruction of damaged organs       cies in application of non-degradable scaffolds and
+and tissues. Stem cell-based tissue regeneration started   stem cells in regenerative medicine with a particular
+from the direct cell transplantation into damaged tissues  focus on the pore sizes significantly affecting final
+or blood vessels. However, it is difficult to track        recover of diseased organs.
+transplanted cells and keep them in one particular place
+of diseased organ. Recently, new technologies such as      Keywords Scaffold Á Pore size Á Tissue
+cultivation of stem cell on the scaffolds and subse-       regeneration Á Stem cells
+quently their implantation into injured tissue have been
+extensively developed. Successful tissue regeneration      Introduction
+requires scaffolds with particular mechanical stability
+or biodegradability, appropriate size, surface roughness   The successful application of scaffold in tissue engi-
+and porosity to provide a suitable microenvironment for    neering depends on many features such as biocompat-
+the sufficient cell­cell interaction, cell migration,      ibility, biodegradability or resistance, mechanical and
+proliferation and differentiation. Further functioning     chemical properties, scaffold architecture and manu-
+of implanted cells highly depends on the scaffold pore     facturing technologies (O'Brien 2011). Cell attach-
+                                                           ment and migration along and/or across the membrane
+I. Bruzauskaite_ Á E. Bagdonas Á E. Bernotiene_            is a fundamental part of tissue formation or regener-
+Department of Regenerative Medicine, State Research        ation and is influenced by many factors such as
+Institute Centre for Innovative Medicine, Zygimantu 9,     intracellular signals, intercellular and extracellular
+01102 Vilnius, Lithuania                                   integrin­integrin and -ligand connections regulating
+                                                           cell­cell and cell-extracellular matrix (ECM) interac-
+D. Bironaite_ (&)                                          tions (Palecek et al. 1997). The focal cell adhesion to
+Department of Stem Cell Biology, State Research Institute  the various surfaces of scaffold is important for the
+Centre for Innovative Medicine, Zygimantu 9,
+01102 Vilnius, Lithuania                                                                      123
+e-mail: daibironai@gmail.com
+356                                                                                       Cytotechnology (2016) 68:355­369
+
+initiation of various signals further stimulating cell   impact of the ECM on cell behavior, tissue engineer-
+proliferation and differentiation (Lee et al. 2004).     ing has recently shifted towards the development of
+Therefore, the proper regulation of cell­cell and cell-  biomimetic 3D cell culture systems that more natu-
+scaffold interaction can fulfill many aims of multi-     rally accorded the native environment (Owen and
+functional tissue engineering.                           Shoichet 2010). In this review we will overlook the
+                                                         processes that can be regulated just by varying the
+   Generally, the main three groups of biomaterials--    pore sizes of scaffold and how their purposeful
+ceramics, synthetic polymers and natural polymers are    application might promote tissue engineering.
+used in the fabrication of scaffold for tissue regener-
+ation. Ceramic scaffolds such as hydroxyapatite and      Requirements for an ideal scaffold
+tri-calcium phosphate were mainly used to regenerate
+impaired bones. Numerous synthetic polymers such as      After the injection of suspended stem cells into
+polystyrene, poly-lactic acid (PLLA), polyglycolic       human tissue or blood stream, it is almost impossible
+acid (PGA) and poly-dl-lactic-co-glycolic acid           to control further cell location in the body and their
+(PLGA), as scaffold materials for the engineering of     functioning. An ideal scaffold should provide a frame
+various tissues, have also been highly investigated      that helps injected stem cells to attach, proliferate
+(O'Brien 2011). Natural biological materials such as     and differentiate into required tissue cells leading to a
+collagen (and its combinations with other materials),    full recovery of injured organ (Fig. 1). First of all,
+proteoglycans, alginate-based substrates and chitosan    the scaffold biomaterials have to be non-toxic to
+are also promising in cell-based therapy due to their    human, resistant to the quick degradation and with
+higher biocompatibility compared to the synthetic        the corresponding pore size or porosity. Scaffolds
+ones (O'Brien 2011). However, all of the previously      should also allow formation of functional gap
+mentioned biomaterials have some drawbacks: ceram-       junctions and appropriate interaction with other cells
+ics are too stiff, synthetic polymers--not degradable    and/or ECM. For the indirect cell­cell interaction
+and natural polymers might possess poor mechanical       across scaffold, pore size should be large enough to
+properties (O'Brien 2011). Therefore, finding the best   ensure cellular nutrition but not too large to prevent
+combinations of biomaterials of various origins sub-     cell migration. On the other hand, for the transmi-
+sequently improving scaffold biocompatibility is one     gration of transplanted cells out of the scaffold to
+of the main goals of contemporary tissue engineering.    damaged tissue, the ratio between the cell and pore
+                                                         size is also an important factor. All together, the
+   Another very important factor of applied scaffolds    combination of scaffold features such as surface
+influencing cell adhesion, migration, proliferation      topography and chemistry (wettability, softness,
+and differentiation is the pore size (Harley et al.      stiffness and roughness), microstructure (porosity,
+2008). The pore sizes can be divided into nano size      pore size, pore shape and interconnectivity) together
+(nano-roughness,\100 nm), micro pore size (micro-        with mechanical properties might have a significant
+roughness, 100 nm­100 lm) and macro-roughness            influence to the total cell bioactivity and effective
+(100 lm­millimeters) (Vagaska et al. 2010). Differ-      organ regeneration in vivo.
+ent pore sizes might influence different cell pro-
+cesses: the nano pore size membranes was shown to        Scaffolds and nanotechnologies
+be important for the formation of collagen fibers and
+ECM, whereas macropores play an important role in        The investigation and application of new types of
+cell seeding, distribution, migration and further neo-   nanofibers in scaffold-based tissue regeneration is
+vascularization in vivo (Liu and Ma 2004; Smith          rapidly expanding. Fiber scaffolds with inner pore
+et al. 2009). It was also shown that cell migration      diameters \1 lm are termed as nanofibers. They are
+linearly depended (up to certain level) on the pore      produced using a variety of nano-techniques such as
+size and that cell-secreted proteolytic MMPs sup-        drawing (Nain et al. 2006), template synthesis (Tao
+ported cell migration (Fitton et al. 1998; Wolf et al.
+2013). However, the instability of pore size is not
+always a desirable issue, especially for the tissue
+regeneration through the paracrine or anchorage-
+dependent cell­cell stimulation. Considering the
+
+123
+Cytotechnology (2016) 68:355­369                         357
+
+Fig. 1 The application of
+scaffolds and stem cells in
+regeneration medicine.
+Tissue regeneration by
+autologous stem cells
+includes: isolation of adult
+stem cells, characterization
+and selection of required
+stem cell population,
+multiplication of stem cells
+in vitro, seeding on selected
+scaffold and transplantation
+into damaged tissue. Tissue
+regeneration by iPS
+requires: isolation and
+characterization of adult
+somatic cells and
+subsequent induction of
+pluripotent cells (iPS).
+Further procedures are the
+same as with the stem cells.
+The pore size regulates the
+final functioning and
+adaptation of implanted
+stem cells in injured tissue
+leading to its successful
+regeneration
+
+and Desai 2007) temperature-induced phase separa-        versus its volume ensures abundant area for the cell
+tion (Liu et al. 2005), molecular self-assembly (Para-   attachment, which permits cell cultivation at high
+monov et al. 2006) and electrospinning (Lim and Mao      density similar to that of a two-dimensional surface.
+2009). Among these, electrospinning seems to be the      Additionally, the high morphological resemblance of
+most popular technique generating polymeric nanofi-      electrospun nanofibers to the native ECM suggests
+bers from a variety of polymer solutions and melts.      their broad application in the scaffold construction as a
+Electrospinning technique is simple, elegant, repro-     supportive matrix for the proper stem cell functioning.
+ducible, continuous and scalable (McHugh et al.          Many studies investigating the electrospun fibrous
+2013). By this technique, it is possible to make fibers  scaffolds were focused on the biocompatibility of
+of various diameters ranging from 3 nm to 6 lm and       scaffolds which is especially actual for the generation
+up to several meters in length (Kumbar et al. 2008;      of tissue-like constructs in vitro (Lim and Mao 2009).
+McHugh et al. 2013). Although the electrospun            However, regardless of all technical problems of
+scaffolds were able to prevent stem cells migration      scaffold manufacturing, the stem cells and their
+and are the most popular porous scaffolds known          functioning on the scaffold surface is another critical
+today, their pore size varies.                           step for the development of bioactive scaffold (Atala
+                                                         2012; Chang and Wangs 2011).
+   The electrospun scaffolds are generally comprised
+of hundreds of nanometers in diameter nonwoven           Stem cells for tissue regeneration
+fibers that can further interconnect and make pores
+larger than 10 lm (Liang et al. 2007). The silk fibroin  As aforementioned, the most important strategies for
+scaffolds with pore sizes ranging from 50 to 300 lm      successful tissue engineering are: finding of an
+were made using a freezing-drying technique (Zhang
+et al. 2001). The high ratio of fibrous surface area                                        123
+358                                                                                         Cytotechnology (2016) 68:355­369
+
+appropriate biomaterial and pore sizes for the manu-       reprogramming factors trough a cascade of transcrip-
+facturing of scaffold and choosing the cell type           tional activity has been suggested (Takahashi and
+properly functioning on the scaffold and successfully      Yamanaka 2006). Recently many other reprogram-
+regenerating injured tissue. Cell-based regenerative       ming strategies based on genes, proteins, iRNR and
+technologies are mainly related to the direct cell         different chemicals are also available for the repro-
+injection into damaged tissue or blood vessel and          gramming of somatic cells (Yu et al. 2007; Nakagawa
+paracrine cell­cell and cell-ECM-based stimulation.        et al. 2008). The de-differentiation method induce the
+However, terminally differentiated cell types of native    expression of genes that are not normally expressed in
+organ have limited regenerative application due to         fibroblasts or other adult cells, change their morphol-
+their limited growth in vitro. Therefore, the applica-     ogy, mode of growth and differentiation potential, and
+tion of various types of stem cells for tissue engineer-   is a very attractive tool for tissue regeneration.
+ing is a big step forward improving cell-based therapy.    However, the search for new somatic cell reprogram-
+                                                           ming strategies omitting harmful viral technologies of
+   Starting from the discovery of hematopoietic stem       the gene delivery is still of future challenge.
+cells (Becker et al. 1963), a particular attention in the
+field of cell-based therapy has been paid to the adult     Nanometric pore sizes for cell attachment
+human mesenchymal stem cells (MSCs) due to their           and functioning
+pluripotency (Pittenger et al. 1999). Later studies
+showed that the MSCs can be isolated from almost           Cell proliferation, differentiation and migration are
+every tissue in the body, such as amniotic and synovial    mainly cell-anchorage-dependent processes that inhi-
+fluids, adipose, dental tissues, umbilical cord, periph-   bit cell apoptosis and activate cytoskeleton reorgani-
+eral bloods, dermis, brain, muscle and even tumors         zation (Wozniak et al. 2004). Therefore, the initial cell
+(Reynolds and Weiss 1992; Erices et al. 2000; Seale        adhesion is important for the further cell functioning.
+and Rudnicki 2000; Zuk et al. 2001; Roufosse et al.        The dependence of cell attachment and differentiation
+2004; De Coppi et al. 2007; Haniffa et al. 2007; Huang     on the pore size of polycarbonate (PC) surfaces was
+et al. 2009; Yan et al. 2012; de Sousa et al. 2014).       nicely shown by Lee et al. (2004). The authors
+Although the MSCs have a big therapeutic potential,        investigated attachment of MG63 human osteoblasts
+there are still many problems related to the sudden        on the membrane with 0.2­8 lm pores and showed
+death of transplanted cells, migration out of trans-       that the cells were fully adhered and spread on the
+planted organ, sedimentation into other organs causing     surface with 0.2­1 lm pores, whereas cells became
+unwanted differentiation, inflammation or even sec-        spherical with few fillopodia and lamellapodia on the
+ondary cancers. Not less important requirement for the     membrane with the larger micropores (3.0­8.0 lm in
+transplanted MSCs is their full adaptation and pur-        diameter). Additionally, the cells growing on the
+poseful functioning in transplanted organ in order to      5.0­8.0 lm pore size membrane showed increasing
+restore injured organ. The embryonic cells (ESc) are       osteogenic differentiation with the highest differenti-
+also very promising due to their totipotency, however,     ation reached on 8 lm pores (Lee et al. 2004). It was
+they cause many ethical problems, form teratomas and       also shown that nano-fibrous (50­500 nm) PLLA
+might be rejected and destroyed by the host immune         scaffolds enhance protein adsorption contributing to
+system (Boyd et al. 2012).                                 cell attachment (Woo et al. 2003). It was also shown
+                                                           that the osteoblasts attached and proliferated more
+   These problems could be avoided by reprogram-           effectively on the rough surface (0.81 lm pore size) in
+ming/de-differentiation of somatic cells into pluripo-     comparison with the smooth one (Hatano et al. 1999).
+tent state whereby cells adopt features of ESc. Since      Additionally, the proliferation of osteoblast-like
+new stem cell technologies such as cloning or use of       MG63 cells decreased with increasing pore size from
+viral vectors have been shown to have some limita-         200 nm to 8 lm, whereas their osteogenic differen-
+tions, production of induced pluripotent stem cells can    tiation improved (Lee et al. 2004). Other studies also
+be done through the various reprogramming tech-            showed that nano-fibrous scaffolds stimulated neuro-
+niques such as somatic nuclear transfer, somatic cell      genic, osteogenic, chondrogenic and other types of
+hybrids and production of induced pluripotent cells
+(iPS) (Wenceslau et al. 2013). The activation of
+essential stemness genes by combination of different
+
+123
+Cytotechnology (2016) 68:355­369                                                                                                  359
+
+cell differentiation (Li et al. 2003; Yang et al. 2004;   anchorage-dependent contact with the feeder cells.
+Woo et al. 2007). Additionally, the main ECM              Even 1 lm pores showed some protrusion of cellular
+component collagen I was shown to be important for        bodies such as lamellipodium and filopodia permit-
+the cell attachment: it can be enhanced by 1.7-fold       ting slight cell­cell contact. Additionally, the 3 lm
+mimicking collagen on nano-fibers (Grinnell 1982;         pores, but not the 1 lm pores, were able to prolong
+Woo et al. 2003). All together, nano pore sizes           growth of hESC in vitro from 15 to 25 passages (Kim
+improve cell attachment and further cell functioning.     et al. 2007).
+Though, the nano pores should be of proper nanometer
+size: cells on too smooth scaffold surface start to make     Similarly to the above findings, it was shown that
+clamps around the scaffold edges disturbing diffusion     scaffolds with 0.45 lm pores were able to separate
+of nutrients, removal of cell waste and impairing         hematopoietic progenitors from stromal cells, which
+further cell functioning, whereas too big pores disor-    was essential for the production of mature blood
+ganize cell attachment (Yannas 1992).                     elements, prevention of differentiation and preserva-
+                                                          tion of hematopoietic progenitors (Verfaillie 1992).
+Micrometric pores for cell­cell interaction               The initiation of differentiation of bladder smooth
+                                                          muscle cell by epithelium cell was also changed from
+Heterotypic cell­cell interactions might control the      indirect to direct by changing the range of pore size
+development of various tissues. However, the direct       from 1 to 10 lm, respectively (Liu et al. 2000). In
+cell­cell contacts are not always desirable in tissue     summary, data of various studies demonstrate that
+engineering. For example, it was shown that co-           smaller cells require smaller pore size to prevent cell
+culturing of endothelial cells together with smooth       migration across the 2D scaffold. However, it should
+muscle cells led to the inhibition of endothelial cell    be taken into account that the other factors such as
+growth (Saunders and D'Amore 1992). This problem          level of membrane porosity and pore inter-connectiv-
+can be solved by co-culturing of heterogeneous cell       ity are also important factors for the sufficient cell
+populations across the porous membrane. The               supply by nutrition and oxygen improving further cell
+authors showed that pore size of 0.02, 0.4, 0.6 and       functioning (Chang and Wangs 2011).
+0.8 microns was optimal for the cultivation of
+endothelial and smooth muscle cells as homogenous         Threshold of pore size for cell migration
+populations, whereas smooth muscle cells started to       across the membrane
+migrate across the membrane with pores size of 2.0
+microns (Saunders and D'Amore 1992). Moreover,            Cell migration across the membrane requires balance
+fibroblasts grown on one side of a membrane with          between cell size, attachment, scaffold pore size and
+1.2 lm pore size were capable of reaching and             surface topography. It was shown that the migration of
+contacting other cells grown on the opposite side of      human umbilical cord-derived mesenchymal stem
+the same membrane (Kim et al. 2014). The human            cells (hUCMSCs) through the polycarbonate (PC)
+embryonic stem cells (hESCs) (CHA3 and H9) and            membrane with 0.4, 3.0 and 8.0 lm pores was 0, 1.8
+feeder (STO and MEF) cells were grown on opposite         and 8.0 %, respectively (Li et al. 2011). Migration of
+sides of a membrane with 1, 3 and 8 lm pore size for      NIH 3T3 fibroblasts and human embryonic cells was
+5 days (Kim et al. 2007). Data showed that attach-        also blocked if the membrane pore diameter was
+ment of hESCs on a membrane with 3 and 8 lm pore          \1 lm (Kim et al. 2014). Migration of MSCs across
+size was better compared to that of 1 lm pores.           scaffold membranes made from poly(ethylene glycol)
+Moreover, the scaffold membrane with [3 lm pore           (PEG) with pore sizes of 7, 12 and 17 lm, surpris-
+size allowed feeder cells to migrate upwards,             ingly, was the best through the intermediate (12 lm)
+whereas 1 lm pore size was optimal for the growth         pores (Peyton et al. 2011). On the other hand, the
+of hESCs without contacting feeder cells. Even if         glioma cell migration through the collagen gel was
+hESC and feeder cells were not cross-contaminated         hindered by the small pores (5­12 lm), whereas cell
+during co-culture on the opposite sides of membrane       invasion distance was not a pore size-depended
+with 3 lm pore size, they were able to have an            process (Yang et al. 2010). Additionally, it was shown
+                                                          that migration of polymorphonuclear cells (PMN) was
+
+                                                                                             123
+360                                                                                           Cytotechnology (2016) 68:355­369
+
+reduced by 90 and 99 % through the polycarbonate             et al. 2010). Surprisingly, the cell adhesion and
+membrane pores of 1.49­1.78 and 1.26­1.38 lm in              proliferation during 48 h of culturing was better on
+diameter, respectively (Wolf et al. 2013).                   the scaffold with 120 lm pores, whereas in 7 days the
+                                                             number of osteoblasts was higher on the scaffold with
+   Migration of stem cells through the 2D scaffold can       325 lm pore sizes. The same study showed that pore
+be artificially stimulated independently of the pore         size around 100 lm was important for the cell adhesion
+size. It was shown that hMSCs migration through the          and proliferation, whereas cells migration was faster
+membrane pores of 8 lm in diameter was more                  trough the scaffolds with 325 lm pore size. The
+efficient when the normal dermal fibroblasts were            membranes with smallest pore size (85 lm) showed
+replaced by the keloid-derived ones on the bottom of a       lowest intensity of cell adhesion and migration (Mur-
+dual-modified Boyden chamber. The hMSCs were                 phy et al. 2010). In agreement with these results, it was
+able to migrate across the membrane with 3 lm pores          shown that cell adhesion surface on scaffold was
+only when the same keloid-derived fibroblasts were           decreasing with increased pore size and had inverse
+placed on the bottom of the plates (Akino et al. 2008).      linear dependence in the range of 90­151 lm (O'Brien
+Similarly, the migration of hMSCs trough the 3 lm            et al. 2007). However, when the pore size increased
+transwell membrane made from polyethylene tereph-            from 85 to 325 lm the inverse linear relationship
+thalate was effective and used for the wound healing         between cell adhesion and pore size was disrupted.
+test of human type II alveolar epithelial cell line on the   Additionally, the poly(lactic co-glycolic acid) (PLGA)
+opposite side of the same membrane (Akram et al.             electrospun scaffold with the pore size around 100 lm
+2013). Noteworthy, cell migration through the matrix         also showed better cell­matrix and cell­cell interaction
+metalloproteinase (MMP)-degradable scaffolds such            compared to the other pore sizes (Li et al. 2002).
+as collagen strongly depends upon MMP-depended
+ECM cleavage (Wolf et al. 2013). In summary, data               Summarized impact of pore size on cell functioning
+mentioned in this paragraph show that cell migration         on 2D and 3D scaffolds is presented in Fig. 2. However,
+across the membrane is optimal when the pore size is         individual goals of regenerative therapy require indi-
+higher than 3 lm. It should be taken into account that       vidual experimental conditions and best cell-scaffold
+cell migration trough the critical pore size might           interaction model. Some cell-scaffold interaction-based
+change depending on the cell type and growth                 tissue regeneration models with particular role of pore
+conditions. The impact of pore size on the regulation        size in it will be discussed below.
+of cell transmigration is shown in (Table 1).
+                                                             Impact of pore sizes in tissue engineering
+Macroporous 3D scaffolds for cell functioning
+                                                             Pore sizes regulating bone regeneration
+As highlighted in the previous section, scaffold mem-
+branes with pore sizes ranging approximately from            The application of scaffolds, especially biodegrad-
+50 nm to 12 lm regulate cellular attachment, cell­cell       able, for the musculoskeletal regeneration has been
+interaction and migration across the membrane. How-          intensively investigated (Agrawal and Ray 2001).
+ever, the 3D scaffolds with large pore size (around          Based on various studies, the minimum requirement
+100 lm or more) have higher amount of functional             for pore size in 3D bone regeneration is considered to
+units necessary for the regeneration of various tissues. It  range from 100 lm to more than 300 lm (Karageor-
+was shown that attachment of MSCs to the island-             giou and Kaplan 2005). Moreover, the pore size
+patterned PLLA scaffold was better if pore diameter          around 100 lm favored hypoxic conditions inducing
+was 100 lm instead of 60 lm (Lee et al. 2009). In            osteochondral formation before osteogenesis, whereas
+addition, the attachment and growth of MSC on PLLA           larger pore size ([300 lm) directly initiated osteoge-
+was improved after the precoating of island-patterned        nesis (Karageorgiou and Kaplan 2005). It was also
+scaffold with collagen and fibronectin (Lee et al. 2009).    shown that bone regeneration in ceramic scaffolds
+The collagen-glucosaminoglycan scaffolds with 85,            with pore sizes smaller than 350 lm varied: pore sizes
+120, and 325 lm pore sizes were also investigated for        between 100 and 300 lm initiated bone formation,
+the adhesion and differentiation of osteoblasts (Murphy      while pore sizes between 10 and 100 lm conditioned
+
+123
+     Table 1 Threshold of pore sizes regulating cell migration across the non-degradable membranes                                                                         Cytotechnology (2016) 68:355­369
+
+     Scaffold composition            Pore size (lm) Cell type              Migration                Additional conditions               References
+
+     Polycarbonate membrane          0.4         hUCMSC                    No                       A549 cells grew on the opposite     Li et al. (2011)
+     Polycarbonate membrane          3           hUCMSC                    1.8 %                      side of membrane                  Li et al. (2011)
+     Polycarbonate membrane          8           hUCMSC                    8%                                                           Li et al. (2011)
+     Polyethylene terephthalate      3           hMSC                      Yes                      Towards dermal fibroblast grown     Akram et al. (2013)
+                                                                                                      on the bottom of the plate
+       membrane                      3           hMSC                      No                                                           Akino et al. (2008)
+     Porous membrane in dual-                                                                       Towards keloid-derived fibroblasts
+                                     3           hMSC                      Yes                        grown on the bottom of the plate  Akino et al. (2008)
+       modified Boyden chamber
+     Porous membrane in dual-        0.9­1.2     NIH3T3                    No                       hESC grew on the opposite side of   Kim et al. (2014)
+                                     \1.26­1.38  Mononuclear cells         *1 %                       the membrane                      Wolf et al. (2013)
+       modified Boyden chamber       1.49­1.78   Mononuclear cells         *10 %                                                        Wolf et al. (2013)
+     Parylene HT and 1002F membrane  0.56        PMN                       *1 %                     hESC grew on the opposite side of   Wolf et al. (2013)
+     Polycarbonate membrane          1.128       PMN                       *10 %                      the membrane                      Wolf et al. (2013)
+     Polycarbonate filter membrane   1           STO and MEF               No                                                           Kim et al. (2007)
+     Polycarbonate membrane                                                                         hESC grew on the opposite side of
+     Polycarbonate membrane          3           STO and MEF               1.6 %                      the membrane                      Kim et al. (2007)
+     Transwell porous membrane
+                                     8           STO and MEF               9.3 %                                                        Kim et al. (2007)
+     Transwell porous membrane
+                                     0.1­1       Corneal epithelial cells  No                                                           Fitton et al. (1998)
+     Transwell porous membrane
+                                     [1.5        Corneal epithelial cells  Start migr.                                                  Fitton et al. (1998)
+     Columnar pore membranes in
+       Boyden chambers               3           Corneal epithelial cells  Yes                                                          Fitton et al. (1998)
+
+     Columnar pore membranes in      B1          Vero C1008, Caco-2, MDCK  No                                                           Tucker et al. (1992)
+       Boyden chambers               2           Vero C1008, Caco-2, MDCK  Yes                                                          Tucker et al. (1992)
+
+     Columnar pore membranes in
+       Boyden chambers
+
+     Polycarbonate membrane
+     Polycarbonate membrane
+
+123  hUCMSCs human umbilical cord mesenchymal stem cells, hMSC mesenchymal stem cells isolated from bone marrow, NIH3T3 mouse embryo fibroblasts, STO and MEF the
+     mitomycin C-treated feeder cells, hMSCs human mesenchymal stem cells, PMN polymorphonuclear leukocytes, A549 human type II alveolar epithelial cell line, hESC human
+     embryonic stem cells, Vero 1008 kidney epithelial cell line, Caco-2 colon adenocarcinoma epithelial cell line, MDCK kidney epithelial cell line
+
+                                                                                                                                                                           361
+362                                                       Cytotechnology (2016) 68:355­369
+
+Fig. 2 Schematic
+presentation how pore sizes
+regulate cell attachment,
+interaction and migration.
+a 2D scaffold membrane
+with pore size\1 lm for the
+better cell attachment. b 2D
+scaffold membrane with the
+pore size ranging from 1 to
+3 lm for the anchorage-
+dependent cell­cell
+interaction. c 2D scaffold
+membrane with the pore
+sizes of 3­12 lm for the
+direct cell­cell contacts,
+migration and/or invasion.
+d 3D scaffold with the
+surface pore sizes of 1­3 lm
+and porous internal structure
+for the indirect cell­cell or
+cell-ECM interaction. e Cell
+migration in and out of 3D
+scaffold through the pore
+size ranging from 100 to
+800 lm which depends on
+the aim of tissue
+regeneration
+
+fibrous tissue or unmineralized osteoids (Hulbert et al.  with pore size around 450 lm (Ashman and Moss
+1970). Similar data were observed in osteogenic           1977). Similarly, the osteoblast migration was faster
+differentiation of BMP7 gene-transfected MSCs: the        inside microcellular porous polymers derived from the
+differentiation was better on the silk fibroin protein    high internal phase emulsions (polyHIPEs) scaffolds
+scaffold with pore size between 100 and 300 lm            with 100 lm pore size compared to 40 and 60 lm
+compared to 50­100 lm (Zhang et al. 2010). Another        ones (Akay et al. 2004). The same study showed that
+study showed that the bone ingrowths predominated in      modification of polymer with hydroxyapatite
+porous poly(methyl methacrylate) (PMMA) scaffold          increased osteogenesis; however, the larger pores
+
+123
+Cytotechnology (2016) 68:355­369                                                                                                    363
+
+increased rate of osteoblasts migration into the scaf-      et al. 2015). Additional precoating of PLGA scaffolds
+fold but not the depth--maximum was 1.4 mm for all          (90­180 lm of pore size) with fibrin increased chon-
+pore sizes (Akay et al. 2004).                              drogenesis and deposition of cartilage-specific ECM
+                                                            (Sha'ban et al. 2008). The successful application of iPS
+   It should be noted that the level of porosity is not     for the regeneration and restoration of cartilage defects
+less important than the pore size for the bone              on 3D nanofibrous scaffolds with similar pore size has
+regeneration (Zhang et al. 2001). The osteogenesis          been also recently shown (Liu et al. 2014).
+of skeletal stem cells was especially effective on the
+new type of biphasic hydroxyapatite/tricalcium (HA/            The ECM is a heterogeneous complex providing
+TCP) scaffolds with high porosity (45 pores per inch)       structural support for cell growth, migration and signal-
+(Aarvold et al. 2013). Microporous polycaprolactone         ing. During cell migration and spreading, focal adhesion
+(PCL) matrice with various pore sizes might be used to      is basically an integrin-mediated process, whereas
+stimulate osteogenesis by delivery of various protein       adhesion of cells to fibrillar ECM generates extracellular
+such as lysozyme (100­200 lm), collagenases                 fibrils and fibronectin (Pankov et al. 2000). Fibroblasts,
+(80­200 lm), catalase (100­250 lm), lactose                 as main ECM generators, have slightly different adhe-
+(45­90, 90­125 lm) and gelatin (125­250 lm) into            sion properties to the 3D structures compared to the 2D
+damaged tissue (Wang et al. 2007, 2009). Corre-             and require high cell density for the ECM generation and
+spondingly, osteoblasts proliferation and bone forma-       better attachment (Cukierman et al. 2001). It was shown
+tion on the PLGA scaffold was the best with the pore-       that the poly(lactic acid) (Karageorgiou and Kaplan
+size ranging from 150 to 300 lm (Peter et al. 1998).        2005) and PLGA scaffolds produced by salt leaching
+Parallelly, it was shown that PLGA scaffolds with pore      with pores smaller than 160 lm were optimal for
+size ranging from 150 to 710 lm had no impact on the        attachment and growth of human skin fibroblasts (Yang
+osteoblasts attachment and proliferation, whereas           et al. 2002). The invasion of human endothelial cells into
+tissue mineralization was the best on the scaffolds         PLGA scaffolds was even better under the sheared stress
+with 300­500 lm pores (Ishaug et al. 1997).                 conditions (Koo et al. 2014). The generation of connec-
+                                                            tive tissue by fibroblasts seeded on the molded/salt
+Pore sizes for the regeneration of other connective         leached poly(lactic-co-glycolic acid)/polybutylene
+tissues                                                     terephthalate (PEGT/PBT) copolymer scaffolds was
+                                                            efficient with an average of interconnecting pores of
+Cartilage loss is the most prominent feature of arthritis,  160 ± 56 lm (Wang et al. 2005). On the other hand, it
+whereas cartilage regeneration is a difficult and time-     was shown that the canine dermal fibroblasts were the
+consuming process. Recent biotechnological achieve-         least selective for pore size and showed similar cell
+ments in tissue engineering were able to suggest broad      proliferation and ECM formation on the poly(L-lactic
+variety of scaffolds and diverse MSC sources for the        acid) (L-PLA) scaffold with pores ranging from 38 to
+regeneration of connective tissue, particularly cartilage.  150 lm (Zeltinger et al. 2001). Additionally, it was
+The scaffolds with pore sizes ranging from 200 to           shown that the sphere-template polymers (poly(2-hy-
+400 lm and with an oval to round pore shape was             droxyethylmethacrylate); poly(pHEMA)) with 40 lm
+shown to be important not only for the functioning of       pores were able to recapitulate key elements of both
+osteoblasts but also for the differentiation of chondro-    dermal and epidermal layers of skin, whereas migration
+cytes (Boyan et al. 1996). Implants consisting of           of keratinocytes into pores was limited (Fukano et al.
+biodegradable Estane polymers comprising macropores         2010). Data presented in this section show that the
+of 150­355 lm that are highly interconnected with           impact of pore size in successful regeneration of various
+micropores (\50 lm) have been found to be conducive         connecting tissues depends not only on the origin of
+to ingrowth into fibrocartilaginous tissue preventing       scaffold's biomaterial and fabrication techniques but
+degeneration of the articular cartilage (Tienen et al.      also on the geometry of pores.
+2006). Recent investigation of MSC chondrogenesis on
+collagen-hyaluronic acid (CHyA) scaffolds with pore-        Pore sizes for the regeneration of nerve system
+sizes of 94, 130, and 300 lm in diameter showed that
+scaffolds with the largest (300 lm) pores significantly     The brain and nervous systems have limited capacity
+stimulated expression of chondrogenic genes (Matsiko        to regenerate, which is very often a reason of
+
+                                                                                               123
+364                                                                                        Cytotechnology (2016) 68:355­369
+
+neurodegenerative diseases. The golden standard for       and peripheral vascular diseases (Isenberg et al. 2006).
+the nerve reconstruction is autologous nerve grafting     Limited source of autologous vessels, similarly to
+but with limited natural sources. Therefore, the          autologous nerves, encouraged looking for new ways
+successful application of apropos cells and scaffolds     to vascular regeneration including application of
+could extend endogenous regeneration and/or replace-      biodegradable scaffolds (Niklason et al. 1999). It
+ment of defective neural cells. It was shown that         was shown that vascular smooth muscle cells culti-
+Schwann cells seeded on the fibrin precoated poly-        vated on 38­150 lm pore size L-PLA scaffold
+urethane scaffolds with uniaxially-oriented pore struc-   displayed equivalent cell proliferation and matrix
+ture in the range of 2 lm (the pore wall) and             deposition (Zeltinger et al. 2001). Similarly, other
+75 9 750 lm (elongated pores) could significantly         authors also found that growth of smooth muscle cells
+regenerate peripheral axons (Hausner et al. 2007). In     on PLGA scaffold with pore size ranging from 50 to
+parallel, the axon regeneration on poly(dimethyl          200 lm was not significantly affected during 14 days
+siloxane) scaffold precoated with poly-L-lysine and       of cell culturing (Lee et al. 2008). Additionally,
+laminin required the neurite bridging and was aug-        similar pore size (60­150 lm) of PLLA scaffold was
+mented with increasing groove width from 50 to            successfully applied to generate smooth muscle cells
+200 lm (Goldner et al. 2006). It was also shown that      (SMCs) from human iPS cells (Wang et al. 2014).
+the axon outgrowth along the longitudinal direction of    Subcutaneous implantation of the last-mentioned
+3D hydrogel alginate increased with increasing cap-       SMC-scaffold construct in nude mice demonstrated
+illary diameter displaying the highest axon density       formation of vascular tissue. However, the microvas-
+within the scaffold capillary diameter of 71­86 lm        cular epithelial cells showed sparse extracellular
+(Pawar et al. 2011). Similarly, neurites of PC12 cells    matrix on the L-PLA scaffolds with pore size from
+also displayed an increasing parallel orientation on the  38 to 150 lm, while multilayered lining was formed
+surface with groove width ranging from 20 to 60 lm        on the scaffolds with pore size \38 lm (Zeltinger
+(Mahoney et al. 2005). Pore width of collagen I           et al. 2001). It was also shown that the depth of
+scaffold ranging from 20 to 50 lm was also better         invasion (160 lm after 4 h) of endothelial progenitor
+compared to the 50­100 lm for the glial and axonal        cells into electrospun fibrous scaffold and their further
+growth (Bozkurt et al. 2009). The laminin-coated          colonization was increased with increasing pore size
+cryogel scaffolds with pore sizes of 80­100 microns       ([45 lm) (Hong et al. 2015). Another study showed
+were successfully used for the regeneration of brain      only 100 lm infiltration of the endothelial progenitors
+neurons (Jurga et al. 2011). Similarly to the previous    into electrospun fibrous scaffolds with pore size
+results, it was shown that collagen membrane with         \20 lm after 7 days of culturing (Blakeney et al.
+100-lm-diameter pores were proper for the transplan-      2011). It showed that higher ratio between pore and an
+tation and further differentiation of neural stem cells   endothelial cell size (endothelial cell diameter is
+(Yuan et al. 2014).                                       around 20 lm) leads to more successful cell migration
+                                                          and invasion. On the other hand, the decellularized
+   As highlighted in this paragraph, the regeneration     vascular matrices could be also a perfect scaffold
+of long-size peripheral axons requires long pores         supporting growth and invasion of endothelial cells
+ranging from 200 up to 750 lm and even millimeters,       (Lu et al. 2004).
+whereas their ingrowth and/or outgrowth needs much
+smaller pores (20­70 lm) depending on the origin of       Pore sizes for the regeneration of heart tissue
+biomaterial. Scaffolds with pore sizes around 100 lm
+seem to be more suitable for the regeneration of          Heart failure is the leading cause of death in the world
+neurons.                                                  and occurs due to the loss of cardiomyocytes (Braun-
+                                                          wald and Pfeffer 1991). To date, most of stem-cell-
+Pore sizes for the regeneration of cardiovascular         based strategies for cardiac repair were related to the
+system                                                    injection of cell suspension directly into injured
+                                                          myocardium. Various types of stem cells and their
+Cardiovascular diseases remain the leading cause of       ability to differentiate into cardiomyocytes have been
+mortality in the world very often requiring vascular      intensively investigated. Recently, iPS cells have been
+replacement as one of the ways to treat ischemic heart
+
+123
+Cytotechnology (2016) 68:355­369                                                                                                    365
+
+also considered as therapeutic tool for heart regener-      of biopacemaker membrane should be around 3 lm
+ation (Takahashi and Yamanaka 2006). However, it            preventing cell transmigration but providing slight
+was shown that iPS or ES cells-derived cardiomy-            MSC-cardiomyocyte interaction. Additionally, the
+ocytes had different contractile properties compared to     biopacemaker should be of apropos mechanical
+native cardiac tissue (Xi et al. 2010). Additionally, it    stability and biocompatibility. So far this field is full
+was shown that around 90 % of transplanted cells die        of unsolved questions. Hopefully, in the nearest future
+within 1 week and 50­90 % are extruded out of the           we will be able to answer at least part of the questions
+myocardium (Zhang et al. 2001; Muller-Ehmsen et al.         concerning the application of biopacemakers/bioscaf-
+2002). Therefore, the new direction in heart regener-       folds in heart stimulation.
+ation is related to the application of scaffold delivering
+stem cells into heart and/or scaffold-regulated direct      Conclusions
+cardiomyocyte stimulation. It was shown that bimodal
+poly(2-hydroxyethylmethacrylate-co-methacrylic              All aforementioned studies and data have verified that
+acid) (pHEMA-co-MAA) hydrogel scaffolds with                regulation of pore size is one of the most critical issues
+parallel channels of 60 lm in diameter were required        for the successful scaffold application in regenerative
+to seed and promote aggregation of cardiomyocytes           therapy. Summarizing data of various studies we can
+(Madden et al. 2010). Additionally, sphere-template         conclude that nano-pored scaffolds with pores\1 lm
+material (pHEMA-co-MAA) with 40 and 80 lm pores             can be applied to improve cell-surface interaction,
+showed formation of functional vessels within               whereas the anchorage-dependent cell­cell commu-
+implants without complication of tricell (cardiomy-         nication requires larger pore size (around 1­3 lm).
+ocyte, endothelial and fibroblast) functioning. It was      Cell migration through the scaffold surface pores
+also shown that the same type of sphere-template            needs larger pores ranging from 3 to 12 lm. Addi-
+material with larger pores (*90­160 lm) led to more         tionally, cell transfer through the pore size below 3 lm
+fibrosis and less vascularity (Marshall et al. 2004). On    may need an additional stimulation. Finally, cell
+the other hand, the enhanced survival of cardiomy-          attachment was the best on 3D scaffolds with 100 lm
+ocytes after the paracrine stimulation trough 0.22 lm       pores, whereas pore sizes required for the regeneration
+pores was also shown (Kawaguchi et al. 2010).               of various tissues varied depending on the size and the
+                                                            origin of transplanted cell and regenerating tissue: the
+   Scientists now are developing biological pacemak-        regeneration of long peripheral axons required longi-
+ers as an alternative to the electrical pacemakers with     tudinally-oriented pores (200­750 lm); chondrogenic
+the hope to mimic the natural pacemaker and to              and osteogenic MSC differentiation demanded scaf-
+overcome some limitations of the electronic ones.           folds with 200­400 lm pores; growth of smooth
+Using MSCs, as the best suited stem cell type for           muscle endothelial, nerve cells and fibroblasts was the
+making a biological pacemaker, it is expected to create     best on 50­160 lm pores, while microvascular
+an appropriate cardiac response to exercise and             epithelial cells required small pores (\38 lm).
+emotions. MSCs from the biological pacemaker
+should respond to the physiological changes of the             Overall, successful application of scaffolds in
+body and influence functioning of cardiomyocytes            regenerative medicine is a complex of pore-size and
+(Rosen et al. 2004). However, how to make the best          cell-type-dependent processes and needs an individual
+cell-scaffold model for the biological pacemaker            experimental optimization considering regenerative
+efficiently stimulating heart contraction is still an       and therapeutic aims. However, this review shows that
+open issue. The pore sizes for the biological pace-         pore size and geometry plays a significant and very
+maker should allow some contact of implanted MSC            often limiting role in tissue regeneration. The large
+with cardiomyocytes but prevent their transmigration.       quantity of investigations performed up to these days
+Recently, our group is investigating non-degradable         will shorten ways for the future discoveries in the field
+scaffolds made from various materials and with              of tissue engineering.
+different pore sizes and their biocompatibility with
+bone marrow-derived MSC in order to generate the            Acknowledgments This work was supported by EU project
+functional biological pacemaker for heart stimulation.      ,,Biocardiostim`` (No. VP1-3.1-S MM-10-V-02-029).
+In light of data presented in this review, the pore size
+                                                                                               123
+366                                                                                                 Cytotechnology (2016) 68:355­369
+
+Conflict of interest The authors declare that they have no         Cukierman E, Pankov R, Stevens DR, Yamada KM (2001)
+conflict of interest.                                                    Taking cell-matrix adhesions to the third dimension. Sci-
+                                                                         ence 294:1708­1712. doi:10.1126/science.1064829
+References
+                                                                   De Coppi P, Bartsch G Jr, Siddiqui MM, Xu T, Santos CC, Perin
+Aarvold A, Smith JO, Tayton ER, Lanham SA, Chaudhuri JB,                 L, Mostoslavsky G, Serre AC, Snyder EY, Yoo JJ, Furth
+      Turner IG, Oreffo RO (2013) The effect of porosity of a            ME, Soker S, Atala A (2007) Isolation of amniotic stem
+      biphasic ceramic scaffold on human skeletal stem cell              cell lines with potential for therapy. Nat Biotechnol
+      growth and differentiation in vivo. J Biomed Mater Res A           25:100­106. doi:10.1038/nbt1274
+      101:3431­3437. doi:10.1002/jbm.a.34646
+                                                                   de Sousa EB, Casado PL, Moura Neto V, Duarte ME, Aguiar DP
+Agrawal CM, Ray RB (2001) Biodegradable polymeric scaf-                  (2014) Synovial fluid and synovial membrane mesenchy-
+      folds for musculoskeletal tissue engineering. J Biomed             mal stem cells: latest discoveries and therapeutic per-
+      Mater Res 55:141­150                                               spectives. Stem Cell Res Ther 5:112. doi:10.1186/scrt501
+
+Akay G, Birch MA, Bokhari MA (2004) Microcellular poly-            Erices A, Conget P, Minguell JJ (2000) Mesenchymal progen-
+      HIPE polymer supports osteoblast growth and bone for-              itor cells in human umbilical cord blood. Br J Haematol
+      mation in vitro. Biomaterials 25:3991­4000. doi:10.1016/j.         109:235­242
+      biomaterials.2003.10.086
+                                                                   Fitton JH, Dalton BA, Beumer G, Johnson G, Griesser HJ, Steele
+Akino K, Akita S, Yakabe A, Mineda T, Hayashi T, Hirano A                JG (1998) Surface topography can interfere with epithelial
+      (2008) Human mesenchymal stem cells may be involved in             tissue migration. J Biomed Mater Res 42:245­257
+      keloid pathogenesis. Int J Dermatol 47:1112­1117. doi:10.
+      1111/j.1365-4632.2008.03380.x                                Fukano Y, Usui ML, Underwood RA, Isenhath S, Marshall AJ,
+                                                                         Hauch KD, Ratner BD, Olerud JE, Fleckman P (2010)
+Akram KM, Samad S, Spiteri MA, Forsyth NR (2013) Mes-                    Epidermal and dermal integration into sphere-templated
+      enchymal stem cells promote alveolar epithelial cell wound         porous poly(2-hydroxyethyl methacrylate) implants in
+      repair in vitro through distinct migratory and paracrine           mice. J Biomed Mater Res A 94:1172­1186. doi:10.1002/
+      mechanisms. Respir Res 14:9                                        jbm.a.32798
+
+Ashman A, Moss ML (1977) Implantation of porous poly-              Goldner JS, Bruder JM, Li G, Gazzola D, Hoffman-Kim D
+      methylmethacrylate resin for tooth and bone replacement.           (2006) Neurite bridging across micropatterned grooves.
+      J Prosthet Dent 37:657­665                                         Biomaterials 27:460­472. doi:10.1016/j.biomaterials.
+                                                                         2005.06.035
+Atala A (2012) Regenerative medicine strategies. J Pediatr Surg
+      47:17­28. doi:10.1016/j.jpedsurg.2011.10.013                 Grinnell F (1982) Cell-collagen interactions: overview. Meth-
+                                                                         ods Enzymol 82 Pt A:499­503
+Becker AJ, Mc CE, Till JE (1963) Cytological demonstration of
+      the clonal nature of spleen colonies derived from trans-     Haniffa MA, Wang XN, Holtick U, Rae M, Isaacs JD, Dickinson
+      planted mouse marrow cells. Nature 197:452­454                     AM, Hilkens CM, Collin MP (2007) Adult human fibrob-
+                                                                         lasts are potent immunoregulatory cells and functionally
+Blakeney BA, Tambralli A, Anderson JM, Andukuri A, Lim DJ,               equivalent to mesenchymal stem cells. J Immunol
+      Dean DR, Jun HW (2011) Cell infiltration and growth in a           179:1595­1604
+      low density, uncompressed three-dimensional electrospun
+      nanofibrous scaffold. Biomaterials 32:1583­1590. doi:10.     Harley BA, Kim HD, Zaman MH, Yannas IV, Lauffenburger
+      1016/j.biomaterials.2010.10.056                                    DA, Gibson LJ (2008) Microarchitecture of three-dimen-
+                                                                         sional scaffolds influences cell migration behavior via
+Boyan BD, Hummert TW, Dean DD, Schwartz Z (1996) Role of                 junction interactions. Biophys J 95:4013­4024. doi:10.
+      material surfaces in regulating bone and cartilage cell            1529/biophysj.107.122598
+      response. Biomaterials 17:137­146
+                                                                   Hatano K, Inoue H, Kojo T, Matsunaga T, Tsujisawa T,
+Boyd AS, Rodrigues NP, Lui KO, Fu X, Xu Y (2012) Concise                 Uchiyama C, Uchida Y (1999) Effect of surface roughness
+      review: immune recognition of induced pluripotent stem             on proliferation and alkaline phosphatase expression of rat
+      cells. Stem Cells 30:797­803. doi:10.1002/stem.1066                calvarial cells cultured on polystyrene. Bone 25:439­445
+
+Bozkurt A, Deumens R, Beckmann C, OldeDamink L, Schugner           Hausner T, Schmidhammer R, Zandieh S, Hopf R, Schultz A,
+      F, Heschel I, Sellhaus B, Weis J, Jahnen-Dechent W, Brook          Gogolewski S, Hertz H, Redl H (2007) Nerve regeneration
+      GA, Pallua N (2009) In vitro cell alignment obtained with a        using tubular scaffolds from biodegradable polyurethane.
+      Schwann cell enriched microstructured nerve guide with             Acta Neurochir Suppl 100:69­72
+      longitudinal guidance channels. Biomaterials 30:169­179.
+      doi:10.1016/j.biomaterials.2008.09.017                       Hong JK, Bang JY, Xu G, Lee JH, Kim YJ, Lee HJ, Kim HS,
+                                                                         Kwon SM (2015) Thickness-controllable electrospun
+Braunwald E, Pfeffer MA (1991) Ventricular enlargement and               fibers promote tubular structure formation by endothelial
+      remodeling following acute myocardial infarction: mech-            progenitor cells. Int J Nanomedicine 10:1189­1200.
+      anisms and management. Am J Cardiol 68:1D­6D                       doi:10.2147/IJN.S73096
+
+Chang HI, Wangs Y (2011) Cell responses to surface and             Huang GT, Gronthos S, Shi S (2009) Mesenchymal stem cells
+      architecture of tissue engineering scaffolds. In: Eberli D         derived from dental tissues vs. those from other sources:
+      (ed) Regenerative medicine and tissue engineering - cells          their biology and role in regenerative medicine. J Dent Res
+      and biomaterials, chapter 27. InTech, Rijeka, Croatia,             88:792­806. doi:10.1177/0022034509340867
+      pp 569­ 588. doi:10.5772/21983
+                                                                   Hulbert SF, Young FA, Mathews RS, Klawitter JJ, Talbert CD,
+123                                                                      Stelling FH (1970) Potential of ceramic materials as per-
+                                                                         manently implantable skeletal prostheses. J Biomed Mater
+                                                                         Res 4:433­456. doi:10.1002/jbm.820040309
+Cytotechnology (2016) 68:355­369                                                                                                            367
+
+Isenberg BC, Williams C, Tranquillo RT (2006) Small-diameter              mesenchymal stem cells on polycarbonate membrane with
+      artificial arteries engineered in vitro. Circ Res 98:25­35.         different pore sizes. Zhonghua Yi Xue Za Zhi 91:699­702
+      doi:10.1161/01.RES.0000196867.12470.84                        Liang D, Hsiao BS, Chu B (2007) Functional electrospun
+                                                                          nanofibrous scaffolds for biomedical applications. Adv
+Ishaug SL, Crane GM, Miller MJ, Yasko AW, Yaszemski MJ,                   Drug Deliv Rev 59:1392­1412. doi:10.1016/j.addr.2007.
+      Mikos AG (1997) Bone formation by three-dimensional                 04.021
+      stromal osteoblast culture in biodegradable polymer scaf-     Lim SH, Mao HQ (2009) Electrospun scaffolds for stem cell
+      folds. J Biomed Mater Res 36:17­28                                  engineering. Adv Drug Deliv Rev 61:1084­1096. doi:10.
+                                                                          1016/j.addr.2009.07.011
+Jurga M, Dainiak MB, Sarnowska A, Jablonska A, Tripathi             Liu X, Ma PX (2004) Polymeric scaffolds for bone tissue
+      A,Plieva FM, Savina IN, Strojek L, Jungvid H, Kumar A,              engineering. Ann Biomed Eng 32:477­486
+      Lukomska B, Domanska-Janik K, Forraz N, McGuckin CP           Liu W, Li Y, Cunha S, Hayward G, Baskin L (2000) Diffusable
+      (2011) The performance of laminin-containing cryogel                growth factors induce bladder smooth muscle differentia-
+      scaffolds in neural tissue regeneration. Biomaterials               tion. In Vitro Cell Dev Biol Anim 36:476­484
+      32:3423­3434. doi:10.1016/j.biomaterials.2011.01.049          Liu XH, Smith L, Wei G, Won YJ, Ma PX (2005) Surface
+                                                                          engineering of nano-fibrous poly(L-lactic acid) scaffolds
+Karageorgiou V, Kaplan D (2005) Porosity of 3D biomaterial                via self-assembly technique for bone tissue engineering.
+      scaffolds and osteogenesis. Biomaterials 26:5474­5491.              J Biomed Nanotechnol 1:54­60
+      doi:10.1016/j.biomaterials.2005.02.002                        Liu J, Nie H, Xu Z, Niu X, Guo S, Yin J, Guo F, Li G, Wang Y,
+                                                                          Zhang C (2014) The effect of 3D nanofibrous scaffolds on
+Kawaguchi N, Smith AJ, Waring CD, Hasan MK, Miyamoto S,                   the chondrogenesis of induced pluripotent stem cells and
+      Matsuoka R, Ellison GM (2010) c-kitpos GATA-4 high rat              their application in restoration of cartilage defects. PLoS
+      cardiac stem cells foster adult cardiomyocyte survival              One 9:e111566. doi:10.1371/journal.pone.0111566
+      through IGF-1 paracrine signalling. PLoS One 5:e14297.        Lu Q, Ganesan K, Simionescu DT, Vyavahare NR (2004) Novel
+      doi:10.1371/journal.pone.0014297                                    porous aortic elastin and collagen scaffolds for tissue
+                                                                          engineering. Biomaterials 25:5227­5237. doi:10.1016/j.
+Kim S, Ahn SE, Lee JH, Lim DS, Kim KS, Chung HM, Lee SH                   biomaterials.2003.12.019
+      (2007) A novel culture technique for human embryonic          Madden LR, Mortisen DJ, Sussman EM, Dupras SK, Fugate JA,
+      stem cells using porous membranes. Stem Cells                       Cuy JL, Hauch KD, Laflamme MA, Murry CE, Ratner BD
+      25:2601­2609. doi:10.1634/stemcells.2006-0814                       (2010) Proangiogenic scaffolds as functional templates for
+                                                                          cardiac tissue engineering. Proc Natl Acad Sci USA
+Kim MY, Li DJ, Pham LK, Wong BG, Hui EE (2014) Micro-                     107:15211­15216. doi:10.1073/pnas.1006442107
+      fabrication of high-resolution porous membranes for cell      Mahoney MJ, Chen RR, Tan J, Saltzman WM (2005) The
+      culture. J Memb Sci 452:460­469. doi:10.1016/j.memsci.              influence of microchannels on neurite growth and archi-
+      2013.11.034                                                         tecture. Biomaterials 26:771­778. doi:10.1016/j.
+                                                                          biomaterials.2004.03.015
+Koo MA, Kang JK, Lee MH, Seo HJ, Kwon BJ, You KE, Kim               Marshall AJ, Irvin CA, Barker T, Sage EH, Hauch KD, Ratner
+      MS, Kim D, Park JC (2014) Stimulated migration and                  BD (2004) Biomaterials with tightly controlled pore size
+      penetration of vascular endothelial cells into poly(L-lactic        that promote vascular ingrowth ACS. Polymer Prepr
+      acid) scaffolds under flow conditions. Biomater Res 18:7.           45:100­101
+      doi:10.1186/2055-7124-18-7                                    Matsiko A, Gleeson JP, O'Brien FJ (2015) Scaffold mean pore
+                                                                          size influences mesenchymal stem cell chondrogenic dif-
+Kumbar SG, James R, Nukavarapu SP, Laurencin CT (2008)                    ferentiation and matrix deposition. Tissue Eng Part A
+      Electrospun nanofiber scaffolds: engineering soft tissues.          21:486­497. doi:10.1089/ten.TEA.2013.0545
+      Biomed Mater 3:034002. doi:10.1088/1748-6041/3/3/             McHugh KJ, Tao SL, Saint-Geniez M (2013) A novel porous
+      034002                                                              scaffold fabrication technique for epithelial and endothelial
+                                                                          tissue engineering. J Mater Sci Mater Med 24:1659­1670.
+Lee SJ, Choi JS, Park KS, Khang G, Lee YM, Lee HB (2004)                  doi:10.1007/s10856-013-4934-1
+      Response of MG63 osteoblast-like cells onto polycarbon-       Muller-Ehmsen J, Whittaker P, Kloner RA, Dow JS, Sakoda T,
+      ate membrane surfaces with different micropore sizes.               Long TI, Laird PW, Kedes L (2002) Survival and devel-
+      Biomaterials 25:4699­4707. doi:10.1016/j.biomaterials.              opment of neonatal rat cardiomyocytes transplanted into
+      2003.11.034                                                         adult myocardium. J Mol Cell Cardiol 34:107­116. doi:10.
+                                                                          1006/jmcc.2001.1491
+Lee M, Wu BM, Dunn JC (2008) Effect of scaffold architecture        Murphy CM, Haugh MG, O'Brien FJ (2010) The effect of mean
+      and pore size on smooth muscle cell growth. J Biomed                pore size on cell attachment, proliferation and migration in
+      Mater Res A 87:1010­1016. doi:10.1002/jbm.a.31816                   collagen­glycosaminoglycan scaffolds for bone tissue
+                                                                          engineering. Biomaterials 31:461­466. doi:10.1016/j.
+Lee IC, Lee YT, Yu BY, Lai JY, Young TH (2009) The behavior               biomaterials.2009.09.063
+      of mesenchymal stem cells on micropatterned PLLA              Nain AS, Wong JC, Amon CH, Sitti M (2006) Drawing sus-
+      membranes. J Biomed Mater Res A 91:929­938. doi:10.                 pended polymer micro-/nanofibers using glass
+      1002/jbm.a.32309
+
+Li WJ, Laurencin CT, Caterson EJ, Tuan RS, Ko FK (2002)
+      Electrospun nanofibrous structure: a novel scaffold for
+      tissue engineering. J Biomed Mater Res 60:613­621
+
+Li WJ, Danielson KG, Alexander PG, Tuan RS (2003) Bio-
+      logical response of chondrocytes cultured in three-dimen-
+      sional nanofibrous poly(epsilon-caprolactone) scaffolds.
+      J Biomed Mater Res A 67:1105­1114. doi:10.1002/jbm.a.
+      10101
+
+Li DJ, Chai JK, Han YF, Sun TJ, Deng HP, Zhao JY, Liu LY
+      (2011) Growth and migration of umbilical cord
+
+                                                                    123
+368                                                                                                   Cytotechnology (2016) 68:355­369
+
+      micropipettes. Appl Phys Lett 89:183105­183107. doi:10.        Seale P, Rudnicki MA (2000) A new look at the origin, function,
+      1063/1.2372694                                                       and ``stem-cell'' status of muscle satellite cells. Dev Biol
+Nakagawa M, Koyanagi M, Tanabe K, Takahashi K, Ichisaka T,                 218:115­124. doi:10.1006/dbio.1999.9565
+      Aoi T, Okita K, Mochiduki Y, Takizawa N, Yamanaka S
+      (2008) Generation of induced pluripotent stem cells with-      Sha'ban M, Kim SH, Idrus RB, Khang G (2008) Fibrin and
+      out Myc from mouse and human fibroblasts. Nat Biotech-               poly(lactic-co-glycolic acid) hybrid scaffold promotes
+      nol 26:101­106. doi:10.1038/nbt1374                                  early chondrogenesis of articular chondrocytes: an in vitro
+Niklason LE, Gao J, Abbott WM, Hirschi KK, Houser S, Marini                study. J Orthop Surg Res 3:17. doi:10.1186/1749-799X-3-
+      R, Langer R (1999) Functional arteries grown in vitro.               17
+      Science 284:489­493
+O'Brien FJ (2011) Biomaterials & scaffolds for tissue engi-          Smith IO, Liu XH, Smith LA, Ma PX (2009) Nanostructured
+      neering. Mater Today 14:88­95. doi:10.1016/S1369-                    polymer scaffolds for tissue engineering and regenerative
+      7021(11)70058-X                                                      medicine. Wiley Interdiscip Rev Nanomed Nanobiotech-
+O'Brien FJ, Harley BA, Waller MA, Yannas IV, Gibson LJ,                    nol 1:226­236. doi:10.1002/wnan.26
+      Prendergast PJ (2007) The effect of pore size on perme-
+      ability and cell attachment in collagen scaffolds for tissue   Takahashi K, Yamanaka S (2006) Induction of pluripotent stem
+      engineering. Technol Health Care 15:3­17                             cells from mouse embryonic and adult fibroblast cultures
+Owen SC, Shoichet MS (2010) Design of three-dimensional                    by defined factors. Cell 126:663­676. doi:10.1016/j.cell.
+      biomimetic scaffolds. J Biomed Mater Res A                           2006.07.024
+      94:1321­1331. doi:10.1002/jbm.a.32834
+Palecek SP, Loftus JC, Ginsberg MH, Lauffenburger DA,                Tao SL, Desai TA (2007) Aligned arrays of biodegradable
+      Horwitz AF (1997) Integrin-ligand binding properties                 poly(epsilon-caprolactone) nanowires and nanofibers by
+      govern cell migration speed through cell-substratum                  template synthesis. Nano Lett 7:1463­1468. doi:10.1021/
+      adhesiveness. Nature 385:537­540. doi:10.1038/385537a0               nl0700346
+Pankov R, Cukierman E, Katz BZ, Matsumoto K, Lin DC, Lin S,
+      Hahn C, Yamada KM (2000) Integrin dynamics and matrix          Tienen TG, Heijkants RG, de Groot JH, Pennings AJ, Schouten
+      assembly: tensin-dependent translocation of alpha(5)-                AJ, Veth RP, Buma P (2006) Replacement of the knee
+      beta(1) integrins promotes early fibronectin fibrillogenesis.        meniscus by a porous polymer implant: a study in dogs. Am
+      J Cell Biol 148:1075­1090                                            J Sports Med 34:64­71. doi:10.1177/0363546505280905
+Paramonov SE, Jun HW, Hartgerink JD (2006) Self-assembly of
+      peptide-amphiphile nanofibers: the roles of hydrogen           Tucker SP, Melsen LR, Compans RW (1992) Migration of
+      bonding and amphiphilic packing. J Am Chem Soc                       polarized epithelial cells through permeable membrane
+      128:7291­7298. doi:10.1021/ja060573x                                 substrates of defined pore size. Eur J Cell Biol 58:280­290
+Pawar K, Mueller R, Caioni M, Prang P, Bogdahn U, Kunz W,
+      Weidner N (2011) Increasing capillary diameter and the         Vagaska B, Bacakova L, Filova E, Balik K (2010) Osteogenic
+      incorporation of gelatin enhance axon outgrowth in algi-             cells on bio-inspired materials for bone tissue engineering.
+      nate-based anisotropic hydrogels. Acta Biomater                      Physiol Res 59:309­322
+      7:2826­2834. doi:10.1016/j.actbio.2011.04.006
+Peter SJ, Miller MJ, Yasko AW, Yaszemski MJ, Mikos AG                Verfaillie CM (1992) Direct contact between human primitive
+      (1998) Polymer concepts in tissue engineering. J Biomed              hematopoietic progenitors and bone marrow stroma is not
+      Mater Res 43:422­427                                                 required for long-term in vitro hematopoiesis. Blood
+Peyton SR, Kalcioglu ZI, Cohen JC, Runkle AP, Van Vliet KJ,                79:2821­2826
+      Lauffenburger DA, Griffith LG (2011) Marrow-derived
+      stem cell motility in 3D synthetic scaffold is governed by     Wang H, Pieper J, Peters F, van Blitterswijk CA, Lamme EN
+      geometry along with adhesivity and stiffness. Biotechnol             (2005) Synthetic scaffold morphology controls human
+      Bioeng 108:1181­1193. doi:10.1002/bit.23027                          dermal connective tissue formation. J Biomed Mater Res A
+Pittenger MF, Mackay AM, Beck SC, Jaiswal RK, Douglas R,                   74:523­532. doi:10.1002/jbm.a.30232
+      Mosca JD, Moorman MA, Simonetti DW, Craig S, Mar-
+      shak DR (1999) Multilineage potential of adult human           Wang Y, Chang HI, Wertheim DF, Jones AS, Jackson C,
+      mesenchymal stem cells. Science 284:143­147                          Coombes AG (2007) Characterisation of the macroporosity
+Reynolds BA, Weiss S (1992) Generation of neurons and                      of polycaprolactone-based biocomposites and release
+      astrocytes from isolated cells of the adult mammalian                kinetics for drug delivery. Biomaterials 28:4619­4627.
+      central nervous system. Science 255:1707­1710                        doi:10.1016/j.biomaterials.2007.07.006
+Rosen MR, Brink PR, Cohen IS, Robinson RB (2004) Genes,
+      stem cells and biological pacemakers. Cardiovasc Res           Wang Y, Chang HI, Li X, Alpar O, Coombes AG (2009)
+      64:12­23. doi:10.1016/j.cardiores.2004.05.012                        Delivery of bioactive macromolecules from microporous
+Roufosse CA, Direkze NC, Otto WR, Wright NA (2004) Cir-                    polymer matrices: release and activity profiles of lyso-
+      culating mesenchymal stem cells. Int J Biochem Cell Biol             zyme, collagenase and catalase. Eur J Pharm Sci
+      36:585­597. doi:10.1016/j.biocel.2003.10.007                         37:387­394. doi:10.1016/j.ejps.2009.03.010
+Saunders KB, D'Amore PA (1992) An in vitro model for cell­
+      cell interactions. In Vitro Cell Dev Biol 28A:521­528          Wang Y, Hu J, Jiao J, Liu Z, Zhou Z, Zhao C, Chang LJ, Chen
+                                                                           YE, Ma PX, Yang B (2014) Engineering vascular tissue
+123                                                                        with functional smooth muscle cells derived from human
+                                                                           iPS cells and nanofibrous scaffolds. Biomaterials
+                                                                           35:8960­8969. doi:10.1016/j.biomaterials.2014.07.011
+
+                                                                     Wenceslau CV, Kerkis I, Lizier NF, Kerkis A (2013) De-Dif-
+                                                                           ferentiation of somatic cells to a pluripotent state. In:
+                                                                           Bhartiya D, Lenka N (eds) Pluripotent stem cells, chap-
+                                                                           ter 3. InTech, Rijeka, Croatia, pp 39­63. doi:10.5772/
+                                                                           54372
+
+                                                                     Wolf K, Te Lindert M, Krause M, Alexander S, Te Riet J, Willis
+                                                                           AL, Hoffman RM, Figdor CG, Weiss SJ, Friedl P (2013)
+                                                                           Physical limits of cell migration: control by ECM space
+Cytotechnology (2016) 68:355­369                                                                                                           369
+
+      and nuclear deformation and tuning by proteolysis and              poly(L-lactic acid) nanofibrous scaffold. J Biomater Sci
+      traction force. J Cell Biol 201:1069­1084. doi:10.1083/jcb.        Polym Ed 15:1483­1497
+      201210152                                                    Yang YL, Motte S, Kaufman LJ (2010) Pore size variable type I
+Woo KM, Chen VJ, Ma PX (2003) Nano-fibrous scaffolding                   collagen gels and their interaction with glioma cells. Bio-
+      architecture selectively enhances protein adsorption con-          materials 31:5678­5688. doi:10.1016/j.biomaterials.2010.
+      tributing to cell attachment. J Biomed Mater Res A                 03.039
+      67:531­537. doi:10.1002/jbm.a.10098                          Yannas IV (1992) Tissue regeneration by use of collagen­gly-
+Woo KM, Jun JH, Chen VJ, Seo J, Baek JH, Ryoo HM, Kim GS,                cosaminoglycan copolymers. Clin Mater 9:179­187
+      Somerman MJ, Ma PX (2007) Nano-fibrous scaffolding           Yu J, Vodyanik MA, Smuga-Otto K, Antosiewicz-Bourget J,
+      promotes osteoblast differentiation and biomineralization.         Frane JL, Tian S, Nie J, Jonsdottir GA, Ruotti V, Stewart R,
+      Biomaterials 28:335­343. doi:10.1016/j.biomaterials.               Slukvin II, Thomson JA (2007) Induced pluripotent stem
+      2006.06.013                                                        cell lines derived from human somatic cells. Science
+Wozniak MA, Modzelewska K, Kwong L, Keely PJ (2004)                      318:1917­1920. doi:10.1126/science.1151526
+      Focal adhesion regulation of cell behavior. Biochim Bio-     Yuan N, Tian W, Sun L, Yuan R, Tao J, Chen D (2014) Neural
+      phys Acta 1692:103­119. doi:10.1016/j.bbamcr.2004.04.              stem cell transplantation in a double-layer collagen mem-
+      007                                                                brane with unequal pore sizes for spinal cord injury repair.
+Xi J, Khalil M, Shishechian N, Hannes T, Pfannkuche K, Liang             Neural Regen Res 9:1014­1019. doi:10.4103/1673-5374.
+      H, Fatima A, Haustein M, Suhr F, Bloch W, Reppel M,                133160
+      Saric T, Wernig M, Janisch R, Brockmeier K, Hescheler J,     Zeltinger J, Sherwood JK, Graham DA, Mueller R, Griffith LG
+      Pillekamp F (2010) Comparison of contractile behavior of           (2001) Effect of pore size and void fraction on cellular
+      native murine ventricular tissue and cardiomyocytes                adhesion, proliferation, and matrix deposition. Tissue Eng
+      derived from embryonic or induced pluripotent stem cells.          7:557­572. doi:10.1089/107632701753213183
+      FASEB J 24:2739­2751. doi:10.1096/fj.09-145177               Zhang M, Methot D, Poppa V, Fujio Y, Walsh K, Murry CE
+Yan XL, Fu CJ, Chen L, Qin JH, Zeng Q, Yuan HF, Nan X, Chen              (2001) Cardiomyocyte grafting for cardiac repair: graft cell
+      HX, Zhou JN, Lin YL, Zhang XM, Yu CZ, Yue W, Pei XT                death and anti-death strategies. J Mol Cell Cardiol
+      (2012) Mesenchymal stem cells from primary breast can-             33:907­921. doi:10.1006/jmcc.2001.1367
+      cer tissue promote cancer proliferation and enhance          Zhang Y, Fan W, Ma Z, Wu C, Fang W, Liu G, Xiao Y (2010)
+      mammosphere formation partially via EGF/EGFR/Akt                   The effects of pore architecture in silk fibroin scaffolds on
+      pathway. Breast Cancer Res Treat 132:153­164. doi:10.              the growth and differentiation of mesenchymal stem cells
+      1007/s10549-011-1577-0                                             expressing BMP7. Acta Biomater 6:3021­3028. doi:10.
+Yang J, Shi G, Bei J, Wang S, Cao Y, Shang Q, Yang G, Wang               1016/j.actbio.2010.02.030
+      W (2002) Fabrication and surface modification of macro-      Zuk PA, Zhu M, Mizuno H, Huang J, Futrell JW, Katz AJ,
+      porous poly(L-lactic acid) and poly(L-lactic-co-glycolic           Benhaim P, Lorenz HP, Hedrick MH (2001) Multilineage
+      acid) (70/30) cell scaffolds for human skin fibroblast cell        cells from human adipose tissue: implications for cell-
+      culture. J Biomed Mater Res 62:438­446. doi:10.1002/               based therapies. Tissue Eng 7:211­228. doi:10.1089/
+      jbm.10318                                                          107632701300062859
+Yang F, Xu CY, Kotaki M, Wang S, Ramakrishna S (2004)
+      Characterization of neural stem cells on electrospun
+
+                                                                   123
+

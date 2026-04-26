@@ -1,0 +1,837 @@
+Eur Spine J (2008) 17 (Suppl 4):S467­S479
+DOI 10.1007/s00586-008-0745-3
+
+ REVIEW
+
+Scaffolding in tissue engineering: general approaches
+and tissue-specific considerations
+
+B. P. Chan Æ K. W. Leong
+
+Received: 5 May 2008 / Revised: 9 July 2008 / Accepted: 9 July 2008 / Published online: 13 November 2008
+Ó Springer-Verlag 2008
+
+Abstract Scaffolds represent important components for            encounter an enormous variety of choices when selecting
+tissue engineering. However, researchers often encounter         scaffolds for tissue engineering. Hence, this paper reviews
+an enormous variety of choices when selecting scaffolds          the functions of scaffolds, the scaffolding approaches and
+for tissue engineering. This paper aims to review the            the tissue-specific considerations for scaffolding, using
+functions of scaffolds and the major scaffolding approaches      intervertebral disc as an example.
+as important guidelines for selecting scaffolds and discuss
+the tissue-specific considerations for scaffolding, using        Analogous functions of scaffolds and extracellular
+intervertebral disc as an example.                               matrix
+
+Keywords Tissue engineering Á Scaffolding Á Scaffolds Á          Apart from blood cells, most, if not all other, normal cells
+Biomaterials Á Intervertebral disc                               in human tissues are anchorage-dependent residing in a
+                                                                 solid matrix called extracellular matrix (ECM). There are
+Introduction                                                     numerous types of ECM in human tissues, which usually
+                                                                 have multiple components and tissue-specific composition.
+Since its emergence in the mid-1980s, tissue engineering has     Readers are directed to detailed reviews for types of ECM
+continued to evolve as an exciting and multidisciplinary field   [9, 90, 95] and their tissue-specific composition [13, 91,
+aiming to develop biological substitutes to restore, replace or  112]. As for the functions of ECM in tissues, they can be
+regenerate defective tissues [59, 64]. Cells, scaffolds and      generally classified into five categories (Table 1). Firstly,
+growth-stimulating signals are generally referred to as the      ECM provides structural support and physical environment
+tissue engineering triad, the key components of engineered       for cells residing in that tissue to attach, grow, migrate and
+tissues. Scaffolds, typically made of polymeric biomaterials,    respond to signals. Secondly, ECM gives the tissue its
+provide the structural support for cell attachment and sub-      structural and therefore mechanical properties, such as
+sequent tissue development. However, researchers often           rigidity and elasticity that is associated with the tissue
+                                                                 functions. For example, well-organized thick bundles of
+B. P. Chan (&)                                                   collagen type I in tendon are highly resistant to stretching
+Medical Engineering Program,                                     and are responsible for the high tensile strength of tendons.
+Department of Mechanical Engineering,                            On the other hand, randomly distributed collagen fibrils
+The University of Hong Kong,                                     and elastin fibers of skin are responsible for its toughness
+Room 711, Haking Wong Building, Pokfulam Road,                   and elasticity. Thirdly, ECM may actively provide bioac-
+Hong Kong SAR, China                                             tive cues to the residing cells for regulation of their
+e-mail: bpchan@hkucc.hku.hk                                      activities. For examples, the RGD sequence on fibronectin
+                                                                 triggers binding events [47] while the regular topological
+K. W. Leong                                                      pattern stimulates preferred alignment of cells [26, 127].
+Department of Biomedical Engineering, Duke University,           Fourthly, ECM may act as reservoir of growth factors and
+Durham, NC 27708-0281, USA
+
+                                                                                                          123
+S468                                                                                         Eur Spine J (2008) 17 (Suppl 4):S467­S479
+
+Table 1 Functions of extracellular matrix (ECM) in native tissues and of scaffolds in engineered tissues
+
+Functions of ECM in native tissues           Analogous functions of scaffolds in             Architectural, biological, and mechanical features
+                                             engineered tissues                              of scaffolds
+
+1. Provides structural support for cells to  Provides structural support for exogenously Biomaterials with binding sites for cells; porous
+       reside
+                                             applied cells to attach, grow, migrate and structure with interconnectivity for cell
+
+                                             differentiate in vitro and in vivo              migration and for nutrients diffusion;
+
+                                                                                             temporary resistance to biodegradation upon
+
+                                                                                             implantation
+
+2. Contributes to the mechanical properties of Provides the shape and mechanical stability Biomaterials with sufficient mechanical
+
+      tissues                                to the tissue defect and gives the rigidity properties filling up the void space of the defect
+
+                                             and stiffness to the engineered tissues         and simulating that of the native tissue
+
+3. Provides bioactive cues for cells to respond Interacts with cells actively to facilitate  Biological cues such as cell-adhesive binding
+                                                                                                sites; physical cues such as surface topography
+      to their microenvironment              activities such as proliferation and
+
+                                             differentiation
+
+4. Acts as the reservoirs of growth factors and Serves as delivery vehicle and reservoir for Microstructures and other matrix factors retaining
+
+      potentiates their actions              exogenously applied growth-stimulating bioactive agents in scaffold
+
+                                             factors
+
+5. Provides a flexible physical environment to Provides a void volume for vascularization Porous microstructures for nutrients and
+
+      allow remodeling in response to tissue and new tissue formation during                 metabolites diffusion; matrix design with
+
+      dynamic processes such as wound        remodeling                                      controllable degradation mechanisms and rates;
+
+      healing                                                                                biomaterials and their degraded products with
+
+                                                                                             acceptable tissue compatibility
+
+potentiate their bioactivities. For example, heparin sulfate   2. Cyto- and tissue compatibility: Scaffolds should pro-
+proteoglycans facilitate bFGF dimerization and thus                 vide support for either extraneously applied or
+activities [102]. Fifthly, ECM provides a degradable                endogenous cells to attach, grow and differentiate
+physical environment so as to allow neovascularization and          during both in vitro culture and in vivo implantation.
+remodeling in response to developmental, physiological              The biomaterials used to fabricate the scaffolds need to
+and pathological challenges during tissue dynamic pro-              be compatible with the cellular components of the
+cesses namely morphogenesis, homeostasis and wound                  engineered tissues and endogenous cells in host tissue.
+healing, respectively.
+                                                               3. Bioactivity: Scaffolds may interact with the cellular
+   Intuitively, the best scaffold for an engineered tissue          components of the engineered tissues actively to
+should be the ECM of the target tissue in its native state.         facilitate and regulate their activities. The biomaterials
+Nevertheless, the multiple functions, the complex compo-            may include biological cues such as cell-adhesive
+sition and the dynamic nature of ECM in native tissues              ligands to enhance attachment or physical cues such as
+make it difficult to mimic exactly. Therefore, contemporary         topography to influence cell morphology and align-
+concept of scaffolding in tissue engineering is to mimic the        ment. The scaffold may also serve as a delivery vehicle
+functions of native ECM, at least partially. As a result, the       or reservoir for exogenous growth-stimulating signals
+important roles played by scaffolds in engineered tissues, as       such as growth factors to speed up regeneration. In this
+reviewed elsewhere [79, 109], are analogous to the func-            regard, the biomaterials need to be compatible with the
+tions of ECM in native tissues and are associated with their        biomolecules and amenable to an encapsulation tech-
+architectural, biological, and mechanical features (Table 1).       nique for controlled release of the biomolecules with
+Let us consider these functions and features as follows:            retained bioactivity. For example, hydrogels synthe-
+                                                                    sized by covalent or ionic crosslinking can entrap
+1. Architecture: Scaffolds should provide void volume               proteins and release them by a mechanism controlled
+     for vascularization, new tissue formation and remod-           by swelling of the hydrogels [11].
+     eling so as to facilitate host tissue integration upon
+     implantation. The biomaterials should be processed to     4. Mechanical property: Scaffolds provide mechanical
+     give a porous enough structure for efficient nutrient          and shape stability to the tissue defect. The intrinsic
+     and metabolite transport without significantly compro-         mechanical properties of the biomaterials used for
+     mising the mechanical stability of the scaffold.               scaffolding or their post-processing properties should
+     Moreover, the biomaterials should also be degradable           match that of the host tissue. Recent studies on
+     upon implantation at a rate matching that of the new           mechanobiology have highlighted the importance of
+     matrix production by the developing tissue.                    mechanical properties of a scaffold on the seeded cells.
+
+123
+Eur Spine J (2008) 17 (Suppl 4):S467­S479                       S469
+
+     Exerting traction forces on a substrate, many mature          Many types of biomaterials can be used to make porous
+     cell types, such as epithelial cells, fibroblasts, muscle  scaffolds for tissue engineering provided that a fabrication
+     cells, and neurons, sense the stiffness of the substrate   technology compatible with the biomaterial properties is
+     and show dissimilar morphology and adhesive char-          available. Reviewing these biomaterials in detail is out of
+     acteristics [35]. This mechanosensitivity has also been    the scope of this paper and readers are directed to other
+     demonstrated in the differentiation of MSC [36], when      reviews [51, 61, 92]. In general, biomaterials used for
+     stiffness of the agarose gel would determine the           making porous scaffolds for tissue engineering can be
+     differentiation tendency. The hMSC would differenti-       classified into two categories according to their sources,
+     ate along the neuronal, muscle, or bone lineages           namely natural and synthetic biomaterials. Naturally
+     according to stiffness that approximate those of the       occurring biomaterials can be obtained from their natural
+     brain, muscle, and bone tissues, respectively.             sources and processed to make porous scaffolds. These
+                                                                materials can be in their native form, such as ECM from
+Scaffolding approaches in tissue engineering                    allografts and xenografts, or can be in the form of smaller
+                                                                building blocks, which include but not limited to inorganic
+Over the last two decades, four major scaffolding approa-       ceramics such as calcium phosphates and organic polymers
+ches for tissue engineering have evolved (Fig. 1). It would     such as proteins, polysaccharides, lipids and polynucleotides.
+be informative to highlight the working principles and the      Natural biomaterials usually have superb biocompatibility
+characteristics of these approaches (Table 2) before dis-       so that cells can attach and grow with excellent viability.
+cussing the tissue-specific considerations.                     However, one issue with natural materials is their limited
+                                                                physical and mechanical stability and therefore they may
+Pre-made porous scaffolds for cell seeding                      not be suitable for some load-bearing applications. This is
+                                                                the reason why researchers using natural biomaterials are
+Since the birth of ``tissue engineering'' [65, 114], seeding    prompted to develop technologies improving and rein-
+therapeutic cells in pre-made porous scaffolds made of          forcing the mechanical and shape stability of natural
+degradable biomaterials has become the most commonly            biomaterials. Examples include developing composites
+used and well-established scaffolding approach. This            with synthetic material [14] and crosslinking [20, 22, 55].
+approach represents the bulk of biomaterial research in         Another issue is the potential immunogenicity, because
+tissue engineering, leading to enormous efforts in devel-       natural biomaterials from allogenic or xenogenic sources
+opment of different types of biomaterials and fabrication       may be antigenic to the hosts. As a result, researchers are
+technologies.                                                   attracted to technologies such as removal of telopeptides in
+                                                                procollagen [100] for reduction of immunogenicity.
+
+Fig. 1 Schematic diagram
+showing different scaffolding
+approaches in tissue engineering
+
+                                                                123
+S470                                                                                         Eur Spine J (2008) 17 (Suppl 4):S467­S479
+
+Table 2 Characteristics of different scaffolding approaches in tissue engineering
+
+Scaffolding approach (1) Pre-made porous scaffolds (2) Decellularized extracellular          (3) Confluent cells      (4) Cell encapsulated
+                                                                                             with secreted            in self-assembled
+                for cell seeding                      matrix for cell seeding                extracellular matrix     hydrogel
+
+Raw materials   Synthetic or natural                  Allogenic or xenogenic tissues         Cells                    Synthetic or natural
+                   biomaterials                                                                                          biomaterials able to
+                                                                                                                         self-assemble into
+                                                                                                                         hydrogels
+
+Processing or   Incorporation of porogens in          Decellularization technologies         Secretion of             Initiation of self-
+   fabricating     solid materials; solid                                                       extracellular matrix     assembly process by
+   technology      free-form fabrication                                                        by confluent cells       parameters such as
+                   technologies; techniques                                                                              pH and temperature
+                   using woven
+                   or non-woven fibers
+
+Strategy to combine Seeding                           Seeding                                Cells present before Cells present before
+   with cells                                                                                   extracellular matrix self-assembly
+                                                                                                secretion
+
+Strategy to transfer Implantation                     Implantation                           Implantation             Injection
+   to host tissues
+
+Advantages      Most diversified choices for          Most nature-simulating scaffolds       Cell-secreted            Injectable, fast and
+                   materials; precise design for         in terms of composition and            extracellular matrix     simple one-step
+                   microstructure and                    mechanical properties                  is biocompatible         procedure; intimate
+                   architecture                                                                                          cell and material
+                                                                                                                         interactions
+
+Disadvantages   Time consuming cell seeding           Inhomogeneous distribution of          Need multiple            Soft structures
+                   procedure; inhomogeneous              cells, difficulty in retaining all     laminations
+                   distribution of cells                 extracellular matrix,
+                                                         immunogenicity upon incomplete
+                                                         decellularization
+
+Preferred applications Both soft and hard tissues;    Tissues with high ECM content;         Tissues with high        Soft tissues
+                                load-bearing tissues     load-bearing tissues                   cellularity,
+                                                                                                epithelial tissues,
+                                                                                                endothelial tissues,
+                                                                                                thin layer tissues
+
+Synthetic biomaterials can be generally categorized into            50, 54, 107, 109, 124, 125]. In general, these technologies
+inorganic such as bioglasses, and organic such as synthetic         can be classified into (1) processes using porogens in
+polymers. It is generally believed that synthetic biomate-          biomaterials, (2) solid free-form or rapid prototyping
+rials have better controlled physical and mechanical                technologies and (3) techniques using woven or non-woven
+properties and can be used to tailor for both soft and hard         fibers. In the first category [25], solid materials either in
+tissues. Nevertheless, for synthetic biomaterials, biocom-          solids or dissolved in solvents, are incorporated with por-
+patibility becomes the major issue because cells may have           ogens, which could be gases such as carbon dioxide,
+difficulties in attachment and growth on these materials.           liquids such as water or solids such as paraffin. The mix-
+Therefore, many processes modifying the surface and bulk            tures are processed and then cast or extruded. Porogens are
+properties have been developed to improve their biocom-             removed after fabrication using methods such as sublima-
+patibility [78]. Examples include surface laser engineering         tion, evaporation and melting to leave behind a porous
+[63] and coating with natural biomaterials such as collagen         structure in the scaffold. Example techniques include sol-
+[16]. With the development of composites materials, the             vent casting and particulate leaching, gas foaming, freeze-
+combinations of biomaterials for making porous scaffolds            drying and phase separation [124]. In the second category,
+have become enormous. Multiple types of biomaterials                hierarchical porous structures are manufactured by
+with distinct properties can be blended and fabricated to be        sequential delivery of material and/or energy needed to
+tailored for a particular application.                              bond the materials to preset points in space [50]. Some
+                                                                    solid free-form fabrication technologies [34, 50, 54] such
+   Over the last decade, development of fabrication tech-           as selective laser sintering, stereolithography and 3D
+nologies for porous scaffolds has been an intensive area of         printing depend on precise delivery of light or heat energy
+research. Readers are also directed to several excellent            in a scanner system to points of space in the material bed so
+review articles for various fabrication technologies [25, 34,
+
+123
+Eur Spine J (2008) 17 (Suppl 4):S467­S479                       S471
+
+as to bond or crosslink the materials to give solid structures  lysed by physical treatments such as freeze-thaw cycles or
+in an otherwise soluble bed of materials. Some solid free-      ionic solutions such as hypo or hypertonic solutions before
+form fabrication technologies [50] such as wax printing         separating the cellular components from the ECM by
+rely on simultaneous delivery of solid materials and            enzymatic methods such as trypsin/EDTA treatment. The
+removable supporting materials in a layer-by-layer printing     cytoplasmic and nuclear cellular components will then be
+manner. In the third category, woven and non-woven fiber        solubilized and removed by a handful choice of detergents.
+structures can be piled together and bonded using thermal       The process parameters need to be optimized to aid com-
+energy or adhesives to give a porous meshwork using             plete decellularization with minimal disturbance on
+techniques such as fiber bonding [124], or fibers can be        biochemical composition and mechanical properties of the
+generated by the electrospinning technique, in which a high     ECM. Decellularized ECM can be used for homologous
+voltage is injected to a polymer solution where the elec-       functions when the decellularized ECM is used to replace
+trostatic forces are built up to overcome the surface tension   an analogous structural tissue that has been damaged. An
+of the polymer solution and therefore form a spinning fiber     example is to decellularize vessels as allogenic vascular
+jet [18, 26, 27, 32, 89, 107].                                  grafts [15, 101]. Decellularized ECM can also be used for
+                                                                non-homologous functions when it is used for a purpose
+   This scaffolding approach using pre-made porous scaf-        different from which it fulfills in its native state, or in a
+folds has a number of advantages. Firstly, this approach has    location of the body where such structural function does not
+the most diversified choice for biomaterials. Almost all        normally occur. Examples are to use small intestinal sub-
+biomaterials ranged from ceramics to hydrogels have             mucosa (SIS) for vascular graft, tendon, dura mater, skin
+suitable fabrication technologies. Secondly, relatively         and other tissues [7, 8, 38, 49, 101] and to use amnion
+precise designs on architecture and microstructure of the       membrane for peripheral nerve regeneration [77]. The
+scaffolds can be incorporated by this approach. Therefore,      major advantage of this scaffolding approach is the most
+the physicochemical properties of the porous scaffolds are      close-to-nature mechanical and biological properties of the
+easily engineered in order to mimic the physical properties     decellularized ECM. Moreover, apart from the excellent
+of native ECM in the target tissues. This is especially         biocompatibility of the natural ECM, growth factors pre-
+advantageous for making load-bearing tissues where the          served in the decellularized matrix may further facilitate
+mechanical properties are important. Nevertheless, this         cell growth and remodeling [9]. Nevertheless, cell seeding
+approach also has certain disadvantages. In particular, post-   in decellularized ECM may also lead to inhomogeneous
+fabrication cell-seeding to porous scaffolds is time-con-       distribution while incomplete removal of cellular compo-
+suming and inefficient because of the limited penetration       nents may elicit immune reactions upon implantation [129].
+ability of cells into the scaffolds. This usually leads to
+inhomogeneous distribution of cells in the scaffolds and        Cell sheets with self-secreted ECM
+therefore heterogeneous properties in the engineered tis-
+sues. As a result, various efforts such as agitation,           Cell sheet engineering represents an approach where cells
+perfusion and enlarged pore size are needed to enhance cell     secrete their own ECM upon confluence and are harvested
+seeding efficiency and these methods are not free of            without the use of enzymatic methods. This is achieved by
+problems, to list a few, low cell viability and high cost.      culturing cells on thermo-responsive polymer, such as
+                                                                poly(N-isopropylacrylamide) coated culture dish until
+Decellularized ECM from allogenic or xenogenic                  confluence. The confluent cell sheet is then detached by
+tissues for cell seeding                                        thermally regulating the hydrophobicity of the polymer
+                                                                coatings without enzymatic treatment. Such approach can
+Acellular ECM processed from allogenic or xenogenic tis-        be repeated to laminate multiple single cell layers to form
+sues are the most nature-simulating scaffolds, which have       thicker matrix. This technology is pioneered by Japanese
+been used in tissue engineering of many tissues including       group [84, 85, 110] and has been systemically applied to a
+heart valves [62], vessels [15], nerves [44], tendon and        number of applications such as cornea [82] in clinical trials
+ligament [56]. This scaffolding approach removes the all-       and myocardium [106] in preclinical trials. The same
+ogenic or xenogenic cellular antigens from the tissues as       approach has been modified and improved to produce
+they are the sources for immunogenicity upon implantation       patterned substrates for thicker tissue fabrication and for
+but preserves the ECM components, which are conserved           injectable applications [57]. Thermosensitive chitosan has
+among species and therefore well tolerated immunologi-          also been investigated to create an aligned cell sheet [32].
+cally. Specialized decellularization techniques are             Cell sheet engineering approach is excellent for epithelium,
+developed to remove cellular components and this is usually     endothelium and cell-dense tissues [111, 123] as the for-
+achieved by a combination of physical, chemical and             mation of cell sheets require cells to grow into confluence
+enzymatic methods [9, 40]. In brief, cell membranes are
+
+                                                                123
+S472                                                              Eur Spine J (2008) 17 (Suppl 4):S467­S479
+
+at high density such that cells can form tight junctions with     to large molecules such as antibodies and cellular antigens
+each other and secrete ECM of their own. High cell density        but permeable to nutrients such as oxygen and glucose,
+and close association is a characteristic of epithelium and       metabolites such as carbon dioxide and lactic acid, and
+endothelium. Therefore, corneal epithelium and endothe-           secreted therapeutic biomolecules from the encapsulated
+lium, vessel endothelium and tracheal epithelium are good         cells such as insulin from pancreatic beta cells. In case of a
+candidates of this approach. Another advantage of the cell        semi-permeable membrane, the encapsulated cells should
+sheet engineering approach is that the laminated layers           have the ability to maintain viability and functionality in
+resulted in rapid neovascularization unlike transplantation       aggregates even though there is only solid anchorage sup-
+of thick constructs with cell-seeded scaffolds. A recent          port limited to the luminal surface. Pancreatic cells,
+report reviewed other advantages of the cell sheet engi-          hepatocytes and haematopoietic cells are of this type. In case
+neering approach such as easy harvesting procedure,               of a homogenous solid mass, where the entrapped cells are
+possibility of sutureless transplantation, and even distri-       closely interacting with the biomaterials, the biomaterials
+bution of cells in the sheet without mass transfer problem        should have good biocompatibility enabling cellular
+[31]. Nevertheless, one disadvantage of this approach is          attachment and growth. Nevertheless, the commonly used
+that it is difficult to construct thick tissues as each layer is  encapsulating materials such as alginate and agarose have
+around 30 lm thick. Multisurgeries such as 10 layers to           limited ability to support cell attachment growth and dif-
+form a 300 lm thick myocardial patch are required [104,           ferentiation, resulting in low cell viability and growth [42,
+105]. This is less clinically feasible as multiple surgeries in   83, 131]. In many cases, a biomaterial with better biocom-
+patients are unlikely and therefore preformed patches are         patibility such as collagen must be supplemented for
+needed. The other disadvantage or perhaps limitation of           improvement in cell viability [10, 42]. Collagen is a natural
+cell sheet engineering approach is that constructing ECM          biocompatible and biodegradable material [126] and can be
+rich tissues and hypocellular tissue such as bones, cartilage     reconstituted into fibrous structures simulating the native
+and intervertebral disc are unlikely as the amount of ECM         ECM in tissues. Recently, a microencapsulation system
+secreted upon cell confluence is severely limited. In             immobilizing living cells within reconstituted collagen fiber
+another word, tissues with rich ECM for load bearing              meshwork has been established [19] and the collagen
+purposes are unlikely to be fabricated by a cell sheet            meshwork is able to provide a bio-mimetic scaffold sup-
+engineering approach [123].                                       porting cell growth, migration [21], therapeutic protein
+                                                                  secretion [122] and stem cell differentiation [52]. Moreover,
+Cell encapsulation in self-assembled hydrogel matrix              chemical approaches have been used to design self-assem-
+                                                                  bled peptides [39, 128] and these biomimetic peptides can
+Encapsulation is a process entrapping living cells within the     also be used to entrap cells [117]. One important feature of
+confines of a semi-permeable membrane or within a                 encapsulation is that the biomaterials used are able to self-
+homogenous solid mass [66, 86, 87, 113]. The biomaterials         assemble from liquid monomers to solid polymer meshwork
+used for encapsulation are usually hydrogels, which are           upon initiation, which is usually pH, temperature, ionic
+formed by covalent or ionic crosslinking of water-soluble         strength and light controlled. To list a few examples, algi-
+polymers. Many types of biomaterials including natural and        nate solidifies when its monomer solution is exposed to
+synthetic hydrogels can be used for encapsulation provided        divalent ion solutions such as calcium chloride, where the
+that the conditions inducing the hydrogel formation or the        calcium ion crosslinks the alginate; collagen monomers
+polymerization are compatible with living cells. Encapsu-         polymerize when they are switched from an acidic pH and a
+lation has been developed over several decades and the            low temperature to a neutral pH and a body temperature;
+predominating use is for immunoisolation during allogenic         ethylene glycol modified with acrylic moiety starts to
+or xenogenic cell transplantation [87, 113]. Naturally            polymerize when it is exposed to UV light in the presence of
+occurring polysaccharides derived from algae, sodium              a photo-initiator [81]. This unique feature combines the
+alginate is the most commonly used material while other           scaffold fabrication and the cell seeding into one-step pro-
+natural materials such as agarose [10] and chitosan [130] and     cedure as cells can be mixed with the liquid biomaterials
+synthetic materials such as poly (ethylene glycol) (PEG)          before initiation of polymerization. The advantages of this
+[83] and polyvinylalcohol (PVA) [58] are also used. The           approach include simple one-step procedure, homogenous
+most well-known application is xenogenic pancreatic cell          cell distribution in the hydrogel and excellent cell viability.
+transplantation for diabetes [41, 66] while applications for      Moreover, this self-assembled approach enables injectable
+other disorders such as CNS insufficiency [86] and liver          application where the polymerization can be initiated after
+failure [24] are also reported. For immunoisolation to work,      injection, leading to ``setting'' of the hydrogel after they are
+biomaterials encapsulating the cells need to be crosslinked       injected into the defective tissues. This represents a mini-
+or processed to become impenetrable to cells, impermeable         mally invasive approach of tissue engineering and is
+
+123
+Eur Spine J (2008) 17 (Suppl 4):S467­S479                                                                               S473
+
+advantageous when the defect is irregularly shaped. Because     the right matrix components in particular proteoglycans,
+of the injectable feature of the scaffold, this approach is     which are responsible for the water absorbing function of
+sometimes referred as injectable scaffolding or in situ tissue  the nucleus matrix. At this early stage, matrix loss is still
+engineering. Nevertheless, hydrogel materials in this           limited or partial and there is no need to replace the bulk
+approach used usually have poor mechanical properties. As       matrix. As a result, minimally invasive treatments such as
+a result, this scaffolding approach is seldom used for tissues  injecting growth factors to stimulate the NP cells to syn-
+with load bearing functions.                                    thesize proteoglycans [74] or injecting cells able to
+                                                                synthesize appropriate ECM such as bone marrow mes-
+Scaffolding in intervertebral disc tissue engineering           enchymal stem cells [48, 67, 108] are the most commonly
+                                                                proposed. Nevertheless, one important inadequacy of this
+Selecting the scaffolding approach for tissue engineering is    approach is that the high disc pressure and the aqueous
+tissue- and application-specific. Intervertebral disc is cho-   nature of the cell suspension usually result in depletion of
+sen as an illustrating example in this review. Extensive        the local availability of cells [5, 53]. As a result, use of
+efforts have been made to search for biological therapeutics    injectable carriers is necessary to effectively deliver cells
+for disc degeneration of different severity [48, 103].          into the degenerative NP space. Therefore, self-assembled
+Readers are directed to excellent reviews on structural         hydrogels able to suspend and deliver cells in solution via
+functional relationship and pathophysiological aspects of       injection but which can solidify after injection presents an
+IVD [1, 12, 116] and excellent reviews on potential bio-        appropriate scaffolding approach. An example is to deliver
+logical therapies including growth factor, cell and tissue      mesenchymal stem cells in hyaluronan gel [30]. Never-
+engineering approaches [3, 6, 37, 43, 88]. In this review,      theless, these hydrogel carriers still have insufficient
+existing scaffolding approaches for disc regeneration and       viscosity and stiffness resulting in immediate loss of the
+their insufficiencies, the unique considerations of inter-      majority of injected cells ([96%) due to back-flow via the
+vertebral disc and the future directions of scaffolding in      injection path [30]. This has been observed in our own
+IVD tissue engineering will be reviewed (Table 3).              group using other hydrogels (unpublished work). There-
+                                                                fore, better injectable approaches such as carriers with
+   In early disc degeneration, disc cells in particular the     higher viscosity and stiffness, and in situ welding tech-
+nucleus pulposus (NP) cells become less capable to syn-         niques such as laser welding, photochemical welding and
+thesize the proper ECM. The gelatinous NP becomes more          use of biological glues at the injection site should be
+fibrous with reduced water content. The primary to be           explored in order to prevent leakage and extrusion and thus
+repaired should be the capability of the NP cells to secrete    improve the effectiveness of the injectable therapy.
+
+Table 3 Existing scaffolding approaches, insufficiencies and future directions for IVD tissue engineering
+
+Stage of disc Existing scaffolding approaches         Insufficiencies                       Proposed future directions
+degeneration
+
+Early      Injection of cells with and without        Poor engraftment and viability        Improved viscosity and stiffness of carriers
+                                                                                               to reduce leakage and extrusion;
+degeneration hydrogel carriers (Approach 4)                                                    welding or bioglue techniques to prevent
+                                                                                               leakage and extrusion
+
+Mid-stage  Implantation of cell-seeded pre-made       Lack of in vivo model; extrusion      Welding or bioglue techniques to prevent
+                                                                                               leakage and extrusion; technologies to
+degeneration porous scaffolds (Approach 1)            of implants under loading                enhance the mechanical properties of
+                                                                                               scaffolds without compromising the cell
+           Implantation of cell-seeded                                                         viability
+
+           decellularized ECM (Approach 2)
+
+           Injection of cells with hydrogel carriers
+
+           to replace loss in matrix (Approach 4)
+
+Late       Allogenic whole disc for total disc        Short-term maintenance of disc        Better graft preservation technologies to
+                                                         height and hydration;                 maintain matrix composition; scaffolds
+degeneration replacement; (Approach 2) Building          degeneration of allograft in long     providing appropriate microenvironment
+                                                         term; lack of remodeling cells        for cells to remodel upon mechanical
+           interface between multiple tissue                                                   stimulationImprovement of
+                                                                                               proteoglycan retention in scaffolds for
+           components                                                                          nucleus replacements; improvement of
+                                                                                               scaffold mechanical properties for stable
+                                                                                               annulus replacements; combinatory
+                                                                                               approach for IVD scaffolding;
+                                                                                               engineering of stable tissue interfaces
+
+                                                                                                                        123
+S474                                                            Eur Spine J (2008) 17 (Suppl 4):S467­S479
+
+   As the disc degeneration progresses, more ECM and               The efforts using the second scaffolding approach, de-
+structural changes such as proteoglycan and collagen            cellularized ECM for nucleus replacement is minimal. Only
+degradation involving NP and sometimes annulus fibrosus         one report uses porcine SIS as the scaffold for human disc
+(AF) ensue, leading to disc height reduction. At this stage,    cells [68]. Cell survival and enhanced matrix deposition
+replacement of cells with capacity to synthesize ECM and        have been reported in vitro [68]. In a pilot animal study
+compensation of the substantial loss of matrix components       using SIS in nucleotomized baboons [69], MRI suggested a
+are appropriate therapeutic approaches. This can be             higher water content in the treatment groups compared to
+achieved by implanting cell-seeded pre-made scaffolds           the nucleotomy group and some tissue remodeling in the
+(approach 1) or decellularized ECM (approach 2) or              disc space in the group with bone marrow-soaked SIS.
+injecting cells encapsulated in self-assembled hydrogels        Moreover, SIS has good tissue biocompatibility in the disc
+(approach 4) into the intradiscal space. In reviewing the       space and seemed to have biodegraded over the six-month
+existing scaffolding approaches for IVD tissue engineering,     period. Nevertheless, a sizable study with more animals is
+approach 1 using pre-made scaffold is most common. A            needed before a conclusive statement on the efficacy of
+wide range of biomaterials dominated by natural bioma-          using SIS as nucleus replacement can be made. There is no
+terials has been used for nucleus replacement. These            study in decellularizing allogenic or xenogenic nucleus or
+materials include collagen [121], atellocollagen [98, 99],      annulus for replacement at all. Nevertheless, there is one
+alginate [70, 76], gelatin [118], chitosan [33], collagen/      study evaluating the mechanical properties of decellularized
+glycosaminoglycan [97], collagen/hyaluronan [2] and poly-       temporomandibular joint disc [73]. Although the immune
+L-lactic acid [94]. Reviews for nucleus replacements have       privileged status of IVD, which is avascular, allows the
+been reported elsewhere [29, 103]. On the other hand,           application of allografts without decellularization, research
+biomaterials used for annulus replacement are dominated         efforts in decellularizing nucleus and annulus grafts from
+by synthetic biomaterials including silk [23], polycapro-       xenogenic sources for scaffolding should be encouraged
+lactone [80] and its derivatives [118], polyglycolic acid/      because allografts are not always available. Preservation of
+polylactic acid [76] and bioglass [120] with a few natural      proteoglycans will, however, be challenging. Recently,
+biomaterials such as collagen/hyaluronan [2]. In most if not    there is a surge in number of papers using injectable nucleus
+all cases, freeze-drying has been employed as the fabrica-      replacement, which is based on the fourth scaffolding
+tion method to create porous structures. In most nucleus        approach, where cells are encapsulated in self-assembled
+and annulus replacement strategies, survival and growth of      biomaterials and injected to the disc space before the gel
+seeded cells, and enhanced synthesis of collagen II and         ``sets''. Mesenchymal stem cells and disc cells have been
+proteoglycans by these cells are reported [2, 23, 70, 76, 94,   encapsulated in thermosensitive hydroxybutyl chitosan gel
+97, 118, 120]. Nevertheless, almost all studies using the       and cell proliferation and matrix production has been
+pre-made scaffold approach are in vitro while only a few        demonstrated [33]. Atellocollagen type II, hyaluronan and
+are in vivo [76]. Subcutaneous implantation was used and        aggrecan gels support NP viability [45]. Another study
+the implant was never exposed to physiological loading.         using atellocollagen shows that atellocollagen is better than
+Recently, there is one ex vivo study reporting collagen         alginate in supporting NP cells with better water and pro-
+nucleus replacement in bovine discs under mechanical            teoglycan retention [98]. Nevertheless, most studies on
+loading [121]. Although restoration of disc height is pos-      injectable modality using approach 4 are in vitro. Encour-
+sible, extrusion of the whole implant after a few loading       aging in vivo studies have been relatively scarce. In a rabbit
+cycles have been reported. As a result, maintaining annulus     model, MSCs were loaded in solution atellocollagen [99]
+integrity by sealing or welding methods after nucleotomy        and injected to degenerative discs. Disc degeneration is
+or injection or insertion of nucleus replacements is crucial.   effectively arrested by the treatment, and evidence of atel-
+As for annulus replacement, the intrinsic mechanical            locollagen supporting cell growth, differentiation and
+properties of the annulus replacements have to be compa-        matrix production is demonstrated. In a pig model, MSCs
+rable to that of the native disc in order to be able to resist  were loaded with hyaluronan derivatives [93] and injected
+physiological loading. This is extremely challenging            into the nucleotomized discs. Close similarity in disc
+because the native annulus fibrosis serves a highly             biconvex structure and viable chondrocytes like cells were
+demanding and complex mechanical function. In existing          reported [93]. Further enhancement in the swelling and
+literature, only a few annulus replacement strategies men-      mechanical stability of the scaffolds for nucleus or annulus
+tioned enhanced mechanical properties using composites          replacement such as crosslinking without compromising
+materials [118] and electrospun fibers with alignment [80].     cell viability [45] should be encouraged as these physical
+As a result, further efforts in enhancing the mechanical        properties favor the restoration and maintenance of disc
+integrity of scaffolds for annulus replacement should be        height. Evaluation of the mechanical properties of inject-
+encouraged.                                                     able polymers such as hyaluronic acid gel [28] and
+
+123
+Eur Spine J (2008) 17 (Suppl 4):S467­S479                       S475
+
+polyethylene glycol [115] against different engineering         the interface problems [4, 46]. A few unique considerations
+parameters should also be encouraged as replacing the           should be highlighted as they are the most challenging tasks
+mechanical function is equally important as replacing the       for tissue engineering. Firstly, IVD is a complex tissue with
+cellular function in matrix secretion in this stage of          multiple tissue components. It is unlikely to utilize single
+degeneration.                                                   biomaterial and single scaffolding approach. Maintaining
+                                                                the differential hydration and mechanical properties of the
+   At the advanced stage of disc degeneration, structural       nucleus and the annulus is important to the maintenance of
+collapse and eventual loss of disc function in resisting        the disc height and its load-resisting properties. Engineering
+loading set in motion. At this stage, probably only an          designs to better retain the water absorbing capacity in the
+engineered IVD tissue idealized in the discussion above can     biomaterials used for nucleus replacement and engineering
+do the job. Decellularized IVD allograft is theoretically the   designs to better maintain the enclosure of the swelling
+best scaffold for late stage replacement. To date, there is no  nucleus within the confines of the annulus replacement
+decellularization study in intervertebral disc, but there are   warrant further attention. Secondly, IVD involves multiple
+several in vivo studies transplanting undecellularized allo-    tissue interfaces, which are essential for load transfer and
+genic discs. A few groups have also transplanted                distribution between hard and soft tissues [17, 119] and are
+cryopreserved allogenic disc grafts in dogs [60, 75]. Nev-      crucial for maintaining proper disc functions. Chondrocytes
+ertheless, dramatic decrease in cellular activity has been      seeded between a pre-made bone scaffold and NP cells
+reported, indicating that preservation of cellular synthetic    resulted in the formation of a cartilage-like layer between
+and remodeling activities is important for long term via-       bone construct and nucleus cells [46] while chondrocytes
+bility of the grafts. Furthermore, degenerative changes have    supplemented with osteogenic differentiation signal led to
+been reported at 1 year post-implantation, also suggesting      the formation of a calcified zone between bone and cartilage
+the need to preserve better cellular remodeling capacity.       interface [4]. Both studies demonstrated benefits in
+Larger animal model in monkeys [71, 72] showed that fresh       mechanical performance, in particular improving the
+frozen allografts can maintain the mechanical properties        interfacial shear stress. This suggests that engineering the
+and some degree of cell metabolism, but severe degenera-        interfaces among different tissue components should
+tion has been observed in 2 years time, associating with        deserve special attention and more enthusiastic research
+decreased biochemical contents of the disc. This study also     efforts.
+suggests the need to preserve or supplement viable cells
+with remodeling capacity that is able to maintain long term        Disc tissue engineering is by default multidisciplinary,
+merits of allografting. Very recently, this group conducted a   and the scaffolding approach is just one of the disciplines
+first allograft disc segment transplantation study in human     involved. Its success obviously relies on the corroborative
+[96]. The transplanted segments were able to preserve           efforts from other aspects. For examples, delineation of the
+motion and hydration for at least 5 years with partially        etiology of disc degeneration, understanding of the disc
+recovered disc height and improved neurological symp-           nutrition mechanism, cell sourcing, identification of disc
+toms, and with no immunoreaction. Nevertheless, mild            specific markers, growth-stimulating and differentiation-
+degenerative changes have been found after years of follow-     stimulating signals, etc. are also important aspects in
+up, suggesting again that repopulation or supplementation       achieving better functional outcomes of IVD tissue
+of live cells with matrix remodeling capacity is necessary      engineering.
+for long term functionality of allografts. As a result, a
+promising direction is to develop better graft preservation     Conclusion
+technologies for maintaining the disc cell remodeling
+capacity. Alternatively, supplementing stem cells or other      Scaffolds in engineered tissues are to mimic the ECM in
+cells with the ability to respond to physiological challenges   native tissues, at least partially. Unsurprisingly, their
+in terms of synthesis and secretion of appropriate ECM into     functions should mimic the ECM of the target tissue. Over
+the allograft disc space is also promising. In this regard,     the past few decades, four major scaffolding approaches,
+searching for injectable carriers to provide an appropriate     namely implanting cell-seeded pre-made porous scaffolds,
+microenvironment to the encapsulated cells for proper           implanting cell-seeded decellularized allograft or xenograft
+remodeling response toward mechanical stimulation               ECM, implanting laminated cell sheets with secreted ECM
+deserves more attention. Apart from using the allograft,        and injecting cell encapsulated self-assembled hydrogels,
+building an implantable IVD with multiple tissue compo-         have been developed. Each approach has its own pros and
+nents with mechanical properties comparable with the            cons and preferred tissue engineering applications. In
+native disc presents another possibility. Activities with this  planning for tissue engineering for a complex tissue such as
+line of research have been scarce, and only a few groups are    IVD, these scaffolding approaches serve as important
+attempting to build multiple tissue components and to target
+
+                                                                123
+S476                                                                                                 Eur Spine J (2008) 17 (Suppl 4):S467­S479
+
+guidelines and can be used in combinations. Moreover,                    15. Borschel GH, Huang YC, Calve S, Arruda EM, Lynch JB, Dow
+tissue-specific considerations in relation to the extent of                  DE, Kuzon WM, Dennis RG, Brown DL (2005) Tissue engi-
+injury, the unique structural functional relationship, mul-                  neering of recellularized small-diameter vascular grafts. Tissue
+tiple tissue composition and interfaces in IVD deserve                       Eng 11(5­6):778­786
+special attention.
+                                                                         16. Brodie JC, Goldie E, Connel G, Merry J, Grant MH (2005)
+Acknowledgments This work was supported by grant from AO-                    Osteoblast interactions with calcium phosphate ceramics modi-
+Spine to Leong and Chan (AOSBRC-07-06), support from NIH                     fied by coating with type I collagen. J Biomed Mater Res A
+(EB003447) to Leong, and grants from Research Grant Council                  73(4):409­421
+(RGC), Innovation and Technology Commission (ITC) of the Hong
+Kong Government to Chan.                                                 17. Broom ND, Poole CA (1982) A functional-morphological study
+                                                                             of the tidemark region of articular cartilage maintained in a non-
+Conflict of interest statement None of the authors has any                   viable physiological condition. J Anat 135(Pt 1):65­82
+potential conflict of interest.
+                                                                         18. Chai C, Leong KW (2007) Biomaterials approach to expand and
+References                                                                   direct differentiation of stem cells. Mol Ther 15(3):467­480
+
+   1. Adams MA, Roughley PJ (2006) What is intervertebral disc           19. Chan BP, Chan GCF, Wong HL, Cheung PT, Chan D, Cheah K
+      degeneration, and what causes it? Spine 31(18):2151­2161               (2007b) Cell­Matrix Microsphere, Associated Products, Meth-
+                                                                             ods for Preparation and Applications. Regular Patent
+   2. Alini M, Li W, Markovic P, Aebi M, Spiro RC, Roughley PJ               Application No. 60/801,975 (filed on 19 May 2007)
+      (2003) The potential and limitations of a cell-seeded collagen/
+      hyaluronan scaffold to engineer an intervertebral disc-like        20. Chan BP, Hui TY, Chan OC, So KF, Lu W, Cheung KM, Sa-
+      matrix. Spine 28(5):446­454                                            lomatina E, Yaroslavsky A (2007) Photochemical cross-linking
+                                                                             for collagen-based scaffolds: a study on optical properties,
+   3. Alini M, Roughley PJ, Antoniou J, Stoll T, Aebi M (2002) A             mechanical properties, stability, and hematocompatibility. Tis-
+      biological approach to treating disc degeneration: not for today,      sue Eng 13(1):73­85
+      but maybe for tomorrow. Eur Spine J 11(Suppl 2):S215­S220
+                                                                         21. Chan BP, Hui TY, Yeung CW, Li J, Mo I, Chan GCF (2007)
+   4. Allan KS, Pilliar RM, Wang J, Grynpas MD, Kandel RA (2007)             Self-assembled collagen­human mesenchymal stem cell
+      Formation of biphasic constructs containing cartilage with a           microspheres for regenerative medicine. Biomaterials 28:4652­
+      calcified zone interface. Tissue Eng 13(1):167­177                     4666
+
+   5. Allers C, Sierralta WD, Neubauer S, Rivera F, Minguell JJ,         22. Chan BP, So K-F (2005) Photochemical crosslinking improves
+      Conget PA (2004) Dynamic of distribution of human bone                 the physicochemical properties of collagen scaffolds. J Biomed
+      marrow-derived mesenchymal stem cells after transplantation            Mater Res A 75(3):689­701
+      into adult unconditioned mice. Transplantation 78(4):503­508
+                                                                         23. Chang G, Kim HJ, Kaplan D, Vunjak-Novakovic G, Kandel RA
+   6. Anderson DG, Risbud MV, Shapiro IM, Vaccaro AR, Albert TJ              (2007) Porous silk scaffolds can be used for tissue engineering
+      (2005) Cell-based therapy for disc repair. Spine J 5(6 Sup-            annulus fibrosus. Eur Spine J 16(11):1848­1857
+      pl):297S­303S
+                                                                         24. Chang TM (1992) Hybrid artificial cells: microencapsulation of
+   7. Ansaloni L, Cambrini P, Catena F, Di Saverio S, Gagliardi S,           living cells. ASAIO J 38(2):128­130
+      Gazzotti F, Hodde JP, Metzger DW, D'Alessandro L, Pinna AD
+      (2007) Immune response to small intestinal submucosa (surgi-       25. Chevalier E, Chulia D, Pouget C, Viana M (2008) Fabrication of
+      sis) implant in humans: preliminary observations. J Invest Surg        porous substrates: a review of processes using pore forming
+      20(4):237­241                                                          agents in the biomaterial field. J Pharm Sci 97(3):1135­1154
+
+   8. Ansaloni L, Catena F, Gagliardi S, Gazzotti F, D'Alessandro L,     26. Chew SY, Mi R, Hoke A, Leong KW (2008) The effect of the
+      Pinna AD (2007) Hernia repair with porcine small-intestinal            alignment of electrospun fibrous scaffolds on Schwann cell
+      submucosa. Hernia 11(4):321­326                                        maturation. Biomaterials 29(6):653­661
+
+   9. Badylak SF (2004) Xenogeneic extracellular matrix as a scaf-       27. Chew SY, Wen Y, Dzenis Y, Leong KW (2006) The role of
+      fold for tissue reconstruction. Transpl Immunol 12(3­4):               electrospinning in the emerging field of nanomedicine. Curr
+      367­377                                                                Pharm Des 12(36):4751­4770
+
+ 10. Batorsky A, Liao J, Lund AW, Plopper GE, Stegemann JP               28. Cloyd JM, Malhotra NR, Weng L, Chen W, Mauck RL, Elliott DM
+      (2005) Encapsulation of adult human mesenchymal stem cells             (2007) Material properties in unconfined compression of human
+      within collagen-agarose microenvironments. Biotechnol Bioeng           nucleus pulposus, injectable hyaluronic acid-based hydrogels and
+      92(4):492­500                                                          tissue engineering scaffolds. Eur Spine J 16(11):1892­1898
+
+ 11. Berger J, Reist M, Mayer JM, Felt O, Peppas NA, Gurny R             29. Coric D, Mummaneni PV (2008) Nucleus replacement tech-
+      (2004) Structure and interactions in covalently and ionically          nologies. J Neurosurg Spine 8(2):115­120
+      crosslinked chitosan hydrogels for biomedical applications. Eur
+      J Pharm Biopharm 57(1):19­34                                       30. Crevensten G, Walsh AJ, Ananthakrishnan D, Page P, Wahba
+                                                                             GM, Lotz JC, Berven S (2004) Intervertebral disc cell therapy
+ 12. Bibby SR, Jones DA, Lee RB, Yu J, Urban JPG (2001) The                  for regeneration: mesenchymal stem cell implantation in rat
+      pathophysiology of the intervertebral disc. Joint Bone Spine           intervertebral discs. Ann Biomed Eng 32(3):430­434
+      68(6):537­542
+                                                                         31. da Silva RM, Mano JF, Reis RL (2007) Smart thermoresponsive
+ 13. Bissell DM, Choun MO (1988) The role of extracellular matrix            coatings and surfaces for tissue engineering: switching cell-
+      in normal liver. Scand J Gastroenterol Suppl 151:1­7                   material boundaries. Trends Biotechnol 25(12):577­583
+
+ 14. Boccaccini AR, Blaker JJ (2005) Bioactive composite materials       32. Dang JM, Leong KW (2007) Myogenic induction of aligned
+      for tissue engineering scaffolds. Expert Rev Med Devices               mesenchymal stem cell sheets by culture on thermally respon-
+      2(3):303­317                                                           sive electrospun nanofibers. Adv Mater 19(19):2775­2779
+
+123                                                                      33. Dang JM, Sun DD, Shin-Ya Y, Sieber AN, Kostuik JP, Leong
+                                                                             KW (2006) Temperature-responsive hydroxybutyl chitosan for
+                                                                             the culture of mesenchymal stem cells and intervertebral disk
+                                                                             cells. Biomaterials 27(3):406­418
+
+                                                                         34. Dhariwala B, Hunt E, Boland T (2004) Rapid prototyping of
+                                                                             tissue-engineering constructs, using photopolymerizable hydro-
+                                                                             gels and stereolithography. Tissue Eng 10(9­10):1316­1322
+Eur Spine J (2008) 17 (Suppl 4):S467­S479                                                                                                              S477
+
+ 35. Discher DE, Janmey P, Wang YL (2005) Tissue cells feel and           58. Iwata H, Amemiya H, Hayashi R, Fujii S, Akutsu T (1990) The
+      respond to the stiffness of their substrate. Science 310:1139­1143      use of photocrosslinkable polyvinyl alcohol in the immunoiso-
+                                                                              lation of pancreatic islets. Transplant Proc 22(2):797­799
+ 36. Engler AJ, Sen S, Sweeney HL, Discher DE (2006) Matrix elas-
+      ticity directs stem cell lineage specification. Cell 126:677­689    59. Karp JM, Langer R (2007) Development and therapeutic
+                                                                              applications of advanced biomaterials. Curr Opin Biotechnol
+ 37. Evans C (2006) Potential biologic therapies for the interverte-          18(5):454­459
+      bral disc. J Bone Joint Surg Am 88(Suppl 2):95­98
+                                                                          60. Katsuura A, Hukuda S (1994) Experimental study of interver-
+ 38. Fiala R, Vidlar A, Vrtal R, Belej K, Student V (2007) Porcine            tebral disc allografting in the dog. Spine 19(21):2426­2432
+      small intestinal submucosa graft for repair of anterior urethral
+      strictures. Eur Urol 51(6):1702­1708 discussion 1708                61. Kim BS, Baez CE, Atala A (2000) Biomaterials for tissue
+                                                                              engineering. World J Urol 18(1):2­9
+ 39. Gazit E (2007) Self-assembled peptide nanostructures: the
+      design of molecular building blocks and their technological         62. Knight RL, Wilcox HE, Korossis SA, Fisher J, Ingham E (2008)
+      utilization. Chem Soc Rev 36:1263­1269                                  The use of acellular matrices for the tissue engineering of car-
+                                                                              diac valves. Proc Inst Mech Eng [H] 222(1):129­143
+ 40. Gilbert TW, Sellaro TL, Badylak SF (2006) Decellularization of
+      tissues and organs. Biomaterials 27(19):3675­3683                   63. Kurella A, Dahotre NB (2005) Review paper: surface modifi-
+                                                                              cation for bioimplants: the role of laser surface engineering. J
+ 41. Gray DW (2001) An overview of the immune system with                     Biomater Appl 20(1):5­50
+      specific reference to membrane encapsulation and islet trans-
+      plantation. Ann N Y Acad Sci 944:226­239                            64. Langer R, Tirrell DA (2004) Designing materials for biology
+                                                                              and medicine. Nature 428(6982):487­492
+ 42. Grohn P, Klock G, Zimmermann U (1997) Collagen-coated
+      Ba(2?)-alginate microcarriers for the culture of anchorage-         65. Langer R, Vacanti JP (1993) Tissue engineering. Science
+      dependent mammalian cells. Biotechniques 22(5):970­975                  260(5110):920­926
+
+ 43. Gruber HE, Hanley EN Jr (2003) Biologic strategies for the           66. Lanza RP, Hayes JL, Chick WL (1996) Encapsulated cell
+      therapy of intervertebral disc degeneration. Expert Opin Biol           technology. Nat Biotechnol 14(9):1107­1111
+      Ther 3(8):1209­1214
+                                                                          67. Le Visage C, Kim SW, Tateno K, Sieber AN, Kostuik JP, Leong
+ 44. Hall S (1997) Axonal regeneration through acellular muscle               KW (2006) Interaction of human mesenchymal stem cells with
+      grafts. J Anat 190(1):57­71                                             disc cells: changes in extracellular matrix biosynthesis. Spine
+                                                                              31(18):2036­2042
+ 45. Halloran DO, Grad S, Stoddart M, Dockery P, Alini M, Pandit
+      AS (2008) An injectable cross-linked scaffold for nucleus pul-      68. Le Visage C, Yang SH, Kadakia L, Sieber AN, Kostuik JP, Leong
+      posus regeneration. Biomaterials 29(4):438­447                          KW (2006) Small intestinal submucosa as a potential bioscaffold
+                                                                              for intervertebral disc regeneration. Spine 31(21):2423­2430
+ 46. Hamilton DJ, Se´guin CA, Wang J, Pilliar RM, Kandel RA
+      (2006) Bioengineering of skeletal tissues team: formation of a      69. Le Visage K, Dang JM, Chan BP, Serhan H, Sieber AN, Kostuik
+      nucleus pulposus-cartilage endplate construct in vitro. Bioma-          JP, Leong KW (2008) Biomaterials development for disc
+      terials 27(3):397­405                                                   degeneration: a pilot study of small intestinal submucosa for
+                                                                              nucleus pulposus augmentation in a non-human primate model.
+ 47. Hersel U, Dahmen C, Kessler H (2003) RGD modified poly-                  World Forum for Spine Research--the intervertebral disc. First
+      mers: biomaterials for stimulated cell adhesion and beyond.             Japanese Meeting, 23­26 January 2008, The Westin Miyako
+      Biomaterials 24(24):4385­4415                                           Kyoto, Kyoto, Japan
+
+ 48. Ho G, Leung VY, Cheung KM, Chan D (2008) Effect of                   70. Leone G, Torricelli P, Chiumiento A, Facchini A, Barbucci R
+      severity of intervertebral disc injury on mesenchymal stem cell-        (2008) Amidic alginate hydrogel for nucleus pulposus replace-
+      based regeneration. Connect Tissue Res 49(1):15­21                      ment. J Biomed Mater Res A 84(2):391­401
+
+ 49. Hodde J (2006) Extracellular matrix as a bioactive material for      71. Luk KD, Ruan DK, Chow DH, Leong JC (1997) Intervertebral
+      soft tissue reconstruction. ANZ J Surg 76(12):1096­1100                 disc autografting in a bipedal animal model. Clin Orthop Relat
+                                                                              Res 337:13­26
+ 50. Hollister SJ (2005) Porous scaffold design for tissue engineer-
+      ing. Nat Mater 4(7):518­524                                         72. Luk KD, Ruan DK, Lu DS, Fei ZQ (2003) Fresh frozen inter-
+                                                                              vertebral disc allografting in a bipedal animal model. Spine
+ 51. Hubbell JA (1995) Biomaterials in tissue engineering. Bio-               28(9):864­869
+      technology (N Y) 13(6):565­576
+                                                                          73. Lumpkins SB, Pierre N, McFetridge PS (2008) A mechanical
+ 52. Hui TY, Cheung KMC, Cheung WL, Chan D, Chan BP (2008)                    evaluation of three decellularization methods in the design of a
+      In vitro chondrogenic differentiation of human mesenchymal              xenogeneic scaffold for tissue engineering the temporomandib-
+      stem cells in collagen microspheres: influence of cell seeding          ular joint disc. Acta Biomater 4(4):808­816
+      density and collagen concentration. Biomaterials 29:3201­3212
+                                                                          74. Masuda K, An HS (2006) Prevention of disc degeneration with
+ 53. Humes HD (2005) Stem cells: the next therapeutic frontier.               growth factors. Eur Spine J 15(Suppl 3):S422­S432
+      Trans Am Clin Climatol Assoc 116:167­183
+                                                                          75. Matsuzaki H, Wakabayashi K, Ishihara K, Ishikawa H, Ohkawa
+ 54. Hutmacher DW, Sittinger M, Risbud MV (2004) Scaffold-based               A (1996) Allografting intervertebral discs in dogs: a possible
+      tissue engineering: rationale for computer-aided design and solid       clinical application. Spine 21(2):178­183
+      free-form fabrication systems. Trends Biotechnol 22(7):354­362
+                                                                          76. Mizuno H, Roy AK, Vacanti CA, Kojima K, Ueda M, Bonassar
+ 55. Ifkovits JL, Burdick JA (2007) Review: photopolymerizable and            LJ (2004) Tissue-engineered composites of anulus fibrosus and
+      degradable biomaterials for tissue engineering applications.            nucleus pulposus for intervertebral disc replacement. Spine
+      Tissue Eng 13(10):2369­2385                                             29(12):1290­1297
+
+ 56. Ingram JH, Korossis S, Howling G, Fisher J, Ingham E (2007)          77. Mligiliche N, Endo K, Okamoto K, Fujimoto E, Ide C (2002)
+      The use of ultrasonication to aid recellularization of acellular        Extracellular matrix of human amnion manufactured into tubes
+      natural tissue scaffolds for use in anterior cruciate ligament          as conduits for peripheral nerve regeneration. J Biomed Mater
+      reconstruction. Tissue Eng 13(7):1561­1572                              Res 63(5):591­600
+
+ 57. Isenberg BC, Tsuda Y, Williams C, Shimizu T, Yamato M,               78. Morra M, Cassinelli C (2006) Biomaterials surface character-
+      Okano T, Wong JY (2008) A thermoresponsive, microtextured               ization and modification. Int J Artif Organs 29(9):824­833
+      substrate for cell sheet engineering with defined structural
+      organization. Biomaterials 29(17):2565­2572
+
+                                                                          123
+S478                                                                    Eur Spine J (2008) 17 (Suppl 4):S467­S479
+
+79. Muschler GF, Nakamoto C, Griffith LG (2004) Engineering                   pulposus cells forming nucleus pulposus-like tissue in vitro:
+    principles of clinical cell-based tissue engineering. J Bone Joint        influence on the proliferation and proteoglycan production of
+    Surg Am 86-A(7):1541­1558                                                 HNPSV-1 cells. Biomaterials 27(3):346­353
+                                                                         99. Sakai D, Mochida J, Yamamoto Y, Nomura T, Okuma M, Ni-
+80. Nerurkar NL, Elliott DM, Mauck RL (2007) Mechanics of ori-                shimura K, Nakai T, Ando K, Hotta T (2003) Transplantation of
+    ented electrospun nanofibrous scaffolds for annulus fibrosus              mesenchymal stem cells embedded in Atelocollagen gel to the
+    tissue engineering. J Orthop Res 25(8):1018­1028                          intervertebral disc: a potential therapeutic model for disc
+                                                                              degeneration. Biomaterials 24(20):3531­3541
+81. Nguyen KT, West JL (2002) Photopolymerizable hydrogels for          100. Sano A, Maeda M, Nagahara S, Ochiya T, Honma K, Itoh H,
+    tissue engineering applications. Biomaterials 23(22):4307­4314            Miyata T, Fujioka K (2003) Atelocollagen for protein and gene
+                                                                              delivery. Adv Drug Deliv Rev 55(12):1651­1677
+82. Nishida K, Yamato M, Hayashida Y, Watanabe K, Yamamoto              101. Schmidt CE, Baier JM (2000) Acellular vascular tissues: natural
+    K, Adachi E, Nagai S, Kikuchi A, Maeda N, Watanabe H,                     biomaterials for tissue repair and tissue engineering. Biomate-
+    Okano T, Tano Y (2004) Corneal reconstruction with tissue-                rials 21(22):2215­2231
+    engineered cell sheets composed of autologous oral mucosal          102. Scho¨nherr E, Hausser HJ (2000) Extracellular matrix and
+    epithelium. N Engl J Med 351(12):1187­1196                                cytokines: a functional unit. Dev Immunol 7(2­4):89­101
+                                                                        103. Sebastine IM, Williams DJ (2007) Current developments in
+83. Nuttelman CR, Tripodi MC, Anseth KS (2005) Synthetic                      tissue engineering of nucleus pulposus for the treatment of
+    hydrogel niches that promote hMSC viability. Matrix Biol                  intervertebral disc degeneration. Conf Proc IEEE Eng Med Biol
+    24(3):208­218                                                             Soc 2007:6401­6406
+                                                                        104. Sekiya S, Shimizu T, Yamato M, Kikuchi A, Okano T (2006)
+84. Okano T, Yamada N, Okuhara M, Sakai H, Sakurai Y (1995)                   Bioengineered cardiac cell sheet grafts have intrinsic angiogenic
+    Mechanism of cell detachment from temperature-modulated,                  potential. Biochem Biophys Res Commun 341(2):573­582
+    hydrophilic­hydrophobic polymer surfaces. Biomaterials              105. Shimizu T, Sekine H, Yang J, Isoi Y, Yamato M, Kikuchi A,
+    16(4):297­303                                                             Kobayashi E, Okano T (2006) Polysurgery of cell sheet grafts
+                                                                              overcomes diffusion limits to produce thick, vascularized
+85. Okano T, Yamada N, Sakai H, Sakurai Y (1993) A novel                      myocardial tissues. FASEB J 20(6):708­710
+    recovery system for cultured cells using plasma-treated poly-       106. Shimizu T, Yamato M, Kikuchi A, Okano T (2003) Cell sheet
+    styrene dishes grafted with poly(N-isopropylacrylamide). J                engineering for myocardial tissue reconstruction. Biomaterials
+    Biomed Mater Res 27(10):1243­1251                                         24(13):2309­2316
+                                                                        107. Sill TJ, von Recum HA (2008) Electrospinning: applications in
+86. Orive G, Herna´ndez RM, Gasco´n AR, Calafiore R, Chang TM,                drug delivery and tissue engineering. Biomaterials 29(13):1989­
+    De Vos P, Hortelano G, Hunkeler D, Lac´ik I, Shapiro AM,                  2006
+    Pedraz JL (2003) Cell encapsulation: promise and progress. Nat      108. Sobajima S, Vadala G, Shimer A, Kim JS, Gilbertson LG, Kang
+    Med 9(1):104­107                                                          JD (2008) Feasibility of a stem cell therapy for intervertebral
+                                                                              disc degeneration. Spine J December (in press)
+87. Orive G, Herna´ndez RM, Rodr´iguez Gasco´n A, Calafiore R,          109. Spector M (2006) Biomaterials-based tissue engineering and
+    Chang TM, de Vos P, Hortelano G, Hunkeler D, Lac´ik I, Pedraz             regenerative medicine solutions to musculoskeletal problems.
+    JL (2004) History, challenges and perspectives of cell micro-             Swiss Med Wkly 136(19­20):293­301
+    encapsulation. Trends Biotechnol 22(2):87­92                        110. Takezawa T, Mori Y, Yoshizato K (1990) Cell culture on a
+                                                                              thermo-responsive polymer surface. Biotechnology (N Y)
+88. Paesold G, Nerlich AG, Boos N (2007) Biological treatment                 8(9):854­856
+    strategies for disc degeneration: potentials and shortcomings.      111. Tsuda Y, Shimizu T, Yamato M, Kikuchi A, Sasagawa T, Se-
+    Eur Spine J 16(4):447­468                                                 kiya S, Kobayashi J, Chen G, Okano T (2007) Cellular control
+                                                                              of tissue architectures using a three-dimensional tissue fabrica-
+89. Pham QP, Sharma U, Mikos AG (2006) Electrospinning of                     tion technique. Biomaterials 28(33):4939­4946
+    polymeric nanofibers for tissue engineering applications: a         112. Uitto J, Olsen DR, Fazio MJ (1989) Extracellular matrix of the
+    review. Tissue Eng 12(5):1197­1211                                        skin: 50 years of progress. J Invest Dermatol 92(4 Suppl):61S­
+                                                                              77S
+90. Piez KA (1997) History of extracellular matrix: a personal view.    113. Uludag H, De Vos P, Tresco PA (2000) Technology of mam-
+    Matrix Biol 16(3):85­92                                                   malian cell encapsulation. Adv Drug Deliv Rev 42(1­2):29­64
+                                                                        114. Vacanti JP, Langer R (1999) Tissue engineering: the design and
+91. Poole AR, Kojima T, Yasuda T, Mwale F, Kobayashi M, Lav-                  fabrication of living replacement devices for surgical recon-
+    erty S (2001) Composition and structure of articular cartilage: a         struction and transplantation. Lancet 354(Suppl 1):SI32­SI34
+    template for tissue repair (review). Clin Orthop Relat Res          115. Vernengo J, Fussell GW, Smith NG, Lowman AM (2008)
+    391(Suppl):S26­S33                                                        Evaluation of novel injectable hydrogels for nucleus pulposus
+                                                                              replacement. J Biomed Mater Res B Appl Biomater 84(1):64­69
+92. Ratner BD, Bryant SJ (2004) Biomaterials: where we have been        116. Walker MH, Anderson DG (2004) Molecular basis of interver-
+    and where we are going. Annu Rev Biomed Eng 6:41­75                       tebral disc degeneration. Spine J 4(6 Suppl):158S­166S
+                                                                        117. Wan AC, Yim EK, Liao IC, Le Visage C, Leong KW (2004)
+93. Revell PA, Damien E, Di Silvio L, Gurav N, Longinotti C,                  Encapsulation of biologics in self-assembled fibers as biostruc-
+    Ambrosio L (2007) Tissue engineered intervertebral disc repair            tural units for tissue engineering. J Biomed Mater Res A
+    in the pig using injectable polymers. J Mater Sci Mater Med               71(4):586­595
+    18(2):303­308                                                       118. Wan Y, Feng G, Shen FH, Laurencin CT, Li X (2008) Biphasic
+                                                                              scaffold for annulus fibrosus tissue regeneration. Biomaterials
+94. Richardson SM, Curran JM, Chen R, Vaughan-Thomas A, Hunt                  29(6):643­652
+    JA, Freemont AJ, Hoyland JA (2006) The differentiation of
+    bone marrow mesenchymal stem cells into chondrocyte-like
+    cells on poly-L-lactic acid (PLLA) scaffolds. Biomaterials
+    27(22):4069­4078
+
+95. Robert L (2001) Matrix biology: past, present and future. Pathol
+    Biol (Paris) 49(4):279­283
+
+96. Ruan D, He Q, Ding Y, Hou L, Li J, Luk KD (2007) Interver-
+    tebral disc transplantation in the treatment of degenerative spine
+    disease: a preliminary study. Lancet 369(9566):993­999
+
+97. Saad L, Spector M (2004) Effects of collagen type on the
+    behavior of adult canine annulus fibrosus cells in collagen-gly-
+    cosaminoglycan scaffolds. J Biomed Mater Res A 71(2):233­
+    241
+
+98. Sakai D, Mochida J, Iwashina T, Watanabe T, Suyama K, Ando
+    K, Hotta T (2006) Atelocollagen for culture of human nucleus
+
+123
+Eur Spine J (2008) 17 (Suppl 4):S467­S479                                  S479
+
+119. Wang IN, Lu HH (2006) Role of cell­cell interactions on the           126. Yannas IV (1996) Natural materials. In: Ratner BD, Hoffman
+      regeneration of soft tissue-to-bone interface. Conf Proc IEEE              AS, Schoen FJ, Lemons JE (eds) Biomaterials Sciences: an
+      Eng Med Biol Soc 1:783­786                                                 introduction to materials in medicine. Academic Press, New
+                                                                                 York, pp 84­93
+120. Wilda H, Gough JE (2006) In vitro studies of annulus fibrosus
+      disc cell attachment, differentiation and matrix production on       127. Yim EK, Reano RM, Pang SW, Yee AF, Chen CS, Leong KW
+      PDLLA/45S5 Bioglass composite films. Biomaterials                          (2005) Nanopattern-induced changes in morphology and
+      27(30):5220­5229                                                           motility of smooth muscle cells. Biomaterials 26(26):5405­5413
+
+121. Wilke HJ, Heuer F, Neidlinger-Wilke C, Claes L (2006) Is a            128. Zhang S (2003) Fabrication of novel biomaterials through
+      collagen scaffold for a tissue engineered nucleus replacement              molecular self-assembly. Nat Biotechnol 21(10):1171­1178
+      capable of restoring disc height and stability in an animal
+      model? Eur Spine J 15(Suppl 3):S433­S438                             129. Zheng MH, Chen J, Kirilak Y, Willers C, Xu J, Wood D (2005)
+                                                                                 Porcine small intestine submucosa (SIS) is not an acellular
+122. Wong HL, Wang MX, Cheung PT, Yao KM, Chan BP (2007) A                       collagenous matrix and contains porcine DNA: possible impli-
+      3D collagen microsphere culture system for GDNF-secreting                  cations in human implantation. J Biomed Mater Res B Appl
+      HEK293 cells with enhanced protein productivity. Biomaterials              Biomater 73(1):61­67
+      28:5369­5380
+                                                                           130. Zielinski BA, Aebischer P (1994) Chitosan as a matrix for
+123. Yang J, Yamato M, Shimizu T, Sekine H, Ohashi K, Kanzaki M,                 mammalian cell encapsulation. Biomaterials 15(13):1049­1056
+      Ohki T, Nishida K, Okano T (2007) Reconstruction of func-
+      tional tissues with cell sheet engineering. Biomaterials             131. Zimmermann H, Hillgartner M, Manz B, Feilen P, Bru-
+      28(34):5033­5043                                                           nnenmeier F, Leinfelder U, Weber M, Cramer H, Schneider S,
+                                                                                 Hendrich C, Volke F, Zimmermann U (2003) Fabrication of
+124. Yang S, Leong KF, Du Z, Chua CK (2002) The design of                        homogeneously cross-linked, functional alginate microcapsules
+      scaffolds for use in tissue engineering: Part II. Rapid prototyping        validated by NMR-, CLSM- and AFM-imaging. Biomaterials
+      techniques. Tissue Eng 8(1):1­11                                           24(12):2083­2096
+
+125. Yang S, Leong KF, Du Z, Chua CK (2001) The design of
+      scaffolds for use in tissue engineering: Part I. Traditional fac-
+      tors. Tissue Eng 7(6):679­689
+
+                                                                           123
+
