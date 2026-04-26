@@ -11,6 +11,8 @@ total_timeline_weeks: 12
 
 # Lab Brief: Copper Replacing Silver in Photovoltaic Panels
 
+Interactive artifact: [lab-brief.html](./lab-brief.html)
+
 ## Hypothesis
 
 Replacing silver-based photovoltaic metallization with a copper-paste route on crystalline silicon cells can reduce silver demand while maintaining initial electrical performance and module-relevant reliability. The first acceptance threshold is no more than 0.3 percentage point absolute efficiency loss versus a matched silver-paste control, with no copper-diffusion-linked degradation after reliability screening.

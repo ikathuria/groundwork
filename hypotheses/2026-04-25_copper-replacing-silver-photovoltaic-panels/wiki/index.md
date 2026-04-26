@@ -79,4 +79,4 @@ tags: [photovoltaics, copper-metallization, wiki-index]
 
 ## Plans (1)
 
-- [[plans/plan-v1]] - copper-paste substitution screen with silver controls and damp-heat reliability gate
+- [[plans/plan-v1]] - copper-paste substitution screen with silver controls, damp-heat reliability gate, and interactive HTML Lab Brief

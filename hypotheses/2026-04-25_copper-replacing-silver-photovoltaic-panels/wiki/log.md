@@ -49,3 +49,6 @@ Added source page. Created/updated linked pages for copper sulfate pentahydrate 
 
 ## [2026-04-25 20:10] plan | plan-v1
 Filed Lab Brief plan back into wiki/plans/plan-v1.md. Updated index and hypothesis status. Plan uses 14 sources, estimates a $93,500 budget and 12-week timeline, and elevates copper diffusion, damp-heat outdiffusion, and furnace contamination as top failure gates.
+
+## [2026-04-25 20:42] plan | lab-brief.html
+Linked a standalone interactive HTML Lab Brief artifact from the plan records. It is self-contained in `plan/lab-brief.html` and exposes the same plan-v1 decision logic through interactive protocol, failure, budget, timeline, and evidence sections.
