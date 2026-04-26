@@ -90,19 +90,26 @@ groundwork/
 ├── .env.example                      # ANTHROPIC_API_KEY etc.
 ├── .claude/                          # Claude Code skills & settings
 │   ├── settings.json
-│   └── skills/                       # pipeline entry points (slash commands)
+│   └── skills/                       # Claude Code pipeline entry points (slash commands)
 │       ├── pass-1-research.md        # /pass-1 <slug> "<hypothesis>"
 │       ├── pass-2-wiki.md            # /pass-2 <slug>
 │       ├── pass-3-plan.md            # /pass-3 <slug>
 │       ├── ingest-source.md          # /ingest-source <slug> <path|url>
 │       └── apply-correction.md       # /apply-correction <correction.json>
+├── .codex/                           # Codex skill mirrors (natural-language triggers)
+│   └── skills/
+│       ├── groundwork-pass-1-research/
+│       ├── groundwork-pass-2-wiki/
+│       ├── groundwork-pass-3-plan/
+│       ├── groundwork-ingest-source/
+│       └── groundwork-apply-correction/
 │
 ├── hypotheses/                       # one folder per hypothesis session
 │   └── 2026-04-25_trehalose-hela-cryopreservation/
 │       ├── hypothesis.md             # original question + metadata, root node
 │       ├── session.log.md            # chronological per-hypothesis log
 │       ├── raw/                      # Pass 1 output — IMMUTABLE
-│       │   ├── papers/               # PDFs + extracted text
+│       │   ├── papers/               # complete originals (LaTeX / HTML / JATS / PDF) + deterministic .txt extracts
 │       │   ├── protocols/            # JSON / markdown from protocols.io etc.
 │       │   ├── retractions/          # Retraction Watch, PubPeer entries
 │       │   ├── catalogs/             # supplier catalog snippets
@@ -132,18 +139,18 @@ groundwork/
 └── web/                              # Next.js + Tailwind, the Lab Brief UI (Layer B)
     ├── app/                          # Next.js app router
     │   ├── h/[slug]/page.tsx         # /h/<hypothesis-slug> renders the Lab Brief
-    │   └── api/                      # routes that spawn `claude -p` for live moments
+    │   └── api/                      # routes that invoke the selected agent CLI for live moments
     ├── components/
     ├── lib/
     │   ├── wiki.ts                   # parses wiki markdown for the UI
     │   ├── plan.ts                   # parses plan.json
-    │   └── claude.ts                 # subprocess helper for headless `claude -p`
+    │   └── agent.ts                  # subprocess helper for the selected headless agent
     ├── public/
     ├── package.json
     └── tailwind.config.ts
 ```
 
-> **The "agents" are not separate scripts.** GROUNDWORK is driven by Claude Code (or Codex) reading `CLAUDE.md` / `AGENTS.md`, which redirect here. The canonical pipeline entry points are the slash-command skills under `.claude/skills/`. For UI-triggered moments, the same skills are invoked headlessly via `claude -p --output-format stream-json` from Next.js routes in `web/`.
+> **The "agents" are not separate scripts.** GROUNDWORK is driven by Claude Code or Codex reading `CLAUDE.md` / `AGENTS.md`, which redirect here. Claude Code entry points live under `.claude/skills/` as slash-command prompts; Codex mirrors live under `.codex/skills/` and are triggered with natural-language prompts like "Run GROUNDWORK Pass 1...". For future UI-triggered moments, the Next.js routes should invoke the selected headless agent adapter using the same skill prompt semantics.
 
 > **Important:** the entire `groundwork/` directory should be opened as a **single Obsidian vault**. This gives you a graph view across all hypotheses + commons. Per-hypothesis isolation is enforced by *agent operational discipline*, not by separate vaults.
 
@@ -427,9 +434,9 @@ Affects: all hypotheses linking to this failure mode.
 
 ## 7. Agent operations
 
-All passes run inside **Claude Code (default) or Codex**, via the auto-loaded `CLAUDE.md` / `AGENTS.md` and slash-command skills under `.claude/skills/`. Each skill appends to `session.log.md` for its hypothesis using the prefix `## [YYYY-MM-DD HH:MM] <op> | <subject>`.
+All passes run inside **Claude Code or Codex**, via the auto-loaded `CLAUDE.md` / `AGENTS.md`. Claude Code uses `.claude/skills/` slash-command prompts. Codex uses `.codex/skills/` with natural-language triggers; do not expect Codex to recognize project-defined `/pass-1` commands. Each skill appends to `session.log.md` for its hypothesis using the prefix `## [YYYY-MM-DD HH:MM] <op> | <subject>`.
 
-For UI-triggered moments (live single-paper ingest, scientist correction → re-render), the same skills are invoked **headlessly** via `claude -p --output-format stream-json`, spawned as a subprocess from a Next.js API route in `web/`. Output is streamed to the browser via Server-Sent Events.
+For future UI-triggered moments (live single-paper ingest, scientist correction → re-render), the route should invoke the selected agent headlessly and stream output to the browser. Keep the Claude Code and Codex skill prompts behaviorally identical so either tool can drive the same operation.
 
 ### 7.1 Pass 1 — Research skill (`/pass-1`)
 
@@ -440,13 +447,40 @@ For UI-triggered moments (live single-paper ingest, scientist correction → re-
 2. Generates a search plan: queries, sources to scrape.
 3. Runs literature search across Semantic Scholar, arXiv, protocols.io, Bio-protocol.
 4. Runs negative-results search across Retraction Watch and PubPeer.
-5. Downloads PDFs, protocol JSON, retraction notices into `raw/`.
-6. Logs every fetch into `raw/fetch_log.jsonl` with timestamp, source, URL, sha256.
+5. **Downloads the complete original artifact** for every ingested source into the appropriate `raw/` subfolder, using the Bash tool with `curl -L --fail -o <path> <url>` (or `wget`). The non-negotiable rule: the artifact in `raw/` must be the **complete original** — full body, methods, results, references — not an abstract, preview, paywall stub, or partial PDF. Per-source preference order:
+
+   **(a) Native text / structured form — preferred when available:**
+   - **arXiv** → LaTeX source tarball (`https://arxiv.org/e-print/<id>`) and/or HTML5 render (`https://arxiv.org/html/<id>`, fallback `https://ar5iv.labs.arxiv.org/html/<id>`). LaTeX is the most original form for arXiv submissions.
+   - **PubMed Central (OA subset)** → JATS XML (`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=<pmcid>`) or full HTML (`https://www.ncbi.nlm.nih.gov/pmc/articles/PMC<id>/`). JATS is the gold standard.
+   - **bioRxiv / medRxiv** → full HTML (`https://www.biorxiv.org/content/<doi>v<v>.full`).
+   - **protocols.io** → JSON via API.
+   - **Retraction Watch / Crossref** → notice JSON / HTML.
+
+   **(b) PDF + deterministic text extraction — when no native text form exists:**
+   - Download the PDF: `curl -L --fail -o <id>.pdf <url>`.
+   - Extract text deterministically: `pdftotext -layout <id>.pdf <id>.txt` (poppler-utils). This is a pure function of the PDF, **not** an LLM summary, so the `.txt` companion is allowed in `raw/`.
+   - Both `<id>.pdf` and `<id>.txt` live alongside each other in `raw/papers/`.
+
+   **(c) Discovery routers — never the artifact itself:**
+   - **Semantic Scholar** (`api.semanticscholar.org`), **OpenAlex**, **Unpaywall** → APIs that return metadata + an `openAccessPdf` URL. Resolve to (a) or (b).
+   - **Google Scholar** → an index, not a host. No API, no plain-text endpoint. Use it as a search surface to navigate to the actual host (arXiv, PMC, publisher OA copy), then download from there.
+
+   **WebFetch and WebSearch are discovery-only** — used to find URLs, DOIs, and bibliographic metadata. Their output is LLM-summarised and **must never** populate `raw/`.
+
+   **Verify every download** before accepting it:
+   - **Format**: `file <path>` must report the expected MIME (`application/pdf` for PDFs, etc.); PDFs must start with `%PDF-` (`head -c 5 <path>`); JSON must parse with `jq empty`; LaTeX tarballs must extract and contain at least one `.tex` file with a `\begin{document}` block; JATS XML must contain a `<body>` element (not just `<front>`).
+   - **Completeness**: PDFs must have ≥ 4 pages (`pdfinfo <path>` → `Pages:`); HTML full-text pages must contain methods/results/references section headings (not just an abstract); reject paywall stubs (sentinels: "Sign in", "Access through your institution", "Buy article" near the top of the body); apply a minimum file-size sanity check (typical full papers: PDFs ≥ ~100KB, LaTeX/HTML ≥ ~30KB).
+
+   If any check fails, record `status: "failed-<reason>"` in `fetch_log.jsonl` and try the next preference tier or an alternate source (preprint, mirror, OA copy). **Do not substitute a summary, abstract, or partial fetch** for the complete original.
+6. Logs every fetch attempt (success and failure) into `raw/fetch_log.jsonl` with timestamp, source, URL, sha256, format (`pdf` / `latex` / `html` / `jats` / `json`), pages-or-bytes, and status.
 7. Creates `hypothesis.md` with `status: researching`.
 
-**Output:** populated `raw/` folder + `hypothesis.md` + a stub `wiki/` directory.
+**Output:** populated `raw/` folder (complete originals + deterministic `.txt` companions where applicable) + `hypothesis.md` + a stub `wiki/` directory.
 
 **Constraints:**
+- `raw/` holds **only complete original artifacts** plus their deterministic plain-text extracts (e.g. `pdftotext` output). Never write LLM-generated summaries, abstracts, paraphrases, or notes into `raw/` — extraction-with-a-model and synthesis are Pass 2's job.
+- Always prefer the most LLM-readable native form the host provides (LaTeX, HTML, JATS, JSON) over the PDF. Fall back to PDF + `pdftotext` only when no native text form exists.
+- The artifact must be the **complete** original — abstracts, previews, single-page paywall stubs, and partial PDFs are rejected, not stored.
 - Never modify files in `raw/` after fetch (the immutable contract).
 - Never write into `wiki/` — that's Pass 2's job.
 - Default target: 30–100 sources. Configurable.
@@ -627,7 +661,7 @@ Closer to a polished PI memo than a Wikipedia article. Three layers of depth on 
 ### Review interface (stretch)
 - Each section has an "edit / suggest" affordance.
 - Corrections capture: section ID, before, after, reason, reviewer.
-- POST to a feedback endpoint that calls `agents/feedback.ts`.
+- POST to a feedback endpoint that invokes the selected agent's `/apply-correction` skill semantics.
 
 ---
 
@@ -649,8 +683,8 @@ The third moment is the stretch-goal demo the brief explicitly asks for — *nex
 
 | Layer | Choice |
 |---|---|
-| Pipeline driver | Claude Code (default) or Codex; auto-loads `CLAUDE.md` / `AGENTS.md`; slash-command skills under `.claude/skills/` |
-| UI-triggered ops | `claude -p --output-format stream-json` subprocess spawned from Next.js routes (Layer B) |
+| Pipeline driver | Claude Code or Codex; auto-loads `CLAUDE.md` / `AGENTS.md`; skill prompts under `.claude/skills/` and `.codex/skills/` |
+| UI-triggered ops | Future selected-agent headless adapter spawned from Next.js routes (Layer B) |
 | LLM | Claude Sonnet/Opus default. Configurable. |
 | Literature search | Semantic Scholar API, arXiv API |
 | Protocol search | protocols.io API, Bio-protocol scrape |
@@ -668,7 +702,7 @@ The third moment is the stretch-goal demo the brief explicitly asks for — *nex
 If you are an AI coding agent (Claude Code, Codex, OpenCode, Cursor):
 
 1. **Read this file first.** Don't infer architecture from the code — the code may be incomplete. The schema in this file is canonical.
-2. **Stay within scope.** When operating on a single hypothesis, read/write only inside that hypothesis's folder + `commons/` (and `agents/`, `web/` if you're working on tooling). Do not cross hypothesis boundaries.
+2. **Stay within scope.** When operating on a single hypothesis, read/write only inside that hypothesis's folder + `commons/` (and `web/` if you're working on tooling). Do not cross hypothesis boundaries.
 3. **Never modify `raw/`** after a fetch. It's immutable by design. If you need to re-fetch, re-fetch into a new file.
 4. **Update `log.md` and `session.log.md`** for every meaningful operation (ingest, generation, correction, lint pass). Use the prefix format `## [YYYY-MM-DD HH:MM] <op> | <subject>` so logs stay grep-parseable.
 5. **Use the schema strictly.** All wiki pages must have valid frontmatter. All cross-references must be valid links (broken links should fail lint).
@@ -676,14 +710,14 @@ If you are an AI coding agent (Claude Code, Codex, OpenCode, Cursor):
 7. **When the schema is ambiguous, propose a refinement.** Edit this file rather than working around it.
 8. **Don't add features outside the spec without asking.** This is a hackathon project — scope discipline matters.
 9. **Every claim in a generated plan must trace to a wiki entity.** No free-floating facts.
-10. **Skills under `.claude/skills/` are the canonical entry points.** To extend the pipeline, add or modify a skill rather than writing a separate script. Skills declare their tools and arguments in YAML frontmatter; their bodies are the operational prompts.
+10. **Skills under `.claude/skills/` and `.codex/skills/` are the canonical entry points.** To extend the pipeline, update both skill mirrors rather than writing a separate script. Their bodies are the operational prompts.
 
 ---
 
 ## 13. Open decisions / TODOs
 
-- [x] LLM provider: Claude Code (default) with Codex as drop-in. Skills are tool-agnostic; only the auto-load file differs (`CLAUDE.md` vs `AGENTS.md`).
-- [ ] Build Layer B (Next.js app at `web/` with `claude -p --output-format stream-json` SSE route for live demo moments) — separate task.
+- [x] LLM provider: Claude Code and Codex both supported through mirrored skills. The auto-load file differs (`CLAUDE.md` vs `AGENTS.md`).
+- [ ] Build Layer B (Next.js app at `web/` with a selected-agent SSE route for live demo moments) — separate task.
 - [ ] PDF parsing strategy: pdftotext / pdfplumber / Claude vision. Probably text-first, vision fallback for figures.
 - [ ] Search API keys / rate limits: add `.env.example` and document acquisition.
 - [ ] Demo: confirmed pre-baked. Pick **which two** hypotheses to pre-bake.
