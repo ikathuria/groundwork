@@ -94,7 +94,6 @@ groundwork/
       ...
   commons/                # cross-hypothesis methods, reagents, failure modes
     methods/  reagents/  organisms/  failure-modes/  corrections.log.md
-  web/                    # Next.js app — renders any hypothesis's Lab Brief
   .claude/skills/         # Claude Code pipeline prompts
   .codex/skills/          # Codex pipeline prompt mirrors
 ```
@@ -145,7 +144,7 @@ Both are post-MVP. Core pipeline ships first.
 | Negative results | Retraction Watch, PubPeer |
 | Supplier pricing | Thermo Fisher, Sigma-Aldrich, Promega catalog references |
 | Wiki format | Obsidian-compatible markdown + YAML frontmatter |
-| Lab Brief UI | Next.js (app router) + Tailwind CSS + shadcn/ui |
+| Lab Brief UI | Bespoke single-file HTML per hypothesis — Tailwind, Alpine.js, GSAP, Chart.js, D3, marked.js via CDN (no build step) |
 | Future: voice | ElevenLabs API |
 | Future: AR | AR.js + A-Frame (WebAR, no app install) |
 
