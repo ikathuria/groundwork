@@ -1,0 +1,930 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article id="nmo70107" xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Neurogastroenterol Motil</journal-id><journal-id journal-id-type="iso-abbrev">Neurogastroenterol Motil</journal-id><journal-id journal-id-type="pmc-domain-id">379</journal-id><journal-id journal-id-type="pmc-domain">blackwellopen</journal-id><journal-id journal-id-type="publisher-id">NMO</journal-id><journal-title-group><journal-title>Neurogastroenterology and Motility</journal-title></journal-title-group><issn pub-type="ppub">1350-1925</issn><issn pub-type="epub">1365-2982</issn><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>Wiley Open Access Collection</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12623274</article-id><article-id pub-id-type="pmcid-ver">PMC12623274.1</article-id><article-id pub-id-type="pmcaid">12623274</article-id><article-id pub-id-type="pmcaiid">12623274</article-id><article-id pub-id-type="pmid">40572023</article-id><article-id pub-id-type="doi">10.1111/nmo.70107</article-id><article-id pub-id-type="publisher-id">NMO70107</article-id><article-id pub-id-type="other">NMO-00071-2024.R2</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Article</subject></subj-group></article-categories><title-group><article-title>Targeting the Microbiota Reverses C‐Section‐Induced Effects on Intestinal Permeability, Microbiota Composition, and Amygdala Gene Expression in the Mouse</article-title></title-group><contrib-group><contrib id="nmo70107-cr-0001" contrib-type="author"><name name-style="western"><surname>Silva</surname><given-names initials="APV">Ana Paula Ventura</given-names></name><xref rid="nmo70107-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nmo70107-cr-0002" contrib-type="author"><name name-style="western"><surname>Moloney</surname><given-names initials="GM">Gerard M.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-3672-1390</contrib-id><xref rid="nmo70107-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="nmo70107-cr-0003" contrib-type="author"><name name-style="western"><surname>Sequeira</surname><given-names initials="AM">Ana Marta</given-names></name><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nmo70107-cr-0004" contrib-type="author"><name name-style="western"><surname>Liber</surname><given-names initials="M">Marta</given-names></name><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nmo70107-cr-0005" contrib-type="author"><name name-style="western"><surname>Bastiaanssen</surname><given-names initials="T">Thomaz</given-names></name><xref rid="nmo70107-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nmo70107-cr-0006" contrib-type="author"><name name-style="western"><surname>Rea</surname><given-names initials="K">Kieran</given-names></name><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nmo70107-cr-0007" contrib-type="author"><name name-style="western"><surname>Fitzgerald</surname><given-names initials="P">Patrick</given-names></name><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nmo70107-cr-0008" contrib-type="author"><name name-style="western"><surname>Golubeva</surname><given-names initials="A">Anna</given-names></name><xref rid="nmo70107-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nmo70107-cr-0009" contrib-type="author"><name name-style="western"><surname>Rodriguez‐Aburto</surname><given-names initials="M">Maria</given-names></name><xref rid="nmo70107-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nmo70107-cr-0010" contrib-type="author"><name name-style="western"><surname>Renes</surname><given-names initials="IB">Ingrid B.</given-names></name><xref rid="nmo70107-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="nmo70107-cr-0011" contrib-type="author"><name name-style="western"><surname>Knol</surname><given-names initials="J">Jan</given-names></name><xref rid="nmo70107-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="nmo70107-cr-0012" contrib-type="author"><name name-style="western"><surname>Dinan</surname><given-names initials="T">Timothy</given-names></name><xref rid="nmo70107-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="nmo70107-cr-0013" contrib-type="author" corresp="yes"><name name-style="western"><surname>Cryan</surname><given-names initials="JF">John F.</given-names></name><xref rid="nmo70107-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="nmo70107-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>j.cryan@ucc.ie</email></address></contrib></contrib-group><aff id="nmo70107-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Department of Anatomy and Neuroscience</named-content>
+<institution>University College Cork</institution>
+<city>Cork</city>
+<country country="IE">Ireland</country>
+</aff><aff id="nmo70107-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">APC Microbiome Ireland</named-content>
+<institution>University College Cork</institution>
+<city>Cork</city>
+<country country="IE">Ireland</country>
+</aff><aff id="nmo70107-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<institution>Danone Nutricia Research</institution>
+<city>Utrecht</city>
+<country country="NL">the Netherlands</country>
+</aff><aff id="nmo70107-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Department of Psychiatry and Neurobehavioural Science</named-content>
+<institution>University College Cork</institution>
+<city>Cork</city>
+<country country="IE">Ireland</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence:</bold>
+<break/>
+John F. Cryan (<email>j.cryan@ucc.ie</email>)<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>26</day><month>6</month><year>2025</year></pub-date><pub-date pub-type="ppub"><month>12</month><year>2025</year></pub-date><volume>37</volume><issue seq="430">12</issue><issue-id pub-id-type="pmc-issue-id">500783</issue-id><issue-id pub-id-type="doi">10.1111/nmo.v37.12</issue-id><elocation-id>e70107</elocation-id><history><date date-type="rev-recd"><day>28</day><month>5</month><year>2025</year></date><date date-type="received"><day>08</day><month>2</month><year>2024</year></date><date date-type="accepted"><day>03</day><month>6</month><year>2025</year></date></history><pub-history><event event-type="pmc-release"><date><day>18</day><month>11</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>19</day><month>11</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-11-19 00:25:13.553"><day>19</day><month>11</month><year>2025</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2025 The Author(s). <italic toggle="yes">Neurogastroenterology &amp; Motility</italic> published by John Wiley &amp; Sons Ltd.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="NMO-37-e70107.pdf"/><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:NMO-37-e70107.pdf"/><abstract><title>ABSTRACT</title><sec id="nmo70107-sec-0001"><title>Background</title><p>The microbiome significantly influences the development of the gastrointestinal and immune systems. The delivery method, whether Caesarean section (CS) or vaginal birth (VB), plays a crucial role in shaping microbiota composition, with CS babies exhibiting differences. Early‐life nutritional interventions using probiotics or prebiotics may help restore this imbalance in CS infants. Our study aimed to assess gut permeability in CS mice compared to VB mice and explore whether prebiotics or probiotics could mitigate any deficiencies.</p></sec><sec id="nmo70107-sec-0002"><title>Methods</title><p>Using a mouse model (NIH Swiss) for CS delivery, we measured plasma levels of a 4 kDa macromolecule (FITC) at PND7, 14, 23, and 35. We evaluated ileal gene expression of tight junction proteins, profiled intestinal microbiome composition, and examined the expression of genes involved in neurotransmitter physiology in the amygdala. Additionally, we studied the impact of administering <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Bifidobacterium breve</italic>
+</styled-content> in drinking water and dietary administration of GOS/FOS on these outcomes.</p></sec><sec id="nmo70107-sec-0003"><title>Key Results</title><p>At PND7, CS‐born mice exhibited increased ileal permeability, along with reduced expression of Tjp1, Occludin, Claudin 3, and Epcam compared to VB mice. Administration of <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> or GOS/FOS alleviated changes in Epcam expression. During the pre‐weaning period, beta diversity differed between VB and CS. Post‐weaning, β‐diversity increased following probiotic and prebiotic intervention. Additionally, CS mice showed changes in neurotransmitter gene expression in the amygdala, which were also mitigated by <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> or GOS/FOS.</p></sec><sec id="nmo70107-sec-0004"><title>Discussion</title><p>Our findings indicate that targeted microbiota‐associated interventions can reverse deficits in intestinal permeability induced in CS mice.</p></sec></abstract><abstract abstract-type="graphical"><p>The study investigated the impact of the delivery method on the microbiome in mice, revealing increased intestinal permeability and altered gene expression in Caesarean section (CS)‐born mice compared to vaginal birth (VB) mice. Administration of <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Bifidobacterium breve</italic>
+</styled-content> or GOS/FOS partially mitigated these effects, suggesting targeted microbiota interventions can reverse deficits in intestinal permeability induced by CS.<boxed-text position="anchor" content-type="graphic" id="nmo70107-blkfxd-0001" orientation="portrait"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="NMO-37-e70107-g001.jpg"/></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="nmo70107-kwd-0001">amygdala</kwd><kwd id="nmo70107-kwd-0002">caesarean‐section</kwd><kwd id="nmo70107-kwd-0003">diet</kwd><kwd id="nmo70107-kwd-0004">microbiome</kwd><kwd id="nmo70107-kwd-0005">neuroplasticity</kwd><kwd id="nmo70107-kwd-0006">permeability</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>Science Foundation Ireland</institution><institution-id institution-id-type="doi">10.13039/501100001602</institution-id></institution-wrap>
+</funding-source></award-group></funding-group><counts><fig-count count="5"/><table-count count="0"/><page-count count="12"/><word-count count="8200"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>December 2025</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.6 mode:remove_FC converted:17.11.2025</meta-value></custom-meta></custom-meta-group></article-meta><notes><fn-group id="nmo70107-ntgp-0001"><fn fn-type="funding" id="nmo70107-note-0001"><p>
+<bold>Funding:</bold> This work was supported by Science Foundation Ireland.</p></fn></fn-group></notes></front><body id="nmo70107-body-0001"><p>
+<boxed-text position="anchor" content-type="box" id="nmo70107-blkfxd-1001" orientation="portrait"><caption><title>Summary</title></caption><p>
+<list list-type="bullet" id="nmo70107-list-0001"><list-item id="nmo70107-li-0001"><p>Mode of delivery can significantly shape the composition of the gut microbiota. This study investigated how Caesarean section (CS) birth affects gut permeability, microbiota, and gene expression in the amygdala of mice and whether early‐life interventions with probiotics or prebiotics can reverse these effects.</p></list-item><list-item id="nmo70107-li-0002"><p>Using NIH Swiss mice, we found that CS‐born pups had higher gut permeability and reduced expression of tight junction genes at PND7 compared to vaginally born (VB) mice. Probiotic (<italic toggle="yes">Bifidobacterium breve</italic>) and prebiotic (GOS/FOS) treatments improved gene expression and modulated the microbiota, especially increasing diversity after weaning.</p></list-item><list-item id="nmo70107-li-0003"><p>CS birth also altered neurotransmitter‐related gene expression in the amygdala, changes that were mitigated by both interventions.</p></list-item><list-item id="nmo70107-li-0004"><p>These findings suggest that early probiotic or prebiotic supplementation may help restore gut and brain development disruptions linked to CS delivery in mice.</p></list-item></list>
+</p></boxed-text>
+</p><sec id="nmo70107-sec-0005"><label>1</label><title>Introduction</title><p>The intestinal barrier is an essential structure at the interface between the host and the external environment. This barrier protects the underlying mucosa, maintaining systemic immune tolerance, protecting the host from continuous attacks from pathogens and antigens, while also facilitating the uptake of essential nutritional molecules that are key to host survival [<xref rid="nmo70107-bib-0001" ref-type="bibr">1</xref>, <xref rid="nmo70107-bib-0002" ref-type="bibr">2</xref>]. To accomplish such diverse functions, the gut possesses many structural and immune mediated mechanisms that facilitate host protection. Firstly, the physical propulsion of the GI tract protects underlying structures [<xref rid="nmo70107-bib-0003" ref-type="bibr">3</xref>]. Secondly, commensal microbes prevent the permanent colonization of pathogenic bacteria [<xref rid="nmo70107-bib-0004" ref-type="bibr">4</xref>, <xref rid="nmo70107-bib-0005" ref-type="bibr">5</xref>]. Thirdly, immune cells in the mucosa and <italic toggle="yes">lamina propria</italic>, such as macrophages and dendritic cells, mount potent immune responses against pathogens via the production of cytokines and immunoglobulins [<xref rid="nmo70107-bib-0006" ref-type="bibr">6</xref>, <xref rid="nmo70107-bib-0007" ref-type="bibr">7</xref>]. Moreover, a protective mucus layer allows the entrapment of pathogenic bacteria and prevents direct contact with the epithelial cell layer [<xref rid="nmo70107-bib-0008" ref-type="bibr">8</xref>]. Finally, the epithelium, a single layer of epithelial cells sealed by tight junction proteins, desmosomes, and adherens junctions, provides a robust physical barrier preventing access to the underlying mucosa [<xref rid="nmo70107-bib-0009" ref-type="bibr">9</xref>].</p><p>The mammalian microbiome consists of over 100 trillion microorganisms and has co‐evolved with its host over decades, forming a mutualistic relationship now accepted to play a key role in the development of the immune system [<xref rid="nmo70107-bib-0010" ref-type="bibr">10</xref>], host metabolism [<xref rid="nmo70107-bib-0011" ref-type="bibr">11</xref>], and the maintenance of the structural integrity of the intestinal barrier [<xref rid="nmo70107-bib-0012" ref-type="bibr">12</xref>]. It is clear that the microbiome in our gut influences key brain structures and behavior [<xref rid="nmo70107-bib-0013" ref-type="bibr">13</xref>, <xref rid="nmo70107-bib-0014" ref-type="bibr">14</xref>]. Changes in the composition of the microbiome often occur in early life; for example, feeding—whether with breast milk or formula—can influence the development and structure of the gut microbiota along with neural development [<xref rid="nmo70107-bib-0015" ref-type="bibr">15</xref>, <xref rid="nmo70107-bib-0016" ref-type="bibr">16</xref>]. Antibiotics also have a profound effect on the microbiome, including reduced species diversity and impeded growth of <italic toggle="yes">Bifidobacterium</italic> [<xref rid="nmo70107-bib-0017" ref-type="bibr">17</xref>].</p><p>Colonization of neonates with environmental microorganisms and microorganisms from their mothers begins at birth and is critical for development. Caesarean section (CS) is an essential surgical procedure when vaginal delivery endangers the mother or the infant. Moreover, delivery by CS along with infant feeding and antibiotic use is a primary contributor to disruption of the infant microbiome [<xref rid="nmo70107-bib-0018" ref-type="bibr">18</xref>]. This manifests as decreased colonization of <italic toggle="yes">Bacteroides</italic>, <italic toggle="yes">Lactobacillus</italic>, and <italic toggle="yes">Bifidobacterium</italic> and an increase in the presence of <italic toggle="yes">Streptococcus, Staphylococcus, and Propionibacterium</italic>—strains normally associated with the skin microbiome [<xref rid="nmo70107-bib-0018" ref-type="bibr">18</xref>, <xref rid="nmo70107-bib-0019" ref-type="bibr">19</xref>, <xref rid="nmo70107-bib-0020" ref-type="bibr">20</xref>, <xref rid="nmo70107-bib-0021" ref-type="bibr">21</xref>, <xref rid="nmo70107-bib-0022" ref-type="bibr">22</xref>]. Disturbing the natural transmission of bacterial species from mother to infant is known to have detrimental consequences later in life. CS delivery is now associated with an increased relative risk of obesity [<xref rid="nmo70107-bib-0023" ref-type="bibr">23</xref>], asthma [<xref rid="nmo70107-bib-0024" ref-type="bibr">24</xref>, <xref rid="nmo70107-bib-0025" ref-type="bibr">25</xref>], Type 1 diabetes [<xref rid="nmo70107-bib-0026" ref-type="bibr">26</xref>], and coeliac disease [<xref rid="nmo70107-bib-0027" ref-type="bibr">27</xref>].</p><p>Like the microbiome, development of the intestinal barrier is a dynamic process and is incomplete at birth. In fact, increased intestinal permeability is considered a normal finding in the neonatal intestine [<xref rid="nmo70107-bib-0028" ref-type="bibr">28</xref>, <xref rid="nmo70107-bib-0029" ref-type="bibr">29</xref>]. Increased permeability may be beneficial to the neonate, facilitating the uptake of larger nutritional peptides [<xref rid="nmo70107-bib-0030" ref-type="bibr">30</xref>]. However, increased permeability may also result in increased uptake of antigen and pathogenic microbes causing infection and increased visceral hypersensitivity. A defective intestinal barrier and an altered microbiome composition are also associated with intestinal disorders such as irritable bowel syndrome (IBS) [<xref rid="nmo70107-bib-0031" ref-type="bibr">31</xref>], and inflammatory bowel disease (IBD) [<xref rid="nmo70107-bib-0032" ref-type="bibr">32</xref>]. Nutritional interventions using supplementation with probiotics, prebiotics, synbiotics, or postbiotics from early life may restore deficits in the microbiota of CS offspring and prevent the detrimental effects associated with this mode of delivery [<xref rid="nmo70107-bib-0033" ref-type="bibr">33</xref>].</p><p>Using a mouse model of CS, we have previously shown social and cognitive deficits in early life that persist into adulthood compared to vaginally born mice [<xref rid="nmo70107-bib-0034" ref-type="bibr">34</xref>]. We have also demonstrated that many of these alterations can be reversed with dietary interventions using prebiotics (FOS/GOS) [<xref rid="nmo70107-bib-0035" ref-type="bibr">35</xref>] or a specific Bifidobacterium [<xref rid="nmo70107-bib-0034" ref-type="bibr">34</xref>]. Thus, in this study, we sought to profile intestinal barrier function at various stages of early life following CS and assess whether any potential deficits were reversable by pre‐ or probiotic intervention. In addition, we assessed the effects of CS birth on the expression of genes relevant to neuroplasticity in the amygdala, while also considering the role of the intestinal microbiome.</p></sec><sec sec-type="methods" id="nmo70107-sec-0006"><label>2</label><title>Methods</title><sec id="nmo70107-sec-0007"><label>2.1</label><title>Animals and Housing</title><p>Male and female NIH Swiss mice breeders (Hsd: NIHS) were purchased at 9 weeks old from Envigo UK. An outbred strain was used because of better maternal behavior compared to inbred strains [<xref rid="nmo70107-bib-0036" ref-type="bibr">36</xref>]. Animals were allowed to acclimatize to the animal holding room for up to 2 weeks before breeding started. Pregnant female mice were housed individually throughout pregnancy and had <italic toggle="yes">ad libitum</italic> access to regular rodent diet (Teklad Global 18% rodent diet, 2018s) and tap water. Mice were housed in conventional cages (M2 polypropylene, sloping front cages. Overall size 33 x 15 x 13 cm. Internal size 330 cm x 13 cm). Bedding consisted of eco‐pure aspen premium bedding with sizzlenest, nesting material (Datesand). Each cage was also supplied with a cardboard tube and chew stick. See Table <xref rid="nmo70107-supitem-0003" ref-type="supplementary-material">S3</xref> for ARRIVE guidelines.</p><p>Pregnant females (primiparous) were time mated in the presence of a vaginal plug indicating day 0.5 of gestation. Three days before the breeding was due to begin, dirty bedding from male mice was placed in the females cage to promote the Whitten Effect. Males and females were then paired. Vaginal plugs were checked for daily. Once a plug was detected, the female was removed and single housed. If a plug was not detected, males were removed and paired with a different female. Females were presumed pregnant for 3 weeks, at which stage they are reused for breeding. Female cages were not changed 4 days before their due date and for up to a week after they gave birth. Male offspring were weaned at postnatal day (PND) 23 and subsequently housed in groups of 3 or 4 per cage. Full nests were maintained until weaning; at weaning, female mice were euthanized, and male mice were retained. Animals were kept under controlled temperature and humidity (20 ± 1 ± °C, 55.5%) and on a 12‐h (h) light, 12 h dark cycle (lights on from 07h30‐19h30). All experiments were conducted during the light phase, and all procedures complied with the European Directive 2010/63/EU, compliant with the requirements of Irish law (S.I No 543 of 2012) and approved by the Animal Experimentation Ethics Committee of University College Cork and the Health Products Regulatory Authority (HPRA). Approval was obtained before the commencement of any of the experiments.</p></sec><sec id="nmo70107-sec-0008"><label>2.2</label><title>C‐Section</title><p>At day 19.5 of gestation (mean 20 days ±1 day), pregnant females were culled by cervical dislocation and C‐section surgery was performed. Briefly, after cleaning the abdominal area with 70% ethanol, an incision was made in the abdominal cavity to expose the uterus. Individual pups were gently removed from the uterus, the umbilical cord was cut approximately 3 mm distal to the umbilical attachment and pups were placed on sterile gauze on top of a heating pad. Sterile cotton buds were used to gently massage the pups until spontaneous breathing was observed. At the end of the procedure, all the pups were given to a foster mother that had a naturally delivered litter within the previous 24 h.</p></sec><sec id="nmo70107-sec-0009"><label>2.3</label><title>Study Design and Treatments</title><p>This study was designed with four specific timepoints: P7, P14, P23 and P35, all samples from these timepoints were analyzed at the very end of the study. These timepoints were chosen to encompass, early life and post‐weaning periods. Different animals were used at each timepoint, and each individual animal was considered an experimental unit. To address litter effects, we randomly allocated animals from 4–6 litters to groups as outlined in Tables <xref rid="nmo70107-supitem-0003" ref-type="supplementary-material">S3</xref> and <xref rid="nmo70107-supitem-0004" ref-type="supplementary-material">S4</xref>.</p><p>Mice were divided into four experimental groups: one natural born (NB) group receiving water and control AIN diet (Ssniff diets, Table <xref rid="nmo70107-supitem-0002" ref-type="supplementary-material">S2A</xref>
+<bold>)</bold> and three Caesarean delivery (CS) groups receiving one of the following treatments: 1. CS Control; 2. <italic toggle="yes">
+<styled-content style="fixed-case" toggle="no">Bifidobacterium Breve</styled-content> M16V</italic> (probiotic) a commercially available probiotic supplied by Danone Nutricia Research (Utrecht, the Netherlands). Group 3, a prebiotic mixture of short‐chain galacto‐oligosaccharides (GOS) and long‐chain fructo‐oligosaccharides (FOS) in a 9 to 1 ratio supplied by Danone Nutricia Research (Utrecht, the Netherlands), (GOS/FOS, prebiotic), (Table <xref rid="nmo70107-supitem-0002" ref-type="supplementary-material">S2B</xref>). Dietary intervention was given <italic toggle="yes">ad‐libitum</italic> to (foster) dams from birth throughout the lactation period. For the postnatal day (PND) 35 timepoint, male offspring were weaned at PND 21 and moved to the same dietary intervention as their mothers until the end of the experiment. <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> treatment was administered in the drinking water, and GOS/FOS was included in the custom rodent diet, which was refreshed daily. <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> solution was prepared fresh every day at a concentration of 1x10 [9]/mL, with the probiotic being dissolved in sterile H<sub>2</sub>O (Medidrop).</p></sec><sec id="nmo70107-sec-0010"><label>2.4</label><title>In Vivo Gastrointestinal Permeability (Fluorescein Isothiocyanate (<styled-content style="fixed-case" toggle="no">FITC</styled-content>)‐Dextran)</title><p>For PND7 and PND14, mice were separated from their mother and placed on a heating pad for 1 h to avoid hypothermia. The heating pad was under the cage placed in a separate room to the dam, away from sights and smells of the dams. This room was quiet and had standard lighting. After 1 h, FITC‐dextran (600 mg/kg, diluted in sterile PBS) was given by oral gavage. For PND 7 and 14 mice were culled 2 h after gavage and FITC was measured in the plasma. For PND23 and PND35 mice were fasted overnight before being given FITC‐dextran by oral gavage (600 mg/kg). 2 h after gavage, blood was collected following decapitation and FITC was measured in the plasma at 485‐nm excitation and 535‐nm emission wavelengths in a 384‐well plate.</p></sec><sec id="nmo70107-sec-0011"><label>2.5</label><title>Fecal Collections</title><p>Colon content was collected for microbiome analysis when the animals were culled.</p></sec><sec id="nmo70107-sec-0012"><label>2.6</label><title>
+<styled-content style="fixed-case" toggle="no">16S rRNA</styled-content> Gene Sequence‐Based Microbiota Analysis</title><p>Total DNA extraction from fecal matter from the colon was performed using the QIAmp Fast DNA Stool mini‐Kit (QIAGEN, Manchester, UK) coupled with an initial bead‐beating step. Extracted DNA was kept frozen at −20°C until further analysis. The V3‐V4 hypervariable region of the 16S rRNA gene was amplified with primers Bact‐0341F (5′‐CCTACGGGNGGCWGCAG‐3′) and Bact‐0785R (5′‐GACTACHVGGGTATCTAATCC‐3′) [<xref rid="nmo70107-bib-0037" ref-type="bibr">37</xref>]. PCR products were quantified, normalized and pooled in an equimolar fashion using Invitrogen kit Quant‐It‐Picogreen (ThermoFisher Scientific, Oregon, USA) and prepared for sequencing on an Illumina MiSeq instrument as described previously (Caporaso, Lauber et al. 2012) using NexteraXT library preparation kit (Illumina, San Diego, USA) and MiSeq Reagent Kit v3 (Illumina, San Diego, USA; 300 PE reads).</p></sec><sec id="nmo70107-sec-0013"><label>2.7</label><title>Bioinformatics Analysis</title><p>Three hundred base pair paired‐end reads were pre‐filtered on the basis of a quality score threshold of &gt; 28, trimmed and filtered for quality and chimaeras using the DADA2 library in R (version 4.1.1). Only samples with &gt; 10.000 reads after QC were used in analysis. Taxonomy was assigned with DADA2 against the SILVA SSURef database release v132. Parameters as recommended in the DADA2 manual were adhered to unless mentioned otherwise. Amplicon sequence variants (ASVs) were aggregated at genus level. Raw microbiome files are deposited in the ENA under accession number PRJEB81708. Raw Data is available in Supplementary Data <xref rid="nmo70107-supitem-0007" ref-type="supplementary-material">S1</xref>, <xref rid="nmo70107-supitem-0008" ref-type="supplementary-material">S2</xref> and <xref rid="nmo70107-supitem-0009" ref-type="supplementary-material">S3</xref>.</p></sec><sec id="nmo70107-sec-0014"><label>2.8</label><title>Quantitative Real Time Polymerase Chain Reaction (<styled-content style="fixed-case" toggle="no">qRT</styled-content>‐<styled-content style="fixed-case" toggle="no">PCR</styled-content>)</title><p>Gut (colon and ileum) and brain (amygdala) tissue were rapidly hand‐dissected and then stored at −80°C until further tissue processing. RNA extraction was performed using the MirVANA Total RNA Isolation Kit (Ambion) according to the manufacturer's instructions. For cDNA synthesis, the Applied Biosystems High‐Capacity cDNA Reverse Transcription Kit (Life Technologies) was used per the instructions provided by the supplier. qRT‐PCR was performed with 7300 Real‐time PCR systems (Applied biosystems), using TaqMan Universal Mastermix II, no UNG (Applied Biosystems) and PrimeTime std. qPCR Assay primers (Integrated DNA Technologies). All samples were measured in triplicate. β‐actin (Actb) was used as a stable reference gene and to normalize the expression of the different genes [<xref rid="nmo70107-bib-0038" ref-type="bibr">38</xref>].</p></sec><sec id="nmo70107-sec-0015"><label>2.9</label><title>Statistics</title><p>In this study, a single animal was considered the experimental unit. Data distribution was checked by the Kolmogorov–Smirnov test, and variances were compared using Levene's test. For parametric data, a Student's <italic toggle="yes">t</italic>‐test and a one‐way ANOVA followed by Bonferroni post hoc were applied accordingly. For nonparametric data, a Kruskal–Wallis test followed by the U‐Mann–Whitney test was used. The experimental unit for all analyses was each single animal. All statistical analyses were carried out using IBM SPSS Statistics 25.0 for Windows software package. Extreme outliers and technical outliers were excluded when values were 2× standard deviation from the mean.</p><p>For the microbiome analysis, we excluded species that were only detected as non‐zero in 5% or fewer of total samples from our count table as ratios are invariant to subsetting and this study employs compositional data analysis techniques [<xref rid="nmo70107-bib-0039" ref-type="bibr">39</xref>]. The ALDEx2 library was used to compute the centred log‐ratio transformed values of the remaining taxa as is appropriate for handling compositional data (Fernandes, Reid et al. 2014). Custom scripts and the Tjazi library can be found online at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://github.com/thomazbastiaanssen/Tjazi" ext-link-type="uri">https://github.com/thomazbastiaanssen/Tjazi</ext-link> [<xref rid="nmo70107-bib-0040" ref-type="bibr">40</xref>]. For principal component analysis (PCA), a pairwise implementation of the adonis() PERMANOVA function in the vegan library followed by the Bonferroni‐Holm correction was used to test for difference in β‐diversity in terms of Aitchison distance (Aitchison, Barceló‐Vidal et al. 2000).</p><p>To statistically assess differences in microbial genera, we used the default (e.g., unpaired, non‐parametric) settings for ALDEx2 to estimate <italic toggle="yes">p</italic>‐values from permutations. This could be interpreted as a bootstrapped Mann–Whitney test [<xref rid="nmo70107-bib-0041" ref-type="bibr">41</xref>]. We used Benjamini &amp; Hochberg's procedure to control the false discovery rate (FDR). In all cases, a <italic toggle="yes">q</italic>‐value &lt; 0.1 was considered significant. α‐diversity was calculated using the iNEXT library, and differences between treatment groups were assessed using a linear model [<xref rid="nmo70107-bib-0042" ref-type="bibr">42</xref>].</p></sec></sec><sec sec-type="results" id="nmo70107-sec-0016"><label>3</label><title>Results</title><sec id="nmo70107-sec-0017"><label>3.1</label><title>Delivery by C‐Section Increases Intestinal Permeability at Postnatal Day 7 and is Reversible With <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> or <styled-content style="fixed-case" toggle="no">GOS</styled-content>/<styled-content style="fixed-case" toggle="no">FOS</styled-content> Treatment</title><p>To investigate if mode‐of‐delivery at birth could influence early life intestinal permeability, we measured the presence of orally administered dextran conjugated with FITC in the plasma of mice at PND7, PND14, PND23, and PND35 (Figure <xref rid="nmo70107-fig-0001" ref-type="fig">1A</xref>). Comparing the level of FITC in the plasma of mice born <italic toggle="yes">per vaginum</italic> with mice born by CS, we observed a significant increase in the concentration of FITC in mice born by CS at postnatal day 7 (Figure <xref rid="nmo70107-fig-0001" ref-type="fig">1B</xref>, <italic toggle="yes">p</italic> &lt; 0.001). The concentration of FITC in the plasma of mice did not differ on the basis of mode‐of‐delivery at days 14, 23 and 35 days following birth (Figure <xref rid="nmo70107-fig-0001" ref-type="fig">1B</xref>). To assess if the increased intestinal permeability in CS mice at day 7 could be reversed with a microbiome targeted intervention, independent groups of mice were administered either a probiotic (<styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content>) or a prebiotic (GOS/FOS) from birth maternally (up until PND23) or orally from PND23 to PND35, post‐weaning (Figure <xref rid="nmo70107-fig-0001" ref-type="fig">1A</xref>). Mice who were born by CS and received <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> (<italic toggle="yes">p</italic> &lt; 0.001) or GOS/FOS (<italic toggle="yes">p</italic> &lt; 0.05) had significantly reduced permeability at day 7 compared to mice born by CS receiving no dietary intervention. No improvements in intestinal permeability were noted in mice receiving <italic toggle="yes">B. breve</italic> or GOS/FOS at days 14 (Figure <xref rid="nmo70107-fig-0001" ref-type="fig">1D</xref>), 23 (Figure <xref rid="nmo70107-fig-0001" ref-type="fig">1E</xref>) or 35 (Figure <xref rid="nmo70107-fig-0001" ref-type="fig">1F</xref>).</p><fig position="float" fig-type="FIGURE" id="nmo70107-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>Delivery by C‐Section increases intestinal permeability in early life and is reversible with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> or GOS/FOS treatment. (A) Experimental timeline measurement of plasma FITC μg/mL at PND7 (B) PND14 (C) PND23 (D) and PND35 (E) in VB and CS mice supplemented with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> (yellow) or GOS/FOS (green). Data is presented as bar graphs with individual data points and error bars represents the standard error of the mean (S.E.M) *** = <italic toggle="yes">p</italic> &lt; 0.001 versus VB control, # = <italic toggle="yes">p</italic> &lt; 0.05 versus VB control, ### = <italic toggle="yes">p</italic> &lt; 0.001 versus CS control. CS, C‐section birth; PND, postnatal day; VB, vaginal birth.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="NMO-37-e70107-g005.jpg"/></fig></sec><sec id="nmo70107-sec-0018"><label>3.2</label><title>Delivery by C‐Section Reduces the Expression of Tight Junction Protein Related Genes Specifically at <styled-content style="fixed-case" toggle="no">PND7</styled-content> in the Ileum</title><p>Having shown that delivery by CS results in increased intestinal permeability compared with mice born vaginally at PND7, we speculated that this may be due to structural alterations in the epithelial barrier. In the ileum, we measured expression of genes associated with the structural integrity of the epithelial barrier. TJP1 (Tight Junction Protein 1), Occludin, and Claudin3 are transmembrane proteins with key structural roles in the maintenance of tight junctions between epithelial cells (Shen, Weber et al. 2011). At PND7, there was a significant decrease in the expression of TJP1, Occludin, and Claudin3 in mice born by CS (Figure <xref rid="nmo70107-fig-0002" ref-type="fig">2A,C,E</xref>, <italic toggle="yes">p</italic> &lt; 0.05) compared with VB mice. Subsequently, 14 days after birth, TJP1 was found to be significantly increased in the intestine of mice born by CS (Figure <xref rid="nmo70107-fig-0002" ref-type="fig">2B</xref>, <italic toggle="yes">p</italic> &lt; 0.01), whereas CS did not affect the expression of Occludin or Claudin3 at this time (Figure <xref rid="nmo70107-fig-0002" ref-type="fig">2D,F</xref>). Epithelial cell adhesion molecule (Epcam) is a transmembrane protein expressed almost exclusively in epithelial cells, where it plays a critical role in cell adhesion (Lei, Maeda et al. 2012). At PND7, expression of Epcam was significantly decreased in mice who had been born by CS (Figure <xref rid="nmo70107-fig-0001" ref-type="fig">1G</xref>, <italic toggle="yes">p</italic> &lt; 0.001) compared with VB mice. However, at day 14, expression of Epcam was similar between CS and vaginal delivery (Figure <xref rid="nmo70107-fig-0002" ref-type="fig">2H</xref>). <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> and GOS/FOS did not significantly alter the expression of TJP1, Occludin or Claudin3 compared to mice born by CS. Expression of Epcam in CS mice receiving GOS/FOS was significantly higher compared to mice born by CS without any treatment (Figure <xref rid="nmo70107-fig-0002" ref-type="fig">2G</xref>). Collectively, these data suggest that deficits in tight‐junction gene expression observed in CS mice at PND7 are not on the whole amenable to interventions that target the microbiome.</p><fig position="float" fig-type="FIGURE" id="nmo70107-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>Delivery by C‐Section reduces the expression of tight junction protein related genes specifically at PND7 in the ileum. Relative expression of Tjp1 (A, B), Occludin (C, D), Claudin 3 (E, F), and Epcam (G, H) in VB (white), CS (red), CS supplemented with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> (yellow) and CS supplemented with GOS/FOS (green) at PND 7 (A, C, E, G) and PND14 (B, D, F, H). <italic toggle="yes">N</italic> = 8–10 per group. *** = <italic toggle="yes">p</italic> &lt; 0.001 versus VB control, * = <italic toggle="yes">p</italic> &lt; 0.05 versus VB control, ** = <italic toggle="yes">p</italic> &lt; 0.01 versus VB control. # <italic toggle="yes">p</italic> &lt; 0.05 versus CS control, CS, C‐section birth; VB, vaginal birth. PND 7 <italic toggle="yes">N</italic> = 10, 10, 10, and 8 per group, PND 14 <italic toggle="yes">N</italic> = 6, 10, 10, and 10 per group. Data are presented as bar graphs with individual data points and error bars representing the standard error of the mean (S.E.M).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="NMO-37-e70107-g004.jpg"/></fig></sec><sec id="nmo70107-sec-0019"><label>3.3</label><title>C‐Section Alters Gut Microbiota at <styled-content style="fixed-case" toggle="no">PND7</styled-content>. At <styled-content style="fixed-case" toggle="no">PND23</styled-content>, Treatment With <italic toggle="yes">B. breve</italic> or <styled-content style="fixed-case" toggle="no">GOS</styled-content>/<styled-content style="fixed-case" toggle="no">FOS</styled-content> has a Significant Impact on Beta Diversity</title><p>The reduced barrier function or increased permeability is inherently linked with the composition of the gut microbiome as it is at this interface that most host–microbe interactions occur. Having observed a temporal effect of birth by CS on barrier integrity at PND7 and the capacity of two microbiota‐based interventions to reverse this deficit in permeability, we analyzed the intestinal microbiome at PND7 and PND23 (post‐weaning) in mice born vaginally, by CS and in mice born by CS receiving <italic toggle="yes">B. breve</italic> or GOS/FOS (Figure <xref rid="nmo70107-fig-0003" ref-type="fig">3</xref>). Alpha‐diversity was not significantly different between CS and VB at PND7 and PND23 using the Chao1, Shannon and Simpson indices (Table <xref rid="nmo70107-supitem-0001" ref-type="supplementary-material">S1</xref>), whereas β‐diversity was assessed in terms of Aitchison distance and visualized via PCA. We found modest differences at PND7 in microbiome composition between mice born vaginally and mice born by CS (Figure <xref rid="nmo70107-fig-0003" ref-type="fig">3A</xref>, <italic toggle="yes">p</italic> &lt; 0.008, <italic toggle="yes">R</italic>
+<sup>2</sup> 0.017, <italic toggle="yes">F</italic> value 3.47), whereas treatment with GOS/FOS (<italic toggle="yes">p</italic> &lt; 0.15, <italic toggle="yes">R</italic>
+<sup>2</sup> 0.09, <italic toggle="yes">F</italic> value 1.49) or treatment with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> (<italic toggle="yes">p</italic> &lt; 0.14, <italic toggle="yes">R</italic>
+<sup>2</sup> 0.1, <italic toggle="yes">F</italic> value 1.68) did not show significant changes in composition compared to CS mice receiving no intervention.</p><fig position="float" fig-type="FIGURE" id="nmo70107-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>C‐Section alters gut microbiota at PND7. At PND23, treatment with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> or GOS/FOS has a significant impact on beta diversity. (A, B) Principal component analysis (PCA) showing the effects of mode of delivery and supplementation with prebiotic or synbiotic on microbiome composition at PND 7 (A) and PND23 (B). (C, D) Heat map showing genera differentially altered by mode of delivery. (C, D) Differentially abundant taxa (by glm Beta coefficient). Color depicts effect size, with blue (negative) indicating higher abundances pre‐treatment and red (positive) indicating higher abundances post‐treatment. *<italic toggle="yes">q</italic> &lt; 0.1. Day 7, <italic toggle="yes">N</italic> = 10, 8, 8, and 9 per group, Day 23 <italic toggle="yes">N</italic> = 7, 8, 7, and 8 per group. (E, F) Representative boxplots of Enterobacteriaceae_Escherichia/Shigella centred log‐ratio (clr) transformed abundance at PND7 (E) and PND23 (F) and Bifidobacteriaceae_Bifidobacterium clr transformed abundance at PND7 (G) and PND23 (H) taken from the feces of VB (white), CS (red), CS supplemented with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> (yellow) and CS supplemented with GOS/FOS (green).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="NMO-37-e70107-g003.jpg"/></fig><p>At PND23, no changes in α‐diversity were noted using the Chao1, Shannon, and Simpson indices (Table <xref rid="nmo70107-supitem-0001" ref-type="supplementary-material">S1</xref>). Assessing β‐diversity at PND23, there was no significant change in the composition of the microbiome between VB and CS mice (Figure <xref rid="nmo70107-fig-0003" ref-type="fig">3B</xref>, <italic toggle="yes">p</italic> &lt; 0.08, <italic toggle="yes">R</italic>
+<sup>2</sup> 0.11, <italic toggle="yes">F</italic> value 1.54). Treatment with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> (<italic toggle="yes">p</italic> &lt; 0.002, <italic toggle="yes">R</italic>
+<sup>2</sup> 0.17, <italic toggle="yes">F</italic> value 2.71) and GOS/FOS (<italic toggle="yes">p</italic> &lt; 0.003, <italic toggle="yes">R</italic>
+<sup>2</sup> 0.21, <italic toggle="yes">F</italic> value 3.64) significantly altered the composition of the microbiome compared to CS mice receiving no intervention (Figure <xref rid="nmo70107-fig-0003" ref-type="fig">3B</xref>). When we assessed individual differential abundance at the genus level, at PND7, Enterobacteriaceae_Escherichia/Shigella was significantly decreased in VB mice compared with CS mice (<italic toggle="yes">p</italic> &lt; 0.001, 95% CI (lwr − 9.64, upper 1.41, <italic toggle="yes">F</italic> value 4.98), (Figure <xref rid="nmo70107-fig-0003" ref-type="fig">3C,E</xref> and Table <xref rid="nmo70107-supitem-0005" ref-type="supplementary-material">S5</xref>), whereas treatment with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> or GOS/FOS did not affect abundance of this strain (Figure <xref rid="nmo70107-fig-0003" ref-type="fig">3C,E</xref>). At PND23, CS did not result in significant changes in differential abundance of Enterobacteriaceae_Escherichia/Shigella, but, like the overall microbiome composition, treatment with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> or GOS/FOS increased the abundance of specific strains such as Bifidobacteriaceae_Bifidobacterium, Bacteroidaceae_Bacteroides and Akkermansiaceae_Akkermansia amongst others (Figure <xref rid="nmo70107-fig-0003" ref-type="fig">3D,F</xref> and Table <xref rid="nmo70107-supitem-0006" ref-type="supplementary-material">S6</xref>).</p><p>Intriguingly, different treatments had differential effects on specific strains. At PND23, comparing effect sizes, mice born by CS who received <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> showed a trend towards a decrease in Enterobacteriaceae_Escherichia‐Shigella and a significant increase in Bifidobacteriaceae_Bifidobacterium abundance compared to CS mice who received no intervention (Figure <xref rid="nmo70107-fig-0003" ref-type="fig">3D</xref> and Table <xref rid="nmo70107-supitem-0006" ref-type="supplementary-material">S6</xref>). Interestingly, at PND23, the genera changed in mice born by CS that received GOS/FOS were different to those receiving <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content>, with Ruminococcaceae_Ruminiclostridium_5, Rikenellaceae_Alistipes, Lachnospiraceae_Roseburia and Lachnospiraceae_Lachnospiraceae_FCS020_group decreased and Lactobacillaceae_Lactobacillus, Bifidobacteriaceae_Bifidobacterium, Bacteroidaceae_Bacteroides, Atopobiaceae_Olsenella and Akkermansiaceae_Akkermansia increased in treated mice compared to untreated mice (Table <xref rid="nmo70107-supitem-0006" ref-type="supplementary-material">S6</xref>).</p></sec><sec id="nmo70107-sec-0020"><label>3.4</label><title>Expression of Genes That Code for Neurotransmitters in the Amygdala Are Altered in Mice Born by C‐Section</title><p>Delivery by CS had a significant effect on the expression of genes related to several important neurotransmitters in the amygdala at PND7. In fact, expression of the GABA receptors, Gabra2 (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4A</xref>, <italic toggle="yes">p</italic> &lt; 0.001) and Gabbr1 (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4B</xref>, <italic toggle="yes">p</italic> &lt; 0.001), along with the glutamate transporters, Grin2a (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4C</xref>, <italic toggle="yes">p</italic> &lt; 0.001), and Grin2b (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4D</xref>, <italic toggle="yes">p</italic> &lt; 0.01), were significantly decreased in CS, as were the glucocorticoid receptor Nr3c1 (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4E</xref>, <italic toggle="yes">p</italic> &lt; 0.01) and the mineralocorticoid receptor Nr3c2 (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4F</xref>, <italic toggle="yes">p</italic> &lt; 0.05). Brain‐derived neurotrophic factor (Bdnf), a modulator of neurotransmission, was decreased in CS compared with VB mice (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4G</xref>, <italic toggle="yes">p</italic> &lt; 0.05), whereas the expression of the serotonin transporter (Sert or SLC6A4) was not significantly different between mice born vaginally or by CS (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4H</xref>). Interestingly, the gene that encodes Tph2, an enzyme responsible for serotonin synthesis in the amygdala, was significantly decreased in CS mice compared to NB mice (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4I</xref>, <italic toggle="yes">p</italic> &lt; 0.01). Caspase‐2, a regulator of synaptic pruning, was significantly increased in CS mice compared to VB mice (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4J</xref>, <italic toggle="yes">p</italic> &lt; 0.001) and the expression of Ido1, a gene encoding an enzyme in the tryptophan metabolism pathway, was not changed on the basis of mode‐of‐delivery (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4K</xref>).</p><fig position="float" fig-type="FIGURE" id="nmo70107-fig-0004" orientation="portrait"><label>FIGURE 4</label><caption><p>Expression of neurotransmitters in the Amygdala is altered in mice born by C‐section. Relative expression of Gabra2 (A) Gabbr1, (B) Grin2a, (C) Grin2a, (D) Grin2b, (E) Nr3c1, (F) Nr3c2, (G) Bdnf, (H) Slc6a4, (I) Tph2, (J) Caspase2, and (K) Ido1 was measured in the amygdala of VB (white), CS (red), CS supplemented with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> (yellow) and CS supplemented with GOS/FOS (green) at PND 7. <italic toggle="yes">N</italic> = 10, 10, 7, and 9 per group. *** = <italic toggle="yes">p</italic> &lt; 0.001 versus VB control, # = <italic toggle="yes">p</italic> &lt; 0.05 versus VB control, ** = <italic toggle="yes">p</italic> &lt; 0.01 versus CS control, * = <italic toggle="yes">p</italic> &lt; 0.05 versus CS control. # <italic toggle="yes">p</italic> &lt; 0.05 versus CS control, ## <italic toggle="yes">p</italic> &lt; 0.01 versus CS control. CS, C‐section birth; VB, vaginal birth.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-9" orientation="portrait" xlink:href="NMO-37-e70107-g002.jpg"/></fig><p>Having shown that mode‐of‐delivery affects the expression of genes related to various neurotransmitters in the amygdala, we wanted to investigate if <italic toggle="yes">B. breve</italic>, or GOS/FOS, were able to reverse such changes. Treating mice born by CS with the probiotic <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> increased the expression of the genes Grin2a, Grin2b, Bdnf, and Slc6a4, in the amygdala compared to untreated CS mice (Figure <xref rid="nmo70107-fig-0004" ref-type="fig">4</xref>). Treatment with <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> did not affect the expression of Gabra2, Gabbr1, Nr3c1, Nr3c2, Tph2, Caspase‐2 and Ido1. Importantly, these data suggest that gene expression in the amygdala is potentially influenced by mode‐of‐delivery and, of further interest, deficits in the expression of some of these genes related to key neurotransmitters, such as Grin2a, Grin2b, Bdnf and Sert, appear to be reversed by treatment with probiotic intervention (<styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content>), but not a prebiotic (GOS/FOS). Further work should confirm these findings and investigate the precise mechanisms responsible. These data indicate that different interventions that alter the microbiome do so through different mechanisms, which in turn could lead to varying outcomes in the gut, but also in the brain. Further work is required to confirm this.</p></sec></sec><sec sec-type="discussion" id="nmo70107-sec-0021"><label>4</label><title>Discussion</title><p>We previously showed that CS birth disrupts maternal microbial transmission and immune priming in mice, but its impact on intestinal barrier function is unclear. Since barrier defects are linked to chronic gut and brain diseases, we examined early‐life permeability and found it increased in CS mice at PND7. CS mice also had altered tight junction gene expression, microbiome profiles, and amygdala neurotransmitter levels. To explore the microbiome's role, we tested a probiotic (<styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content>) and prebiotic (GOS/FOS), both of which restored barrier function and normalized gene expression at PND7.</p><p>The influence of CS birth on immunity, intestinal morphology and the gut–brain axis is not completely understood, and much of the work in this field has focused on microbial composition and colonization at birth and in early life [<xref rid="nmo70107-bib-0034" ref-type="bibr">34</xref>, <xref rid="nmo70107-bib-0043" ref-type="bibr">43</xref>]. A key site for host–microbe interactions is the intestinal barrier, which controls permeability, innate immune function, and mucous production [<xref rid="nmo70107-bib-0044" ref-type="bibr">44</xref>]. Using two different techniques, we confirmed that CS delivery influences the structure and permeability of the gut barrier.</p><p>Tight junction proteins are important in maintaining the intestinal barrier by limiting paracellular permeability and are regulated by the microbiome [<xref rid="nmo70107-bib-0044" ref-type="bibr">44</xref>]. We selected Tjp1, Occludin, and Claudin3 to interrogate barrier function in the ileum as they are key structures in the gut barrier and are responsive to changes in the microbiome [<xref rid="nmo70107-bib-0045" ref-type="bibr">45</xref>, <xref rid="nmo70107-bib-0046" ref-type="bibr">46</xref>]. Future studies should also examine other tight‐junction proteins.</p><p>In mice born by CS, it is not clear what effects early life fluctuations in barrier permeability have on later life. In adulthood, expression of ileal Tjp1 is increased in CS mice [<xref rid="nmo70107-bib-0047" ref-type="bibr">47</xref>], whereas we show that even as early as PND14, Tjp1 expression is increased in CS mice, highlighting the changeable nature of the intestinal barrier at this time. The period between birth and weaning is a critical developmental window when bacteria and bacterial products regulate the development and imprinting of the immune system, which persists into adulthood [<xref rid="nmo70107-bib-0048" ref-type="bibr">48</xref>].</p><p>CS birth results in different patterns of colonization, which in turn can regulate the priming of gut immunity in rodents and humans [<xref rid="nmo70107-bib-0047" ref-type="bibr">47</xref>, <xref rid="nmo70107-bib-0049" ref-type="bibr">49</xref>, <xref rid="nmo70107-bib-0050" ref-type="bibr">50</xref>]. Given that permeability is altered at different stages of development in CS mice, and the composition of the microbiome also differs from that of VB mice at similar times across development [<xref rid="nmo70107-bib-0034" ref-type="bibr">34</xref>], it is tempting to speculate that intestinal permeability and the microbiome are interconnected in the results shown here [<xref rid="nmo70107-bib-0051" ref-type="bibr">51</xref>]. We have previously shown that the caecal microbiome of mice is highly variable in early life (PND9) compared to adolescence (PND21) and adulthood (week 20) [<xref rid="nmo70107-bib-0034" ref-type="bibr">34</xref>], and likewise, the infant microbiome is highly dynamic during the neonatal period, with mode‐of‐delivery being the most significant driver of variation during the neonatal period [<xref rid="nmo70107-bib-0022" ref-type="bibr">22</xref>]. The microbiome is clearly linked to intestinal barrier function. Germ‐free mice have a thinner mucus layer, allowing for greater microbial access to the mucosa [<xref rid="nmo70107-bib-0052" ref-type="bibr">52</xref>, <xref rid="nmo70107-bib-0053" ref-type="bibr">53</xref>]. Mice deficient in intestinal alkaline phosphatase (IAP), an antimicrobial protein situated at the intestinal villus brush‐border, have fewer bacteria and reduced microbial diversity [<xref rid="nmo70107-bib-0054" ref-type="bibr">54</xref>]. Epithelial cell renewal is reduced in germ‐free and antibiotic‐treated mice, whereas microbial metabolites inhibit stem cells in the intestinal crypt [<xref rid="nmo70107-bib-0055" ref-type="bibr">55</xref>].</p><p>We analyzed the microbial composition of feces in the ileocolonic region [<xref rid="nmo70107-bib-0047" ref-type="bibr">47</xref>]. Similar to the caecal microbiome in early life (PND9), we see significant differences in the composition of the ileal microbiome in CS mice compared to VB mice [<xref rid="nmo70107-bib-0034" ref-type="bibr">34</xref>] and moderate changes at PND23, showing that how microbes are acquired can influence the ongoing composition of the microbiome. The differences in the composition of the microbiome are modest; we did not perform a direct comparison between fecal and caecal microbiomes in this study, and the low biomass in the ileum may mean that modest changes may be more pronounced [<xref rid="nmo70107-bib-0047" ref-type="bibr">47</xref>]. Future work that examines the differences in microbial content at different regions of the GI tract, in mucus, quantifies antimicrobial peptides, and measures pH between CS and VB will reinforce the data presented here [<xref rid="nmo70107-bib-0056" ref-type="bibr">56</xref>].</p><p>We demonstrated that the mode of delivery influences gut barrier function and microbiome composition in early life (PND7) and that GOS/FOS and <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. breve</italic>
+</styled-content> impact the microbiome during adolescence (PND23). Our previous work also showed that CS birth affects social and cognitive behavior [<xref rid="nmo70107-bib-0034" ref-type="bibr">34</xref>]. Additionally, pre‐ and probiotic interventions mitigate microbiome alterations in CS mice. Since both the brain and microbiome undergo critical postnatal development, we investigated whether the link between impaired barrier function and microbiome changes in CS‐born mice (PND7) also affects the brain by measuring the expression of key neurotransmitter genes in the amygdala, a region sensitive to microbiome variations and probiotic interventions [<xref rid="nmo70107-bib-0013" ref-type="bibr">13</xref>, <xref rid="nmo70107-bib-0057" ref-type="bibr">57</xref>, <xref rid="nmo70107-bib-0058" ref-type="bibr">58</xref>].</p><p>Tight junctions regulate epithelial permeability and several studies have investigated the positive influence that probiotics may have on epithelial permeability by modifying tight junction proteins. Given the importance of the intestinal barrier, it is not surprising that targeting the intestinal microbiome with pre‐ and probiotics is considered a modifiable target. Indeed, the commensal strain <italic toggle="yes">
+<styled-content style="fixed-case" toggle="no">Lactobacillus rhamnosus</styled-content> GG</italic> induces development of barrier function via Cldn3 [<xref rid="nmo70107-bib-0059" ref-type="bibr">59</xref>], whereas <italic toggle="yes">
+<styled-content style="fixed-case" toggle="no">Lactobacillus plantarum</styled-content> ZLP001</italic> positively influenced tight junction expression through modulation of the microbiome [<xref rid="nmo70107-bib-0060" ref-type="bibr">60</xref>]. Bifidobacterium, a prominent beneficial gut microbiota genus, is widely studied as a probiotic. In a mouse model of necrotising enterocolitis (NEC), <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. infantis</italic>
+</styled-content> prevented an increase in intestinal permeability and maintained Claudin 4 and Occludin localization at tight junction structures, highlighting the potential of probiotic interventions.</p><p>This study focussed solely on male mice; future studies should examine female mice. Also, not measuring tight junction proteins as opposed to tight‐junction gene expression represents another limitation of this study. In addition, using an outbred strain may explain the high variability in some of the results. Future work should address the translational potential of the data presented here and consider if the mechanisms presented are also amenable to pre‐ and probiotic intervention at other physiological barriers, such as the blood–brain barrier and the skin.</p></sec><sec id="nmo70107-sec-1005"><title>Author Contributions</title><p>Study design: A.P.V.S., I.B.R., J.K., K.R., T.D., and J.F.C. Data collection: A.P.V.S., A.M.S., M.L., and A.G. Data analysis: A.P.V.S., G.M.M., A.G., and T.B. Data interpretation: A.P.V.S., G.M.M., A.M.S., M.L., T.B., K.R., P.F., A.G., and M.R.‐A. Manuscript drafting: A.P.V.S., T.B., and G.M.M. Manuscript review: G.M.M., A.P.V.S., I.B.R., J.K., and J.F.C. All authors approved the final draft of the manuscript.</p></sec><sec sec-type="COI-statement" id="nmo70107-sec-0023"><title>Conflicts of Interest</title><p>J.F.C. is funded by the Science Foundation Ireland (SFI/12/RC/2273_P2), Saks Kavanaugh Foundation and Swiss National Science Foundation project CRSII5_186346/NMS2068 and has received research funding from IFF, Reckitt and Nutricia; he has been an invited speaker at meetings organized by Freisland Campina and Nutricia and has served as a consultant for Nestle.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="nmo70107-supitem-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Table S1.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s002.docx" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="nmo70107-supitem-0002" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Table S2.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s005.docx" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="nmo70107-supitem-0003" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Table S3.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s006.docx" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="nmo70107-supitem-0004" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Table S4.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s004.docx" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="nmo70107-supitem-0005" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Table S5.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s009.csv" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="nmo70107-supitem-0006" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Table S6.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s007.csv" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="nmo70107-supitem-0007" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Data S1.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s001.docx" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="nmo70107-supitem-0008" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Data S2.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s003.pdf" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="nmo70107-supitem-0009" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Data S3.
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NMO-37-e70107-s008.pdf" position="float" orientation="portrait"/></supplementary-material></sec></body><back><ack id="nmo70107-sec-0022"><title>Acknowledgments</title><p>We would like to thank C. Manley for her assistance with mouse husbandry. APC Microbiome Ireland is a research centre funded by Science Foundation Ireland (SFI), through the Irish Governments' national development plan (grant no. 12/RC/2273_P2).</p></ack><sec sec-type="data-availability" id="nmo70107-sec-0025"><title>Data Availability Statement</title><p>The data that support the findings of this study are openly available in ENA at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.ebi.ac.uk/ena/browser/home" ext-link-type="uri" specific-use="software is-supplemented-by">https://www.ebi.ac.uk/ena/browser/home</ext-link>, reference number PRJEB81708.</p></sec><ref-list content-type="cited-references" id="nmo70107-bibl-0001"><title>References</title><ref id="nmo70107-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="nmo70107-cit-0001">
+<string-name name-style="western">
+<given-names>A. V.</given-names>
+<surname>Keita</surname>
+</string-name> and <string-name name-style="western">
+<given-names>J. D.</given-names>
+<surname>Söderholm</surname>
+</string-name>, “<article-title>The Intestinal Barrier and Its Regulation by Neuroimmune Factors</article-title>,” <source>Neurogastroenterology and Motility</source>
+<volume>22</volume>, no. <issue>7</issue> (<year>2010</year>): <fpage>718</fpage>–<lpage>733</lpage>, <pub-id pub-id-type="doi">10.1111/j.1365-2982.2010.01498.x</pub-id>.<pub-id pub-id-type="pmid">20377785</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="nmo70107-cit-0002">
+<string-name name-style="western">
+<given-names>J. R.</given-names>
+<surname>Kelly</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P. J.</given-names>
+<surname>Kennedy</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. F.</given-names>
+<surname>Cryan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T. G.</given-names>
+<surname>Dinan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Clarke</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>N. P.</given-names>
+<surname>Hyland</surname>
+</string-name>, “<article-title>Breaking Down the Barriers: The Gut Microbiome, Intestinal Permeability and Stress‐Related Psychiatric Disorders</article-title>,” <source>Frontiers in Cellular Neuroscience</source>
+<volume>9</volume> (<year>2015</year>): <fpage>392</fpage>, <pub-id pub-id-type="doi">10.3389/fncel.2015.00392</pub-id>.<pub-id pub-id-type="pmid">26528128</pub-id>
+<pub-id pub-id-type="pmcid">PMC4604320</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="nmo70107-cit-0003">
+<string-name name-style="western">
+<given-names>J. D.</given-names>
+<surname>Huizinga</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. H.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y. F.</given-names>
+<surname>Zhu</surname>
+</string-name>, et al., “<article-title>The Origin of Segmentation Motor Activity in the Intestine</article-title>,” <source>Nature Communications</source>
+<volume>5</volume> (<year>2014</year>): <elocation-id>3326</elocation-id>, <pub-id pub-id-type="doi">10.1038/ncomms4326</pub-id>.<pub-id pub-id-type="pmcid">PMC4885742</pub-id><pub-id pub-id-type="pmid">24561718</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="nmo70107-cit-0004">
+<string-name name-style="western">
+<given-names>S. C.</given-names>
+<surname>Corr</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. U.</given-names>
+<surname>Riedel</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P. W.</given-names>
+<surname>O'Toole</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Hill</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>C. G. M.</given-names>
+<surname>Gahan</surname>
+</string-name>, “<article-title>Bacteriocin Production as a Mechanism for the Antiinfective Activity of <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Lactobacillus salivarius</italic>
+</styled-content> UCC118</article-title>,” <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+<volume>104</volume>, no. <issue>18</issue> (<year>2007</year>): <fpage>7617</fpage>–<lpage>7621</lpage>, <pub-id pub-id-type="doi">10.1073/pnas.0700440104</pub-id>.<pub-id pub-id-type="pmid">17456596</pub-id>
+<pub-id pub-id-type="pmcid">PMC1863472</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="nmo70107-cit-0005">
+<string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Kamada</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y. G.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H. P.</given-names>
+<surname>Sham</surname>
+</string-name>, et al., “<article-title>Regulated Virulence Controls the Ability of a Pathogen to Compete With the Gut Microbiota</article-title>,” <source>Science</source>
+<volume>336</volume>, no. <issue>6086</issue> (<year>2012</year>): <fpage>1325</fpage>–<lpage>1329</lpage>, <pub-id pub-id-type="doi">10.1126/science.1222195</pub-id>.<pub-id pub-id-type="pmid">22582016</pub-id>
+<pub-id pub-id-type="pmcid">PMC3439148</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="nmo70107-cit-0006">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Boirivant</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Amendola</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Butera</surname>
+</string-name>, et al., “<article-title>A Transient Breach in the Epithelial Barrier Leads to Regulatory T‐Cell Generation and Resistance to Experimental Colitis</article-title>,” <source>Gastroenterology</source>
+<volume>135</volume>, no. <issue>5</issue> (<year>2008</year>): <fpage>1612</fpage>–<lpage>1623.e5</lpage>, <pub-id pub-id-type="doi">10.1053/j.gastro.2008.07.028</pub-id>.<pub-id pub-id-type="pmid">18765239</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="nmo70107-cit-0007">
+<string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Cao</surname>
+</string-name>, et al., “<article-title>Activation of the Epidermal Growth Factor Receptor in Macrophages Regulates Cytokine Production and Experimental Colitis</article-title>,” <source>Journal of Immunology</source>
+<volume>192</volume>, no. <issue>3</issue> (<year>2014</year>): <fpage>1013</fpage>–<lpage>1023</lpage>, <pub-id pub-id-type="doi">10.4049/jimmunol.1300133</pub-id>.<pub-id pub-id-type="pmcid">PMC4006992</pub-id><pub-id pub-id-type="pmid">24391216</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="nmo70107-cit-0008">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Grootjans</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I. H. R.</given-names>
+<surname>Hundscheid</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Lenaerts</surname>
+</string-name>, et al., “<article-title>Ischaemia‐Induced Mucus Barrier Loss and Bacterial Penetration Are Rapidly Counteracted by Increased Goblet Cell Secretory Activity in Human and Rat Colon</article-title>,” <source>Gut</source>
+<volume>62</volume>, no. <issue>2</issue> (<year>2013</year>): <fpage>250</fpage>–<lpage>258</lpage>, <pub-id pub-id-type="doi">10.1136/gutjnl-2011-301956</pub-id>.<pub-id pub-id-type="pmid">22637697</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="nmo70107-cit-0009">
+<string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Otani</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T. P.</given-names>
+<surname>Nguyen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Tokuda</surname>
+</string-name>, et al., “<article-title>Claudins and JAM‐A Coordinately Regulate Tight Junction Formation and Epithelial Polarity</article-title>,” <source>Journal of Cell Biology</source>
+<volume>218</volume>, no. <issue>10</issue> (<year>2019</year>): <fpage>3372</fpage>–<lpage>3396</lpage>, <pub-id pub-id-type="doi">10.1083/jcb.201812157</pub-id>.<pub-id pub-id-type="pmid">31467165</pub-id>
+<pub-id pub-id-type="pmcid">PMC6781433</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="nmo70107-cit-0010">
+<string-name name-style="western">
+<given-names>C. A.</given-names>
+<surname>Lozupone</surname>
+</string-name>, “<article-title>Unraveling Interactions Between the Microbiome and the Host Immune System to Decipher Mechanisms of Disease</article-title>,” <source>MSystems</source>
+<volume>3</volume>, no. <issue>2</issue> (<year>2018</year>): <elocation-id>e00183‐17</elocation-id>, <pub-id pub-id-type="doi">10.1128/mSystems.00183-17</pub-id>.<pub-id pub-id-type="pmid">29556546</pub-id>
+<pub-id pub-id-type="pmcid">PMC5853183</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="nmo70107-cit-0011">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Visconti</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. I.</given-names>
+<surname>Le Roy</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Rosa</surname>
+</string-name>, et al., “<article-title>Interplay Between the Human Gut Microbiome and Host Metabolism</article-title>,” <source>Nature Communications</source>
+<volume>10</volume>, no. <issue>1</issue> (<year>2019</year>): <fpage>4505</fpage>, <pub-id pub-id-type="doi">10.1038/s41467-019-12476-z</pub-id>.<pub-id pub-id-type="pmcid">PMC6776654</pub-id><pub-id pub-id-type="pmid">31582752</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="nmo70107-cit-0012">
+<string-name name-style="western">
+<given-names>M. S.</given-names>
+<surname>Desai</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. M.</given-names>
+<surname>Seekatz</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N. M.</given-names>
+<surname>Koropatkin</surname>
+</string-name>, et al., “<article-title>A Dietary Fiber‐Deprived Gut Microbiota Degrades the Colonic Mucus Barrier and Enhances Pathogen Susceptibility</article-title>,” <source>Cell</source>
+<volume>167</volume>, no. <issue>5</issue> (<year>2016</year>): <fpage>1339</fpage>–<lpage>1353.e21</lpage>, <pub-id pub-id-type="doi">10.1016/j.cell.2016.10.043</pub-id>.<pub-id pub-id-type="pmid">27863247</pub-id>
+<pub-id pub-id-type="pmcid">PMC5131798</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="nmo70107-cit-0013">
+<string-name name-style="western">
+<given-names>J. A.</given-names>
+<surname>Bravo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Forsythe</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. V.</given-names>
+<surname>Chew</surname>
+</string-name>, et al., “<article-title>Ingestion of Lactobacillus Strain Regulates Emotional Behavior and Central GABA Receptor Expression in a Mouse via the Vagus Nerve</article-title>,” <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+<volume>108</volume>, no. <issue>38</issue> (<year>2011</year>): <fpage>16050</fpage>–<lpage>16055</lpage>, <pub-id pub-id-type="doi">10.1073/pnas.1102999108</pub-id>.<pub-id pub-id-type="pmid">21876150</pub-id>
+<pub-id pub-id-type="pmcid">PMC3179073</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="nmo70107-cit-0014">
+<string-name name-style="western">
+<given-names>E. S.</given-names>
+<surname>Ogbonnaya</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Clarke</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Shanahan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T. G.</given-names>
+<surname>Dinan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. F.</given-names>
+<surname>Cryan</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>O. F.</given-names>
+<surname>O'Leary</surname>
+</string-name>, “<article-title>Adult Hippocampal Neurogenesis Is Regulated by the Microbiome</article-title>,” <source>Biological Psychiatry</source>
+<volume>78</volume>, no. <issue>4</issue> (<year>2015</year>): <fpage>e7</fpage>–<lpage>e9</lpage>, <pub-id pub-id-type="doi">10.1016/j.biopsych.2014.12.023</pub-id>.<pub-id pub-id-type="pmid">25700599</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="nmo70107-cit-0015">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Knol</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Scholtens</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Kafka</surname>
+</string-name>, et al., “<article-title>Colon Microflora in Infants Fed Formula With Galacto‐ and Fructo‐Oligosaccharides: More Like Breast‐Fed Infants</article-title>,” <source>Journal of Pediatric Gastroenterology and Nutrition</source>
+<volume>40</volume>, no. <issue>1</issue> (<year>2005</year>): <fpage>36</fpage>–<lpage>42</lpage>, <pub-id pub-id-type="doi">10.1097/00005176-200501000-00007</pub-id>.<pub-id pub-id-type="pmid">15625424</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="nmo70107-cit-0016">
+<string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Diaz Heijtz</surname>
+</string-name>, “<article-title>Fetal, Neonatal, and Infant Microbiome: Perturbations and Subsequent Effects on Brain Development and Behavior</article-title>,” <source>Seminars in Fetal &amp; Neonatal Medicine</source>
+<volume>21</volume>, no. <issue>6</issue> (<year>2016</year>): <fpage>410</fpage>–<lpage>417</lpage>, <pub-id pub-id-type="doi">10.1016/j.siny.2016.04.012</pub-id>.<pub-id pub-id-type="pmid">27255860</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="nmo70107-cit-0017">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Tanaka</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Kobayashi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Songjinda</surname>
+</string-name>, et al., “<article-title>Influence of Antibiotic Exposure in the Early Postnatal Period on the Development of Intestinal Microbiota</article-title>,” <source>FEMS Immunology and Medical Microbiology</source>
+<volume>56</volume>, no. <issue>1</issue> (<year>2009</year>): <fpage>80</fpage>–<lpage>87</lpage>, <pub-id pub-id-type="doi">10.1111/j.1574-695X.2009.00553.x</pub-id>.<pub-id pub-id-type="pmid">19385995</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="nmo70107-cit-0018">
+<string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. R.</given-names>
+<surname>Sitarik</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Woodcroft</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. C.</given-names>
+<surname>Johnson</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Zoratti</surname>
+</string-name>, “<article-title>Birth Mode, Breastfeeding, Pet Exposure, and Antibiotic Use: Associations With the Gut Microbiome and Sensitization in Children</article-title>,” <source>Current Allergy and Asthma Reports</source>
+<volume>19</volume>, no. <issue>4</issue> (<year>2019</year>): <fpage>22</fpage>, <pub-id pub-id-type="doi">10.1007/s11882-019-0851-9</pub-id>.<pub-id pub-id-type="pmid">30859338</pub-id>
+<pub-id pub-id-type="pmcid">PMC7376540</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="nmo70107-cit-0019">
+<string-name name-style="western">
+<given-names>M. G.</given-names>
+<surname>Dominguez‐Bello</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E. K.</given-names>
+<surname>Costello</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Contreras</surname>
+</string-name>, et al., “<article-title>Delivery Mode Shapes the Acquisition and Structure of the Initial Microbiota Across Multiple Body Habitats in Newborns</article-title>,” <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+<volume>107</volume>, no. <issue>26</issue> (<year>2010</year>): <fpage>11971</fpage>–<lpage>11975</lpage>, <pub-id pub-id-type="doi">10.1073/pnas.1002601107</pub-id>.<pub-id pub-id-type="pmid">20566857</pub-id>
+<pub-id pub-id-type="pmcid">PMC2900693</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="nmo70107-cit-0020">
+<string-name name-style="western">
+<given-names>C. J.</given-names>
+<surname>Stewart</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N. J.</given-names>
+<surname>Ajami</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. L.</given-names>
+<surname>O'Brien</surname>
+</string-name>, et al., “<article-title>Temporal Development of the Gut Microbiome in Early Childhood From the TEDDY Study</article-title>,” <source>Nature</source>
+<volume>562</volume>, no. <issue>7728</issue> (<year>2018</year>): <fpage>583</fpage>–<lpage>588</lpage>, <pub-id pub-id-type="doi">10.1038/s41586-018-0617-x</pub-id>.<pub-id pub-id-type="pmid">30356187</pub-id>
+<pub-id pub-id-type="pmcid">PMC6415775</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="nmo70107-cit-0021">
+<string-name name-style="western">
+<given-names>R. E.</given-names>
+<surname>Moore</surname>
+</string-name> and <string-name name-style="western">
+<given-names>S. D.</given-names>
+<surname>Townsend</surname>
+</string-name>, “<article-title>Temporal Development of the Infant Gut Microbiome</article-title>,” <source>Open Biology</source>
+<volume>9</volume>, no. <issue>9</issue> (<year>2019</year>): <elocation-id>190128</elocation-id>, <pub-id pub-id-type="doi">10.1098/rsob.190128</pub-id>.<pub-id pub-id-type="pmid">31506017</pub-id>
+<pub-id pub-id-type="pmcid">PMC6769289</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="nmo70107-cit-0022">
+<string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Shao</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. C.</given-names>
+<surname>Forster</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Tsaliki</surname>
+</string-name>, et al., “<article-title>Stunted Microbiota and Opportunistic Pathogen Colonization in Caesarean‐Section Birth</article-title>,” <source>Nature</source>
+<volume>574</volume>, no. <issue>7776</issue> (<year>2019</year>): <fpage>117</fpage>–<lpage>121</lpage>, <pub-id pub-id-type="doi">10.1038/s41586-019-1560-1</pub-id>.<pub-id pub-id-type="pmid">31534227</pub-id>
+<pub-id pub-id-type="pmcid">PMC6894937</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="nmo70107-cit-0023">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Blustein</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Attina</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Liu</surname>
+</string-name>, et al., “<article-title>Association of Caesarean Delivery With Child Adiposity From Age 6 Weeks to 15 Years</article-title>,” <source>International Journal of Obesity</source>
+<volume>37</volume>, no. <issue>7</issue> (<year>2013</year>): <fpage>900</fpage>–<lpage>906</lpage>, <pub-id pub-id-type="doi">10.1038/ijo.2013.49</pub-id>.<pub-id pub-id-type="pmid">23670220</pub-id>
+<pub-id pub-id-type="pmcid">PMC5007946</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="nmo70107-cit-0024">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Kero</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Gissler</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. M.</given-names>
+<surname>Grönlund</surname>
+</string-name>, et al., “<article-title>Mode of Delivery and Asthma–Is There a Connection?</article-title>,” <source>Pediatric Research</source>
+<volume>52</volume>, no. <issue>1</issue> (<year>2002</year>): <fpage>6</fpage>–<lpage>11</lpage>, <pub-id pub-id-type="doi">10.1203/00006450-200207000-00004</pub-id>.<pub-id pub-id-type="pmid">12084840</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="nmo70107-cit-0025">
+<string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Negele</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Heinrich</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Borte</surname>
+</string-name>, et al., “<article-title>Mode of Delivery and Development of Atopic Disease During the First 2 Years of Life</article-title>,” <source>Pediatric Allergy and Immunology</source>
+<volume>15</volume>, no. <issue>1</issue> (<year>2004</year>): <fpage>48</fpage>–<lpage>54</lpage>, <pub-id pub-id-type="doi">10.1046/j.0905-6157.2003.00101.x</pub-id>.<pub-id pub-id-type="pmid">14998382</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="nmo70107-cit-0026">
+<string-name name-style="western">
+<given-names>C. S.</given-names>
+<surname>Algert</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>McElduff</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Morris</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>C. L.</given-names>
+<surname>Roberts</surname>
+</string-name>, “<article-title>Perinatal Risk Factors for Early Onset of Type 1 Diabetes in a 2000‐2005 Birth Cohort</article-title>,” <source>Diabetic Medicine</source>
+<volume>26</volume>, no. <issue>12</issue> (<year>2009</year>): <fpage>1193</fpage>–<lpage>1197</lpage>, <pub-id pub-id-type="doi">10.1111/j.1464-5491.2009.02878.x</pub-id>.<pub-id pub-id-type="pmid">20002469</pub-id>
+<pub-id pub-id-type="pmcid">PMC2810440</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="nmo70107-cit-0027">
+<string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Mårild</surname>
+</string-name>, <string-name name-style="western">
+<given-names>O.</given-names>
+<surname>Stephansson</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Montgomery</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. A.</given-names>
+<surname>Murray</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>J. F.</given-names>
+<surname>Ludvigsson</surname>
+</string-name>, “<article-title>Pregnancy Outcome and Risk of Celiac Disease in Offspring: A Nationwide Case‐Control Study</article-title>,” <source>Gastroenterology</source>
+<volume>142</volume>, no. <issue>1</issue> (<year>2012</year>): <fpage>39</fpage>–<lpage>45.e3</lpage>, <pub-id pub-id-type="doi">10.1053/j.gastro.2011.09.047</pub-id>.<pub-id pub-id-type="pmid">21995948</pub-id>
+<pub-id pub-id-type="pmcid">PMC3244504</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="nmo70107-cit-0028">
+<string-name name-style="western">
+<given-names>R. C.</given-names>
+<surname>Beach</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I. S.</given-names>
+<surname>Menzies</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G. S.</given-names>
+<surname>Clayden</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>J. W.</given-names>
+<surname>Scopes</surname>
+</string-name>, “<article-title>Gastrointestinal Permeability Changes in the Preterm Neonate</article-title>,” <source>Archives of Disease in Childhood</source>
+<volume>57</volume>, no. <issue>2</issue> (<year>1982</year>): <fpage>141</fpage>–<lpage>145</lpage>, <pub-id pub-id-type="doi">10.1136/adc.57.2.141</pub-id>.<pub-id pub-id-type="pmid">7065710</pub-id>
+<pub-id pub-id-type="pmcid">PMC1627527</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="nmo70107-cit-0029">
+<string-name name-style="western">
+<given-names>L. T.</given-names>
+<surname>Weaver</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. F.</given-names>
+<surname>Laker</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Nelson</surname>
+</string-name>, “<article-title>Intestinal Permeability in the Newborn</article-title>,” <source>Archives of Disease in Childhood</source>
+<volume>59</volume>, no. <issue>3</issue> (<year>1984</year>): <fpage>236</fpage>–<lpage>241</lpage>, <pub-id pub-id-type="doi">10.1136/adc.59.3.236</pub-id>.<pub-id pub-id-type="pmid">6424583</pub-id>
+<pub-id pub-id-type="pmcid">PMC1628529</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="nmo70107-cit-0030">
+<string-name name-style="western">
+<given-names>R. M.</given-names>
+<surname>Insoft</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I. R.</given-names>
+<surname>Sanderson</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>W. A.</given-names>
+<surname>Walker</surname>
+</string-name>, “<article-title>Development of Immune Function in the Intestine and Its Role in Neonatal Diseases</article-title>,” <source>Pediatric Clinics of North America</source>
+<volume>43</volume>, no. <issue>2</issue> (<year>1996</year>): <fpage>551</fpage>–<lpage>571</lpage>, <pub-id pub-id-type="doi">10.1016/s0031-3955(05)70420-x</pub-id>.<pub-id pub-id-type="pmid">8614615</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="nmo70107-cit-0031">
+<string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Hanning</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. L.</given-names>
+<surname>Edwinson</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Ceuleers</surname>
+</string-name>, et al., “<article-title>Intestinal Barrier Dysfunction in Irritable Bowel Syndrome: A Systematic Review</article-title>,” <source>Therapeutic Advances in Gastroenterology</source>
+<volume>14</volume> (<year>2021</year>): <fpage>175628482199358</fpage>, <pub-id pub-id-type="doi">10.1177/1756284821993586</pub-id>.<pub-id pub-id-type="pmcid">PMC7925957</pub-id><pub-id pub-id-type="pmid">33717210</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="nmo70107-cit-0032">
+<string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Gasaly</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>de Vos</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>M. A.</given-names>
+<surname>Hermoso</surname>
+</string-name>, “<article-title>Impact of Bacterial Metabolites on Gut Barrier Function and Host Immunity: A Focus on Bacterial Metabolism and Its Relevance for Intestinal Inflammation</article-title>,” <source>Frontiers in Immunology</source>
+<volume>12</volume> (<year>2021</year>): <elocation-id>658354</elocation-id>, <pub-id pub-id-type="doi">10.3389/fimmu.2021.658354</pub-id>.<pub-id pub-id-type="pmid">34122415</pub-id>
+<pub-id pub-id-type="pmcid">PMC8187770</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="nmo70107-cit-0033">
+<string-name name-style="western">
+<given-names>M. C.</given-names>
+<surname>Chua</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Ben‐Amor</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Lay</surname>
+</string-name>, et al., “<article-title>Effect of Synbiotic on the Gut Microbiota of Cesarean Delivered Infants: A Randomized, Double‐Blind, Multicenter Study</article-title>,” <source>Journal of Pediatric Gastroenterology and Nutrition</source>
+<volume>65</volume>, no. <issue>1</issue> (<year>2017</year>): <fpage>102</fpage>–<lpage>106</lpage>, <pub-id pub-id-type="doi">10.1097/MPG.0000000000001623</pub-id>.<pub-id pub-id-type="pmid">28644357</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="nmo70107-cit-0034">
+<string-name name-style="western">
+<given-names>L. H.</given-names>
+<surname>Morais</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. V.</given-names>
+<surname>Golubeva</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G. M.</given-names>
+<surname>Moloney</surname>
+</string-name>, et al., “<article-title>Enduring Behavioral Effects Induced by Birth by Caesarean Section in the Mouse</article-title>,” <source>Current Biology</source>
+<volume>30</volume>, no. <issue>19</issue> (<year>2020</year>): <fpage>3761</fpage>–<lpage>3774.e6</lpage>, <pub-id pub-id-type="doi">10.1016/j.cub.2020.07.044</pub-id>.<pub-id pub-id-type="pmid">32822606</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="nmo70107-cit-0035">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Burokas</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Arboleya</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. D.</given-names>
+<surname>Moloney</surname>
+</string-name>, et al., “<article-title>Targeting the Microbiota‐Gut‐Brain Axis: Prebiotics Have Anxiolytic and Antidepressant‐Like Effects and Reverse the Impact of Chronic Stress in Mice</article-title>,” <source>Biological Psychiatry</source>
+<volume>82</volume>, no. <issue>7</issue> (<year>2017</year>): <fpage>472</fpage>–<lpage>487</lpage>, <pub-id pub-id-type="doi">10.1016/j.biopsych.2016.12.031</pub-id>.<pub-id pub-id-type="pmid">28242013</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="nmo70107-cit-0036">
+<string-name name-style="western">
+<given-names>F. A.</given-names>
+<surname>Champagne</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. P.</given-names>
+<surname>Curley</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E. B.</given-names>
+<surname>Keverne</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>P. P. G.</given-names>
+<surname>Bateson</surname>
+</string-name>, “<article-title>Natural Variations in Postpartum Maternal Care in Inbred and Outbred Mice</article-title>,” <source>Physiology &amp; Behavior</source>
+<volume>91</volume>, no. <issue>2–3</issue> (<year>2007</year>): <fpage>325</fpage>–<lpage>334</lpage>, <pub-id pub-id-type="doi">10.1016/j.physbeh.2007.03.014</pub-id>.<pub-id pub-id-type="pmid">17477940</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="nmo70107-cit-0037">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Klindworth</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Pruesse</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Schweer</surname>
+</string-name>, et al., “<article-title>Evaluation of General 16S Ribosomal RNA Gene PCR Primers for Classical and Next‐Generation Sequencing‐Based Diversity Studies</article-title>,” <source>Nucleic Acids Research</source>
+<volume>41</volume>, no. <issue>1</issue> (<year>2013</year>): <elocation-id>e1</elocation-id>, <pub-id pub-id-type="doi">10.1093/nar/gks808</pub-id>.<pub-id pub-id-type="pmid">22933715</pub-id>
+<pub-id pub-id-type="pmcid">PMC3592464</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="nmo70107-cit-0038">
+<string-name name-style="western">
+<given-names>K. J.</given-names>
+<surname>Livak</surname>
+</string-name> and <string-name name-style="western">
+<given-names>T. D.</given-names>
+<surname>Schmittgen</surname>
+</string-name>, “<article-title>Analysis of Relative Gene Expression Data Using Real‐Time Quantitative PCR and the 2(‐Delta Delta C(T)) Method</article-title>,” <source>Methods</source>
+<volume>25</volume>, no. <issue>4</issue> (<year>2001</year>): <fpage>402</fpage>–<lpage>408</lpage>, <pub-id pub-id-type="doi">10.1006/meth.2001.1262</pub-id>.<pub-id pub-id-type="pmid">11846609</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="nmo70107-cit-0039">
+<string-name name-style="western">
+<given-names>G. B.</given-names>
+<surname>Gloor</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Macklaim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Pawlowsky‐Glahn</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>J. J.</given-names>
+<surname>Egozcue</surname>
+</string-name>, “<article-title>Microbiome Datasets Are Compositional: And This Is Not Optional</article-title>,” <source>Frontiers in Microbiology</source>
+<volume>8</volume> (<year>2017</year>): <fpage>2224</fpage>, <pub-id pub-id-type="doi">10.3389/fmicb.2017.02224</pub-id>.<pub-id pub-id-type="pmid">29187837</pub-id>
+<pub-id pub-id-type="pmcid">PMC5695134</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0040"><label>40</label><mixed-citation publication-type="miscellaneous" id="nmo70107-cit-0040">
+<collab collab-type="authors">Thomazbastiaanssen</collab>
+, “<article-title>thomazbastiaanssen/Tjazi: Tjazi: Microbiome Oriented Compositional Data Toolkit</article-title>,” Published online November 8, 2018, <pub-id pub-id-type="doi">10.5281/ZENODO.1480804</pub-id>.</mixed-citation></ref><ref id="nmo70107-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="nmo70107-cit-0041">
+<string-name name-style="western">
+<given-names>A. D.</given-names>
+<surname>Fernandes</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. N.</given-names>
+<surname>Reid</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Macklaim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T. A.</given-names>
+<surname>McMurrough</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D. R.</given-names>
+<surname>Edgell</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>G. B.</given-names>
+<surname>Gloor</surname>
+</string-name>, “<article-title>Unifying the Analysis of High‐Throughput Sequencing Datasets: Characterizing RNA‐Seq, 16S rRNA Gene Sequencing and Selective Growth Experiments by Compositional Data Analysis</article-title>,” <source>Microbiome</source>
+<volume>2</volume>, no. <issue>15</issue> (<year>2014</year>), <pub-id pub-id-type="doi">10.1186/2049-2618-2-15</pub-id>.<pub-id pub-id-type="pmcid">PMC4030730</pub-id><pub-id pub-id-type="pmid">24910773</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="nmo70107-cit-0042">
+<string-name name-style="western">
+<given-names>T. C.</given-names>
+<surname>Hsieh</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. H.</given-names>
+<surname>Ma</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Chao</surname>
+</string-name>, “<article-title>iNEXT: An R Package for Rarefaction and Extrapolation of Species Diversity ( H Ill Numbers)</article-title>,” <source>Methods in Ecology and Evolution</source>
+<volume>7</volume>, no. <issue>12</issue> (<year>2016</year>): <fpage>1451</fpage>–<lpage>1456</lpage>, <pub-id pub-id-type="doi">10.1111/2041-210X.12613</pub-id>.</mixed-citation></ref><ref id="nmo70107-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="nmo70107-cit-0043">
+<string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Wampach</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Heintz‐Buschart</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. V.</given-names>
+<surname>Fritz</surname>
+</string-name>, et al., “<article-title>Birth Mode Is Associated With Earliest Strain‐Conferred Gut Microbiome Functions and Immunostimulatory Potential</article-title>,” <source>Nature Communications</source>
+<volume>9</volume>, no. <issue>1</issue> (<year>2018</year>): <fpage>5091</fpage>, <pub-id pub-id-type="doi">10.1038/s41467-018-07631-x</pub-id>.<pub-id pub-id-type="pmcid">PMC6269548</pub-id><pub-id pub-id-type="pmid">30504906</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="nmo70107-cit-0044">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>El Aidy</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>van Baarlen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Derrien</surname>
+</string-name>, et al., “<article-title>Temporal and Spatial Interplay of Microbiota and Intestinal Mucosa Drive Establishment of Immune Homeostasis in Conventionalized Mice</article-title>,” <source>Mucosal Immunology</source>
+<volume>5</volume>, no. <issue>5</issue> (<year>2012</year>): <fpage>567</fpage>–<lpage>579</lpage>, <pub-id pub-id-type="doi">10.1038/mi.2012.32</pub-id>.<pub-id pub-id-type="pmid">22617837</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="nmo70107-cit-0045">
+<string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Ahmad</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Kumar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Thapa</surname>
+</string-name>, et al., “<article-title>Loss of Claudin‐3 Expression Increases Colitis Risk by Promoting Gut Dysbiosis</article-title>,” <source>Gut Microbes</source>
+<volume>15</volume>, no. <issue>2</issue> (<year>2023</year>): <elocation-id>2282789</elocation-id>, <pub-id pub-id-type="doi">10.1080/19490976.2023.2282789</pub-id>.<pub-id pub-id-type="pmid">38010872</pub-id>
+<pub-id pub-id-type="pmcid">PMC10730149</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="nmo70107-cit-0046">
+<string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Allam‐Ndoul</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Castonguay‐Paradis</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Veilleux</surname>
+</string-name>, “<article-title>Gut Microbiota and Intestinal Trans‐Epithelial Permeability</article-title>,” <source>International Journal of Molecular Sciences</source>
+<volume>21</volume>, no. <issue>17</issue> (<year>2020</year>): <fpage>6402</fpage>, <pub-id pub-id-type="doi">10.3390/ijms21176402</pub-id>.<pub-id pub-id-type="pmid">32899147</pub-id>
+<pub-id pub-id-type="pmcid">PMC7503654</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="nmo70107-cit-0047">
+<string-name name-style="western">
+<given-names>C. H. F.</given-names>
+<surname>Hansen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L. S. F.</given-names>
+<surname>Andersen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Krych</surname>
+</string-name>, et al., “<article-title>Mode of Delivery Shapes Gut Colonization Pattern and Modulates Regulatory Immunity in Mice</article-title>,” <source>Journal of Immunology</source>
+<volume>193</volume>, no. <issue>3</issue> (<year>2014</year>): <fpage>1213</fpage>–<lpage>1222</lpage>, <pub-id pub-id-type="doi">10.4049/jimmunol.1400085</pub-id>.<pub-id pub-id-type="pmid">24951818</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="nmo70107-cit-0048">
+<string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Al Nabhani</surname>
+</string-name> and <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Eberl</surname>
+</string-name>, “<article-title>Imprinting of the Immune System by the Microbiota Early in Life</article-title>,” <source>Mucosal Immunology</source>
+<volume>13</volume>, no. <issue>2</issue> (<year>2020</year>): <fpage>183</fpage>–<lpage>189</lpage>, <pub-id pub-id-type="doi">10.1038/s41385-020-0257-y</pub-id>.<pub-id pub-id-type="pmid">31988466</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="nmo70107-cit-0049">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Stokholm</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Thorsen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B. L.</given-names>
+<surname>Chawes</surname>
+</string-name>, et al., “<article-title>Cesarean Section Changes Neonatal Gut Colonization</article-title>,” <source>Journal of Allergy and Clinical Immunology</source>
+<volume>138</volume>, no. <issue>3</issue> (<year>2016</year>): <fpage>881</fpage>–<lpage>889.e2</lpage>, <pub-id pub-id-type="doi">10.1016/j.jaci.2016.01.028</pub-id>.<pub-id pub-id-type="pmid">27045582</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0050"><label>50</label><mixed-citation publication-type="journal" id="nmo70107-cit-0050">
+<string-name name-style="western">
+<given-names>L. F.</given-names>
+<surname>Zachariassen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Krych</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. H.</given-names>
+<surname>Rasmussen</surname>
+</string-name>, et al., “<article-title>Cesarean Section Induces Microbiota‐Regulated Immune Disturbances in C57BL/6 Mice</article-title>,” <source>Journal of Immunology</source>
+<volume>202</volume>, no. <issue>1</issue> (<year>2019</year>): <fpage>142</fpage>–<lpage>150</lpage>, <pub-id pub-id-type="doi">10.4049/jimmunol.1800666</pub-id>.<pub-id pub-id-type="pmid">30487172</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0051"><label>51</label><mixed-citation publication-type="journal" id="nmo70107-cit-0051">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Huurre</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Kalliomäki</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Rautava</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Rinne</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Salminen</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Isolauri</surname>
+</string-name>, “<article-title>Mode of Delivery ‐ Effects on Gut Microbiota and Humoral Immunity</article-title>,” <source>Neonatology</source>
+<volume>93</volume>, no. <issue>4</issue> (<year>2008</year>): <fpage>236</fpage>–<lpage>240</lpage>, <pub-id pub-id-type="doi">10.1159/000111102</pub-id>.<pub-id pub-id-type="pmid">18025796</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="nmo70107-cit-0052">
+<string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Wrzosek</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Miquel</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. L.</given-names>
+<surname>Noordine</surname>
+</string-name>, et al., “<article-title>Bacteroides Thetaiotaomicron and <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Faecalibacterium prausnitzii</italic>
+</styled-content> Influence the Production of Mucus Glycans and the Development of Goblet Cells in the Colonic Epithelium of a Gnotobiotic Model Rodent</article-title>,” <source>BMC Biology</source>
+<volume>11</volume> (<year>2013</year>): <fpage>61</fpage>, <pub-id pub-id-type="doi">10.1186/1741-7007-11-61</pub-id>.<pub-id pub-id-type="pmid">23692866</pub-id>
+<pub-id pub-id-type="pmcid">PMC3673873</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="nmo70107-cit-0053">
+<string-name name-style="western">
+<given-names>M. E. V.</given-names>
+<surname>Johansson</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H. E.</given-names>
+<surname>Jakobsson</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Holmén‐Larsson</surname>
+</string-name>, et al., “<article-title>Normalization of Host Intestinal Mucus Layers Requires Long‐Term Microbial Colonization</article-title>,” <source>Cell Host &amp; Microbe</source>
+<volume>18</volume>, no. <issue>5</issue> (<year>2015</year>): <fpage>582</fpage>–<lpage>592</lpage>, <pub-id pub-id-type="doi">10.1016/j.chom.2015.10.007</pub-id>.<pub-id pub-id-type="pmid">26526499</pub-id>
+<pub-id pub-id-type="pmcid">PMC4648652</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0054"><label>54</label><mixed-citation publication-type="journal" id="nmo70107-cit-0054">
+<string-name name-style="western">
+<given-names>M. S.</given-names>
+<surname>Malo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. N.</given-names>
+<surname>Alam</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Mostafa</surname>
+</string-name>, et al., “<article-title>Intestinal Alkaline Phosphatase Preserves the Normal Homeostasis of Gut Microbiota</article-title>,” <source>Gut</source>
+<volume>59</volume>, no. <issue>11</issue> (<year>2010</year>): <fpage>1476</fpage>–<lpage>1484</lpage>, <pub-id pub-id-type="doi">10.1136/gut.2010.211706</pub-id>.<pub-id pub-id-type="pmid">20947883</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0055"><label>55</label><mixed-citation publication-type="journal" id="nmo70107-cit-0055">
+<string-name name-style="western">
+<given-names>Q.</given-names>
+<surname>Mu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Kirby</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. M.</given-names>
+<surname>Reilly</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>X. M.</given-names>
+<surname>Luo</surname>
+</string-name>, “<article-title>Leaky Gut as a Danger Signal for Autoimmune Diseases</article-title>,” <source>Frontiers in Immunology</source>
+<volume>8</volume> (<year>2017</year>): <fpage>598</fpage>, <pub-id pub-id-type="doi">10.3389/fimmu.2017.00598</pub-id>.<pub-id pub-id-type="pmid">28588585</pub-id>
+<pub-id pub-id-type="pmcid">PMC5440529</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0056"><label>56</label><mixed-citation publication-type="journal" id="nmo70107-cit-0056">
+<string-name name-style="western">
+<given-names>G. P.</given-names>
+<surname>Donaldson</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. M.</given-names>
+<surname>Lee</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S. K.</given-names>
+<surname>Mazmanian</surname>
+</string-name>, “<article-title>Gut Biogeography of the Bacterial Microbiota</article-title>,” <source>Nature Reviews. Microbiology</source>
+<volume>14</volume>, no. <issue>1</issue> (<year>2016</year>): <fpage>20</fpage>–<lpage>32</lpage>, <pub-id pub-id-type="doi">10.1038/nrmicro3552</pub-id>.<pub-id pub-id-type="pmid">26499895</pub-id>
+<pub-id pub-id-type="pmcid">PMC4837114</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0057"><label>57</label><mixed-citation publication-type="journal" id="nmo70107-cit-0057">
+<string-name name-style="western">
+<given-names>A. E.</given-names>
+<surname>Hoban</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. M.</given-names>
+<surname>Stilling</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Moloney</surname>
+</string-name>, et al., “<article-title>The Microbiome Regulates Amygdala‐Dependent Fear Recall</article-title>,” <source>Molecular Psychiatry</source>
+<volume>23</volume>, no. <issue>5</issue> (<year>2018</year>): <fpage>1134</fpage>–<lpage>1144</lpage>, <pub-id pub-id-type="doi">10.1038/mp.2017.100</pub-id>.<pub-id pub-id-type="pmid">28507320</pub-id>
+<pub-id pub-id-type="pmcid">PMC5984090</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0058"><label>58</label><mixed-citation publication-type="journal" id="nmo70107-cit-0058">
+<string-name name-style="western">
+<given-names>C. M. K.</given-names>
+<surname>Lynch</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. S. M.</given-names>
+<surname>Cowan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T. F. S.</given-names>
+<surname>Bastiaanssen</surname>
+</string-name>, et al., “<article-title>Critical Windows of Early‐Life Microbiota Disruption on Behaviour, Neuroimmune Function, and Neurodevelopment</article-title>,” <source>Brain, Behavior, and Immunity</source>
+<volume>108</volume> (<year>2023</year>): <fpage>309</fpage>–<lpage>327</lpage>, <pub-id pub-id-type="doi">10.1016/j.bbi.2022.12.008</pub-id>.<pub-id pub-id-type="pmid">36535610</pub-id>
+</mixed-citation></ref><ref id="nmo70107-bib-0059"><label>59</label><mixed-citation publication-type="journal" id="nmo70107-cit-0059">
+<string-name name-style="western">
+<given-names>R. M.</given-names>
+<surname>Patel</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L. S.</given-names>
+<surname>Myers</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. R.</given-names>
+<surname>Kurundkar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Maheshwari</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Nusrat</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>P. W.</given-names>
+<surname>Lin</surname>
+</string-name>, “<article-title>Probiotic Bacteria Induce Maturation of Intestinal Claudin 3 Expression and Barrier Function</article-title>,” <source>American Journal of Pathology</source>
+<volume>180</volume>, no. <issue>2</issue> (<year>2012</year>): <fpage>626</fpage>–<lpage>635</lpage>, <pub-id pub-id-type="doi">10.1016/j.ajpath.2011.10.025</pub-id>.<pub-id pub-id-type="pmid">22155109</pub-id>
+<pub-id pub-id-type="pmcid">PMC3349863</pub-id></mixed-citation></ref><ref id="nmo70107-bib-0060"><label>60</label><mixed-citation publication-type="journal" id="nmo70107-cit-0060">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Ji</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Wang</surname>
+</string-name>, et al., “<article-title>Probiotic <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Lactobacillus plantarum</italic>
+</styled-content> Promotes Intestinal Barrier Function by Strengthening the Epithelium and Modulating Gut Microbiota</article-title>,” <source>Frontiers in Microbiology</source>
+<volume>9</volume> (<year>2018</year>): <fpage>1953</fpage>, <pub-id pub-id-type="doi">10.3389/fmicb.2018.01953</pub-id>.<pub-id pub-id-type="pmid">30197632</pub-id>
+<pub-id pub-id-type="pmcid">PMC6117384</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

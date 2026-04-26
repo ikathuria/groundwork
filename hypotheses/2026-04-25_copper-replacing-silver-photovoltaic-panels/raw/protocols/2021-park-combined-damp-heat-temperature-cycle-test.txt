@@ -1,0 +1,1664 @@
+              energies
+Article
+Performance Evaluation of Photovoltaic Modules by Combined
+Damp Heat and Temperature Cycle Test
+Hyeonwook Park, Wonshoup So and Wookyoung Kim *
+
+                                          School of Chemical Engineering, Yeungnam University, 280 Daehak-ro, Gyeongsan 38541, Korea;
+                                          greatekal@naver.com (H.P.); sows79@ynu.ac.kr (W.S.)
+                                          * Correspondence: wkim@ynu.ac.kr; Tel.: +82-53-810-2514
+
+
+                                          Abstract: Standard damp heat (DH), temperature cycle (TC), and combined DH-TC tests were
+                                          performed using monocrystalline Si 72-cell modules with a conventional ethylene vinyl acetate (EVA)
+                                          encapsulant, and their module performance and electroluminescence images were investigated.
+                                          During the DH test, a significant drop (~20%) in the maximum output power of the module was
+                                          noticed, primarily because of the degradation of fill factor and an increase in series resistance at 5500 h
+                                          of DH testing (DH5500), presumably due to the corrosion of metal electrodes by moisture ingress.
+                                          Conversely, it was revealed that temperature cycling did not seriously degrade module performance
+                                          until 1400 cycles. However, the combined DH5000-TC600 test suggested in this study, with a
+                                          sequence of DH1000-TC200-DH1000-TC200-DH1000-TC200-DH2000, was confirmed to provide
+                                          harsher conditions than the DH-only test by causing a 20% decrease in maximum output power
+                                          (Pmax) after DH3000/TC400. Promisingly, we confirmed that the module with a polyolefin elastomer
+                                          encapsulant showed better durability than the module with EVA even in the combined DH-TC test,
+                                          showing a limited decrease in Pmax (~10%) even after the DH5500/TC600 test.
+         
+                                   Keywords: damp heat; temperature cycle; ethylene vinyl acetate; polyolefin elastomer
+Citation: Park, H.; So, W.; Kim, W.
+Performance Evaluation of
+Photovoltaic Modules by Combined
+Damp Heat and Temperature Cycle           1. Introduction
+Test. Energies 2021, 14, 3328. https://
+                                                Long-term reliability tests of photovoltaic (PV) modules are required to guarantee
+doi.org/10.3390/en14113328
+                                          an acceptable lifetime (e.g., 25 years) of modules. However, it is not realistic to perform
+                                          outdoor field tests for long periods. Therefore, the module certification process following
+Academic Editor: Peter D. Lund
+                                          the International Electrotechnical Commission (IEC) standards (e.g., IEC 61215) adopts
+                                          accelerated testing methods, such as temperature cycle (TC) and damp heat (DH) tests.
+Received: 10 May 2021
+Accepted: 3 June 2021
+                                                According to IEC 61215 (ed.2), the TC test of PV modules is designed to follow a
+Published: 5 June 2021
+                                          temperature change between −40 and +85 ◦ C for a pre-set number of cycles, for example,
+                                          200 cycles for the TC200 test. Repeated cycles of extreme temperature variation may
+Publisher’s Note: MDPI stays neutral
+                                          cause thermo-mechanical stress and damage to components and their interfaces within PV
+with regard to jurisdictional claims in
+                                          modules, such as cells, metal grids, bus-bars, encapsulant, cover glass, and back-sheets, due
+published maps and institutional affil-   to the mismatch in coefficients of thermal expansion (CTE). Typically, electroluminescence
+iations.                                  (EL) images are taken both before and after TC tests, and their comparison is used to
+                                          identify possible thermo-mechanical damages, including micro-cracks within cells and
+                                          delamination between constituent layers [1–3]. The interfacial contact failure and breakages
+                                          between layers within modules can lead to an increase in series resistance, thus reducing
+Copyright: © 2021 by the authors.
+                                          the fill factor (FF) and open-circuit voltages (Voc) [4].
+Licensee MDPI, Basel, Switzerland.
+                                                DH tests of modules are conducted at high temperature (85 ◦ C) and high humidity
+This article is an open access article
+                                          (relative humidity 85%) conditions for typically 1000 h (called DH1000) to identify the
+distributed under the terms and           degradation of module performance due to moisture penetration or diffusion into the
+conditions of the Creative Commons        modules, which can be affected by DH time and relative humidity [5]. In general, moisture
+Attribution (CC BY) license (https://     ingress is initiated from the edges of the modules [6]. Then, the polymer encapsulant,
+creativecommons.org/licenses/by/          for example, ethylene vinyl acetate (EVA), reacts with infiltrated water molecules and is
+4.0/).                                    decomposed by a hydrolysis mechanism, leading to the delamination of the encapsulant,
+
+
+
+Energies 2021, 14, 3328. https://doi.org/10.3390/en14113328                                                https://www.mdpi.com/journal/energies
+Energies 2021, 14, 3328                                                                                            2 of 12
+
+
+
+
+                          which accelerates moisture ingress and the corrosion of metal electrodes [5–7]. It has also
+                          been reported that the corrosion of metal electrodes is caused by their reaction with water
+                          molecules, and can be accelerated by acetic acid produced from the hydrolysis of vinyl
+                          acetate monomers within EVA. Ultimately, the corrosion of the electrodes results in the
+                          degradation of PV output power by increased contact resistivity and reduced FF [8,9].
+                          Koehl et al. [8] performed DH tests on commercial PV modules with 60 crystalline sil-
+                          icon cells at different temperatures (75, 85, and 90 ◦ C), until the final degradation was
+                          obtained (3500–7000 h), and found that the degradation of FF occurred first, followed by
+                          the reduction of short-circuit current (Isc).
+                                Zhu et al. [10] conducted DH tests at various temperatures–relative humidity condi-
+                          tions such as (75, 85, 95 ◦ C)/85%, 95 ◦ C/70%, and 90 ◦ C/50% for crystalline silicon PV
+                          modules with different backsheets and encapsulants. They reported that a conventional
+                          module with an EVA encapsulant and polymer backsheet was severely damaged by the DH
+                          test, and its output power was reduced primarily via the losses of photocurrent (Iph) and
+                          series resistance (Rs) due to water ingress. In addition, they reported that water infiltration
+                          can be minimized by adding an aluminum barrier to the backsheet.
+                                Recently, there is a demand to fabricate PV modules with longer lifetimes (e.g.,
+                          ~50 years), which require more stable encapsulant and backsheet materials. In addition, it is
+                          also required to develop new acceleration test method, which is effective and reproducible
+                          for the evaluation of PV modules with better reliability and a longer lifetime [11–13]. There-
+                          fore, resistance to more severe environmental conditions, such as longer duration, larger
+                          temperature variations, and higher humidities, should be explored for new acceleration
+                          tests [11]. In this study, the DH (5000 h)-TC (600 cycles) combined acceleration test scenario
+                          was employed to evaluate 72 cell monocrystalline Si modules under harsher environments
+                          than conventional acceleration test conditions, and the results were compared with those
+                          of individual DH7000 and TC1400 tests.
+
+                          2. Materials and Methods
+                                In this study, the commercial p-PERC monocrystalline Si 72-cell module was used,
+                          and its specifications are as follows: peak power = 360 W, Voc = 47.20 V, Isc = 9.98 A, and
+                          efficiency = 18.48%. The test conditions of individual DH and TC cycles followed the IEC
+                          61215 10.13 and 10.11 standards, respectively. For example, the DH test was performed
+                          at a temperature of 85 ◦ C (± 2 ◦ C) and a relative humidity of 85% (± 5%). Initially, the
+                          temperature within the chamber was increased from 25 to 85 ◦ C for 2 h (+30 ◦ C/h) and
+                          maintained for a desired time period, for example, 500 h for DH500, as shown in Figure 1a.
+                          After the test, the chamber was cooled to 25 ◦ C for 3 h (−20 ◦ C/h). During each cycle
+                          of the TC200 test, the chamber temperature was raised from −40 to +85 ◦ C (± 2 ◦ C) for
+                          approximately 90 min (rate ~1.39 ◦ C/min) and then maintained at 85 ◦ C (± 2 ◦ C) for 30 min
+                          (dwelling time). For the cooling process, the cooling rate (−1.39 ◦ C/min) and dwelling
+                          time at −40 ◦ C (30 min) were almost the same as those for the heating process. Therefore,
+                          the total time required for each cycle was approximately four hours. The time–temperature
+                          profile for the TC test cycle is summarized in Figure 1b.
+Energies 2021, 14, 3328                                                                                                           3 of 12
+           Energies 2021, 14, x FOR PEER REVIEW                                                                                              3 of 12
+
+ Energies 2021, 14, x FOR PEER REVIEW                                                                                              3 of 12
+
+
+
+
+                                                                            (a)
+                                                                    (a)
+
+
+
+
+                                                                            (b)
+                   Figure 1. (a) Time–temperature                 (b)
+                                                    and humidityand
+                                  Figure 1. (a) Time–temperature profile for DH500
+                                                                    humidity        test
+                                                                              profile forand (b) time–temperature
+                                                                                          DH500                      profile for TC
+                                                                                                  test and (b) time–temperature     test.
+                                                                                                                                  profile
+                                 for TC test.
+           Figure 1. (a) Time–temperature  and humidity profile for DH500 test and (b) time–temperature profile for TC test.
+                                                The DH5000-TC600 combined acceleration test suggested in this study is composed
+                                       Theof sequential tests of:  (1) DH1000,   (2) TC200,
+                                                                                       testtest(3) DH1000,   (4) study
+                                                                                                                 TC200,is(5) DH1000,of(6) TC200,
+                                        TheDH5000-TC600
+                                             DH5000-TC600    combined
+                                                                combined  acceleration
+                                                                            acceleration     suggested   in this
+                                                                                                 suggested   in this studycomposed
+                                                                                                                             is composed
+                                          and
+                                  sequential   (7) of:
+                                             tests DH2000,
+                                                       (1)    as illustrated
+                                                           DH1000,    (2)     in (3)
+                                                                          TC200, Figure 2.
+                                                                                      DH1000,      (4) TC200,  (5) DH1000,    (6) TC200,
+                                   of sequential tests of: (1) DH1000, (2) TC200, (3) DH1000, (4) TC200, (5) DH1000, (6) TC200,
+                                  and (7) DH2000, as illustrated in Figure 2.
+                                   and (7) DH2000, as illustrated in Figure 2.
+
+
+
+
+                                            Figure 2. Schemes of DH5000−TC600 combined acceleration test.
+
+                                   Figure2.2.Schemes
+                                  Figure      SchemesofofDH5000-TC600
+                                                          DH5000−TC600  combined
+                                                                      combined   acceleration
+                                                                               acceleration   test.
+                                                                                            test.
+            Energies
+021, 14, x FOR  PEER 2021, 14, 3328
+                      REVIEW                                                                                                          4 of 12                    4 of 12
+
+
+
+
+                                 The flash I-V tests
+                                                   Theof the
+                                                         flashPV  moduleofwere
+                                                               I-V tests         performed
+                                                                            the PV   moduleusing
+                                                                                               were a module      simulator
+                                                                                                     performed using       a module simulator
+                            (SPIRE, Model: SPI-SUN      SIMULATOR
+                                             (SPIRE, Model:      SPI-SUN4600SLP)  equipped with
+                                                                           SIMULATOR       4600SLP) a multi-flash
+                                                                                                       equipped withfiltered
+                                                                                                                          a multi-flash filtered
+                            Xenon tube lamp at   standard
+                                             Xenon           conditions
+                                                     tube lamp    at    of 25 °C (±
+                                                                     standard                 25 ◦ C
+                                                                                    0.5 °C)ofand
+                                                                               conditions         1000  0.5 2◦ C)
+                                                                                                     (±W/m     (AMand    G). W/m2 (AM 1.5 G).
+                                                                                                                     1.51000
+                            Electroluminescence (EL)      images were
+                                             Electroluminescence         obtainedwere
+                                                                     (EL) images    using a   custom-made
+                                                                                        obtained using   a      EL   systemEL system equipped
+                                                                                                           custom-made
+                            equipped with a with
+                                             camera   (Nikon (Nikon
+                                                   a camera    D5600) and  a DC
+                                                                       D5600)    power
+                                                                               and a DCsupply    (Keithley(Keithley
+                                                                                         power supply       2260B-80-27).
+                                                                                                                      2260B-80-27).
+
+                            3. Results and 3.    Results and Discussion
+                                           Discussion
+                                              3.1. Performance
+                            3.1. Performance Evaluation        Evaluation
+                                                        of PV Module      of PV
+                                                                     by Damp    Module
+                                                                              Heat Test by Damp Heat Test
+                                  During the DH test, During     the DHwas
+                                                         the module           test,  the module
+                                                                                   removed     fromwas     removed
+                                                                                                      the test   chamber from    the test
+                                                                                                                              every  500 h  chamber
+                                                                                                                                              from every 500 h from
+                            1000 to 7000 h and its I-V characteristics were measured. Figure 3 and Table 1 show3the
+                                               1000   to  7000    h  and    its   I-V  characteristics      were    measured.       Figure        and Table 1 show the
+                                               degradation of
+                            degradation of characteristic      module characteristic
+                                                                             performance   module      performance
+                                                                                                parameters                 parameters
+                                                                                                                such as Voc,                 Pmax,as Voc, Isc, FF, Pmax,
+                                                                                                                                  Isc, FF,such
+                            Rs, and shunt Rs,       and shunt
+                                             resistance            resistance
+                                                          (Rsh) during          the(Rsh)
+                                                                                      DH during      the DH
+                                                                                           acceleration          acceleration
+                                                                                                             test on    the PV test     on the
+                                                                                                                                   module.        PV module. The max-
+                                                                                                                                                The
+                            maximum outputimum   poweroutput
+                                                          (Pmax) ofpower the (Pmax)
+                                                                                testing of    the testing
+                                                                                          module     was module
+                                                                                                            maintained    wasat maintained
+                                                                                                                                approximately    at approximately 90%
+                            90% of the initial of  the (i.e.,
+                                               value   initial   value
+                                                              loss  of less(i.e.,  loss of
+                                                                                than   10%) less  than
+                                                                                               until     10%) until
+                                                                                                     DH3500              DH3500 by
+                                                                                                                  and reduced       andapproxi-
+                                                                                                                                           reduced by approximately
+                            mately 12.7% after 12.7%
+                                                  5000 hafter   5000 h
+                                                           of DH,      andofthen DH, and       thendegraded
+                                                                                      drastically     drastically     degraded
+                                                                                                                   by almost      40%byandalmost
+                                                                                                                                               60% 40% and 60% after
+                            after 6000 and 70006000h,and 7000
+                                                       respectively. h, As
+                                                                         respectively.
+                                                                                   shown in  AsFigure
+                                                                                                  shown3,inthe  Figure
+                                                                                                                    Voc 3,wasthe Voc     was and
+                                                                                                                                 gradually      gradually and slightly
+                                               reduced     by   less   than     5%    during    the  entire    DH
+                            slightly reduced by less than 5% during the entire DH test period of 7000 h, suggesting  test  period    of  7000    h, suggesting that the
+                                               p-n junction
+                            that the p-n junction    properties ofproperties
+                                                                        the cell of     thewere
+                                                                                     unit    cell not
+                                                                                                   unit were     not affected
+                                                                                                       significantly   significantly      affected
+                                                                                                                                     by the     DH by the DH test [8].
+                                               The Isc
+                            test [8]. The Isc also       alsodecreased
+                                                    mildly      mildly untildecreased       until and
+                                                                                       DH6000       DH6000
+                                                                                                         then and     thendropped
+                                                                                                                rapidly       rapidly between
+                                                                                                                                         dropped between 6000 and
+                            6000 and 7000 h,7000 fromh,10%
+                                                         fromto10%  26%. to The
+                                                                             26%. FF  The FF    remained
+                                                                                          remained      nearlynearly    unchanged
+                                                                                                                  unchanged        (~79%)(~79%)
+                                                                                                                                              untiluntil DH2500, while
+                            DH2500, while Pmax Pmax    was
+                                                     was      mainly
+                                                           mainly         affected
+                                                                       affected      bybyIscIsc
+                                                                                             andandVocVoc   because
+                                                                                                        because     Pmax Pmax                Voc×≅Voc ∼
+                                                                                                                             = FF= ×FFIsc××Isc            = Isc × Voc (FF
+                            Isc × Voc (FF ~ ~     constant),
+                                            constant),           graphically
+                                                         graphically        evidencedevidenced      by similar
+                                                                                            by similar    variation variation     behaviors
+                                                                                                                        behaviors of              of Isc, Voc, and Pmax
+                                                                                                                                          Isc, Voc,
+                            and Pmax values in values   in3. It
+                                                   Figure   Figurecan 3.beIt can
+                                                                             assumed be that
+                                                                                         assumedthe that     the encapsulant
+                                                                                                     encapsulant       effectivelyeffectively
+                                                                                                                                     prohibitedprohibited moisture
+                                               penetration
+                            moisture penetration                 until DH2500.
+                                                     until DH2500.         However, FF    However,
+                                                                                               began to FFdecrease
+                                                                                                              began to      decrease
+                                                                                                                         after  DH3000,  after   DH3000, accelerating
+                                                                                                                                             accel-
+                                               the of
+                            erating the degradation  degradation
+                                                           Pmax (=FF    of ×Pmax      Voc), × Isc
+                                                                               Isc × (=FF            × Voc),due to
+                                                                                             presumably         presumably
+                                                                                                                        moisture  due   to and
+                                                                                                                                    ingress  moisture ingress and the
+                            the corrosion of the    metal of the
+                                               corrosion   electrodes,metal  leading     to an leading
+                                                                                 electrodes,     increasetoinan the   contactin the
+                                                                                                                   increase      resistance
+                                                                                                                                        contact andresistance and degra-
+                            degradation of FFdation
+                                                 [5–8]. of
+                                                        After    DH5000,
+                                                             FF [5–8].          the DH5000,
+                                                                             After   significantthe loss of FF    led oloss
+                                                                                                        significant        the of
+                                                                                                                                failure
+                                                                                                                                   FF led of to
+                                                                                                                                             mod-the failure of module
+                            ule performance (~40%      and ~60%
+                                               performance        (~40%of Pmax
+                                                                             and loss
+                                                                                    ~60%after     6000 loss
+                                                                                            of Pmax     and after
+                                                                                                               7000 h,    respectively),
+                                                                                                                     6000 and      7000 h, along
+                                                                                                                                              respectively), along with
+                            with a dramatic a increase   in Rs by
+                                                  dramatic            ~300%
+                                                               increase        inofRsthebyinitial
+                                                                                            ~300%  value  afterinitial
+                                                                                                      of the      DH7000. valueTheafter
+                                                                                                                                    behavior
+                                                                                                                                           DH7000.of The behavior of
+                            noticeable FF degradation
+                                               noticeable FF (after   DH5000) (after
+                                                                   degradation        followed     by Isc drop
+                                                                                               DH5000)              (DH6000)
+                                                                                                           followed by             was also
+                                                                                                                             Isc drop    (DH6000)re- was also reported
+                            ported by anotherby  research
+                                                    anothergroup
+                                                               research[8]. Asgroupshown[8].in
+                                                                                             AsTable
+                                                                                                  shown1, the   shunt 1, the
+                                                                                                            in Table     resistance
+                                                                                                                                 shunt (Rsh)   var- (Rsh) varied in a
+                                                                                                                                          resistance
+                            ied in a range ofrange58~94ofΩ    untilΩ until
+                                                           58~94       DH5500,        and then
+                                                                                  DH5500,           rapidly
+                                                                                               and then        dropped
+                                                                                                           rapidly    droppedto to
+                                                                                                                                 17~33    Ω Ω
+                                                                                                                                      17~33    afterafter DH6000, where
+                            DH6000, where the  themodule
+                                                     module   was
+                                                                was severely
+                                                                        severely   damaged.
+                                                                                       damaged. TheThedetailed    values
+                                                                                                            detailed        of each
+                                                                                                                         values    of parameter
+                                                                                                                                      each parameter with the DH
+                            with the DH times     are summarized          in  Table
+                                               times are summarized in Table 1.        1.
+
+
+
+
+                                                                                          (a)
+
+
+                                                                                Figure 3. Cont.
+21, 14, x FOR PEER REVIEW                                                                                                     5 of 12
+            Energies 2021, 14, 3328                                                                                                                     5 of 12
+
+
+
+
+                                                       (b)                                                       (c)
+
+(a) Change of module  performance
+               Figure 3. (a) Change ofparameters
+                                         module with  respect to
+                                                performance      damp heat
+                                                               parameters   testrespect
+                                                                          with    times to
+                                                                                        andamp heat
+                                                                                           corresponding   (b) and
+                                                                                                    test times current–
+                                                                                                                    corresponding (b) current–
+nd (c) power–voltage
+              voltageplots
+                       andof(c)selected modules.plots of selected modules.
+                                 power–voltage
+
+                           Table 1. Module performance parameters with time of damp heat test.
+                                              Table 1. Module performance parameters with time of damp heat test.
+                             DH Time          Voc               Isc             FF         Pmax                 Rs             Rsh
+                                                     DH Time                 Voc            Isc               FF          Pmax             Rs          Rsh
+                               (h)             (V)             (A)             (%)           (W)               (Ω)              (Ω)
+                                                         (h)                 (V)            (A)              (%)            (W)           (Ω)          (Ω)
+                                0            47.21            9.456            79.0         352.6             0.440            92.9
+                                                          0                 47.21          9.456             79.0          352.6         0.440         92.9
+                              1000           46.70            9.177            79.0         338.4             0.491            68.0
+                                                        1000                46.70          9.177             79.0          338.4         0.491         68.0
+                              1500           46.82 1500 9.138                  78.9
+                                                                            46.82           337.7
+                                                                                           9.138              0.508
+                                                                                                             78.9              94.1
+                                                                                                                           337.7         0.508         94.1
+                              2000           46.90 2000 9.196                  78.9
+                                                                            46.90           340.1
+                                                                                           9.196              0.506
+                                                                                                             78.9              74.2
+                                                                                                                           340.1         0.506         74.2
+                              2500           46.35 2500 9.026               46.35
+                                                                               79.0        9.026
+                                                                                            330.3            79.0
+                                                                                                              0.476        330.3
+                                                                                                                               67.8      0.476         67.8
+                              3000           46.61 3000 9.072               46.61
+                                                                               78.2        9.072
+                                                                                            330.8            78.2
+                                                                                                              0.519        330.8
+                                                                                                                               89.2      0.519         89.2
+                                                        3500                45.86          8.998             77.5          319.6         0.511         69.1
+                              3500           45.86            8.998            77.5         319.6             0.511            69.1
+                                                        4000                45.31          8.829             77.8          311.1         0.556         68.5
+                              4000           45.31 4500 8.829                  77.8
+                                                                            45.36           311.1
+                                                                                           8.761              0.556
+                                                                                                             77.5              68.5
+                                                                                                                           308.1         0.543         65.8
+                              4500           45.36 5000 8.761                  77.5
+                                                                            46.06           308.1
+                                                                                           8.968              0.543
+                                                                                                             74.5              65.8
+                                                                                                                           307.8         0.641         64.4
+                              5000           46.06 5500 8.968                  74.5
+                                                                            45.88           307.8
+                                                                                           8.875              0.641
+                                                                                                             66.7              64.4
+                                                                                                                           271.7         0.779         58.4
+                              5500           45.88 6000 8.875               44.87
+                                                                               66.7        8.467
+                                                                                            271.7            56.6
+                                                                                                              0.779        215.1
+                                                                                                                               58.4      0.962         33.1
+                                                        6500                45.58          8.052             47.1          172.9          1.42         21.8
+                              6000           44.87            8.467            56.6         215.1             0.962            33.1
+                                                        7000                45.96          6.969             44.5          142.4          1.83         17.0
+                              6500           45.58            8.052            47.1         172.9              1.42            21.8
+                              7000           45.96            6.969            44.5         142.4              1.83            17.0
+                                                     The EL images in Figure 4 showed that there were no noticeable micro-cracks in
+                                 The EL images the
+                                                 in cells
+                                                    Figure  and   no significant
+                                                              4 showed     that theredamage
+                                                                                        were notonoticeable
+                                                                                                     front grids     and interconnection
+                                                                                                                  micro-cracks    in the       in the module
+                                               until  the   DH2500      test.  However,      the  degradation       of
+                           cells and no significant damage to front grids and interconnection in the module until the  the   module    was   accelerated  after
+                                               DH3000,      as  indicated     by  several   cells  with    relatively
+                           DH2500 test. However, the degradation of the module was accelerated after DH3000, as         darker    regions   than neighboring
+                           indicated by severalregions,   which
+                                                  cells with        is consistent
+                                                               relatively   darker with    thethan
+                                                                                     regions    results    in Figureregions,
+                                                                                                       neighboring      3 and Table
+                                                                                                                                  which1. Dark regions in EL
+                                               images
+                           is consistent with the        resulted
+                                                   results in        from
+                                                                Figure      the low
+                                                                         3 and         current
+                                                                                 Table 1.  Darkdue      to in
+                                                                                                   regions  increased    seriesresulted
+                                                                                                                  EL images      resistance by the corrosion
+                           from the low currentof due
+                                                  metal    electrodesseries
+                                                       to increased      [14]. resistance
+                                                                                Furthermore,by thethe EL     images
+                                                                                                     corrosion        taken after
+                                                                                                                  of metal           DH7000 confirmed that
+                                                                                                                             electrodes
+                           [14]. Furthermore, the ELdark   regions
+                                                       images    takenwere   widely
+                                                                         after  DH7000identified
+                                                                                          confirmed on the    entire
+                                                                                                         that the    surface
+                                                                                                                   dark  regionsof the
+                                                                                                                                   weremodule. Photographs
+                           widely identified onof the entire
+                                                       DH7000-tested        module
+                                                               surface of the          are shown
+                                                                                 module.              in Figure
+                                                                                             Photographs       of 5,
+                                                                                                                  thewhere a     part of the white backsheet
+                                                                                                                       DH7000-tested
+                           module are shown in wasFigure
+                                                     cracked 5, and   delaminated
+                                                                where a part     of thebywhite
+                                                                                           thermal     stress was
+                                                                                                 backsheet      during   the DH
+                                                                                                                     cracked    andtest,
+                                                                                                                                     de-and part of the cable
+                                               connector     was   also  broken    [15].
+                           laminated by thermal stress during the DH test, and part of the cable connector was also
+                           broken [15].
+ Energies2021,
+Energies        14,x3328
+          2021,14,   FOR PEER REVIEW                                                                                                                    6 6ofof12
+                                                                                                                                                                12
+ Energies 2021, 14, x FOR PEER REVIEW                                                                                                                    6 of 12
+
+
+
+
+                       Figure
+                        Figure4.4.
+                                4.Electroluminescence
+                                   Electroluminescenceimages
+                                                        imagesof
+                                                               ofmodules
+                                                                 moduleswith
+                                                                         withrespect
+                                                                              respectto
+                                                                                      todamp
+                                                                                         dampheat
+                                                                                              heattest
+                                                                                                   testtimes.
+                                                                                                        times.
+                       Figure      Electroluminescence images of modules with respect to damp heat test times.
+
+
+
+
+                       (a)                                       (b)                                            (c)
+                        (a)                                       (b)                                            (c)
+                                 Figure 5. Physical damage observed for the tested module after DH7000: (a) cracks of backsheet, (b)
+                                  Figure 5. Physical damage observed for the tested module after DH7000: (a) cracks of backsheet, (b)
+      Figure 5. Physical damage cracks  and
+                                 observed    delamination
+                                           for the          of after
+                                                              backsheet,
+                                                   tested module         and (c)(a)broken
+                                                                      DH7000:             cable
+                                                                                    cracks of    connectors.
+                                                                                              backsheet, (b) cracks and delamination
+                                  cracks and delamination of backsheet, and (c) broken cable connectors.
+      of backsheet, and (c) broken cable connectors.
+                                 3.2. Performance Evaluation of PV Module by Temperature Cycle Test
+                                  3.2. Performance Evaluation of PV Module by Temperature Cycle Test
+                                   3.2. During
+                                        Performance the TCEvaluation
+                                                                test, theof I-V
+                                                                            PV Module          by Temperature
+                                                                                   characteristics       of the PV  Cycle Test
+                                                                                                                         module were measured after
+                                         During the TC test, the I-V characteristics of the PV module were measured after
+                                 every During
+                                          100 cycles  the TC test, the I-V characteristics of the PV moduleinwere
+                                                          until   1400   cycles,    and    the   results    are   summarized              Figure   6 and Table
+                                                                                                                                               measured      after
+                                  every 100 cycles until 1400 cycles, and the results are summarized in Figure 6 and Table
+                                 2.every
+                                     Compared
+                                           100 cyclesto the   DH7000
+                                                           until   1400 test
+                                                                         cycles,results
+                                                                                     and in theFigure
+                                                                                                 results 3, are
+                                                                                                            the effect    of TC1400
+                                                                                                                 summarized          in on    the 6 and
+                                                                                                                                         Figure   degradation
+                                                                                                                                                          Table 2.
+                                  2. Compared to the DH7000 test results in Figure 3, the effect of TC1400 on the degradation
+                                 of the   module
+                                   Compared             performance
+                                                   to the   DH7000 testcan        be in
+                                                                             results   considered
+                                                                                             Figure 3,less     significant
+                                                                                                          the effect   of TC1400[16]. onPlease
+                                                                                                                                            the note    that the
+                                                                                                                                                degradation      of
+                                  of the module performance can be considered less significant [16]. Please note that the
+                                 relative
+                                   the       scales of
+                                        module             the y1 and
+                                                    performance            y2-axes
+                                                                       can be           in Figures
+                                                                                considered       less 3 and       6 are[16].
+                                                                                                        significant       identical.     During
+                                                                                                                               Please note     thathetheTC1400
+                                                                                                                                                          relative
+                                  relative scales of the y1 and y2-axes in Figures 3 and 6 are identical. During the TC1400
+                                 test,  theof the y1
+                                   scales    characteristic        modulein Figures
+                                                          and y2-axes         performance          parameters
+                                                                                             3 and 6 are            of Voc, Isc,
+                                                                                                              identical.     During   and   FFTC1400
+                                                                                                                                          the   fluctuated
+                                                                                                                                                         test,be-
+                                                                                                                                                               the
+                                  test, the characteristic module performance parameters of Voc, Isc, and FF fluctuated be-
+                                 tween    +0.2% and
+                                   characteristic          −3.5%, yielding
+                                                       module      performance    a maximum
+                                                                                     parameters of    Pmax    drop
+                                                                                                           Voc,  Isc, of
+                                                                                                                      and 7.1%.
+                                                                                                                             FF The       values of
+                                                                                                                                 fluctuated           the series
+                                                                                                                                                between     +0.2%
+                                  tween +0.2% and −3.5%, yielding a maximum Pmax drop of 7.1%. The values of the series
+                                   and   −3.5%,
+                                 resistance          yielding a
+                                                fluctuated           maximum
+                                                                 between     −14.0%  Pmaxanddrop+11.9%,of 7.1%.
+                                                                                                            whichThe wasvalues
+                                                                                                                             also of     the series
+                                                                                                                                   negligible         resistance
+                                                                                                                                                  compared      to
+                                  resistance fluctuated between −14.0% and +11.9%, which was also negligible compared to
+                                   fluctuated
+                                 that in          between −
+                                           the DH7000         test14.0%
+                                                                    (ΔRs ~and     +11.9%,
+                                                                              +316%).      Aswhich
+                                                                                                shown   wasin also   negligible
+                                                                                                              Figure 7,              compared to
+                                                                                                                             no noticeable            that in
+                                                                                                                                                 changes       the
+                                                                                                                                                            were
+                                  that in the DH7000 test (ΔRs ~ +316%). As shown in Figure 7, no noticeable changes were
+                                   DH7000 in
+                                 observed     testhe (∆RsEL~images
+                                                                +316%). forAs    shown in
+                                                                             300–1400           Figure 7, no
+                                                                                             cycles,   supportingnoticeable      changes
+                                                                                                                        that there      was nowere  observed in
+                                                                                                                                                  considerable
+                                  observed in the EL images for 300–1400 cycles, supporting that there was no considerable
+                                   the
+                                 damage EL in
+                                            imagesmetal forgrids
+                                                              300–1400     cycles,
+                                                                    and cell          supporting that
+                                                                                 interconnection               therethe
+                                                                                                          during       was TCnotest.
+                                                                                                                                   considerable      damage
+                                                                                                                                         Therefore, it    can be in
+                                  damage in metal grids and cell interconnection during the TC test. Therefore, it can be
+                                   metal
+                                 assumed   grids
+                                               thatand thecell   interconnection
+                                                            PV module         tested in duringthis the   TC was
+                                                                                                     study    test. durable
+                                                                                                                     Therefore, itwithoutcan beanyassumed     that
+                                                                                                                                                    significant
+                                  assumed
+                                   the PV modulethat the     PV in
+                                                         tested    module      tested
+                                                                      this study          indurable
+                                                                                               this study
+                                                                                     wasmicro-cracks    withoutwasany durable      without
+                                                                                                                           significant         any significant
+                                                                                                                                           thermo-mechanical
+                                 thermo-mechanical             damage,      such as                          within      cells   and the      delamination of
+                                  thermo-mechanical
+                                   damage, such         asuntil damage,
+                                                            micro-cracks     such     as  micro-cracks         within     cells  and     the  delamination       of
+                                 protecting      layers           TC 1400. within         cells and
+                                                                               In addition,             the delamination
+                                                                                                    careful    investigationof    ofprotecting
+                                                                                                                                       the surfacelayers     until
+                                                                                                                                                      and back-
+                                  protecting
+                                  TC of1400.      layers   until   TC   1400.   In  addition,      a careful    investigation      of   the  surface  and   back-
+                                 side      theInmodule
+                                                    addition,     a careful
+                                                              after  TC1400investigation
+                                                                                 confirmed of     thathe    surface
+                                                                                                        there         and backside
+                                                                                                                 was no     detectableof the       module
+                                                                                                                                             physical  damageafter
+                                  side
+                                  TC1400 of the   module after
+                                              confirmed               TC1400
+                                                               that there    wasconfirmed
+                                                                                    no   detectablethat there
+                                                                                                         physical wasdamage
+                                                                                                                        no detectable
+                                                                                                                                    for thephysical
+                                                                                                                                              backsheet, damage
+                                                                                                                                                            cable
+                                 for  the backsheet,        cable   connector,      and other        components.
+                                  for  the backsheet,
+                                   connector,      and other cable   connector, and other components.
+                                                                  components.
+Energies 2021, 14, x FOR PEER REVIEW                                                                                         7 of 12
+
+Energies 2021, 14, 3328                                                                                                       7 of 12
+ Energies 2021, 14, x FOR PEER REVIEW                                                                                         7 of 12
+
+
+
+
+                                 Figure 6. Change of module performance parameters with respect to temperature cycles.
+
+                                 Table
+                                  Figure2.6.
+                                 Figure   6.Module
+                                             Changeperformance
+                                             Change of
+                                                    of module  parameters with
+                                                       module performance
+                                                              performance      temperature
+                                                                          parameters
+                                                                          parameters with  cycles.to
+                                                                                     withrespect
+                                                                                          respect  totemperature
+                                                                                                      temperaturecycles.
+                                                                                                                  cycles.
+
+                                       TC Cycle        Voc          Isc            FF          Pmax              Rs         Rsh
+                                  Table2.2.Module
+                                  Table    Moduleperformance
+                                                  performanceparameters
+                                                              parameterswith
+                                                                        withtemperature
+                                                                             temperaturecycles.
+                                                                                         cycles.
+                                       (Cycles)        (V)          (A)           (%)           (W)             (Ω)         (Ω)
+                                       TCTC0Cycle
+                                              Cycle     VocVoc
+                                                      47.34          IscIsc
+                                                                   9.487            FF
+                                                                                  78.1
+                                                                                    FF         Pmax
+                                                                                               350.6
+                                                                                               Pmax              Rs
+                                                                                                               0.531
+                                                                                                                Rs           Rsh
+                                                                                                                            125
+                                                                                                                            Rsh
+                                         (Cycles)
+                                        (Cycles)
+                                          200           (V) (V)
+                                                      46.91            (A)
+                                                                     (A)
+                                                                   9.400           (%)
+                                                                                  78.0          (W)
+                                                                                                 (W)
+                                                                                               343.8           (Ω)
+                                                                                                                 (Ω)
+                                                                                                               0.465        (Ω)
+                                                                                                                             (Ω)
+                                                                                                                            67.3
+                                            00
+                                          300          47.34
+                                                      46.8947.34    9.487
+                                                                      9.487
+                                                                   9.365           78.1
+                                                                                   78.1
+                                                                                  78.1          350.6
+                                                                                               350.6
+                                                                                               343.0            0.531
+                                                                                                              0.531
+                                                                                                               0.457         125
+                                                                                                                            125
+                                                                                                                            126
+                                             200
+                                           200
+                                          400         46.7346.91
+                                                       46.91          9.400
+                                                                    9.400
+                                                                   9.380           78.0
+                                                                                   78.0
+                                                                                  77.6         343.8
+                                                                                                343.8
+                                                                                               340.0          0.465
+                                                                                                                0.465
+                                                                                                               0.469        67.3
+                                                                                                                             67.3
+                                                                                                                            101
+                                             300
+                                           300             46.89
+                                                       46.89          9.365
+                                                                    9.365          78.1
+                                                                                   78.1        343.0
+                                                                                                343.0         0.457
+                                                                                                                0.457       126
+                                                                                                                             126
+                                          500400
+                                                      46.6546.73
+                                                                   9.382
+                                                                      9.380
+                                                                                  76.8
+                                                                                   77.6
+                                                                                               336.0
+                                                                                               340.0
+                                                                                                               0.534
+                                                                                                              0.469
+                                                                                                                            62.3
+                                                                                                                            101
+                                           400
+                                          600500       46.73
+                                                      46.5946.65    9.380
+                                                                   9.353
+                                                                      9.382        77.6
+                                                                                  76.5
+                                                                                   76.8         340.0
+                                                                                               333.2
+                                                                                               336.0            0.469
+                                                                                                               0.545
+                                                                                                              0.534          101
+                                                                                                                            95.4
+                                                                                                                            62.3
+                                           500
+                                          700600       46.65
+                                                      46.6746.59    9.382
+                                                                   9.335
+                                                                      9.353        76.8
+                                                                                  76.8
+                                                                                   76.5         336.0
+                                                                                               334.8
+                                                                                               333.2            0.534
+                                                                                                               0.552
+                                                                                                              0.545          62.3
+                                                                                                                            95.0
+                                                                                                                            95.4
+                                             700
+                                           600
+                                          800              46.67
+                                                       46.59
+                                                      46.55           9.335
+                                                                    9.353
+                                                                   9.332           76.8
+                                                                                   76.5
+                                                                                  76.6         334.8
+                                                                                                333.2
+                                                                                               332.6          0.552
+                                                                                                                0.545
+                                                                                                               0.583        95.0
+                                                                                                                             95.4
+                                                                                                                            102
+                                             800
+                                           700             46.55
+                                                       46.67          9.332
+                                                                    9.335          76.6
+                                                                                   76.8        332.6
+                                                                                                334.8         0.583
+                                                                                                                0.552       102
+                                                                                                                             95.0
+                                          900         46.55        9.357          76.6         333.6           0.566        63.3
+                                             900           46.55      9.357        76.6        333.6          0.566         63.3
+                                           800
+                                         1000
+                                            1000
+                                                       46.55
+                                                      46.4146.41
+                                                                    9.332
+                                                                   9.247
+                                                                      9.247
+                                                                                   76.6
+                                                                                  75.9
+                                                                                   75.9
+                                                                                                332.6
+                                                                                               325.6
+                                                                                               325.6
+                                                                                                                0.583
+                                                                                                               0.594
+                                                                                                              0.594
+                                                                                                                             102
+                                                                                                                            60.1
+                                                                                                                            60.1
+                                           900
+                                         1100
+                                            1100       46.55
+                                                      47.2247.22    9.357
+                                                                   9.345
+                                                                      9.345        76.6
+                                                                                  76.1
+                                                                                   76.1         333.6
+                                                                                               335.6            0.566
+                                                                                                               0.570
+                                                                                                              0.570          63.3
+                                                                                                                            69.6
+                                                                                                                            69.6
+                                          1000
+                                            1200
+                                         1200          46.41
+                                                      47.3447.34    9.247
+                                                                      9.403
+                                                                   9.403           75.9
+                                                                                   76.3
+                                                                                  76.3          325.6
+                                                                                               339.5
+                                                                                               339.5            0.594
+                                                                                                              0.556
+                                                                                                               0.556         60.1
+                                                                                                                            23.6
+                                                                                                                            23.6
+                                            1300
+                                          1100
+                                         1300              47.42
+                                                       47.22
+                                                      47.42           9.395
+                                                                    9.345
+                                                                   9.395           75.4
+                                                                                   76.1
+                                                                                  75.4         335.8
+                                                                                                335.6
+                                                                                               335.8          0.589
+                                                                                                                0.570
+                                                                                                               0.589        38.2
+                                                                                                                             69.6
+                                                                                                                            38.2
+                                            1400           47.17      9.413        75.7        336.1          0.551         82.8
+                                          1200
+                                         1400          47.34
+                                                      47.17         9.403
+                                                                   9.413           76.3
+                                                                                  75.7          339.5
+                                                                                               336.1            0.556
+                                                                                                               0.551         23.6
+                                                                                                                            82.8
+                                          1300         47.42        9.395          75.4         335.8           0.589        38.2
+                                          1400         47.17        9.413          75.7         336.1           0.551        82.8
+
+
+
+
+                        Figure 7. Electroluminescence images of modules with respect to temperature cycles.
+                        Figure 7. Electroluminescence images of modules with respect to temperature cycles.
+
+                        Figure 7. Electroluminescence images of modules with respect to temperature cycles.
+Energies 2021,
+   Energies    14, 14,
+            2021,  x FOR
+                       3328PEER REVIEW                                                                                                      8 of 812
+                                                                                                                                                   of 12
+
+
+
+                                   3.3. Performance Evaluation of PV Module by Combined Damp Heat-Temperature Cycle Test
+                                      3.3. Performance Evaluation of PV Module by Combined Damp Heat-Temperature Cycle Test
+                                         Based on the scheme of the DH5000-TC600 combined acceleration test in Figure 2,
+                                             Based on the scheme of the DH5000-TC600 combined acceleration test in Figure 2,
+                                   DH and TC tests were executed alternatively. Flash I-V characterization was performed
+                                      DH and TC tests were executed alternatively. Flash I-V characterization was performed
+                                   every 500 h, except for the first 500 h during the DH tests and after every 100 cycles during
+                                      every 500 h, except for the first 500 h during the DH tests and after every 100 cycles
+                                   the TC tests. The test was stopped after DH3000 + TC600 (i.e., step 6 out of 7 in Figure 2),
+                                      during the TC tests. The test was stopped after DH3000 + TC600 (i.e., step 6 out of 7
+                                   when the drop in the maximum output power (Pmax) reached almost 27%, indicating sig-
+                                      in Figure 2), when the drop in the maximum output power (Pmax) reached almost 27%,
+                                   nificant damage to the module. As shown in Figure 3 and Table 1, Pmax decreased by
+                                      indicating significant damage to the module. As shown in Figure 3 and Table 1, Pmax
+                                   11.8%    and 23.0%
+                                      decreased           after DH4000
+                                                      by 11.8%    and 23.0%  andafter
+                                                                                   DH5500,
+                                                                                       DH4000 respectively.
+                                                                                                   and DH5500, However,       from the
+                                                                                                                     respectively.       combined
+                                                                                                                                      However,     from
+                                   DH-TC      test, a > 10%
+                                      the combined            decrease
+                                                          DH-TC      test, in
+                                                                           a >Pmax
+                                                                                 10% was   observed
+                                                                                      decrease         onlywas
+                                                                                                  in Pmax    afterobserved
+                                                                                                                     DH2000 only+ TC400.
+                                                                                                                                      afterIn  addi- +
+                                                                                                                                            DH2000
+                                   tion,  the DH3000
+                                      TC400.              + TC500
+                                                 In addition,         test led to
+                                                                the DH3000       + aTC500
+                                                                                     drastic  degradation
+                                                                                           test               of Pmax
+                                                                                                led to a drastic          by 26.9%,
+                                                                                                                    degradation    ofalong
+                                                                                                                                       Pmax with    a
+                                                                                                                                              by 26.9%,
+                                   considerable      increase   in  Rs  (+51.0%    →  +153.7%).    Therefore,    it can   be  assumed
+                                      along with a considerable increase in Rs (+51.0% → +153.7%). Therefore, it can be assumed          that  mois-
+                                   ture  ingress
+                                      that         and ingress
+                                             moisture    the resulting
+                                                                   and the corrosion
+                                                                              resultingofcorrosion
+                                                                                           metal electrodes
+                                                                                                     of metal within
+                                                                                                                electrodesthe within
+                                                                                                                               PV module
+                                                                                                                                       the PVduring
+                                                                                                                                               module
+                                   theduring
+                                       DH testthe  can  be  expedited     by  approximately      400–500   cycles   of  the  standard
+                                                      DH test can be expedited by approximately 400–500 cycles of the standard          TC  test. AsTC
+                                   shown
+                                      test. inAsFigure
+                                                  shown6,in  it is noteworthy
+                                                                Figure 6,   it is that    the TC400
+                                                                                   noteworthy          test was
+                                                                                                  that the  TC400   not  detrimental
+                                                                                                                      test was    not to    module to
+                                                                                                                                       detrimental
+                                   power     production,     as evidenced       by a 3%  loss  of  Pmax  in  Figure    6.  Similar
+                                      module power production, as evidenced by a 3% loss of Pmax in Figure 6. Similar to the        to the  DH   testDH
+                                   results,  Figure    8a–c  demonstrate       that the degradation     of maximum        power
+                                      test results, Figure 8a–c demonstrate that the degradation of maximum power production      production    was
+                                   caused    by the reduction
+                                      was caused                   of FF rather
+                                                       by the reduction      of FF than  that
+                                                                                    rather     of that
+                                                                                            than   Voc and  Isc.and
+                                                                                                       of Voc     TheIsc.
+                                                                                                                        detailed  resultsresults
+                                                                                                                           The detailed    with the with
+                                   combined      DH-TC     sequences      are  summarized     in  Table  3. The   EL
+                                      the combined DH-TC sequences are summarized in Table 3. The EL images, as shown  images,   as  shown   in Fig- in
+                                   ure 9,   confirmed
+                                      Figure 9,            that that
+                                                    confirmed    therethere
+                                                                         was no      noticeable
+                                                                                 was no  noticeabledamage
+                                                                                                       damageto the    module
+                                                                                                                   to the   moduleuntil  DH2000
+                                                                                                                                      until DH2000  + +
+                                   TC400.
+                                      TC400.
+
+
+
+
+                                                                                           (a)
+
+                                         Figure 8. Cont.
+Energies 2021, 14, 3328                                                                                                                   9 of 12
+Energies 2021, 14, x FOR PEER2021,
+                      Energies REVIEW
+                                   14, x FOR PEER REVIEW                                                                                9 of 12      9
+
+
+
+
+                                                                            (b)                                                   (c)
+                                                              (b)                                               (c)
+                                                   Figure 8. (a) Change of module performance parameters with respect to combined DH-TC tes
+                                  Figure 8. (a) Change of module performance parameters with respect to combined DH-TC test se-
+                                                   quences
+                                   Figure 8. (a) Change  of and  corresponding
+                                                            module             (b) parameters
+                                                                      performance  current–voltage
+                                                                                                withand (c) to
+                                                                                                           power-voltage
+                                                                                                      respect  combinedplots
+                                                                                                                          DH-TCof test
+                                                                                                                                 selected modul
+                                  quences and corresponding (b) current–voltage and (c) power-voltage plots of selected modules.
+                                   sequences and corresponding (b) current–voltage and (c) power-voltage plots of selected modules.
+                                                   Table 3. Module performance parameters with sequences of DH-TC combined acceleration tes
+                                  Table 3. Module performance parameters with sequences of DH-TC combined acceleration test.
+                                   Table 3. Module performance
+                                                        DH/TC parameters     with sequences
+                                                                            Voc           Isc of DH-TC FFcombined acceleration
+                                                                                                                   Pmax        test.
+                                                                                                                                  Rs        Rsh
+                                       DH/TC                  Voc         Isc            FF          Pmax              Rs          Rsh
+                                          DH/TC            (h/Cycles)
+                                                               Voc        Isc(V)        FF (A)      Pmax(%)            Rs (W)       Rsh(Ω)          (Ω
+                                      (h/Cycles)              (V)         (A)           (%)           (W)              (Ω)         (Ω)
+                                        (h/Cycles)             0/0
+                                                                (V)        47.47
+                                                                          (A)          (%)9.492      (W)78.4          (Ω)353.4        0.473
+                                                                                                                                    (Ω)             75.
+                                           0/0               47.47
+                                                             1000/0      9.492
+                                                                           46.96       78.4
+                                                                                          9.252      353.4
+                                                                                                         78.2         0.473
+                                                                                                                          339.6    75.5
+                                                                                                                                      0.499         50.
+                                            0/0               47.47      9.492         78.4         353.4             0.473        75.5
+                                         1000/0              46.96
+                                                            1000/100     9.252
+                                                                           46.83       78.2
+                                                                                          9.255       339.6
+                                                                                                         77.0          0.499
+                                                                                                                          333.6    50.3
+                                                                                                                                      0.541         56.
+                                          1000/0              46.96      9.252         78.2         339.6             0.499        50.3
+                                       1000/100
+                                         1000/100            46.83
+                                                            1000/200
+                                                              46.83      9.255
+                                                                           46.39
+                                                                         9.255         77.0
+                                                                                          9.272
+                                                                                       77.0           333.6
+                                                                                                         76.7
+                                                                                                     333.6             0.541
+                                                                                                                          330.0
+                                                                                                                      0.541        56.3
+                                                                                                                                      0.568
+                                                                                                                                   56.3             52.
+                                       1000/200
+                                         1000/200            46.39
+                                                              46.39
+                                                            1500/200     9.272
+                                                                         9.272
+                                                                           46.40       76.7
+                                                                                       76.7
+                                                                                          9.160       330.0
+                                                                                                     330.0
+                                                                                                         76.9          0.568
+                                                                                                                      0.568
+                                                                                                                          326.9    52.7
+                                                                                                                                   52.7
+                                                                                                                                      0.542         42.
+                                         1500/200
+                                       1500/200               46.40
+                                                             46.40       9.160
+                                                                         9.160         76.9
+                                                                                       76.9          326.9
+                                                                                                      326.9           0.542
+                                                                                                                       0.542       42.2
+                                                                                                                                   42.2
+                                                            2000/200       46.83          9.228          76.2             329.1       0.622         51.
+                                         2000/200
+                                       2000/200               46.83
+                                                             46.83       9.228
+                                                                         9.228         76.2
+                                                                                       76.2          329.1
+                                                                                                      329.1           0.622
+                                                                                                                       0.622       51.7
+                                                                                                                                   51.7
+                                         2000/300           2000/300
+                                                              46.82        46.82
+                                                                         9.268            9.268
+                                                                                       74.7              74.7
+                                                                                                    324.09               324.09
+                                                                                                                      0.658           0.658
+                                                                                                                                   47.7             47.
+                                       2000/300
+                                         2000/400            46.82
+                                                            2000/400
+                                                              46.21      9.268
+                                                                           46.21
+                                                                         9.170         74.7
+                                                                                          9.170
+                                                                                       74.5          324.09
+                                                                                                         74.5
+                                                                                                     315.8             0.658
+                                                                                                                          315.8
+                                                                                                                      0.659        47.7
+                                                                                                                                      0.659
+                                                                                                                                   57.4             57.
+                                       2000/400
+                                         2500/400            46.21
+                                                            2500/400
+                                                              46.09      9.170
+                                                                           46.09
+                                                                         9.105         74.5
+                                                                                          9.105
+                                                                                       74.3           315.8
+                                                                                                         74.3
+                                                                                                     312.0             0.659
+                                                                                                                          312.0
+                                                                                                                      0.635        57.4
+                                                                                                                                      0.635
+                                                                                                                                   48.3             48.
+                                         3000/400
+                                       2500/400               46.62
+                                                             46.09
+                                                            3000/400     9.241
+                                                                         9.105
+                                                                           46.62       72.2
+                                                                                       74.3
+                                                                                          9.241      311.2
+                                                                                                      312.0
+                                                                                                         72.2         0.714
+                                                                                                                       0.635
+                                                                                                                          311.2    59.1
+                                                                                                                                   48.3
+                                                                                                                                      0.714         59.
+                                         3000/500
+                                       3000/400               46.18
+                                                             46.62       9.113
+                                                                         9.241         61.4
+                                                                                       72.2          258.4
+                                                                                                      311.2           1.200
+                                                                                                                       0.714       36.5
+                                                                                                                                   59.1
+                                                            3000/500       46.18          9.113          61.4             258.4       1.200         36.
+                                         3000/600             45.50      8.977         63.1          257.8            1.133        55.2
+                                       3000/500              46.18
+                                                            3000/600     9.113
+                                                                           45.50       61.4
+                                                                                          8.977      258.4
+                                                                                                       63.1           1.200
+                                                                                                                         257.8     36.5
+                                                                                                                                      1.133         55.
+                                       3000/600              45.50       8.977         63.1          257.8            1.133        55.2
+
+
+
+
+                                     Figure 9. Electroluminescence images of modules with respect to combined DH-TC test sequences.
+                                   Figure 9. Electroluminescence images of modules with respect to combined DH-TC test sequences.
+                  Figure 9. Electroluminescence images of modules with respect to combined DH-TC test sequences.
+                                                          Another set
+                                         Another set of combined       of combined DH5000-TC600
+                                                                     DH5000-TC600      tests was performedtests was
+                                                                                                                usingperformed     using different m
+                                                                                                                       different modules
+                                   (called “Module  ules  (called
+                                                      (B)” in      “Module  (B)”
+                                                                the manuscript)   in the  manuscript)
+                                                                                   fabricated            fabricated
+                                                                                                 by another          by
+                                                                                                               company,  another   company,
+                                                                                                                                        cell for w
+                                        Another  set of  combined    DH5000-TC600        tests was   performed    using for     which
+                                                                                                                          different  mod-
+                                   and (called      cell
+                                        module“Module    and
+                                                 specificationsmodule   specifications   were   similar  to what   was   used   in the previous  sec
+                                  ules                      (B)” inwere  similar to what
+                                                                    the manuscript)         was used
+                                                                                        fabricated    byin the previous
+                                                                                                         another   company,section
+                                                                                                                                for (called
+                                                                                                                                    which
+                                   “Module          (called
+                                             (A)”): p-PERC   “Module   (A)”):
+                                                               monocrystallinep-PERC     monocrystalline
+                                                                                Si 72 cell  module          Si 72 cell module    with  a nominal  po
+                                  cell and module     specifications   were similar    to what     waswith
+                                                                                                        useda nominal   power of section
+                                                                                                               in the previous     ~360 W.
+                                   The main
+                                  (called     difference
+                                          “Module    (A)”):between
+                                                             p-PERCthe    two modules was
+                                                                      monocrystalline      Si 72that
+                                                                                                  cellmodule
+                                                                                                       module(B)   adopted
+                                                                                                                with          a polyolefin
+                                                                                                                       a nominal    power
+Energies
+ Energies2021, 14,14,
+           2021,   x FOR  PEER
+                      x FOR    REVIEW
+                            PEER REVIEW                                                                                                                      1010ofof1212
+Energies 2021, 14, 3328                                                                                                                                        10 of 12
+
+
+                                  ofof~360
+                                        ~360W.   W.TheThemain
+                                                            maindifference
+                                                                     differencebetween betweenthe   thetwo
+                                                                                                         twomodules
+                                                                                                               moduleswas    wasthat
+                                                                                                                                   thatmodule
+                                                                                                                                         module(B)     (B)adopted
+                                                                                                                                                            adopteda a
+                                  polyolefin
+                                   elastomer       elastomer
+                                    polyolefin elastomer           (POE)-based          encapsulant
+                                                                        encapsulant instead
+                                                    (POE)-based(POE)-based                 encapsulant    instead
+                                                                                                       of he         of the
+                                                                                                                conventional
+                                                                                                            instead of       conventional
+                                                                                                                          the EVA                 EVA
+                                                                                                                                          encapsulant
+                                                                                                                                conventional              encapsul-
+                                                                                                                                                    EVA usedencapsul- in
+                                  ant   used
+                                   module
+                                    ant   usedin   inmodule
+                                                (A).    POE
+                                                       module  is a(A).POE
+                                                                 (A).     POEisisa    apolyethylene-based
+                                                                     polyethylene-based              copolymer with
+                                                                                        polyethylene-based         copolymera
+                                                                                                                     copolymer    with
+                                                                                                                                     witha a (e.g.,
+                                                                                                                              co-monomer    co-monomer
+                                                                                                                                               co-monomer        (e.g.,
+                                                                                                                                                           acrylates,
+                                                                                                                                                                   (e.g.,
+                                  acrylates,
+                                   n-alkanes);    n-alkanes);
+                                                      thus,
+                                    acrylates, n-alkanes);                          physicalproperties
+                                                                      thus,itsitsphysical
+                                                              its thus,
+                                                                   physical        properties      depend on
+                                                                                                 properties  dependthe on
+                                                                                                                depend     onthe
+                                                                                                                        relativetherelative
+                                                                                                                                     relativecomposition
+                                                                                                                                    composition                   and
+                                                                                                                                                        and spatial
+                                                                                                                                                  composition        and
+                                  spatial     distribution
+                                   distribution        of the    of  the
+                                                                co-monomer co-monomer[17].  In  [17].
+                                                                                                this   In  this
+                                                                                                      study,   anstudy,    an  ethylene-octene
+                                                                                                                   ethylene-octene
+                                    spatial distribution of the co-monomer [17]. In this study, an ethylene-octene copolymer             copolymer      copolymer
+                                                                                                                                                           was    used
+                                  was
+                                   as
+                                    was  used
+                                       the    POE
+                                            used  asasthe
+                                                        thePOEPOEencapsulant.
+                                                      encapsulant.         Unlike EVA,
+                                                                      encapsulant.       Unlike POE
+                                                                                            Unlike  EVA,does
+                                                                                                      EVA,  POE      doesnot
+                                                                                                               notdoes
+                                                                                                              POE    produce    produce
+                                                                                                                             not any    acidany
+                                                                                                                                  produce      anyacid
+                                                                                                                                               by      acidbybyreact-
+                                                                                                                                                     reacting     with
+                                                                                                                                                                  react-
+                                  ing   with
+                                   waterwith
+                                    ing         water
+                                             andwater     and
+                                                    thus can     thus
+                                                                  prevent
+                                                            and thus     can
+                                                                           can prevent
+                                                                               the          the
+                                                                                     corrosion
+                                                                                   prevent        corrosion
+                                                                                               the of  metal of
+                                                                                                    corrosion  of  metal
+                                                                                                               electrodes.  electrodes.
+                                                                                                                     metal electrodes.
+                                            Theoverall
+                                          The
+                                           The     overallbehavior
+                                                  overall     behaviorof
+                                                             behavior       ofofthethemodule
+                                                                                 the    moduleperformance
+                                                                                       module       performanceparameters
+                                                                                                   performance        parameters(e.g.,
+                                                                                                                     parameters        (e.g.,Isc,
+                                                                                                                                      (e.g.,    Isc,Voc,
+                                                                                                                                              Isc,   Voc,   FF,Pmax,
+                                                                                                                                                      Voc,FF,
+                                                                                                                                                           FF,   Pmax,
+                                                                                                                                                                  Pmax,
+                                  and
+                                    and Rs) for module (B) was similar to that for module (A). However, as seen in Figure10,
+                                   and   Rs)
+                                          Rs)  for
+                                                for  module
+                                                      module     (B)
+                                                                  (B) was
+                                                                        was   similar
+                                                                               similar    to
+                                                                                           to that
+                                                                                               that for
+                                                                                                     for module
+                                                                                                          module    (A).
+                                                                                                                     (A). However,
+                                                                                                                            However,     as
+                                                                                                                                          as seen
+                                                                                                                                               seen   in
+                                                                                                                                                       in Figure
+                                                                                                                                                           Figure    10,
+                                                                                                                                                                      10,
+                                  the
+                                   the thermo-mechanical
+                                         thermo-mechanical             stability
+                                                                        stability    of
+                                                                                      ofmodule
+                                                                                         module     (B)
+                                                                                                     (B) with
+                                                                                                          with  the
+                                                                                                                 the POE
+                                                                                                                      POE
+                                    the thermo-mechanical stability of module (B) with the POE encapsulant was significantlyencapsulant
+                                                                                                                             encapsulant      was
+                                                                                                                                                was   significantly
+                                                                                                                                                       significantly
+                                   better
+                                  better     than
+                                    betterthan       that
+                                              thanthat      of
+                                                       thatof   module
+                                                                 module(A)
+                                                             ofmodule        (A)    with
+                                                                              (A)with      the
+                                                                                     withthe     EVA
+                                                                                            theEVA      encapsulant.
+                                                                                                  EVAencapsulant.         Figure
+                                                                                                         encapsulant.FigureFigure10 10  demonstrates
+                                                                                                                                     10demonstrates
+                                                                                                                                         demonstratesthat    that   the
+                                                                                                                                                               thatthethe
+                                   maximum
+                                  maximum            output
+                                                    output      power
+                                                               power       of
+                                                                           of    module
+                                                                               module        (A)
+                                                                                             (A)   was   reduced
+                                    maximum output power of module (A) was reduced by ~10% after the DH2000/TC200    by   ~10%
+                                                                                                                          ~10%     after  the
+                                                                                                                                          the    DH2000/TC200
+                                                                                                                                                 DH2000/TC200
+                                   test
+                                  test    and
+                                    testand      rapidly
+                                           andrapidly
+                                                  rapidly     dropped
+                                                           dropped
+                                                             dropped         by
+                                                                          bybyover  over
+                                                                                  over 20% 20%
+                                                                                         20%      after
+                                                                                              after
+                                                                                                after     DH3000/TC500,
+                                                                                                     DH3000/TC500,
+                                                                                                       DH3000/TC500,       while      thatofthat
+                                                                                                                                  while
+                                                                                                                              while that            of module
+                                                                                                                                             ofmodule
+                                                                                                                                                 module    (B)
+                                                                                                                                                             (B)grad-(B)
+                                                                                                                                                                  grad-
+                                   gradually
+                                  ually
+                                    uallydecreased   decreased
+                                              decreased       untiluntil
+                                                           until              DH4500/TC600,
+                                                                    DH4500/TC600,
+                                                                       DH4500/TC600,                    maintaining
+                                                                                               maintaining
+                                                                                                 maintaining    only        10%a
+                                                                                                                          only
+                                                                                                                   onlya a10%        10%and
+                                                                                                                                 drop,
+                                                                                                                                   drop,    drop,
+                                                                                                                                           and        and a
+                                                                                                                                                 reached
+                                                                                                                                                   reached   reached
+                                                                                                                                                                a~20%
+                                                                                                                                                                  ~20%
+                                   a ~20%
+                                  drop     afterdrop
+                                                   the   after   the
+                                                         completion    completion
+                                                                            of   the       of  the  DH5000/TC600
+                                    drop after the completion of the DH5000/TC600 test. The EL images shown in Figure11
+                                                                                       DH5000/TC600          test.  The    test.
+                                                                                                                          EL      The
+                                                                                                                               images    EL   images
+                                                                                                                                          shown       in   shown
+                                                                                                                                                          Figure      in
+                                                                                                                                                                       11
+                                   Figure
+                                  also        11
+                                         confirmed also   confirmed
+                                                          the  stability  theof  stability
+                                                                                  cells withinof cells
+                                                                                                   the  within
+                                                                                                        modules   the modules
+                                                                                                                    until   the
+                                    also confirmed the stability of cells within the modules until the DH3000/TC600 test. These     until  the
+                                                                                                                                 DH3000/TC600     DH3000/TC600
+                                                                                                                                                         test. These
+                                   test.
+                                  results These results        on the durability of            POE encapsulants          agree well     with previous         reports
+                                    resultsononthe   thedurability
+                                                           durabilityofofPOE     POEencapsulants
+                                                                                        encapsulantsagree   agreewell
+                                                                                                                    wellwith
+                                                                                                                           withprevious
+                                                                                                                                  previousreportsreportsininthe  thelit-
+                                                                                                                                                                      lit-
+                                   in  the
+                                  erature    literature     [17–19].
+                                    erature[17–19].
+                                                 [17–19].
+
+
+
+
+                                  Figure
+                                    Figure10.
+                                   Figure   10.Changes
+                                           10.             inmaximum
+                                                 Changesinin
+                                                Changes                   outputpower
+                                                              maximumoutput
+                                                             maximum     output  power   (Pmax)and
+                                                                                  power(Pmax)
+                                                                                        (Pmax)                             (Rs)with
+                                                                                                               resistance(Rs)
+                                                                                                       seriesresistance
+                                                                                                  andseries
+                                                                                                 and  series  resistance  (Rs)  withrespect
+                                                                                                                               with   respectto
+                                                                                                                                     respect  toto
+                                  combined
+                                   combined   DH5000-TC600
+                                    combinedDH5000-TC600       test
+                                                DH5000-TC600test    sequences for
+                                                                      sequencesfor
+                                                                 testsequences    two
+                                                                                fortwodifferent
+                                                                                    twodifferentmodules,
+                                                                                        differentmodules,  (A)
+                                                                                                  modules,(A)   with
+                                                                                                              (A)with EVA
+                                                                                                                  withEVA   and
+                                                                                                                       EVAand   (B)
+                                                                                                                              and(B)with
+                                                                                                                                  (B)withPOE.
+                                                                                                                                      withPOE.
+                                                                                                                                           POE.
+
+
+
+
+                                  Figure
+                                    Figure11.11.Electroluminescence
+                                                  Electroluminescenceimages
+                                                                       imagesofofmodule
+                                                                                  module(B)(B)with
+                                                                                               withrespect
+                                                                                                     respecttotocombined
+                                                                                                                  combinedDH-TC
+                                                                                                                           DH-TCtest
+                                                                                                                                  testse-se-
+                                   Figure 11. Electroluminescence images of module (B) with respect to combined DH-TC test sequences.
+                                  quences.
+                                    quences.
+Energies 2021, 14, 3328                                                                                                                  11 of 12
+
+
+
+
+                                    4. Conclusions
+                                         DH, TC, and DH-TC combined tests were performed on a commercial p-PERC
+                                    monocrystalline Si 72-cell module, and the results were investigated using flash I-V and EL
+                                    images. During the DH test, the critical drop in the maximum output power of the module
+                                    was primarily accelerated by the degradation of FF and an increase in Rs, which was mainly
+                                    related to the corrosion of metal electrodes due to moisture ingress, and later followed
+                                    by Isc loss after DH6000. On the other hand, it was confirmed that the TC test between
+                                    −40 ◦ C and +85 ◦ C did not considerably degrade the module performance until 1400 cycles.
+                                    However, the combined DH-TC test suggested in this study is confirmed to provide harsher
+                                    conditions to the module than the DH-only test, and thus has the potential to reduce the
+                                    time and cost for the acceleration test of PV modules. Therefore, further research on the
+                                    correlation between combined DH-TC indoor test sequences and outdoor degradation
+                                    phenomena of diverse PV modules can expedite the design and development of more
+                                    reliable PV modules with a longer lifetime (e.g., ~50 years). It was also confirmed that the
+                                    module with POE showed better durability even in the combined DH-TC environment
+                                    than the module with EVA, in particular showing a Pmax drop of only approximately 10%
+                                    after the DH5500/TC600 test.
+
+                                    Author Contributions: Conceptualization, H.P., W.S., and W.K.; methodology, H.P. and W.S.; formal
+                                    analysis, H.P. and W.S.; data curation, H.P. and W.K.; writing—original draft preparation, H.P. and
+                                    W.K.; writing—review and editing, W.K.; supervision, W.K.; project administration, W.K.; funding
+                                    acquisition, W.K. All authors have read and agreed to the published version of the manuscript.
+                                    Funding: This work was supported by the Korea Institute of Energy Technology Evaluation and
+                                    Planning (KETEP) and the Ministry of Trade, Industry & Energy (MOTIE) of the Republic of Korea
+                                    (No. 20183010014320).
+                                    Institutional Review Board Statement: Not applicable.
+                                    Informed Consent Statement: Not applicable.
+                                    Data Availability Statement: Not applicable.
+                                    Conflicts of Interest: The authors declare no conflict of interest.
+
+References
+1.    Kawai, S.; Tanahashi, T.; Fukumoto, Y.; Tamai, F.; Masuda, A.; Kondo, M. Causes of degradation identified by the extended
+      thermal cycling test on commercially available crystalline silicon photovoltaic modules. IEEE J. Photovolt. 2017, 7, 1511–1518.
+      [CrossRef]
+2.    Chaturvedi, P.; Hoex, B.; Walsh, T.M. Broken metal fingers in silicon wafer solar cells and PV modules. Sol. Energy Mater. Sol.
+      Cells 2013, 108, 78–81. [CrossRef]
+3.    Roy, S.; Kumar, S.; Gupta, R. Investigation and analysis of finger breakages in commercial crystalline silicon photovoltaic modules
+      under standard thermal cycling test. Eng. Fail. Anal. 2019, 101, 309–319. [CrossRef]
+4.    Kumar, S.; Gupta, R. Investigation and analysis of thermo-mechanical degradation of fingers in a photovoltaic module under
+      thermal cyclic stress conditions. Sol. Energy 2018, 174, 1044–1052. [CrossRef]
+5.    Park, H.; Jeong, J.; Shin, E.; Kim, S.; Yi, J. A reliability study of silicon heterojunction photovoltaic modules exposed to damp heat
+      testing. Microelectron. Eng. 2019, 216, 111081. [CrossRef]
+6.    Poulek, V.; Šafránková, J.; Černá, L.; Libra, M.; Beránek, V.; Finsterle, T.; Hrzina, P. PV panel and PV inverter damages caused by
+      combination of edge delamination, water penetration, and high string voltage in moderate climate. IEEE J. Photovolt. 2021, 11,
+      561–565. [CrossRef]
+7.    de Olivira, M.C.C.; Diniz, A.S.A.C.; Viana, M.M.; Lins, V.F.C. The causes and effects of degradation of encapsulant ethylene vinyl
+      acetate copolymer (EVA) in crystalline silicon photovoltaic modules: A review. Renew. Sustain. Energy Rev. 2018, 81, 2299–2317.
+      [CrossRef]
+8.    Koehl, M.; Hoffmann, S.; Wiesmeier, S. Evaluation of damp-heat testing of photovoltaic modules. Prog. Photovolt. Res. Appl. 2017,
+      25, 175–183. [CrossRef]
+9.    Peike, C.; Hoffmann, S.; Hülsmann, P.; Thaidigsmann, B.; Weiß, K.A.; Koehl, M.; Bentz, P. Origin of damp-heat induced cell
+      degradation. Sol. Energy Mater. Sol. Cells 2013, 116, 49–54. [CrossRef]
+10.   Zhu, J.; Koehl, M.; Hoffman, S.; Berger, K.A.; Zamini, S.; Bennett, I.; Gerritsen, E.; Malbranche, P.; Pugliatti, P.; Stefano, A.D.; et al.
+      Changes of solar cell parameters during damp-heat exposure. Prog. Photovolt. Res. Appl. 2016, 24, 1346–1358. [CrossRef]
+Energies 2021, 14, 3328                                                                                                             12 of 12
+
+
+
+
+11.   Masuda, A.; Yamamoto, C.; Uchiyama, N.; Ueno, K.; Yamazaki, T.; Mitsuhashi, K.; Tsutsumida, A.; Watanabe, J.; Shirataki, J.;
+      Matsuda, K. Sequential and combined acceleration tests for crystalline Si photovoltaic modules. Jpn. J. Appl. Phys. 2016, 55,
+      04ES10. [CrossRef]
+12.   Owen-Bellini, M.; Hacke, P.; Miller, D.C.; Kempe, M.D.; Spataru, S.; Tanahashi, T.; Mitterhofer, S.; Jankovec, M.; Topič, M.
+      Advancing reliability assessments of photovoltaic modules and materials using combined-accelerated stress testing. Prog.
+      Photovolt. Res. Appl. 2021, 29, 64–82. [CrossRef]
+13.   Spataru, S.; Hacke, P.; Owen-Bellini, M. Combined-accelerated stress testing system for photovoltaic modules. In Proceedings of
+      the 2018 IEEE 7th World Conference on Photovoltaic Energy Conversion (WCPEC) (A Joint Conference of 45th IEEE PVSC, 28th
+      PVSEC & 34th EU PVSEC), Waikoloa, HI, USA, 10–15 June 2018; pp. 3943–3948. [CrossRef]
+14.   Pingel, S.; Korth, H.; Winkler, M.; Weiss, P.; Geipel, T. Investigation of damp heat degradation mechanisms and correlation to an
+      Accelerated Test Procedure (HAST). In Proceedings of the 27th European Photovoltaic Solar Energy Conference and Exhibition
+      (27th EU-PVSEC), Frankfurt, Germany, 24–28 September 2012; pp. 3137–3141. [CrossRef]
+15.   Li, Y.-T.; Lin, W.-Y.; Yang, W.-L.; Hsieh, C.-F. Sequential acceleration tests with Pressure Cooker Test (PCT) and UV for backsheets
+      of PV modules. Energy Procedia 2018, 150, 44–49. [CrossRef]
+16.   Schiller, C.H.; Rendler, L.C.; Eberlein, D.; Mülhöfer, G.; Kraft, A.; Neuhaus, D.H. Accelerated TC test in comparison with standard
+      TC test for PV modules with ribbon, wire and shingle interconnection. In Proceedings of the 36th European Photovoltaic Solar
+      Energy Conference and Exhibition (36th EU-PVSEC), Marseille, France, 9–13 September 2019; pp. 995–999. [CrossRef]
+17.   Chang, M.; Chen, H.; Chen, C.; Hsueh, C.H. Cocktail sequential test for c-SI PV module: The correlation among accelerated stress
+      factors. In Proceedings of the 31st European Photovoltaic Solar Energy Conference and Exhibition (31st EU-PVSEC), Hamburg,
+      Germany, 14–18 September 2015; pp. 1894–1898. [CrossRef]
+18.   Lin, B.; Zheng, C.; Zhu, Q.; Xie, F. A polyolefn encapsulant material designed for photovoltaic modules: From perspectives of
+      peel strength and transmittance. J. Therm. Anal. Calorim. 2020, 140, 2259–2265. [CrossRef]
+19.   Oreski, G.; Omazic, A.; Eder, G.C.; Voronko, Y.; Neumaier, L.; Mühleisen, W.; Hirschl, C.; Ujvari, G.; Ebner, R.; Edler, M. Properties
+      and degradation behaviour of polyolefin encapsulants for photovoltaic modules. Prog. Photovolt. Res. Appl. 2020, 28, 1277–1288.
+      [CrossRef]
+

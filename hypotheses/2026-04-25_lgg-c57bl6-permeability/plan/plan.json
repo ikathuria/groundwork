@@ -1,0 +1,585 @@
+{
+  "schema_version": "groundwork-plan-v1",
+  "generated_at": "2026-04-25T18:00:00Z",
+  "plan_version": 1,
+
+  "hypothesis": {
+    "slug": "2026-04-25_lgg-c57bl6-permeability",
+    "domain": "gut-microbiome",
+    "original_question": "Supplementing C57BL/6 mice with Lactobacillus rhamnosus GG for 4 weeks will reduce intestinal permeability by at least 30% compared to untreated controls, measured by plasma FITC-dextran levels after oral gavage.",
+    "refined": {
+      "intervention": "Daily oral gavage of viable Lacticaseibacillus rhamnosus GG (ATCC 53103) at 1×10^9 CFU/mouse/day in 200 µL sterile PBS, for 28 consecutive days",
+      "outcome": "Plasma FITC-dextran 4 kDa (FD-4) concentration measured 4 h after a single 600 mg/kg oral gavage of FD-4 in sterile PBS, by fluorescence (485/520 nm) against a same-day standard curve in pooled naïve mouse plasma",
+      "threshold": "Mean plasma FD-4 in LGG arm ≤ 70% of vehicle-control mean (≥ 30% reduction); two-sided Mann–Whitney U test, α = 0.05, design powered for d ≥ 1.0",
+      "mechanism": "Up-regulation of apical tight-junction proteins (ZO-1, occludin, claudin-1/3/4) and down-regulation of pore-forming claudin-2; soluble factor p40 (Msp1) activates EGFR-PI3K/Akt; competitive exclusion of pathobionts; SCFA-mediated colonocyte support",
+      "control": "Vehicle-only C57BL/6J mice receiving equal volume of sterile PBS by daily gavage; secondary heat-killed-LGG arm to dissect viability dependence",
+      "wiki_pages": {
+        "intervention_organism": "wiki/organisms/lactobacillus-rhamnosus-GG",
+        "host_organism": "wiki/organisms/C57BL-6",
+        "primary_method": "wiki/methods/FITC-dextran-permeability-assay",
+        "delivery_method": "wiki/methods/oral-gavage-mouse",
+        "primary_reagent": "wiki/reagents/FITC-dextran-4kDa"
+      }
+    }
+  },
+
+  "novelty": {
+    "verdict": "similar-work-exists",
+    "verdict_caveat": "with-major-caveats",
+    "rationale": "Extensive published LGG → intestinal-barrier literature exists, but ~85% of evidence is from challenge models (DSS colitis, alcohol, HFD, NEC, post-weaning stress), not unstressed adult C57BL/6. The closest published precedent (Singh 2014) was retracted in 2024. The unstressed-baseline question is therefore under-explored *and* the closest match is unreliable. Verdict is 'similar-work-exists' but Pass 3 explicitly flags the precedent quality.",
+    "references": [
+      {
+        "title": "Lactobacillus rhamnosus GG Stimulates Dietary Tryptophan-Dependent Production of Barrier-Protecting Methylnicotinamide",
+        "authors": "Suntornsaratoon P, Antonio JM, Flores J, Upadhyay R, Veltri J, Bandyopadhyay S, et al.",
+        "year": 2024,
+        "doi": "10.1016/j.jcmgh.2024.04.003",
+        "wiki_page": "wiki/sources/2024-suntornsaratoon-lactobacillus-rhamnosus-gg-stimulates-dietary",
+        "relevance": "Closest in design — uses LGG + FITC-dextran + C57BL/6 mice, including a healthy-mouse arm, with mechanistic depth (tryptophan → MNA → barrier)"
+      },
+      {
+        "title": "Neonatal Colonization of Mice with LGG Promotes Intestinal Development and Decreases Susceptibility to Colitis in Adult Mice",
+        "authors": "Yan F, Liu L, Cao H, Moore DJ, Washington MK, Wang B, Peek RM, Acra SA, Polk DB",
+        "year": 2017,
+        "doi": "10.1080/19490976.2016.1257126",
+        "wiki_page": "wiki/sources/2017-yan-neonatal-colonization-mice-lgg-promotes",
+        "relevance": "Yan/Polk lineage, in vivo C57BL/6, FD-4 measurement; demonstrates LGG → barrier protection but in a neonatal-imprint design rather than adult unchallenged"
+      },
+      {
+        "title": "RETRACTED — Improvement in Th1/Th2 immune homeostasis, antioxidative status and resistance to pathogenic E. coli on consumption of probiotic Lactobacillus rhamnosus fermented milk in aging mice",
+        "authors": "Singh S et al.",
+        "year": 2014,
+        "doi": "10.1007/s11357-014-9686-4",
+        "wiki_page": "wiki/sources/2014-singh-lgg-fermented-milk-aging-mice-RETRACTED",
+        "relevance": "Most direct published precedent — but RETRACTED in 2024. Listed here for transparency: this is the kind of result this hypothesis is testing, and its retraction is itself signal."
+      }
+    ]
+  },
+
+  "summary": {
+    "total_budget_usd": 19200,
+    "total_timeline_weeks": 10,
+    "n_per_arm": 14,
+    "n_arms": 2,
+    "primary_endpoint": "plasma FD-4 at 4 h post-gavage (µg/mL)",
+    "top_failure_modes": [
+      "baseline-permeability-too-low-detect-30pct",
+      "challenge-model-vs-baseline-mismatch",
+      "coprophagy-microbiome-equilibration",
+      "incomplete-fasting-before-gavage",
+      "positive-publication-bias-LGG-literature",
+      "LGG-viability-loss-during-gavage-prep",
+      "C57BL-6J-vs-N-substrain-confounder"
+    ],
+    "wiki_sources_used": 25,
+    "wiki_sources_total": 72
+  },
+
+  "protocol": [
+    {
+      "step": 1,
+      "phase": "setup",
+      "title": "Order C57BL/6J mice and acclimate",
+      "duration_minutes": 20160,
+      "duration_human": "14 days (acclimation)",
+      "actions": [
+        "Order n = 32 C57BL/6J mice (16/arm × 2 arms = 28 + 4 reserve) from JAX, single shipment, single age cohort, 6 weeks at arrival",
+        "Single-housed in groups of 4 per cage by treatment arm (8 cages total — 4 LGG, 4 PBS); separate ventilated rack rows for treatment vs control",
+        "Standard chow + autoclaved water ad lib",
+        "≥ 14 d acclimation before any intervention"
+      ],
+      "reagents": [
+        {
+          "wiki_page": "wiki/organisms/C57BL-6",
+          "qty": "32 mice",
+          "supplier": "Jackson Laboratory",
+          "catalog": "000664",
+          "notes": "C57BL/6J specifically — pre-registered substrain; do NOT substitute C57BL/6N"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/C57BL-6J-vs-N-substrain-confounder",
+          "severity": "medium",
+          "mitigation": "Single vendor, single shipment, JAX 000664 documented in methods"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/vendor-of-origin-microbiome-baseline",
+          "severity": "medium",
+          "mitigation": "Single-vendor sourcing + 14-d acclimation lets local microbiome stabilise before intervention"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/coprophagy-microbiome-equilibration",
+          "severity": "high",
+          "mitigation": "Treatment and control mice in SEPARATE cages; alternate rack positions; dedicated PPE; control cages handled before LGG cages on every cage-change cycle"
+        }
+      ],
+      "rationale": "C57BL/6J pre-registration locks substrain confounder; single shipment + acclimation locks vendor-microbiome confounder; cage design + handling order locks coprophagy.",
+      "source_citations": [
+        "wiki/sources/2017-yan-neonatal-colonization-mice-lgg-promotes",
+        "wiki/sources/2024-suntornsaratoon-lactobacillus-rhamnosus-gg-stimulates-dietary"
+      ]
+    },
+    {
+      "step": 2,
+      "phase": "setup",
+      "title": "Establish LGG working stock (single expansion from sealed master)",
+      "duration_minutes": 4320,
+      "duration_human": "3 days",
+      "actions": [
+        "Order sealed ATCC 53103 vial; thaw and rehydrate per ATCC instructions",
+        "Single 10 mL MRS broth starter at 37 °C, static, 16 h to stationary",
+        "Expand to 100 mL working culture at 37 °C, harvest at OD₆₀₀ ≈ 1.0",
+        "Centrifuge 4 000 ×g 10 min; wash 2× in sterile PBS",
+        "Resuspend in 50 % PBS / 50 % sterile glycerol; freeze in 100 single-use 1 mL cryoaliquots at −80 °C",
+        "Quality-check: serial-dilute 1 aliquot on MRS-agar (anaerobic, 37 °C, 48 h) → confirm ≥ 1×10^10 CFU/mL stock concentration",
+        "Genotype check: colony PCR for SpaCBA pilus locus on 5 random colonies"
+      ],
+      "reagents": [
+        {
+          "wiki_page": "wiki/organisms/lactobacillus-rhamnosus-GG",
+          "qty": "1 sealed vial (100+ working aliquots derived)",
+          "supplier": "ATCC",
+          "catalog": "53103",
+          "notes": "Equivalent: DSM 33156. Do NOT use commercial probiotic capsules."
+        },
+        {
+          "wiki_page": "wiki/reagents/MRS-broth",
+          "qty": "500 g (entire study)",
+          "supplier": "BD Difco",
+          "catalog": "288130"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/LGG-strain-drift-passage",
+          "severity": "medium",
+          "mitigation": "Single expansion → 100-aliquot working bank; never propagate beyond 5 passages from cryostock to dosing; document passage number on every gavage day"
+        }
+      ],
+      "rationale": "A single working stock with high-CFU verified aliquots locks strain identity for the whole study. SpaCBA PCR confirms pilus retention (the adhesion locus that drift selects against).",
+      "source_citations": [
+        "wiki/sources/2025-si-lactobacillus-rhamnosus-gg-induces-sting"
+      ]
+    },
+    {
+      "step": 3,
+      "phase": "setup",
+      "title": "Calibrate FD-4 standard curve in pooled naïve mouse plasma",
+      "duration_minutes": 240,
+      "duration_human": "4 hours",
+      "actions": [
+        "Bleed 4 reserve mice (terminal cardiac under anaesthesia for max plasma)",
+        "Pool plasma; aliquot 50 µL × 30 wells",
+        "Spike with FD-4 stock to 8 standard concentrations (0, 0.1, 0.25, 0.5, 1, 2.5, 5, 10 µg/mL)",
+        "Read on plate reader (485 nm ex / 520 nm em, top read, black 96-well plate)",
+        "Confirm linearity (R² > 0.99); compare slope to a buffer-only standard curve and document the matrix correction factor"
+      ],
+      "reagents": [
+        {
+          "wiki_page": "wiki/reagents/FITC-dextran-4kDa",
+          "qty": "10 mg (calibration only)",
+          "supplier": "Sigma-Aldrich",
+          "catalog": "46944"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/serum-autofluorescence-FITC-readout",
+          "severity": "medium",
+          "mitigation": "Standard curve built in pooled mouse plasma (not buffer); reject any haemolysed pool samples; document slope difference from buffer curve"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/FITC-dextran-photobleaching",
+          "severity": "medium",
+          "mitigation": "Wrap stock + plate in foil; read immediately after spiking"
+        }
+      ],
+      "rationale": "Plasma autofluorescence varies with vendor / age cohort. Pre-study calibration in this cohort's plasma fixes the matrix correction. A pre-built standard curve also de-risks the endpoint day.",
+      "source_citations": [
+        "wiki/sources/2023-aldarsgarca-ex-vivo-intestinal-permeability-assay"
+      ]
+    },
+    {
+      "step": 4,
+      "phase": "setup",
+      "title": "Pilot — estimate baseline FD-4 SD (n = 4 mice)",
+      "duration_minutes": 360,
+      "duration_human": "6 hours (single day)",
+      "actions": [
+        "4 acclimated reserve mice — 6 h fast, water ad lib",
+        "Gavage 600 mg/kg FD-4 in sterile PBS (200 µL via 22 G stainless ball-tip needle), foil-wrapped syringes",
+        "Submandibular bleed at 4 h post-gavage; plasma FD-4 fluorescence",
+        "Estimate within-group SD; recompute power; if n = 14/arm too low, escalate to 18/arm"
+      ],
+      "reagents": [
+        {
+          "wiki_page": "wiki/reagents/FITC-dextran-4kDa",
+          "qty": "≈ 60 mg (4 mice × 15 mg / 25 g mouse)",
+          "supplier": "Sigma-Aldrich",
+          "catalog": "46944"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/baseline-permeability-too-low-detect-30pct",
+          "severity": "critical",
+          "mitigation": "If pilot mean FD-4 < 0.5 µg/mL OR SD/mean > 0.5, re-design: add a mild-DSS positive-control arm OR escalate primary endpoint to plasma LBP"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/incomplete-fasting-before-gavage",
+          "severity": "high",
+          "mitigation": "Standardised 6-h daytime fast; remove food + visible crumbs; confirm cage cleanliness at gavage time"
+        }
+      ],
+      "rationale": "Power calculation from published data is unreliable because of [[wiki/failure-modes/FITC-dextran-dose-timing-heterogeneity]]. A 4-mouse pilot in the actual cohort gives the local SD before committing to the main n.",
+      "source_citations": [
+        "wiki/sources/2024-suntornsaratoon-lactobacillus-rhamnosus-gg-stimulates-dietary",
+        "wiki/sources/2021-boerner-functional-assessment-intestinal-permeability-neutrophil"
+      ]
+    },
+    {
+      "step": 5,
+      "phase": "intervention",
+      "title": "Daily LGG / PBS gavage × 28 days",
+      "duration_minutes": 40320,
+      "duration_human": "28 days, ~30 min/day for dosing + QC",
+      "actions": [
+        "Each morning: thaw one LGG aliquot per arm, wash 1× in cold PBS, resuspend at 5×10^9 CFU/mL in cold sterile PBS",
+        "Keep on ice; gavage all LGG-arm mice within 90 min of prep (200 µL = 1×10^9 CFU/mouse via 22G needle)",
+        "PBS arm: same volume of sterile PBS",
+        "Plate dose-day CFU on MRS-agar for every cage from the gavage suspension; reject cohort day if < 80 % of design dose",
+        "Same time of day (08:00–10:00) every day; rotate animal-handler order arm-balanced",
+        "Weekly: collect 1 fresh faecal pellet per cage; CFU on MRS-agar (anaerobic) AND archive aliquot for end-of-study 16S sequencing",
+        "Daily welfare scoring: weight, posture, coat, activity. Adverse-event protocol triggered by > 10 % weight loss or unexpected illness."
+      ],
+      "reagents": [
+        {
+          "wiki_page": "wiki/organisms/lactobacillus-rhamnosus-GG",
+          "qty": "28 single-use aliquots × 2 arms = 56 aliquots",
+          "supplier": "ATCC (working stock)",
+          "catalog": "53103"
+        },
+        {
+          "wiki_page": "wiki/reagents/MRS-broth",
+          "qty": "≈ 200 g (working culture + plate counts)",
+          "supplier": "BD Difco",
+          "catalog": "288130"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/LGG-viability-loss-during-gavage-prep",
+          "severity": "high",
+          "mitigation": "Fresh prep daily; ice; 90-min cap; dose-day CFU on every cage; reject low-CFU days"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/coprophagy-microbiome-equilibration",
+          "severity": "high",
+          "mitigation": "Separate cages + alternate rack positions; dedicated PPE; weekly faecal LGG check on control cages — ANY positive = study integrity compromised"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/probiotic-bacteremia-sepsis",
+          "severity": "critical",
+          "mitigation": "Daily welfare scoring; humane endpoint criteria pre-defined in IACUC; blood culture on any animal exceeding euthanasia thresholds"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/LPS-contamination-bacterial-prep",
+          "severity": "medium",
+          "mitigation": "Endotoxin-grade water and consumables for LGG suspension prep; LAL-quantify endotoxin in one batch; report"
+        }
+      ],
+      "rationale": "Daily fresh prep with on-day CFU verification is the only way to rule out the silent viability-loss failure mode. Cage separation + weekly LGG-on-controls check is the only way to rule out coprophagy collapse. These two together are the experiment's load-bearing QC.",
+      "source_citations": [
+        "wiki/sources/2025-farella-lactobacillus-rhamnosus-sepsis-preterm-infant",
+        "wiki/sources/2025-si-lactobacillus-rhamnosus-gg-induces-sting",
+        "wiki/sources/2024-hu-autoinducer-promotes-colonization-lactobacillus-rhamnosus"
+      ]
+    },
+    {
+      "step": 6,
+      "phase": "endpoint",
+      "title": "Endpoint FD-4 assay (Day 29)",
+      "duration_minutes": 720,
+      "duration_human": "1 day (intensive)",
+      "actions": [
+        "06:00 — remove food + visible crumbs from all cages (start 6 h fast); water ad lib",
+        "12:00 — gavage 600 mg/kg FD-4 in sterile PBS (200 µL); foil-wrapped syringes; randomise gavage order across arms (block by cage)",
+        "16:00 (4 h post-gavage) — submandibular bleed under brief isoflurane; collect ≥ 75 µL plasma into EDTA tubes; keep on ice in foil",
+        "Plate-read same day on the pre-calibrated standard curve (re-run a 4-point standard alongside samples on the same plate)",
+        "Reject any haemolysed plasma samples; document"
+      ],
+      "reagents": [
+        {
+          "wiki_page": "wiki/reagents/FITC-dextran-4kDa",
+          "qty": "≈ 480 mg (32 mice × 15 mg / 25 g mouse)",
+          "supplier": "Sigma-Aldrich",
+          "catalog": "46944"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/incomplete-fasting-before-gavage",
+          "severity": "high",
+          "mitigation": "6 h fast pre-registered, cage-cleanliness check at gavage time, log per-cage deviations"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/FITC-dextran-photobleaching",
+          "severity": "medium",
+          "mitigation": "Foil-wrapped syringes + sample tubes throughout; read immediately"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/serum-autofluorescence-FITC-readout",
+          "severity": "medium",
+          "mitigation": "Re-run standard curve in pooled plasma on the same plate; reject visibly haemolysed samples"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/FITC-dextran-dose-timing-heterogeneity",
+          "severity": "high",
+          "mitigation": "Pre-registered single dose × time pair (600 mg/kg, 4 h) — no other comparisons drawn from this assay"
+        }
+      ],
+      "rationale": "Single high-yield endpoint day, intensively QC'd, with all four FD-4 failure modes pre-mitigated.",
+      "source_citations": [
+        "wiki/sources/2024-suntornsaratoon-lactobacillus-rhamnosus-gg-stimulates-dietary",
+        "wiki/sources/2023-aldarsgarca-ex-vivo-intestinal-permeability-assay",
+        "wiki/sources/2021-boerner-functional-assessment-intestinal-permeability-neutrophil"
+      ]
+    },
+    {
+      "step": 7,
+      "phase": "endpoint",
+      "title": "Sacrifice + tissue harvest for mechanism overlay",
+      "duration_minutes": 480,
+      "duration_human": "1 day",
+      "actions": [
+        "After endpoint bleed, terminal cardiac stick under deep anaesthesia; collect remaining plasma for LBP ELISA",
+        "Harvest distal ileum (2 cm), proximal colon (2 cm), distal colon (2 cm)",
+        "Bisect each segment: half into 10 % formalin for IF; half snap-frozen in liquid N₂ for Western blot + qPCR",
+        "Caecum content collected to pre-weighed cryotube; snap-freeze for SCFA GC analysis",
+        "Final faecal pellet collected for 16S sequencing (matched per mouse)"
+      ],
+      "reagents": [],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/ZO-1-occludin-detection-artifacts",
+          "severity": "medium",
+          "mitigation": "Adjacent-section design (formalin + frozen halves) lets us run paired WB + IF on every animal; if total vs membrane disagree, IF is closer to the relevant biology"
+        }
+      ],
+      "rationale": "Single sacrifice yields 5 readouts (FD-4 already done; + plasma LBP + tight-junction protein + caecal SCFA + 16S) — the orthogonal mechanism overlay.",
+      "source_citations": [
+        "wiki/sources/2023-aldarsgarca-ex-vivo-intestinal-permeability-assay"
+      ]
+    },
+    {
+      "step": 8,
+      "phase": "mechanism",
+      "title": "Tight-junction Western blot + immunofluorescence (ileum)",
+      "duration_minutes": 4320,
+      "duration_human": "3 days (1 day extraction, 1 day blot, 1 day IF)",
+      "actions": [
+        "Mucosal scrape from frozen ileum; RIPA lysis; BCA quantification",
+        "WB: ZO-1 (Cell Signaling 13663), occludin (Invitrogen 71-1500), claudin-1 (Invitrogen 51-9000), claudin-2 (Invitrogen 32-5600); GAPDH + total-protein (Ponceau) normalisation",
+        "IF on adjacent formalin sections: ZO-1 + occludin co-stain with apical marker E-cadherin",
+        "Blinded quantification — analyst does not know treatment assignment until after scoring"
+      ],
+      "reagents": [
+        {
+          "wiki_page": null,
+          "qty": "ZO-1 ab + occludin ab + claudin-1 ab + claudin-2 ab + secondaries",
+          "supplier": "Cell Signaling / Invitrogen",
+          "catalog": "see actions",
+          "notes": "Antibody catalog locked at study start — single lot for whole study"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/ZO-1-occludin-detection-artifacts",
+          "severity": "medium",
+          "mitigation": "Single antibody lot; total-protein normalisation; blinded IF quantification; positive-control tissue (DSS-damaged colon) on every blot"
+        }
+      ],
+      "rationale": "WB + IF together provide the molecular substrate for any FD-4 phenotype. Blinding controls quantification bias.",
+      "source_citations": [
+        "wiki/sources/2018-shen-supplementation-p40-lactobacillus-rhamnosus-gg",
+        "wiki/sources/2021-deng-exposure-p40-early-life-prevents"
+      ]
+    },
+    {
+      "step": 9,
+      "phase": "mechanism",
+      "title": "Plasma LBP ELISA + caecal SCFA + 16S sequencing",
+      "duration_minutes": 4320,
+      "duration_human": "3 days (parallel)",
+      "actions": [
+        "Plasma LBP: Hycult Biotech HK205 ELISA, all samples in duplicate on a single plate (n = 32 fits)",
+        "Caecal SCFA: GC-FID with 2-ethylbutyric acid internal standard; report µmol/g caecal content",
+        "Faecal 16S: V3–V4 amplicon on Illumina MiSeq, ≥ 30 000 reads/sample; LGG-specific welE qPCR on parallel aliquot for strain-level quantification",
+        "Cross-arm contamination check: if welE qPCR positive in any control-arm sample, investigate"
+      ],
+      "reagents": [
+        {
+          "wiki_page": null,
+          "qty": "1 LBP ELISA kit (96-well)",
+          "supplier": "Hycult Biotech",
+          "catalog": "HK205",
+          "notes": "Mouse-specific LBP"
+        }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/coprophagy-microbiome-equilibration",
+          "severity": "high",
+          "mitigation": "16S + welE qPCR is the post-hoc confirmation that the cage-design held — a positive control finding here invalidates the LGG-arm comparison"
+        }
+      ],
+      "rationale": "Plasma LBP gives orthogonal confirmation of barrier change. SCFA tests the SCFA-mediated mechanism. 16S confirms engraftment + cage integrity.",
+      "source_citations": [
+        "wiki/sources/2024-suntornsaratoon-lactobacillus-rhamnosus-gg-stimulates-dietary",
+        "wiki/sources/2025-si-lactobacillus-rhamnosus-gg-induces-sting"
+      ]
+    },
+    {
+      "step": 10,
+      "phase": "analysis",
+      "title": "Statistical analysis + writeup",
+      "duration_minutes": 7200,
+      "duration_human": "5 days",
+      "actions": [
+        "Primary endpoint: two-sided Mann–Whitney U on plasma FD-4 (LGG vs PBS); 95% CI on percent reduction by bootstrap (10 000 resamples)",
+        "Secondary: Mann–Whitney on LBP, on tight-junction WB densitometry (ZO-1, occludin, claudin-1/2/-3/-4), on caecal SCFA",
+        "Engraftment confirmation: LGG-arm faecal LGG CFU > 0 throughout; control-arm = 0 throughout",
+        "Sensitivity analysis: exclude any cage with dose-day CFU < 80 % of design",
+        "Pre-registered: this is not a multi-comparison correction excuse — primary endpoint judged on its own α = 0.05; secondaries reported with FDR correction.",
+        "Pre-register on OSF before unblinding"
+      ],
+      "reagents": [],
+      "failure_warnings": [
+        {
+          "wiki_page": "wiki/failure-modes/positive-publication-bias-LGG-literature",
+          "severity": "high",
+          "mitigation": "Pre-registered analysis plan + commitment to publish regardless of direction (including null); cite the Singh 2014 retraction in the discussion as the precedent that didn't hold up"
+        },
+        {
+          "wiki_page": "wiki/failure-modes/baseline-permeability-too-low-detect-30pct",
+          "severity": "critical",
+          "mitigation": "If pilot already escalated n or switched primary endpoint to LBP, document deviation transparently in the writeup"
+        }
+      ],
+      "rationale": "Pre-registration locks degrees of freedom. Single primary endpoint avoids fishing. Sensitivity analysis on dose-day CFU lets us salvage interpretability if some days were sub-spec.",
+      "source_citations": [
+        "wiki/sources/2014-singh-lgg-fermented-milk-aging-mice-RETRACTED",
+        "wiki/sources/openalex-lactobacillus-retractions-snapshot"
+      ]
+    }
+  ],
+
+  "materials": [
+    {"category": "animals", "wiki_page": "wiki/organisms/C57BL-6", "item": "C57BL/6J mice, 6 wk", "supplier": "Jackson Laboratory", "catalog": "000664", "qty": 32, "unit": "mouse", "unit_price_usd": 35, "subtotal_usd": 1120, "notes": "+$280 shipping"},
+    {"category": "strain", "wiki_page": "wiki/organisms/lactobacillus-rhamnosus-GG", "item": "Lacticaseibacillus rhamnosus GG", "supplier": "ATCC", "catalog": "53103", "qty": 1, "unit": "vial", "unit_price_usd": 590, "subtotal_usd": 590},
+    {"category": "media", "wiki_page": "wiki/reagents/MRS-broth", "item": "MRS broth (Difco)", "supplier": "BD Difco", "catalog": "288130", "qty": 1, "unit": "500 g bottle", "unit_price_usd": 200, "subtotal_usd": 200},
+    {"category": "media", "wiki_page": null, "item": "MRS agar (Difco)", "supplier": "BD Difco", "catalog": "288210", "qty": 1, "unit": "500 g bottle", "unit_price_usd": 150, "subtotal_usd": 150},
+    {"category": "assay-reagent", "wiki_page": "wiki/reagents/FITC-dextran-4kDa", "item": "FITC-dextran 4 kDa", "supplier": "Sigma-Aldrich", "catalog": "46944", "qty": 1, "unit": "1 g", "unit_price_usd": 290, "subtotal_usd": 290},
+    {"category": "consumables", "wiki_page": "wiki/methods/oral-gavage-mouse", "item": "22 G stainless ball-tip gavage needle", "supplier": "Kent Scientific", "catalog": "FNS-22-1.5", "qty": 4, "unit": "needle", "unit_price_usd": 35, "subtotal_usd": 140},
+    {"category": "elisa", "wiki_page": "wiki/methods/ELISA-cytokine-quantification", "item": "Mouse LBP ELISA kit", "supplier": "Hycult Biotech", "catalog": "HK205", "qty": 1, "unit": "96-well", "unit_price_usd": 685, "subtotal_usd": 685},
+    {"category": "elisa", "wiki_page": "wiki/methods/ELISA-cytokine-quantification", "item": "Mouse IL-10 + TNF-α + IL-6 multiplex (MSD U-Plex)", "supplier": "Meso Scale Discovery", "catalog": "K15048D-1", "qty": 1, "unit": "10-spot plate", "unit_price_usd": 820, "subtotal_usd": 820},
+    {"category": "antibody", "wiki_page": "wiki/methods/Western-blot-tight-junction", "item": "ZO-1 Rabbit mAb", "supplier": "Cell Signaling", "catalog": "13663", "qty": 1, "unit": "100 µL", "unit_price_usd": 460, "subtotal_usd": 460},
+    {"category": "antibody", "wiki_page": "wiki/methods/Western-blot-tight-junction", "item": "Occludin polyclonal", "supplier": "Invitrogen", "catalog": "71-1500", "qty": 1, "unit": "100 µg", "unit_price_usd": 410, "subtotal_usd": 410},
+    {"category": "antibody", "wiki_page": "wiki/methods/Western-blot-tight-junction", "item": "Claudin-1 polyclonal", "supplier": "Invitrogen", "catalog": "51-9000", "qty": 1, "unit": "100 µg", "unit_price_usd": 380, "subtotal_usd": 380},
+    {"category": "antibody", "wiki_page": "wiki/methods/Western-blot-tight-junction", "item": "Claudin-2 polyclonal", "supplier": "Invitrogen", "catalog": "32-5600", "qty": 1, "unit": "100 µg", "unit_price_usd": 380, "subtotal_usd": 380},
+    {"category": "antibody", "wiki_page": null, "item": "HRP-conjugated secondaries (anti-Rb, anti-Ms)", "supplier": "Jackson ImmunoResearch", "catalog": "111-035-003", "qty": 2, "unit": "vial", "unit_price_usd": 175, "subtotal_usd": 350},
+    {"category": "consumables", "wiki_page": null, "item": "Western blot chemiluminescence + plates + tubes + tips + lysis buffer", "supplier": "various", "catalog": "various", "qty": 1, "unit": "kit pool", "unit_price_usd": 1200, "subtotal_usd": 1200},
+    {"category": "sequencing", "wiki_page": "wiki/methods/16S-rRNA-microbiome-sequencing", "item": "16S V3-V4 sequencing (sample prep + MiSeq)", "supplier": "core facility", "catalog": "16S-V34", "qty": 36, "unit": "sample (32 + 4 controls)", "unit_price_usd": 50, "subtotal_usd": 1800},
+    {"category": "metabolomics", "wiki_page": "wiki/methods/SCFA-quantification", "item": "Caecal SCFA GC-FID", "supplier": "core facility", "catalog": "SCFA-GC", "qty": 32, "unit": "sample", "unit_price_usd": 40, "subtotal_usd": 1280}
+  ],
+
+  "budget": [
+    {"category": "Animals", "subtotal_usd": 1400, "notes": "32 × C57BL/6J + shipping"},
+    {"category": "Strain + media", "subtotal_usd": 940, "notes": "ATCC 53103 + MRS broth + agar"},
+    {"category": "FD-4 assay reagent", "subtotal_usd": 290, "notes": "Sigma 46944, 1 g sufficient"},
+    {"category": "ELISA / multiplex", "subtotal_usd": 1505, "notes": "LBP + cytokine multiplex"},
+    {"category": "Antibodies", "subtotal_usd": 1980, "notes": "ZO-1, occludin, claudin-1, claudin-2 + secondaries"},
+    {"category": "Consumables (WB, plates, tubes, lysis, gavage needles)", "subtotal_usd": 1340, "notes": "incl. 4 gavage needles"},
+    {"category": "16S sequencing", "subtotal_usd": 1800, "notes": "36 samples × $50 (32 + 4 controls)"},
+    {"category": "SCFA GC-FID", "subtotal_usd": 1280, "notes": "32 samples × $40"},
+    {"category": "Vivarium per diem", "subtotal_usd": 2688, "notes": "32 mice × 56 d × $1.50/day"},
+    {"category": "Personnel (graduate student, 0.5 FTE × 10 wk)", "subtotal_usd": 6000, "notes": "@ $1,200/wk loaded"},
+    {"category": "Total", "subtotal_usd": 19223, "notes": "Direct costs only; assumes no equipment purchase"}
+  ],
+
+  "timeline": [
+    {"phase": "Setup", "weeks": [1, 2], "duration_weeks": 2, "depends_on": [], "milestones": ["Mice acclimated", "LGG working stock cryobanked + QC'd", "FD-4 standard curve calibrated", "Pilot SD estimated → final n confirmed"]},
+    {"phase": "Intervention (LGG / PBS gavage)", "weeks": [3, 4, 5, 6], "duration_weeks": 4, "depends_on": ["Setup"], "milestones": ["28 days dosing complete", "Daily dose-day CFU records", "Weekly LGG-on-controls check (must be negative)"]},
+    {"phase": "Endpoint (FD-4 + tissue harvest)", "weeks": [7], "duration_weeks": 1, "depends_on": ["Intervention"], "milestones": ["Plasma FD-4 measured", "Plasma + tissue archived for mechanism overlay"]},
+    {"phase": "Mechanism overlay (WB / IF / ELISA / SCFA)", "weeks": [8, 9], "duration_weeks": 2, "depends_on": ["Endpoint"], "milestones": ["Tight-junction WB + IF complete", "LBP ELISA complete", "Caecal SCFA quantified"]},
+    {"phase": "Sequencing + analysis + writeup", "weeks": [9, 10], "duration_weeks": 2, "depends_on": ["Endpoint"], "milestones": ["16S sequencing + welE qPCR complete", "Pre-registered statistical analysis", "Writeup + OSF posting (regardless of direction)"]}
+  ],
+
+  "validation": {
+    "primary_success_criterion": "Mean plasma FD-4 in LGG arm ≤ 70% of PBS arm mean (≥ 30% reduction), p < 0.05 by two-sided Mann–Whitney U",
+    "primary_failure_criterion": "Plasma FD-4 LGG vs PBS difference < 30% OR not statistically significant at α = 0.05",
+    "secondary_corroborations": [
+      "ZO-1 protein up in LGG-arm ileum (WB densitometry, p < 0.05)",
+      "Occludin protein up; claudin-1 up; claudin-2 down",
+      "Plasma LBP lower in LGG arm (consistent direction with FD-4)",
+      "Caecal butyrate higher in LGG arm",
+      "16S confirms LGG colonisation in treatment arm AND LGG absent from control arm"
+    ],
+    "quality_gates": [
+      "Dose-day CFU within 80–120% of design dose every day",
+      "FD-4 standard curve R² > 0.99 with matrix correction documented",
+      "No haemolysed plasma samples in primary analysis",
+      "16S faecal LGG present in 100% of LGG-arm samples and 0% of control-arm samples (any positive control = study integrity compromised)",
+      "All animals survive without humane-endpoint events"
+    ],
+    "reporting_commitment": "Pre-registered on OSF before unblinding; results published regardless of direction (including null) within 6 months of analysis lock"
+  },
+
+  "failure_map": [
+    {"wiki_page": "wiki/failure-modes/baseline-permeability-too-low-detect-30pct", "severity": "critical", "applies_to_step": [4, 6], "mitigation": "Pilot estimate of SD; escalate n or switch primary endpoint to LBP if pilot signal suggests floor"},
+    {"wiki_page": "wiki/failure-modes/probiotic-bacteremia-sepsis", "severity": "critical", "applies_to_step": [5], "mitigation": "Daily welfare; humane endpoints in IACUC; blood culture on any unexpected illness"},
+    {"wiki_page": "wiki/failure-modes/coprophagy-microbiome-equilibration", "severity": "high", "applies_to_step": [1, 5, 9], "mitigation": "Separate cages + alternate rack positions + dedicated PPE + weekly LGG-on-controls check + post-hoc 16S/welE confirmation"},
+    {"wiki_page": "wiki/failure-modes/incomplete-fasting-before-gavage", "severity": "high", "applies_to_step": [4, 6], "mitigation": "6 h pre-registered fast; cage-cleanliness check; per-cage deviation log"},
+    {"wiki_page": "wiki/failure-modes/LGG-viability-loss-during-gavage-prep", "severity": "high", "applies_to_step": [5], "mitigation": "Fresh prep; ice; 90-min cap; dose-day CFU on every cage"},
+    {"wiki_page": "wiki/failure-modes/FITC-dextran-dose-timing-heterogeneity", "severity": "high", "applies_to_step": [6], "mitigation": "Pre-registered single dose × time pair (600 mg/kg, 4 h); no cross-protocol pooling"},
+    {"wiki_page": "wiki/failure-modes/positive-publication-bias-LGG-literature", "severity": "high", "applies_to_step": [10], "mitigation": "Pre-registered analysis; commitment to publish null; explicit citation of Singh 2014 retraction"},
+    {"wiki_page": "wiki/failure-modes/challenge-model-vs-baseline-mismatch", "severity": "high", "applies_to_step": [4, 10], "mitigation": "Make framing transparent in literature-QC verdict; pilot result triggers re-design decision; honest power discussion in writeup"},
+    {"wiki_page": "wiki/failure-modes/serum-autofluorescence-FITC-readout", "severity": "medium", "applies_to_step": [3, 6], "mitigation": "Standard curve in pooled mouse plasma; reject haemolysed samples"},
+    {"wiki_page": "wiki/failure-modes/FITC-dextran-photobleaching", "severity": "medium", "applies_to_step": [3, 4, 6], "mitigation": "Foil throughout; randomise plate loading"},
+    {"wiki_page": "wiki/failure-modes/C57BL-6J-vs-N-substrain-confounder", "severity": "medium", "applies_to_step": [1], "mitigation": "Pre-register C57BL/6J specifically; single shipment"},
+    {"wiki_page": "wiki/failure-modes/vendor-of-origin-microbiome-baseline", "severity": "medium", "applies_to_step": [1], "mitigation": "Single vendor; 14-d acclimation"},
+    {"wiki_page": "wiki/failure-modes/LGG-strain-drift-passage", "severity": "medium", "applies_to_step": [2], "mitigation": "Sealed master vial; ≤ 5 passages cryostock-to-dosing; SpaCBA PCR check"},
+    {"wiki_page": "wiki/failure-modes/LPS-contamination-bacterial-prep", "severity": "medium", "applies_to_step": [5], "mitigation": "Endotoxin-grade water + consumables; LAL-quantify per batch"},
+    {"wiki_page": "wiki/failure-modes/ZO-1-occludin-detection-artifacts", "severity": "medium", "applies_to_step": [8], "mitigation": "Single antibody lot; total-protein normalisation; blinded IF; positive-control tissue per blot"}
+  ],
+
+  "mechanism_diagram": {
+    "title": "What this experiment measures and why",
+    "nodes": [
+      {"id": "lgg", "label": "L. rhamnosus GG", "kind": "intervention", "wiki_page": "wiki/organisms/lactobacillus-rhamnosus-GG"},
+      {"id": "p40", "label": "p40 (Msp1) secreted protein", "kind": "mediator", "wiki_page": "wiki/reagents/p40-LGG-derived-protein"},
+      {"id": "eps", "label": "LGG exopolysaccharide", "kind": "mediator", "wiki_page": "wiki/reagents/LGG-exopolysaccharide-EPS"},
+      {"id": "scfa", "label": "SCFA (acetate, butyrate)", "kind": "mediator", "wiki_page": "wiki/methods/SCFA-quantification"},
+      {"id": "egfr", "label": "EGFR-PI3K/Akt", "kind": "pathway"},
+      {"id": "tj", "label": "Tight junctions (ZO-1, occludin, claudin-1/3/4)", "kind": "structure", "wiki_page": "wiki/methods/Western-blot-tight-junction"},
+      {"id": "claudin2", "label": "Pore-forming claudin-2 ↓", "kind": "structure"},
+      {"id": "barrier", "label": "Intestinal epithelial barrier", "kind": "phenotype"},
+      {"id": "fd4", "label": "Plasma FD-4 ↓", "kind": "readout", "wiki_page": "wiki/methods/FITC-dextran-permeability-assay"},
+      {"id": "lbp", "label": "Plasma LBP ↓ (orthogonal)", "kind": "readout", "wiki_page": "wiki/methods/LPS-endotoxin-quantification"}
+    ],
+    "edges": [
+      {"from": "lgg", "to": "p40", "label": "secretes"},
+      {"from": "lgg", "to": "eps", "label": "secretes"},
+      {"from": "lgg", "to": "scfa", "label": "produces / cross-feeds butyrogens"},
+      {"from": "p40", "to": "egfr", "label": "transactivates"},
+      {"from": "egfr", "to": "tj", "label": "↑"},
+      {"from": "eps", "to": "tj", "label": "↑"},
+      {"from": "scfa", "to": "tj", "label": "↑ (butyrate, HIF-1α)"},
+      {"from": "lgg", "to": "claudin2", "label": "↓ (competitive exclusion of pathobionts)"},
+      {"from": "tj", "to": "barrier", "label": "↑"},
+      {"from": "claudin2", "to": "barrier", "label": "↑"},
+      {"from": "barrier", "to": "fd4", "label": "fewer leaks → less FD-4 in plasma"},
+      {"from": "barrier", "to": "lbp", "label": "less translocation → less LBP"}
+    ]
+  }
+}

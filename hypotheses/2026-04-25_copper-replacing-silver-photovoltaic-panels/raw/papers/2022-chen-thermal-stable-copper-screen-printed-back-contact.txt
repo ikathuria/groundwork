@@ -1,0 +1,535 @@
+Delft University of Technology
+
+
+
+
+Thermal Stable High-Efficiency Copper Screen Printed Back Contact Solar Cells
+
+
+Chen, Ning; Rudolph, Dominik; Peter, Christoph; Zeman, Miro; Isabella, Olindo; Rosen, Yitzchak; Grouchko,
+Michael; Shochet, Ofer; Mihailetchi, Valentin D.
+DOI
+10.1002/solr.202200874
+Publication date
+2022
+Document Version
+Final published version
+Published in
+Solar RRL
+
+
+
+
+Citation (APA)
+Chen, N., Rudolph, D., Peter, C., Zeman, M., Isabella, O., Rosen, Y., Grouchko, M., Shochet, O., &
+Mihailetchi, V. D. (2022). Thermal Stable High-Efficiency Copper Screen Printed Back Contact Solar Cells.
+Solar RRL, 7 (2023)(2), 1-9. Article 2200874. https://doi.org/10.1002/solr.202200874
+Important note
+To cite this publication, please use the final published version (if applicable).
+Please check the document version above.
+
+
+
+
+Copyright
+Other than for strictly personal use, it is not permitted to download, forward or distribute the text or part of it, without the consent
+of the author(s) and/or copyright holder(s), unless the work is under an open content license such as Creative Commons.
+Takedown policy
+Please contact us and provide details if you believe this document breaches copyrights.
+We will remove access to the work immediately and investigate your claim.
+
+
+
+
+This work is downloaded from Delft University of Technology.
+For technical reasons the number of authors shown on this cover page is limited to a maximum of 10.
+Green Open Access added to TU Delft Institutional Repository
+
+          'You share, we take care!' - Taverne project
+
+
+
+
+    https://www.openaccess.nl/en/you-share-we-take-care
+
+
+
+Otherwise as indicated in the copyright section: the publisher
+is the copyright holder of this work and the author uses the
+Dutch legislation to make this work public.
+                                                                                                                                                   2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+RESEARCH ARTICLE
+                                                                                                                              www.solar-rrl.com
+
+
+
+Thermal Stable High-Efﬁciency Copper Screen Printed Back
+Contact Solar Cells
+Ning Chen,* Dominik Rudolph, Christoph Peter, Miro Zeman, Olindo Isabella,
+Yitzchak (Isaac) Rosen, Michael Grouchko, Ofer Shochet, and Valentin D. Mihailetchi*
+
+                                                                                                  like heterojunction (HJT) cells and tunnel
+The high usage of silver in industrial solar cells may limit the growth of the solar              oxide passivated contact (TOPCon) cells,
+industry. One solution is to replace Ag with copper. A screen printable Cu paste is               the Ag consumption is even higher.
+used herein to metallize industrial interdigitated back contact (IBC) solar cells. A              International Technology Roadmap for
+                                                                                                  Photovoltaic (ITRPV) predicts that the Ag
+novel metallization structure is proposed for making solar cells. Cu paste is
+                                                                                                  usage for PERC cells will reduce to
+applied to replace the majority of the Ag used in IBC cells as busbars and ﬁngers.                7.5 mg W1 within the next 10 years.[5]
+Cu paste is evaluated for use as ﬁngers, and solar cells are made to test con-                    However, to meet multi-TW production,
+version efﬁciency and reliability. The Cu paste achieves comparably low resis-                    Zhang et al.[6] proposed that Ag consump-
+tivity, and Cu paste printed cells demonstrate similar efﬁciency to Ag paste                      tion should be reduced to 2 mg W1. In the
+printed cells, with an average efﬁciency of 23%, and only 4.5 mg W1 of Ag usage.                 near future, if the Ag usage does not
+                                                                                                  decrease, it will not only result in more
+Also, the solar cells are stable and no Cu in-diffusion is observed under damp
+                                                                                                  expensive solar cells, but also limit the sus-
+heat (85 °C, 85% relative humidity) and thermal stress (200 °C) for 1000 h,                       tainable growth of the PV industry.
+respectively. All processes used in this study can be carried out with industrial                    To reduce the consumption of Ag on
+equipment. These ﬁndings reveal a new application for Cu pastes and point to a                    solar cells, researchers from industry and
+new direction for reducing Ag utilization and cost.                                               institutes are working on different
+                                                                                                  approaches. The ﬁrst way is to improve
+                                                                                                  the traditional screen design and paste.
+                                                                                                  The use of Ag can be reduced while not
+1. Introduction                                                           compromising cell efﬁciency, by printing ﬁne lines and improv-
+                                                                          ing the ﬁnger height-to-width aspect ratio. With advanced screen
+The photovoltaic (PV) industry has entered the Terawatt (TW)              design, Wenzel et al.[7] reported printed ﬁnger width can be
+era. As of early 2022, the total PV installation has reached              reduced to 21 μm with 19 mg Ag paste lay down (without busbar),
+1 TW.[1] Annual production and installation past TW level is              and the best efﬁciency group achieved 22.7% efﬁciency on PERC
+expected in 2030[2] or even earlier in 2028.[3] One of the main           cells. Second, new equipment is being developed to metallize
+concerns for the TW production is the shortage of certain mate-           ﬁne lines. Adrian et al.[8] have reported pattern transfer printing
+rials.[4] Especially silver (Ag) is one of the key materials used to      (PTP) with a ﬁnger width of 18 μm and an aspect ratio of 0.51. A
+form electrodes onto silicon solar cells, and mostly applied as           rotary screen printing method developed by Lorenz et al.[9] has
+paste by screen printing method. For passivated emitter and rear          short printing cycles and a low Ag consumption of about
+contact (PERC) cells, the Ag consumption is currently around              6–9 mg W1. Schube et al.[10] reported a novel metallization tech-
+12 mg W1.[5] In the case of new emerging industrial solar cells,         nology called FlexTrail-printing, and very low Ag consumption
+                                                                          0.05 mg W1 has been achieved by using Ag nanoparticle ink.
+                                                                          The use of dispensing equipment has also been developed for
+N. Chen, D. Rudolph, C. Peter, V. D. Mihailetchi                          the metallization of solar cells,[11] with 0.54 mg per Ag ﬁnger
+International Solar Energy Research Center (ISC) Konstanz                 being reported.[12] The third way is to replace or reduce the
+78467 Konstanz, Germany                                                   use of Ag is to deploy other metals such as copper (Cu). As
+E-mail: ning.chen@isc-konstanz.de;
+valentin.mihailetchi@isc-konstanz.de                                      Cu is an abundant commodity, replacing Ag with Cu will not
+N. Chen, M. Zeman, O. Isabella
+                                                                          have an effect on competing technologies.[13] Cu plating is
+Photovoltaic Materials and Devices Group                                  one of the most promising methods of using Cu metallization.
+Delft University of Technology                                            In mass production, SunPower/Maxeon has employed Cu plat-
+2628 CD Delft, The Netherlands                                            ing for many years, resulting in the most efﬁcient and reliable
+Y(Isaac)Rosen, M. Grouchko, O. Shochet                                    modules in the world.[14] Recent advances have been made on
+Copprint Technologies Ltd.                                                different cell structures[15,16] in labs. Very recently, Sundrive
+Jerusalem 9777518, Israel
+                                                                          and Maxwell have reported 26.41% record efﬁciency on large-size
+    The ORCID identiﬁcation number(s) for the author(s) of this article   heterojunction solar cells by Cu plating.[17]
+    can be found under https://doi.org/10.1002/solr.202200874.                Despite SunPower/Maxeon’s success and excellent lab results,
+DOI: 10.1002/solr.202200874                                               it can be difﬁcult to introduce a new equipment and process into
+
+
+Sol. RRL 2023, 7, 2200874                                      2200874 (1 of 9)                                         © 2022 Wiley-VCH GmbH
+                                                                                                                                                   2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+www.advancedsciencenews.com                                                                                                  www.solar-rrl.com
+
+
+mass production. Manufacturers other than SunPower/Maxeon
+still have challenges when introducing plating equipment and
+other new processes. It takes considerable effort and time to eval-
+uate throughput and yield, reduce equipment costs, and reassure
+environmental concerns regarding the plating process. With the
+introduction of new equipment with new materials, such as
+FlexTrail-printing with Ag nanoparticle ink, the challenges will
+be doubled.
+   On the other hand, screen printing has proven to be an
+effective metallization method that is both cost-effective and
+high-throughput. For industry, it is attractive that Cu can be
+applied through screen printing. One such application is
+Ag-coated Cu paste,[18] particularly for HJT cells.[10] By using a
+coated Ag on Cu particles, the Ag usage can be reduced by
+30–50%. A more exciting alternative would be to use a Cu
+paste that is free of Ag. Previously, Cu paste was successfully
+used to replace busbar of solar cells.[19,20] Cu pastes were
+also used as front ﬁngers,[21,22] but either the cell efﬁciency
+reported was not as good as reference or was below the state
+of the art.
+   In this work, we demonstrate a new method for producing
+high-efﬁciency interdigitated back contact (IBC) solar cells
+using screen printable Cu paste. Our previous study demon-
+strated that Cu paste can be used as busbar for IBC cells,
+                                                                       Figure 1. a) Cross-sectional sketch of the ZEBRA IBC solar cell structure
+resulting in high cell efﬁciency and module reliability.[23] In this   used in this study. b) The microscope image of Ag contact coated with Cu
+study, we replace most of the Ag in IBC cells with Cu paste. An        ﬁnger, corresponding to the dashed area in (a).
+almost fully Cu metallized IBC solar is demonstrated and its
+efﬁciency is assessed. The reliability of Cu cells were also evalu-
+ated under damp heat conditions (85 °C, 85% relative humidity)         2.2. Cu Finger Geometry and Resistance
+and thermal stress at 200 °C for 1000 h, respectively. The ﬁndings
+reveal a new application of Cu pastes to make high-efﬁciency           In this study, Cu pastes were printed as ﬁngers and busbars. In a
+solar cells and modules, and a new direction for reducing              previous study, we reported results about screen printed Cu bus-
+Ag usage.                                                              bars on IBC cells.[23] Here, the focus is on Cu paste as ﬁngers. As
+                                                                       a reference, a group of IBC cells were screen printed with the
+                                                                       baseline Ag paste using the same screen layout. Figure 2 shows
+2. Results and Discussion                                              typical microscope images of a ﬁnger printed with Cu paste and a
+                                                                       ﬁnger printed with Ag paste. After printing and curing, the Cu
+2.1. Solar Cell Structure                                              ﬁnger has an average width of 125 μm, which is 25 μm wider
+                                                                       than the Ag ﬁnger. The difference in width is mainly due to
+To use Cu to replace Ag, a properly designed cell structure is         the properties of the paste, and the Cu paste spreads more after
+needed. The structure of the solar cell used in this study is shown    screen printing. A revised formulation of Cu paste with
+in Figure 1a. The solar cells are based on ZEBRA Gen2 cells[24]        improved viscosity and thixotropic index for printing ﬁne lines
+with a front surface ﬁeld (FSF). In contrast to standard ZEBRA         will be tested in the near future. However, the 125 μm ﬁnger
+Gen2 solar cells, the new Cu IBC cells described in this contri-       width is acceptable for use on the rear side of IBC cells in this
+bution form the local contacts through the dielectric passivation      study. As can be seen by the typical cross-sectional view in
+layer stack using a narrow pattern of ﬁre-through Ag paste. The        Figure 2c, the Cu ﬁnger height is approximately 8 μm whereas
+Cu paste ﬁngers are printed in a second printing step in               the Ag ﬁnger height is approximately 11 μm. In addition, the Cu
+alignment to those Ag contacts. This is achievable by means            ﬁnger has a ﬂatter top than the Ag ﬁnger, which is related to the
+of a state-of-the-art screen printer. Figure 1b shows a microscope     different sintering processes used for the two pastes. Overall, the
+image of a printed Cu ﬁnger on Ag contacts. A critical part is the     cross-sectional areas of the two pastes are mostly similar.
+contact area because there Cu diffusion into silicon may occur.           The line resistance was measured as 0.64  0.03 Ω cm1 for
+To prevent Cu diffusion into silicon, there are two types of meas-     Cu ﬁngers and 0.35  0.03 Ω cm1 for Ag ﬁngers. As the
+ures. First, the locally printed Ag patterns are used for contacting   cross-sectional areas of the two pastes are similar, the differences
+silicon and may also act as barriers between Cu and silicon.           in line resistance are primarily due to differences in the
+Second, the SiO2/SiNx stack layers (not visible in the microscopic     resistivity of the pastes. Based on the line resistance and the
+image) serve both as passivation layers and as barriers. The use of    cross-sectional area, we have calculated that the Cu resistivity
+SiNx has been proven to be an effective barrier to the diffusion       is approximately 5  106 Ω cm. This result is superior to the
+of Cu.[25]                                                             previous reported values for a Cu paste,[26,27] which were
+
+
+Sol. RRL 2023, 7, 2200874                                    2200874 (2 of 9)                                           © 2022 Wiley-VCH GmbH
+                                                                                                                                                           2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+www.advancedsciencenews.com                                                                                                          www.solar-rrl.com
+
+
+
+
+Figure 2. A microscope snapshot of a typical a) printed Cu ﬁnger and b) printed Ag ﬁnger on the IBC cells. c) Typical cross sections of a Cu ﬁnger and a
+Ag ﬁnger.
+
+
+
+annealed at a higher temperature in nitrogen or in vacuum.                    are similar for Ag cell and Cu cell. There were slightly higher QE
+The solar cell results are shown in the next subsection.                      curves measured on Ag cells in the wavelength range between
+                                                                              400 and 1000 nm. The results suggest that the difference in
+2.3. Solar Cell Results                                                       Jsc may be caused by factors other than pastes (e.g., difference
+                                                                              in wafer bulk lifetime). In terms of ﬁll factor (FF), the Cu cells
+A batch of IBC solar cells precursors were identically fabricated             exhibit a 0.3%abs higher FF on average than that of the Ag cells.
+up to the metallization step. A ﬁrst layer of Ag ﬁre-through paste            However, compared to the standard deviations, the differences
+was then screen printed using a point contact pattern and ﬁred in             between the groups were not statistically signiﬁcant. It is worth
+a fast ﬁring furnace according to our best known method.                      noting that the Ag cells were ﬁred twice (contact and ﬁngers,
+Subsequently the cells were randomly distributed in two groups                respectively), and the two ﬁring steps need to be carefully tuned
+as follow: a Ag group of cells that were printed with Ag ﬁngers               to get an optimal FF. In contrast, Cu cells require only one ﬁring
+and Ag busbars, and a Cu group of cells that were printed with                step, which makes it easier to optimize the ﬁring process and
+Cu ﬁngers and Cu busbars.                                                     improve the FF in the future. At last, in terms of cell efﬁciency,
+   Figure 3 illustrates the parameters extracted from current–                same efﬁciency was achieved for both the Cu metallized group
+voltage (I–V ) characteristics of all cells under the standard test           and the reference Ag metallized group. The average efﬁciency of
+conditions (STC). I–V results are also summarized in Table 1                  Cu cells group (34 cells) was 23%, with the best cell efﬁciency of
+along with their averages and standard deviations. In both                    23.25%.
+groups, Voc values are similar, with an average Voc of around                    By using Cu paste, the Ag consumption was reduced to
+689 mV. Compared to the Ag group, the Cu group has a lower                    25 mg for a 6 inch M2 wafer (our best result so far), which is
+average Jsc of 0.1 mA cm2. Cells with median Jsc were measured               less than 4.5 mg W1. Compared to current state-of-the-art
+for quantum efﬁciency (QE), and the results are shown in                      PERC cells, which use approximately 12 mg W1 Ag, the Ag
+Figure A1. In long wavelength range, QE and reﬂectance curves                 consumption was reduced by over 60%. Moreover, Ag
+
+
+Sol. RRL 2023, 7, 2200874                                         2200874 (3 of 9)                                             © 2022 Wiley-VCH GmbH
+                                                                                                                                                             2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+www.advancedsciencenews.com                                                                                                             www.solar-rrl.com
+
+
+                                                                                     with polyoleﬁn elastomer (POE) encapsulation, as detailed in
+                                                                                     the Experimental Section. As we are still working on improving
+                                                                                     the peel force of soldering method, we used electrically conduc-
+                                                                                     tive adhesives (ECA) to make minimodules in this experiment.
+                                                                                     The Ag-containing ECA was used to demonstrate the reliability of
+                                                                                     Cu cells in the experiment. In mass production, either ECA can
+                                                                                     be used (in this case, the Ag usage in ECA should also be
+                                                                                     considered[6]), or Ag-free solutions such as soldering with
+                                                                                     SnPb ribbon can be employed (in development).
+                                                                                         Figure 4 illustrates the normalized I–V parameters and pFF
+                                                                                     changes of different minimodules during the 1000 h DH test.
+                                                                                     Three types of minimodules were tested, including Cu cells
+                                                                                     encapsulated in POE and glass–glass (POE/glass), in EVA and
+                                                                                     glass-backsheet (EVA/BS), and reference Ag cells encapsulated
+                                                                                     in EVA and glass-backsheet (EVA/BS). One of the unexpected
+                                                                                     ﬁndings is the increase in FF observed in the Cu groups. FF
+                                                                                     of Cu modules with EVA/BS increased until around DH200
+                                                                                     and then decreased whereas the FF of Cu modules with POE/
+                                                                                     Glass increased by approx. 10% and remained stable. On the
+                                                                                     other hand, the FF of reference Ag modules remained
+                                                                                     unchanged during the test. An unexpected observation is that
+                                                                                     the initial FF of Cu modules was low around 70%, while Ag mod-
+                                                                                     ules had a high FF of around 78%. Electroluminescence (EL)
+Figure 3. I–V results of solar cells made using Ag and Cu pastes. In the             images indicate that the low initial FF of Cu modules is
+box-and-whisker plots, the box shows the median, 25 and 75th percentiles,            due to poor interconnection between Cu paste and ECA
+and the whiskers are minimum and maximum data values excluding                       Photoluminescence (PL) and EL results are shown in
+outliers.                                                                            Figure 5. During the DH test, the FF of Cu cells increased or
+                                                                                     decreased due to changes in the interconnection between Cu
+Table 1. I–V summary of Cu and Ag printed cells.                                     busbar and ECA It is not yet clear what the underlying cause
+                                                                                     is. For all groups, the Voc and pFF remain stable during the test.
+Paste      Data type        Voc [mV]     Jsc [mA cm2]     FF [%]        η [%]       For the Cu groups, there was even a small increase in pFF. The
+Ag         Best cell         687.2          41.92           80.32        23.14       pFF increased by 0.4 and 0.2%rel for the EVA/BS and POE/Glass
+        Avg. of 34 cells 688.9  1.2     41.85  0.05    79.54  0.36 22.94  0.11
+                                                                                     groups, respectively. From these stable pFF and Voc results, we
+                                                                                     can conclude that there is no Cu in-diffusion observed during the
+Cu         Best cell         690.2          41.80           80.56        23.25
+                                                                                     DH1000 test.
+        Avg. of 34 cells   689.6  0.9   41.75  0.06    79.81  0.41 22.98  0.13
+
+                                                                                     2.5. Stability under Thermal Stress
+
+consumption can be further reduced by printing thinner and                           For commercial modules, manufacturers generally provide a
+smaller layers of Ag.                                                                warranty of 25 years or longer. That means modules should
+                                                                                     retain at least 80% of their original power generation capacity
+                                                                                     after 25 years. However, it should be noted that the “standard
+2.4. Reliability of Damp Heat Test
+                                                                                     module qualiﬁcation test results cannot be used to obtain or infer
+                                                                                     a product lifetime.”[28] To test the long-term reliability of Cu met-
+Besides the efﬁciency of the solar cell, the main concern for Cu
+                                                                                     allized cells, additional accelerated tests are required. According
+metallized cells and modules is their reliability. In spite of this,
+                                                                                     to Bartsch et al., stability under thermal stress can be estimated
+there are no standards speciﬁcally designed for testing Cu paste
+                                                                                     by ﬁtting pFF loss measurement data at different temperatures
+printed solar cells. In accordance with IEC standard 61 215,
+                                                                                     using the Arrhenius plot.[29] Our study, however, did not observe
+damp heat (DH) and thermal cycling (TC) tests are the most
+                                                                                     obvious pFF losses from the high-temperature degradation test at
+relevant tests. As described in our previous study,[23] we demon-
+                                                                                     200 °C, so it was not possible to use this method.
+strated that after DH3000 and TC600 the modules with Cu bus-
+                                                                                         Alternatively, the long-term stability of the cells can be
+bars show no sign of cells degradation due to Cu in-diffusion.
+                                                                                     determined by using the Arrhenius model, using the equation[30]
+Several minimodules with Cu metallization of both ﬁngers
+                                                                                                                     
+and busbars were also tested for DH in this study. We skipped                        tðT use Þ       E      1       1
+TC tests because they were more related to interconnections,                                   ¼ exp a                                                (1)
+                                                                                     tðT acc Þ        k T use T acc
+which have already been tested for Cu busbar.[23] For DH test,
+the minimodules were manufactured with different combina-                            In the equation, Tuse is the device’s operating temperature, Tacc is
+tions, including glass-backsheet (BS) structures with ethylene                       the acceleration testing temperature, k is the Boltzmann con-
+vinyl acetate (EVA) encapsulation, and glass–glass structures                        stant, and Ea is the activation energy; the device working time
+
+
+Sol. RRL 2023, 7, 2200874                                                 2200874 (4 of 9)                                         © 2022 Wiley-VCH GmbH
+                                                                                                                                                           2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+www.advancedsciencenews.com                                                                                                          www.solar-rrl.com
+
+
+
+
+Figure 4. Normalized I–V parameters and pFF changes of different minimodules during 1000 h DH exposure. Three types of minimodules were tested,
+including Cu cells encapsulated in POE and glass–glass (POE/glass), in EVA and glass-backsheet (EVA/BS), and reference Ag cells encapsulated in EVA
+and glass-backsheet (EVA/BS). The values are averages of 3 samples with the error bar representing one standard deviation, and the shaded areas indicate
+the 95% conﬁdence interval.
+
+
+
+(e.g., 25 years) is represented as t(Tuse), and the corresponding             acceleration test should be carried out for 900 h at 200 °C.
+testing time is t(Tacc).                                                      With a higher test temperature, such as 250 °C, the acceleration
+   One of the challenges of using this method is the difﬁculty in             testing time can be signiﬁcantly reduced.
+determining the activation energy. Similar to a previous study,[31]              In this study, we considered a worst case scenario by testing
+we used here the activation energy as suggested in the standard               the Cu cells at 200 °C for 1000 h, which is equivalent to a module
+of the European Cooperation for Space Standardization (ECSS)                  working at 85 °C for more than 25 years. The temperature of
+for photovoltaic assemblies and components (ECSS-E-ST-20-08C                  200 °C was chosen because the cell structure of the IBC cells will
+Rev.1).[32] The standard assumes an activation energy of 0.70 eV,             not be damaged at this temperature. Also, 1000 h is an acceptable
+which applies to “crystalline silicon and single and multijunction            time frame for testing, which can be completed within 2 months,
+GaAs solar cells with a thickness of more than 50 μm.”                        including characterization. Four groups of samples were mea-
+   By using Equation (1) and activation energy of Ea ¼ 0.70 eV,               sured: two groups underwent the 200 °C thermal stress testing,
+the temperature and time required to conduct an accelerate test               and two reference groups were kept at room temperature. The
+can be calculated. Figure 6 shows the estimated temperature and               test results are shown in Figure 7, which includes the two most
+time needed for acceleration test based on different working tem-             degradation sensitive cell parameters—Voc and pFF. During
+peratures for 25 years. For example, the green curve at lowest                these tests, the reference groups with Ag or Cu paste showed
+position assumes that the modules working temperature is                      stable Voc; the ﬂuctuations were only due to measurement errors.
+45 °C (typical working temperature stated in the module data-                 A slight reduction in Voc was observed for test groups of Ag and
+sheet, also called nominal module operation temperature                       Cu cells. For Cu cells, a degradation in Voc of only around 0.5%rel
+[NMOT]) for 25 years, and that the acceleration test should take              or 3.4 mV was observed. Additionally, the PL results shown in
+place for 50 h at 200 °C. For worse-case scenarios, the working               Figure A2 conﬁrm the Voc results on Cu and Ag tested cells.
+temperatures of 55, 65, 75, and 85 °C are also provided. As a                 In terms of pFF changes, the reference groups are stable with
+worst case scenario, for example, 85 °C for 25 years, the                     no change after 1000 h. After 1000 h of accelerating temperature
+
+
+Sol. RRL 2023, 7, 2200874                                         2200874 (5 of 9)                                             © 2022 Wiley-VCH GmbH
+                                                                                                                                                            2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+www.advancedsciencenews.com                                                                                                           www.solar-rrl.com
+
+
+
+
+Figure 5. PL and EL images of Cu metallized (left columns) and Ag metallized (right columns) samples measured at the initial stage, 300, and 1000 h after
+damp heat test.
+
+
+
+
+Figure 6. Calculated accelerated thermal stress test temperature (x-axis) and time (y-axis) according to the different module operating temperatures
+(shown in the legend). Conditions with 1000 h at 200 °C were tested in this study, shown as asterisk.
+
+
+test, the decrease in pFF for the Cu printed group is less than               Ag paste served as an effective barrier. Cu diffusion may be
+0.5%rel, indicating that there is no sign of Cu diffusion into                inhibited by the paste constituents (particularly the glass frit).
+the silicon during this time period, which would otherwise                    Similarly, in a report from Kraft et al.,[33] Ag pastes were used
+resulted in signiﬁcantly higher pFF degradation.[25] Moreover,                as seed layers for Cu-plated cells, and the seed layer was also
+this is demonstrated also by the reference Ag group results,                  noticed as a barrier which may be related to the paste composi-
+which show similar or slightly higher pFF loss during the test.               tion. In our study, the additives present in the Cu paste prevented
+   In summary, there was no measurable pFF degradation                        oxidation. During the solar cell process, the Cu paste remained
+observed in these accelerated stress tests, which indicates that              stable. No oxidation occurred during the curing process even
+no Cu diffusion took place into the silicon. The pFF losses of                when the process temperature was elevated to 300 °C (as deter-
+Cu cells are comparable to previous reports with thick nickel                 mined by the paste resistivity and color). In a recent report, a Cu
+barriers on plated Cu cells.[25] The screen printed ﬁre-through               paste was even used to directly contact the front side of p-PERC
+
+
+Sol. RRL 2023, 7, 2200874                                         2200874 (6 of 9)                                              © 2022 Wiley-VCH GmbH
+                                                                                                                                                           2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+www.advancedsciencenews.com                                                                                                          www.solar-rrl.com
+
+
+
+
+Figure 7. Results of normalized Voc and pFF of different groups, including Ag cells (Ag) and Cu cells (Cu) exposed to 1000 h of 200 200 °C, as well as
+reference groups with Ag cells (Ag_reference) and Cu cells (Cu_reference) kept at room temperature. The values are averages of 3 to 5 samples with the
+error bar representing 1 standard deviation, and the shaded areas indicate the 95% conﬁdence interval.
+
+
+cells with no barriers.[34] Screen printed Cu pastes for metalliza-          an immediate potential to replace most of the Ag used for
+tion of solar cells are attracting researchers’ attention. In contrast       metallization of an industrial cell concept.
+to the extensively studied plated Cu,[35] more research is needed
+on screen printed Cu pastes and cells, notably on the contact for-
+mation and diffusion of Cu and their impact on long-term                     4. Experimental Section
+stability.
+                                                                                Solar Cell Fabrication: The solar cells were fabricated based on ZEBRA
+                                                                             Gen2 cells process ﬂow,[24] on 175 μm thick, n-type 6 inch wafers with a
+                                                                             base resistivity of 6  3 Ω cm. The front/back surface ﬁeld (FSF/BSF) and
+3. Conclusion                                                                rear emitter regions are formed in industrial tube diffusion furnaces using
+                                                                             POCl3 and BBr3 as the diffusion sources, respectively. A plasma-enhanced
+In this study, a screen printed Cu paste was used as a conductive            chemical vapor deposition (PECVD) mask layer of SiNx and a 532 nm
+layer for IBC cells in order to replace the majority of Ag utiliza-          nanosecond laser were used to form the interdigitated patterns on the rear
+tion. The cells were printed using two layers—a thin ﬁre-through             side. The passivation and antireﬂection coating (ARC) layers were formed
+Ag paste was printed ﬁrst, followed by Cu paste applied as ﬁngers            by a stacked layer structure comprising thermal SiO2-grown in situ during
+and busbars. The Cu paste printed cells achieve the same level of            the diffusion process and capped with SiNx.[36] Finally, metallization was
+efﬁciency as the reference fully Ag paste printed cells, both                accomplished by screen printing 3D metallization patterns comprising
+                                                                             busbars, ﬁngers, and isolation layers. The solar cells were fabricated in
+groups achieving average efﬁciencies of 23%. Cu paste replaced
+                                                                             the mass production line until the metallization step. For metallization,
+most of the Ag usage in the cells, resulting in a Ag consumption             two groups of cells were made—Cu and Ag cells. Both cells were printed
+of only 4.5 mg W1. In addition, reliability and stability were              with point contact Ag pattern of a ﬁre-through Ag paste, and dried at
+examined. There was no degradation in Voc and pFF during                     around 200 °C followed by high-temperature ﬁring process at around
+the damp heat stress test (85 °C, 85% relative humidity) of                  800 °C to form the local Ag–Si contacts. In a second printing step, for
+1000 h. Under more severe test conditions—a thermal stress test              Cu group, wider Cu paste ﬁngers are printed in alignment to the Ag point
+under 200 °C for 1000 h—Voc of Cu cells only degraded by                     contacts whereas for Ag groups the Ag ﬁngers are printed. The Cu paste
+                                                                             was dried at 100 °C for 30 s and then annealed at 300 °C for 5 s in a lami-
+0.5%rel and pFF only by 0.3%abs. The reliability and stability               nation machine. The Ag group was printed with a nonﬁre-through Ag
+results convincingly show that Cu diffusion into Si bulk from                paste, dried, and ﬁred in an inline furnace at around 700 °C for a few sec-
+a screen printed paste can be prevented. The ﬁndings of                      onds. Then an insulation paste was printed for both groups and dried.
+this study demonstrate that the screen printed Cu paste has                  After applying the insulation paste pattern, the busbars pairs are printed
+
+
+Sol. RRL 2023, 7, 2200874                                        2200874 (7 of 9)                                              © 2022 Wiley-VCH GmbH
+                                                                                                                                                            2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+www.advancedsciencenews.com                                                                                                           www.solar-rrl.com
+
+
+by either Cu paste or Ag paste to interconnect the p-type and n-type
+ﬁngers, completing the multilayer metallization pattern. The Cu paste used
+in the experiment, LF-371, was provided by Copprint Technologies Ltd.
+and all pastes used in this study are commercially available.
+    Minimodules Fabrication and Reliability Tests: Minimodules were made
+from two pieces of half-cut cells for damp heat testing. Before module
+processing, the solar cells were cut into half cells by a 1064 nm laser
+(Roﬁn F20). For making modules, the ECA (Henkel) was dispensed on
+the busbar of cells (Stepcraft). Ribbons were placed on ECA and ﬁxed
+to the cells, and then curing at 140 °C for 7 min on a hot plate. String con-
+nectors were connected to the ribbons by soldering.[37] Encapsulation
+ﬁlms (EVA or POE), front glasses, and backsheets or rear glasses were
+used to encapsulate the cells, and then laminated in a laminator
+(Phototrade—P. Energy) with recipes for EVA/backsheet, or POE/dou-
+ble-glass modules.
+    The minimodules were tested under damp heat conditions for 1000 h in
+                                                                                Figure A2. PL images of Cu cell (top) and Ag cell (bottom) at the initial
+a climate chamber (Vötsch) according to the IEC-61215 standard.[38] For
+                                                                                stage of heat stress, exposed to 200 °C for 500 and 1000 h, respectively.
+the high-temperature thermal stress test, half cut cells were used. The cells
+were placed between two pieces of glass, and put into a mufﬂe furnace
+(Nabertherm). Then the cells were heated and annealed at a set tempera-         Acknowledgements
+ture of 200 °C under N2 ﬂow in order to minimize oxidation. The modules
+or cells were taken out the climate chamber or furnace and cooled down to       This work was supported by the German Federal Ministry for Economic
+room temperature for measurement at different time intervals.                   Affairs and Climate Action (BMWK) as part of the FlexFab 2 project with
+    Characterization: One sun I–V characterization was performed using a        funding reference numbers 03EE1081B.
+Class AAA xenon ﬂasher (halm elektronik). Before measurement, the Isc
+was calibrated by using a calibration cell or module (Fraunhofer ISE
+CalLab). The ﬁnger height, width, and cross-sectional area were analyzed
+using a laser scanning microscope (LSM, Olympus). The ﬁnger line resis-         Conﬂict of Interest
+tance is calculated from busbar to busbar resistance which is measured
+                                                                                The authors declare no conﬂict of interest.
+from a resistance tester (ECN). PL and EL were measured using in-house
+developed equipment (ISC Konstanz). pFF and Voc were from Suns-
+Voc measurement,[39] using an in-house developed chuck for IBC cells.
+                                                                                Data Availability Statement
+                                                                                The data that support the ﬁndings of this study are available from the
+Appendix A                                                                      corresponding author upon reasonable request.
+
+
+
+
+Figure A1. QE and reﬂectance curves of Cu and Ag solar cells with median Isc selected from each group. From 400 nm to 1000 nm, the Ag cell exhibits
+better QE.
+
+
+Sol. RRL 2023, 7, 2200874                                            2200874 (8 of 9)                                            © 2022 Wiley-VCH GmbH
+                                                                                                                                                                 2367198x, 2023, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/solr.202200874 by Tu Delft, Wiley Online Library on [02/02/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+www.advancedsciencenews.com                                                                                                               www.solar-rrl.com
+
+
+Keywords                                                                        [18] J. Shin, H. Kim, K. H. Song, J. Choe, Chem. Lett. 2015, 44, 1223.
+                                                                                [19] S. Yoshiba, M. Dhamrin, M. Yoshida, A. Uzum, U. Itoh, H. Tokuhisa,
+back contacts, copper paste, screen printing, silver reduction, solar cells,         S. Sekine, T. Saitoh, K. Kamisako, in 27th European Photovoltaic Solar
+thermal stability                                                                    Energy Conf. and Exhibition, Frankfurt, Germany 2012, pp. 1730–1732.
+                                           Received: September 27, 2022         [20] D. Wood, I. Kuzma-Filipek, R. Russell, F. Duerinckx, N. Powell,
+                                             Revised: November 14, 2022              A. Zambova, B. Chislea, P. Chevalier, C. Boulord, A. Beucher,
+                                    Published online: November 30, 2022              N. Zeghers, W. Deng, Z. Feng, P. Verlinden, J. Szlufcik,
+                                                                                     G. Beaucarne, Energy Procedia 2014, 55, 724.
+                                                                                [21] T. Druffel, R. Dharmadasa, K. Ankireddy, K. Elmer, A. Ebong,
+  [1] pv. magazine, World has Installed 1 TW of Solar Capacity, https://             S. Huneycutt, in 47th IEEE Photovoltaic Specialists Conf. (PVSC),
+      www.pv-magazine.com/2022/03/15/humans-have-installed-1-terawatt-               IEEE, Piscataway, NJ 2020.
+      of-solar-capacity/ (accessed: September 2022).                            [22] K. Gawlinska-Necek, R. P. Socha, P. Balawender, M. K. Stodolny,
+ [2] pv. magazine, Global Annual Solar Deployment to Hit 1 TW by 2030,               B. B. Van Aken, Z. Starowicz, P. Panek, Prog. Photovoltaics Res.
+      https://www.pv-magazine.com/2022/05/17/global-annual-solar-                    Appl. 2021, 29, 1008.
+      deployment-to-hit-1-tw-by-2030/ (accessed: September 2022).               [23] D. Rudolph, R. Farneda, T. Timofte, A. Halm, N. Chen, J. Libal,
+ [3] J. Kopecek, R. Libal, Photovoltaics Int. 2022, 48, 60.                          F. Buchholz, I. Rosen, M. Grouchko, O. Shochet, in AIP Conf. Pro.
+ [4] P. J. Verlinden, J. Renewable Sustainable Energy 2020, 12, 5.                   2022, 2709, 020006.
+ [5] J. Trube, International Technology Roadmap for Photovoltaic (itrpv):       [24] R. Kopecek, J. Libal, J. Lossen, V. D. Mihailetchi, H. Chu, C. Peter,
+      2021 Results, Report, VDMA Photovolt. Equipment, https://www.                  F. Buchholz, E. Wefringhaus, A. Halm, J. Ma, L. Jianda,
+      vdma.org/international-technology-roadmap-photovoltaic (accessed:              G. Yonggang, Q. Xiaoyong, W. Xiang, D. Peng, in 47th IEEE
+      September 2022).                                                               Photovoltaic Specialists Conf. (PVSC), Online, IEEE, Piscataway, NJ
+ [6] Y. Zhang, M. Kim, L. Wang, P. Verlinden, B. Hallam, Energy Environ.             2020, pp. 1008–1012.
+      Sci. 2021, 14, 5587.                                                      [25] A. Kraft, C. Wolf, J. Bartsch, M. Glatthaar, S. Glunz, Sol. Energy Mater.
+ [7] T. Wenzel, A. Lorenz, E. Lohmüller, S. Auerbach, K. Masuri, Y. C. Lau,          Sol. Cells 2015, 136, 25.
+      S. Tepner, F. Clement, Sol. Energy Mater. Sol. Cells 2022, 244, 111804.   [26] J. Tang, C. H. H. Mak, S. K. Tam, K. M. Ng, J. Nanopart. Res. 2021,
+ [8] A. Adrian, D. Rudolph, N. Willenbacher, J. Lossen, IEEE J.                      23, 8.
+      Photovoltaics 2020, 10, 1290.                                             [27] B. H. Teo, A. Khanna, V. Shanmugam, M. L. O. Aguilar, M. E. Delos
+ [9] A. Lorenz, M. Klawitter, M. Linse, L. Ney, S. Tepner, S. Pingel,                Santos, D. J. W. Chua, W.-C. Chang, T. Mueller, So. Energy 2019, 189,
+      M. S. Sabet, J. Reiner, K. Oehrle, R. Greutmann, J. Röth,                      179.
+      M. Drews, K. Muramatsu, S.-I. Ikarashi, F. Clement, Energy                [28] C. R. Osterwald, T. J. McMahon, Prog. Photovoltaics Res. Appl. 2009,
+      Technol. 2022, 10, 8.                                                          17, 11.
+[10] J. Schube, T. Fellmeth, M. Jahn, R. Keding, S. W. Glunz, Phys. Status      [29] J. Bartsch, A. Mondon, K. Bayer, C. Schetter, M. Hörteis, S. W. Glunz,
+      Solidi RRL 2019, 13, 9.                                                        J. Electrochem. Soc. 2010, 157, 10.
+[11] M. Pospischil, T. Riebe, A. Jimenez, M. Kuchler, S. Tepner, T. Geipel,     [30] N. Núñez, J. R. González, M. Vázquez, C. Algora, P. Espinet, Prog.
+      D. Ourinson, T. Fellmeth, M. Breitenbücher, T. Buck, M. Dhamrin,               Photovoltaics Res. Appl. 2013, 21, 5.
+      F. Clement, AIP Conf. Pro. 2019, 2156, 020005.                            [31] R. van Leest, G. Bauhuis, P. Mulder, R. van der Heijden, E. Bongers,
+[12] K. Gensowski, M. Much, E. Bujnoch, S. Spahn, S. Tepner, F. Clement,             E. Vlieg, J. Schermer, Sol. Energy Mater. Sol. Cells 2015, 140, 45.
+      Sci. Rep. 2022, 12, 12318;                                                [32] ECSS, Ecss-e-st-20-08c rev.1 – photovoltaic Assemblies and
+[13] M. A. P. Macé, E. Bosch, in 38th European Photovoltaic Solar Energy             Components 2012.
+      Conf. and Exhibition, ISBN 3-936338-78-7 2021, pp. 683–689.               [33] A. Kraft, C. Wolf, J. Bartsch, M. Glatthaar, Energy Procedia 2015,
+[14] SunPower Whitepaper, Sunpower Module 40-Year Useful Life,                       67, 93.
+      Report, https://us.sunpower.com/sites/default/ﬁles/media-library/         [34] A. Ebong, S. Huneycutt, S. Grempels, K. Ankireddy, R. Dharmadasa,
+      white-papers/wp-sunpower-module-40-year-useful-life.pdf (accessed:             T. Druffel, in 2021 IEEE 48th Photovoltaic Specialists Conf. (PVSC),
+      September 2022).                                                               IEEE, Piscataway, NJ 2021, pp. 1417–1420.
+[15] C. Han, G. Yang, P. Procel, D. O’Connor, Y. Zhao, A. Gopalakrishnan,       [35] G. Cimiotti, J. Bartsch, A. Kraft, A. Mondon, M. Glatthaar, Energy
+      X. Zhang, M. Zeman, L. Mazzarella, O. Isabella, Sol. RRL 2022, 6, 6.           Procedia 2015, 67, 84.
+[16] B. Grübel, G. Cimiotti, C. Schmiga, S. Schellinger, B. Steinhauser,        [36] V. D. Mihailetchi, H. Chu, J. Lossen, R. Kopecek, IEEE J. Photovoltaics
+      A. A. Brand, M. Kamp, M. Sieber, D. Brunner, S. Fox, S. Kluska,                2018, 8, 435.
+      Prog. Photovoltaics Res. Appl. 2021, 30, 615.                             [37] T. Meßmer, F. Demiralp, A. Halm, Energy Procedia 2016, 98, 98.
+[17] pv. magazine, Sundrive Achieves 26.41% Efﬁciency with Copper-              [38] IEC, Crystalline Silicon Terrestrial Photovoltaic (PV) Modules: Design
+      Based Solar Cell Tech, https://www.pv-magazine.com/2022/09/05/                 Qualiﬁcation and Type Approval 2021.
+      sundrive-achieves-26-41-efﬁciency-with-copper-based-solar-cell-tech/      [39] A. C. Ronald, A. Sinton, in 16th European Photovoltaic Sol. Energy
+      (accessed: September 2022).                                                    Conf., Glasgow, UK 2000, pp. 1152–1155.
+
+
+
+
+Sol. RRL 2023, 7, 2200874                                            2200874 (9 of 9)                                               © 2022 Wiley-VCH GmbH
+

@@ -1,0 +1,352 @@
+Int. J. Electrochem. Sci., 13 (2018) 11516 – 11525, doi: 10.20964/2018.12.23
+
+                                                                        International Journal of
+                                                                        ELECTROCHEMICAL
+                                                                                SCIENCE
+                                                                               www.electrochemsci.org
+
+
+Barrier Properties of Electroplating Nickel Layer for Copper
+Metallization in Silicon Solar Cells
+You Ren Cheng1, Wen Jauh Chen1,*, Keisuke Ohdaira2 and Koichi Higashimine2
+1
+  Graduate School of Materials Science, National Yunlin University of Science and Technology,
+Douliu, Yunlin, Taiwan.
+2
+  Japan Advanced Institute of Science and Technology, 1-1 Asahidai, Nomi, Ishikawa 923-1292, Japan.
+*
+  E-mail: chenwjau@yuntech.edu.tw
+
+Received: 15 August 2018 / Accepted: 20 September 2018 / Published: 5 November 2018
+
+
+In this work, a thin nickel layer was deposited on textured (001) silicon by an electroless plating
+method. The as-deposited nickel film samples were annealed at 500ºC in an Ar/H2 atmosphere for 10
+min to form nickel silicide. Ni surface etching was done in HNO3 to remove unreacted nickel. This
+substrate is designed as ta-Si. Afterward, the Ni layer with various thicknesses and the 1.5 m thick Cu
+film were deposited on ta-Si by an electroplating technique to form the Cu/Ni/ta-Si structure. The
+Cu/Ni/ta-Si samples were annealed at various temperature for 10 minutes in an annealing furnace. The
+Cu/Ni/ta-Si samples were defined using the following: x-ray diffractometer (XRD), scanning electron
+microscope (SEM), and scanning transmission electron microscope (STEM). For the Cu/Ni(120
+nm)/ta-Si samples, the Cu3Si particles develop from an annealing temperature of 400ºC. This revealed
+that electroplating a thin Ni layer can act as a diffusion barrier against Cu at around 400°C.
+
+
+Keywords: Textured silicon; Electroplating; Solar cells; Diffusion barrier
+
+
+
+
+1. INTRODUCTION
+
+        The global photovoltaic module production capacity at the end of 2017 was estimated to be 130
+GWp; the market shared above 90% for the monocrystalline and polycrystalline silicon market. [1]
+Currently, in the industry, silver front metallization dominates because it is fast and simple. However,
+there are some disadvantages for this kind metallization, such as high costs, higher contact resistance,
+and limited efficiency of solar cells. [2, 3] Alternative technologies need to be introduced. Copper
+metallization presents a viable alternative to screen printing, because of low contact resistance and the
+low cost of copper metallization. Therefore, copper metallization can improve the efficiency of
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                             11517
+
+metallization processes. Copper metallization is expected to be introduced for mass production in
+2020, a market share of about 10% is expected by 2028. [1] Although low costs and high conductivity
+are significant advantages of copper, there is a primary concern due to its high diffusivity and
+solubility in silicon as well as copper contamination in silicon solar cells, i.e. they will have diminished
+device performance from the introduction of minority carrier recombination centers. [4-6] To prevent
+this, some materials have been used as diffusion barriers by isolating Cu from silicon. [7-11] Nickel is
+typically used as a copper diffusion barrier in silicon solar cells. [12]
+        The electroplating nickel layer as diffusion barrier for the copper metallization in silicon solar
+cells investigated in this work includes nickel deposited by electroless method, silicidation, nickel, and
+copper deposited by electroplating. Electroplating takes place by means of an applied electric field
+between anode and cathode. This makes metal ions migrating to the cathode surface and reducing to
+form metal layers. However, silicon is a semiconductor. Prior to electroplating copper (or nickel), a
+seed layer of copper needs to be deposited first to conduct the electroplating current. Electroless
+plating is suited as a method of deposition for the seed layer. Electroless plating techniques do not need
+electrical currents. A conducting surface and anode electrode do not need to achieve deposition.
+Electroless nickel plating can be used as the copper seed layer. The use of electroless Ni makes it
+possible for nickel metal (seed layer) to be plate on solar cells made with silicon. Electroless nickel
+deposition is an autocatalytic process, which uses a substrate immersed in a plating bath that contains
+metal source ions (cations) and a reducing agent. The cations can capture electrons, which is provided
+by a reducing agent in the solution; and is absorbed on the substrate surface. After electroless nickel
+deposition, the deposited samples will be heated in the ambiance of Ar/H2 or N2 gas to form the alloys
+of Ni and silicon. When heated at various temperature ranges, the nickel and silicon form various
+phases with different compositions, such as Ni2Si, NiSi, and NiSi2. [13] The nickel silicides layer
+formed acts as seed layers for Ni and Cu electroplating. The NiSi phase is the lowest resistivity phase
+among the silicide phases, because the formation of nickel silicide helps copper metallization of
+silicon-based solar cells. After deposition and temperature treatment of the electroless Ni layer, a
+thicker layer of metal could then be electroplated to reduce line resistance for the front contact. As
+discussed above, the metallization scheme requires electroplating Ni as the diffusion barrier layer over
+the Cu layer.
+        In a recent investigation, Huang et al. reported the effect of thermal stress on copper
+electroplated crystalline silicon solar cells. [14, 15] Their solar cells were fabricated with p-type
+complementary metal oxide semiconductor (CMOS) Si wafers. After CMOS fabrication processes
+have been done, pure nickel plating onto the solar cells was done initially. Then annealing at 340ºC in
+a rapid thermal furnace to form the nickel silicide. A nickel or nickel alloy (NiCo) layer was performed
+by electroplating the crystalline silicon solar cells before copper metallization. This s nickel plating
+and NiCo alloy plating were performed on different solutions. Authors found that the presence of the s
+Ni layer delays the degradation at 200ºC. Additionally, the Ni71Co29 alloy layer signiﬁcantly delayed
+cell degradation at 250ºC. The delay of cell degradation can be attributed to decreased silicidation of
+the NiCo alloy. Huang et al. also reported that the Cu diffusion in the NiCo alloy was slower than for
+pure Ni. At a lower temperature, the NiCo alloy improves cell reliability. [14, 15] Huang et al. reported
+that Si solar cells were fabricated with p-type complementary metal oxide semiconductor Si wafers.
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                            11518
+
+We found that the interface reactions of nickel metal between the textured Si substrate for solar energy
+is different than for the Si substrate for semiconductors. [16] From this, not much work has focused on
+the barrier properties of electroplating the nickel layers on the texture silicon for solar cells. In this
+study, we formed a Cu/Ni(60 and 120 nm)/ta-Si structure, the nickel and copper films were deposited
+on ta-Si substrate by an electroplating process instead of an expensive sputtering process. The thermal
+stability of the electroplating nickel diffusion barrier for the electroplating copper and textured silicon
+substrates that were annealed in Ar/H2 or N2 gas was investigated.
+
+
+
+2. EXPERIMENTAL
+
+        A pyramid textured (100) Si wafer was the substrate with nickel and copper plated front side
+metallization. Single crystal phosphorus-doped textured silicon wafers were used in the assessment of
+thermal stability and the characterization of its structure. The textured roughness of textured silicon is
+around 1–3 μm. The process of nickel and copper plating are as follows. To clean textured silicon, it
+needs to be degreased in acetone ultrasonically and the surface cleaned using H2SO4/H2O2 solution,
+which is then followed by etching in hydrogen fluoride solution. The textured silicon with a clean
+surface was sensitized by a solution of SnCl2 and HCl; and activated in a solution of PdCl2 and HCl.
+Thin electroless nickel film was deposited onto the substrate. The process of electroless Ni plating on
+the textured silicon surface was conducted with a chemical bath. The chemical bath is made up of
+nickel sulfate (NiSO4·6H2O) and sodium hypophosphite (NaH2PO2·H2O). The NiSO4·6H2O supplied
+nickel source and NaH2PO2 helps Ni ions were reduced to Ni atoms. The Ni atoms began to deposit on
+textured silicon surface and formed into a nucleus; and then, a nickel layer was grown on substrate.
+The electroless plating bath operated at 70°C and had a pH value of 5. The plating time was 60 s. To
+find the formation NiSi, the as-deposited samples were annealed in a furnace at 300–800ºC in Ar/H2
+atmosphere for 10 min. We found that the NiSi phase is present at 500ºC. Therefore, the as-deposited
+samples were annealed at 500ºC for further electroplating nickel. To obtain the clean surface of
+annealing samples, the unreactive Ni films was removed by HNO3 solution. For the samples annealed
+at 500ºC and removed unreacted nickel are designated as ta-Si. Finally, electroplating nickel and
+copper metals on ta-Si to form Cu/Ni/ta-Si structure. Deionized water and reagent grade chemicals
+were used to make all chemical solutions. The plating cell was a beaker of 300 mL. The magnetic
+stirrer agitation was applied during electroplating. The electroplating bath was set at 25ºC. The
+dimension of sample was set at 1 cm x 1 cm. A platinum plate was selected as the anode material for
+nickel and copper electrodeposition. The dimensions of the platinum plate was 20 mm x 20 mm. The
+electroplating times for nickel layer were 60 and 120 sec. The deposition rate of electroplating nickel is
+about 1 nm/s. The electroplating times of copper layer are about 1500 sec. For Cu/Ni/ta-Si structure,
+the electroplating times of nickel layer with M seconds is denoted by Cu/Ni(M nm)/ta-Si.
+        A focus ion beam (FIB) resembles a scanning electron microscope (SEM) operating at 20 kV
+and was used for SEM examination in this study. A scanning transmission electron microscope
+(STEM) and a transmission electron microscope (TEM) analyses were performed on a JEM-
+ARM200F and Hitachi H-9000NAR. An SEM that has an energy dispersive X-ray spectrum (EDS,
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                         11519
+
+Oxford Link), which we used to determine the chemical composition of all samples. X-ray powder
+diffraction (XRD) was used to determine the structures of the samples. XRD analyses were performed
+with a Bruker D8 Advance diffractometer with Cu Kα radiation. For STEM and EDS analysis, samples
+were protected with a thin W layer, i.e. an electron beam within the FIB chamber was used for this
+purpose. The sample was then ion-milled using a focused beam of gallium ions to give a thin foil
+section that is transparent to electrons.
+
+
+
+3. RESULTS AND DISCUSSION
+
+        Fig. 1 shows the X-ray diffraction patterns for the electroless nickel samples annealed at 300–
+800ºC for 10 min. The peaks of NiSi (011), NiSi (211), and Ni2Si (121) appear in X-ray diffraction
+patterns of samples annealed at 500, 600, and 700ºC. The peaks of NiSi2 appear in X-ray diffraction
+patterns of samples annealed at 800ºC. This revealed that NiSi and Ni2Si coexist at temperatures higher
+than 500°C. For further electroplating Ni and Cu metals, the formation of the seed layer is presented as
+follows. First, thin electroless nickel films with about 60 nm in thickness were deposited onto the
+textured silicon. S, this sample were annealed at 500°C isothermally in furnace in Ar/H2 atmosphere
+for 10 min. Then, the unreactive Ni films were removed by HNO3 as the substrate.
+
+
+
+
+Figure 1. X-ray diffraction patterns of electroless Ni deposits with 60 nm thickness samples annealed
+       at 300 - 800 oC for 10 min.
+
+       Fig. 2 shows XRD spectra for the Cu/Ni(60 nm)/ta-Si and Cu/Ni(120 nm)/ta-Si samples
+annealed at 300–800°C. According to XRD (Fig. 2(a)), a small amount copper silicide (Cu3Si) was
+found for the sample with the electroplating time 60 s and annealed at 300°C. The strong intensity of
+Cu3Si peaks are presented at temperature higher than 500°C. For the sample with the electroplating
+time 120 s, the formation of copper silicide occurred at 400°C (Fig.2b). The strong intensity of Cu3Si
+peaks are presented at higher than 600°C and that the Cu3Si phase was formed by a solid-state reaction
+at 200°C, which is less than the annealing temperature we used. A thin layer of electroplating Ni can
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                        11520
+
+block the diffusion of Cu into Si at 200°C. In this work, the electroplating nickel thickness is
+controlled by plating time. The results indicate that increasing electroplating nickel time from 60 to
+120 seconds will significantly increase the barrier property.
+
+
+
+
+                         (a)                                                    (b)
+Figure 2. X-ray diffraction patterns of Cu/Ni/ta-Si samples with electroplating Ni for (a) 60 s and (b)
+       120 s annealed at various temperatures (300 - 800 ◦C) for 10 min.
+
+         Fig. 3 shows a SEM cross-section micrograph which prepared using the focus ion beam
+technique. The thickness of electroplating Cu deposits is around 1.5 m and the coating surface is
+smooth during electroplating deposition. The thickness of the interlayer between Cu and silicon is
+around 300 nm. The exact chemical composition of this interlayer is not visible in the SEM image and
+further characterization is needed to understand the chemical composition of the interlayer.
+
+
+
+
+      Figure 3. SEM images of the Cu/Ni (120 nm)/ta-Si sample annealed at 300 °C for 10 min.
+
+       Figure 4 (a) is a STEM bright-field micrograph show the typical microstructure of a Cu/Ni(120
+nm)/ta-Si annealed at 300°C for 10 min. The multilayer structure was preserved after it was annealed
+at 300ºC. STEM–EDS provided elemental maps as a powerful method to locate all metal layers. Fig. 4
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                            11521
+
+(b)-(d) show the EDS maps of Cu, Ni, and Si, respectively. EDS STEM maps use the Cu K, Ni K, and
+Si K lines. The elemental maps reveal three distinct layers. The uniform intensity of layer 1 (top layer,
+Fig. 4(b)) area shows that it is constituted of Cu without Ni and Si; layer 2 (Fig. 4(c)) is constituted of
+nickel and the Ni element map reveals two distinct sublayers, which are characterized by the signal
+intensity of the sublayer near Cu and is stronger than the other sublayer; Fig. 4 (d) shows the Si spectra
+that can be easily identified as belonging to chemical phases of Si; Fig. 4 (e) shows overlap of Cu, Ni,
+and Si maps and the overlap area of Ni and Si are constituted of Ni and Si, which reveals a phase of
+weaker signal intensity sublayers in Ni layer is nickel silicide; and, an enlarged image, Fig. 4 (f) shows
+the details of the Ni/Ni silicide bilayer between Cu and Si. A nickel silicide (Ni+Si) layer about 200
+nm thick was observed near the bottom of the nickel layer. The thickness of Ni layer was measured to
+about 100 nm.
+
+
+
+
+                           (a)                                             (b)
+
+
+
+
+                           (c)                                             (d)
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                         11522
+
+
+
+
+                                                                        (f)
+                         (e)
+Figure 4. (a) STEM bright field image of Cu/Ni (120 nm)/ta-Si stack annealed at 300 oC for 10 min,
+      EDS map of (b) Cu, (c) Ni, (d) Si, (e) an overlay of Cu, Ni, and Si EDS map, and (f) an enlarge
+      image of the metal stack of Cu/Ni (120 nm)/ta-Si annealed sample.
+
+
+
+
+                        (a)                                            (b)
+Figure 5. (a) STEM-EDS compositional proﬁle for the Cu/Ni/Ni-silicide/ta-Si stack, (b) Spot STEM–
+       EDS analysis of the nickel silicide layer.
+
+        STEM-EDS imaging allowed us to find the formation of nickel silicide layer between the
+nickel layer and textured silicon substrate. For the Cu/Ni(120 nm)/ta-Si sample annealed at 300°C for
+10 min, composition analysis was carried out across the stack using STEM-EDS (Fig. 5 (a)). Fig. 5a,
+near top, shows the compositional profile of the rectangle area. The distribution of copper in the stack
+was found to concentrate on the left side. This finding suggested that copper did not diffuse into the
+silicon substrate. Spot STEM–EDS analysis from the nickel silicide layer reveals the presence of Ni2Si
+(Figure 5 (b)), which shows that the nickel silicide layer formed between the nickel and silicon
+interface at this temperature. For the Ni–Si system, the reaction of Ni with Si results in the formation
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                            11523
+
+of Ni2Si was around 300°C. [16] This revealed that the electroplated nickel layer is partially reacted
+with silicon to form Ni2Si. The Ni/Ni2Si layers retards the supply of Cu and prevent the copper diffuse
+into the textured silicon. This finding suggests that Ni/Ni2Si layers can be an effective diffusion barrier
+for the reaction between Cu and textured Si substrates. It showed that the diffusion barrier of nickel
+and/or nickel silicide layers are stable with copper and silicon at 300ºC.
+        Fig. 6 (a) presents a STEM bright-field micrograph for the sample Cu/Ni(120 nm)/ta-Si
+annealed at 500°C for 10 min. The loose structure of multilayer is observed after annealing at 500°C
+for 10 min. This reveals that the rupture of the barrier layer has taken place. Fig. 6 (b)-(d) shows the
+EDS maps of Cu, Ni and Si, respectively. Fig. 6 (e) shows overlap of Cu, Ni, and Si maps. The
+elemental maps reveal the Cu element is present in the nickel/nickel silicide layer and silicon substrate,
+which shows that copper is diffused through the nickel/nickel silicide layer and reacted with silicon to
+form copper silicide. Figure 6 (f) shows the TEM micrograph taken at the same temperature from a
+different location. The facetlike grains are grown into the textured silicon. These facetlike grains
+correlate with what is produced by the Cu-Si reaction, which is common for Cu-Si metallization
+systems. The facetlike grains are Cu3Si. [10, 11] The results of XRD agree with these results. Copper
+diffusion into CMOS Si has explored for more than decade because of concerns for copper
+metallization in ULSI. Previous studies used crystalline silicon with copper thin films to assess
+different materials based on their diffusion barrier properties. [7-11, 17] The development of Cu
+silicide was seen in previous studies when there was a failure of the diffusion barrier failed. Hsieh et al.
+used a thin indium tin oxide (ITO) layer as the diffusion layer between the electroplating copper and
+silicon substrate. The coherence between Cu and ITO became unstable and the Cu3Si particles began
+to form when the annealing temperature reached 600°C. [17] Mühlbacher et al. also investigated the
+interdiffusion damage of Cu/TiN stacks deposited on (001) Si substrates. They found that copper can
+diffuse through its defects and grain boundaries in the TiN layer, which led to the formation of the η″-
+Cu3Si phase. [11] In this study, the failure of Cu/Ni/ta-Si can be attributed to copper penetration
+through the Ni/Ni2Si layer and the formation of Cu3Si, according to the STEM and XRD analyses.
+
+
+
+
+                          (a)
+                                                                            (b)
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                        11524
+
+
+
+
+                            (c)                                          (d)
+
+
+
+
+                                                                         (f)
+                            (e)
+
+Figure 6. (a) STEM bright field image of Cu/Ni (120 nm)/ta-Si stack annealed at 500 oC for 10 min, (b)
+       Cu EDS map, (c) Ni EDS map, (d) Si EDS map, (e) an overlay of Cu, Ni, and Si EDS map, and
+       (f) TEM image of the metal stack of Cu/Ni (120 nm)/ta-Si annealed sample.
+
+
+
+4. CONCLUSIONS
+
+       This paper reports on the diffusion barrier performance of an electroplated nickel layer for
+copper metallization. The diffusion barrier properties of the electroplated nickel layer against copper
+penetration were investigated and assessed with SEM, STEM, and XRD. Our findings showed that
+thermal stability of the Cu/Ni(M nm)/ta-Si system is dependent on barrier thickness. For the Cu/Ni(60
+nm)/ta-Si samples, when the annealing temperature was above 300ºC, a small amount of Cu3Si forms.
+When the thickness of nickel film increases to 120 nm and is applied as a diffusion barrier that is
+between copper and the textured silicon substrate, there is no evidence of reactions observed for the
+Int. J. Electrochem. Sci., Vol. 13, 2018                                                        11525
+
+Cu/Ni(120 nm)/ta-Si samples annealed up to 300°C. When the annealing temperature increases to
+400ºC, the Cu3Si begin to form. Textured silicon with 120 nm electroplating nickel layer showed
+improved reliability at a 300ºC, suggesting that new diffusion barrier materials should be developed to
+prevent copper diffusion at temperature high than 400ºC.
+
+
+ACKNOWLEDGMENTS
+The Ministry of Science and Technology of Taiwan funded this research. The grant number is MOST
+106-2221-E-224-013. I would like to thank Dr. Xiaobin Zhang for comments and suggestions. I would
+also like to thank the staﬀ at the Center for Nano Materials and Technology, Japan Advanced Institute
+of Science and Technology for their technical support.
+
+
+References
+
+1.    J. Trube, International Technology Roadmap for Photovoltaic (ITRPV) Results 2018, 9th ed.;
+      http://www.itrpv.net/Reports/Downloads/.
+2.    A.U. Rehman, S.H. Lee, Materials, 7 (2014) 1318.
+3.    H. Rehman, S.H. Lee, E.G. Shin and S.H. Lee, Mater. Lett., 161 (2015) 181.
+4.    J. Bartsch, A. Mondon, K. Bayer, C. Schetter, M. Hörteis and S.W. Glunz, J. Electrochem. Soc.,
+      157 (2010) H942.
+5.    A.A. Istratov and E.R. Weber, Appl. Phys. A: Mater. Sci. Process., 66 (1998) 123.
+6.    S. Flynn and A. Lennon, Sol. Energ. Mater. Sol. Cells, 130 (2014) 309.
+7.    C.W. Chen, J.S. Jeng and J.S. Chen, J. Electrochem. Soc., 157 (2011) H997.
+8.    J.S. Fang, J.H. Lin, B.Y. Chen and T.S. Chin, J. Electrochem. Soc., 158 (2011) H97.
+9.    D.C. Perng, K.C. Hsu, S.W. Tsai and J.B. Yeh, Microelectron. Eng., 87 (2010) 365.
+10.   C.M. Liu, W.L. Liu, W.J. Chen, S.H. Hsieh, T.K. Tsai and L.C. Yang, J. Electrochem. Soc., 152
+      (2005) G234.
+11.   M. Mühlbacher, C. Greczynski, B. Sartory, J. Lu, L. Hultman and C. Mitterer, J. Vacuum Sci.
+      Tech. B, 34 (2016) 022202.
+12.   Y. Yao, J. Rodriguez, J. Cui, A. Lennon and S. Wenham, Energ. Procedia, 38 (2013) 807.
+13.   C.M. Liu, W.L. Liu, S.H. Hsieh, T.K. Tsai and W.J. Chen, Appl. Surf. Sci., 243 (2005) 259.
+14.   Q. Huang, K.B. Reuter, Y. Zhu and V.R. Deline, ECS J. Solid State Sci. Technol., 5 (2016) Q24.
+15.   Q. Huang, ECS J. Solid State Sci. Technol., 5 (2016) 51.
+16.   S.H. Hsieh, J.M. Hsieh, W.J. Chen and C.C. Chuang, Materials, 10 (2017) 942.
+17.   S.H. Hsieh, C.M. Chien, W.L. Liu and W.J. Chen, Appl. Surf. Sci., 255 (2009) 7357.
+
+
+© 2018 The Authors. Published by ESG (www.electrochemsci.org). This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution license
+(http://creativecommons.org/licenses/by/4.0/).
+

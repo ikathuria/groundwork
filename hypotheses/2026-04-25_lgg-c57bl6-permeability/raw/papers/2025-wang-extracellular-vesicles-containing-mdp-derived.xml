@@ -1,0 +1,825 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article id="jev270152" xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Extracell Vesicles</journal-id><journal-id journal-id-type="iso-abbrev">J Extracell Vesicles</journal-id><journal-id journal-id-type="pmc-domain-id">2180</journal-id><journal-id journal-id-type="pmc-domain">jev</journal-id><journal-id journal-id-type="publisher-id">JEV2</journal-id><journal-title-group><journal-title>Journal of Extracellular Vesicles</journal-title></journal-title-group><issn pub-type="epub">2001-3078</issn><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12360853</article-id><article-id pub-id-type="pmcid-ver">PMC12360853.1</article-id><article-id pub-id-type="pmcaid">12360853</article-id><article-id pub-id-type="pmcaiid">12360853</article-id><article-id pub-id-type="pmid">40825575</article-id><article-id pub-id-type="doi">10.1002/jev2.70152</article-id><article-id pub-id-type="publisher-id">JEV270152</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Extracellular Vesicles Containing MDP Derived from <italic toggle="yes">Lactobacillus rhamnosus</italic> GG Inhibit HSV‐2 Infection by Activating the NOD2‐IFN‐I Signalling Pathway</article-title></title-group><contrib-group><contrib id="jev270152-cr-0001" contrib-type="author"><name name-style="western"><surname>Wang</surname><given-names initials="J">Jingyu</given-names></name><xref rid="jev270152-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jev270152-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="jev270152-cr-0002" contrib-type="author"><name name-style="western"><surname>Chen</surname><given-names initials="H">Haoming</given-names></name><xref rid="jev270152-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="jev270152-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="jev270152-cr-0003" contrib-type="author"><name name-style="western"><surname>Huang</surname><given-names initials="M">Mei</given-names></name><xref rid="jev270152-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jev270152-cr-0004" contrib-type="author"><name name-style="western"><surname>Du</surname><given-names initials="Y">Yuqi</given-names></name><xref rid="jev270152-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jev270152-cr-0005" contrib-type="author"><name name-style="western"><surname>Zhang</surname><given-names initials="R">Ruyi</given-names></name><xref rid="jev270152-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jev270152-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="jev270152-cr-0006" contrib-type="author"><name name-style="western"><surname>Huang</surname><given-names initials="Y">Yiyi</given-names></name><xref rid="jev270152-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jev270152-cr-0007" contrib-type="author"><name name-style="western"><surname>Lin</surname><given-names initials="Y">Yuling</given-names></name><xref rid="jev270152-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jev270152-cr-0008" contrib-type="author"><name name-style="western"><surname>Pan</surname><given-names initials="R">Ruoru</given-names></name><xref rid="jev270152-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jev270152-cr-0009" contrib-type="author"><name name-style="western"><surname>Wang</surname><given-names initials="Y">Yubing</given-names></name><xref rid="jev270152-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jev270152-cr-0010" contrib-type="author"><name name-style="western"><surname>Cui</surname><given-names initials="W">Wanqin</given-names></name><xref rid="jev270152-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jev270152-cr-0011" contrib-type="author" corresp="yes"><name name-style="western"><surname>Wang</surname><given-names initials="Q">Qian</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-0299-4462</contrib-id><xref rid="jev270152-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="jev270152-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref><address><email>wangqian@smu.edu.cn</email></address></contrib><contrib id="jev270152-cr-0012" contrib-type="author" corresp="yes"><name name-style="western"><surname>Zheng</surname><given-names initials="L">Lei</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-2576-8780</contrib-id><xref rid="jev270152-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jev270152-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="jev270152-aff-0005" ref-type="aff">
+<sup>5</sup>
+</xref><address><email>nfyyzhenglei@smu.edu.cn</email></address></contrib><contrib id="jev270152-cr-0013" contrib-type="author" corresp="yes"><name name-style="western"><surname>Hu</surname><given-names initials="X">Xiumei</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0009-8806-882X</contrib-id><xref rid="jev270152-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jev270152-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>huxiumei@smu.edu.cn</email></address></contrib></contrib-group><aff id="jev270152-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Department of Laboratory Medicine, Guangdong Provincial Key Laboratory of Precision Medical Diagnostics, Guangdong Engineering and Technology Research Center for Rapid Diagnostic Biosensors, Guangdong Provincial Key Laboratory of Single‐cell and Extracellular Vesicles, Nanfang Hospital</named-content>
+<institution>Southern Medical University</institution>
+<city>Guangzhou</city>
+<country country="CN">P. R. China</country>
+</aff><aff id="jev270152-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<institution>Guangdong Provincial Clinical Research Center for Laboratory Medicine</institution>
+<city>Guangzhou</city>
+<country country="CN">P. R. China</country>
+</aff><aff id="jev270152-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Center for Clinical Laboratory</named-content>
+<institution>Zhujiang Hospital</institution>
+<institution>Southern Medical University</institution>
+<city>Guangzhou</city>
+<country country="CN">P. R. China</country>
+</aff><aff id="jev270152-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">School of Laboratory Medicine and Biotechnology</named-content>
+<institution>Southern Medical University</institution>
+<city>Guangzhou</city>
+<country country="CN">P. R. China</country>
+</aff><aff id="jev270152-aff-0005">
+<label>
+<sup>5</sup>
+</label>
+<named-content content-type="organisation-division">State Key Laboratory of Multi‐organ Injury Prevention and Treatment, Nanfang Hospital</named-content>
+<institution>Southern Medical University</institution>
+<city>Guangzhou</city>
+<country country="CN">China</country>
+</aff><pub-date pub-type="epub"><day>18</day><month>8</month><year>2025</year></pub-date><pub-date pub-type="ppub"><month>8</month><year>2025</year></pub-date><volume>14</volume><issue seq="130">8</issue><issue-id pub-id-type="pmc-issue-id">494161</issue-id><issue-id pub-id-type="doi">10.1002/jev2.v14.8</issue-id><elocation-id>e70152</elocation-id><history><date date-type="received"><day>17</day><month>2</month><year>2025</year></date><date date-type="accepted"><day>25</day><month>7</month><year>2025</year></date></history><pub-history><event event-type="pmc-release"><date><day>18</day><month>08</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>19</day><month>08</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-08-20 11:25:15.607"><day>20</day><month>08</month><year>2025</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2025 The Author(s). <italic toggle="yes">Journal of Extracellular Vesicles</italic> published by Wiley Periodicals, LLC on behalf of the International Society for Extracellular Vesicles.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbyncndlicense">https://creativecommons.org/licenses/by-nc-nd/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link> License, which permits use and distribution in any medium, provided the original work is properly cited, the use is non‐commercial and no modifications or adaptations are made.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="JEV2-14-e70152.pdf"/><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:JEV2-14-e70152.pdf"/><abstract><title>ABSTRACT</title><p>The immune evasion strategies and lifelong latency of herpes simplex virus type 2 (HSV‐2) present significant challenges for effective treatment. Recent studies have demonstrated that the commensal microbiota plays an important role in regulating immunity against viral infections. We previously reported that <italic toggle="yes">Lactobacillus rhamnosus</italic> GG (LGG) activates the expression of type I interferons (IFN‐I) to inhibit HSV‐2 infection. However, the specific molecular mechanisms remain unclear. Bacterial extracellular vesicles (EVs) are small lipid bilayer‐bound particles secreted by bacteria, which can serve as intercellular communication vehicles between the host and pathogens, functioning as immunomodulatory vectors defending against viral infections. In this study, we confirmed that LGG‐EVs activate the nucleotide‐binding oligomerisation domain‐containing protein 2 (NOD2)‐IFN‐I signalling pathway, inducing the expression of interferon‐stimulated genes (ISGs) to combat HSV‐2 infection both in vivo and in vitro. Furthermore, we explored the specific components within LGG‐EVs and identified the presence of muramyl dipeptide (MDP). We demonstrated that MDP‐enriched LGG‐EVs effectively inhibit HSV‐2 infection via activation of the NOD2‐IFN‐I pathway. These findings suggest that LGG‐EVs could serve as a novel therapeutic strategy for HSV‐2 and provide a mechanistic foundation for future antiviral research.</p></abstract><abstract id="jev270152-abs-0001" abstract-type="graphical"><p>Extracellular vesicles derived from <italic toggle="yes">Lactobacillus rhamnosus</italic> GG containing muramyl dipeptide (LGG‐EVs<sup>MDP</sup>) protect against herpes simplex virus type 2 (HSV‐2) infection by activating the NOD2‐IFN‐I signalling pathways. 
+<boxed-text position="anchor" content-type="graphic" orientation="portrait"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="JEV2-14-e70152-g002.jpg"/></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="jev270152-kwd-0001">extracellular vesicles</kwd><kwd id="jev270152-kwd-0002">herpes simplex virus type 2</kwd><kwd id="jev270152-kwd-0003">
+<italic toggle="yes">Lactobacillus rhamnosus</italic> GG</kwd><kwd id="jev270152-kwd-0004">NOD2</kwd><kwd id="jev270152-kwd-0005">type I interferons</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>President Foundation of Nanfang Hospital, Southern Medical University</institution></institution-wrap>
+</funding-source><award-id>2021B023</award-id></award-group><award-group id="funding-0002"><funding-source>
+<institution-wrap><institution>Guangdong Provincial Clinical Research Center for Laboratory Medicine</institution></institution-wrap>
+</funding-source><award-id>2023B110008</award-id></award-group><award-group id="funding-0003"><funding-source>
+<institution-wrap><institution>National Natural Science Foundation of China</institution><institution-id institution-id-type="doi">10.13039/501100001809</institution-id></institution-wrap>
+</funding-source></award-group><award-group id="funding-0004"><funding-source>
+<institution-wrap><institution>82230080, 82272384, 82402684, 82402690</institution></institution-wrap>
+</funding-source></award-group><award-group id="funding-0005"><funding-source>
+<institution-wrap><institution>Basic and Applied Basic Research Foundation of Guangdong Province</institution><institution-id institution-id-type="doi">10.13039/501100021171</institution-id></institution-wrap>
+</funding-source></award-group><award-group id="funding-0006"><funding-source>
+<institution-wrap><institution>2021A1515110578</institution></institution-wrap>
+</funding-source></award-group><award-group id="funding-0007"><funding-source>
+<institution-wrap><institution>National Science Fund for Distinguished Young Scholars</institution><institution-id institution-id-type="doi">10.13039/501100014219</institution-id></institution-wrap>
+</funding-source></award-group><award-group id="funding-0008"><funding-source>
+<institution-wrap><institution>82025024</institution></institution-wrap>
+</funding-source></award-group><award-group id="funding-0009"><funding-source>
+<institution-wrap><institution>Noncommunicable Chronic Diseases‐National Science and Technology Major Project</institution></institution-wrap>
+</funding-source><award-id>2024ZD0529005</award-id></award-group><award-group id="funding-0010"><funding-source>
+<institution-wrap><institution>key R&amp;D plan of Guangzhou Science and Technology Program</institution></institution-wrap>
+</funding-source><award-id>2024B03J0704</award-id></award-group><award-group id="funding-0011"><funding-source>
+<institution-wrap><institution>Natural Science Foundation of Guangdong Province</institution><institution-id institution-id-type="doi">10.13039/501100003453</institution-id></institution-wrap>
+</funding-source></award-group><award-group id="funding-0012"><funding-source>
+<institution-wrap><institution>2024A1515010070, 2025A1515010067</institution></institution-wrap>
+</funding-source></award-group><award-group id="funding-0013"><funding-source>
+<institution-wrap><institution>Clinical Research Project of Nanfang Hospital, Southern Medical University</institution></institution-wrap>
+</funding-source><award-id>2023CR015</award-id></award-group></funding-group><counts><fig-count count="7"/><table-count count="1"/><page-count count="16"/><word-count count="9039"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY-NC-ND</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>August 2025</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.0 mode:remove_FC converted:18.08.2025</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="jev270152-cit-0001">
+<string-name name-style="western">
+<surname>Wang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Huang</surname>
+</string-name>, et al. <year>2025</year>. “<article-title>Extracellular Vesicles Containing MDP Derived from <italic toggle="yes">Lactobacillus rhamnosus</italic> GG Inhibit HSV‐2 Infection by Activating the NOD2‐IFN‐I Signalling Pathway</article-title>.” <source>Journal of Extracellular Vesicles</source>
+<volume>14</volume>, no. <issue>8</issue>: <volume>14</volume>, <elocation-id>e70152</elocation-id>. <pub-id pub-id-type="doi">10.1002/jev2.70152</pub-id>
+<pub-id pub-id-type="pmid">40825575</pub-id></mixed-citation>
+</p><fn-group><fn id="jev270152-note-0001" fn-type="equal"><p>Jingyu Wang, Haoming Chen and Mei Huang contributed equally to this study.</p></fn><fn id="jev270152-note-0002"><p>
+<bold>Funding</bold>: This study was supported by the National Natural Science Foundation of China (82402690, 82272384, 82230080 and 82402684), Guangdong Basic and Applied Basic Research Foundation (2021A1515110578), the National Science Fund for Distinguished Young Scholars (82025024), Noncommunicable Chronic Diseases‐National Science and Technology Major Project (2024ZD0529005), the Key R&amp;D Plan of Guangzhou Science and Technology Program (2024B03J0704), the Natural Science Foundation of Guangdong Province (2024A1515010070, 2025A1515010067), Clinical Research Project of Nanfang Hospital, Southern Medical University (2023CR015), President Foundation of Nanfang Hospital, Southern Medical University (2021B023) and Guangdong Provincial Clinical Research Center for Laboratory Medicine (2023B110008).</p></fn></fn-group></notes></front><body><def-list list-content="abbreviations" id="jev270152-dl-0001"><title>Abbreviations</title><def-item><term>ABX</term><def><p>broad‐spectrum antibiotics</p></def></def-item><def-item><term>DAPI</term><def><p>4’,6‐Diamidino‐2’‐phenylindole</p></def></def-item><def-item><term>DMSO</term><def><p>dimethyl sulfoxide</p></def></def-item><def-item><term>FITC</term><def><p>fluorescein isothiocyanate isomer I</p></def></def-item><def-item><term>HEK293T</term><def><p>human embryonic kidney 293 with SV40 T‐antigen</p></def></def-item><def-item><term>HIV</term><def><p>human immunodeficiency virus</p></def></def-item><def-item><term>HSV‐2</term><def><p>herpes simplex virus type 2</p></def></def-item><def-item><term>i.g.</term><def><p>intragastric gavage</p></def></def-item><def-item><term>
+<italic toggle="yes">IFIT1</italic>
+</term><def><p>interferon Induced protein with tetratricopeptide repeats 1</p></def></def-item><def-item><term>IFN‐I</term><def><p>interferon type I</p></def></def-item><def-item><term>IFNAR</term><def><p>IFN‐I receptor</p></def></def-item><def-item><term>Ifnαr1<sup>−/−</sup>
+</term><def><p>IFNAR1‐knockout</p></def></def-item><def-item><term>IFN‐β</term><def><p>interferon type β</p></def></def-item><def-item><term>
+<italic toggle="yes">IRF3</italic>
+</term><def><p>interferon regulatory factor 3</p></def></def-item><def-item><term>
+<italic toggle="yes">IRF7</italic>
+</term><def><p>interferon regulatory factor 7</p></def></def-item><def-item><term>
+<italic toggle="yes">ISG15</italic>
+</term><def><p>interferon‐stimulated gene 15</p></def></def-item><def-item><term>ISGs</term><def><p>IFN‐stimulated genes</p></def></def-item><def-item><term>LGG</term><def><p>
+<italic toggle="yes">Lactobacillus rhamnosus</italic> GG</p></def></def-item><def-item><term>LGG‐EVs</term><def><p>
+<italic toggle="yes">Lactobacillus rhamnosus GG</italic> extracellular vesicles</p></def></def-item><def-item><term>MDP</term><def><p>muramyl dipeptide</p></def></def-item><def-item><term>mLN</term><def><p>mesenteric lymphoid node</p></def></def-item><def-item><term>
+<italic toggle="yes">MX1</italic>
+</term><def><p>myxovirus (Influenza virus) resistance 1</p></def></def-item><def-item><term>
+<italic toggle="yes">OASL2</italic>
+</term><def><p>oligoadenylate synthetase‐like 2</p></def></def-item><def-item><term>PFU</term><def><p>plaque‐forming units</p></def></def-item><def-item><term>PRRs</term><def><p>pattern recognition receptors</p></def></def-item><def-item><term>qRT‐PCR</term><def><p>quantitative reverse transcriptase‐polymerase chain reaction</p></def></def-item><def-item><term>RAW264.7</term><def><p>mouse mononuclear macrophages cell</p></def></def-item><def-item><term>
+<italic toggle="yes">RIPK2</italic>
+</term><def><p>receptor interacting protein kinase 2</p></def></def-item><def-item><term>SEM</term><def><p>standard error of measurement</p></def></def-item><def-item><term>siNOD2</term><def><p>SiRNA targeting NOD2</p></def></def-item><def-item><term>siRNAs</term><def><p>small interfering RNAs</p></def></def-item><def-item><term>VK2/E6E7</term><def><p>human vaginal epithelial cells</p></def></def-item><def-item><term>WT</term><def><p>wild type</p></def></def-item></def-list><sec id="jev270152-sec-0010"><label>1</label><title>Introduction</title><p>Herpes simplex virus type 2 (HSV‐2) is the most prevalent sexually transmitted disease worldwide, causing genital herpes lesions in humans, accompanied by pain, itching, tingling and ulceration (Gupta et al. <xref rid="jev270152-bib-0015" ref-type="bibr">2007</xref>; Tuddenham et al. <xref rid="jev270152-bib-0045" ref-type="bibr">2022</xref>). Following primary genital infection, the virus often establishes latency within the nerve ganglia and can reactivate under certain conditions, resulting in recurrent infections (James et al. <xref rid="jev270152-bib-0021" ref-type="bibr">2020</xref>; Connolly et al. <xref rid="jev270152-bib-0009" ref-type="bibr">2021</xref>). HSV‐2 infection also increases the risk of acquiring human immunodeficiency virus (HIV) and acts as a key driver of HIV infection and transmission (Looker et al. <xref rid="jev270152-bib-0031" ref-type="bibr">2017</xref>, <xref rid="jev270152-bib-0032" ref-type="bibr">2020</xref>). Additionally, HSV‐2 infection may increase the risk of human papillomavirus infection, thereby contributing to the incidence of cervical cancer (Golais and Mrázová <xref rid="jev270152-bib-0014" ref-type="bibr">2020</xref>; Bahena‐Román et al. <xref rid="jev270152-bib-0001" ref-type="bibr">2020</xref>). Currently, there are no licensed preventive or therapeutic vaccines for HSV‐2 (Wijesinghe et al. <xref rid="jev270152-bib-0051" ref-type="bibr">2021</xref>; Dai et al. <xref rid="jev270152-bib-0011" ref-type="bibr">2018</xref>). The primary approach to managing HSV‐2 is through antiviral medications, including nucleoside‐based medications such as aciclovir, valaciclovir or famciclovir, which are commonly prescribed for genital herpes. Although these agents inhibit viral DNA replication, they cannot completely eliminate latent infection or prevent recurrence (Johnston et al. <xref rid="jev270152-bib-0023" ref-type="bibr">2024</xref>). Given the high prevalence of HSV‐2 and the lack of effective treatment, it is crucial to explore novel strategies for the treatment and prevention of HSV‐2 infection.</p><p>Interferons (IFNs) represent the primary defence mechanism within the innate immune response and are essential for the host's antiviral immunity. Among them, type I interferons (IFN‐I), comprising IFN‐α and IFN‐β, bind to the IFN‐I receptor (IFNAR1/2), initiating a cascade of intracellular signalling events that transmit signals to the cell nucleus (Huber and David Farrar <xref rid="jev270152-bib-0019" ref-type="bibr">2011</xref>). This process induces the expression of numerous interferon‐stimulated genes (ISGs), which actively participate in inhibiting viral replication. Recent research indicates that the activation of IFN‐I signalling primarily relies on pattern recognition receptors (PRRs) (McNab et al. <xref rid="jev270152-bib-0034" ref-type="bibr">2015</xref>; Zhu et al. <xref rid="jev270152-bib-0059" ref-type="bibr">2019</xref>). When a pathogen infects a cell, PRRs are activated, initiating the IFN‐I signalling cascade, activating intracellular antiviral gene expression (Ivashkiv and Donlin <xref rid="jev270152-bib-0020" ref-type="bibr">2014</xref>; Crow and Stetson <xref rid="jev270152-bib-0010" ref-type="bibr">2022</xref>). Recent studies have highlighted the role of nucleotide‐binding oligomerisation domain‐containing protein 2 (NOD2) as a classical PRR involved in antiviral innate immune responses (Zheng <xref rid="jev270152-bib-0056" ref-type="bibr">2021</xref>). NOD2 is a cytosolic receptor that recognises bacterial peptidoglycan fragments, particularly muramyl dipeptide (MDP) (Caruso et al. <xref rid="jev270152-bib-0006" ref-type="bibr">2014</xref>). Viral ssRNA genomes recognised by NOD2 receptor interact with mitochondrial antiviral signalling protein (MAVS), leading to the activation of interferon regulatory factor 3 (IRF3) and production of IFN‐β (Sabbah et al. <xref rid="jev270152-bib-0038" ref-type="bibr">2009</xref>). Further research has shown that bacteria‐derived MDP can modulate human cytomegalovirus replication via the IFN‐I pathway (Kapoor et al. <xref rid="jev270152-bib-0026" ref-type="bibr">2016</xref>). During HSV‐2 infection, the antiviral effects of IFN‐I are often limited. This limitation is primarily attributed to the virus's ability to establish latency in the neural ganglia and develop immune evasion mechanisms, resulting in recurrent infections throughout the host's lifetime (Tognarelli et al. <xref rid="jev270152-bib-0044" ref-type="bibr">2019</xref>; Kadeppagari et al. <xref rid="jev270152-bib-0024" ref-type="bibr">2012</xref>). Therefore, it is crucial to investigate the mechanisms by which the host activates IFN‐I to inhibit HSV‐2 infection during latent and steady‐state conditions.</p><p>Over the past several decades, an expanding body of literature has highlighted the role of the commensal microbiota in priming IFN‐I responses (Steed et al. <xref rid="jev270152-bib-0042" ref-type="bibr">2017</xref>; Erttmann et al. <xref rid="jev270152-bib-0012" ref-type="bibr">2022</xref>; Niu et al. <xref rid="jev270152-bib-0036" ref-type="bibr">2023</xref>). Commensal bacteria passively reside within the host and exert antiviral effects by promoting the development of the immune system, regulating immune cell maturation and stimulating the secretion of immune factors (Bradley et al. <xref rid="jev270152-bib-0003" ref-type="bibr">2019</xref>; Stefan et al. <xref rid="jev270152-bib-0043" ref-type="bibr">2020</xref>; Spencer et al. <xref rid="jev270152-bib-0041" ref-type="bibr">2019</xref>; Zhong et al. <xref rid="jev270152-bib-0057" ref-type="bibr">2023</xref>; Winkler et al. <xref rid="jev270152-bib-0052" ref-type="bibr">2020</xref>). Our previous study demonstrated that <italic toggle="yes">Lactobacillus rhamnosus</italic> GG (LGG) suppresses HSV‐2 infection by inducing IFN‐I expression (J. Wang et al. <xref rid="jev270152-bib-0047" ref-type="bibr">2024</xref>), suggesting that commensal microbiota‐induced production of IFN‐I may represent a potential therapeutic approach for combating viral infections. However, the specific innate immune receptors responsible for sensing microbiota and priming IFN‐I responses in the host remain incompletely understood. Additionally, the mechanisms by which locally colonised LGG interacts with immune cells located at distant sites across the intestinal barrier to regulate systemic immune responses remain unclear.</p><p>Bacterial extracellular vesicles (EVs) serve as carriers for intercellular signal communication and play a role in various biological functions by delivering effector molecules that regulate host signalling pathways and cellular processes (van Niel et al. <xref rid="jev270152-bib-0046" ref-type="bibr">2018</xref>; Mathieu et al. <xref rid="jev270152-bib-0033" ref-type="bibr">2019</xref>; Pegtel and Gould <xref rid="jev270152-bib-0037" ref-type="bibr">2019</xref>; Wen et al. <xref rid="jev270152-bib-0050" ref-type="bibr">2023</xref>; Zhou et al. <xref rid="jev270152-bib-0058" ref-type="bibr">2025</xref>). EVs play important roles in the pathogenesis of influenza virus and HIV infections, acting both as regulators of host defence and mediators of immune evasion (Jiang et al. <xref rid="jev270152-bib-0022" ref-type="bibr">2020</xref>; Ñahui Palomino et al. <xref rid="jev270152-bib-0035" ref-type="bibr">2019</xref>). In addition, they can serve as antigens for innate immune receptors, thereby stimulating host immunity (Barile and Vassalli <xref rid="jev270152-bib-0002" ref-type="bibr">2017</xref>; Buzas <xref rid="jev270152-bib-0004" ref-type="bibr">2022</xref>; Yamamoto et al. <xref rid="jev270152-bib-0055" ref-type="bibr">2023</xref>). Notably, EV‐based therapies have gained attention as novel and safe strategies for treating cancer, cardiovascular disorders and infectious diseases (Herrmann et al. <xref rid="jev270152-bib-0016" ref-type="bibr">2021</xref>; Cheng and Hill <xref rid="jev270152-bib-0008" ref-type="bibr">2022</xref>; Kalluri and McAndrews <xref rid="jev270152-bib-0025" ref-type="bibr">2023</xref>; H. Liu et al. <xref rid="jev270152-bib-0027" ref-type="bibr">2025</xref>). Based on this evidence, we hypothesised that EVs derived from LGG (LGG‐EVs) can stimulate the production of IFN‐I, thereby enhancing host antiviral immunity. In this study, we demonstrated that the commensal microbiota are critical for innate resistance to viral infections. Additionally, we identified a specific molecular mechanism by which a commensal microbe induces IFN‐I production. Our findings demonstrated that LGG‐EVs induce systemic IFN‐I expression. Subsequent experiments revealed that LGG‐EVs contain MDP, which regulates the IFN‐I signalling pathway through NOD2, ultimately leading to the inhibition of HSV‐2 infection.</p></sec><sec id="jev270152-sec-0020"><label>2</label><title>Materials and Methods</title><sec id="jev270152-sec-0030"><label>2.1</label><title>Bacterial Culture</title><p>LGG (ATCC 53103), a distinct strain within the <italic toggle="yes">Lactobacillus</italic> genus, is classified as a Gram‐positive, facultative anaerobe. LGG was cultured for 24 h at 37°C, 160 rpm/min under anaerobic conditions in MRS Liquid medium.</p></sec><sec id="jev270152-sec-0040"><label>2.2</label><title>LGG‐EVs Isolation</title><p>To isolate LGG‐EVs, the bacterial culture was harvested by sequential centrifugation at 3000 × <italic toggle="yes">g</italic>, 15 min and 10,000 × <italic toggle="yes">g</italic>, 25 min, respectively. The supernatant was subsequently filtered through a 0.45 µm pore‐sized, sterile filter (Millipore, SLHV033RB, USA). The filtered supernatant was ultracentrifuged at 135,000 × <italic toggle="yes">g</italic> and 4°C for 70 min using an Optima XPN‐100 centrifuge (Beckman Coulter, USA), and washed with PBS to obtain the crude EVs. The purified EVs were filtered (0.45 µm) again before ultracentrifugation at 150,000 × <italic toggle="yes">g</italic> at 4°C for 2 h utilising a sucrose density gradient. The pelleted EVs were resuspended in phosphate‐buffered saline (PBS), and the total protein content was quantified employing a bicinchoninic acid (BCA) protein assay kit (Fdbio Science, FD2001, China). The LGG‐EVs were subsequently stored at −80°C for future applications.</p></sec><sec id="jev270152-sec-0050"><label>2.3</label><title>Characterisation of LGG‐EVs Using Nanoparticle Tracking Analysis (NTA) and Transmission Electron Microscopy (TEM)</title><p>To analyse the size distribution of LGG‐EVs, the vesicle pellet was resuspended in 1 mL PBS to ensure uniform dispersion. Particle size distribution was assessed using an NTA (Malvern Panalytical), which provided a detailed characterisation of the sample.</p><p>According to the standard procedure, isolated LGG‐EVs were fixed in 4% paraformaldehyde. Fixed EVs were then applied onto carbon‐coated copper grids and allowed to adsorb for 10 min to allow for specimen attachment. The grids were subsequently stained with 2% uranyl acetate for 1 min to improve visual contrast. Finally, the prepared specimens were imaged using a TEM system (Hitachi H‐7650, Japan) to assess vesicle morphology.</p></sec><sec id="jev270152-sec-0060"><label>2.4</label><title>Inhibition of LGG‐EVs Secretion</title><p>LGG was cultured under anaerobic conditions. GW4869 (20 µM) (J. Liu et al. <xref rid="jev270152-bib-0028" ref-type="bibr">2021</xref>; Hong et al. <xref rid="jev270152-bib-0017" ref-type="bibr">2023</xref>) or vehicle control (dimethyl sulfoxide, 0.1% DMSO) was added to the medium. After 24 h, the cultures were centrifuged at 3000 × <italic toggle="yes">g</italic> for 15 min, followed by 10,000 × <italic toggle="yes">g</italic> for 25 min. The supernatant was filtered through a 0.45 µm sterile filter.</p></sec><sec id="jev270152-sec-0070"><label>2.5</label><title>Cell Culture Experiments</title><p>HEK293T cells (catalogue number SCSP‐502, Shanghai Institute of Biochemistry and Cell Biology, China), RAW264.7 cells (catalogue number SCSP‐5036, Shanghai Institute of Biochemistry and Cell Biology, China) and Vaginal epithelial cells (VK2/E6E7) (Procell Life Science&amp;Technology, CM‐1024, China) were cultured in Dulbecco's Modified Eagle's Medium (DMEM; catalogue number 12800017, Gibco, USA), supplemented with 10% foetal bovine serum (FBS; catalogue number 10099, Gibco, USA). The cell cultures were maintained at 37°C in a humidified atmosphere containing 5% carbon dioxide in a cell culture incubator (model MCO‐170ACL‐PC, PHCbi, Japan).</p><p>As previously described, to explore the potential of LGG‐EVs in protecting against HSV‐2 infection, we investigated their ability to stimulate NOD2‐IFN‐I signalling pathways in vitro. HEK293T cells were first transfected with small interfering RNA (siRNA) targeting NOD2 (siNOD2, 50 nM) (RiboBio, China) for 12 h to achieve siRNA‐mediated knockdown. Subsequently, LGG‐EVs (20 µg/mL) were added to the cells and incubated for an additional 2 h to assess stimulation of the cellular response. Cells were then harvested for RNA extraction (ER701‐01, TransGen Biotech, China), and ISG expression was analysed using quantitative reverse transcription polymerase chain reaction (qRT‐PCR).</p><p>To explore whether MDP‐containing LGG‐EVs inhibit HSV‐2 infection by inducing the NOD2‐IFN‐I signalling pathway, HEK293T cells were transfected with siNOD2 (50 nM) for 12 h, followed by treatment with MDP (50 µg/mL; 53678‐77‐6, InvivoGen, France), the NOD2 ligand Mifamurtide (60 µM; HY‐13682, MedChemExpress, USA) for 5 h. RNA was extracted and ISGs expression was analysed using qRT‐PCR. In a subsequent experiment, we incubated HEK293T cells with MDP (50 µg/mL), Mifamurtide (60 µM) for 5 h before infection with HSV‐2 (MOI = 1). The viral DNA copy number in the supernatant of HSV‐2‐infected HEK293T cells was quantified using qRT‐PCR to evaluate the effect of MDP on viral replication.</p></sec><sec id="jev270152-sec-0080"><label>2.6</label><title>Broad Spectrum Antibiotic (ABX) Treatment in Specific Pathogen‐Free (SPF) Mice</title><p>To establish a microbiota‐depleted SPF mouse model, ABX was administered after 1‐week acclimatisation. The ABX cocktail consists of four antibiotics: neomycin (1 g/L), ampicillin (1 g/L), metronidazole (1 g/L) and vancomycin (0.5 g/L), dissolved in sterilised water. Mice were orally administered a daily dose of 200 µL ABX solution for 10 consecutive days. Throughout the treatment period, regular and careful monitoring of the mice was conducted to detect any changes in body weight and overall health status. Following the cessation of the ABX treatment, antibiotics were replaced with sterilised water to facilitate re‐colonisation of the target microbiota.</p></sec><sec id="jev270152-sec-0090"><label>2.7</label><title>Mouse Model of HSV‐2 Infection</title><p>Female C57BL/6 mice were procured from the Animal Experimental Centre of Southern Medical University. IFNAR1‐knockout (Ifnαr1<sup>−/−</sup>) mice, on a C57BL/6 background, were used alongside wild‐type (WT) controls. All mice were tested in adulthood (6–8 weeks of age), and only female mice were used in this study. All animals were housed under SPF conditions with a strict 12 h light/12 h dark shift and access to sterilised water and food ad libitum. All animal experimental protocols were approved by the ethics committee of Southern Medical University (Approval No. SMUL2021045). Animal care and all procedures were conducted in strict accordance with Southern Medical University animal care guidelines.</p><p>To establish a model of HSV‐2 infection, C57BL/6 female mice were administered a subcutaneous injection of medroxyprogesterone acetate (2 mg in sterile PBS; XianJu Pharmaceutical Co., Ltd., Taizhou, China) into the thigh 7 days prior to infection. On the seventh day post‐injection, mice were anaesthetised via intraperitoneal injection of 2% pentobarbital sodium. The mice then received a vaginal instillation of HSV‐2 at a concentration of 1.92 × 10<sup>7</sup> plaque‐forming units (PFU)/mL, administered as two separate 10 µL doses per mouse. Body weight, clinical signs and symptoms, and survival were monitored daily. Disease severity was scored using previously established criteria: 0 (healthy), 1 (genital erythema), 2 (moderate genital inflammation), 3 (genital lesions), 4 (hind limb paralysis) and 5 (death) (Shestakov et al. <xref rid="jev270152-bib-0039" ref-type="bibr">2012</xref>). Vaginal swabs were taken on Days 5 and 10 post‐infection, and HSV‐2 DNA was extracted and analysed using qRT‐PCR. All clinical assessments were performed in a blinded fashion, and the disease severity scores were statistically analysed using two‐way analysis of variance (ANOVA).</p></sec><sec id="jev270152-sec-0100"><label>2.8</label><title>RNA Extraction and qRT‐PCR Analysis</title><p>Following 10 days of ABX treatment, mice in each group were treated with PBS (200 µL, per mouse) or LGG‐EVs (100 µg, 200 µL per mouse) every other day for 14 days. Mice were then sacrificed, and the spleen, mesenteric lymph nodes (mLNs), and colon were collected for analysis. Total RNA was extracted using the EasyPure RNA purification kit (ER701‐01, TransGen Biotech, China). Complementary DNA was synthesised using Evo M‐MLV RT Master Mix (AG11706, Accurate Biology, China), and qRT‐PCR was performed using the LightCycler 480 II system (Roche, Switzerland) with SYBR Green Pro Taq HS qPCR Kit III (AG11739, Accurate Biology, China). Glyceraldehyde‐3‐phosphate dehydrogenase (GAPDH) was used as the internal control. Fold‐changes in gene expression levels were quantified using the 2<sup>−(ΔΔCt)</sup> method, with normalisation to GAPDH. All gene‐specific primers used in this experiment are listed in Table <xref rid="jev270152-tbl-0001" ref-type="table">1</xref>.</p><table-wrap position="float" id="jev270152-tbl-0001" content-type="TABLE" orientation="portrait"><label>TABLE 1</label><caption><p>Gene primer set for qRT‐PCR.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1">Gene</th><th align="center" rowspan="1" colspan="1">Forward/reverse</th><th align="center" rowspan="1" colspan="1">Mouse sequence (5' to 3')</th><th align="center" rowspan="1" colspan="1">Human sequence (5' to 3')</th></tr></thead><tbody><tr><td rowspan="2" align="left" colspan="1">GAPDH</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">GACCATAGGGGTCTTGACCAA</td><td align="center" rowspan="1" colspan="1">CACCCACTCCTCCACCTTT</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">AGACTTGCTCTTTCTGAAAAGCC</td><td align="center" rowspan="1" colspan="1">CTTCCTCTTGTGCTCTTGC</td></tr><tr><td rowspan="2" align="left" colspan="1">NOD2</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">ACGATGTCTTCCAGTTCCTTCTTGA</td><td align="center" rowspan="1" colspan="1">CACCGTCTGGAATAAGGGTACT</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">GCAGGCATTCTTCAGCAGGTTC</td><td align="center" rowspan="1" colspan="1">TTCATACTGGCTGACGAAACC</td></tr><tr><td rowspan="2" align="left" colspan="1">IFN‐β</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">CAGCTCCAAGAAAGGACGAAC</td><td align="center" rowspan="1" colspan="1">GCTTGGATTCCTACAAAGAAGCA</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">GGCAGTGTAACTCTTCTGCAT</td><td align="center" rowspan="1" colspan="1">ATAGATGGTCAATGCGGCGTC</td></tr><tr><td rowspan="2" align="left" colspan="1">MX1</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">GACCATAGGGGTCTTGACCAA</td><td align="center" rowspan="1" colspan="1">GGTGGTCCCCAGTAATGTGG</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">AGACTTGCTCTTTCTGAAAAGCC</td><td align="center" rowspan="1" colspan="1">CGTCAAGATTCCGATGGTCCT</td></tr><tr><td rowspan="2" align="left" colspan="1">IFIT1</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">CTGAGATGTCACTTCACATGGAA</td><td align="center" rowspan="1" colspan="1">AGAAGCAGGCAATCACAGAAAA</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">GTGCATCCCCAATGGGTTCT</td><td align="center" rowspan="1" colspan="1">CTGAAACCGACCATAGTGGAAAT</td></tr><tr><td rowspan="2" align="left" colspan="1">IRF7</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">GAGACTGGCTATTGGGGGAG</td><td align="center" rowspan="1" colspan="1">GCTGGACGTGACCATCATGTA</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">GACCGAAATGCTTCCAGGG</td><td align="center" rowspan="1" colspan="1">GGGCCGTATAGGAACGTGC</td></tr><tr><td rowspan="2" align="left" colspan="1">OASL2</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">TTGTGCGGAGGATCAGGTACT</td><td align="center" rowspan="1" colspan="1">CCATTGTGCCTGCCTACAGAG</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">TGATGGTGTCGCAGTCTTTGA</td><td align="center" rowspan="1" colspan="1">CTTCAGCTTAGTTGGCCGATG</td></tr><tr><td rowspan="2" align="left" colspan="1">IRF3</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">CACGCTACACTCTGTGGTTCTG</td><td align="center" rowspan="1" colspan="1">——</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">GGAGATAGGCTGGCTGTTGGA</td><td align="center" rowspan="1" colspan="1">——</td></tr><tr><td rowspan="2" align="left" colspan="1">RIPK2</td><td align="center" rowspan="1" colspan="1">Forward</td><td align="center" rowspan="1" colspan="1">CTCCTCGTGTTCCTTGGCTGTA</td><td align="center" rowspan="1" colspan="1">——</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td align="center" rowspan="1" colspan="1">CATCTGGCTCACAATGGCTTCC</td><td align="center" rowspan="1" colspan="1">——</td></tr><tr><td rowspan="2" align="left" colspan="1">HSV‐2 gG</td><td align="center" rowspan="1" colspan="1">Forward</td><td colspan="2" align="center" rowspan="1">CCCACACCCCAACACATC</td></tr><tr><td align="center" rowspan="1" colspan="1">Reverse</td><td colspan="2" align="center" rowspan="1">CCAAGGCGACCAGACAAAC</td></tr></tbody></table><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec><sec id="jev270152-sec-0110"><label>2.9</label><title>Confocal Microscopy</title><p>HEK293T cells were treated with LGG‐EVs (20 µg/mL), IFN‐β (125 ng/mL) or PBS for 12 h before HSV‐2 infection. Cells were then washed and fixed with 4% paraformaldehyde in confocal culture dishes, permeabilised using 0.3% Triton X‐100, and blocked with 5% bovine serum albumin prior to staining overnight at 4°C using mouse monoclonal antibody targeting glycoprotein B (gB) of HSV1/HSV2 (ab6506, Abcam, UK). Cells were then incubated with goat anti‐mouse fluorescein isothiocyanate‐conjugated secondary antibody (FITC; SSA020, Sino Biological, China) for 1 h, followed by staining with 4′,6‐diamidino‐2‐phenylindole (DAPI; C1005, Beyotime, China) for 15 min.</p></sec><sec id="jev270152-sec-0120"><label>2.10</label><title>Western Blotting</title><p>Cells were lysed using radioimmunoprecipitation assay (RIPA) buffer (FD008, Beyotime, China) supplemented with a cocktail of protease and phosphatase inhibitors (HLSP1025, Beyotime, China). Lysates were centrifuged at 14,000 × <italic toggle="yes">g</italic> for 20 min to remove cellular debris. The protein concentration of the resulting supernatant was quantified using a BCA protein assay kit (FD2001, FDBio Science, China). After 10% sodium dodecyl sulphate–polyacrylamide gel electrophoresis (SDS‐PAGE), protein samples were transferred onto polyvinylidene fluoride (PVDF) membranes (EMD Millipore, Billerica, Massachusetts, USA). Membranes were blocked and then incubated with a mouse monoclonal antibody against gB of HSV1/HSV2 (ab6506, Abcam, UK) at 4°C for 16 h. Subsequently, membranes were incubated with a secondary antibody (Goat Anti‐Rabbit IgG (H+L) HRP (Affinity, S0001, China)) at room temperature for 60 min. Detection of immunoreactive bands was performed using a Bio‐Rad detection system. Densitometric analysis of grey values of images was performed using ImageJ software (V1.8.0.112, USA).</p></sec><sec id="jev270152-sec-0130"><label>2.11</label><title>Enzyme‐Linked Immunosorbent Assay (ELISA)</title><p>To analyse MDP levels of EVs, pelleted EVs were resuspended in 1 mL of PBS and further diluted to a concentration of 10 µg/µL. The concentration of MDP in LGG‐EVs was measured using an ELISA kit (RE8952, Elabscience, China).</p></sec><sec id="jev270152-sec-0140"><label>2.12</label><title>Statistical Analysis</title><p>For statistical analysis, GraphPad Prism software (GraphPad Prism 9.0, USA) was utilised. The student's <italic toggle="yes">t</italic>‐test was used for comparing two groups, while one‐way ANOVA and two‐way ANOVA were utilised to discern differences among multiple groups. A <italic toggle="yes">p</italic> value of less than 0.05 was considered to indicate statistical significance. Error bars, ± Standard error of measurement (SEM).</p></sec></sec><sec id="jev270152-sec-0150"><label>3</label><title>Results</title><sec id="jev270152-sec-0160"><label>3.1</label><title>Mice with Depleted Commensal Microbiota Are More Susceptible to HSV‐2 Infection</title><p>The body is colonised by a diverse population of commensal microbiota, and the intricate interplay between the microbial inhabitants and the host immune system is essential for maintaining general health and modulating immune responses. To investigate the contribution of commensal microbiota in regulating the host immune defence against HSV‐2, we eliminated the gut microbiota in WT mice via oral administration of ABX (The broad‐spectrum antibiotic cocktail consists of four broad spectrum antibiotics: neomycin (1 g/L), ampicillin (1 g/L), metronidazole (1 g/L) and vancomycin (0.5 g/L). Subsequently, the mice were infected with HSV‐2 through vaginal instillation. The findings revealed that mice treated with ABX displayed an elevated susceptibility to disease relative to those treated with PBS. Specifically, the ABX‐treated mice exhibited a significantly higher incidence of disease and elevated daily paralysis scores (Figure <xref rid="jev270152-fig-0001" ref-type="fig">1A,B</xref>), as well as decreased survival rates and increased cumulative disease scores (Figure <xref rid="jev270152-fig-0001" ref-type="fig">1C,D</xref>). Furthermore, the treatment with ABX resulted in a significant increase in viral titres in the infected mice, with higher HSV‐2 levels observed 10 days post‐infection (Figure <xref rid="jev270152-fig-0001" ref-type="fig">1E</xref>). These findings were further validated using hysterovaginal fluorescence imaging (Figure <xref rid="jev270152-fig-0001" ref-type="fig">1F</xref>). Histological examination using haematoxylin and eosin (H&amp;E) staining revealed that the uterine and vaginal tissues appeared loose. The cells in the infected areas exhibited deformation, with condensed nuclei, reduced cell numbers, and enlarged intercellular spaces. Some cells may have been shed, and there was a significant infiltration of inflammatory cells.</p><fig position="float" fig-type="FIGURE" id="jev270152-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>Mice with depleted commensal microbiota exhibit increased susceptibility to HSV‐2 infection. WT mice were subjected to a treatment with ABX (neomycin (1 g/L), ampicillin (1 g/L), metronidazole (1 g/L) and vancomycin (0.5 g/L) to deplete their commensal microbiota, followed by infection with HSV‐2. (A–C) The incidence of paralysis, daily paralysis scores and survival rates among the mice are presented as percentages. (D) For each mouse, the aggregate disease score, which is the sum of the daily disease scores from the onset of infection through the 20th day (20 d.p.i.) was determined. (E) The DNA copy number of HSV‐2 in mouse vaginal swabs was extracted and then analysed by qRT‐PCR. (F) WT mice were infected with HSV‐2 after depleting the commensal microbiota via treatment with ABX. Subsequently, the hysterovaginal were collected and stained with FITC and DAPI and photographed using confocal fluorescence microscopy. The microscopic images bar measured at 200 µm. Presented are representative images from three independently conducted. (G) HSV‐2‐associated lesions are depicted in representative H&amp;E‐stained images. Microscopic scale bars, 50 and 200 µm. The images displayed are representative of three individual experimental replicates. The log‐rank test was employed to determine <italic toggle="yes">p</italic> values for the comparison between ABX and PBS groups (A and C). Linear regression analysis was utilised to calculate <italic toggle="yes">p</italic> values between ABX and PBS (B). One‐way ANOVA was applied to assess statistical significance (D and E). ns, indicate not significant; <sup>∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 and <sup>∗∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.0001. Error bars, ± SEM.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="JEV2-14-e70152-g003.jpg"/></fig><p>(Figure <xref rid="jev270152-fig-0001" ref-type="fig">1G</xref>). Taken together, these data demonstrate that depletion of the commensal microbiota using ABX results in more severe clinical symptoms and increased susceptibility to HSV‐2 infection. These results highlight the pivotal role of commensal microbiota in enhancing innate immunity and conferring resistance to viral infections.</p></sec><sec id="jev270152-sec-0170"><label>3.2</label><title>LGG Modulates the Host IFN‐I Response via EVs Secretion, Thereby Influencing Viral Infection</title><p>In our previous research, we demonstrated that LGG can regulate the expression of IFN‐I in the host, thereby exhibiting antiviral effects. However, the specific molecular mechanism by which LGG induces IFN‐I production remains unclear. Bacterial EVs, are small lipid bilayer‐sheathed sacs secreted by bacteria. We speculated that LGG‐derived EVs may be instrumental in transporting bacterial molecules across cellular barriers and tissues, thereby activating the IFN‐I pathway both locally and systemically. To evaluate this hypothesis, we employed a Transwell system to prevent direct contact between bacterial and host cells to evaluate the effect of LGG on IFN‐I and ISGs in RAW264.7 cells (Figure <xref rid="jev270152-fig-0002" ref-type="fig">2A</xref>). The results demonstrated that LGG culture supernatant (LGG‐sup.) still induced an IFN‐I response (Figure <xref rid="jev270152-fig-0002" ref-type="fig">2B</xref>). Furthermore, we used EVs inhibitor (GW4869, 20 µM) to suppress the release of EVs. Interestingly, when EVs release was inhibited (Figure <xref rid="jev270152-supinfo-0001" ref-type="">S1</xref>), no significant alterations were observed in the expression levels of IFN‐I (Figure <xref rid="jev270152-fig-0002" ref-type="fig">2B</xref>). This suggests that EVs derived from LGG may be involved in regulating the IFN‐I response. To further elucidate the immunomodulatory potential of LGG‐EVs, we isolated and purified EVs from the LGG‐sup. and characterised them using NTA and TEM. The data indicated that the isolated particles displayed morphologies typical of EVs (Figure <xref rid="jev270152-fig-0002" ref-type="fig">2C,D</xref>). Next, we employed qRT‐PCR to analyse the expression of IFN‐I and ISGs in mice treated with ABX and subsequently administered LGG‐EVs (100 µg, 200 µL per mouse). Results demonstrated a significant upregulation in the expression levels of <italic toggle="yes">IFN‐β</italic> and ISGs (including <italic toggle="yes">ISG15</italic>, <italic toggle="yes">MX1</italic>, <italic toggle="yes">IFIT1</italic> and <italic toggle="yes">IRF7</italic>) in the spleen and colon of mice treated with LGG‐EVs compared with mice treated with PBS (Figure <xref rid="jev270152-fig-0002" ref-type="fig">2E,F</xref>). Furthermore, in vitro experiments involving co‐incubation of RAW264.7 cells with LGG‐EVs (20 µg/mL) led to a significant upregulation in the expression levels of <italic toggle="yes">IFN‐β</italic> and ISGs, as determined by qRT‐PCR (Figure <xref rid="jev270152-fig-0002" ref-type="fig">2G</xref>). Collectively, Figure <xref rid="jev270152-fig-0002" ref-type="fig">2E–G</xref> support that LGG‐EVs can specifically regulate the IFN‐I response both in vivo and in vitro.</p><fig position="float" fig-type="FIGURE" id="jev270152-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>LGG‐EVs induce host IFN‐I expression. (A) Schematic illustration of how EVs in LGG‐sup. regulate IFN‐I and ISG expression in RAW264.7 cells using a Transwell system. (B) RAW264.7 cells were incubated for 2 h with PBS, LGG‐sup., or LGG pretreated with the EVs inhibitor (GW4869, 20 µM) for 24 h. Subsequently, the expression levels of IFN‐β and ISGs were analysed using qRT‐PCR. Relative gene expression levels were determined using the 2<sup>−(ΔΔCt)</sup> method, normalised to PBS‐treated controls, with GAPDH serving as the endogenous control. (C, D) Characterisation of LGG‐EVs isolated from culture supernatants using NTA and TEM. Scale bars: 100 nm. (E, F) Total RNA was isolated from the spleens and colons of WT mice treated with either PBS (200 µL, per mouse) or LGG‐EVs (100 µg, 200 µL per mouse), starting 14 days post antibiotic ABX treatment. The expression levels of ISGs were measured using qRT‐PCR, and fold changes were calculated using the 2<sup>−(ΔΔCt)</sup> method, with GAPDH as the reference gene and PBS‐treated group as controls. (G) RAW264.7 cells were treated with PBS, LGG‐EVs (20 µg/mL), or IFN‐β (125 ng/mL). qRT‐PCR was employed to assess the expression of <italic toggle="yes">IFN‐β</italic> and ISGs. Gene expression was normalised to GAPDH using the 2<sup>−(ΔΔCt)</sup> method. Multiple <italic toggle="yes">t</italic>‐tests and one‐way ANOVA were utilised for initial statistical analyses, followed by Tukey's multiple comparisons test to determine <italic toggle="yes">p</italic> values for panels (B, E–G). The term “ns” indicates not significant; asterisks denote statistical significance as follows: <sup>∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 and <sup>∗∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.0001. Error bars represent mean ± SEM.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="JEV2-14-e70152-g001.jpg"/></fig></sec><sec id="jev270152-sec-0180"><label>3.3</label><title>LGG‐EVs Effectively Suppress HSV‐2 Infection In Vitro</title><p>To determine whether modulation of IFN‐I expression by LGG‐EVs influences HSV‐2 infection, HEK293T and VK2/E6E7 cells were treated with LGG‐EVs prior to viral challenge. Infection levels were assessed using qRT‐PCR, western blotting, and confocal fluorescence microscopy. qRT‐PCR results indicated a significant decrease in HSV‐2 titres following LGG‐EVs treatment (Figure <xref rid="jev270152-fig-0003" ref-type="fig">3A,D</xref>). The results of qRT‐PCR were also validated using western blotting analysis (Figure <xref rid="jev270152-fig-0003" ref-type="fig">3B,C</xref>,<xref rid="jev270152-fig-0003" ref-type="fig">E,F</xref>) and confocal fluorescence microscopy (Figure <xref rid="jev270152-fig-0003" ref-type="fig">3G,H</xref>). These results illustrate that LGG‐EVs suppress HSV‐2 infection in vitro.</p><fig position="float" fig-type="FIGURE" id="jev270152-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>LGG‐EVs offer protective effects and suppress HSV‐2 infection in vitro. HEK293T and VK2/E6E7 cells were pre‐treated with LGG‐EVs (20 µg/mL) for 2 h before being infected with HSV‐2 (MOI = 1). (A, D) HSV‐2 DNA copy number was analysed by qRT‐PCR. (B, C and E, F). Western blotting analysis of HSV‐2 gB levels in HEK293T and VK2/E6E7 cells treated with LGG‐EVs (20 µg/mL) or IFN‐β (125 ng/mL, as positive control) are shown, and the data were assessed using ImageJ software. (G) HEK293T cells with LGG‐EVs (20 µg/mL), PBS, or IFN‐β (125 ng/mL) for 2 h, and then the cells were infected with HSV‐2 (MOI = 1) for 18 h. Cells were then stained with FITC and DAPI, and their fluorescence was captured by confocal microscopy. Scale bars: 20 µm. Representative images from three independent experiments are shown. (H) Mean fluorescence intensity was assessed using ImageJ software. For statistical analysis, multiple <italic toggle="yes">t</italic>‐tests and one‐way ANOVA were employed to determine the <italic toggle="yes">p</italic> values for panels A, C and E. The term “ns” indicates not significant; asterisks denote the levels of significance: <sup>∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 and <sup>∗∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.0001. Data are presented as mean ± SEM.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="JEV2-14-e70152-g004.jpg"/></fig></sec><sec id="jev270152-sec-0190"><label>3.4</label><title>LGG‐EVs Stimulate IFN‐I Production, Enhancing Resistance to HSV‐2 Infection In Vivo</title><p>To further elucidate the ability of LGG‐EVs to enhance host defence mechanisms against HSV‐2 infection via induction of IFN‐I expression, we included both WT and Ifnαr1<sup>−/−</sup> mice in our study. Mice were treated with LGG‐EVs via intragastric gavage (i.g.) on alternate days for 14 days prior to HSV‐2 challenge (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4A</xref>). In WT mice, the administration of LGG‐EVs significantly reduced disease severity compared with PBS controls. This included a lower incidence of disease, reduced daily and cumulative paralysis scores (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4B,C</xref>,<xref rid="jev270152-fig-0004" ref-type="fig">E</xref>), as well as improved survival rates (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4D</xref>). qRT‐PCR analysis of vaginal swabs at 5 days and 10 days post‐infection showed significantly reduced HSV‐2 titres in LGG‐EVs‐treated mice (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4F,G</xref>). Hysterovaginal fluorescence sections of the vaginal tissue post‐infection also confirmed the protective effects of LGG against HSV‐2 infection in vivo (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4H</xref>). In contrast, Ifnαr1<sup>−/−</sup> mice treated with LGG‐EVs showed increased disease susceptibility compared to LGG‐EVs treated WT mice, with increased incidence of disease, daily and cumulative paralysis scores (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4B,C</xref>,<xref rid="jev270152-fig-0004" ref-type="fig">E</xref>) and reduced survival (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4D</xref>), as confirmed by hysterovaginal fluorescence imaging (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4H</xref>). By H&amp;E staining, we observed that in WT mice following HSV‐2 infection, the uterine and vaginal tissues appeared loose. The cells in the infected areas exhibited deformation, with condensed nuclei, reduced cell numbers and enlarged intercellular spaces. Some cells may have been shed, and there was a significant infiltration of inflammatory cells. However, Histological analysis with H&amp;E staining revealed that in Ifnαr1<sup>−/−</sup> mice, tissue lysis and inflammatory cell infiltration were not alleviated by treatment (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4I</xref>). These results collectively demonstrate that the antiviral efficacy of LGG‐EVs is mediated via the IFN‐I signalling pathway.</p><fig position="float" fig-type="FIGURE" id="jev270152-fig-0004" orientation="portrait"><label>FIGURE 4</label><caption><p>LGG‐EVs modulate IFN‐I signalling in HSV‐2‐infected mice. WT and Ifnαr1<sup>−/−</sup> mice were treated with LGG‐EVs (100 µg, 200 µL per mouse) via <italic toggle="yes">i.g</italic>. on alternate days for 14 days prior to HSV‐2 infection. (A) Schematic illustration of WT and Ifnαr1<sup>−/−</sup> mice receiving LGG‐EVs or PBS treatments. (B–D) Mice were closely monitored daily to record the percentage of mice exhibiting disease incidence, paralysis scores and survival rates. (E) Cumulative disease score per mouse, calculated as the aggregate of daily disease scores over 20 d.p.i. (F, G) HSV‐2 DNA copy number in mouse vaginal swabs at 5 and 10 d.p.i. analysed by qRT‐PCR. (H) Hysterovaginal tissues were collected and stained with FITC and DAPI for confocal fluorescence microscopy. Scale bar: 200 µm. Images are representative of three separate experiments. (I) H&amp;E‐stained sections reveal HSV‐2‐associated lesions in the uterine and vaginal tissues. Scale bars: 50 and 200 µm. Statistical analyses were conducted as follows: log‐rank test (B, D), linear regression analysis (C) and one‐way ANOVA (G, H). The term “ns” indicates not significant; asterisks denote the levels of significance: <sup>∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 and <sup>∗∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.0001. Data are presented as mean ± SEM.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-9" orientation="portrait" xlink:href="JEV2-14-e70152-g007.jpg"/></fig></sec><sec id="jev270152-sec-0200"><label>3.5</label><title>LGG‐EVs Inhibit HSV‐2 Infection by Regulating the IFN‐I Signalling Pathway via NOD2</title><p>To investigate the molecular mechanisms by which LGG‐EVs modulate IFN‐I responses to inhibit HSV‐2 infection, we conducted transcriptomic analysis of RAW264.7 cells treated with LGG‐EVs. Overall, Gene Ontology (GO) enrichment analysis revealed that LGG‐EVs treatment notably enhanced the expression of genes involved in immune regulatory processes, indicating a significant impact on biological pathways related to immune modulation (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5A</xref>). In addition, Kyoto Encyclopaedia of Genes and Genomes (KEGG) enrichment analysis demonstrated that the NOD signalling pathway was upregulated in RAW264.7 cells (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5B</xref>). In our study, qRT‐PCR analysis revealed that NOD2 and its downstream classical molecules RIPK2 and IRF3 were upregulated in RAW246.7 cells of treated with LGG‐EVs (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5C–E</xref>). Similarly, treatment with LGG‐EVs resulted in the upregulation of NOD2, RIPK2 and IRF3 expression in the Colon, Spleen and mLN of mice (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5F–H</xref>). To confirm the functional role of NOD2, we silenced NOD2 expression using siNOD2 (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5I–K</xref>). Subsequently, stimulation of HEK293T cells with LGG‐EVs showed significantly reduced expression of IFN‐β and ISGs (including <italic toggle="yes">ISG15</italic> and <italic toggle="yes">MX1</italic>) (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5L–O</xref>). Furthermore, knockdown of NOD2 abrogated the antiviral effect of LGG‐EVs, as evidenced by a significant increase in HSV‐2 DNA levels relative to the LGG‐EVs treated group (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5P</xref>). Similar results were also confirmed in animal experiments. We treated mice with the NOD2 signalling inhibitor GSK717 to block the NOD2 signalling pathway. The results indicated that blocking the NOD2 signalling pathway by GSK717, the ability of LGG‐EVs to inhibit HSV‐2 infection was similarly abolished (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5Q–U</xref>). These results demonstrate that LGG‐EVs inhibit HSV‐2 infection by activating the NOD2‐IFN‐I signalling pathway in vivo and in vitro.</p><fig position="float" fig-type="FIGURE" id="jev270152-fig-0005" orientation="portrait"><label>FIGURE 5</label><caption><p>LGG‐EVs inhibit HSV‐2 infection by regulating the IFN‐I signalling pathway via NOD2. (A, B) RAW264.7 cells were treated with LGG‐EVs or PBS. Transcriptomic analysis was performed to assess gene expression changes. GO enrichment analysis revealed that LGG‐EVs treatment notably upregulated genes involved in immune regulatory processes. KEGG enrichment analysis demonstrated activation of NOD2 signalling pathway. (C–E) RAW264.7 cells were treated with PBS, LGG‐EVs (20 µg/mL), or IFN‐β (125 ng/mL), and NOD2, RIPK2 and IRF3 expression was assessed by qRT‐PCR. Relative gene expression levels were determined employing the 2<sup>−(ΔΔCt)</sup> method, with GAPDH as the housekeeping gene for normalisation. (F–H) Total RNA were extracted from the Colon, Spleen, and mLN of WT mice treated with either PBS or LGG‐EVs (100 µg, 200 µL per mouse) for 14 days following an antibiotic (ABX) course. The expression of NOD2, RIPK2 and IRF3 was then analysed using qRT‐PCR using the 2<sup>−(ΔΔCt)</sup> method and normalised to GAPDH. (I–K) The knockdown efficiency of NOD2 was evaluated in HEK293T cells 24 h after siNOD2 transfection, using qRT‐PCR and western blotting analyses, and the data were assessed using ImageJ software. (L–O) After siNOD2 pretreatment, HEK293T cells were incubated with either PBS or LGG‐EVs (20 µg/mL) for 2 h. Expression of IFN‐β and ISGs was quantified by qRT‐PCR. (P) HEK293T cells pretreated with siNOD2 or PBS for 12 h, were incubated with either PBS or LGG‐EVs (20 µg/mL) for 2 h, followed by HSV‐2 infection. Viral DNA copy number within HEK293T cells was assessed by qRT‐PCR. (Q–U) Mice were treated with the NOD2 signalling pathway inhibitor GSK717 (5 mg/Kg body weight). Subsequently, the mice were subjected to i.g. with LGG‐EVs (100 µg, 200 µL per mouse) every other day for a total of 14 days prior to HSV‐2 infection. (Q–S) Mice were closely monitored daily to record the percentage of mice exhibiting disease incidence, survival rates and paralysis scores. (T) Cumulative disease score per mouse, calculated as the aggregate of daily disease scores over 20 d.p.i. (U) HSV‐2 DNA copy number in mouse vaginal swabs at 5 d.p.i. analysed by qRT‐PCR. Multiple <italic toggle="yes">t</italic>‐tests and one‐way ANOVA were initially employed for statistical analysis, followed by Tukey's multiple comparisons test to calculate <italic toggle="yes">p</italic> values. The term “ns” indicates not significant; asterisks denote the levels of significance: <sup>∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 and <sup>∗∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.0001. Error bars represent the mean ± SEM.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-11" orientation="portrait" xlink:href="JEV2-14-e70152-g006.jpg"/></fig></sec><sec id="jev270152-sec-0210"><label>3.6</label><title>LGG‐EVs Containing MDP Inhibit HSV‐2 Infection by Activating the NOD2‐IFN‐I Signalling Pathway</title><p>Bacterial EVs contribute significantly to the onset and progression of infectious diseases (Jiang et al. <xref rid="jev270152-bib-0022" ref-type="bibr">2020</xref>; Cheng and Hill <xref rid="jev270152-bib-0008" ref-type="bibr">2022</xref>; J. Wang et al. <xref rid="jev270152-bib-0048" ref-type="bibr">2019</xref>). However, the specific components of LGG‐EVs responsible for this immunomodulatory effect remained to be determined. MDP, the minimal bioactive motif of peptididoglycan, binds to NOD2 and activates various downstream pathways, having also been shown to restrict human cytomegalovirus replication (Kapoor et al. <xref rid="jev270152-bib-0026" ref-type="bibr">2016</xref>). In our study, ELISA analysis confirmed that LGG‐EVs contain MDP (Figure <xref rid="jev270152-fig-0006" ref-type="fig">6A</xref>). Next, we analysed the effect of MDP on NOD2‐IFN‐I signalling and viral infection. HEK293T cells were treated with MDP and Mifamurtide (NOD2 ligand as a positive control), and qRT‐PCR was performed to assess IFN‐I expression and viral infection levels. The results confirmed that both MDP and Mifamurtide significantly increased the expression of <italic toggle="yes">IFN‐β</italic> and downstream ISGs (including <italic toggle="yes">ISG15</italic>, <italic toggle="yes">MX1 and OASL2</italic>). However, with the use of siNOD2, these responses were abolished (Figure <xref rid="jev270152-fig-0006" ref-type="fig">6B–E</xref>). Next, qRT‐PCR was used to assess the level of viral infection. As depicted in Figure <xref rid="jev270152-fig-0006" ref-type="fig">6F</xref>, HSV‐2 DNA content was significantly reduced after treatment with MDP and Mifamurtide. These results suggest that LGG‐EVs inhibit HSV‐2 infection by MDP, which activates the NOD2‐IFN‐I signalling pathway.</p><fig position="float" fig-type="FIGURE" id="jev270152-fig-0006" orientation="portrait"><label>FIGURE 6</label><caption><p>MDP‐containing LGG‐EVs inhibit HSV‐2 infection by activating the NOD2‐IFN‐I signalling pathway. (A) ELISA analysis confirmed that MDP are present within LGG‐EVs. (B–E) HEK293T cells were transfected with siNOD2 (50 nM) for 12 h, followed by treatment with PBS, MDP (50 µg/mL) or Mifamurtide (NOD2 ligand used as a positive control, 60 µM) for 5 h. qRT‐PCR was employed to assess the expression levels of IFN‐β and ISGs. Relative gene expression was calculated employing the 2<sup>− (ΔΔCt)</sup> method, with GAPDH as the internal control. (F) HSV‐2 DNA copy number in HEK293T cells was determined using qRT‐PCR following treatment with PBS, MDP (50 µg/mL) or Mifamurtide (60 µM) for 5 h before with HSV‐2 (MOI = 1). Multiple <italic toggle="yes">t</italic>‐tests and one‐way ANOVA were initially conducted for statistical analysis, followed by Tukey's multiple comparisons test to determine the <italic toggle="yes">p</italic> values for panels. The term “ns” indicates not significant; asterisks denote the levels of significance: <sup>∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 and <sup>∗∗∗∗</sup>
+<italic toggle="yes">p</italic> &lt; 0.0001. Error bars represent the mean ± SEM.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-13" orientation="portrait" xlink:href="JEV2-14-e70152-g005.jpg"/></fig></sec></sec><sec id="jev270152-sec-0220"><label>4</label><title>Discussion</title><p>Following infection, HSV‐2 infiltrates peripheral sensory nerve endings and establishes latency in the sacral ganglia, thereby eluding immune system detection and hindering effective clearance by the host immune response (Gupta et al. <xref rid="jev270152-bib-0015" ref-type="bibr">2007</xref>; Connolly et al. <xref rid="jev270152-bib-0009" ref-type="bibr">2021</xref>; Tognarelli et al. <xref rid="jev270152-bib-0044" ref-type="bibr">2019</xref>). Currently, there are no approved vaccines available for the prevention or treatment of HSV‐2 infection. Previous investigations have demonstrated the widespread involvement of the commensal microbiota and its derived bioactive molecules in various aspects of immunity and metabolism, as well as its crucial role in maintaining the local intestinal environment, intestinal function and overall health (Steed et al. <xref rid="jev270152-bib-0042" ref-type="bibr">2017</xref>; Bradley et al. <xref rid="jev270152-bib-0003" ref-type="bibr">2019</xref>; Stefan et al. <xref rid="jev270152-bib-0043" ref-type="bibr">2020</xref>). In this study, we showed a significant increase in HSV‐2 infection when ABX were used to deplete the commensal microbiota in WT mice (Figure <xref rid="jev270152-fig-0001" ref-type="fig">1</xref>), suggesting that the microbiota actively inhibits HSV‐2 infection in the host. These findings provide new insights into the mechanisms by which the host–microbiota axis may stimulate the immune responses to suppress HSV‐2 under both dormant and homeostatic conditions. However, the exact mechanisms by which commensal bacteria influence HSV‐2 infection remain unclear.</p><p>Previous research has demonstrated the positive effects of LGG in regulating the host immune system in both the gut and reproductive tracts, as well as in preventing infections caused by pathogenic microbes (Capurso <xref rid="jev270152-bib-0005" ref-type="bibr">2019</xref>; Si et al. <xref rid="jev270152-bib-0040" ref-type="bibr">2022</xref>; Llewellyn and Foey <xref rid="jev270152-bib-0030" ref-type="bibr">2017</xref>). Our prior work confirmed that LGG enhances resistance to HSV‐2 infection via the induction of IFN‐I (J. Wang et al. <xref rid="jev270152-bib-0047" ref-type="bibr">2024</xref>). Therefore, in this study, we investigated the specific components of LGG responsible for this antiviral effect and aimed to elucidate their underlying mechanisms of action. Bacterial EVs serve as carriers of intercellular communication signals and play a role in diverse biological functions by delivering effector molecules that regulate signalling pathways and cellular responses in host cells. Notably, EVs derived from <italic toggle="yes">Lactobacillus</italic> species can protect human cervico‐vaginal tissues from HIV‐1 infection (Ñahui Palomino et al. <xref rid="jev270152-bib-0035" ref-type="bibr">2019</xref>). Based on these observations, we hypothesised that LGG may regulate IFN‐I expression through the secretion of EVs into the culture supernatant, thereby modulating HSV‐2 infection. To test this hypothesis, we used a Transwell system and GW4869 (a specific inhibitor of EVs secretion), and demonstrated that EVs derived from LGG specifically regulate the expression of IFN‐I (Figure <xref rid="jev270152-fig-0002" ref-type="fig">2A,B</xref>). Furthermore, WT female mice treated with LGG‐EVs showed upregulation of ISGs in various tissues and organs, indicating a systemic antiviral effect. Consistent results were obtained from cellular experiments, supporting that LGG‐EVs modulate the expression of IFN‐I in vivo and in vitro (Figure <xref rid="jev270152-fig-0002" ref-type="fig">2</xref>).</p><p>Subsequently, we analysed whether the modulation of IFN‐I by LGG‐EVs influences HSV‐2 infection. As shown in Figure <xref rid="jev270152-fig-0003" ref-type="fig">3</xref>, in vitro results demonstrated a significant decrease in the viral titre in the HEK293T and VK2/E6E7 cell supernatant following treatment with LGG‐EVs. In vivo experiments (Figure <xref rid="jev270152-fig-0004" ref-type="fig">4</xref>) showed that administration of LGG‐EVs to WT mice treated with ABX increased survival and alleviated clinical symptoms in HSV‐2‐infected mice. In contrast, ABX‐treated Ifnar1<sup>−/−</sup> mice exhibited unaltered levels of HSV‐2 infection, following LGG‐EVs treatment. These results suggest that LGG‐EVs modulate HSV‐2 infection through the IFN‐I signalling pathway.</p><p>Next, we investigated the mechanism by which LGG‐EVs regulate IFN‐I signalling to influence viral infection using transcriptomic analysis. Via transcriptomics, we revealed that LGG‐EVs treatment altered the expression of immune‐related genes, including those involved in the NOD signalling pathway in RAW264.7 cells (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5A,B</xref>). During viral infection, NOD2 can recruit RIPK2 and subsequently activates IRF3, which in turn induces the IFN‐I signalling pathway, initiating the transcription of ISGs and exerting antiviral effects. In support of this finding, our data from both cellular and animal models confirmed that LGG‐EVs upregulate NOD2 and its downstream classical molecules RIPK2 and IRF3, thereby inducing the NOD2‐IFN‐I signalling pathway (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5C–H</xref>). Knocking down NOD2 expression using siRNA significantly reduced the expression of IFN‐β and downstream ISGs (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5L–O</xref>), Furthermore, knockdown of NOD2 abrogated the antiviral effect of LGG‐EVs, (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5P</xref>). Similar results were also confirmed in animal experiments. We treated mice with the NOD2 signalling inhibitor GSK717 to block the NOD2 signalling pathway. the ability of LGG‐EVs to inhibit HSV‐2 infection was similarly abolished (Figure <xref rid="jev270152-fig-0005" ref-type="fig">5Q–U</xref>). These results demonstrate that LGG‐EVs inhibit HSV‐2 infection by activating the NOD2‐IFN‐I signalling pathway in vivo and in vitro.</p><p>EVs contain bioactive molecules, including proteins, nucleic acids and lipids, that influence disease development, particularly in the context of infectious diseases(Y. Wang et al. <xref rid="jev270152-bib-0049" ref-type="bibr">2025</xref>; L. Liu et al. <xref rid="jev270152-bib-0029" ref-type="bibr">2025</xref>). Here, we confirmed that LGG‐EVs inhibit HSV‐2 infection through activation of the NOD2‐IFN‐I signalling pathway. However, the specific molecular components within LGG‐EVs that trigger this host response remain to be identified and warrant further investigation. Previous studies have confirmed that the cytoplasmic protein NOD2 is required for MDP recognition (Wolf <xref rid="jev270152-bib-0053" ref-type="bibr">2023</xref>; Chamaillard et al. <xref rid="jev270152-bib-0007" ref-type="bibr">2003</xref>; Gao et al. <xref rid="jev270152-bib-0013" ref-type="bibr">2023</xref>). As shown in Figure <xref rid="jev270152-fig-0006" ref-type="fig">6A</xref>, LGG‐EVs contain MDP. Furthermore, we demonstrated that treatment of HEK293T with purified MDP led to upregulation of antiviral ISGs and inhibition of HSV‐2 replication (Figure <xref rid="jev270152-fig-0006" ref-type="fig">6B–F</xref>). However, when NOD2 was knocked down using siRNA, the expression levels of ISGs were significantly reduced in cells (Figure <xref rid="jev270152-fig-0006" ref-type="fig">6B–E</xref>). These results confirm that LGG‐EVs containing MDP regulate the expression of IFN‐I through the NOD2 signalling pathway, thereby inhibiting HSV‐2 infection. This study has certain limitations. Although we confirmed the presence of MDP in LGG‐EVs and its involvement in upregulating the NOD2‐IFN‐I signalling pathway, we did not construct MDP‐deficient LGG strains to generate MDP‐deficient EVs. These limitations will be addressed in future studies.</p></sec><sec id="jev270152-sec-0230"><label>5</label><title>Conclusion</title><p>In conclusion, we have demonstrated that LGG‐EVs containing MDP can activate the NOD2‐IFN‐I signalling pathway to suppress HSV‐2 infection. Moreover, LGG‐EVs offer several potential advantages for the treatment of HSV‐2 infection, including low immunogenicity, the capacity to serve as drug carriers, and high biocompatibility. However, the clinical translation of LGG‐EVs faces numerous challenges(Huang et al. <xref rid="jev270152-bib-0018" ref-type="bibr">2025</xref>; Xie et al. <xref rid="jev270152-bib-0054" ref-type="bibr">2023</xref>). Firstly, the production efficiency of EVs is relatively low, and the purification process is complex and expensive. Therefore, it is necessary to establish efficient EVs production systems and optimise purification efficiency. Secondly, regarding drug delivery, various administration routes need to be explored, and formulations must be optimised to ensure their stability and bioavailability in vivo. Further clinical trials are essential to evaluate the efficacy and safety of such treatments. As a potential therapeutic strategy against HSV‐2, LGG‐EVs show great promise. With technological innovations and clinical validation, LGG‐EVs could be transformed into an effective treatment for HSV‐2 infection, offering patients improved and safer therapeutic options.</p></sec><sec id="jev270152-sec-0240"><title>Author Contributions</title><p>
+<bold>Lei Zheng</bold>, <bold>Xiumei Hu</bold> and <bold>Jingyu Wang</bold> conceived the idea. Jingyu Wang, <bold>Haoming Chen</bold> and <bold>Mei Huang</bold> contributed to designing and performing the experiments. <bold>Yuqi Du</bold>, <bold>Ruyi Zhang</bold>, <bold>Yiyi Huang</bold>, <bold>Yuling Lin</bold>, <bold>Ruoru Pan</bold>, <bold>Yubing Wang</bold>, <bold>Wanqin Cui</bold>, contributed analysis with constructive discussions. Jingyu Wang, Haoming Chen, Mei Huang and Xiumei Hu contributed significantly to the analysis results and manuscript preparation. <bold>Qian Wang</bold>, Lei Zheng and Xiumei Hu contributed to the review and editing of the manuscript. All authors read and approved the final.</p></sec><sec id="jev270152-sec-0260"><title>Ethics Statement</title><p>All the research involving animals was approved by the Medical Ethics Committee of Southern Medical University (approval protocol No. SMUL2021045).</p></sec><sec id="jev270152-sec-0270"><title>Consent</title><p>All authors of this manuscript have agreed to submit the article and declare that the article has not been published elsewhere and is not currently under consideration for publication by any other journal.</p></sec><sec sec-type="COI-statement" id="jev270152-sec-0280"><title>Conflicts of Interest</title><p>The authors declare no conflicts of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="jev270152-supinfo-0001" position="float" content-type="local-data" orientation="portrait"/><supplementary-material id="jev270152-supitem-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>
+<bold>Supporting Figures</bold>: jev270152‐sup‐0001‐FigureS1‐S2.docx</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JEV2-14-e70152-s001.docx" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="jev270152-supitem-0002" position="float" content-type="local-data" orientation="portrait"><caption><p>
+<bold>Supporting Figures</bold>: jev270152‐sup‐0001‐FigureS1‐S2.docx</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JEV2-14-e70152-s003.tif" position="float" orientation="portrait"/></supplementary-material><supplementary-material id="jev270152-supitem-0003" position="float" content-type="local-data" orientation="portrait"><caption><p>
+<bold>Supporting Figures</bold>: jev270152‐sup‐0001‐FigureS1‐S2.docx</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JEV2-14-e70152-s002.tif" position="float" orientation="portrait"/></supplementary-material></sec></body><back><ack id="jev270152-sec-0250"><title>Acknowledgements</title><p>This study was supported by the National Natural Science Foundation of China (82402690, 82272384, 82230080 and 82402684), Guangdong Basic and Applied Basic Research Foundation (2021A1515110578), the National Science Fund for Distinguished Young Scholars (82025024), Noncommunicable Chronic Diseases‐National Science and Technology Major Project (2024ZD0529005), the Key R&amp;D Plan of Guangzhou Science and Technology Program (2024B03J0704), the Natural Science Foundation of Guangdong Province (2024A1515010070, 2025A1515010067), Clinical Research Project of Nanfang Hospital, Southern Medical University (2023CR015), President Foundation of Nanfang Hospital, Southern Medical University (2021B023) and Guangdong Provincial Clinical Research Center for Laboratory Medicine (2023B110008).</p></ack><sec sec-type="data-availability" id="jev270152-sec-0300"><title>Data Availability Statement</title><p>All data generated or analysed during this study are included in this published article.</p></sec><ref-list id="jev270152-bibl-0001"><title>References</title><ref id="jev270152-bib-0001"><mixed-citation publication-type="journal" id="jev270152-cite-0001">
+<string-name name-style="western">
+<surname>Bahena‐Román</surname>, <given-names>M.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>M. A.</given-names>
+<surname>Sánchez‐Alemán</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. O.</given-names>
+<surname>Contreras‐Ochoa</surname>
+</string-name>, et al. <year>2020</year>. “<article-title>Prevalence of Active Infection by Herpes Simplex Virus Type 2 in Patients with High‐Risk human Papillomavirus Infection: A Cross‐Sectional Study</article-title>.” <source>Journal of Medical Virology</source>
+<volume>92</volume>, no. <issue>8</issue>: <fpage>1246</fpage>–<lpage>1252</lpage>. <pub-id pub-id-type="doi">10.1002/jmv.25668</pub-id>.<pub-id pub-id-type="pmid">31925791</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0002"><mixed-citation publication-type="journal" id="jev270152-cite-0002">
+<string-name name-style="western">
+<surname>Barile</surname>, <given-names>L.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Vassalli</surname>
+</string-name>. <year>2017</year>. “<article-title>Exosomes: Therapy Delivery Tools and Biomarkers of Diseases</article-title>.” <source>Pharmacology &amp; Therapeutics</source>
+<volume>174</volume>: <fpage>63</fpage>–<lpage>78</lpage>. <pub-id pub-id-type="doi">10.1016/j.pharmthera.2017.02.020</pub-id>.<pub-id pub-id-type="pmid">28202367</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0003"><mixed-citation publication-type="journal" id="jev270152-cite-0003">
+<string-name name-style="western">
+<surname>Bradley</surname>, <given-names>K. C.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Finsterbusch</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Schnepf</surname>
+</string-name> , et al. <year>2019</year>. “<article-title>Microbiota‐Driven Tonic Interferon Signals in Lung Stromal Cells Protect from Influenza Virus Infection</article-title>.” <source>Cell Reports</source>
+<volume>28</volume>, no. <issue>1</issue>: <fpage>245</fpage>–<lpage>256.e4</lpage>. <pub-id pub-id-type="doi">10.1016/j.celrep.2019.05.105</pub-id>.<pub-id pub-id-type="pmid">31269444</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0004"><mixed-citation publication-type="journal" id="jev270152-cite-0004">
+<string-name name-style="western">
+<surname>Buzas</surname>, <given-names>E. I.</given-names>
+</string-name>
+<year>2022</year>. “<article-title>The Roles of Extracellular Vesicles in the Immune System</article-title>.” <source>Nature Reviews Immunology</source>
+<volume>23</volume>, no. <issue>4</issue>: <fpage>236</fpage>–<lpage>250</lpage>. <pub-id pub-id-type="doi">10.1038/s41577-022-00763-8</pub-id>.<pub-id pub-id-type="pmcid">PMC9361922</pub-id><pub-id pub-id-type="pmid">35927511</pub-id></mixed-citation></ref><ref id="jev270152-bib-0005"><mixed-citation publication-type="journal" id="jev270152-cite-0005">
+<string-name name-style="western">
+<surname>Capurso</surname>, <given-names>L.</given-names>
+</string-name>
+<year>2019</year>. “<article-title>Thirty Years of <italic toggle="yes">Lactobacillus rhamnosus</italic> GG: A Review</article-title>.” <source>Journal of Clinical Gastroenterology</source>
+<volume>53</volume>: <fpage>S1</fpage>. <pub-id pub-id-type="doi">10.1097/MCG.0000000000001170</pub-id>.<pub-id pub-id-type="pmid">30741841</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0006"><mixed-citation publication-type="journal" id="jev270152-cite-0006">
+<string-name name-style="western">
+<surname>Caruso</surname>, <given-names>R.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Warner</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Inohara</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Núñez</surname>
+</string-name>. <year>2014</year>. “<article-title>NOD1 and NOD2: Signaling, Host Defense, and Inflammatory Disease</article-title>.” <source>Immunity</source>
+<volume>41</volume>, no. <issue>6</issue>: <fpage>898</fpage>–<lpage>908</lpage>. <pub-id pub-id-type="doi">10.1016/j.immuni.2014.12.010</pub-id>.<pub-id pub-id-type="pmid">25526305</pub-id>
+<pub-id pub-id-type="pmcid">PMC4272446</pub-id></mixed-citation></ref><ref id="jev270152-bib-0007"><mixed-citation publication-type="journal" id="jev270152-cite-0007">
+<string-name name-style="western">
+<surname>Chamaillard</surname>, <given-names>M.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>S. E.</given-names>
+<surname>Girardin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Viala</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>D. J.</given-names>
+<surname>Philpott</surname>
+</string-name>. <year>2003</year>. “<article-title>Nods, Nalps and Naip: Intracellular Regulators of Bacterial‐Induced Inflammation</article-title>.” <source>Cellular Microbiology</source>
+<volume>5</volume>, no. <issue>9</issue>: <fpage>581</fpage>–<lpage>592</lpage>. <pub-id pub-id-type="doi">10.1046/j.1462-5822.2003.00304.x</pub-id>.<pub-id pub-id-type="pmid">12925128</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0008"><mixed-citation publication-type="journal" id="jev270152-cite-0008">
+<string-name name-style="western">
+<surname>Cheng</surname>, <given-names>L.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>A. F.</given-names>
+<surname>Hill</surname>
+</string-name>. <year>2022</year>. “<article-title>Therapeutically Harnessing Extracellular Vesicles</article-title>.” <source>Nature Reviews Drug Discovery</source>
+<volume>21</volume>, no. <issue>5</issue>: <fpage>379</fpage>–<lpage>399</lpage>. <pub-id pub-id-type="doi">10.1038/s41573-022-00410-w</pub-id>.<pub-id pub-id-type="pmid">35236964</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0009"><mixed-citation publication-type="journal" id="jev270152-cite-0009">
+<string-name name-style="western">
+<surname>Connolly</surname>, <given-names>S. A.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>T. S.</given-names>
+<surname>Jardetzky</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Longnecker</surname>
+</string-name>. <year>2021</year>. “<article-title>The Structural Basis of Herpesvirus Entry</article-title>.” <source>Nature Reviews Microbiology</source>
+<volume>19</volume>, no. <issue>2</issue>: <fpage>110</fpage>–<lpage>121</lpage>. <pub-id pub-id-type="doi">10.1038/s41579-020-00448-w</pub-id>.<pub-id pub-id-type="pmid">33087881</pub-id>
+<pub-id pub-id-type="pmcid">PMC8579738</pub-id></mixed-citation></ref><ref id="jev270152-bib-0010"><mixed-citation publication-type="journal" id="jev270152-cite-0010">
+<string-name name-style="western">
+<surname>Crow</surname>, <given-names>Y. J.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>D. B.</given-names>
+<surname>Stetson</surname>
+</string-name>. <year>2022</year>. “<article-title>The Type I Interferonopathies: 10 Years On</article-title>.” <source>Nature Reviews Immunology</source>
+<volume>22</volume>, no. <issue>8</issue>: <fpage>471</fpage>–<lpage>483</lpage>. <pub-id pub-id-type="doi">10.1038/s41577-021-00633-9</pub-id>.<pub-id pub-id-type="pmcid">PMC8527296</pub-id><pub-id pub-id-type="pmid">34671122</pub-id></mixed-citation></ref><ref id="jev270152-bib-0011"><mixed-citation publication-type="journal" id="jev270152-cite-0011">
+<string-name name-style="western">
+<surname>Dai</surname>, <given-names>W.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Wu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Bi</surname>
+</string-name> , et al. <year>2018</year>. “<article-title>Antiviral Effect of Retro‐2.1 Against Herpes Simplex Virus Type 2 In Vitro</article-title>.” <source>Journal of Microbiology and Biotechnology</source>
+<volume>28</volume>, no. <issue>6</issue>: <fpage>849</fpage>–<lpage>859</lpage>. <pub-id pub-id-type="doi">10.4014/jmb.1712.12052</pub-id>.<pub-id pub-id-type="pmid">29847864</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0012"><mixed-citation publication-type="journal" id="jev270152-cite-0012">
+<string-name name-style="western">
+<surname>Erttmann</surname>, <given-names>S. F.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Swacha</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. M.</given-names>
+<surname>Aung</surname>
+</string-name> , et al. <year>2022</year>. “<article-title>The Gut Microbiota Prime Systemic Antiviral Immunity via the cGAS‐STING‐IFN‐I Axis</article-title>.” <source>Immunity</source>
+<volume>55</volume>, no. <issue>5</issue>: <fpage>847</fpage>–<lpage>861.e10</lpage>. <pub-id pub-id-type="doi">10.1016/j.immuni.2022.04.006</pub-id>.<pub-id pub-id-type="pmid">35545033</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0013"><mixed-citation publication-type="journal" id="jev270152-cite-0013">
+<string-name name-style="western">
+<surname>Gao</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Jiang</surname>
+</string-name> , et al. <year>2023</year>. “<article-title>A Probiotic Bi‐Functional Peptidoglycan Hydrolase Sheds NOD2 Ligands to Regulate Gut Homeostasis in Female Mice</article-title>.” <source>Nature Communications</source>
+<volume>14</volume>: <fpage>3338</fpage>. <pub-id pub-id-type="doi">10.1038/s41467-023-38950-3</pub-id>.<pub-id pub-id-type="pmcid">PMC10247697</pub-id><pub-id pub-id-type="pmid">37286542</pub-id></mixed-citation></ref><ref id="jev270152-bib-0014"><mixed-citation publication-type="journal" id="jev270152-cite-0014">
+<string-name name-style="western">
+<surname>Golais</surname>, <given-names>F.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Mrázová</surname>
+</string-name>. <year>2020</year>. “<article-title>Human Alpha and Beta Herpesviruses and Cancer: Passengers or Foes?</article-title>” <source>Folia Microbiologica</source>
+<volume>65</volume>, no. <issue>3</issue>: <fpage>439</fpage>–<lpage>449</lpage>. <pub-id pub-id-type="doi">10.1007/s12223-020-00780-x</pub-id>.<pub-id pub-id-type="pmid">32072398</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0015"><mixed-citation publication-type="journal" id="jev270152-cite-0015">
+<string-name name-style="western">
+<surname>Gupta</surname>, <given-names>R.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Warren</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Wald</surname>
+</string-name>. <year>2007</year>. “<article-title>Genital Herpes</article-title>.” <source>Lancet</source>
+<volume>370</volume>, no. <issue>9605</issue>: <fpage>2127</fpage>–<lpage>2137</lpage>. <pub-id pub-id-type="doi">10.1016/S0140-6736(07)61908-4</pub-id>.<pub-id pub-id-type="pmid">18156035</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0016"><mixed-citation publication-type="journal" id="jev270152-cite-0016">
+<string-name name-style="western">
+<surname>Herrmann</surname>, <given-names>I. K.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>M. J. A.</given-names>
+<surname>Wood</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Fuhrmann</surname>
+</string-name>. <year>2021</year>. “<article-title>Extracellular Vesicles as a Next‐Generation Drug Delivery Platform</article-title>.” <source>Nature Nanotechnology</source>
+<volume>16</volume>, no. <issue>7</issue>: <fpage>748</fpage>–<lpage>759</lpage>. <pub-id pub-id-type="doi">10.1038/s41565-021-00931-2</pub-id>.<pub-id pub-id-type="pmid">34211166</pub-id></mixed-citation></ref><ref id="jev270152-bib-0017"><mixed-citation publication-type="journal" id="jev270152-cite-0017">
+<string-name name-style="western">
+<surname>Hong</surname>, <given-names>M.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Liu</surname>
+</string-name> , et al. <year>2023</year>. “<article-title>
+<italic toggle="yes">Fusobacterium nucleatum</italic> Aggravates Rheumatoid Arthritis Through FadA‐Containing Outer Membrane Vesicles</article-title>.” <source>Cell Host &amp; Microbe</source>
+<volume>31</volume>, no. <issue>5</issue>: <fpage>798</fpage>–<lpage>810.e7</lpage>. <pub-id pub-id-type="doi">10.1016/j.chom.2023.03.018</pub-id>.<pub-id pub-id-type="pmid">37054714</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0018"><mixed-citation publication-type="journal" id="jev270152-cite-0018">
+<string-name name-style="western">
+<surname>Huang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Yang</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Zhao</surname>
+</string-name>. <year>2025</year>. “<article-title>Emerging Technologies Towards Extracellular Vesicles Large‐Scale Production</article-title>.” <source>Bioactive Materials</source>
+<volume>52</volume>: <fpage>338</fpage>–<lpage>365</lpage>. <pub-id pub-id-type="doi">10.1016/j.bioactmat.2025.06.005</pub-id>.<pub-id pub-id-type="pmid">40585384</pub-id>
+<pub-id pub-id-type="pmcid">PMC12206051</pub-id></mixed-citation></ref><ref id="jev270152-bib-0019"><mixed-citation publication-type="journal" id="jev270152-cite-0019">
+<string-name name-style="western">
+<surname>Huber</surname>, <given-names>J. P.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>David Farrar</surname>
+</string-name>. <year>2011</year>. “<article-title>Regulation of Effector and Memory T‐Cell Functions by Type I Interferon</article-title>.” <source>Immunology</source>
+<volume>132</volume>, no. <issue>4</issue>: <fpage>466</fpage>–<lpage>474</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2567.2011.03412.x</pub-id>.<pub-id pub-id-type="pmid">21320124</pub-id>
+<pub-id pub-id-type="pmcid">PMC3075500</pub-id></mixed-citation></ref><ref id="jev270152-bib-0020"><mixed-citation publication-type="journal" id="jev270152-cite-0020">
+<string-name name-style="western">
+<surname>Ivashkiv</surname>, <given-names>L. B.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>L. T.</given-names>
+<surname>Donlin</surname>
+</string-name>. <year>2014</year>. “<article-title>Regulation of Type I Interferon Responses</article-title>.” <source>Nature Reviews. Immunology</source>
+<volume>14</volume>, no. <issue>1</issue>: <fpage>36</fpage>–<lpage>49</lpage>. <pub-id pub-id-type="doi">10.1038/nri3581</pub-id>.<pub-id pub-id-type="pmcid">PMC4084561</pub-id><pub-id pub-id-type="pmid">24362405</pub-id></mixed-citation></ref><ref id="jev270152-bib-0021"><mixed-citation publication-type="journal" id="jev270152-cite-0021">
+<string-name name-style="western">
+<surname>James</surname>, <given-names>C.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Harfouche</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N. J.</given-names>
+<surname>Welton</surname>
+</string-name> , et al. <year>2020</year>. “<article-title>Herpes Simplex Virus: Global Infection Prevalence and Incidence Estimates, 2016</article-title>.” <source>Bulletin of the World Health Organization</source>
+<volume>98</volume>, no. <issue>5</issue>: <fpage>315</fpage>–<lpage>329</lpage>. <pub-id pub-id-type="doi">10.2471/BLT.19.237149</pub-id>.<pub-id pub-id-type="pmid">32514197</pub-id>
+<pub-id pub-id-type="pmcid">PMC7265941</pub-id></mixed-citation></ref><ref id="jev270152-bib-0022"><mixed-citation publication-type="journal" id="jev270152-cite-0022">
+<string-name name-style="western">
+<surname>Jiang</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>X.</given-names>
+<surname>Cai</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Yao</surname>
+</string-name> , et al. <year>2020</year>. “<article-title>Role of Extracellular Vesicles in Influenza Virus Infection</article-title>.” <source>Frontiers in Cellular and Infection Microbiology</source>
+<volume>10</volume>: <fpage>366</fpage>. <pub-id pub-id-type="doi">10.3389/fcimb.2020.00366</pub-id>.<pub-id pub-id-type="pmid">32850473</pub-id>
+<pub-id pub-id-type="pmcid">PMC7396637</pub-id></mixed-citation></ref><ref id="jev270152-bib-0023"><mixed-citation publication-type="journal" id="jev270152-cite-0023">
+<string-name name-style="western">
+<surname>Johnston</surname>, <given-names>C.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Scheele</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Bachmann</surname>
+</string-name> , et al. <year>2024</year>. “<article-title>Vaccine Value Profile for herpes Simplex Virus</article-title>.” <source>Vaccine</source>
+<volume>42</volume>, no. <issue>19</issue>: <fpage>S82</fpage>–<lpage>S100</lpage>. <pub-id pub-id-type="doi">10.1016/j.vaccine.2024.01.044</pub-id>.<pub-id pub-id-type="pmid">39003018</pub-id></mixed-citation></ref><ref id="jev270152-bib-0024"><mixed-citation publication-type="journal" id="jev270152-cite-0024">
+<string-name name-style="western">
+<surname>Kadeppagari</surname>, <given-names>R.‐K.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>R. L.</given-names>
+<surname>Sanchez</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>T. P.</given-names>
+<surname>Foster</surname>
+</string-name>. <year>2012</year>. “<article-title>HSV‐2 Inhibits Type I Interferon Signaling via Multiple Complementary and Compensatory STAT2‐Associated Mechanisms</article-title>.” <source>Virus Research</source>
+<volume>167</volume>, no. <issue>2</issue>: <fpage>273</fpage>–<lpage>284</lpage>. <pub-id pub-id-type="doi">10.1016/j.virusres.2012.05.010</pub-id>.<pub-id pub-id-type="pmid">22634037</pub-id>
+<pub-id pub-id-type="pmcid">PMC3398234</pub-id></mixed-citation></ref><ref id="jev270152-bib-0025"><mixed-citation publication-type="journal" id="jev270152-cite-0025">
+<string-name name-style="western">
+<surname>Kalluri</surname>, <given-names>R.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>K. M.</given-names>
+<surname>McAndrews</surname>
+</string-name>. <year>2023</year>. “<article-title>The Role of Extracellular Vesicles in Cancer</article-title>.” <source>Cell</source>
+<volume>186</volume>, no. <issue>8</issue>: <fpage>1610</fpage>–<lpage>1626</lpage>. <pub-id pub-id-type="doi">10.1016/j.cell.2023.03.010</pub-id>.<pub-id pub-id-type="pmid">37059067</pub-id>
+<pub-id pub-id-type="pmcid">PMC10484374</pub-id></mixed-citation></ref><ref id="jev270152-bib-0026"><mixed-citation publication-type="journal" id="jev270152-cite-0026">
+<string-name name-style="western">
+<surname>Kapoor</surname>, <given-names>A.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>Y.‐H.</given-names>
+<surname>Fan</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Arav‐Boger</surname>
+</string-name>. <year>2016</year>. “<article-title>Bacterial Muramyl Dipeptide (MDP) Restricts Human Cytomegalovirus Replication via an IFN‐β‐Dependent Pathway</article-title>.” <source>Scientific Reports</source>
+<volume>6</volume>, no. <issue>1</issue>: <elocation-id>20295</elocation-id>. <pub-id pub-id-type="doi">10.1038/srep20295</pub-id>.<pub-id pub-id-type="pmid">26830977</pub-id>
+<pub-id pub-id-type="pmcid">PMC4735818</pub-id></mixed-citation></ref><ref id="jev270152-bib-0027"><mixed-citation publication-type="journal" id="jev270152-cite-0027">
+<string-name name-style="western">
+<surname>Liu</surname>, <given-names>H.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Yang</surname>
+</string-name> , et al. <year>2025</year>. “<article-title>Extracellular Vesicles in Gut‐Bone Axis: Novel Insights and Therapeutic Opportunities for Osteoporosis</article-title>.” <source>Small Science</source>
+<volume>5</volume>, no. <issue>4</issue>: <elocation-id>2400474</elocation-id>. <pub-id pub-id-type="doi">10.1002/smsc.202400474</pub-id>.<pub-id pub-id-type="pmid">40657203</pub-id>
+<pub-id pub-id-type="pmcid">PMC12244513</pub-id></mixed-citation></ref><ref id="jev270152-bib-0028"><mixed-citation publication-type="journal" id="jev270152-cite-0028">
+<string-name name-style="western">
+<surname>Liu</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Liu</surname>
+</string-name> , et al. <year>2021</year>. “<article-title>Extracellular Vesicles from Child Gut Microbiota Enter Into Bone to Preserve Bone Mass and Strength</article-title>.” <source>Advanced Science</source>
+<volume>8</volume>, no. <issue>9</issue>: <elocation-id>2004831</elocation-id>. <pub-id pub-id-type="doi">10.1002/advs.202004831</pub-id>.<pub-id pub-id-type="pmid">33977075</pub-id>
+<pub-id pub-id-type="pmcid">PMC8097336</pub-id></mixed-citation></ref><ref id="jev270152-bib-0029"><mixed-citation publication-type="journal" id="jev270152-cite-0029">
+<string-name name-style="western">
+<surname>Liu</surname>, <given-names>L.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Guo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Wang</surname>
+</string-name> , et al. <year>2025</year>. “<article-title>Yogurt‐Inspired Hybrid Membrane Vesicles for the Prevention and Treatment of <italic toggle="yes">Helicobacter pylori</italic> Infection</article-title>.” <source>Cell Biomaterials</source>
+<volume>1</volume>, no. <issue>4</issue>: <elocation-id>100072</elocation-id>. <pub-id pub-id-type="doi">10.1016/j.celbio.2025.100072</pub-id>.</mixed-citation></ref><ref id="jev270152-bib-0030"><mixed-citation publication-type="journal" id="jev270152-cite-0030">
+<string-name name-style="western">
+<surname>Llewellyn</surname>, <given-names>A.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Foey</surname>
+</string-name>. <year>2017</year>. “<article-title>Probiotic Modulation of Innate Cell Pathogen Sensing and Signaling Events</article-title>.” <source>Nutrients</source>
+<volume>9</volume>, no. <issue>10</issue>: <fpage>1156</fpage>. <pub-id pub-id-type="doi">10.3390/nu9101156</pub-id>.<pub-id pub-id-type="pmid">29065562</pub-id>
+<pub-id pub-id-type="pmcid">PMC5691772</pub-id></mixed-citation></ref><ref id="jev270152-bib-0031"><mixed-citation publication-type="journal" id="jev270152-cite-0031">
+<string-name name-style="western">
+<surname>Looker</surname>, <given-names>K. J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>J. A. R.</given-names>
+<surname>Elmes</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. L.</given-names>
+<surname>Gottlieb</surname>
+</string-name> , et al. <year>2017</year>. “<article-title>Effect of HSV‐2 Infection on Subsequent HIV Acquisition: An Updated Systematic Review and Meta‐Analysis</article-title>.” <source>Lancet Infectious Diseases</source>
+<volume>17</volume>, no. <issue>12</issue>: <fpage>1303</fpage>–<lpage>1316</lpage>. <pub-id pub-id-type="doi">10.1016/S1473-3099(17)30405-X</pub-id>.<pub-id pub-id-type="pmid">28843576</pub-id>
+<pub-id pub-id-type="pmcid">PMC5700807</pub-id></mixed-citation></ref><ref id="jev270152-bib-0032"><mixed-citation publication-type="journal" id="jev270152-cite-0032">
+<string-name name-style="western">
+<surname>Looker</surname>, <given-names>K. J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>N. J.</given-names>
+<surname>Welton</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. M.</given-names>
+<surname>Sabin</surname>
+</string-name> , et al. <year>2020</year>. “<article-title>Global and Regional Estimates of the Contribution of Herpes Simplex Virus Type 2 Infection to HIV Incidence: A Population Attributable Fraction Analysis Using Published Epidemiological Data</article-title>.” <source>Lancet. Infectious Diseases</source>
+<volume>20</volume>, no. <issue>2</issue>: <fpage>240</fpage>–<lpage>249</lpage>. <pub-id pub-id-type="doi">10.1016/S1473-3099(19)30470-0</pub-id>.<pub-id pub-id-type="pmid">31753763</pub-id>
+<pub-id pub-id-type="pmcid">PMC6990396</pub-id></mixed-citation></ref><ref id="jev270152-bib-0033"><mixed-citation publication-type="journal" id="jev270152-cite-0033">
+<string-name name-style="western">
+<surname>Mathieu</surname>, <given-names>M.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Martin‐Jaular</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Lavieu</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Théry</surname>
+</string-name>. <year>2019</year>. “<article-title>Specificities of Secretion and Uptake of Exosomes and Other Extracellular Vesicles for Cell‐to‐Cell Communication</article-title>.” <source>Nature Cell Biology</source>
+<volume>21</volume>, no. <issue>1</issue>: <fpage>9</fpage>–<lpage>17</lpage>. <pub-id pub-id-type="doi">10.1038/s41556-018-0250-9</pub-id>.<pub-id pub-id-type="pmid">30602770</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0034"><mixed-citation publication-type="journal" id="jev270152-cite-0034">
+<string-name name-style="western">
+<surname>McNab</surname>, <given-names>F.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Mayer‐Barber</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Sher</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Wack</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>O'Garra</surname>
+</string-name>. <year>2015</year>. “<article-title>Type I Interferons in Infectious Disease</article-title>.” <source>Nature Reviews Immunology</source>
+<volume>15</volume>, no. <issue>2</issue>: <elocation-id>2</elocation-id>. <pub-id pub-id-type="doi">10.1038/nri3787</pub-id>.<pub-id pub-id-type="pmcid">PMC7162685</pub-id><pub-id pub-id-type="pmid">25614319</pub-id></mixed-citation></ref><ref id="jev270152-bib-0035"><mixed-citation publication-type="journal" id="jev270152-cite-0035">
+<string-name name-style="western">
+<surname>Ñahui Palomino</surname>, <given-names>R. A.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Vanpouille</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Laghi</surname>
+</string-name> , et al. <year>2019</year>. “<article-title>Extracellular Vesicles from Symbiotic Vaginal Lactobacilli Inhibit HIV‐1 Infection of human Tissues</article-title>.” <source>Nature Communications</source>
+<volume>10</volume>: <fpage>5656</fpage>. <pub-id pub-id-type="doi">10.1038/s41467-019-13468-9</pub-id>.<pub-id pub-id-type="pmcid">PMC6906448</pub-id><pub-id pub-id-type="pmid">31827089</pub-id></mixed-citation></ref><ref id="jev270152-bib-0036"><mixed-citation publication-type="journal" id="jev270152-cite-0036">
+<string-name name-style="western">
+<surname>Niu</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Cui</surname>
+</string-name>, <string-name name-style="western">
+<given-names>X.</given-names>
+<surname>Yang</surname>
+</string-name> , et al. <year>2023</year>. “<article-title>Microbiota‐Derived Acetate Enhances Host Antiviral Response via NLRP3</article-title>.” <source>Nature Communications</source>
+<volume>14</volume>, no. <issue>1</issue>: <fpage>642</fpage>. <pub-id pub-id-type="doi">10.1038/s41467-023-36323-4</pub-id>.<pub-id pub-id-type="pmcid">PMC9901394</pub-id><pub-id pub-id-type="pmid">36746963</pub-id></mixed-citation></ref><ref id="jev270152-bib-0037"><mixed-citation publication-type="journal" id="jev270152-cite-0037">
+<string-name name-style="western">
+<surname>Pegtel</surname>, <given-names>D. M.</given-names>
+</string-name>, and <string-name name-style="western">
+<given-names>S. J.</given-names>
+<surname>Gould</surname>
+</string-name>. <year>2019</year>. “<article-title>Exosomes</article-title>.” <source>Annual Review of Biochemistry</source>
+<volume>88</volume>: <fpage>487</fpage>–<lpage>514</lpage>. <pub-id pub-id-type="doi">10.1146/annurev-biochem-013118-111902</pub-id>.<pub-id pub-id-type="pmid">31220978</pub-id></mixed-citation></ref><ref id="jev270152-bib-0038"><mixed-citation publication-type="journal" id="jev270152-cite-0038">
+<string-name name-style="western">
+<surname>Sabbah</surname>, <given-names>A.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>T. H.</given-names>
+<surname>Chang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Harnack</surname>
+</string-name> , et al. <year>2009</year>. “<article-title>Activation of Innate Immune Antiviral Response by NOD2</article-title>.” <source>Nature Immunology</source>
+<volume>10</volume>, no. <issue>10</issue>: <fpage>1073</fpage>–<lpage>1080</lpage>. <pub-id pub-id-type="doi">10.1038/ni.1782</pub-id>.<pub-id pub-id-type="pmid">19701189</pub-id>
+<pub-id pub-id-type="pmcid">PMC2752345</pub-id></mixed-citation></ref><ref id="jev270152-bib-0039"><mixed-citation publication-type="journal" id="jev270152-cite-0039">
+<string-name name-style="western">
+<surname>Shestakov</surname>, <given-names>A.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Jenssen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Nordström</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Eriksson</surname>
+</string-name>. <year>2012</year>. “<article-title>Lactoferricin but Not Lactoferrin Inhibit Herpes Simplex Virus Type 2 Infection in Mice</article-title>.” <source>Antiviral Research</source>
+<volume>93</volume>, no. <issue>3</issue>: <fpage>340</fpage>–<lpage>345</lpage>. <pub-id pub-id-type="doi">10.1016/j.antiviral.2012.01.003</pub-id>.<pub-id pub-id-type="pmid">22269645</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0040"><mixed-citation publication-type="journal" id="jev270152-cite-0040">
+<string-name name-style="western">
+<surname>Si</surname>, <given-names>W.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Liang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Bugno</surname>
+</string-name> , et al. <year>2022</year>. “<article-title>
+<italic toggle="yes">Lactobacillus rhamnosus</italic> GG Induces cGAS/STING‐Dependent Type I Interferon and Improves Response to Immune Checkpoint Blockade</article-title>.” <source>Gut</source>
+<volume>71</volume>, no. <issue>3</issue>: <fpage>521</fpage>–<lpage>533</lpage>. <pub-id pub-id-type="doi">10.1136/gutjnl-2020-323426</pub-id>.<pub-id pub-id-type="pmid">33685966</pub-id>
+<pub-id pub-id-type="pmcid">PMC8710942</pub-id></mixed-citation></ref><ref id="jev270152-bib-0041"><mixed-citation publication-type="journal" id="jev270152-cite-0041">
+<string-name name-style="western">
+<surname>Spencer</surname>, <given-names>S. P.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>G. K.</given-names>
+<surname>Fragiadakis</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>J. L.</given-names>
+<surname>Sonnenburg</surname>
+</string-name>. <year>2019</year>. “<article-title>Pursuing Human‐Relevant Gut Microbiota‐Immune Interactions</article-title>.” <source>Immunity</source>
+<volume>51</volume>, no. <issue>2</issue>: <fpage>225</fpage>–<lpage>239</lpage>. <pub-id pub-id-type="doi">10.1016/j.immuni.2019.08.002</pub-id>.<pub-id pub-id-type="pmid">31433970</pub-id>
+<pub-id pub-id-type="pmcid">PMC7205593</pub-id></mixed-citation></ref><ref id="jev270152-bib-0042"><mixed-citation publication-type="journal" id="jev270152-cite-0042">
+<string-name name-style="western">
+<surname>Steed</surname>, <given-names>A. L.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>G. P.</given-names>
+<surname>Christophi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G. E.</given-names>
+<surname>Kaiko</surname>
+</string-name> , et al. <year>2017</year>. “<article-title>The Microbial Metabolite Desaminotyrosine Protects from Influenza Through Type I Interferon</article-title>.” <source>Science (New York, N.Y.)</source>
+<volume>357</volume>, no. <issue>6350</issue>: <fpage>498</fpage>–<lpage>502</lpage>. <pub-id pub-id-type="doi">10.1126/science.aam5336</pub-id>.<pub-id pub-id-type="pmid">28774928</pub-id>
+<pub-id pub-id-type="pmcid">PMC5753406</pub-id></mixed-citation></ref><ref id="jev270152-bib-0043"><mixed-citation publication-type="journal" id="jev270152-cite-0043">
+<string-name name-style="western">
+<surname>Stefan</surname>, <given-names>K. L.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>M. V.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Iwasaki</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>D. L.</given-names>
+<surname>Kasper</surname>
+</string-name>. <year>2020</year>. “<article-title>Commensal Microbiota Modulation of Natural Resistance to Virus Infection</article-title>.” <source>Cell</source>
+<volume>183</volume>, no. <issue>5</issue>: <fpage>1312</fpage>–<lpage>1324.e10</lpage>. <pub-id pub-id-type="doi">10.1016/j.cell.2020.10.047</pub-id>.<pub-id pub-id-type="pmid">33212011</pub-id>
+<pub-id pub-id-type="pmcid">PMC7799371</pub-id></mixed-citation></ref><ref id="jev270152-bib-0044"><mixed-citation publication-type="journal" id="jev270152-cite-0044">
+<string-name name-style="western">
+<surname>Tognarelli</surname>, <given-names>E. I.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>T. F.</given-names>
+<surname>Palomino</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Corrales</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. M.</given-names>
+<surname>Bueno</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. M.</given-names>
+<surname>Kalergis</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>P. A.</given-names>
+<surname>González</surname>
+</string-name>. <year>2019</year>. “<article-title>Herpes Simplex Virus Evasion of Early Host Antiviral Responses</article-title>.” <source>Frontiers in Cellular and Infection Microbiology</source>
+<volume>9</volume>: <fpage>127</fpage>. <pub-id pub-id-type="doi">10.3389/fcimb.2019.00127</pub-id>.<pub-id pub-id-type="pmid">31114761</pub-id>
+<pub-id pub-id-type="pmcid">PMC6503643</pub-id></mixed-citation></ref><ref id="jev270152-bib-0045"><mixed-citation publication-type="journal" id="jev270152-cite-0045">
+<string-name name-style="western">
+<surname>Tuddenham</surname>, <given-names>S.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>M. M.</given-names>
+<surname>Hamill</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>K. G.</given-names>
+<surname>Ghanem</surname>
+</string-name>. <year>2022</year>. “<article-title>Diagnosis and Treatment of Sexually Transmitted Infections: A Review</article-title>.” <source>Journal of the American Medical Association</source>
+<volume>327</volume>, no. <issue>2</issue>: <fpage>161</fpage>–<lpage>172</lpage>. <pub-id pub-id-type="doi">10.1001/jama.2021.23487</pub-id>.<pub-id pub-id-type="pmid">35015033</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0046"><mixed-citation publication-type="journal" id="jev270152-cite-0046">
+<string-name name-style="western">
+<surname>van Niel</surname>, <given-names>G.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>D'Angelo</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Raposo</surname>
+</string-name>. <year>2018</year>. “<article-title>Shedding Light on the Cell Biology of Extracellular Vesicles</article-title>.” <source>Nature Reviews Molecular Cell Biology</source>
+<volume>19</volume>, no. <issue>4</issue>: <fpage>213</fpage>–<lpage>228</lpage>. <pub-id pub-id-type="doi">10.1038/nrm.2017.125</pub-id>.<pub-id pub-id-type="pmid">29339798</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0047"><mixed-citation publication-type="journal" id="jev270152-cite-0047">
+<string-name name-style="western">
+<surname>Wang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Huang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Du</surname>
+</string-name> , et al. <year>2024</year>. “<article-title>
+<italic toggle="yes">Lactobacillus rhamnosus</italic> GG Regulates Host IFN‐I Through the RIG‐I Signalling Pathway to Inhibit Herpes Simplex Virus Type 2 Infection</article-title>.” <source>Probiotics and Antimicrobial Proteins</source>
+<volume>16</volume>, no. <issue>6</issue>: <fpage>1966</fpage>–<lpage>1978</lpage>. <pub-id pub-id-type="doi">10.1007/s12602-023-10137-8</pub-id>.<pub-id pub-id-type="pmid">37624569</pub-id>
+<pub-id pub-id-type="pmcid">PMC11573810</pub-id></mixed-citation></ref><ref id="jev270152-bib-0048"><mixed-citation publication-type="journal" id="jev270152-cite-0048">
+<string-name name-style="western">
+<surname>Wang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Wu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Liu</surname>
+</string-name> , et al. <year>2019</year>. “<article-title>Exosomes Released from Rabies Virus‐Infected Cells May be Involved in the Infection Process</article-title>.” <source>Virologica Sinica</source>
+<volume>34</volume>, no. <issue>1</issue>: <fpage>59</fpage>–<lpage>65</lpage>. <pub-id pub-id-type="doi">10.1007/s12250-019-00087-3</pub-id>.<pub-id pub-id-type="pmid">30725320</pub-id>
+<pub-id pub-id-type="pmcid">PMC6420551</pub-id></mixed-citation></ref><ref id="jev270152-bib-0049"><mixed-citation publication-type="miscellaneous" id="jev270152-cite-0049">
+<string-name name-style="western">
+<surname>Wang</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Zu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. L.</given-names>
+<surname>Reis</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. C.</given-names>
+<surname>Kundu</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Xiao</surname>
+</string-name>. <year>2025</year>. “<article-title>Application of Bacterial Extracellular Vesicles in Gastrointestinal Diseases</article-title>.” <article-title>
+<italic toggle="yes">Trends in Biotechnology</italic>, ahead of print, June 20</article-title>. <pub-id pub-id-type="doi">10.1016/j.tibtech.2025.05.022</pub-id>.<pub-id pub-id-type="pmid">40544012</pub-id></mixed-citation></ref><ref id="jev270152-bib-0050"><mixed-citation publication-type="journal" id="jev270152-cite-0050">
+<string-name name-style="western">
+<surname>Wen</surname>, <given-names>M.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Ou</surname>
+</string-name> , et al. <year>2023</year>. “<article-title>Bacterial Extracellular Vesicles: A Position Paper by the Microbial Vesicles Task Force of the Chinese Society for Extracellular Vesicles</article-title>.” <source>Interdisciplinary Medicine</source>
+<volume>1</volume>, no. <issue>3</issue>: <elocation-id>e20230017</elocation-id>. <pub-id pub-id-type="doi">10.1002/INMD.20230017</pub-id>.</mixed-citation></ref><ref id="jev270152-bib-0051"><mixed-citation publication-type="journal" id="jev270152-cite-0051">
+<string-name name-style="western">
+<surname>Wijesinghe</surname>, <given-names>V. N.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>I. A.</given-names>
+<surname>Farouk</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N. Z.</given-names>
+<surname>Zabidi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Puniyamurti</surname>
+</string-name>, <string-name name-style="western">
+<given-names>W. S.</given-names>
+<surname>Choo</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S. K.</given-names>
+<surname>Lal</surname>
+</string-name>. <year>2021</year>. “<article-title>Current Vaccine Approaches and Emerging Strategies Against Herpes Simplex Virus (HSV)</article-title>.” <source>Expert Review of Vaccines</source>
+<volume>20</volume>, no. <issue>9</issue>: <fpage>1077</fpage>–<lpage>1096</lpage>. <pub-id pub-id-type="doi">10.1080/14760584.2021.1960162</pub-id>.<pub-id pub-id-type="pmid">34296960</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0052"><mixed-citation publication-type="journal" id="jev270152-cite-0052">
+<string-name name-style="western">
+<surname>Winkler</surname>, <given-names>E. S.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Shrihari</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B. L.</given-names>
+<surname>Hykes</surname>
+</string-name> , et al. <year>2020</year>. “<article-title>The Intestinal Microbiome Restricts Alphavirus Infection and Dissemination Through a Bile Acid‐Type I IFN Signaling Axis</article-title>.” <source>Cell</source>
+<volume>182</volume>, no. <issue>4</issue>: <fpage>901</fpage>–<lpage>918.e18</lpage>. <pub-id pub-id-type="doi">10.1016/j.cell.2020.06.029</pub-id>.<pub-id pub-id-type="pmid">32668198</pub-id>
+<pub-id pub-id-type="pmcid">PMC7483520</pub-id></mixed-citation></ref><ref id="jev270152-bib-0053"><mixed-citation publication-type="journal" id="jev270152-cite-0053">
+<string-name name-style="western">
+<surname>Wolf</surname>, <given-names>A. J.</given-names>
+</string-name>
+<year>2023</year>. “<article-title>Peptidoglycan‐induced Modulation of Metabolic and Inflammatory Responses</article-title>.” <source>Immunometabolism (Cobham (Surrey, England)</source>
+<volume>5</volume>, no. <issue>2</issue>: <elocation-id>e00024</elocation-id>. <pub-id pub-id-type="doi">10.1097/IN9.0000000000000024</pub-id>.<pub-id pub-id-type="pmcid">PMC10144284</pub-id><pub-id pub-id-type="pmid">37128291</pub-id></mixed-citation></ref><ref id="jev270152-bib-0054"><mixed-citation publication-type="journal" id="jev270152-cite-0054">
+<string-name name-style="western">
+<surname>Xie</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Haesebrouck</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Van Hoecke</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>R. E.</given-names>
+<surname>Vandenbroucke</surname>
+</string-name>. <year>2023</year>. “<article-title>Bacterial Extracellular Vesicles: An Emerging Avenue to Tackle Diseases</article-title>.” <source>Trends in Microbiology</source>
+<volume>31</volume>, no. <issue>12</issue>: <fpage>1206</fpage>–<lpage>1224</lpage>. <pub-id pub-id-type="doi">10.1016/j.tim.2023.05.010</pub-id>.<pub-id pub-id-type="pmid">37330381</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0055"><mixed-citation publication-type="journal" id="jev270152-cite-0055">
+<string-name name-style="western">
+<surname>Yamamoto</surname>, <given-names>T.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Yamamoto</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Ochiya</surname>
+</string-name>. <year>2023</year>. “<article-title>Extracellular Vesicle‐Mediated Immunoregulation in Cancer</article-title>.” <source>International Journal of Hematology</source>
+<volume>117</volume>, no. <issue>5</issue>: <fpage>640</fpage>–<lpage>646</lpage>. <pub-id pub-id-type="doi">10.1007/s12185-022-03436-3</pub-id>.<pub-id pub-id-type="pmid">35951282</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0056"><mixed-citation publication-type="journal" id="jev270152-cite-0056">
+<string-name name-style="western">
+<surname>Zheng</surname>, <given-names>C.</given-names>
+</string-name>
+<year>2021</year>. “<article-title>The Emerging Roles of NOD‐Like Receptors in Antiviral Innate Immune Signaling Pathways</article-title>.” <source>International Journal of Biological Macromolecules</source>
+<volume>169</volume>: <fpage>407</fpage>–<lpage>413</lpage>. <pub-id pub-id-type="doi">10.1016/j.ijbiomac.2020.12.127</pub-id>.<pub-id pub-id-type="pmid">33347926</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0057"><mixed-citation publication-type="journal" id="jev270152-cite-0057">
+<string-name name-style="western">
+<surname>Zhong</surname>, <given-names>L.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Zheng</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Q.</given-names>
+<surname>Cong</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Qiao</surname>
+</string-name>. <year>2023</year>. “<article-title>Perspective on Human Papillomavirus Infection Treatment by Vaginal Microbiota</article-title>.” <source>Interdisciplinary Medicine</source>
+<volume>1</volume>, no. <issue>2</issue>: <elocation-id>e20220020</elocation-id>. <pub-id pub-id-type="doi">10.1002/INMD.20220020</pub-id>.</mixed-citation></ref><ref id="jev270152-bib-0058"><mixed-citation publication-type="journal" id="jev270152-cite-0058">
+<string-name name-style="western">
+<surname>Zhou</surname>, <given-names>G.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>Q.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Li</surname>
+</string-name> , et al. <year>2025</year>. “<article-title>Synthetically Engineered Bacterial Extracellular Vesicles and IL‐4‐Encapsulated Hydrogels Sequentially Promote Osteoporotic Fracture Repair</article-title>.” <source>ACS Nano</source>
+<volume>19</volume>, no. <issue>16</issue>: <fpage>16064</fpage>–<lpage>16083</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.5c03106</pub-id>.<pub-id pub-id-type="pmid">40237831</pub-id>
+</mixed-citation></ref><ref id="jev270152-bib-0059"><mixed-citation publication-type="journal" id="jev270152-cite-0059">
+<string-name name-style="western">
+<surname>Zhu</surname>, <given-names>J.</given-names>
+</string-name>, <string-name name-style="western">
+<given-names>S. D.</given-names>
+<surname>Message</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Mallia</surname>
+</string-name> , et al. <year>2019</year>. “<article-title>Bronchial Mucosal IFN‐α/β and Pattern Recognition Receptor Expression in Patients with Experimental Rhinovirus‐Induced Asthma Exacerbations</article-title>.” <source>Journal of Allergy and Clinical Immunology</source>
+<volume>143</volume>, no. <issue>1</issue>: <fpage>114</fpage>–<lpage>125.e4</lpage>. <pub-id pub-id-type="doi">10.1016/j.jaci.2018.04.003</pub-id>.<pub-id pub-id-type="pmid">29698627</pub-id>
+<pub-id pub-id-type="pmcid">PMC6320262</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

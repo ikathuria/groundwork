@@ -1,0 +1,911 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article id="mnfr70133" xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Mol Nutr Food Res</journal-id><journal-id journal-id-type="iso-abbrev">Mol Nutr Food Res</journal-id><journal-id journal-id-type="pmc-domain-id">379</journal-id><journal-id journal-id-type="pmc-domain">blackwellopen</journal-id><journal-id journal-id-type="publisher-id">MNFR</journal-id><journal-title-group><journal-title>Molecular Nutrition &amp; Food Research</journal-title></journal-title-group><issn pub-type="ppub">1613-4125</issn><issn pub-type="epub">1613-4133</issn><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>Wiley Open Access Collection</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12490186</article-id><article-id pub-id-type="pmcid-ver">PMC12490186.1</article-id><article-id pub-id-type="pmcaid">12490186</article-id><article-id pub-id-type="pmcaiid">12490186</article-id><article-id pub-id-type="pmid">40509652</article-id><article-id pub-id-type="doi">10.1002/mnfr.70133</article-id><article-id pub-id-type="publisher-id">MNFR70133</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Protective Properties of the White Button Mushroom, <italic toggle="yes">Agaricus bisporus</italic>, in a Mouse Model of Colitis</article-title></title-group><contrib-group><contrib id="mnfr70133-cr-0001" contrib-type="author"><name name-style="western"><surname>Dempsey</surname><given-names initials="E">Elaine</given-names></name><xref rid="mnfr70133-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="mnfr70133-cr-0002" contrib-type="author"><name name-style="western"><surname>Walsh</surname><given-names initials="AM">Aaron M.</given-names></name><xref rid="mnfr70133-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="mnfr70133-cr-0003" contrib-type="author"><name name-style="western"><surname>Yadav</surname><given-names initials="S">Supriya</given-names></name><xref rid="mnfr70133-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="mnfr70133-cr-0004" contrib-type="author"><name name-style="western"><surname>Wilson</surname><given-names initials="J">Jude</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0003-0757-3178</contrib-id><xref rid="mnfr70133-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="mnfr70133-cr-0005" contrib-type="author"><name name-style="western"><surname>Sheedy</surname><given-names initials="FJ">Frederick J.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-2645-8493</contrib-id><xref rid="mnfr70133-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="mnfr70133-cr-0006" contrib-type="author" corresp="yes"><name name-style="western"><surname>Corr</surname><given-names initials="SC">Sinead C.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-9930-5039</contrib-id><xref rid="mnfr70133-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="mnfr70133-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref><address><email>scorr@ucc.ie</email></address></contrib></contrib-group><aff id="mnfr70133-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">School of Genetics &amp; Microbiology</named-content>
+<institution>Trinity College Dublin</institution>
+<city>Dublin</city>
+<country country="IE">Ireland</country>
+</aff><aff id="mnfr70133-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">School of Biochemistry &amp; Immunology</named-content>
+<institution>Trinity College Dublin</institution>
+<city>Dublin</city>
+<country country="IE">Ireland</country>
+</aff><aff id="mnfr70133-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">MBio, Monaghan Mushrooms</named-content>
+<institution>Tyholland, Co.</institution>
+<city>Monaghan</city>
+<country country="IE">Ireland</country>
+</aff><aff id="mnfr70133-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">School of Microbiology and APC Microbiome Ireland</named-content>
+<institution>University College Cork</institution>
+<city>Cork</city>
+<country country="IE">Ireland</country>
+</aff><pub-date pub-type="epub"><day>12</day><month>6</month><year>2025</year></pub-date><pub-date pub-type="ppub"><month>10</month><year>2025</year></pub-date><volume>69</volume><issue seq="60">19</issue><issue-id pub-id-type="pmc-issue-id">498134</issue-id><issue-id pub-id-type="doi">10.1002/mnfr.v69.19</issue-id><elocation-id>e70133</elocation-id><history><date date-type="rev-recd"><day>07</day><month>3</month><year>2025</year></date><date date-type="received"><day>13</day><month>11</month><year>2024</year></date><date date-type="accepted"><day>08</day><month>5</month><year>2025</year></date></history><pub-history><event event-type="pmc-release"><date><day>02</day><month>10</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>03</day><month>10</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-10-03 10:25:15.040"><day>03</day><month>10</month><year>2025</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2025 The Author(s). <italic toggle="yes">Molecular Nutrition &amp; Food Research</italic> published by Wiley‐VCH GmbH</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="MNFR-69-e70133.pdf"/><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:MNFR-69-e70133.pdf"/><abstract><title>ABSTRACT</title><p>Previous work demonstrated the promising immunomodulatory potential of a naturally derived whole mushroom powder (WMP) from the white button mushroom, <italic toggle="yes">Agaricus bisporus</italic>. Here, we further investigate the protective properties of WMP in a mouse model of colitis. An in vitro digested WMP (IVD‐WMP) reduced permeability of intestinal epithelial Caco‐2 and HT‐29‐MTX cell monolayers to FITC dextran. In vivo, WMP orally administered to mice as a pretreatment before induction of dextran sulfate sodium (DSS)‐induced colitis. Though statistically significant decreases in disease scores were not reported, we observed an antiinflammatory and antioxidative stress profile in the colon. Additionally, 16S ribosomal RNA (16S rRNA) microbiome analysis revealed differences in bacterial abundance associated with WMP pretreatment, including a decrease in <italic toggle="yes">Allobaculum</italic> species associated with inflammatory bowel disease. In a DSS‐colitis recovery model, WMP promoted recovery as evidenced by improved weight gain, reduced stool scores, reduced IL‐1β levels, and myeloperoxidase (MPO) activity in colonic tissue. This work demonstrates the health benefits associated with the consumption of the white button mushroom, including support of intestinal barrier integrity combined with antioxidant and antiinflammatory activity.</p></abstract><abstract id="mnfr70133-abs-0001" abstract-type="graphical"><p>In this study, whole mushroom powder (WMP) from white button mushrooms was tested for gut health benefits. In vitro digested WMP (IVD‐WMP) could reduce the permeability of a gastrointestinal cell layer. In mouse studies, WMP was tested as a preventative and a treatment for dextran sulfate sodium (DSS) induced colitis. WMP could improve recovery, reduce inflammation and oxidative stress, and promoted healthier gut bacteria. This suggests WMP could help support digestive wellness and recovery from gut inflammation.
+<boxed-text position="anchor" content-type="graphic" orientation="portrait"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="MNFR-69-e70133-g005.jpg"/></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="mnfr70133-kwd-0001">colitis</kwd><kwd id="mnfr70133-kwd-0002">inflammation</kwd><kwd id="mnfr70133-kwd-0003">microbiome</kwd><kwd id="mnfr70133-kwd-0004">mushroom</kwd><kwd id="mnfr70133-kwd-0005">oxidative stress</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>Irish Research Council Enterprise Partnership Scheme (Postdoctoral)</institution></institution-wrap>
+</funding-source><award-id>EPSPD/2022/130</award-id></award-group><award-group id="funding-0002"><funding-source>
+<institution-wrap><institution>Science Foundation Ireland Frontiers for the Future Programme</institution></institution-wrap>
+</funding-source><award-id>19/FFP/6499</award-id></award-group></funding-group><counts><fig-count count="7"/><table-count count="3"/><page-count count="16"/><word-count count="10653"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>October 2025</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.4 mode:remove_FC converted:02.10.2025</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="mnfr70133-cit-0001">
+<string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Dempsey</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. M.</given-names>
+<surname>Walsh</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Yadav</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Wilson</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F. J.</given-names>
+<surname>Sheedy</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S. C.</given-names>
+<surname>Corr</surname>
+</string-name>, “<article-title>Protective Properties of the White Button Mushroom, <italic toggle="yes">Agaricus bisporus</italic>, in a Mouse Model of Colitis</article-title>.” <source>Molecular Nutrition &amp; Food Research</source>
+<volume>69</volume>, no. <issue>19</issue> (<year>2025</year>): <elocation-id>e70133</elocation-id>. <pub-id pub-id-type="doi">10.1002/mnfr.70133</pub-id>
+<pub-id pub-id-type="pmcid">PMC12490186</pub-id><pub-id pub-id-type="pmid">40509652</pub-id></mixed-citation>
+</p><fn-group><fn id="mnfr70133-note-0001"><p>
+<bold>Funding</bold>: This study was funded by the Irish Research Council Enterprise Partnership Scheme (Postdoctoral) grant [EPSPD/2022/130] to E.D. and Science Foundation Ireland Frontiers for the Future Programme grant [19/FFP/6499] awarded to S.C.C.</p></fn></fn-group></notes></front><body><def-list list-content="abbreviations" id="mnfr70133-dl-0001"><title>Abbreviations</title><def-item><term>16S rRNA
+</term><def><p>16S ribosomal RNA</p></def></def-item><def-item><term>ANOVA</term><def><p>analysis of variance</p></def></def-item><def-item><term>DAI</term><def><p>disease activity index</p></def></def-item><def-item><term>DSS</term><def><p>dextran sulfate sodium</p></def></def-item><def-item><term>EGFR</term><def><p>epithelial growth factor receptor</p></def></def-item><def-item><term>H&amp;E</term><def><p>hematoxylin and eosin</p></def></def-item><def-item><term>IBD</term><def><p>inflammatory bowel disease</p></def></def-item><def-item><term>IVD‐WMP</term><def><p>in vitro digested whole mushroom powder</p></def></def-item><def-item><term>MDA</term><def><p>malondialdehyde</p></def></def-item><def-item><term>MPO</term><def><p>myeloperoxidase</p></def></def-item><def-item><term>MUC</term><def><p>mucin</p></def></def-item><def-item><term>ROS</term><def><p>reactive oxygen species</p></def></def-item><def-item><term>SOD</term><def><p>superoxide dismutase</p></def></def-item><def-item><term>TNF</term><def><p>tumor necrosis factor</p></def></def-item><def-item><term>WMP</term><def><p>whole mushroom powder</p></def></def-item><def-item><term>ZO</term><def><p>zonula occludens</p></def></def-item></def-list><sec id="mnfr70133-sec-0020"><label>1</label><title>Introduction</title><p>Mushrooms have been celebrated for millennia for their culinary, nutritional, and medicinal properties. The ancient Egyptians, Romans, and Mayans revered mushrooms as “immortality food,” “food of the Gods,” and “flesh of the Gods,” respectively [<xref rid="mnfr70133-bib-0001" ref-type="bibr">1</xref>, <xref rid="mnfr70133-bib-0002" ref-type="bibr">2</xref>], while traditional healing practices worldwide utilized various mushroom species for their therapeutic effects and spiritual healing properties [<xref rid="mnfr70133-bib-0003" ref-type="bibr">3</xref>, <xref rid="mnfr70133-bib-0004" ref-type="bibr">4</xref>]. This legacy continues into modern scientific research, revealing a range of bioactive properties of mushrooms including immunomodulatory, antidepressant, antitumor, antidiabetic, antimicrobial, and antioxidative activities [<xref rid="mnfr70133-bib-0005" ref-type="bibr">5</xref>, <xref rid="mnfr70133-bib-0006" ref-type="bibr">6</xref>, <xref rid="mnfr70133-bib-0007" ref-type="bibr">7</xref>, <xref rid="mnfr70133-bib-0008" ref-type="bibr">8</xref>, <xref rid="mnfr70133-bib-0009" ref-type="bibr">9</xref>, <xref rid="mnfr70133-bib-0010" ref-type="bibr">10</xref>, <xref rid="mnfr70133-bib-0011" ref-type="bibr">11</xref>]. Dietary consumption of mushrooms has been associated with a reduced risk of various diseases, such as obesity, diabetes, cancer, and digestive conditions [<xref rid="mnfr70133-bib-0012" ref-type="bibr">12</xref>, <xref rid="mnfr70133-bib-0013" ref-type="bibr">13</xref>, <xref rid="mnfr70133-bib-0014" ref-type="bibr">14</xref>, <xref rid="mnfr70133-bib-0015" ref-type="bibr">15</xref>]. The health benefits are believed to be driven by mechanisms such as direct or indirect interactions with the immune and nervous systems, neutralizing free radicals, and regulation of the gut microbiota [<xref rid="mnfr70133-bib-0015" ref-type="bibr">15</xref>, <xref rid="mnfr70133-bib-0016" ref-type="bibr">16</xref>, <xref rid="mnfr70133-bib-0017" ref-type="bibr">17</xref>, <xref rid="mnfr70133-bib-0018" ref-type="bibr">18</xref>, <xref rid="mnfr70133-bib-0019" ref-type="bibr">19</xref>].</p><p>Despite representing one of the most widely consumed mushroom species worldwide, the health‐promoting effects of the white button mushroom (<italic toggle="yes">Agaricus bisporus</italic>) remain underexplored. Some studies suggest potential benefits for vitamin D levels, metabolic syndrome, immune function, gastrointestinal health, and cancer, although further research is necessary to confirm these effects [<xref rid="mnfr70133-bib-0020" ref-type="bibr">20</xref>]. Modern cultivation techniques allow the production of <italic toggle="yes">A. bisporus</italic> mushrooms that are enriched for various vitamins and nutrients, including vitamin B12, B6, selenium, and most commonly vitamin D, augmenting their potential for immune support [<xref rid="mnfr70133-bib-0021" ref-type="bibr">21</xref>, <xref rid="mnfr70133-bib-0022" ref-type="bibr">22</xref>]. Indeed, we have recently reported on the significant antioxidant properties of normal and enriched whole mushroom powders (WMPs) derived from <italic toggle="yes">A. bisporus</italic> in terms of in vitro free radical scavenging activity, and total polyphenol and ergothioneine content [<xref rid="mnfr70133-bib-0022" ref-type="bibr">22</xref>]. In this study, WMP from <italic toggle="yes">A. bisporus</italic> was shown to be a significant source of antioxidants compared to a selection of commercially available mushroom powders, including Shitake, Chaga, Reishi, and Lion's Mane. Compared to commercially available mushroom powders, nutritionally enriched WMP had significantly higher 2,2‐diphenyl‐1‐picrylhydrazyl (DPPH) scavenging activity, nitric oxide (NO) radical scavenging activity, hydroxyl radical scavenging activity, higher levels of ergothioneine and polyphenol content, as well as lower IC<sub>50</sub> values, indicative of better antioxidant capacity. Additionally, we have shown that these powders regulate innate and trained immunity in mouse and human macrophages, demonstrating a dampening of innate immune response, an ability to promote trained immunity, as well as a protection in mouse models of sepsis and colitis [<xref rid="mnfr70133-bib-0023" ref-type="bibr">23</xref>, <xref rid="mnfr70133-bib-0024" ref-type="bibr">24</xref>]. Previously, extracts from <italic toggle="yes">A. bisporus</italic> have resulted in decreased expression of cyclooxygenase‐2 (COX‐2) and prostaglandin F2α ‐receptor (PF2AR) in LPS‐ and/or tumor necrosis factor (TNF)‐α‐activated Caco‐2 cells, with increased expression of nuclear factor (erythroid‐derived 2)‐like 2 (NRF‐2) [<xref rid="mnfr70133-bib-0025" ref-type="bibr">25</xref>]. Kohno et al. [<xref rid="mnfr70133-bib-0026" ref-type="bibr">26</xref>] isolated the compound 2‐amino‐3H‐phenoxazin‐3‐one (APO) from <italic toggle="yes">A. bisporus</italic> mushroom extracts and demonstrated its potent antiinflammatory and immunoregulatory properties. APO was shown to inhibit NO, prostaglandin‐E<sub>2</sub> (PGE<sub>2</sub>), IL‐6, and IL‐12 in LPS and/or IFNγ‐stimulated macrophages, while also inducing antigen‐stimulated Th cells to produce the antiinflammatory cytokine IL‐4. Methanolic extracts from <italic toggle="yes">A. bisporus</italic> achieved similar reductions in NO production and expression of iNOS, IL‐1β, and IL‐6 in LPS‐treated macrophages [<xref rid="mnfr70133-bib-0027" ref-type="bibr">27</xref>]. Notably, in a recent study of purified polysaccharide fractions from <italic toggle="yes">A. bisporus</italic>, microbiota‐dependent beneficial effects were obtained in a murine colitis model [<xref rid="mnfr70133-bib-0028" ref-type="bibr">28</xref>]. Additionally, a recent study on the fungal microbiome in ulcerative colitis patients found decreased <italic toggle="yes">Agaricus</italic> species in the gut during endoscopic activity versus during endoscopic remission [<xref rid="mnfr70133-bib-0029" ref-type="bibr">29</xref>].</p><p>Inflammatory bowel disease (IBD), encompassing Crohn's disease and ulcerative colitis, is a chronic inflammatory condition of the gastrointestinal tract characterized by a dysregulated immune response, mucosal barrier disruption, and gut microbiota dysbiosis [<xref rid="mnfr70133-bib-0030" ref-type="bibr">30</xref>]. A westernized diet is believed to be a key risk factor in the development of IBD [<xref rid="mnfr70133-bib-0031" ref-type="bibr">31</xref>]. IBD presents a significant and growing global health burden, which greatly impacts patients’ quality of life [<xref rid="mnfr70133-bib-0032" ref-type="bibr">32</xref>]. Current treatment strategies, which primarily focus on symptom management, include corticosteroids, immunosuppressants, and biologics, all of which are associated with potential serious adverse effects with long‐term use [<xref rid="mnfr70133-bib-0033" ref-type="bibr">33</xref>, <xref rid="mnfr70133-bib-0034" ref-type="bibr">34</xref>, <xref rid="mnfr70133-bib-0035" ref-type="bibr">35</xref>]. Therefore, the exploration of alternative and complementary therapies, particularly those derived from natural sources, remains a valuable research area.</p><p>This study further explores the potential of <italic toggle="yes">A. bisporus</italic> WMP to protect the intestinal barrier, improve symptoms, and mitigate inflammation in the context of colitis. To do this, we produced a simulated in vitro digested WMP (IVD‐WMP) product and tested its effects on two human gastrointestinal epithelial cell lines (Caco‐2 and HT‐29‐MTX). We then evaluated <italic toggle="yes">A. bisporus</italic> WMP in both pretreatment and recovery models of DSS‐induced colitis in mice. The goal of this research is to confirm the beneficial effects of <italic toggle="yes">A. bisporus</italic> on the gastrointestinal barrier, elucidate the underlying mechanisms, and contribute to the development of novel dietary or therapeutic strategies for IBD management.</p></sec><sec id="mnfr70133-sec-0030"><label>2</label><title>Experimental Section</title><sec id="mnfr70133-sec-0040"><label>2.1</label><title>Mushroom Powder</title><p>Mushroom powder used in this study was from <italic toggle="yes">A. bisporus</italic> mushroom crops obtained from MBio Ltd., part of the Monaghan Mushrooms group, as previously described [<xref rid="mnfr70133-bib-0036" ref-type="bibr">36</xref>]. Simulated in vitro digestion of WMP was carried out for use in cell culture experiments as described previously [<xref rid="mnfr70133-bib-0023" ref-type="bibr">23</xref>]. WMP or IVD‐WMP was prepared fresh by resuspending in PBS or the appropriate culture media, sonicating in a water bath for 10 min, incubating overnight, and rolling at 4°C to dissolve. Solutions for use in vitro were additionally passed through 0.2 µM filters (15206869, Fisher) before use to sterilize.</p></sec><sec id="mnfr70133-sec-0050"><label>2.2</label><title>Dosage Information</title><p>Dosage was determined as described previously [<xref rid="mnfr70133-bib-0023" ref-type="bibr">23</xref>]. In vitro, a standard dose of 1 mg/mL IVD‐WMP was used. For in vivo experiments, an oral bolus WMP dose equivalent to 500 mg/kg body weight was delivered via oral gavage, resuspended in PBS to a maximum volume of 100 µL. This equates to 10 mg WMP in a 20 g adult mouse. The equivalent human dose is 40 g in an 80 kg adult. DSS control mice received PBS only, and healthy control mice were subject to a sham gavage where the gavage needle was inserted but no liquid dispensed. All gavage procedures were carried out at the same time in the morning. In the pretreatment trial, gavage was performed every second day for 14 days due to restrictions in performing this procedure daily for an extended period. In the recovery trial, gavage was performed daily for 5 days.</p></sec><sec id="mnfr70133-sec-0060"><label>2.3</label><title>Cell Culture</title><p>Caco‐2 or HT‐29‐MTX cells were maintained at 37°C with 5% CO<sub>2</sub> and 95% relative humidity between Passages 65–75 for caco‐2 and Passages 25–30 for HT‐29‐MTX. Cells were cultured in growth medium (GlutaMAX DMEM 11971025, 10% FBS 16030074, 1% Penicillin‐Streptomycin 15640055, Thermo Fisher) with the addition of nonessential amino acids (M7145, Sigma) for HT‐29‐MTX cells only. For use in experiments, cells were seeded at a density of 3 × 10<sup>4</sup> cells per transwell filter (0.4 µm pore size, Costar, Corning). Cells were allowed to differentiate into a cell monolayer for 21 days before treatment. Cells were treated with 1 mg/mL IVD‐WMP and incubated at 37°C for 24 h.</p></sec><sec id="mnfr70133-sec-0070"><label>2.4</label><title>In Vitro Permeability Assay</title><p>Integrity of the cell monolayer was assayed by measuring permeability to FITC dextran as previously described [<xref rid="mnfr70133-bib-0037" ref-type="bibr">37</xref>]. Briefly, following the treatment incubation period, media in the apical compartment of the transwell was replaced with 1 mg/mL FITC dextran 4 kDa (FD4; 46944, Sigma–Aldrich) in serum‐free media. Aliquots from the basal compartment of the transwell were taken 4 h later. Fluorescence in these samples was measured at <italic toggle="yes">λ</italic>
+<sub>EX</sub> = 485 nm and <italic toggle="yes">λ</italic>
+<sub>EM</sub> = 535 nm to determine FD4 concentration in the basal compartment.</p></sec><sec id="mnfr70133-sec-0080"><label>2.5</label><title>In Vivo Studies</title><p>C57BL/6 mice were maintained in ventilated cages at 21 ± 1°C, humidity 50% ± 10%, and with a 12 h‐light/12 h‐dark cycle under specific pathogen‐free conditions according to Irish and European Union regulations. Food and water were monitored and available ad libitum throughout experiments unless otherwise stated. All animal experiments were carried out according to the recommendations of Trinity College Dublin's Animal Research Ethics Committee and the Irish Health Products Regulatory Authority, the competent authority responsible for the implementation of Directive 2010/63/EU on the protection of animals used for scientific purposes in accordance with the requirements of the S.I No 543 of 2012.</p></sec><sec id="mnfr70133-sec-0090"><label>2.6</label><title>DSS‐Induced Colitis</title><p>The DSS‐induced colitis model is widely used as a robust model to study acute gastrointestinal inflammation similar to ulcerative colitis [<xref rid="mnfr70133-bib-0038" ref-type="bibr">38</xref>]. Colitis was induced by administration of DSS (36–50 kDa, MP Biomedicals) ad libitum via drinking water as previously described [<xref rid="mnfr70133-bib-0039" ref-type="bibr">39</xref>]. Control mice received normal drinking water throughout (Healthy). Once DSS administration had been initiated, mice were scored at the same time daily for body weight loss (as a % of weight lost compared to weight on Day 0 of DSS), stool consistency, and fecal blood using a 0–4 scoring system for each parameter as outlined in Table <xref rid="mnfr70133-tbl-0001" ref-type="table">1</xref>. The disease activity index (DAI) was calculated daily for each mouse based upon the sum of individual scores of those three parameters. Fecal occult blood was measured using the Hema‐Screen testing kit (Immunostics). At the end of the trial, mice were sacrificed by CO<sub>2</sub> asphyxiation. Colons were removed and colon length was measured as an indication of colonic inflammation. Proximal and distal colon sections were taken and either fixed in 10% formalin for histology or snap frozen at −70°C until further analysis.</p><table-wrap position="float" id="mnfr70133-tbl-0001" content-type="TABLE" orientation="portrait"><label>TABLE 1</label><caption><p>Scoring criteria for DAI.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1">Score</th><th align="center" rowspan="1" colspan="1">Weight loss (%)</th><th align="center" rowspan="1" colspan="1">Stool consistency</th><th align="center" rowspan="1" colspan="1">Blood</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">0</td><td align="center" rowspan="1" colspan="1">&lt;1</td><td align="center" rowspan="1" colspan="1">Solid</td><td align="center" rowspan="1" colspan="1">None</td></tr><tr><td align="left" rowspan="1" colspan="1">1</td><td align="center" rowspan="1" colspan="1">1–3</td><td align="center" rowspan="1" colspan="1">Soft, well‐formed pellet</td><td align="center" rowspan="1" colspan="1">Faint positive test</td></tr><tr><td align="left" rowspan="1" colspan="1">2</td><td align="center" rowspan="1" colspan="1">4–6</td><td align="center" rowspan="1" colspan="1">Softer, looser pellet</td><td align="center" rowspan="1" colspan="1">Clear positive test</td></tr><tr><td align="left" rowspan="1" colspan="1">3</td><td align="center" rowspan="1" colspan="1">7–9</td><td align="center" rowspan="1" colspan="1">No form, diarrhea</td><td align="center" rowspan="1" colspan="1">Visible red stool</td></tr><tr><td align="left" rowspan="1" colspan="1">4</td><td align="center" rowspan="1" colspan="1">&gt;10</td><td align="center" rowspan="1" colspan="1">Liquid diarrhea</td><td align="center" rowspan="1" colspan="1">Visible blood</td></tr></tbody></table><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec><sec id="mnfr70133-sec-0100"><label>2.7</label><title>In Vivo Trial Schedules</title><p>A pretreatment and a recovery trial were performed to determine the impact of WMP on the development of colitis and on recovery from established colitis, respectively. The experimental timeline for the pretreatment trial is illustrated in Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2A</xref>. For the pretreatment trial, mice were given WMP (500 mg/kg) via oral gavage every second day for 9 days before DSS administration and also every second day during DSS administration (14 day period in total) (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2A</xref>). Dextran sulfate sodium (DSS; 2.5% w/v) was given for the final 5 days of those 14. All mice were given normal drinking water for two further days before cull. Mice were culled 2 days following cessation of DSS, as this is typically the timepoint at which physiological symptoms are most severe. The experimental timeline for the recovery trial is illustrated in Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2E</xref>. For the recovery trial, mice were given DSS (2% w/v) for 4 days before commencement of WMP oral gavage (500 mg/kg), which was administered daily for 5 days (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2E</xref>). WMP groups were compared to mice receiving DSS and PBS vehicle only (indicated DSS).</p></sec><sec id="mnfr70133-sec-0110"><label>2.8</label><title>Mucosa‐Blood Flux FITC‐Dextran</title><p>Intestinal permeability in the pretreatment trial was assayed by translocation of FITC dextran 40 kDa (FD40; FD40S, Sigma–Aldrich). At 4 h before cull, mice received 80 mg/kg FD40 in 150 µL sterile PBS via oral gavage. Food was removed from the cage. Mice were culled by CO<sub>2</sub> asphyxiation, blood was collected immediately and left to stand at room temperature for at least 30 min. Serum was collected by centrifugation at 4°C for 12 min at 1000 × <italic toggle="yes">g</italic>. Fluorescence of FD40 is measured in the serum at <italic toggle="yes">λ</italic>
+<sub>EX</sub> = 485 nm and <italic toggle="yes">λ</italic>
+<sub>EM</sub> = 535 nm.</p></sec><sec id="mnfr70133-sec-0120"><label>2.9</label><title>Histology</title><p>Sections from the distal colon of each mouse were obtained at the time of cull and subsequently fixed in 10% buffered formalin, embedded in paraffin wax, sliced on a microtome at 5 µm thickness, and placed on polysine adhesive slides. Slides were baked at 55°C for 15 min. Hematoxylin and eosin (H&amp;E) staining was performed to assess crypt length, tissue damage, and neutrophil infiltration. Alcian blue staining was performed to assess goblet cell loss. The staining steps were performed by a Leica Autostainer XL (Leica Microsystems). For H&amp;E: xylene (x2), absolute alcohol (x2), tap water, hematoxylin (4 min), tap water, acid alcohol, tap water, eosin (2 min), tap water, absolute alcohol (x2), and xylene (x2). For Alcian blue: xylene (x2), absolute alcohol (x2), tap water, Alcian blue (pH 1; 5 min), tap water, nuclear fast red (5 min), tap water, absolute alcohol (x2), and xylene (x2). Tissue slices were imaged using an Olympus BX51 upright microscope. All slices were blind scored. For H&amp;E sections, tissue damage and neutrophil infiltration were scored according to the scoring system as outlined in Table <xref rid="mnfr70133-tbl-0002" ref-type="table">2</xref>. Crypt length was measured on 10 separate crypts/areas per slice. Goblet cell loss was measured using QuPath (RRID: SCR_018257) [<xref rid="mnfr70133-bib-0040" ref-type="bibr">40</xref>] by isolating the epithelial layer, thresholding to the goblet cell stain, and measuring the area of stain as % of epithelial area.</p><table-wrap position="float" id="mnfr70133-tbl-0002" content-type="TABLE" orientation="portrait"><label>TABLE 2</label><caption><p>Scoring criteria for H&amp;E.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1"/><th align="center" rowspan="1" colspan="1">Inflammation severity</th><th align="center" rowspan="1" colspan="1">Inflammation extent</th><th align="center" rowspan="1" colspan="1">Crypt damage</th><th align="center" rowspan="1" colspan="1">Percent involvement</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">0</td><td align="center" rowspan="1" colspan="1">None &lt;10%</td><td align="center" rowspan="1" colspan="1">Occasional cells in LP</td><td align="center" rowspan="1" colspan="1">None</td><td align="center" rowspan="1" colspan="1">None</td></tr><tr><td align="left" rowspan="1" colspan="1">1</td><td align="center" rowspan="1" colspan="1">Mild 10–25%</td><td align="center" rowspan="1" colspan="1">Mucosa</td><td align="center" rowspan="1" colspan="1">Basal 33%</td><td align="center" rowspan="1" colspan="1">Up to 25%</td></tr><tr><td align="left" rowspan="1" colspan="1">2</td><td align="center" rowspan="1" colspan="1">Moderate 26%–50%</td><td align="center" rowspan="1" colspan="1">Mucosa and submucosa</td><td align="center" rowspan="1" colspan="1">Basal 66%</td><td align="center" rowspan="1" colspan="1">26%–50%</td></tr><tr><td align="left" rowspan="1" colspan="1">3</td><td align="center" rowspan="1" colspan="1">Severe 51%+</td><td align="center" rowspan="1" colspan="1">Transmural</td><td align="center" rowspan="1" colspan="1">Crypt loss; surface epithelium present</td><td align="center" rowspan="1" colspan="1">51%–75%</td></tr></tbody></table><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec><sec id="mnfr70133-sec-0130"><label>2.10</label><title>16S Sequencing and Analysis</title><p>To determine the effects of WMP on the gut microbiota composition, 16S ribosomal RNA (16S rRNA) sequence analysis was performed on fecal samples from each trial. For the pretreatment trial, fecal samples were taken on Day 0 (start WMP), on Day 9 of WMP administration (start DSS), and on Day 16 (cull). For the recovery trial, samples were taken on Day 0 (start DSS), on Day 4 (end DSS, start WMP), and on Day 9 (cull). DNA extraction was performed using a Power‐fecal‐pro DNA extraction kit (51804, Qiagen) according to the manufacturer's protocol. DNA samples were quantified using a Qubit Broad Range DNA kit (Thermo Fisher) and diluted to 5 ng/µL. 16S metagenomics libraries were prepared using a miniaturization protocol based on the 16S metagenomic library preparation guide (Illumina). In brief, an Echo 525 (Beckman Coulter) was used to combine 0.5 µL DNA, 2.5 µL Kapa Hifi HotStart Ready Mix, and 1 µL of each of the primers (at 1 µM) in individual wells of a 96‐well plate. The plate was spun briefly, and amplification was performed according to the 16S metagenomic library preparation guide (Illumina) with 30 cycles in place of 25. Following amplification, the volume of each sample was increased to 20 µL using molecular grade water, and the samples were cleaned using a 0.8 X ratio of Ampure beads (Beckman Coulter) on a Beckman i7 (Beckman Coulter). The index PCR was again set up using the Echo 525 to dispense the reagents as follows: 1 µL cleaned PCR product, 2 µL Unique Duel Indices (IDT), 5 µL Kapa Hifi HotStart Ready Mix, and 2 µL molecular grade water. Plates were spun briefly, and PCR was performed as described in the 16S metagenomic library preparation guide (Illumina). Samples were then quantified using a Qubit High Sensitivity kit (Thermo Fisher) and pooled at equal concentration. The final pool was further cleaned using a 0.7 X ratio of Ampure beads (Beckman Coulter) and quantified using the Qubit High Sensitivity kit (Thermo Fisher). It was then sequenced on an Illumina NextSeq 2000 using NextSeq1000/2000 P1 Reagents (600 cycles) according to the manufacturer's guidelines (Illumina). Sequencing data was processed using QIIME 2 (version 2024.5.0) (RRID:SCR_021258) [<xref rid="mnfr70133-bib-0041" ref-type="bibr">41</xref>]. Primer sequences were removed from the demultiplexed reads using the command “qiime cutadapt trimmed‐paired”. Quality filtering, paired‐end read merging, chimera removal, and amplicon sequence variant (ASV) clustering were performed using the command “qiime dada2 denoise‐paired”. Taxonomic assignment of ASVs was performed using the Greengenes 13.8 (RRID:SCR_002830) [<xref rid="mnfr70133-bib-0042" ref-type="bibr">42</xref>] with the command “qiime feature‐classifier classify‐sklearn”. Subsequently, downstream analysis was performed in R. Alpha diversity was measured using the Shannon index, which was computed using the diversity function from vegan (version 2.4.6) (RRID:SCR_011950). PERMANOVA was performed using the adonis2 function from vegan (version 2.4.6). Principal coordinate analysis (PCoA) was performed using the pcoa function from ape (version 5.7.1) (RRID:SCR_017343). The Wilcoxon signed‐rank test was used to test the significance for differential abundance analysis, and the resulting <italic toggle="yes">p</italic> values were corrected using the Benjamini–Hochberg method. Data was visualized using ggplot2 (version 3.5.1) (RRID:SCR_014601).</p></sec><sec id="mnfr70133-sec-0140"><label>2.11</label><title>Cytokine Quantification</title><p>Cytokine concentration was determined using Invitrogen Uncoated ELISA kits (Thermo‐Fisher) for mouse TNF (88‐7324), IL‐1𝛽 (88‐7013), IL‐6 (88‐7064), and IL‐10 (88‐7105) as per the manufacturer's protocol.</p></sec><sec id="mnfr70133-sec-0150"><label>2.12</label><title>Oxidative Stress Assays</title><p>Myeloperoxidase (MPO) activity in colon tissue was assessed using a slightly modified version of a previously described assay [<xref rid="mnfr70133-bib-0043" ref-type="bibr">43</xref>]. The modifications are as follows: 3,3′,5,5′‐tetramethylbenzidine (TMB; 15808028, Fisher Scientific) was used a substrate for the assay, and MPO activity was expressed in arbitrary units (AU). Other oxidative stress markers were measured in colon tissue using specific assay kits (Sigma) for superoxide dismutase (SOD) activity (CS0009; Sigma), and lipid peroxidation (malondialdehyde [MDA]) (MAK085; Sigma) according to manufacturer's protocols.</p></sec><sec id="mnfr70133-sec-0160"><label>2.13</label><title>RT‐qPCR</title><p>RNA was isolated using the PureLink RNA mini kit (12183018A, Invitrogen) according to manufacturer's protocol, quantified using a Nanodrop 2000 UV‐visible spectrophotometer, and DNase‐treated according to manufacturer's protocol (EN0521, Thermo Scientific). Total RNA was reverse transcribed with a high‐capacity cDNA reverse transcription kit (4368814, Applied Biosystems), and cDNA was amplified using SYBR green‐based real‐time PCR (A25742, Applied Biosystems). SYBR RT‐qPCR results were analyzed by the CT method [2‐(ΔΔCT)] to compare genes of interest to endogenous control genes. Primer sequences are listed in Table <xref rid="mnfr70133-tbl-0003" ref-type="table">3</xref>.</p><table-wrap position="float" id="mnfr70133-tbl-0003" content-type="TABLE" orientation="portrait"><label>TABLE 3</label><caption><p>Primer sequences for RT‐qPCR.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1"/><th align="center" rowspan="1" colspan="1"/><th align="center" rowspan="1" colspan="1">Forward primer</th><th align="center" rowspan="1" colspan="1">Reverse primer</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">β‐Defensin</td><td align="center" rowspan="1" colspan="1">Human</td><td align="center" rowspan="1" colspan="1">TCTGAGATGGCCTCAGGTGGT</td><td align="center" rowspan="1" colspan="1">GTAAAGATCGGGGACGCAGAA</td></tr><tr><td align="left" rowspan="1" colspan="1">Claudin1</td><td align="center" rowspan="1" colspan="1">Mouse</td><td align="center" rowspan="1" colspan="1">ATGACCCCTTGACCCCCATC</td><td align="center" rowspan="1" colspan="1">GGAGCAGGAAAGTAGGCACC</td></tr><tr><td align="left" rowspan="1" colspan="1">Claudin1</td><td align="center" rowspan="1" colspan="1">Human</td><td align="center" rowspan="1" colspan="1">GACCCTATGACCCCCAGTCAATG</td><td align="center" rowspan="1" colspan="1">TTTTCGGGGACAGGAACAGC</td></tr><tr><td align="left" rowspan="1" colspan="1">Claudin2</td><td align="center" rowspan="1" colspan="1">Mouse</td><td align="center" rowspan="1" colspan="1">CCTGGGATTGTGCTTGAGGT</td><td align="center" rowspan="1" colspan="1">TGACCCCCATCACCCACAGA</td></tr><tr><td align="left" rowspan="1" colspan="1">Cadherin</td><td align="center" rowspan="1" colspan="1">Mouse</td><td align="center" rowspan="1" colspan="1">CCCAGAGACTGTGTGCATTT</td><td align="center" rowspan="1" colspan="1">TGGCAATGGGTGAACCA TCA</td></tr><tr><td align="left" rowspan="1" colspan="1">e‐Cadherin</td><td align="center" rowspan="1" colspan="1">Human</td><td align="center" rowspan="1" colspan="1">CTGGTGGTCAACGCTCCTGAC</td><td align="center" rowspan="1" colspan="1">CACCTGACCCTGTGTACTGGGT</td></tr><tr><td align="left" rowspan="1" colspan="1">EGFR</td><td align="center" rowspan="1" colspan="1">Mouse</td><td align="center" rowspan="1" colspan="1">TCTTCAAGGAGTTGAAGTGTG</td><td align="center" rowspan="1" colspan="1">TGTACGCTTTCGAACAATGT</td></tr><tr><td align="left" rowspan="1" colspan="1">EGFR</td><td align="center" rowspan="1" colspan="1">Human</td><td align="center" rowspan="1" colspan="1">AGCGCTACCTTCTTCATTCAG</td><td align="center" rowspan="1" colspan="1">CACGTGCTCCATGTCTTCTTT</td></tr><tr><td align="left" rowspan="1" colspan="1">GAPDH</td><td align="center" rowspan="1" colspan="1">Mouse</td><td align="center" rowspan="1" colspan="1">TGTGTCCGTGGTGTGA TGGA</td><td align="center" rowspan="1" colspan="1">CCTGCTTCACCACCTTCTTGAT</td></tr><tr><td align="left" rowspan="1" colspan="1">GAPDH</td><td align="center" rowspan="1" colspan="1">Human</td><td align="center" rowspan="1" colspan="1">TCGACAGTCAGCCGCATCTT</td><td align="center" rowspan="1" colspan="1">GCCCAATACGACCAAATCCGT</td></tr><tr><td align="left" rowspan="1" colspan="1">MUC1</td><td align="center" rowspan="1" colspan="1">Mouse</td><td align="center" rowspan="1" colspan="1">AAGCGTAGCCCTCATGAGGA</td><td align="center" rowspan="1" colspan="1">GGGGTGACTTGCTCCTACAA</td></tr><tr><td align="left" rowspan="1" colspan="1">Occludin</td><td align="center" rowspan="1" colspan="1">Mouse</td><td align="center" rowspan="1" colspan="1">TCCGTAGGGCCTTTTGAA</td><td align="center" rowspan="1" colspan="1">GGTGCATATGATTGGGTTTG</td></tr><tr><td align="left" rowspan="1" colspan="1">Occludin</td><td align="center" rowspan="1" colspan="1">Human</td><td align="center" rowspan="1" colspan="1">TCAGGGAATACCCACTACATT CAG</td><td align="center" rowspan="1" colspan="1">CATCAGCAGCCACGTTACTCTTCAC</td></tr><tr><td align="left" rowspan="1" colspan="1">ZO1</td><td align="center" rowspan="1" colspan="1">Human</td><td align="center" rowspan="1" colspan="1">CCTGAGTTTGACAGTGGA GT</td><td align="center" rowspan="1" colspan="1">GCTGAAGGACTACAGGAATAG</td></tr><tr><td align="left" rowspan="1" colspan="1">ZO2</td><td align="center" rowspan="1" colspan="1">Mouse</td><td align="center" rowspan="1" colspan="1">GCACCCTGACATCTATGCG</td><td align="center" rowspan="1" colspan="1">CACTGCCGTAGCTTCCTCTG</td></tr></tbody></table><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec><sec id="mnfr70133-sec-0170"><label>2.14</label><title>Statistical Analysis</title><p>Data were analyzed and graphs were generated using GraphPad Prism v8.0 (GraphPad Software; RRID:SCR_002798), except for the microbiome data analysis described Section <xref rid="mnfr70133-sec-0130" ref-type="sec">2.10</xref>. Data were presented as mean ± SEM. Data were analyzed by <italic toggle="yes">t</italic> test, one‐way analysis of variance (ANOVA), or two‐way repeated measures ANOVA as appropriate. If any statistically significant differences were revealed by ANOVA, post hoc comparisons were performed using a Tukey test. In all cases, a <italic toggle="yes">p</italic> value of &lt; 0.05 was considered statistically significant.</p></sec></sec><sec id="mnfr70133-sec-0180"><label>3</label><title>Results</title><sec id="mnfr70133-sec-0190"><label>3.1</label><title>
+<italic toggle="yes">A. bisporus</italic> IVD‐WMP Reduces Epithelial Barrier Permeability In Vitro</title><p>To mimic digestion and to assess the impact of exposure of the gut epithelial barrier to digested WMP, an in‐vitro digestate (IVD) of WMP (IVD‐WMP) was prepared. Pretreatment of Caco‐2 cell monolayers with IVD‐WMP significantly reduced the translocation of FITC‐dextran into the basal compartment of the transwell system (Figure <xref rid="mnfr70133-fig-0001" ref-type="fig">1A</xref>). A similar effect was observed in HT‐29‐MTX cells, where IVD‐WMP pretreatment significantly reduced FITC translocation at 4 h (Figure <xref rid="mnfr70133-fig-0001" ref-type="fig">1B</xref>). Though RT‐qPCR analysis of barrier‐related gene transcription in these cells indicated no significant changes, there was a slight trend for increased transcription of β‐defensin1 and epithelial growth factor receptor (EGFR) in Caco‐2 cells (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S1A, D</xref>). These data suggest that IVD‐WMP may enhance the integrity of gastrointestinal epithelial cell layers. We next sought to investigate this further in vivo.</p><fig position="float" fig-type="FIGURE" id="mnfr70133-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>
+<italic toggle="yes">A. bisporus</italic> IVD‐WMP reduces epithelial barrier permeability in vitro. Caco‐2 and HT‐29‐MTX cell lines were grown on transwell plates and pretreated for 24 h with <italic toggle="yes">A. bisporus</italic> IVD‐WMP (1 mg/mL) before washing and addition of fresh media containing FITC dextran (4 kDa; 1 mg/mL). FITC concentration was measured in the basal compartment 4 h later for Caco‐2 (A) and HT‐29‐MTX (B) cells. Data are mean ± SEM of <italic toggle="yes">n</italic> = 3 independent experiments. **<italic toggle="yes">p</italic> value &lt; 0.01, ***<italic toggle="yes">p</italic> value &lt; 0.001 determined using unpaired <italic toggle="yes">t</italic> test. IVD‐WMP, in vitro digested whole mushroom powder.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="MNFR-69-e70133-g003.jpg"/></fig></sec><sec id="mnfr70133-sec-0200"><label>3.2</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Pretreatment and DSS‐Induced Colitis in Mice</title><p>Gastrointestinal inflammation and intestinal barrier dysfunction were modeled in mice by the administration of DSS via drinking water. Development of colitis was characterized by body weight loss, diarrhea, and bloody stools. In the pretreatment trial, <italic toggle="yes">A. bisporus</italic> WMP was administered orally by gavage before and during DSS administration to assess its impact on susceptibility to development of the disease (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2A</xref>). Although not statistically significant, the combined DAI score (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2B</xref>) was consistently lower in the WMP group compared to DSS‐only mice every day bar one (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2B</xref>). There was no difference in weight loss between WMP and DSS‐only mice (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2C</xref>). Although not statistically significant, stool consistency score indicative of diarrhea (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2D</xref>) and blood score (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2E</xref>) appeared lower on most days in the WMP group compared to DSS‐only mice. Colon length was significantly reduced in the DSS group compared to the WMP pretreated group (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2F</xref>), indicating a significant protective effect of WMP, as colon shortening is typically associated with inflammation in this model.</p><fig position="float" fig-type="FIGURE" id="mnfr70133-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>WMP gavage can reduce symptoms of DSS‐induced colitis in recovery. <italic toggle="yes">A. bisporus</italic> WMP (500 mg/kg) or vehicle control (PBS) was delivered by oral gavage to C57BL/6 mice before, or following, administration of DSS according to the trial schedule for a pretreatment (A–F) or recovery (G–L) model. Once DSS was initiated, mice were scored daily for symptoms of colitis alongside a healthy control group (sham gavage and no DSS). Disease activity index (DAI) was plotted (B, H) as the sum of the scores for weight loss (C, I), stool consistency (D, J), and fecal blood score (E, K). Colon length was measured at cull (F, L). Data are mean ± SEM of <italic toggle="yes">n</italic> = 5–6 mice per group. *<italic toggle="yes">p</italic> value &lt; 0.05, **<italic toggle="yes">p</italic> value &lt; 0.01, ****<italic toggle="yes">p</italic> value &lt; 0.0001 determined using two‐way repeated measures ANOVA or one‐way ANOVA with Tukey post‐hoc multiple comparisons where appropriate. (# Relative to healthy control; * WMP relative to DSS control). ANOVA, analysis of variance; DSS, dextran sulfate sodium; WMP, whole mushroom powder.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="MNFR-69-e70133-g001.jpg"/></fig></sec><sec id="mnfr70133-sec-0210"><label>3.3</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Improves Recovery From DSS‐Induced Colitis in Mice</title><p>Next, we assessed the impact of WMP on recovery from established colitis (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2G–L</xref>). In this model, DSS‐colitis was induced first followed by administration of WMP or vehicle control by gavage during a recovery period (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2G</xref>). WMP‐treated mice showed significant improvement in overall DAI score on Day 9 (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2H</xref>). No statistically significant effects of WMP were observed for weight loss, although weight loss appeared lowed in WMP‐treated mice toward the end of the recovery period (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2I</xref>). WMP‐treated mice showed significant improvement in stool consistency, indicative of reduced diarrhea, on Day 8 (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2J</xref>) compared to DSS‐only mice. No statistically significant effects of WMP were observed for blood scores (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2K</xref>). Significant colon shortening observed in DSS‐only mice compared to healthy controls was not observed in WMP‐treated mice compared to healthy controls suggesting improved recovery following WMP administration (Figure <xref rid="mnfr70133-fig-0002" ref-type="fig">2L</xref>). Taken together, these results demonstrate that WMP administration enhances recovery from established colitis.</p></sec><sec id="mnfr70133-sec-0220"><label>3.4</label><title>Pretreatment With <italic toggle="yes">A. bisporus</italic> WMP Supports Barrier Integrity Against DSS‐Induced Colitis</title><p>Histological analysis of colonic tissue architecture was performed by H&amp;E staining to allow determination of histological score (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3A</xref>) based on evaluation of tissue structural damage and infiltration of neutrophils through the mucosa (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S2A, B</xref>). Alcian blue staining of colonic tissue sections was performed to allow quantification of the loss of mucus‐containing goblet cells typically associated with DSS colitis (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3B</xref>). Representative H&amp;E and Alcian blue stained tissue sections are shown for healthy, DSS‐only, and WMP‐treated groups (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3C</xref>). There was no difference in tissue damage or immune cell infiltration scores between DSS‐only and WMP pretreated groups, while both groups scored significantly higher compared to healthy controls (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S2A, B</xref>), resulting in no significant difference in total histological score (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3A</xref>). Although not statistically significant, mucosa‐blood flux of FITC‐dextran appeared lower in mice pretreated with WMP compared to DSS‐only mice, returning to serum levels similar to healthy controls (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S2C</xref>). Calculation of goblet cell numbers indicated that the loss of goblet cells was less significant in the WMP‐treated group compared to DSS‐only mice (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3B</xref>). To further investigate the effects of WMP treatment on intestinal barrier function, expression of genes encoding tight junction proteins occludin (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3D</xref>) and claudin1 (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3E</xref>), and the EGFR (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3F</xref>) were determined in colonic tissue. Occludin expression was significantly increased in DSS mice compared to healthy control; however, it appeared significantly reduced in WMP‐treated mice compared to DSS only (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3D</xref>). There was a significant increase in expression of claudin1 (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3E</xref>) and EGFR (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3F</xref>) in the WMP‐treated mice compared to healthy controls. No significant differences were observed between WMP‐treated and DSS‐only groups for CDH1, CLDN2, mucin (MUC)1, and zonula occludens (ZO)2 (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S3A–D</xref>).</p><fig position="float" fig-type="FIGURE" id="mnfr70133-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>WMP has little effect on barrier integrity in DSS‐induced colitis. Distal colon tissue from pretreatment (A–F) and recovery (G–M) trials were fixed in formalin (10%), and 5 µm slices were histological analysis performed by the H&amp;E method and the Alcian blue method. Representative images for both are shown (C, J; 100X magnification; scale bar = 200 µm). H&amp;E images were scored for tissue damage and neutrophil infiltration to give a combined histology score (A, G). Alcian blue images were assessed for positive goblet cell stain (B, H). Additionally, in the recovery trial crypt length could be measured (I). RNA was extracted from distal colon tissue, and fold change in expression of genes related to barrier integrity was measured: occludin (D, K), claudin1 (E, L), EGFR (F, M). Data are mean ± SEM of <italic toggle="yes">n</italic> = 3–5 mice per group. *<italic toggle="yes">p</italic> value &lt; 0.05, **<italic toggle="yes">p</italic> value &lt; 0.01, ****<italic toggle="yes">p</italic> value &lt; 0.0001, determined using one‐way ANOVA with Tukey post‐hoc multiple comparisons where appropriate. (# Relative to healthy control; * relative to DSS control). ANOVA, analysis of variance; DSS, dextran sulfate sodium; H&amp;E, hematoxylin and eosin; WMP, whole mushroom powder.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="MNFR-69-e70133-g006.jpg"/></fig></sec><sec id="mnfr70133-sec-0230"><label>3.5</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Improves Tissue Recovery From DSS‐Induced Colitis</title><p>Histological analysis of colonic tissue architecture was performed following recovery from DSS‐induced colitis by H&amp;E staining to allow determination of histological score (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3G</xref>) based on evaluation of tissue structural damage and infiltration of neutrophils through the mucosa (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S2D, E</xref>). Alcian blue staining of colonic tissue sections following the recovery period was performed to allow quantification of goblet cell numbers (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3H</xref>). Representative H&amp;E and Alcian blue stained tissue sections are shown for Healthy, DSS‐only, and WMP‐treated groups following recovery from DSS‐induced colitis (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3J</xref>). Although not significant, there was a trend toward reduced tissue damage (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S2D</xref>) and immune cell infiltration (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S2E</xref>), in the distal colon in the WMP‐treated group compared to DSS‐only resulting in a similar nonsignificant reduction in total histology score (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3G</xref>) potentially indicating enhanced tissue recovery. DSS‐only mice exhibited a significant increase in crypt length, which was not observed in WMP‐treated mice, supporting the suggestion that WMP administration promotes tissue recovery (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3I</xref>). Goblet cell measurements appeared to have recovered in both DSS‐only and WMP‐treated groups at the end of the recovery period, with no significant differences observed (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3H</xref>). RT‐qPCR analysis revealed a consistent increase in occludin transcription in the DSS‐only but not WMP‐treated group (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3K</xref>). No significant differences in gene transcription were detected in claudin1 (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3L</xref>) and EGFR (Figure <xref rid="mnfr70133-fig-0003" ref-type="fig">3M</xref>) or in other genes analyzed (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S3E–H</xref>).</p></sec><sec id="mnfr70133-sec-0240"><label>3.6</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Pretreatment Reduced Proinflammatory Cytokines Proximal Tissue of DSS‐Induced Colitis</title><p>To further investigate the protective effects of <italic toggle="yes">A. bisporus</italic> WMP treatment on development of colitis, cytokine levels were quantified by ELISA in proximal and distal colon tissue (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4A–F</xref>) and in serum (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S4A–C</xref>). IL‐1β levels in proximal colonic tissue were significantly increased in DSS‐only mice compared to healthy controls, with a less significant increase observed in WMP‐treated mice (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4A</xref>). In distal colon however, IL‐1β levels were significantly increased in the WMP group compared to DSS‐only mice (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4D</xref>). TNF levels were significantly increased in the proximal colon of DSS‐only but not WMP‐treated mice (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4B</xref>) with no significant differences in the distal colon across all groups (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4E</xref>). The amount of antiinflammatory IL‐10 was significantly increased in DSS‐only mice compared to healthy controls, and significantly reduced in the proximal colonic tissue of WMP mice compared to DSS‐only mice (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4C</xref>). There was no difference in IL‐10 in distal colonic tissue across all groups (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4F</xref>). However, serum IL‐10 was increased in both DSS‐only and WMP‐treated mice compared to the healthy controls (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S4C</xref>). Taken together, this suggests that WMP treatment has an antiinflammatory effect during colitis, primarily in the proximal colon.</p><fig position="float" fig-type="FIGURE" id="mnfr70133-fig-0004" orientation="portrait"><label>FIGURE 4</label><caption><p>WMP has antiinflammatory effects in DSS‐induced colitis. Proximal and distal colon tissue from pretreatment (A–F) and recovery (G–L) trials were assayed by ELISA for cytokine levels of IL‐1β (A, D, G, J), TNF (B, E, H, K), and IL‐10 (C, F, I, L). Data are mean ± SEM of <italic toggle="yes">n</italic> = 5–6 mice per group. *<italic toggle="yes">p</italic> value &lt; 0.05, **<italic toggle="yes">p</italic> value &lt; 0.01, ***<italic toggle="yes">p</italic> value &lt; 0.001 determined using one‐way ANOVA with Tukey post‐hoc multiple comparisons where appropriate. (# Relative to healthy control; * relative to DSS control). ANOVA, analysis of variance; DSS, dextran sulfate sodium; TNF, tumor necrosis factor; WMP, whole mushroom powder.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-9" orientation="portrait" xlink:href="MNFR-69-e70133-g002.jpg"/></fig></sec><sec id="mnfr70133-sec-0250"><label>3.7</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Treatment Does Not Affect Cytokines During Recovery From DSS‐Induced Colitis</title><p>The antiinflammatory potential of <italic toggle="yes">A. bisporus</italic> WMP was also investigated in proximal and distal colon tissue from mice in recovery (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4G–L</xref>). Although no statistically significant differences were observed between WMP‐treated and DSS‐only mice for all cytokines analyzed, there was a subtle reduction in IL‐1β in the proximal and distal colon (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4G, J</xref>) and for TNF in proximal tissue (Figure <xref rid="mnfr70133-fig-0004" ref-type="fig">4H</xref>) for the WMP group compared to DSS‐only. There were no differences observed in serum levels for all cytokines tested between healthy controls, DSS‐only, and WMP‐treated mice (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S4D–F</xref>).</p></sec><sec id="mnfr70133-sec-0260"><label>3.8</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Pretreatment Impacts Oxidative Stress During DSS‐Induced Colitis</title><p>MPO activity, an indicator of neutrophil infiltration and oxidative stress, was assayed in proximal and distal colonic tissue. DSS administration increased MPO levels to similar levels in DSS‐only and WMP groups compared to healthy controls (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5A</xref>); however, MPO levels were significantly lower in the WMP group compared to DSS‐only in the distal colon (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5D</xref>). MDA, a marker of lipid peroxidation and oxidative stress, was increased to similar levels in proximal tissue of DSS‐only and WMP groups compared to healthy controls (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5B</xref>), while in the distal colon there was an increase in MDA levels compared to healthy control in the DSS‐only mice but not WMP mice (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5E</xref>). SOD activity, an antioxidant enzyme that helps break down reactive oxygen species (ROS), appeared increased in healthy controls and WMP‐treated proximal tissue compared to DSS‐only mice (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5C</xref>). In contrast, SOD was significantly increased in distal colon of DSS‐only mice compared to healthy controls, with a slight reduction in WMP‐treated mice (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5F</xref>).</p><fig position="float" fig-type="FIGURE" id="mnfr70133-fig-0005" orientation="portrait"><label>FIGURE 5</label><caption><p>WMP has antioxidant effects in DSS‐induced colitis. Proximal and distal colon tissue from pretreatment (A–F) and recovery (G–L) trials were analyzed for levels of myeloperoxidase (MPO; A, D, G, J), malondialdehyde (MDA; B, E, H, K), and superoxide dismutase (SOD; C, F, I, L). Data are mean ± SEM of <italic toggle="yes">n</italic> = 5–6 mice per group. *<italic toggle="yes">p</italic> value &lt; 0.05, **<italic toggle="yes">p</italic> value &lt; 0.01, ***<italic toggle="yes">p</italic> value &lt; 0.001 determined using one‐way ANOVA with Tukey post‐hoc multiple comparisons where appropriate. (# Relative to healthy control; * relative to DSS control). ANOVA, analysis of variance; DSS, dextran sulfate sodium; WMP, whole mushroom powder.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-11" orientation="portrait" xlink:href="MNFR-69-e70133-g007.jpg"/></fig></sec><sec id="mnfr70133-sec-0270"><label>3.9</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Treatment Impacts MPO Activity During Recovery From DSS‐Colitis</title><p>MPO levels were significantly increased in the proximal colon of the DSS group compared to healthy controls but were not significantly elevated in the WMP group, potentially indicating an improved recovery in WMP‐treated mice (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5G</xref>). No significant differences were observed in MDA (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5H</xref>) or SOD (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5I</xref>) within proximal colonic tissue of all groups following the recovery period. In the distal colon, there was a trend for lower MPO levels in the WMP group compared to DSS‐only, reflective of MPO activity in the proximal colon; however, this was not statistically significant (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5J</xref>). No significant differences in MDA levels (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5K</xref>) or SOD levels (Figure <xref rid="mnfr70133-fig-0005" ref-type="fig">5L</xref>) were detected in distal colon across all groups. Taken together, these data suggest that WMP administration can modulate MPO activity to support recovery from colitis.</p></sec><sec id="mnfr70133-sec-0280"><label>3.10</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Treatment Impacts Gut Bacterial Composition</title><p>To determine any effect of WMP treatment on the gut microbiota and inflammation‐induced bacterial dysbiosis, we conducted 16S rRNA sequencing on fecal samples collected on Day 0, Day 9, and Day 16 in the pretreatment trial, with Day 9 (pre‐DSS), and Day 16 (post‐DSS) allowing analysis of WMP impact during both the pretreatment and DSS phases (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6A–F</xref>). The Shannon index, as a measure of alpha diversity, was lower in the WMP group at Day 9 compared to both healthy control and vehicle control groups (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6A</xref>), and beta diversity illustrated by PCoA plot indicates a significant difference in microbiome structure across all groups (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6B</xref>). The relative abundance of the Top 10 bacterial species was identified at Day 9 (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6C</xref>). Taxonomic analysis at the genus level revealed a significant decrease in the abundance of <italic toggle="yes">A</italic>lphaproteobacteria and Allobaculum species, and an increase in Parabacteroides species in the WMP‐treated group compared to vehicle controls (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6D–F</xref>). At this pre‐DSS timepoint, it was noted that the vehicle control group showed a significantly increased relative abundance of <italic toggle="yes">Alphaproteobacteria</italic> and a decrease in <italic toggle="yes">Parabacteroides</italic> compared to the healthy control receiving sham gavage. While unexpected, PBS gavage may subtly influence the microbiome by altering mucosal hydration, gut motility, or pH, potentially creating minor shifts in the microbial environment to favor certain taxa. Therefore, we limit comments to comparisons between the vehicle and WMP groups to focus on treatment‐specific effects. All species indicating significant differences in relative abundance by differential abundance analysis at this timepoint are shown in Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S5</xref>. At Day 16 no difference was observed in alpha diversity on the Shannon index (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S5C</xref>), although the PCoA plot indicates a significant difference across groups at this timepoint; this is due to the effects of DSS‐induced colitis compared to healthy controls (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S5B</xref>). There was no difference in the relative abundance of bacterial species at Day 16 (Figure <xref rid="mnfr70133-supinfo-0001" ref-type="">S5C</xref>).</p><fig position="float" fig-type="FIGURE" id="mnfr70133-fig-0006" orientation="portrait"><label>FIGURE 6</label><caption><p>WMP affects bacterial composition of the gut before DSS‐induced colitis. Fecal samples from pretreatment (A–F) and recovery (G–I) trials were analyzed by 16S rRNA sequencing. In the pretreatment trial, alpha diversity is estimated by Shannon index (A) and beta diversity by PCoA analysis (B) at Day 9 (pre‐DSS). Relative abundance of the Top 10 genera at Day 9 are displayed as stacked bar chart (C). Differences between the WMP pretreatment compared to vehicle control at Day 9 were revealed in abundance levels of A<italic toggle="yes">lphaproteobacteria</italic> (D), <italic toggle="yes">Allobaculum</italic> (E), and <italic toggle="yes">Parabacteroides</italic> (F). In the recovery trial alpha diversity is estimated by Shannon index (G) and beta diversity by PCoA analysis (H) at Day 9 (trial end). Relative abundance of the Top 10 genera at Day 9 are displayed as stacked bar chart (I). Data represent <italic toggle="yes">n</italic> = 5–6 mice per group. *<italic toggle="yes">p</italic> value &lt; 0.05 determined using PERMANOVA for PCoA plot and Wilcoxon signed‐rank test for differential abundance analysis. (# Relative to healthy control; * relative to DSS control). 16S rRNA, 16S ribosomal RNA; DSS, dextran sulfate sodium; PCoA, principal coordinate analysis; WMP, whole mushroom powder.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-13" orientation="portrait" xlink:href="MNFR-69-e70133-g004.jpg"/></fig></sec><sec id="mnfr70133-sec-0290"><label>3.11</label><title>
+<italic toggle="yes">A. bisporus</italic> WMP Treatment Does Not Affect Bacterial Composition of the Gut During Recovery From DSS‐Induced Colitis</title><p>To determine any effect of WMP treatment on the gut microbiota during the recovery period following DSS colitis, we conducted 16S rRNA sequencing on fecal samples from the recovery trial (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6G–I</xref>). On the final day of the trial, we observed no significant difference in alpha diversity as measured by the Shannon index (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6G</xref>). Although beta diversity illustrated by PCoA plot indicates differential gene expression across groups (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6H</xref>). This difference in microbiome structure is likely due to the effects of DSS‐induced colitis compared to healthy controls. The relative abundance of the Top 10 bacterial species was identified (Figure <xref rid="mnfr70133-fig-0006" ref-type="fig">6I</xref>). However, differential abundance analysis did not reveal any significant differences in bacterial composition at this timepoint.</p></sec></sec><sec id="mnfr70133-sec-0300"><label>4</label><title>Discussion</title><p>IBD is a chronic inflammatory condition of the digestive tract. Clinically, IBD is characterized by symptoms such as diarrhea, abdominal pain, rectal bleeding, weight loss, and fatigue. A key pathophysiological feature of IBD is increased intestinal permeability, often referred to as a “leaky gut,” wherein the integrity of tight junctions within the intestinal epithelium is compromised, permitting the translocation of bacteria and antigens across the intestinal barrier and into the bloodstream, contributing to the pathogenesis of the disease [<xref rid="mnfr70133-bib-0044" ref-type="bibr">44</xref>].</p><p>Recent research has highlighted the potential therapeutic benefits of polysaccharide extracts and products derived from various mushroom species in experimental models of IBD [<xref rid="mnfr70133-bib-0019" ref-type="bibr">19</xref>, <xref rid="mnfr70133-bib-0045" ref-type="bibr">45</xref>–<xref rid="mnfr70133-bib-0047" ref-type="bibr">47</xref>]. Notably, the therapeutic effects of extracts from white button mushroom <italic toggle="yes">A. bisporus</italic> were observed in DSS‐induced colitis. Liu et al. (2024) [<xref rid="mnfr70133-bib-0028" ref-type="bibr">28</xref>] reported that polysaccharide extracts derived from <italic toggle="yes">A. bisporus</italic> provide protection from weight loss, colon atrophy, and histological damage, an increase in tight junction proteins, restoration of gut–barrier function, and inhibition of inflammation that were associated with microbiota changes. The current study sought to investigate the beneficial “entourage effect” of WMP derived from <italic toggle="yes">A. bisporus</italic>, and it is potential to both protect against and promote healing in gastrointestinal inflammation. Indeed, our prior preliminary work indicated that <italic toggle="yes">A. bisporus</italic> WMP pretreatment could reduce IL‐1β and IL‐6, and MPO activity in the proximal colon of a murine DSS‐induced colitis model [<xref rid="mnfr70133-bib-0023" ref-type="bibr">23</xref>].</p><p>We previously established an in vitro digestion procedure for WMP and confirmed that, following simulated digestion, IVD‐WMP retains its antiinflammatory properties in HEK dectin1 and HEK Toll‐like‐receptor‐4 cell lines. Additionally, we demonstrated that intraperitoneal injection of IVD‐WMP is antiinflammatory in a mouse model of zymosan‐induced peritonitis [<xref rid="mnfr70133-bib-0023" ref-type="bibr">23</xref>]. We later showed that IVD‐WMP maintains its β‐glucan content compared to WMP and retains the capacity to induce trained immunity, enhancing inflammatory responses in human monocyte‐derived macrophages [<xref rid="mnfr70133-bib-0024" ref-type="bibr">24</xref>]. To simulate the physiological conditions of WMP more accurately in the colon, we carried out in vitro digestion of WMP and used this IVD‐WMP in our in vitro assays on human epithelial cell lines. Our investigation of A. bisporus WMP's direct effects on epithelial barrier integrity revealed reduced permeability to FITC‐dextran in both Caco‐2 and HT‐29‐MTX monolayers. These findings suggest that enhanced gastrointestinal barrier protection and repair may contribute to the observed decrease in permeability. Previous studies have indicated that A. bisporus extracts exhibit antiinflammatory and antioxidant effects in Caco‐2 cells stimulated with LPS and TNF, reducing COX‐2 and PF<sub>2</sub>AR expression, decreasing levels of IL‐6 and increasing NRF‐2 [<xref rid="mnfr70133-bib-0025" ref-type="bibr">25</xref>]. Disruption of intestinal tight junction complexes and mucus layer have been observed in IBD patients and contribute to impaired barrier function and “leaky gut” [<xref rid="mnfr70133-bib-0048" ref-type="bibr">48</xref>]. Our in vitro findings align with the results of our DSS‐induced colitis trials, where WMP decreased intestinal permeability, suggesting that A. bisporus WMP plays a beneficial role in protecting and repairing gastrointestinal barrier integrity. However, it is important to note that our in vitro digestion protocol does not account for the effects of gastrointestinal microbiota on WMP digestion. Although it appears the IVD‐WMP product can influence immune responses and barrier function in our in vitro work on cell lines, given the microbiota‐related effects observed in our study, it is plausible that the full potential of WMP may not be fully realized in the absence of microbial interactions.</p><p>The current investigation employed a DSS‐induced colitis model in mice to evaluate the effects of A. bisporus WMP in both a preventative pretreatment context and a therapeutic recovery context. Due to ethical concerns, best practice guidelines, and project license limitations on repeated oral gavage in mice, it was not possible to administer WMP before, during, and following colitis in the same cohort of mice. However, we would hypothesize that this dosing schedule could contribute to further amelioration of the beneficial effects described, as WMP pretreatment seems to moderately decrease the severity of inflammation and, following inflammation, to speed repair of the tissue. Oral gavage was chosen as the most efficient way of ensuring that dosing of WMP was consistent for each mouse during the trial, particularly during and after the DSS period when food intake tends to be lower. However, this procedure can be stressful; therefore, long‐term effects of dietary WMP, both generally and pre‐, during, and postinflammation could be studied in the future by incorporation into standard mouse chow.</p><p>Although the effects were not significant, pretreatment with WMP consistently scored lower in stool and blood indices during the acute DSS colitis period and provided significant protection against colon shortening at the day of sacrifice. Histologically, no benefits of WMP pretreatment were observed in distal colon tissue in terms of tissue damage or cell infiltration; however, protection against goblet cell loss was observed. Additionally, there was a nonsignificant trend for intestinal permeability, as measured by FITC‐dextran, to be protected by WMP pretreatment. When administered during the recovery phase following DSS‐induced colitis, WMP significantly lowered stool and DAI scores, and protected against colon shortening. Tissue histology showed improved crypt length measurements and a subtle, nonsignificant improvement in tissue damage and neutrophil infiltration scores in the WMP group, which may be suggestive of a boost to tissue repair.</p><p>Intestinal epithelial barrier integrity is maintained via tight junction complexes, which are crucial for regulating transport across the epithelium. Disruption of tight junction proteins by dysregulated protein expression has been implicated in the pathogenesis of IBD [<xref rid="mnfr70133-bib-0049" ref-type="bibr">49</xref>]. Mice pretreated with WMP exhibited a trend for increased transcription of genes associated with barrier integrity and epithelial protection compared to controls. Notably, there was a significant upregulation of the tight junction protein claudin1 and the EGFR in WMP pretreated mice compared to healthy control. The fact that DSS groups have increased expression of these genes compared to healthy mice is surprising but may signify that repair has already begun at this timepoint, which was 2 days post‐DSS cessation. We found the significant increase in occludin expression in DSS mice surprising, as occludin loss has been associated in vitro and in vivo with increased epithelial tight junction permeability induced by inflammatory stimuli. This may again be due to the timepoint at which mice were culled. This timepoint was chosen as it typically demonstrates the peak of overall disease activity scores, though it is likely that recovery processes have begun, considering the decreased blood scores we see at this timepoint. Interestingly, recent evidence demonstrates that occludin KO mice are resistant to DSS‐induced colitis due to an adaptive mechanism whereby loss of occludin transcription is associated to suppression of the caspase3 apoptosis pathway [<xref rid="mnfr70133-bib-0050" ref-type="bibr">50</xref>].</p><p>Inflammatory mediators and ROS play a critical role in the disruption of tight junction proteins and the subsequent increase in gut permeability that contributes to the progression of ulcerative colitis [<xref rid="mnfr70133-bib-0051" ref-type="bibr">51</xref>]. Therefore, we investigated the effects of WMP on cytokine levels and oxidative stress markers in our murine colitis models. In the pretreatment trial, IL‐10 levels were significantly lower in the proximal colon of WMP pretreated mice compared to DSS mice, although both groups showed increased levels compared to healthy controls. This finding is unexpected given that IL‐10 is typically reduced in DSS; when given as a treatment, IL‐10 reduces DSS severity [<xref rid="mnfr70133-bib-0052" ref-type="bibr">52</xref>], and DSS colitis is exacerbated in IL‐10‐deficient mice [<xref rid="mnfr70133-bib-0053" ref-type="bibr">53</xref>]. Indeed, a recent paper utilizing a strain of <italic toggle="yes">E. coli</italic> known to increase IL‐10 macrophages demonstrated an amelioration of DSS colitis in mice [<xref rid="mnfr70133-bib-0054" ref-type="bibr">54</xref>].</p><p>We previously reported a decrease in IL‐10 in the proximal colon in DSS with some protection against this decrease for WMP [<xref rid="mnfr70133-bib-0023" ref-type="bibr">23</xref>]. We also observed that WMP attenuated the DSS‐induced increases in IL‐1β and IL‐6. In the current study, while we observed attenuation of IL‐1β and TNF‐α, the previously noted protection against IL‐6 was not replicated (not shown). In the distal colon, IL‐1β levels were more significantly increased in the WMP group than DSS. However, our previous study used a lower dose of WMP given daily rather than every 2nd day, and mice were culled at DSS cessation rather than 2 days later as reported here. In the literature, most DSS studies of medicinal mushroom polysaccharide extracts demonstrate a reduction in proinflammatory mediators and a boost to antiinflammatory cytokines in the colon [<xref rid="mnfr70133-bib-0046" ref-type="bibr">46</xref>, <xref rid="mnfr70133-bib-0047" ref-type="bibr">47</xref>] and typically also cull mice immediately on the final day of DSS. Examining cytokine levels in both the proximal and distal colon in the recovery trial, there were no statistically significant differences. However in the proximal colon, we see a similar nonsignificant trend for reduced IL‐1β in the proximal colon.</p><p>As expected, oxidative stress and lipid peroxidation, indicated by increased levels of MPO and MDA, were elevated following DSS‐induced colitis compared to controls. WMP pretreatment could significantly mitigate MPO increases and similarly showed a trend suggesting protective effects on MDA levels, in the distal colon compared to DSS. SOD, an antioxidant enzyme that is active in response to ROS, was increased in the distal colon of both groups likely in response to DSS‐induced ROS production. In the recovery trial, MPO levels in the proximal colon approached those of healthy controls for the WMP group, while the DSS group was still significantly elevated. In the distal colon, we see a similar, though nonsignificant, trend again indicating a faster recovery. No significant differences in MDA or SOD activity were observed across any groups in recovery. These findings suggest that WMP may support intestinal barrier integrity in DSS‐induced colitis by modulating inflammation and oxidative stress. Previous in vitro studies have demonstrated significant DPPH scavenging ability of methanolic [<xref rid="mnfr70133-bib-0055" ref-type="bibr">55</xref>] and ethanolic [<xref rid="mnfr70133-bib-0056" ref-type="bibr">56</xref>] extracts from <italic toggle="yes">A. bisporus</italic>. The study examining ethanolic extracts also reported strong reducing power, as well as potent superoxide and hydroxyl radical scavenging activities, along with moderate hydrogen peroxide scavenging capacity. Furthermore, in vivo administration of <italic toggle="yes">A. bisporus</italic> ethanolic extract significantly enhanced antioxidant activity in murine serum, liver, and heart tissues [<xref rid="mnfr70133-bib-0056" ref-type="bibr">56</xref>]. Recent reports have demonstrated similar results regarding the health impacts of polysaccharide compounds from various mushroom species, including their roles in immunomodulation and oxidative stress regulation [<xref rid="mnfr70133-bib-0057" ref-type="bibr">57</xref>, <xref rid="mnfr70133-bib-0058" ref-type="bibr">58</xref>]. Taken together, our observations and previous literature demonstrate that mushroom extracts are a source of natural antioxidants, with the consumption of mushrooms and mushroom‐derived extracts potentially providing a degree of protection against oxidative damages.</p><p>To evaluate the potential modulatory effects of WMP on gut microbiota, we performed 16S rRNA sequencing on fecal samples collected from mice across both experimental trials. In the pretreatment trial, we observed a lower Shannon index, indicative of reduced alpha diversity, in the WMP group compared to the DSS group on Day 9. Given that this finding was also observed on Day 0 (data not shown), we believe it to be a cage effect, unrelated to WMP treatment or DSS, as mice were housed according to treatment group. Beta diversity metrics indicated a significant overall difference in microbiome composition across groups at Days 9 and 16. A more detailed taxonomic analysis at the genus level revealed differences in the WMP pretreated group compared to vehicle control, indicating that WMP may selectively influence specific bacterial taxa. These changes were noted at Day 9 only, before DSS administration. There was a significant reduction in the relative abundance of <italic toggle="yes">Alphaproteobacteria</italic> and the genus <italic toggle="yes">Allobaculum</italic>, while <italic toggle="yes">Parabacteroides</italic> were increased in the WMP group compared to vehicle control. <italic toggle="yes">Alphaproteobacteria</italic> are a class of bacteria in the phylum Pseudomonadota. The relative abundance of the RF32 order has previously been positively correlated with increased histopathology and colonic inflammation in mice with adoptive transfer colitis [<xref rid="mnfr70133-bib-0059" ref-type="bibr">59</xref>]. The <italic toggle="yes">Allobaculum</italic> genus, belonging to the <italic toggle="yes">Erysipelotrichaceae</italic> family, is an underexplored member of the intestinal microbiota. However, they have been implicated in inflammatory processes. A positive correlation between <italic toggle="yes">Allobaculum</italic> abundance and levels of ileal RORγT and IL‐17 has been reported in mice [<xref rid="mnfr70133-bib-0060" ref-type="bibr">60</xref>], while Miyauchi et al. (2020) [<xref rid="mnfr70133-bib-0061" ref-type="bibr">61</xref>] linked a specific <italic toggle="yes">Allobaculum</italic> strain (OTU002) to increased susceptibility to experimental autoimmune encephalitis. This strain's ability to adhere to small intestinal epithelial cells was found to induce the expansion of inflammatory T helper 17 cells. Notably, <italic toggle="yes">A. mucolyticum</italic> was initially isolated from an ulcerative colitis patient in a study where bacteria selected on the basis of high levels of coating with IgA conferred dramatic susceptibility to DSS‐induced colitis in germ‐free mice [<xref rid="mnfr70133-bib-0062" ref-type="bibr">62</xref>]. More recently <italic toggle="yes">A. mucolyticum</italic> was shown to be an effective degrader of MUC, which suggests that it could contribute to IBD pathogenesis [<xref rid="mnfr70133-bib-0063" ref-type="bibr">63</xref>]. This speaks to our finding in the pretreatment trial of lesser goblet cell loss in the WMP pretreatment group. These findings suggest that <italic toggle="yes">Allobaculum</italic> species may play a role in the development of intestinal inflammation. <italic toggle="yes">Parabacteroides</italic> is a relatively new genus, established following taxonomic reclassification in 2006, with Parabacteroides distasonis serving as the reference strain. P. distasonis has demonstrated both beneficial and pathogenic effects in murine colitis models, which appear to be context‐dependent [<xref rid="mnfr70133-bib-0064" ref-type="bibr">64</xref>]. Studies have shown that administration of P. distasonis can alleviate symptoms in two experimental colitis models [<xref rid="mnfr70133-bib-0065" ref-type="bibr">65</xref>, <xref rid="mnfr70133-bib-0066" ref-type="bibr">66</xref>]. However, its abundance has also been observed to increase in acute and chronic DSS‐induced colitis models [<xref rid="mnfr70133-bib-0038" ref-type="bibr">38</xref>]. Additionally, levels of P. distasonis have been found to inversely correlate with remission duration in patients with ulcerative colitis [<xref rid="mnfr70133-bib-0067" ref-type="bibr">67</xref>]. In the recovery trial, although beta diversity analysis indicated a significant difference in microbial composition across the groups, this is likely due to the effects of colitis. Taxonomic analysis did not identify differences in the relative abundance of specific bacterial genera at any timepoint.</p></sec><sec id="mnfr70133-sec-0310"><label>5</label><title>Conclusion</title><p>In conclusion, this study demonstrates that WMP from <italic toggle="yes">A. bisporus</italic> can ameliorate colitis symptoms and aid recovery through mechanisms associated with gastrointestinal barrier support, immune modulation, oxidative stress regulation, and specific modulation of gut microbiota composition. This is the first comprehensive investigation of the effects of <italic toggle="yes">A. bisporus</italic> WMP on immunomodulation, oxidative stress regulation, and gut microbiota changes when given as preventative or curative treatment in a DSS‐induced colitis mouse model. These findings contribute to our understanding of the protective effects of <italic toggle="yes">A. bisporus</italic> mushroom powder in colitis and suggest that whole <italic toggle="yes">A. bisporus</italic> or its extracts could be utilized as a new natural antioxidant and antiinflammatory nutraceutical or dietary component in food and therapeutics.</p></sec><sec sec-type="COI-statement" id="mnfr70133-sec-0330"><title>Conflicts of Interest</title><p>Supriya Yadav and Jude Wilson are employees of MBio, part of Monaghan Mushrooms Group who supplied the powdered mushroom used in this study. The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="mnfr70133-supinfo-0001" position="float" content-type="local-data" orientation="portrait"/><supplementary-material id="mnfr70133-supitem-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Supporting file 1: mnfr70133‐sup‐0001‐SuppMat.docx
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="MNFR-69-e70133-s001.docx" position="float" orientation="portrait"/></supplementary-material></sec></body><back><ack id="mnfr70133-sec-0320"><title>Acknowledgments</title><p>The authors thank the Irish Research Council Enterprise Partnership Scheme (Postdoctoral) grant [EPSPD/2022/130] awarded to E.D. and Science Foundation Ireland Frontiers for the Future Programme grant [19/FFP/6499] awarded to S.C.C. for the support. The authors also thank Fiona Crispie and Oksana Mazur at Teagasc Sequencing Centre for carrying out the 16S rRNA sequencing.</p></ack><sec sec-type="data-availability" id="mnfr70133-sec-0350"><title>Data Availability Statement</title><p>The data that support the findings of this study are available from the authors upon reasonable request.</p></sec><ref-list id="mnfr70133-bibl-0001"><title>References</title><ref id="mnfr70133-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0001">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Ahmed</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Mahmoud</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Mohamed</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Liu</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Ma</surname>
+</string-name>, “<article-title>Overview on the Edible Mushrooms in Egypt</article-title>,” <source>Journal of Future Foods</source>
+<volume>3</volume> (<year>2023</year>): <fpage>8</fpage>–<lpage>15</lpage>.</mixed-citation></ref><ref id="mnfr70133-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0002">
+<string-name name-style="western">
+<given-names>A. L.</given-names>
+<surname>Loyd</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B. S.</given-names>
+<surname>Richter</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. A.</given-names>
+<surname>Jusino</surname>
+</string-name>, et al., “<article-title>Identifying the “Mushroom of Immortality”: Assessing the Ganoderma Species Composition in Commercial Reishi Products</article-title>,” <source>Frontiers in Microbiology</source>
+<volume>9</volume> (<year>2018</year>): <fpage>1557</fpage>.<pub-id pub-id-type="pmid">30061872</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fmicb.2018.01557</pub-id><pub-id pub-id-type="pmcid">PMC6055023</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0003">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Ray</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kundu</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Paul</surname>
+</string-name>, “<article-title>Exploring the Therapeutic Properties of Chinese Mushrooms With a Focus on Their Anti‐cancer Effects: A Systemic Review</article-title>,” <source>Pharmacological Research—Modern Chinese Medicine</source>
+<volume>11</volume> (<year>2024</year>): <elocation-id>100433</elocation-id>.</mixed-citation></ref><ref id="mnfr70133-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0004">
+<string-name name-style="western">
+<given-names>D. E.</given-names>
+<surname>Nichols</surname>
+</string-name>, “<article-title>Psilocybin: From Ancient Magic to Modern Medicine</article-title>,” <source>The Journal of Antibiotics</source>
+<volume>73</volume> (<year>2020</year>): <fpage>679</fpage>–<lpage>686</lpage>.<pub-id pub-id-type="pmid">32398764</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41429-020-0311-8</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0005">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Zhao</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Q.</given-names>
+<surname>Gao</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Rong</surname>
+</string-name>, et al., “<article-title>Immunomodulatory Effects of Edible and Medicinal Mushrooms and Their Bioactive Immunoregulatory Products</article-title>,” <source>Journal of Fungi (Basel)</source>
+<volume>6</volume> (<year>2020</year>): <fpage>269</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jof6040269</pub-id><pub-id pub-id-type="pmcid">PMC7712035</pub-id><pub-id pub-id-type="pmid">33171663</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0006">
+<string-name name-style="western">
+<given-names>R. R.</given-names>
+<surname>Griffiths</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. W.</given-names>
+<surname>Johnson</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. A.</given-names>
+<surname>Carducci</surname>
+</string-name>, et al., “<article-title>Psilocybin Produces Substantial and Sustained Decreases in Depression and Anxiety in Patients With Life‐Threatening Cancer: A Randomized Double‐Blind Trial</article-title>,” <source>Journal of Psychopharmacology</source>
+<volume>30</volume> (<year>2016</year>): <fpage>1181</fpage>–<lpage>1197</lpage>.<pub-id pub-id-type="pmid">27909165</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/0269881116675513</pub-id><pub-id pub-id-type="pmcid">PMC5367557</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0007">
+<string-name name-style="western">
+<given-names>S. K.</given-names>
+<surname>Deshmukh</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Prakash</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Ranjan</surname>
+</string-name>, “<article-title>Marine Fungi: A Source of Potential Anticancer Compounds</article-title>,” <source>Frontiers in Microbiology</source>
+<volume>8</volume> (<year>2017</year>): <fpage>2536</fpage>.<pub-id pub-id-type="pmid">29354097</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fmicb.2017.02536</pub-id><pub-id pub-id-type="pmcid">PMC5760561</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0008">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Chowdhury</surname>
+</string-name> and <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Paul</surname>
+</string-name>, “<article-title>The Potential Role of Mushrooms in The Prevention and Treatment of Diabetes: A Review</article-title>,” <source>Journal of Biologically Active Products from Nature</source>
+<volume>10</volume> (<year>2020</year>): <fpage>429</fpage>–<lpage>454</lpage>.</mixed-citation></ref><ref id="mnfr70133-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0009">
+<string-name name-style="western">
+<given-names>R. W.</given-names>
+<surname>Mwangi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Macharia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I. N.</given-names>
+<surname>Wagara</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>R. L.</given-names>
+<surname>Bence</surname>
+</string-name>, “<article-title>The Antioxidant Potential of Different Edible and Medicinal Mushrooms</article-title>,” <source>Biomedicine &amp; Pharmacotherapy</source>
+<volume>147</volume> (<year>2022</year>): <elocation-id>112621</elocation-id>.<pub-id pub-id-type="pmid">35026489</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.biopha.2022.112621</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0010">
+<string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Zara</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Rasul</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Sultana</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Jabeen</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Selamoglu</surname>
+</string-name>, “<article-title>Identification of <italic toggle="yes">Macrolepiota procera</italic> Extract as a Novel G6PD Inhibitor for the Treatment of Lung Cancer</article-title>,” <source>Saudi Journal of Biological Sciences</source>
+<volume>29</volume> (<year>2022</year>): <fpage>3372</fpage>–<lpage>3379</lpage>.<pub-id pub-id-type="pmid">35865797</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.sjbs.2022.02.018</pub-id><pub-id pub-id-type="pmcid">PMC9295138</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0011">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Sevindik</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Akgul</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Selamoglu</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Braidy</surname>
+</string-name>, “<article-title>Antioxidant, Antimicrobial and Neuroprotective Effects of <italic toggle="yes">Octaviania asterosperma</italic> In Vitro</article-title>,” <source>Mycology</source>
+<volume>12</volume> (<year>2020</year>): <fpage>128</fpage>–<lpage>138</lpage>.<pub-id pub-id-type="pmid">34035978</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/21501203.2020.1816584</pub-id><pub-id pub-id-type="pmcid">PMC8131004</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0012">
+<string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Du</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Han</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Ma</surname>
+</string-name>, et al., “<article-title>Dietary Intake of Whole King Oyster Mushroom (<italic toggle="yes">Pleurotus eryngii</italic>) Attenuated Obesity via Ameliorating Lipid Metabolism and Alleviating Gut Microbiota Dysbiosis</article-title>,” <source>Food Research International</source>
+<volume>184</volume> (<year>2024</year>): <elocation-id>114228</elocation-id>.<pub-id pub-id-type="pmid">38609215</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.foodres.2024.114228</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0013">
+<string-name name-style="western">
+<given-names>Y. M.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H. W.</given-names>
+<surname>Woo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. H.</given-names>
+<surname>Shin</surname>
+</string-name>, et al., “<article-title>A Prospective Association Between Dietary Mushroom Intake and the Risk of Type 2 Diabetes: The Korean Genome and Epidemiology Study–Cardiovascular Disease Association Study</article-title>,” <source>Epidemiology and Health</source>
+<volume>46</volume> (<year>2024</year>): <elocation-id>2024017</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.4178/epih.e2024017</pub-id><pub-id pub-id-type="pmcid">PMC11040214</pub-id><pub-id pub-id-type="pmid">38228086</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0014">
+<string-name name-style="western">
+<given-names>D. M.</given-names>
+<surname>Ba</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Ssentongo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. B.</given-names>
+<surname>Beelman</surname>
+</string-name>, et al., “<article-title>Higher Mushroom Consumption Is Associated With Lower Risk of Cancer: A Systematic Review and Meta‐Analysis of Observational Studies</article-title>,” <source>Advances in Nutrition</source>
+<volume>12</volume> (<year>2021</year>): <fpage>1691</fpage>–<lpage>1704</lpage>.<pub-id pub-id-type="pmid">33724299</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/advances/nmab015</pub-id><pub-id pub-id-type="pmcid">PMC8483951</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0015">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Yu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Zhao</surname>
+</string-name>, et al., “<article-title>Role of Dietary Edible Mushrooms in the Modulation of Gut Microbiota</article-title>,” <source>Journal of Functional Foods</source>
+<volume>83</volume> (<year>2021</year>): <elocation-id>104538</elocation-id>.</mixed-citation></ref><ref id="mnfr70133-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0016">
+<string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Venturella</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Ferraro</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Cirlincione</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>M. L.</given-names>
+<surname>Gargano</surname>
+</string-name>, “<article-title>Medicinal Mushrooms: Bioactive Compounds, Use, and Clinical Trials</article-title>,” <source>International Journal of Molecular Sciences</source>
+<volume>22</volume> (<year>2021</year>): <fpage>634</fpage>.<pub-id pub-id-type="pmid">33435246</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms22020634</pub-id><pub-id pub-id-type="pmcid">PMC7826851</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0017">
+<string-name name-style="western">
+<given-names>E. W.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Shizuki</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Hosokawa</surname>
+</string-name>, et al., “<article-title>Two Novel Diterpenoids, Erinacines H and I From the Mycelia of <italic toggle="yes">Hericium erinaceum</italic>
+</article-title>,” <source>Bioscience, Biotechnology, and Biochemistry</source>
+<volume>64</volume> (<year>2000</year>): <fpage>2402</fpage>–<lpage>2405</lpage>.<pub-id pub-id-type="pmid">11193408</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1271/bbb.64.2402</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0018">
+<string-name name-style="western">
+<given-names>G. M.</given-names>
+<surname>Liuzzi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Petraglia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Latronico</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Crescenzi</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Rossano</surname>
+</string-name>, “<article-title>Antioxidant Compounds from Edible Mushrooms as Potential Candidates for Treating Age‐Related Neurodegenerative Diseases</article-title>,” <source>Nutrients</source>
+<volume>15</volume> (<year>2023</year>): <fpage>1913</fpage>.<pub-id pub-id-type="pmid">37111131</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/nu15081913</pub-id><pub-id pub-id-type="pmcid">PMC10145943</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0019">
+<string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Jin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Fei</surname>
+</string-name>, et al., “<article-title>Mushroom Polysaccharides From <italic toggle="yes">Grifola frondosa</italic> (Dicks.) Gray and <italic toggle="yes">Inonotus obliquus</italic> (Fr.) Pilat Ameliorated Dextran Sulfate Sodium‐Induced Colitis in Mice by Global Modulation of Systemic Metabolism and the Gut Microbiota</article-title>,” <source>Frontiers in Pharmacology</source>
+<volume>14</volume> (<year>2023</year>): <elocation-id>1172963</elocation-id>.<pub-id pub-id-type="pmid">37351508</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fphar.2023.1172963</pub-id><pub-id pub-id-type="pmcid">PMC10282762</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0020">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Blumfield</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Abbott</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Duve</surname>
+</string-name>, et al., “<article-title>Examining the Health Effects and Bioactive Components in <italic toggle="yes">Agaricus bisporus</italic> Mushrooms: A Scoping Review</article-title>,” <source>The Journal of Nutritional Biochemistry</source>
+<volume>84</volume> (<year>2020</year>): <elocation-id>108453</elocation-id>.<pub-id pub-id-type="pmid">32653808</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jnutbio.2020.108453</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0021">
+<string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Cardwell</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. F.</given-names>
+<surname>Bornman</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. P.</given-names>
+<surname>James</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>L. J.</given-names>
+<surname>Black</surname>
+</string-name>, “<article-title>A Review of Mushrooms as a Potential Source of Dietary Vitamin D</article-title>,” <source>Nutrients</source>
+<volume>10</volume> (<year>2018</year>): <elocation-id>1498</elocation-id>.<pub-id pub-id-type="pmid">30322118</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/nu10101498</pub-id><pub-id pub-id-type="pmcid">PMC6213178</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0022">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Yadav</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Wilson</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Mushrooms</surname>
+</string-name>, “<article-title>Antioxidant and Ergothioneine Assessment of Nutritionally Enriched <italic toggle="yes">Agaricus bisporus</italic> Powders</article-title>,” <source>EC Nutrition</source>
+<volume>17</volume> (<year>2022</year>): <fpage>63</fpage>–<lpage>80</lpage>.</mixed-citation></ref><ref id="mnfr70133-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0023">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>O'Sullivan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Dempsey</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Case</surname>
+</string-name>, et al., “<article-title>Negative Regulation of Innate Immune Signaling by Components of the Button Mushroom <italic toggle="yes">Agaricus bisporus</italic>
+</article-title>,” <source>Molecular Nutrition &amp; Food Research</source>
+<volume>67</volume> (<year>2023</year>): <elocation-id>2200845</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/mnfr.202200845</pub-id><pub-id pub-id-type="pmid">37195234</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0024">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Case</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>O'Brien</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. E.</given-names>
+<surname>Ledwith</surname>
+</string-name>, et al., “<article-title>β‐Glucans From <italic toggle="yes">Agaricus bisporus</italic> Mushroom Products Drive Trained Immunity</article-title>,” <source>Frontiers in Nutrition</source>
+<volume>11</volume> (<year>2024</year>): <elocation-id>1346706</elocation-id>.<pub-id pub-id-type="pmid">38425482</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fnut.2024.1346706</pub-id><pub-id pub-id-type="pmcid">PMC10902450</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0025">
+<string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Muszynska</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Grzywacz</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Kala</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Gdula‐Argasinska</surname>
+</string-name>, “<article-title>Anti‐Inflammatory Potential of In Vitro Cultures of the White Button Mushroom, <italic toggle="yes">Agaricus bisporus</italic> (Agaricomycetes), in Caco‐2 Cells</article-title>,” <source>International Journal of Medicinal Mushrooms</source>
+<volume>20</volume> (<year>2018</year>): <fpage>129</fpage>–<lpage>139</lpage>.<pub-id pub-id-type="pmid">29773005</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1615/IntJMedMushrooms.2018025408</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0026">
+<string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Kohno</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Miyake</surname>
+</string-name>, <string-name name-style="western">
+<given-names>O.</given-names>
+<surname>Sano</surname>
+</string-name>, et al., “<article-title>Anti‐Inflammatory and Immunomodulatory Properties of 2‐Amino‐3H‐phenoxazin‐3‐one</article-title>,” <source>Biological and Pharmaceutical Bulletin</source>
+<volume>31</volume> (<year>2008</year>): <fpage>1938</fpage>–<lpage>1945</lpage>.<pub-id pub-id-type="pmid">18827359</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1248/bpb.31.1938</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0027">
+<string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Moro</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Palacios</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Lozano</surname>
+</string-name>, et al., “<article-title>Anti‐Inflammatory Activity of Methanolic Extracts From Edible Mushrooms in LPS Activated RAW 264.7 Macrophages</article-title>,” <source>Food Chemistry</source>
+<volume>130</volume> (<year>2012</year>): <fpage>350</fpage>–<lpage>355</lpage>.</mixed-citation></ref><ref id="mnfr70133-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0028">
+<string-name name-style="western">
+<given-names>W.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Q.</given-names>
+<surname>Yuan</surname>
+</string-name>, et al., “<article-title>
+<italic toggle="yes">Agaricus bisporus</italic> Polysaccharides Ameliorate Ulcerative Colitis in Mice by Modulating Gut Microbiota and Its Metabolism</article-title>,” <source>Journal of Inflammation Food &amp; Function</source>
+<volume>15</volume> (<year>2024</year>): <fpage>1191</fpage>–<lpage>1207</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1039/d3fo04430k</pub-id><pub-id pub-id-type="pmid">38230753</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0029">
+<string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Hsia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Zhao</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Chung</surname>
+</string-name>, et al., “<article-title>Alterations in the Fungal Microbiome in Ulcerative Colitis</article-title>,” <source>Inflammatory Bowel Diseases</source>
+<volume>29</volume> (<year>2023</year>): <fpage>1613</fpage>–<lpage>1621</lpage>.<pub-id pub-id-type="pmid">37221272</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ibd/izad082</pub-id><pub-id pub-id-type="pmcid">PMC10547232</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0030">
+<string-name name-style="western">
+<given-names>A. N.</given-names>
+<surname>Ananthakrishnan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G. G.</given-names>
+<surname>Kaplan</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S. C.</given-names>
+<surname>Ng</surname>
+</string-name>, “<article-title>Changing Global Epidemiology of Inflammatory Bowel Diseases: Sustaining Health Care Delivery into the 21st Century</article-title>,” <source>Clinical Gastroenterology and Hepatology</source>
+<volume>18</volume> (<year>2020</year>): <fpage>1252</fpage>–<lpage>1260</lpage>.<pub-id pub-id-type="pmid">32007542</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cgh.2020.01.028</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0031">
+<string-name name-style="western">
+<given-names>F. C.</given-names>
+<surname>Ross</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Patangia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Grimaud</surname>
+</string-name>, et al., “<article-title>The Interplay Between Diet and the Gut Microbiome: Implications for Health and Disease</article-title>,” <source>Nature Reviews Microbiology</source>
+<volume>22</volume> (<year>2024</year>): <fpage>671</fpage>–<lpage>686</lpage>.<pub-id pub-id-type="pmid">39009882</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41579-024-01068-4</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0032">
+<string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Jairath</surname>
+</string-name> and <string-name name-style="western">
+<given-names>B. G.</given-names>
+<surname>Feagan</surname>
+</string-name>, “<article-title>Global Burden of Inflammatory Bowel Disease</article-title>,” <source>The Lancet Gastroenterology &amp; Hepatology</source>
+<volume>5</volume> (<year>2020</year>): <fpage>2</fpage>–<lpage>3</lpage>.<pub-id pub-id-type="pmid">31648974</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S2468-1253(19)30358-9</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0033">
+<string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Mishra</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Dhawan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. S.</given-names>
+<surname>Srivastava</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A. B.</given-names>
+<surname>Singh</surname>
+</string-name>, “<article-title>Inflammatory Bowel Disease: Therapeutic Limitations and Prospective of the Stem Cell Therapy</article-title>,” <source>World Journal of Stem Cells</source>
+<volume>12</volume> (<year>2020</year>): <fpage>1050</fpage>–<lpage>1066</lpage>.<pub-id pub-id-type="pmid">33178391</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.4252/wjsc.v12.i10.1050</pub-id><pub-id pub-id-type="pmcid">PMC7596447</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0034">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>O'Connor</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Qasim</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>C. A.</given-names>
+<surname>O'Moráin</surname>
+</string-name>, “<article-title>The Long‐Term Risk of Continuous Immunosuppression Using Thioguanides in Inflammatory Bowel Disease</article-title>,” <source>Therapeutic Advances in Chronic Disease</source>
+<volume>1</volume> (<year>2010</year>): <fpage>7</fpage>–<lpage>16</lpage>.<pub-id pub-id-type="pmid">23251725</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/2040622310368736</pub-id><pub-id pub-id-type="pmcid">PMC3513853</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0035">
+<string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Gordon</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Biancone</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Fiorino</surname>
+</string-name>, et al., “<article-title>ECCO Guidelines on Inflammatory Bowel Disease and Malignancies</article-title>,” <source>Journal of Crohn's and Colitis</source>
+<volume>17</volume> (<year>2023</year>): <fpage>827</fpage>–<lpage>854</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ecco-jcc/jjac187</pub-id><pub-id pub-id-type="pmid">36528797</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0036">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Dowley</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Sweeney</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Conway</surname>
+</string-name>, et al., “<article-title>The Effects of Dietary Supplementation With Mushroom or Vitamin D2 Enriched Mushroom Powders on Finisher Pig Performance and Meat Quality</article-title>,” <source>Animal Feed Science and Technology</source>
+<volume>288</volume> (<year>2022</year>): <elocation-id>115313</elocation-id>.</mixed-citation></ref><ref id="mnfr70133-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0037">
+<string-name name-style="western">
+<given-names>B. G.</given-names>
+<surname>Postal</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Aguanno</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Thenet</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Carrière</surname>
+</string-name>, “<article-title>Rapid Evaluation of Intestinal Paracellular Permeability Using the Human Enterocytic‐Like Caco‐2/TC7 Cell Line</article-title>,” <source>Methods in Molecular Biology</source>
+<volume>2367</volume> (<year>2021</year>): <fpage>13</fpage>–<lpage>26</lpage>.<pub-id pub-id-type="pmid">33730353</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/7651_2021_366</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0038">
+<string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Okayasu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Hatakeyama</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Yamada</surname>
+</string-name>, et al., “<article-title>A Novel Method in the Induction of Reliable Experimental Acute and Chronic Ulcerative Colitis in Mice</article-title>,” <source>Gastroenterology</source>
+<volume>98</volume> (<year>1990</year>): <fpage>694</fpage>–<lpage>702</lpage>.<pub-id pub-id-type="pmid">1688816</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/0016-5085(90)90290-h</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0039">
+<string-name name-style="western">
+<given-names>D. G. W.</given-names>
+<surname>Johnston</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. A.</given-names>
+<surname>Williams</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. A.</given-names>
+<surname>Thaiss</surname>
+</string-name>, et al., “<article-title>Loss of MicroRNA‐21 Influences the Gut Microbiota, Causing Reduced Susceptibility in a Murine Model of Colitis</article-title>,” <source>Journal of Crohn's and Colitis</source>
+<volume>12</volume> (<year>2018</year>): <fpage>835</fpage>–<lpage>848</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ecco-jcc/jjy038</pub-id><pub-id pub-id-type="pmid">29608690</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0040">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Bankhead</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. B.</given-names>
+<surname>Loughrey</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. A.</given-names>
+<surname>Fernández</surname>
+</string-name>, et al., “<article-title>QuPath: Open Source Software for Digital Pathology Image Analysis</article-title>,” <source>Scientific Reports</source>
+<volume>7</volume> (<year>2017</year>): <elocation-id>16878</elocation-id>.<pub-id pub-id-type="pmid">29203879</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-017-17204-5</pub-id><pub-id pub-id-type="pmcid">PMC5715110</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0041">
+<string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Bolyen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. R.</given-names>
+<surname>Rideout</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. R.</given-names>
+<surname>Dillon</surname>
+</string-name>, et al., “<article-title>Reproducible, Interactive, Scalable and Extensible Microbiome Data Science Using QIIME 2</article-title>,” <source>Nature Biotechnology</source>
+<volume>37</volume> (<year>2019</year>): <fpage>852</fpage>–<lpage>857</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41587-019-0209-9</pub-id><pub-id pub-id-type="pmcid">PMC7015180</pub-id><pub-id pub-id-type="pmid">31341288</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0042">
+<string-name name-style="western">
+<given-names>D.</given-names>
+<surname>McDonald</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. N.</given-names>
+<surname>Price</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Goodrich</surname>
+</string-name>, et al., “<article-title>An Improved Greengenes Taxonomy With Explicit Ranks for Ecological and Evolutionary Analyses of Bacteria and Archaea</article-title>,” <source>The ISME Journal</source>
+<volume>6</volume> (<year>2012</year>): <fpage>610</fpage>–<lpage>618</lpage>.<pub-id pub-id-type="pmid">22134646</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/ismej.2011.139</pub-id><pub-id pub-id-type="pmcid">PMC3280142</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0043">
+<string-name name-style="western">
+<given-names>P. P.</given-names>
+<surname>Bradley</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D. A.</given-names>
+<surname>Priebat</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. D.</given-names>
+<surname>Christensen</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Rothstein</surname>
+</string-name>, “<article-title>Measurement of Cutaneous Inflammation: Estimation of Neutrophil Content With an Enzyme Marker</article-title>,” <source>Journal of Investigative Dermatology</source>
+<volume>78</volume> (<year>1982</year>): <fpage>206</fpage>–<lpage>209</lpage>.<pub-id pub-id-type="pmid">6276474</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/1523-1747.ep12506462</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0044">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Yu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name name-style="western">
+<given-names>X.</given-names>
+<surname>Shao</surname>
+</string-name>, et al., “<article-title>Leaky Gut in IBD: Intestinal Barrier–Gut Microbiota Interaction</article-title>,” <source>Journal of Microbiology and Biotechnology</source>
+<volume>32</volume> (<year>2022</year>): <fpage>825</fpage>–<lpage>834</lpage>.<pub-id pub-id-type="pmid">35791076</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.4014/jmb.2203.03022</pub-id><pub-id pub-id-type="pmcid">PMC9628915</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0045">
+<string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Feng</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Liu</surname>
+</string-name>, et al., “<article-title>Polysaccharides From an Edible Mushroom, Hericium Erinaceus, Alleviate Ulcerative Colitis in Mice by Inhibiting the NLRP3 Inflammasomes and Reestablish Intestinal Homeostasis</article-title>,” <source>International Journal of Biological Macromolecules</source>
+<volume>267</volume> (<year>2024</year>): <elocation-id>131251</elocation-id>.<pub-id pub-id-type="pmid">38556226</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ijbiomac.2024.131251</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0046">
+<string-name name-style="western">
+<given-names>Z.‐H.</given-names>
+<surname>Ji</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>He</surname>
+</string-name>, <string-name name-style="western">
+<given-names>W.‐Y.</given-names>
+<surname>Xie</surname>
+</string-name>, et al., <source>Nutrients</source> (<year>2023</year>).</mixed-citation></ref><ref id="mnfr70133-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0047">
+<string-name name-style="western">
+<given-names>M. Y.</given-names>
+<surname>Zou</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y. J.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Liu</surname>
+</string-name>, et al., “<article-title>Huangshan Floral Mushroom Polysaccharide Ameliorates Dextran Sulfate Sodium‐Induced Colitis in Mice by Modulating Th17/Treg Balance in a Gut Microbiota‐Dependent Manner</article-title>,” <source>Molecular Nutrition &amp; Food Research</source>
+<volume>67</volume> (<year>2023</year>): <elocation-id>2200408</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/mnfr.202200408</pub-id><pub-id pub-id-type="pmid">36418892</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0048">
+<string-name name-style="western">
+<given-names>K. R.</given-names>
+<surname>Groschwitz</surname>
+</string-name> and <string-name name-style="western">
+<given-names>S. P.</given-names>
+<surname>Hogan</surname>
+</string-name>, “<article-title>Intestinal Barrier Function: Molecular Regulation and Disease Pathogenesis</article-title>,” <source>Journal of Allergy and Clinical Immunology</source>
+<volume>124</volume> (<year>2009</year>): <fpage>3</fpage>–<lpage>20</lpage>, quiz 21–22.<pub-id pub-id-type="pmid">19560575</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jaci.2009.05.038</pub-id><pub-id pub-id-type="pmcid">PMC4266989</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0049">
+<string-name name-style="western">
+<given-names>S. H.</given-names>
+<surname>Lee</surname>
+</string-name>, “<article-title>Intestinal Permeability Regulation by Tight Junction: Implication on Inflammatory Bowel Diseases</article-title>,” <source>Intestinal Research</source>
+<volume>13</volume> (<year>2015</year>): <fpage>11</fpage>–<lpage>18</lpage>.<pub-id pub-id-type="pmid">25691839</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.5217/ir.2015.13.1.11</pub-id><pub-id pub-id-type="pmcid">PMC4316216</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0050"><label>50</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0050">
+<string-name name-style="western">
+<given-names>W. T.</given-names>
+<surname>Kuo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Shen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Zuo</surname>
+</string-name>, et al., “<article-title>Inflammation‐Induced Occludin Downregulation Limits Epithelial Apoptosis by Suppressing Caspase‐3 Expression</article-title>,” <source>Gastroenterology</source>
+<volume>157</volume> (<year>2019</year>): <fpage>1323</fpage>–<lpage>1337</lpage>.<pub-id pub-id-type="pmid">31401143</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1053/j.gastro.2019.07.058</pub-id><pub-id pub-id-type="pmcid">PMC6815722</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0051"><label>51</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0051">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Landy</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Ronde</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>English</surname>
+</string-name>, et al., “<article-title>Tight Junctions in Inflammatory Bowel Diseases and Inflammatory Bowel Disease Associated Colorectal Cancer</article-title>,” <source>World Journal of Gastroenterology</source>
+<volume>22</volume> (<year>2016</year>): <fpage>3117</fpage>–<lpage>3126</lpage>.<pub-id pub-id-type="pmid">27003989</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3748/wjg.v22.i11.3117</pub-id><pub-id pub-id-type="pmcid">PMC4789987</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0052">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Sasaki</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Mathis</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. H.</given-names>
+<surname>Jennings</surname>
+</string-name>, et al., “<article-title>Reversal of Experimental Colitis Disease Activity in Mice Following Administration of an Adenoviral IL‐10 Vector</article-title>,” <source>Journal of Inflammation (Lond)</source>
+<volume>2</volume> (<year>2005</year>): <fpage>13</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/1476-9255-2-13</pub-id><pub-id pub-id-type="pmcid">PMC1291390</pub-id><pub-id pub-id-type="pmid">16259632</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0053">
+<string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Jofra</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Galvani</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Cosorich</surname>
+</string-name>, et al., “<article-title>Experimental Colitis in IL‐10‐Deficient Mice Ameliorates in the Absence of PTPN22</article-title>,” <source>Clinical and Experimental Immunology</source>
+<volume>197</volume> (<year>2019</year>): <fpage>263</fpage>–<lpage>275</lpage>.<pub-id pub-id-type="pmid">31194881</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/cei.13339</pub-id><pub-id pub-id-type="pmcid">PMC6693971</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0054"><label>54</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0054">
+<string-name name-style="western">
+<given-names>D. F.</given-names>
+<surname>Zegarra Ruiz</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D. V.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Norwood</surname>
+</string-name>, et al., “<article-title>Microbiota Manipulation to Increase Macrophage IL‐10 Improves Colitis and Limits Colitis‐Associated Colorectal Cancer</article-title>,” <source>Gut Microbes</source>
+<volume>14</volume> (<year>2022</year>): <elocation-id>2119054</elocation-id>.<pub-id pub-id-type="pmid">36062329</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/19490976.2022.2119054</pub-id><pub-id pub-id-type="pmcid">PMC9450902</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0055"><label>55</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0055">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Elmastas</surname>
+</string-name>, <string-name name-style="western">
+<given-names>O.</given-names>
+<surname>Isildak</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Turkekul</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Temur</surname>
+</string-name>, “<article-title>Determination of Antioxidant Activity and Antioxidant Compounds in Wild Edible Mushrooms</article-title>,” <source>Journal of Food Composition and Analysis</source>
+<volume>20</volume> (<year>2007</year>): <fpage>337</fpage>–<lpage>345</lpage>.</mixed-citation></ref><ref id="mnfr70133-bib-0056"><label>56</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0056">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Jia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Kan</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>C.‐h.</given-names>
+<surname>Jin</surname>
+</string-name>, “<article-title>In Vitro and In Vivo Antioxidant Activity of Ethanolic Extract of White Button Mushroom (<italic toggle="yes">Agaricus bisporus</italic>)</article-title>,” <source>Food and Chemical Toxicology</source>
+<volume>51</volume> (<year>2013</year>): <fpage>310</fpage>–<lpage>316</lpage>.<pub-id pub-id-type="pmid">23099505</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.fct.2012.10.014</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0057"><label>57</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0057">
+<string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Ren</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Geng</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Du</surname>
+</string-name>, et al., “<article-title>Polysaccharide of Hericium Erinaceus Attenuates Colitis in C57BL/6 Mice via Regulation of Oxidative Stress, Inflammation‐Related Signaling Pathways and Modulating the Composition of the Gut Microbiota</article-title>,” <source>The Journal of Nutritional Biochemistry</source>
+<volume>57</volume> (<year>2018</year>): <fpage>67</fpage>–<lpage>76</lpage>.<pub-id pub-id-type="pmid">29677563</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jnutbio.2018.03.005</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0058"><label>58</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0058">
+<string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Zhang</surname>
+</string-name>, et al., “<article-title>Polysaccharides From <italic toggle="yes">Agaricus blazei Murrill</italic> Ameliorate Dextran Sulfate Sodium‐Induced Colitis via Attenuating Intestinal Barrier Dysfunction</article-title>,” <source>Journal of Functional Foods</source>
+<volume>92</volume> (<year>2022</year>): <elocation-id>105072</elocation-id>.</mixed-citation></ref><ref id="mnfr70133-bib-0059"><label>59</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0059">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Castro‐Mejía</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Jakesevic</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Ł.</given-names>
+<surname>Krych</surname>
+</string-name>, et al., “<article-title>Treatment With a Monoclonal Anti‐IL‐12p40 Antibody Induces Substantial Gut Microbiota Changes in an Experimental Colitis Model</article-title>,” <source>Gastroenterology Research and Practice</source>
+<volume>2016</volume> (<year>2016</year>): <elocation-id>4953120</elocation-id>.<pub-id pub-id-type="pmid">26880890</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1155/2016/4953120</pub-id><pub-id pub-id-type="pmcid">PMC4736578</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0060"><label>60</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0060">
+<string-name name-style="western">
+<given-names>L. M.</given-names>
+<surname>Cox</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Yamanishi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Sohn</surname>
+</string-name>, et al., “<article-title>Altering the Intestinal Microbiota During a Critical Developmental Window Has Lasting Metabolic Consequences</article-title>,” <source>Cell</source>
+<volume>158</volume> (<year>2014</year>): <fpage>705</fpage>–<lpage>721</lpage>.<pub-id pub-id-type="pmid">25126780</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cell.2014.05.052</pub-id><pub-id pub-id-type="pmcid">PMC4134513</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0061"><label>61</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0061">
+<string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Miyauchi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. W.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>W.</given-names>
+<surname>Suda</surname>
+</string-name>, et al., “<article-title>Gut Microorganisms Act Together to Exacerbate Inflammation in Spinal Cords</article-title>,” <source>Nature</source>
+<volume>585</volume> (<year>2020</year>): <fpage>102</fpage>–<lpage>106</lpage>.<pub-id pub-id-type="pmid">32848245</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41586-020-2634-9</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0062"><label>62</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0062">
+<string-name name-style="western">
+<given-names>N. W.</given-names>
+<surname>Palm</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. R.</given-names>
+<surname>de Zoete</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T. W.</given-names>
+<surname>Cullen</surname>
+</string-name>, et al., “<article-title>Immunoglobulin A Coating Identifies Colitogenic Bacteria in Inflammatory Bowel Disease</article-title>,” <source>Cell</source>
+<volume>158</volume> (<year>2014</year>): <fpage>1000</fpage>–<lpage>1010</lpage>.<pub-id pub-id-type="pmid">25171403</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cell.2014.08.006</pub-id><pub-id pub-id-type="pmcid">PMC4174347</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0063"><label>63</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0063">
+<string-name name-style="western">
+<given-names>G. H.</given-names>
+<surname>van Muijlwijk</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>van Mierlo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Jansen</surname>
+</string-name>, et al., “<article-title>Identification of <italic toggle="yes">Allobaculum mucolyticum</italic> as a Novel Human Intestinal Mucin Degrader</article-title>,” <source>Gut Microbes</source>
+<volume>13</volume> (<year>2021</year>): <elocation-id>1966278</elocation-id>.<pub-id pub-id-type="pmid">34455931</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/19490976.2021.1966278</pub-id><pub-id pub-id-type="pmcid">PMC8409761</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0064"><label>64</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0064">
+<string-name name-style="western">
+<given-names>J. C.</given-names>
+<surname>Ezeji</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D. K.</given-names>
+<surname>Sarikonda</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Hopperton</surname>
+</string-name>, et al., “<article-title>
+<italic toggle="yes">Parabacteroides distasonis</italic>: Intriguing Aerotolerant Gut Anaerobe With Emerging Antimicrobial Resistance and Pathogenic and Probiotic Roles in Human Health</article-title>,” <source>Gut Microbes</source>
+<volume>13</volume> (<year>2021</year>): <elocation-id>1922241</elocation-id>.<pub-id pub-id-type="pmid">34196581</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/19490976.2021.1922241</pub-id><pub-id pub-id-type="pmcid">PMC8253142</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0065"><label>65</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0065">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Kverka</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Zakostelska</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Klimesova</surname>
+</string-name>, et al., “<article-title>Oral Administration of <italic toggle="yes">Parabacteroides distasonis</italic> Antigens Attenuates Experimental Murine Colitis Through Modulation of Immunity and Microbiota Composition</article-title>,” <source>Clinical and Experimental Immunology</source>
+<volume>163</volume> (<year>2011</year>): <fpage>250</fpage>–<lpage>259</lpage>.<pub-id pub-id-type="pmid">21087444</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1365-2249.2010.04286.x</pub-id><pub-id pub-id-type="pmcid">PMC3043316</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0066"><label>66</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0066">
+<string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Cuffaro</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. L. W.</given-names>
+<surname>Assohoun</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Boutillier</surname>
+</string-name>, et al., “<article-title>In Vitro Characterization of Gut Microbiota‐Derived Commensal Strains: Selection of <italic toggle="yes">Parabacteroides distasonis</italic> Strains Alleviating TNBS‐Induced Colitis in Mice</article-title>,” <source>Cells</source>
+<volume>9</volume> (<year>2020</year>): <fpage>2104</fpage>.<pub-id pub-id-type="pmid">32947881</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/cells9092104</pub-id><pub-id pub-id-type="pmcid">PMC7565435</pub-id></mixed-citation></ref><ref id="mnfr70133-bib-0067"><label>67</label><mixed-citation publication-type="journal" id="mnfr70133-cite-0067">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Mendes‐Frias</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Moreira</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. C.</given-names>
+<surname>Vieira</surname>
+</string-name>, et al., “<article-title>
+<italic toggle="yes">Akkermansia muciniphila</italic> and <italic toggle="yes">Parabacteroides distasonis</italic> as Prognostic Markers for Relapse in Ulcerative Colitis Patients</article-title>,” <source>Frontiers in Cellular and Infection Microbiology</source>
+<volume>14</volume> (<year>2024</year>): <elocation-id>1367998</elocation-id>.<pub-id pub-id-type="pmid">39027140</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fcimb.2024.1367998</pub-id><pub-id pub-id-type="pmcid">PMC11254828</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

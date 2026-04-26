@@ -1,0 +1,8 @@
+## [2026-04-25 19:12] research | 2026-04-25_copper-replacing-silver-photovoltaic-panels
+Sources fetched: 14 total (papers/reports: 11, protocols: 1, retractions: 0, catalogs: 2). Deterministic `pdftotext -layout` companions were generated for all 9 accepted PDFs. Notable for Pass 2: the evidence base is strongest for Ni/Cu plating, copper diffusion/barrier reliability, copper paste/screen-printing, damp-heat/thermal-cycle validation, and silver-use roadmapping; nickel-sulfate supplier catalog coverage and Retraction Watch/PubPeer negative evidence remain sparse. Failed fetches were recorded in `raw/fetch_log.jsonl`, including blocked ScienceDirect/Wiley endpoints and broken NREL/NLR redirects.
+
+## [2026-04-25 19:55] wiki | 2026-04-25_copper-replacing-silver-photovoltaic-panels
+Pages: sources=14, methods=8, reagents=10, organisms=6, failure-modes=13. Promotion candidates: copper, silver, crystalline-silicon-solar-cell, PERC-solar-cell, damp-heat-and-thermal-cycling-pv-reliability-test, copper-diffusion-into-silicon. Contradictions noticed: Chen 2022 and Lachowicz 2024 support copper paste/plated routes under their tested stacks, while Karas 2022 documents copper outdiffusion and silicon ingress after damp heat in other Cu-plated stacks; ITRPV 2024 also indicates copper-containing metallization is emerging but silver remains dominant in mass production.
+
+## [2026-04-25 20:10] plan | plan-v1
+Total budget: $93,500. Timeline: 12 weeks. Sources used: 14. Top failure modes: copper-diffusion-into-silicon, copper-outdiffusion-during-damp-heat, copper-contamination-of-shared-furnace. Novelty: similar-work-exists.

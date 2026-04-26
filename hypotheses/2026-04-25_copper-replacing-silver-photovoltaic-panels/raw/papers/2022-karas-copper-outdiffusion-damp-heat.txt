@@ -1,0 +1,876 @@
+Copper Outdiffusion from Copper-Plated Solar Cell
+
+             Contacts During Damp Heat Exposure
+
+Joseph Karasa*#, Benjamin Phua b, Alvin Mo b, Nafis Iqbalc, Kristopher Davisc, Stuart Bowden a,
+
+                                Alison Lennon b, André Augusto a
+
+
+  aSolar Power Laboratory, Arizona State University, Tempe, Arizona, 85287, United States
+
+
+
+bSchool of Photovoltaic and Renewable Energy Engineering, University of New South Wales,
+
+
+                                 Sydney, NSW, 2052, Australia
+
+ C Department of Materials Science and Engineering, University of Central Florida, Orlando,
+
+
+                                  Florida, 32816, United States
+
+*Corresponding author: joseph.f.karas@asu.edu
+
+
+
+#Present address: National Renewable Energy Laboratory, Golden, Colorado, 80401, United States
+
+
+
+
+Abstract
+
+Plated copper (Cu) contacts for silicon (Si) solar cells are an attractive alternative material to
+
+conventional screenprinted silver, but there are unresolved questions on the long-term integrity of
+
+plated contact structures. In this work we perform characterization on plated Cu contacts from
+
+encapsulated cells that were degraded during extended exposure to damp heat (DH) stress. First,
+
+
+                                                1
+using energy dispersive X-ray spectroscopy (EDS), we find evidence of Cu outdiffusion upward
+
+through capping layers made of both tin and silver applied with light-induced plating, resulting in
+
+a layer of Cu on the outer contact surface. We hypothesize that if Cu is mobile in the module, it
+
+may eventually find some route by which to enter the Si cells where it can degrade performance.
+
+Subsequently, in several types of Cu-plated, DH-degraded cells, secondary ion mass spectrometry
+
+(SIMS) detects elevated levels of Cu at the Si surface and in the Si cell bulk, which suggests that
+
+Cu can indeed migrate from contacts into Si over the course of DH stress.
+
+
+Keywords: copper, tin, silver, plating, solar cell, damp heat, diffusion
+
+
+I. Introduction
+
+  The long-term reliability and durability of solar cells is a topic of prime importance, particularly
+
+considering that targeted solar module lifetimes in the future may be substantially longer than the
+
+25-30 years of field deployment that has been typical of warranties for currently-deployed
+
+modules.1 When considering the introduction of new materials or manufacturing methods for PV
+
+modules, it should be necessary to test for and understand any new degradation modes that might
+
+also be introduced. In this case, we consider electrical contacts for silicon (Si) solar cells made
+
+primarily of plated copper (Cu), which have for some time been discussed as a lower-cost
+
+alternative to screenprinted silver (Ag) contacts.
+
+  Plated Cu contacts have not gained their projected market share for Si solar cells despite the fact
+
+that they offer savings on material costs and performance advantages compared to screenprinted
+
+Ag.2 While there seem to be several compounding reasons for this lack of industrial adoption, a
+
+recent review of challenges with plated Cu highlighted reliability and durability concerns over
+
+                                                  2
+“contact integrity,” a term used to describe detrimental Cu diffusion or microstructural changes in
+
+the contact over time in response to environmental stressors.2 High-efficiency cell concepts may
+
+present an opportunity for the introduction of plated Cu contacts, as they may offer a more cost-
+
+effective route to highly-conductive contacts and are inherently formed at the low temperatures
+
+necessitated by some high-efficiency cell passivation schemes.3,4 Therefore, continued study of
+
+plated Cu contact integrity is important.
+
+  Copper ingress from contacts into Si has been a concern from the outset as Cu is a particularly
+
+fast-diffusing and insidious defect in Si and can form highly recombination-active precipitates.5–7
+
+Plated contact schemes aim to prevent Cu ingress with diffusion barriers between the Cu and Si.
+
+In homojunction c-Si cells with direct contact between metal and Si, this barrier layer is usually
+
+nickel (Ni), and is usually annealed to form an interfacial nickel silicide layer (NiSiX). The
+
+annealed Ni layer is also understood to improve adhesion and reduce contact resistance.8–12 A
+
+number of studies have tested for the downward diffusion of Cu (into cells) through the Ni barrier
+
+by means of accelerated testing at elevated temperatures (usually 200°C), with detrimental
+
+degradation noted only when the Ni layer is insufficiently thick (<~200 nm).13,14 It is assumed that
+
+with sufficiently thick Ni barriers, the downward ingress of Cu is prevented both by the formation
+
+of NiSiX layer at the bottom of the stack and alloying at the Ni-Cu interface.2,15,16 However, one
+
+study showed detrimental Cu precipitates underneath Ni diffusion barriers after 200°C heat
+
+treatments and rapid cooling, suggesting that downward Cu may somehow defeat Ni barriers at
+
+moderate temperatures, but that slow cooling inhibits the formation of performance-limiting
+
+extended Cu defects.17
+
+  More recently, other evidence has emerged regarding another aspect of contact integrity: after
+
+performing extended heat treatments designed to test for downward Cu diffusion, several studies
+
+                                                 3
+have found evidence of “upward” Cu outdiffusion through Ag capping layers, which can leave
+
+voids in the contact stack that in some cases ultimately affected device performance.10,18,19
+
+  In previous work, we have shown that encapsulated cells with Cu-plated contacts degrade more
+
+under damp heat (DH) stress than comparative encapsulated cells with Ag-screenprinted
+
+contacts.20,21 Specifically, the degradation in Cu-plated samples affected diode parameters,
+
+indicating junction degradation described by increasing non-ideal recombination current density
+
+(J02) and decreasing pseudo fill factor (pFF) as measured by the Suns-VOC technique.22 In the first
+
+study, the degradation was not observed in sister samples with Ag-screenprinted contacts, and
+
+degradation was prevented in Cu-plated cells when the encapsulant was polyolefin elastomer
+
+(POE), rather than the more common ethylene vinyl acetate (EVA).20 In the second study,
+
+degradation seemed to correlate with the average adhesion strength of the Cu -plated fingers to Si,
+
+and it was proposed that weaker finger adhesion resulted in finger dislodgement during DH testing,
+
+thereby opening a pathway for mobile Cu to diffuse into Si.21
+
+  In the present work we examine samples from those previous studies that exhibited pFF loss
+
+after DH stress. We hypothesized that this degradation could be due to Cu contamination of the
+
+Si. We present cross-sectional scanning electron microscope (SEM) images and energy dispersive
+
+X-ray spectroscopy (EDS) characterization of encapsulated, Cu-plated cells after exposure to
+
+1000+ hours of DH testing at 85°C and 85% relative humidity. In these modules, we find evidence
+
+of Cu diffusion outward through contact capping layers formed by light-induced plating (LIP). In
+
+samples with suspected Cu-induced degradation, we show evidence of Cu ingress into c-Si via
+
+secondary ion mass spectroscopy (SIMS).
+
+
+II. Experimental
+
+                                                4
+  The samples in this work are a variety of p-type c-Si cells with Ni-Cu plated contacts, which
+
+were encapsulated into modules, and exposed to DH at 85°C and 85% relative humidity (RH) for
+
+varying durations. As described in subsequent sections, we examined several different cells with
+
+plated Cu contacts manufactured with different specific processes and encapsulated with different
+
+materials. In particular, we study Ni-Cu plated contacts with different metal capping layers: both
+
+tin (Sn) applied with light-induced plating (LIP Sn) and silver (Ag), also applied with LIP (LIP
+
+Ag). Although the specific materials, manufacturing, DH stress duration and observed degradation
+
+in each sample are slightly different, we aim to compare and contrast Cu outdiffusion in different
+
+systems. More details of each sample are found in respective discussion in Sections III.A and III.B.
+
+  After DH exposure, samples were characterized with I-V and electroluminescence and/or
+
+photoluminescence imaging, then prepared for cross-sectional imaging. Small, selected sections
+
+of modules were removed with a diamond cutter, then mounted in resin for grinding and polishing.
+
+Glass and encapsulant were ground away, then polished with 3 μm and 1 μm compound until
+
+smooth. A Helios G4 plasma focused ion beam and scanning electron microscope (PFIB-SEM)
+
+was used to mill EVA and plated finger cross sections and take images, equipped with an Oxford
+
+Ultim Max 170 SDD energy dispersive X-ray spectroscopy (EDS) system for elemental mapping.
+
+  Selected sections of the same and analogous modules were analyzed with secondary ion mass
+
+spectroscopy (SIMS). After harvesting cores from degraded modules and removing the
+
+encapsulant, the samples were dipped in 70% nitric acid (HNO 3) for 90 minutes at 45°C followed
+
+by 5% hydrofluoric acid (HF) for 4 minutes to remove the metallization and expose the silicon
+
+surface. SIMS was performed using a PHI Adept 1010 Dynamic SIMS system, with an oxygen
+
+primary ion beam with 3 kV energy and 20 nA current. The raster size was 60 x 60 μm and positive
+
+ions were detected from a 19 x 19 μm area in the center. Multiple measurements were performed
+
+                                                 5
+at exposed metal contact regions on each sample. See the discussion of SIMS measurements
+
+applied to degraded c-Si cells in Iqbal et al.23
+
+
+III. Results and Discussion
+
+III. A. Electron microscopy and EDS of degraded samples
+
+III. A. 1. Cu-plated, Sn-capped
+
+
+  Electroluminescence (EL) images of a degraded Cu-plated Sn-capped cell over 2000 hours of
+
+DH are shown in Figure 1. The pFF of the sample decreased from 82.1% to 77.0% and J02 more
+
+than doubled, indicating degradation of the diode characteristics of the cell.22
+
+
+
+
+Figure 1. Electroluminescence and pFF changes of a Cu-plated, Sn-capped cell over 2000 hours
+
+of DH exposure. The area harvested for SEM cross-sectioning is indicated in red.
+
+
+  Figure 2a shows a SEM cross section of a Ni-Cu-Sn-plated contact finger harvested from the
+
+cell region indicated in Figure 1. This cell was fabricated from a 6” textured p-type mono-Si
+
+aluminum back surface field (Al-BSF) cell precursor obtained from an industrial manufacturer,
+
+lacking a front contact. The front contact pattern was then patterned via negative screenprinted
+
+photoresist, and the Si surface was exposed for plating via HF etching of the front silicon nitride
+
+antireflection coating. The aspect ratio of the contacts was rather large due to the poor fidelity of
+
+resist/wet etch patterning: fingers were roughly 200 μm wide by several μm tall. The plated contact
+
+                                                   6
+stack was formed via light-induced plating (LIP): first a Ni diffusion barrier from a sulfamate-
+
+based Ni bath. Following a NiSiX-forming anneal (350°C, 2 minutes, N2 ambient) and SPM etch
+
+(2 minutes, 4:1 sulfuric acid to hydrogen peroxide) of unreacted Ni, the final stack was plated with
+
+LIP Ni, sulfate-based LIP Cu, and LIP acid stannous Sn with interim rinsing.24 The final contact
+
+stack height at the busbar was approximately 7-8 μm, roughly 0.5 μm Ni, 6 μm Cu, and 1 μm Sn.
+
+The sample was tabbed by hand and encapsulated with a conventional glass/EVA/backsheet
+
+module construction and subjected to 2000 total hours of 85°C/85% RH DH stress.
+
+  Figure 2c shows linescan EDS data from the yellow line indicated in 2a. Figure 2b shows EDS
+
+maps, which clearly show the presence of Cu within the Sn capping layer, and particularly
+
+accumulating at the outer Sn surface. Small voids are visible at the Cu-Sn interface approximately
+
+every 1-2 μm.
+
+
+
+
+                                                 7
+Figure 2. (a) SEM cross section of a Ni-Cu-Sn plated contact finger harvested from the region
+
+indicated in Figure 1 after 2000 hours of DH. (b) EDS maps for Sn, Cu, Ni, and Si of the same
+
+cross section. (c) EDS linescan of the line indicated in (a).
+
+
+  The low temperature Cu-Sn system has been studied extensively, primarily regarding solid state
+
+Cu-Sn interdiffusion which results in intermetallic compounds (IMCs). These IMCs are
+
+problematic in solder joints because of their brittleness.25 Cu is a fast diffuser in Sn, diffusing
+
+interstitially in the c direction of the metallic Sn tetragonal lattice, which initiates Cu -Sn
+
+interdiffusion at low temperature.26 The Cu-Sn phase diagram shows two low-temperature IMCs
+
+formed through interdiffusion: an orthorhombic ε-Cu 3Sn and a monoclinic η-Cu 6Sn 5.27,28 Many
+
+
+                                                8
+experimental results on binary Cu-Sn diffusion couples at low temperatures find that these two
+
+phases develop at Cu-Sn interfaces.29 A number of measured and derived Cu-Sn interdiffusion
+
+concentration profiles from the literature appear much the same as the EDS profile near the Cu-Sn
+
+interface in Figure 2c, see for example Kumar et al.30
+
+  Another feature of many of these studies of Cu-Sn interdiffusion is the development of
+
+microvoids at the interface, which are attributed to the faster diffusion of Cu into Sn than Sn into
+
+Cu, as well as in the IMC layers.30,31 This results in a net flux of vacancies, which can coalesce to
+
+form voids. While these are frequently called “Kirkendall voids” in the literature, the position of
+
+the voids in the IMC layers requires some extension of classical Kirkendall theory. In particular,
+
+multiple Kirkendall planes are predicted in the Cu-Sn system, an effect of the diffusion anisotropy
+
+of the Cu-Sn IMCs.29,32 Furthermore, it has been shown repeatedly that void formation is enhanced
+
+by the presence of impurities, which is very relevant for plated Cu from sulfate-based acid
+
+solutions, which is likely to have impurities including sulfur, chlorine, carbon, and oxygen.31,33,34
+
+Void size and density in plated Cu-Sn also seems to depend on plating current density.35 In the Cu-
+
+Sn system, voids are expected to form at the Cu-Cu 3Sn interface, and perhaps within the Cu 3Sn
+
+phase, especially if the purity of the Cu layer is ≤99.9%.30 While Cu diffusion in Sn is a
+
+predominantly bulk diffusion process, grain boundary diffusion plays an important role in
+
+transporting Sn in the Cu 6Sn 5 layer toward the Cu 3Sn layer, so the Cu 6Sn 5 tends to consume the
+
+Cu 3Sn.36 Grain boundary diffusion explains why Sn and Cu diffusion in th e Cu 6Sn 5 phase are
+
+roughly equal. If left for long periods, the growth of voids in the Cu 3Sn layer may disrupt the
+
+diffusion of Cu, and eventually the Cu 3Sn is consumed by Cu 6Sn 5.35 At low temperatures (<75°C)
+
+it seems like the primary phase growth is in the Cu 6Sn 5 phase, whereas at higher temperatures both
+
+phases grow.37 This difference in phase growth is potentially relevant for Cu-plated solar cell
+
+                                                 9
+contacts in the field, which operate in wide temperature ranges that will typically be lower than
+
+75°C, but may occasionally approach 75°C in hot climates. It may also suggest that the phase
+
+growth will be different in most field scenarios than in 85 °C DH testing.
+
+  Overall, the implication seems to be that some degree of IMC and void growth should be
+
+anticipated with plated Cu-Sn contacts. With a sufficiently thick Sn layer, growth of the Cu 6Sn5
+
+phase could ultimately present a barrier to further outdiffusion of Cu through Sn. Cu outdiffusion
+
+will also be disrupted as voids form at the Cu-Cu 3Sn interface.35 Both are dependent on
+
+temperature and Cu purity, among other variables. With a thin layer of Sn and/or no limitation on
+
+Cu outdiffusion, Cu-Sn IMCs could potentially consume the entire Sn layer given enough time.
+
+Another solution might be to add Ni to the Cu (5-15 at.%, or 9 at.% according to various sources),
+
+to limit Cu outdiffusion and create a stable phase of (Cu, Ni)6Sn 5 at room temperature.27,38
+
+
+
+III. A. 2. Cu-plated, Ag-capped
+
+
+  Figure 3 shows cross-sectional and luminescence data from a 3x3 cm cell with Ni-Cu-Ag plated
+
+contacts. This cell was fabricated from a 156 x 156 mm PERC precursor without front contacts.
+
+Twenty-five small cell contact grids (25 x 25 mm) were patterned on the front of each wafer by
+
+removal of the silicon nitride antireflection layer with a 266 nm ps Lumera Super Rapid Nd: YAG
+
+laser with a BBO crystal for the 4 th harmonic. Pre-treatment (deglazing) was performed by single
+
+side immersion in 1% HF for 60 s to remove native oxides formed during laser ablation followed
+
+by a rinse with deionized water.39,40 LIP was used for the Ni (~1 μm), Cu (~11 μm) and Ag (~1
+
+μm) contact stack. After cells were plated, they were annealed (350°C, 1 minute, N2 ambient) to
+
+form NiSix. After annealing, each large precursor was laser cleaved into 25 individual small cells
+
+(30 x 30 mm).40 Cells were interconnected and EVA-encapsulated in a three-cell mini-module and
+                                               10
+exposed to 1000 hours of DH stress. pFF reduced from 79.4% to 77.9% in DH, again indicating
+
+deterioration of the diode characteristics.
+
+
+
+
+Figure 3. (a) SEM cross section of a finger from a Ni-Cu-Ag plated cell after 1000 hours of DH,
+
+harvested from the region indicated in (c). (b) EDS maps of the same cross section for Ag, Cu, Si,
+
+and Ni. (c) EL and pFF loss for the cell after 1000 hours of DH.
+
+
+  Figure 3a shows the cross-sectional image of a finger, harvested from the region indicated in
+
+Figure 3c. The EDS map of the cross section in Figure 3b shows the presence of the Cu on the
+
+outer surface of the capping layer and interestingly lining the voids in the encapsulant above the
+
+finger. Close inspection shows small voids present at the Cu-Ag interface. Previously, small voids
+
+have been reported at the interface of LIP Cu and LIP Ag after NiSix annealing at 300-350°C for
+
+several minutes,21,41 with larger voids reported after thermally-stressing cells at 200°C for 500
+
+hours.10,42
+
+  The Cu-Ag phase diagram predicts little solid solubility in the Cu-Ag system below the eutectic
+
+point at approximately 780°C, therefore bulk diffusion studies seldom report interdiffusion in Cu-
+                                              11
+Ag diffusion couples below ~700°C.43–46 In other cases, diffusion experiments at lower
+
+temperature have noted a discontinuity in the Arrhenius plot of Cu-Ag diffusion coefficient,
+
+indicating a lower activation energy at temperatures below 600-700°C, which they attribute to the
+
+greater role played by grain boundary diffusion.47,48 Dorner et al. took care to study Cu diffusion
+
+in Ag single crystals and found no such discontinuity in the Arrhenius plot, again suggesting that
+
+grain boundary diffusion is responsible for diffusion of Cu in Ag at temperatures below the limit
+
+of solid solubility.49
+
+  Applied studies of Cu diffusion through thin plated Ag layers have been previously performed
+
+on leadframe packages for integrated circuits. Lin et al. detected Cu migration through 5-7 μm-
+
+thick plated Ag layers after 2.5 hours at 175°C, and suggested that grain boundaries in the Ag layer
+
+presented a route for Cu migration.50 Similar experiments were performed by Li and Ong and
+
+Zhang et al.,51,52 who all discovered Cu migration through several μm of plated Ag after thermal
+
+exposure to 125-200°C for durations ranging from several hours to several days. A point of
+
+emphasis in these studies was the consumption of outdiffused Cu by reactions occurring on the
+
+surface. Cu oxidized with atmospheric oxygen or corroded from oxygen and sulfur present in
+
+packaging mold compounds. The rate of Cu outdiffusion through Ag seemed to depend on the
+
+chemical environment at the outer surface of the Ag layer, with some packages preventing Cu
+
+outdiffusion better than others.50–52 Similarly, chemically-driven outdiffusion of Cu through plated
+
+Ag grain boundaries is observed in historical daguerreotype photographs.53,54
+
+  Therefore, it seems plausible that Cu could outdiffuse through plated Ag capping layers at
+
+relatively low temperature, given both sufficient grain boundaries in the Ag layer and a chemical
+
+reaction “sink” at the surface. It is well known that DH stress applied to conventional PV modules
+
+with EVA encapsulant produces acetic acid. Acetic acid has been noted to corrode cell
+
+                                                12
+metallization in other experiments (see e.g. references 55,56); in Cu-plated, Ag-capped samples it
+
+might also provide a sink reaction to drive Cu outdiffusion via grain boundaries. Solutions to
+
+prevent this outdiffusion may be to substitute or engineer encapsulant materials to produce less
+
+acetic acid; or to manipulate the grain boundaries of the Ag layer to provide fewer diffusion
+
+pathways. Colwell et al. noted apparently greater Cu outdiffusion through thick LIP Ag capping
+
+layers than in thin immersion-plated Ag, and suggested the more polycrystalline LIP Ag provided
+
+more pathways for low-temperature Cu diffusion.18
+
+
+
+
+III. B. SIMS on degraded samples
+
+  After finding evidence of Cu outdiffusion, it is important to understand if the outdiffused Cu is
+
+problematic. In an effort to understand if degradation of diode characteristics is actually caused by
+
+Cu ingress into the c-Si, SIMS profiles into the depth of the c-Si were recorded on a number of
+
+locations on a number of different sample types. Figure 4 shows SIMS depth profiles of Cu in
+
+three samples with different DH degradation. The signal is normalized to the maximum detected
+
+signal. Lines represent the mean of multiple measurements from a sample, shaded areas represent
+
+the 95% confidence interval. Ni-Cu-Sn plated (EVA) (solid black line) signifies a sample
+
+analogous to the one discussed in Section III.A.1 and Figures 1 and 2: that is, a cell with Cu-plated,
+
+LIP Sn-capped contacts, encapsulated in EVA. It was exposed to 3500 hours of 85°C/85% RH DH
+
+and lost 4.7% absolute of pFF with more than 6x increase in J 02. Ni-Cu-Sn plated (POE) (dashed
+
+red line) is the same type of sample except encapsulated in POE, and did not undergo appreciable
+
+pFF or J02 degradation over the same duration of DH. The EVA sample has a roughly three-fold
+
+greater concentration of Cu at the surface than the POE sample, on average. The rather large
+
+
+                                                 13
+confidence interval could reflect the fact that these dynamic SIMS depth profiles are complicated
+
+by the Si surface texture. We also cannot rule out that Cu ingress could vary across the surface of
+
+each sample, which would also yield large confidence intervals. As a reference, Figure 4 also
+
+shows a profile (dotted blue line) from a Ag screenprinted sister cell, encapsulated in EVA, which
+
+did not degrade over 3500 hours of DH, and shows essentially no Cu signal. The surface
+
+concentration of Cu shown in Figure 4 is higher in the Cu-plated, EVA-encapsulated sample than
+
+in the Cu-plated, POE-encapsulated sample. We have previously reported that the diode
+
+degradation was greater in EVA-encapsulated samples than in POE-encapsulated samples20, and
+
+we now suggest the reason is because Cu ingress is greater EVA-encapsulated samples.
+
+
+
+
+Figure 4. SIMS Cu profiles into three similar c-Si solar cells after 3500 hours of DH: a Ni-Cu-Sn
+
+plated cell, encapsulated in EVA (solid black line); a Ni-Cu-Sn plated cell encapsulated in POE
+
+(dashed red line); and a Ag-screenprinted cell encapsulated in EVA (dotted blue line). The line
+
+shows the mean of multiple measurements (five, three, and two measurements respectively) and
+
+the shaded area shows the 95% confidence interval.
+
+
+  Figure 5 shows SIMS profiles from a Cu-plated, LIP Ag-capped sample with a contact stack
+
+similar to the one discussed in Section III.A.2 and Figure 3. It was encapsulated in EVA, and
+
+                                                14
+exposed to 2000 hours of DH and degraded in pFF 6.8% absolute. The bad regions (orange solid
+
+line) are measurements performed on areas that appeared relatively darker in EL, while the good
+
+regions (green dashed line) are measurements performed on bright areas, marked in the EL image.
+
+We detect Cu in the sample in both good and bad areas. The surface concentration of Cu is greater
+
+in the bad regions, but the good regions have slightly higher Cu signal beyond ~500 nm. This
+
+might indicate that Cu is more concentrated in the emitter in worse-performing regions.
+
+
+
+
+Figure 5. SIMS Cu profiles into a Ni-Cu-Ag plated cell, encapsulated in EVA, after 2000 hours
+
+of DH. Bad regions (solid orange line) correspond to dark spots in EL indicated in the image at
+
+right. Good regions (dashed green line) correspond to brighter areas. The line shows the mean of
+
+3 measurements from each region, the shaded area shows the 95% confidence interval.
+
+
+
+
+V. Conclusion
+
+  This study of DH-exposed silicon solar cells with Cu-plated contacts shows evidence of Cu
+
+outdiffusion through plated capping layers after 1000+ hours of DH exposure. Outdiffusion is
+
+                                               15
+observed for both LIP Sn and LIP Ag capping, although in each case the me chanism for low
+
+temperature outdiffusion is likely different. In Cu-Sn contacts, low temperature formation of IMC
+
+layers via interdiffusion at the interface is predicted by the Cu-Sn phase diagram. In Cu-Ag
+
+contacts, Cu outdiffusion is likely confined to grain boundaries, and perhaps only if a chemical
+
+driving force consumes outdiffused Cu at the surface.
+
+  Cells with both Cu-Sn and Cu-Ag contact stacks exhibited pFF loss in DH. Previous studies of
+
+Cu contact-induced degradation have primarily been concerned with pFF loss caused by
+
+downward Cu ingress through seed/barrier layers (usually Ni). Upward Cu outdiffusion may also
+
+need to be considered, particularly in module packages that create a chemical reaction sink at the
+
+outer surface of the contact, e.g., acetic acid from hydrolyzed EVA. Once outdiffused, Cu may be
+
+mobile in the module and eventually find some route to ingress into the Si. Conceivable solutions
+
+are to engineer the capping layers to prevent Cu outdiffusion, or to remove the driving force for
+
+outdiffusion by better engineering module packages and materials for stable chemical
+
+environments, for example, by replacing EVA with other encapsulants.
+
+  Finally, we present evidence of Cu ingress into c-Si in several types of Cu-plated, DH-degraded
+
+cells as measured by SIMS. In general, the relative quantity of Cu measured by SIMS at the c-Si
+
+surface correlates with the extent of degradation observed in I-V parameters or observed in
+
+electroluminescence. We have shown evidence that replacing EVA with POE seems to limit Cu
+
+ingress.
+
+
+Acknowledgements
+  This work was supported in part by the U.S. Department of Energy’s Office of Energy Efficiency
+
+and Renewable Energy (DOE EERE) Solar Energy Technologies Office (SETO) under SolarMat
+
+
+                                               16
+2 Award Number DE-EE0006814, Award Number DE-EE0008155, and Agreement 32509 for the
+
+Durable Module Materials Consortium (DuraMAT), and in part by the Engineering Research
+
+Center Program of the National Science Foundation (NSF) and the DOE EERE under NSF
+
+Cooperative Agreement EEC-1041895 (QESST). Additionally, this work has been supported in
+
+part by the Australian Research Council Future Fellowship FT170100447 (Alison Lennon) and
+
+the Australian Government through a Research Training Scholarship awarded to Ben Phua. The
+
+authors gratefully thank L. Michaelson, K. Munoz, and T. Tyson of Technic, Inc. for sample
+
+preparation and support of this work.
+
+
+  Conflicts of Interest: The authors declare no conflicts of interest.
+
+
+References
+
+(1)   Wilson, G. M.; Al-Jassim, M.; Metzger, W. K.; Glunz, S. W.; Verlinden, P.; Xiong, G.;
+      Mansfield, L. M.; Stanbery, B. J.; Zhu, K.; Yan, Y.; Berry, J. J.; Ptak, A. J.; Dimroth, F.;
+      Kayes, B. M.; Tamboli, A. C.; Peibst, R.; Catchpole, K.; Reese, M. O.; Klinga , C. S.;
+      Denholm, P.; Morjaria, M.; Deceglie, M. G.; Freeman, J. M.; Mikofski, M. A.; Jordan, D.
+      C.; TamizhMani, G.; Sulas-Kern, D. B. The 2020 Photovoltaic Technologies Roadmap. J.
+      Phys. D. Appl. Phys. 2020, 53 (49), 493001. https://doi.org/10.1088/1361-6463/ab9c6a.
+(2)   Lennon, A.; Colwell, J.; Rodbell, K. P. Challenges Facing Copper-Plated Metallisation for
+      Silicon Photovoltaics: Insights from Integrated Circuit Technology Development. Prog.
+      Photovoltaics Res. Appl. 2019, 27 (1), 67–97. https://doi.org/10.1002/pip.3062.
+(3)   Grübel, B.; Cimiotti, G.; Arya, V.; Fellmeth, T.; Feldmann, F.; Steinhauser, B.; Kluska, S.;
+      Kluge, T.; Landgraf, D.; Glatthaar, M. Plated Ni/Cu/Ag for TOPCon Solar Cell
+      Metallization. In 36th European Photovoltaic Solar Energy Conference and Exhibition;
+      Marseille, 2019; pp 167–171. https://doi.org/10.4229/EUPVSEC20192019-2BO.2.3.
+(4)   Hatt, T.; Bartsch, J.; Davis, V.; Richter, A.; Kluska, S.; Glunz, S. W.; Glatthaar, M.; Fischer,
+      A. Hydrophobic AlOx Surfaces by Adsorption of a SAM on Large Areas for Application in
+      Solar Cell Metallization Patterning. ACS Appl. Mater. Interfaces 2021, 13 (4), 5803–5813.
+      https://doi.org/10.1021/acsami.0c20134.
+(5)   Istratov, A. A.; Flink, C.; Hieslmair, H.; Weber, E. R.; Heiser, T. Intrinsic Diffusion
+      Coefficient of Interstitial Copper in Silicon. Phys. Rev. Lett. 1998, 81 (6), 1243–1246.
+      https://doi.org/10.1103/PhysRevLett.81.1243.
+(6)   Istratov, A. A.; Hedemann, H.; Seibt, M.; Vyvenko, O. F.; Schroter, W.; Heiser, T.; Flink,
+                                             17
+      C.; Hieslmair, H. H.; Weber, E. Electrical and Recombination Properties of Copper-Silicide
+      Precipitates in Silicon. J. Electrochem. Soc. 1998, 145 (11), 3889.
+      https://doi.org/10.1149/1.1838889.
+(7)   Istratov, A. A.; Weber, E. R. Physics of Copper in Silicon. J. Electrochem. Soc. 2002, 149
+      (1), G21. https://doi.org/10.1149/1.1421348.
+(8)   ur Rehman, A.; Lee, S. H.; Bhopal, M. F.; Lee, S. H. Ni/Cu/Ag Plated Contacts: A Study
+      of Resistivity and Contact Adhesion for Crystalline-Si Solar Cells. Electron. Mater. Lett.
+      2016, 12 (4), 439–444. https://doi.org/10.1007/s13391-016-4003-2.
+(9)   Bajpai, V. K.; Pant, P.; Solanki, C. S. Thin Uniform Nickel Seed Layer Formation and Its
+      Impact on Ni-Cu Contact Adhesion for c-Si Solar Cell Applications. Sol. Energy 2017, 155,
+      62–74. https://doi.org/10.1016/j.solener.2017.06.002.
+(10) Dang, C.; Labie, R.; Simoen, E.; Poortmans, J. Detailed Structural and Electrical
+     Characterization of Plated Crystalline Silicon Solar Cells. Sol. Energy Mater. Sol. Cells
+     2018, 184, 57–66. https://doi.org/10.1016/j.solmat.2018.04.016.
+(11) Buchler, A.; Grubel, B.; Arya, V.; Weingartner, T.; Hahnel, A.; Naumann, V.; Bartsch, J.;
+     Glatthaar, M.; Kluska, S. Microcharacterization of Interface Oxide Layer on Laser-
+     Structured Silicon Surfaces of Plated Ni–Cu Solar Cells. IEEE J. Photovoltaics 2019, 9 (6),
+     1532–1540. https://doi.org/10.1109/JPHOTOV.2019.2938306.
+(12) Aleem, M.; Vishnuraj, R.; Krishnan, B.; Pullithadathil, B. Realization of Micropatterned,
+     Narrow Line-Width Ni–Cu–Sn Front Contact Grid Pattern Using Maskless Direct-Write
+     Lithography for Industrial Silicon Solar Cells. ACS Appl. Energy Mater. 2021, 4 (10),
+     10682–10696. https://doi.org/10.1021/acsaem.1c01699.
+(13) Bartsch, J.; Mondon, A.; Bayer, K.; Schetter, C.; Hörteis, M.; Glunz, S. W. Quick
+     Determination of Copper-Metallization Long-Term Impact on Silicon Solar Cells. J.
+     Electrochem. Soc. 2010, 157 (10), H942. https://doi.org/10.1149/1.3466984.
+(14) Kraft, A.; Wolf, C.; Bartsch, J.; Glatthaar, M.; Glunz, S. Long Term Stability of Copper
+     Front Side Contacts for Crystalline Silicon Solar Cells. Sol. Energy Mater. Sol. Cells 2015,
+     136, 25–31. https://doi.org/10.1016/j.solmat.2014.12.024.
+(15) Nicolet, M.; Bartur, M. Diffusion Barriers in Layered Contact Structures. J. Vac. Sci.
+     Technol. 1981, 19 (3), 786–793. https://doi.org/10.1116/1.571149.
+(16) Kale, A. S.; Nemeth, W.; Perkins, C. L.; Young, D.; Marshall, A.; Florent, K.; Kurinec, S.
+     K.; Stradins, P.; Agarwal, S. Thermal Stability of Copper–Nickel and Copper–Nickel
+     Silicide Contacts for Crystalline Silicon. ACS Appl. Energy Mater. 2018, 1 (6), 2841–2848.
+     https://doi.org/10.1021/acsaem.8b00488.
+(17) Flynn, S.; Lennon, A. Copper Penetration in Laser-Doped Selective-Emitter Silicon Solar
+     Cells with Plated Nickel Barrier Layers. Sol. Energy Mater. Sol. Cells 2014, 130, 309–316.
+     https://doi.org/10.1016/j.solmat.2014.07.026.
+(18) Colwell, J.; Hsiao, P.-C.; Shen, X.; Zhang, W.; Wang, X.; Lim, S.; Lennon, A. Impact of
+     Contact Integrity during Thermal Stress Testing on Degradation Analysis of Copper-Plated
+     Silicon Solar Cells. Sol. Energy Mater. Sol. Cells 2018, 174, 225–232.
+
+                                               18
+      https://doi.org/10.1016/j.solmat.2017.09.005.
+(19) Lee, S. H.; Lee, D. W.; Rehman, A. U.; Baik, J. W.; Lee, S. H. Study of Annealing
+     Temperature for Ni/Cu/Ag Plated Front Contact Single Crystalline Solar Cells. IEEE J.
+     Photovoltaics 2016, 6 (5), 1090–1093. https://doi.org/10.1109/JPHOTOV.2016.2576683.
+(20) Karas, J.; Michaelson, L.; Munoz, K.; Jobayer Hossain, M.; Schneller, E.; Davis, K. O.;
+     Bowden, S.; Augusto, A. Degradation of Copper‐plated Silicon Solar Cells with Damp Heat
+     Stress. Prog. Photovoltaics Res.           Appl.    2020, 28 (11), 1175–1186.
+     https://doi.org/10.1002/pip.3331.
+(21) Phua, B.; Shen, X.; Hsiao, P.; Kong, C.; Stokes, A.; Lennon, A. Degradation of Plated
+     Silicon Solar Module Due to Copper Diffusion: The Role of Capping Layer Formation and
+     Contact Adhesion. Sol. Energy Mater. Sol. Cells 2020, 215, 110638.
+     https://doi.org/10.1016/j.solmat.2020.110638.
+(22) Sinton, R. A.; Cuevas, A. A Quasi-Steady-State Open-Circuit Voltage Method for Solar
+     Cell Characterization. In 16th European Photovoltaic Solar Energy Conference; 2000; Vol.
+     25, pp 1152–1155.
+(23) Iqbal, N.; Colvin, D. J.; Curran, A. J.; Li, F.; Ganesan, J. P.; Sulas-Kern, D. B.; Harvey, S.;
+     Norman, A.; Karas, J.; TamizhMani, G.; Jaubert, J.-N.; Banerjee, P.; Huey, B. D.; French,
+     R. H.; Davis, K. O. Multiscale Characterization of Photovoltaic Modules—Case Studies of
+     Contact and Interconnect Degradation. IEEE J. Photovoltaics 2022, 12 (1), 62–72.
+     https://doi.org/10.1109/JPHOTOV.2021.3124751.
+(24) Michaelson, L. M.; Munoz, K.; Karas, J.; Bowden, S.; Rand, J. A.; Gallegos, A.; Tyson, T.;
+     Buonassisi, T. Silver-Free Metallization Technology for Producing High Efficiency,
+     Industrial Silicon Solar Cells; DOE-TECHNIC-6814; Golden, CO (United States), 2018.
+     https://doi.org/10.2172/1432485.
+(25) Frear, D. R.; Vianco, P. T. Intermetallic Growth and Mechanical Behavior of Low and High
+     Melting Temperature Solder Alloys. Metall. Mater. Trans. A 1994, 25 (7), 1509–1523.
+     https://doi.org/10.1007/BF02665483.
+(26) Dyson, B. F.; Anthony, T. R.; Turnbull, D. Interstitial Diffusion of Copper in Tin. J. Appl.
+     Phys. 1967, 38 (8), 3408–3408. https://doi.org/10.1063/1.1710127.
+(27) Paul, A. The Kirkendall Effect in Solid State Diffusion, Eindhoven University of
+     Technology, 2004.
+(28) Fürtauer, S.; Li, D.; Cupid, D.; Flandorfer, H. The Cu–Sn Phase Diagram, Part I: New
+     Experimental         Results.       Intermetallics     2013,      34,      142–147.
+     https://doi.org/10.1016/j.intermet.2012.10.004.
+(29) Paul, A.; Ghosh, C.; Boettinger, W. J. Diffusion Parameters and Growth Mechanism of
+     Phases in the Cu-Sn System. Metall. Mater. Trans. A 2011, 42 (4), 952–963.
+     https://doi.org/10.1007/s11661-010-0592-9.
+(30) Kumar, S.; Handwerker, C. A.; Dayananda, M. A. Intrinsic and Interdiffusion in Cu -Sn
+     System. J. Phase Equilibria Diffus. 2011, 32 (4), 309–319. https://doi.org/10.1007/s11669-
+     011-9907-9.
+
+                                                19
+(31) Baheti, V. A.; Kashyap, S.; Kumar, P.; Chattopadhyay, K.; Paul, A. Bifurcation of the
+     Kirkendall Marker Plane and the Role of Ni and Other Impurities on the Growth of
+     Kirkendall Voids in the Cu–Sn System. Acta Mater. 2017, 131, 260–270.
+     https://doi.org/10.1016/j.actamat.2017.03.068.
+(32) Paul, A.; van Dal, M. J. H.; Kodentsov, A. A.; van Loo, F. J. J. The Kirkendall Effect in
+     Multiphase       Diffusion.    Acta     Mater.      2004,       52     (3),    623–630.
+     https://doi.org/10.1016/j.actamat.2003.10.007.
+(33) Jung, Y.; Yu, J. Electromigration Induced Kirkendall Void Growth in Sn -3.5Ag/Cu Solder
+     Joints. J. Appl. Phys. 2014, 115 (8), 083708. https://doi.org/10.1063/1.4867115.
+(34) Liu, C.-W.; Wang, Y.-L.; Tsai, M.-S.; Feng, H.-P.; Chang, S.-C.; Hwang, G.-J. Effect of
+     Plating Current Density and Annealing on Impurities in Electroplated Cu Film. J. Vac. Sci.
+     Technol.      A     Vacuum,    Surfaces,    Film.      2005,     23    (4),     658–662.
+     https://doi.org/10.1116/1.1931679.
+(35) Ross, G.; Vuorinen, V.; Paulasto-Kröckel, M. Void Formation and Its Impact on Cu Sn
+     Intermetallic Compound Formation. J. Alloys Compd. 2016, 677, 127–138.
+     https://doi.org/10.1016/j.jallcom.2016.03.193.
+(36) Svoboda, J.; Fischer, F. D.; Schillinger, W. Formation of Multiple Stoichiometric Phases in
+     Binary Systems by Combined Bulk and Grain Boundary Diffusion: Experiments and
+     Model. Acta Mater. 2013, 61 (1), 32–39. https://doi.org/10.1016/j.actamat.2012.09.008.
+(37) Baheti, V. A.; Kashyap, S.; Kumar, P.; Chattopadhyay, K.; Paul, A. Solid –State Diffusion–
+     Controlled Growth of the Intermediate Phases from Room Temperature to an Elevated
+     Temperature in the Cu–Sn and the Ni–Sn Systems. J. Alloys Compd. 2017, 727, 832–840.
+     https://doi.org/10.1016/j.jallcom.2017.08.178.
+(38) Nogita, K.; Nishimura, T. Nickel-Stabilized Hexagonal (Cu,Ni)6Sn5 in Sn–Cu–Ni Lead-
+     Free      Solder     Alloys.      Scr.    Mater.   2008,     59     (2),   191–194.
+     https://doi.org/10.1016/j.scriptamat.2008.03.002.
+(39) Hsiao, P.-C.; Song, N.; Wang, X.; Shen, X.; Phua, B.; Colwell, J.; Romer, U.; Johnston, B.;
+     Lim, S.; Shengzhao, Y.; Verlinden, P.; Lennon, A. 266-Nm Ps Laser Ablation for Copper-
+     Plated p-Type Selective Emitter PERC Silicon Solar Cells. IEEE J. Photovoltaics 2018, 8
+     (4), 952–959. https://doi.org/10.1109/JPHOTOV.2018.2834629.
+(40) Shen, X.; Hsiao, P.; Phua, B.; Stokes, A.; Gonçales, V. R.; Lennon, A. Plated Metal
+     Adhesion to Picosecond Laser-Ablated Silicon Solar Cells: Influence of Surface Chemistry
+     and Wettability. Sol. Energy Mater. Sol. Cells 2020, 205, 110285.
+     https://doi.org/10.1016/j.solmat.2019.110285.
+(41) Lee, S. H.; Lee, D. W.; Rehman, A. ur; Baik, J. W.; Lee, S. H. Study of Annealing
+     Temperature for Ni/Cu/Ag Plated Front Contact Single Crystalline Solar Cells. IEEE J.
+     Photovoltaics 2016, 6 (5), 1090–1093. https://doi.org/10.1109/JPHOTOV.2016.2576683.
+(42) Colwell, J.; Hsiao, P.-C.; Shen, X.; Zhang, W.; Wang, X.; Lim, S.; Lennon, A. Impact of
+     Contact Integrity during Thermal Stress Testing on Degradation Analysis of Copper-Plated
+     Silicon Solar Cells. Sol. Energy Mater. Sol. Cells 2018, 174, 225–232.
+     https://doi.org/10.1016/j.solmat.2017.09.005.
+                                              20
+(43) Oikawa, H.; Takei, H.; Karashima, S. Interdiffusion in Copper-Rich Cu-Ag Solid Solutions.
+     Metall. Trans. 1973, 4 (3), 653–655. https://doi.org/10.1007/BF02643070.
+(44) Subramanian, P. R.; Perepezko, J. H. The Ag-Cu (Silver-Copper) System. J. Phase
+     Equilibria 1993, 14 (1), 62–75. https://doi.org/10.1007/BF02652162.
+(45) Witusiewicz, V. T.; Hecht, U.; Fries, S. G.; Rex, S. The Ag–Al–Cu System. J. Alloys
+     Compd. 2004, 385 (1–2), 133–143. https://doi.org/10.1016/j.jallcom.2004.04.126.
+(46) Wang, C. P.; Yan, L. N.; Han, J. J.; Liu, X. J. Diffusion Mobilities in the Fcc Ag–Cu and
+     Ag–Pd Alloys. Calphad 2012, 37, 57–64. https://doi.org/10.1016/j.calphad.2012.01.001.
+(47) DiGiacomo, G.; Peressini, P.; Rutledge, R. Diffusion Coefficient and Electromigration
+     Velocity of Copper in Thin Silver Films. J. Appl. Phys. 1974, 45 (4), 1626–1629.
+     https://doi.org/10.1063/1.1663466.
+(48) Butrymowicz, D. B.; Manning, J. R.; Read, M. E. Diffusion in Copper and Copper Alloys,
+     Part II. Copper‐Silver and Copper‐Gold Systems. J. Phys. Chem. Ref. Data 1974, 3 (2),
+     527–602. https://doi.org/10.1063/1.3253145.
+(49) Dorner, P.; Gust, W.; Hintz, M. B.; Lodding, A.; Odelius, H.; Predel, B. SIMS
+     Investigations on the Diffusion of Cu in Ag Single Crystals. Acta Metall. 1980, 28 (3), 291–
+     300. https://doi.org/10.1016/0001-6160(80)90164-9.
+(50) Lin, T. Y.; Pecht, M. G.; Das, D.; Pan, J.; Wenhui, Z. The Evaluation of Copper Migration
+     during the Die Attach Curing and Second Wire Bonding Process. IEEE Trans. Components
+     Packag. Technol. 2005, 28 (2), 337–344. https://doi.org/10.1109/TCAPT.2005.848494.
+(51) Li, W.-H.; Joelle Ong, S. W. Cu Diffusion in Ag-Plated Cu Leadframe Packages.
+     Microelectron.          Reliab.        2012,    52      (7),      1523–1527.
+     https://doi.org/10.1016/j.microrel.2012.02.022.
+(52) Zhang, L.; Zhu, Y.; Wang, W.; Bi, X.; Chen, H.; Leung, K.; Wu, Y.; Wu, J. Study on Ag-
+     Plated Cu Lead Frame and Its Effect to LED Performance Under Thermal Aging. IEEE
+     Trans.       Device     Mater.     Reliab.      2014,      14      (4),     1022–1030.
+     https://doi.org/10.1109/TDMR.2014.2360081.
+(53) Marquis, E. A.; Chen, Y.; Kohanek, J.; Dong, Y.; Centeno, S. A. Exposing the Sub -Surface
+     of Historical Daguerreotypes and the Effects of Sulfur-Induced Corrosion. Corros. Sci.
+     2015, 94, 438–444. https://doi.org/10.1016/j.corsci.2015.02.018.
+(54) Grieten, E.; Schalm, O.; Tack, P.; Bauters, S.; Storme, P.; Gauquelin, N.; Caen, J.; Patelli,
+     A.; Vincze, L.; Schryvers, D. Reclaiming the Image of Daguerreotypes: Characterization of
+     the Corroded Surface before and after Atmospheric Plasma Treatment. J. Cult. Herit. 2017,
+     28 (2017), 56–64. https://doi.org/10.1016/j.culher.2017.05.008.
+(55) Peike, C.; Hoffmann, S.; Hülsmann, P.; Thaidigsmann, B.; Weiß, K. A.; Koehl, M.; Bentz,
+     P. Origin of Damp-Heat Induced Cell Degradation. Sol. Energy Mater. Sol. Cells 2013, 116,
+     49–54. https://doi.org/10.1016/j.solmat.2013.03.022.
+(56) Gawlinska-Necek, K.; Socha, R. P.; Balawender, P.; Stodolny, M. K.; Van Aken, B. B.;
+     Starowicz, Z.; Panek, P. Silicon Solar Cells and Modules with Front Contact Paste
+     Containing Copper-Based Component. Prog. Photovoltaics Res. Appl. 2021, 29 (9), 1008–
+                                               21
+    1019. https://doi.org/10.1002/pip.3424.
+
+
+
+
+Table of contents graphic:
+
+
+
+
+                                          22
+

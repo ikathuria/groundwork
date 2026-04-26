@@ -1,0 +1,680 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Front Cell Infect Microbiol</journal-id><journal-id journal-id-type="iso-abbrev">Front Cell Infect Microbiol</journal-id><journal-id journal-id-type="pmc-domain-id">1860</journal-id><journal-id journal-id-type="pmc-domain">fcimb</journal-id><journal-id journal-id-type="publisher-id">Front. Cell. Infect. Microbiol.</journal-id><journal-title-group><journal-title>Frontiers in Cellular and Infection Microbiology</journal-title></journal-title-group><issn pub-type="epub">2235-2988</issn><publisher><publisher-name>Frontiers Media SA</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12698614</article-id><article-id pub-id-type="pmcid-ver">PMC12698614.1</article-id><article-id pub-id-type="pmcaid">12698614</article-id><article-id pub-id-type="pmcaiid">12698614</article-id><article-id pub-id-type="pmid">41394102</article-id><article-id pub-id-type="doi">10.3389/fcimb.2025.1684362</article-id><article-version-alternatives><article-version article-version-type="pmc-version">1</article-version><article-version article-version-type="Version of Record" vocab="NISO-RP-8-2008"/></article-version-alternatives><article-categories><subj-group subj-group-type="heading"><subject>Original Research</subject></subj-group></article-categories><title-group><article-title>Periodontitis-associated metabolite isoleucine impairs intestinal barrier function and exacerbates intestinal inflammatory response by NF-κB signaling</article-title></title-group><contrib-group><contrib contrib-type="author" corresp="yes" equal-contrib="yes"><name name-style="western"><surname>Wang</surname><given-names initials="X">Xiaoxue</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref><xref rid="fn003" ref-type="author-notes">
+<sup>†</sup>
+</xref><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/1179776/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project-administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role></contrib><contrib contrib-type="author" equal-contrib="yes"><name name-style="western"><surname>Luo</surname><given-names initials="Y">Yilin</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="fn003" ref-type="author-notes">
+<sup>†</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Ren</surname><given-names initials="J">Jie</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Xie</surname><given-names initials="H">Hezhen</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Rausch</surname><given-names initials="MA">Marco Aoqi</given-names></name><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Rausch-Fan</surname><given-names initials="X">Xiaohui</given-names></name><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/266743/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role></contrib><contrib contrib-type="author" corresp="yes"><name name-style="western"><surname>Hu</surname><given-names initials="F">Fei</given-names></name><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project-administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing – review &amp; editing</role></contrib><contrib contrib-type="author" corresp="yes"><name name-style="western"><surname>Zhang</surname><given-names initials="X">Xueyang</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/2872176/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project-administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing – review &amp; editing</role></contrib></contrib-group><aff id="aff1"><label>1</label><institution>Department of Stomatology, The Eighth Affiliated Hospital, Southern Medical University (The First People’s Hospital of Shunde, Foshan)</institution>, <city>Foshan</city>, <country country="cn">China</country></aff><aff id="aff2"><label>2</label><institution>Clinical Division of Periodontology, Center for Clinical Research, University Clinic of Dentistry, Medical University of Vienna</institution>, <city>Vienna</city>, <country country="at">Austria</country></aff><aff id="aff3"><label>3</label><institution>Stomatological Hospital, School of Stomatology, Southern Medical University</institution>, <city>Guangzhou</city>, <country country="cn">China</country></aff><author-notes><corresp id="c001"><label>*</label>Correspondence: Xiaoxue Wang, <email xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:15600661239@126.com">15600661239@126.com</email>; Fei Hu, <email xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:hf126@smu.edu.cn">hf126@smu.edu.cn</email>; Xueyang Zhang, <email xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:zxy123@smu.edu.cn">zxy123@smu.edu.cn</email></corresp><fn fn-type="equal" id="fn003"><label>†</label><p>These authors have contributed equally to this work</p></fn></author-notes><pub-date publication-format="electronic" date-type="pub" iso-8601-date="2025-11-28"><day>28</day><month>11</month><year>2025</year></pub-date><pub-date publication-format="electronic" date-type="collection"><year>2025</year></pub-date><volume>15</volume><issue-id pub-id-type="pmc-issue-id">481321</issue-id><elocation-id>1684362</elocation-id><history><date date-type="received"><day>12</day><month>8</month><year>2025</year></date><date date-type="accepted"><day>13</day><month>11</month><year>2025</year></date><date date-type="rev-recd"><day>10</day><month>11</month><year>2025</year></date></history><pub-history><event event-type="pmc-release"><date><day>28</day><month>11</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>13</day><month>12</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-12-15 15:25:13.207"><day>15</day><month>12</month><year>2025</year></date></event></pub-history><permissions><copyright-statement>Copyright © 2025 Wang, Luo, Ren, Xie, Rausch, Rausch-Fan, Hu and Zhang.</copyright-statement><copyright-year>2025</copyright-year><copyright-holder>Wang, Luo, Ren, Xie, Rausch, Rausch-Fan, Hu and Zhang</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense" start_date="2025-11-28">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open-access article distributed under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License (CC BY)</ext-link>. The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="fcimb-15-1684362.pdf"/><abstract><sec><title>Objective</title><p>Periodontitis-associated metabolite isoleucine (Ile) plays an important role in periodontitis aggravating colitis. However, how Ile exacerbates colitis is largely unknown.</p></sec><sec><title>Methods</title><p>C57BL/6J mice were used to establish experimental periodontitis and colitis models. Histological alterations of the periodontium and colon were observed by HE staining. The gut barrier function was evaluated by intestinal permeability using FITC-dextran. The expression of tight junctions (ZO-1 and occludin) was detected by immunohistochemical staining or immunofluorescence. The NF-κB signaling pathway was detected using qRT-PCR and Western blot.</p></sec><sec><title>Results</title><p>Experimental periodontitis and periodontitis-associated metabolite Ile increased the intestinal permeability, downregulated the expression of tight junctions (ZO-1 and occludin), and enhanced the NF-κB signaling pathway of intestinal epithelial cells in dextran sulfate sodium (DSS)–induced colitis mice. Ile downregulated the expression of tight junctions (ZO-1 and occludin) and enhanced the NF-κB signaling pathway in intestinal organoids or IEC-6 cells under inflammatory conditions. IKK-16 (a selective inhibitor of IKKβ that prevents NF-κB activation) rescued excessive inflammatory responses induced by Ile in IEC-6 cells with LPS treatment. In addition, IKK-16 relieved the impairment of intestinal barrier function and inflammatory response induced by Ile in DSS-induced colitis mice.</p></sec><sec><title>Conclusion</title><p>Our study unraveled that periodontitis contributed to intestinal barrier function damage and inflammation of intestinal epithelial cells by potentiating NF-κB signaling in the context of colitis and that this was associated with periodontitis-associated metabolite Ile.</p></sec></abstract><kwd-group><kwd>periodontitis</kwd><kwd>colitis</kwd><kwd>isoleucine</kwd><kwd>intestinal barrier function</kwd><kwd>intestinal inflammatory response</kwd><kwd>NF-κB signaling</kwd></kwd-group><funding-group><funding-statement>The author(s) declare financial support was received for the research and/or publication of this article. This work was supported by the Guangdong Basic and Applied Basic Research Foundation (2023A1515140054), Scientific Research Start Plan of the Eighth Affiliated Hospital, Southern Medical University (SRSP2023027, SRSP2024010, SRSP2022019, SRSP2023015 and SRSP2024035), Youth S&amp;T Talent Support Programme of Guangdong Provincial Association for Science and Technology (GDSTA) (SKXRC2025169), Young Science and Technology Talent Support Program of Guangdong Precision Medicine Application Association (YSTTGDPMAA202502), Foshan Engineering Technology Research Center for Oral Functional Occlusion Reconstruction of Periodontal Disease (GCJSYJZX2024-008), Foshan "14th Five-Year Plan" Key Medical Specialty Construction Project and The Fifth Cycle Key Medical Specialties Construction Project of Shunde, Foshan.</funding-statement></funding-group><counts><fig-count count="6"/><table-count count="1"/><equation-count count="0"/><ref-count count="56"/><page-count count="14"/><word-count count="6282"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>section-at-acceptance</meta-name><meta-value>Oral Microbes and Host</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="s1"><title>Introduction</title><p>Periodontitis is a chronic inflammatory disease caused by an imbalance between the local microbiota and host immune response (<xref rid="B41" ref-type="bibr">Su et al., 2023</xref>; <xref rid="B38" ref-type="bibr">Slots, 2017</xref>). It is well known that periodontitis is closely related to systemic health (<xref rid="B17" ref-type="bibr">Kapila, 2021</xref>; <xref rid="B45" ref-type="bibr">Wang et al., 2025</xref>). Ulcerative colitis (UC) is one of the two forms of inflammatory bowel disease (IBD) and is characterized by symptoms such as abdominal pain, diarrhea, and the presence of bloody mucus in stools, with a clinical course marked by alternating periods of exacerbation and remission (<xref rid="B53" ref-type="bibr">Yan et al., 2025</xref>; <xref rid="B50" ref-type="bibr">Wangchuk et al., 2024</xref>). Epidemiological studies have established a close association between periodontitis and UC, and animal experiments further demonstrate that periodontitis exacerbates colitis (<xref rid="B19" ref-type="bibr">Kitamoto et al., 2020b</xref>; <xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>; <xref rid="B35" ref-type="bibr">Qian et al., 2022</xref>; <xref rid="B2" ref-type="bibr">Bao et al., 2022</xref>; <xref rid="B10" ref-type="bibr">Han et al., 2023</xref>). However, how periodontitis influences IBD remains to be fully elucidated.</p><p>Intestinal barrier dysfunction and dysregulated immune response are two key factors affecting the pathogenesis of IBD (<xref rid="B43" ref-type="bibr">Ungaro et al., 2017</xref>; <xref rid="B42" ref-type="bibr">Torres et al., 2017</xref>). Intestinal epithelial cells (IECs) play critical roles in regulating intestinal barrier function and immune homeostasis (<xref rid="B33" ref-type="bibr">Peterson and Artis, 2014</xref>). For example, IECs constitute barrier surfaces that separate the mucosal immune system from the external environment (<xref rid="B33" ref-type="bibr">Peterson and Artis, 2014</xref>). The IECs are interconnected to each other by the tight junction (TJ), which is formed by the zonula occludens (ZO) family (ZO-1, ZO-2, and ZO-3), occludin, members of the claudin family, and the junctional adhesion molecule family (<xref rid="B14" ref-type="bibr">Kaminsky et al., 2021</xref>). In addition, IECs also secrete cytokines (TNF-α, IL-1β, and IL-6), which are primarily regulated by the nuclear factor (NF)-κB signaling (<xref rid="B3" ref-type="bibr">Chen et al., 2021</xref>). Hence, identifying critical molecules that regulate the barrier and immunoregulatory properties of IECs might aid in the development of new strategies to prevent and treat IBD.</p><p>Previous studies have reported that periodontitis contributes to IBD by supplying the gut with both colitogenic oral pathobionts and pathogenic T cells (<xref rid="B19" ref-type="bibr">Kitamoto et al., 2020b</xref>, <xref rid="B18" ref-type="bibr">Kitamoto et al., 2020a</xref>; <xref rid="B22" ref-type="bibr">Liu et al., 2020</xref>). In our previous work (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>), we found that isoleucine (Ile) was the metabolite of microbiota related to periodontitis and played an important role in periodontitis aggravating colitis (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>). Ile is one kind of essential amino acids and is synthesized in bacteria, plants, and fungi but not in animals (<xref rid="B31" ref-type="bibr">Neinast et al., 2019</xref>). Numerous studies report that Ile is critical in physiological functions of the whole body, such as protein metabolism, glucose transportation, fatty acid metabolism, and immunity (<xref rid="B8" ref-type="bibr">Gu et al., 2019</xref>; <xref rid="B9" ref-type="bibr">Hale et al., 2004</xref>; <xref rid="B54" ref-type="bibr">Zhao et al., 2014</xref>). However, excessive accumulation of Ile lead to the occurrence and development of various diseases. For instance, during the progression of Alzheimer's disease, gut microbiota dysbiosis causes an abnormal elevation of Ile, resulting in pathological neuroinflammation and cognitive impairment (<xref rid="B47" ref-type="bibr">Wang et al., 2019</xref>). Periodontitis patients have significantly elevated Ile level in saliva or gingival crevicular fluid compared with healthy controls (<xref rid="B1" ref-type="bibr">Baima et al., 2021</xref>; <xref rid="B6" ref-type="bibr">Garcia-Villaescusa et al., 2018</xref>). However, whether and how Ile influences the barrier function and immunoregulatory properties of IECs during colitis progression are largely unknown.</p><p>Here, we found that periodontitis might impair intestinal barrier function and exacerbate intestinal inflammatory response via Ile. Furthermore, we proved that Ile reduced the expression of ZO-1 and occludin and upregulated the expression of pro-inflammatory cytokines (TNF-α, IL-6, and IL-1β) through activating the NF-κB signaling pathway <italic toggle="yes">in vivo</italic> and <italic toggle="yes">in vitro</italic>. Taken together, our findings provide a novel perspective in understanding periodontitis exacerbating colitis and potential intervention targets for the clinical treatment of colitis associated with periodontitis.</p></sec><sec id="s2"><title>Methods</title><sec id="s2_1"><title>Mice model</title><p>All mouse experimental procedures and protocols were evaluated and authorized by the Animal Ethics Committee of the Institute of Biological and Medical Engineering, Guangdong Academy of Sciences (approval number: 2020011).</p><p>It has been reported that female mice develop periodontitis with a higher progression rate compared with male mice (<xref rid="B21" ref-type="bibr">Lin et al., 2021</xref>). Therefore, female mice were used to explore the effect of periodontitis on colitis in this study.</p><p>An experimental periodontitis and colitis model was established as previously described (<xref rid="B19" ref-type="bibr">Kitamoto et al., 2020b</xref>) with minor modifications. Forty specific pathogen-free (SPF) C57BL/6J mice (wild type, female, 8 weeks, 18–20 g) were maintained in an SPF facility under a 12h light/dark cycle (environmental temperature remained around 23°C and humidity around 55%). After a 7-day acclimation, mice were randomly divided into four groups (<italic toggle="yes">n</italic> = 10 per group), including a control group (Con), an experimental periodontitis group (ligature), a colitis group (dextran sulfate sodium, DSS), and an experimental periodontitis and colitis group (ligature-DSS), respectively. The ligature-induced experimental periodontitis model was generated as previously described (<xref rid="B28" ref-type="bibr">Marchesan et al., 2018</xref>). Briefly, a dual-knotted silk (100 μm diameter) was placed between the first and second maxillary molars on contralateral right and left sides under isoflurane anesthesia. Silk ligature remained in place for 25 days in ligature and ligature-DSS mice or 3h in Con and DSS mice. After silk ligature for 18 days, DSS and ligature-DSS mice were treated with 1.5% DSS w/v (MP Biochemicals, California, United States) in drinking water for 5 days followed by regular water for 2 days. Mice in the Con and ligature groups were given regular water.</p><p>A DSS-induced mouse model with Ile gavage administration was constructed as previously reported (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>). Twenty SPF C57BL/6J mice (wild type, female, 8 weeks, 18–20 g) were randomly divided into four groups (<italic toggle="yes">n</italic> = 5 per group), namely the control group (Con), the Ile gavage group (Ile gavage), the colitis group (DSS), and the Ile gavage and colitis group (Ile gavage-DSS), respectively. Mice in the DSS and Ile gavage-DSS groups were treated with 3.0% DSS for 5 days, followed by an additional 2 days of regular water. Con and Ile gavage mice were given regular water. Mice in the Ile gavage and Ile gavage-DSS groups were orally administered with Ile (50 mg/kg/day) for 7 days. Con and DSS mice were orally administered with PBS as a vehicle control. Weigh the mice before each administration and adjusted the dosage.</p><p>A DSS-induced mouse model with Ile gavage and IKK-16 administration was established. Fifteen SPF C57BL/6J mice (wild type, female, 8 weeks, 18–20 g) were randomly divided into three groups (<italic toggle="yes">n</italic> = 5 per group), including the colitis group (DSS), the Ile gavage and colitis group (Ile gavage-DSS), and the Ile gavage and colitis group with IKK-16 treatment (Ile gavage-DSS-IKK-16). All mice were treated with 3.0% DSS for 5 days, followed by an additional 2 days of regular water. Ile gavage-DSS and Ile gavage-DSS-IKK-16 mice were orally administered with Ile (50 mg/kg/day) for 7 days. In the DSS group, mice were orally administered with PBS as a vehicle control. Ile gavage-DSS-IKK-16 mice were intraperitoneally injected with IKK inhibition (IKK-16) (1 mg/kg/day) for 7 days. DSS and Ile gavage-DSS mice were intraperitoneally injected with normal saline as a vehicle control. Weigh the mice before each administration and adjusted the dosage.</p><p>During the course of all the animal experiments, mice were monitored for weight loss, stool consistency, and hemoccult. After animal modeling was completed, mice were sacrificed via anesthetic overdose with an injection of 120 mg/kg thiopental sodium. Bilateral maxillary molar or colon tissue was collected for the detection of pathological and inflammatory factors.</p></sec><sec id="s2_2"><title>Histology and immunostaining</title><p>Maxillae and colonic tissues were rinsed with 1× DPBS and fixed in 10% formalin. The maxillae specimens were decalcified in 0.5 M ethylenediaminetetraacetic acid buffer (Servicebio) for 1 month. Then, the maxillae and colonic tissues were dehydrated, clarified, embedded in paraffin, and cut into 5 µm sections for histopathological assessment and immunostaining. Each specimen was cut into five slices, and each slice was photographed in three fields of vision.</p><p>Histopathological analysis of maxillae and colonic tissues was performed as previously described (<xref rid="B36" ref-type="bibr">Ren et al., 2025</xref>; <xref rid="B52" ref-type="bibr">Xu et al., 2020</xref>). After treatment with xylene and serial dilutions of ethanol, the sections were stained using the Hematoxylin and Eosin Staining Kit (Beyotime) according to the manufacturer’s instructions. After that, histological sections were analyzed using light microscopy.</p><p>For immunostaining, the sections were stained as previously reported (<xref rid="B52" ref-type="bibr">Xu et al., 2020</xref>). The following antibodies were used: anti-Ki67 (1:250, Cell Signaling Technology), anti-ZO-1 (1:150, Servicebio), and anti-occludin (1:100, Servicebio).</p></sec><sec id="s2_3"><title>Evaluation of weight, disease activity index, and the histological activity index</title><p>Body weight, occult blood status, and stool consistency were determined daily. The disease activity index (DAI) was used for scoring as previously reported (<xref rid="B30" ref-type="bibr">Murthy et al., 1993</xref>). histological activity index (HAI) scores of colonic tissues were assigned in a blind manner by a trained pathologist evaluating the following set of variables (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>): the loss of goblet cells (0, normal; 1, small; 2, large; 3, most), crypt gland destruction (0, normal; 1, a small amount of crypt loss; 2, a large amount of crypt loss; 3, extensive crypt loss), and the extent of inflammatory cell infiltration (0, normal; 1, infiltration around crypt glands; 2, infiltration of the mucosal muscle layer; 3, extensive infiltration of the mucosal muscle layer with oedema; 4, infiltration of the submucosal layer). An overall score was obtained by summing the scores assigned to each variable.</p></sec><sec id="s2_4"><title>Intestinal permeability assay</title><p>FITC-dextran (MW 4 kDa; Sigma) was used to detect the intestinal permeability as previously reported (<xref rid="B5" ref-type="bibr">Furuta et al., 2001</xref>). Briefly, subject the mice to a fasting treatment for 4h, followed by oral administration of FITC-dextran (600 mg/g body weight). After that, the mice were fasted for 4h again, and then eye frame blood was collected to determine the content of FITC-dextran using the standard curve of FITC-dextran.</p></sec><sec id="s2_5"><title>Unbiased transcriptomic analyses</title><p>Unbiased transcriptomic analyses were performed according to our previously published methods (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>).</p></sec><sec id="s2_6"><title>Western blot</title><p>The NF-κB signaling pathway was detected using Western blot as previously reported (<xref rid="B44" ref-type="bibr">Wang et al., 2022</xref>). Briefly, 50 μg of total protein extracted using lysis buffer (Beyotime) were added to 1× SDS-denaturing loading buffer, boiled for 5 min, and then subjected to 12% SDS-PAGE. SDS-PAGE was blotted with polyvinylidene difluoride membranes (Millipore), and the blotted membrane was incubated with phospho-NF-κB p65 (Cell Signaling Technology), NF-κB p65 (Cell Signaling Technology), Phospho-IκBα (Cell Signaling Technology), IκBα (Cell Signaling Technology), or β-actin (Proteintech Group) primary antibody and added a goat anti-mouse or anti-rabbit HRP-conjugated antibody. Signals were visualized using the ECL Western Blot Kit (BIO-RAD).</p></sec><sec id="s2_7"><title>Cell culture</title><p>IEC-6 were obtained from the Eighth Affiliated Hospital of Southern Medical University. All experiments were performed with mycoplasma‐free cells. IEC-6 were cultured in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum (Biological Industries) in an atmosphere of 5% CO<sub>2</sub> at 37°C. Cells were exposed to 1 μg/mL LPS (Sigma) or 10 mM Ile (Solarbio) for two days.</p></sec><sec id="s2_8"><title>Culture and treatment of intestinal organoid</title><p>Crypts were isolated as previously reported (<xref rid="B48" ref-type="bibr">Wang et al., 2023b</xref>). Organoids were treated with 100 ng/mL TNF-α (PEPROTECH) for 24h alone and cocultured with 10 mM Ile for another 24h.</p></sec><sec id="s2_9"><title>Quantitative real-time PCR</title><p>Total RNA was isolated using the FastPure Cell/Tissue Total RNA Isolation Kit V2 (Vazyme) according to the manufacturer’s instructions. UnionScript First-strand cDNA Synthesis Mix (SENO) was applied to synthesize cDNA, which was used to detect gene expression using primers in <xref rid="T1" ref-type="table"><bold>Table 1</bold></xref>. All mRNA levels were normalized against β-actin mRNA. Gene expression was calculated based on the 2<sup>-△△Ct</sup> method (<xref rid="B23" ref-type="bibr">Livak and Schmittgen, 2001</xref>).</p><table-wrap position="float" id="T1" orientation="portrait"><label>Table 1</label><caption><p>Primers used for qRT-PCR.</p></caption><table frame="hsides" rules="groups"><thead><tr><th valign="middle" align="center" rowspan="1" colspan="1">Gene</th><th valign="middle" align="center" rowspan="1" colspan="1">Primer sequences (5′-3′)</th></tr></thead><tbody><tr><td valign="middle" rowspan="2" align="center" colspan="1">Mouse-TNF-α</td><td valign="middle" align="center" rowspan="1" colspan="1">GGTGCCTATGTCTCAGCCTCTT</td></tr><tr><td valign="middle" align="center" rowspan="1" colspan="1">GTGGTTTGTGAGTGTGAGGGTCT</td></tr><tr><td valign="middle" rowspan="2" align="center" colspan="1">Mouse-IL-6</td><td valign="middle" align="center" rowspan="1" colspan="1">ATAGTCCTTCCTACCCCAATTTCC</td></tr><tr><td valign="middle" align="center" rowspan="1" colspan="1">CTGACCACAGTGAGGAATGTCCAC</td></tr><tr><td valign="middle" rowspan="2" align="center" colspan="1">Mouse-IL-1β</td><td valign="middle" align="center" rowspan="1" colspan="1">GAAATGCCACCTTTTGACAGTG</td></tr><tr><td valign="middle" align="center" rowspan="1" colspan="1">TGGATGCTCTCATCAGGACAG</td></tr><tr><td valign="middle" rowspan="2" align="center" colspan="1">Mouse-β-actin</td><td valign="middle" align="center" rowspan="1" colspan="1">AAGTGTGACGTTGACATCCG</td></tr><tr><td valign="middle" align="center" rowspan="1" colspan="1">GATCCACATCTGCTGGAAGG</td></tr><tr><td valign="middle" rowspan="2" align="center" colspan="1">Rat-TNF-α</td><td valign="middle" align="center" rowspan="1" colspan="1">AGCATGATCCGAGATGTGGAA</td></tr><tr><td valign="middle" align="center" rowspan="1" colspan="1">CAGTAGACAGAAGAGCGTGGTG</td></tr><tr><td valign="middle" rowspan="2" align="center" colspan="1">Rat -IL-6</td><td valign="middle" align="center" rowspan="1" colspan="1">TTGCCTTCTTGGGACTGATGT</td></tr><tr><td valign="middle" align="center" rowspan="1" colspan="1">ACTGGTCTGTTGTGGGTGGTATC</td></tr><tr><td valign="middle" rowspan="2" align="center" colspan="1">Rat -IL-1β</td><td valign="middle" align="center" rowspan="1" colspan="1">CCTCTGTGACTCGTGGGATGAT</td></tr><tr><td valign="middle" align="center" rowspan="1" colspan="1">TACCACTTGTTGGCTTATGTTCTGT</td></tr><tr><td valign="middle" rowspan="2" align="center" colspan="1">Rat-β-actin</td><td valign="middle" align="center" rowspan="1" colspan="1">CCGTAAAGACCTCTATGCCAACA</td></tr><tr><td valign="middle" align="center" rowspan="1" colspan="1">CGGACTCATCGTACTCCTGCTT</td></tr></tbody></table></table-wrap></sec><sec id="s2_10"><title>Statistical analyses</title><p>All statistical analyses were conducted using Prism 8 (GraphPad Software, San Diego, CA). Statistical tests were performed using the two-tailed Student's t-test, and one- or two-way analysis of variance (ANOVA) followed by the Bonferroni post-hoc test. In the figures, asterisks denote statistical significance (*<italic toggle="yes">p</italic> &lt; 0.05; **<italic toggle="yes">p</italic> &lt; 0.01; ***<italic toggle="yes">p</italic> &lt; 0.001; ****<italic toggle="yes">p</italic> &lt; 0.0001). The data are shown as mean ± standard deviation (SD).</p></sec></sec><sec sec-type="results" id="s3"><title>Results</title><sec id="s3_1"><title>Ligature-induced experimental periodontitis impairs intestinal barrier function and promotes intestinal inflammatory response</title><p>A mouse model of periodontitis and colitis was constructed as our previous study did (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>) (<xref rid="f1" ref-type="fig"><bold>Figure 1A</bold></xref>). Infiltration of inflammatory cells, loss of connective tissue attachment, and resorption of alveolar bone were observed in gingiva, indicating that ligature-induced experimental periodontitis was successfully (<xref rid="f1" ref-type="fig"><bold>Figure 1B</bold></xref>). The weight, DAI values, colon length, and HAI score of mice were monitored. Mice in the ligature-DSS group had significantly increased weight loss, higher DAI values, shorter colon length, and elevated HAI scores in contrast to the mice in the DSS group (<xref rid="f1" ref-type="fig"><bold>Figures 1C–F</bold></xref>). However, periodontitis alone had no influence on the weight, DAI values, colon length, and HAI score (<xref rid="f1" ref-type="fig"><bold>Figures 1C–F</bold></xref>).</p><fig position="float" id="f1" orientation="portrait"><label>Figure 1</label><caption><p>Experimental periodontitis aggravated colitis. <bold>(A)</bold> Schematics of generating a ligature-induced experimental periodontitis and dextran sulfate sodium (DSS)–induced colitis mouse model. <bold>(B)</bold> Representative histological images of gingival tissues (scale bar = 100 μm). The red dash represents the boundary between bone and connective tissue. The yellow dash represents the boundary between connective and epithelium. Statistical analysis of body weight <bold>(C)</bold>, disease activity index (DAI) score <bold>(D)</bold>, and colon length <bold>(E)</bold> in each group. <bold>(F)</bold> Representative colonic histological images and the corresponding histological activity index scores. Each dot indicates an individual mouse (<italic toggle="yes">n</italic> = 10) (scale bar = 100 μm). Results are shown as mean ± standard deviation (SD). *<italic toggle="yes">p</italic> &lt; 0.05, **<italic toggle="yes">p</italic> &lt; 0.01, ***<italic toggle="yes">p</italic> &lt; 0.001, ****<italic toggle="yes">p</italic> &lt; 0.0001 by two-way analysis of variance (ANOVA) followed by Bonferroni <italic toggle="yes">post-hoc</italic> test <bold>(C, D)</bold> or one-way ANOVA followed by Bonferroni <italic toggle="yes">post-hoc</italic> test <bold>(E, F)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fcimb-15-1684362-g001.jpg"><alt-text content-type="machine-generated">Diagram of an experimental study on colitis. (A) Timeline showing DSS treatment and oral ligature. (B) Histological images comparing Ctrl, Lig, DSS, DSS+Lig groups. (C) Graph of weight change over time among groups. (D) Disease Activity Index (DAI) scores across days, showing differences with DSS+Lig. (E) Bar graph of colon length across groups. (F) Histological images of intestinal sections; right-side graph shows the histological activity index, highlighting significant changes, especially in DSS+Lig.</alt-text></graphic></fig><p>To evaluate the effect of periodontitis on intestinal barrier function in colitis mice, immunohistochemical staining of colonic tissue was performed, and the result showed that the expression of TJ proteins (ZO-1 and occludin) was significantly decreased in ligature-DSS mice in contrast to the controls (<xref rid="f2" ref-type="fig"><bold>Figure 2A</bold></xref>). In addition, we compared the intestinal permeability in our periodontitis and colitis mice model and found that the FITC-dextran concentration of ligature-DSS mice was significantly higher than that of DSS mice (<xref rid="f2" ref-type="fig"><bold>Figure 2B</bold></xref>), indicating that periodontitis might facilitate intestinal barrier function damage in colitis mice. To investigate the mechanism by which periodontitis impairs the intestinal barrier, we used our previous unbiased transcriptome of the colon tissue (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>) to perform KEGG pathway enrichment analysis and found that the NF-κB signaling pathway was markedly enriched in the ligature-DSS group compared with the DSS group (<xref rid="f2" ref-type="fig"><bold>Figure 2C</bold></xref>). The expression of pro-inflammatory cytokines (TNF-α, IL-6, and IL-1β) downstream of the NF-κB signaling pathway was significantly increased in IECs isolated from the colonic tissue of ligature-DSS mice compared with the controls (<xref rid="f2" ref-type="fig"><bold>Figure 2D</bold></xref>). However, periodontitis alone had no effect on intestinal barrier function and inflammatory response (<xref rid="f2" ref-type="fig"><bold>Figures 2A–D</bold></xref>). Taken together, these results indicated that periodontitis impaired intestinal barrier function and aggravated intestinal inflammation of IECs in colitis mice.</p><fig position="float" id="f2" orientation="portrait"><label>Figure 2</label><caption><p>Experimental periodontitis impaired intestinal barrier function and promoted intestinal inflammatory response in mice with DSS-induced colitis. <bold>(A)</bold> Immuno-histochemical staining of ZO-1 and Occludin in colonic sections from each group (scale bar = 100 μm). <bold>(B)</bold> Intestinal permeability was evaluated by measuring the concentration of fluorescein isothiocyanate (FITC)–dextran in serum of each group. <bold>(C)</bold> Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis of differentially expressed genes in colonic tissue of experimental periodontitis and DSS-induced colitis mice model. <bold>(D)</bold> Quantitative real-time PCR (qRT-PCR) analysis of tumor necrosis factor-alpha (TNF-α), interleukin-1 beta (IL-1β), and interleukin-6 (IL-6) mRNA levels in intestinal epithelial cells (IECs) isolated from the colonic tissue. Each dot indicates an individual mouse (<italic toggle="yes">n</italic> = 5). Results are shown as mean ± SD. *<italic toggle="yes">p</italic> &lt; 0.05, **<italic toggle="yes">p</italic> &lt; 0.01, ****<italic toggle="yes">p</italic> &lt; 0.0001 by one-way ANOVA followed by Bonferroni <italic toggle="yes">post-hoc</italic> test.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fcimb-15-1684362-g002.jpg"><alt-text content-type="machine-generated">Panel A shows microscopy images of intestinal tissues labeled with ZO-1 and Occludin under different conditions: Ctrl, Lig, DSS, DSS+Lig. Panel B presents a bar graph of serum FITC-Dextran levels across the same conditions, indicating significant differences. Panel C is a dot plot illustrating enriched pathways in DSS+Lig versus DSS, highlighting NF-κB and IL-17. Panel D contains bar graphs displaying fold changes in mRNA expression for TNFα, IL-6, and IL-1β, showing significant differences across conditions.</alt-text></graphic></fig></sec><sec id="s3_2"><title>Periodontitis-associated metabolite Ile facilitated intestinal barrier damage and inflammation in the context of colitis</title><p>To explore the influence of Ile on intestinal barrier function in colitis mice, we first established a DSS-induced colitis mouse model with the Ile gavage and found that mice in Ile gavage-DSS group had impaired body weight gain, higher DAI values, shorter colon length, and higher HAI compared with mice in the DSS group (<xref rid="f3" ref-type="fig"><bold>Figures 3A–D</bold></xref>). Immunohistochemical staining showed that the expression of TJ proteins (ZO-1 and occludin) was significantly decreased in Ile gavage-DSS mice in contrast to the DSS mice (<xref rid="f3" ref-type="fig"><bold>Figure 3E</bold></xref>). The FITC-dextran concentration of Ile gavage-DSS mice was observably higher than that of DSS mice (<xref rid="f3" ref-type="fig"><bold>Figure 3F</bold></xref>). Moreover, the expression of pro-inflammatory cytokines (TNF-α, IL-6, and IL-1β) was markedly higher in IECs isolated from the colonic tissue of Ile gavage-DSS mice than that of DSS mice (<xref rid="f3" ref-type="fig"><bold>Figure 3G</bold></xref>). However, Ile gavage alone had no effect on intestinal barrier function and inflammation (<xref rid="f3" ref-type="fig"><bold>Figures 3D–G</bold></xref>). These results suggested that periodontitis-associated metabolite Ile promoted intestinal barrier dysfunction and inflammation of IECs in colitis mice.</p><fig position="float" id="f3" orientation="portrait"><label>Figure 3</label><caption><p>Periodontitis-associated metabolite isoleucine (Ile) facilitated intestinal barrier damage and inflammation in colitis mice. Statistical analysis of body weight <bold>(A)</bold>, DAI score <bold>(B)</bold>, and colon length <bold>(C)</bold> in each group. <bold>(D)</bold> Representative colonic histological images and the corresponding histological activity index scores (scale bar = 100 μm). <bold>(E)</bold> Immuno-histochemical staining of ZO-1 and Occludin in colonic sections from each group (scale bar = 100 μm). <bold>(F)</bold> Intestinal permeability was evaluated by measuring the concentration of FITC-dextran in serum of each group. <bold>(G)</bold> qRT-PCR analysis of pro-inflammatory cytokines (TNF-α, IL-1β, and IL-6) mRNA levels in IECs isolated from the colonic tissue. Each dot indicates an individual mouse (<italic toggle="yes">n</italic> = 5). Results are shown as mean ± SD. *<italic toggle="yes">p</italic> &lt; 0.05, **<italic toggle="yes">p</italic> &lt; 0.01 by two-way ANOVA followed by Bonferroni <italic toggle="yes">post-hoc</italic> test <bold>(A, B)</bold> or one-way ANOVA followed by Bonferroni post-hoc test <bold>(C, D, F, G)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fcimb-15-1684362-g003.jpg"><alt-text content-type="machine-generated">Graphs and images depict experimental results on the effects of a treatment on mice. The panels include graphs showing weight change and disease activity index over time; comparisons of colon length; histological images of colon sections under control, ileum, DSS, and DSS+ileum conditions; and immunohistochemistry for ZO-1 and Occludin. Additional graphs display serum FITC-dextran levels and fold change of mRNA expression for TNFα, IL-6, and IL-1β, highlighting significant differences between groups. Statistical significance is marked by asterisks.</alt-text></graphic></fig></sec><sec id="s3_3"><title>Ile aggravated TNF-α–induced intestinal epithelial damage and inflammatory response in intestinal organoids</title><p>We next assessed the effect of Ile on intestinal epithelial function and inflammatory response in intestinal organoids. The growth of organoids upon Ile exposure was not affected under physiological state (<xref rid="f4" ref-type="fig"><bold>Figures 4A, B</bold></xref>). Under pathological conditions caused by TNF-α, Ile significantly inhibited the growth of organoids and increased the percentage of disrupted organoids (<xref rid="f4" ref-type="fig"><bold>Figures 4A, B</bold></xref>). Ile also exacerbated the loss of EdU-positive cells caused by TNF-α treatment to reduce the proliferative ability to repair the damaged epithelia (<xref rid="f4" ref-type="fig"><bold>Figure 4C</bold></xref>). Immunofluorescent staining showed that Ile significantly decreased the expression of TJ proteins (ZO-1 and occludin) in organoids with TNF-α treatment (<xref rid="f4" ref-type="fig"><bold>Figure 4D</bold></xref>). Recombinant TNF-α alone can induce TNF-α, IL-6, and IL-1β mRNA, whereas Ile alone had no effect. However, Ile significantly potentiated this induction when recombinant TNF-α was present (<xref rid="f4" ref-type="fig"><bold>Figure 4E</bold></xref>), indicating that Ile enhanced TNF-α-induced NF-κB activation, thereby leading IECs to upregulate pro-inflammatory cytokines in an autocrine manner, establishing a positive-feedback loop that includes TNF-α itself. In summary, Ile worsened intestinal epithelial dysfunction and the inflammation of intestinal organoids in the condition of TNF-α treatment.</p><fig position="float" id="f4" orientation="portrait"><label>Figure 4</label><caption><p>Ile promoted intestinal barrier damage and inflammatory response induced by TNF-α in intestinal organoids. <bold>(A)</bold> Organoids were treated with TNF-α (100 ng/ml) for 24h alone and cocultured with 10 mM Ile for another 24h (scale bars = 100 μm). <bold>(B)</bold> The diameter and the number of damaged organoids were counted; <italic toggle="yes">n</italic> = 100 organoids in each group. <bold>(C)</bold> Organoids were stained with 5-ethynyl-2′-deoxyuridine (EdU) (red). Nuclei were stained with 4′,6-diamidino-2-phenylindole (DAPI) (blue) (scale bars = 500 μm). <bold>(D)</bold> Immunofluorescence for ZO-1 and Occludin in intestinal organoids (scale bars = 500 μm). <bold>(E)</bold> RT-qPCR analysis of the fold induction of pro-inflammatory cytokines (TNF-α, IL-1β and IL-6) in organoids. The treatments are identical to <bold>(A)</bold>. Results are shown as mean ± SD. *<italic toggle="yes">p</italic> &lt; 0.05, **<italic toggle="yes">p</italic> &lt; 0.01, ***<italic toggle="yes">p</italic> &lt; 0.001, ****<italic toggle="yes">p</italic> &lt; 0.0001 by one-way ANOVA followed by Bonferroni post-hoc test.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fcimb-15-1684362-g004.jpg"><alt-text content-type="machine-generated">Scientific panels display various experimental data. Panel A shows cell morphology under different conditions: Ctrl, Ile, TNF-α, TNF-α+Ile. Panel B presents bar graphs comparing cell diameter and apoptosis percentage across these conditions. Panel C shows fluorescence images for EdU/DAPI staining, with a bar graph for EdU mean density. Panel D displays images for ZO-1/DAPI and Occludin/DAPI staining, with accompanying graphs for their mean densities. Panel E includes bar graphs showing the fold change of TNF-α, IL-6, and IL-1β mRNA expression across the same conditions. Statistical significance is indicated by asterisks.</alt-text></graphic></fig></sec><sec id="s3_4"><title>NF-κB signaling pathway mediated intestinal barrier function damage and inflammatory response induced by Ile</title><p>The above work showed that the periodontitis-associated metabolite Ile impaired intestinal barrier function and promoted the inflammation <italic toggle="yes">in vivo</italic>. We therefore explored the potential harmful effect of Ile on intestinal epithelial barrier function and inflammatory response <italic toggle="yes">in vitro</italic> using IEC-6 cells. In the presence of LPS, Ile decreased the expression of ZO-1 and occluding (<xref rid="f5" ref-type="fig"><bold>Figure 5A</bold></xref>), indicating a detrimental effect against LPS-induced impairments on intestinal barrier function. Consistent with the KEGG enrichment analysis above, we found that Ile markedly up-regulated the levels of two NF-κB signaling key molecules, P-P65 and P-IκBα, in IEC-6 cells with LPS induction (<xref rid="f5" ref-type="fig"><bold>Figure 5B</bold></xref>). Moreover, LPS alone induced TNF-α, IL-6, and IL-1β mRNA expression, whereas Ile alone did not. However, Ile significantly potentiated this induction when LPS was present, and this effect was abolished by the IKK inhibitor IKK-16 (<xref rid="f5" ref-type="fig"><bold>Figure 5C</bold></xref>). Therefore, these results indicated that Ile impaired intestinal barrier function and exacerbated inflammatory response through activating the NF-κB signaling pathway.</p><fig position="float" id="f5" orientation="portrait"><label>Figure 5</label><caption><p>Ile impaired intestinal barrier function and exacerbated inflammatory response by activating NF-κB signaling pathway in IEC-6 cells. <bold>(A)</bold> Immunofluorescence for ZO-1 and Occludin (scale bars = 100 μm). <bold>(B)</bold> Western blot analysis of NF-κB signal pathway. The whole blots are presented in <xref rid="SM1" ref-type="supplementary-material"><bold>Supplementary Figure S1</bold></xref>. <bold>(C)</bold> qRT-PCR analysis of relative mRNA levels of pro-inflammatory cytokines (TNF-α, IL-1β, and IL-6) in IEC-6 cells treated with 5 µM IKK inhibition (IKK-16) for 2h, followed by 1 μg/ml lipopolysaccharide (LPS) and 10 mM Ile treatment for two days. Results are shown as mean ± SD. *<italic toggle="yes">p</italic> &lt; 0.05, **<italic toggle="yes">p</italic> &lt; 0.01, ***<italic toggle="yes">p</italic> &lt; 0.001 by one-way ANOVA followed by Bonferroni post-hoc test <bold>(A, B)</bold> or two-tailed Student's <italic toggle="yes">t</italic>-test <bold>(C)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fcimb-15-1684362-g005.jpg"><alt-text content-type="machine-generated">Panel A shows immunofluorescence images of ZO-1 and Occludin with DAPI-stained nuclei under four conditions: Ctrl, Ile, LPS, and LPS+Ile, alongside graphs indicating changes in mean density. Panel B presents a Western blot analysis of proteins P-IκBα, IκBα, P-P65, P65, and β-actin across the same conditions, with accompanying bar graphs for P-IκBα/IκBα and P-P65/P65. Panel C displays bar graphs of mRNA expression changes for TNF-α, IL-6, and IL-1β under different treatments, highlighting statistical significance differences.</alt-text></graphic></fig></sec><sec id="s3_5"><title>Inhibiting NF-κB signaling relieved the impairment of intestinal barrier function and inflammation induced by Ile</title><p>To explore the extent to which the NF-κB signaling pathway induced by Ile was involved in the intestinal barrier disruption and inflammation of colitis, the Ile gavage and DSS-induced colitis mouse model was constructed, and IKK-16 was administered to inhibit the NF-κB signaling pathway. As expected, Ile gavage-DSS mice with IKK-16 treatment displayed rescued body weight, decreased DAI values, higher colon length, and lower colonic HAI scores compared with Ile gavage-DSS mice (<xref rid="f6" ref-type="fig"><bold>Figures 6A–E</bold></xref>), indicating that the NF-κB signaling pathway played a critical role in Ile aggravating colitis. Immunohistochemical staining of colonic tissue was performed, and the result showed that the expression of TJ proteins (ZO-1 and occludin) in Ile gavage-DSS mice with IKK-16 treatment was significantly increased in contrast to Ile gavage-DSS mice (<xref rid="f6" ref-type="fig"><bold>Figure 6F</bold></xref>). In addition, the expression of pro-inflammatory cytokines (TNF-α, IL-6, and IL-1β) was significantly decreased in IECs isolated from colonic tissue of Ile gavage-DSS mice with IKK-16 treatment compared with Ile gavage-DSS mice (<xref rid="f6" ref-type="fig"><bold>Figure 6G</bold></xref>). Collectively, these results suggested that Ile disrupted intestinal barrier function and aggravated intestinal inflammation in colitis mice through the NF-κB signaling pathway.</p><fig position="float" id="f6" orientation="portrait"><label>Figure 6</label><caption><p>Ile impaired intestinal barrier function and promoted intestinal inflammatory response in colitis mice via NF-κB signaling pathway. <bold>(A)</bold> Schematics of the mouse model. C57BL/6 mice were treated with 3.0% DSS for 5 days, followed by an additional 2 days of regular water in the presence or absence of Ile gavage (50 mg/kg/day) and intraperitoneal injection of IKK-16 (1 mg/kg/day). Body weight <bold>(B)</bold>, DAI score <bold>(C)</bold>, and colon length <bold>(D)</bold> were monitored during the experimental course. <bold>(E)</bold> Representative colonic histological images and the corresponding histological activity index scores (scale bar = 100 μm). <bold>(F)</bold> Immuno-histochemical staining of ZO-1 and Occludin in colonic sections from each group (scale bar = 100 μm). <bold>(G)</bold> qRT-PCR analysis of pro-inflammatory cytokines (TNF-α, IL-1β, and IL-6) mRNA levels in IECs isolated from the colonic tissue in each group. Each dot indicates an individual mouse (<italic toggle="yes">n</italic> = 5). Results are shown as mean ± SD. *<italic toggle="yes">p</italic> &lt; 0.05, **<italic toggle="yes">p</italic> &lt; 0.01, ***<italic toggle="yes">p</italic> &lt; 0.001, ****<italic toggle="yes">p</italic> &lt; 0.0001 by two-way ANOVA followed by Bonferroni post-hoc test <bold>(A, B)</bold> or one-way ANOVA followed by Bonferroni post-hoc test <bold>(C, D, F)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fcimb-15-1684362-g006.jpg"><alt-text content-type="machine-generated">Experimental setup and results from a study on DSS-induced colitis are shown. Panel A outlines the experimental design with DSS treatment, Ile gavage, and IKK-16 administration over seven days. Panel B and C present line graphs of weight changes and disease activity index (DAI) scores over time. Panel D features bar graphs indicating differences in colon length and histological activity index across treatments. Panel E shows histological images of colon tissues stained for comparison across groups. Panel F includes images of immunohistochemical staining for ZO-1 and Occludin proteins. Panel G presents bar graphs of TNF-α, IL-6, and IL-1β mRNA expression fold changes.</alt-text></graphic></fig></sec></sec><sec sec-type="discussion" id="s4"><title>Discussion</title><p>In response to microbial stimuli or cytokines, NF-κB signaling is activated to impair epithelial barrier function and increase chemokine and cytokine production in IECs (<xref rid="B3" ref-type="bibr">Chen et al., 2021</xref>). However, the regulatory mode of NF-κB signaling has not been fully characterized yet. In this study, we found that periodontitis and periodontitis-associated metabolite Ile enhanced NF-κB signaling in IECs to impair epithelial barrier function and increase the expression of pro-inflammatory cytokines (TNF-α, IL-6, and IL-1β) (<xref rid="f3" ref-type="fig"><bold>Figures 3</bold></xref>–<xref rid="f5" ref-type="fig"><bold>5</bold></xref>). Therefore, we speculated that periodontitis might disrupt the intestinal barrier and exacerbate intestinal inflammation through its metabolite Ile, which required more work to verify. Therefore, for patients with periodontitis and colitis, more attention should be paid to improving oral health (e.g., removal of pathogenic oral biofilms) to relieve colitis by limiting the levels of pathogenic bacteria and derived metabolites, such as Ile. In addition, reducing dietary Ile intake or targeting Ile catabolism will provide new strategies for the clinical treatment of colitis associated with periodontitis.</p><p>UC patients have significantly increased plasma levels of Ile compared with healthy controls (<xref rid="B51" ref-type="bibr">Xin et al., 2015</xref>), and the increase of plasma Ile content is positively correlated with the severity of UC (<xref rid="B34" ref-type="bibr">Probert et al., 2018</xref>), suggesting that Ile plays a detrimental role in UC. Indeed, Ile gavage administration aggravates the progression of colitis in mice (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>). Consistent with these results, we found that Ile impaired intestinal barrier function and exacerbated intestinal inflammatory response by NF-κB signaling (<xref rid="f3" ref-type="fig"><bold>Figures 3</bold></xref>–<xref rid="f5" ref-type="fig"><bold>5</bold></xref>). In contrast to these findings, supplementing Ile in the diet for 35 days improves the DSS-induced growth stunting and colonic damage in rats (<xref rid="B27" ref-type="bibr">Mao et al., 2021</xref>). We speculate that this might be due to the variations in the species or the methods of animal modeling.</p><p>The NF-κB signaling is at the core of the immune responses that also direct aberrant inflammation in the colitogenic gut (<xref rid="B29" ref-type="bibr">Mukherjee et al., 2024</xref>). The activation of NF-κB signaling induced the expression of TNF-α, IL-6, and IL-1β, which further amplify the inflammatory response, leading to colonic mucosal damage and persistent inflammation (<xref rid="B25" ref-type="bibr">Luo and Zhang, 2017</xref>). Moreover, NF-κB primes the NLRP3-inflammasome for activation by inducing pro-IL-1β and NLRP3 expression, indicating a cross-talk between the NF-κB pathway and the NLRP3 inflammasome (<xref rid="B56" ref-type="bibr">Zhong et al., 2016</xref>). Rutaecarpine alleviates gastric mucosal inflammation through suppressing NF-κB pathway and the NLRP3 inflammasome (<xref rid="B12" ref-type="bibr">He et al., 2024</xref>). Ile triggers the NLRP3 inflammasome pathway to exacerbate colitis (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>). In this study, we found Ile potentiated the NF-κB signaling and up-regulated the expression of TNF-α, IL-6, and IL-1β under inflammatory conditions (<xref rid="f3" ref-type="fig"><bold>Figures 3</bold></xref>-<xref rid="f5" ref-type="fig"><bold>5</bold></xref>). Therefore, we hypothesize that NF-κB potentiation by Ile may subsequently prime and potentially enhance the activation of the NLRP3 inflammasome, forming a pro-inflammatory positive feedback loop that aggravates colitis.</p><p>Branched-chain amino acids (BCAAs), which include Ile, leucine, and valine, are essential amino acids for animals and humans (<xref rid="B31" ref-type="bibr">Neinast et al., 2019</xref>). BCAAs are taken up into cells via BCAA transporters, such as SLC7A5 and SLC43A2 (<xref rid="B15" ref-type="bibr">Kandasamy et al., 2018</xref>). It has been shown that BCAAs increase the production of reactive oxygen species (ROS) and stimulate the activation of the NF-κB signaling pathway, favoring the expression of cytokines (TNF-α and IL-6) after uptake by peripheral blood mononuclear cells (<xref rid="B55" ref-type="bibr">Zhenyukh et al., 2017</xref>). Consistent with this, we verified that Ile could heighten NF-κB signaling and promote the expression of pro-inflammatory cytokines (TNF-α, IL-6, and IL-1β) <italic toggle="yes">in vivo</italic> and <italic toggle="yes">in vitro</italic> (<xref rid="f3" ref-type="fig"><bold>Figures 3</bold></xref>-<xref rid="f5" ref-type="fig"><bold>5</bold></xref>). However, it is still unknown which transporter mediates the uptake of Ile by IECs and whether ROS is involved in the activation of NF-κB signaling by Ile. In the future, more work needs to be done to solve these issues. Notably, Ile alone did not induce TNF-α, IL-6, or IL-1β expression but significantly enhanced their expression in the presence of exogenous TNF-α or LPS (<xref rid="f4" ref-type="fig"><bold>Figures 4E</bold></xref>, <xref rid="f5" ref-type="fig"><bold>5C</bold></xref>), suggesting that Ile was a modulatory amplifier of pre-existing NF-κB signaling and cytokine feedback loops rather than an autonomous activator. In addition, the IKK-16 inhibition experiment further supported NF-κB signaling involvement but did not prove the direct effect of Ile. So far, it is unclear how Ile participates in the NF-κB signaling pathway. It is well known that Ile is an activator of mechanistic target of rapamycin (mTOR) complex 1 (mTORC1) activity, which phosphorylates IKKα and IKKβ to activate the NF-κB signaling pathway (<xref rid="B39" ref-type="bibr">Son et al., 2019</xref>; <xref rid="B20" ref-type="bibr">Li et al., 2019</xref>). Therefore, it was inferred that Ile might enhance the NF-κB signaling pathway through mTORC1.</p><p>It is known that compromised intestinal barrier function has a pathogenic role in a number of intestinal and systemic diseases (<xref rid="B32" ref-type="bibr">Odenwald and Turner, 2017</xref>). Decreased expression of TJ proteins damages intestinal epithelial barrier function (<xref rid="B13" ref-type="bibr">Ibrahim et al., 2020</xref>; <xref rid="B40" ref-type="bibr">Su et al., 2021</xref>). Consistent with these studies, we found Ile downregulated the expression of TJ proteins (ZO-1 and occludin) and increased the intestinal permeability (<xref rid="f2" ref-type="fig"><bold>Figures 2</bold></xref>-<xref rid="f6" ref-type="fig"><bold>6</bold></xref>). However, how Ile regulates the expression of TJ proteins remains unknown. Numerous studies have shown that activated NF-κB P-P65 moves from the cytoplasm to the nucleus, and then binds to the myosin light chain kinase (MLCK) promoter, initiating the expression of MLCK, which induces the phosphorylation of myosin light chain (MLC) and causes the reallocation of TJ and cytoskeletal proteins, resulting in increased intestinal permeability (<xref rid="B7" ref-type="bibr">Gong et al., 2022</xref>; <xref rid="B49" ref-type="bibr">Wang et al., 2021</xref>; <xref rid="B26" ref-type="bibr">Ma et al., 2004</xref>; <xref rid="B4" ref-type="bibr">Cunningham and Turner, 2012</xref>; <xref rid="B37" ref-type="bibr">Shen et al., 2006</xref>). In addition, pro-inflammatory cytokines (such as TNF-α and IL-1β) increase the expression of MLCK, which results in decreased expression of TJ protein and thus increased intestinal permeability (<xref rid="B11" ref-type="bibr">He et al., 2020</xref>; <xref rid="B24" ref-type="bibr">Lorentz et al., 2017</xref>). In this study, NF-κB P-P65 and its downstream pro-inflammatory cytokines (TNF-α, IL-6, and IL-1β) were observably up-regulated by Ile under inflammatory conditions (<xref rid="f3" ref-type="fig"><bold>Figures 3</bold></xref>-<xref rid="f5" ref-type="fig"><bold>5</bold></xref>). Therefore, it is supposed that Ile might decrease the expression of TJ proteins through activating the NF-κB/MLCK axis. More studies about this hypothesis are needed to be performed in the future.</p><p>In the exploration of the mechanism by which periodontitis impairs the intestinal barrier, the KEGG pathway enrichment analysis showed that IL-17 signaling appeared as highly enriched as NF-κB signaling (<xref rid="f2" ref-type="fig"><bold>Figure 2C</bold></xref>), indicating a strong transcriptional footprint of the Th17/IL-17 axis in the dual periodontitis-colitis model. Consistent with this result, in 2020, Kitamoto et al. found oral pathobiont-reactive Th17 cells that arose during periodontitis can migrate to the gut and contribute to colitis (<xref rid="B19" ref-type="bibr">Kitamoto et al., 2020b</xref>). In addition, we found Ile was an oral pathobiont-synthesizing metabolite that transited from the oral cavity to the gut to aggravate colitis (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>). Depletion of Ile had an inhibitory effect on IL-17A production of CD4+ memory T cells (<xref rid="B16" ref-type="bibr">Kang et al., 2024</xref>). Therefore, it was speculated that the Th17/IL-17 axis might be an alternate mechanism through which Ile exacerbated colitis.</p><p>There are some limitations in our work. First, this study showed that the periodontitis-associated metabolite Ile impaired intestinal barrier function and aggravated intestinal inflammatory response in the context of colitis based on a single-sex study. In the future, these phenotypes should be validated in both sexes. Second, although it has been found that targeting inhibition of NF-κB signaling by IKK-16 can alleviate Ile-induced intestinal barrier dysfunction and inflammation of IECs, the potential long-term toxicity of this inhibitor in humans remains to be further evaluated. In the future, on the one hand, it is necessary to validate these findings in human samples to further explore the mechanism by which Ile enhances the NF-κB signaling pathway and disrupts the intestinal barrier function in periodontitis-mediated colitis. On the other hand, efforts should be made to either accelerate the development of safe and effective NF-κB–targeted therapies or repurpose existing clinically approved NF-κB inhibitors and explore their combination with current colitis treatments to improve the therapeutic effect for patients with periodontitis-mediated colitis. Finally, although our previous study detected elevated Ile levels in saliva and feces of mice with periodontitis, serum Ile remained unchanged (<xref rid="B46" ref-type="bibr">Wang et al., 2023a</xref>), suggesting that the oral-gut route may operate independently of systemic circulation. This is consistent with the possibility that locally produced Ile in the oral cavity may be directly transmitted to the gut via swallowing, rather than through systemic absorption and recirculation. The dose of Ile used in the current experiments was higher than the physiological level. However, it remains unclear whether the periodontitis-derived Ile that enters the gut reaches a physiologically relevant concentration sufficient to promote colitis. In the future, the physiological correlation of this route needs to be further explored through metabolic tracing or transport validation.</p></sec><sec sec-type="conclusions" id="s5"><title>Conclusion</title><p>Periodontitis-associated metabolite Ile promotes intestinal barrier dysfunction and inflammatory response to aggravate colitis by enhancing NF-κB signaling.</p></sec></body><back><fn-group><fn id="n1" fn-type="edited-by"><p>Edited by: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/501284" ext-link-type="uri">Soumyadev Sarkar</ext-link>, Arizona State University, United States</p></fn><fn id="n2" fn-type="reviewed-by"><p>Reviewed by: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/992677" ext-link-type="uri">Shelley Sardul Singh</ext-link>, Institute of Microbial Technology (CSIR), India</p><p><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/2322236" ext-link-type="uri">Samar Imbaby</ext-link>, Suez Canal University, Egypt</p></fn></fn-group><sec sec-type="data-availability" id="s7"><title>Data availability statement</title><p>The data used to support the findings of this study is available from the corresponding author upon request. Requests to access these datasets should be directed to Xueyang Zhang, <email xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:zxy123@smu.edu.cn">zxy123@smu.edu.cn</email>.</p></sec><sec sec-type="ethics-statement" id="s8"><title>Ethics statement</title><p>The animal study was approved by Institute of Biological and Medical Engineering, Guangdong Academy of Sciences. The study was conducted in accordance with the local legislation and institutional requirements.</p></sec><sec sec-type="author-contributions" id="s9"><title>Author contributions</title><p>XW: Data curation, Formal Analysis, Funding acquisition, Methodology, Project administration, Writing – original draft. YL: Data curation, Formal Analysis, Methodology, Writing – original draft. JR: Formal Analysis, Methodology, Writing – original draft. HX: Formal Analysis, Methodology, Writing – original draft. MR: Conceptualization, Methodology, Visualization, Writing – original draft. XR-F: Conceptualization, Methodology, Visualization, Writing – original draft. FH: Conceptualization, Project administration, Supervision, Writing – review &amp; editing. XZ: Conceptualization, Funding acquisition, Project administration, Supervision, Writing – review &amp; editing.</p></sec><sec sec-type="COI-statement" id="s11"><title>Conflict of interest</title><p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></sec><sec sec-type="ai-statement" id="s12"><title>Generative AI statement</title><p>The author(s) declare that no Generative AI was used in the creation of this manuscript.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></sec><sec sec-type="disclaimer" id="s13"><title>Publisher’s note</title><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></sec><sec sec-type="supplementary-material" id="s14"><title>Supplementary material</title><p>The Supplementary Material for this article can be found online at: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.frontiersin.org/articles/10.3389/fcimb.2025.1684362/full#supplementary-material" ext-link-type="uri">https://www.frontiersin.org/articles/10.3389/fcimb.2025.1684362/full#supplementary-material</ext-link></p><supplementary-material id="SM1" position="float" content-type="local-data" orientation="portrait"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Table1.docx" position="float" orientation="portrait"/></supplementary-material></sec><ref-list><title>References</title><ref id="B1"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Baima</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Iaderosa</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Citterio</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Grossi</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Romano</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Berta</surname><given-names>G. N.</given-names></name>
+<etal/>
+</person-group>. (<year>2021</year>). 
+<article-title>Salivary metabolomics for the diagnosis of periodontal diseases: a systematic review with methodological quality assessment</article-title>. <source>Metabolomics</source>
+<volume>17</volume>, <elocation-id>1</elocation-id>. doi: <pub-id pub-id-type="doi">10.1007/s11306-020-01754-3</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">33387070</pub-id>
+</mixed-citation></ref><ref id="B2"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Bao</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Ge</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group>. (<year>2022</year>). 
+<article-title>Periodontitis may induce gut microbiota dysbiosis via salivary microbiota</article-title>. <source>Int. J. Oral. Sci.</source>
+<volume>14</volume>, <fpage>32</fpage>. doi: <pub-id pub-id-type="doi">10.1038/s41368-022-00183-3</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">35732628</pub-id>
+<pub-id pub-id-type="pmcid">PMC9217941</pub-id></mixed-citation></ref><ref id="B3"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Tang</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Huang</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Zhi</surname><given-names>F.</given-names></name>
+<etal/>
+</person-group>. (<year>2021</year>). 
+<article-title>Epithelial PBLD attenuates intestinal inflammatory response and improves intestinal barrier function by inhibiting NF-κB signaling</article-title>. <source>Cell Death Dis.</source>
+<volume>12</volume>, <fpage>563</fpage>. doi: <pub-id pub-id-type="doi">10.1038/s41419-021-03843-0</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34059646</pub-id>
+<pub-id pub-id-type="pmcid">PMC8166876</pub-id></mixed-citation></ref><ref id="B4"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Cunningham</surname><given-names>K. E.</given-names></name>
+<name name-style="western"><surname>Turner</surname><given-names>J. R.</given-names></name>
+</person-group> (<year>2012</year>). 
+<article-title>Myosin light chain kinase: pulling the strings of epithelial tight junction function</article-title>. <source>Ann. N. Y. Acad. Sci.</source>
+<volume>1258</volume>, <fpage>34</fpage>–<lpage>42</lpage>. doi: <pub-id pub-id-type="doi">10.1111/j.1749-6632.2012.06526.x</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">22731713</pub-id>
+<pub-id pub-id-type="pmcid">PMC3384706</pub-id></mixed-citation></ref><ref id="B5"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Furuta</surname><given-names>G. T.</given-names></name>
+<name name-style="western"><surname>Turner</surname><given-names>J. R.</given-names></name>
+<name name-style="western"><surname>Taylor</surname><given-names>C. T.</given-names></name>
+<name name-style="western"><surname>Hershberg</surname><given-names>R. M.</given-names></name>
+<name name-style="western"><surname>Comerford</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Narravula</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group>. (<year>2001</year>). 
+<article-title>Hypoxia-inducible factor 1-dependent induction of intestinal trefoil factor protects barrier function during hypoxia</article-title>. <source>J. Exp. Med.</source>
+<volume>193</volume>, <fpage>1027</fpage>–<lpage>1034</lpage>. doi: <pub-id pub-id-type="doi">10.1084/jem.193.9.1027</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">11342587</pub-id>
+<pub-id pub-id-type="pmcid">PMC2193432</pub-id></mixed-citation></ref><ref id="B6"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Garcia-Villaescusa</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Morales-Tatay</surname><given-names>J. M.</given-names></name>
+<name name-style="western"><surname>Monleon-Salvado</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Gonzalez-Darder</surname><given-names>J. M.</given-names></name>
+<name name-style="western"><surname>Bellot-Arcis</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Montiel-Company</surname><given-names>J. M.</given-names></name>
+<etal/>
+</person-group>. (<year>2018</year>). 
+<article-title>Using NMR in saliva to identify possible biomarkers of glioblastoma and chronic periodontitis</article-title>. <source>PloS One</source>
+<volume>13</volume>, <elocation-id>e0188710</elocation-id>. doi: <pub-id pub-id-type="doi">10.1371/journal.pone.0188710</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">29408884</pub-id>
+<pub-id pub-id-type="pmcid">PMC5800567</pub-id></mixed-citation></ref><ref id="B7"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Gong</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Zheng</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Xie</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>Y.</given-names></name>
+<etal/>
+</person-group>. (<year>2022</year>). 
+<article-title>Taxifolin ameliorates lipopolysaccharide-induced intestinal epithelial barrier dysfunction via attenuating NF-kappa B/MLCK pathway in a Caco-2 cell monolayer model</article-title>. <source>Food Res. Int.</source>
+<volume>158</volume>, <elocation-id>111502</elocation-id>. doi: <pub-id pub-id-type="doi">10.1016/j.foodres.2022.111502</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">35840209</pub-id>
+</mixed-citation></ref><ref id="B8"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Gu</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Mao</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>Q.</given-names></name>
+</person-group> (<year>2019</year>). 
+<article-title>Isoleucine plays an important role for maintaining immune function</article-title>. <source>Curr. Protein Pept. Sci.</source>
+<volume>20</volume>, <fpage>644</fpage>–<lpage>651</lpage>. doi: <pub-id pub-id-type="doi">10.2174/1389203720666190305163135</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30843485</pub-id>
+</mixed-citation></ref><ref id="B9"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Hale</surname><given-names>L. L.</given-names></name>
+<name name-style="western"><surname>Pharr</surname><given-names>G. T.</given-names></name>
+<name name-style="western"><surname>Burgess</surname><given-names>S. C.</given-names></name>
+<name name-style="western"><surname>Corzo</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Kidd</surname><given-names>M. T.</given-names></name>
+</person-group> (<year>2004</year>). 
+<article-title>Isoleucine needs of thirty- to forty-day-old female chickens: immunity</article-title>. <source>Poult. Sci.</source>
+<volume>83</volume>, <fpage>1979</fpage>–<lpage>1985</lpage>. doi: <pub-id pub-id-type="doi">10.1093/ps/83.12.1979</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">15615010</pub-id>
+</mixed-citation></ref><ref id="B10"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Han</surname><given-names>B.-J.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>Y.-J.</given-names></name>
+<name name-style="western"><surname>Jin</surname><given-names>J.-Y.</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>H.-K.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>W.-Z.</given-names></name>
+<name name-style="western"><surname>Ren</surname><given-names>S.-M.</given-names></name>
+<etal/>
+</person-group>. (<year>2023</year>). 
+<article-title>Symptom assessment and management in patients with lung cancer undergoing conventional or traditional chinese medicine care</article-title>. <source>World J. Tradit. Chin. Med.</source>
+<volume>9</volume>, <fpage>235</fpage>–<lpage>242</lpage>. doi: <pub-id pub-id-type="doi">10.4103/2311-8571.382112</pub-id>
+</mixed-citation></ref><ref id="B11"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>He</surname><given-names>W. Q.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Sheng</surname><given-names>J. Y.</given-names></name>
+<name name-style="western"><surname>Zha</surname><given-names>J. M.</given-names></name>
+<name name-style="western"><surname>Graham</surname><given-names>W. V.</given-names></name>
+<name name-style="western"><surname>Turner</surname><given-names>J. R.</given-names></name>
+</person-group> (<year>2020</year>). 
+<article-title>Contributions of myosin light chain kinase to regulation of epithelial paracellular permeability and mucosal homeostasis</article-title>. <source>Int. J. Mol. Sci.</source>
+<volume>21</volume>. doi: <pub-id pub-id-type="doi">10.3390/ijms21030993</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32028590</pub-id>
+<pub-id pub-id-type="pmcid">PMC7037368</pub-id></mixed-citation></ref><ref id="B12"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>He</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>L.-S.</given-names></name>
+<name name-style="western"><surname>Chang</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>He</surname><given-names>T.-T.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>A.-Z.</given-names></name>
+<etal/>
+</person-group>. (<year>2024</year>). 
+<article-title>Effects of rutaecarpine on chronic atrophic gastritis through nucleotide-binding oligomerization domain-like receptors and inflammasomes</article-title>. <source>World J. Tradit. Chin. Med.</source>
+<volume>10</volume>, <fpage>303</fpage>–<lpage>315</lpage>. doi: <pub-id pub-id-type="doi">10.4103/wjtcm.wjtcm_55_24</pub-id>
+</mixed-citation></ref><ref id="B13"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ibrahim</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Zhu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Luo</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Feng</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>
+</person-group> (<year>2020</year>). 
+<article-title>PIK3R3 regulates ZO-1 expression through the NF-kB pathway in inflammatory bowel disease</article-title>. <source>Int. Immunopharmacol.</source>
+<volume>85</volume>, <elocation-id>106610</elocation-id>. doi: <pub-id pub-id-type="doi">10.1016/j.intimp.2020.106610</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32473571</pub-id>
+</mixed-citation></ref><ref id="B14"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kaminsky</surname><given-names>L. W.</given-names></name>
+<name name-style="western"><surname>Al-Sadi</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Ma</surname><given-names>T. Y.</given-names></name>
+</person-group> (<year>2021</year>). 
+<article-title>IL-1β and the intestinal epithelial tight junction barrier</article-title>. <source>Front. Immunol.</source>
+<volume>12</volume>. doi: <pub-id pub-id-type="doi">10.3389/fimmu.2021.767456</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34759934</pub-id>
+<pub-id pub-id-type="pmcid">PMC8574155</pub-id></mixed-citation></ref><ref id="B15"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kandasamy</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Gyimesi</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Kanai</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Hediger</surname><given-names>M. A.</given-names></name>
+</person-group> (<year>2018</year>). 
+<article-title>Amino acid transporters revisited: New views in health and disease</article-title>. <source>Trends Biochem. Sci.</source>
+<volume>43</volume>, <fpage>752</fpage>–<lpage>789</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.tibs.2018.05.003</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30177408</pub-id>
+</mixed-citation></ref><ref id="B16"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kang</surname><given-names>Y. J.</given-names></name>
+<name name-style="western"><surname>Song</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Lee</surname><given-names>S. J.</given-names></name>
+<name name-style="western"><surname>Choi</surname><given-names>S. A.</given-names></name>
+<name name-style="western"><surname>Chae</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Yoon</surname><given-names>B. R.</given-names></name>
+<etal/>
+</person-group>. (<year>2024</year>). 
+<article-title>Inhibition of BCAT1-mediated cytosolic leucine metabolism regulates Th17 responses via the mTORC1-HIF1α pathway</article-title>. <source>Exp. Mol. Med.</source>
+<volume>56</volume>, <fpage>1776</fpage>–<lpage>1790</lpage>. doi: <pub-id pub-id-type="doi">10.1038/s12276-024-01286-z</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">39085353</pub-id>
+<pub-id pub-id-type="pmcid">PMC11372109</pub-id></mixed-citation></ref><ref id="B17"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kapila</surname><given-names>Y. L.</given-names></name>
+</person-group> (<year>2021</year>). 
+<article-title>Oral health's inextricable connection to systemic health: Special populations bring to bear multimodal relationships and factors connecting periodontal disease to systemic diseases and conditions</article-title>. <source>Periodontol.</source>
+<volume>87</volume>, <fpage>11</fpage>–<lpage>16</lpage>. doi: <pub-id pub-id-type="doi">10.1111/prd.12398</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34463994</pub-id>
+<pub-id pub-id-type="pmcid">PMC8457130</pub-id></mixed-citation></ref><ref id="B18"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kitamoto</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Nagao-Kitamoto</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Hein</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Schmidt</surname><given-names>T. M.</given-names></name>
+<name name-style="western"><surname>Kamada</surname><given-names>N.</given-names></name>
+</person-group> (<year>2020</year>a). 
+<article-title>The bacterial connection between the oral cavity and the gut diseases</article-title>. <source>J. Dent. Res.</source>
+<volume>99</volume>, <fpage>1021</fpage>–<lpage>1029</lpage>. doi: <pub-id pub-id-type="doi">10.1177/0022034520924633</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32464078</pub-id>
+<pub-id pub-id-type="pmcid">PMC7375741</pub-id></mixed-citation></ref><ref id="B19"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kitamoto</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Nagao-Kitamoto</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Jiao</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Gillilland</surname><given-names>M. G.</given-names></name>
+<name name-style="western"><surname>Hayashi</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Imai</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>. (<year>2020</year>b). 
+<article-title>The intermucosal connection between the mouth and gut in commensal pathobiont-driven colitis</article-title>. <source>Cell</source>
+<volume>182</volume>, <fpage>447</fpage>–<lpage>462 e414</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.cell.2020.05.048</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32758418</pub-id>
+<pub-id pub-id-type="pmcid">PMC7414097</pub-id></mixed-citation></ref><ref id="B20"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Dong</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>Z. W.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>S. L.</given-names></name>
+<etal/>
+</person-group>. (<year>2019</year>). 
+<article-title>Crosstalk between the Akt/mTORC1 and NF-κB signaling pathways promotes hypoxia-induced pulmonary hypertension by increasing DPP4 expression in PASMCs</article-title>. <source>Acta Pharmacol. Sin.</source>
+<volume>40</volume>, <fpage>1322</fpage>–<lpage>1333</lpage>. doi: <pub-id pub-id-type="doi">10.1038/s41401-019-0272-2</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">31316183</pub-id>
+<pub-id pub-id-type="pmcid">PMC6786428</pub-id></mixed-citation></ref><ref id="B21"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Lin</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Niimi</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Ohsugi</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Tsuchiya</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Shimohira</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Komatsu</surname><given-names>K.</given-names></name>
+<etal/>
+</person-group>. (<year>2021</year>). 
+<article-title>Application of ligature-induced periodontitis in mice to explore the molecular mechanism of periodontal disease</article-title>. <source>Int. J. Mol. Sci.</source>
+<volume>22</volume>. doi: <pub-id pub-id-type="doi">10.3390/ijms22168900</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34445604</pub-id>
+<pub-id pub-id-type="pmcid">PMC8396362</pub-id></mixed-citation></ref><ref id="B22"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Hong</surname><given-names>X. L.</given-names></name>
+<name name-style="western"><surname>Sun</surname><given-names>T. T.</given-names></name>
+<name name-style="western"><surname>Huang</surname><given-names>X. W.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>J. L.</given-names></name>
+<name name-style="western"><surname>Xiong</surname><given-names>H.</given-names></name>
+</person-group> (<year>2020</year>). 
+<article-title>Fusobacterium nucleatum exacerbates colitis by damaging epithelial barriers and inducing aberrant inflammation</article-title>. <source>J. Dig. Dis.</source>
+<volume>21</volume>, <fpage>385</fpage>–<lpage>398</lpage>. doi: <pub-id pub-id-type="doi">10.1111/1751-2980.12909</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32441482</pub-id>
+</mixed-citation></ref><ref id="B23"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Livak</surname><given-names>K. J.</given-names></name>
+<name name-style="western"><surname>Schmittgen</surname><given-names>T. D.</given-names></name>
+</person-group> (<year>2001</year>). 
+<article-title>Analysis of relative gene expression data using real-time quantitative PCR and the 2(-Delta Delta C(T)) Method</article-title>. <source>Methods</source>
+<volume>25</volume>, <fpage>402</fpage>–<lpage>408</lpage>. doi: <pub-id pub-id-type="doi">10.1006/meth.2001.1262</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">11846609</pub-id>
+</mixed-citation></ref><ref id="B24"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Lorentz</surname><given-names>C. A.</given-names></name>
+<name name-style="western"><surname>Liang</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Meng</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>C. W.</given-names></name>
+<name name-style="western"><surname>Yoseph</surname><given-names>B. P.</given-names></name>
+<name name-style="western"><surname>Breed</surname><given-names>E. R.</given-names></name>
+<etal/>
+</person-group>. (<year>2017</year>). 
+<article-title>Myosin light chain kinase knockout improves gut barrier function and confers a survival advantage in polymicrobial sepsis</article-title>. <source>Mol. Med.</source>
+<volume>23</volume>, <fpage>155</fpage>–<lpage>165</lpage>. doi: <pub-id pub-id-type="doi">10.2119/molmed.2016.00256</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">28598488</pub-id>
+<pub-id pub-id-type="pmcid">PMC5568914</pub-id></mixed-citation></ref><ref id="B25"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Luo</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>H.</given-names></name>
+</person-group> (<year>2017</year>). 
+<article-title>The role of proinflammatory pathways in the pathogenesis of colitis-associated colorectal cancer</article-title>. <source>Mediators Inflamm.</source>
+<volume>2017</volume>, <elocation-id>5126048</elocation-id>. doi: <pub-id pub-id-type="doi">10.1155/2017/5126048</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">28852270</pub-id>
+<pub-id pub-id-type="pmcid">PMC5568615</pub-id></mixed-citation></ref><ref id="B26"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ma</surname><given-names>T. Y.</given-names></name>
+<name name-style="western"><surname>Iwamoto</surname><given-names>G. K.</given-names></name>
+<name name-style="western"><surname>Hoa</surname><given-names>N. T.</given-names></name>
+<name name-style="western"><surname>Akotia</surname><given-names>V.</given-names></name>
+<name name-style="western"><surname>Pedram</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Boivin</surname><given-names>M. A.</given-names></name>
+<etal/>
+</person-group>. (<year>2004</year>). 
+<article-title>TNF-alpha-induced increase in intestinal epithelial tight junction permeability requires NF-kappa B activation</article-title>. <source>Am. J. Physiol. Gastrointest. Liver Physiol.</source>
+<volume>286</volume>, <fpage>G367</fpage>–<lpage>G376</lpage>. doi: <pub-id pub-id-type="doi">10.1152/ajpgi.00173.2003</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">14766535</pub-id>
+</mixed-citation></ref><ref id="B27"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Mao</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Sun</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>Q.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>He</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>. (<year>2021</year>). 
+<article-title>l-isoleucine administration alleviates DSS-induced colitis by regulating TLR4/myD88/NF-κB pathway in rats</article-title>. <source>Front. Immunol.</source>
+<volume>12</volume>. doi: <pub-id pub-id-type="doi">10.3389/fimmu.2021.817583</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">35087537</pub-id>
+<pub-id pub-id-type="pmcid">PMC8787224</pub-id></mixed-citation></ref><ref id="B28"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Marchesan</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Girnary</surname><given-names>M. S.</given-names></name>
+<name name-style="western"><surname>Jing</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Miao</surname><given-names>M. Z.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Sun</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group>. (<year>2018</year>). 
+<article-title>An experimental murine model to study periodontitis</article-title>. <source>Nat. Protoc.</source>
+<volume>13</volume>, <fpage>2247</fpage>–<lpage>2267</lpage>. doi: <pub-id pub-id-type="doi">10.1038/s41596-018-0035-4</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30218100</pub-id>
+<pub-id pub-id-type="pmcid">PMC6773250</pub-id></mixed-citation></ref><ref id="B29"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Mukherjee</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Kumar</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Chawla</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Philpott</surname><given-names>D. J.</given-names></name>
+<name name-style="western"><surname>Basak</surname><given-names>S.</given-names></name>
+</person-group> (<year>2024</year>). 
+<article-title>The NF-κB signaling system in the immunopathogenesis of inflammatory bowel disease</article-title>. <source>Sci. Signal</source>
+<volume>17</volume>, <fpage>eadh1641</fpage>. doi: <pub-id pub-id-type="doi">10.1126/scisignal.adh1641</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">38194476</pub-id>
+</mixed-citation></ref><ref id="B30"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Murthy</surname><given-names>S. N.</given-names></name>
+<name name-style="western"><surname>Cooper</surname><given-names>H. S.</given-names></name>
+<name name-style="western"><surname>Shim</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Shah</surname><given-names>R. S.</given-names></name>
+<name name-style="western"><surname>Ibrahim</surname><given-names>S. A.</given-names></name>
+<name name-style="western"><surname>Sedergran</surname><given-names>D. J.</given-names></name>
+</person-group> (<year>1993</year>). 
+<article-title>Treatment of dextran sulfate sodium-induced murine colitis by intracolonic cyclosporin</article-title>. <source>Dig. Dis. Sci.</source>
+<volume>38</volume>, <fpage>1722</fpage>–<lpage>1734</lpage>. doi: <pub-id pub-id-type="doi">10.1007/bf01303184</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">8359087</pub-id>
+</mixed-citation></ref><ref id="B31"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Neinast</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Murashige</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Arany</surname><given-names>Z.</given-names></name>
+</person-group> (<year>2019</year>). 
+<article-title>Branched chain amino acids</article-title>. <source>Annu. Rev. Physiol.</source>
+<volume>81</volume>, <fpage>139</fpage>–<lpage>164</lpage>. doi: <pub-id pub-id-type="doi">10.1146/annurev-physiol-020518-114455</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30485760</pub-id>
+<pub-id pub-id-type="pmcid">PMC6536377</pub-id></mixed-citation></ref><ref id="B32"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Odenwald</surname><given-names>M. A.</given-names></name>
+<name name-style="western"><surname>Turner</surname><given-names>J. R.</given-names></name>
+</person-group> (<year>2017</year>). 
+<article-title>The intestinal epithelial barrier: a therapeutic target</article-title>? <source>Nat. Rev. Gastroenterol. Hepatol.</source>
+<volume>14</volume>, <fpage>9</fpage>–<lpage>21</lpage>. doi: <pub-id pub-id-type="doi">10.1038/nrgastro.2016.169</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">27848962</pub-id>
+<pub-id pub-id-type="pmcid">PMC5554468</pub-id></mixed-citation></ref><ref id="B33"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Peterson</surname><given-names>L. W.</given-names></name>
+<name name-style="western"><surname>Artis</surname><given-names>D.</given-names></name>
+</person-group> (<year>2014</year>). 
+<article-title>Intestinal epithelial cells: regulators of barrier function and immune homeostasis</article-title>. <source>Nat. Rev. Immunol.</source>
+<volume>14</volume>, <fpage>141</fpage>–<lpage>153</lpage>. doi: <pub-id pub-id-type="doi">10.1038/nri3608</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">24566914</pub-id>
+</mixed-citation></ref><ref id="B34"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Probert</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Walsh</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Jagielowicz</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Yeo</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Claridge</surname><given-names>T. D. W.</given-names></name>
+<name name-style="western"><surname>Simmons</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group>. (<year>2018</year>). 
+<article-title>Plasma nuclear magnetic resonance metabolomics discriminates between high and low endoscopic activity and predicts progression in a prospective cohort of patients with ulcerative colitis</article-title>. <source>J. Crohns Colitis</source>
+<volume>12</volume>, <fpage>1326</fpage>–<lpage>1337</lpage>. doi: <pub-id pub-id-type="doi">10.1093/ecco-jcc/jjy101</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30016408</pub-id>
+<pub-id pub-id-type="pmcid">PMC6403054</pub-id></mixed-citation></ref><ref id="B35"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Qian</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Lu</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Huang</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Bao</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>. (<year>2022</year>). 
+<article-title>Periodontitis salivary microbiota worsens colitis</article-title>. <source>J. Dent. Res.</source>
+<volume>101</volume>, <fpage>559</fpage>–<lpage>568</lpage>. doi: <pub-id pub-id-type="doi">10.1177/00220345211049781</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34796773</pub-id>
+</mixed-citation></ref><ref id="B36"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ren</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Zheng</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Luo</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Song</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group>. (<year>2025</year>). 
+<article-title>Fibroblast derived C3 promotes the progression of experimental periodontitis through macrophage M1 polarization and osteoclast differentiation</article-title>. <source>Int. J. Oral. Sci.</source>
+<volume>17</volume>, <fpage>30</fpage>. doi: <pub-id pub-id-type="doi">10.1038/s41368-025-00361-z</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">40240339</pub-id>
+<pub-id pub-id-type="pmcid">PMC12003657</pub-id></mixed-citation></ref><ref id="B37"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Shen</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Black</surname><given-names>E. D.</given-names></name>
+<name name-style="western"><surname>Witkowski</surname><given-names>E. D.</given-names></name>
+<name name-style="western"><surname>Lencer</surname><given-names>W. I.</given-names></name>
+<name name-style="western"><surname>Guerriero</surname><given-names>V.</given-names></name>
+<name name-style="western"><surname>Schneeberger</surname><given-names>E. E.</given-names></name>
+<etal/>
+</person-group>. (<year>2006</year>). 
+<article-title>Myosin light chain phosphorylation regulates barrier function by remodeling tight junction structure</article-title>. <source>J. Cell Sci.</source>
+<volume>119</volume>, <fpage>2095</fpage>–<lpage>2106</lpage>. doi: <pub-id pub-id-type="doi">10.1242/jcs.02915</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">16638813</pub-id>
+</mixed-citation></ref><ref id="B38"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Slots</surname><given-names>J.</given-names></name>
+</person-group> (<year>2017</year>). 
+<article-title>Periodontitis: facts, fallacies and the future</article-title>. <source>Periodontol.</source>
+<volume>75</volume>, <fpage>7</fpage>–<lpage>23</lpage>. doi: <pub-id pub-id-type="doi">10.1111/prd.12221</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">28758294</pub-id>
+</mixed-citation></ref><ref id="B39"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Son</surname><given-names>S. M.</given-names></name>
+<name name-style="western"><surname>Park</surname><given-names>S. J.</given-names></name>
+<name name-style="western"><surname>Lee</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Siddiqi</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Lee</surname><given-names>J. E.</given-names></name>
+<name name-style="western"><surname>Menzies</surname><given-names>F. M.</given-names></name>
+<etal/>
+</person-group>. (<year>2019</year>). 
+<article-title>Leucine Signals to mTORC1 via Its Metabolite Acetyl-Coenzyme A</article-title>. <source>Cell Metab.</source>
+<volume>29</volume>, <fpage>192</fpage>–<lpage>201 e197</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.cmet.2018.08.013</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30197302</pub-id>
+<pub-id pub-id-type="pmcid">PMC6331339</pub-id></mixed-citation></ref><ref id="B40"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Su</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Wei</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Qi</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Jin</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>Q.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+<etal/>
+</person-group>. (<year>2021</year>). 
+<article-title>LRRC19 promotes permeability of the gut epithelial barrier through degrading PKC-ζ and PKCι/λ to reduce expression of ZO1, ZO3, and occludin</article-title>. <source>Inflamm. Bowel Dis.</source>
+<volume>27</volume>, <fpage>1302</fpage>–<lpage>1315</lpage>. doi: <pub-id pub-id-type="doi">10.1093/ibd/izaa354</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">33501933</pub-id>
+</mixed-citation></ref><ref id="B41"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Su</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Ye</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Hu</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Shao</surname><given-names>L.</given-names></name>
+</person-group> (<year>2023</year>). 
+<article-title>Periodontitis as a promoting factor of T2D: current evidence and mechanisms</article-title>. <source>Int. J. Oral. Sci.</source>
+<volume>15</volume>, <fpage>25</fpage>. doi: <pub-id pub-id-type="doi">10.1038/s41368-023-00227-2</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">37321994</pub-id>
+<pub-id pub-id-type="pmcid">PMC10272210</pub-id></mixed-citation></ref><ref id="B42"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Torres</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Mehandru</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Colombel</surname><given-names>J. F.</given-names></name>
+<name name-style="western"><surname>Peyrin-Biroulet</surname><given-names>L.</given-names></name>
+</person-group> (<year>2017</year>). 
+<article-title>Crohn's disease</article-title>. <source>Lancet</source>
+<volume>389</volume>, <fpage>1741</fpage>–<lpage>1755</lpage>. doi: <pub-id pub-id-type="doi">10.1016/s0140-6736(16)31711-1</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">27914655</pub-id>
+</mixed-citation></ref><ref id="B43"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ungaro</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Mehandru</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Allen</surname><given-names>P. B.</given-names></name>
+<name name-style="western"><surname>Peyrin-Biroulet</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Colombel</surname><given-names>J. F.</given-names></name>
+</person-group> (<year>2017</year>). 
+<article-title>Ulcerative colitis</article-title>. <source>Lancet</source>
+<volume>389</volume>, <fpage>1756</fpage>–<lpage>1770</lpage>. doi: <pub-id pub-id-type="doi">10.1016/s0140-6736(16)32126-2</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">27914657</pub-id>
+<pub-id pub-id-type="pmcid">PMC6487890</pub-id></mixed-citation></ref><ref id="B44"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Hu</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Song</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Rong</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>X.</given-names></name>
+<etal/>
+</person-group>. (<year>2022</year>). 
+<article-title>Functional divergence of oligoadenylate synthetase 1 (OAS1) proteins in Tetrapods</article-title>. <source>Sci. China Life Sci.</source>
+<volume>65</volume>, <fpage>1395</fpage>–<lpage>1412</lpage>. doi: <pub-id pub-id-type="doi">10.1007/s11427-021-2002-y</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34826092</pub-id>
+</mixed-citation></ref><ref id="B45"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Zhou</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>Q.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Hu</surname><given-names>F.</given-names></name>
+</person-group> (<year>2025</year>). 
+<article-title>Periodontitis exacerbates colorectal cancer by altering gut microbiota-derived metabolomics in mice</article-title>. <source>J. Periodontal Res</source>. doi: <pub-id pub-id-type="doi">10.1111/jre.13380</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">39843386</pub-id>
+</mixed-citation></ref><ref id="B46"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Luo</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Huang</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Jin</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>. (<year>2023</year>a). 
+<article-title>Periodontitis-induced oral microbiome alterations provide clues on how periodontitis exacerbates colitis</article-title>. <source>J. Clin. Periodontol.</source>
+<volume>50</volume>, <fpage>627</fpage>–<lpage>641</lpage>. doi: <pub-id pub-id-type="doi">10.1111/jcpe.13759</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">36504359</pub-id>
+</mixed-citation></ref><ref id="B47"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Sun</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Feng</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Huang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>T.</given-names></name>
+<etal/>
+</person-group>. (<year>2019</year>). 
+<article-title>Sodium oligomannate therapeutically remodels gut microbiota and suppresses gut bacterial amino acids-shaped neuroinflammation to inhibit Alzheimer's disease progression</article-title>. <source>Cell Res.</source>
+<volume>29</volume>, <fpage>787</fpage>–<lpage>803</lpage>. doi: <pub-id pub-id-type="doi">10.1038/s41422-019-0216-x</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">31488882</pub-id>
+<pub-id pub-id-type="pmcid">PMC6796854</pub-id></mixed-citation></ref><ref id="B48"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Tan</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Duan</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Wu</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Zhou</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Hou</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group>. (<year>2023</year>b). 
+<article-title>FUT2-dependent fucosylation of HYOU1 protects intestinal stem cells against inflammatory injury by regulating unfolded protein response</article-title>. <source>Redox Biol.</source>
+<volume>60</volume>, <elocation-id>102618</elocation-id>. doi: <pub-id pub-id-type="doi">10.1016/j.redox.2023.102618</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">36724577</pub-id>
+<pub-id pub-id-type="pmcid">PMC9923227</pub-id></mixed-citation></ref><ref id="B49"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Zhao</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Lv</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Zhao</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>F.</given-names></name>
+<etal/>
+</person-group>. (<year>2021</year>). 
+<article-title>Pterostilbene ameliorates DSS-induced intestinal epithelial barrier loss in mice via suppression of the NF-κB-mediated MLCK-MLC signaling pathway</article-title>. <source>J. Agric. Food Chem.</source>
+<volume>69</volume>, <fpage>3871</fpage>–<lpage>3878</lpage>. doi: <pub-id pub-id-type="doi">10.1021/acs.jafc.1c00274</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">33759516</pub-id>
+</mixed-citation></ref><ref id="B50"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wangchuk</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Yeshi</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Loukas</surname><given-names>A.</given-names></name>
+</person-group> (<year>2024</year>). 
+<article-title>Ulcerative colitis: clinical biomarkers, therapeutic targets, and emerging treatments</article-title>. <source>Trends Pharmacol. Sci.</source>
+<volume>45</volume>, <fpage>892</fpage>–<lpage>903</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.tips.2024.08.003</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">39261229</pub-id>
+</mixed-citation></ref><ref id="B51"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Xin</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Zhu</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Wu</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Zhai</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>. (<year>2015</year>). 
+<article-title>An analysis of amino acid metabolic profile and its clinical significance in ulcerative colitis</article-title>. <source>Zhonghua Nei Ke Za Zhi</source>
+<volume>54</volume>, <fpage>210</fpage>–<lpage>213</lpage>. doi: <pub-id pub-id-type="doi">10.3760/cma.j.issn.0578-1426.2015.03.010</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">26269443</pub-id>
+</mixed-citation></ref><ref id="B52"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Xu</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Tang</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Sheng</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Tian</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Deng</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Du</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group>. (<year>2020</year>). 
+<article-title>Secreted stromal protein ISLR promotes intestinal regeneration by suppressing epithelial Hippo signaling</article-title>. <source>EMBO J.</source>
+<volume>39</volume>, <elocation-id>e103255</elocation-id>. doi: <pub-id pub-id-type="doi">10.15252/embj.2019103255</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32128839</pub-id>
+<pub-id pub-id-type="pmcid">PMC7110107</pub-id></mixed-citation></ref><ref id="B53"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Yan</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Zhu</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Duan</surname><given-names>X.</given-names></name>
+</person-group> (<year>2025</year>). 
+<article-title>Escin Ia ameliorates DSS-induced chronic colitis in mice by inhibiting inflammation and oxidative stress via the LOXL2/MMP-9 pathway</article-title>. <source>J. Ethnopharmacol.</source>
+<volume>345</volume>, <elocation-id>119623</elocation-id>. doi: <pub-id pub-id-type="doi">10.1016/j.jep.2025.119623</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">40090427</pub-id>
+</mixed-citation></ref><ref id="B54"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zhao</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Feng</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Jiang</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Wu</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Jiang</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>. (<year>2014</year>). 
+<article-title>Effect of dietary isoleucine on the immunity, antioxidant status, tight junctions and microflora in the intestine of juvenile Jian carp (Cyprinus carpio var. Jian)</article-title>. <source>Fish Shellfish Immunol.</source>
+<volume>41</volume>, <fpage>663</fpage>–<lpage>673</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.fsi.2014.10.002</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">25451003</pub-id>
+</mixed-citation></ref><ref id="B55"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zhenyukh</surname><given-names>O.</given-names></name>
+<name name-style="western"><surname>Civantos</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Ruiz-Ortega</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Sánchez</surname><given-names>M. S.</given-names></name>
+<name name-style="western"><surname>Vázquez</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Peiró</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group>. (<year>2017</year>). 
+<article-title>High concentration of branched-chain amino acids promotes oxidative stress, inflammation and migration of human peripheral blood mononuclear cells via mTORC1 activation</article-title>. <source>Free Radic. Biol. Med.</source>
+<volume>104</volume>, <fpage>165</fpage>–<lpage>177</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.freeradbiomed.2017.01.009</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">28089725</pub-id>
+</mixed-citation></ref><ref id="B56"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zhong</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Umemura</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Sanchez-Lopez</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Liang</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Shalapour</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Wong</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>. (<year>2016</year>). 
+<article-title>NF-κB restricts inflammasome activation via elimination of damaged mitochondria</article-title>. <source>Cell</source>
+<volume>164</volume>, <fpage>896</fpage>–<lpage>910</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.cell.2015.12.057</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">26919428</pub-id>
+<pub-id pub-id-type="pmcid">PMC4769378</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

@@ -1,0 +1,798 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article id="adb13445" xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Addict Biol</journal-id><journal-id journal-id-type="iso-abbrev">Addict Biol</journal-id><journal-id journal-id-type="pmc-domain-id">4550</journal-id><journal-id journal-id-type="pmc-domain">addbiol</journal-id><journal-id journal-id-type="publisher-id">ADB</journal-id><journal-title-group><journal-title>Addiction Biology</journal-title></journal-title-group><issn pub-type="ppub">1355-6215</issn><issn pub-type="epub">1369-1600</issn><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC11587820</article-id><article-id pub-id-type="pmcid-ver">PMC11587820.1</article-id><article-id pub-id-type="pmcaid">11587820</article-id><article-id pub-id-type="pmcaiid">11587820</article-id><article-id pub-id-type="pmid">39585236</article-id><article-id pub-id-type="doi">10.1111/adb.13445</article-id><article-id pub-id-type="publisher-id">ADB13445</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Article</subject></subj-group></article-categories><title-group><article-title>
+<italic toggle="no">Lactobacillus rhamnosus</italic> GG attenuates depression‐like behaviour and cognitive deficits in chronic ethanol exposure mice by down‐regulating systemic inflammatory factors</article-title><alt-title alt-title-type="left-running-head">Pan et al.</alt-title></title-group><contrib-group><contrib id="adb13445-cr-0001" contrib-type="author"><name name-style="western"><surname>Pan</surname><given-names initials="X">Xiaoyu</given-names></name><xref rid="adb13445-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="adb13445-cr-0002" contrib-type="author"><name name-style="western"><surname>Guo</surname><given-names initials="A">Anqi</given-names></name><xref rid="adb13445-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="adb13445-cr-0003" contrib-type="author"><name name-style="western"><surname>Guan</surname><given-names initials="K">Kaiyu</given-names></name><xref rid="adb13445-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="adb13445-cr-0004" contrib-type="author"><name name-style="western"><surname>Chen</surname><given-names initials="C">Congcong</given-names></name><xref rid="adb13445-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="adb13445-cr-0005" contrib-type="author"><name name-style="western"><surname>Xu</surname><given-names initials="S">Shengnan</given-names></name><xref rid="adb13445-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="adb13445-cr-0006" contrib-type="author"><name name-style="western"><surname>Tang</surname><given-names initials="Y">Yali</given-names></name><xref rid="adb13445-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="adb13445-cr-0007" contrib-type="author" corresp="yes"><name name-style="western"><surname>Li</surname><given-names initials="X">Xi</given-names></name><xref rid="adb13445-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>xili_ihb@126.com</email></address></contrib><contrib id="adb13445-cr-0008" contrib-type="author" corresp="yes"><name name-style="western"><surname>Huang</surname><given-names initials="Z">Zhengwei</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-2971-3878</contrib-id><xref rid="adb13445-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>huangzhengwei962@foxmail.com</email></address></contrib></contrib-group><aff id="adb13445-aff-0001" content-type="private-address">
+<label>
+<sup>1</sup>
+</label>
+<institution>The Second Affiliated Hospital of Wenzhou Medical University</institution>
+<city>Wenzhou</city>
+<named-content content-type="country-part">Zhejiang</named-content>
+<country country="CN">China</country>
+</aff><aff id="adb13445-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">The Affiliated Kangning Hospital of Wenzhou Medical University, Zhejiang Provincial Clinical Research Center for Mental Disorders</named-content>
+<city>Wenzhou</city>
+<named-content content-type="country-part">Zhejiang</named-content>
+<country country="CN">China</country>
+</aff><aff id="adb13445-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<institution>Peking University Sixth Hospital, Peking University Institute of Mental Health</institution>
+<city>Beijing</city>
+<country country="CN">China</country>
+</aff><aff id="adb13445-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Institute of Brain Science</named-content>
+<institution>Wenzhou Medical University</institution>
+<city>Wenzhou</city>
+<named-content content-type="country-part">Zhejiang</named-content>
+<country country="CN">China</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold>
+<break/>
+Zhengwei Huang and Xi Li, The Affiliated Kangning Hospital of Wenzhou Medical University, Zhejiang Provincial Clinical Research Center for Mental Disorders, 1 Shengjin Road, Lucheng, Wenzhou 325000, Zhejiang, China.<break/>
+Email: <email>huangzhengwei962@foxmail.com</email> and <email>xili_ihb@126.com</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>25</day><month>11</month><year>2024</year></pub-date><pub-date pub-type="collection"><month>11</month><year>2024</year></pub-date><volume>29</volume><issue seq="70">11</issue><issue-id pub-id-type="pmc-issue-id">474751</issue-id><issue-id pub-id-type="doi">10.1111/adb.v29.11</issue-id><elocation-id>e13445</elocation-id><history><date date-type="rev-recd"><day>31</day><month>7</month><year>2024</year></date><date date-type="received"><day>16</day><month>4</month><year>2024</year></date><date date-type="accepted"><day>20</day><month>9</month><year>2024</year></date></history><pub-history><event event-type="pmc-release"><date><day>25</day><month>11</month><year>2024</year></date></event><event event-type="pmc-live"><date><day>25</day><month>11</month><year>2024</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-03-06 18:25:13.417"><day>06</day><month>03</month><year>2026</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2024 The Author(s). <italic toggle="yes">Addiction Biology</italic> published by John Wiley &amp; Sons Ltd on behalf of Society for the Study of Addiction.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbynclicense">https://creativecommons.org/licenses/by-nc/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="ADB-29-e13445.pdf"/><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:ADB-29-e13445.pdf"/><abstract><title>Abstract</title><p>Ethanol can directly or indirectly lead to cognitive and mental disorders. The long‐term intake of alcohol can directly affect the distribution of gut microbiota. <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Lactobacillus rhamnosus</italic>
+</styled-content> GG (LGG) is a natural bacterium isolated from healthy human intestines that has the function of preventing cytokine‐induced cell apoptosis and protecting cell barriers. However, the regulatory effect of LGG on cognitive and mental disorders caused by chronic ethanol exposure (CEE) is still unclear. In this study, we established a CEE mouse model through free alcohol consumption and added LGG or antibiotics in the later stages of the model. Sequencing analysis of the 16S rRNA gene showed that CEE resulted in a decrease in the abundance and diversity of mouse gut microbial communities accompanied by alterations in the relative abundance of multiple enterobacterial genera. The use of LGG and antibiotics alleviated the depression‐like behaviour and cognitive impairment of CEE‐induced mice, reduced expression of inflammatory factors such as interleukin (IL)‐6, IL‐1β and tumour necrosis factor (TNF)‐α in the ileum, serum and brain and increased the expression of synaptophysin (SYN), postsynaptic density protein‐95 (PSD‐95) and brain‐derived neurotrophic factor (BDNF) in the hippocampus. Together, LGG can alleviate depression‐like behaviour caused by CEE in mice while also improving cognitive and memory functions through reducing peripheral and nervous system inflammation factors and balancing gut microbiota.</p></abstract><abstract abstract-type="graphical"><p>Long‐term drinking can cause intestinal flora disorders and lead to increases in systemic inflammatory factors such as TNF‐α, IL‐1β and IL‐6, accompanied by depressive‐like behaviours. Lacticaseibacillus rhamnosus GG can participate in regulating intestinal flora and relieve systemic inflammation and depressive‐like behaviours.<boxed-text position="anchor" content-type="graphic" id="adb13445-blkfxd-0001" orientation="portrait"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="ADB-29-e13445-g006.jpg"/></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="adb13445-kwd-0001">chronic ethanol exposure</kwd><kwd id="adb13445-kwd-0002">cognitive impairment</kwd><kwd id="adb13445-kwd-0003">depression‐like behaviour</kwd><kwd id="adb13445-kwd-0004"><italic toggle="no">Lactobacillus rhamnosus GG</italic></kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source><institution-wrap><institution>Natural Science Foundation of Zhejiang Province
+</institution><institution-id institution-id-type="doi">10.13039/501100004731</institution-id></institution-wrap></funding-source><award-id>Y21H310024</award-id><award-id>LY20C120001</award-id></award-group><award-group id="funding-0002"><funding-source>Provincial Program in Medicine and Health Sciences and Technology</funding-source><award-id>2023565514</award-id></award-group><award-group id="funding-0003"><funding-source>Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, Zhejiang, People's Republic of China</funding-source></award-group></funding-group><counts><fig-count count="7"/><table-count count="0"/><page-count count="11"/><word-count count="6800"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY-NC</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>November 2024</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.5.1 mode:remove_FC converted:25.11.2024</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="adb13445-cit-9001">
+<string-name name-style="western">
+<surname>Pan</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guo</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guan</surname>
+<given-names>K</given-names>
+</string-name>, et al. <article-title>
+<italic toggle="no">Lactobacillus rhamnosus</italic> GG attenuates depression‐like behaviour and cognitive deficits in chronic ethanol exposure mice by down‐regulating systemic inflammatory factors</article-title>. <source>Addiction Biology</source>. <year>2024</year>;<volume>29</volume>(<issue>11</issue>):<elocation-id>e13445</elocation-id>. doi:<pub-id pub-id-type="doi">10.1111/adb.13445</pub-id>
+<pub-id pub-id-type="pmid">39585236</pub-id></mixed-citation>
+</p><fn-group id="adb13445-ntgp-0001"><fn id="adb13445-note-0001"><p>
+<bold>Funding information</bold> This research was funded by the Natural Science Foundation of Zhejiang Province, project numbers Y21H310024 and LY20C120001; Provincial Program in Medicine and Health Sciences and Technology (grant number 2023565514 to K.G.). And the APC was funded by the Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, Zhejiang, People's Republic of China.</p></fn></fn-group></notes></front><body id="adb13445-body-0001"><sec id="adb13445-sec-0001"><label>1</label><title>INTRODUCTION</title><p>Ethanol, commonly known as alcohol and one of the most widely abused substances in the world, is capable of crossing the blood–brain barrier (BBB) and causing damage to the brain.<xref rid="adb13445-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> Ethanol has direct neurotoxicity to the brain, which can induce cognitive impairment, mental disorders and other problems.<xref rid="adb13445-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref>, <xref rid="adb13445-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref> Studies have shown that long‐term exposure to ethanol can lead to neuroinflammation, which in turn can cause anxiety or depression‐like behaviours.<xref rid="adb13445-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref> However, the mechanisms involved in this process are still not fully understood.</p><p>In recent years, the role of the gut microbiota has been increasingly studied. Gut microbiota can affect the central nervous system (CNS) through multiple pathways and participate in the pathogenesis of neuropsychiatric diseases.<xref rid="adb13445-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref>, <xref rid="adb13445-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> Gut microbiota promotes intestinal and peripheral serotonin production in mice, affecting anxiety, hyperactivity and cognition.<xref rid="adb13445-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref> Germ‐free mice showed increased locomotor activity and decreased anxiety‐like behaviour but returned to normal after gut microbiota transplantation.<xref rid="adb13445-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref>, <xref rid="adb13445-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> In addition, antibiotic‐treated mice had reduced hippocampal neurogenesis and memory retention.<xref rid="adb13445-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref> These findings underscore the importance of understanding the role that the gut microbiota may play in communication between the gut and brain.</p><p>More and more evidence show that ethanol affects the composition of gut microbiota, and with the rise of the brain‐gut axis theory, the association between gut microbiota and ethanol neurotoxicity has attracted more attention.<xref rid="adb13445-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> To investigate the intrinsic link between gut microbiota and ethanol neurotoxicity, we used a 14‐week chronic ethanol‐induced mouse model. After 3 weeks of antibiotic and <italic toggle="yes">Lactobacillus rhamnosus</italic>
+<italic toggle="yes">GG</italic> (LGG) administration, body weight, behaviour, inflammatory factors and gut microbiota were evaluated for each group. Associations betweenthese factors were then analysed.</p></sec><sec sec-type="results" id="adb13445-sec-0002"><label>2</label><title>RESULTS</title><sec id="adb13445-sec-0003"><label>2.1</label><title>LGG attenuated depression‐like behaviour and cognitive impairment caused by CEE</title><p>To investigate the effect of LGG on the behaviour of chronic ethanol exposure (CEE) mice, we subjected male mice to a 14‐week ethanol gradient feeding programme and treated the mice with antibiotics, LGG for 3 weeks from Week 11 (Figure <xref rid="adb13445-fig-0001" ref-type="fig">1A</xref>). Throughout the experiment, the mice had free access to food and water. Additionally, the mice exhibited subtle differences in both the amount and preference of ethanol intake (Figure <xref rid="adb13445-fig-0001" ref-type="fig">1B–C</xref>). In comparison to the control group, the ethanol group displayed a slower growth rate (Figure <xref rid="adb13445-fig-0001" ref-type="fig">1D</xref>).</p><fig position="float" fig-type="FIGURE" id="adb13445-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>Establishment of a model of chronic ethanol exposure (CEE) mouse. (A) Schematic of drug treatment and behavioural tests procedure (MWM, Morris water maze test; OFT, open field test; EPM, elevated plus maze test; FST, forced swimming test; NOR, novel object recognition test). (B) The intake of different concentrations of ethanol in mice (<italic toggle="no">n</italic> = 9). (C) Mouse preference for different concentrations of ethanol (<italic toggle="no">n</italic> = 9). (D) Body weight of mice after chronic ethanol dependence modelling and drug treatment (<italic toggle="no">n</italic> = 9).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="ADB-29-e13445-g005.jpg"/></fig><p>Based on the fact that chronic alcohol consumption in human causes mood changes and cognitive abnormalities, CEE mice were similarly subjected to relevant behavioural tests. The group of mice exposed to ethanol exhibited reduced locomotion in the open field test (OFT) (Figure <xref rid="adb13445-fig-0002" ref-type="fig">2A</xref>, F = 14.87), fewer times and less frequency of entry into the open arm in the elevated plus maze (Figure <xref rid="adb13445-fig-0002" ref-type="fig">2B</xref>, F = 1.633; Figure <xref rid="adb13445-fig-0002" ref-type="fig">2C</xref>, F = 6.969), a prolonged duration of immobility in the forced swimming test (FST) (Figure <xref rid="adb13445-fig-0002" ref-type="fig">2D</xref>, F = 58.96), a lower discrimination index in the 1‐h novel object recognition test (NOR) (Figure <xref rid="adb13445-fig-0002" ref-type="fig">2E</xref>, F = 13.83) and fewer times of crossing the target platform in the Morris water maze probe trial(Figure <xref rid="adb13445-fig-0002" ref-type="fig">2F</xref>, F = 4.914) than the control group.</p><fig position="float" fig-type="FIGURE" id="adb13445-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>
+<italic toggle="no">Lactobacillus rhamnosus</italic> GG (LGG) and antibiotics alleviate depression‐like behaviour and cognitive impairment induced by chronic ethanol exposure (CEE). (A) Locomotion distance of mice under different treatments in open field test (<italic toggle="no">n</italic> = 9). (B, C) The number and time of different groups entering the open arm in elevated plus maze test(<italic toggle="no">n</italic> = 9). (D) Duration of immobility in forced swim test in different groups of mice (<italic toggle="no">n</italic> = 5). (E) Short‐term memory performance of different groups of mice in novel object recognition test (<italic toggle="no">n</italic> = 9). (F) The number of times different groups of mice crossed the target platform region in the Morris water maze probe trial (<italic toggle="no">n</italic> = 6). Data are expressed as the mean ± standard error of mean (SEM). (E + A represents ethanol + antibiotics; E + L represents ethanol + LGG; NS represents no significance; **<italic toggle="no">p</italic> &lt; 0.01, ***<italic toggle="no">p</italic> &lt; 0.001, ****<italic toggle="no">p</italic> &lt; 0.0001, ethanol compared with control; <sup>#</sup>
+<italic toggle="no">p</italic> &lt; 0.05, <sup>##</sup>
+<italic toggle="no">p</italic> &lt; 0.01, <sup>####</sup>
+<italic toggle="no">p</italic> &lt; 0.0001, E + A and E + L compared with ethanol).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="ADB-29-e13445-g004.jpg"/></fig></sec><sec id="adb13445-sec-0004"><label>2.2</label><title>LGG reduced inflammatory factors in the ileum, serum and nervous system of CEE mice</title><p>A systematic review shows that patients with alcohol use disorder (AUD) have higher serum concentrations of cytokines such as tumour necrosis factor (TNF)‐α, interleukin (IL)‐1β, IL‐6, IL‐7 and IL‐8 compared with controls.<xref rid="adb13445-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref> In order to evaluate the changes in inflammatory factors in CEE mice and explore the impact of LGG treatment on the levels of ileum, serum and brain inflammatory factors in mice, we extracted samples from mice in each group. Results indicate that the levels of TNF‐α, IL‐1β and IL‐6 were elevated in the ethanol group, compared with the control group (Figure <xref rid="adb13445-fig-0003" ref-type="fig">3A–C</xref>; Figure <xref rid="adb13445-fig-0003" ref-type="fig">3A</xref>, serum, F = 105.7; ileum, F = 7.71; Figure <xref rid="adb13445-fig-0003" ref-type="fig">3B</xref>, serum, F = 452.6; ileum, F = 25.86; Figure <xref rid="adb13445-fig-0003" ref-type="fig">3C</xref>, serum, F = 10.86; ileum, F = 5.767). However, after the administration of LGG and antibiotics, there was a significant decrease in the levels of TNF‐α, IL‐1β and IL‐6, compared with the ethanol group (Figure <xref rid="adb13445-fig-0003" ref-type="fig">3A–C</xref>).</p><fig position="float" fig-type="FIGURE" id="adb13445-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>
+<italic toggle="no">Lactobacillus rhamnosus</italic> GG (LGG) and antibiotics restore inflammation factors in ileum and serum of mice induced by chronic ethanol exposure (CEE). (A–C) The content of tumour necrosis factor (TNF)‐α, interleukin (IL)‐1β and IL‐6 in the small intestine and serum of mice in each group (<italic toggle="no">n</italic> = 6). Data are expressed as the mean ± standard error of mean (SEM). (E + A: ethanol + antibiotics; E + L: ethanol + LGG; NS: no significance; ****<italic toggle="no">p</italic> &lt; 0.0001, ethanol compared with control; <sup>##</sup>
+<italic toggle="no">p</italic> &lt; 0.01, <sup>###</sup>
+<italic toggle="no">p</italic> &lt; 0.001, <sup>####</sup>
+<italic toggle="no">p</italic> &lt; 0.0001, E + A and E + L compared with ethanol).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="ADB-29-e13445-g007.jpg"/></fig><p>Furthermore, the expressions of TNF‐α, IL‐1β and IL‐6 were augmented in the striatum, amygdala, prefrontal lobe and hippocampus of mice exposed to ethanol. Subsequently, following treatment with either LGG or antibiotics, there was a varying degree of restitution of expression levels of TNF‐α, IL‐1β and IL‐6 in each cerebral region (Figure <xref rid="adb13445-fig-0004" ref-type="fig">4A–C</xref>; Figure <xref rid="adb13445-fig-0004" ref-type="fig">4A</xref>, striatum, F = 7.737; amygdala, F = 21.34; prefrontal lobe, F = 4.147; hippocampus, F = 7.781; Figure <xref rid="adb13445-fig-0004" ref-type="fig">4B</xref>, striatum, F = 44.81; amygdala, F = 6.745; prefrontal lobe, F = 13.49; hippocampus, F = 11.14; Figure <xref rid="adb13445-fig-0004" ref-type="fig">4C</xref>, striatum, F = 9.889; amygdala, F = 15.04; prefrontal lobe, F = 26.55; hippocampus, F = 12.93).</p><fig position="float" fig-type="FIGURE" id="adb13445-fig-0004" orientation="portrait"><label>FIGURE 4</label><caption><p>
+<italic toggle="no">Lactobacillus rhamnosus</italic> GG (LGG) and antibiotics can reduce the rise of inflammatory factors in the nervous system caused by chronic ethanol exposure (CEE). (A–C) The content of tumour necrosis factor (TNF)‐α, interleukin (IL)‐1β and IL‐6 in the striatum, amygdala, frontal lobe and hippocampus of mice in each group (<italic toggle="no">n</italic> = 6). Data are expressed as the mean ± standard error of mean (SEM). (E + A ： ethanol + antibiotics; E + L: ethanol + LGG; NS: no significance; **<italic toggle="no">p</italic> &lt; 0.01, ***<italic toggle="no">p</italic> &lt; 0.001, ****<italic toggle="no">p</italic> &lt; 0.0001, ethanol compared with control; <sup>#</sup>
+<italic toggle="no">p</italic> &lt; 0.05, <sup>##</sup>
+<italic toggle="no">p</italic> &lt; 0.01, <sup>###</sup>
+<italic toggle="no">p</italic> &lt; 0.001, <sup>####</sup>
+<italic toggle="no">p</italic> &lt; 0.0001, E + A and E + L compared with ethanol).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-9" orientation="portrait" xlink:href="ADB-29-e13445-g001.jpg"/></fig></sec><sec id="adb13445-sec-0005"><label>2.3</label><title>Disturbed intestinal flora with reduced lactobacilli in CEE mice</title><p>16s RNA gene sequencing was used to study the changes in abundance of intestinal microbiota in CEE mice before and after treatment. A graph of the top 30 richest mouse microbiota (Figure <xref rid="adb13445-fig-0005" ref-type="fig">5A</xref>) and a heat map of some differential microbiota (Figure <xref rid="adb13445-fig-0005" ref-type="fig">5B</xref>) revealed the differences between the intestinal bacterial genera in each group. Compared with the control group, mice in the ethanol group had a decreased abundance of <italic toggle="yes">Lactobacillus</italic>, while mice in the LGG group had an increased abundance of <italic toggle="yes">Lactobacillus</italic>. At the same time, it is accompanied by the recovery or increase of abundance of <italic toggle="yes">Escherichia‐Shigella</italic>, <italic toggle="yes">Streptococcus</italic>, <italic toggle="yes">Lachnospiraceae unclassified</italic>, <italic toggle="yes">Anaerotruncus</italic>, <italic toggle="yes">Eubacterium xylanophilum</italic> group, <italic toggle="yes">Enterorhabdus</italic>, <italic toggle="yes">Erysipelotrichaceae unclassified</italic>, Ruminococcaceae UCG‐013, GCA‐900066225; in contrast, the abundance of <italic toggle="yes">Akkermansia</italic>, <italic toggle="yes">Ruminococcaceae</italic> UCG‐004, <italic toggle="yes">Barnesiella</italic>, <italic toggle="yes">Prevotellaceae</italic> UCG‐001 and other bacterial genera has recovered or decreased.</p><fig position="float" fig-type="FIGURE" id="adb13445-fig-0005" orientation="portrait"><label>FIGURE 5</label><caption><p>Chronic ethanol exposure (CEE) mice exhibit disruption of gut microbiota. (A) Genus distribution of gut microbiota in mice exposed to CEE. (B) Heat map of intestinal microbiota abundance in each group. (C) Principal component analysis (PCA) plots show significant changes in gut microbiota after CEE administration. (D–H) The gut microbiota of mice induced by CEE exhibits a decrease in community richness and diversity (<italic toggle="no">n</italic> = 3). Data are expressed as the mean ± standard error of mean (SEM). (E + A: ethanol + antibiotics; E + L: ethanol + <italic toggle="no">Lactobacillus rhamnosus</italic> GG [LGG]; NS: no significance; **<italic toggle="no">p</italic> &lt; 0.01, ethanol compared with control; <sup>#</sup>
+<italic toggle="no">p</italic> &lt; 0.05, E + A and E + L compared with ethanol).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-11" orientation="portrait" xlink:href="ADB-29-e13445-g002.jpg"/></fig><p>The results of principal component analysis (PCA) of the bacterial flora (Figure <xref rid="adb13445-fig-0005" ref-type="fig">5C</xref>) showed the inter‐group differences in each group. Alpha diversity statistics demonstrate that each group of sample libraries covers a wide range and the detection results are reliable (Figure <xref rid="adb13445-fig-0005" ref-type="fig">5D</xref>, F = 1.428). In addition, compared with the control group, the abundance and diversity of intestinal microbiota in the remaining three groups of mice decreased. Due to the broad‐spectrum bactericidal effect of mixed antibiotics, the overall abundance of the antibiotic group decreased the most (Figure <xref rid="adb13445-fig-0005" ref-type="fig">5E–H</xref>; Figure <xref rid="adb13445-fig-0005" ref-type="fig">5E</xref>, F = 6.281; Figure <xref rid="adb13445-fig-0005" ref-type="fig">5F</xref>, F = 6.276; Figure <xref rid="adb13445-fig-0005" ref-type="fig">5G</xref>, F = 3.926; Figure <xref rid="adb13445-fig-0005" ref-type="fig">5H</xref>, F = 2.339).</p></sec><sec id="adb13445-sec-0006"><label>2.4</label><title>LGG may attenuate CEE‐induced depressive‐like behaviour and cognitive deficits by protecting nerve cells by reducing the level of inflammatory factors in the nervous system</title><p>Depression‐like behaviour and cognitive disorders are often accompanied by nervous system inflammation and damage to neurocytes.<xref rid="adb13445-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref> Yue‐Ming Zhang et al. found that lipopolysaccharide (LPS)‐treated mice increased IL‐1β, IL‐6 and TNF‐α and decreased BDNF, postsynaptic density protein‐95 (PSD‐95) and synaptophysin (SYN) and exhibited anxiety‐depressive‐like behaviour and cognitive impairment.<xref rid="adb13445-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref> Meanwhile, the hippocampus, a crucial component of the nervous system, causes mice to display anxiety‐ and depression‐like behaviours and develop cognitive deficits when damaged.<xref rid="adb13445-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref> Compared with the control group, there was a decrease in the expression of synapse‐associated SYN, PSD‐95 and BDNF in the hippocampus of ethanol group. However, following treatment with antibiotics and LGG, expression levels of all three proteins displayed an increase (Figure <xref rid="adb13445-fig-0006" ref-type="fig">6A–C</xref>; Figure <xref rid="adb13445-fig-0006" ref-type="fig">6A</xref>, F = 9.364; Figure <xref rid="adb13445-fig-0006" ref-type="fig">6B</xref>, F = 12.66; Figure <xref rid="adb13445-fig-0006" ref-type="fig">6C</xref>, F = 38.24). The above results indicates that LGG can reduce systemic inflammation, protect the nervous system and alleviate depression‐like behaviour and cognitive dysfunction caused by CEE.</p><fig position="float" fig-type="FIGURE" id="adb13445-fig-0006" orientation="portrait"><label>FIGURE 6</label><caption><p>
+<italic toggle="no">Lactobacillus rhamnosus</italic> GG (LGG) and antibiotics alleviate the decreased expression of neural‐related proteins in the hippocampus of mice induced by chronic ethanol exposure (CEE). (A, B) Representative Western blot and quantification of synaptic proteins in the hippocampus. (C) Representative Western blot and quantification of brain‐derived neurotrophic factor (BDNF) in the hippocampus. Data are expressed as the mean ± standard error of mean (SEM) (<italic toggle="no">n</italic> = 3). (E + A: ethanol + antibiotics; E + L: ethanol + LGG; *<italic toggle="no">p</italic> &lt; 0.05, **<italic toggle="no">p</italic> &lt; 0.01, ****<italic toggle="no">p</italic> &lt; 0.0001, ethanol compared with control; <sup>#</sup>
+<italic toggle="no">p</italic> &lt; 0.05, <sup>##</sup>
+<italic toggle="no">p</italic> &lt; 0.01, E + A and E + L compared with ethanol).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-13" orientation="portrait" xlink:href="ADB-29-e13445-g003.jpg"/></fig></sec></sec><sec sec-type="discussion" id="adb13445-sec-0007"><label>3</label><title>DISCUSSION</title><p>CEE is associated with an increased risk of anxiety<xref rid="adb13445-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref> and depression disorder.<xref rid="adb13445-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref>, <xref rid="adb13445-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref> Mice induced by CEE exhibited a decrease in their ability to remember spatial locations as well as their capacity to acquire new memories.<xref rid="adb13445-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref> 50%–75% of those who have abstained from ethanol experience some forms of cognitive or memory impairment.<xref rid="adb13445-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref>, <xref rid="adb13445-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref> In our study, the concentration of ethanol provided for free drinking in mice gradually increased. After 14 weeks, the mice exhibited anxiety and depression‐like behaviour with cognitive impairment at the end of CEE modelling.</p><p>An excessive or prolonged inflammatory response, caused by sustained heavy ethanol use, can be detrimental to the host and has been associated with psychiatric and physical disorders development.<xref rid="adb13445-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> Ethanol consumption is found to disrupt immune signalling and promote neuroinflammation by indirectly triggering systemic production of proinflammatory cytokines and directly stimulating the release of inflammatory molecules.<xref rid="adb13445-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref>, <xref rid="adb13445-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> Proinflammatory molecules in the brain can significantly affect neural circuit performance and neuronal plasticity.<xref rid="adb13445-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref> Studies suggest that the ingestion of probiotics such as Bifidobacteria or Lactobacilli may have positive effects on anxiety and depressive‐like behaviours in pathological conditions<xref rid="adb13445-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref> and in healthy animals.<xref rid="adb13445-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref>, <xref rid="adb13445-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> Similarly, antibiotic treatments have been shown to affect mice behaviour in multiple ways, indicating that bacteria may be influencing neurological and behavioural outcomes.<xref rid="adb13445-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref>, <xref rid="adb13445-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref>, <xref rid="adb13445-bib-0028" ref-type="bibr">
+<sup>28</sup>
+</xref> Multiple diagnostic modalities have provided evidence that ethanol consumption can have an effect on neuroimmune signalling in human brain.<xref rid="adb13445-bib-0029" ref-type="bibr">
+<sup>29</sup>
+</xref> In the present study, administration of antibiotics reduced the number and abundance of intestinal flora and significantly decreased the levels of inflammatory factors in serum, ileum and nervous system, depression‐like behaviours as well as cognitive deficits in CEE mice. This suggests that the specific gut flora composition of CEE mice may be responsible for elevated inflammatory factors and behavioural changes.</p><p>Probiotic bacteria provides our body with necessary substances that can prevent inflammation and associated illnesses.<xref rid="adb13445-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> Previous research has examined whether reducing the number of bacteria in gut can suppress ethanol‐induced inflammation of CNS and gastrointestinal tract.<xref rid="adb13445-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref> A meta‐analysis of six studies on the use of probiotics with antidepressant treatments in people with major depressive disorder (MDD) indicates a positive effect of the combination.<xref rid="adb13445-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref>, <xref rid="adb13445-bib-0032" ref-type="bibr">
+<sup>32</sup>
+</xref> Research on LGG has revealed a wealth of data that suggests it is effective in promoting human health. This probiotic has a multitude of functions that affect various bodily systems, such as digestion, respiration, circulation, immunity, movement and nerves.<xref rid="adb13445-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref> LGG supplementation was shown to strengthen the integrity of the BBB, increase the expression of brain‐derived neurotrophic factor (BDNF) and glial cell line‐derived neurotrophic factor (GDNF) and provide neuroprotection against Parkinson's disease (PD).<xref rid="adb13445-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref> Early life colonization with LGG could protect the intestinal barrier of offspring and modulate the gut–brain axis, resulting in reduced anxiety‐like behaviour in adulthood.<xref rid="adb13445-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref> LGG‐derived extracellular vehicles (EVs) have been shown to modulate gut microbiota and reduce inflammation in mice with dextran sulphate sodium (DSS)‐induced colitis.<xref rid="adb13445-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref> Our experimental results indicate that, similar to the short‐term use of antibiotics, LGG also reduces systemic inflammation and neuroinflammation in CEE mice and alleviates depressive behaviour and cognitive impairment in mice. But the use of combined antibiotics kills the vast majority of bacteria in intestine, which directly affects digestion and absorption of various substances. Previous report suggest that certain combinations of antimicrobial agents may induce depression‐like behaviour and alter depression‐related biomarkers in mice.<xref rid="adb13445-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref> Compared with antibiotics that are only suitable for short‐term use and may cause unknown side effects, LGG has the advantages oflong term usage with minimal intestinal damage and systemic side effects. Additionally, LGG has the capability to maintain various homeostatic processes in the body.</p><p>Chronic and excessive ethanol consumption is often associated with cognitive impairment, with a reduction in white matter (WM), axonal loss and demyelination in brain, such as hippocampus and frontal lobe.<xref rid="adb13445-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref>, <xref rid="adb13445-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref>, <xref rid="adb13445-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> The expression levels of BDNF, PSD‐95 and synapsin‐1 in the hippocampus is closely related to mouse behaviour and cognition.<xref rid="adb13445-bib-0041" ref-type="bibr">
+<sup>41</sup>
+</xref>, <xref rid="adb13445-bib-0042" ref-type="bibr">
+<sup>42</sup>
+</xref> Inflammation suppression and hippocampal BDNF increase can be used for evaluating improved brain function. PSD‐95 and synapsin‐1, as synaptic‐specific proteins, are closely related to synaptic function. 90‐ and 180‐day ethanol exposure can cause neuronal degeneration in the mouse hippocampus, accompanied by a decrease in BDNF expression and an increase in IL‐6 and IL‐1β.<xref rid="adb13445-bib-0043" ref-type="bibr">
+<sup>43</sup>
+</xref> Ethanol intake can hamper learning and memory by interfering with NMDA‐type glutamate receptor‐dependent synaptic plasticity (long‐term depression [LTD] and long‐term potentiation [LTP]) in the hippocampus.<xref rid="adb13445-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref> Repeated episodes of binge‐like ethanol drinking change the pattern of ethanol consumption and reduce GABAergic transmission in the striatum.<xref rid="adb13445-bib-0044" ref-type="bibr">
+<sup>44</sup>
+</xref> Chronic intermittent ethanol (CIE) exposure can disturb the balance between glutamate and gamma‐aminobutyric acid (GABA) neurotransmission, leading to an increased excitability of pyramidal neurons in the basolateral amygdala (BLA) and the manifestation of anxiety during withdrawal.<xref rid="adb13445-bib-0045" ref-type="bibr">
+<sup>45</sup>
+</xref> In this study, LGG and antibiotics were observed to reduce the inflammation factors of the striatum, amygdala, frontal lobe and hippocampus in CEE mice, as well as increase the content of PSD‐95, SYN and BDNF in the hippocampus. This may explain the reduced depressive‐like behaviour and weakened cognitive impairment in CEE mice observed as a result of LGG treatment.</p></sec><sec sec-type="materials-and-methods" id="adb13445-sec-0008"><label>4</label><title>MATERIALS AND METHODS</title><sec id="adb13445-sec-0009"><label>4.1</label><title>Animal and ethanol administration</title><p>Male C57BL/6 mice (3‐month‐old) were purchased from the Beijing Vital River Laboratory Animal Technology Co., Ltd. Mice were housed five animals per cage with free access to water and food. The indoor temperature was controlled at 23 ± 2°C, and the relative humidity was 50% ± 10%. Acclimate the mice for 5–7 days before starting a free‐choice ethanol paradigm (ethanol group) or to water only (control group).<xref rid="adb13445-bib-0046" ref-type="bibr">
+<sup>46</sup>
+</xref> Mice were housed individually in standard laboratory cages equipped with two tubes, one containing water and the other containing a solution of ethanol (EtOH) for the ethanol group and two filled with tap water for the control group. Two drinking tubes were continuously available to each mouse, and food was available ad libitum. The ethanol group was exposed to progressively increasing concentrations of EtOH. Briefly, the ethanol group was offered 2% EtOH (v/v) for 1 week, then 5% EtOH (v/v) for the next 3 weeks, and 10% EtOH (v/v) for the next 4 weeks; finally, animals had access to 15% EtOH (v/v) for 6 weeks (stabilization period). The position of the bottles is switched daily to avoid any potential side preference. The amount of fluid consumed from each bottle was measured daily and the body weight of each mouse was weighed weekly.</p><p>All animal experiments were performed in accordance with the animal guidelines of the animal care and the ethical commission of Wenzhou Medical University.</p></sec><sec id="adb13445-sec-0010"><label>4.2</label><title>Drug treatments</title><p>Mice in the control group and ethanol group were administrated with an equal volume of water simultaneously as a control for the operation process.</p><sec id="adb13445-sec-0011"><label>4.2.1</label><title>LGG treatment<xref rid="adb13445-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref>
+</title><p>To supplement LGG (ATCC 53103), LGG was grown anaerobically in Man Rogosa and Sharpe (MRS) medium at 37°C for 16 h to reach a concentration of 10<sup>7</sup> CFU/mL of liquid bacteria, which was calculated using the plate count method. The bacterial culture was then centrifuged at 3500 ×<italic toggle="yes">g</italic> for 10 min, the supernatant discarded and the pellet resuspended for gavage (10<sup>10</sup> CFU/mL). The ethanol group was given distilled water or LGG (1 × 10<sup>10</sup> CFU/mL) by gavage at a dose of 10 μL/g once a day for three consecutive weeks starting at Week 11.</p></sec><sec id="adb13445-sec-0012"><label>4.2.2</label><title>Antibiotics treatment<xref rid="adb13445-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref>
+</title><p>Mice were either treated twice daily with an oral intragastric gavage of distilled water (control group) or a broad‐spectrum antibiotic cocktail (Abx) containing 1 mg/mL ampicillin, 1 mg/mL neomycin, 1 mg/mL metronidazole and 0.5 mg/mL vancomycin (all antibiotics from Sigma‐Aldrich). Gavages began at a dose of 10 uL/g from Week 11 for 3 weeks.</p></sec></sec><sec id="adb13445-sec-0013"><label>4.3</label><title>Behavioural tests</title><p>Behavioural tests were conducted successively after 12 weeks of ethanol exposure. And proceed one by one in the order of Morris water maze test (MWM), OFT, elevated plus maze test (EPM), FST and NOR. Behavioural tests are conducted between 8:00 AM and 5:00 PM. Behavioural videos were recorded and analyzed using the DigBehv animal behaviour analysis system (Shanghai Jiliang Software Technology Co., Ltd.).</p><sec id="adb13445-sec-0014"><label>4.3.1</label><title>Open field test (OFT)</title><p>The OFT was carried out as described by the previous study.<xref rid="adb13445-bib-0047" ref-type="bibr">
+<sup>47</sup>
+</xref> The OFT consisted of an empty square box (30 × 30 × 30 cm). The mice were placed individually in the square box and allowed to acclimate for 5 min. The DigBehv animal behaviour analysis system was then used to record videos of the mice for the next 10 min and analyze their total movement distance and movement trajectory. After each test, the box was cleaned with 75% ethanol to eliminate odour cues.</p></sec><sec id="adb13445-sec-0015"><label>4.3.2</label><title>Novel object recognition tests (NOR)</title><p>The NOR test was conducted as follows based on previous research<xref rid="adb13445-bib-0046" ref-type="bibr">
+<sup>46</sup>
+</xref>, <xref rid="adb13445-bib-0048" ref-type="bibr">
+<sup>48</sup>
+</xref>: On Day 1, mice were allowed to move freely in the test box (65 × 65 × 45 cm)for 5 min to familiarize themselves with the test environment. On Day 2, mice were placed into the same test box in the presence of two identical objects (5 cm away from the side wall) for 5 min; after an inter‐trial interval of 1 h was observed, one familiar object was replaced with a novel object. Mice were placed back within the testing area for 5 min. The same procedure was replicated after a 24‐h interval. Record the object exploration time. After each test, the box was cleaned with 75% ethanol to eliminate odour cues. New object recognition index (NOI) = exploration time of new object/(exploration time of new object + exploration time of old object) × 100%.</p></sec><sec id="adb13445-sec-0016"><label>4.3.3</label><title>Morris water maze test (MWM)</title><p>The MWM is a widely used behavioural test to assess spatial learning and memory in rodents.<xref rid="adb13445-bib-0049" ref-type="bibr">
+<sup>49</sup>
+</xref> The MWM test protocol takes 1 week and includes three stages: a free‐swimming stage, a training stage and a testing stage. Before each trial, the water temperature is controlled to be around 25°C, and a white dye is added to make the water opaque. On the first day, the free‐swimming stage is conducted, where mice are placed into the pool from the opposite side of the target quadrant (i.e., where the hidden platform is located) and allowed to swim freely for 1 min while their average speed is recorded. The training stage consists of four trials per day for five consecutive days, where black visual cues of different shapes are attached to the walls of the pool and the platform is submerged 1 cm beneath the water surface in the target quadrant. Mice are placed into the water from one of the four start points in a random order, and the time taken to find the platform is recorded. If a mouse fails to find the platform within 1 min, it is placed onto the platform for 10 s. On the 7th day, a testing session is conducted 24 h after the final training session, during which the platform is removed from the water and each mouse is placed into the pool from the opposite side of the target quadrant for one trial only. The number of times the mouse crosses the target quadrant and the time spent exploring the target quadrant are recorded.</p></sec><sec id="adb13445-sec-0017"><label>4.3.4</label><title>Elevated plus maze test (EPM)</title><p>The EPM test was used as previously reported to evaluate the anxiety‐like behaviours of mice.<xref rid="adb13445-bib-0047" ref-type="bibr">
+<sup>47</sup>
+</xref> The EPM was tested by a cross‐shaped maze consisting of two open arms (15 × 5 cm), two closed arms (15 × 5 cm) and a central region (5 × 5 cm). The apparatus was elevated 50 cm above the floor. Each mouse was placed in the centre area facing an open arm and allowed to explore for 5 min. The time spent and the number of total entries into (all four claws) in each arm were recorded using the DigBehv animal behaviour analysis system. After each test, the maze was cleaned with 75% ethanol to eliminate odour cues.</p></sec><sec id="adb13445-sec-0018"><label>4.3.5</label><title>Forced swimming test (FST)</title><p>The FST method was based on previously published article with minor modifications.<xref rid="adb13445-bib-0050" ref-type="bibr">
+<sup>50</sup>
+</xref> The test device consisted of a transparent cylindrical glass container (10 cm in diameter, depth of 25 cm, water depth of 10 cm) filled with water (25°C). On Day 1, mice were allowed to move freely for 15 min to adapt to the environment and the test was started 24 h later. The test was conducted for 6 min; the first 2 min was an adaptation phase, after which the immobility of the mouse in the water was recorded for 4 min.</p></sec></sec><sec id="adb13445-sec-0019"><label>4.4</label><title>Enzyme‐linked immunosorbent assay (ELISA)</title><p>Mice were anaesthetised using isoflurane, and their blood was extracted from the medial canthus. The supernatant was obtained via centrifugation at 14 000 rpm, 4°C for 15 min. The hippocampus, striatum, amygdala and frontal lobe were isolated by severing the mice's heads after perfusion. Additionally, the ileal tissue was extracted from a 1 cm segment of the intestine that was located around 10 cm away from the cecum's end. Grind according to the ratio of 10 mg sample + 100 μL lysis solution (radioimmunoprecipitation assay (RIPA) + protease inhibitor cocktail (PIC) + phenylmethylsulfonyl fluoride (PMSF), 0.1 g/mL), and then let it stand for 2 h. After that, the supernatant was extracted through centrifugation at 14 000 rpm at 4°C for 20 min.</p><p>The IL‐6, IL‐1β and TNF‐α contents in serum, small intestine, hippocampus, amygdala, striatum and frontal lobe were determined via ELISA kits (Jingmei Bioengineering Co.) following the manufacturer's instructions.</p></sec><sec id="adb13445-sec-0020"><label>4.5</label><title>Western blot</title><p>The protein of brain tissue was extracted using lysis buffer (RIPA:PMSF:PIC = 100:1:1) on ice and disrupted for 1.5 h. The lysates were collected and centrifuged at 14 000 rpm for 20 min to obtain the supernatant. Total proteins were quantified using a Bicinchoninic Acid Assay (BCA) protein assay kit. Equal amounts of protein were separated by 10% sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS–PAGE) and transferred to polyvinylidene difluoride (PVDF) membranes. After transfer, the proteins were blocked with 5% skim milk for 2 h and then incubated overnight at 4°C with the following primary antibodies: rabbit anti‐BDNF (1:2500, Abcam, ab108319), rabbit anti‐PSD‐95 (1:2000, Abcam, 38135), rabbit anti‐synaptophysin (1:2000, Abcam, ab32127) and rabbit anti‐muscle actin (1:1000, Abcam, ab156302). Then, the membranes were washed and incubated with horseradish peroxidase (HRP)‐conjugated mouse anti‐rabbit IgG (1:2000, Santa Cruz, sc2357) for 1 h. Chemiluminescent signals were detected and analysed using a ChemiDoc XRS system, and the intensity of the bands was analysed using Quantity One software.</p></sec><sec id="adb13445-sec-0021"><label>4.6</label><title>16S rRNA gene sequencing</title><p>The three mice used for 16s rRNA sequencing were selected using the random number method after the behavioural testing was completed. The animals were housed individually for a day, and their faeces were collected separately for testing. Total bacterial DNA from faecal samples after the administration of the mice was extracted using the DE.Z.N.A. ®Stool DNA Kit (Jingmei Bioengineering Co.), and the quality of the DNA was checked by gel electrophoresis and quantified by UV spectrophotometry. The V3–V4 region of the bacterial 16S rRNA gene was amplified by polymerase chain reaction (PCR) (338F: 5′‐ACTCCTACGGGAGGCAGCAG‐3′ and 806R: 5′‐GGACTACHVGGGTWTCTAAT‐3′), which is approximately 470 bp in length. The PCR products were analysed by 2% agarose gel electrophoresis. The PCR products were purified using AMPure XT beads, quantified using Qubit (Invitrogen, USA) and finally sequenced using the Illumina NovaSeq platform. The paired‐end sequences were assigned to the samples based on their unique barcodes, and the library's barcodes and primer sequences were removed. The FLASH software was used to merge the paired end reads. The raw reads were filtered for quality using fqtrim (v0.94) under specific filtering conditions to obtain high‐quality clean tags. Vsearch software (v2.3.4) was used to perform dereplication on the chimeric sequences. DADA2 was used for denoising and to obtain feature tables and feature sequences. Diversity was calculated by normalizing to the same random sequence. The feature abundance was normalized using the SILVA (release 132) classifier based on the relative abundance of each sample. Alpha diversity was used to analyse the complexity of sample species diversity, with two indices, Shannon and Simpson, calculated for all these indices using QIIME2. Beta diversity was calculated using QIIME2.</p></sec><sec id="adb13445-sec-0022"><label>4.7</label><title>Statistical analysis</title><p>All data are expressed as the mean ± standard error of mean (SEM). Student's <italic toggle="yes">t</italic>‐test was used for comparison between two groups, and one‐way ANOVA (analysis of variance) was used for comparison between multiple groups. When the ANOVA showed significant differences, group comparisons between the mean values were performed by the Dunnett's multiple comparisons. A <italic toggle="yes">p</italic>‐value of &lt;0.05 was considered significant. GraphPad Prism 9.5.1 was used for statistical analysis.</p></sec></sec><sec id="adb13445-sec-0023"><title>AUTHOR CONTRIBUTIONS</title><p>
+<italic toggle="yes">Conceptualization</italic>: Zhengwei Huang and Xi Li. <italic toggle="yes">Methodology</italic>: Xiaoyu Pan. <italic toggle="yes">Software</italic>: Kaiyu Guan. <italic toggle="yes">Validation</italic>: Xiaoyu Pan, Anqi Guo and Congcong Chen. <italic toggle="yes">Formal analysis</italic>: Xiaoyu Pan and Zhengwei Huang. <italic toggle="yes">Data curation</italic>: Yali Tang. <italic toggle="yes">Writing—original draft preparation</italic>: Xiaoyu Pan, Zhengwei Huang, Anqi Guo and Kaiyu Guan. <italic toggle="yes">Writing—review and editing</italic>: Zhengwei Huang and Xi Li. <italic toggle="yes">Visualization</italic>: Congcong Chen and Shengnan Xu. <italic toggle="yes">Supervision</italic>: Xi Li. <italic toggle="yes">Project administration</italic>: Zhengwei Huang and Xiaoyu Pan. <italic toggle="yes">Funding acquisition</italic>: Xi Li. All authors have read and agreed to the published version of the manuscript.</p></sec></body><back><sec sec-type="data-availability" id="adb13445-sec-0025"><title>DATA AVAILABILITY STATEMENT</title><p>All data generated or analysed during this study are included in this published article.</p></sec><ref-list id="adb13445-bibl-0001" content-type="cited-references"><title>REFERENCES</title><ref id="adb13445-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="adb13445-cit-0002">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>Gut microbiota regulates chronic ethanol exposure‐induced depressive‐like behavior through hippocampal NLRP3‐mediated neuroinflammation</article-title>. <source>Mol Psychiatry</source>. <year>2023</year>;<volume>28</volume>(<issue>2</issue>):<fpage>919</fpage>‐<lpage>930</lpage>. doi:<pub-id pub-id-type="doi">10.1038/s41380-022-01841-y</pub-id>
+<pub-id pub-id-type="pmid">36280756</pub-id>
+<pub-id pub-id-type="pmcid">PMC9908543</pub-id></mixed-citation></ref><ref id="adb13445-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="adb13445-cit-0003">
+<string-name name-style="western">
+<surname>Rao</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Topiwala</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Alcohol use disorders and the brain</article-title>. <source>Addiction</source>. <year>2020</year>;<volume>115</volume>(<issue>8</issue>):<fpage>1580</fpage>‐<lpage>1589</lpage>. doi:<pub-id pub-id-type="doi">10.1111/add.15023</pub-id>
+<pub-id pub-id-type="pmid">32112474</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="adb13445-cit-0004">
+<string-name name-style="western">
+<surname>Xu</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dong</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>Chronic alcohol exposure induced gut microbiota dysbiosis and its correlations with neuropsychic behaviors and brain BDNF/Gabra1 changes in mice</article-title>. <source>Biofactors</source>. <year>2019</year>;<volume>45</volume>(<issue>2</issue>):<fpage>187</fpage>‐<lpage>199</lpage>. doi:<pub-id pub-id-type="doi">10.1002/biof.1469</pub-id>
+<pub-id pub-id-type="pmid">30417952</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="adb13445-cit-0005">
+<string-name name-style="western">
+<surname>Pascual</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Baliño</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Aragón</surname>
+<given-names>CMG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guerri</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Cytokines and chemokines as biomarkers of ethanol‐induced neuroinflammation and anxiety‐related behavior: role of TLR4 and TLR2</article-title>. <source>Neuropharmacology</source>. <year>2015</year>;<volume>89</volume>:<fpage>352</fpage>‐<lpage>359</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.neuropharm.2014.10.014</pub-id>
+<pub-id pub-id-type="pmid">25446779</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="adb13445-cit-0006">
+<string-name name-style="western">
+<surname>Jiang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gao</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xue</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liang</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Nicotinamide riboside alleviates alcohol‐induced depression‐like behaviours in C57BL/6J mice by altering the intestinal microbiota associated with microglial activation and BDNF expression</article-title>. <source>Food Funct</source>. <year>2020</year>;<volume>11</volume>(<issue>1</issue>):<fpage>378</fpage>‐<lpage>391</lpage>. doi:<pub-id pub-id-type="doi">10.1039/C9FO01780A</pub-id>
+<pub-id pub-id-type="pmid">31820774</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="adb13445-cit-0007">
+<string-name name-style="western">
+<surname>Angelucci</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cechova</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Amlerova</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hort</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Antibiotics, gut microbiota, and Alzheimer's disease</article-title>. <source>J Neuroinflammation</source>. <year>2019</year>;<volume>16</volume>(<issue>1</issue>):<elocation-id>108</elocation-id>. doi:<pub-id pub-id-type="doi">10.1186/s12974-019-1494-4</pub-id>
+<pub-id pub-id-type="pmid">31118068</pub-id>
+<pub-id pub-id-type="pmcid">PMC6530014</pub-id></mixed-citation></ref><ref id="adb13445-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="adb13445-cit-0008">
+<string-name name-style="western">
+<surname>Yano</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Donaldson</surname>
+<given-names>GP</given-names>
+</string-name>, et al. <article-title>Indigenous bacteria from the gut microbiota regulate host serotonin biosynthesis</article-title>. <source>Cell</source>. <year>2015</year>;<volume>161</volume>(<issue>2</issue>):<fpage>264</fpage>‐<lpage>276</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.cell.2015.02.047</pub-id>
+<pub-id pub-id-type="pmid">25860609</pub-id>
+<pub-id pub-id-type="pmcid">PMC4393509</pub-id></mixed-citation></ref><ref id="adb13445-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="adb13445-cit-0009">
+<string-name name-style="western">
+<surname>Diaz Heijtz</surname>
+<given-names>R</given-names>
+</string-name> et al. <article-title>Normal gut microbiota modulates brain development and behavior</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2011</year>;<volume>108</volume>(<issue>7</issue>):<fpage>3047</fpage>‐<lpage>3052</lpage>. doi:<pub-id pub-id-type="doi">10.1073/pnas.1010529108</pub-id>
+<pub-id pub-id-type="pmid">21282636</pub-id>
+<pub-id pub-id-type="pmcid">PMC3041077</pub-id></mixed-citation></ref><ref id="adb13445-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="adb13445-cit-0010">
+<string-name name-style="western">
+<surname>Clarke</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Grenham</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Scully</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>The microbiome‐gut‐brain axis during early life regulates the hippocampal serotonergic system in a sex‐dependent manner</article-title>. <source>Mol Psychiatry</source>. <year>2013</year>;<volume>18</volume>(<issue>6</issue>):<fpage>666</fpage>‐<lpage>673</lpage>. doi:<pub-id pub-id-type="doi">10.1038/mp.2012.77</pub-id>
+<pub-id pub-id-type="pmid">22688187</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="adb13445-cit-0011">
+<string-name name-style="western">
+<surname>Mohle</surname>
+<given-names>L</given-names>
+</string-name> et al. <article-title>Ly6C(hi) monocytes provide a link between antibiotic‐induced changes in gut microbiota and adult hippocampal neurogenesis</article-title>. <source>Cell Rep</source>. <year>2016</year>;<volume>15</volume>(<issue>9</issue>):<fpage>1945</fpage>‐<lpage>1956</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.celrep.2016.04.074</pub-id>
+<pub-id pub-id-type="pmid">27210745</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="adb13445-cit-0012">
+<string-name name-style="western">
+<surname>Adams</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Conigrave</surname>
+<given-names>JH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lewohl</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Haber</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Morley</surname>
+<given-names>KC</given-names>
+</string-name>. <article-title>Alcohol use disorder and circulating cytokines: a systematic review and meta‐analysis</article-title>. <source>Brain Behav Immun</source>. <year>2020</year>;<volume>89</volume>:<fpage>501</fpage>‐<lpage>512</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.bbi.2020.08.002</pub-id>
+<pub-id pub-id-type="pmid">32805393</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="adb13445-cit-0013">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>You</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Memantine can improve chronic ethanol exposure‐induced spatial memory impairment in male C57BL/6 mice by reducing hippocampal apoptosis</article-title>. <source>Toxicology</source>. <year>2018</year>;<volume>406–407</volume>:<fpage>21</fpage>‐<lpage>32</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.tox.2018.05.013</pub-id>
+<pub-id pub-id-type="pmid">29800586</pub-id></mixed-citation></ref><ref id="adb13445-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="adb13445-cit-0014">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>YM</given-names>
+</string-name> et al. <article-title>Sleep deprivation aggravates lipopolysaccharide‐induced anxiety, depression and cognitive impairment: the role of pro‐inflammatory cytokines and synaptic plasticity‐associated proteins</article-title>. <source>J Neuroimmunol</source>. <year>2023</year>;<volume>386</volume>:<elocation-id>578252</elocation-id>.<pub-id pub-id-type="pmid">38086228</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jneuroim.2023.578252</pub-id></mixed-citation></ref><ref id="adb13445-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="adb13445-cit-0015">
+<string-name name-style="western">
+<surname>Drissi</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Deschamps</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alary</surname>
+<given-names>R</given-names>
+</string-name>, et al. <article-title>Role of heat shock transcription factor 2 in the NMDA‐dependent neuroplasticity induced by chronic ethanol intake in mouse hippocampus</article-title>. <source>Addict Biol</source>. <year>2021</year>;<volume>26</volume>(<issue>2</issue>):<elocation-id>e12939</elocation-id>. doi:<pub-id pub-id-type="doi">10.1111/adb.12939</pub-id>
+<pub-id pub-id-type="pmid">32720424</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="adb13445-cit-0016">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>Chronic ethanol exposure induced anxiety‐like behaviour by altering gut microbiota and GABA system</article-title>. <source>Addict Biol</source>. <year>2022</year>;<volume>27</volume>(<issue>5</issue>):<elocation-id>e13203</elocation-id>. doi:<pub-id pub-id-type="doi">10.1111/adb.13203</pub-id>
+<pub-id pub-id-type="pmid">36001417</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="adb13445-cit-0017">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>AMPAkine CX516 alleviated chronic ethanol exposure‐induced neurodegeneration and depressive‐like behavior in mice</article-title>. <source>Toxicol Appl Pharmacol</source>. <year>2022</year>;<volume>439</volume>:<elocation-id>115924</elocation-id>. doi:<pub-id pub-id-type="doi">10.1016/j.taap.2022.115924</pub-id>
+<pub-id pub-id-type="pmid">35181401</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="adb13445-cit-0018">
+<string-name name-style="western">
+<surname>Parsons</surname>
+<given-names>OA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nixon</surname>
+<given-names>SJ</given-names>
+</string-name>. <article-title>Neurobehavioral sequelae of alcoholism</article-title>. <source>Neurol Clin</source>. <year>1993</year>;<volume>11</volume>(<issue>1</issue>):<fpage>205</fpage>‐<lpage>218</lpage>. doi:<pub-id pub-id-type="doi">10.1016/S0733-8619(18)30178-6</pub-id>
+<pub-id pub-id-type="pmid">8441371</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="adb13445-cit-0019">
+<string-name name-style="western">
+<surname>Smith</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Atkinson</surname>
+<given-names>RM</given-names>
+</string-name>. <article-title>Alcoholism and dementia</article-title>. <source>Int J Addict</source>. <year>1995</year>;<volume>30</volume>(<issue>13–14</issue>):<fpage>1843</fpage>‐<lpage>1869</lpage>. doi:<pub-id pub-id-type="doi">10.3109/10826089509071058</pub-id>
+<pub-id pub-id-type="pmid">8751321</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="adb13445-cit-0020">
+<string-name name-style="western">
+<surname>Slavich</surname>
+<given-names>GM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Irwin</surname>
+<given-names>MR</given-names>
+</string-name>. <article-title>From stress to inflammation and major depressive disorder: a social signal transduction theory of depression</article-title>. <source>Psychol Bull</source>. <year>2014</year>;<volume>140</volume>(<issue>3</issue>):<fpage>774</fpage>‐<lpage>815</lpage>. doi:<pub-id pub-id-type="doi">10.1037/a0035302</pub-id>
+<pub-id pub-id-type="pmid">24417575</pub-id>
+<pub-id pub-id-type="pmcid">PMC4006295</pub-id></mixed-citation></ref><ref id="adb13445-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="adb13445-cit-0021">
+<string-name name-style="western">
+<surname>de la Monte</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kril</surname>
+<given-names>JJ</given-names>
+</string-name>. <article-title>Human alcohol‐related neuropathology</article-title>. <source>Acta Neuropathol</source>. <year>2014</year>;<volume>127</volume>(<issue>1</issue>):<fpage>71</fpage>‐<lpage>90</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s00401-013-1233-3</pub-id>
+<pub-id pub-id-type="pmid">24370929</pub-id>
+<pub-id pub-id-type="pmcid">PMC4532397</pub-id></mixed-citation></ref><ref id="adb13445-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="adb13445-cit-0022">
+<string-name name-style="western">
+<surname>Crews</surname>
+<given-names>FT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vetreno</surname>
+<given-names>RP</given-names>
+</string-name>. <article-title>Mechanisms of neuroimmune gene induction in alcoholism</article-title>. <source>Psychopharmacology (Berl)</source>. <year>2016</year>;<volume>233</volume>(<issue>9</issue>):<fpage>1543</fpage>‐<lpage>1557</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s00213-015-3906-1</pub-id>
+<pub-id pub-id-type="pmid">25787746</pub-id>
+<pub-id pub-id-type="pmcid">PMC4828484</pub-id></mixed-citation></ref><ref id="adb13445-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="adb13445-cit-0023">
+<string-name name-style="western">
+<surname>Erickson</surname>
+<given-names>EK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Grantham</surname>
+<given-names>EK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Warden</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Harris</surname>
+<given-names>RA</given-names>
+</string-name>. <article-title>Neuroimmune signaling in alcohol use disorder</article-title>. <source>Pharmacol Biochem Behav</source>. <year>2019</year>;<volume>177</volume>:<fpage>34</fpage>‐<lpage>60</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.pbb.2018.12.007</pub-id>
+<pub-id pub-id-type="pmid">30590091</pub-id>
+<pub-id pub-id-type="pmcid">PMC6946054</pub-id></mixed-citation></ref><ref id="adb13445-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="adb13445-cit-0024">
+<string-name name-style="western">
+<surname>Desbonnet</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garrett</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Clarke</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kiely</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cryan</surname>
+<given-names>JF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dinan</surname>
+<given-names>TG</given-names>
+</string-name>. <article-title>Effects of the probiotic <italic toggle="yes">Bifidobacterium infantis</italic> in the maternal separation model of depression</article-title>. <source>Neuroscience</source>. <year>2010</year>;<volume>170</volume>(<issue>4</issue>):<fpage>1179</fpage>‐<lpage>1188</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.neuroscience.2010.08.005</pub-id>
+<pub-id pub-id-type="pmid">20696216</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="adb13445-cit-0025">
+<string-name name-style="western">
+<surname>Bravo</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Forsythe</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chew</surname>
+<given-names>MV</given-names>
+</string-name>, et al. <article-title>Ingestion of <italic toggle="yes">Lactobacillus</italic> strain regulates emotional behavior and central GABA receptor expression in a mouse via the vagus nerve</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2011</year>;<volume>108</volume>(<issue>38</issue>):<fpage>16050</fpage>‐<lpage>16055</lpage>. doi:<pub-id pub-id-type="doi">10.1073/pnas.1102999108</pub-id>
+<pub-id pub-id-type="pmid">21876150</pub-id>
+<pub-id pub-id-type="pmcid">PMC3179073</pub-id></mixed-citation></ref><ref id="adb13445-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="adb13445-cit-0026">
+<string-name name-style="western">
+<surname>Messaoudi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lalonde</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violle</surname>
+<given-names>N</given-names>
+</string-name>, et al. <article-title>Assessment of psychotropic‐like properties of a probiotic formulation (<italic toggle="yes">Lactobacillus helveticus</italic> R0052 and <italic toggle="yes">Bifidobacterium longum</italic> R0175) in rats and human subjects</article-title>. <source>Br J Nutr</source>. <year>2011</year>;<volume>105</volume>(<issue>5</issue>):<fpage>755</fpage>‐<lpage>764</lpage>. doi:<pub-id pub-id-type="doi">10.1017/S0007114510004319</pub-id>
+<pub-id pub-id-type="pmid">20974015</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="adb13445-cit-0027">
+<string-name name-style="western">
+<surname>Desbonnet</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Clarke</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Traplin</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Gut microbiota depletion from early adolescence in mice: implications for brain and behaviour</article-title>. <source>Brain Behav Immun</source>. <year>2015</year>;<volume>48</volume>:<fpage>165</fpage>‐<lpage>173</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.bbi.2015.04.004</pub-id>
+<pub-id pub-id-type="pmid">25866195</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="adb13445-cit-0028">
+<string-name name-style="western">
+<surname>Majidi</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kosari‐Nasab</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Salari</surname>
+<given-names>AA</given-names>
+</string-name>. <article-title>Developmental minocycline treatment reverses the effects of neonatal immune activation on anxiety‐ and depression‐like behaviors, hippocampal inflammation, and HPA axis activity in adult mice</article-title>. <source>Brain Res Bull</source>. <year>2016</year>;<volume>120</volume>:<fpage>1</fpage>‐<lpage>13</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.brainresbull.2015.10.009</pub-id>
+<pub-id pub-id-type="pmid">26521068</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="adb13445-cit-0029">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>HT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>FL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hu</surname>
+<given-names>ZL</given-names>
+</string-name>, et al. <article-title>Early‐life social isolation‐induced depressive‐like behavior in rats results in microglial activation and neuronal histone methylation that are mitigated by minocycline</article-title>. <source>Neurotox Res</source>. <year>2017</year>;<volume>31</volume>(<issue>4</issue>):<fpage>505</fpage>‐<lpage>520</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s12640-016-9696-3</pub-id>
+<pub-id pub-id-type="pmid">28092020</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="adb13445-cit-0030">
+<string-name name-style="western">
+<surname>Adams</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Perry</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Conigrave</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Central markers of neuroinflammation in alcohol use disorder: a meta‐analysis of neuroimaging, cerebral spinal fluid, and postmortem studies</article-title>. <source>Alcohol Clin Exp Res</source>. <year>2023</year>;<volume>47</volume>(<issue>2</issue>):<fpage>197</fpage>‐<lpage>208</lpage>. doi:<pub-id pub-id-type="doi">10.1111/acer.14992</pub-id>
+<pub-id pub-id-type="pmid">36852781</pub-id></mixed-citation></ref><ref id="adb13445-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="adb13445-cit-0031">
+<string-name name-style="western">
+<surname>Lowe</surname>
+<given-names>PP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gyongyosi</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Satishchandran</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Reduced gut microbiome protects from alcohol‐induced neuroinflammation and alters intestinal and brain inflammasome expression</article-title>. <source>J Neuroinflammation</source>. <year>2018</year>;<volume>15</volume>(<issue>1</issue>):<elocation-id>298</elocation-id>. doi:<pub-id pub-id-type="doi">10.1186/s12974-018-1328-9</pub-id>
+<pub-id pub-id-type="pmid">30368255</pub-id>
+<pub-id pub-id-type="pmcid">PMC6203993</pub-id></mixed-citation></ref><ref id="adb13445-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="adb13445-cit-0032">
+<string-name name-style="western">
+<surname>Sanada</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nakajima</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kurokawa</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Gut microbiota and major depressive disorder: a systematic review and meta‐analysis</article-title>. <source>J Affect Disord</source>. <year>2020</year>;<volume>266</volume>:<fpage>1</fpage>‐<lpage>13</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jad.2020.01.102</pub-id>
+<pub-id pub-id-type="pmid">32056863</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="adb13445-cit-0033">
+<string-name name-style="western">
+<surname>Madan</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Thompson</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fowler</surname>
+<given-names>JC</given-names>
+</string-name>, et al. <article-title>The gut microbiota is associated with psychiatric symptom severity and treatment outcome among individuals with serious mental illness</article-title>. <source>J Affect Disord</source>. <year>2020</year>;<volume>264</volume>:<fpage>98</fpage>‐<lpage>106</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jad.2019.12.020</pub-id>
+<pub-id pub-id-type="pmid">32056780</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="adb13445-cit-0034">
+<string-name name-style="western">
+<surname>Capurso</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Thirty years of <italic toggle="yes">Lactobacillus rhamnosus</italic> GG: a review</article-title>. <source>J Clin Gastroenterol</source>. <year>2019</year>;<volume>53</volume>(<issue>Suppl 1</issue>):<fpage>S1</fpage>‐<lpage>S41</lpage>. doi:<pub-id pub-id-type="doi">10.1097/MCG.0000000000001170</pub-id>
+<pub-id pub-id-type="pmid">30741841</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="adb13445-cit-0035">
+<string-name name-style="western">
+<surname>Liu</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>du</surname>
+<given-names>ZR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>Polymannuronic acid prebiotic plus <italic toggle="yes">Lacticaseibacillus rhamnosus</italic> GG probiotic as a novel synbiotic promoted their separate neuroprotection against Parkinson's disease</article-title>. <source>Food Res Int</source>. <year>2022</year>;<volume>155</volume>:<elocation-id>111067</elocation-id>. doi:<pub-id pub-id-type="doi">10.1016/j.foodres.2022.111067</pub-id>
+<pub-id pub-id-type="pmid">35400445</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="adb13445-cit-0036">
+<string-name name-style="western">
+<surname>Zhou</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jin</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pang</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>
+<italic toggle="yes">Lactobacillus rhamnosus</italic> GG colonization in early life regulates gut‐brain axis and relieves anxiety‐like behavior in adulthood</article-title>. <source>Pharmacol Res</source>. <year>2022</year>;<volume>177</volume>:<elocation-id>106090</elocation-id>. doi:<pub-id pub-id-type="doi">10.1016/j.phrs.2022.106090</pub-id>
+<pub-id pub-id-type="pmid">35065201</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="adb13445-cit-0037">
+<string-name name-style="western">
+<surname>Tong</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hao</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>
+<italic toggle="yes">Lactobacillus rhamnosus</italic> GG derived extracellular vesicles modulate gut microbiota and attenuate inflammatory in DSS‐induced colitis mice</article-title>. <source>Nutrients</source>. <year>2021</year>;<volume>13</volume>(<issue>10</issue>):<elocation-id>3319</elocation-id>. doi:<pub-id pub-id-type="doi">10.3390/nu13103319</pub-id>
+<pub-id pub-id-type="pmid">34684320</pub-id>
+<pub-id pub-id-type="pmcid">PMC8541209</pub-id></mixed-citation></ref><ref id="adb13445-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="adb13445-cit-0038">
+<string-name name-style="western">
+<surname>Fan</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Deng</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Qiu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ji</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shen</surname>
+<given-names>X</given-names>
+</string-name>. <article-title>Antibiotics‐induced depression in mice via the microbiota‐gut‐brain axis</article-title>. <source>J Affect Disord</source>. <year>2022</year>;<volume>318</volume>:<fpage>152</fpage>‐<lpage>158</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jad.2022.08.059</pub-id>
+<pub-id pub-id-type="pmid">36075400</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="adb13445-cit-0039">
+<string-name name-style="western">
+<surname>Harper</surname>
+<given-names>CG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kril</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Holloway</surname>
+<given-names>RL</given-names>
+</string-name>. <article-title>Brain shrinkage in chronic alcoholics: a pathological study</article-title>. <source>Br Med J (Clin Res Ed)</source>. <year>1985</year>;<volume>290</volume>(<issue>6467</issue>):<fpage>501</fpage>‐<lpage>504</lpage>. doi:<pub-id pub-id-type="doi">10.1136/bmj.290.6467.501</pub-id>
+<pub-id pub-id-type="pmcid">PMC1418027</pub-id><pub-id pub-id-type="pmid">3918649</pub-id></mixed-citation></ref><ref id="adb13445-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="adb13445-cit-0040">
+<string-name name-style="western">
+<surname>de la Monte</surname>
+<given-names>SM</given-names>
+</string-name>. <article-title>Disproportionate atrophy of cerebral white matter in chronic alcoholics</article-title>. <source>Arch Neurol</source>. <year>1988</year>;<volume>45</volume>(<issue>9</issue>):<fpage>990</fpage>‐<lpage>992</lpage>. doi:<pub-id pub-id-type="doi">10.1001/archneur.1988.00520330076013</pub-id>
+<pub-id pub-id-type="pmid">3415529</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="adb13445-cit-0041">
+<string-name name-style="western">
+<surname>Harper</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Matsumoto</surname>
+<given-names>I</given-names>
+</string-name>. <article-title>Ethanol and brain damage</article-title>. <source>Curr Opin Pharmacol</source>. <year>2005</year>;<volume>5</volume>(<issue>1</issue>):<fpage>73</fpage>‐<lpage>78</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.coph.2004.06.011</pub-id>
+<pub-id pub-id-type="pmid">15661629</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="adb13445-cit-0042">
+<string-name name-style="western">
+<surname>Esmaeilpour</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jafari</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rostamabadi</surname>
+<given-names>F</given-names>
+</string-name>, et al. <article-title>Myrtenol inhalation mitigates asthma‐induced cognitive impairments: an electrophysiological, behavioral, histological, and molecular study</article-title>. <source>Mol Neurobiol</source>. <year>2023</year>;<volume>61</volume>(<issue>7</issue>):<fpage>4891</fpage>‐<lpage>4907</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s12035-023-03863-1</pub-id>
+<pub-id pub-id-type="pmid">38148370</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="adb13445-cit-0043">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Niu</surname>
+<given-names>L</given-names>
+</string-name>, et al. <article-title>High‐frequency repetitive transcranial magnetic stimulation improves depressive‐like behaviors in CUMS‐induced rats by modulating astrocyte GLT‐1 to reduce glutamate toxicity</article-title>. <source>J Affect Disord</source>. <year>2023</year>;<volume>348</volume>:<fpage>265</fpage>‐<lpage>274</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jad.2023.12.068</pub-id>
+<pub-id pub-id-type="pmid">38159655</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="adb13445-cit-0044">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shen</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>Chronic ethanol exposure induced depressive‐like behavior in male C57BL/6 N mice by downregulating GluA1</article-title>. <source>Physiol Behav</source>. <year>2021</year>;<volume>234</volume>:<elocation-id>113387</elocation-id>. doi:<pub-id pub-id-type="doi">10.1016/j.physbeh.2021.113387</pub-id>
+<pub-id pub-id-type="pmid">33713693</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="adb13445-cit-0045">
+<string-name name-style="western">
+<surname>Wilcox</surname>
+<given-names>MV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carlson</surname>
+<given-names>VCC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sherazee</surname>
+<given-names>N</given-names>
+</string-name>, et al. <article-title>Repeated binge‐like ethanol drinking alters ethanol drinking patterns and depresses striatal GABAergic transmission</article-title>. <source>Neuropsychopharmacology</source>. <year>2014</year>;<volume>39</volume>(<issue>3</issue>):<fpage>579</fpage>‐<lpage>594</lpage>. doi:<pub-id pub-id-type="doi">10.1038/npp.2013.230</pub-id>
+<pub-id pub-id-type="pmid">23995582</pub-id>
+<pub-id pub-id-type="pmcid">PMC3895236</pub-id></mixed-citation></ref><ref id="adb13445-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="adb13445-cit-0046">
+<string-name name-style="western">
+<surname>Sizer</surname>
+<given-names>SE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Parrish</surname>
+<given-names>BC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>McCool</surname>
+<given-names>BA</given-names>
+</string-name>. <article-title>Chronic ethanol exposure potentiates cholinergic neurotransmission in the basolateral amygdala</article-title>. <source>Neuroscience</source>. <year>2021</year>;<volume>455</volume>:<fpage>165</fpage>‐<lpage>176</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.neuroscience.2020.12.014</pub-id>
+<pub-id pub-id-type="pmid">33385490</pub-id>
+<pub-id pub-id-type="pmcid">PMC7856184</pub-id></mixed-citation></ref><ref id="adb13445-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="adb13445-cit-0047">
+<string-name name-style="western">
+<surname>Stragier</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martin</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Davenas</surname>
+<given-names>E</given-names>
+</string-name>, et al. <article-title>Brain plasticity and cognitive functions after ethanol consumption in C57BL/6J mice</article-title>. <source>Transl Psychiatry</source>. <year>2015</year>;<volume>5</volume>(<issue>12</issue>):<elocation-id>e696</elocation-id>. doi:<pub-id pub-id-type="doi">10.1038/tp.2015.183</pub-id>
+<pub-id pub-id-type="pmid">26670281</pub-id>
+<pub-id pub-id-type="pmcid">PMC5068583</pub-id></mixed-citation></ref><ref id="adb13445-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="adb13445-cit-0048">
+<string-name name-style="western">
+<surname>Ruan</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guan</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>Baicalein exerts anxiolytic and antinociceptive effects in a mouse model of posttraumatic stress disorder: involvement of the serotonergic system and spinal delta‐opioid receptors</article-title>. <source>Prog Neuropsychopharmacol Biol Psychiatry</source>. <year>2023</year>;<volume>122</volume>:<elocation-id>110689</elocation-id>. doi:<pub-id pub-id-type="doi">10.1016/j.pnpbp.2022.110689</pub-id>
+<pub-id pub-id-type="pmid">36462602</pub-id>
+</mixed-citation></ref><ref id="adb13445-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="adb13445-cit-0049">
+<string-name name-style="western">
+<surname>Parker</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Romano</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ansorge</surname>
+<given-names>R</given-names>
+</string-name>, et al. <article-title>Fecal microbiota transfer between young and aged mice reverses hallmarks of the aging gut, eye, and brain</article-title>. <source>Microbiome</source>. <year>2022</year>;<volume>10</volume>(<issue>1</issue>):<elocation-id>68</elocation-id>. doi:<pub-id pub-id-type="doi">10.1186/s40168-022-01243-w</pub-id>
+<pub-id pub-id-type="pmid">35501923</pub-id>
+<pub-id pub-id-type="pmcid">PMC9063061</pub-id></mixed-citation></ref><ref id="adb13445-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="adb13445-cit-0050">
+<string-name name-style="western">
+<surname>Vorhees</surname>
+<given-names>CV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Williams</surname>
+<given-names>MT</given-names>
+</string-name>. <article-title>Morris water maze: procedures for assessing spatial and related forms of learning and memory</article-title>. <source>Nat Protoc</source>. <year>2006</year>;<volume>1</volume>(<issue>2</issue>):<fpage>848</fpage>‐<lpage>858</lpage>. doi:<pub-id pub-id-type="doi">10.1038/nprot.2006.116</pub-id>
+<pub-id pub-id-type="pmid">17406317</pub-id>
+<pub-id pub-id-type="pmcid">PMC2895266</pub-id></mixed-citation></ref><ref id="adb13445-bib-0050"><label>50</label><mixed-citation publication-type="journal" id="adb13445-cit-0051">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guo</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Suo</surname>
+<given-names>L</given-names>
+</string-name>, et al. <article-title>Preventive effects of the AMPA receptor potentiator LY450108 in an LPS‐induced depressive mouse model</article-title>. <source>Behav Brain Res</source>. <year>2022</year>;<volume>424</volume>:<elocation-id>113813</elocation-id>. doi:<pub-id pub-id-type="doi">10.1016/j.bbr.2022.113813</pub-id>
+<pub-id pub-id-type="pmid">35202718</pub-id>
+</mixed-citation></ref></ref-list></back></article></pmc-articleset>
