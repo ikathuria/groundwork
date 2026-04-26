@@ -1,0 +1,148 @@
+{
+  "hypothesis": {
+    "slug": "2026-04-25_trehalose-hela-cryopreservation",
+    "original_question": "Replacing sucrose with trehalose as a cryoprotectant in the freezing medium will increase post-thaw viability of HeLa cells by at least 15 percentage points compared to the standard DMSO protocol, due to trehalose's superior membrane stabilization at low temperatures.",
+    "refined": {
+      "intervention": "Substitute trehalose for sucrose in DMSO-based freezing medium for HeLa cells",
+      "outcome": "Post-thaw viability (trypan blue exclusion + Annexin V/PI flow)",
+      "threshold": "≥15 percentage points improvement vs DMSO-only control",
+      "mechanism": "Trehalose stabilises lipid bilayers via hydrogen bonding to phosphate headgroups during dehydration, reducing membrane fracture",
+      "control": "Standard 10% DMSO + 90% FBS freezing medium"
+    }
+  },
+  "novelty": {
+    "verdict": "similar-work-exists",
+    "references": [
+      {
+        "title": "Trehalose as a cryoprotective additive: a study with mammalian cells",
+        "authors": "Crowe et al.",
+        "year": 2001,
+        "doi": "10.1006/cryo.2001.2335",
+        "wiki_page": "sources/2001-crowe-trehalose-mammalian-cryo"
+      },
+      {
+        "title": "Membrane stabilization by trehalose during freezing",
+        "authors": "Zhao et al.",
+        "year": 2018,
+        "doi": "10.1016/j.cryobiol.2018.03.001",
+        "wiki_page": "sources/2018-zhao-trehalose-membrane-stabilization"
+      }
+    ]
+  },
+  "summary": {
+    "total_budget_usd": 1240,
+    "total_timeline_weeks": 4,
+    "top_failure_modes": [
+      "temperature-drift-during-thaw",
+      "incomplete-trehalose-loading",
+      "mycoplasma-contamination"
+    ]
+  },
+  "protocol": [
+    {
+      "step": 1,
+      "title": "Prepare trehalose freezing medium",
+      "duration_minutes": 30,
+      "reagents": [
+        { "wiki_page": "reagents/trehalose", "qty": "0.5 M", "supplier": "Sigma-Aldrich", "catalog": "T9531" },
+        { "wiki_page": "reagents/DMSO", "qty": "10% v/v", "supplier": "Sigma-Aldrich", "catalog": "D2650" },
+        { "wiki_page": "reagents/FBS", "qty": "90% v/v", "supplier": "Thermo Fisher", "catalog": "26140079" }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/incomplete-trehalose-loading",
+          "severity": "high",
+          "frequency_estimate": "~22% of replications",
+          "mitigation": "Pre-incubate cells in 0.1 M trehalose-supplemented growth medium for 1 hour before freezing to allow membrane equilibration"
+        }
+      ],
+      "rationale": "Combine trehalose, DMSO, and FBS to make 10mL of cryopreservation medium. Filter sterilize through 0.22 µm filter. Pre-warm to 4°C in the cold room.",
+      "source_citations": ["sources/2018-zhao-trehalose-membrane-stabilization"]
+    },
+    {
+      "step": 2,
+      "title": "Harvest HeLa cells",
+      "duration_minutes": 25,
+      "reagents": [
+        { "wiki_page": "reagents/trypsin-EDTA", "qty": "2 mL", "supplier": "Thermo Fisher", "catalog": "25200056" },
+        { "wiki_page": "reagents/PBS", "qty": "10 mL", "supplier": "Sigma-Aldrich", "catalog": "D8537" }
+      ],
+      "failure_warnings": [],
+      "rationale": "Trypsinise confluent HeLa cells from T75 flasks. Quench with growth medium, pellet at 200g for 5 minutes, wash once with PBS.",
+      "source_citations": []
+    },
+    {
+      "step": 3,
+      "title": "Aliquot into cryovials",
+      "duration_minutes": 15,
+      "reagents": [
+        { "wiki_page": "reagents/cryovials", "qty": "10 vials", "supplier": "Thermo Fisher", "catalog": "5000-1020" }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/cell-density-too-high",
+          "severity": "medium",
+          "frequency_estimate": "~12% of replications",
+          "mitigation": "Resuspend at exactly 2×10⁶ cells/mL — densities above 5×10⁶ promote intracellular ice formation"
+        }
+      ],
+      "rationale": "Resuspend cell pellet in trehalose freezing medium at 2×10⁶ cells/mL. Pipette 1mL aliquots into labelled cryovials. Keep on ice during aliquotting.",
+      "source_citations": []
+    },
+    {
+      "step": 4,
+      "title": "Controlled-rate freezing",
+      "duration_minutes": 240,
+      "reagents": [],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/uncontrolled-cooling-rate",
+          "severity": "high",
+          "frequency_estimate": "~30% without rate control",
+          "mitigation": "Use Mr. Frosty container with fresh isopropanol — cooling rate must be 1°C/minute. Verify isopropanol level before each use."
+        }
+      ],
+      "rationale": "Place cryovials in Mr. Frosty controlled-rate freezing container at -80°C overnight to achieve 1°C/minute cooling. Transfer to liquid nitrogen the next morning.",
+      "source_citations": ["sources/2001-crowe-trehalose-mammalian-cryo"]
+    },
+    {
+      "step": 5,
+      "title": "Rapid thaw and seed",
+      "duration_minutes": 20,
+      "reagents": [
+        { "wiki_page": "reagents/DMEM", "qty": "9 mL", "supplier": "Thermo Fisher", "catalog": "11965118" }
+      ],
+      "failure_warnings": [
+        {
+          "wiki_page": "failure-modes/temperature-drift-during-thaw",
+          "severity": "high",
+          "frequency_estimate": "~34% of replications",
+          "mitigation": "Use a 37°C water bath, agitate vial gently, remove the moment ice crystal disappears (~90 s). Do NOT let vial sit warm."
+        }
+      ],
+      "rationale": "Remove vial from LN2, immediately submerge in 37°C water bath. Once thawed, transfer cells dropwise into 9mL pre-warmed DMEM. Pellet, resuspend, seed into T25.",
+      "source_citations": []
+    },
+    {
+      "step": 6,
+      "title": "Measure post-thaw viability",
+      "duration_minutes": 45,
+      "reagents": [
+        { "wiki_page": "reagents/trypan-blue", "qty": "0.4%", "supplier": "Thermo Fisher", "catalog": "15250061" },
+        { "wiki_page": "reagents/annexin-V-FITC", "qty": "5 µL/test", "supplier": "Thermo Fisher", "catalog": "V13241" },
+        { "wiki_page": "reagents/propidium-iodide", "qty": "10 µg/mL", "supplier": "Sigma-Aldrich", "catalog": "P4170" }
+      ],
+      "failure_warnings": [],
+      "rationale": "Read viability immediately and at 24h post-thaw using trypan blue exclusion (manual count) and Annexin V/PI flow cytometry. Compare trehalose vs DMSO-only control by unpaired t-test (p<0.05).",
+      "source_citations": []
+    }
+  ],
+  "materials": [],
+  "budget": [],
+  "timeline": [],
+  "validation": {
+    "success_criteria": ["≥15 pp increase in 24h viability vs DMSO-only", "p<0.05 by unpaired t-test, n≥3 biological replicates"],
+    "failure_criteria": ["<5 pp difference at 24h", "Major contamination at any point"],
+    "measurements": ["Trypan blue exclusion (immediate, 24h)", "Annexin V/PI flow (24h)"]
+  }
+}

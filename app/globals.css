@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lab-bg: #0a0f1a;
+  --lab-accent: #00d4aa;
+  --lab-warn: #ff6b35;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--lab-bg);
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Prevent scroll bounce on mobile */
+html, body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+/* AR canvas fills viewport */
+#ar-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Camera video background */
+#ar-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* HUD overlay sits above canvas */
+#ar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#ar-overlay > * {
+  pointer-events: auto;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes warn-flash {
+  0%, 100% { border-color: #ff6b35; }
+  50% { border-color: transparent; }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
+}
+
+.animate-warn-flash {
+  animation: warn-flash 1s ease-in-out infinite;
+}
+
+.glass {
+  background: rgba(10, 15, 26, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-accent {
+  background: rgba(0, 212, 170, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+}
