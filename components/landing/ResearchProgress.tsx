@@ -33,7 +33,6 @@ export default function ResearchProgress({
     'pass-2': { status: 'idle', message: 'Queued' },
     'pass-3': { status: 'idle', message: 'Queued' },
   })
-  const [logLines, setLogLines] = useState<string[]>([])
   const [error, setError] = useState('')
   const [navigating, setNavigating] = useState(false)
   const abortRef = useRef<AbortController | null>(null)
@@ -103,12 +102,6 @@ export default function ResearchProgress({
           }
           next[payload.stage] = { status: 'running', message: payload.message ?? '' }
           return next
-        })
-      } else if (event === 'log' && payload?.line) {
-        setLogLines((lines) => {
-          const updated = [...lines, payload.line]
-          // Cap to last 200 lines for memory
-          return updated.length > 200 ? updated.slice(-200) : updated
         })
       } else if (event === 'error' && payload?.message) {
         setStages((s) => {
@@ -185,14 +178,11 @@ export default function ResearchProgress({
           })}
         </div>
 
-        {/* Log tail */}
-        {logLines.length > 0 && (
-          <div className="rounded-xl bg-black/40 border border-white/5 p-3 max-h-40 overflow-y-auto font-mono text-[10px] text-[#64748b] leading-relaxed">
-            {logLines.slice(-40).map((line, i) => (
-              <div key={i} className="truncate">{line}</div>
-            ))}
-          </div>
-        )}
+        {/* Verbose stream-json logs are written to the dev-server terminal,
+            not the UI. Watch the terminal where `npm run dev` is running. */}
+        <p className="text-[10px] font-mono text-[#64748b] -mt-1">
+          Live logs streaming to the dev-server terminal.
+        </p>
 
         {error && (
           <div className="rounded-xl border border-rose-500/40 bg-rose-500/10 px-3 py-2 text-xs text-rose-300">
