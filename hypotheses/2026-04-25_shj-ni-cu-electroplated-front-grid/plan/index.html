@@ -561,6 +561,59 @@ section.lab + section.lab { border-top: 1px solid var(--hairline); }
 .budget-total__lbl { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); letter-spacing: .08em; text-transform: uppercase; }
 .budget-total__amt { font-family: var(--mono); font-size: 22px; font-weight: 600; color: var(--amber); }
 
+/* horizontal-bar list view — proportional, scannable */
+.bbar-list {
+  display: flex; flex-direction: column; gap: 22px;
+  padding: 30px 32px; background: var(--panel); border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+.bbar-list__head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 24px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--rule); margin-bottom: 6px;
+}
+.bbar-list__head .h {
+  font-family: var(--display); font-size: 18px; font-weight: 500; color: var(--ink-0); letter-spacing: -0.01em;
+}
+.bbar-list__head .sub {
+  font-family: var(--serif); font-style: italic; font-size: 13.5px; color: var(--ink-3);
+}
+.bbar {
+  display: grid; grid-template-rows: auto auto auto; gap: 8px;
+}
+.bbar__row {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 24px;
+}
+.bbar__name {
+  font-family: var(--display); font-size: 15.5px; font-weight: 500; color: var(--ink-0); letter-spacing: -0.005em;
+}
+.bbar__amt {
+  font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--ink-0); letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+.bbar__track {
+  position: relative; height: 5px; border-radius: 3px;
+  background: rgba(245, 165, 36, .07);
+  overflow: hidden;
+}
+.bbar__fill {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  background: linear-gradient(90deg, #d97706 0%, var(--amber) 100%);
+  border-radius: 3px;
+  width: var(--bbar-w, 0%);
+  transition: width 0.9s cubic-bezier(.4, .8, .2, 1);
+}
+.bbar__desc {
+  font-family: var(--serif); font-size: 13px; color: var(--ink-3); line-height: 1.5;
+  font-style: italic;
+}
+@media (max-width: 720px) {
+  .bbar-list { padding: 22px 18px; gap: 18px; }
+  .bbar-list__head { flex-direction: column; gap: 4px; align-items: flex-start; }
+  .bbar__row { gap: 12px; }
+  .bbar__name { font-size: 14.5px; }
+  .bbar__amt { font-size: 14px; }
+}
+
 /* ─────────── timeline / swim-lane ─────────── */
 .tl-wrap {
   background: var(--panel); border: 1px solid var(--rule); border-radius: 10px;
@@ -1226,6 +1279,12 @@ section.lab + section.lab { border-top: 1px solid var(--hairline); }
         </div>
       </div>
       <div class="budget-canvas" id="budget-canvas"></div>
+      <div class="bbar-list" data-bbar>
+        <div class="bbar-list__head">
+          <span class="h">Line items, ranked</span>
+          <span class="sub">Direct costs only. Personnel + equipment + contingency dominate.</span>
+        </div>
+      </div>
       <div class="budget-total">
         <span class="budget-total__lbl">Total · 14 weeks · 4 arms × 5 cells + 1 EVA contrast laminate</span>
         <span class="budget-total__amt" data-budget-total>$0</span>
@@ -8016,6 +8075,53 @@ if (container) {
       if (active && active.getAttribute('data-bview') === 'treemap') drawTreemap();
     }, 200);
   });
+
+  /* ───── budget bar list (linear, scannable) ───── */
+  (function paintBudgetBars() {
+    const host = document.querySelector('[data-bbar]');
+    if (!host) return;
+    const sorted = [...budgetData].sort((a, b) => b.value - a.value);
+    const maxV = Math.max(...sorted.map(d => d.value), 1);
+    const frag = document.createDocumentFragment();
+    sorted.forEach((d, i) => {
+      const row = document.createElement('div');
+      row.className = 'bbar';
+      const pct = Math.max(2, (d.value / maxV) * 100);
+      row.innerHTML =
+        '<div class="bbar__row">' +
+          '<span class="bbar__name">' + escapeHTML(d.name) + '</span>' +
+          '<span class="bbar__amt">' + fmt$(d.value) + '</span>' +
+        '</div>' +
+        '<div class="bbar__track" role="img" aria-label="' + escapeAttr(d.name + ' ' + fmt$(d.value)) + '">' +
+          '<span class="bbar__fill" data-pct="' + pct.toFixed(1) + '"></span>' +
+        '</div>' +
+        '<div class="bbar__desc">' + escapeHTML(d.desc) + '</div>';
+      frag.appendChild(row);
+    });
+    host.appendChild(frag);
+
+    // Animate the fills in once they enter the viewport (or immediately if reduced motion)
+    const fills = host.querySelectorAll('.bbar__fill');
+    if (reduced) {
+      fills.forEach(f => { f.style.setProperty('--bbar-w', f.getAttribute('data-pct') + '%'); });
+      return;
+    }
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          const f = e.target;
+          // small staggered delay for a sweep effect
+          const idx = Array.from(fills).indexOf(f);
+          setTimeout(() => f.style.setProperty('--bbar-w', f.getAttribute('data-pct') + '%'), idx * 70);
+          io.unobserve(f);
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+      fills.forEach(f => io.observe(f));
+    } else {
+      fills.forEach((f, i) => setTimeout(() => f.style.setProperty('--bbar-w', f.getAttribute('data-pct') + '%'), i * 70));
+    }
+  })();
 
   /* ───── timeline swim-lane ───── */
   function drawTimeline() {
