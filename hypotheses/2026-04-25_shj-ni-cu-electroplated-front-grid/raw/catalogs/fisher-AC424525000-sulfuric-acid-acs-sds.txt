@@ -1,0 +1,588 @@
+                                        SAFETY DATA SHEET
+Creation Date 23-Jun-2009                          Revision Date 19-Dec-2025                  Revision Number 10
+
+This safety data sheet was created pursuant to the requirements of: US OSHA Hazard Communication Standard 2024 (29
+                                                    CFR 1910.1200)
+
+
+
+
+                                                     1. Identification
+Product Name                            Sulfuric acid
+
+Cat No. :                               AC424520000; AC424520025; AC424520026; AC424520100;
+                                        AC424525000; AC424525001, AC424528000
+CAS No                                  7664-93-9
+Synonyms                                No information available
+
+Recommended Use                         Laboratory chemicals.
+Uses advised against                    Food, drug, pesticide or biocidal product use.
+
+
+Details of the supplier of the safety data sheet
+
+Company
+Fisher Scientific Company                      Acros Organics
+One Reagent Lane                               One Reagent Lane
+Fair Lawn, NJ 07410                            Fair Lawn, NJ 07410
+Tel: (201) 796-7100
+
+
+Emergency Telephone Number
+For information US call: 001-800-227-6701 / Europe call: +32 14 57 52 11
+Emergency Number US:001-201-796-7100 / Europe: +32 14 57 52 99
+CHEMTREC Tel. No. US:001-800-424-9300 / Europe:001-703-527-3887
+
+
+
+                                             2. Hazard(s) identification
+Classification
+This chemical is considered hazardous according to [US] OSHA (29 CFR 1910.1200, 2024)
+
+
+
+
+Skin Corrosion/Irritation                                          Category 1
+Serious Eye Damage/Eye Irritation                                  Category 1
+Specific target organ toxicity (single exposure)                   Category 3
+Target Organs - Respiratory system.
+
+
+
+Label Elements
+
+Signal Word
+Danger
+
+
+______________________________________________________________________________________________
+
+                                                            Page 1 / 9
+Sulfuric acid                                                            Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+Hazard Statements
+Causes severe skin burns and eye damage
+May cause respiratory irritation
+
+
+
+
+Precautionary Statements
+Prevention
+Do not breathe dust/fume/gas/mist/vapors/spray
+Wash face, hands and any exposed skin thoroughly after handling
+Wear protective gloves/protective clothing/eye protection/face protection
+Use only outdoors or in a well-ventilated area
+Response
+Immediately call a POISON CENTER or doctor
+Inhalation
+IF INHALED: Remove person to fresh air and keep comfortable for breathing
+Skin
+IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water or shower
+Take off contaminated clothing and wash before reuse
+Eyes
+IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to do. Continue rinsing
+Ingestion
+IF SWALLOWED: Rinse mouth. DO NOT induce vomiting
+Storage
+Store locked up
+Store in a well-ventilated place. Keep container tightly closed
+Disposal
+Dispose of contents/container to an approved waste disposal plant
+Hazards not otherwise classified (HNOC)
+
+
+Hazards classified under paragraph (d)(1)(ii) of 1910.1200
+No information available
+WARNING. Cancer - https://www.p65warnings.ca.gov/.
+
+
+
+                              3. Composition/information on Ingredients
+                   Component                                        CAS No                                 Weight %
+                   Sulfuric acid                                   7664-93-9                                 >95
+
+                                                4. First-aid measures
+General Advice                         Immediate medical attention is required. Remove and isolate contaminated clothing and
+                                       shoes.
+
+Eye Contact                            Rinse immediately with plenty of water, also under the eyelids, for at least 15 minutes.
+                                       Immediate medical attention is required.
+
+Skin Contact                           Wash off immediately with plenty of water for at least 15 minutes. Immediate medical
+                                       attention is required.
+
+
+
+______________________________________________________________________________________________
+
+                                                           Page 2 / 9
+Sulfuric acid                                                            Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+Inhalation                             Remove to fresh air. If breathing is difficult, give oxygen. Do not use mouth-to-mouth
+                                       method if victim ingested or inhaled the substance; give artificial respiration with the aid of a
+                                       pocket mask equipped with a one-way valve or other proper respiratory medical device.
+                                       Immediate medical attention is required.
+
+Ingestion                              Rinse mouth. Drink 1 or 2 glasses of water. Never give anything by mouth to an
+                                       unconscious person. Do NOT induce vomiting. Call a physician or poison control center
+                                       immediately.
+
+Most important symptoms and            Causes burns by all exposure routes. . Product is a corrosive material. Use of gastric
+effects                                lavage or emesis is contraindicated. Possible perforation of stomach or esophagus should
+                                       be investigated: Ingestion causes severe swelling, severe damage to the delicate tissue
+                                       and danger of perforation
+Notes to Physician                     Treat symptomatically
+
+                                             5. Fire-fighting measures
+
+Suitable Extinguishing Media           Substance is nonflammable; use agent most appropriate to extinguish surrounding fire.
+
+Unsuitable Extinguishing Media         DO NOT USE WATER
+
+   Flash Point                        No information available
+   Method -                           No information available
+
+Autoignition Temperature            No information available
+Explosion Limits
+   Upper                            No data available
+   Lower                            No data available
+   Sensitivity to Mechanical Impact No information available
+   Sensitivity to Static Discharge No information available
+
+Specific Hazards Arising from the Chemical
+Corrosive material. Reacts violently with water. Reaction with water may generate much heat which will increase the concentration
+of fumes in the air. Contact with metals may evolve flammable hydrogen gas. Non-combustible, substance itself does not burn but
+may decompose upon heating to produce corrosive and/or toxic fumes.
+
+Hazardous Combustion Products
+Hydrogen. Sulfur oxides.
+Protective Equipment and Precautions for Firefighters
+As in any fire, wear self-contained breathing apparatus pressure-demand, MSHA/NIOSH (approved or equivalent) and full
+protective gear.
+
+NFPA
+             Health                       Flammability                        Instability                    Physical hazards
+               3                              0                                   2                                 W
+
+                                       6. Accidental release measures
+Personal Precautions                   Use personal protective equipment as required. Wear self-contained breathing apparatus
+                                       and protective suit. Evacuate personnel to safe areas. Keep people away from and upwind
+                                       of spill/leak. Ensure adequate ventilation. Avoid contact with skin, eyes or clothing.
+Environmental Precautions              Avoid release to the environment. See Section 12 for additional Ecological Information.
+
+Methods for Containment and Clean Soak up with inert absorbent material. Keep in suitable, closed containers for disposal. After
+Up                                cleaning, flush away traces with water.
+
+                                             7. Handling and Storage
+Handling                               Handle product only in closed system or provide appropriate exhaust ventilation. Wear
+                                       personal protective equipment/face protection. Do not get in eyes, on skin, or on clothing.
+
+
+______________________________________________________________________________________________
+
+                                                            Page 3 / 9
+Sulfuric acid                                                            Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+                                          Do not breathe (dust, vapor, mist, gas). Do not ingest. If swallowed then seek immediate
+                                          medical assistance.
+
+Storage.                                  Keep containers tightly closed in a dry, cool and well-ventilated place. Corrosives area.
+                                          Incompatible Materials. Strong oxidizing agents. Combustible material. Bases. Organic
+                                          materials. Reducing Agent. Finely powdered metals. Peroxides.
+
+                                 8. Exposure controls / personal protection
+Exposure Guidelines
+
+         Component                 ACGIH TLV                    OSHA PEL                     NIOSH               Mexico OEL (TWA)
+         Sulfuric acid            TWA: 0.2 mg/m3          (Vacated) TWA: 1 mg/m3        IDLH: 15 mg/m3            TWA: 0.2 mg/m3
+                                                              TWA: 1 mg/m3            REL = 1 mg/m3 (TWA)
+
+
+Legend
+
+ACGIH - American Conference of Governmental Industrial Hygienists
+OSHA - Occupational Safety and Health Administration
+NIOSH: NIOSH - National Institute for Occupational Safety and Health
+
+
+Engineering Measures                      Handle in a place equipped with local exhaust ventilation. Ensure that eyewash stations
+                                          and safety showers are close to the workstation location.
+
+Personal Protective Equipment
+
+    Eye/face Protection                   Wear appropriate protective eyeglasses or chemical safety goggles as described by
+                                          OSHA's eye and face protection regulations in 29 CFR 1910.133 or European Standard
+                                          EN166.
+
+    Skin and body protection              Wear appropriate protective gloves and clothing to prevent skin exposure.
+
+    Respiratory Protection                Follow the OSHA respirator regulations found in 29 CFR 1910.134 or European Standard
+                                          EN 149. Use a NIOSH/MSHA or European Standard EN 149 approved respirator if
+                                          exposure limits are exceeded or if irritation or other symptoms are experienced.
+
+    Recommended Filter type:              Particulates filter conforming to EN 143. Acid gases filter. Type E. Yellow. conforming to
+                                          EN14387.
+
+    Hygiene Measures                      Handle in accordance with good industrial hygiene and safety practice.
+
+                                      9. Physical and chemical properties
+
+Appearance
+Physical State                            Liquid
+Color                                     Colorless
+Odor                                      Odorless
+Odor Threshold                            No information available
+Property                                  Values                                   Remarks        •Met
+                                                                                                     hod
+Melting Point/Range                       10 °C / 50 °F
+Softening Point                           No data available
+Boiling Point/Range                       290 °C / 554 °F
+Flash Point                               No information available                 Method - No information available
+Flammability (liquid)                     No data available
+Flammability (solid,gas)                  Not applicable                           Liquid
+Explosion Limits                          No data available
+
+Autoignition Temperature                  No data available
+Decomposition Temperature                 340 °C
+
+______________________________________________________________________________________________
+
+                                                               Page 4 / 9
+Sulfuric acid                                                            Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+pH                                     1                                         1N aq.sol
+Viscosity                             21mPa.s @ 25 °C
+Water Solubility                      Miscible
+Solubility in other solvents          No information available
+Partition Coefficient (n-octanol/water)
+Vapor Pressure                        1 mmHg @ 146 °C
+Density / Specific Gravity             1.840
+Bulk Density                          Not applicable                            Liquid
+Vapor Density                         No data available                         (Air = 1.0)
+Particle characteristics              Not applicable (liquid)
+
+Other Information
+Molecular Formula                       H2 O4 S
+Molecular Weight                        98.07
+
+
+
+                                              10. Stability and reactivity
+Reactive Hazard                         Yes
+
+Stability                               Water reactive. Hygroscopic.
+
+Conditions to Avoid                     Incompatible products. Excess heat. Exposure to moist air or water.
+
+Incompatible Materials                  Strong oxidizing agents, Combustible material, Bases, Organic materials, Reducing Agent,
+                                        Finely powdered metals, Peroxides
+
+Hazardous Decomposition Products Hydrogen, Sulfur oxides
+
+Hazardous Polymerization                Hazardous polymerization does not occur.
+
+Hazardous Reactions                     Contact with metals may evolve flammable hydrogen gas. Reacts violently with water.
+
+                                          11. Toxicological information
+Information on expected route of exposure
+
+Inhalation                              Causes severe burns. May be harmful if inhaled.
+Ingestion                               Causes severe burns. May be harmful if swallowed.
+Eyes                                    Causes severe burns.
+Skin                                    Causes severe burns. May be harmful in contact with skin.
+
+Toxicology data for the components
+
+              Component                           LD50 Oral                     LD50 Dermal                     LC50 Inhalation
+              Sulfuric acid                    2140 mg/kg ( Rat )                    -                    LC50 = 0.375 mg/L ( Rat ) 4 h
+
+
+Toxicologically Synergistic             No information available
+Products
+
+(b) skin corrosion/irritation;          Category 1 A
+
+
+(c) serious eye damage/irritation;      Category 1
+
+
+(d) respiratory or skin sensitization;
+    Respiratory                        Based on available data, the classification criteria are not met
+    Skin                               Based on available data, the classification criteria are not met
+
+
+______________________________________________________________________________________________
+
+                                                             Page 5 / 9
+Sulfuric acid                                                            Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+
+(e) germ cell mutagenicity;           Based on available data, the classification criteria are not met
+
+(f) carcinogenicity;                  Based on available data, the classification criteria are not met
+                                      The table below indicates whether each agency has listed any ingredient as a carcinogen
+
+    Component             CAS No             IARC                  NTP               ACGIH             OSHA               Mexico
+    Sulfuric acid        7664-93-9          Group 1               Known               A2                 X                 A2
+
+   IARC (International Agency for Research on Cancer)              IARC (International Agency for Research on Cancer)
+                                                                   Group 1 - Carcinogenic to Humans
+                                                                   Group 2A - Probably Carcinogenic to Humans
+                                                                   Group 2B - Possibly Carcinogenic to Humans
+   ACGIH: (American Conference of Governmental Industrial          A1 - Known Human Carcinogen
+   Hygienists)                                                     A2 - Suspected Human Carcinogen
+                                                                   A3 - Animal Carcinogen
+                                                                   ACGIH: (American Conference of Governmental Industrial Hygienists)
+(g) reproductive toxicity;            Based on available data, the classification criteria are not met
+
+
+
+
+(h) STOT-single exposure;             Based on available data, the classification criteria are not met
+
+
+
+(i) STOT-repeated exposure;           Based on available data, the classification criteria are not met
+
+   Target Organs                      None known.
+
+
+(j) aspiration hazard;                Based on available data, the classification criteria are not met
+
+Symptoms / effects,both acute and Product is a corrosive material. Use of gastric lavage or emesis is contraindicated.
+delayed                           Possible perforation of stomach or esophagus should be investigated. Ingestion causes
+                                  severe swelling, severe damage to the delicate tissue and danger of perforation.
+
+
+Other Adverse Effects                 The toxicological properties have not been fully investigated.
+
+Endocrine Disrupting Properties       This product does not contain any known or suspected endocrine disruptors.
+
+                                           12. Ecological information
+Ecotoxicity
+Do not empty into drains. Large amounts will affect pH and harm aquatic organisms.
+
+       Component              Freshwater Algae             Freshwater Fish                Microtox                  Water Flea
+       Sulfuric acid                 -                LC50: > 500 mg/L, 96h static            -                  EC50: 29 mg/L/24h
+                                                          (Brachydanio rerio)
+
+Persistence and Degradability         Miscible with water Persistence is unlikely based on information available.
+
+Bioaccumulation/ Accumulation         No information available.
+
+Mobility                              Will likely be mobile in the environment due to its water solubility.
+
+                                         13. Disposal considerations
+Waste Disposal Methods                Chemical waste generators must determine whether a discarded chemical is classified as a
+                                      hazardous waste. Chemical waste generators must also consult local, regional, and
+                                      national hazardous waste regulations to ensure complete and accurate classification.
+
+
+______________________________________________________________________________________________
+
+                                                             Page 6 / 9
+Sulfuric acid                                                            Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+                                                 14. Transport information
+DOT
+   UN-No                                  UN1830
+   Proper Shipping Name                   SULFURIC ACID
+   Hazard Class                           8
+   Packing Group                          II
+ TDG
+   UN-No                                  UN1830
+   Proper Shipping Name                   SULFURIC ACID
+   Hazard Class                           8
+   Packing Group                          II
+IATA
+   UN-No                                  UN1830
+   Proper Shipping Name                   SULFURIC ACID
+   Hazard Class                           8
+   Packing Group                          II
+IMDG/IMO
+   UN-No                                  UN1830
+   Proper Shipping Name                   SULFURIC ACID
+   Hazard Class                           8
+   Packing Group                          II
+                                               15. Regulatory Information
+United States of America Inventory
+
+          Component                     CAS No                TSCA              TSCA Inventory notification -    TSCA - EPA Regulatory
+                                                                                      Active-Inactive                    Flags
+           Sulfuric acid               7664-93-9                X                        ACTIVE                            -
+
+Legend:
+TSCA US EPA (TSCA) - Toxic Substances Control Act, (40 CFR Part 710)
+X - Listed
+'-' - Not Listed
+
+TSCA - Per 40 CFR 751, Regulation of Certain Chemical                  Not applicable
+Substances & Mixtures, Under TSCA Section 6(h) (PBT)
+
+TSCA 12(b) - Notices of Export                                         Not applicable
+
+
+
+International Inventories
+Canada (DSL/NDSL), Europe (EINECS/ELINCS/NLP), Philippines (PICCS), Japan (ENCS), Japan (ISHL), Australia (AICS), China (IECSC), Korea
+(KECL).
+
+          Component                   CAS No         DSL      NDSL       EINECS     PICCS    ENCS     ISHL      AICS   IECSC     KECL
+          Sulfuric acid              7664-93-9        X         -       231-639-5     X        X        X         X      X      KE-32570
+
+KECL - NIER number or KE number (http://ncis.nier.go.kr/en/main.do)
+
+U.S. Federal Regulations
+
+SARA 313
+Section 313 of Title III of the Superfund Amendments and Reauthorization Act of 1986 (SARA). This product contains a chemical
+or chemicals which are subject to the reporting requirements of the Act and Title 40 of the Code of Federal Regulations, Part 372.
+
+       Component                      CAS No                     Weight %               SARA 313 - Threshold     SARA 313 - Reporting
+                                                                                             Values %               threasholds
+       Sulfuric acid                 7664-93-9                        >95                      1.0 %                      -
+
+SARA 311/312 Hazard Categories
+
+______________________________________________________________________________________________
+
+                                                               Page 7 / 9
+Sulfuric acid                                                            Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+Should this product meet EPCRA 311/312 Tier reporting criteria at 40 CFR 370, refer to Section 2 of this SDS for appropriate
+classifications.
+
+CWA (Clean Water Act)
+        Component                       CWA - Hazardous            CWA - Reportable      CWA - Toxic Pollutants CWA - Priority Pollutants
+                                          Substances                 Quantities
+           Sulfuric acid                       X                       1000 lb                       -                          -
+
+Clean Air Act                              Not applicable
+
+OSHA - Occupational Safety and             Not applicable
+Health Administration
+
+
+CERCLA
+This material, as supplied, contains one or more substances regulated as a hazardous substance under the Comprehensive
+Environmental Response Compensation and Liability Act (CERCLA) (40 CFR 302) or the Superfund Amendments and
+Reauthorization Act (SARA) (40 CFR 355).
+
+                       Component                             Hazardous Substances       CERCLA Extremely            SARA Reportable Quantity
+                                                                     RQs               Hazardous Substances                 (RQ)
+                                                                                               RQs
+                       Sulfuric acid                                1000 lb                   1000 lb                       1000 lb
+                                                                                                                            454 kg
+
+California Proposition 65                  This product contains the following Proposition 65 chemicals.
+
+      Component                         CAS No                 California Prop. 65         Prop 65 NSRL                     Category
+       Sulfuric acid                   7664-93-9                   Carcinogen                    -                         Carcinogen
+U.S. State Right-to-Know
+Regulations
+
+       Component                Massachusetts              New Jersey          Pennsylvania              Illinois           Rhode Island
+       Sulfuric acid                 X                         X                    X                        X                  X
+
+U.S. Department of Transportation
+Reportable Quantity (RQ):                  Y
+DOT Marine Pollutant                       N
+DOT Severe Marine Pollutant                N
+
+U.S. Department of Homeland                This product does not contain any DHS chemicals.
+Security
+
+Other International Regulations
+
+Mexico - Grade                             No information available
+
+
+Authorisation/Restrictions according to EU REACH
+
+           Component                           CAS No            REACH (1907/2006) -      REACH (1907/2006) -        REACH Regulation (EC
+                                                                Annex XIV - Substances Annex XVII - Restrictions 1907/2006) article 59 -
+                                                                Subject to Authorization on Certain Dangerous          Candidate List of
+                                                                                               Substances           Substances of Very High
+                                                                                                                       Concern (SVHC)
+           Sulfuric acid                    7664-93-9                       -            Use restricted. See entry            -
+                                                                                                     75.
+                                                                                          (see link for restriction
+                                                                                                  details)
+
+REACH links
+https://echa.europa.eu/substances-restricted-under-reach
+
+
+______________________________________________________________________________________________
+
+                                                                 Page 8 / 9
+Sulfuric acid                                                            Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+
+
+Safety, health and environmental regulations/legislation specific for the substance or mixture
+
+       Component                  CAS No           OECD HPV         Persistent Organic      Ozone Depletion      Restriction of
+                                                                        Pollutant              Potential          Hazardous
+                                                                                                               Substances (RoHS)
+       Sulfuric acid           7664-93-9              Listed           Not applicable        Not applicable      Not applicable
+
+
+Contains component(s) that meet a 'definition' of per & poly fluoroalkyl substance (PFAS)?
+Not applicable
+
+
+
+Other International Regulations
+
+       Component                  CAS No       Seveso III Directive Seveso III Directive      Rotterdam         Basel Convention
+                                                 (2012/18/EC) -        (2012/18/EC) -       Convention (PIC)   (Hazardous Waste)
+                                              Qualifying Quantities Qualifying Quantities
+                                               for Major Accident    for Safety Report
+                                                   Notification        Requirements
+       Sulfuric acid           7664-93-9          Not applicable       Not applicable        Not applicable      Annex I - Y34
+
+
+
+                                              16. Other Information
+Prepared By                           Product stewardship (Regulatory Affairs)
+                                      Thermo Fisher Scientific
+                                      email - begel.sdsdesk@thermofisher.com
+
+Creation Date                         23-Jun-2009
+Revision Date                         19-Dec-2025
+Print Date                            19-Dec-2025
+Revision Summary                      Updatedt otheU.  S.Depar  tmentofLabor   ’sOccupat i
+                                                                                         onalSaf  etyandHeal    t
+                                                                                                                hAdmi nist
+                                                                                                                         rat
+                                                                                                                           ion
+                                      (OSHA) which published its Final Rule in the Federal Register revising the Hazard
+                                      Communication Standard (HCS/HazCom), 29 CFR 1910.1200 (2024) (HCS §1910.1200,
+                                      2024), May 20, 2024, effective July 19, 2024.
+
+                                                          Disclaimer
+  The information provided in this Safety Data Sheet is correct to the best of our knowledge, information and belief at the
+ date of its publication. The information given is designed only as a guidance for safe handling, use, processing, storage,
+   transportation, disposal and release and is not to be considered a warranty or quality specification. The information
+relates only to the specific material designated and may not be valid for such material used in combination with any other
+                                   materials or in any process, unless specified in the text
+
+                                                      End of SDS
+
+
+
+
+______________________________________________________________________________________________
+
+                                                         Page 9 / 9
+

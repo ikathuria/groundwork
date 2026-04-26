@@ -1,0 +1,460 @@
+Current and future metallization                                                                                                               Fab &
+                                                                                                                                               Facilities
+
+
+challenges and solutions for crystalline                                                                                                       Materials
+
+
+cell manufacturing                                                                                                                             Cell
+                                                                                                                                               Processing
+
+N.E. Posthuma, J. John, G. Beaucarne & E. Van Kerschaver, IMEC, Belgium                                                                        Thin
+This paper first appeared in the third print edition of Photovoltaics International journal.                                                   Film
+
+  ABSTRACT                                                                                                                                     PV
+  In any solar cell process, the metallization step is critical as it often sets conditions and limitations for the other process              Modules
+  steps. The main metallization technique used today in Si solar cell production is screen-printing of metallic pastes;
+  namely, Ag pastes for the front side, Al pastes for most of the rear side, and Ag or Ag-Al pastes for the solder pads at the                 Power
+  rear. While these techniques are clearly robust and convenient, they have limitations. Therefore, alternatives are being                     Generation
+  investigated. A technique that is presently finding its way into production is two-step metallization with Ag plating.
+  Another more radical approach is to avoid printing altogether, instead using some kind of ablation followed by plating.                      Market
+  For the rear, the full Al-BSF is being replaced by dielectric passivation and local Al-alloyed contacts. Back-contacted                      Watch
+  cells are increasingly being introduced in production, and they pose very specific challenges to metallization. For
+  the sustainability of Si photovoltaics, it is crucial that the future metallization solutions only make use of abundantly
+  available and non-toxic materials.
+
+
+Introduction                                      a
+Thick-film metallization by means
+of screen-printing is the contacting
+technique employed by more than 85%
+of photovoltaic solar cell manufacturers.
+The majority of solar cells produced
+worldwide are fabricated using silver
+thick-film contacts on the front and
+aluminum thick-film contacts on the rear
+side. In addition, solder pads on the rear
+are formed using Ag and Ag-Al pastes.
+A process simplification in the front and
+rear contact formation was enabled by the         b
+development of the silicon nitride firing-
+through process of the front side Ag paste
+and the formation of the back surface field
+(BSF) by an Al paste during the same firing
+step. This has elevated screen-printing to
+be classed as one of the key process steps
+in silicon solar cell manufacturing.
+
+
+
+   “Back-contacted cells are                    Figure 1. Schematic illustration showing (a) non-contact screen-printing, and
+                                                (b) in-contact screen-printing of a metal paste.
+increasingly being introduced
+ in production, and they pose                  silicon heterojunction (SHJ) have been          applied screen-printing pastes are soft-
+                                               developed. Finally, material availability       baked in a conveyor belt furnace. The
+    very specific challenges                   for future gigawatt production drives the       contact formation is performed in a high
+       to metallization.        ”              contact development towards alternative
+                                               metallization techniques adapted from
+                                                                                               temperature process using a firing furnace.
+                                                                                               In industrial applications, screen-printing
+                                               microelectronics and modified for the           lines can reach throughputs of 1500-2000
+  The demand towards high-efficiency           needs of the solar cell industry.               wafers/hour, with a typical line width of
+and low-cost solar cells has increased                                                         100 to 150μm.
+the research effort on thick-film contact      State-of-the-art                                   The printing process consists of three
+formation processes and pastes in the past     S c re en- pr i nti ng (se e Fig u re 1) is     single steps, illustrated in Figure 1. In the
+decade. Nevertheless, further reduction        established in high throughput solar cell       first step, the screen is covered with paste
+of the price/Wp requires processes             manufacturing as a reliable metallization       by moving a squeegee over the surface
+on larger and thinner wafers with              technology. The front side grid is printed      of the screen-printing mask in the filling
+higher throughputs. In this framework,         in one step while the rear side is contacted    phase. Secondly, the squeegee moves over
+novel cell concepts, such as metal             by a full area-covering Al paste and a          the screen, again applying an additional
+wrap-through (MWT), emitter wrap-              following Ag/Al contact pad, both of            vertical force that presses the screen on the
+through (EWT), back contact (BC) and           which are applied by screen-printing. The       wafer and the paste through the meshes of
+
+                                                                                                        Photovolt aic s Inter national              67
+               the mask. In the last step the mask is lifted,   applying a thin metal seed layer to create       metal seed-layer for solar cells is inkjet
+     Fab &     creating distance to the solar cell’s surface,   a good Ohmic contact between the metal           printing. This method has the capability
+  Facilities   which is known as the snap-off distance.         and the semiconductor and subsequently           to print very narrow lines and is a non-
+               The printing process is determined by            applying a thick highly conductive metal         contact technology, thus ideally suited
+               the following parameters: printing speed         layer. In this way, the amount of freedom        to printing on thin substrates. Most of
+ Materials     (squeegee speed), squeegee pressure and          of optimization of both the properties of        the research carried out so far has been
+               snap-off distance. The screen-printing           the solar cell contacts and the underlying       focused on direct printing of the complete
+      Cell     quality is determined by the printing            emitter is enlarged. The thin seed layer is      metallization pattern; in this case, however,
+Processing     parameters, the screen-printing paste and        optimized to contact a lowly-doped emitter,      multiple printing is needed to obtain a
+               the screen quality.                              with a surface dopant concentration of           sufficient thick and conductive metal
+                  Silver paste is the most commonly used        1x10 19 cm -3 . This seed layer can be, for      layer [3,4]. A key element of this process
+      Thin     material for front side metallization of         example, a silicide that has good electrical     is the development of a suitable ink as the
+      Film
+               silicon solar cells. Although a large variety    and mechanical properties. Decreasing the        viscosity of the ink should be sufficiently
+               of silver pastes is commercially available,      doping level of the emitter, compared to a       low in order to be printable.
+      PV       the composition is rather similar. The           profile suited to be contacted by screen-
+  Modules                                                                                                        Pad printing
+               pastes consist of silver particles, solvents,    printing, will most importantly result in        Pad printing is a metallization technique
+               glass frit and binding agents.                   enhanced surface passivation and will lead       based on gravure offset printing. The
+    Power         Ultimately, the goal of the contact           to higher energy conversion efficiencies.        metallic ink is spread out on the cliché, the
+Generation     formation is a good adhesion, a high aspect                                                       template with the imprinted image, after
+               ratio, a high line conductivity and a low                                                         which the patterned ink is transferred to
+   Market
+   Watch
+               Ohmic resistance between the contact and
+               the highly-doped emitter layer. The shape
+                                                                         “The shape of the                       the substrate by using a silicone pad. This
+               of the silver particles can vary between             silver particles can vary                    method allows for fine-line printing of well
+                                                                                                                 below 50μm, has the potential for high
+               flakes and spheres and are in the order of         between flakes and spheres                     throughput, and is compatible with current
+               1-10μm in size. The trade-off in the choice
+               of the particles’ shape and size is either the        and are in the order of                     solar cell technology since similar metal
+                                                                                                                 pastes can be used to apply the contact
+               density being too high or the formation of
+               agglomeration. The latter leads to clogging
+                                                                        1-10μm in size.          ”               [5,6,7]. Depending on the type of pad, the
+                                                                                                                 method can be suited to thin and uneven
+               of the screen and could be avoided by                                                             wafers. A disadvantage is that the paste
+               providing sufficient large screen openings          The second metal layer needs to be
+                                                                                                                 transfer from the template to the wafer
+               (where the opening is approximately five         optimized to be highly conductive, so the
+                                                                                                                 is rather limited, giving rise to a relatively
+               times larger than the particle size). Other      natural choice for this material is silver
+                                                                                                                 thin metal layer. Using the pad-printed line
+               compromises are decided upon by defining         or copper. For front contacted solar cells
+                                                                                                                 as a seed layer subsequently thickened by
+               the viscosity and the relaxation time, which     it is important that a narrow seed layer
+                                                                                                                 metal plating is a promising solution and
+               is the paste’s or another system’s need          is deposited and that the subsequently
+                                                                                                                 has so far resulted in efficiencies of 17.9%
+               to return from low viscosity back to high        applied thick metal layer will not cause too
+                                                                                                                 on 10x10cm2 CZ c-Si substrates [8].
+               viscosity.                                       much widening of the contacts compared
+                  The lead-oxide silicate glass frit            to the width of the seed layer, such that a      Aerosol jet printing
+               is responsible for adhesion, contact             low degree of shadowing underneath the           Another interesting method for seed layer
+               formation and line conductivity. It provides     contacts can be achieved.                        deposition is aerosol jet printing [9]. In this
+               the penetration through the SiN x layer,                                                          case, the metal-containing ink is converted
+                                                                Metallization based on silver
+               assists silver crystallization and reduces the                                                    into an aerosol, a colloid with small sized
+                                                                A first implementation of the two-layer
+               melting point of silver.                                                                          metal particles suspended in a gas. In order
+                                                                concept for front side metallization is
+                  Contact formation is performed using                                                           to be able to print thin lines of metal, the
+                                                                based on fine line printing in combination
+               an inline firing belt furnace with different                                                      aerosol is focused onto the substrate by an
+                                                                with (light-induced) silver plating. Using
+               heat zones. In first heat zone the solvents                                                       additional gas flow. This method allows
+                                                                this kind of process most resembles the
+               are evaporated at maximum temperatures                                                            for printing of very narrow line features
+                                                                traditional screen-printing of silver. There
+               of 300°C. The temperature is ramped up                                                            down to a width of 14μm. Furthermore,
+                                                                are several techniques under investigation
+               to 500°C in the second heat zone, at which                                                        it is shown that the line width is constant
+                                                                for application of the thin seed layer by
+               point the organic binders in the paste are                                                        on uneven surfaces and is well-suited for
+                                                                printing means. Advanced screen-printing,
+               burned. In the next heat zone, the contact                                                        very thin and fragile samples. Even so,
+                                                                inkjet printing, pad printing, aerosol jetting
+               is formed by applying fast temperature                                                            the printed metal line can still be fired
+                                                                and sintering of metal powder will be
+               ramping between 800 and 900°C. The                                                                through a layer of silicon nitride when
+                                                                discussed later.
+               high temperature is applied for up to five                                                        using slightly modified standard metal
+               seconds and subsequently cooled down to          Advanced fine-line screen-printing               pastes. Using aerosol jet printing of a
+               room temperature.                                Advanced fine-line screen-printing is            silver seed layer in combination with light-
+                  Aluminum-containing pastes are most           the metallization method most related to         induced silver plating to thicken the layer,
+               often used for the rear side contact. By         traditional screen-printing. Using hot melt      a solar cell efficiency of 20.3% has been
+               firing the paste into the silicon at high        ink instead of traditional paste is one way      reached on float zone silicon wafers [9].
+               temperatures – a step that is performed          to reduce the line width of the applied          Aerosol jet printing can also be combined
+               simultaneously with the front side               fingers [1]. This type of ink is solid at room   with hot melt ink to further enhance the
+               contact – a BSF is formed. A thickness           temperature and is printed at temperatures       properties of the deposited metal lines
+               of approximately 20μm of aluminum is             in the range of 50 to 80°C by heating the        [10]. An aerosol printer has recently been
+               required for the BSF formation to take           screen and the squeegee, a process that has      developed that can print a solar cell every
+               place correctly.                                 resulted in demonstration of metal lines as      2.5 to 3 seconds [11].
+                                                                narrow as 60μm. Application on the solar
+                                                                                                                 Laser micro-sintering
+               Two-step metal process                           cell level results in increased efficiencies
+                                                                                                                 Laser micro-sintering is a technique
+               As an alternative to the state-of-the art        compared to standard screen-printing with
+                                                                                                                 whereby a metal powder is distributed over
+               metallization technologies, an interesting       fill factors up to 80.6% [2].
+                                                                                                                 the wafer area. Subsequently, the powder
+               concept is the two-step metal process.           Inkjet printing                                  is locally heated by a laser [12], such that
+               This process is based on the idea of first       An emerging method of printing a                 the metal powder will melt locally. As a
+
+    68         w w w. p v - te ch. o rg
+result, a thin metal seed layer is obtained,
+which can have a line width of less than            a                                                                                      Fab &
+30μm. During the laser sintering process,                                                                                                  Facilities
+the metal also penetrates through the
+dielectric passivation layer. Care should be
+                                                                                                                                           Materials
+taken to avoid shunting of the solar cell, as
+in some cases the metal might move too
+deep into the silicon. Advantages of this                                                                                                  Cell
+metallization method are the reduction in                                                                                                  Processing
+thermal budget of the complete process,
+the applicability on thin and fragile
+                                                                                                                                           Thin
+samples, easy recycling of remaining
+                                                                                                                                           Film
+metal powder and a reduction in contact
+resistance compared to printing techniques
+where a metal paste is used. In the case of                                                                                                PV
+                                                    b                                                                                      Modules
+first realized solar cell structures, a best
+cell efficiency of more than 14% has been
+reached using tungsten as the seed layer                                                                                                   Power
+metal, where the chosen high-doping level                                                                                                  Generation
+of the emitter is the main reason for the
+limited performance [12].                                                                                                                  Market
+   On top of the applied seed-layer, a thick                                                                                               Watch
+highly conductive layer can be deposited
+by silver plating [13,14]. This can be
+electroless plating, electro-plating or light-
+induced plating. The main advantage of
+light-induced plating, where the current
+generated by the illuminated solar cell
+itself is used to plate the metal, as opposed
+to classical electro-plating, is that the front
+contact grid does not have to be contacted,
+                                                  Figure 2. Illustration of different cell concepts using the two-metal-layer concept,
+thus simplifying the wafer handling. In
+                                                  showing (a) a buried contact solar cell, and (b) a cell with laser ablated openings in
+the first instance, silver is a well-suited
+                                                  the dielectric layers in combination with a self-aligning metal plating process.
+metal to the process as no barrier layers
+
+
+
+
+                                                                                                         Photovolt aic s Inter national         69
+                                                                                                               will take place on the dielectric. The
+     Fab &       a
+                                                                                                               nickel seed layer can then be converted
+  Facilities                                                                                                   into a silicide by thermal treatment.
+                                                                                                               The metal contact will be finalized
+                                                                                                               by electro- or light-induced plating of
+ Materials
+                                                                                                               copper. As an alternative to laser ablation,
+                                                                                                               photolithography [21] and inkjet masking
+      Cell                                                                                                     [22,23] are used in combination with wet-
+Processing                                                                                                     chemical etching to locally remove the
+                                                                                                               dielectric. Using a lab-scale process to
+                                                                                                               show the feasibility of the electroless nickel
+      Thin
+                                                                                                               plating and copper plating has resulted in
+      Film
+                                                                                                               best cell efficiencies of 21.4% on FZ-Si with
+                                                                                                               a cell area of 45.75cm2 [21].
+      PV
+  Modules                                                                                                      Metallization for back-contact
+                 b                                                                                             cells
+    Power                                                                                                      Contact formation for back-contacted
+Generation                                                                                                     solar cells imposes specific demands on
+                                                                                                               the metallization concept.
+   Market                                                                                                         In the c a se of the well-k now n
+   Watch                                                                                                       metallization wrap-through structure
+                                                                                                               (MWT) (see Figure 3a), the metallization
+                                                                                                               is very specific as it is the only back contact
+                                                                                                               cell structure that has metal grids of the
+                                                                                                               same polarity both on the front and rear
+                                                                                                               surface of the cell. The interconnection of
+                                                                                                               the grids through small holes in the cell is
+                                                                                                               easily done by technologies like screen-
+                                                                                                               printing or plating; it is expected that
+                                                                                                               the new developments would be able to
+               Figure 3. Schematic illustration of back-contact solar cell concepts, showing                   perform equally as well.
+               (a) a metallization wrap-through cell (MWT), and (b) a cell with interdigitated                    For all back-contact structures, such
+               back contacts (IBC).                                                                            as that shown in Figure 3b, large-scale
+                                                                                                               implementation ultimately relies on a low-
+               are needed in this case to prevent silver       deposition of the dielectric, a selective       cost way of contacting regions of different
+               diffusion into the silicon. Of late, special    emitter can be made relatively easily by        polarities with tight tolerances on the rear
+               chemical solutions, both cyanide-based          performing a heavy second diffusion,            surface of the cells. Particularly for back
+               and cyanide-free, are being optimized           where the dielectric serves to protect          junction concepts, this is very challenging
+               for solar cells, especially for light-induced   the area outside the grooves. Nickel is         as the concept imposes that the base-
+               plating where clear solutions are needed to     electroless-plated in the grooves and           contact regions are sufficiently small to
+               allow for the illumination of the solar cell.   on the rear of the cell. Subsequently it is     maintain a high collection probability,
+                                                               sintered to create the silicide that prevents   whereas the need for majority carriers
+               Metallization based on copper                   copper diffusion into the silicon and to        to flow through the base towards these
+               A second more radical implementation of         improve the adhesion properties. Finally,       contact regions imposes a high density
+               the two-layer concept is the application        a thick layer of copper is plated on top of     of these regions. The lateral current of
+               of the seed layer by electroless plating and    this seed layer. Due to the narrow buried       majority carriers through the base of
+               subsequent combination with copper or           contacts, this high efficiency process          the cell also occurs at the location of the
+               silver (electro)plating (see Figure 2). It is   allows for an industrial implementation         connection pads of the emitter area. These
+               expected that, in the near future, copper       on both mono- and multi-crystalline             pads must have a sufficiently large area to
+               will be used more and more for silicon          substrates, and has so far resulted in a        connect electrical leads to it, but it pays to
+               solar cells due to its lower cost relative to   large area efficiency of 17.5% [19] and         reduce their width as much as possible.
+               silver [15]. The metal seed layer can be        18.1% [18] on multi-crystalline 156.25cm2          The use of photolithography
+               converted into a silicide, which will be        and 137cm 2 substrates, respectively.           throughout the processing permits for
+               beneficial in terms of adhesion and can         Even lower optical losses are expected          the definition and alignment of contact
+               also serve as a barrier layer against copper    for angled buried contact cells, where the      windows and regions without excessive
+               diffusion.                                      groove is made under an angle in order to       shunting. It also relatively easily allows
+                  A well-known concept using a layer           maximize the optical properties of this cell    for separating the actual contact area and
+               of plated nickel and copper is the buried       design [18].                                    the real metallization coverage of the rear
+               contact cell process [16,17,18], shown in          A more recent application of plated          of the cells, keeping a large part of the
+               Figure 2a. In this case, for example, 40μm-     nickel and copper (or silver) contacts has      metal-covered area at the rear of the cell
+               deep contact grooves are realized at the        been triggered by the development of new        separated from the semiconductor by use
+               front of the cell by mechanical abrasion,       laser technologies (see Figure 2b). Instead     of a dielectric. However, processes with
+               which can be done by using a 15μm-thin          of making a deep groove, a dedicated laser      multiple aligned lithographic steps can
+               dicing blade [19]. The contact grooves          process, using a picosecond laser, is used      hardly be applied in a high-throughput
+               can also be made by application of a laser      to ablate the dielectric front surface layer    production line. For traditional screen-
+               [16]. In this way narrow contact lines          without creating relevant damage to the         printing on the other hand, the act of
+               are created, which results in decreased         emitter [20]. After locally removing this       forming several metal grids on a single
+               shadow losses compared to screen-printed        anti-reflection coating, the nickel seed        surface with very tight tolerances of
+               contacts. Since the grooves are made after      layer can be grown selectively on the           line width and spacing is extremely
+               surface texturing, emitter diffusion and        bare silicon areas, while no deposition         challenging. This is even more stressed
+
+    70         w w w. p v - te ch. o rg
+for successive metallizations on the same     Sustainability issues                           of this property, no straightforward
+surface, as the height of the deposited       In order to be consistent with mass             substitute has been found. Bi is used in               Fab &
+pattern during the first print tends to                                                       some pastes, but it is more expensive and              Facilities
+                                              production with low environmental
+make the second print less accurate.          impact, the sustainability of the selected      not yet considered quite as effective as Pb.
+The latter can be resolved by contactless     metallization solutions has to be considered    It should be noted that photovoltaic panels
+                                                                                                                                                     Materials
+methods that are being introduced to          carefully. Firstly, the materials used should   are presently exempted from the European
+replace screen-printing, such as metal        be available in the huge amounts required,      RoHS Legislation (Reduction of Hazardous
+jetting. The conductivity of both the         an aspect that is closely linked with the       Substance) that would otherwise exclude                Cell
+base and emitter metallization has to be      materials’ cost. A shortage of a substance      the use of Pb in solar cell production [25].           Processing
+sufficiently high to limit an increase of     on the world markets immediately results        This is not conducive to a quick phase-out
+series resistance invoked by replacing the    in a sharp cost increase. Al is abundantly      of Pb in metallization pastes.
+                                                                                                                                                     Thin
+full coverage of the former metallization     available and therefore poses no problem.          The introduction of plating in solar
+                                                                                                                                                     Film
+with a gridded structure. This leads to       The long-term availability of Ag, on the        cell production poses an additional
+the use of highly conductive materials for    other hand, is a subject of debate. Some        e n v i r o n m e n t a l c h a l l e n g e . To b e
+both contact grids.                                                                           environmentally acceptable, plating                    PV
+                                              studies indicate that the consumption of
+   Whereas silver could be used for both                                                      solutions need to receive appropriate                  Modules
+                                              Ag by the photovoltaic industry will be
+contacts, the cost related to the abundant    such that the need will exceed the available    treatment after use, which adds to costs.
+use of Ag would be prohibitive of its use.    resources by 2040 [24]. Others point out        Plating solutions that generate small                  Power
+Plating of Cu as a relatively low cost and    that the large volumes of Ag previously         volumes of waste per volume of deposited               Generation
+highly conductive material onto a layer       used in the photographic industry are now       metal (e.g. galvanic plating) therefore have
+that acts as an electrical contact and        available for the photovoltaic industry. In     an advantage over other plating techniques.            Market
+diffusion barrier for the metal into the      any case, it is clear that recycling of this                                                           Watch
+semiconductor could resolve this problem.     precious metal will become mandatory for        Summary
+Plating technologies such as light-induced    a Terawatt industry.                            Crystalline Si solar cells are likely to
+plating that are being investigated for          The main components of the metallic          continue to dominate the photovoltaic
+conventional cells, however, will hardly be   screen-printing pastes, Ag and Al, are non-     industry over the next two decades. At
+applicable when the metal is expected to      toxic. However, the pastes do contain non-      the moment, screen-printing of Ag and Al
+be built up on both polarities at the same    negligible amounts of toxic substances.         pastes is the most widespread technique,
+time. The latter will rely much more on       Cadmium was a common ingredient in              albeit a technology that is reaching its limits
+the background knowledge that has been        the past, but has now disappeared from          in terms of performance and throughput.
+built up in the back-end technology of        most commercial pastes. Lead, however,          Plating is starting to find its way into the
+semiconductor processes on the use of         is difficult to replace. The PbO in the glass   industry, initially as a means to improve the
+formation of seed layers and subsequent       frit gives the pastes the property of firing    conductance of screen-printed contacts,
+electroplating.                               through silicon nitride, and for replication    but in the longer term as part of alternative
+
+
+
+
+                                                                                                         Photovolt aic s Inter national                   71
+               metallization techniques that will involve              solar cells by light-induced silver               About the Authors
+     Fab &     totally new process sequences. For the                  plating’, Proceedings of the IEEE 4th                           Niels Posthuma obtained
+  Facilities   sustainability of Si photovoltaics, it is               world conference on photovoltaic                                his Ma ster ’s de g re e i n
+               crucial that the future solutions only make             energy conversion, pp.1056-1059.                                electrical engineering
+               use of abundantly available and non-toxic          [14] Radtke, V. et al 2008, ‘Understanding                           i n Ja n u a r y 2 0 0 0 f ro m
+ Materials
+               materials.                                              the electrochemical mechanisms of                               the Technical University
+                                                                       light-induced plating by means of                               Twente, the Netherlands.
+               References                                                                                                He focused his Ph.D. research on the
+      Cell                                                             voltammetric techniques’, Proceedings
+               [1] Williams, T. et al 2002, ‘Hot melt ink                                                                topic of germanium bottom cells at IMEC,
+Processing                                                             of the 23rd European PVSEC, pp.
+                   technology for crystalline silicon solar                                                              Belgium and obtained his Ph.D. degree
+                                                                       1785-1788.
+                   cells’, Proceedings of the 29th IEEE                                                                  in 2006 from the faculty of Engineering
+      Thin         Photovoltaic Specialist Conference,            [15] L ondon Fi x [av ail able onl i ne
+                                                                                                                         of the Catholic University of Leuven. He
+      Film         pp. 352-355.                                        at: http://w w w.kitco.com/gold.
+                                                                                                                         then continued his research at IMEC on
+                                                                       londonfix.html]; London Metal
+               [2] Mette, A. et al, ‘Hot melt ink for the                                                                highly efficient germanium and silicon
+      PV                                                               Exchange [available online at: http://
+                   front side metallization of silicon                                                                   solar cells, where he is currently leading
+  Modules                                                              www.lme.co.uk/].
+                   solar cells’, Proceedings of the 20th                                                                 the high efficiency and rear-contact solar
+                   European PVSEC, pp. 873-876.                   [16] Green, M.A. et al 1988, ‘20% efficient            cell team.
+    Power                                                              laser grooved, buried contact silicon
+               [3] Curtis, C.J. et al 2006, ‘Multi-layer inkjet
+Generation                                                             solar cell’, Proceedings of the 20th                             Joachim John received his
+                   printed contacts for silicon solar cells’,
+                                                                       I E E E p h o t o v o l t ai c sp e c i ali s t                  diploma degree in physics
+                   Proceedings of the IEEE 4th world
+                                                                       conference, pp. 411-414.                                         from the Albert-Ludwigs-
+   Market          conference on photovoltaic energy
+   Watch           conversion, pp.1305-1308.                      [17] Green, M.A. et al 1991, ‘Present                                 University in Freiburg in
+                                                                       status of buried contact solar cells’,                           1993 and his Ph.D. in physics
+               [4] Te n g , K . F. & Ve st , R .W. 1 9 9 8 ,
+                                                                       Proceedings of the 22nd IEEE                                     from the Federal Institute of
+                   ‘Application of Ink jet technology
+                                                                       photovoltaic specialist conference,               Technology (ETH) in Zürich, Switzerland
+                   on photovoltaic metallization’, IEEE
+                                                                       pp. 46-53.                                        in 1997. He joined IMEC in 1998, where
+                   Electron Device Letters, Vol. 9 (No.
+                                                                  [18] Weeber, A.W. et al 2006, ‘Record cell             he is presently engaged in the development
+                   11), pp. 591-592.
+                                                                       efficiencies on mc-Si and a roadmap               of industrial silicon solar cells. Since 2002,
+               [5] Huljić, D.M. et al 2002, ‘Pad printed                                                                 Joachim John has held the role of Section
+                                                                       towards 20%, the EC project topsicle’,
+                   front contacts for c-Si solar cells                                                                   Head, Team and Project Leader in the
+                                                                       Proceedings of the 21st European
+                   – a technological and economical                                                                      Process Technology Division in IMEC.
+                                                                       PVSEC, pp. 560-565.
+                   evaluation’, P ro ce e ding s of the
+                   29th IEEE Photovoltaic Specialist              [19] Jooss, W. et al 2002, ‘Large area
+                                                                                                                                       Guy Beaucarne received
+                   Conference, pp. 126-129.                            multicrystalline silicon buried contact
+                                                                                                                                       his Ma ster ’s de g re e i n
+                                                                       solar cells with bulk passivation and
+               [6] Huljić, D.M. et al 2001, ‘Large area                                                                                engineering in 1995 from
+                                                                       an efficiency of 17.5%’, Proceedings
+                   crystalline silicon solar cells with                                                                                the Catholic University of
+                                                                       of the 29th IEEE photovoltaic
+                   pad printed front side metallization’,                                                                              Leuven (KUL), Belgium.
+                                                                       specialist conference, pp. 202-205.
+                   Proceedings of the 17th European                                                                                    He did his Ph.D. research
+                   PVSEC, pp. 1582-1585.                          [20] Hermann, S. et al 2008, ‘Process                  in the field of thin-film silicon solar cells
+                                                                       characterization of picosecond laser              at IMEC, Belgium and obtained his Ph.D.
+               [7] Pysch, D. et al 2008, ‘Comprehensive                ablation of SiO 2 and SiN x layers
+                   analysis of advanced solar cell contacts                                                              degree from the KUL in 2000. In 2001, he
+                                                                       on planar and textured surfaces’,                 was a post-doc at the University of New
+                   consisting of printed fine-line seed                Proceedings of the 23rd European
+                   layers thickened by silver plating’,                                                                  South Wales, Australia and he later joined
+                                                                       PVSEC, pp. 1204-1208.                             Pacific Solar in Australia. In February
+                   Progress in photovoltaics: Research
+                   and applications.                              [21] Kim, D.S. et al 2005, ‘Low-cost                   2003, he returned to IMEC in Belgium to
+                                                                       contact formation of high-efficiency              lead the Solar Cell Technology group.
+               [8] Mette, A. 2007, ‘New concepts for front             crystalline silicon solar cells by
+                   side metallization of industrial silicon            plating’, Journal of the Korean                   Emmanuel Van Kerschaver received his
+                   solar cells’, Ph.D. thesis, Fraunhofer-             phy sic al so ciet y , Vol. 46 (5),               engineering degree in electronics in 1994
+                   Institut für Solare Energiesysteme.                 pp. 1208-1212.                                    from the Catholic University of Leuven,
+               [9] Hörteis, M. & Glunz, S.W. 2008,                [22] Lennon, A.J. et al 2008, ‘Forming                 Belgium. He received his Ph.D. from the
+                   ‘Fine line printed silicon solar cells              openings to semiconductor layers of               same university in 2002 based on his
+                   exceeding 20% efficiency’, Progress                 silicon solar cells by inkjet printing’,          research in the field of back contacted
+                   in photovoltaics: Research and                      Solar Energy Materials & Solar                    solar cells at IMEC. Subsequently, he
+                   applications, Vol 16, pp. 555-560.                  Cells, Vol. 92, pp.1410-1415.                     continued working at IMEC as senior
+               [10] Hörteis, M., Richter, P. & Glunz,                                                                    R&D engineer and since early 2009 he has
+                                                                  [23] Alemán, M.et al 2008, ‘Industrially
+                     S.W. 2008, ‘Improved front side                                                                     been Head of the Solar Cell Technology
+                                                                       feasible front-side metallization based
+                     metallization by aerosol jet printing of                                                            group at IMEC overlooking inorganic
+                                                                       on ink-jet masking and nickel plating’,
+                     hot melt inks’, Proceedings of the 23rd                                                             solar cell activities.
+                                                                       Proceedings of the 23rd European
+                     European PVSEC, pp. 1402-1405.                    PVSEC, pp.1953-1956.
+               [11] Optomec website [available online                                                                    Enquiries
+                                                                  [24] Wyers, P. & de Wild, M. 2003,
+                     at: http://www.optomec.com/site/                                                                    Niels Posthuma
+                                                                       ‘Material requirements and availability
+                     aerosol_jet_6].                                                                                     IMEC
+                                                                       for mono-and multi-crystalline silicon
+               [12] Alemán, M. et al 2006, ‘Laser micro-                                                                 Kapeldreef 75
+                                                                       solar cells’, Presented at the EUROPV
+                     sintering as a new metallization                                                                    B-3000 Leuven
+                                                                       2003, Granada, Spain (7th-12th
+                     technique for silicon solar cells’,                                                                 Belgium
+                                                                       November, 2003).
+                     Proceedings of the 21st European             [25] Alsema, E. 2008, ‘Environmental aspects           Tel: +32 16 288178
+                     PVSEC, pp. 705-708.                               of metallization’, Presented at the Crystal       Fax: +32 16 281501
+               [13] Mette, A. et al 2006, ‘Increasing the              Clear Metallization Workshop, Utrecht             Email: niels.posthuma@imec.be
+                     efficiency of screen-printed silicon              (1st October, 2008).                              Website: www.imec.be
+
+    72         w w w. p v - te ch. o rg
+

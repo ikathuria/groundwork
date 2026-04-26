@@ -1,0 +1,363 @@
+STABILITY OF MINIMODULES WITH COPPER
+PLATED HETEROJUNCTION SOLAR CELLS
+Agata Lachowicz1, Nicolas Badel1, Alexis Barrou1, Vincent Barth2, Samuel Harrison2,
+Nicola Frasson3, Marco Galiazzo3, Jun Zhao1, Bertrand Paviet-Salomon1, Christophe Ballif1   Neuchâtel, May 9th 2023
+1 CSEM / 2 CEA INES / 3 AMAT
+OUTLINES
+
+
+▪ Process for copper metallization
+  on heterojunction solar cells
+
+▪ Minimodules with Smartwire interconnection
+    PTC/DH 3xIEC and PID test results
+
+
+▪ Shingle modules
+    TC 200 / DH 1500h
+
+
+▪ Pattern-transfer-printing (PTP) with pure copper paste
+  for seed-grid formation
+
+
+
+
+2   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+SELF-ALIGNED COPPER ELECTRODEPOSITION PROCESS
+
+▪ 3-step-process:
+                                                                                                                                         ▪ Cross section: Ag paste,
+                                                                                                                                           Al2O3 masking layer,
+                    • Seed-grid printing and curing                                                                                        electrodeposited copper
+          1           (200°C)
+                                                                                                                                         ▪ Copper is deposited also
+                                                                                                                                           in between paste particles
+                    • Dielectric layer deposition over
+          2           the entire wafer surface
+
+
+                    • Copper electrodeposition
+          3
+
+
+
+▪ Printing is already part of the production
+▪ A stack of thin ITO and a dielectric layer is one                                          ▪ The dielectric layer is not continuous on paste particles
+  of the strategies followed for Indium reduction 1,2                                           current for electrodeposition can pass through and
+▪ Only plating to add                                                                          copper is deposited selectively on seed-grid positions,
+                                                                                               whereas TCO area is tightly covered by the dielectric
+                                                                     1   A. Cruz et al., “Optoelectrical analysis of TCO+Silicon oxide double layers”, SOLMAT, 2022
+3   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+                                                                     2   S. Janke et al., “Approaches for SHJ cells with low or no In content”, Silicon PV, 2022
+COMPARISON LINE RESISTANCE
+
+           Ag refence print                     Cu paste seed-grid          With electrodeposited Cu
+                                                                                 (at the contact)                  ▪ Pure copper paste can be printed directly
+                                                                                                                     on the cell surface since thin conductive
+                                                                                                                     oxides are excellent barriers against
+                                                                                                                     copper diffusion 1,2
+
+
+                                                                                                                   ▪ Electrodeposition is feasible even on thin
+                                                                                                                     and resistive lines
+                             919 µm²                              240 µm²                         1160 µm²            low paste laydown
+                                                                                                                        for seed-grid formation
+
+
+
+                                                                 Ag ref.     Cu paste         Cu plated            ▪ Same efficiency as Ag reference reached
+                                                                                                                     with pure Cu paste and electrodeposited
+    Specific resistivity                    [µΩ·cm]                   5.3         27              2.0                Cu on M2 precursors
+                                                                                                                     (screen with 40 µm openings). 3
+    Line resistance per
+    length unit (40 µm                       [Ω/cm]                   1.5         95              0.3              ▪ Challenging: screen printing of narrow lines
+    screen opening)                                                                                                  without interruptions
+
+                                                                              1   C. Liu et al., "ITO as Diffusion Barrier Between Si and Cu“, ECS, 2005
+                                                                              2   J. Yu et al., "Tungsten doped indium oxide film", Solmat, 2016
+4    MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+                                                                              3   A. Lachowicz et al., “Patterning Techniques for Copper Electr.”, Proc. IEEE PVSC, 2021
+CU ELECTRODEPOSITED ON PRINTED PASTE: SCC
+
+▪ Copper pastes in development for PV
+▪ Silver-coated-copper paste (SCC) used for seed-grid formation, knotless screen
+
+
+
+
+height 1.3 µm
+
+
+height 10 µm                                                                                                                             Average over 100 µm line length:
+                                                     Average over 100 µm line length:                                                    width 42 µm, height 16 µm
+                                                     width 32 µm, height 9 µm                                                            Levelling effect
+
+
+
+                                                                                Area              Voc             Jsc
+Best result so far           M6 industrial HJT precursor                                                                          FF [%]           Eff [%]
+                                                                                [cm²]            [mV]           [mA/cm²]
+with SCC paste
+seed-grid, M6 1              SCC-seed-grid / dielectric layer /
+                                                                                274.15          742.4              39.9             81.7            24.2
+                             electrodeposited copper, 9BB-layout
+
+                            Internal measurement with 9 bars on a gold-chuck, after calibration with a certified M6 cell; cell as plated
+
+5   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells          1   A. Lachowicz et al., Self-aligned Copper Electrodeposition”, Proc. EUPVSEC, 2022
+MINIMODULES WITH SMARTWIRE INTERCONNECTION: TC
+                                                                       Voc [V]        PTC degradation and storage control      Isc [A]        PTC degradation and storage control
+                                                                      0.750                                                   5.100
+                    Storage control:         dashed lines - - - - -                 TC               PTC
+                                                                      0.745                                                   5.050
+                    SCC-reference.: grey / dark grey lines
+                                                                                                                              5.000
+                    With copper:             orange / brown lines     0.740
+                                                                                                                              4.950
+                                                                      0.735                                                   4.900
+                                                                                                                              4.850
+▪   Reference:                                                        0.730
+                                                                                                                              4.800
+    Silver-coated-copper paste (SCC)                                  0.725
+                                                                                                                              4.750
+                                                                                                               CYCLES                                                  CYCLES
+▪   With copper:                                                      0.720                                                   4.700
+    plated on SCC paste, same paste and same                                  0          200       400       600        800           0        200         400       600        800
+    print as the reference, with dielectric layer as                   FF [%]        PTC degradation and storage control       Eff [%]       PTC degradation and storage control
+    plating mask, with capping layer; higher FF                       82.0                                                    21.5
+                                                                      81.0
+▪   1 half-cell, industrial M6 precursors                             80.0                                                    21.0
+    Wires: with In-free low melting point alloy                       79.0
+    and supporting foil                                               78.0                                                    20.5
+    Polyolefin encapsulant, glass-glass                               77.0
+                                                                      76.0                                                    20.0
+                                                                      75.0
+▪ Degradation PTC:                                                    74.0                                                    19.5
+  SCC-reference: -1.4% after 690 cycles                               73.0                                      CYCLES                                                  CYCLES
+                                                                      72.0                                                    19.0
+  With copper: -1.2% storage, -0.2% PTC                                       0        200         400        600       800           0        200         400        600       800
+                                                                               copper 60 storage         ref-SCC 57 storage            copper 60 storage         ref-SCC 57 storage
+                                                                               copper 61 storage         ref-SCC 58 PTC                copper 61 storage         ref-SCC 58 PTC
+                                                                               copper 62 PTC             ref-SCC 56 PTC                copper 62 PTC             ref-SCC 56 PTC
+6    MIW 2023 Stability of Minimodules with Copper Plated HJT Cells            copper 64 PTC                                           copper 64 PTC
+MINIMODULES WITH SMARTWIRE INTERCONNECTION: DH
+                                                                       Voc [V]       DH degradation and storage control       Isc [A]       DH degradation and storage control
+                                                                      0.750                                                   5.20
+                    Storage control:         dashed lines - - - - -
+                    SCC-reference.: grey / dark grey lines            0.745                                                   5.00
+                    With copper:             orange / brown lines     0.740
+                                                                                                                              4.80
+▪   Strong DH degradation of reference modules                        0.735
+                                                                                                                              4.60
+    with silver-coated-copper paste                                   0.730
+    Slight degradation with dielectric layer and                      0.725                                                   4.40
+    plated copper                                                                                              HOURS                                                  HOURS
+                                                                      0.720                                                   4.20
+▪   In general:                                                               0           1000          2000          3000           0           1000          2000           3000
+    Good module stability has been proven for                          FF [%]        DH degradation and storage control       Eff [%]       DH degradation and storage control
+    SCC paste by the industry, for interconnection                     80.0                                                   22.0
+    with soldered wires as well as for                                 75.0                                                   20.0
+    interconnection with Smartwires
+                                                                       70.0                                                   18.0
+▪   The used paste not previously tested with
+    module materials used in this experiment                           65.0                                                   16.0
+
+                                                                       60.0                                                   14.0
+▪ 5% degradation of modules with copper                                55.0                                                   12.0
+  after 2700 h damp-heat                                                                                       HOURS                                                   HOURS
+                                                                       50.0                                                   10.0
+  To re-test / with another materials                                         0            1000         2000           3000          0            1000         2000           3000
+                                                                               copper 60 storage        ref-SCC 57 storage            copper 60 storage        ref-SCC 57 storage
+                                                                               copper 61 storage        ref-SCC 55 DH                 copper 61 storage        ref-SCC 55 DH
+                                                                               copper 63 DH             ref-SCC 59 DH                 copper 63 DH             ref-SCC 59 DH
+7    MIW 2023 Stability of Minimodules with Copper Plated HJT Cells            copper 65 DH                                           copper 65 DH
+MINIMODULES WITH SMARTWIRE INTERCONNECTION
+
+
+▪   EL: damp-heat degradation starting at the edges
+
+
+Seed-grid
+SCC paste
+
+
+
+
+SCC paste                                                                                      ▪ 1-cell mini-modules:
++ dielectric layer                                                                               worst case for testing DH
++ plated Cu
+                                                                                                 degradation?
+                                                                                                 Humidity ingress from
+                                                                                                 (unsealed) module edges
+                                                                                                 close to the cell
+
+                           ▪ 5% degradation of 1-cell-modules with dielectric layer + copper
+8    MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+MINIMODULES WITH SMARTWIRES: PID
+
+
+▪ Modules after storage and PTC
+  have been re-used for PID test
+▪ Conditions:
+  85°C/85% rel.H (like DH)
+  +1000V or -1000V
+  1x IEC norm = 96 h
+
+
+
+
+▪ STABLE
+  Tested 2x 96 h
+
+
+
+                                                                     Degradation from PTC or storage
+                                                                     is shown in the diagrams as the
+                                                                     starting point
+
+
+9   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+SHINGLE MODULES
+
+                                                                                    Cells                               Modules
+▪ Based on M2 precursors fabricated at CEA INES
+  Seed-grid: Ag paste with reduced laydown,
+  single print, lower line aspect ratio
+  Layout with 6 shingles and additional pads for
+  contacting for copper electrodeposition
+
+▪ Plating at CSEM
+  Cu thickness ~20 µm
+
+▪ Shingle separation and stringing on industrial
+  equipment developed by AMAT Italy
+  6 shingles, corresponding to 1 M2 cell                                                         as printed        w. electrodeposited
+                                                                         Line resistance
+  ECA wet deposit per shingle ~3.5 mg                                                            (Ag paste)               copper
+                                                                        per shingle width
+                                                                                                   0.43 Ω                0.07 Ω
+                                                                             25 mm
+
+                                                                      Measurement with Kelvin probes on contacting pads over
+                                                                      the width of one shingle tile
+
+
+10   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+SHINGLE MODULES
+
+
+▪ Good stability after 200 TC and 1500 h DH, test ongoing
+
+
+
+                                                                       Pmax             TC degradation                  Pmax             DH degradation
+                                                                       2.0                                              2.0
+                                                                       1.0                                              1.0
+                                                                       0.0                                              0.0
+                                                                              0        100         200            300          0   500       1000     1500    2000
+                                                                       -1.0                                             -1.0
+                                                                       -2.0                                             -2.0
+                                                                       -3.0                                             -3.0
+                                                                                  Cu-shingle_109                                   Cu-shingle_112
+                                                                       -4.0                                             -4.0
+                                                                                  Cu-shingle_111         CYCLES                    Cu-shingle_113         HOURS
+                                                                       -5.0                                             -5.0
+
+
+
+
+     EL module with 6 shingles from M2 cells
+     Transport belt traces from cell pilot line (vertical)
+
+
+
+11    MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+PATTERN TRANSFER PRINTING FOR SEED-GRID FORMATION
+                                                                      Silver-coated copper paste      Pure copper paste           Pure copper paste +
+                                                                                                                                electrodeposited copper
+▪ Goal: narrow copper lines
+▪ Technology developed by
+  DR Utilight – DR Laser
+  Trenches in a foil are filled with paste.
+  Paste is then transferred to a wafer
+  by laser.
+▪ Uniform line dimensions
+  No interruptions
+
+
+
+
+▪ Comparison resistance                                               Line width        18.9 µm     Line width    21.5 µm       Line width       25.0 µm
+                                                                      Line height       10.3 µm     Line height   9.3 µm        Line height      17.6 µm
+  contacting pad to contacting pad                                    CS area           116 µm²     CS area       102 µm²       CS area          335 µm²
+  over 26 mm distance
+                                                                             Pad to pad                                                   Cu paste +
+▪ Contact resistance measured                                                                      SCC paste        Cu paste
+                                                                          distance 26 mm                                             electrodeposited Cu
+  previously with screen printing:
+  1.5 mΩ∙cm²                                                                        Ω                 1.5                 5.1                 0.18
+
+
+12   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+PATTERN TRANSFER PRINTING FOR SEED-GRID FORMATION
+
+
+▪ Pure copper paste with micron size copper particles
+▪ Plating mask: dielectric layer
+▪ Copper electrodeposition
+▪ Line width                    26.1 µm
+  Line height                   21.9 µm
+▪ Good adhesion (tape test)
+
+▪ Narrow copper lines
+
+
+
+
+EDX
+map
+
+
+
+
+13   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+SUMMARY AND OUTLOOK
+
+
+▪ Module stability with Smartwire interconnection:
+
+     ▪ PTC: very good stability with copper plated metallization ✓
+     ▪ PID: very good stability with copper plated metallization ✓
+     ▪ DH:  -5% after 3xIEC, better stability to prove
+       (with 1-cell and medium size modules)
+
+
+▪ In preparation: interconnection with soldered wires
+▪ Ongoing cell experiments: thin ITO and dielectric layer = plating mask
+  For In reduction
+▪ Next: cells with PTP seed-grid for narrow copper lines
+
+                                                                            Further line width reduction to <20 µm
+                                                                           feasible and more triangular shape with
+                                                                                       conformal plating
+
+
+14   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+                   THANK YOU VERY MUCH FOR YOUR ATTENTION!
+
+
+     We thank the companies ATOTECH and DUPONT for providing us plating chemistry
+     We thank the companies DR UTILIGHT and NAMICS for fruitful collaboration
+
+
+     This work has been partially carried out within the European projects HighLite (GA 857793) and Resilex (GA 101058583)
+
+
+
+
+     Contact: agata.lachowicz@csem .ch
+
+
+15   MIW 2023 Stability of Minimodules with Copper Plated HJT Cells
+

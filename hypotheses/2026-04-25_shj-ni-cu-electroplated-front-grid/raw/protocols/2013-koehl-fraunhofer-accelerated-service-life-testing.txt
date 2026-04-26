@@ -1,0 +1,930 @@
+ACCELERATED SERVICE LIFE TESTING OF
+PHOTOVOLTAIC MODULES
+
+
+                     Michael Köhl
+
+
+                     Fraunhofer Institute for Solar Energy Systems ISE
+
+
+                     Service Life Prediction of Polymeric Materials
+
+
+                     Monterey, March 2013
+
+
+                     www.ise.fraunhofer.de
+
+
+© Fraunhofer ISE
+ Polymers in Photovoltaic Modules
+                                                   Irradiation
+
+  Glazing (evtl. polymeric)
+                Encapsulant
+  Silicon solar cells                               Temperature
+                Encapsulant
+                   Back-sheet
+
+
+Laminated together
+
+                                                                   Humidity
+Performance property is the electrical power P
+
+∫P(t) dt / Costs      is to be maximised for the design lifetime
+                                                 25 – 30 years
+
+© Fraunhofer ISE
+Reliability
+
+
+High quality is ensured by
+  type approval testing
+  (IEC 61215 and IEC 61646)
+
+ Infant mortality tests
+ No life tests, even when
+  harsher test conditions are
+  applied
+
+Improvement of robustness is limited because of economical reasons
+
+Long-term degradation is leading to gradual performance losses till the
+  design service lifetime is reached
+
+
+
+© Fraunhofer ISE
+ 1 Monitoring climatic conditions
+Ambient climate and sample temperatures as 1min averaged time series
+Corrosivity, salt concentration as yearly or monthly dose
+
+
+                                                                       Arid
+City or reference:                                                     Sede Boqer
+Freiburg Germany                                                       Israel
+
+
+                                                                       Tropical
+ Alpine
+                                                                       Serpang
+ Zugspitze
+                                                                       Indonesia
+ Germany
+                                                                       (operated by TÜV Rheinland)
+
+
+                                                                       Maritime
+                                                                       Pozo Izquierdo
+                                                                       Gran Canaria
+
+
+
+© Fraunhofer ISE
+                 2 Monitoring micro-climatic stress factors
+
+                Module temperature monitoring during outdoor exposure
+                Macro – climate                                      =>                             Micro – climate
+                Ambient temperature                                                                 Average module temperature (c-Si)
+
+                1600               Tropics                                                          1600
+                                                                                                              Tavg
+                1400               Desert
+                                     Tamb                                                           1400
+
+                1200
+                                   Alpes                                                            1200
+
+                1000                                                                                1000
+
+
+
+frequency [h]                                                                       frequency [h]
+                800                                                                                 800
+
+                600                                                                                 600
+
+                400                                                                                 400
+
+                200                                                                                 200
+
+                   0                                                                                  0
+                    -20      -10      0      10      20     30       40   50   60    70                -20   -10     0   10      20     30       40   50   60   70
+                                                  temperature [°C]                                                            temperature [°C]
+
+
+                  © Fraunhofer ISE
+ 3 Modeling micro-climatic stress factors
+Physical modeling of module temperature for each of the different module types using David
+  Faiman‘s approach (could be King, Fuentes……as well)
+
+Macro – climate                                                                    =>    Micro – climate
+Irradiation, wind, ambient temperature                                             =>    Tmod
+Neglected: IR-radiation exchange and natural convection
+
+                   H
+Tmod  Tamb 
+              U 0  U1  v                                                      a-Si 1
+                                                                                                 U1
+                                                                                                10,7
+                                                                                                            U0
+                                                                                                           25,7
+                                                                                a-Si 3           5,8       25,8
+                                                                                a-Si 4           4,3       26,1
+Tmod module temperature
+Tamb ambient temperature                                                        CIS 1            3,1       23,0
+                                                                                CIS 2            4,1       25,0
+v       wind velocity
+                                                                                CdTe             5,4       23,4
+H       solar radiation                                                         c-Si             6,2       30,0
+
+
+The parameters U are module-specific but location independent
+
+                   M.Koehl et.al.: Modelling of the nominal operating cell temperature
+© Fraunhofer ISE   based on outdoor weathering, Sol. Energy Mat. Sol. Cells (2011)
+ 3 Modeling micro-climatic stress factors
+
+Module-temperature as time-series based on ambient climate data and as histograms (one year)
+
+
+
+
+                                                         5000
+                                                         4500                                  a-Si 1
+                                                                                               a-Si 2
+                                                         4000                                  a-Si 3
+                                                                                               a-Si 4
+                                                         3500
+                                                                                               CIS 1
+                                                         3000                                  CIS 2
+                                                                                               CdTe
+                                                         2500
+
+                                              Freuency
+                                                                                               c-Si
+                                                         2000
+                                                         1500
+                                                         1000
+                                                         500
+                                                           0
+                                                                0    20         40        60            80
+                                                                      Temperature in °C
+
+
+
+© Fraunhofer ISE
+ 3 Modeling micro-climatic stress factors
+
+
+UV intensity is strongly correlated with global irradiation:
+Take 5 said Peter Trubiroha:
+                                                                               120                                                    6
+
+
+
+
+                                   global irradiation per temp.-bin[kWh/m²a]
+                                                                                       Global
+                                                                                       UV
+
+
+
+
+                                                                                                                                           UV dose pro temp.-bin [kWh/m² a]
+                                                                               100                                                    5
+
+UV = 5.x % of global irradiation
+                                                                               80                                                     4
+       in POA
+                                                                               60                                                     3
+
+
+                                                                               40                                                     2
+
+
+                                                                               20                                                     1
+
+
+                                                                                0                                                      0
+                                                                                 -10   0    10      20     30    40        50   60   70
+                                                                                                 Module temperature [°C]
+
+
+                                                       Module-temperature modeled or measured
+
+
+
+© Fraunhofer ISE
+                    UV - radiation modelling
+
+                    Desert Rock:             106 kWh/a m²             => 2500kWh/m²
+                    Goodwin Creek: 83 kWh/a m²                        => 2000kWh/m²
+                    Europe                                            => 1250kWh/m²
+                    Reciprocity: p = 1
+
+                    ttest = (Ii / Itest)p ti exp [-(Ea / R)(1/Ttest - 1/Ti)]                                                          4-5 suns and elevated temperature
+                    4,0                                                                                                       equivalent testing times for five suns UV test for desert climate loads
+                                                                                                                           10000
+                    3,5         Desert Rock
+
+
+
+
+                                                                                  testing time corresponding to 25 a [h]
+                                                                                                                                                                                         60 °C
+                                Goodwin Creek                                                                                                                                            70 °C
+                    3,0                                                                                                                                                                  80 °C
+                                                                                                                                                                                         90 °C
+
+
+
+
+UV-dose in kWh/m²
+                    2,5
+
+
+                    2,0
+                                                                                                                           1000
+                    1,5
+
+
+                    1,0
+
+
+                    0,5
+
+
+                    0,0                                                                                                     100
+                          -20          0        20         40          60    80                                                    20   30      40       50     60      70        80     90      100
+                                           module temperature in °C                                                                                  activation energy [kJ/mol]
+
+
+                    © Fraunhofer ISE
+ 3 Modeling micro-climatic stress factors
+Simulation of module humidity by FEM based on measured
+temperature dependent permeation/diffusion coefficients
+
+
+
+
+                                                                                             Rel water concentration [a.u.]
+
+
+
+
+                                                                                                                              Damp-heat testing 85%rh @ 85°C
+                                                                                                        J. Wirth, Diploma Thesis, University of Freiburg, 2008.
+
+
+© Fraunhofer ISE   J. P. Hülsmann et al., "Simulation of Water Vapor Ingress into PV-Modules under Different Climatic
+                   Conditions," Journal of Materials, vol. 2013, doi:10.1155/2013/102691
+                           Degradation of the modules
+                           Polymer Analysis by Raman-Spectroscopie
+
+                     Comparison of the Vinyl-Band (red) and the fluorescence-background (black)
+                     unaged and after 4000h damp-heat-testing
+                                                                                                                                             Elektroluminescence-picture
+                                    70                                                                                                 1,4
+                                                  Average Ref._I(2863)/I(2913)                 Average Ref._I(1660)                          of the degraded cells
+                                    65            Average 4000h d.h._I(2863)/I(2913)           Average 4000h d.h._I(1660)
+
+                                    60                                                                                                 1,2
+
+
+                                    55
+                                                                                                                                       1,0
+                                    50
+
+                                    45
+
+
+
+
+Intensity [arb.     units]
+                                                                                                                                       0,8
+                                    40
+
+                                    35
+                                                                                                                                       0,6
+                                    30
+
+
+
+
+           Intensity (arb. units)
+                                    25
+                                                                                                                                       0,4
+                                    20
+
+                                    15
+                                                                                                                                       0,2
+
+                                    10
+
+                                    5                                                                                                  0,0
+
+                                    0
+                                         -1   0    1      2     3     4     5     6      7     8        9   10   11   12    13   14   15
+
+                                                                            Location above the cell [cm]
+                                                                            Displacement on cell (cm)
+
+
+
+
+                                                         C. Peike et.al.: Non-destructive degradation analysis of encapsulants in PV modules
+                               © Fraunhofer ISE          by Raman Spectroscopy, Sol. En. Mat. Sol. Cells (2011)
+               3 Evaluating micro-climatic stress factors
+               a) TOW:                          rheff = 1 for rh > 0.8                                                     1,1
+                                                                                                                                                                                      a
+
+
+
+
+                                                                                                    Effective humidity
+                                                                                                                             1
+                                                                                                                           0,9
+                                                                                                                           0,8                                       c
+               b) An effective humidity was proposed for                                                                   0,7
+                                                                                                                           0,6
+               polycarbonate: rheff = 0.3 rh / (1.3 – rh)                                                                 0,5
+                                                                                                                           0,4
+                                                                                                                           0,3                                       b
+                                                                                                                           0,2
+               c) sigmoidal growth function                                                                                0,1
+                                                                                                                             0
+                                                rheff =G/(1+ exp(-G*rh*k) *(G/f(0)-1))                                           0       0,2           0,4          0,6         0,8          1
+
+                                                                                                                           1,1
+                                                                                                                                                     Relative humidity                      70% rh
+              1000                                                                                                         1,0
+                                                                 rel. surface humidity
+                                                                 eff. hum. a                                               0,9                   85% rh
+                                                                 eff. hum. b
+                                                                                                                           0,8
+teff [h/°C]
+                                                                 eff. hum. c
+
+
+
+
+                                                                                                        normalised power
+               100
+                                                                                                                           0,7
+
+                                                                                                                           0,6
+                                                                                                                                                     90 °C
+                                                                                                                           0,5
+                10
+                                                                                                                           0,4
+                                                Micro-climate
+                                                Serpong                                                                    0,3
+
+                                                                                                                           0,2       rheff = 1/(1 + 98 exp (-9.4 rh))
+                 1
+                     10          20        30         40        50       60         70                                               0         500      1000        1500       2000       2500   3000
+                                          module temperature [°C]                                                                                            testing time /h
+
+
+              © Fraunhofer ISE        M. Koehl et al. / Solar Energy Materials & Solar Cells 99 (2012) 282–291
+                                     3 Modeling micro-climatic stress factors for given climate
+
+                                    1.) rheff =1/(1+ exp(-9,4rh)  (1/0,01-1)) effective humidity gives more weight to periods with high rh
+                                    2.) rh (Tof) = rh (Tamb) * Psat (Tof)/ Psat (Tamb) takes into account the higher module temperature
+
+                                    3.) t85 = t*rheff/0,85 relates to the moisture level during testing
+
+                                           Dry arid climate                                                                                          Wet climate
+                                  1000                                                                                                      1000
+                                                                             rheff (sambient)                                                                                  rheff (sambient)
+
+
+
+
+frequency distribution in hours                                                                           frequency distribution in hours
+                                                                             rheff (surface)                                                                                   rheff (surface)
+                                                                             rheff (surface) = 85%                                                                             rheff (surface) = 85%
+                                  100                                                                                                       100
+
+
+
+
+                                   10                                                                                                        10
+
+
+
+
+                                    1                                                                                                         1
+                                     -20               0        20         40           60           80                                        -20        0        20         40           60          80
+                                                           module temperature in °C                                                                           module temperature in °C
+
+
+
+                                    © Fraunhofer ISE
+4 Time-transformation functions for major degradation processes
+
+
+
+4.) Process kinetics depend on module temperature (Time Transformation Function):
+
+
+
+
+ttest = Lifetime (years)  i {ti(rheff, Tmod,i)  exp [-(Ea / R)(1/Ttest - 1/Tmod,i)]}
+
+
+Ea = activation energy for the rate dominating degradation process
+
+
+
+
+© Fraunhofer ISE
+5 Modeling corresponding ALT – conditions for micro-climatic stress factors
+
+Testing time at 85%rh/85°C for 25 years lifetime
+
+                                                                100000
+
+Example:                                                                                  tropical
+                                                                                          arid
+Time to failure @ 85°C/85%rh:                                                             alpine
+
+
+
+
+                                       testing time @85°C [h]
+3000h                                                            10000
+
+Ea > 35 kJ/mol for alpine climates
+
+
+                                                                  1000
+Ea > 50 kJ/mol for arid climates
+
+
+
+Ea > 60 kJ/mol for tropical climates
+                                                                  100
+                                           20                            40      60         80        100   120
+  Type approval test according to IEC 61215
+                                                                              Activation energy [kJ/mol]
+  would be sufficient for Ea > 80 kJ/mol
+
+
+  © Fraunhofer ISE
+                         6 Evaluation of the parameters for time-transformation functions by ALT
+
+                         Testing of c-Si modules from 7 different manufacturers
+
+
+
+                               Damp-Heat at 85°C and 85% rel. humidity                                            Damp-Heat at 90°C and 85% rel. humidity
+
+                         1,1                                                                                1,1
+                         1,0                                                                                1,0
+                         0,9                                                                                0,9
+
+
+
+
+Normalised power @ mpp                                                             Normalised power @ mpp
+                         0,8                                                                                0,8
+                         0,7                                                                                0,7
+                         0,6                                                                                0,6
+                         0,5                                                                                0,5
+                         0,4                                                                                0,4
+                         0,3                                                                                0,3
+                         0,2                                                                                0,2
+                         0,1                                                           0,1
+                           -500     0       500 1000 1500 2000 2500 3000 3500 4000 4500 -500                        0   500 1000 1500 2000 2500 3000 3500 4000 4500
+                                                    Exposure time /h                                                            Exposure time /h
+
+
+
+                         © Fraunhofer ISE
+6 Evaluation of the parameters for time-transformation functions by ALT
+Damp-heat testing at 85%rh@85°C, module 1 und module 2
+                                             1,1
+
+
+
+
+                    Normalised power @ mpp
+                                                                                        85°C
+                                             1,0
+
+                                             0,9
+                                                                 2400h                         3300h
+                                             0,8
+
+                                             0,7
+                                                          Module 1
+                                             0,6
+                                                          Module 2
+                                             0,5
+
+                                             0,4
+
+                                             0,3
+                                               -500   0   500 1000 1500 2000 2500 3000 3500 4000 4500
+                                                                     Exposure time /h
+
+ © Fraunhofer ISE
+6 Evaluation of the parameters for time-transformation functions by ALT
+Damp-heat testing at 85%rh@85°C and @90°C, module 1 und module 2
+                                             1,1
+
+
+
+
+                    Normalised power @ mpp
+                                             1,0
+
+                                             0,9
+                                                                 2400h                       3300h
+                                             0,8
+
+                                             0,7
+                                                          Module 1
+                                             0,6
+                                                          Module 2
+                                             0,5
+
+                                             0,4
+
+                                             0,3
+                                               -500   0   500 1000 1500 2000 2500 3000 3500 4000 4500
+                                                                     Exposure time /h
+
+ © Fraunhofer ISE
+6 Evaluation of the parameters for time-transformation functions by ALT
+Damp-heat testing at 85%rh@85°C and @90°C, module 1 und module 2
+                                             1,1
+                                                                                 a = exp [-(Ea / R)(1/T1 – 1/T2)]
+
+
+
+
+                    Normalised power @ mpp
+                                             1,0
+
+                                             0,9
+                                                                 2400h                                   3300h
+                                             0,8
+
+                                             0,7
+                                                          Module 1
+                                             0,6
+                                                          65 kJ/mol
+                                                          Module 2
+                                             0,5          33 kJ/mol
+
+                                             0,4
+
+                                             0,3
+                                               -500   0   500 1000 1500 2000 2500 3000 3500 4000 4500
+                                                                      Exposure time /h
+
+ © Fraunhofer ISE
+6 Evaluation of the service life time in different climates
+
+ Testing time at 85%rh/85°C for 25 years lifetime
+
+                                                            100000
+
+                                                                                           tropical
+                                                                                           arid
+                                                                                           alpine
+
+
+
+
+                                   testing time @85°C [h]
+Time to failure 3300h                                        10000
+
+Ea > 35 kJ/mol
+=> for alpine climates
+                                                              1000
+
+
+Time to failure 2400h
+
+                                                              100
+Ea > 65 kJ/mol                                                       20   40      60         80        100   120
+=> for tropical climates                                                       Activation energy [kJ/mol]
+
+
+ © Fraunhofer ISE
+6 Evaluation of the parameters for time-transformation functions by ALT
+        P = G/(1+ (G/0.01-1) exp(-(t-tind (T))*k(T)) )
+ 1,20                                                 1,20
+
+
+ 1,00                                                 1,00                                          T=85°C
+ 0,80                                                 0,80                                          Tind=2100h
+ 0,60                                                 0,60                                          K=0,0082/h
+ 0,40                                                 0,40                                          G=0,26
+ 0,20                                                 0,20
+
+
+ 0,00                                                 0,00
+        0          1000   2000   3000   4000   5000          0   1000   2000   3000   4000   5000
+
+
+ 1,2                                                   1,2
+
+
+                                                        1
+   1                                                                                                T=90°C
+ 0,8                                                   0,8
+                                                                                                    Tind=1500h
+ 0,6                                                   0,6
+                                                                                                    K=0,0115/h
+ 0,4                                                   0,4
+                                                                                                    G=0,26
+ 0,2                                                   0,2
+
+
+   0                                                    0
+        0          1000   2000   3000   4000   5000          0   1000   2000   3000   4000   5000
+
+
+
+
+© Fraunhofer ISE
+1,20                                                 1,20                                             1,20
+
+1,00                                                 1,00                                             1,00
+
+0,80                                                 0,80                                             0,80
+
+0,60                                                 0,60                                             0,60
+
+0,40                                                 0,40                                             0,40
+
+0,20                                                 0,20                                             0,20
+
+0,00                                                 0,00                                             0,00
+       0        1000     2000   3000   4000   5000          0    1000   2000    3000   4000    5000          0     1000   2000   3000   4000   5000
+
+1,20                                                                                                  1,20
+
+
+1,00                                                                                                  1,00
+
+
+0,80                                                                                                  0,80
+
+
+0,60                                                                                                  0,60
+
+
+0,40                                                                                                  0,40
+
+
+0,20                                                                                                  0,20
+
+
+0,00                                                                                                  0,00
+       0       1000     2000    3000   4000   5000                                                           0     1000   2000   3000   4000   5000
+
+
+
+  Lifetime (@85°C) [h]                                          2412           2576           2821               3047       3160        3227          3548
+  Activation energy [kJ/mol]                                      70             73             30                 68         26          55            53
+  Climate class                                                    A              A              C                  A          C           B             B
+
+           Qualification for different stress levels or climate zones allows diversification of PV-modules
+
+
+           © Fraunhofer ISE
+6 Evaluation of the service life time for different climates
+Testing time at 85%rh/85°C for 25 years lifetime
+                                                                       100000
+
+                                                                                                      tropical
+                                                                                                      arid
+ Climate classes:                                                                                     alpine
+
+
+
+
+                                              testing time @85°C [h]
+ A:            Most severe moisture stress                              10000
+
+ B:            Moderate moisture stress
+ C:            Low moisture stress
+                                                                         1000
+
+
+
+
+                                                                          100
+                                                                                20   40      60         80        100   120
+Assumptions:                                                                              Activation energy [kJ/mol]
+
+The measured stress levels are representative
+The model for the kinetics is valid
+The constant load D/H test reflects reality
+
+
+© Fraunhofer ISE
+                          7 Modeling expected degradation for validation by outdoor exposure
+
+                          Power reduction after 3 years outdoor exposure < 3%
+
+
+                          Exposure time has to be doubled
+
+
+                           10000                        Equivalent to 3 years operation                              1,1
+                                                                                                                     1,0
+                                                                                                                     0,9
+
+
+
+
+                                                                                            Normalised power @ mpp
+Testing time @ 85°C [h]
+                                                                            tropical                                 0,8
+                                                                             arid
+                                                                            alpine
+                                                                                                                     0,7
+
+                            1000                                                                                     0,6
+                                                                                                                     0,5
+                                                                                                                     0,4
+                                                                                                                     0,3
+                                                                                                                     0,2
+
+                              100                                                                                    0,1
+                                    0        20   C     40       B 60     A      80       100                          -500   0   500 1000 1500 2000 2500 3000 3500 4000 4500
+                                                  Activation energy [kJ/mol]                                                              Exposure time /h
+
+
+
+                          © Fraunhofer ISE
+7 Degradation effects during outdoor exposure
+
+   Changes of the electrical performance at the outdoor exposure site
+
+
+
+   Test site Tropical      Arid           Urban       Alpine       Average
+
+   Module 1        -1,5%          -0,6%       -0,9%        -1,1%       -1,0%
+           2       -0,1%          -1,1%       -0,8%        -4,7%       -1,7%
+           3       -1,0%          -0,1%       -0,5%         1,3%       -0,1%
+           4       -3,2%          -0,1%        1,7%        -6,6%       -2,1%
+           5       -0,1%          -2,2%       -1,8%        -0,8%       -1,2%
+   Average         -1,2%          -0,8%       -0,5%        -2,4%       -1,2%
+
+
+
+
+   After 3 years operation hardly out of the error bars
+
+
+
+
+© Fraunhofer ISE
+7 Degradation effects during outdoor exposure
+
+Degradation of module materials - UV-induced fluorescence
+ 2 a alpine outdoor exposure                                                2 a desert outdoor exposure
+
+
+
+
+ Combination of electroluminescence and fluorescence
+
+                   J. Schlothauer, et al., Fluorescence imaging: a powerful tool for the investigation of polymer
+© Fraunhofer ISE
+                   degradation in PV modules, Photovoltaics International journal, November 2010
+7 Degradation effects during outdoor exposure
+Browning and photo-bleaching -       UV-induced fluorescence
+                                     2 a desert outdoor exposure
+
+
+
+
+                                     Combination of electroluminescence and fluorescence
+
+© Fraunhofer ISE
+7 Degradation effects during outdoor exposure
+Effect of outdoor weathering on fluorescence spectra
+                                              Module types
+                                                                                                            a) Tropical
+
+
+
+
+                                                                                           UV - radiation
+        Moisture level
+                                                                                                            b) Arid
+
+
+
+
+                                                                                                            c) Moderate
+
+
+
+
+                                                                                                            d) Alpine
+
+
+
+                         J. Schlothauer, et al., Degradation of the encapsulant polymer in outdoor weathered photovoltaic
+© Fraunhofer ISE         modules: Spatially resolved inspection..., Solar Energy Materials&Solar Cells 102 (2012) 75–85
+ Methodology for design of Accelerated Service Life Testing
+
+
+    1 Monitoring climatic conditions
+
+     2 Monitoring micro-climatic stress factors
+
+
+    3 Modeling micro-climatic stress factors
+
+
+    4 Time-transformation functions for major degradation processes
+
+
+    5 Modeling corresponding ALT – conditions for micro-climatic stress factors
+
+
+    6 Evaluation of sample-dependent parameters for time-transformation functions
+
+    7 Modeling of expected degradation for outdoor exposure and validation of the tests
+
+
+
+
+© Fraunhofer ISE
+Conclusions
+
+Accelerated Damp-heat service life tests have been proposed
+
+
+• Based on monitored climatic data
+
+
+• Modelled micro-climatic stress conditions
+
+
+• Modelled kinetic of the degradation processes
+
+
+but final validation was not achieved yet
+
+
+
+
+© Fraunhofer ISE
+Conclusions and outlook
+
+Accelerated Damp-heat service life tests have been proposed
+
+
+• Based on monitored climatic data
+
+
+• Modelled micro-climatic stress conditions
+
+
+• Modelled kinetic of the degradation processes
+
+
+but final validation was not achieved yet
+
+
+Tests for other stress factors (UV, temperature cycling, potential induced degradation etc) and
+their combinations are under development
+
+
+Global stress mapping will allow qualification of diversified, specialised products for different
+climatic zones
+
+
+© Fraunhofer ISE
+Thank you for your Attention!
+
+
+
+
+  Fraunhofer Institute for Solar Energy Systems ISE
+  Michael Köhl
+
+
+  www.ise.fraunhofer.de
+  michael.koehl@ise.fraunhofer.de
+
+
+
+
+© Fraunhofer ISE
+

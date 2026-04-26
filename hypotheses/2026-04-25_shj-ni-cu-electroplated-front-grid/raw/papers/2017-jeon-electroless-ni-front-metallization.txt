@@ -1,0 +1,1640 @@
+          materials
+Article
+Electroless Nickel Deposition for Front Side
+Metallization of Silicon Solar Cells
+Shu Huei Hsieh 1 , Jhong Min Hsieh 2 , Wen Jauh Chen 2, * and Chia Chih Chuang 3
+ 1   Department of Materials Science and Engineering, National Formosa University,
+     64, Wunhua Road, Huwei, Yunlin 632, Taiwan; shhsieh@nfu.edu.tw
+ 2   Graduate School of Materials Science, National Yunlin University of Science and Technology,
+     123 University Road, Section 3, Douliou, Yunlin 640, Taiwan; m10347008@yuntech.edu.tw
+ 3   Motech Industries Inc., No.2, Dashun 9th Rd., Xinshi Dist., Tainan 741, Taiwan; cc_chuang@motech.com.tw
+ *   Correspondence: chenwjau@yuntech.edu.tw; Tel.: +886-5-552-4528
+
+ Received: 18 July 2017; Accepted: 8 August 2017; Published: 14 August 2017
+
+ Abstract: In this work, nickel thin films were deposited on texture silicon by electroless plated
+ deposition. The electroless-deposited Ni layers were characterized by scanning electron microscopy
+ (SEM), transmission electron microscopy (TEM), energy dispersive x-ray spectroscopy (EDS), X-ray
+ diffraction analysis (XRD), and sheet resistance measurement. The results indicate that the dominant
+ phase was Ni2 Si and NiSi in samples annealed at 300–800 ◦ C. Sheet resistance values were found
+ to correlate well with the surface morphology obtained by SEM and the results of XRD diffraction.
+ The Cu/Ni contact system was used to fabricate solar cells by using two different activating baths.
+ The open circuit voltage (Voc) of the Cu/Ni samples, before and after annealing, was measured under
+ air mass (AM) 1.5 conditions to determine solar cell properties. The results show that open circuit
+ voltage of a solar cell can be enhanced when the activation solution incorporated hydrofluoric acid
+ (HF). This is mainly attributed to the native silicon oxide layer that can be decreased and/or removed
+ by HF with the corresponding reduction of series resistance.
+
+ Keywords: solar cell; electroless; Cu/Ni contact; open circuit voltage
+
+
+
+
+1. Introduction
+     Sustainability has become a major keyword in the 21st century. The sustainable development of
+renewable energy resources to meet growing energy requirements is the most critical challenge of the
+modern world. Among the various renewable energy sources, solar cells are the most required due to
+their safe, clean, and pollution-free application. Silicon (Si) solar cells have attracted growing attention
+due to the reduced costs of raw materials and large-scale production. These mass-produced solar cells
+are usually based on crystalline Si wafers. To date, crystalline silicon solar cells have been widely
+used as industrial solar cells. In 1975, screen-printing was applied to solar cells for the formation of
+front and rear contacts [1]. Currently, the front contact and rear side of screen-printed contacts are
+considered to be a standard technology for metallization in solar cell manufacturing. The processes
+simplicity and lower processing time leads to the high-throughput production of c-Si solar cells.
+Conversion efficiency enhancement is a major challenge for Si solar cells. This is due to optical losses
+for top-contact coverage shading, higher contact resistance, and poor surface recombination that
+limit solar cell efficiency. Their high cost and decreasing silicon wafer thicknesses encourages silicon
+solar cell manufacturers to develop fresh metallization techniques that involve a lower quantity of
+silver usage without the need to rely on the pressing process of screen-printing. A 2017 international
+technology roadmap for photovoltaics (ITRPV) demands a superior performance with a lower usage of
+silver pastes for the future of metallization [2]. In this regard, a great deal of investigation has already
+been conducted on different metallization techniques as an alternative to screen-printing technology.
+
+
+Materials 2017, 10, 942; doi:10.3390/ma10080942                               www.mdpi.com/journal/materials
+Materials 2017, 10, 942                                                                               2 of 11
+
+
+
+The minor production costs and higher efficiencies of metallization techniques are critical for the
+progression of solar cell manufacturing technology. Among the promising metallization techniques,
+low-cost Cu/Ni plating techniques are emerging as a potential solution to higher metallization costs,
+as well as a route to establishing further improvements in cell performance [3–5]. These Cu/Ni plating
+techniques can be realized at lower material costs and are suitable for use in mass production.
+      The main benefits of Cu are its low cost and high conductivity. However, it has a high diffusivity
+and solubility in Si, and Cu contamination in solar cells can degrade cell performance by introducing
+efficient minority carrier recombination sites [6–8]. It is necessary to implement a diffusion barrier
+between Cu and Si to prevent inter-diffusion deterioration in devices. A thin layer of nickel (Ni),
+deposited on the contact areas, is typically used as a Cu diffusion barrier [9]. The standard processing
+sequence of Ni/Cu contact formation involves two steps: in the first step, (i) a Ni metal film is plated
+onto the solar cell surface, followed by (ii) the final step of plating a copper metal film on top of the
+Ni [5]. Evaporation, sputtering, and electrochemical deposition techniques have been applied for
+integrated circuit (IC) manufacturing. Electroplating of metals is well established for the metallization
+of semiconductor devices, and presents several advantageous properties that make it of interest for the
+front side metallization of silicon solar cells. Electroplating of metals involves the transfer of electrons
+between electrodes and an electrolyte containing the metal ions. Electroplating offers the highest
+degree of control and the fastest plating rates since the source of electrons is directly controlled by an
+external power supply. However, the formation of metal contacts using electroplating processes can
+only be used for conductors. Therefore, electroplating requires a seed layer with a certain conductivity
+to minimize the potential drop with increasing distance from the contact point(s) and to achieve
+uniform deposits. On the other hand, electroless plating enables the direct plating of metal on Si.
+Electroless plating technique has been applied for ohmic contacts to n- and p-doped silicon [10].
+Mandelkorn et al. combined photolithography patterning and electroless Ni plating to define the
+front side contacts of silicon solar cells [11]. Electroless nickel deposition is an autocatalytic process
+achieved by the immersion of a substrate in a plating bath. It is based on the capture of electrons by
+the cations present in the solution, which are absorbed on the surface of the substrate. These electrons
+are supplied by a reducing agent dissolved in the solution. In our case, the main electron source is the
+oxidation of the sodium hypophosphite (NaH2 PO2 ). The nickel ions are reduced to solid nickel on top
+of the silicon. The deposit is not pure nickel, but contains phosphorous [12]. Prior to the electroless
+plating process, the pretreatment of the silicon surface is required. The pretreatment of Si consists of
+sensitization in a solution of SnCl2 and HCl, and activation by the deposition of Pd in a solution of
+PdCl2 and HCl. Finally, the electroless Ni seed layer is thickened by Ni and Cu electroplating. Little
+work has been conducted on the interfacial reactions of electroless nickel thin films on textured silicon.
+In the present paper, a front-side metallization was produced by Ni-P electroless deposition and Ni/Cu
+electroplating on crystalline silicon solar cells. The interfacial reactions of electroless nickel thin films
+on textured silicon were investigated. Two activating baths were used for evaluations of the open
+circuit voltage (Voc) of the solar cell. The solar cells were fabricated with two different activating baths
+(with and without HF). These solar cells were annealed isothermally in a furnace at 500 ◦ C for different
+periods in an Ar/H2 atmosphere to study the effects of pre-treatment on the open circuit voltage (Voc)
+of the solar cell.
+
+2. Results and Discussion
+     Some of the most important issues for metal deposition are adhesion and surface coverage.
+Figure 1a–c show the SEM images of samples with deposited electroless Ni at 70 ◦ C for 60, 75, and
+120 s, respectively. The coating surface is smooth due to the formation of many tiny particles during
+electroless deposition. A uniform and texturized surface coverage is achieved and the deposits are
+homogeneous. As can be seen in the SEM images in Figure 1, for a short plating time (60 s), all the
+pyramids are metallized. The EDS diagram for the electroless Ni deposit plated for 60 s with a pH
+of 5 at 70 ◦ C is shown in Figure 1d. The elemental SEM/EDS analysis shows the presence of silicon,
+Materials 2017, 10, 942                                                                                                                 3 of 11
+
+
+
+nickel, and phosphorus, thus suggesting the success of electroless nickel plating. The peak for Si is of
+course   from the Si substrate. Figure 1e,f show the SEM cross-section views of samples with deposited
+     Materials 2017, 10, 942                                                                                                         3 of 11
+electroless Ni at 70 ◦ C for 90 and 180 s, respectively. The insets in (e) and (f) show the thickness of
+electroless
+     course Ni.fromThe    thickness
+                      the Si substrate. ofFigures
+                                            electroless1e,f Ni     deposits
+                                                             show the      SEMwith a      platingviews
+                                                                                  cross-section    time of 60    s, 90 s,
+                                                                                                             samples       120 s,
+                                                                                                                        with        and 180 s
+                                                                                                                               deposited
+     electroless
+are 58 nm,    95 nm,Ni at10670nm,
+                                °C for
+                                     and90184andnm, 180 s,    respectively.
+                                                        respectively.        TheThe   insets in Ni
+                                                                                   electroless   (e) and   (f) show
+                                                                                                     deposition       theis about
+                                                                                                                    rate    thickness  1 of
+                                                                                                                                         nm/s.
+     electroless    Ni.  The   thickness    of electroless       Ni  deposits     with  a plating  time
+The deposits are continuous thin films above the thickness of 45 nm. The characteristics of this bath    of  60 s, 90 s, 120   s, and   180
+     s are
+enable   us 58
+             to nm,    95 nm,that
+                 conclude        106itnm,
+                                        canand
+                                             be 184
+                                                  usednm,        respectively.
+                                                           as a seed      layer and Thediffusion
+                                                                                         electroless Ni   deposition
+                                                                                                    barrier   before rate
+                                                                                                                       copper  is about    1
+                                                                                                                                  deposition
+     nm/s.    The  deposits     are
+for contact solar cells on silicon. continuous       thin   films    above    the  thickness  of 45  nm.  The   characteristics     of this
+     bath enable us to conclude that it can be used as a seed layer and diffusion barrier before copper
+      To obtain more information about the phase formation during the annealing, XRD analyses were
+     deposition for contact solar cells on silicon.
+carried out. Figure 2 shows the XRD patterns of electroless Ni deposits that were plated for 60 s with a
+            To obtain more information about the phase formation during the annealing, XRD analyses were
+pH of 5 at 70 ◦ C both without annealing and annealed at 300–800 ◦ C for 10 min. The XRD analysis
+     carried out. Figure 2 shows the XRD patterns of electroless Ni deposits that were plated for 60 s with
+of the  samples                                               ◦ shows almost exactly the same pattern except for some
+     a pH    of 5 atafter
+                      70 °Cannealing
+                              both without  at 300–600
+                                                annealingCand           annealed at 300–800 °C for 10 min. The XRD analysis
+changes
+     of theinsamples
+                relativeafter
+                           intensities.
+                                 annealingBy   at comparing
+                                                   300–600 °C shows   the XRD       peaks
+                                                                               almost       withthe
+                                                                                        exactly    the  cards
+                                                                                                     same       of Joint
+                                                                                                             pattern  exceptCommittee
+                                                                                                                                for some on
+Powder     Diffraction      standards      (JCPDS), the          peaks                                                    ◦
+     changes in      relative   intensities. By      comparing         theatXRD(2θ)peaks
+                                                                                     30.87,with
+                                                                                            39.48,
+                                                                                                 the43.29,   andJoint
+                                                                                                      cards of     48.52     correspond
+                                                                                                                        Committee        on to
+Ni2 SiPowder
+       (210), Ni2 Si     (211), Ni
+                 Diffraction         2 Si
+                                standards (021),   and
+                                              (JCPDS),    Nithe2 Si (002),
+                                                                  peaks     atrespectively.
+                                                                               (2θ)  30.87,    Additionally,
+                                                                                            39.48, 43.29,  and   the
+                                                                                                                48.52°peaks     at
+                                                                                                                         correspond(2θ)   31.51,
+                                                                                                                                          to
+35.95,Ni2
+       and           ◦
+              47.53Ni2Si
+          Si (210),     correspond
+                            (211), Ni2Si to NiSi    (002),Ni2
+                                            (021), and        NiSi    (111), and
+                                                                 Si (002),           NiSi (211),
+                                                                             respectively.         respectively.
+                                                                                             Additionally,          Based
+                                                                                                              the peaks    at on
+                                                                                                                              (2θ)these
+                                                                                                                                    31.51, XRD
+     35.95,
+spectra,   Ni2and   47.53°
+                 Si and      correspond
+                          NiSi are           to NiSi
+                                       present     up to (002),     ◦ C. The
+                                                             800 NiSi      (111),  and NiSi
+                                                                                 XRD    pattern(211),
+                                                                                                  of the  sample Based
+                                                                                                      respectively.  annealed    onat   700 ◦ C
+                                                                                                                                     these
+     XRD NiSi
+revealed    spectra,    Ni2Si and NiSi are present up to 800 °C. The XRD pattern of the sample annealed at 700
+                  2 peaks in addition to the peaks corresponding to Ni2 Si and NiSi phases. This indicated
+     °C   revealed     NiSi
+that Ni2 Si, NiSi, and 2NiSi   peaksexist
+                                        in addition       to the peaks
+                                             at temperatures            higher  corresponding
+                                                                                  than 700 ◦ C. to    Ni2Si and
+                                                                                                  A strong     peak NiSi   phases.
+                                                                                                                      around          This
+                                                                                                                                  54 degrees
+                                   2
+     indicated that Ni2Si, NiSi, and NiSi2 exist at temperatures higher than 700 °C. A strong peak around
+corresponds to Si (311). The lack of peaks above 60 degrees is due to the strong peak of Si (311).
+     54 degrees corresponds to Si (311). The lack of peaks above 60 degrees is due to the strong peak of Si
+The high intensity of the Si (311) peak covers the peaks above 60 degrees. Also, the d-spacing of
+     (311). The high intensity of the Si (311) peak covers the peaks above 60 degrees. Also, the d-spacing
+Ni (111) is the same as that of Ni2 Si (021). Therefore, it is hard to find the formation of the possible
+     of Ni (111) is the same as that of Ni2Si (021). Therefore, it is hard to find the formation of the possible
+recrystallization
+     recrystallization of nanocrystalline
+                            of nanocrystalline   Ni(P)
+                                                     Ni(P)films
+                                                              filmsfromfromthe the XRD    spectrum.The
+                                                                                   XRD spectrum.       Theformation
+                                                                                                             formation   of of
+                                                                                                                            Ni3NiP3  P phases
+                                                                                                                                   phases
+are are
+    possible     in in
+          possible  electroless     nickel
+                          electroless        thin
+                                         nickel      film
+                                                  thin   filmafter   annealing.
+                                                                 after  annealing.However,
+                                                                                       However,no   no diffraction    peaksfrom
+                                                                                                       diffraction peaks       fromNi  Ni3P3 P is
+observed     within    the   detection     limit.
+     is observed within the detection limit.
+
+
+
+
+                                      (a)                                                             (b)
+
+
+
+
+                                      (c)                                                             (d)
+
+
+                                                              Figure 1. Cont.
+Materials 2017, 10, 942                                                                                                                                           4 of 11
+     Materials
+    Materials   2017,
+              2017, 10,10,
+                        942942                                                                                                                              4 4ofof1111
+
+
+
+
+                                            (e)                                                                          (f)
+                                           (e)                                                                            (f)
+              Figure 1. SEM images of samples with deposited electroless Ni at 70 °C for (a) 60; (b) 75; and (c) 120
+          Figure  1. 1.  SEM      images     ofsamples
+                                                 samples        withthedeposited        electroless    Ni   at   70 ◦ for
+      Figure s,       SEM
+                 respectively;images  (d) of
+                                           EDS    diagram    withfor deposited
+                                                                             Ni        electroless
+                                                                                 deposit     plated Ni forat 6070 s; °C
+                                                                                                                     SEM  for (a)
+                                                                                                                                (a)
+                                                                                                                              images     (b) 75;
+                                                                                                                                    60; (b)
+                                                                                                                                    60;       75;  and (c)
+                                                                                                                                                   and
+                                                                                                                                        (cross-section)       120
+                                                                                                                                                         (c) of120 s,
+          s,  respectively;
+      respectively;
+             samples       (d)
+                          withEDS  (d)   EDS
+                                         diagram
+                                   deposited     diagram
+                                                       for
+                                                  electrolessthe   Nithe
+                                                                forNi   deposit
+                                                                       at 70Ni   deposit
+                                                                                °C for       plated
+                                                                                         (e) 90for
+                                                                                    plated       s 60         180s;s,SEM
+                                                                                                        s;(f)60
+                                                                                                   andfor   SEM     images     images     (cross-section)
+                                                                                                                                 (cross-section)
+                                                                                                                        respectively;      The        ofin (e)
+                                                                                                                                                 insets         of
+                                                                                                                                                          samples
+          samples
+      withand       (f)
+              deposited with
+                        show thedeposited
+                                       thickness
+                              electroless       electroless
+                                                Ni atof 70the◦ CNi
+                                                                electroless
+                                                                  for              and(e)
+                                                                                Ni.for
+                                                                      at(e)7090°Cs                 and (f)
+                                                                                              180s s,
+                                                                                          (f)90               180 s, The
+                                                                                                      respectively;      respectively;
+                                                                                                                                  insets in The(e)insets
+                                                                                                                                                    and (f)in (e)
+                                                                                                                                                               show
+      theand     (f) show
+            thickness       ofthe
+                                thethickness
+                                       electroless  of the
+                                                        Ni. electroless Ni.
+             In general, the nickel thin films on the surface polished silicon via the vacuum plating process
+     areIn     general,
+           heated      and thenickel nickel     thin are
+                                          silicides     films      on thethe
+                                                              formed;          surface      polished
+                                                                                  phase of the       nickelsilicon
+                                                                                                                silicidevia the
+                                                                                                                            depends vacuum on the plating      process
+                                                                                                                                                     temperature
+      In general, the nickel thin films on the surface polished silicon via the vacuum plating process are
+   are
+     ofheated
+         formation.  and Ni nickel     silicides
+                                 2Si forms       at are     formed; the200
+                                                     approximately               phase °C.of   the nickel
+                                                                                             Upon     further   silicide
+                                                                                                                    heat depends
+                                                                                                                            treatment,on     thethe   temperature
+                                                                                                                                                   monosilicide,
+heated
+   ofNiSi,
+           and nickel
+       formation.         Ni2Si
+                               silicides
+                                     forms
+                                               are    formed; the phase
+                                               at and the
+                                                    approximately              200NiSi
+                                                                                         ofUpon
+                                                                                             the nickel
+                                                                                       °C.2, at       further
+                                                                                                               silicide
+                                                                                                                    heat
+                                                                                                                              depends on
+                                                                                                                             treatment,
+                                                                                                                                                   the   temperature
+              forms at       about       300 °C                    disilicide,                   about      700 °C      [13]. There
+                                                                                       ◦ C. Upon further heat treatment, the monosilicide,
+                                                                                                                                          is the     monosilicide,
+                                                                                                                                             evidence that         the
+   formation.
+of NiSi,   formsare
+     Ni atoms          Ni
+                       at 2  Si
+                          about
+                          the      forms
+                                 major 300 °C at
+                                            moving approximately
+                                                  and thespecies  disilicide,
+                                                                      during the200NiSi2,growth     of Ni2700
+                                                                                             at about        Si, °CNiSi,   andThere
+                                                                                                                         [13].     NiSi2 is   evidence
+                                                                                                                                           [14]. As           that the
+                                                                                                                                                       mentioned
+NiSi,  formsNi     at2Si
+                       about       300    ◦ C and the disilicide, NiSi , at about 700 ◦ C [13]. There is evidence that the Ni
+   Niabove,
+       atoms       are  theandmajor NiSimoving
+                                            were detected
+                                                        species in   duringsamplesthe 2growth
+                                                                                          annealing of Ni at2Si,
+                                                                                                              300–800
+                                                                                                                   NiSi, and  °C. NiSi
+                                                                                                                                    This2 [14].
+                                                                                                                                            indicated
+                                                                                                                                                    As that
+                                                                                                                                                        mentioned  the
+atoms    are
+     silicide
+   above,       the
+               Ni2Si   major
+                   formation
+                         and NiSi  moving  were is
+                                     sequence     species
+                                                    detected     during
+                                                          different in from   the
+                                                                          samples   growth
+                                                                                    the  annealingof Ni2
+                                                                                           polished      silicon
+                                                                                                          at      NiSi,
+                                                                                                             Si,300–800case.and TheNiSi
+                                                                                                                               °C.     Ni22Si
+                                                                                                                                     This     [14].
+                                                                                                                                                 phase
+                                                                                                                                             indicatedAsthatmentioned
+                                                                                                                                                              thatstill
+                                                                                                                                                                     the
+above,   Ni2 Si and         NiSisequence
+                                     were     detected         in  samples                                             ◦ C. This indicated that the silicide
+     remained
+   silicide           in
+                formation samples         annealing is at       300–800
+                                                        different         from°C annealing
+                                                                                   may be
+                                                                                   the             at 300–800
+                                                                                               attributed
+                                                                                           polished      silicon to the    oxide
+                                                                                                                       case.         interlayer
+                                                                                                                                 The Ni2     Si phasebetween that the
+                                                                                                                                                                    still
+formation
+     electroless
+   remained      sequence
+                    in  nickel
+                        samples     is  different
+                                   thin films
+                                        annealing  andatfromhe     the    polished
+                                                                  texture°C
+                                                              300–800          silicon.
+                                                                                  may be   silicon
+                                                                                           Mondon     case.
+                                                                                                        et
+                                                                                               attributed        The
+                                                                                                             al.to   theNi2
+                                                                                                                  [15]          Si phase
+                                                                                                                          reported
+                                                                                                                            oxide       that,  that
+                                                                                                                                      interlayer      still
+                                                                                                                                                despite        remained
+                                                                                                                                                            the HF-
+                                                                                                                                                      between        the
+in dip
+   samples  prior to
+   electroless            nickel
+                  annealing
+                     nickel     thin  plating,
+                                      at  300–800
+                                         films     an ◦ C
+                                                  and    interfacial
+                                                          the  may
+                                                                 texturebeoxide       layer
+                                                                             attributed
+                                                                              silicon.        wasthe
+                                                                                                to
+                                                                                           Mondon    found       between
+                                                                                                          oxide[15]
+                                                                                                         et al.       interlayer           and
+                                                                                                                                 nickelthat,
+                                                                                                                          reported     between    silicon.
+                                                                                                                                                      the the
+                                                                                                                                                  despite     Native
+                                                                                                                                                             electroless
+                                                                                                                                                                    HF-
+     oxide
+nickel
+   dip   thin
+         prior seems
+                  films
+                   to     to
+                           and
+                        nickelregrowthe
+                                    plating,quickly       up to a thickness
+                                                 an silicon.
+                                           texture     interfacial        oxide that
+                                                                      Mondon         layeral.effectively
+                                                                                        et      [15]found
+                                                                                              was      reportedhinders
+                                                                                                                  between    silicide
+                                                                                                                         that,    despite
+                                                                                                                                 nickel  formation.
+                                                                                                                                              thesilicon.
+                                                                                                                                            and                  et
+                                                                                                                                                          LeeNative
+                                                                                                                                                     HF-dip         al. to
+                                                                                                                                                                  prior
+     [16]
+   oxide
+nickel       suggested
+            seems to
+         plating,              that
+                        anregrow       as
+                             interfacial    native
+                                          quickly
+                                                oxide   oxide
+                                                        up to
+                                                           layer   serves
+                                                                   a was
+                                                                     thickness as
+                                                                              foundan    effective
+                                                                                       that           kinetic
+                                                                                             effectively
+                                                                                          between       nickel      diffusion
+                                                                                                               hinders
+                                                                                                                     and silicon.   barrier
+                                                                                                                              silicide Native   for
+                                                                                                                                          formation. the
+                                                                                                                                                      oxide reaction
+                                                                                                                                                            Lee et
+                                                                                                                                                                seems al. to
+     between
+   [16]
+regrow   suggested
+           quickly   Ni and
+                          upthat Si asubstrates,
+                                to     s native
+                                        thickness       itthat
+                                                      oxideretardsserves theas
+                                                                   effectively supply      of Ni and
+                                                                                   anhinders
+                                                                                         effective         affects
+                                                                                                      kinetic
+                                                                                                    silicide            the silicides
+                                                                                                                    diffusion
+                                                                                                                  formation.               formation
+                                                                                                                                     barrier
+                                                                                                                                      Lee              thekinetics.
+                                                                                                                                                 for [16]
+                                                                                                                                             et al.           reaction
+                                                                                                                                                              suggested
+     This is considered
+   between        Ni oxide
+                       and Siserves  the reason itfor
+                                    substrates,              two silicide
+                                                          retards      the        phases
+                                                                              supply       ofcoexisting
+                                                                                               Ni and         at an the
+                                                                                                            affects      annealing temperature               of 300–
+that  as native                               as an effective             kinetic      diffusion      barrier       for thesilicides
+                                                                                                                                 reaction   formation
+                                                                                                                                                betweenkinetics.
+                                                                                                                                                               Ni and Si
+     800   °C.
+   This is considered the reason for two silicide phases coexisting at an annealing temperature of 300–
+substrates, it retards the supply of Ni and affects the silicides formation kinetics. This is considered the
+  800 °C.
+reason for two silicide phases coexisting at an annealing temperature of 300–800 ◦ C.
+
+
+
+
+              Figure 2. XRD patterns of electroless Ni deposits plated for 60 s with a pH of 5 at 70 °C: samples
+              without annealing and those annealed at 300–800 °C for 10 min.
+          Figure
+        Figure 2. 2.XRD
+                     XRDpatterns
+                           patternsofofelectroless
+                                        electroless Ni
+                                                    Ni deposits
+                                                       deposits plated
+                                                                 platedfor
+                                                                         for60
+                                                                             60sswith
+                                                                                  witha apH                  ◦ C:
+                                                                                          pHofof5 5atat7070°C:  samples
+                                                                                                                  samples
+          without   annealing and  those  annealed  at
+        without annealing and those annealed at 300–800300–800 ◦
+                                                               °C for 10 min.
+                                                                  for 10 min.
+Materials 2017, 10, 942                                                                                             5 of 11
+
+
+      Materials 2017, 10, 942                                                                                 5 of 11
+     The SEM images of electroless Ni/Si films plated for 60 s, including samples after thermal
+annealingTheat SEM
+               300–800    ◦ C for
+                       images   of10 min,    are Ni/Si
+                                    electroless  shown    in Figure
+                                                       films  plated 3.
+                                                                      forAfter
+                                                                           60 s,annealing
+                                                                                  including at 300–600
+                                                                                             samples     ◦ C, the
+                                                                                                      after       surface
+                                                                                                            thermal
+      annealing  at 300–800   °C for 10  min, are shown   in Figure. 3. After annealing   at 300–600
+morphology of electroless Ni/Si films does not change and the smooth surface morphology appears to   °C, the surface
+      morphology
+be preserved.   Thisof showed
+                        electroless Ni/Si
+                                 that  Ni2films
+                                           Si anddoes  notare
+                                                     NiSi  change
+                                                              veryand
+                                                                    stable       to 600 ◦
+                                                                             smooth
+                                                                         the up        surface morphology
+                                                                                          C. After annealing    at 700 ◦ C
+                                                                                                            appears
+      to be preserved.   This showed    that Ni 2Si and NiSi are very stable up to 600 °C. After annealing at 700
+for 10 min, a small amount of gray area is seen on the surface. The gray area was found to increase for
+      °C for 10 min, a small amount of gray area is seen on the surface. The gray area was found to increase
+the sample annealing at 800◦ C, reflecting the more unstable nickel silicide layer in this sample.
+      for the sample annealing at 800°C, reflecting the more unstable nickel silicide layer in this sample.
+
+
+
+
+                                 (a)                                                 (b)
+
+
+
+
+                                 (c)                                                 (d)
+
+
+
+
+                                 (e)                                                 (f)
+            Figure 3. SEM images of electroless Ni/Si films plated for 60 s, including samples after thermal
+      Figure 3. SEM images of electroless Ni/Si films plated for 60 s, including samples after thermal
+           annealing at (a) 300 °C; (b) 400 °C; (c) 500 °C; (d) 600 °C; (e) 700 °C; and (f) 800 °C for 10 min.
+      annealing at (a) 300 ◦ C; (b) 400 ◦ C; (c) 500 ◦ C; (d) 600 ◦ C; (e) 700 ◦ C; and (f) 800 ◦ C for 10 min.
+            Figure 4 shows TEM images of electroless Ni/Si films plated for 60 s, including samples after
+      thermal4 shows
+      Figure    annealingTEMat 500–800
+                                 images°C offor 10  min. The
+                                             electroless  Ni/Siinsets  display
+                                                                   films   platedthefor 60 s,
+                                                                                      corresponding   selected
+                                                                                              including         area after
+                                                                                                          samples
+      electron  diffraction (SAED)    ◦
+                                      pattern for the nickel silicides  film and   silicon substrate.
+thermal annealing at 500–800 C for 10 min. The insets display the corresponding selected area         These  figures
+      show
+electron     a set of sharp
+           diffraction      and regular
+                         (SAED)    patternspots
+                                            forthat
+                                                the clearly
+                                                     nickelreveal    the single
+                                                             silicides          crystalline
+                                                                         film and    siliconand  cubic phase
+                                                                                              substrate.  Theseof the
+                                                                                                                   figures
+      silicon. The (200) reflection is a double diffraction. The other spots reveal the phase of nickel silicides.
+show a set of sharp and regular spots that clearly reveal the single crystalline and cubic phase of the
+      Polycrystalline Ni2Si and NiSi were found to be present in samples annealed at 500 and 600 °C. The
+silicon. The (200) reflection is a double diffraction. The other spots reveal the phase of nickel silicides.
+Polycrystalline Ni2 Si and NiSi were found to be present in samples annealed at 500 and 600 ◦ C.
+The thickness of the silicide layer is about 125–160 nm. For the sample annealed at 700 ◦ C, the thickness
+Materials 2017, 10, 942                                                                                          6 of 11
+      Materials 2017, 10, 942                                                                              6 of 11
+
+
+of thethickness
+        silicide of
+                  layer  increases
+                    the silicide    to is
+                                 layer  210–290
+                                          about nm   in nm.
+                                                125–160  someForareas.
+                                                                   the In  general,
+                                                                       sample        silicides
+                                                                                annealed  at 700are  formed
+                                                                                                  °C, the     usually by
+                                                                                                          thickness
+means of of
+         the silicide
+            reactions layer increases
+                        between    a to   210–290 nm
+                                     deposited   metalin layer
+                                                         some and
+                                                               areas.the
+                                                                      In silicon
+                                                                         general, silicides
+                                                                                  substrate.areNickel
+                                                                                                formedis the
+                                                                                                         usually by
+                                                                                                              dominant
+      means   of reactions  between   a deposited metal  layer and  the silicon substrate. Nickel  is the dominant
+diffusing species during the formation of nickel silicides. For the nickel layer with a thickness of 60 nm,
+      diffusing of
+the thickness     species
+                    NiSi during   the formation
+                           and NiSi              of nickel silicides. For the nickel layer with a thickness of 60
+                                     2 are about 120 nm and 180 nm, respectively. This reveals the formation
+      nm, the thickness of NiSi and NiSi2 are about 120 nm and 180
+of NiSi2 and of unstable nickel silicides after annealing at 700 ◦ C.nm,           respectively. This reveals the
+                                                                                Agglomeration      of NiSi2 is observed
+      formation of NiSi2 and of unstable ◦nickel silicides after annealing at 700 °C. Agglomeration of NiSi2
+for the sample after annealing at 800 C. This suggests that the films became unstable at temperatures
+      is observed for   the sample after annealing at 800 °C. This suggests that the films became unstable at
+higher   than 700 ◦ C. These results are in agreement with the results of SEM.
+      temperatures higher than 700 °C. These results are in agreement with the results of SEM.
+
+
+
+
+                                (a)                                                  (b)
+
+
+
+
+                                (c)                                                  (d)
+
+          Figure 4. TEM images of electroless Ni/Si films plated for 60 s, including samples after thermal
+      Figure 4. TEM images of electroless Ni/Si films plated for 60 s, including samples after thermal
+          annealing at (a) 500 °C; (b) 600 °C; (c) 700 °C; and (d) 800 °C for 10 min.
+      annealing at (a) 500 ◦ C; (b) 600 ◦ C; (c) 700 ◦ C; and (d) 800 ◦ C for 10 min.
+            Figure 5 shows the sheet resistance of electroless Ni (60 nm)/Si films as a function of the
+     Figure  5 shows
+     annealing         the sheet
+                temperature.      resistance of
+                              The phase           electroless
+                                           formation  can be Ni
+                                                              also(60  nm)/Si
+                                                                   assessed  byfilms
+                                                                                sheet as a  function of
+                                                                                       resistance         the annealing
+                                                                                                   measurements.
+     The average
+temperature.   Thevalue
+                    phaseof the sheet can
+                           formation   resistance  came
+                                             be also     down by
+                                                      assessed  aftersheet
+                                                                      annealing   compared to
+                                                                           resistance            the as-deposited
+                                                                                        measurements.      The average
+     sample.  The sheet resistances have   a downward    trend  with  an increase  in annealing
+value of the sheet resistance came down after annealing compared to the as-deposited sample.     temperatures   up The
+     to 600 °C. This downward    trend  in sheet resistance can  be ascribed to the  formation  of
+sheet resistances have a downward trend with an increase in annealing temperatures up to 600 ◦ C.  Ni 2Si and NiSi.
+
+     However, an abrupt increase was observed after annealing at 700 °C. The results of sheet resistances
+This downward trend in sheet resistance can be ascribed to the formation of Ni2 Si and NiSi. However,
+     and SEM surface views of the samples annealed at various temperatures and the abrupt increase of
+an abrupt increase was observed after annealing at 700 ◦ C. The results of sheet resistances and SEM
+     sheet resistance near 700 °C can be ascribed to the unstable quality of the silicides layers of the
+surface  views of the samples annealed at various temperatures and the abrupt increase of sheet
+     samples.
+resistance near 700 ◦ C can be ascribed to the unstable quality of the silicides layers of the samples.
+Materials 2017, 10, 942                                                                                                                                 7 of 11
+       Materials 2017, 10, 942                                                                                                                7 of 11
+
+        Materials 2017, 10, 942                                                                                                                7 of 11
+
+
+
+
+         Figure   Sheet
+                5. 5.
+             Figure     resistance
+                      Sheet         of of
+                            resistance electroless
+                                          electrolessNi
+                                                     Ni(60  nm)/Sifilms
+                                                        (60 nm)/Si  filmsasas
+                                                                            a a function
+                                                                              function of of annealing
+                                                                                         annealing     temperature.
+                                                                                                   temperature.
+                Figure 5. Sheet resistance of electroless Ni (60 nm)/Si films as a function of annealing temperature.
+              To obtain deeper insight into the information affecting photovoltaic performance, heat treatment
+      To obtain deeper insight into the information affecting photovoltaic performance, heat treatment
+     for To
+          various thicknesses
+               obtain deeper of    electroless
+                             insight   into theNi films  wereaffecting
+                                                information     performed.    Figure 6 plots
+                                                                         photovoltaic         the sheetheat
+                                                                                        performance,     resistance
+                                                                                                             treatmentas
+for various thicknesses      of  electroless   Ni   films were    performed.      Figure   6 plots the    sheet   resistance
+     afor
+        function
+          variousofthicknesses
+                     annealing of
+                               temperature     between
+                                   electroless Ni        350–400 °C
+                                                    films were         for the Ni
+                                                                 performed.        (456nm)/Si,
+                                                                              Figure    plots   Ni (60
+                                                                                               the     nm)/Si,
+                                                                                                   sheet         Ni (75
+                                                                                                          resistance  as
+as a nm)/Si,
+     function    ofNi
+               and   annealing    temperature      between    350–400of◦allC for samples
+                                                                                  the Ni (45     nm)/Si, Ni (60      nm)/Si,
+      a function  of (90  nm)/Si
+                     annealing      samples. The
+                                temperature         sheet 350–400
+                                               between    resistances
+                                                                    °C for thethe           decrease
+                                                                                Ni (45 nm)/Si,  Ni (60 slightly
+                                                                                                        nm)/Si, as
+                                                                                                                 Ni the
+                                                                                                                     (75
+         nm)/Si,
+Ni (75nm)/Si,
+     annealing    and (90
+               and Ni
+                       Ni (90
+                 temperature   nm)/Si
+                               increases.
+                           nm)/Si
+                                          samples.
+                                    samples.The
+                                              The
+                                                           sheet  resistances
+                                                      The resistances
+                                                 decrease
+                                                    sheet in   sheet  resistance
+                                                                        of
+                                                                                of samples
+                                                                           all themay   be samples
+                                                                                   all the attributed decrease
+                                                                                             decrease to   the as
+                                                                                                       slightly
+                                                                                                                  slightly
+                                                                                                                greater
+                                                                                                                     the
+                                                                                                                           as
+    annealing
+the NiSi         temperature
+           phase temperature
+      annealing   that           increases.
+                       occurs during          The
+                                        thermal
+                                increases.   The    decrease
+                                                 annealing.
+                                                  decrease  in in sheet
+                                                                sheet    resistance
+                                                                      resistance  maymay    be attributed
+                                                                                        be attributed   to thetogreater
+                                                                                                                 the greater
+NiSi phase    that  occurs during     thermal   annealing.
+      NiSi phase that occurs during thermal annealing.
+                                                                               6                                       45nm
+                                                                                                                       60nm
+                                                                               6                                       45nm
+                                                                                                                       75nm
+                                                                               5                                       60nm
+
+
+
+
+                                              SheetSheet
+                                                          resistance (Ω/sq.)
+                                                                                                                       90nm
+                                                                               5                                       75nm
+
+
+
+
+                                                    resistance  (Ω/sq.)
+                                                                               4                                       90nm
+
+                                                                               4
+                                                                               3
+                                                                               3
+                                                                               2
+                                                                               2
+                                                                               1
+                                                                               1   350   360    370      380     390   400
+                                                                                          Annealing Temperature (°C)
+                                                                                   350   360     370     380     390   400
+                                                                                          Annealing Temperature (°C)
+              Figure 6. Sheet resistance as a function of annealing temperature at 350–400 °C for the Ni (45 nm)/Si,
+              Ni (60 6.
+              Figurenm)/Si,
+                        SheetNi (75 nm)/Si,
+                              resistance    and Ni
+                                         as a        (90 of
+                                               function  nm)/Si samples.
+                                                            annealing temperature at 350–400 °C◦for the Ni (45 nm)/Si,
+     Figure 6. Sheet resistance as a function of annealing temperature at 350–400 C for the Ni (45 nm)/Si,
+     Ni (60Ninm)/Si,
+                (60 nm)/Si,Ni Ni
+                               (75(75  nm)/Si,and
+                                    nm)/Si,      andNi Ni (90
+                                                            (90 nm)/Si
+                                                                  nm)/Sisamples.
+                                                                              samples.
+            As mentioned above, the formation of an oxide layer on the wafer surface is inevitable during
+     sensitization     and activation.
+            As mentioned         above, the  Toformation
+                                                  understand       ofthe
+                                                                      an effect
+                                                                           oxide of     the on
+                                                                                    layer     oxide
+                                                                                                  thelayer
+                                                                                                         wafer  onsurface
+                                                                                                                    the Vocisof     a solar cell,
+                                                                                                                                  inevitable         two
+                                                                                                                                                 during
+     As    mentioned
+     different    activating above,
+                                  baths the  formation
+                                           were    used      in  of
+                                                                  thisan   oxide
+                                                                         study.      layer
+                                                                                    The     openon   the
+                                                                                                     circuitwafer
+      sensitization and activation. To understand the effect of the oxide layer on the Voc of a solar cell, two       surface
+                                                                                                                voltage     Voc    is
+                                                                                                                                   of  inevitable
+                                                                                                                                        the   Cu/Ni/Si  during
+     samples
+sensitization    with
+      different and     two    different
+                           activation.
+                   activating     baths To activation
+                                                  understand
+                                           were used        treatments
+                                                              in thisthe     of
+                                                                         study.  finger
+                                                                               effect       pattern
+                                                                                    Theofopen  the oxidesilicon,
+                                                                                                      circuit layerbefore
+                                                                                                                 voltage     and
+                                                                                                                          onVoc     after
+                                                                                                                               theofVoc     annealing,
+                                                                                                                                         theof a    solar cell,
+                                                                                                                                               Cu/Ni/Si
+two was     measured
+     different
+      samples    with    twounder
+                   activating        AM were
+                                   baths
+                               different     1.5 conditions
+                                            activationused in         to determine
+                                                                     this
+                                                             treatments      tudy.
+                                                                              of fingerThe   theopen
+                                                                                             patternsolarcircuit    properties.
+                                                                                                              cell before
+                                                                                                         silicon,   voltage   and Voc Bath
+                                                                                                                                         of the
+                                                                                                                                     after            the
+                                                                                                                                               1 isCu/Ni/Si
+                                                                                                                                            annealing,
+     conventional
+      was with
+samples                 activating
+                   two under
+             measured                  bath,
+                           differentAM 1.5     PdCl
+                                         activation   2 /HCl
+                                                    conditions    (0.15
+                                                           treatments    g/L
+                                                                       to of    PdCl
+                                                                            determine
+                                                                                  finger the
+                                                                                       2  +  3  mL/L
+                                                                                              pattern    HCl),
+                                                                                                     solar cell   as
+                                                                                                            silicon,  reported
+                                                                                                                     properties.
+                                                                                                                        before and  in  the
+                                                                                                                                      Bath   literature
+                                                                                                                                           after1 is the
+                                                                                                                                                   annealing,
+     [14],  which is denoted
+      conventional       activating B1.bath,     2 is the
+                                          BathPdCl       /HCl activation
+                                                                  (0.15   g/L solution
+                                                                                PdCl      + with
+                                                                                             3     HF (0.15
+                                                                                                mL/L      HCl),  g/L
+                                                                                                                  as   PdCl2 + 3in
+                                                                                                                      reported       mL/Lthe  HCl + 83
+                                                                                                                                              literature
+was measured under AM 1.5 conditions to determine the solar cell properties. Bath 1 is the conventional
+                                                       2                                2
+     mL/L    HF), which
+      [14], which             is denoted     B2.2Figure        7 shows Voc        as a function
+                                                                                             with HFof(0.15the different
+                                                                                                                  g/L PdClannealing
+                                                                                                                               2 + 3 mL/Ltimes HCl +for
+activating   bath, is    denoted
+                      PdCl           B1. Bath       is the activation         solution
+                              2 /HCl (0.15 g/L PdCl2 + 3 mL/L HCl), as reported in the literature [14], which is
+                                                                                                                                                        83
+     samples
+      mL/L       prepared
+              HF),   which isbydenoted
+                                    using bath
+                                             B2. 1     and 7bath
+                                                   Figure         shows2. For
+                                                                            Vocthe as asolar    cell of
+                                                                                          function     prepared
+                                                                                                            the      by
+                                                                                                                 different using    bath 1, an
+                                                                                                                               annealing           open
+                                                                                                                                               times   for
+denoted
+     circuitB1.voltage
+                 Bath 2(Voc)is the activation    is 1solution         with annealing.
+                                                                               HF (0.15 g/L            PdCl      + is
+                                                                                                               2HF  3 mL/L         HCl + the 83 mL/L    is HF),
+      samples     prepared byofusing 0.590 V bath   obtained
+                                                        and     bathbefore
+                                                                        2. For the solar cell   When      the
+                                                                                                        prepared        incorporated,
+                                                                                                                      by using      bath 1, anVoc   open
+which    is denotedimproved
+     significantly        B2. Figure 0.632 7 shows Vocopen         as acircuit
+                                                                          function        of the     different      annealing         times for       samples
+      circuit  voltage (Voc) of to    0.590 V isV. The
+                                                     obtained before                voltage
+                                                                               annealing.        of
+                                                                                                When  thethesamples
+                                                                                                                HF is after      annealing
+                                                                                                                         incorporated,       thehave
+                                                                                                                                                   Voc a is
+prepared    by   using
+      significantlytrend
+     downward              bath   1 and    bath    2. For
+                                         increaseV.inThe
+                              with anto 0.632
+                        improved                               the
+                                                           annealing solar times up
+                                                                 open circuit cell  prepared         by
+                                                                                          to 20 of the
+                                                                                    voltage       minutes.using     bath
+                                                                                                                For theafter
+                                                                                                            samples         1, an
+                                                                                                                            samples open
+                                                                                                                                  annealing  circuit
+                                                                                                                                          preparedhavebyvoltage
+                                                                                                                                                          a
+(Voc) of
+     using 0.590
+      downwardbathV2,is
+                     trend obtained
+                               openan
+                         the with         before
+                                      circuit
+                                          increase   annealing.
+                                                 voltage
+                                                      in       drops
+                                                            annealing     When
+                                                                         to  0.614,up
+                                                                            times    the   toHF
+                                                                                       0.590,  20 is   incorporated,
+                                                                                                 0.5810,
+                                                                                                  minutes.    0.581,   0.578,the
+                                                                                                                 For the         and
+                                                                                                                            samples  Voc    is
+                                                                                                                                        0.570   significantly
+                                                                                                                                                 V after
+                                                                                                                                          prepared     by
+     annealing
+improved
+      using   bathat
+              to     2,500
+                  0.632    V.°CThe
+                          the  open1open
+                                for    min,
+                                       circuit2  min,
+                                              circuit
+                                                  voltage3 min,
+                                                          voltage   5 min,
+                                                                drops   of    10
+                                                                          tothe  min,
+                                                                                   samples
+                                                                              0.614,      and 20
+                                                                                        0.590,               respectively.
+                                                                                                     min, 0.581,
+                                                                                                  after
+                                                                                                    .5810, annealing        have
+                                                                                                                       0.578,   The
+                                                                                                                                 and aVoc    decreases
+                                                                                                                                        downward
+                                                                                                                                         0.570   V  aftertrend
+with to
+      an 97.2%
+      annealing  and
+           increase     90.2%
+                    at in
+                       500   °C of
+                                 forthemin,
+                            annealing1    original
+                                            times
+                                               2      value
+                                                 min,up   3 min,20
+                                                             to  after  annealing
+                                                                       minutes.
+                                                                    5 min,    10 min,   atand
+                                                                                      For    500
+                                                                                              the °Cmin,
+                                                                                                 20     for
+                                                                                                    samples  1 min    and
+                                                                                                                   prepared
+                                                                                                             respectively.  20 The
+                                                                                                                                 min,
+                                                                                                                                   byVoc respectively.
+                                                                                                                                         using     bath 2, the
+                                                                                                                                             decreases
+     For
+open to    the
+       circuit  samples
+                  and
+          97.2%voltage      prepared
+                        90.2%    of the
+                              drops   toby    using
+                                          original
+                                           0.614,     value
+                                                     0.590,     1,
+                                                       bath 0.5810, the open
+                                                                 after   annealingcircuit
+                                                                             0.581,          voltage
+                                                                                         at 500
+                                                                                      0.578,       °C for
+                                                                                                 and      drops
+                                                                                                             1 min
+                                                                                                          0.570        0.561,
+                                                                                                                   to after
+                                                                                                                   V  and        min, 0.536,
+                                                                                                                                0.552,
+                                                                                                                             20annealing        at0.538,
+                                                                                                                                                   500 ◦ C for
+                                                                                                                                          respectively.
+     For
+1 min, 2 the
+         min,samples
+               3 min,prepared bymin,
+                      5 min, 10 usingand
+                                      bath20
+                                           1, min,
+                                              the open circuit voltage
+                                                   respectively.   Thedrops to 0.561, 0.552,
+                                                                       Voc decreases         0.536, and
+                                                                                        to 97.2%    0.538,90.2%
+of the original value after annealing at 500 ◦ C for 1 min and 20 min, respectively. For the samples
+prepared by using bath 1, the open circuit voltage drops to 0.561, 0.552, 0.536, 0.538, 0.513, and 0.505 V
+Materials 2017, 10, 942                                                                                                                          8 of 11
+        Materials 2017, 10, 942                                                                                                            8 of 11
+
+
+        0.513, and 0.505 V after annealing at 500 °C for 1 min, 2 min, 3 min, 5 min, 10 min, and 20 min,
+afterMaterials
+      annealing           500 ◦ C for 1 min, 2 min, 3 min, 5 min, 10 min, and 20 min, respectively.
+                      at942
+               2017, 10,
+      respectively.      The Voc decreases to 95.1% and 85.59% of the original value after annealing at 8             ofThe
+                                                                                                                     500 11
+                                                                                                                          °C
+                                                                                                                             Voc
+decreases    to  95.1%      and  85.59%    of the  original   value  after annealing     at  500  ◦ C for 1 min and 20 min,
+      for 1 min and 20 min, respectively. The results show that the sample prepared by using bath 2 is more
+     0.513,
+respectively.andto
+      resistant  The0.505
+                     the     V after
+                       results   show
+                           thermal   budget   theathe
+                                      annealing
+                                         thatthan    500
+                                                   sample                  min,
+                                                                 1 min,by2by
+                                                             forprepared
+                                                         °Cprepared
+                                                       sample              using
+                                                                             using  min,
+                                                                                  3bath      min,
+                                                                                          5isThe
+                                                                                    bath21.   more    min, andto
+                                                                                                   10resistant
+                                                                                                 observed         20
+                                                                                                                   themin,
+                                                                                                            improvement thermal
+     respectively.
+budgetduethan          The
+                 theaddition
+            to the           Voc
+                      sampleof HF decreases
+                                        to theby
+                                 prepared     to 95.1%  and
+                                                  using bath
+                                               activation    85.59%
+                                                               1. The
+                                                          solution   of the  original
+                                                                       observed
+                                                                    appears           value   after
+                                                                                    improvement
+                                                                              obvious. This         annealing
+                                                                                                      due to
+                                                                                              is mainly         at
+                                                                                                               the to
+                                                                                                         attributed500  °C
+                                                                                                                         the of
+                                                                                                                   addition
+     for 1 min
+      native      and  20   min,
+                silicon oxide    respectively.
+                                  layer that     The
+                                               can beresults show
+                                                       decreased   that the sample   prepared    by using  bath 2 is more
+HF to the   activation      solution   appears   obvious.   This isand/or
+                                                                    mainlyremoved     by to
+                                                                              attributed   HFthewith   the silicon
+                                                                                                   native  corresponding
+                                                                                                                    oxide layer
+     resistant
+      reduction  to of
+                    theseries
+                         thermal   budget than the sample prepared by using bath 1. The observed improvement
+                               resistance.
+that can  be decreased        and/or     removed by HF with the corresponding reduction of series resistance.
+       due to the addition of HF to the activation solution appears obvious. This is mainly attributed to the
+       native silicon oxide layer that can be decreased and/or removed by HF with the corresponding
+       reduction of series resistance.
+
+
+
+
+       FigureFigure  7. Open
+               7. Open       circuit
+                         circuit     voltage
+                                 voltage   as as a functionofofthe
+                                              a function        theannealing
+                                                                    annealing times
+                                                                               timesfor
+                                                                                     forthe samples
+                                                                                          the       prepared
+                                                                                              samples        by using
+                                                                                                       prepared  by using
+             bath 1 (B1) and bath 2
+       bath 1 (B1) and bath 2 (B2).  (B2).
+
+           Figure
+            Figure7. 8Open circuit
+                       shows   thevoltage  as a function
+                                    XRD patterns         of Ni/Si
+                                                    of the  the annealing
+                                                                   samplestimes
+                                                                            withfortwo
+                                                                                    the different
+                                                                                        samples prepared   by using
+                                                                                                  activation  treatments
+     Figure1 8and
+           bath
+       (bath    1shows
+                  (B1)   the XRD
+                       and
+                    bath 2)bath  2 (B2).
+                             annealed at   400 °Cofor
+                                      patterns       the Ni/SiXRD
+                                                       10 min.    samples    with
+                                                                      analysis           different
+                                                                                    twotwo
+                                                                                of the              activation
+                                                                                             samples after        treatments
+                                                                                                            annealing   at
+(bath 1400
+         and
+           °C bath
+              shows2)almost
+                        annealedthe at
+                                    same 400 ◦ C for 10
+                                           pattern,      min.
+                                                    except   for XRD  analysisin
+                                                                 some changes    of the   twointensities.
+                                                                                    relative   samples Theafterintensities
+                                                                                                                 annealing at
+             Figure 8 shows the XRD patterns of the Ni/Si samples with two different activation treatments
+400 ◦ Cof the
+          shows   NiSi  peaks in
+                      almost     theFigure
+                                        same 8b is
+                                                 pattern,slightly   stronger
+                                                               except             than that
+                                                                           for some            of theinpeaks
+                                                                                          changes                 in Figure
+                                                                                                           relative           8a. ThisThe
+                                                                                                                       intensities.      suggested
+                                                                                                                                             intensities
+      (bath
+        that,  1asand  bathoxide
+                    native    2) annealed
+                                      serves     at an
+                                                 as  400effective
+                                                           °C for 10kinetic
+                                                                        min. XRD        analysis
+                                                                                 diffusion          of the
+                                                                                               barrier   for two
+                                                                                                              the  samples
+                                                                                                                   reaction   after
+                                                                                                                              betweenannealing
+                                                                                                                                          Ni andatSi
+of the NiSi peaks in Figure 8b is slightly stronger than that of the peaks in Figure 8a. This suggested
+      400   °C   shows
+        substrates,       almost     the
+                        it retards the as   same
+                                             supply pattern,
+                                                        of Ni andexcept    for some     changes
+                                                                                 the silicides
+                                                                      affectsdiffusion               in relative
+                                                                                                   formation       intensities.
+                                                                                                                  kinetics        The  intensities
+                                                                                                                            [16]. between Ni and Si
+that, of
+       as  native
+          the         oxide
+                       peaks serves
+                NiSicontact     in Figure 8b    aniseffective
+                                                       slightly     kinetic
+                                                                   stronger     thanprepared
+                                                                                        that ofbarrier     for the
+                                                                                                  thebypeaks         reaction
+               The               resistivity     of plated      Ni/Cu     contacts                        bath in   Figure
+                                                                                                                 1 and   bath8a.2 This
+                                                                                                                                  weresuggested
+                                                                                                                                         measured
+substrates,
+      that,   as itnative
+                     retards
+                           oxidetheserves
+                                      supply   as  of effective
+                                                   an  Ni and affectskinetic   the   silicides
+                                                                               diffusion           formation
+                                                                                             barrier    for  the   kineticsbetween
+                                                                                                                  reaction     [16]. Ni and Si
+        and are shown in Figure 9. For the solar cell prepared by bath 1, a contact resistivity of 17 mΩcm2 s
+      The     contactretards
+      substrates,         resistivity of         plated     Ni/Cu        contacts      prepared        by bath 1      and[16].
+                                                                                                                            bath 2 were measured
+        obtained. it   When HFthe      is supply      of Ni and
+                                           incorporated         (bathaffects   thecontact
+                                                                         2), the      ilicides   formation
+                                                                                              resistivity     iskinetics
+                                                                                                                 improved      to 3 mΩcm2. The          2
+and are     shown
+             The        in
+                     contactFigure       9.
+                               resistivity    For
+                                                of  the
+                                                   plated solar
+                                                              Ni/Cucell   prepared
+                                                                        contacts          by
+                                                                                     prepared  bath
+        contact resistivity of the samples prepared by bath 1 is higher than that of the samples    by  1, a
+                                                                                                        bath  contact
+                                                                                                               1  and     resistivity
+                                                                                                                        bath  2          of 17 mΩcm
+                                                                                                                                 wereprepared
+                                                                                                                                       measured   by
+      and                                                                                                                                               2.
+        bathare 2, shown
+                      Whenin HF  Figureis 9.   Forthethesamples
+                                                           solar (bath
+                                                                   cellobtained
+                                                                         prepared   bybyusing
+                                                                                           bath bath
+                                                                                                   1, a contact
+                                                                                                            have resistivity     of 17 The
+                                                                                                                                        mΩcm    2 is
+is obtained.        which    indicates      incorporated
+                                             that                            2), the     contact      resistivity
+                                                                                                          2           is
+                                                                                                                    betterimproved
+                                                                                                                             quality.    to 3  mΩcm
+                                                                                                                                             results
+      obtained.
+The contact
+        suggest that  When
+                   resistivity HF
+                          the native is
+                                   of theincorporated
+                                              samples
+                                           silicon            (bath
+                                                             prepared
+                                                     oxide layer       2),
+                                                                      can bethe   contact
+                                                                             by bath
+                                                                                decreased    resistivity
+                                                                                          1 is and/or
+                                                                                                higher than is  improved
+                                                                                                          removed  thatbyof   to
+                                                                                                                             the
+                                                                                                                           the    3 mΩcm
+                                                                                                                                   samples
+                                                                                                                                addition
+                                                                                                                                            2. The
+                                                                                                                                              prepared
+                                                                                                                                           of HF to
+      contact
+by bath            resistivity
+                which
+           e2,activation         of the that
+                          indicates
+                            solution.       samples
+                                            Thus, the    samples
+                                                    in this    study,by
+                                                        prepared            bath
+                                                                       obtained
+                                                                         we           byhigher
+                                                                                   1 is
+                                                                              observed     using
+                                                                                            an        baththat
+                                                                                                   than
+                                                                                                enhanced         of the
+                                                                                                             2 open
+                                                                                                                have     samples
+                                                                                                                        better
+                                                                                                                       circuit   quality.   Theby
+                                                                                                                                     prepared
+                                                                                                                               voltage    when    results
+                                                                                                                                                 the
+      bath    2, which
+        activation         indicates
+                       solution            that the samples
+                                    incorporated          HF.   In   obtained
+                                                                    this   work    by
+                                                                                   the  using   bath of
+                                                                                         influence      2 have
+                                                                                                           the     bettercontact
+                                                                                                                 Cu/Ni     quality.system
+                                                                                                                                      The results
+                                                                                                                                             on  the
+suggest that the native silicon oxide layer can be decreased and/or removed by the addition of HF to
+      suggest
+        properties thatofthe
+                           thenative
+                                 solar   silicon
+                                          cells in oxide
+                                                 was        layer can
+                                                        compared        bybe  decreased
+                                                                            using   two an    and/or removed
+                                                                                             ifferent    activating  by   the addition of HF to
+                                                                                                                       baths.
+the activation        solution.      Thus,          this    study, we        observed           enhanced         open     circuit voltage when the
+      the activation solution. Thus, in this study, we observed an enhanced open circuit voltage when the
+activation
+      activationsolution
+                      solutionincorporated
+                                  incorporatedHF.       HF.In Inthis
+                                                                  this work
+                                                                         work the the influence
+                                                                                        influenceofofthe    the   Cu/Ni
+                                                                                                               Cu/Ni         contact
+                                                                                                                        contact         system
+                                                                                                                                   system   on the on the
+properties
+      properties of the   solar
+                      of the      cells
+                               solar        was
+                                        cells  was compared
+                                                      comparedby      by using
+                                                                          using twotwodifferent
+                                                                                           differentactivating
+                                                                                                         activating      baths.
+                                                                                                                     baths.
+
+
+
+
+               Figure 8. XRD patterns of the Ni/Si samples with two different activation treatments ((a) bath 1 and
+               (b) bath 2) annealed at 400 °C for 10 min.
+
+             Figure 8. XRD patterns of the Ni/Si samples with two different activation treatments ((a) bath 1 and
+       Figure 8. XRD patterns of the Ni/Si samples with two different activation treatments ((a) bath 1 and
+            (b) bath 2) annealed at 400 °C for 10 min.
+       (b) bath 2) annealed at 400 ◦ C for 10 min.
+ Materials 2017, 10, 942                                                                                      9 of 11
+Materials 2017, 10, 942                                                                                      9 of 11
+
+
+
+
+                             (a)                                                     (b)
+            Figure 9. Contact resistivity of plated Ni/Cu contacts prepared by (a) bath 1 and (b) bath 2.
+             Figure 9. Contact resistivity of plated Ni/Cu contacts prepared by (a) bath 1 and (b) bath 2.
+
+3. Materials and Methods
+ 3. Materials and Methods
+     Two different kinds of samples were investigated in this work: test samples for the evaluation
+      Two different kinds of samples were investigated in this work: test samples for the evaluation
+of the sheet resistance, and solar cells with Ni/Cu plated front-side metallization for open circuit
+ of the sheet resistance, and solar cells with Ni/Cu plated front-side metallization for open circuit
+voltage (Voc) measurements. Single crystal phosphorus-doped (0 0 1) oriented silicon wafers with
+ voltage (Voc) measurements. Single crystal phosphorus-doped (0 0 1) oriented silicon wafers with
+textured roughness around 3–5 μm were used in the evaluation of the sheet resistance and structure
+ textured roughness around 3–5 µm were used in the evaluation of the sheet resistance and structure
+characterization. The process of electroless Ni plating on a textured silicon surface was performed
+ characterization. The process of electroless Ni plating on a textured silicon surface was performed using
+using a chemical bath, which consisted of a Ni source in the form of metal salt, NiSO4·6H2O (nickel
+ a chemical bath, which consisted of a Ni source in the form of metal salt, NiSO4 ·6H2 O (nickel sulfate),
+sulfate), and NaH2PO2·H2O (sodium hypophosphite). Prior to the electroless plating process, it was
+ and NaH2 PO2 ·H2 O (sodium hypophosphite). Prior to the electroless plating process, it was necessary
+necessary to pretreat the silicon surface. The pretreatment of Si consisted of the following steps; (1)
+ to pretreat the silicon surface. The pretreatment of Si consisted of the following steps; (1) degreasing
+degreasing the surface using acetone by ultrasonication; (2) cleaning in H2SO4/H2O2 solution and
+ the surface using acetone by ultrasonication; (2) cleaning in H2 SO4 /H2 O2 solution and etching in
+etching in 10 vol% HF solution; (3) sensitizing in a solution of SnCl2 and HCl; and (4) activating by
+ 10 vol% HF solution; (3) sensitizing in a solution of SnCl2 and HCl; and (4) activating by the deposition
+the deposition of Pd in a solution of PdCl2 and HCl. The NaH2PO2 helps Ni metal educe to Ni ions in
+ of Pd in a solution of PdCl2 and HCl. The NaH2 PO2 helps Ni metal educe to Ni ions in the bath.
+the bath. This Ni metal begins to deposit on the Si surface and further nucleates, which results in the
+ This Ni metal begins to deposit on the Si surface and further nucleates, which results in the growth of
+growth of the Ni layer. The electroless Ni film was deposited on the textured Si substrate in an
+ the Ni layer. The electroless Ni film was deposited on the textured Si substrate in an electroless plating
+electroless plating bath that operates at 70 °C with pH value of 5 for a plating time of 45–180 s. Some
+ bath that operates at 70 ◦ C with pH value of 5 for a plating time of 45–180 s. Some of the as-deposited
+of the as-deposited samples were annealed isothermally in◦ a furnace at 300–800 °C in Ar/H2
+ samples were annealed isothermally in a furnace at 300–800 C in Ar/H2 atmosphere, and some of
+atmosphere, and some of the as-deposited samples were          annealed at 350–400 °C. Unless otherwise
+ the as-deposited samples were annealed at 350–400 ◦ C. Unless otherwise specified, the annealing
+specified, the annealing time at each temperature was 10 min. The sheet resistance measurements
+ time at each temperature was 10 min. The sheet resistance measurements were performed using a
+were performed using a standard equispace four-point probe with a probe spacing of 40 mils.
+ standard equispace four-point probe with a probe spacing of 40 mils. Constant currents of 0.1–1 mA
+Constant currents of 0.1–1 mA were injected through two outer probes. Typical read-out voltages
+ were injected through two outer probes. Typical read-out voltages were measured to drop on the
+were measured to drop on the order of mV across the two inner probes. The contact resistivity was
+ order of mV across the two inner probes. The contact resistivity was measured by using the transfer
+measured by using the transfer length method (TLM). The TLM pattern defined finger widths of
+ length method (TLM). The TLM pattern defined finger widths of about 30 µm and contact length
+about 30 μm and contact length of 10 mm. A dicing saw was used to isolate the emitter between each
+ of 10 mm. A dicing saw was used to isolate the emitter between each TLM pattern. The contact
+TLM pattern. The contact resistivity was calculated by the transfer length method using four-point
+ resistivity was calculated by the transfer length method using four-point probe IV-measurements at
+probe IV-measurements at various contact combinations with varying contact distances. A JEOL
+ various contact combinations with varying contact distances. A JEOL scanning electron microscope
+scanning electron microscope (SEM) (JEOL, Tokyo, Japan) operating at 20 kV was used to collect
+ (SEM) (JEOL, Tokyo, Japan) operating at 20 kV was used to collect morphological information of the
+morphological information of the samples. The elemental analysis of the samples was identified by
+ samples. The elemental analysis of the samples was identified by an SEM equipped with an Oxford
+an SEM equipped with an Oxford Link energy dispersive X-ray spectrum (EDS) (Oxford, Belfast,
+ Link energy dispersive X-ray spectrum (EDS) (Oxford, Belfast, UK). For each EDS analysis, three
+UK). For each EDS analysis, three points in each sample were examined and the results were
+ points in each sample were examined and the results were averaged. A JEOL-JEM 2010 transmission
+averaged. A JEOL-JEM 2010 transmission electron microscope (TEM) (JEOL, Tokyo, Japan) operating
+ electron microscope (TEM) (JEOL, Tokyo, Japan) operating at 200 kV was used for TEM examination.
+at 200 kV was used for TEM examination. Powder X-ray diffraction (XRD) analyses were performed
+on a Bruker D8 Advance diffractometer (Bruker, Berlin, Germany) with Cu Kα radiation.
+     For Voc measurements of solar cell samples, silver was used for the back metal contact and
+Cu/Ni plating was used for the front metallization. The Cu/Ni plating process consisted of the
+Materials 2017, 10, 942                                                                                      10 of 11
+
+
+
+Powder X-ray diffraction (XRD) analyses were performed on a Bruker D8 Advance diffractometer
+(Bruker, Berlin, Germany) with Cu Kα radiation.
+      For Voc measurements of solar cell samples, silver was used for the back metal contact and Cu/Ni
+plating was used for the front metallization. The Cu/Ni plating process consisted of the following steps:
+(1) pretreatment of finger pattern silicon; (2) thin electroless nickel films, about 60 nm in thickness,
+were deposited onto the finger pattern silicon; (3) annealing isothermally in a furnace at 400 ◦ C in
+Ar/H2 atmosphere for 10 minutes; (4) removing unreactive Ni films by HNO3 ; and (5) electroplating
+the Ni and Cu metals. The fabricated solar cells were annealed isothermally in a furnace at 500 ◦ C
+in Ar/H2 atmosphere for 1–20 min. The fabricated device was analyzed using current–voltage (I–V)
+measurement under solar simulator illumination. For the investigation of the effect of the activation
+process on the open circuit voltage, two different activating baths were used in this study. Bath 1 was
+the conventional activating bath, PdCl2 /HCl (0.15 g/L PdCl2 + 3 mL/L HCl), as reported in the
+literature [9], which is denoted B1. Bath 2 was the activation solution with HF (0.15 g/L PdCl2 +
+3 mL/L HCl + 83 mL/L HF), which is denoted B2.
+
+4. Conclusions
+     In the present study, nickel thin films were deposited on texture silicon by electroless plating
+deposition. A drastic difference in silicide formation was found between electroless plated nickel thin
+films on texture silicon and vacuum plated nickel thin films on polished silicon. The dominant phases
+were Ni2 Si and NiSi in samples annealed at 300–600 ◦ C. Sheet resistance values were found to correlate
+well with the surface morphology obtained by SEM and the results of XRD diffraction.
+     The open circuit voltage Voc of Ni/Cu front metallization was affected by activation treatment.
+The open circuit voltage of solar cells can be enhanced when the activation solution incorporated HF.
+This is mainly attributed to the native silicon oxide layer, that can be decreased and/or removed by HF
+with the corresponding reduction of series resistance. In this work, the influence of the Cu/Ni contact
+system on the properties of solar cells was compared by using two different activating baths.
+
+Acknowledgments: The authors are grateful for the financial support by the Ministry of Science and Technology
+of Taiwan (MOST 105-2221-E-224-006) and the MOTECH Research Project.
+Author Contributions: W.J.C. conceived and designed the experiments; J.M.H. performed the experiments; S.H.H.
+and W.J.C. analyzed the data; C.C.C. contributed reagents and materials; W.J.C. wrote the paper.
+Conflicts of Interest: The authors declare no conflict of interest.
+
+References
+1.    Neuhaus, D.K.; Münzer, A. Industrial silicon wafer solar cells. Adv. OptoElectron. 2007, 2007, 24521.
+      [CrossRef]
+2.    Trube, J. International Technology Roadmap for Photovoltaic (ITRPV) Results 2016, 8th ed.; VDMA Photovoltaic
+      Equipment: Frankfurt, Germany, 2017. Available online: http://www.itrpv.net/Reports/Downloads/
+      (accessed on 10 August 2017).
+3.    Lee, E.J.; Kim, D.S.; Lee, S.H. Ni/Cu metallization for low-cost high-efficiency PERC cells. Sol. Energy Mater.
+      Sol. Cells 2002, 74, 65–70. [CrossRef]
+4.    Lai, K.C.; Wu, P.Y.; Wei, T.C.; Pan, T.C.; Chen, C.M. Front-side metallization of silane-compound modified
+      Si by electroless deposition of Ni(P) and interfacial characterizations. In Proceedings of the International
+      Conference on Electronics Packaging (ICEP), Sapporo, Japan, 27–29 April 2016; pp. 337–340.
+5.    Rehman, A.U.; Lee, S.H. Review of the potential of the Ni/Cu plating technique for crystalline silicon solar
+      cells. Materials 2014, 7, 1318–1341. [CrossRef] [PubMed]
+6.    Bartsch, J.; Mondon, A.; Bayer, K.; Schetter, C.; Horteis, M.; Glunz, S.W. Quick determination of
+      copper-metallization long-term impact on silicon solar cells. J. Electrochem. Soc. 2010, 157, H942–H946.
+      [CrossRef]
+7.    Istratov, A.A.; Weber, E.R. Electrical properties and recombination activity of copper, nickel and cobalt in
+      silicon. Appl. Phys. A Mater. Sci. Process. 1998, 66, 123–136. [CrossRef]
+Materials 2017, 10, 942                                                                                          11 of 11
+
+
+
+8.    Flynn, S.; Lennon, A. Copper penetration in laser-doped selective-emitter silicon solar cells with plated
+      nickel barrier layers. Sol. Energy Mater. Sol. Cells 2014, 130, 309–316. [CrossRef]
+9.    Wenham, S.R.; Wu, Y.; Xiao, R.D.; Taouk, M.; Zhao, J.; Guelden, M.; Green, M.A. Pilot line production of
+      laser grooved silicon solar cells. In Proceedings of the 11th European Photovoltaic Solar Energy Conference,
+      Rome, Italy, 7–11 October 2002; Volume 74, pp. 65–70. [CrossRef]
+10.   Sullivan, M.V.; Eigler, J.H. Electroless nickel plating for making ohmic contacts. J. Electrochem. Soc. 1957, 104,
+      226–230. [CrossRef]
+11.   Mandelkorn, J.; McAfee, C.; Kesperis, J.; Schwartz, L.; Pharo, W. Fabrication and characteristics of
+      phosphorous-diffused silicon solar cells. J. Electrochem. Soc. 1962, 109, 313–318. [CrossRef]
+12.   Boulord, C.; Kaminski, A.; Veschetti, Y.; Lemiti, M. Comparison of different electrochemical deposits for
+      contact metallization of silicon solar cells. Mater. Sci. Eng. B 2009, 165, 53–56. [CrossRef]
+13.   Chen, W.J.; Chen, L.J. Interfacial reactions of nickel thin films on BF2 + implanted (001) Si. J. Appl. Phys. 1991,
+      70, 2628–2633. [CrossRef]
+14.   Liu, C.M.; Liu, W.L.; Hsieh, S.H.; Tsai, T.K.; Chen, W.J. Interfacial reactions of electroless nickel thin films on
+      silicon. Appl. Surf. Sci. 2005, 243, 259–264. [CrossRef]
+15.   Mondon, A.; Wang, D.; Zuschlag, A.; Bartsch, J.; Glatthaar, M.; Glunz, S.W. Nanoscale investigation of the
+      interface situation of plated nickel and thermally formed nickel silicide for silicon solar cell metallization.
+      Appl. Surf. Sci. 2014, 323, 31–39. [CrossRef]
+16.   Lee, P.S.; Mangelinck, D.; Pey, K.L.; Ding, J.; Dai, J.Y.; Ho, C.S.; See, A. On the Ni–Si phase transformation
+      with/without native oxide. Microelectron. Eng. 2000, 51–52, 583–594. [CrossRef]
+
+                          © 2017 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+                          article distributed under the terms and conditions of the Creative Commons Attribution
+                          (CC BY) license (http://creativecommons.org/licenses/by/4.0/).
+

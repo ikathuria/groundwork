@@ -1,0 +1,524 @@
+SiliconPV 2024, 14th International Conference on Crystalline Silicon Photovoltaics
+Advanced Manufacturing, Challenges for Industrial Devices
+https://doi.org/10.52825/siliconpv.v2i.1305
+© Authors. This work is licensed under a Creative Commons Attribution 4.0 International License
+Published: 14 Jan. 2025
+
+
+
+  Pushing Heterojunction Technology Further: Novel
+     Metallization Processes and Architectures
+              How novel SHJ applications are shaping the PV market
+                               Nicola Frasson1         , and Marco Galiazzo1
+                                         1 Applied Materials Italia srl, Italy
+
+
+                          *Correspondence: Nicola Frasson, nicola_frasson@amat.com
+
+Abstract. This work provides an overview on the different approaches to make Silicon Hetero-
+Junction cell (SHJ) production more scalable by investigating alternative metallization pro-
+cesses which can potentially be competitive with the standard Ag-based processes (Ag micro-
+size). With this purpose, this research aims at introducing the idea of widely using Ag-coated
+Cu formulations and/or low-Ag deposit solutions involving Ag nanoparticles-based formulations
+and reactive Ag (also referred as particle free) inks for both rear and front cell depositions on
+a single (finger and busbars) screen-printing process.
+
+Keywords: Photovoltaics, Heterojunction, SHJ, Ag, Cu, AgCu, Nanoparticles, Metallization
+
+
+    1. Introduction
+In the recent years, many ways have been explored in the attempt to decrease production
+costs, limit critical materials utilization and reduce Ag usage in the PV industry, targeting more
+sustainable manufacturing routes while also introducing new solar cell architectures that can
+provide electrical efficiencies that are superior to the current products on the market. Research-
+ers are primarily investigating new solar cell and module metallization and interconnection
+strategies, introducing for Silicon Hetero-Junction (SHJ), TOPCon, Tandem and Back Contact
+(BC) solar cells and Ag-free or Ag-less metallization processes [1]. Market trends not only
+suggest that these technologies will get a larger share of the market in the next ten years but
+also tell us that more sustainable PV applications will be also largely integrated in buildings,
+vehicles, windows and more to face the energetic targets established with the Paris Agreement
+(deadline on 2050) [2] and deploy PV worldwide on very different surfaces and by using mul-
+tiple integration methods [3], [4]. In this work, innovative solutions are presented mainly by
+considering newer metallization solutions that will reduce the cost of this manufacturing step.
+Most importantly, no dramatic changes in the equipment PV manufacturers will be needed to
+apply those concepts.
+
+
+
+
+                                                          1
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+
+   2. Materials and Methods
+        2.1 Materials
+Previous experiments reported in literature [5] revealed a big potential in the use of SHJ solar
+cells as a viable route for a sustainable PV expansion because of the leaner production lines,
+low temperature processes, possibility to integrate non-standard paste formulations (for exam-
+ple, transparent conductive oxide layers can be an effective barrier for Cu migration into Si)
+and the potential to reach high conversion efficiency. It has been shown that the gap with the
+reference processes on standard SHJ substrates is still significant when these alternative ma-
+terials are adopted (for example Cu based metallization had -0.8% average difference in cell
+efficiency with respect to Ag-based SHJ solar cells due to increased grid resistance). Moreo-
+ver, reliability test failures for Cu based SHJ modules have been experienced at module level
+due to Cu oxidation (Thermal Cycling reduces the module power up to 40% in 200 cycles).
+Despite these early results, a huge interest in the evaluation of Nanoparticles (NPs) pure Cu
+ink (Cu), reactive Ag inks (Ag particle-free) and Ag-coated Cu particles (AgCu) is present, with
+the last process gaining an increased market share in the last quarters and being already
+introduced to production lines.
+
+        2.2 Methods
+In our work we want to compare the different metallization pastes for screen-printing of SHJ
+cells by:
+   1. Sourcing alternative pastes with potential for metallization cost reduction
+   2. Developing a laboratory Best Known Method (BKM) for screen-printing standard Ag-
+      based metallization (Ag micro-size) consisting in finding the proper printing parameters,
+      screen type/mesh and overall process fine tuning.
+   3. Applying the BKM to the new materials (AgCu, Ag nano-size, Ag particle-free)
+   4. Comparing two different patterns for preliminary testing (test pattern) and actual pro-
+      duction line simulation (full cell pattern)
+   5. Compare the different methods and results (line morphology inspection, IV testing, ma-
+      terials characterization)
+   6. Perform reliability testing on the most promising processes
+    The Ag production BKM will be used as a baseline for all the materials processing men-
+tioned above and ad-hoc procedures will be then developed according to the materials prop-
+erties and requirements in a second moment, like fine-tuning of the screen-printing parame-
+ters, screen design, thermal processes setup and more.
+
+        2.3 Materials characterization
+Five pastes at different levels of readiness have been included in the analysis as reported
+below in Table 1 and Figure 1.
+
+               Table 1. Metallization pastes included in the analysis and their properties
+
+                   Ag ratio       Curing Type      Storage      Viscosity       Thix. Index    Readiness
+  PasteType
+                   [%]            [min, °C]        [°C]         @10 [1/s]       @1-10          Level
+ Ag micro-size     94             20, 200          4            76              13             Production
+ AgCu 1            44             20, 200          -10          64              11             Production
+ AgCu 2            55             20, 200          25           132             9              Prototype
+ Ag particle-                                                                                  Prototype
+                   33             20, 180          4            17              2.4
+ free
+ Ag nano-size      >75            10, 200          25           73              18             Prototype
+
+
+
+
+                                                       2
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+
+
+
+ Figure 1. Macroscopic appearance of the different materials; from the left: Ag micro, AgCu 1-2, Ag
+particle-free and Ag nano. Pastes differ in viscosity and color which is dependent on the particles size
+                               and shape (also coatings and ligands)
+
+     Paste rheological properties have been studied using a reference procedure [6] named
+flow test (Figure 2) on our TA Instrument AR-2000 rheometer equipped with a plate-plate ge-
+ometry and temperature control over the bottom plate (set at 25 °C, RT). This method provides
+information about the paste viscosity behaviour at increasing shear rate and it anticipates how
+the materials will perform once they are used for screen-printing applications.
+
+
+
+
+               Figure 2. Rheological properties of the different materials on the flow test
+
+     Ag/AgCu nano and micro-size pastes have similar rheological properties (non-Newtonian
+pseudoplastic materials) while the Ag particle free ink has a very different viscosity trend at
+increasing shear rate, almost like a Newtonian fluid (viscosity in stable at increasing shear
+rate). According to the rheological properties, specific printing parameters have been used
+during the metallization process, suggesting quite different parameters to be necessary in
+some cases (mainly print speed, print force, flood speed and snap-off). In general, fast printing
+processes can be used (up 300 mm/s) while also limiting the Ag deposit and thus enabling
+several advantages,: 1) lower Ag consumption due to low Ag content in the paste, 2) less
+energetic curing process (shorter time and low temperature meaning a lower current consump-
+tion, e.g. nanoparticles are more reactive) and 3) lower sourcing and logistics costs (Cu is
+cheaper than Ag, some pastes can be also transported and stored at room temperature).
+
+
+
+
+                                                     3
+     Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                       Crystalline Silicon Photovoltaics"
+
+
+     3. Results
+         3.1 Test pattern testing
+ Preliminary testing phases include the use of a test pattern screen (520/11 mesh, Polyamide
+ emulsion, 10 µm Emulsion Over Mesh) which contains a range of screen openings spanning
+ from 10 to 100 µm and including dog-bone patterns for line resistance measurements and
+ consequent volume resistivity calculation (3 cm long lines with contacting pads at the ends,
+ Figure 3).
+
+
+
+
+                   Figure 3. Test pattern print, thinner lines are not completely printed
+
+     The 30 and 50 µm wide screen openings have been used as a reference for both mor-
+ phology investigations (30 µm) and electrical characterizations (50 µm). Also, similar printing
+ parameters and the same drying and curing thermal processes have been used (50 mm/s print
+ speed, 60 N/m, 1.5 mm snap-off; 30 s at 170° C drying process and 20 min at 200 °C curing
+ process) for comparison (Table 2).
+
+          Table 2. Morphology and volume resistivity data measured on 50/300 reference lines
+
+                                                          Ra – average
+                  Line Width         Line Height                            Aspect             Vol. Res.
+Paste Type                                                roughness
+                  [µm]               [µm]                                   Ratio              [%]
+                                                          [µm]
+Ag micro-size     44.4               7.3                  2.5               0.16               Ref.
+AgCu 1            42.0               8.5                  2.3               0.20               +57%
+AgCu 2            39.8               11.9                 2.4               0.30               +45%
+Ag part-free      55.1               0.6                  0.4               0.01               +41%
+Ag nano-size      46.7               9.6                  1.9               0.20               +37%
+
+     All the line width measurements have been recorded by using a high-resolution micro-
+ scope Microvu Vertex 420 while the height and roughness measurements come from a cell
+ surface analysis performed on a Cyberscan Vantage profilometer.
+
+      Also, the Mitutoyo MF-U Series optical microscope on 20X optical zoom has been used
+ for qualitative analysis and pictures recording (Figure 4).
+
+
+
+
+                                                      4
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+
+
+
+                       Figure 4. 30 µm screen opening printed lines after curing
+
+     This preliminary testing phase revealed the potential behind the alternative materials: 1)
+narrower or similar lines in terms of width (AgCu and Ag nano pastes), 2) high aspect ratio
+lines (all the pastes expect for Ag particle-free ink) and 3) lower roughness lines (Ag particle-
+free and Ag nano pastes) versus the reference. All these factors might contribute to similar-
+efficiency solar cells while limiting the Ag content, even if a higher amount of material will be
+required over the solar wafers to compensate the higher resistivity values than the reference
+Ag micro-size.
+
+         3.2 Full cell testing
+After the preliminary testing, we printed a full pattern on finished SHJ M2 substrates (156.75
+mm pseudo square wafer, 244.32 mm2, 160 µm thick) as reported below on Table 3.
+
+ Table 3. Screens parameters; Back side screens were used first according to typical production line
+  flows in which denser meshes and a higher finger (FF) density are used. Front side screens are in-
+stead thicker (larger wires, higher thickness) to allow a better aspect ratio of the FF that ideally have a
+rectangular shape (tall and thin). The choice of the busbars (BB) number depends on the solar simula-
+                               tor tool equipment and screens availability.
+
+                                                         FF/BB                       FF opening
+ Side                       Mesh
+                                                         (N)                         [µm]
+ Front                      380/14                       74/6                        38
+ Back                       440/13                       220/6                       38
+
+     Unfortunately, only the AgCu 1 paste met the minimum print quality requirements and for
+this reason full cell data are only available for the process involving this material (Table 4,
+Figure 6). Typical failures reported for the remaining formulations include not complete transfer
+of the screen layout (mostly on cell edges, Figure 5), very slow printing speed needed (down
+to 50 mm/s) which are not acceptable in actual production conditions, paste spreading through
+the screen, not optimal paste flooding due to high stickiness of the paste leading at voids on
+the screen pattern and the use of the excessively high printing force over the screen to allow
+the paste transfer which can lead to screen breakages.
+
+
+
+
+                                                     5
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+
+
+
+Figure 5. Quality comparison on cell print; from the left: high and low printing quality cell (poor deposit
+on edges). Both the substrates are finished M2 textured SHJ wafers with TCO deposit on top (the blue
+                         color depends on the thickness of this last deposit)
+
+     Most of the failures can be correlated with the rheological properties of the materials (vis-
+cosity values needs to stay in a specific range for proper print and flood phases) and their
+formulation additives and polymers can interact with the screen mesh and emulsion and cause
+cloggings in the screen openings, limiting of excluding the paste transfer especially on finger
+areas).
+
+                           Table 4. Printing parameters, deposits and IV results
+
+
+Process parameters and deposits (AMAT Tempo Presto™ printer)
+
+                                               Speed           Cure            Weight          Ag Cons.
+Paste           Split           N
+                                               [mm/s]          [min]           [mg]            [mg/W]
+Ag-micro        Reference       11             100             20              246             46.4
+                Split 10        5                              10
+AgCu 1          Split 20        5              200             20              233             19.3
+                Split 30        5                              30
+
+
+Electrical-IV results (at 1000 W/m2, AMAT Botticelli™ solar simulator)
+
+                                Eff.           FF              Rs              Isc             Voc
+Paste           Split
+                                [%]            [%]             [mOhm]          [A]             [mV]
+Ag-micro        Reference       21.95          79.91           2.05            9.23            726
+                Split 10        21.87          79.77           2.45            9.22            726
+AgCu 1          Split 20        21.94          79.77           2.38            9.24            727
+                Split 30        21.87          79.72           2.52            9.23            725
+
+
+
+
+                                                     6
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+
+
+
+                          Figure 6. IV results for reference and AgCu 1 pastes
+
+     All the cells went through the same thermal treatment conditions meaning the same drying
+process to remove the organic solvents (30 s at 170° C on a belt oven, infrared lamps exposure
+and hot-air flow) and curing process for metal sintering (box-static oven at 200° C, different
+curing times are reported in the Table 4 so providing three different cells splits). All the electri-
+cal/IV data have been recorded by using Applied Materials Botticelli™ solar simulator tool
+equipped with a LED multi-spectral source and properly calibrated with a reference cell. AgCu1
+and the reference process are not significantly different in terms on Eff, FF, Rs and Isc values.
+Also, the process comparison is fair since the SHJ wafers have been selected among the
+different batches by keeping the same average Voc value. However, the higher Rs in the AgCu
+1 process led to a lower FF and Eff which is mainly due to the intrinsic properties of the material.
+
+     When evaluating the Ag Consumption per Watt metric on M2 SHJ cells produced it is
+evident that the values reported in Table 4 are representative of a laboratory scale test and
+valid for comparative tests, due to the hardware limitations, screens layout and work environ-
+ment. Customer production data on G12 SHJ (210 mm pseudo square wafers, 440.96 mm2)
+shown an average Ag consumption of 25.7 mg/W, meaning 10 mg/W when using AgCu po-
+tentially by applying the learning curve we experimented at lab scale. These data provide a
+very important insight on the AgCu adoption trend, showing the impact of implementing these
+novel materials at production scale and so limiting the Ag consumption and make the 1TW/y
+cells production sustainable by using SHJ cells as primary source of energy (Figure 7) [7].
+Furthermore, the AgCu 1 paste seems promising also in terms of curing processes, allowing
+the use of much shorter curing times down to 10 minutes so decreasing the energy consump-
+tion along the production process.
+
+
+
+
+                                                     7
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+
+
+
+ Figure 7. Ag consumption and production capacity over global Ag supply [7]. AgCu scalability added
+to the original graph (blue and orange shapes). Dashed lines represent the annual production capacity
+                        (GW), 1 TW is considered as a reference for the roadmap
+
+     Below are reported the EL images of the most efficient cells for the two batches (Figure
+8), showing a uniform infrared emission all over the two solar cells, indicating a uniform cell
+deposit and no high-resistance area. Dark areas are mainly related to SHJ substrate defects.
+
+
+
+
+                      Figure 8. EL images; from the left: Ag cell and AgCu 1 cell
+
+    Finally, a Scanning Electron Microscopy (Hitachi TM-3000 SEM) inspection was also per-
+formed on the solar cells (Figure 9). This analysis was useful in providing more information
+about the paste morphology at sub-micron level, showing how particles are sintering and ag-
+gregating during and after the screen-printing phase. Furthermore, the energy dispersive X-
+ray analysis (EDX) gave a quantitative evaluation of the elements exposed over the paste
+surface (Table 5).
+
+
+
+
+         Figure 9. SEM inspection over AgCu, Ag and Ag particle-free samples, 1500X zoom
+
+
+                                                     8
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+    Note that in the AgCu 1 case, the average spherical aggregates size is around 4.9 µm
+while in the Ag micro-size case the aggregates have a flake-shape and an average size of 8.4
+um (almost double).
+
+        Table 5. EDX analysis results, 3000X (particle free) and 5000X (Ag and AgCu) zoom
+
+
+          Elements               AgCu 1                  Ag micro-size        Ag particle-free
+
+          Cu                     0.3                     0                    0
+          Ag                     18.8                    12.6                 18.2
+          Tantalum               21.1                    50.2                 25.6
+
+     From EDX, only a limited amount of exposed Cu is detected, meaning that the core-shell
+nanoparticles structure is stable along the process. The Ag micro-size paste is used to nor-
+malize eventual Cu contamination of the production lines. Also, the SEM analysis highlighted
+that the Ag particles are very dispersed when using the particle free ink, partly explaining the
+higher volume resistivity with respect to the reference paste: depositing more paste (double-
+print, different print parameters and/or viscosity adjustments) may improve the metallization
+results.
+
+    As a conclusion, the slightly lower efficiency on the AgCu 1 paste than the reference pro-
+cess seems mostly related to the intrinsic properties of the materials than the screen-printing
+process itself.
+
+        3.3 Temperature stability testing
+Cu oxidation depends on environmental conditions such as oxygen, temperature and humidity.
+Researchers are investigating ways to integrate pure Cu as a dramatic solution to solve the
+Ag consumption issue, [8] but oxidation-related issues and reliability failures (damp-heat or
+thermal cycles) are still limiting factors. In this case, Cu is part of a core-shell structure in which
+the core of the particle is made by the Cu itself and the external shell is made by a few na-
+nometers of Ag [9], [10], [11]. This setup prevents Cu surface from oxidation and limits the
+impact on the cell’s efficiency by keeping the series resistance values stable at increasing
+temperatures. This provides a first step further in Cu-Ag pastes integration at single-cell level
+and do not provide a final response on the complete integration at module level [12], in accord-
+ance with IEC 61215.
+
+     To evaluate this, the temperature stability testing is a crucial part in the materials evalua-
+tion to finally check whether a paste can be fully integrated on a production line, from screen-
+printing to cell-to-module interconnection, or not. As part of this evaluation, data from previous
+work from the our team [5] have been also included to show the impact of a core-shell structure
+in maintaining Cu stable at increasing temperatures (Figure 10). In accordance with the previ-
+ous tests, we heated several bare cells per batch on a drying box oven for 10 mins at three
+different temperatures in air and performed IV tests before and after the heating by using a
+solar simulator (standard cell measurement, BB contact and 1000 W/m2 exposure). Ag micro-
+size paste has been also used as a reference.
+
+
+
+
+                                                     9
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+
+
+
+Figure 10. Efficiency, series resistance and open circuit voltage values at increasing temperatures for
+                                      paste reliability comparison
+
+     For pure-copper pastes, the drop in cell efficiency is very clear and the main reason is
+oxidation (this is clearly visible by looking at the cells, printed lines appear of blue-green col-
+ors). Standard Ag and AgCu pastes instead show a good resilience and tolerance to high
+temperatures which is almost the same (Table 6), just a few mOhm gain in series resistance
+for every temperature range we have considered (series resistance gains are mostly related
+to oxidations as well). Therefore, the overall efficiency of the solar cell will be dramatically
+impacted because of the high correlation between series resistance and efficiency.
+
+Table 6. Reliability testing results focusing on series resistance values variations on single solar cells
+
+                                             ∆Rs 200-230          ∆Rs 230-270
+                        PasteType
+                                             [mOhm]               [mOhm]
+                        Ag micro-size        +0.2                 +0.4
+                        AgCu 1               +0.1                 +0.5
+                        Cu                   +2.3                 +2.4
+
+
+   4. Conclusions
+In this work, the potential of alternative metallization pastes for screen printing of SHJ cells is
+presented. Although most of the above materials are still under development, preliminary char-
+acterizations have shown they could provide superior print morphology (narrower and taller
+lines) with reduced Ag consumption. AgCu 1 paste, with Cu core and Ag coated particles,
+seems to be a valid alternative to pure Ag paste by matching the electrical and temperature
+stability performance of the reference Ag. This would enable the introduction of Cu metalliza-
+tion on SHJ without obvious metal oxidation or migration. In parallel with screen-printing, we
+plan to evaluate alternative deposition techniques for reference and alternative materials, with
+a special focus on parallel dispensing [13]: this methodology allows an extremely uniform finger
+deposit, meaning better profiles, reducing the line resistance and increasing the cell efficiency.
+
+
+   Data availability statement
+Raw data in this paper are under restricted diffusion and NDAs (third-party data, legal or ethical
+constraints) and will not be publicly available. Please contact the corresponding authors for
+further information and disclosures.
+
+
+                                                     10
+    Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                      Crystalline Silicon Photovoltaics"
+
+
+   Author contributions
+Nicola Frasson: writing the paper, data curation and validation, materials testing and screen-
+printing, activities management; Marco Galiazzo: reviewing and editing the paper’s content,
+data curation and validation, project management and fundings acquisition.
+
+
+   Competing interests
+The authors have nothing to disclose.
+
+
+   Funding
+This work has been partially funded within the FORESi (GA 101138503) European founded
+project.
+
+
+   Acknowledgement
+We thank all the suppliers for providing us with all the different formulations. We also would
+like to thank Enel 3-Sun for providing the substrates.
+
+
+   References
+[1] ITRPV 2023, p. 30, 2023.
+[2] PJ., Verlinden et al., "Future challenges for photovoltaic manufacturing at the terawatt
+     level" Journal of Renewable Sustainable Energy, vol. 12, p. 053505, 2020. DOI:
+     10.1063/5.0020380
+[3] S., Harrison et al., Photovoltaics International, "Pushing the limits of shingle heterojunc-
+     tion module performance, cost and sustainability", vol. 49, pp. 48-58, 2023.
+[4] M., Foti et al., "22% efficiency module combining Silicon Heterojunction Solar and Shingle
+     interconnection", 49th PSVC, 2022. DOI: 10.1109/PVSC48317.2022.9938591
+[5] N., Frasson et al., "Evaluation of different approaches for HJT cells metallization based
+     on low temperature Ag pastes", EU PVSEC Proc., pp. 162-166, 2021. DOI:
+     10.4229/EUPVSEC20212021-2BO.14.6
+[6] S., Thibert et al., "Influence of silver paste rheology and screen parameters on the front
+     side metallization of silicon solar cell", Materials Science in Semiconductor Processing,
+     pp. 790-799, 2014. DOI: 10.1016/j.mssp.2014.08.023
+[7] Y., Zhang et al., "Design considerations for multi-terawatt scale manufacturing of existing
+     and future photovoltaic technologies: challenges and opportunities related to silver, in-
+     dium and bismuth consumption", Energy and Environmental Science, vol. 14, p. 5587,
+     2021. DOI: 10.1039/D1EE01814K
+[8] N., Chen et al., "Thermal Stable High-Efficiency Copper Screen Printed Back Contact
+     Solar Cells", Solar RRL, vol. 7, no. 2, p. 2200874, 2022. DOI: 10.1002/solr.202200874
+[9] J., Schube et al., "Advanced metallization with low silver consumption for silicon hetero-
+     junction solar cells", AIP Conf. Proc. 2156, vol. 2156, no. 1, p. 020007, 2019. DOI:
+     10.1063/1.5125872
+[10] M., Grouchko et al., "Formation of air-stable copper–silver core–shell nanoparticles for
+     inkjet printing", Journal of Materials Chemistry, vol. 19, pp. 3057-3062, 2009. DOI:
+     10.1039/b821327e
+[11] S., Jongmin et al., "Synthesis of Silver-coated Copper Particles with Thermal Oxidation
+     Stability for a Solar Cell Conductive Paste", Chemistry Letters, vol. 44, no. 9, pp. 1223-
+     1225, 2015. DOI: 10.1246/cl.150424
+
+
+                                                     11
+   Frasson and Galiazzo | SiliconPV Conf Proc 2 (2024) "SiliconPV 2024, 14th International Conference on
+                                     Crystalline Silicon Photovoltaics"
+
+
+[12] M., Aghaei et al., "Review of degradation and failure phenomena in photovoltaic mod-
+     ules", Renewable and Sustainable Energy Reviews, vol. 159, p. 112160, 2022. DOI:
+     10.1016/j.rser.2022.112160
+[13] Si., Pordan et al., "Optimizing solar cell metallization by parallel dispensing", Solar Energy
+     Materials and Solar Cells, vol. 266, p. 112685, 2024. DOI: 10.1016/j.solmat.2023.112685
+
+
+
+
+                                                    12
+

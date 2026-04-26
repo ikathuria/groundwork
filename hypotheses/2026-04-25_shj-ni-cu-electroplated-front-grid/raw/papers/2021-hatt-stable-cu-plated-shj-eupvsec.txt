@@ -1,0 +1,279 @@
+           Presented at the 38th European PV Solar Energy Conference and Exhibition, 6-10 September 2021
+
+
+
+      STABLE COPPER PLATED METALLIZATION ON SHJ SOLAR CELLS & INVESTIGATION OF
+                         SELECTIVE Al/AlOx LASER PATTERNING
+
+
+Thibaud Hatt*, Jonas Bartsch, Stefan Schellinger, Jale Schneider, Andreas A. Brand, Sven Kluska and Markus Glatthaar
+           Fraunhofer Institute for Solar Energy Systems ISE, Heidenhofstr. 2, 79110 Freiburg, Germany
+
+
+    ABSTRACT: Copper plating metallization is growing in importance to replace silver and to enable growth of
+    photovoltaic to terawatt-scale. Besides better performance of the plated Cu contacts on solar cells, the processing needs
+    to be less complex and more cost effective. The „NOBLE“ metallization responds to cost savings for bifacial silicon
+    heterojunction solar cells. This study shows that the processing with inkjet-printing for patterning of the top Al masking
+    layer is yet mature enough for first tests on industrial pilot. Efficiencies comparable to the Ag screen-printed reference
+    on the same precursors grade are reached. To even improve the patterning throughput a selective laser ablation
+    patterning of the Al/AlOx layer is further investigated. There, laser-induced damaging is avoided by choosing adapted
+    laser settings and first large area SHJ solar cells are manufactured with this method yielding an encouraging 21.4%
+    efficiency.
+
+    Keywords: Silicon Heterojunction Solar Cell, Metallization, Copper Electroplating, Laser Processing,
+    Inkjet-printing, Cost reduction
+
+
+1   INTRODUCTION                                                      improve the patterning resolution and increase the
+                                                                      throughput even more.
+    Next generation high efficiency silicon solar cells rely
+on passivating contacts such as the silicon heterojunction            2   APPROACH
+(SHJ) technology [1]. Improvement of the technology
+enabled to reach record efficiencies above 25% on large                   Our „NOBLE“ metallization consists in using a
+area cells in the past years [2–5]. To maintain the                   conductive self-passivated Al layer as plating mask while
+exponential growth of photovoltaic (PV) towards terawatt              providing homogeneous current distribution on the wafer
+(TW) scale, material supply is an important concern [6–8].            surface during simultaneous bifacial electroplating. The
+Especially silver supply will soon become a bottleneck and            complete process is depicted in Figure 1.
+is already causing 10% of the costs for a typical solar
+module. The metal contacts on bifacial SHJ solar cells are
+manufactured on both-sides by screen-printing
+low-temperature silver paste. This causes even higher
+silver consumption and costs for this technology.
+Unfortunately, the silver saving smart wire technology
+(SWCT) suitable for interconnection and module
+integration of SHJ solar cells will be no longer available to
+all manufacturers [9].
+    Thus, intrinsic low-temperature copper plating
+metallization featuring high performance is growing in
+importance as alternative for SHJ solar cells [10]. In
+different parts of the globe an industrially viable
+electroplating route using a sacrificial organic resist-mask
+(on a PVD metal-seed deposited on the transparent
+conductive oxide (TCO)) is under development and
+outstanding efficiencies around 25% were reported [2,
+11].
+    Our resist-free native oxide barrier layer for selective
+electroplating („NOBLE“) metallization aims at reducing
+the plating process complexity and processing cost [12],
+making this route attractive for industrial implementation.
+Instead of using an organic mask for electroplating, the
+„NOBLE“ metallization implements a conductive
+self-passivated Al layer as detailed below. The first
+proof-of-concept was achieved on lab-scale SHJ solar
+cells [13] before being transferred on large area recently
+yielding up to 22.7% similar to the screen-printed
+reference on the same SHJ precursors [14].
+    This study shows that the „NOBLE“ metallization is                Figure 1: Schematic sequence of the „NOBLE“
+already running stabile on large area medium grade SHJ                metallization with laser patterning
+precursors when using the optimized NaOHaq
+inkjet-printing patterning of the Al layer [15]. In addition,             Following the physically vapor deposition (PVD) of
+a selective laser ablation patterning route of the Al/AlOx            the TCO layer, an additional thin PVD metal stack (with
+layer is investigated to facilitate the processing sequence,          Al on top) is deposited on full area. At the grid position,
+                 Presented at the 38th European PV Solar Energy Conference and Exhibition, 6-10 September 2021
+
+
+
+Al is locally removed from the underlying PVD-Cu or -Ag
+layer. This patterning is was until now performed by
+NaOHaq inkjet-printing but a new method using selective
+laser ablation of the Al/AlOx layer is being developed as
+shown in the schematic. The exposed PVD-Cu or -Ag
+layer act as seed-layer for selective Cu electrodeposition.
+Finally, the PVD metal stack is etched back in non-grid
+positions.
+     The „NOBLE“ plated Cu contacts on SHJ solar cells
+achieved superior electrical and mechanical performance
+compared to typical Ag screen-printed ones as shown
+in Table 1. It is noteworthy that by reducing the finger
+width, contact resistivities ρc below 1 mΩ·cm² are
+required to avoid impacting the series resistance of the
+solar cell. This requirement is well met with the „NOBLE“
+metallization.
+     First part of this work consists in a demonstration of a
+first pilot run with a higher amount of SHJ solar cells with
+the optimized NaOHaq inkjet-printing patterning of the Al.
+Therefore, industrial SHJ precursor (M2) with ITO were
+covered on both-sides by different PVD metal stacks (e.g.           Figure 2: Reproducible I-V characteristics reached on 12
+TiW/Ag, Ag…) with a 50 nm thin Al layer on top. After               large area SHJ solar cells metallized with the „NOBLE“
+complete „NOBLE“ processing, the I-V curves were                    approach (inkjet patterning) compared to the best
+measured in a sun-simulator.                                        screen-printed reference (black dashed line) on the same
+                                                                    industrial SHJ precursor material
+Table 1: Comparison of the metal finger characteristics on
+SHJ solar cells with ITO based on [12, 16]                               These promising I-V results confirm that the
+                                                                    „NOBLE“ metallization with inkjet-printing patterning
+     Process      Width       ρL         ρc         Peel-force      yields stable results which is required to soon highlight the
+                  [µm]     [µΩ·cm]    [mΩ·cm²]       [N/mm]         full potential of plating on high quality materials.
+    Plated Cu
+                   25-30      ≈2        0.1 - 1        ≥2
+    (NOBLE)                                                         3.2 Patterning by selective laser ablation of Al/AlOx
+     Screen-
+                   30-40      ≥5         ≥2           ≤ 0.5
+    printed Ag                                                          First developments of the new selective laser ablation
+                                                                    of the thin Al layer show two possible ways to avoid
+    Secondly, a new patterning method is investigated               damaging the SHJ cell passivation. One is using a thicker
+using a femtosecond UV laser (at 343 nm) for selective              underlying PVD metal layer (contacting layer to plate) as
+ablation of the top Al layer on the SHJ precursors. The             buffer during lasering with high laser pulse energy to
+laser ablation is optimized for the respective layer stack          locally remove the Al layer with a single laser pulse. The
+and characterized by photoluminescence imaging (PL) at              impact of pulse energy on the damage is shown by
+1-sun. The thickness of the PVD metal stack                         photoluminescence imaging in Figure 3 (Left). Except for
+(Cu500nm/Al100nm and Ag100nm/Al50nm) is varied to evaluate          the highest pulse energies (4.3 and 4.7 µJ), this buffer
+the laser-induced damage of the passivation on such SHJ             layer enables to prevent laser-induced passivation
+solar cells (same batch as above). The complete „NOBLE“             damaging. Furthermore, the Al layer opening seems to be
+process is finally performed to produce the first large area        compatible with selective copper electroplating.
+SHJ solar cells using the selective laser patterning of Al.             The second way is to use low laser pulse energy but
+                                                                    multiple laser pulses on the same spot to remove the Al
+3     RESULTS                                                       layer bit by bit. As illustrated in Figure 3 (Right), the
+                                                                    process window that allows avoiding laser-induced
+3.1 Stabilized sequence with inkjet-printing patterning             damaging of the passivation is smaller. The Al opening
+                                                                    seems less efficient but selective copper plating also
+    The large area SHJ solar cells were metallized with the         worked with this approach for defined parameters and an
+„NOBLE“ approach using different PVD metal                          encouraging      contact    resistivity  ρc    down      to
+seed-layers below the Al (e.g. TiW/Ag, Ag…). The I-V                1.6 ± 0.3 mΩ·cm² was measured.
+performances presented in Figure 2 highlight the                        Further investigations will refine the damage free
+reproducibility of the cell efficiency around 22.6%, which          process window and explain the mechanismus of
+is very close to the Ag screen-printed reference. The               degradation resulting from ablation.
+inkjet-printing enables to keep the passivation quality of
+the SHJ solar cells at the highest level above 735 mV. Last
+improvements of the inkjet-printing process are still
+necessary to benefit fully from the narrow plated contacts
+and to reach higher fill-factor FF and current density jsc
+above 38.5 mA/cm² on this precursors type (no additional
+ARC, just ITO).
+              Presented at the 38th European PV Solar Energy Conference and Exhibition, 6-10 September 2021
+
+
+
+                                                                 ≤ 25 µm wide were produced after complete processing as
+                                                                 shown in Figure 4. The PL characterization of a quarter of
+                                                                 the solar cell after complete sequence revealed an
+                                                                 encouragingly low damage of the passivation as observed
+                                                                 in Figure 4.
+
+
+
+
+                                                                 Figure 4: SHJ solar cell after metallization with laser
+                                                                 patterning (low pulse energy and pulse repetitions per laser
+                                                                 dot). (Left) Microscopic picture of a narrow plated Cu
+                                                                 finger. (Right) Enlarged PL picture at 1-sun from the
+                                                                 grid-side
+
+                                                                 4   CONCLUSION
+
+Figure 3: Photo-luminescence (PL) imaging at 1-sun and                This work shows SHJ solar cells fabricated with an
+respective microscopy pictures after femtosecond pulse           optimized plating process sequence resulting in stabilized
+laser ablation (at 343 nm) of the Al layer depending on the      I-V performances of 22.6% efficiency comparable to the
+PVD metal stack thickness. (Left) High pulse energies            screen-printed reference. The so-called „NOBLE“
+between 2.2 and 4.7 µJ. (Right) Low pulse energies               approach with inkjet patterning is considered to be mature
+between 0.2 and 0.7 µJ with pulse repetitions per laser dot      enough to be tested on industrial pilot line.
+from 1 to 35 times                                                    Furthermore, a new selective laser ablation process for
+                                                                 the top Al layer is demonstrated on textured SHJ solar
+3.3 SHJ solar cells manufactured by laser patterning             cells. An encouraging efficiency of 21.4% in this first
+                                                                 experiment confirm the potential of the fast contactless
+    This early development of the selective laser ablation       patterning method. Further work should therefore enable a
+patterning of the Al/AlOx masking layer enabled to               fast improvement of this laser-based method for industrial
+manufacture first large area SHJ solar cells with the            implementation of our resist-free copper metallization.
+modified „NOBLE“ route. The high laser pulse energy
+with the adequate thicker “buffer layer” was prioritized.        ACKNOWLEDGEMENTS
+The best laser settings were used to metallize the front-side
+grid in the Al layer. After full processing of the front-side,        This work was supported by the Fraunhofer society
+the rear-side of the SHJ solar cell was metallized by            within the research project „LEO“ (contract n°840190)
+Ag-paste screen-printing. The I-V characteristics reported       and the German Federal Ministry for Economic Affairs
+in Table 2 are quite promising as proof-of-concept and not       and Energy under the project „PaSoDoble“ (contract
+too far from the reference with inkjet patterning. The           n°03EE1031A). The authors acknowledge the colleagues
+limited efficiency is explained by a loss of about 10 mV in      at the Fraunhofer ISE for fruitful discussion and technical
+Voc probably due to passivation damages with such an             assistance. The authors especially thank T. Wenzel for Ag
+early stage laser process. The FF is not as high as expected     screen-printing, J. Löffler for solar cell I–V measurements
+due to finger interruptions resulting from inhomogeneities       and I. E. Elías Ilosvay from Fraunhofer EMFT for metal
+in the PVD Al layer thickness and/or the focusing of the         sputtering.
+laser beam. It can be noticed that the pFF of the SHJ cell
+also seems to be affected. However, a gain in jsc is             REFERENCES
+achieved thanks to the narrower contacts ≤ 25 µm enabled
+by the laser patterning.                                         [1] G. M. Wilson, M. Al-Jassim, W. K. Metzger, S. W.
+                                                                     Glunz, P. Verlinden, G. Xiong, L. M. Mansfield, B.
+Table 2: I-V characteristics of the best large area SHJ              J. Stanbery, K. Zhu, Y. Yan, J. J. Berry, A. J. Ptak,
+solar cells after „NOBLE“ metallization with laser                   F. Dimroth, B. M. Kayes, A. C. Tamboli, R. Peibst,
+ablation or NaOHaq inkjet-printing patterning of the Al top          K. Catchpole, M. O. Reese, C. S. Klinga, P.
+layer                                                                Denholm, M. Morjaria, M. G. Deceglie, J. M.
+                                                                     Freeman, M. A. Mikofski, D. C. Jordan, G.
+Patterning     Eta      Voc         jsc          FF     pFF          TamizhMani, and D. B. Sulas-Kern, “The 2020
+  process      [%]     [mV]      [mA·cm-²]      [%]     [%]          photovoltaic technologies roadmap,” (en), J. Phys.
+   Laser       21.4    726.8       38.6         76.3    83.4         D: Appl. Phys., vol. 53, no. 49, p. 493001, 2020.
+ Inkjet-p.     22.7    735.7       38.3         80.5    84.4     [2] D. Adachi, J. L. Hernandez, and K. Yamamoto,
+                                                                     “Impact of carrier recombination on fill factor for
+    The low pulse energy and pulse overlaps laser                    large area heterojunction crystalline silicon solar
+patterning approach also enabled to manufacture first large          cell with 25.1% efficiency,” Appl. Phys. Lett., vol.
+area SHJ solar cells with the most promising laser settings.         107, no. 23, p. 233506, 2015.
+Despite of the non-optimized opening of the Al layer,            [3] W. Favre, M. Sciuto, A. Danel, R. Varache, A.
+selective plating was successful and narrow Cu contacts              Ragonesi, A. Di Matteo, D. Nicotra, F. Rametta, D.
+              Presented at the 38th European PV Solar Energy Conference and Exhibition, 6-10 September 2021
+
+
+
+       Iuvara, M. Foti, C. Coletti, M. Vandenbossche, A.-              Heterojunction Solar Cells,” Sol. RRL, vol. 3, no. 6,
+       S. Ozanne, F. Jay, F. Pernoud, A. Bettinelli, D.                p. 1900006, 2019.
+       Muñoz, C. Roux, A. Jouini, and C. Gerardi, “25%            [14] T. Hatt, J. Bartsch, S. Kluska, and M. Glatthaar,
+       efficient large area silicon solar cell: paving the way         “Resist-free and Busbar Compatible Plating Route
+       for premium PV manufacturing in Europe,” 37th                   on TCOs Developed on SHJ Solar Cells,” 9th
+       EUPVSEC, Virtual, 2020.                                         Metallization and Interconnection Workshop, 2020.
+[4]    X. Ru, M. Qu, J. Wang, T. Ruan, M. Yang, F. Peng,          [15] T. Hatt, J. Bartsch, V. Davis, A. Richter, S. Kluska,
+       W. Long, K. Zheng, H. Yan, and X. Xu, “25.11%                   S. W. Glunz, M. Glatthaar, and A. Fischer,
+       efficiency silicon heterojunction solar cell with low           “Hydrophobic AlOx surfaces by adsorption of a
+       deposition rate intrinsic amorphous silicon buffer              SAM on large areas for application in solar cell
+       layers,” Solar Energy Materials and Solar Cells,                metallization patterning,” (eng.), ACS applied
+       vol. 215, p. 110643, 2020.                                      materials & interfaces, vol. 13, no. 4,
+[5]    K. Yoshikawa, H. Kawasaki, W. Yoshida, T. Irie,                 pp. 5803-5813, 2021.
+       K. Konishi, K. Nakano, T. Uto, D. Adachi, M.               [16] D. Erath, S. Pingel, R. Khotimah, A. de Rose, D.
+       Kanematsu, H. Uzu, and K. Yamamoto, “Silicon                    Eberlein, T. Wenzel, S. Roder, A. Lorenz, and F.
+       heterojunction solar cell with interdigitated back              Clement, “Fast screen printing and curing process
+       contacts for a photoconversion efficiency over                  for silicon heterojunction solar cells,” AIP
+       26%,” Nat. Energy, vol. 2, no. 5, p. 17032, 2017.               Conference Proceedings, vol. 2367, no. 1,
+[6]    N. M. Haegel, H. Atwater, T. Barnes, C. Breyer, A.              p. 20006, 2021.
+       Burrell, Y.-M. Chiang, S. de Wolf, B. Dimmler, D.
+       Feldman, S. Glunz, J. C. Goldschmidt, D.
+       Hochschild, R. Inzunza, I. Kaizuka, B. Kroposki, S.
+       Kurtz, S. Leu, R. Margolis, K. Matsubara, A. Metz,
+       W. K. Metzger, M. Morjaria, S. Niki, S. Nowak, I.
+       M. Peters, S. Philipps, T. Reindl, A. Richter, D.
+       Rose, K. Sakurai, R. Schlatmann, M. Shikano, W.
+       Sinke, R. Sinton, B. J. Stanbery, M. Topic, W.
+       Tumas, Y. Ueda, J. van de Lagemaat, P. Verlinden,
+       M. Vetter, E. Warren, M. Werner, M. Yamaguchi,
+       and A. W. Bett, “Terawatt-scale photovoltaics:
+       Transform global energy,” (eng), Science (New
+       York, N.Y.), vol. 364, no. 6443, pp. 836–838, 2019.
+[7]    P. J. Verlinden, “Future challenges for photovoltaic
+       manufacturing at the terawatt level,” (en), Journal
+       of Renewable and Sustainable Energy, vol. 12, no.
+       5, p. 53505, 2020.
+[8]    E. Gervais, S. Shammugam, L. Friedrich, and T.
+       Schlegl, “Raw material needs for the large-scale
+       deployment of photovoltaics – Effects of
+       innovation-driven roadmaps on material constraints
+       until 2050,” Renewable and Sustainable Energy
+       Reviews, vol. 137, p. 110589, 2021.
+[9]    Int. Wirtschaftsforum Regenerative Energien
+       (IWR®), Meyer Burger prüft Bau einer Solarfabrik
+       in Deutschland, 2020.
+[10]   J. Yu, J. Li, Y. Zhao, A. Lambertz, T. Chen, W.
+       Duan, W. Liu, X. Yang, Y. Huang, and K. Ding,
+       “Copper metallization of electrodes for silicon
+       heterojunction solar cells: Process, reliability and
+       challenges,” Solar Energy Materials and Solar
+       Cells, vol. 224, p. 110993, 2021.
+[11]   A. Lachowicz, A. Descoeudres, J. Champliaud, A.
+       Faes, J. Geissbühler, M. Despeisse, S. Nicolay, and
+       C. Ballif, “Copper Plating Processes for Silicon
+       Heterojunction Solar Cells: an Overview,”
+       Proceedings of the 36th EUPVSEC Conference,
+       Marseille, France, pp. 568–571, 2019.
+[12]   T. Hatt, J. Bartsch, S. Kluska, S. Nold, S. W. Glunz,
+       and M. Glatthaar, “Low-cost Cu-plated
+       metallization on TCOs for SHJ Solar Cells -
+       Optimization       of     PVD       Contacting-layer,”
+       Proceedings of the IEEE 47th Photovoltaic
+       Specialists Conference (PVSC), pp. 397–400, 2020.
+[13]   T. Hatt, S. Kluska, M. Yamin, J. Bartsch, and M.
+       Glatthaar, “Native Oxide Barrier Layer for Selective
+       Electroplated       Metallization         of     Silicon
+

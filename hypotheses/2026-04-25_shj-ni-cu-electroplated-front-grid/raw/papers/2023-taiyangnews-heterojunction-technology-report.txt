@@ -1,0 +1,1276 @@
+Heterojunction Solar Technology
+                                     2023 Edition
+
+
+
+
+Working Hard on Cost Reduction
+
+
+Authors: Shravan K. Chunduri, Michael Schmela
+Contents
+
+
+
+
+  01                                       02                                                             03
+  Introduction              6              HJT Cell Processing                               9            HJT Module              23
+                                                                                                          Assembly
+                                           • Incoming Wafer Supply          • TCO Deposition
+                                           • Wet-Chemical                   • Metallization
+                                             Processing                     • IV-Characterization
+                                           • Core Layer Deposition          • Light Soaking
+
+
+
+
+  04                                       05                                                    06
+  Total Line               25              Performance of                           27           Commercialization                31
+  Solutions                                HJT Devices                                           and Capacity
+                                           • Cell
+                                           • Module
+
+
+
+
+  07                                       08
+  Costs                   34               Conclusions             36
+
+
+
+
+                                                                                                  Advertisers:
+© TaiyangNews 2023
+All rights reserved.                                                                              •   Huasun                 p. 2
+Heterojunction Solar Technology 2023 – Working Hard on Cost Reduction                             •   Risen                  p. 4
+ISBN 978-3-949046-16-2                                                                            •   DKEM                   p. 8
+                                                                                                  •   Solamet                p. 13
+The text, photos and graphs in this report are copyrighted (cover photo credit:
+Huasun). TaiyangNews does not guarantee reliability, accuracy or completeness of                  •   Hangzhou First         p. 22
+this report's content. TaiyangNews does not accept responsibility or liability for any            •   GS-Solar               p. 33
+errors in this work.                                                                              •   WAVELABS               p. 35
+                                                                                                  •   Cybrid                 p. 37
+Publisher:
+                                                                                                  •   LONGi             back cover
+TaiyangNews UG (haftungsbeschraenkt)
+An der Golzheimer Heide 23
+40468 Duesseldorf, Germany
+www.taiyangnews.info
+
+                                                                                   Heterojunction Solar Technology 2023 | TaiyangNews 3
+ HJT
+  Choose
+
+
+
+
+                                                       CONTACT US
+
+
+
+
+                         www.risenenergy.com
+4 TaiyangNews | Heterojunction Solar Technology 2023
+Executive Summary
+
+The heterojunction segment has just seen something                    texturing. While RCA and ozone are the 2 main cleaning
+groundbreaking: LONGi has broken the efficiency world record          options that manufacturers have relied on in the past, the latter
+Kaneka had held for 5 long years, and has created history in the      seems to be the industry’s choice of late keeping costs in view.
+process. At 26.81%, the efficiency figure achieved in Nov. 2022
+is the highest reported so far for a crystalline silicon solar cell   The most important development in the field of core layer
+with an HJT-only cell structure. Notwithstanding HJT’s potential      deposition is the introduction of a doped microcrystalline silicon
+that has become evident here, its relevance is insignificant from     layer into the HJT structure, replacing amorphous silicon films,
+a commercialization standpoint.                                       first on the front side and then on the rear. While this approach
+                                                                      has been under evaluation, a few companies have already
+However, the segment has seen several developments in the             gone ahead and implemented it in production, at least on the
+areas of optimization of device structure, process flow, and cost     front side, while they have a strategy in place for the rear as
+reduction that are very much relevant to real-time proaduction.       well. Production tools supporting this next generation of HJT
+                                                                      cell structure are also supporting high throughputs of up to 7,200
+We last published an edition of TaiyangNews Report on                 wafers per hour.
+Heterojunction Technology in August 2022, but some of the
+developments that have taken place since are quite noteworthy.        When it comes to TCO, replacing indium has been a hot topic.
+To reflect these developments, a few of which were also               While eliminating indium completely does not seem doable as
+presented on Day 2 of TaiyangNews Virtual Conference on               of now, stacks of ITO and AZO can reduce the use of indium
+High Efficiency Solar Technologies, we are now publishing a           significantly, down to 85%. On the other hand, there is also an
+concise version of our HJT report.                                    argument that “indium” is not a burning issue.
+
+There has been an interesting development related to HJT              Most of the recent developments related to HJT are related to
+processing. The 3 main processing steps – annealing the               metallization. It also makes sense as silver used for forming
+wafers for gettering, cutting the wafers before cell processing,      the contacts dictates most of the cell conversion costs of HJT.
+and light soaking –, which were under serious pursual, have           Dual printing is the state of the art here. The industry was able
+now established themselves as part of the standard process            to attain a significant reduction in paste laydown with SMBB,
+at most of the HJT cell production lines. High wafer quality          i.e., number of busbars beyond 12 or 15, 18 or even 24. The
+requirement for HJT is no more a prerequisite, as the annealing       industry averaged about 18 mg of silver per watt in 2022,
+process addresses the issue of metallic impurities. Cell slicing      and the target is to lower it to 10 mg/W in 2023. Silver coated
+reduces edge (cutting) losses. A point to be noted here is that       copper-based pastes are expected to play a vital role in further
+all the subsequent cell and module production tools have              reducing silver consumption. Getting rid of busbars from the cell
+been successfully optimized to handle half wafers without             surface is also part of the plan. Interestingly, a few companies
+affecting the throughput. The light soaking process restores the      are of the opinion that plating is going to play an important role
+performance losses of the HJT cells caused due to degradation         in cost reduction as well as performance improvement of HJT in
+during the initial period of module operation.                        the near future.
+
+Reducing the thickness of the wafers is one of the most               Within module making, more than the process, it is the materials
+important wafer-related areas that can be targeted for cost           that are the subject of innovation. Leading encapsulation
+reduction. Several companies have found that there is no              material suppliers have introduced light conversion films that
+performance loss even at a wafer thickness of 100 µm. At              can convert UV light into red or blue band, which enhances the
+present, leading companies are at 130 µm and have plans               absorption with HJT in particular and results in a power gain.
+to reduce the wafer thickness progressively. A price list from        The industrial cell efficiencies in China have surpassed 25%
+a leading wafer maker reveals that a 20 µm reduction in               in general, while the specifics vary from one case to the other.
+wafer thickness can compensate for most of the high prices            An increasing number of module products based on HJT are
+associated with n-type wafers to make it comparable to p-type.        entering the commercial space. Today’s market offers HJT
+                                                                      modules for all applications, including 700 W products for the
+In the wet-chemical processing step – the first of cell processing    utility scale. This report also provides an overview on the status
+– cleaning remains the key, in addition to optimization of            of commercialization, capacity, and costs.
+
+t Enjoy reading our report on Heterojunction Solar Technology 2023
+                   Shravan K. Chunduri                                             Michael Schmela
+                   Head of Technology, TaiyangNews                                 Managing Director, TaiyangNews
+                   shravan.chunduri@taiyangnews.info                               michael.schmela@taiyangnews.info
+                   +91 996 327 0005                                                +49 173 15 70 999
+                   Hyderabad, India                                                Duesseldorf, Germany
+
+
+
+                                                                               Heterojunction Solar Technology 2023 | TaiyangNews 5
+1. Introduction
+The cost-performance ratio – the ultimate               First and foremost is the progress in efficiency. HJT
+performance metric of a PV device – can be              has been regarded as the platform for attaining
+improved in several ways. The first and most sorted     higher efficiencies, and several HJT producers have
+method is to improve the electrical parameters          achieved 25% and above. However, something
+of the PV device to make it more sensitive to the       spectacular has been recently reported in this
+incident sunlight; in other words, efficiency. The      context. Kaneka’s HBC structure (a fusion of HJT
+incumbent PERC cell technology can only support         and IBC) held the record for the highest crystalline
+efficiencies up to 21.7%, as indicated by the monthly   silicon cell efficiency at 26.63% until November 2022.
+TaiyangNews Top Solar Modules listing available on      The world’s largest PV manufacturer, LONGi, has
+our website (please see the latest editions HERE).      now pushed it to the next level, creating history by
+To achieve higher efficiencies beyond this level,       surpassing a record held for 5 years, with the highest
+high efficiency cell architectures such as TOPCon,      reported efficiency of 26.81%. LONGi created this
+heterojunction (HJT), or interdigitated back contact    record on an “HJT only” platform, meaning it is not a
+(IBC) structures are typically used.                    back-contact architecture, but purely based on HJT
+                                                        with contacts on both sides.
+IBC still remains somewhat exclusive to only a
+handful of companies. TOPCon, on the other              Not as eye catching, but HJT technology has
+hand, has largely been recognized as the natural        seen several incremental improvements, including
+successor to PERC, with several prominent PV            optimization of device structure, process flow,
+manufacturers entering mass production and              and cost reduction. One significant development
+planning gigantic expansions with the technology.       in cell architecture optimization has been the
+Still, several noteworthy developments are taking       replacement of doped amorphous silicon layers
+place in parallel with respect to HJT as well.          with microcrystalline films. The process flow
+
+
+
+
+Source: Huasun
+
+
+
+
+  Still relevant: Even as TOPCon is being touted as the natural successor to PERC, HJT continues to
+  attract considerable interest.
+
+6 TaiyangNews | Heterojunction Solar Technology 2023
+has been further improved with the inclusion of          progress made in various aspects of the technology.
+wafer annealing and light soaking, which are now         The latest updates were exclusively presented and
+standard practice. Moreover, newly built factories       discussed on Day 2 of the TaiyangNews Virtual
+are increasingly implementing the cutting of wafers      Conference on High Efficiency Solar Technologies,
+beforehand. Cost reduction has become a top              which dealt with HJT (see presentations here). This
+priority, with the industry pursuing new ways to         TaiyangNews report is highlighting the latest major
+reduce silver paste consumption, and this has also       advancements that have taken place in the HJT
+given rise to alternative metallization solutions such   segment over the last 6 months.
+as plating. Transparent conductive oxides (TCO) are
+also being developed, which can significantly reduce     HJT stands out with several unique attributes. At
+indium consumption. Also, a few optimizations            the cell level, the technology follows a fairly different
+have been made at the module level to improve            process flow than PERC and TOPCon, thus requiring
+overall performance. Companies like Risen are also       special tools and process consumables. It also
+promoting HJT technology for a low carbon footprint.     requires considerable optimization at the module
+                                                         making stage. All previous HJT reports published
+The field of heterojunction technology has seen          by TaiyangNews have comprehensively covered
+numerous advancements and improvements in                the fundamentals of the technology along with the
+recent years, many of which were discussed in the 3      implications on supply and value chains of HJT. This
+reports TaiyangNews has published on this topic, the     edition directly jumps to the latest developments
+most recent published in August 2022. Since then,        starting with cell processing.
+however, there has been considerable amount of
+
+
+
+
+Source: GS-Solar
+
+
+
+
+ Different setup: HJT employs a distinctive process flow, which necessitates a different set of tools
+ on the production line, with PECVD and PVD being crucial tool set.
+
+
+
+
+                                                                 Heterojunction Solar Technology 2023 | TaiyangNews 7
+8 TaiyangNews | Heterojunction Solar Technology 2023
+2. HJT Cell Processing
+HJT has been promoted as a technology with fewer          2.1. Incoming Wafer Supply
+processing steps – typically 5 in number – and            One of the most significant wafer-related
+these process steps also differ significantly from        developments is half cell processing, which is
+the mainstream PERC or even TOPCon. After the             becoming inevitable in the case of larger wafer
+silicon wafers are etched to remove saw damage            formats. As discussed in the 3rd edition of our HJT
+and textured, intrinsic amorphous silicon layers are      reports, the HJT segment, especially its entire
+applied to both sides, followed by doped amorphous        production tool supply stream, though late, has
+silicon films with opposite polarities. Next, a TCO       successfully adapted to processing larger wafers.
+film is applied to act as an antireflective coating and   Cutting of the cells is becoming a necessary step
+conductive electrode for current extraction. Most HJT     in order to counter resistance losses. On the other
+cells today are bifacial, with TCO deposited on both      hand, the edge losses for HJT based on larger
+sides. Alternatively, a full-area metal film may be       wafers, when processed into complete cells and
+applied to the rear side to make the cell monofacial.     then sliced, are higher compared to PERC due to
+A metallic grid is then screen-printed on top of the      the damages to TCO and also at the sliced edges.
+TCO and cured to produce the HJT cell. Finally, the       To address this problem, the equipment supply chain
+cells are tested and sorted.                              is now facilitating the processing of half wafers for
+                                                          HJT, meaning the wafer is sliced into half before cell
+An interesting development with regard to the             processing, and these slices are then processed into
+process sequence is that 3 additional steps are           cells. This approach brings in another benefit, which
+increasingly becoming part of the standard process        is the ability to process thinner wafers. As one could
+sequence – annealing of wafers for gettering, cutting     imagine, in the case of very thin and full wafers, the
+the wafers before the cell processing, and light          occurrence of wafer bending could be high. This can
+soaking. The first 2 steps take place before the start    be avoided by cutting the wafer beforehand. At the
+of cell processing, as they are related to wafers. In     line level, it is also easy for the automation to handle
+fact, the change required for HJT starts at the wafer     half-cut thin wafers compared to thin-full slices.
+level.                                                    These benefits are increasingly becoming hard to
+
+
+
+
+Source: Forschungszentrum Jülich
+
+
+
+
+ Slimmer is better: With its symmetrical cell structure, HJT supports thin wafer processing. While
+ the industry is already at 130 µm, there is a clear path toward 100 µm and less.
+
+
+                                                                  Heterojunction Solar Technology 2023 | TaiyangNews 9
+ignore, thus, it is now becoming part of the standard                                  µm, starting at 150 µm. However, each new step
+practice.                                                                              took longer than the previous one as several issues
+                                                                                       needed addressing, not only in cell production, but
+This is also the same with pre-annealing. In order                                     also in modules. For example, it took several weeks
+to overcome the requirement for high wafer quality,                                    to hit 140 µm from 150 µm, a few months for the
+the industry has adopted a heat treatment process                                      next 10 µm reduction and about half a year from
+(annealing) that mimics gettering, a process of                                        then on to reach 120 µm. The company says that it
+removing metallic impurities with thermal treatment.                                   now has a clear path towards 80 µm and is confident
+As a result, HJT can now use wafers from different                                     that it will enter mass production in the near future.
+positions of the ingot and production runs of the                                      In the meantime, Risen has already put 120 µm into
+crucible. Gettering also helps increase the yield of                                   production.
+the whole line, according to Peter Wolf, VP overseas
+sales at the leading HJT tool vendor Maxwell. Thus,                                    At the TaiyangNews HJT event, R&D director
+the heat treatment step is also becoming part of the                                   of solar cells at Huasun, Su Zhou shared his
+process flow at leading production lines of HJT.                                       insights into wafer thickness reduction potential with
+                                                                                       respect to efficiency in his talk on Mass Production
+A very important wafer related topic for HJT is                                        Status and Future Trends of HJT Solar Cells
+thickness reduction. This cell structure is highly                                     (see presentation here). The cell efficiency does
+compatible with thinner wafers, and its unique                                         not change notably while moving from 140 µm to
+symmetrical structure only adds up to this benefit.                                    100 µm, according to Zhou. He further emphasized
+Po-Chuan Yang, general manager at Risen                                                that the industrial goal for wafer thickness would
+Energy’s Business Unit HJT, shared the company’s                                       be about 90 to 100 µm. Huasun has also started a
+experience in its journey towards thinner wafers in                                    wafer cutting facility and, according to Zhou, after
+its presentation Progress on HJT Technology                                            several months of mass production experience, the
+and Key Milestones at Risen (see presentation                                          equipment, material and process are now ready for
+here) during our TaiyangNews High Efficiency                                           120 µm and 130 µm. On the 100 µm front, a cutting
+Solar Technologies 2022 event in Nov. 2022. Risen                                      yield of 90% has been reached in the R&D line of
+reduced the thickness in progressive steps of 10                                       Huasun’s cutting lab, he said.
+
+                                                              Wafer price - TCL Zhonghuan
+
+                                   11     10.51                                       10.32
+                                                                                                                  9.89
+
+
+
+
+         Wafer price (RMB/Piece)
+                                   10             9.73
+
+                                   9
+                                                                                           7.9
+                                   8                                                                                   7.64
+                                                         7.38
+                                   7                                                             6.56                       6.35
+                                                                6.13
+                                   6
+                                        Source: TCL Zhonghuan; graphic: TaiyangNews
+
+                                   5
+                                                    150 µm                             150 µm                      130 µm
+                                                     p-type                                          n-type
+
+
+                                                        218.2 mm              210 mm          182 nmm      166
+
+  Price parity: The premium for n-type can more or less be compensated with about a 20 µm
+  reduction in wafer thickness, as shown in this price list from TCL Zhonghuan from November 28,
+  2023.
+
+10 TaiyangNews | Heterojunction Solar Technology 2023
+Kaining Ding, head of R&D department at the              can support a wafer that is 20 µm thinner, extra costs
+German research center Forschungszentrum Jülich          from the wafer side can be brushed off as negligible.
+(FZJ), in his conference keynote on the Status of        The good news is that HJT, as it is, is able support
+HJT said that the mainstream wafer thickness was         this thickness delta with huge potential for slimming
+about 150 µm (during the end of 2022) and it is          it down further.
+likely to go down to 125 µm; however, 100 µm is
+sufficient to achieve a cell efficiency of >26% (see     2.2. Wet-Chemical Processing
+presentation here). The main motivation behind           As with standard cell making, the HJT process also
+reducing the wafer thickness is cost. To quantify the    starts with saw damage etching (SDE), followed
+benefits, while it may not be absolutely accurate,       by texturization and cleaning. All these steps are
+a wafer price list from TCL Zhonghuan released in        individually optimized for HJT. The typical PERC
+November 2022 offered some direction (see graph          process flow avoids SDE, while it is highly relevant
+on p. ##). It is public knowledge that n-type wafers     for HJT, emphasized Damian Brunner, senior R&D
+are more expensive than p-type, and this price list      manager solar & battery at RENA in his talk on
+indicates that the difference was about 6% at the        Wet Chemical Innovations in SHJ & TOPCon
+time. This was determined by comparing the prices        Cell Processing (see presentation here). RENA is
+of n-type and p-type wafers of the same size (210        offering an organic cleaning option before the SDE
+mm) and thickness (150 µm), given as 10.32 RMB           step, which can be either ozone based or hydrogen
+and 9.73 RMB per piece, respectively. It is obvious      peroxide, while the latter is recommended when a
+that reducing wafer thickness reduces costs and          high degree of cleaning is required. SDE is alkali-
+enables companies to reduce prices as well. Again,       based, and the process intensity strongly depends
+this price list indicates that a 20 µm reduction in      on the quality of the incoming wafer.
+wafer thickness results in savings of 4.3% on wafer
+price, as indicated by the price of 210 mm wafers of     The preconditioning process before texturing
+150 µm (10.32 RMB) and 130 µm (9.89 RMB). Thus,          facilitates homogeneity in pyramid distribution and
+it is safe to say that if the n-type cell technologies   helps adapt to the height of the pyramids formed in
+
+
+
+
+Source: RENA
+
+
+
+
+ Cleaning is key: The major change with respect to wet-processing for HJT is cleaning, as shown
+ here in the slide from RENA at the TaiyangNews High Efficiency Solar Technologies Conference;
+ ozone-based cleaning is becoming the standard.
+
+
+                                                                Heterojunction Solar Technology 2023 | TaiyangNews 11
+texturing. This is very important as, after texturing,     required for the entire HJT cell processing line can
+the surface morphology strongly influences the             be attributed to the core layer deposition tools.
+quality of the passivation. In the post-texturing step,    The importance and fundamentals of core layer
+rinsing and cleaning are crucial.                          deposition were discussed in depth in the previous
+                                                           editions of our HJT report; and as in the past,
+Overall, cleaning is the most important change             PECVD technology is still the state of the art for core
+required for HJT at the wet-chemical station. HJT          layer deposition.
+demands a specific cleaning regime to remove
+organic and metallic impurities. The quality of the        The most important development in the field
+deposition – and thus the ultimate passivation –           of core layer deposition is the introduction of a
+strongly depends on the cleanliness of the wafers,         microcrystalline silicon layer into the HJT structure.
+especially since the HJT process is carried out at low     Implementing microcrystalline in the industry only
+temperatures. There are 2 cleaning methods that            refers to replacing the doped amorphous silicon
+are largely followed – an ozone-based process and          layers, while the very thin intrinsic amorphous silicon
+a so-called RCA process using hydrogen peroxide.           films of 1 to 2 nm attached to the wafer surface
+While RCA is effective as well as robust, it is also       remain the same. The primary advantage of using
+expensive, not only due to the high price of the           n-type microcrystalline silicon on the emitter side is
+chemicals of which hydrogen peroxide is at the top,        that it can improve the current (Isc) and fill factor (FF).
+the effluent treatment costs are also high. For this       The increase in Isc is due to the fact that the light
+reason, ozone-based cleaning is attracting a lot of        absorption coefficient of the microcrystalline silicon
+attention. As a matter of fact, none of this is new,       is far less than amorphous silicon. HJT devices that
+except that ozone-based cleaning is becoming the           use microcrystalline silicon exhibit superior short
+mainstream.                                                and long wavelength responses. Risen says
+                                                           it will also introduce oxygen or carbon to increase
+RENA, for example, uses ozone-based                        the band gap within the microcrystalline layer for
+preconditioning and cleaning before SDE, as                better short wavelength responses. The increase
+mentioned above, followed by pre-cleaning before           in FF is mainly due to the superior conductivity of
+texturing. In post-texturing, the first cleaning step is   the microcrystalline film, which decreases the silver
+also based on ozone to get rid of organic residues,        resistance of cells and reduces the dependence
+and the process ends with ozone-based etch-back            on ITO for conductivity. The industry is also
+and HF-based metal cleaning.                               evaluating replacing p-type amorphous silicon
+                                                           with microcrystalline silicon on the rear side as the
+At the tool level, most of the leading wet-chemical        next step of improvement. Using a microcrystalline
+bench suppliers are offering production tools that         doped layer on both sides leads to high field effect
+can support high throughput of around 7,000                passivation. The industry is colloquially referring
+wafers per hour integrating all the above discussed        to the amorphous silicon on both sides as HJT1.0,
+functionalities. The equipment is also designed to         microcrystalline on the emitter side as HJT2.0, and
+support half-wafer processing.                             double-sided microcrystalline as HJT3.0.
+
+2.3 Core Layer Deposition                                  At TaiyangNews' recent Solar Cell Production
+After the wet-chemical treatment, the wafers enter         Equipment & Processing Materials conference
+the core layer deposition stage, which is the heart        (end-February), Jinyan Zhang, the GM at R&D
+of HJT processing. It involves multi-layer stacking of     department for GS-Solar, gave an insightful
+intrinsic-amorphous followed by doped-amorphous            presentation on their specific PECVD solution
+silicon layers of opposite polarities on each side of      for depositing microcrystalline silicon, titled
+the wafer and controlling them at the nanometer            "Development of Micro-Crystalline HJT Solar Cells
+scale. This is very important as the junction is           using 13.56MHz RF Mass Production Equipment"
+created at the surface, and the deposited layers           (see recording here). Zhang emphasized that the
+also dictate the effectiveness of passivation, which       13.56MHz RF technology is ideal for large chamber
+is key for HJT’s high performance. Not only in terms       PECVD equipment used in mass production of
+of performance, as much as half of the CapEx               microcrystalline HJT cells, citing benefits such as
+
+12 TaiyangNews | Heterojunction Solar Technology 2023
+Heterojunction Solar Technology 2023 | TaiyangNews 13
+Source: GS-Solar
+
+
+
+  Generations of progress: GS-Solar is now offering a 7th gen PECVD tool that not only supports
+  application of microcrystalline silicon, but also supports high production capacity between 800
+  MW and 1 GW, as shown by GS-Solar R&D GM Jinyan Zhang at a TaiyangNews Conference.
+
+good uniformity of the deposited films, a relatively     the typically used 2. “We do i, i-n and p instead of
+wider and tolerant process window, and no plasma         typical i-n and i-p in 2 reactors,” said Wolf, where i
+damage. He also presented raw production data that       stands for intrinsic and n & p denote the 2 polarities
+showed significant efficiency gains; a 0.5% efficiency   of doping. This approach has 3 key benefits
+gain with n-type microcrystalline silicon on emitter     according to Wolf. The first is that the tray is not
+leading to an absolute efficiency of 24.47% and a        shared between i and p, which avoids boron-related
+further 0.4% gain by using the microcrystalline films    contamination, thereby resulting in better passivation
+on both sides that led to the efficiency of 25.45%.      effect. Since the intrinsic layers are deposited first on
+GS-Solar's latest 7th generation PECVD reactor           both sides, the junction interface is protected while
+has a capacity of 800 MW to 1 GW per single tool,        also avoiding phosphorus-related contamination
+and is capable of processing 330 half pieces of G12      on the p-side during the i-n coating. Finally, it
+wafers, a significant improvement over the previous      also facilitates relatively higher i-layer deposition
+generation tool's ability to process only 169 M6         temperatures, improving the quality of the film.
+wafers.
+                                                         2.4 TCO Deposition
+Maxwell, Ideal Energy Sunflower, and H2GEMINI            The second half of deposition in HJT processing
+are the other key tool suppliers in this segment. The    deals with the application of the TCO layer,
+PECVD tools from all these companies are able to         which acts as both an antireflective coating and a
+support processing up to G12 size as well as half        conductive electrode to extract and laterally conduct
+wafers, in addition to supporting higher throughputs     the electrical current.
+of over 6,000 wafers of the same format. Among
+these, Maxwell’s tool supports the highest level         Applying TCO is also a very important step in HJT
+of 7,200 wafers per hour. Wolf also presented the        processing. Here, enough care must be taken to
+important features of the company’s PECVD tools          retain the passivation properties of the underlying
+in his High Efficiency & Low Cost HJT Turnkey            amorphous silicon layers. The quality of the TCO
+Line Solution talk at the TaiyangNews Conference         influences lateral charge collection. In addition, the
+(see presentation here). Top of the list is that the     transparency and resistivity of the TCO are also very
+company uses 3 pieces of PECVD tools instead of          important. The application is typically accomplished
+
+14 TaiyangNews | Heterojunction Solar Technology 2023
+Source: Forschungszentrum Jülich
+
+
+
+
+ Elephant in the room: The industry has been evaluating various options to eliminate or reduce
+ indium. While eliminating is not an option yet, it can be reduced by 85%.
+
+in PVD tools by means of sputtering, and indium tin       don’t see a shortage at the moment.” However, to be
+oxide (ITO) is the most commonly used material.           future ready in case such a need arises, Maxwell’s
+Reactive Plasma Deposition (RPD) is an alternative        PVD can already use AZO and apply coatings as
+method, but it is yet to enter mainstream commercial      stacks starting with ITO; 2 layers of AZO and then
+production.                                               ITO on top, for example.
+
+The hot topic in the TCO segment is how to reduce         Optimization for better target utilization has remained
+indium consumption – the key ingredient of ITO –          an important topic on the tool vendors’ end. However,
+if not eliminate it altogether. The fact that indium is   the major focus in optimization at an equipment
+only second to silver in terms of non-silicon costs       level after ITO consumption is higher throughput.
+of HJT cell production is what puts it in focus. Its      There are more PVD vendors compared to PECVD,
+limited availability is another issue. Aluminum-doped     including Von Ardenne, Singulus, Maxwell, S.C New
+zinc oxide is becoming an effective alternative. It       Energy, GS-Solar and H2GEMINI. Among these,
+is low cost and non-toxic, but it is a relatively less    Germany’s Von Ardenne has the highest throughput
+inert material chemically. However, eliminating           of 7,500 wafers per hour, followed by Maxwell at
+indium does not seem possible, at least as of now,        7,200. In order to support this high throughput,
+according to FZJ’s Ding. Cells based on indium-           Maxwell, for example, is integrating more processing
+free TCO suffer from high level of efficiency losses,     units – 4 on top and 4 on the bottom. Ease of
+whereas Ding emphasizes that indium consumption           operation and maintenance without the need for
+can be reduced by 85% through the use of a stack          industrial line cranes is also a common attribute of
+of AZO/ITO. Approaches such as using thinner ITO          the PVD tools from leading suppliers.
+with ARC are also under evaluation. This helps move
+the spotlight away from indium consumption issues         2.5. Metallization
+for some time at least.                                   Metallization has attracted utmost attention in
+                                                          terms of developments among all the HJT process
+Touching a bit on the equipment side while on the         stations. That’s understandable, as one of the
+topic, Maxwell’s Wolf said that his company’s tool        major bottlenecks for HJT currently is its much
+platform is ready with a solution, underlining “we        higher cost, both in terms of CapEx as well as
+
+                                                                 Heterojunction Solar Technology 2023 | TaiyangNews 15
+OpEx. Also, metallization paste governs the major       talk, Novel Low Temperature Paste Development for
+chunk of processing costs for HJT. The process          HJT and Perovskite Tandem Cells (see presentation
+for HJT is very different to the mainstream. While      here), Chang discussed the pain points associated
+the method of metallization is still screen-printing,   with the low temperature epoxy-based pates for
+the paste systems used for other cell architectures     HJT, such as low printing speed of 200 to 250 mm/
+are typically fired at temperatures above 700 °C. In    s compared to PERC's 400 mm/s, resulting in lower
+case of HJT, the amorphous thin films employed are      throughput. Additionally, HJT has issues with fine
+hydrogenated. Given hydrogen’s tendency to escape       line printing, with typical screen openings of 20 to
+at higher temperatures, the paste system must work      24 µm compared to PERC's 12 to 15 µm, leading to
+at low temperatures of about 200 °C to avoid poor       a higher laydown of 18 to 23 mg/W versus PERC's
+passivation. This calls for the use of special silver   8 to 11 mg/W. Solamet has developed a new paste
+pastes that can be cured at low temperatures.           called PV42B, which addresses these challenges
+                                                        and supports fine line printability with low laydown.
+2.5.1. Screen-printing
+Such silver pastes are loaded with silver into          Solamet's latest paste product has been designed
+thermoplastic polymer systems and come with a few       without the typical larger flakes of silver used in
+inherent limitations, like long processing times and    epoxy pastes. This composition improves paste
+higher resistance. The latter leads to a high paste     transfer, enabling fine line printability and ultimately
+laydown to keep the conductivity consistent. Kaien      resulting in low laydown. The absence of larger
+Chang, vice president of technology at Solamet          silver flakes also improves contact to TCO. Chang
+presented the company's low temperature paste           presented results of an in-house designed printability
+solutions for HJT at TaiyangNews conference.            test with a single screen having multiple openings
+Solamet is a Chinese paste supplier named after         ranging from 10 to 20 µm, which showed that at a
+the former metallization paste brand of DuPont          printing speed of 350 mm/s, the PV42B matched
+that acquired all metallization assets from DuPont,     the printability of PERC paste with no disruptions to
+including intellectual property and workforce. In his   line quality. The paste also supports low laydown.
+
+
+
+
+Source: Maxwell
+
+
+
+
+  Interesting test: At the TaiyangNews High Efficiency Solar Technology 2022 Conference, Solamet
+  presented the results of an in-house printability test using a screen with 10 to 20 µm openings,
+  allowing for fine line printability testing of pastes.
+
+16 TaiyangNews | Heterojunction Solar Technology 2023
+Solamet also offers another low temperature paste,        of using pure silver suspension. This directly reduces
+PV43B, for perovskites tandem cells, which can            silver consumption, and thereby costs, albeit not
+be processed at even lower temperatures down to           proportionately as the process of coating copper with
+120°C.                                                    silver is not cheap.
+
+When it comes to printing technology, dual printing       Zhou shared Huasun’s experiences with silver
+is the state of the art as it favors low paste laydown.   coated copper. The company was using such pastes
+Increasing the number of busbars has proved to be         only on the rear side and just for the fingers, at least
+an effective means of reducing paste consumption.         end of 2022, because the majority of these pastes
+While the 12-busbar layout has already been               are not fully optimized for the front side. Using silver
+implemented, a few products based on 15 busbars           coated copper on the rear side only for fingers, a
+are available, and a few are planning to go beyond        saving of 24 mg of silver per cell has been achieved,
+18 or even 24. Silver consumption has been                down from 126 mg per M6 wafer to 102 mg. As to
+significantly reduced in the industry, and more so in     the performance, this novel paste material has led
+2022, from 180 mg per M6 wafer to 120 mg. This            to a slight efficiency loss of 0.03% absolute, which is
+has been achieved by using SMBB (super MBB,               negligible. However, employing these pastes on the
+which is nothing but more busbars) and a metal            front side leads to a considerable dip in efficiency,
+screen, according to Huasun’s Zhou. FZJ’s Ding            according to Zhou. The next step for the company
+puts it at 18 mg/W for G12 wafers with dual printing      is to try silver coated copper paste for busbars and
+and more busbars. Huasun’s silver consumption was         also for frontside fingers with paste formulations
+at 14.6 mg/W at the end of 2022 and is expected to        optimized for these applications. “Our target is to
+decrease to 10 mg/W during 2023.                          reach a silver consumption of 70 mg/wafer with silver
+                                                          coated copper,” said Zhou.
+A noteworthy development with regard to reducing
+silver usage is the use of paste systems consisting of    Reliability is the next area of concern with silver
+copper particles that are coated with silver, instead     coated copper. “Copper leakage and oxidation of
+
+
+
+
+Source: Huasun
+
+
+
+
+  Saving on silver: At TaiyangNews' HJT event, Huasun presented the developments in metallization
+  to reduce silver consumption.
+
+
+                                                                 Heterojunction Solar Technology 2023 | TaiyangNews 17
+the copper” are the 2 examples quoted by Ding in         2.5.2. Alternative Metallization Approaches
+this regard. However, Huasun’s Zhou said that his        Laser Pattern Transfer Printing is another method to
+company has evaluated the reliability of silver coated   improve metallization of HJT, and Risen is working
+copper to conclude that it would not affect the long-    on this technology. This approach is an alternative
+term stability of the module.                            to screen printing, but it still uses a paste system.
+                                                         Here, the grooves are filled with paste which is then
+There are several other approaches being pursued         transferred on to the cell via laser. The benefit of this
+to reduce silver consumption. Eliminating busbars        approach is that it can attain a very good aspect ratio
+is another example. Typically, 25% to 30% of the         of 1 and the method is non-contact, thus supporting
+paste applied on the cells is used for busbars. For      very thin wafer processing.
+example, out of a total laydown of 126 mg of paste
+per an M6 cell, close to 40 mg is used for busbar        Copper plating has not only been a long-term
+formation. The busbar-less cell design first relates     candidate for metallization of HJT cells, it has also
+to the SmartWire Connection Technology (SWCT),           been commercially available for a long time. As
+a proprietary interconnection method that enables        discussed in the previous editions of our report,
+interconnects to be directly attached to the fingers,    it was mainly Dutch company Meco that was
+eliminating the need for busbars. The technology is      promoting a plating-based solution for metallization
+protected with IP, and Meyer Burger has withdrawn        of HJT cells. Then, GS-Solar, a Chinese HJT
+the solution from the open market. However, MBB          producer that turned into an equipment supplier, also
+also supports a busbar-less cell design. Risen says      promoted plating aggressively until a couple of years
+that its cells that support 24 busbars are based on      ago, but later shifted to screen printing. However, the
+a no-busbar design, which comes with its own set         technology is now attracting new followers, and the
+of challenges in module making. On top, rumor            leading equipment supplier is Maxwell.
+has it that an indigenous technology is also under
+development in China, while no further details are       The company is currently working on a seed and
+available.                                               plate approach in which the copper seed layer is
+
+
+
+
+Source: Risen Energy
+
+
+
+
+  Reinventing metallization: In the quest of improving metallization process, companies like Risen
+  Energy are also evaluating new metallization techniques such as Laser Pattern Transfer Printing.
+
+
+18 TaiyangNews | Heterojunction Solar Technology 2023
+applied via sputtering, followed by masking the             in place of low temperature cured pastes, and a
+non-metallic area with photosensitive material              reduction in finger widths to 18.1 µm compared to
+and opening the contacts by exposure. Then,                 the 40.15 µm achieved with screen printing.
+the electroplating of copper is accomplished
+simultaneously on the front and rear sides, followed        RENA, a longtime plating solutions provider, but
+by a photoresist strip and tin plating. The formation       not in favor of plating for HJT, has also started
+of metallic contacts is finished with annealing.            activities in this direction recently. RENA’s Brunner,
+                                                            presenting the company’s latest plating solutions
+Maxwell is cooperating with several partners to             at TaiyangNews HJT event, listed 3 reasons for
+improve the process and introduce plating in mass           changing their mind. The first one is that masking,
+production industrial environment, according to             which was complex, can now be done with silicon
+Wolf. In his presentation, he also showed a table           nitride. The growing interest in a plating solution for
+comparing different metallization approaches, in            HJT, and fast and encouraging first results in early
+which plating has high potential for increasing             testing are the other 2 reasons. The company’s
+efficiency and lowering metallization costs, while          solution is based on an inline platform. The wafer
+the CapEx, facility costs and yield losses are high         is immersed in electrolyte only on one side and is
+(see table below). Maxwell also chalked out its             contacted from the other side. This way, the contacts
+commercialization plans – install the first pilot line in   are kept dry all the time. Biasing the cell from the rear
+2023, the first production line 12 months thereafter,       side initiates the deposition in the structured surface
+and commercial offering in Q3/2024. Huasun’s Zhou           on the front side. Brunner also showed details
+also foresees that plating might contribute to silver       of a novel seed-and-plate approach developed
+reduction as of 2024. Risen reiterates the benefits of      by Swiss research institute CSEM that involves
+copper plating – high efficiency with gain in Isc and       applying a thin, but still silver-based, seed layer.
+FF through the use of pure copper-based contacts            Then, the silicon nitride is deposited on the whole
+
+
+
+
+Source: Maxwell
+
+
+
+
+  Plating vs. Printing: While plating as an alternative to screen printing can reduce costs and
+  improve efficiency, the CapEx, facility costs and yield losses still remain high.
+
+
+                                                                   Heterojunction Solar Technology 2023 | TaiyangNews 19
+area in a way that there is no dense deposition on        opening the contacts, and then moving the cell away
+the fingers. This allows direct copper plating, while     from the measurement position are the main steps.
+the deposited dielectric prevents ghost plating (the
+undesired metal deposition on the open areas). This       Taking out the time required for other steps leaves
+approach has worked straight away with RENA’s             120 milliseconds for the total measurement time.
+tool platform and the adhesion and homogeneity            Additionally, a number of measurements must
+of the resultant contacts are also up to the mark.        typically be completed during this period. These
+This makes the concept ready to go, according to          include the basic front side IV characterization, half-
+Brunner. He estimates the potential silver savings        sun measurement from the front to determine the
+with this approach to be around 50%. RENA is still in     series resistance, dark-IV measurement to determine
+the R&D phase with its plating solutions and is open      shunts and finally electroluminescence imaging for
+to partnering for further development.                    mapping the local defects, which now also became
+                                                          standard. There are also a few additional options
+2.6 IV-Characterization                                   such as Suns-Voc, quasi-EQE and IR imaging.
+At the IV characterization station, HJT cells also
+require optimization. This is due to the fact that cell   In order to facilitate all these, the measurement
+architectures such as HJT that have high open-            time has to be below 30 milliseconds, according
+circuit voltages requires longer voltage sweep times      to Esefelder, while HJT due to its high internal
+for precise and accurate measurement of their I-V         capacitance cannot support measurement
+characteristics. The details of HJT cell testing were     times below 250 milliseconds. To bride this gap,
+covered in Sascha Esefelder's presentation, "High         WAVELABS developed the RapidWAVE algorithm,
+Throughput IV-Classification Of High Efficiency           which drastically cuts the measurement times of HJT
+Silicon Solar Cells," at the TaiyangNews Virtual          cells to just 20 milliseconds. The algorithm generates
+Conference on Solar Cell Production Equipment &           IV curves that closely resemble those from steady
+Processing Materials, which was held on February          state measurements.
+28, 2023 (see recording here). While PERC cells
+show no significant difference when cutting down the      The SINUS-300 testing tool platform of the company
+measurement time from 1 second to 20 milliseconds,        not only features the function, but also enables
+HJT cells show a higher efficiency when the               measuring times spanning to a few seconds to
+measuring time is reduced downwards from 500              cross check the accuracy of the fast measurement
+milliseconds.                                             on the floor. The IV testing platform from WAVELAB
+                                                          also supports cut cell measurement, whether it be a
+“250 milliseconds is already way too fast to get          1/2 or 1/3rd, which is useful for HJT fabs that have
+a reasonable measurement for HJT cells,” said             begun implementing half wafer processing. Within
+Esefelder. Understanding the discrepancy is made          a single flash, the cell slices are contacted and
+easier by the PC1D simulation with a 30-millisecond       measured separately. According to Esefelder, the
+flash. The simulation demonstrated a bump at Pmpp         solution is also RapidWave compatible and simple to
+in the reserve scan, measuring from Voc to Isc.           retrofit on-site.
+This bump is manifested as higher cell efficiency
+that rises with shorter measurement times. This           2.7. Light Soaking
+well-known phenomenon is often referred as high           Light soaking is the 3rd new step that is becoming a
+cell internal capacitance. According to a recent          part of the standard process flow. The background
+scientific study cited by Esefelder, a HJT module's       is, upon the cell’s exposure to operating conditions,
+measurement uncertainty ranges from one to 10%            the FF has been observed to decrease, leading to
+for measurement times under 100 milliseconds.             a loss in efficiency. However, current and voltage
+                                                          remain unaffected. A possible explanation for this
+The industry standard for IV characterization, on the     degradation effect is that the oxygen enters the
+other hand, calls for a cycle time of 0.72 seconds,       cell through the TCO and reacts with amorphous
+during which several tasks must be completed.             silicon to form amorphous silicon oxide, increasing
+Transporting the cell to the measurement position,        the resistance as a result. To address this issue,
+closing the contacts, taking the measurement,             the industry is following a so-called light soaking
+
+20 TaiyangNews | Heterojunction Solar Technology 2023
+method, in which the cells are subjected to light and   bond between silicon and oxygen and recover the
+heat treatment. The step is expected to break the       losses completely.
+
+
+
+
+Source: WAVELABS
+
+
+
+
+ In his presentation, HighThroughput IV-Classification Of High Efficiency Silicon Solar Cells, during
+ the TaiyangNews Virtual Conference on Solar Cell Production Equipment & Processing Materials
+ 2023, WAVELABS’ Sascha Esefelder provided the breakdown of the classification of cycle time,
+ which underscores the need to keep measurement time to less than 30 milliseconds.
+
+
+
+
+                                                              Heterojunction Solar Technology 2023 | TaiyangNews 21
+22 TaiyangNews | Heterojunction Solar Technology 2023
+3. HJT Module Assembly
+As for the changes required for HJT at the module      The number of busbars topic discussed in
+level, it’s more a matter of choice than compulsion.   the metallization section is implemented at the
+Taking interconnection as an example, HJT is not       interconnection station. Risen tops the segment by
+compatible with soldering in principle. However,       being ready with a 24-busbar design. In addition
+most of the leading HJT makers are using optimized     to the savings on silver costs due to ‘no busbars’
+soldering, whereas low temperature supporting ECA      and thin fingers, the design also brings a few other
+based solutions are more popular outside China.        benefits. The more busbars, the shorter the distance
+                                                       between the contacts, thereby reducing the current
+The main change required with soldering is a           density and power loss. It also increases the cell
+reduced temperature of less than 200 °C, and almost    tolerance to microcracks and finger disruptions.
+every stringing tool supplier offers low-temperature   The contact points between the busbar and finger
+soldering support. Along with the temperature          increases by 2 times – 600 with 12-BB and 1,200
+adjustment, the optimization of soldering material,    with 24-BB – which also increases module reliability,
+the composition of the ribbon and the soldering        according to Risen’s Yang. Huasun is already
+method are just a few examples that require            offering a 15-busbar based module and is evaluating
+detailed readaptation to HJT, according to Risen.      options to increase the busbar count to 18 and
+The company has spent a lot of time and effort on      beyond.
+optimizing the HJT module making process. The 2
+production equipment makers that offer ECA-based       When it comes to module BOM, hydrophobic HJT
+interconnection for HJT are Spain’s Mondragon and      requires an encapsulation solution that supports
+Germany’s teamtechnik. The details of ECA-based        low moisture ingression rate; and equally important
+interconnection along with the optimization required   is the optimization of encapsulation material from a
+for soldering have been discussed in previous          TCO compatibility standpoint. The polyolefin (POE)
+reports and remain more or less the same.              and coextruded structure of EVA-POE-EVA (EPE)
+
+
+
+
+Source: Risen
+
+
+
+
+ Busbars galore: Increasing the number of busbars not only improves electrical performance but
+ also reliability. Shown here is the 24-busbar layout from Risen.
+
+
+                                                              Heterojunction Solar Technology 2023 | TaiyangNews 23
+offered by leading encapsulation material suppliers       Within the backsheets segment, suppliers are
+can meet these demands, especially in glass-glass         increasingly bringing in high WVTR barrier products
+modules, while a low-cost solution is still under         without using aluminum. While inserting a sheet of
+evaluation for glass-backsheet configuration. EPE         aluminum was a practice used to reach high barrier
+is currently the most widely used encapsulation           properties in the past, backsheet makers are now
+solution for HJT.                                         offering aluminum-free high barrier backsheets
+                                                          which can also be opted in transparent variants to be
+Then, encapsulation material makers have                  compatible with bifacial technology. Italy’s Coveme,
+developed a somewhat disruptive solution,                 for example, launched one such product in mid-2022,
+specifically for HJT. To negate the absorption losses     while a few others are also offering similar polymer
+in amorphous silicon layers and TCO, especially the       compositions. The encapsulation and backsheet
+UV portion, Cybrid and Hangzhou First, in a coop          solutions suitable for HJT are being discussed in
+effort, have developed a wavelength transfer film         detail in the latest TaiyangNews Market Survey on
+that converts the UV light into blue or red light. This   Backsheets and Encapsulation Materials 2022/23,
+approach has the potential to increase the module         which can be downloaded for free HERE.
+power by about 1.5%. While the technology can be
+adapted to any polymer base, since EPE is widely
+used, the solution is predominantly offered with EPE,
+but not limited to.
+
+
+
+
+24 TaiyangNews | Heterojunction Solar Technology 2023
+4. Total Line Solutions
+In addition to selling production equipment for          room standards of Class 1,000 inside the automation
+individual process stations, a few equipment             as well. The feature turns out to be very beneficial
+vendors are also offering turnkey solutions. These       when the wafers are transferred from texturing to
+companies, typically having the in-house knowhow         PECVD and unloaded from there to CVD. Any level
+for key equipment used in HJT (PECVD and PVD),           of contamination during these 2 handling steps has
+have extended their product portfolio or cooperate       a significant impact on the final efficiency and line
+with other tool suppliers. Take Maxwell, which           yield. The automation is capable of handling half
+was originally a screen printer maker, and is now        wafer formats of M10 and G12 sizes.
+cooperating with YAC from Japan for wet-chemical
+benches and offering an end-to-end production            H2GEMINI is also offering a turnkey line. While it
+solution for HJT under one roof. The company’s           offers the PECVD along with its specially designed
+solution also includes automation, MES systems           tray-less transport automation, the company has
+and even MBB-based stringing tools for module            teamed up with exateq for wet-chemistry, and with
+manufacturing.                                           Applied Materials for the backend line. As for PVD,
+                                                         the company is partnering with an OEM. GS-Solar is
+Highlighting the automation solution of the company,     yet another equipment maker that is offering turnkey
+Maxwell’s Wolf said that the specialty of its solution   solutions. The below table summarizes the key
+are the handling tools provided with additional FFU      equipment vendors for all steps of HJT processing
+chemical filters. This facilitates much better clean     and the turnkey solution providers.
+
+
+
+
+Source: Maxwell
+
+
+
+
+ Turnkey: Leading equipment makers for HJT are also offering turnkey solutions; here are the
+ details and roadmap of Maxwell.
+
+
+                                                               Heterojunction Solar Technology 2023 | TaiyangNews 25
+                      Equipment Vendors Active in Supplying Tools for HJT
+                                              Wet-      Core layer   TCO depo-   Screen
+Company                                                                                           Turnkey
+                                            chemical    deposition     sition    printer
+Applied Materials                                                                 
+Exateq                                           
+GS-Solar                                                                                            
+H2GEMINI                                                                                            
+Ideal Energy                                               
+INDEOtec*                                                              
+Maxwell                                                                                            
+Rena                                             
+S.C. New Energy                                                                                    
+Singulus                                                                             Source: © TaiyangNews 2023
+
+
+* lab scale; ** though OEM
+
+
+  Expanding supplier base: HJT equipment supply now has a breadth of players offering separate
+  tool sets and turnkey solutions.
+
+
+
+
+26 TaiyangNews | Heterojunction Solar Technology 2023
+5. Performance of HJT Devices
+One of the most important attributes of HJT as            explains why LONGi and Maxwell are at the top of
+a technology is its high cell efficiency. This is         the game in announcing record efficiency levels. It
+facilitated by the superior passivation quality of the    is under the leadership of Xu that LONGi went past
+cell structure that results in high Voc. PV producers,    Kaneka’s 5-year-old world record for silicon solar cell
+equipment makers and research institutes have             efficiency, achieving 26.81% with its HJT solar cell.
+announced different efficiency levels for their HJT       Impressively, this was achieved with an ‘HJT only’
+cells. Several module makers have also introduced         cell, whereas Kaneka’s cell was a hybrid architecture
+various configurations of HJT modules for use in          that combined HJT with IBC (HBC). LONGi also
+different applications.                                   boasts that the world record efficiency for a silicon
+                                                          solar cell is now owned by a Chinese company for
+5.1. Cell                                                 the first time, 68 years after the first silicon solar
+Speaking of the progress in cell efficiency, especially   cell was produced by Bell Labs in the US. While
+during the latest commercialization phase of HJT          Kaneka’s record cell was smaller in size at 79 cm2,
+in China, Hanergy is one company that deserves            LONGi says its latest efficiency record has been
+a special mention. A yesteryear pioneer in the            established on an unspecified “larger wafer size.”
+domestic HJT segment, the company was also the            In fact, even before splashing out the news of this
+first among the Chinese HJT stakeholders to attain        latest world record cell, LONGi had also attained 2
+world record efficiency under the leadership of           more certified efficiency levels of 26.7% and 26.75%
+Xixiang Xu. Hanergy’s last best efficiency of 25.11%      that were simply archived.
+was announced at the end of 2019. When Hanergy
+wound up its activities, the HJT team practically         LONGi said that these record levels were a result of
+split to join 2 companies – LONGi and Maxwell,            optimizing several parameters, such as improving
+while Xu himself joined LONGi. This also probably         the n-type doped microcrystalline silicon layer
+
+
+
+
+Source: Huasun
+
+
+
+
+  HJT Evolution: At the TaiyangNews Conference, Huasun showcased the latest generations of HJT
+  structures and provided an overview of their potential efficiency levels.
+
+
+                                                                 Heterojunction Solar Technology 2023 | TaiyangNews 27
+for enhancing current collection, a new intrinsic                                                        best cell even hit 25.21%. At an R&D level, also with
+layer structure developed to enhance passivation                                                         HJT2.0 and M6 size, the average was 25.45% with
+performance, and optimized TCO.                                                                          the champion cell reaching 25.61%. Huasun plans
+                                                                                                         to introduce HJT3.0 (microcrystalline on both sides)
+LONGi stood at the top in the HJT segment even                                                           in 2023, which it expects to bring a further 0.5%
+before this feat, with its previous best efficiency of                                                   efficiency boost. The next efficiency gain is expected
+26.5%. While the company has not contributed much                                                        with copper plating on both sides and followed by full
+in the way of commercializing the technology, it did                                                     back contact architecture. Zhou also presented the
+motivate several companies to find other avenues.                                                        efficiency roadmap of the company (see the below
+As can be observed with efficiency announcements                                                         slide).
+in the recent past, companies are pursuing record
+efficiency levels under different categories such                                                        Risen’s highest HJT cell efficiency is 25.5%,
+as silver-free, indium-free, low indium and p-type,                                                      achieved in Q4/2021 and realized on a 120 µm wafer
+which are commercialization-relevant subjects.                                                           slimmed down to 100 µm after texturing. The cell
+This indicates that there are multiple options for                                                       features microcrystalline silicon on both sides.
+cost reduction. One such notable announcement
+was from the partnership of Maxwell and Australia’s                                                      GS-Solar says its customer has reached an average
+Sundrive reaching 26.41% for a silver-free solar cell.                                                   efficiency of 25.2% for bifacial HJT cell using
+                                                                                                         microcrystalline silicon, while the champioin cell
+When it comes to real-time production efficiencies,                                                      of the company attained 26%. The company aims
+Huasun’s Zhou says that the best cell batch from                                                         to reach 26.2% in mass production by 2026 and
+the production lines based on HJT2.0, which is                                                           Zhang list the key techniques that would enable
+also implemented in the company’s 2 GW phase II                                                          the progression in this direction as employing
+factory, has an average efficiency of 24.92%; the                                                        microcrystalline on both sides, new TCO materiel’s,
+
+                                                          Certified Record HJT Cell Efficiencies
+
+                  27   26.81 26.75 26.7
+                                                 26.5                                                                                   26.41
+                                                          26.3
+                                                                                                                                                   26.07 26.12
+                                                                  25.82
+                                                                           25.54                                                                                      25.47                  25.62
+                                                                                       25.26 25.26 25.18 25.2 25.11                                                                                     25.4
+
+                  25
+                                                                                                                                                                                24.47
+
+
+
+
+ Efficinecy (%)   23
+
+
+                       Source: © TaiyangNews 2023
+
+
+                  21
+
+
+                                                                            Sundrive    Huasun           Tongwei   GS-Soalr   Hanergy                                                         Maxwell
+                                                                                                                                        Maxwell-   Maxwell-
+                        LONGi    LONGi   LONGi    LONGi   LONGi    LONGi                         LONGi                                                        LONGi     LONGi       EGP                 LONGi
+                                                                                                                                        Sundrive   Sundrive
+                                                                                                                                                                                & INES-CEA
+
+                                Nov-22           Jun-22Oct-21Oct-21 Sep- Jul-21 Jun-21 May- Feb- Nov- Sep- Mar- Setp- Mar- Mar- Apr-22Apr-22
+                                                                     21                 21   21   19   22   22   22    22   22
+                                                                  Standard HJT                                                           Silver free                  p-type                   Low Indium
+                                                                                                                                                                                             indium free
+
+
+
+      Many ways lead to Rome: Companies are exploring new categories, such as p-type, silver-free,
+      indium-free and low-indium, to achieve record efficiencies that are not only noteworthy for the
+      chronicles but also relevant for mass production developments.
+
+
+28 TaiyangNews | Heterojunction Solar Technology 2023
+new types of silver pastes, new metal grid pattern        The world’s largest cell manufacturer, Tongwei Solar
+approaches, ultrafine copper plating and wafer of         is also developing a high-power 720 W HJT module
+high quality and lager size.                              with 23.2% efficiency.
+
+Maxwell started with 24.4% with its complete line,        However, Risen record module is not yet reflected
+and has now introduced already the nanocrystalline        in the product portfolio on its website, and the data
+doped layer on the n-side to achieve efficiencies         sheet for Hyper-ion series is still marked as ‘Draft,’
+of 25% in mass production. The company is now             meaning it is not yet available commercially, which
+evaluating different possibilities with metallization,    explains its absence from our latest Top Module list
+which brings in benefits both on the efficiency as well   in March 2023.
+as the cost front. In parallel, Maxwell has also been
+piloting the p-type nanocrystalline on the rear side,
+which boosts the efficiency to over 26%. “Our target
+is to achieve an average mass production efficiency
+of 26% by end of 2023,” says Wolf.
+
+The industrial efficiency for HJT cells in China has
+surpassed 25% in general.
+
+5.2. Module
+All the efforts put into improving cell efficiency
+eventually also show up at the module level. While
+talk about top module efficiency is not so common,
+Risen highlighted that it broke the record 4 times
+straight. The latest being as recent as February 13,
+2023, when the company announced that it attained
+a certified efficiency of 23.89%. In comparison, the
+highest module efficiency announced for crystalline       Source: Huasun
+
+silicon is still at 24.4% by Kaneka. Risen’s record
+large-size HJT module has a power rating of 741.5
+W. As for commercial offerings, it is in the process of
+commercializing a top-notch product called Hyper-          A bunch of improvements: The latest
+ion that combines the most advanced features of the        Himalaya module series from Huasun uses
+HJT segment. The key attributes according to the           several advanced approaches – pre-cut wafer
+company are listed below:                                  processing, 15 busbars and efficiency of
+• Uses G12 half-cut wafer format, 120 µm wafer             22.5% and a power rating of up to 700 W.
+     thickness (saves material).
+• Patented 24-busbar design: The cell design              The products from other leading manufacturers as
+     consists of no busbars that considerably reduces     well as the progress of HJT modules are reflected
+     silver consumption, while supporting a 24-busbar     in the different monthly editions of the TaiyangNews
+     interconnection layout at the module level.          Top Modules List. When the survey was started
+• Low Ag content: Uses less pure silver, roughly 10       in January of 2022, there were only 2 companies
+     mg/W.                                                that were offering high efficiency HJT modules –
+• Steel frame: Carbon footprint is reduced by 77%         REC and Meyer Burger with 21.9% and 21.8%,
+     compared to aluminum-frame modules.                  respectively. In the very next month, not only did
+• High energy yield: Low temp coefficient and high        REC increase the efficiency to 22.2%, but Huasun
+     bifaciality of 85%.                                  (22.1%) and Jinergy (21.68%) also made it to
+• Low degradation: No LID and PID issues.                 the Feb. 2022 listing. Jinergy’s product all along
+• Superior electrical parameters: Rated power             represented the lower efficiency level of HJT
+     of 700 W, cell efficiency of 25.5% and 22.5%         segment. In June, Canadian Solar made its entry
+     module efficiency.                                   with a 22.5% module. In the immediate next edition,
+
+                                                                  Heterojunction Solar Technology 2023 | TaiyangNews 29
+Huasun’s high power Himalaya series found itself                                                         temperature coefficient of –0.26%/°C and the highest
+in the list with an efficiency of 22.53% and a power                                                     bifaciality, is expected to perform well in real-world
+rating of 700 W, which still remains the highest. The                                                    conditions. Given its high costs, the technology
+module uses cells made from pre-cut wafers, and                                                          has been mainly promoted for the premium rooftop
+is made up of 132 such cells. It uses the 15-busbar                                                      segment. Interestingly, HJT module producers have
+interconnection layout. Then, the subsequent August                                                      recently started launching very large modules with
+listing included the Hi-Chaser series from Akcome                                                        power ratings of 700 W, like Huasun – and these
+with a power of 700 W and 22.5% efficiency.                                                              panels are aimed at the large-scale utility segment.
+                                                                                                         In August 2022, Meyer Burger signed a supply
+As to the application of these modules at the system                                                     agreement in the US to deliver 3.75 GW between
+level, there is not big news. HJT, having a low                                                          2024 and 2029 for the client’s large-scale projects.
+
+
+                         HJT Solar Module Efficiency Range Developments From 1/2022 - 1/2023
+                  22.7
+
+
+                                                                                                         Huasun       Huasun       Huasun       Huasun       Huasun       Huasun       Huasun
+                                                                                              CSI         22.53        22.53        22.53        22.53        22.53        22.53        22.53
+                                                                                              22.5         22.5         22.5         22.5         22.5         22.5         22.5         22.5
+                                                                                                           CSI        Akcome       Akcome       Akcome       Akcome         CSI          CSI
+                  22.4                                                                                                  CSI          CSI          CSI          CSI
+
+
+                                                                               Huasun        22.3         22.3          22.3         22.3         22.3         22.3         22.3        22.3
+                                                                                             REC          REC           REC          REC          REC          REC          REC         REC
+                                         REC          REC          REC          REC                                                                                                     22.22
+
+
+
+ Efficiency (%)
+                                         22.2         22.2         22.2         22.2         22.2                                                                                      Akcome
+                                                                                            Huasun
+                  22.1                   22.1         22.1         22.1
+                                        Huasun       Huasun       Huasun
+
+
+                            REC
+                            21.9
+
+                  21.8      21.8         21.8         21.8         21.8         21.8         21.8         21.8         21.8         21.8         21.8         21.8         21.8         21.8
+                         Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger Meyer Burger
+
+                                         21.68        21.68        21.68        21.68        21.68        21.68        21.68         21.68        21.68        21.68        21.68        21.68
+                                        Jinergy      Jinergy      Jinergy      Jinergy      Jinergy      Jinergy      Jinergy       Jinergy      Jinergy      Jinergy      Jinergy      Jinergy
+
+                         Source: © TaiyangNews 2023
+                  21.5
+                             Jan          Feb          Mar          Apr          May          Jun          Jul          Aug          Sep          Oct          Nov          Dec          Jan
+
+
+
+      Tracking HJT’s progress: TaiyangNews TOP MODULES ranking reflects the growing commercial
+      activity in HJT, from only 2 models featured in early 2022 to six high-efficiency products in January
+      2023.
+
+
+
+
+30 TaiyangNews | Heterojunction Solar Technology 2023
+6. Commercialization and Capacity
+HJT as a technology has never fallen short when          He also presented the company’s ambitious future
+it comes to attracting interest from new as well as      expansion plans – currently building a 5 GW HJT
+established PV manufacturers. Most of the tier           cell-and-module fab with a target to produce the first
+1 companies, including LONGi, Canadian Solar,            cell in H1/2023, and to add 10 GW on top for a total
+Aiko and Trina, have already installed pilot lines.      of 15 GW by the end of 2023.
+However, when it comes to commercial activities,
+Huasun is the pioneer of the segment.                    Tongwei is another Chinese company that has
+                                                         also moved into high-volume HJT manufacturing. In
+Founded only in July 2020, Huasun has quickly            addition to its 2 pilot lines, of which one is designed
+increased its footprint in the commercial HJT            to handle M2 and the other G12 wafers, the company
+segment with an installed capacity of 2.7 GW as          has successfully installed and commissioned a 1 GW
+of the end of 2022. The company installed and            HJT cell factory, expanding its capacity to 1.2 GW.
+commissioned its first fab with a capacity of 600 MW     It is selling these cells to module assemblers. The
+that was basically designed for the M6 wafer size.       company has also built an advanced metallization
+The Chinese company has also successfully finished       R&D lab, primarily for HJT. It is working on all the
+the installation and commissioning of a Phase 2          methods and means to improve the efficiency and
+facility with a capacity of 2 GW that runs the G12       reduce costs as part of its R&D efforts, including half
+size wafers. Its latest fab is designed for processing   wafer processing, using nanocrystalline silicon layers
+pre-cut wafers and is capable of implementing the        on both sides, copper plating and thinner wafers.
+so-called HJT2.0, i.e., using doped microcrystalline
+silicon on the emitter side. Both the facilities are     However, there are many companies in China
+teamed up with corresponding module production           looking into investing in solar cell production,
+facilities as well. Zhou presented the company’s         increasingly also into HJT production – development
+mass production data for the phase 1 facility at         that are covered in the China PV Snippets of our
+the TaiyangNews Conference. Huasun started               daily Newsletter. In Feburary, for example, jewelry
+manufacturing with M6 wafers in Q2/2021 processing       enterprise MINGR announced plans to invest RMB
+above 30,000 cells per day, then ramping up to more      10 billion ($1.47 billion) in the construction of a
+than 150,000 by end of Q4/2021, while the cell yield     solar facility in Keqiao. In the first phase, a 10 GW
+was increased from about 95% to over 97%. As part        TOPCon solar cell will be built, while in the second
+of the continuous optimization of production tools       phase, a 6 GW TOPCon cell facility and 4 GW HJT
+all along the line, especially the process time, the     cell facility will be built. Or electrical machinery and
+throughput has also been increased. As a result, the     equipment manufacturer Xinrui Optoelectronics,
+facility’s capacity has been increased to 890 MW by      in February 2023 said via WeChat that its new
+the end of 2022. At the same time, yield has also        high-efficiency photovoltaic cell facility has begun
+been improved to 99.4%.                                  construction in Gaoyou City. Once fully operation, it
+                                                         will have an annual output of 12 GW high-efficiency
+Risen Energy has been producing HJT modules              TOPCon and HJT cells.
+for 3 years now and has built a 400 MW pilot line.
+The company’s Sieger HJT Series, its flagship            HJT is the most sought after PV technology platform
+module offering at the time, claimed top honors for      in bringing manufacturing back to Europe. Enel
+HJT shipments in 2020 and 2021. In 2022, Risen           Green Power is building the continent’s largest HJT
+upgraded its pilot line for G12 half wafers and          module fab of 3 GW in Italy with support from the
+increased the capacity to 500 MW with the launch         European Commission. The facility is scheduled
+of its Hyper-ion series. As mentioned above, this        to be fully commissioned by July 2024, with initial
+module series combines several latest technological      production of 400 MW slated to start from September
+developments in the HJT segment. Risen received          2023. Today, the largest European HJT cell/module
+the world’s first TUV certification for its G12 high     manufacturer is Meyer Burger, which produced
+efficiency HJT module in August 2022, said Yang.         321 MW in 2022, and said in January 2023, that it
+
+
+                                                                Heterojunction Solar Technology 2023 | TaiyangNews 31
+expects to produce between 1 GW and 1.2 GW in             Singapore based REC has put its plans for a
+2023 as guided earlier. Meyer Burger is ramping up        European HJT factory on hold for the moment while
+its second line in the first quarter and plans to start   its parent company Reliance is quickly proceeding
+ramp-up of the 3rd line in Germany in Q2/2023,            with its 4.8 GW integrated HJT module fab in India.
+expecting a nominal production capacity of around
+1.4 GW.                                                   HJT is also expected to play an important role in
+                                                          attracting PV manufacturing to the US as part of the
+In Dec. 2022, Russian solar cell and modules              country’s Inflation Reduction Act of 2022. Spurred
+manufacturer Hevel Group said its 350 MW annual           by the IRA, in November 2022, Italy’s Enel Group
+production facility was upgraded to handle larger M6      through Enel North America has announced plans
+wafer sizes and solderable metallization layout. The      to establish a bifacial heterojunction solar cell and
+cells now sport mass production efficiency of 24.5%       module manufacturing fab in the US with 3 GW
+with 0.26%/°C temperature coefficient. Hevel’s            annual capacity initially, to be expanded to 6 GW.
+majority stakeholder, Ream Management has been            Meyer Burger is targeting initially 400 MW cell/
+also investing in Unigreen Energy to build its EnCore     module capacity, and eying later expansion to 1.5
+Gigafactory, a 1.3 GW silicon n-type monocrystalline      GW.
+ingots and wafers fab, and 1 GW HJT factory in
+Russia’s Kaliningrad region. It was planned to be         When it comes to actual installed production
+ramped up in late 2022 but on the website it says         capacity, FZJ’s Ding, presenting at the TaiyangNews
+now that the 1 GW HJT cell/module facility will start     Conference, said that while the installed capacity for
+production in 2023.                                       HJT is about 8.46 GW in China, the announcements,
+                                                          including plans and facilities under construction, add
+                                                          up to an unbelievable 218 GW.
+
+
+
+
+Source: Forschungszentrum Jülich
+
+
+
+
+  High interest: HJT has never fallen short when attracting announcements, as summarized by FZJ’s
+  Ding at the TaiyangNews HJT event. While HJT manufacturing capacities in China totaled to 8 GW,
+  announcements including plans and factories under construction add to as much as incredible 218
+  GW.
+
+32 TaiyangNews | Heterojunction Solar Technology 2023
+Heterojunction Solar Technology 2023 | TaiyangNews 33
+7. Costs
+As we have discussed throughout this report, there       then to handle half wafers, and all without losing
+has been considerable progress in HJT. If there is       on throughput. The target is to attain an equipment
+one limiting factor, it is simply costs – both CapEx     CapEx of 250 million/GW.
+and OpEx.
+                                                         As for the OpEx, Huasun’s Zhou says that non-
+As for equipment CapEx, it is still high at 350 to       silicon costs in HJT cell production were reduced
+400 million RMB/GW as of the end of 2022, seeing         tremendously during the first 9 months of 2022.
+only a slight reduction from a level of 400 million in   At the TaiyangNews Conference, he presented 5
+2021. One effective way to reduce equipment costs        important aspects of cell production where cost
+is to improve the throughput. Equipment makers           reduction has been achieved – metallization pastes
+have been constantly optimizing their tools on this      by 60%; 35% in screens; TCO targets by 41%; gas
+account. On the other hand, tool suppliers have done     by 26% and chemicals by 64%. All of these put
+a remarkable job in optimizing production equipment      together account for an overall cost reduction of
+all along the line, first to handle larger wafers and    53%.
+
+
+
+
+                                                                                                  Source: Huasun
+
+
+
+
+  Cost reduction: Huasun reported a significant and rapid decline in HJT manufacturing costs – over
+  50% reduction during the first 9 months of 2022.
+
+
+
+
+34 TaiyangNews | Heterojunction Solar Technology 2023
+LED’S FLASH HIGH
+EFFICIENCY CELLS
+                                                      Multicolor LED-based light source
+                                                      for a perfect copy of the sun
+
+                                                      RapidWAVE®
+                                                      Throughput up to 5.000 units per hour
+
+                                                                       Infrared (IR) imaging
+                                                                       Automatic detection of hot spots,
+                                                                       cells and shunts
+
+                                                                         UV/NIR-Response
+                                                                         Advanced detection of process
+                                                                         instabilities
+
+                                                                      SunsVoc
+                                                                      Optimized process control
+
+                                                                   Exceeds Class AAA criteria
+                                                                   according to IEC 60904-9 Ed. 2
+
+
+
+
+How to achieve precise, stable and flexible cell characterization today? LED’s introduce the LED Solar
+Simulator SINUS-300 with rear side flasher – ideal for bifacial and tandem cells in production, research,
+and certification. Enhance your solar simulator
+with optional features like RapidWAVE®, IR imaging,
+UV/NIR-Response, SunsVoc, and many more.
+                                                           Heterojunction Solar Technology 2023 | TaiyangNews 35
+LED’s get in touch. www.wavelabs.de
+8. Conclusions
+As TOPCon has been establishing itself as the main          related costs over a period of about 9 months. As
+successor to PERC, a few companies are betting              to the concerns with indium’s limited reserves and
+directly on HJT, while most of the major players            subsequent high prices, experts opine that such
+continue at least serious R&D in the HJT field. Why?        a critical situation is unlikely. Even if it does arise,
+Costs are the single biggest bottleneck for HJT.            the industry is prepared; approaches like stacking
+However, there are a handful of avenues for                 ITO with AZO or SiNx, which can reduce indium
+optimization – and here a lot has happened over the         consumption by up to 85%, are already under
+last few months.                                            evaluation.
+
+Starting from the wafers, which account for almost          The key aspects for manufacturing as a whole
+half the costs of a cell, the segment has seen some         are: maintaining yields above 98.5%, equipment
+significant developments. The use of gettering is           uptime above 90% and reducing the consumption of
+already lowering the high barrier set for wafer quality.    utilities. As for production equipment related costs, in
+The next area with the highest potential to reduce          addition to increasing throughput, the HJT segment
+costs is wafer thickness. There are some companies          is also attracting newcomers, which should help
+that are already working with 130 µm wafers, and            bring the prices down further.
+have plans to reduce it further. Given its symmetrical
+structure, HJT intrinsically supports thin wafers.          A very effective means of reducing costs, though
+It has also been well demonstrated that this cell           indirect, is improving the efficiency. As it was
+technology can be implemented on wafers as thin             reflected at the TaiyangNews High Efficiency
+as 100 µm without incurring much efficiency losses.         Solar Conference in November 2022, not only PV
+In this context, Huasun has developed a half brick          manufacturers, but also equipment makers, have
+cutting process, which eases the production of 100          established roadmaps to increase cell efficiency
+µm wafers.                                                  much further. Huasun, for example, presented its
+                                                            roadmap with 5 generations of HJT technology
+Silver is the second biggest contributor to                 (HJT1.0 to HJT5.0). The Chinese HJT maker started
+costs. According to Huasun, using SMBB, silver              at 24.5% in 2021 and attained an efficiency of 25.2%
+consumption was initially reduced to 140 mg/wafer,          in 2022. The target for 2023 is to reach 25.5% with
+and adopting a metal mesh reduced it further to 120         HJT3.0 through the use of microcrystalline doped
+mg/wafer. Silver-coated copper has brought in the           layers on both sides that ultimately leads to a module
+next level of reduction, down to 100 mg/wafer. The          power of 730 W. In a year from there, it aims to
+last leg here could be zero busbars, which Risen            reach 26% cell efficiency and 745 W module power
+is already implementing, where silver consumption           with the use of plated contacts. The next step to go
+can be reduced to around 70 mg/wafer. Then, it’s            beyond 26% is to fuse the back contact structure into
+about going completely silver-free, with copper             HJT, and finally introduce perovskite tandem solar
+plating. In fact, plating is seeing a flurry of activity.   cells into the production line by 2025.
+Maxwell is not only making progress with its plating
+technology, as is evident from its record efficiency        Independent from the cell level, approaches such as
+levels announced from time to time, according to its        light conversion encapsulation films and reflective
+roadmap it wants to commercialize plating in less           ribbons also help boost module performance. From
+than 2 years’ time.                                         going into high volume production in 2022, as
+                                                            highlighted in our previous report, to now focusing
+TCO comes in next in terms of costs – and there             on reducing costs, HJT has indeed come a long way.
+has been significant optimization in target utilization,    But to leave its prime segment rooftop niche further
+which remains an ongoing effort. Case in point,             improvements are needed.
+Huasun achieved a reduction of 41% in TCO target
+
+
+
+
+36 TaiyangNews | Heterojunction Solar Technology 2023
+   TERAWATT ERA
+ZERO CARBON FUTURE
+ LONGi leads a greener world with innovation
+
+
+
+
+      H all: W1                     B o oth : 5 1 0
+                         9 783949 046162
+
+                © TaiyangNews 2023. All rights reserved
+

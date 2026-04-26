@@ -1,0 +1,3785 @@
+                                                  De
+                                                   par
+                                                     tme
+                                                       nto
+                                                         fMi
+                                                           cro
+                                                             -andNa
+                                                                  nos
+                                                                    cie
+                                                                      nce
+                                                                        s
+
+
+
+
+                                                  Co pper-re
+                                                           late dl
+                                                                 ight
+                                                                    -
+J
+eane
+   tteLindro
+           os
+                                                  induc e
+                                                        d degradatio
+                                                                   n in
+                                                  crystal
+                                                        linesilico
+                                                                 n
+
+
+
+
+Co
+ ppe
+   r-re
+      lat
+        edl
+          igh
+            t-    e
+              inducd de
+                      gradat
+                           ion in c
+                                  ryst
+                                     all
+                                       inesil
+                                            ico
+                                              n
+                                                  J
+                                                  eane
+                                                     tteL
+                                                        ind
+                                                          roo
+                                                            s
+
+
+
+
+          Aa
+           lt
+            oUni
+               ver
+                 sit
+                   y
+                                                                            DOCTORAL
+                                                                            DI
+                                                                             S SE
+                                                                                R T
+                                                                                  ATI
+                                                                                    O NS
+Aalto University publication series
+DOCTORAL DISSERTATIONS 37/2015
+
+
+
+
+                    Copper-related light-induced
+                    degradation in crystalline silicon
+
+                    Jeanette Lindroos
+
+
+
+
+                    A doctoral dissertation completed for the degree of Doctor of
+                    Science (Technology) to be defended, with the permission of the
+                    Aalto University School of Electrical Engineering, at a public
+                    examination held at the lecture hall E of the school on 24 April 2015
+                    at 12.
+
+
+
+                    Aalto University
+                    School of Electrical Engineering
+                    Department of Micro- and Nanosciences
+                    Electron Physics Group
+Supervising professor
+Assistant Professor Hele Savin
+
+Preliminary examiners
+Professor Michael Seibt, University of Göttingen, Germany
+Associate Professor Daniel Macdonald, Australian National
+University, Australia
+
+Opponent
+Professor Eicke Weber, University of Freiburg, Germany
+
+
+
+
+Aalto University publication series
+DOCTORAL DISSERTATIONS 37/2015
+
+© Jeanette Lindroos
+
+ISBN 978-952-60-6129-0 (printed)
+ISBN 978-952-60-6130-6 (pdf)
+ISSN-L 1799-4934
+ISSN 1799-4934 (printed)
+ISSN 1799-4942 (pdf)
+http://urn.fi/URN:ISBN:978-952-60-6130-6
+
+Unigrafia Oy
+Helsinki 2015
+
+Finland
+                                                                                   Abstract
+                                   Aalto University, P.O. Box 11000, FI-00076 Aalto www.aalto.fi
+
+
+Author
+Jeanette Lindroos
+Name of the doctoral dissertation
+Copper-related light-induced degradation in crystalline silicon
+Publisher School of Electrical Engineering
+Unit Department of Micro- and Nanosciences
+Series Aalto University publication series DOCTORAL DISSERTATIONS 37/2015
+Field of research Semiconductor Technology
+Manuscript submitted 31 October 2014                Date of the defence 24 April 2015
+Permission to publish granted (date) 29 January 2015               Language English
+   Monograph                             Article dissertation (summary + original articles)
+
+Abstract
+  Unintentional copper and nickel impurities are common in silicon-based devices due to the
+abundance of contamination sources in industrial silicon crystallization and wafer processing
+lines. High solubility and diffusivity result readily in signiﬁcant impurity concentrations,
+which cause charge-carrier recombination and reduce the device response. This work conﬁrms
+that nickel diffuses as fast as copper in silicon, emphasizing the importance of contamination
+control in silicon-based devices.
+
+  Copper contamination is known to form recombination-active defects in silicon during il-
+lumination, which is observed as copper-related light-induced degradation (Cu-LID). In order
+to identify the extent of degradation in silicon-based devices, this work focuses on determining
+the properties of Cu-LID in gallium-doped Czochralski (Cz) silicon, boron-doped Cz-Si, and
+boron-doped multicrystalline silicon. Cu-LID is determined to be predominantly a bulk recom-
+bination effect, and the formed defects are found to be stable at 200°C. Slower Cu-LID is obser-
+ved in Ga-Si compared to B-Si, suggesting that Cu-LID formation is limited by the effective
+copper diffusivity.
+
+  Cu-LID is shown to completely disappear after negative sample surface charging and illu-
+mination. The negative surface charge is achieved by corona charging or aluminum oxide
+deposition. Cu-LID removal is observed to have no impact on classical boron-oxygen-related
+light-induced degradation (BO-LID), which has previously been shown to recover at 200°C.
+Unlike BO-LID, the activation energy of Cu-LID is found to depend on the silicon doping
+concentration. Hence, Cu-LID and BO-LID are concluded to be two different degradation
+effects, which can occur simultaneously in silicon-based devices.
+
+
+
+
+Keywords copper, degradation, lifetime, nickel, silicon
+ISBN (printed) 978-952-60-6129-0             ISBN (pdf) 978-952-60-6130-6
+ISSN-L 1799-4934                     ISSN (printed) 1799-4934      ISSN (pdf) 1799-4942
+Location of publisher Helsinki       Location of printing Helsinki Year 2015
+Pages 124                            urn http://urn.ﬁ/URN:ISBN:978-952-60-6130-6
+                                                                               Sammandrag
+                                          Aalto-universitetet, PB 11000, 00076 Aalto www.aalto.fi
+
+
+Författare
+Jeanette Lindroos
+Doktorsavhandlingens titel
+Kopparrelaterad fotodegradering i kristallint kisel
+Utgivare Högskolan för elektroteknik
+Enhet Institutionen för mikro- och nanoteknik
+Seriens namn Aalto University publication series DOCTORAL DISSERTATIONS 37/2015
+Forskningsområde Halvledarteknologi
+Inlämningsdatum för manuskript 31.10.2014            Datum för disputation 24.04.2015
+Beviljande av publiceringstillstånd (datum) 29.01.2015                Språk Engelska
+   Monografi          Sammanläggningsavhandling (sammandrag plus separata artiklar)
+
+Sammandrag
+  Kiselbaserade elektroniska komponenter är ofta oavsiktligt förorenade av koppar och nickel
+från otaliga kontaminationskällor i industriella komponentframställningsprocesser. Metaller-
+nas höga diffusivitet samt löslighet leder fort till markanta orenhetskoncentrationer, vilka
+förorsakar rekombination av laddningsbärare och nedsatt komponentrespons. Denna avhand-
+ling bekräftar att nickel diffuserar lika fort som koppar i kristallint kisel, vilket betonar vikten
+av metallorenhetskontroll i kiselbaserade komponenter.
+
+ Kopparorenheter förorsakar fotodegradadering (Cu-LID) i kisel via formationen av rekom-
+binationsaktiva koppardefekter under illuminering. För att fastställa omfattningen av foto-
+degradadering i kiselbaserade komponenter, fokuserar denna avhandling på att identiﬁera
+egenskaper för Cu-LID i gallium-dopat Czochralski (Cz) kisel, boron-dopat Cz-Si och boron-
+dopat mångkristallint kisel. Cu-LID ﬁnnes orsaka främst bulkrekombination och de formade
+koppardefekterna är stabila i 200°C. Cu-LID sker långsammare i Ga-Si jämfört med B-Si, vilket
+antyder att fotodegraderingsprocessen begränsas av den effektiva koppardiffusiviteten.
+
+  I avhandlingen förhindras kopparrelaterad fotodegradadering fullständigt genom att kom-
+binera negativ kiselytladdning med illuminering. Den negativa ytladdningen skapas via depo-
+sition av koronaladdning eller aluminiumoxidtunnﬁlm. Avlägsning av Cu-LID inverkar inte på
+klassisk bor-syre-relaterad fotodegraderingen (BO-LID), som förekommer i kisel utan kop-
+parföroreningar och försvinner i 200°C. I motsats till BO-LID beror aktiveringsenergin för Cu-
+LID på dopingkoncentrationen i kiselmaterialet. Följaktligen fastställs Cu-LID och BO-LID
+vara två skilda former av fotodegradering, vilka kan förkomma samtidigt i kiselbaserade
+elektroniska komponenter.
+
+
+
+
+Nyckelord degradering, kisel, koppar, livstid, nickel
+ISBN (tryckt) 978-952-60-6129-0                  ISBN (pdf) 978-952-60-6130-6
+ISSN-L 1799-4934                  ISSN (tryckt) 1799-4934                 ISSN (pdf) 1799-4942
+Utgivningsort Helsingfors         Tryckort Helsingfors                    År 2015
+Sidantal 124                      urn http://urn.ﬁ/URN:ISBN:978-952-60-6130-6
+Preface
+
+
+
+
+The research reported in this dissertation was carried out at the Depart-
+ment of Micro- and Nanosciences at Aalto University School of Electrical
+Engineering (formerly Helsinki University of Technology) and the Depart-
+ment of Mechanical Engineering at Massachusetts Institute of Technol-
+ogy. I would like to express my considerable gratitude to my supervisor
+Prof. Hele Savin for her patient advice and guidance throughout the past
+ﬁve years. I would like to sincerely thank Prof. Emer. Pekka Kuivalainen
+for taking me on as a doctoral candidate and Prof. Tonio Buonassisi for
+an unforgettable year at MIT.
+ I wish to thank my co-authors for their contribution and pleasant col-
+laboration. I am particularly grateful for the insight and experience of
+Dr. Marko Yli-Koski and Dr. Antti Haarahiltunen. I thank Dr. Matthias
+Wagner and the SolarWorld Innovations staff for performing TXRF mea-
+surements and providing crucial results critique. I wish to express my
+gratitude to the members of the Electron Physics Group and the Photo-
+voltaic Research Laboratory for all their help and support, and for show-
+ing me that nothing is impossible.
+ This dissertation was completed thanks to the generous ﬁnancial sup-
+port of Aalto University, the Ernst Wirtzen Fund, the Federation of Finnish
+Technology Industries, the Finnish Cultural Foundation, the Finnish So-
+ciety of Electronics Engineers, Fortum Foundation, the Fulbright Cen-
+ter, the Swedish Academy of Engineering Sciences in Finland (STViF),
+and Walter Ahlström Foundation. The research materials were funded
+through several projects supported by the Academy of Finland, Beneq
+Oy, Epicrystals Oy, the European Research Council, the Finnish Fund-
+ing Agency for Technology and Innovation (TEKES), Fortum Oyj, Luvata
+Pori Oy, Okmetic Oyj, Semilab Inc., SolarWorld Innovations GmbH, and
+the U.S. Department of Energy.
+
+
+
+                                                                        1
+Preface
+
+
+    I would like to acknowledge the Aalto Nanofab staff for their commit-
+ment to cleanroom cleanliness and equipment maintenance. Finally, I
+wish to thank my family and friends for all their support and encourage-
+ment throughout my doctoral studies.
+
+
+
+
+Karlstad, Sweden, March 16, 2015,
+
+
+
+
+Jeanette Lindroos
+
+
+
+
+2
+Contents
+
+
+
+
+Preface                                                                         1
+
+Contents                                                                        3
+
+List of Publications                                                            5
+
+Author’s Contribution                                                          7
+
+List of Abbreviations                                                           9
+
+List of Symbols                                                                11
+
+1. Introduction                                                                13
+
+2. Fast-Diffusing Transition Metals                                            15
+  2.1 Copper . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     15
+       2.1.1 Diffusivity and solubility . . . . . . . . . . . . . . . . .      15
+       2.1.2 Point defects and complexes . . . . . . . . . . . . . . .         16
+       2.1.3 Precipitates . . . . . . . . . . . . . . . . . . . . . . . .      18
+       2.1.4 Low-temperature stability . . . . . . . . . . . . . . . .         19
+  2.2 Nickel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   20
+       2.2.1 Diffusivity and solubility . . . . . . . . . . . . . . . . .      20
+       2.2.2 Point defects and complexes . . . . . . . . . . . . . . .         21
+       2.2.3 Precipitates . . . . . . . . . . . . . . . . . . . . . . . .      22
+
+3. Light-Induced Degradation                                                   23
+  3.1 Boron-oxygen degradation . . . . . . . . . . . . . . . . . . . .         23
+       3.1.1 Degradation rate . . . . . . . . . . . . . . . . . . . . .        24
+       3.1.2 Activation energy . . . . . . . . . . . . . . . . . . . . .       25
+       3.1.3 Metastable defect . . . . . . . . . . . . . . . . . . . . .       26
+       3.1.4 Mitigating degradation . . . . . . . . . . . . . . . . . .        27
+
+
+
+                                                                                3
+Contents
+
+
+           3.1.5 Multicrystalline silicon . . . . . . . . . . . . . . . . . .    28
+    3.2 Copper-related degradation . . . . . . . . . . . . . . . . . . .         28
+           3.2.1 Degradation rate and defect density . . . . . . . . . .         28
+           3.2.2 Copper-related defect . . . . . . . . . . . . . . . . . . .     30
+           3.2.3 Mitigating copper . . . . . . . . . . . . . . . . . . . . .     32
+
+4. Results and Discussion                                                        35
+    4.1 Materials affected by copper-related LID         . . . . . . . . . . .   35
+    4.2 Bulk versus surface LID . . . . . . . . . . . . . . . . . . . . .        36
+           4.2.1 Surface passivation stability . . . . . . . . . . . . . . .     36
+           4.2.2 Copper-related LID . . . . . . . . . . . . . . . . . . . .      39
+    4.3 Impact of doping on copper-related LID . . . . . . . . . . . .           40
+    4.4 Temperature dependence of copper-related LID . . . . . . . .             42
+    4.5 Low-temperature stability . . . . . . . . . . . . . . . . . . . .        44
+           4.5.1 Before illumination . . . . . . . . . . . . . . . . . . . .     44
+           4.5.2 After illumination . . . . . . . . . . . . . . . . . . . . .    45
+    4.6 Mitigating copper-related LID . . . . . . . . . . . . . . . . . .        45
+           4.6.1 Negative corona charging . . . . . . . . . . . . . . . .        45
+           4.6.2 Aluminum oxide . . . . . . . . . . . . . . . . . . . . . .      50
+           4.6.3 Phosphorus diffusion gettering . . . . . . . . . . . . .        50
+    4.7 Copper-related LID compared with boron-oxygen LID . . . .                51
+    4.8 Nickel diffusivity compared with copper diffusivity . . . . . .          52
+
+5. Conclusions                                                                   55
+
+References                                                                       57
+
+Errata                                                                           73
+
+Publications                                                                     75
+
+
+
+
+4
+List of Publications
+
+
+
+
+This thesis consists of an overview and of the following publications which
+are referred to in the text by their Roman numerals.
+
+
+
+
+I J. Lindroos, M. Yli-Koski, A. Haarahiltunen, M. C. Schubert, and H.
+ Savin, Light-induced degradation in copper-contaminated gallium-doped
+ silicon, Physica Status Solidi - Rapid Research Letters 7, No. 4, p. 262-
+ 264 (2013).
+
+
+II J. Lindroos, M. Yli-Koski, A. Haarahiltunen, and H. Savin, Room-
+ temperature method for minimizing light-induced degradation in crys-
+ talline silicon, Applied Physics Letters 101, 232108 (2012).
+
+
+III Y. Boulfrad, J. Lindroos, Mt. Wagner, F. Wolny, M. Yli-Koski, and
+ H. Savin, Experimental evidence on removing copper and light-induced
+ degradation from silicon by negative charge, Applied Physics Letters
+ 105, 182108 (2014).
+
+
+IV J. Lindroos and H. Savin, Formation kinetics of copper-related light-
+ induced degradation in crystalline silicon, Journal of Applied Physics
+ 116, 234901 (2014).
+
+
+V J. Lindroos, Y. Boulfrad, M. Yli-Koski, and H. Savin, Preventing light-
+ induced degradation in multicrystalline silicon, Journal of Applied Physics
+ 115, 154902 (2014).
+
+
+
+
+                                                                         5
+List of Publications
+
+
+VI J. Lindroos, D. P. Fenning, D. J. Backlund, E. Verlage, A. Gorgulla, S.
+    K. Estreicher, H. Savin, and T. Buonassisi, Nickel: A very fast diffuser
+    in silicon, Journal of Applied Physics 113, 204906 (2013).
+
+
+
+
+6
+Author’s Contribution
+
+
+
+
+Publication I: “Light-induced degradation in copper-contaminated
+gallium-doped silicon”
+
+
+The author participated actively in experiment planning, sample process-
+ing, and lifetime measurements. The author prepared the manuscript.
+
+
+
+Publication II: “Room-temperature method for minimizing
+light-induced degradation in crystalline silicon”
+
+
+The author processed the samples, performed all measurements, and pre-
+pared the manuscript.
+
+
+
+Publication III: “Experimental evidence on removing copper and
+light-induced degradation from silicon by negative charge”
+
+
+The author participated actively in experiment planning, lifetime mea-
+surements, and manuscript writing.
+
+
+
+Publication IV: “Formation kinetics of copper-related light-induced
+degradation in crystalline silicon”
+
+
+The author planned and performed all experiments, and prepared the
+manuscript.
+
+
+
+
+                                                                      7
+Author’s Contribution
+
+
+Publication V: “Preventing light-induced degradation in
+multicrystalline silicon”
+
+
+The author performed experiment planning, sample processing, lifetime
+measurements, and manuscript preparation.
+
+
+
+Publication VI: “Nickel: A very fast diffuser in silicon”
+
+
+The author participated actively in experiment planning and sample prepa-
+ration. The author performed the XRF measurements and prepared the
+manuscript.
+
+
+
+
+8
+List of Abbreviations
+
+
+
+
+A center    Oxygen-vacancy complex
+Al          Aluminum
+ALD         Atomic Layer Deposition
+Al2 O3      Aluminum oxide
+B           Boron
+Bi          Interstitial boron
+Bs          Substitutional boron
+BMD         Bulk micro-defect
+BO          Boron-oxygen complex
+BO-LID      Boron-oxygen light-induced degradation
+CH3 COOH    Acetic acid
+CO−
+  3         Negative corona charge
+Cu          Copper
+Cui         Interstitial copper
+Cus         Substitutional copper
+CuAl        Copper-aluminum pair
+CuB         Copper-boron pair
+CuGa        Copper-gallium pair
+CuIn        Copper-indium pair
+Cu3 Si      Copper precipitate, copper silicide
+Cus Cui     Substitutional and interstitial copper pair
+Cus1 Cui3   Substitutional and interstitial copper complex
+Cu-LID      Copper-related light-induced degradation
+Cz-Si       Czochralski silicon
+DLTS        Deep-Level Transient Spectroscopy
+FeB         Iron-boron pair
+FRC         Fast recombination center
+FZ-Si       Float Zone silicon
+Ga          Gallium
+
+
+                                                             9
+List of Abbreviations
+
+
+     Gas          Substitutional gallium
+     H            Hydrogen
+     HF           Hydroﬂuoric acid
+     HNO3         Nitric acid
+     H3 O+        Positive corona charge
+     In           Indium
+     IR           Infrared
+     LID          Light-induced degradation
+     mc-Si        Multicrystalline silicon
+     MCz-Si       Magnetic Czochralski silicon
+     μ-PCD        Microwave Photoconductance Decay
+     NAA          Neutron Activation Analysis
+     NEB          Nudged Elastic Band
+     Ni           Nickel
+     Nii          Interstitial nickel
+     Nis          Substitutional nickel
+     NiSi2        Nickel precipitate, nickel silicide
+     O            Oxygen
+     Oi           Interstitial oxygen
+     O2i          Oxygen dimer
+     P            Phosphorous
+     PDG          Phosphorus diffusion gettering
+     PL           Photoluminescence
+     ppm          Parts per million
+     QSSPC        Quasi-Steady-State Photoconductance Decay
+     RBS          Rutherford Backscattering
+     RT           Room temperature
+     Si           Silicon
+     SiO2         Silicon dioxide
+     SRC          Slow recombination center
+     SRH          Shockley-Read-Hall
+     TID          Transient Ion Drift
+     TXRF         Total Reﬂection X-Ray Fluorescence
+     UMG-Si       Upgraded metallurgical grade silicon
+     UV           Ultraviolet
+     V            Vacancy
+
+
+
+
+10
+List of Symbols
+
+
+
+
+a         Degradation ﬁtting parameter
+b         Degradation ﬁtting parameter
+c         Degradation ﬁtting parameter
+CCu       Dissolved copper concentration
+CNi       Dissolved nickel concentration
+d         Degradation ﬁtting parameter
+dSi       Wafer thickness
+DCu,eff   Effective copper diffusivity
+DCu,in    Intrinsic copper diffusivity
+DNi       Nickel diffusivity
+Dit       Interface defect density
+EC        Energy level of conduction band edge
+Edef      Defect formation energy
+EFn       Quasi-Fermi level of electrons
+EFp       Quasi-Fermi level of holes
+EV        Energy level of valence band edge
+JNi       Nickel ﬂux
+k         Degradation ﬁtting parameter
+kB        Boltzmann constant
+n         Copper precipitate density
+NA        Acceptor concentration
+ND        Donor concentration
+Nt        Defect density
+Nt∗       Normalized defect density
+Nt∗ (∞)   Saturated normalized defect density
+p0        Equilibrium hole concentration
+r         Copper precipitate radius
+
+
+
+
+                                                 11
+List of Symbols
+
+
+     R       Recombination rate
+     Rdef    Degradation rate
+     RSRC    Degradation rate of the slow recombination center
+     SCu     Copper solubility
+     SNi     Nickel solubility
+     t       Time
+     tox     Silicon dioxide thickness
+     T       Temperature
+     W       Depletion width
+
+
+     Δn     Excess electron concentration
+     η      Injection level
+     κ0     Pre-exponential of defect formation
+     μ      Chemical precipitation force
+     νn     Mean thermal electron velocity
+     σn     Defect electron-capture cross-section
+     σp     Defect hole-capture cross-section
+     τdef   Degradation time constant
+     τAug   Auger recombination lifetime
+     τeff   Effective recombination lifetime
+     τn     Electron lifetime
+     τrad   Radiative recombination lifetime
+     τs     Surface recombination lifetime
+     τSRH   Shockley-Read-Hall recombination lifetime
+     φs     Surface potential
+
+
+
+
+12
+1. Introduction
+
+
+
+
+Copper and nickel are common metal impurities in silicon, as uninten-
+tional contamination can easily occur during different steps of silicon-
+based device processing.1 Copper and nickel can diffuse from the quartz
+crucible into the silicon bulk already during ingot growth.2–4 Silicon sur-
+face contamination may occur, e.g., from sawing wires during wafering,5
+steel parts or gas supply systems during processing,1 and device metal-
+lization. Surface copper and nickel contamination is difﬁcult to remove
+with standard wafer cleaning or silicon etching, as both metals replate to
+the wafer surface during wet chemical processing.1, 6 Subsequent process-
+ing at elevated temperature turns surface copper and nickel contamina-
+tion easily into a variety of recombination-active bulk defects, due to their
+high diffusivity and solubility in silicon.7
+ Interstitial copper was presumed harmless in boron-doped Czochralski-
+grown (Cz) silicon, until Henley et al.8 observed copper-related recombi-
+nation during illumination in 1998. The effect is known as copper-related
+light-induced degradation (Cu-LID), but the speciﬁc recombination-active
+defect formed during illumination remains to be determined. The pro-
+posed copper-related defects are substitutional copper,8, 9 copper precipi-
+tates,10, 11 and copper-related Si/SiO2 interface defects.12
+ Light-induced degradation (LID) is also used to describe a 1-2% abso-
+lute efﬁciency loss observed in Cz-Si solar cells during one day of illumi-
+nation.13, 14 LID is seen as a short-circuit current decrease and an open-
+circuit voltage loss, caused by a minority-carrier recombination increase
+in the B-doped bulk. Although Fischer and Pschunder15 ﬁrst observed
+LID in 1973, the defect responsible for LID remains unknown. Most stud-
+ies refer to a boron-oxygen (BO) complex, as LID detection requires both
+high boron and oxygen concentrations, prompting the term boron-oxygen
+LID (BO-LID).16 However, Möller and Lauer17, 18 have observed LID in
+
+
+
+                                                                          13
+Introduction
+
+
+aluminum-doped and indium-doped Cz-Si, suggesting LID to be caused
+by the formation of an acceptor and silicon self-interstitial pair.
+  Recently, some multicrystalline (mc) silicon materials have also exhib-
+ited stronger LID than predicted by BO-LID theory.14, 19–21 Since mc-Si is
+known to contain relatively high concentrations of transition metals,3 the
+stronger LID might be linked to copper-related degradation. Therefore,
+this dissertation aims to determine the extent and properties of copper-
+related light-induced degradation in crystalline silicon. The extent of Cu-
+LID is examined in different silicon materials in Publications I, IV, and V.
+The formation kinetics of Cu-LID are investigated in Publications I-V, in
+order to determine whether Cu-LID and BO-LID are related effects. Cu-
+LID is mainly characterized by minority-carrier recombination lifetime
+methods in Publications I-V, but chemical analysis is also performed with
+Total Reﬂection X-Ray Fluorescence (TXRF) in Publication III. By apply-
+ing copper removal techniques, the goal is to develop a method for Cu-LID
+prevention in Publications II, III, IV, and V. Although interstitial nickel
+shows no light sensitivity, the ﬁnal aim in Publication VI is to determine
+whether nickel diffuses as fast copper in silicon.
+  Chapter 2 compiles literature results on copper and nickel properties
+in silicon, while Chapter 3 reviews previous studies on boron-oxygen LID
+and copper-related LID in crystalline silicon and silicon solar cells. Chap-
+ter 4 summarizes new results obtained on copper-related LID and nickel
+diffusivity in Publications I-VI. Chapter 5 presents the ﬁnal conclusions
+together with recommendations for further work.
+
+
+
+
+14
+2. Fast-Diffusing Transition Metals
+
+
+
+
+Copper and nickel are 3d transition metals with high diffusivity and sol-
+ubility in crystalline silicon.7 Both metals form several defects with deep
+energy levels in the silicon bandgap, causing Shockley-Read-Hall (SRH)
+recombination.22, 23 At low injection levels, the SRH recombination life-
+time can be approximated by the minority carrier recombination lifetime.24
+This chapter compiles literature results on copper and nickel properties
+in crystalline silicon with a focus on boron-doped silicon.
+
+
+
+2.1     Copper
+
+
+2.1.1    Diffusivity and solubility
+
+
+Copper diffuses interstitially in silicon as a positively charged ion Cu+
+                                                                        i .
+                                                                           7, 25
+
+Copper diffusivity in intrinsic and n-type Si has been determined with
+Transient Ion Drift (TID) as26
+
+   DCu,in (T ) = (3.0 ± 0.3) × 10−4 exp(−0.18 ± 0.01 eV/kB T ) cm2 s−1 ,   (2.1)
+
+where kB is Boltzmann constant and T is the temperature in K. The mea-
+sured activation energy of 0.18 eV matches the most recent ﬁrst-principles
+calculations27 obtained with the Nudged Elastic Band (NEB)28–31 method.
+ In p-type Si, interstitial copper forms neutral pairs with negatively char-
+ged acceptor atoms, such as CuB, CuGa, CuAl, and CuIn. Pair forma-
+tion decreases the density of mobile copper ions, decreasing the effective
+diffusivity of copper. Copper diffusion has been shown to be faster in B-
+doped than in Ga-doped silicon due to the lower dissociation energy of
+CuB (0.61±0.02 eV) compared to CuGa (0.71±0.02 eV).26, 32 The dissocia-
+tion energy of CuAl and CuIn has been measured as 0.70 eV.32 In B-doped
+silicon with a doping concentration below 1017 cm−3 , the effective diffusiv-
+
+
+                                                                             15
+Fast-Diffusing Transition Metals
+
+
+ity DCu,eff has been measured as26
+
+                                3 × 10−4 exp(−2090/T )
+        DCu,eff (T ) =                                          cm2 s−1 ,   (2.2)
+                         1 + 2.584 × 10−20 exp(4990/T )(NA /T )
+
+where NA is the acceptor concentration, and when −33<T <107°C. Even
+though the boron doping decreases the diffusivity, CuB pairs remain un-
+stable at RT,26 allowing copper to diffuse through a 400 μm wafer with
+[B]=4×1015 cm−3 in less than 11 h. The solubility of interstitial copper
+has been measured as7
+                                                        
+                                                 1.49 eV
+                   SCu (T ) = 5 × 1022 exp 2.4 −           cm−3 ,           (2.3)
+                                                  kB T
+
+when 500<T <800°C.
+
+2.1.2    Point defects and complexes
+
+Interstitial copper
+Interstitial copper does not cause signiﬁcant minority carrier recombina-
+tion in silicon. In B-doped Cz-Si, even a minority-carrier recombination
+lifetime increase has been measured at Cu+
+                                         i concentrations below 10
+                                                                   14
+
+cm−2 , although the cause for the increase remains unclear.33–37 Intersti-
+tial copper has been associated with a donor level of EC −0.15 eV, as shown
+in Fig. 2.1, although the unstable level was only detected in n-Si.38 The
+Cu+
+  i level loss was associated with the activation energy of 0.55±0.05 eV,
+which was presumed to reﬂect copper precipitate formation.38
+  In bare p-Si, interstitial copper does not stay in the bulk, but diffuses
+towards the wafer surface in order to reach equilibrium solubility.39 At
+RT, such out-diffusion has been observed to occur within a few hours to
+several days depending on the wafer thickness40 and the doping41 con-
+centration. Copper out-diffusion has been slowed down by a 0.2 V surface
+potential barrier41 or prevented by a 3−4 nm surface oxide with a posi-
+tive charge.42 Hence, a positive surface potential is thought to repel Cu+
+                                                                         i ,
+inhibiting copper out-diffusion.
+
+Substitutional copper
+Copper can also exist as a recombination-active substitutional impurity
+in silicon. Interstitial copper becomes Cus by reacting with a vacancy
+releasing 2.5−2.8 eV25, 43 or with a Si self-interstitial releasing 1.2 eV.44
+Copper has also been shown to react with the oxygen-vacancy A center
+according to Cui +{O, V}→{Cus , Oi } at 175−250°C, creating a new defect
+level at EC −0.6 eV.45
+
+
+16
+                                                               Fast-Diffusing Transition Metals
+
+
+
+               EC
+
+
+
+                                                   {
+                      Ec-(0.15-0.20)
+                                              Cui
+                                                       Ec-(0.15-0.20)
+                                          Cu3Si
+
+                                                       Ec-(0.40-0.58)
+               EF
+                      Ev+(0.41-0.46)
+                                              Cus
+
+                      Ev+(0.20-0.23)
+                                              Cus
+                      Ev+0.07
+                                              CusCu3i
+               EV
+Figure 2.1. Defect energy levels in the silicon bandgap associated with interstitial copper
+            (Cui ),38 substitutional copper (Cus ),46–54 the copper complex (Cus Cu3i ),57 and
+            copper precipitates (Cu3 Si).58–60
+
+
+  Deep-Level Transient Spectroscopy (DLTS) measurements have associ-
+                                                                             +/0 46–53
+ated Cus with the two energy levels of EV +(0.2-0.23) eV (Cus                     )      and
+                      0/−
+EV +(0.41-0.46) eV (Cus ),48, 50, 52–54 as presented in Fig.                2.1. The hole
+capture cross-sections of the defect levels have been estimated as 3×10−14
+cm2 and 1.5×10−14 cm2 , respectively.1 The energy level of EC −(0.15-0.2)
+eV47, 48, 50, 51, 53, 55 was originally also associated with Cus , until Istratov et
+al.38 showed the donor level to be related to interstitial copper. The con-
+centration of Cus is usually less than 0.1% of the copper solubility during
+any high-temperature process.56
+
+Copper complexes
+Substitutional copper forms several complexes with hydrogen,44, 61, 62 while
+interstitial copper is known to react weakly with oxygen.44, 63 Copper also
+forms pure copper complexes, which were long presumed to be Cus Cui
+pairs64, 65 but has now been identiﬁed as four copper atom complexes.66, 67
+The most likely composition of the pure copper complex is Cus1 Cui3 .62, 68, 69
+DLTS measurements have revealed a copper complex energy level at EV +
+0.07 eV,57 and Photoluminescence (PL) has shown a sharp line at 1014
+meV.70 FZ-Si has exhibited a one to two orders of magnitude larger PL
+signal compared to Cz-Si,71 which might be due to the higher vacancy con-
+centration in FZ-Si, enabling Cus formation. Copper complexes have been
+observed to form with the activation energy of 0.57±0.05 eV.72 A complex
+concentration decrease has been observed at 150°C73 with full complex
+
+
+                                                                                           17
+Fast-Diffusing Transition Metals
+
+
+dissociation at 250°C.57, 73
+
+2.1.3     Precipitates
+
+                                     
+Interstitial copper precipitates as η -Cu3 Si in silicon.74–77 Copper pre-
+cipitates cause severe minority-carrier recombination, since they form a
+deep defect band between EC −(0.15-0.2) eV and EC −(0.4-0.58) eV,58–60 as
+shown in Fig. 2.1. The electron capture cross-section of Cu3 Si has been
+estimated as 3×10−16 cm2 .78 The precipitate size and distribution has
+been shown to depend on the wafer copper concentration, the doping con-
+centration, the bulk defect concentration, the surface potential, and the
+thermal history. The chemical precipitation force μ is deﬁned as58, 79
+                                              
+                                       CCu
+                        μ = kB T ln              ,                     (2.4)
+                                      SCu (T )
+
+where CCu is the dissolved copper concentration and SCu (T ) is the equi-
+librium copper solubility in Eq. 2.3. The driving force μ grows during
+supersaturation, as the dissolved copper concentration CCu exceeds the
+equilibrium solubility SCu . Nevertheless, copper precipitates only when
+the driving force μ exceeds the precipitation nucleation barrier.80
+  Fast quenching from high temperatures leads to high supersaturation
+and the formation of homogeneously distributed small copper precipi-
+tates.80 High copper concentrations (>1017 cm−3 ) have shown to form
+platelet-like precipitates (30−500 nm) mostly in the {111} plane up to
+1013 cm−3 .58, 81, 82 Slower cooling leads to a lower density of larger pre-
+cipitate colonies heterogeneously distributed near the sample surface of
+defect-free Si, known as haze.81–83 The large lattice mismatch of 150% be-
+tween Cu3 Si and Si has been observed to cause stacking fault formation
+during precipitation.78 As stacking faults provide a low nucleation bar-
+rier for copper precipitates, large copper colonies (0.5−80 μm)77 have been
+shown to consist of copper platelets surrounded by stacking faults with
+small spherical copper precipitates.81, 82 Heterogeneous copper precipita-
+tion does not only form near the surface but also in the mc-Si bulk, which
+contains signiﬁcant concentrations of stacking faults, dislocations, and
+higher sigma grain boundaries with low precipitation barriers.84 Copper
+has also been shown to precipitate near oxygen precipitates,85 suggesting
+that copper traps at Si self-interstitials formed during oxygen precipita-
+tion.44
+  The time and temperature required to dissolve a speciﬁc size of copper
+precipitate can be estimated based on the copper diffusivity and solubil-
+
+
+18
+                                                    Fast-Diffusing Transition Metals
+
+
+ity at the annealing temperature, the precipitate copper concentration,
+and the sample copper concentration far from the precipitate.86 Although
+45 min at 560°C predicts dissolution of precipitates smaller than 420 nm,
+only partial dissolution of heterogeneous precipitates has been observed
+at 360−560°C in Cz-Si with copper concentrations of 1016 −1017 cm−3 .85, 87
+Therefore, the dissolution experiments conﬁrm the formation of large cop-
+per colonies77, 81, 82 during heterogeneous copper precipitation.
+ Even though the chemical precipitation force at RT can be as high as
+0.9 eV,88 not all copper precipitates in defect-free p-Si.40, 89, 90 Therefore,
+supersaturation has been proven as only one prerequisite for copper pre-
+cipitation. At RT, copper has been shown to precipitate only when the
+Fermi level exceeds the Cu3 Si neutrality level of EC −0.2 eV,40 at which
+Cu3 Si changes its charge state from positive to neutral or negative. Be-
+low EC −0.2 eV, Cu3 Si is shown to be positively charged, repelling posi-
+tively charged interstitial copper and preventing precipitate growth.58 In
+n-Si, the Fermi level exceeds EC −0.2 eV at P doping concentrations above
+1.7×1016 cm−3 , resulting in copper precipitation at 300 K regardless of im-
+purity concentration in typical n-Si. In B-doped Si, Cu3 Si has been shown
+to reach the neutrality level, only when the copper concentration exceeds
+the acceptor density by 1016 cm−3 .40 Therefore, n-Si is more sensitive to
+copper contamination than p-Si.34, 36, 37 The effect of illumination on the
+Fermi level and copper precipitation is further discussed in Sec. 3.2.2.
+
+2.1.4   Low-temperature stability
+
+
+Although some copper stays interstitial in oxidized p-Si at RT,40 increas-
+ing the temperature to 75°C has been observed to impact the minority-
+carrier diffusion length.9, 91 After 30 min at 75°C, Ramappa and Henley
+have observed a diffusion length increase in Cz-Si91 and a decrease in
+FZ-Si.9 As no copper contamination levels were reported, the opposite
+diffusion length behavior could have been caused by either a difference
+in the copper concentration40 or the bulk material. The Cz-Si diffusion
+length increase was associated with thermal copper precipitation, since
+Istratov et al.92 previously suggested copper precipitation as the reason
+for a Cui concentration decrease and a diffusion length increase in p-type
+FZ-Si at RT. However, Istratov’s samples contained a Cui concentration
+lower than the doping level, making copper precipitation at RT less likely
+than out-diffusion.40 Annealing above 75°C raises the Fermi level, but not
+above the precipitate neutrality level of EC −0.2 eV, even in low-resistivity
+
+
+                                                                                19
+Fast-Diffusing Transition Metals
+
+
+p-Si. Therefore, the lifetime increase measured by Ramappa and Hen-
+ley91 in Cz-Si was probably caused by some other reaction than copper
+precipitation.
+  After annealing for 60 min above 100°C, Ramappa and Henley91 even-
+tually observed a diffusion length decrease also in the Cz-Si material.
+The diffusion length decrease had an activation energy of 0.419 eV, which
+was associated with thermal dissociation of copper pairs (Cus Cui ) and
+subsequent release of recombination-active Cus .9 Although the copper
+pair is now known to be four atom copper complex,66, 67 the complex is
+still very likely to contain substitutional copper62, 68, 69 as discussed in
+Sec. 2.1.2. However, copper complex dissociation has only been observed
+above 150°C,57, 73 suggesting the formation of some other copper-related
+recombination-active defect during 60 min annealing above 100°C.
+                                                              
+  At 200°C, Cu-Si phase studies have concluded that η -Cu3 Si begins to
+form in the interface of bulk silicon and thin-ﬁlm copper.93–95 Internal
+ripening of small homogeneous copper precipitates into larger heteroge-
+neous precipitates has been observed at 260−400°C.81, 96 Since the thermal
+stability of several copper-related defect remains unknown, this work fur-
+ther studies the low-temperature behavior of the minority carrier lifetime
+in copper-contaminated Cz-Si. The main results are presented in Sec. 4.5.
+
+
+
+2.2     Nickel
+
+
+2.2.1    Diffusivity and solubility
+
+
+Nickel diffuses interstitially in silicon without a charge as Ni0i . Due to
+its charge neutrality, nickel does not form any acceptors or donor pairs
+as opposed to copper. Therefore, the nickel diffusivity is independent of
+the doping density. Already in 1964, Yoshida and Furusho97 estimated
+a nickel diffusivity of 10−4 −10−5 cm2 s−1 at 800−1200°C. Figure 2.2 de-
+picts the diffusivity data obtained since then,98–104 including the most
+frequently cited nickel diffusivity DNi of98
+
+                 DNi (T ) = 2.3 × 10−3 exp(−0.47 eV/kB T ) cm2 s−1 ,   (2.5)
+
+when 800<T <1300°C. However, ﬁrst principles calculations using the NEB
+method have resulted in a nickel diffusivity activation energy of 0.21
+eV,27, 105 which is less than half of the measured activation energy in Eq.
+2.5. At 900°C, the solubility obtained in the same abstract98 is also four
+
+
+20
+                                                                        Fast-Diffusing Transition Metals
+
+
+                                      Temperature (°C)
+                               1200 800      400
+                       10-4
+                       10-6
+
+
+
+
+Diffusivity (cm2s-1)
+                                                                               Radiotracer (Ref. 98)
+                                                                               Radiotracer (Ref. 99)
+                       10-8                                                    Radiotracer (Ref. 100)
+                                                                               RBS (Ref. 101)
+                       10-10                                                   Auger (Ref. 102)
+                                                                               Auger (Ref. 103)
+                       10-12                                                   Auger (Ref. 104)
+                                                                               Abstract only
+                       10-14
+                       10-16
+                           0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 2.2
+                                         1000/T
+Figure 2.2. Diffusivity of interstitial nickel in silicon obtained by Radiotracer, Rutherford
+            Backscattering (RBS), or Auger spectroscopy.98–104
+
+
+orders of magnitude lower than the literature interstitial nickel solubility
+SNi of106
+                                  SNi (T ) = 1.227 × 1024 exp(−1.68 eV/kB T ) cm−3 ,              (2.6)
+
+obtained by Neutron Activation Analysis (NAA) and valid for T <964°C.
+These discrepancies raise the need for a re-examination of the interstitial
+nickel diffusivity. The main results are presented in Sec. 4.8.
+
+2.2.2                     Point defects and complexes
+
+
+Interstitial nickel is not considered recombination active, as no defect
+level has been observed in the silicon bandgap.105 However, interstitial
+nickel is unstable in silicon, as nickel in known to form precipitates, sub-
+stitutional defects, and different impurity complexes at RT. Figure 2.3
+presents nickel-related defect energy levels in the silicon bandgap.
+         Interstitial nickel becomes Nis by moving into a vacancy, which has
+been calculated to release 2.6 eV.105 In p-Si, ﬁrst principles calculations
+                                                                      +/0 105
+have predicted a donor level at EV +0.30 eV (Nis                         ),   while DLTS mea-
+surements have yielded two defect levels: EV +(0.15-0.21) eV107–115 and
+EV +(0.31-0.35) eV.116–119 DLTS measurements in n-Si have revealed two
+acceptor levels of EC −(0.36-0.47) eV53, 107–113, 115, 120–124 and EC −(0.08-0.21)
+eV,107, 115, 120, 121 which are similar to the two calculated levels of EC −0.31
+                         0/−                         −/−− 105
+eV (Nis                        ) and EC −0.16 eV (Nis    ).     Although the Nis concentration
+has been shown to depend on the cooling rate,119 it has accounted for no
+
+
+                                                                                                    21
+Fast-Diffusing Transition Metals
+
+
+
+                EC
+                      Ec-(0.08-0.21)
+                                            Nis
+
+
+                      Ec-(0.36-0.47) Ni
+
+
+
+                                                 {
+                                       s
+                                         NiSi2       Ec-0.42
+                EF
+                                                     Ev+0.41
+                      Ev+(0.31-0.35)
+                                            Nis
+                      Ev+(0.15-0.21)
+                                            Nis
+
+                EV
+Figure 2.3. Defect energy levels in the silicon bandgap associated with substitutional
+            nickel (Nis )53, 107–112, 112–118, 120–124 and nickel precipitates (NiSi2 ).78
+
+
+more than 0.1% of the dissolved nickel concentration.125 DLTS measure-
+ments have also resulted in eleven defect levels associated with nickel and
+hydrogen,115 although ﬁrst principles calculations have predicted only
+two Nis -H complexes and no stable Nii -H complex.126
+
+2.2.3    Precipitates
+
+
+Similar to copper, supersaturation of dissolved nickel results in nickel
+precipitation. Rapid quenching has been observed to create platelet-like
+nickel precipitates (7−100 nm) consisting of two {111} layers of NiSi2 127
+that are bound by a dislocation.128 The lattice mismatch between NiSi2
+and Si has been determined as 1.2%, which is signiﬁcant enough to form
+dislocations but not stacking faults.78
+  During slow cooling of defect-free Si, nickel has been observed to prefer
+out-diffusion towards the sample surface and precipitation near the sur-
+face.129–132 In the presence of oxygen precipitates, nickel has been shown
+to precipitate in the bulk regardless of cooling proﬁle.131, 133 Nickel pre-
+cipitates have been reported to form a defect band between EV +0.41 eV
+and EC −0.42 eV with an electron-capture cross section of 5×10−14 cm2 , as
+shown in Fig. 2.3.78 Nickel-related minority-carrier recombination has
+been observed in n-type36 Cz-Si at Ni concentrations of 1×1011 cm−2 , and
+in p-type134 at as low as 3×1010 cm−2 , correspondingly.
+
+
+
+
+22
+3. Light-Induced Degradation
+
+
+
+
+Light-induced degradation (LID) is a deleterious effect in crystalline sil-
+icon, which is observed as a minority-carrier recombination lifetime de-
+crease during illumination. In the past four decades, LID has been stud-
+ied extensively in order to identify the recombination-active defect re-
+sponsible for the degradation and develop methods for preventing LID.
+Although several advances have been made in characterizing LID,135 no
+agreement exists on its origin.14, 136, 137 Most studies point to a boron-
+oxygen (BO) complex,16, 138 but with no experimental evidence on the ex-
+istence of such a complex.139    Others connect the degradation with a
+recombination-active copper-related defect,140 but the defect composition
+remains unknown. Moreover, the analysis of LID often becomes more
+complex by the presence of light-sensitive iron-boron pairs (FeB)135 and
+unstable surface passivation thin ﬁlms such as aluminum oxide.141, 142
+
+
+
+3.1   Boron-oxygen degradation
+
+
+In clean Cz-Si with sufﬁciently high boron and oxygen concentrations,16
+BO-LID is observed during illumination as a fast initial exponential life-
+time decay (FRC), followed by a second slower asymptotic degradation
+(SRC), as shown in Fig. 3.1.143–146 Photons are not directly involved in
+the formation of LID, since similar degradation curves has been measured
+during solar cell forward biasing in the dark.147 Although LID has been
+shown to occur at excess-carrier concentrations as low as 1.7×109 cm−3 ,148
+the excess carrier concentration does not either explain the extent of LID.
+In fact, Bothe et al.149 have shown that BO-LID formation is determined
+by the total number of minority carriers, based on LID observation in the
+dark at zero bias above 300 K.
+
+
+
+
+                                                                         23
+Light-Induced Degradation
+
+
+
+
+                  
+
+Figure 3.1. Effective minority-carrier recombination lifetime as a function of illumina-
+            tion time in clean low-resistivity boron-doped Cz-Si and FZ-Si.146 (Reprinted
+            with permission from T. U. Nærland, Characterization of light induced degra-
+            dation in crystalline silicon, Norwegian University of Science and Technology,
+            Trondheim, Norway, Vol. 2013:303 (2013). Copyright 2013, T. U. Nærland.)
+
+
+3.1.1   Degradation rate
+
+
+The degradation rate of the fast (FRC) and the slow (SRC) recombina-
+tion centers can be obtained by minority-carrier recombination lifetime
+measurements with Microwave Photoconductance Decay (μ-PCD)150 and
+Quasi-Steady-State Photoconductance Decay (QSSPC).151 The effective
+recombination lifetime τeff in Fig. 3.1 is determined by the surface (τs ),
+the Shockley-Read-Hall (τSRH ), the radiative (τrad ), and the Auger (τAug )
+recombination lifetimes. Radiative recombination is negligible in silicon,
+and Auger recombination dominates only at high injection levels.24 At low
+injection levels in p-Si, the Shockley-Read-Hall recombination lifetime is
+approximated by the minority carrier recombination lifetime τn , and the
+recombination rate R becomes24
+                                                         
+                 Δn          1        1      1       1
+            R=        = Δn      +        +       +            ≈
+                 τeff        τs     τSRH τrad τAuger
+                                                                                (3.1)
+                             1    1           1
+                      ≈ Δn      +      ≈ Δn      + σn ν n Nt ,
+                             τs τn            τs
+
+where Δn is the excess electron concentration, σn is the LID defect electron-
+capture cross-section, νn is the mean thermal electron velocity, and Nt is
+the LID defect density. Consequently, the light-induced defect density Nt
+at illumination time t can be determined from the initial recombination
+
+
+
+
+24
+                                                              Light-Induced Degradation
+
+
+rate R(0) and the time-dependent rate R(t) in Eq. 3.1 by
+                                                  
+                                      1       1
+              R(t) − R(0) = Δn             −         =
+                                   τ (t) τeff (0)
+                                eff                        
+                                       1      1           1
+                          = Δn             +         −          =                (3.2)
+                                     τs (t) τn (t)     τs (0)
+                             Δn
+                          =         = Δnσn νn Nt (t) ,
+                            τn (t)
+
+when the surface recombination lifetime is constant during illumination
+(τs (t)=τs (0)). As the electron-capture cross-section σn is unknown, the
+normalized LID defect density Nt∗ (t) is deﬁned as16
+
+                                                1     1
+                       Nt∗ (t) = σn νn NT =        −      ,                      (3.3)
+                                              τ (t) τ (0)
+
+when the effective lifetimes τ are measured at the same low injection
+level. In LID studies, effective lifetimes are often reported at the injection
+level η=Δn/p0 = 0.1.137, 144 The degradation rate Rdef and the degradation
+time constant τdef are then determined by ﬁtting the normalized defect
+density Nt∗ (t) separately to the FRC and the SRC lifetime decays with16
+                                            
+        ∗         1     1           1      1
+      Nt (t) =       −      =          −       [1 − exp(−Rdef t)] =
+                τ (t) τ (0)      τ (∞) τ (0)                         (3.4)
+                            = k [1 − exp (−t/τdef )] .
+
+ The resulting SRC degradation rate RSRC has been observed as light-
+intensity independent above 1 mWcm−2 .144 The degradation rate RSRC
+was ﬁrst thought to increase with [Bs ]2 ,152 until Macdonald et al.153 ob-
+served a degradation rate proportionality to p20 in both B-Si and phos-
+phorus-compensated B-Si.
+
+3.1.2   Activation energy
+
+
+The activation energy Edef of the LID defect formation can be obtained by
+measuring the degradation rate Rdef over a temperature range and ﬁtting
+the result with
+                       Rdef (T ) = κ0 exp (−Edef /kB T ) .                       (3.5)
+
+ In clean Cz-Si, fast degradation (FRC) has been associated with the for-
+mation activation energy of 0.23±0.02 eV and slow degradation (SRC) with
+0.475±0.035 eV.154 The activation energies have shown no dependency on
+the wafer boron or oxygen concentrations, but the pre-exponential κ0 has
+been found to increase with increasing boron doping.154
+ Full dissociation of the FRC and the SRC defect has been observed after
+10-min annealing at 200°C in the dark.15 The SRC defect has recovered
+
+
+                                                                                   25
+Light-Induced Degradation
+
+
+with the activation energy of 1.32±0.05 eV, while FRC recovery has been
+observed as a two stage process with the activation energies of 0.32±0.01
+eV and 1.36±0.08 eV.154 However, subsequent illumination has shown to
+reform the degradation,15 prompting the FRC and the SRC defect to be
+classiﬁed as metastable.144
+
+3.1.3   Metastable defect
+
+
+The metastable SRC defect has been observed to form a deep energy level
+at EC −0.41 eV155 with the carrier-capture cross-section ratio of σn /σp =10±
+1.155, 156 The FRC level has been estimated as EC −(0.35-0.85) eV with
+σn /σp =100±10.154 The composition of both defects have been examined
+through the saturated normalized defect density Nt∗ (∞), which is deﬁned
+in Eq. 3.4 and reﬂects the light-induced defect density. Some studies in
+p-Si144, 154 and gallium co-doped p-Si157, 158 have found Nt∗ (∞) to be pro-
+portional to [Bs ], while others have observed a net doping p0 =NA −ND
+dependency in p-Si compensated with phosphorus153, 159, 160 or thermal
+donors.161 Although some studies have reported no relation between Nt∗ (∞)
+and boron or oxygen,146 results indicating Nt∗ (∞) dependency on both [Bs ]
+and [Oi ]2 have attributed the degradation to the formation of a boron-
+oxygen complex.144, 154
+  As experimental data have accumulated, the proposed BO complex has
+changed from Bi Oi 138 to Bs O2i ,144 and to a combination of Bs O2i (FRC) and
+Bi O2i (SRC).139, 162 After eliminating the involvement of oxygen dimers
+(O2i ),163 Voronkov and Falster137 have proposed a Xi Bs O complex, where X
+is a fast-diffusing interstitial impurity with a +1 charge that exists mostly
+in a precipitated state such as boron. In this model, Bi Bs O is presumed
+to form at low temperatures through Bi O dissociation and consequent Bi
+reaction with Bs O. Thus, the frozen-in concentration of Bi Bs O is thought
+to be proportional to both p0 and [O]2 , although the complex only contains
+one oxygen atom.
+  Since LID has recently been observed in aluminum-doped Cz-Si in ad-
+dition to indium-doped Cz-Si and FZ-Si,17, 18 metastable defect forma-
+tion has shown not to require boron or oxygen. Therefore, Möller and
+Lauer17, 18 have proposed an acceptor and silicon self-interstitial complex
+as the metastable light-induced defect. The low initial lifetime in Al-doped
+Cz-Si has been attributed to the formation of an aluminum-oxygen com-
+plex.164–166
+
+
+
+
+26
+                                                      Light-Induced Degradation
+
+
+3.1.4   Mitigating degradation
+
+Minimizing boron and oxygen
+Boron-oxygen LID has traditionally been mitigated by minimizing the
+concentration of boron or oxygen in the silicon bulk.16 Reducing the oxy-
+gen concentration below 1 ppm is effective, as no LID has been measured
+in clean boron-doped FZ-Si (Fig. 3.1) or 5.2 Ω-cm magnetic Czochralski
+(MCz) Si with 0.99 ppm of oxygen.16, 167 However, low-oxygen MCz-Si and
+FZ-Si ingot growth is known to be more expensive than conventional Cz-
+Si.
+ Replacing the boron doping with gallium has also proven effective, as
+no LID has been measured in gallium-doped p-type Cz-Si, regardless of
+oxygen concentration.138, 167 However, the low segregation coefﬁcient of
+gallium has made the growth of uniform-resistivity Ga-doped Cz-Si ingots
+very challenging.168 LID can additionally be mitigated by switching the
+solar cell bulk from p-Si to n-Si, since no degradation has been measured
+in clean phosphorus-doped Cz-Si138 or phosphorus-doped FZ-Si with the
+increased oxygen level of 8.4 ppm.169
+
+Regeneration
+In Cz-Si with high boron and oxygen concentrations, Herguth et al.170
+have deactivated the metastable defects completely by the means of si-
+multaneous illumination and annealing at 65−210°C,170–172 known as re-
+generation. During regeneration, the metastable defect is formed during
+the ﬁrst few minutes of simultaneous illumination and annealing, but
+then dissociated with the activation energy of 0.61−0.71 eV.170–172 The re-
+generation rate has been shown to depend on both the temperature and
+the illumination intensity.171 After defect dissociation, further illumina-
+tion has caused no severe defect formation, but some lifetime instability
+has still been observed.172 The deactivation rate has been observed to be
+inversely proportional to the boron concentration173 and directly propor-
+tional to the oxygen concentration.174 The deactivation process has also
+been found to be related to concentration of hydrogen that diffuses from
+the hydrogen-rich solar cell anti-reﬂection coating of silicon nitride into
+the silicon bulk during regeneration.175, 176 Approximately 4 h of dark an-
+nealing at 200°C has been shown to reverse the deactivation process, caus-
+ing full metastable defect formation during subsequent illumination.170
+
+
+
+
+                                                                           27
+Light-Induced Degradation
+
+
+3.1.5    Multicrystalline silicon
+
+
+In addition to Cz-Si, LID has been measured in different types of mul-
+ticrystalline silicon.14, 19–21, 136, 177, 178 In some mc-Si materials, a smaller
+LID effect has been observed than in similar resistivity Cz-Si, which has
+been regarded as a result of a lower oxygen136, 178 or a higher carbon179, 180
+concentration. Less degradation is also thought to occur in mc-Si simply
+due to a lower initial minority carrier recombination lifetime177–179 caused
+by high levels of transition metals and high densities of extended defects,
+such as stacking faults, grain boundaries, and dislocations. Macdonald
+et al.178 have observed a super-linear defect density dependence on [Oi ]
+at low oxygen concentrations, which changes into a near-quadratic depen-
+dence at high oxygen concentrations. As the measured degradation varied
+greatly between grains, interstitial oxygen has been suggested not to be
+directly involved in defect formation.178
+  In other mc-Si materials, stronger degradation has been measured than
+predicted by BO-LID theory.14, 19–21 Particularly mc-Si grown from up-
+graded metallurgical grade (UMG) silicon feedstock has shown relative
+efﬁciency losses of more than 10%.19 Since using UMG-Si feedstock is
+known to increase the metal contamination concentration in the mc-Si
+ingot,181 the stronger LID might be linked to copper-related degradation.
+
+
+
+3.2     Copper-related degradation
+
+
+In 1998, Henley et al.8 and Tarasov et al.182 observed light-induced degra-
+dation of the minority carrier diffusion length in 9−20 Ω-cm p-type Cz-
+Si contaminated with copper concentrations lower than the doping level.
+Henley’s samples had been oxidized to prevent copper out-diffusion,42 and
+copper-related LID (Cu-LID) was separated from iron-related recombina-
+tion by cyclic182 and long-term8 illumination. Later, Cu-LID was also ob-
+served in 0.5−2 Ω-cm p-type FZ-Si9, 140 and >5 kΩ-cm n-type FZ-Si,140 con-
+ﬁrming that copper can cause LID even without boron and oxygen.
+
+3.2.1    Degradation rate and defect density
+
+
+Figure 3.2 depicts copper-related lifetime degradation measured with μ-
+PCD in homogeneous high-resistivity B-doped Cz-Si and with a low bulk
+micro-defect (BMD) density. Since Cu-LID displays single exponential de-
+
+
+
+28
+                                                                Light-Induced Degradation
+
+
+
+
+Figure 3.2. Effective minority-carrier recombination lifetime as a function of illumina-
+            tion time in a) homogeneous (oxygen precipitates <106 cm−3 ) and low bulk
+            micro-defect density (oxygen precipitates 5×108 cm−3 ) Cz-Si with the cop-
+            per concentration of 5×1012 cm−3 , and b) low bulk micro-defect density Cz-Si
+            with different copper concentrations.183 (Reprinted with permission from H.
+            Väinölä, E. Saarnilehto, M. Yli-Koski, A. Haarahiltunen, J. Sinkkonen, G.
+            Berenyi, and T. Pavelka, Appl. Phys. Lett. 87, 032109 (2005). Copyright
+            2005, AIP Publishing LLC.)
+
+
+cay in all samples, the degradation rates have been obtained by ﬁtting the
+lifetime decay with the same degradation model as BO-LID in Eq. 3.4.
+The degradation rate of Cu-LID has been found to increase with increas-
+ing illumination intensity9, 10 and increasing copper concentration,140, 183
+as shown in Fig. 3.2.b. The presence of oxygen precipitates184, 185 has also
+been observed to increase the degradation rate, as displayed in Fig. 3.2.a.
+  The saturated normalized defect density Nt∗ (∞) has been found to in-
+crease with increasing BMD density184, 185 and be proportional to the in-
+terstitial copper concentration.183 Therefore, Nt∗ (∞) has been used to esti-
+mate the initial interstitial copper concentration CCu in defect-free silicon
+by183                         
+                                        Nt∗ (∞)
+                      CCu =                           (cm−3 ) ,                    (3.6)
+                                  (4.0 ± 0.5) × 10−24
+
+and in silicon with high BMD density by183
+
+                                       Nt∗ (∞)
+                        CCu =                       (cm−3 ) ,                      (3.7)
+                                 (3.0 ± 0.2) × 10−8
+
+when Nt∗ (∞) is obtained by μ-PCD lifetime measurements. The copper
+detection limit has been determined as some 5×1012 cm−3 in defect-free
+Si and below 1010 cm−3 in high BMD density material such as mc-Si.183
+A higher BMD density has been shown to render Cz-Si more sensitive to
+lower copper concentrations compared to FZ-Si.140 Cu-LID kinetics are
+further examined in this work, and the main results are presented in Sec.
+4.3 and 4.4.
+
+
+                                                                                      29
+Light-Induced Degradation
+
+
+3.2.2   Copper-related defect
+
+
+The light-induced copper-related defect has been found to fully dissociate
+during a 1 min Rapid Thermal Anneal at 900°C.11 As 900°C is high enough
+to dissolve a wide range of copper-related defects,4, 186–188 the dissociation
+temperature only eliminates defects with low dissociation temperatures
+such as pure copper complexes, discussed in Sec. 2.1.2. Although the
+defect responsible for Cu-LID is yet to be identiﬁed, Cu-LID has been pro-
+posed to occur due to substitutional copper release, copper precipitation,
+or surface passivation degradation by defect formation in the Si/SiO2 in-
+terface. The origin of Cu-LID is further investigated in this dissertation,
+and the results are summarized in Sec. 4.2.
+
+Substitutional copper
+Illumination has been shown to decrease the DLTS peak of the pure cop-
+per complex (EV +0.07 eV) and consequently form new peaks deeper in
+the silicon bandgap.73, 182 Since the copper complex was thought to be a
+Cus Cui pair,64, 65 Henley et al.8 and Ramappa9 have suggested that il-
+lumination dissociates copper complexes, increasing the concentration of
+recombination-active Cus . Although the copper complex has since been
+identiﬁed as a complex of four copper atoms in Sec. 2.1.2,66, 67 the com-
+plex is still very likely to contain substitutional copper.62, 68, 69
+  As discussed in Sec. 2.1.4, copper complex dissociation was also sug-
+gested as the cause for lifetime degradation during dark annealing above
+100°C.9, 91 Thus, Ramappa9 has proposed that substitutional copper is re-
+sponsible for both light-induced degradation and low-temperature degra-
+dation. Cu-LID has even been proposed to form with the same 0.419 eV9
+activation energy as in low-temperature lifetime degradation. However,
+this activation energy is unlikely to represent copper complex dissocia-
+tion, as complex dissociation has only been observed above 150°C.73
+
+Copper precipitates
+High-intensity illumination is known to split the Fermi level into electron
+and hole quasi-Fermi levels EFn and EFp , respectively.150 When EFn ex-
+ceeds EC −0.2 eV, Yli-Koski185 and Väinölä et al.10 have observed a clear
+increase in the copper-related degradation rate, and Belayachi et al.11
+have noticed a signiﬁcant trapping of Cu+
+                                        i in the bulk. Since EC −0.2 eV
+is known from Sec. 2.1.3 as the neutrality level of copper precipitates,40
+above which Cu3 Si0/− starts to attract Cu+
+                                          i ,
+                                             58 Cu-LID has been suggested
+
+to originate from copper precipitation.10 Copper precipitation is proposed
+
+
+30
+                                                                   Light-Induced Degradation
+
+
+to mainly occur as a result of a Cu3 Si charge change, but an illumination-
+induced change in the Cu+
+                        i charge state cannot be ruled out.
+  Assuming that the degradation rate is proportional to the precipitation
+rate and the precipitate size is ﬁxed, the light-induced precipitate radius
+r and density n could be obtained from the degradation time constant τdef
+in Eq. 3.4 by189
+                                                 −1
+                               τdef = 4πnrDCu,eff     ,                                 (3.8)
+
+where DCu,eff is the effective copper diffusivity in Eq. 2.2 at the illumina-
+tion temperature.
+
+Interface defects
+Although a positive surface oxide has been observed to prevent copper
+out-diffusion,42 as displayed in Fig. 3.3.a and discussed in Sec. 2.1.2,
+Boehringer et al.12 have measured a large interface defect density Dit
+increase in oxidized 5.5−10.5 Ω-cm p-type Cz-Si during 2.5 Wcm−2 illu-
+mination. The signiﬁcant Dit increase was accompanied by a total posi-
+tive surface charge increase. Therefore, 2.5 Wcm−2 illumination has been
+proposed to be intense enough to reduce the surface potential φs to near
+zero,39 allowing Cui to diffuse towards the wafer surface and increase the
+Si/SiO2 interface defect density, as suggested in Fig. 3.3.b.
+  Based on the Dit increase, Boehringer et al.12 have concluded that the
+measured lifetime degradation is caused solely by a surface recombination
+
+
+
+
+                             p-Si                                                p-Si
+
+
+  t        W                                         t
+      ox                                                 ox
+                               EC                                                EC
+                    +                                                  +
+  φ            Cui                                    φ ≈0         Cui
+      S
+               φ
+                                                         S               EFn
+                S              EF                                                EFp
+                               EV                                                EV
+           a)                                                 b)
+
+Figure 3.3. Cross-section and band diagram of p-type Si with a surface oxide of tox a)
+            in the dark, and b) during illumination. The positive oxide charge depletes
+            the width W of majority carriers and induces a surface potential φs . Intense
+            illumination collapses the depletion area due to high excess carrier densities,
+            splitting the Fermi level into the electron and the hole quasi-Fermi levels EFn
+            and EFp , respectively. Consequently, the surface potential is reduced to near
+            zero, which might cause Cu+  i diffusion towards the Si/SiO2 interface.
+
+
+
+
+                                                                                          31
+Light-Induced Degradation
+
+
+increase. However, Belayachi et al.11 have shown that interstitial copper
+begins to trap in the bulk even in bare p-Si, when the light intensity ex-
+ceeds some 0.5 Wcm−2 . Since only 10 min of 5 Wcm−2 illumination has
+been sufﬁcient to completely trap copper in the bulk of a bare p-Si wafer,11
+Cu-LID is less likely to have been caused only by a surface recombination
+increase at 2.5 Wcm−2 in oxidized Si. In order to further reduce the risk
+of copper diffusion towards the Si/SiO2 interface during illumination, Yli-
+Koski et al.190 and Väinölä et al.10 have proposed applying additional
+positive corona charge to the surface oxide.
+
+3.2.3   Mitigating copper
+
+
+In order to minimize copper-related recombination in the silicon bulk, sev-
+eral methods have been developed to decrease the impurity concentration.
+These methods include copper out-diffusion, phosphorus diffusion getter-
+ing (PDG), and p/p+ gettering through aluminum or heavy boron doping.
+This dissertation examines the effect of copper out-diffusion and PDG on
+copper-related LID. The main results are reported in Sec. 4.6.
+
+Out-diffusion
+As discussed in Sec. 2.1.2, interstitial copper is known to diffuse to the
+surface of a bare p-Si wafer even at RT.40–42 Copper out-diffusion has been
+shown to accelerate during annealing42, 191 at 100−400°C or continuous
+deposition of negative surface charges192 such as corona charges (CO−
+                                                                    3 ).
+During hot-plate annealing, 80% of the copper concentration has been
+found to diffuse to the cooler non-contact sample surface,42 while nega-
+tive charging has resulted in the majority of Cu+
+                                                i diffusing towards the
+negatively charged bare surface.192
+  In oxidized p-Si, negative surface charging has also been suggested to
+reduce the bulk copper concentration, as a negative corona density of −1
+μCcm−2 has been shown to prevent Cu-LID in high-resistivity Cz-Si with
+small oxygen precipitates.10, 185, 190 Negative corona charges have been
+proposed to attract Cu+
+                      i towards the Si/SiO2 interface, but without form-
+ing copper-related interface defects, since redeposition of positive corona
+charges (H3 O+ ) has been shown to cause Cu-LID after copper diffusion
+back into the wafer bulk.190 However, the redeposition of positive corona
+charges has only been tested on negatively charged sample unexposed to
+illumination.190 Chemical analysis is also yet to conﬁrm the location of
+copper in oxidized Si with positive and negative surface charge densities.
+
+
+
+32
+                                                        Light-Induced Degradation
+
+
+Gettering
+Phosphorus, boron, and aluminum gettering are well-known segregation
+gettering methods for decreasing the bulk copper concentration. Segre-
+gation gettering at high temperatures relies on copper diffusion into a P-
+doped layer, heavily B-doped layer, or an Al-Si liquid due to a higher cop-
+per solubility.193, 194 In silicon solar cell manufacturing, phosphorus diffu-
+sion gettering (PDG) occurs during phosphorus in-diffusion (e.g., emitter
+formation), boron gettering occurs during boron in-diffusion (e.g., back-
+surface ﬁeld formation), and aluminum gettering takes place during con-
+tact ﬁring.
+ A PDG step around 900°C exceeding one hour has been conﬁrmed as
+a very efﬁcient method to remove copper from the silicon bulk.4, 186–188
+PDG gettering has been modeled by the distribution of Cui , Cus and CuP
+pairs,194 but the experimental segregation coefﬁcient is yet to be deter-
+mined, as several experimental studies have reported a copper concentra-
+tion below detection limit after PDG.4, 186 Aluminum gettering for 2 h at
+800°C has resulted in a segregation coefﬁcient of at least (1−2)×103 , esti-
+mating a 90% copper concentration decrease in a 240-μm-thick wafer with
+a 1 μm aluminum layer.195
+
+
+
+
+                                                                             33
+Light-Induced Degradation
+
+
+
+
+34
+4. Results and Discussion
+
+
+
+
+This chapter summarizes the main results on copper-related LID and
+nickel diffusivity in Publications I-VI. Cu-LID formation kinetics are em-
+phasized in order to ascertain the origin of Cu-LID and to help distinguish
+between Cu-LID and BO-LID.
+
+
+
+4.1   Materials affected by copper-related LID
+
+
+Although BO-LID has been shown not to affect silicon with low boron and
+oxygen concentrations16, 167 in Sec. 3.1.4, Cu-LID has been observed in
+both low-resistivity B-doped FZ-Si9, 140 and very high-resistivity P-doped
+FZ-Si.140 Since Cu-LID can form in FZ-Si without BO-LID, other silicon
+materials may also be prone to Cu-LID.
+ In order to determine the extent of Cu-LID in silicon, different Cz-Si and
+mc-Si materials were subjected to intentional copper contamination. Pub-
+lications II, III, and IV show Cu-LID in low-resistivity Cz-Si and conﬁrm
+previous observations of Cu-LID in high-resistivity Cz-Si.8, 140, 182 Publi-
+cation V detects Cu-LID in industrial low-resistivity mc-Si, and Publica-
+tion I reveals Cu-LID in low- and high-resistivity Ga-doped Cz-Si. Table
+4.1 lists all materials known to suffer from Cu-LID and indicates whether
+BO-LID also occurs.
+ Although Cu-LID occurs in both B-doped Cz-Si and FZ-Si, Cz-Si has
+been observed as more sensitive to low copper concentrations than FZ-
+Si.140 In Publication I, B-doped Cz-Si additionally appears to be more
+sensitive to copper than Ga-doped Cz-Si. As the B-Si and the Ga-Si wafer
+thicknesses differed, the higher copper sensitivity of B-Si still needs to
+be conﬁrmed by copper concentration measurements. Nevertheless, the
+effect of doping concentration on Cu-LID is summarized in Sec. 4.3.
+ In Publication V, Cu-LID is not only detected in intentionally contami-
+
+
+
+                                                                         35
+Results and Discussion
+
+
+Table 4.1. Silicon materials affected by Cu-LID and possibly BO-LID.
+
+
+      Material      Doping    Resistivity    Cu-LID                    BO-LID
+                              (Ω-cm)
+
+      FZ-Si         B         0.5−2          Yes9, 140                 No140
+                    P         >5000          Yes140                    No140
+      Cz-Si         B         2.7−3.9        YesII, III, IV            YesII, III, IV
+                    B         9−22           Yes8, 10, 140, 182, 183   Yes140
+                    B         18−24          YesII, IV                 YesIV
+                    Ga        0.41           YesI                      NoI
+                    Ga        10.1           YesI                      NoI
+      mc-Si         B         1.3−2.0        YesV                      NoV
+
+
+nated mc-Si, but also in oxidized reference samples from the middle and
+the top of the ingot. Although high total copper concentrations are ex-
+pected in the top part of the mc-Si brick,3 all dissolved copper is assumed
+to precipitate heterogeneously after the high-temperature processing, due
+to the high density of extended defects with low precipitation barriers.2, 196
+However, Publication V shows that copper concentrations of 1012 cm−3 can
+be kept as interstitials in low-resistivity p-type mc-Si after thermal oxida-
+tion at 900°C followed by air cooling.
+
+
+
+4.2     Bulk versus surface LID
+
+
+4.2.1    Surface passivation stability
+
+
+Although BO-LID has previously been conﬁrmed as a bulk recombina-
+tion effect,138 the surface passivation must be kept stable in LID studies,
+in order to accurately determine the saturated normalized defect density
+Nt∗ (∞) with Eq. 3.2 and 3.3. In Publications I-V, most Cz-Si samples are
+passivated by a thermal oxide with a low interface defect density Dit of
+3.6×1010 cm−2 eV−1 . Although dry oxidation provides excellent chemical
+surface passivation, the built-in positive charge density of 2.0×1011 cm−2
+is not high enough to create good ﬁeld passivation. Therefore, the ﬁeld
+passivation of thermal oxide is improved by the deposition of external
+positive corona charge before illumination.
+  In Publication V, some samples were also passivated with aluminum
+
+
+
+36
+                                                                               Results and Discussion
+
+
+oxide (Al2 O3 ) with a built-in negative surface charge of −7×1012 cm−2 .197
+Figure 4.1.a presents the effective lifetime in low-resistivity FZ-Si with
+Al2 O3 and corona-charged thermal oxide during halogen illumination mea-
+sured with QSSPC and during bias laser illumination measured with μ-
+PCD. Figure 4.1.b presents the temperature of a dummy wafer placed un-
+der the sample during halogen illumination, and the sample temperature
+near the illumination spot during bias laser illumination.
+
+
+                                  2.5
+
+
+
+
+                Lifetime (ms)
+                                  2.0
+
+
+                                  1.5
+
+
+                                  1.0
+                                        10-1 100 101 102 103 104 105
+                   a)                          Illumination time (s)
+                                    SiO2, bias laser, 18 Wcm-2, μ-PCD (~1015 cm-3)
+                                    SiO2, bias laser, 5 Wcm-2, μ-PCD (~1015 cm-3)
+                                    Al2O3, halogen, 0.1 Wcm-2, QSSPC (4×1014 cm-3)
+                                    SiO2, halogen, 0.1 Wcm-2, QSSPC (4×1014 cm-3)
+
+                                  34        Bias laser, 18 Wcm-2
+
+
+
+
+               Temperature (oC)
+                                            Bias laser, 5 Wcm-2
+                                  32        Halogen, 0.1 Wcm-2
+                                  30
+                                  28
+                                  26
+                                  24
+
+                                        10-1 100 101 102 103 104 105
+                     b)                        Illumination time (s)
+Figure 4.1. a) Effective lifetime in 1-5 W-cm B-doped FZ-Si with corona-charged (+0.26
+            μCcm−2 ) thermal oxide during 0.1 Wcm−2 halogen illumination measured
+            with QSSPC (Δn=4×1014 cm−3 ), aluminum oxide during 0.1 Wcm−2 halogen
+            illumination measured with QSSPC (Δn=4×1014 cm−3 ), and corona-charged
+            (+0.52 μCcm−2 ) thermal oxide during 5 and 18 Wcm−2 bias laser illumination
+            measured with μ-PCD (Δn∼1015 cm−3 ). b) Temperature of a dummy wafer
+            placed under the sample during 0.1 Wcm−2 halogen illumination, and the
+            sample temperature near the illumination spot during 5 and 18 Wcm−2 bias
+            laser illumination.
+
+
+
+
+                                                                                                 37
+Results and Discussion
+
+
+Thermal oxide
+In Fig. 4.1.a, the effective lifetime in corona-charged and thermally ox-
+idized FZ-Si remains stable during 973.5-nm bias laser illumination re-
+gardless of the intensity, even though the sample temperature increases
+during illumination. As the passivation remains stable, the degradation
+observed during bias laser illumination in clean Cz-Si in Publication II
+reﬂects pure bulk BO-LID.
+  During halogen illumination, a fan was positioned less than 1 m from
+the sample to achieve an air ﬂow that stabilizes the temperature, with-
+out reducing the front surface corona charge density. In corona-charged
+oxidized FZ-Si in Fig. 4.1.a, halogen illumination causes ﬁrst a lifetime
+increase, followed by a slow decrease back to its initial value. The ini-
+tial lifetime increase could be caused by FeB pair splitting due to unin-
+tentional iron contamination, but the slow decrease might be a result of
+increased surface recombination.
+  As the surface recombination is inﬂuenced by the chemical surface pas-
+sivation, Figure 4.2 presents the Si/SiO2 interface defect density Dit in
+clean and copper-contaminated B-doped Cz-Si before and after halogen il-
+lumination, measured in Publication IV. With only thermal oxide (0.2×1012
+cm−2 ), a clear Dit increase is observed in the clean reference sample af-
+ter illumination, while the Dit hardly changes during illumination of the
+corona-charged (1.8×1012 cm−2 ) reference. Therefore, the surface passi-
+vation of corona-charged clean samples appears to be relatively stable
+during halogen illumination in Publications III and IV. The Dit increase
+
+
+                                      3.0     Ref, initial       Cu, intial
+                                              Ref, illuminated   Cu, illuminated
+                                      2.5
+
+
+
+                Dit (1011 cm-2eV-1)
+                                      2.0
+                                      1.5
+                                      1.0
+                                      0.5
+                                      0.0
+                                             0.2×1012         1.8×1012
+                                            Surface charge density (cm-2)
+Figure 4.2. Interface defect density Dit as a function of surface charge density in clean
+            (Ref.) and 1-ppm copper-contaminated (Cu) oxidized low-resistivity B-doped
+            Cz-Si measured before (initial) and after (illuminated) 0.1 Wcm−2 halogen
+            illumination.
+
+
+
+38
+                                                             Results and Discussion
+
+
+                       3500
+                               UV           Visible        IR
+                       3000
+                       2500
+
+
+              Counts
+                       2000
+                       1500
+                       1000
+                       500
+                         0
+                              200     400       600       800
+                                    Wavelength (nm)
+Figure 4.3. Halogen lamp spectrum measured with an OceanOptics UV-Visible spec-
+            trometer.
+
+
+measured in the oxidized sample without corona (0.2×1012 cm−2 ) could be
+caused by unintentional copper-related defects or ultraviolet (UV) degra-
+dation of the thermal oxide layer,198, 199 as UV wavelengths are present in
+the halogen lamp spectrum, as seen in Fig. 4.3.
+
+Aluminum oxide
+In Fig. 4.1.a, halogen illumination causes a slow lifetime increase in
+Al2 O3 -passivated FZ-Si. As the lifetime decreases back to 1338 μs after
+ﬁve days of storage in the dark, the measured lifetime increase could be a
+result of a light-induced Al2 O3 charge-density increase.141, 142 Since alu-
+minum oxide appears to be unstable during illumination, Al2 O3 passiva-
+tion might underestimate the extent of bulk degradation at high effective
+lifetimes. Nevertheless, the low lifetimes measured in mc-Si in Publi-
+cations III are clearly dominated by bulk recombination, decreasing the
+impact of Al2 O3 passivation improvement during illumination.
+
+4.2.2   Copper-related LID
+
+
+Although Cu-LID has previously been observed to correlate with an in-
+terstitial copper concentration decrease11 and a minority carrier recom-
+bination lifetime/diffusion length decrease,8–10, 140, 182–185, 190 it is yet to
+be determined whether Cu-LID is caused by bulk or surface recombina-
+tion. Boehringer et al.12 have de facto measured a signiﬁcant increase in
+the Si/SiO2 interface defect density Dit during illumination, associating
+Cu-LID solely with surface passivation degradation, as described in Sec.
+3.2.2. In order to identify the recombination effect caused by Cu-LID, two
+experiments were devised in Publications III and IV.
+
+
+                                                                               39
+Results and Discussion
+
+
+  Figure 4.2 presents the interface defect density Dit in clean and copper-
+contaminated B-doped Cz-Si before and after halogen illumination mea-
+sured in Publication IV. Although a Dit increase of 7×1010 cm−2 eV−1 is
+observed in the contaminated samples during illumination, the increase
+is clearly smaller than ΔDit ≈5×1011 cm−2 eV−1 , which was measured by
+Boehringer et al.12 in oxidized Cz-Si with a similar copper concentration.
+  If the Dit increase were caused by copper-related interface defect for-
+mation during illumination, Cu-LID would be caused by either a pure
+surface recombination increase or a combination of surface and bulk re-
+combination. In the case of pure surface recombination, removing the
+degraded Si/SiO2 interface would completely remove the Cu-LID effect.
+Correspondingly, if Cu-LID were a combination of surface and bulk re-
+combination, removing the degraded interface would result in partial re-
+covery of Cu-LID. However, after a silicon surface etch and subsequent
+aluminum oxide (Al2 O3 ) deposition, the degraded lifetime shows no im-
+provement in Publication III, even though Al2 O3 provides better surface
+passivation than corona-charged thermal oxide.200, 201 Therefore, Cu-LID
+is determined to be dominated by bulk recombination.
+
+
+
+4.3   Impact of doping on copper-related LID
+
+
+Publications I and IV investigate Cu-LID as a function of doping concen-
+tration in Cz-Si. Figure 4.4 presents as summary the effective lifetime
+in oxidized copper-contaminated B-Si and Ga-Si during halogen and bias
+laser illumination, respectively. Although Ga-doped Cz-Si is not affected
+by BO-LID, intentional copper contamination causes Cu-LID formation.
+The degradation time constants in Table 4.2 are obtained by ﬁtting the
+lifetime with the single exponential decay of Eq. 3.4.
+  B-doped Cz-Si shows faster degradation than Ga-Si, even though the
+degradation is performed at a lower light intensity. In low-resistivity B-Si,
+Figure 4.4.a reveals fast initial degradation, a slower second degradation,
+followed by a third very slow degradation. The ﬁrst fast initial degrada-
+tion is ﬁtted by Eq. 3.4, while the slower degradation reactions are ﬁtted
+with the double exponential
+
+              Nt∗ (t) = a [1 − exp(−t/τdef2 )] + b [1 − exp(−t/τdef3 )] ,   (4.1)
+
+where τdef2 is the degradation time constant of the second slow degra-
+dation and τdef3 is the degradation time constant of the very slow ﬁnal
+
+
+40
+                                                                       Results and Discussion
+
+
+
+
+                                 1400
+                                                  B 3.4-3.9 Ωcm, 0.1 Wcm-2
+                                 1200                         Cu 0.5 ppm
+
+
+
+
+                 Lifetime (μs)
+                                 1000                         Cu 1 ppm
+                                  800
+                                  600
+                                  400
+                                  200          Eq. 3.4
+                                               Eq. 4.1
+                                    0
+
+                                        10-1 100 101 102 103 104 105 106
+                 a)                           Illumination time (s)
+                                 3500              Ga 10.1 Ωcm, Cu 8 ppm,
+                                 3000                          18 Wcm-2
+
+
+
+
+                Lifetime (μs)
+                                 2500                        B 18-24 Ωcm,
+                                 2000                          Cu 1 ppm,
+                                 1500                          0.1 Wcm-2
+                                 1000          Eq. 3.4
+                                  500          Eq. 3.4
+                                               Eq. 4.2
+                                    0
+
+                                        10-1 100 101 102 103 104 105 106
+                b)                            Illumination time (s)
+                                 250
+                                 200
+
+
+               Lifetime (μs)
+                                           Ga 0.41 Ωcm,
+                                 150       18 Wcm-2
+                                 100            Cu 8 ppm
+                                                Cu 100 ppm
+                                  50
+                                   0            Eq. 3.4
+
+
+                                        10-1 100 101 102 103 104 105 106
+                  c)                          Illumination time (s)
+Figure 4.4. Effective lifetime as a function of illumination time in a) low-resistivity B-
+            doped Cz-Si with Cu 0.5 and 1 ppm, b) high-resistivity B-doped Cz-Si with
+            Cu 1 ppm and high-resistivity Ga-doped Cz-Si with Cu 8 ppm, and c) low-
+            resistivity Ga-doped Cz-Si with Cu 8 and 100 ppm. The B-doped samples
+            were illuminated with a 0.1 Wcm−2 halogen lamp and the effective lifetime
+            was measured with QSSPC (Δn=4×1014 cm−3 ). High-intensity bias laser
+            illumination was employed in Ga-Si and the effective lifetime was measured
+            with μ-PCD (Δn∼1015 cm−3 ).
+
+
+
+
+                                                                                         41
+Results and Discussion
+
+
+Table 4.2. Copper contamination solution concentration and degradation time constants
+           τdef in B-doped and Ga-doped Cz-Si in Fig. 4.4.
+
+
+         Cz-Si                   Cu solution (ppm)          τdef = 1/Rdef (s)
+
+         3.4-3.9 W-cm B-Si                         0.5   27, 10570 & 161400
+                                                     1     55, 3980 & 66050
+         18-24 Ω-cm B-Si                             1     56, 133 & 230570
+         0.41 Ω-cm Ga-Si                             8                  222600
+                                                  100                   129300
+         10.1 Ω-cm Ga-Si                             8                   22610
+
+
+degradation.
+  High-resistivity B-doped Cz-Si also shows fast initial degradation, a
+slower second degradation, and a third very slow degradation in Fig.
+4.4.b. The ﬁrst fast initial degradation is ﬁtted by Eq. 3.4, but the slower
+degradation reactions are faster compared to low-resistivity B-doped Cz-
+Si and can be ﬁtted with the double exponential
+
+                     τeff (t) = c exp(−t/τdef4 ) + d exp(−t/τdef5 ) ,            (4.2)
+
+where τdef4 is the degradation time constant of the second slow degra-
+dation and τdef5 is the degradation time constant of the very slow ﬁnal
+degradation.
+  In all samples, degradation becomes faster with an increasing copper
+concentration, as previously observed in literature.140, 183 In both B-doped
+and Ga-doped Cz-Si, higher doping concentrations slow down the degra-
+dation rate. Slower degradation could be explained by the higher concen-
+tration of copper-acceptor pairs, which need to dissociate before Cu-LID
+formation can occur. The higher dissociation energy of CuGa (0.71±0.02
+eV)26, 32 compared to CuB (0.61±0.02 eV)26, 32 could also explain the slower
+degradation observed in Ga-Si compared to B-Si, even though Ga-Si was
+illuminated at a higher intensity and a higher temperature (as seen in
+Fig. 4.1.b).
+
+
+
+4.4   Temperature dependence of copper-related LID
+
+
+Publication IV presents Cu-LID as a function of illumination temperature
+in B-doped Cz-Si. Increasing the temperature increases the degradation
+rate, as expected from previous BO-LID results.154 Fitting Eq. 3.5 to
+the slow degradation rate Rdef2 /Rdef4 results in the activation energy of
+
+
+42
+                                                           Results and Discussion
+
+
+0.323±0.090 eV in 3.4-3.9 W-cm Cz-Si and 0.146±0.025 eV in 18-24 W-cm
+Cz-Si, respectively. The obtained activation energies of slow degradation
+are low compared to the BO-LID SRC activation energy of 0.475±0.035
+eV.154 The activation energies are also clearly dependent on the doping
+concentration, while the activation energy of BO-LID has been shown to
+be independent of the boron and the oxygen concentration.154 Moreover,
+the activation energies are lower than the temperature-induced copper-
+defect activation energy of 0.419 eV, which Ramappa9 suggested as the
+activation energy of Cu-LID in Sec. 3.2.2.
+ In the high-resistivity material, the measured activation energy is close
+to the intrinsic diffusion energy of 0.18±0.01 eV.26 In B-doped Si, inter-
+stitial copper is known to form CuB pairs with the dissociation energy
+of 0.61±0.01 eV.26, 32 Increasing the temperature or decreasing the doping
+concentration reduces the concentration of CuB pairs, increasing the ef-
+fective copper diffusivity until the intrinsic copper diffusivity is achieved.
+Illumination might also increase the pair dissociation rate, further in-
+creasing the effective diffusivity. Therefore, the activation energies ob-
+tained in Publication IV might reﬂect the diffusivity of copper instead of
+the formation energy of Cu-LID. This interpretation makes copper diffu-
+sion the limiting reaction in the formation of copper-related LID.
+ Diffusion-limited Cu-LID would explain the slow degradation observed
+in Ga-Si, since the dissociation energy of CuGa is higher than that of
+CuB.26, 32 A higher Cu-acceptor pair concentration would also explain the
+slower degradation rates observed in highly doped B-Si and Ga-Si in Fig.
+4.4. However, diffusion-limited Cu-LID would result in the formation of a
+low density of copper-related defects, which is less likely to cause such a
+large lifetime decrease, as measured in Fig. 4.4.
+ The degradation rate of Cu-LID has previously been shown to increase
+with increasing illumination intensity.9, 10 Publication V also reports a
+degradation rate dependence on the bias laser illumination intensity in
+a good-grain area of B-doped mc-Si. However, Figure 4.1.c shows a 4°C
+difference in the sample temperature between 5 and 18 Wcm−2 bias laser
+illumination. Therefore, further data is needed to determine whether the
+degradation rate increase is caused by the illumination intensity or the
+sample temperature increase.
+
+
+
+
+                                                                             43
+Results and Discussion
+
+
+4.5     Low-temperature stability
+
+
+4.5.1    Before illumination
+
+
+Since BO-LID defects are known to fully dissociate at 200°C,15 Publica-
+tion IV investigates the effect of low-temperature annealing on copper-
+contaminated Cz-Si. Figure 4.5 depicts the effective lifetime as a function
+of annealing time at 210±10°C in contaminated (0.5 and 1 ppm) high- and
+low-resistivity B-doped Cz-Si. Before illumination, a lifetime decrease is
+observed in high-resistivity B-doped Cz-Si after a 2 min anneal, while the
+low-resistivity sample exhibits a lifetime increase. This lifetime increase
+might be caused by the recovery of BO-LID formed during sample prepa-
+ration. However, in the same material with a higher copper concentration
+(8 ppm), a lifetime decrease is measured after 10 min at 210°C in Publica-
+tion III.
+  Annealing for 1000 min results in lifetime degradation in all copper-
+contaminated samples regardless of resistivity, which is in agreement
+with previous stability experiments9, 91 above 100°C, as discussed in Sec.
+2.1.4. During annealing, the interface defect density increases only from
+1.6×1011 to 1.9×1011 cm−2 eV−1 in the 1-ppm-contaminated low-resistivity
+sample. Therefore, bulk-related recombination is determined to dominate
+during low-temperature annealing. Lifetime degradation after long-term
+annealing might be caused by copper precipitation, as Cu-Si system stud-
+                                
+ies have shown η -Cu3 Si formation at 200°C.93–95 In conclusion, the life-
+
+
+                                                         High-res, 1 ppm
+                                                         Low-res, 0.5 ppm
+                                                         Low-res, 1 ppm
+
+
+
+
+                Lifetime (μs)
+                                1000
+
+
+
+
+                                100
+                                       0            2          1000
+                                           Annealing time (min)
+Figure 4.5. Effective lifetime as a function of annealing time at 210±10°C in contami-
+            nated (0.5 and 1 ppm) high- and low-resistivity B-doped Cz-Si. (Reprinted
+            with permission from J. Lindroos and H. Savin, J. Appl. Phys. 116, 234901
+            (2014). Copyright 2014, AIP Publishing LLC.)
+
+
+
+44
+                                                               Results and Discussion
+
+
+time behavior during low-temperature annealing before illumination is
+determined to depend on the boron concentration, copper concentration,
+and annealing time.
+
+4.5.2    After illumination
+
+
+Publications III and IV present the effective lifetime after Cu-LID forma-
+tion and a dark anneal at 210±10°C. Unlike the clean reference, illumi-
+nated low-and high-resistivity B-doped Cz-Si contaminated with copper
+solutions of 1 and 8 ppm do not recover during the 200°C anneal. There-
+fore, the light-induced copper-related defects at the aforementioned cop-
+per contamination levels are determined to be stable at 200°C. This result
+is in agreement with previous observations on Cu-LID defect dissociation
+requiring a temperature of 900°C.11
+
+
+
+4.6     Mitigating copper-related LID
+
+
+In p-Si, bulk copper contamination can be reduced by phosphorus diffu-
+sion gettering (PDG)4, 186–188 or copper out-diffusion,10, 41, 42, 185, 190, 192 as
+discussed in Sec. 3.2.3. Publications II-V investigate copper out-diffusion
+by negative surface charging and its impact on Cu-LID in Cz-Si and mc-
+Si. A negative surface charge is achieved by the deposition of negative
+corona charge or aluminum oxide with a built-in negative charge. Section
+4.6.3 examines the effect of PDG on Cu-LID.
+
+4.6.1    Negative corona charging
+
+Chemical analysis
+Since negative corona charge deposition has been shown to prevent Cu-
+LID in oxidized Cz-Si with oxygen precipitates,10, 185, 190 negative surface
+charging has been proposed to attract Cu+
+                                        i towards the Si/SiO2 interface,
+yet without increasing the surface recombination.185, 190 Although surface
+copper accumulation has been conﬁrmed by chemical analysis in bare Si
+wafers,192 copper accumulation and its effect on the surface passivation
+remains to be determined in oxidized p-Si.
+ Figure 4.6.a presents the total surface copper concentration measured
+with Total Reﬂection X-Ray Fluorescence (TXRF) as a function of sur-
+face corona charge density in oxidized low-resistivity B-doped magnetic
+Czochralski (MCz) Si, contaminated with copper solutions of 1, 8, and 16
+
+
+
+                                                                                 45
+Results and Discussion
+
+
+
+
+                     5
+
+
+
+
+[Cu] (1013 cm-2)
+                     4                                                 16 ppm, before
+                                                                       16 ppm, after
+                     3                                                 8 ppm, before
+                                                                       8 ppm, after
+                     2                                                 1 ppm, before
+                                                                       Detection limit
+                     1
+
+                       -1.5 -1.0 -0.5 0.0 0.5 1.0
+        a)            Corona charge density (μCcm-2)
+
+
+                   1000
+
+
+
+Lifetime (μs)
+                                                                       Ref, before
+                                                                       Ref, after
+                   100                                                 0.5 ppm, before
+                                                                       0.5 ppm, after
+                                                                       1 ppm, before
+                                                                       1 ppm, after
+                    10
+
+                       -1.5 -1.0 -0.5 0.0 0.5 1.0
+      b)              Corona charge density (μCcm-2)
+
+                   1012
+
+
+
+Dit (cm-2eV-1)
+                                                                       Ref, before
+                                                                       Ref, after
+                   1011                                                0.5 ppm, before
+                                                                       0.5 ppm, after
+                                                                       1 ppm, before
+                                                                       1 ppm, after
+
+                   1010
+                       -1.5 -1.0 -0.5 0.0 0.5 1.0
+            c)        Corona charge density (μCcm-2)
+Figure 4.6. a) Near-surface copper concentration as a function of corona charge density
+            in oxidized 400-μm, 2.4−3.6 W-cm B-doped MCz-Si contaminated with copper
+            solutions of 1, 8, and 16 ppm before and after 0.1 Wcm−2 halogen illumina-
+            tion. b) Effective lifetime measured with QSSPC (Δn=4×1014 cm−3 ) and b)
+            interface defect density Dit as a function of surface corona charge density in
+            clean (Ref) and contaminated (0.5 and 1 ppm) low-resistivity B-doped Cz-Si
+            before and after 0.1 Wcm−2 halogen illumination.
+
+
+
+
+46
+                                                                    Results and Discussion
+
+
+ppm. With a positive corona charge density, the near-surface copper con-
+centration is below the detection limit before and after illumination. How-
+ever, negative corona charging of −0.6 μCcm−2 reveals copper accumula-
+tion near the Si/SiO2 interface. The near-surface copper concentration ap-
+pears to increase not only with an increasing negative corona charge den-
+sity, but also with an increasing initial bulk copper concentration. Hence,
+the applied negative corona charge is shown to also accumulate copper
+near the sample surface of thermally oxidized Si.
+
+Charge density
+Figure 4.6.b depicts the effective lifetime and Fig. 4.6.c shows the inter-
+face defect density Dit as a function of corona charge density in clean and
+contaminated low-resistivity B-doped Cz-Si, before and after halogen illu-
+mination. With a positive corona charge, the clean sample shows BO-LID,
+and the contaminated samples reveal more severe Cu-LID. Adding nega-
+tive corona charge results in a lower initial lifetime in both the clean and
+the contaminated samples. The lower initial lifetime is a result of ma-
+jority carrier accumulation, which causes higher surface recombination
+compared to positive-charge-induced inversion, as shown in Fig. 4.7.
+  At the high negative charge density of −1.58 μCcm−2 , the lower initial
+lifetime is also clearly a result of a high Si/SiO2 interface defect density
+in Fig. 4.6.b. Nevertheless, the negative-charge-induced surface recombi-
+nation increase does not impact signiﬁcantly the ﬁnal degraded lifetime,
+as bulk recombination has been shown to dominate both BO-LID144 and
+Cu-LID in Sec. 4.2. In fact, increasing the negative charge density results
+
+
+                               3.0       QSSPC (4×1014 cm-3)
+                                         μ-PCD (~1×1014 cm-3)
+                               2.5
+
+
+
+               Lifetime (ms)
+                               2.0
+                               1.5
+                               1.0
+                               0.5
+                               0.0
+
+                                     -2.0 -1.5 -1.0 -0.5 0.0 0.5 1.0 1.5
+                                      Corona charge density (μCcm-2)
+Figure 4.7. Effective lifetime as a function of surface corona charge density in oxidized
+            low-resistivity FZ-Si measured with QSSPC (Δn=4×1014 cm−3 ) and μ-PCD
+            (Δn∼1×1014 cm−3 ).
+
+
+
+
+                                                                                      47
+Results and Discussion
+
+
+in less Cu-LID. In the contaminated samples, the ﬁnal degraded lifetime
+increases with the increasing negative corona charge density, until the
+lifetime stabilizes around −0.78 μCcm−2 . Beyond this negative charge
+density, any additional copper collected towards the surface does not im-
+prove the ﬁnal degraded lifetime, suggesting that the point of maximum
+Cu-LID removal has been reached in the sample.
+  Figure 4.8.a presents the effective lifetime as a function of illumination
+in clean and contaminated samples with −0.78 μCcm−2 . In both sam-
+ples, the lifetime ﬁrst increases slightly before decreasing during light-
+induced defect formation. The lifetime increase could be FeB pair disso-
+ciation, since it also appears in the contaminated samples without any
+added corona charge. As both the clean and the contaminated Cz-Si show
+similar lifetime behavior during illumination and saturate at nearly the
+
+
+                             700                                        Ref, neg
+                                                                        1 ppm, neg
+                             600                                        1 ppm
+
+
+
+
+             Lifetime (μs)
+                             500                                        0.5 ppm
+
+                             400
+                             300
+                             200
+                             100
+                               0
+
+                                    10-1 100 101 102 103 104 105 106
+             a)                              Illumination time (s)
+                                                                  200
+                             1000
+                                                                  160
+
+
+
+
+            Lifetime (μs)
+                             100
+                                        Ref, pos
+                                        1 ppm, pos
+                                        1 ppm, neg, pos
+                              10        1 ppm, neg & illum, pos
+
+
+                                    10-1 100 101 102 103 104 105 106
+              b)                             Illumination time (s)
+Figure 4.8. Effective lifetime as a function of illumination time in oxidized clean (Ref)
+            and contaminated (0.5 and 1 ppm) low-resistivity Cz-Si with a) no corona and
+            −0.78 μCcm−2 (neg), and b) cumulative corona charge of +0.26 μCcm−2 (pos).
+            In b), the notation "neg" refers to a sample with previous negative charge and
+            "neg & illum" to a sample previously illuminated with a negative charge. The
+            inset shows the negatively charged sample illuminated in a) with redeposited
+            positive charge (neg & illum, pos).
+
+
+
+48
+                                                              Results and Discussion
+
+
+same lifetime value, accumulation of copper near the surface by a negative
+charge appears to completely prevent Cu-LID formation without affecting
+BO-LID. The negative charge density needed to prevent Cu-LID depends
+on the initial copper concentration, as shown in Publication II. Although
+Cu-LID in Publication II was fully prevented by −1.3 μCcm−2 in the 2-
+ppm samples and −1.58 μCcm−2 in the 8-ppm samples, respectively, all
+results were reported at −2.34 μCcm−2 for comparison. Cu-LID removal
+by negative corona charging is not only applicable in Cz-Si, as Publication
+V reports Cu-LID prevention in oxidized B-doped multicrystalline Si.
+
+Illumination
+Although the negative surface charge prevents Cu-LID formation, the re-
+deposition of positive corona charge has resulted in Cu-LID,190 presum-
+ably due to copper diffusion back into the bulk. Figure 4.8.b shows the
+effective lifetime as a function of illumination time in clean and contam-
+inated Cz-Si with an initial positive charge. The ﬁgure also displays two
+contaminated samples with an initial negative charge, which has been
+compensated to +0.26 μCcm−2 by redepositing positive charge. In the
+sample with previous negative charging but no illumination (neg, pos),
+positive redeposition and illumination causes nearly as severe and fast
+Cu-LID as in the initially positively charged reference. This results indi-
+cates that nearly all copper has diffused back into the bulk after positive
+charge redeposition, which is agreement with Yli-Koski’s previous obser-
+vations.190
+ In the sample previously illuminated with a negative surface charge
+(neg & illum, pos), the initial lifetime is low after positive charge rede-
+position, since BO-LID defects have formed during the ﬁrst illumination
+in Fig. 4.8.a. Nevertheless, after positive charge redeposition, the effec-
+tive lifetime decreases only slightly during illumination, and the ﬁnal life-
+time remains at the saturation level of the BO-degraded reference sam-
+ple. Hence, negative surface charging together with illumination appears
+to deactivate copper, preventing copper diffusion back into the bulk and
+Cu-LID formation.
+ Although Cu-LID deactivation could be a result of copper-related inter-
+face defect formation, hardly any Dit increase occurs during illumination
+in Fig. 4.6.c. Copper diffusion into the oxide is also less likely, as Fig. 4.6.a
+conﬁrms that the majority of copper stays in the near-surface area after
+illumination. Even though copper is known to form many recombination-
+active defects in silicon as discussed in Sec. 2.1, illumination of surface-
+
+
+                                                                                49
+Results and Discussion
+
+
+accumulated copper might form a recombination-inactive defect that is
+stable at RT and insensitive to light, preventing copper diffusion back
+into the bulk. Further experiments are required to determine the state of
+copper after negative charging and illumination.
+
+4.6.2    Aluminum oxide
+
+
+In addition to corona charging, a negative surface charge can be achieved
+by Atomic Layer Deposition (ALD) of aluminum oxide with a built-in
+negative charge. In Publication V, Cu-LID is detected in B-doped mc-Si
+wafers from the middle and the top of the ingot. After Al2 O3 deposition,
+no degradation is observed in either samples. Therefore, the Al2 O3 charge
+density of 7×1012 cm−2 prevents the formation of Cu-LID in mc-Si with
+an estimated copper concentration of 5×1012 cm−2 . In Publication III,
+the 8-ppm-contaminated low-resistivity B-doped Cz-Si sample degraded
+already during aluminum oxide deposition or the post-anneal. There-
+fore, further investigation is required to determine under which condi-
+tions Al2 O3 can be used to mitigate Cu-LID formation.
+
+4.6.3    Phosphorus diffusion gettering
+
+
+As phosphorus diffusion gettering (PDG) is an efﬁcient method to reduce
+copper contamination in silicon, a PDG step will probably affect Cu-LID
+in silicon-based devices. Therefore, PDG is performed on top and middle
+B-doped mc-Si sister samples with previously observed Cu-LID in Publi-
+cation V. First, a 1-μm thick gettering layer is formed with a phosphorus
+spin-on dopant during 60 min of P in-diffusion at 870°C in N2 atmosphere,
+followed by a 4°C/min ramp to the unloading temperature of 800°C. This
+gettering treatment is more efﬁcient compared to typical industrial P in-
+diffusions.202 Next, the PDG glass is etched in 20% HF, and the P-doped
+layer is removed in HF:HNO3 :CH3 COOH. After standard cleanings, the
+samples are ﬁnally passivated with a thermal oxide (16 nm).
+  Figure 4.9 shows the lifetime in gettered top and middle mc-Si wafers
+with positive and negative corona charge before and after bias laser il-
+lumination. PDG improves the initial lifetime before illumination in all
+samples, due to the segregation of dissolved transition metals to the P-
+doped layer. During illumination, no degradation is observed in the oxi-
+dized middle sample, and the top wafer only displays very slight degrada-
+tion. Therefore, the PDG treatment efﬁciently decreases the copper con-
+
+
+
+50
+                                                                  Results and Discussion
+
+
+                                 200
+                                                                Before
+                                              Middle   Top      After
+                                 150
+
+
+
+                 Lifetime (μs)
+                                 100
+
+                                 50
+
+                                  0
+                                       Pos.    Neg.    Pos.   Neg.
+Figure 4.9. Effective lifetime in phosphorous diffusion gettered low-resistivity middle
+            and top B-doped mc-Si samples passivated with positive and negative corona
+            charge deposited on thermal oxide measured with μ-PCD before and after 18
+            Wcm−2 bias laser illumination.
+
+
+centration to near the μ-PCD detection limit of Cu-LID in mc-Si. Since no
+degradation occurs after negative corona charging, copper is conﬁrmed to
+be the sole cause of LID in the mc-Si material in Publication V.
+
+
+
+4.7   Copper-related LID compared with boron-oxygen LID
+
+
+Although B-doped Cz-Si has been determined to be the most sensitive Si
+material to both Cu-LID and BO-LID,140 the two degradation effects have
+several distinguishing properties listed in Table 4.3. BO-LID is intensity
+independent,144 while the Cu-LID rate has been shown to increase with
+increasing intensity,9, 10 even though the Cu-LID intensity-dependence
+still needs to be conﬁrmed, as discussed in Sec. 4.4. BO-LID is known
+to fully recover at 200°C,15 while no lifetime improvement is observed in
+Cz-Si with copper concentrations of 1014 cm−3 in Sec. 4.5. Finally, a nega-
+tive surface charge is shown to prevent Cu-LID without affecting BO-LID
+in Sec. 4.6.1.
+  Although the above-mentioned properties help to distinguish between
+Cu-LID and BO-LID, they do not reveal the defect(s) formed during il-
+lumination. Negative surface charging may still leave a low copper con-
+centration in the bulk, which might form BO-LID-type degradation dur-
+ing illumination. Cu-LID might not be intensity-dependent, and lower
+concentrations of Cu-LID defect may recover at 200°C. However, the Cu-
+LID activation energy dependency on the doping concentration indicates
+that Cu-LID is more likely to be a separate degradation effect from boron-
+
+
+
+                                                                                    51
+Results and Discussion
+
+
+Table 4.3. Properties of boron-oxygen LID and copper-related LID.
+
+
+ Boron-oxygen LID                              Copper-related LID
+
+ Sensitive to B and O16                        Sensitive to B and O140
+ Fast and slow LID143–146                      Fast, slow, very slow LIDI, II, IV, V
+ Faster with increasing T 154                  Faster with increasing T IV
+
+ Requires both B and O16 (or Al/In18 )         Requires neither B nor O140
+ Faster with high [Bs ]/p0 160, 203            Slower with high [Bs ]/[Gas ]II, IV
+ Light-intensity independent144                Light-intensity dependent9, 10
+ Edef independent of [Bs ]154                  Edef dependent on [Bs ]IV,*
+ Recoverable at 200°C15                        Not recoverable at 200°CIV
+ Unaffected by negative charge                 Prevented by neg. chargeII, III, V
+      ∗E
+           def might reﬂect effective copper diffusivity instead of Cu-LID.
+
+
+
+oxygen LID.
+
+
+
+4.8    Nickel diffusivity compared with copper diffusivity
+
+
+In 1980, Bakhadyrkhanov et al.98 obtained the most frequently cited
+nickel diffusivity with the activation energy of 0.47 eV, presented as Eq.
+2.5 in Sec. 2.2.1. Since ﬁrst principles calculations predict a much lower
+activation energy of 0.21 eV,27, 105 an accumulation experiment was de-
+signed to measure the diffusivity of nickel in Publication VI. The diffusion
+experiment relies on steady-state nickel diffusion from an inﬁnite nickel
+silicide source through intrinsic silicon to an Al-Si gettering liquid. The
+nickel concentration in the Al-Si layer is determined as101
+                                                ΔCNi (T )
+               NNi (T ) = JNi (T )t = −DNi (T )           t=
+                                                   Δx
+                                                                               (4.3)
+                                       0 − SNi (T )      D (T )SNi (T )
+                        = −DNi (T )                   t = Ni            t,
+                                           dSi               dSi
+where JNi (T ) is the nickel ﬂux, t is the nickel collection time, DNi (T ) is the
+nickel diffusivity, CNi (T ) is the nickel concentration, SNi (T ) is the nickel
+solubility in Eq. 2.6, and dSi is the silicon thickness. In the experiment,
+the nickel diffusivity DNi (T ) of
+
+     DNi (T ) = (1.69 ± 0.74) × 10−4 exp(−0.15 ± 0.04 eV/kB T ) cm2 s−1 .       (4.4)
+
+is obtained in the temperature range of 665−885°C.
+  Figure 4.10 compares the new nickel diffusivity result in Eq. 4.4 with
+the literature98 nickel diffusivity in Eq. 2.5 and the copper diffusivity26 in
+
+
+52
+                                                                                    Results and Discussion
+
+
+                                                     Temperature (oC)
+                                           -4
+                                              1000 500                                 0
+                                      10
+                                                          Cui+, Eq. 2.1 (Ref. 26)
+                                                          Nii0, Eq. 4.4 (Publication VI)
+
+
+
+
+               Diffusivity (cm2s-1)
+                                                          Nii0, Eq. 2.5 (Ref. 98)
+                                      10-5
+
+
+                                      10-6
+
+
+                                      10-7
+                                         0.5 1.0 1.5 2.0 2.5 3.0 3.5
+                                                         1000/T
+Figure 4.10. Measured diffusivity (lines) of copper and nickel in intrinsic silicon plotted
+             (dashed lines) in the temperature range of 0−1300°C.26, 98
+
+
+intrinsic silicon in Eq. 2.1. At 900°C, the new result gives the nickel diffu-
+               +4.35
+                      
+sivity of 3.83−2.38     ×10−5 cm2 s−1 , and the literature diffusivity98 results
+in a similar value of 1.91×10−5 cm2 s−1 . However, the two nickel diffu-
+sivity values diverge quickly with decreasing temperature, resulting in a
+estimated difference of four orders of magnitude at RT.
+  Even though the new nickel diffusivity result clearly differs from the
+literature diffusivity, the new activation energy of 0.15±0.04 is closer to
+the calculated result of 0.21 eV.27, 105 The newly measured DNi (T ) is also
+similar to the diffusivity of copper26 over the whole temperature range of
+27−800°C. Therefore, Ni0i is determined to be as fast a diffuser as Cu+
+                                                                      i in
+intrinsic silicon.
+
+
+
+
+                                                                                                      53
+Results and Discussion
+
+
+
+
+54
+5. Conclusions
+
+
+
+
+This dissertation examined the behavior of copper and nickel impurities
+in crystalline silicon. The activation energy of interstitial nickel diffusiv-
+ity was measured as 0.15±0.04 eV, which corresponds to the ﬁrst principles
+calculations result of 0.21 eV, conﬁrming nickel to be as fast a diffuser as
+interstitial copper.
+ Interstitial copper has been observed to form recombination-active de-
+fects during illumination, known as copper-related light-induced degra-
+dation (Cu-LID). In order to identify the extent of Cu-LID in silicon ma-
+terials, the minority carrier lifetime was measured during illumination in
+intentionally copper-contaminated boron-doped Czochralski (Cz) silicon,
+gallium-doped Cz silicon, and boron-doped multicrystalline (mc) silicon.
+Cu-LID was determined to mainly cause bulk recombination, although
+some surface recombination increase was observed during halogen illu-
+mination. The small surface recombination increase may have been unre-
+lated to copper, as a similar increase was measured in the clean reference
+wafers.
+ The degradation rate of Cu-LID was shown to depend on the dopant ele-
+ment and the doping concentration in p-type Cz-Si. Cu-LID formation be-
+came slower with increasing doping concentration, which was presumed
+to be caused by a higher concentration of CuB or CuGa pairs, which slow
+down copper diffusion. Faster Cu-LID formation in B-doped compared to
+Ga-doped Cz-Si was explained by the lower CuB dissociation energy of
+0.61 eV26, 32 compared to CuGa with 0.71 eV.26, 32
+ The activation energy of Cu-LID was measured as 0.323±0.090 eV in low-
+resistivity B-Si and 0.146±0.025 eV in high-resistivity B-Si, which clearly
+differed from the BO-LID activation energy of 0.493±0.054 eV. As the Cu-
+LID experiments yielded low activation energies dependent on the boron
+concentration, questions were raised about the origin of the activation en-
+
+
+
+                                                                           55
+Conclusions
+
+
+ergy. The activation energy was proposed to reﬂect the effective copper
+diffusivity, making copper diffusion the limiting reaction in Cu-LID for-
+mation.
+  Cu-LID formation was decreased or prevented by two methods of bulk
+copper removal. After heavy phosphorus diffusion gettering, only slight
+Cu-LID was observed in the top of the B-doped mc-Si ingot with an esti-
+mated initial copper concentration of 5×1012 cm−3 . After negative sur-
+face charging and illumination, Cu-LID was completely removed from
+contaminated B-doped Cz-Si. The negative surface charge was achieved
+through either aluminum oxide deposition or negative corona charging.
+TXRF analysis showed an increased accumulation of copper near the oxi-
+dized wafer surface as a function of an increasing negative surface charge
+density. The negative charge density required for full copper removal de-
+pended on the initial bulk copper concentration. After negative charging
+and illumination, copper remained recombination-inactive near the sam-
+ple surface, preventing Cu-LID formation in the bulk.
+  Although illumination with a negative surface charge prevented Cu-
+LID, the method was shown not to affect BO-LID. Even though BO-LID
+is known to fully recover at 200°C,15 no Cu-LID recovery was observed at
+estimated copper concentrations of 1014 cm−3 . Unlike BO-LID, the acti-
+vation energy of Cu-LID was shown to increase with increasing doping
+concentration. Hence, BO-LID and Cu-LID were proposed as two differ-
+ent degradation reactions, forming separate recombination-active defects.
+  Even if Cu-LID and BO-LID were two different effects, they might still
+occur simultaneously in contamination-heavy silicon materials such as
+UMG-Si. Cu-LID might also appear together with BO-LID in better qual-
+ity silicon through unintentional copper contamination during device pro-
+cessing. In order to better distinguish between Cu-LID and BO-LID, the
+Cu-LID defect energy level needs to be determined and the intensity de-
+pendency conﬁrmed. To further understand the formation of Cu-LID,
+the degradation rate and defect density should be examined more widely
+as function of [O], [B], and p0 . To efﬁciently prevent Cu-LID formation,
+copper gettering by PDG should be optimized and further investigations
+should be performed on the application of negative surface charging in in-
+dustrial silicon-based devices. Finally, regeneration of BO-LID should be
+optimized together with Cu-LID removal in order to fully prevent light-
+induced degradation in crystalline silicon.
+
+
+
+
+56
+References
+
+
+
+
+1
+     K. Graff, Metal impurities in silicon-device fabrication, (Springer, 2000), 2nd
+     ed.
+2
+     A. A. Istratov, T. Buonassisi, R. J. McDonald, A. R. Smith, R. Schindler, J. A.
+     Rand, J. P. Kalejs, and E. R. Weber, Metal content of multicrystalline silicon
+     for solar cells and its impact on minority carrier diffusion length, Journal of
+     Applied Physics 94, 6552 (2003).
+3
+     D. Macdonald, A. Cuevas, A. Kinomura, Y. Nakano, and L. J. Geerligs,
+     Transition-metal proﬁles in a multicrystalline silicon ingot, Journal of Ap-
+     plied Physics 97, 033523 (2005).
+4
+     M. B. Shabani, T. Yamashita, and E. Morita, Metallic impurities in mono
+     and multi-crystalline silicon and their gettering by phosphorus diffusion, ECS
+     Transactions 16, 179–193 (2008).
+5
+     M. Dhamrin, T. Saitoh, K. Kamisako, T. Mori, and N. Iwamoto, Recycling of
+     silicon powder retrieved from diamond wire slicing kerf, in Proceedings of the
+     25th European Photovoltaic Solar Energy Conference and Exhibition, (Valen-
+     cia, Spain, 2010), pp. 1600–1603.
+6
+     T. Hosoya, Y. Ozaki, and K. Hirata, Effects of wet cleaning on Si contaminated
+     with heavy metals during Reactive Ion Etching, Journal of the Electrochemi-
+     cal Society 132, 2436–2439 (1985).
+7
+     E. R. Weber, Transition metals in silicon, Applied Physics A 30, 1–22 (1983).
+8
+     W. B. Henley, D. A. Ramappa, and L. Jastrezbski, Detection of copper con-
+     tamination in silicon by surface photovoltage diffusion length measurements,
+     Applied Physics Letters 74, 278–280 (1999).
+9
+     D. A. Ramappa, Surface photovoltage analysis of phase transformation of cop-
+     per in p-type silicon, Applied Physics Letters 76, 3756–3758 (2000).
+10
+     H. Väinölä, M. Yli-Koski, A. Haarahiltunen, and J. Sinkkonen, Sensitive cop-
+     per detection in p-type Cz silicon using μ-PCD, Journal of the Electrochemical
+     Society 150, G790–G794 (2003).
+11
+     A. Belayachi, T. Heiser, J. P. Schunck, and A. Kempf, Inﬂuence of light on
+     interstitial copper in p-type silicon, Applied Physics A 80, 201–204 (2005).
+12
+     M. Boehringer, J. Hauber, S. Passefort, and K. Eason, In-line copper contam-
+     ination monitoring using noncontact Q-SPV techniques, Journal of the Elec-
+     trochemical Society 152, G1–G6 (2005).
+
+
+                                                                                 57
+References
+
+
+13
+     J. Schmidt, K. Bothe, and R. Hezel, Formation and annihilation of the
+     metastable defect in boron-doped Czochralski silicon, in Proceedings of the
+     29th IEEE Photovoltaic Specialists Conference, (Anchorage, AK, USA, 2002),
+     pp. 178–181.
+14
+     K. Ramspeck, S. Zimmermann, H. Nagel, A. Metz, Y. Gassenbauer, B. Birk-
+     mann, and A. Seidl, Light induced degradation of rear passivated mc-Si solar
+     cells, in Proceedings of 27th European Photovoltaic Solar Energy Conference
+     and Exhibition, (Frankfurt, Germany, 2012), pp. 861–865.
+15
+     H. Fischer and W. Pschunder, Investigation of photon and thermal induced
+     changes in silicon solar cells, in Proceedings of 10th IEEE Photovoltaic Spe-
+     cialst Conference, (Palo Alto, CA, USA, 1973), pp. 404–411.
+16
+     S. W. Glunz, S. Rein, W. Warta, J. Knobloch, and W. Wettling, Degradation of
+     carrier lifetime in Cz silicon solar cells, Solar Energy Materials & Solar Cells
+     65, 219–229 (2001).
+17
+     C. Möller and K. Lauer, Light-induced degradation in indium-doped silicon,
+     Physica Status Solidi RRL 7, 461–464 (2013).
+18
+     C. Möller and K. Lauer, ASi-Sii-defect model of light-induced degradation in
+     silicon, Energy Procedia 55, 559–563 (2014).
+19
+     S. Pingel, D. Koshnicharov, O. Frank, T. Geipel, Y. Zemen, B. Striner, and
+     J. Berghold, Initial degradation of industrial silicon solar cells in solar panels,
+     in Proceedings of the 25th European Photovoltaic Solar Energy Conference and
+     Exhibition, (Valencia, Spain, 2010), pp. 4027–4032.
+20
+     V. Parra, T. Carballo, D. Cancillo, B. Moralejo, O. Martinez, J. Jimenez, J. Bul-
+     lon, J. M. Miguez, and R. Ordas, Trends in crystalline silicon growth for low
+     cost and efﬁcient photovoltaic cells, in Proceedings of the 2013 Spanish Con-
+     ference on Electron Devices (CDE), (Valladolid, Spain, 2013), pp. 305–308.
+21
+     F. Fertig, K. Krauß, I. Geisemeyer, J. Broisch, H. Höfﬂer, J. O. Odden, A.-
+     K. Soiland, and S. Rein, Fully solderable large-area screen-printed Al-BSF
+     p-type mc-Si solar cells from 100 % solar grade feedstock yielding h > 17 %:
+     Challenges and potential on cell and module level, in Proceedings of the 27th
+     European Photovoltaic Solar Energy Conference and Exhibition, (Frankfurt,
+     Germany, 2012), pp. 1031–1038.
+22
+     W. Shockley and W. T. Read, Statistics of the recombinations of holes and
+     electrons, Physical Review 87, 835–842 (1952).
+23
+     R. N. Hall, Electron-hole recombination in germanium, Physical Review 87,
+     387 (1952).
+24
+     D. K. Schroder, Carrier lifetimes in silicon, IEEE Transactions on Electron 44,
+     160–170 (1997).
+25
+     S. K. Estreicher, Rich chemistry of copper in crystalline silicon, Physical Re-
+     view B 60, 5375–5382 (1999).
+26
+     A. A. Istratov, C. Flink, H. Heislmair, E. R. Weber, and T. Heiser, Intrinsic
+     diffusion coefﬁcient of interstitial copper in silicon, Physical Review Letters
+     81, 1243–1246 (1998).
+
+
+
+58
+                                                                           References
+
+
+27
+     S. K. Estreicher, D. J. Backlund, C. Carbogno, and M. Schefﬂer, Activa-
+     tion energies for diffusion of defects in silicon: The role of the exchange-
+     correlation functional, Angewandte Chemie, International Edition 50, 10221–
+     10225 (2011).
+28
+     G. Mills and H. Jonsson, Quantum and thermal effects in H2 dissociative
+     adsorption: Evaluation of free energy barriers in multidimensional quantum
+     systems, Physical Review Letters 72, 1124–1128 (1994).
+29
+     H. Jonsson, G. Mills, and K. W. Jacobsen, Nudged elastic band method for
+     ﬁnding minimum energy paths of transitions, in Classical and Quantum Dy-
+     namics in Condensed Phase Simulations, edited by B. J. Berne, G. Ciccotti,
+     and D. F. Coker, (World Scientiﬁc, Singapore, 1998), pp. 385–404.
+30
+     G. Henkelman, B. P. Uberuaga, and H. Jonsson, A climbing image nudged
+     elastic band method for ﬁnding saddle points and minimum energy paths,
+     Journal of Chemical Physics 113, 9901–9904 (2000).
+31
+     G. Henkelman and H. Jonsson, Improved tangent estimate in the nudged elas-
+     tic band method for ﬁnding minimum energy paths and saddle points, Journal
+     of Chemical Physics 113, 9978–9985 (2000).
+32
+     P. Wagner, H. Hage, H. Prigge, T. Prescha, and J. Weber, Properties of copper-
+     induced complexes in silicon, in Semiconductor Silicon-1990, edited by H. R.
+     Huff, K. G. Barraclough, and J.-I. Chikawa, (The Electrochemical Society, Pen-
+     nington, NJ, 1990), pp. 675–686.
+33
+     H. Prigge, P. Gerlach, P. O. Hahn, A. Schnegg, and H. Jacob, Acceptor com-
+     pensation in silicon induced by chemomechanical polishing, Journal of the
+     Electrochemical Society 138, 1385–1389 (1991).
+34
+     M. Miyazaki, Recombination Lifetime Measurements in Silicon, (ASTM, West
+     Conshohockens, PA, 1998), pp. 294-304.
+35
+     J.-G. Lee and S. R. Morrison, Copper passivation of dislocations in silicon,
+     Journal of Applied Physics 64, 6679–6683 (1988).
+36
+     S. Naito and T. Nakashizu, Electric degradation and defect formation of silicon
+     due to Cu, Fe, and Ni contamination, in Defect Engineering in Semiconduc-
+     tor Growth, Processing and Device Technology, (Materials Research Society,
+     1992), vol. 262, pp. 641–652.
+37
+     R. Sachdeva, A. A. Istratov, and E. R. Weber, Recombination activity of copper
+     in silicon, Applied Physics Letters 79, 2937–2939 (2001).
+38
+     A. A. Istratov, H. Heislmair, C. Flink, T. Heiser, and E. R. Weber, Interstitial
+     copper-related center in n-type silicon, Applied Physics Letters 71, 2349–2351
+     (1997).
+39
+     T. Heiser, A. Belayachi, and J. P. Schunck, Copper behavior in bulk silicon and
+     associated characterization techniques, Journal of the Electrochemical Society
+     150, G831–G837 (2003).
+40
+     C. Flink, H. Feick, S. A. McHugo, W. Seifert, H. Hieslmair, T. Heiser, A. A.
+     Istratov, and E. R. Weber, Out-diffusion and precipitation of copper in silicon:
+     An electrostatic model, Physical Review Letters 85, 4900–4903 (2000).
+
+
+
+                                                                                  59
+References
+
+
+41
+     M. B. Shabani, S. Okuuchi, and Y. Shimanuki, Kinetics of low-temperature
+     out-diffusion of copper from silicon wafers, in Analytical and Diagnostic
+     Techniques for Semiconductor Materials, Devices, and Processes, edited by
+     B. O. Kolbesen, C. Claeys, P. Stallhofer, F. Tardif, J. Benton, T. Shaffner,
+     D. Schroder, S. Kishino, and P. Rai-Choudhury, (The Electrochemical Society,
+     Pennington, NJ, 1999), vol. 99-16, pp. 510–525.
+42
+     M. B. Shabani, T. Yoshimi, and H. Abe, Low-temperature out-diffusion of Cu
+     from silicon wafers, Journal of the Electrochemical Society 143, 2025–2029
+     (1996).
+43
+     S. K. Estreicher, D. West, and P. Ordejon, Copper-defect and copper-impurity
+     interactions in silicon, Solid State Phenomena 82-84, 341–347 (2002).
+44
+     D. West and S. K. Estreicher, Copper interactions with H, O, and the self-
+     interstitial in silicon, Physical Review B 68, 035210 (2003).
+45
+     V. P. Markevich, A. R. Peaker, I. F. Medvedeva, V. E. Gusakov, L. I. Murin, and
+     B. G. Svensson, Radiation-induced defect reactions in Cz-Si crystals contami-
+     nated with Cu, Solid State Phenomena 131-133, 363–368 (2007).
+46
+     H. Lemke, Properties of copper donor levels in silicon, Physica Status Solidi
+     A 1, 283–286 (1970).
+47
+     M. M. Akhmedova, L. S. Berman, L. S. Kostina, and A. A. Lebedev, Investiga-
+     tion of parameters of copper levels in silicon by capacitance methods, Soviet
+     Physics Semiconductors USSR 10, 1400–1401 (1976).
+48
+     L. C. Kimerling, J. L. Benton, and J. J. Rubin, Transition metal impurities
+     in silicon, in Defects and radiation effects in semiconductors 1980, edited by
+     R. Hasiguti, (Institute of Physics, 1981), vol. 59 of Inst. Phys. Conf. Ser., pp.
+     217–222.
+49
+     S. J. Pearton and A. J. Tavendale, Electrical properties of deep copper- and
+     nickel-related centers in silicon, Journal of Applied Physics 54, 1375–1379
+     (1983).
+50
+     H. Lemke, Defect reactions in Cu-doped silicon-crystals, Physica Status Solidi
+     A 95, 665–677 (1986).
+51
+     S. D. Brotherton, J. R. Ayres, A. Gill, H. W. Van Kesteren, and F. J. A. M.
+     Greidanus, Deep levels of copper in silicon, Journal of Applied Physics 62,
+     1826–1832 (1987).
+52
+     A. Mesli and T. Heiser, Defect reactions in copper-diffused and quenched p-
+     type silicon, Physical Review B 45, 11632–11641 (1992).
+53
+     H. Lemke, Substitutional transition metal defects in silicon grown-in by the
+     ﬂoat zone technique, in Defects in Semiconductors, edited by M. Suezawa
+     and H. Katayama-Yoshida, (Materials Science Forum, 1995), vol. 196-201, pp.
+     683–688.
+54
+     M. Saritas and A. R. Peaker, Deep states associated with oxidation-induced
+     stacking-faults in RTA p-type silicon before and after copper diffusion, Solid-
+     State Electronics 38, 1025–1034 (1995).
+
+
+
+
+60
+                                                                            References
+
+
+55
+     K.-M. Chen and G.-G. Qin, Cu-related deep levels in Si and the interaction
+     between Cu and irradiation defects, in Defects in Semiconductors, edited by
+     H. von Bardeleben, (Materials Science Forum, 1986), vol. 10-12, pp. 1093–
+     1098.
+56
+     A. A. Istratov and E. R. Weber, Electrical properties and recombination ac-
+     tivity of copper, nickel and cobalt in silicon, Applied Physics A 66, 123–136
+     (1998).
+57
+     M. Nakamura, S. Murakami, N. J. Kawa, S. Saito, K. Matsukawa, and
+     H. Arie, Compositional transformation between Cu centers by annealing in
+     Cu-diffused silicon crystals studied with deep-level transient spectroscopy
+     and photoluminescence, Japanese Journal of Applied Physics 48, 082302
+     (2009).
+58
+     A. A. Istratov, H. Hedemann, M. Seibt, O. F. Vyvenko, W. Schröter, T. Heiser,
+     C. Flink, H. Hieslmair, and E. R. Weber, Electrical and recombination prop-
+     erties of copper-silicide precipitates in silicon, Journal of the Electrochemical
+     Society 145, 3889–3898 (1998).
+59
+     W. Schröter, V. Kveder, M. Seibt, H. Ewe, H. Hedemann, F. Riedel, and A. Sat-
+     tler, Atomic structure and electronic states of nickel and copper silicides in
+     silicon, Materials Science & Engineering B 72, 80–86 (2000).
+60
+     D. Macdonald, A. Cuevas, S. Rein, P. Lichtner, and S. W. Glunz, Temperature-
+     and injection-dependent lifetime spectroscopy of copper-related defects in sil-
+     icon, in Proceedings of the 3rd World Conference on Photovoltaic Energy Con-
+     version, (Osaka, Japan, 2003), pp. 87–90.
+61
+     S. Knack, J. Weber, H. Lemke, and H. Riemann, Copper-hydrogen complexes
+     in silicon, Physical Review B 65, 165203 (2002).
+62
+     J. Weber, L. Schefﬂer, V. Kolkovski, and N. Yarykin, New results on the elec-
+     trical activity of 3d-transition metal impurities in silicon, Solid State Phenom-
+     ena 205-206, 245–254 (2014).
+63
+     A. Mesli, T. Heiser, and E. Mulheim, Copper diffusivity in silicon: A re-
+     examination, Materials Science & Engineering B 25, 141–146 (1994).
+64
+     J. Weber, H. Bauch, and R. Sauer, Optical properties of copper in silicon: Ex-
+     citons bound to isoelectronic copper pairs, Physical Review B 25, 7688–7699
+     (1982).
+65
+     P. N. Hai, T. Gregorkiewicz, C. A. J. Ammerlaan, and D. T. Don, Copper-related
+     defects in silicon: Electron-paramagnetic-resonance identiﬁcation, Physical
+     Review B 56, 4620–4625 (1997).
+66
+     M. L. W. Thewalt, M. Steger, A. Yang, N. Stavrias, M. Cardona, H. Riemann,
+     N. V. Abrosimov, M. F. Churbanov, A. V. Gusev, A. D. Bulanov, I. D. Kovalev,
+     A. K. Kaliteevskii, O. N. Godisov, P. Becker, H.-J. Pohl, J. W. Ager, and E. E.
+     Haller, Can highly enriched 28Si reveal new things about old defects?, Physica
+     B 401, 587–592 (2007).
+67
+     M. Steger, A. Yang, N. Stavrias, M. L. W. Thewalt, H. Riemann, N. V. Abrosi-
+     mov, M. F. Churbanov, A. V. Gusev, A. D. Bulanov, I. D. Kovalev, A. K. Kali-
+     teevskii, O. N. Godisov, P. Becker, and H.-J. Pohl, Reduction of the linewidths
+
+
+                                                                                   61
+References
+
+
+     of deep luminescence centers in 28Si reveals ﬁngerprints of the isotope con-
+     stituents, Physical Review Letters 100, 177402 (2008).
+68
+     K. Shirai, H. Yamaguchi, A. Yanase, and H. Katayama-Yoshida, A new struc-
+     ture of Cu complex in Si and its photoluminescence, Journal of Physics: Con-
+     densed Matter 21, 06429 (2009).
+69
+     S. K. Estreicher and A. Carvalho, The CuPL defect and the Cus1Cui3 complex,
+     Physica B 407, 2967–2969 (2012).
+70
+     J. Weber, H. Bauch, and R. Sauer, Optical properties of copper in silicon: Ex-
+     citons bound to isoelectronic copper pairs, Physical Review B 25, 7688 (1982).
+71
+     M. Nakamura, Long-time stability of high-concentration copper complexes in
+     silicon crystals, Applied Physics Letters 79, 2904–2906 (2001).
+72
+     M. Nakamura and H. Iwasaki, Copper complexes in silicon, Journal of Ap-
+     plied Physics 86, 5372–5375 (1999).
+73
+     S. Koveshnikov, Y. Pan, and H. C. Mollenkopf, Investigation of electronic
+     states in copper doped p-type silicon, in Proceedings of the Fourth Interna-
+     tional Symposium on High Purity Silicon, edited by C. L. Claeys, P. Rai-
+     Choudhury, P. Stallhofer, and J. E. Maurits, (The Electrochemical Society,
+     Pennington, NJ, 1996), pp. 473–480.
+74
+     J. K. Solberg, Crystal-structure of h-Cu3Si precipitates in silicon, Acta Crys-
+     tallographica, Section A 34, 684–698 (1978).
+75
+     H. Gottschalk, Precipitation of copper silicide on glide dislocations in silicon
+     at low-temperature, Physica Status Solidi A 137, 447–461 (1993).
+76
+     M. Seibt and W. Schröter, Formation and properties of metastable silicide pre-
+     cipitates in silicon, Solid State Phenomena 19, 283–294 (1991).
+77
+     M. Seibt and K. Graff, Characterization of haze-forming precipitates in sili-
+     con, Journal of Applied Physics 63, 4444–4450 (1988).
+78
+     M. Seibt, R. Khalil, V. Kveder, and W. Schröter, Electronic states at dislo-
+     cations and metal silicide precipitates in crystalline silicon and their role in
+     solar cell materials, Applied Physics A 96, 235–253 (2009).
+79
+     W. Schröter, M. Seibt, and D. Gilles, Materials Science and Technology: A
+     Comprehensive Teatment, (VCH, New York, 1991).
+80
+     A. A. Istratov and E. R. Weber, Physics of copper in silicon, Journal of the
+     Electrochemical Society 149, G21–G30 (2002).
+81
+     M. Seibt, M. Greiss, A. A. Istratov, H. Hedemann, A. Sattler, and W. Schröter,
+     Formation and properties of copper silicide precipitates in silicon, Physica
+     Status Solidi A 166, 171–182 (1998).
+82
+     M. Seibt, H. Hedemann, A. A. Istratov, F. Riedel, A. Sattler, and W. Schröter,
+     Structural and electrical properties of metal silicide precipitates in silicon,
+     Physica Status Solidi A 171, 301–310 (1999).
+83
+     M. Seibt, Homogeneous and heterogeneous precipitation of copper in silicon,
+     in Semiconductor Silicon-1990, edited by H. R. Huff, K. G. Barraclough, and
+     J.-I. Chikawa, (The Electrochemical Society, Pennington, NJ, 1990), pp. 663–
+     674.
+
+
+62
+                                                                            References
+
+
+84
+     T. Buonassisi, M. D. Pickett, A. A. Istratov, E. Sauar, T. C. Lommasson, E. S.
+     Marstein, T. Pernau, R. F. Clark, S. Narayanan, S. M. Heald, and E. R. Weber,
+     Interactions between metals and different grain boundary types and their
+     impact on multicrystalline silicon device performance, in Proceedings of the
+     4th World Conference on Photovoltaic Energy Conversion, (IEEE, Waikoloa,
+     HI, USA, 2006), pp. 944–947.
+85
+     S. A. McHugo, A. Mohammed, A. C. Thompson, B. Lai, and Z. Cai, Copper
+     precipitates in silicon: Precipitation, dissolution, and chemical state, Journal
+     of Applied Physics 91, 6396–6405 (2002).
+86
+     S. A. McHugo, Release of metal impurities from structural defects in polycrys-
+     talline silicon, Applied Physics Letters 71, 1984–1986 (1997).
+87
+     S. A. McHugo and C. Flink, Thermal stability of copper precipitates in silicon,
+     Applied Physics Letters 77, 3598–3600 (2000).
+88
+     E. R. Weber, Impurity precipitation, dissolution, gettering, and passivation
+     in PV silicon, Tech. Rep. NREL/SR-520-31528, National Renewable Energy
+     Laboratory (2002).
+89
+     T. Heiser, S. McHugo, H. Hieslmair, and E. R. Weber, Transient ion drift de-
+     tection of low level copper contamination in silicon, Applied Physics Letters
+     70, 3576–3578 (1997).
+90
+     T. Heiser and A. Mesli, Determination of the copper diffusion coefﬁcient in
+     silicon from transient ion drift, Applied Physics A 57, 325–328 (1993).
+91
+     D. A. Ramappa and W. B. Henley, Surface photovoltage analysis of copper in
+     p-type silicon, Applied Physics Letters 72, 2298–2300 (1998).
+92
+     A. A. Istratov, C. Flink, H. Heislmair, T. Heiser, and E. R. Weber, Inﬂuence
+     of interstitial copper on diffusion length and lifetime of minority carriers in
+     p-type silicon, Applied Physics Letters 71, 2121–2123 (1997).
+93
+     R. R. Chromik, W. K. Neils, and E. J. Cotts, Thermodynamic and kinetic study
+     of solid state reactions in the Cu-Si system, Journal of Applied Physics 86,
+     4273–4281 (1999).
+94
+     A. Savchenkov, P. Shukrinov, P. Mutombo, J. Slezak, and V. Chab, Initial
+     stages of Cu/Si interface formation, Surface Science 507-510, 889–894 (2002).
+95
+     A. Cros, M. O. Aboelfotoh, and K. N. Tu, Formation, oxidation, electronic, and
+     electrical properties of copper silicides, Journal of Applied Physics 67, 3328
+     (1990).
+96
+     A. Sattler, H. Hedemann, A. A. Istratov, M. Seibt, and W. Schröter, The nature
+     of the electronic states of Cu3Si-precipitates in silicon, Solid State Phenomena
+     63-4, 369–374 (1998).
+97
+     M. Yoshida and K. Furusho, Behaviour of nickel as an impurity in silicon,
+     Japanese Journal of Applied Physics 3, 521–529 (1964).
+98
+     M. K. Bakhadyrkhanov, S. Zainabidinov, and A. Khamidov, Some characteris-
+     tics of diffusion and electrotransport of nickel in silicon, Soviet Physics Semi-
+     conductors USSR 14, 243 (1980).
+
+
+
+                                                                                   63
+References
+
+
+ 99
+      F. H. M. Spit, D. Gupta, and K. N. Tu, Diffusivity and solubility of Ni (63Ni)
+      in monocrystalline Si, Physical Review B 39, 1255–1260 (1989).
+100
+      V. A. Uskov, A. B. Fedotov, A. I. Rodionov, and N. S. Dumarevskaya, Interdif-
+      fusion and phase formation in the nickel silicon system, Inorganic Materials
+      20, 7 (1984).
+101
+      R. D. Thompson, D. Gupta, and K. N. Tu, Low-temperature diffusion and solu-
+      bility of Ni in P-doped Czochralski-grown Si, Physical Review B 33, 2636–2641
+      (1985).
+102
+      J. W. T. Ridgway and D. Haneman, Diffusion of iron and nickel to silicon sur-
+      faces, Physica Status Solidi 38, K31–K33 (1970).
+103
+      K. H. Yoon and L. L. Levenson, Diffusion kinetics of nickel in single-crystal
+      silicon determined by in-depth Auger-electron spectroscopy, Journal of Elec-
+      tronic Materials 4, 1249 (1975).
+104
+      G. L. P. Berning, K. H. Yoon, G. Lewis, S. Sinharoy, and L. L. Levenson, The
+      observation of pseudodiffusion of nickel in single-crystal silicon by in-depth
+      Auger electron spectroscopy, Thin Solid Films 45, 141–145 (1977).
+105
+      D. J. Backlund and S. K. Estreicher, Ti, Fe, and Ni in Si and their interactions
+      with the vacancy and the A center: A theoretical study, Physical Review B 81,
+      235213 (2010).
+106
+      A. A. Istratov, P. Zhang, R. J. McDonald, A. R. Smith, M. Seacrist, J. Moreland,
+      J. Shen, R. Wahlich, and E. R. Weber, Nickel solubility in intrinsic and doped
+      silicon, Journal of Applied Physics 97, 023505 (2005).
+107
+      H. Kitagawa, S. Tanaka, H. Nakashima, and M. Yoshida, Electrical properties
+      of nickel in silicon, Journal of Electronic Materials 20, 441–447 (1991).
+108
+      H. Lemke, Doping properties of nickel in silicium, Physica Status Solidi A 99,
+      205–213 (1987).
+109
+      H. Kitagawa and H. Nakashima, Nickel-related deep levels in silicon studied
+      by combined Hall-effect and DLTS measurement, Physica Status Solidi A 99,
+      K49–K52 (1987).
+110
+      H. Kitagawa and H. Nakashima, Nickel-related donor level in silicon, Physica
+      Status Solidi A 102, K23–K27 (1987).
+111
+      H. Kitagawa and S. Tanaka, Electrically active nickel in silicon studied by
+      DLTS in several kinds of silicon diodes, Physica Status Solidi A 120, K67–
+      K70 (1990).
+112
+      S. K. Ghandi and F. L. Thiel, The properties of nickel in silicon, in Proceedings
+      of the IEEE, (IEEE, 1969), vol. 57.
+113
+      G. P. Chiavarotti, M. Conti, and A. Messin, Characterisation of properties of
+      nickel in silicon using thermally stimulated capacitance method, Solid-State
+      Electronics 20, 907–909 (1977).
+114
+      K. Graff and H. Pieper, Behaviour of transition and noble metals in silicon
+      crystals, in Semiconductor Silicon 1981, (The Electrochemical Society, Min-
+      neapolis, MN, USA, 1981), vol. 81-5, pp. 331–343.
+
+
+64
+                                                                            References
+
+
+115
+      M. Shiraishi, J.-U. Sachse, H. Lemke, and J. Weber, DLTS analysis of nickel-
+      hydrogen complex defects in silicon, Materials Science & Engineering B 58,
+      130–133 (1999).
+116
+      A. Tavendale and S. J. Pearton, Deep level, quenched-in defects in silicon
+      doped with gold, silver, iron, copper or nickel, Journal of Physics C 16, 1665–
+      1673 (1983).
+117
+      J. Bartos and L. Tesar, Some electrical and optical-properties of nickel-related
+      deep levels in silicon, Physica Status Solidi A 122, 607–616 (1990).
+118
+      S. A. Azimov, N. A. Sultanov, L. Islamov, and R. N. Nagmatov, Infrared
+      quenching of the photoconductivity of nickel-doped silicon, Soviet Physics
+      Semiconductors USSR 7, 1227–1228 (1974).
+119
+      H. Indusekhar and V. Kumar, Electrical properties of nickel-related deep lev-
+      els in silicon, Journal of Applied Physics 61, 1449–1455 (1987).
+120
+      P. Kaminski, R. Kozlowski, and A. Misiuk, Electrically active defects in Ni-
+      contaminated Cz-Si with oxygen precipitates, in Proceedings of SPIE - The
+      International Society for Optical Engineering, edited by B. W. Licznerski and
+      A. Dziedzic, (Bellingham, WA, USA, 1996), vol. 2780, pp. 137–140.
+121
+      H. Kitagawa and H. Nakashima, Amphoteric property of electrically active
+      nickel in silicon, Japanese Journal of Applied Physics 28, 305–310 (1989).
+122
+      M. Gong and Z. P. You, The deep levels in nickel-doped silicon, Physica Status
+      Solidi A 111, K49–K52 (1989).
+123
+      M. Jaraiz, S. Duenas, J. Vicente, L. Bailon, and J. Barbolla, Electron thermal
+      emission rates of nickel centers in silicon, Solid-State Electronics 29, 883–884
+      (1986).
+124
+      W. B. Chua and K. Rose, Electrical properties of high-resistivity nickel-doped
+      silicon, Journal of Applied Physics 41, 2644–2647 (1970).
+125
+      S. Tanaka and H. Kitagawa, Distribution of electrically active nickel atoms
+      in silicon crystals measured by means of deep level transient spectroscopy,
+      Physica B 401-402, 115–118 (2007).
+126
+      D. J. Backlund and S. K. Estreicher, Structural, electrical, and vibrational
+      properties of Ti-H and Ni-H complexes in Si, Physical Review B 82, 155208
+      (2010).
+127
+      T. Buonassisi, A. A. Istratov, M. D. Pickett, M. A. Marcus, G. Hahn, S. Riepe,
+      J. Isenberg, W. Warta, G. Willeke, T. F. Ciszek, and E. R. Weber, Quantify-
+      ing the effect of metal-rich precipitates on minority carrier diffusion length
+      in multicrystalline silicon using synchrotron-based spectrally resolved X-ray
+      beam-induced current, Applied Physics Letters 87, 044101 (2005).
+128
+      M. Seibt and W. Schröter, Precipitation behavior of nickel in silicon, Philo-
+      sophical Magazine A 59, 337–352 (1989).
+129
+      C. Picker and P. S. Dobson, Precipitation of nickel in silicon, Crystal Lattice
+      Defects 2, 219–222 (1972).
+
+
+
+
+                                                                                   65
+References
+
+
+130
+      S. Sadamitsu, M. Sano, M. Hourai, S. Sumita, N. Fujino, and T. Shiraiwa,
+      TEM observation of defects induced by Ni contamination on a Si(100) surface,
+      Japanese Journal of App 28, L333–L336 (1989).
+131
+      D. Walz, J. P. Joly, R. Falster, and G. Kamarinos, Characterization of nickel
+      contamination in Float Zone and Czochralsky silicon wafers by using elec-
+      trolytic metal tracer or microwave photoconductivity decay measurement,
+      Japanese Journal of Applied Physics 34, 4091–4095 (1995).
+132
+      M. B. Shabani, A quantitative method of metal impurities depth proﬁling for
+      gettering evaluation in silicon wafers, Solid State Phenomena 57-58, 81–90
+      (1997).
+133
+      Z. Xi, D. Yang, J. Chen, D. Que, and H. J. Moeller, Nickel precipitation in
+      large-diameter Czochralski silicon, Physica B 344, 407–412 (2004).
+134
+      H. Savin, M. Yli-Koski, A. Haarahiltunen, H. Talvitie, and J. Sinkkonen, De-
+      tection of nickel in silicon by recombination lifetime measurements, Solid
+      State Phenomena 131-133, 183–188 (2007).
+135
+      M. C. Schubert, H. Habenicht, and W. Warta, Imaging of metastable defects
+      in silicon, IEEE Journal of Photovoltaics 1, 168–173 (2011).
+136
+      J. Junge, A. Herguth, G. Hahn, D. Kreßner-Kiel, and R. Zierer, Investigation
+      of degradation in solar cells from different mc-Si materials, Energy Procedia
+      8, 52–57 (2011).
+137
+      V. V. Voronkov and R. Falster, Light-induced boron-oxygen recombination cen-
+      ters in silicon: Understanding their formation and elimination, Solid State
+      Phenomena 205-206, 3–14 (2014).
+138
+      J. Schmidt, A. A. Aberle, and R. Hezel, Investigation of carrier lifetime insta-
+      bilities in Cz-grown silicon, in Proceedings of 26th IEEE Photovoltaic Special-
+      ist Conference, (Anaheim, CA, USA, 1997), pp. 13–18.
+139
+      V. V. Voronkov and R. Falster, Latent complexes of interstitial boron and oxy-
+      gen dimers as a reason for degradation of silicon-based solar cells, Journal of
+      Applied Physics 107, 053509 (2010).
+140
+      H. Savin, M. Yli-Koski, and A. Haarahiltunen, Role of copper in light induced
+      minority-carrier lifetime degradation of silicon, Applied Physics Letters 95,
+      152111 (2009).
+141
+      G. Dingemans, P. Engelhart, R. Seguin, F. Einsele, B. Hoex, M. C. M. van den
+      Sanden, and W. M. M. Kessels, Stability of Al2O3 and Al2O3/a-SiNx:H stacks
+      for surface passivation of crystalline silicon, Journal of Applied Physics 106,
+      114907 (2009).
+142
+      B. Liao, R. Stangl, T. Mueller, F. Lin, C. S. Bhatia, and B. Hoex, The effect
+      of light soaking on crystalline silicon surface passivation by atomic layer de-
+      posited Al2O3, Journal of Applied Physics 113, 024509 (2013).
+143
+      K. Bothe, J. Schmidt, and R. Hezel, Comprehensive analysis of the impact
+      of boron and oxygen on the metastable defect in Cz silicon, in Proceedings of
+      the 3rd World Conference on Photovoltaic Energy Conversion, (Osaka, Japan,
+      2003), pp. 1077–1080.
+
+
+
+66
+                                                                            References
+
+
+144
+      J. Schmidt, K. Bothe, and R. Hezel, Structure and transformation of the
+      metastable centre in Cz-silicon solar cells, in Proceedings of the 3rd World
+      Conference on Photovoltaic Energy Conversion, (Osaka, Japan, 2003), pp.
+      2887–2892.
+145
+      H. Hashigami, M. Dhamrin, and T. Saitoh, Fast initial light-induced degrada-
+      tion of Czochralski silicon solar cells, in Proceedings of the 3rd World Confer-
+      ence on Photovoltaic Energy Conversion, (Osaka, Japan, 2003), pp. 1116–1119.
+146
+      T. U. Nærland, Characterization of light induced degradation in crystalline
+      silicon, Ph.D. thesis, Norwegian University of Science and Technology, Trond-
+      heim (2013), 2013:303.
+147
+      J. Knobloch, S. W. Glunz, D. Biro, W. Warta, E. Schaffer, and W. Wettling, Solar
+      cells with efﬁciencies above 21% processed from Czochralski grown silicon,
+      in Proceedings of 25th IEEE Photovoltaic Specialist Conference, (Washington
+      DC, USA, 1996), pp. 405–408.
+148
+      T. U. Nærland, H. Angelskår, M. Kirkengen, R. Søndenå, and E. S. Marstein,
+      The role of excess carriers in light-induced degradation examined by photolu-
+      minescence imaging, Journal of Applied Physics 112, 033703 (2012).
+149
+      K. Bothe, R. Hezel, and J. Schmidt, Recombination-enhanced formation of
+      the metastable boron-oxygen complex in crystalline silicon, Applied Physics
+      Letters 83, 1125–1127 (2003).
+150
+      D. K. Schroder, Semiconductor Material and Device Characterization, (Wiley,
+      2006), 3rd ed.
+151
+      R. A. Sinton, A. Cuevas, and M. Stuckings, Quasi steady state photocon-
+      ductance, a new method for solar cell material and device characterization,
+      in Proceedings of the 25th IEEE Photovoltaic Specialist Conference, (IEEE,
+      Washington, D.C., USA, 1996), pp. 457–460.
+152
+      D. W. Palmer, K. Bothe, and J. Schmidt, Kinetics of the electronically stim-
+      ulated formation of a boron-oxygen complex in crystalline silicon, Physical
+      Review B 76, 035210 (2007).
+153
+      D. Macdonald, F. Rougieux, A. Cuevas, B. Lim, J. Schmidt, M. Di Sabatino,
+      and L. J. Geerligs, Light-induced boron-oxygen defect generation in com-
+      pensated p-type Czochralski silicon, Journal of Applied Physics 105, 093704
+      (2009).
+154
+      K. Bothe and J. Schmidt, Electrically activated boron-oxygen-related recom-
+      bination centers in crystalline silicon, Journal of Applied Physics 99, 013701
+      (2006).
+155
+      S. Rein and S. W. Glunz, Electronic properties of the metastable defect in
+      boron-doped Czochralski silicon: Unambiguous determination by advanced
+      lifetime spectroscopy, Applied Physics Letters 82, 1054–1056 (2003).
+156
+      J. Schmidt and A. Cuevas, Electronic properties of light-induced recombina-
+      tion centers in boron-doped Czochralski silicon, Journal of Applied Physics
+      86, 3175–3180 (1999).
+
+
+
+
+                                                                                   67
+References
+
+
+157
+      M. Forster, E. Fourmond, F. E. Rougieux, A. Cuevas, R. Gotoh, K. Fujiwara,
+      S. Uda, and M. Lemiti, Boron-oxygen defect in Czochralski-silicon co-doped
+      with gallium and boron, Applied Physics Letters 100, 042110 (2012).
+158
+      M. Forster, P. Wagner, J. Degoulange, R. Einhaus, G. Galbiati, F. Rougieux,
+      A. Cuevas, and E. Fourmond, Impact of compensation on the boron and
+      oxygen-related degradation of upgraded metallurgical-grade silicon solar
+      cells, Solar Energy Materials & Solar Cells 120, 390–395 (2014).
+159
+      R. Kopecek, J. Arumughan, K. Peter, E. A. Good, J. Libal, M. Acciarri, and
+      S. Binetti, Crystalline Si solar cells from compensated material: Behaviour of
+      light induced degradation, in Proceedings of the 23rd European Photovoltaic
+      Solar Energy Conference and Exhibition, (Valencia, Spain, 2008), pp. 1855–
+      1858.
+160
+      B. Lim, F. Rougieux, D. Macdonald, K. Bothe, and J. Schmidt, Generation and
+      annihilation of boron-oxygen-related recombination centers in compensated
+      p- and n-type silicon, Journal of Applied Physics 108, 103722 (2010).
+161
+      K. Bothe, J. Schmidt, and R. Hezel, Effective reduction of the metastable de-
+      fect concentration in boron-doped Czochralski silicon for solar cells, in Pro-
+      ceedings of the 29th IEEE Photovoltaic Specialists Conference, (IEEE, New
+      Orleans, LA, USA, 2002), pp. 194–197.
+162
+      V. V. Voronkov, R. Falster, K. Bothe, B. Lim, and J. Schmidt, Lifetime-
+      degrading boron-oxygen centres in p-type and n-type compensated silicon,
+      Journal of Applied Physics 110, 063515 (2011).
+163
+      V. V. Voronkov, R. Falster, K. Bothe, and B. Lim, Light-induced lifetime degra-
+      dation in boron-doped Czochralski silicon: Are oxygen dimers involved?, En-
+      ergy Procedia 38, 636–641 (2013).
+164
+      J. R. Davis, A. Rohatgi, R. H. Hopkins, P. D. Blais, P. Rai-Choudhury, J. R. Mc-
+      Cormick, and H. C. Mollenkopf, Impurities in silicon solar cells, IEEE Trans-
+      actions on Electron Devices 4, 677–687 (1980).
+165
+      J. Schmidt, Temperature- and injection-dependent lifetime spectroscopy for
+      the characterization of defect centers in semiconductors, Applied Physics Let-
+      ters 82, 2178–2180 (2003).
+166
+      P. Rosenits, T. Roth, S. W. Glunz, and S. Beljakowa, Determining the defect
+      parameters of the deep aluminum-related defect center in silicon, Applied
+      Physics Letter 91, 122109 (2007).
+167
+      S. W. Glunz, S. Rein, J. Knobloch, W. Wettling, and T. Abe, Comparison of
+      boron- and gallium-doped p-type Czochralski silicon for photovoltaic applica-
+      tion, Progress in Photovoltaics 7, 463–469 (1999).
+168
+      F. A. Trumbore, Solid solubilities of impurity elements in germanium and
+      silicon, Bell System Technical Journal 39, 205–233 (1960).
+169
+      S. W. Glunz, S. Rein, W. Warta, J. Knobloch, and W. Wettling, On the degrada-
+      tion of Cz-silicon solar cells, in Proceedings of the 2nd World Conference and
+      Exhibition on Photovoltaic Solar Energy Conversion, (Vienna, Austria, 1998),
+      pp. 1343–1346.
+
+
+
+
+68
+                                                                            References
+
+
+170
+      A. Herguth, G. Schubert, M. Kaes, and G. Hahn, A new approach to prevent
+      the negative impact of the metastable defect in boron doped Cz silicon solar
+      cells, in Proceedings of the 4th World Conference on Photovoltaic Energy Con-
+      version, (IEEE, Waikoloa, HI, USA, 2006), pp. 940–943.
+171
+      A. Herguth, G. Schubert, M. Kaes, and G. Hahn, Investigations on the long
+      time behavior of the metastable boron-oxygen complex in crystalline silicon,
+      Progress in Photovoltaics 16, 135–140 (2008).
+172
+      B. Lim, K. Bothe, and J. Schmidt, Deactivation of the boron-oxygen recom-
+      bination center in silicon by illumination at elevated temperature, Physica
+      Status Solidi RRL 2, 93–95 (2008).
+173
+      B. Lim, A. Liu, D. Macdonald, K. Bothe, and J. Schmidt, Impact of dopant
+      compensation on the deactivation of boron-oxygen recombination centers in
+      crystalline silicon, Applied Physics Letters 95, 232109 (2009).
+174
+      B. Lim, K. Bothe, and J. Schmidt, Impact of oxygen on the permanent deac-
+      tivation of boron-oxygen-related recombination centers in crystalline silicon,
+      Journal of Applied Physics 107, 123707 (2010).
+175
+      K. A. Münzer, Hydrogenated silicon nitride for regeneration of light induced
+      degradation, in Proceedings of the 24th European Photovoltaic Solar Energy
+      Conference, (Hamburg, Germany, 2009), pp. 1558–1561.
+176
+      S. Wilking, A. Herguth, and G. Hahn, Inﬂuence of hydrogen on the regenera-
+      tion of boron-oxygen related defects in crystalline silicon, Journal of Applied
+      Physics 113, 194503 (2013).
+177
+      H. Nagel, J. Schmidt, A. A. Aberle, and R. Hezel, Exceptionally high bulk
+      minority-carrier lifetimes in block-cast multicrystalline silicon, in Proceed-
+      ings of the 14th European Photovoltaic Solar Energy Conference, (Barcelona,
+      Spain, 1997), pp. 762–765.
+178
+      D. Macdonald, L. J. Geerligs, and S. Riepe, Light-induced lifetime degradation
+      in multicrystalline silicon, in Proceedings of the 13th Workshop on Crystalline
+      Silicon Solar Cell Materials and Processes, (Vail, CO, USA, 2003), pp. 182–
+      185.
+179
+      G. Coletti, C. L. Mulder, G. Galbiati, and L. J. Geerligs, Reduced effect of B-O
+      degradation on multicrystalline silicon wafers, in Proceedings of the 21st Eu-
+      ropean Photovoltaic Energy Conference and Exhibition, (Dresden, Germany,
+      2006), pp. 1515–1518.
+180
+      S. Dubois, N. Enjalbert, J. Veirman, J. P. Garandet, F. Tanay, A. Jouini, and
+      J. Champliaud, Evidences on the carbon participation for the slowing down of
+      the boron-oxygen defects activation kinetics in solar-grade silicon, in Proceed-
+      ings of 6th International Workshop on Science and Technology of Crystalline
+      Silicon Solar Cells, (Aix-les-Bains, France, 2012).
+181
+      J. Safarian, G. Tranella, and M. Tangstada, Processes for upgrading metal-
+      lurgical grade silicon to solar grade silicon, Energy Procedia 20, 88–97 (2012).
+182
+      I. Tarasov, S. Ostapenko, and S. S. Koveshnikov, Light induced defect reac-
+      tions in boron-doped silicon: Cu versus Fe, in Proceedings of 8th Workshop on
+      Crystalline Silicon Solar Cell Materials and Process, (Copper Mountain, CO,
+      USA, 1998), pp. 207–210.
+
+
+                                                                                   69
+References
+
+
+183
+      H. Väinölä, E. Saarnilehto, M. Yli-Koski, A. Haarahiltunen, J. Sinkkonen,
+      G. Berenyi, and T. Pavelka, Quantitative copper measurement in oxidized p-
+      type silicon wafers using microwave photoconductivity decay, Applied Physics
+      Letters 87, 032109 (2005).
+184
+      M. Yli-Koski, H. Väinölä, A. Haarahiltunen, J. Storgårds, E. Saarnilehto, and
+      J. Sinkkonen, Light activated copper defects in p-type silicon studied by PCD,
+      Physica Scripta T T114, 69–72 (2004).
+185
+      M. Yli-Koski, Optical activation of copper in silicon studied by carrier lifetime
+      measurements, Ph.D. thesis, Helsinki University of Technology (2004).
+186
+      D. P. Fenning, A. S. Zuschlag, M. I. Bertoni, B. Lai, G. Hahn, and T. Buonas-
+      sisi, Improved iron gettering of contaminated multicrystalline silicon by high-
+      temperature phosphorus diffusion, Journal of Applied Physics 113, 214504
+      (2013).
+187
+      D. Macdonald, A. Cuevas, A. Kinomura, and Y. Nakano, Phosphorus gettering
+      in multicrystalline silicon studied by neutron activation analysis, in Proceed-
+      ings of the 29th IEEE Photovoltaic Specialist Conference, (IEEE, New Orleans,
+      LA, USA, 2002), pp. 285–288.
+188
+      A. Bentzen, A. Holt, R. Kopecek, G. Stokkan, J. S. Christensen, and B. G.
+      Svensson, Gettering of transition metal impurities during phosphorus emitter
+      diffusion in multicrystalline silicon solar cell processing, Journal of Applied
+      Physics 99, 093509 (2006).
+189
+      F. S. Ham, Theory of diffusion-limited precipitation, Journal of Physics and
+      Chemistry of Solids 6, 335–351 (1958).
+190
+      M. Yli-Koski, M. Palokangas, A. Haarahiltunen, H. Väinölä, J. Storgårds,
+      H. Holmberg, and J. Sinkkonen, Detection of low-level copper contamina-
+      tion in p-type silicon by means of microwave photoconductive decay measure-
+      ments, Journal of Physics Condensed Matter 14, 13119–13125 (2002).
+191
+      L. Fabry, R. Hoelzl, A. Andrukhiv, K. Matsumoto, J. Qiu, S. Koveshnikov,
+      M. Goldstein, A. Grabau, H. Horie, and R. Takeda, Test methods for mea-
+      suring bulk copper and nickel in heavily doped p-type silicon wafers, Journal
+      of the Electrochemical Society 153, G566–G571 (2006).
+192
+      Y. Kitagawara, H. Takeno, S. Tobe, Y. Hayam Izu, T. Koide, and T. Take-
+      naka, Systematic analyses of practical problems related to defects and metal-
+      lic impurities in silicon, in Materials Research Society Symposium Proceed-
+      ings, edited by S. Ashok, J. Chevallier, W. Goetz, B. L. Sopori, and K. Sumino,
+      (Materials Research Society, 1998), vol. 510, pp. 3–14.
+193
+      R. Hoelzl, D. Huber, K.-J. Range, L. Fabry, J. Hage, and R. Wahlich, Gettering
+      of copper and nickel in p/p+ epitaxial wafers, Journal of the Electrochemical
+      Society 147, 2704–2710 (2000).
+194
+      R. Hoelzl, K.-J. Range, and L. Fabry, Modeling of Cu gettering in p- and n-type
+      silicon and in poly-silicon, Applied Physics A 75, 525–534 (2002).
+195
+      T. Buonassisi, M. A. Marcus, A. A. Istratov, M. Heuer, T. F. Ciszek, B. Lai,
+      Z. Cai, and E. R. Weber, Analysis of copper-rich precipitates in silicon: Chemi-
+      cal state, gettering, and impact on multicrystalline silicon solar cell material,
+      Journal of Applied Physics 97, 063503 (2005).
+
+
+70
+                                                                            References
+
+
+196
+      X.-Q. Li, D.-R. Yang, X.-G. Yu, and D.-L. Que, Precipitation and gettering be-
+      haviors of copper in multicrystalline silicon used for solar cells, Transactions
+      of Nonferrous Metals Society of China 21, 691–696 (2011).
+197
+      G. von Gastrow, S. Li, P. Repo, Y. Bao, M. Putkonen, and H. Savin, Ozone-
+      based batch atomic layer deposited Al2O3 for effective surface passivation,
+      Energy Procedia 38, 890–894 (2013).
+198
+      H. Amjadi, The mechanism of voltage decay in corona-charged layers of silicon
+      dioxide during UV irradiation, IEEE Transactions on Dielectrics and Electri-
+      cal Insulation 7, 222–228 (2002).
+199
+      L. E. Black and K. R. McIntosh, Defect generation at charge-passivated Si-
+      SiO2 interfaces by ultraviolet light, IEEE Transactions on Electron Devices
+      57, 1996–2004 (2010).
+200
+      R. Hezel and K. Jaeger, Low-temperature surface passivation of silicon for
+      solar cells, Journal of the Electrochemical Society 136, 518–523 (1989).
+201
+      G. Dingemans and W. M. M. Kessels, Status and prospects of Al2O3-based
+      surface passivation schemes for silicon solar cells, Journal of Vacuum Science
+      & Technology A 30, 040802 (2012).
+202
+      V. Vähänissi, A. Haarahiltunen, H. Talvitie, M. Yli-Koski, and H. Savin, Im-
+      pact of phosphorus gettering parameters and initial iron level on silicon solar
+      cell properties, Progress in Photovoltaics 21, 1127–1135 (2013).
+203
+      S. Bernardini, D. Saynova, S. Binetti, and G. Coletti, Light-induced degrada-
+      tion in compensated mc-Si p-type solar cells, in Proceedings of the 38th IEEE
+      Photovoltaic Specialists Conference, (Austin, TX, USA, 2012), pp. 3242–3247.
+
+
+
+
+                                                                                   71
+References
+
+
+
+
+72
+Errata
+
+
+
+
+Publication I
+
+
+The bias light intensity was 18−25 Wcm−2 instead of >25 Wcm−2 .
+
+
+
+Publication II
+
+
+The bias light intensity was 18−25 Wcm−2 instead of >25 Wcm−2 . The
+positive corona charge density was +0.78 μCcm−2 instead of +3.7 μCcm−2 .
+The negative corona charge densities were −0.78 and −2.34 μCcm−2 in-
+stead of −3.7 and −11.1 μCcm−2 , respectively.
+
+
+
+Publication V
+
+
+The positive corona charge density was +0.52 μCcm−2 instead of +4 μCcm−2 .
+The negative corona charge densities were −1.3 and −1.7 μCcm−2 instead
+of −10 and −12.8 μCcm−2 , respectively. Therefore, the negative corona
+charge density in the top oxidized sample was −1.0×1013 cm−2 instead of
+−6.2×1013 cm−2 . In FIG. 5, the term center refers to the middle of the
+ingot.
+
+
+
+
+                                                                     73
+Errata
+
+
+
+
+74
+                                                                  Aal
+                                                                    to-
+                                                                      D D37
+                                                                          /20
+                                                                            15
+
+
+
+
+                  I
+                  S BN978-
+                         95 2
+                            -60-
+                               61 29-0(pri
+                                         nted)     BUSI
+                                                      N E
+                                                        S S+
+
+
+
+
+9HSTFMG*agbcja+
+                  I
+                  S BN978-
+                         9 52-
+                             60-
+                               61 30-6(pdf)        ECONOM Y
+                  I
+                  S SN-
+                      L1799-4934
+                  I
+                  S SN1799-
+                          4934(p ri
+                                  nted)            ART+
+                  I
+                  S SN1799-
+                          494 2(
+                               p df)               DESI
+                                                      G N+
+                                                   ARCH I
+                                                        TECT
+                                                           U RE
+                  Aa
+                   lt
+                    oU ni
+                        versi
+                            ty
+                  Sc
+                   hoolofElect
+                             ric
+                               a lEngi
+                                     nee
+                                       ring        SCI
+                                                     ENCE+
+                  Depa
+                     rtmentofM i
+                               cro-andNanosci
+                                            enc
+                                              es   T
+                                                   EC HNOL
+                                                         O GY
+                  www.
+                     aalt
+                        o.f
+                          i
+                                                   CROSSOV
+                                                         ER
+
+                                                   DOCTORAL
+                                                   DI
+                                                    S SE
+                                                       R T
+                                                         ATI
+                                                           O NS
+

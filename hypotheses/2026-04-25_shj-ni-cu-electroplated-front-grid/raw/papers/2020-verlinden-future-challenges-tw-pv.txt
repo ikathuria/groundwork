@@ -1,0 +1,388 @@
+Future challenges for photovoltaic
+manufacturing at the terawatt level
+Cite as: J. Renewable Sustainable Energy 12, 053505 (2020); https://doi.org/10.1063/5.0020380
+Submitted: 30 June 2020 . Accepted: 20 September 2020 . Published Online: 27 October 2020
+
+   P. J. Verlinden
+
+COLLECTIONS
+
+Paper published as part of the special topic on Invited Papers from the International Conference on Sustainability,
+Energy, Water, and Environment Nexus in Desert Climates ICDC2020
+
+     This paper was selected as Featured
+
+
+
+
+ARTICLES YOU MAY BE INTERESTED IN
+
+Durable strategies for perovskite photovoltaics
+APL Materials 8, 100703 (2020); https://doi.org/10.1063/5.0027239
+
+Double-absorber thin-film solar cell with 34% efficiency
+Applied Physics Letters 117, 033901 (2020); https://doi.org/10.1063/5.0017916
+
+Temperature impacts on utility-scale solar photovoltaic and wind power generation output
+over Australia under RCP 8.5
+Journal of Renewable and Sustainable Energy 12, 046501 (2020); https://
+doi.org/10.1063/5.0012711
+
+
+
+
+J. Renewable Sustainable Energy 12, 053505 (2020); https://doi.org/10.1063/5.0020380                         12, 053505
+
+© 2020 Author(s).
+    Journal of Renewable                                                                            ARTICLE           scitation.org/journal/rse
+   and Sustainable Energy
+
+
+
+    Future challenges for photovoltaic manufacturing
+    at the terawatt level
+    Cite as: J. Renewable Sustainable Energy 12, 053505 (2020); doi: 10.1063/5.0020380
+    Submitted: 30 June 2020 . Accepted: 20 September 2020 .
+    Published Online: 27 October 2020
+
+    P. J. Verlinden1,2,3,a)
+
+    AFFILIATIONS
+    1
+        AMROCK Pty Ltd., PO Box 714, McLaren Vale, SA 5171, Australia
+    2
+        Institute for Solar Energy Systems, Sun Yat-Sen University, Guangzhou, China
+    3
+        School of Photovoltaic and Renewable Energy Engineering, University of New South Wales, Sydney, Australia
+
+    Note: Invited paper from the International Conference on Sustainability, Energy, Water, and Environment Nexus in Desert Climates.
+    a)
+       Author to whom correspondence should be addressed: pjverlinden@ieee.org
+
+
+    ABSTRACT
+    To meet the target set by the Paris agreement in 2015 to keep the Earth average temperature rise to less than 2  C (or even 1.5  C), the best
+    choice is to transition the energy economy to 100% renewable energy using solar photovoltaic energy (PV), playing a central role along with
+    wind, hydro, geothermal, and biomass energy, to power directly or indirectly all sectors of the economy. The development of a large global
+    energy storage capacity and the production of green hydrogen or other synthetic fuels by renewable energy will be critical. The estimated
+    needed global PV generating capacity will be about 70 TW by 2050. The PV industry needs to rapidly grow its production capacity to about
+    3 TW p.a. to reach this objective. The industry has demonstrated that it is capable to grow at a very high rate and to continuously reduce the
+    cost of manufacturing. There are no challenges related to the technology, manufacturing cost, or sustainability, except for the consumption
+    of silver, which needs to be reduced by at least a factor of 4, and the recycling of material used in the PV system, which needs to be
+    dramatically improved. The deployment of PV systems must be accelerated to reach a fast growth (>25%) until at least 2032 to avoid a
+    major market downturn in 2050.
+    Published under license by AIP Publishing. https://doi.org/10.1063/5.0020380
+
+
+
+    INTRODUCTION                                                                and is thought to be the main responsible for a remarkable increase in
+          The geologic history of the Earth is divided into eras, which are     the average Earth temperature, in the range of 1–1.2  C so far.2
+    in turn divided into periods, epochs, and ages. Ofﬁcially, since the last   Experts have calculated that, to reach our climate goal of limiting the
+    glacial period, about 11 650 years ago, we are living in the Holocene       average temperature rise to less than 2  C, as agreed in 2015 at the
+    epoch. The Anthropocene is proposed by many people to be the new            COP-21 international meeting on climate change in Paris, the residual
+    current geological epoch, dating from the commencement of signiﬁ-           emission of CO2 that we would be allowed to emit is only 800  109
+    cant human impact on Earth’s geology and ecosystems, including, but         tons, which corresponds to about 20 years at the current emission rate.
+    not limited to, anthropogenic climate change. One proposal, based on        To keep the rise in average temperature to 1.5  C, our residual emis-
+    atmospheric evidence, is to ﬁx the start of the Anthropocene and the        sion is about 400  109 tons (11 years). After reducing the emissions
+    end of the Holocene, with the Industrial Revolution, ca. 1780, with the     of CO2 to zero by mid-century, we need to keep removing CO2 from
+    invention of the steam engine. Although the Anthropocene was pro-           the atmosphere.3 If we do not dramatically cut the CO2 emissions to
+    posed as the new geological epoch since 2000, it has not yet been           zero, the consequences will be dramatic. The world is probably on a
+    approved by the International Commission on Stratigraphy (ICS) nor          path of a temperature rise greater than 4  C by the end of the century.
+    the International Union of Geological Sciences (IUGS).1                     We are approaching a tipping point when it will be too late to act. At
+          Annually, the human activity on Earth emits over 36  109 tons        that point, the increase in average temperature will make many parts
+    of CO2 per year, increasing in average since 1950 by about 0.45  109       of the world inhabitable, and we will observe signiﬁcant desertiﬁcation,
+    tons every year. Since the Industrial Revolution, humans have cumula-       ocean acidiﬁcation, rise of the sea water level, and extreme climate-
+    tively emitted more than 1.5  1012 tons of CO2. The concentration of       related disasters (ﬂoods, wild ﬁres, hurricanes, and tornadoes). Some
+    CO2 in the Earth atmosphere has increased to more than 410 ppm              experts have predicted that a “þ4  C World” might only support
+
+
+
+
+J. Renewable Sustainable Energy 12, 053505 (2020); doi: 10.1063/5.0020380                                                                     12, 053505-1
+Published under license by AIP Publishing
+    Journal of Renewable                                                                                       ARTICLE          scitation.org/journal/rse
+   and Sustainable Energy
+
+
+
+    1  109 people, maybe half a billion.4 For our grandchildren, it means               the same period, the cost of PV panels has been reduced by more than
+    that one person out of 10 will survive. We believe that the only solu-               two orders of magnitude. In the last 10 years only, the spot price of PV
+    tion and our only target should be for the world economy to be 100%                  panels has decreased by about 90% to reach less than US$0.20/W.7
+    powered by renewable energy. Our vision is that photovoltaic (PV)                    Different countries have provided, at different times, signiﬁcant contri-
+    solar energy will play a central role in a new transformed economy.                  butions to the PV industry: ﬁrst, the USA with its large PV market for
+    With wind energy, hydroelectricity, geothermal energy, and biomass,                  satellites and the ﬁrst large-scale PV plants, then Japan with the ﬁrst
+    PV will power directly or indirectly all segments of the economy (Fig.               signiﬁcant residential PV market, and Australia with a large remote
+    1). “Indirectly” means via the production of electricity by renewables               PV-powered telecommunication market, followed by Germany and
+    and storage of the energy with hydrogen, ammonia, or other synthetic                 the rest of Europe with an innovative feed-in tariff, and ﬁnally China
+    fuels to be used in the sectors of the energy economy that cannot be                 where great ﬁnancial support from investors drove low-cost mass
+    electriﬁed, such as long-distance transportation, petrochemical indus-               industrialization. These regions have signiﬁcantly contributed, each in
+    try, steel industry, and agriculture (fertilizers, for example). Several             their own way and with large R&D efforts, to the current status of the
+    studies have shown that, to achieve this goal, a cumulative deployment               PV industry.
+    of about 70 Terawatts of PV, corresponding to 6–10 kW of PV per                            Like any manufacturing industry, the cost of manufacturing of
+    capita, and an annual production of PV systems of 3–4 TW p.a. will                   PV panels follows a “learning curve model,” predicting that the
+    be necessary by 2050.5,6                                                             manufacturing industry is learning “by doing” over an extended
+    ACHIEVEMENTS OF THE PV INDUSTRY: COST,                                               period of time to make things better, cheaper, and more reliable. The
+    EFFICIENCY, AND SUSTAINABILITY                                                       theory predicts that the cost of manufacturing goods decreases as the
+                                                                                         cumulative production increases, following the formula
+           Over the last ﬁve decades, the PV industry has demonstrated that
+    it is capable to grow very fast, some years with a growth rate greater                                                     b
+                                                                                                                               qt
+    than 50%, and to signiﬁcantly reduce the cost of manufacturing. On                                               Ct ¼ C0          ;
+                                                                                                                               q0
+    average, over the last 50 years, the annual production rate and the
+    cumulative installation have doubled every 3 years, to reach in 2019                 where C0 and Ct are manufacturing costs at reference time 0 and at
+    more than 100 GW/year and cumulatively more than 600 GW. During                      time t and q0 and qt are cumulative production volumes at the same
+
+
+
+
+                                                    FIG. 1. Vision of the world economy 100% powered by renewable energy.
+
+
+
+
+J. Renewable Sustainable Energy 12, 053505 (2020); doi: 10.1063/5.0020380                                                                               12, 053505-2
+Published under license by AIP Publishing
+    Journal of Renewable                                                                                            ARTICLE              scitation.org/journal/rse
+   and Sustainable Energy
+
+
+
+    times. The parameter b is <1 and typically in the range 0.2–0.75. The                    reduction in manufacturing tool cost. Solar cell efﬁciency improve-
+    learning rate (LR) is the reduction in manufacturing cost for every                      ment has had a signiﬁcant role in the overall PV cost reduction
+    doubling of the cumulative production,                                                   because cell efﬁciency impacts the cost in terms of $/W of every other
+                                                                                             component. As the concept of 100% renewable energy is being more
+                                   LR ¼ ð1  2b Þ:                                          and more accepted, higher PV efﬁciency has never been more impor-
+    Since 1970, the PV industry has presented a LR of about 22%, i.e.,                       tant than it is today. The cost of other components in PV systems,
+    representing a decrease in the manufacturing cost of 22% for every                       such as inverters, racks, and trackers, has followed and experienced a
+    doubling of the cumulative production, which appears on average                          similar impressive reduction over the last four decades, bringing the
+    every 3 years. There is, of course, every year a possible slowdown or                    levelized cost of electricity (LCOE) to be lower than US$20/MWh for
+    acceleration of the decrease in manufacturing cost due to temporary                      very large utility-scale solar farm in sunny regions and less than
+    variations of the cost of supplies, and it is difﬁcult to extract a short-               US$50/MWh in more temperate climates.5
+    term LR. However, over the last decade, the LR seems to have acceler-                          The roadmap of silicon PV technologies is well documented and
+    ated to about 25% to 40% due to the concentration of manufacturing                       was established a long time ago (Fig. 2). The current standard product
+    in China and a strong alignment of the entire supply chain on a stan-                    of the PV industry is the silicon Passivated Emitter and Rear Cell with
+    dardized and commoditized product.8 It is expected that the cost of                      local aluminum doping (PERC or PERL). The supply chain is well
+    PV panels will reach US$0.10/W when the cumulative production                            aligned to produce a low-cost reliable product that is bankable, i.e.,
+    reaches about 3 TW, around the year 2030. If the concentration of PV                     well accepted by ﬁnancial institutions for large scale PV power plants.
+    manufacturing in China has been an important factor in the cost                          The typical efﬁciency of industrial PERC solar cells in 2020 is between
+    reduction, it is not thinkable that it would stay like that. With increas-               21.5% and 23%, whereas the typical module efﬁciency is between 19%
+    ing automation, labor cost is becoming an insigniﬁcant component,                        and 20%, compared to about 14% in 2010. The difference in efﬁciency
+    whereas shipping cost is proportionally increasing. The manufacturing                    between cells and modules comes in great part from the difference
+    of photovoltaic components, at an annual rate of several TW p.a., will                   between the cell and module area due to the gap between cells. Other
+    become a strategic industry and a global affair with more localized                      power losses from the cell to the module are due to the electrical resis-
+    manufacturing centers closer to the ﬁnal customers.                                      tance in interconnections between cells and optical losses. Recently,
+          Hundreds of small improvements are responsible for the histori-                    the PV industry has embarked in a series of rapid changes in the cell
+    cal reduction in manufacturing cost. We can mention, among many                          and module design, pushing toward larger cells (up to 210 mm), cut-
+    other factors and improvements, standardization of the entire supply                     ting cells in half or smaller pieces to reduce electrical losses due to the
+    chain and strong competition between suppliers, an increase in silicon                   interconnections, reducing gaps between cells, and even sometimes
+    wafer size (from 100 mm to 210 mm) and reduction in wafer thickness                      overlapping adjacent cells. The result of these changes is a smaller gap
+    (down to about 150 lm), diamond wire sawing and reduction of kerf                        between the cell efﬁciency and the module efﬁciency, which now can
+    loss (from 200 lm down to less than 60 lm), reduction in silver con-                     reach levels as high as 21.6% with standard PERC solar cells.
+    sumption (from 50 mg/W down to less than 19 mg/W), automation,                                 A laboratory champion PERC cell efﬁciency of 25% has been
+    acceleration of Takt time and an increase in throughput per tool (from                   demonstrated in laboratory more than 20 years ago,8 but this type of
+    1000 UPH to more than 10 000 UPH for some tools), and major                              small laboratory cell made with an expensive photolithography
+
+
+
+
+     FIG. 2. The PV technology roadmap has been well known for many years. The remaining questions are related to deﬁning the best way to cost-effectively integrate the latest
+     improvements, such as passivating contacts, tandem structures, and multijunction cells.
+
+
+
+
+J. Renewable Sustainable Energy 12, 053505 (2020); doi: 10.1063/5.0020380                                                                                           12, 053505-3
+Published under license by AIP Publishing
+    Journal of Renewable                                                                                    ARTICLE               scitation.org/journal/rse
+   and Sustainable Energy
+
+
+
+    technology does not have much in common with the current low-cost
+    large-area industrial cell. Nevertheless, an efﬁciency of 25% is a good
+    target for a solar cell manufacturer to aim for. The main power loss
+    within a silicon solar cell, which prevents reaching the theoretical efﬁ-
+    ciency of 29.4%, is due to the recombination of the generated carriers
+    at the metallic electrical contacts. The current solution to this source of
+    efﬁciency loss is to develop new electric contacts with good conductiv-
+    ity and that are passivating, i.e., that do not cause signiﬁcant carrier
+    recombination. The solar cell can have passivating contacts on one
+    side or two sides (or two polarities). Another advanced technology in
+    development is to stack two solar cells made of two semiconductor
+    materials with different bandgaps. This is called a Tandem structure or
+    a multijunction if more solar cells are stacked. Laboratory cell efﬁcien-
+    cies up to 26.7% using passivating contacts and up to 29% with a
+    perovskite/silicon tandem structure have been demonstrated.9 These
+    technologies are either still in development or are reserved for niche
+    applications. It is, however, very clear that the market demands PV
+    components with higher efﬁciency, providing signiﬁcant savings for
+    storage, transport, handling, balance of systems (BOS), and land.
+    Currently, the market accepts a US$0.01/W price increase for 3.5% rel-          FIG. 3. Cost (in Chinese renminbi, or RMB) of a new silicon solar cell production line
+                                                                                    (1 GW) in China and, for example, throughput of a single chemical production tool (tex-
+    ative increase in power performance (typ. þ10 W). It is also clear that
+                                                                                    turization step) in wafers per hour (Courtesy of Dr. Chen Yifeng, Trina Solar11).
+    the entire supply chain of the PV industry will soon be aligned to pro-
+    vide PV panels with passivating contacts, either with silicon hetero-
+                                                                                    • puriﬁcation and polysilicon production: US$64 millions,
+    junction (SHJ) or with tunnel oxide and polysilicon (TOPCon) at a
+                                                                                    • monocrystalline ingot production: US$41 millions,
+    competitive cost. The winner between these two technologies will be
+                                                                                    • wafer slicing: US$8.3 millions,
+    determined by the cost of manufacturing.
+                                                                                    • mono PERC cell production: US$56.8 millions, and
+          Tandem solar cells are part of the next generation of PV technolo-
+                                                                                    • module assembly: US$11.8 millions.
+    gies that will allow us to fabricate PV modules with efﬁciencies above
+    30%. Currently, several technologies are considered, with different semi-            This level of capital investment allows the industry to grow sus-
+    conductor materials and different conﬁgurations (two terminals, three           tainably and reasonably fast (25%/year) with the gross margin that it
+    terminals, or four terminals). The most advanced technology toward              generates from sales.
+    high-efﬁciency low-cost PV modules uses a two-terminal monolithic
+    structure with silicon as the bottom solar cell and a new hybrid organi-        CHALLENGES
+    c–inorganic material, such as methylammonium lead iodide, called                      To meet the target of 70 TW of cumulative installed PV capacity
+    perovskite, as the top solar cell.12 Potential issues to the future commer-     by 2050, the industry has to grow its annual production by a factor of
+    cialization of perovskite/silicon tandem cells are the stability of the cells   about 30. Based on its 60-year history and experience, the industry has
+    under exposure to UV, temperature, and air, the toxicity of lead if it          demonstrated its capability to grow (doubling its capacity every 3 years
+    would happen to leak from a sealed module, and the cost of integration          on average) and to reduce cost with a LR of 25%–40%. The technology
+    with silicon. Considering the recent exceptional progress in this technol-      exists and is continually improved. The cost of PV manufacturing is
+    ogy, it is expected that perovskite/silicon tandem modules with efﬁ-            reducing by about 10%–16% per year. The cost of capital equipment is
+    ciency above 25% will be commercially available after 2022.                     reducing by about 18% per year. The EPBT of a typical rooftop-
+          There are many different ways to look at the sustainability of the        installed silicon PV system is 1.7 years under Southern European inso-
+    PV industry. One can evaluate the sustainability of the industry in             lation (1700 kWh/m2/year), and its GHG emissions are 27–35 times
+    terms of energy, emissions, efﬂuents, waste, material, recyclability, or        less than a traditional fossil-fuel power plant.10 For a ﬁxed tilt ground-
+    ﬁnancial stability. A silicon PV system built today has a typical Energy        mounted utility scale, the typical EPBT is reduced to 1.3 years in US
+    Payback Time (EPBT) of 1.7 years and a Greenhouse Gas (GHG)                     South-West locations. It does not seem that there is any major prob-
+    emission of 28 g of CO2 eq. per kWh of produced electricity over its            lem to rapidly grow this industry to a level of 30 times the current pro-
+    lifetime.10 These numbers continue to improve years after years, as the         duction rate. There are, however, a few challenges.
+    industry grows and learns to manufacture these products with higher                   The ﬁrst challenge is that the time constants of climate change
+    efﬁciency, cleaner manufacturing, and greater economies of scale.               are so long, much longer than most human preoccupations, such as
+          The PV industry is now, better than ever, capable of growing and          the re-election of politicians, the typical time for calculating the return
+    building new production lines with the cash it generates from the sales         on investments, or even a person’s life expectancy. The most impor-
+    of products, thanks to a signiﬁcant reduction in cost of capital                tant barriers for solving environmental problems are selﬁshness, greed,
+    manufacturing equipment. The typical cost of capital equipment is               trade barriers, return on investment, the accounting of stranded assets
+    steadily reducing at a rate of about 18% per year over the last                (old fossil-fuel plants that are closed down), wrong scale of values,
+    10 years (Fig. 3). The current costs of production lines per GW of              populism, apathy, no sense of urgency, and slow response of grid oper-
+    annual production are as follows:                                               ators, resulting in a slow growth of demand for renewable energy
+
+
+
+
+J. Renewable Sustainable Energy 12, 053505 (2020); doi: 10.1063/5.0020380                                                                                      12, 053505-4
+Published under license by AIP Publishing
+    Journal of Renewable                                                                                    ARTICLE           scitation.org/journal/rse
+   and Sustainable Energy
+
+
+
+    systems. Government supports for e-mobility, large-scale or residential             80%. On a 156 mm wafer, typically 120 mg–130 mg of paste is used,
+    energy storage, long-distance high voltage direct current (HVDC)                    corresponding to 96–104 mg of Ag or about 20 mg/W. The PV indus-
+    transmission lines, hydrogen production, power-to-X, and general                    try currently uses about 20 tons of silver per GW of production (2400
+    incentives for complete electriﬁcation of the economy are urgently                  tons of silver in 2019) or a bit more than 10% of the global production
+    needed.                                                                             of silver. If nothing changes in the consumption of Ag in PV produc-
+          The second most important challenge is related to the rate of                 tion, at the 1 TW level of production (around 2028), the PV industry
+    growth of the industry. One would have thought that, when the PV                    will use 100% of the global production of silver. To reach material sus-
+    technology reaches grid parity, either on the customer side of the                  tainability, the PV industry needs to reduce the consumption of Ag to
+    meter for residential applications or on the utility side of the meter for          less than 5 mg/W, for example, by replacing Ag screen-printing by
+    large scale applications, there would be a fast growth of the demand                copper plating.
+    for solar PV generation. It is interesting to note that the annual growth                 Recycling should also be improved, not only on volume but also
+    of the PV market has slowed down since 2018 to about 10%–11% p.a.,                  in developing cost-effective technologies to recycle valuable materials
+    even when PV has reached grid-parity in many parts of the world.                    like silver, copper, aluminum, tin, lead, glass, and silicon. Currently,
+    With this level of annual growth, it will not be possible to reach a                the industry recycles about 100 MW of PV modules, i.e., about
+    cumulative capacity of 70 TW by 2050, and the world will be forced to               400 000 modules or 0.1% of the current annual production. In 10 years
+    accelerate the growth of PV deployment in the last few years to 2050                from now, the volume will be 10 times larger or about 150 000 tons of
+    to reach the objective to reduce the CO2 emissions to zero. At that                 recyclable materials.
+    stage, after installing all the necessary PV system to power the world,
+                                                                                        CONCLUSIONS
+    the remaining PV market will be the normal growth of the electricity
+    demand (2% p.a.) and the replacement of the old PV components,                           Facing the global climate change challenge, the world has very
+    scaling back the annual production level to where it was 25 or 30 years             few options. The most obvious choice would be to power the world
+    earlier, which would create serious damages to the PV industry and                  economy with 100% renewable energy, from PV, wind, hydroelectric-
+    many large ripples in the market in the second part of the century                  ity, geothermal energy, and biomass. Green electricity would become
+    (Fig. 4). It is critical that the market maintains an annual growth in              the primary energy, which can be transformed to synthetic fuel or gas
+    demand of about 25% p.a. until around 2032, to reach a stabilized                   (power-to-X) for particular applications where electricity is not suit-
+    annual production level of 3 TW p.a. from around 2032 to 2055 (Fig.                 able, for example, long-distance transportation, or for long-term
+    4). In such a way, the industry will not suffer any signiﬁcant                      storage.
+    downturn.                                                                                 The PV industry would play a central role and would have to
+          The ﬁnal important challenge for terawatt-scale PV manufactur-                grow about 30 times in production capacity, to about 3 TW per year.
+    ing concerns the availability of material and recycling. Most materials             The cumulative global PV capacity would have to reach 70 TW. The
+    used in silicon PV manufacturing are abundant elements in the Earth                 industry has demonstrated a great ability to grow, doubling every
+    crust. Only silver (Ag) used for the metallization of solar cells, and              3 years on average, and to lower the cost of manufacturing at a rate of
+    being about 107 times less abundant than silicon, is an issue.                      20% (long term average) to 40% (recent learning rate) for every
+    Currently, Ag is used as the principal metal in a screen-printing paste             doubling of the cumulative production. The technology to achieve this
+    to contact silicon and to provide a solderable metal for interconnec-               goal exists. Currently, the standard product is a monocrystalline PERC
+    tion. The Ag-content in the screen-printing paste is currently about                photovoltaic module. New technologies (SHJ, TOPCon, and perov-
+                                                                                        skite/silicon Tandem) are in development and will most probably be
+                                                                                        cost-effective in the next few years to be commercially produced as
+                                                                                        well. The challenges that the PV industry is facing are not about efﬁ-
+                                                                                        ciency, cost, energy or emission sustainability, or even ﬁnancial
+                                                                                        sustainability.
+                                                                                              The important challenges to this transition of the energy econ-
+                                                                                        omy to 100% renewable energy are as follows:
+                                                                                        • the slow growth in demand for the PV system due to greed, apa-
+                                                                                          thy, and lack of sense of urgency. Government supports for e-
+                                                                                          mobility, large-scale or residential energy storage, long-distance
+                                                                                          HVDC transmission lines, hydrogen production, power-to-X,
+                                                                                          and general incentives for complete electriﬁcation of the econ-
+                                                                                          omy are needed;
+                                                                                        • the current low growth rate in the PV market, resulting in the
+                                                                                          growing of the annual PV production to unsustainable levels in
+                                                                                          2040–2050, which will create a major downturn or important
+                                                                                          future ripples in the PV market in the second half of the Century.
+     FIG. 4. Slow growth scenario of the PV industry would require increasing the
+                                                                                          A fast growth of about 25% p.a. is needed right now until 2032 to
+     annual production volume to almost 10 GW p.a. with a risk of a major downturn in
+     2055 and several ripples every 25 years, compared to a fast growth scenario of       mitigate this risk;
+     25% p.a. minimum, bringing the annual production to a stabilized level of about    • the consumption of silver as the principal metal for making the
+     3 GW p.a.                                                                            electrical contacts onto the semiconductor, resulting in a
+
+
+
+
+J. Renewable Sustainable Energy 12, 053505 (2020); doi: 10.1063/5.0020380                                                                             12, 053505-5
+Published under license by AIP Publishing
+    Journal of Renewable                                                                                      ARTICLE               scitation.org/journal/rse
+   and Sustainable Energy
+
+
+                                                                                       3
+          consumption equal to three times the global annual production                   G. Luderer, Z. Vrontisi, C. Bertram et al., “Residual fossil CO2 emissions in
+          of silver in 2035–2050 when the PV market reaches 3 TW p.a.                     1.5–2  C pathways,” Nat. Clim. Change 8, 626–633 (2018).
+                                                                                        4
+                                                                                          F. Pearce and J. Rockstroem, “The changes could be abrupt and irreversible.
+          Technologies like Cu plating have to be developed to mitigate
+                                                                                          We don’t know where things may end up,” New Sci. 243(3247), 39–41 (2019).
+          this risk.                                                                    5
+                                                                                          N. M. Haegel et al., “Terawatt-scale photovoltaics: Transform global energy,”
+                                                                                          Science 364(6443), 836–838 (2019).
+                                                                                        6
+                                                                                          C. Breyer et al., “On the role of solar photovoltaic in global energy transition
+    ACKNOWLEDGMENTS
+                                                                                          scenarios,” Prog. Photovoltaics 25(8), 727–745 (2017).
+                                                                                        7
+         The author wishes to thank Dr. Chen Yifeng (Trina Solar) for                     See https://www.infolink-group.com/en/solar/spot-price for information of
+                                                                                          spot price for silicon feedstock, wafers, solar cells, and PV panels (last accessed
+    valuable discussions about the cost of capital equipment for PV
+                                                                                          June 29, 2020).
+    manufacturing and for providing Fig. 3.                                             8
+                                                                                          Y. F. Chen et al., “From laboratory to production: Learning models of efﬁ-
+    DATA AVAILABILITY                                                                     ciency and manufacturing cost of industrial crystalline silicon and thin-ﬁlm
+                                                                                          photovoltaic technologies,” IEEE J. Photovoltaics 8, 1531–1538 (2018).
+        The data that support the ﬁndings of this study are available                   9
+                                                                                          M. Green et al., “Solar cell efﬁciency tables (Version 55),” Prog. Photovoltaics
+    from the corresponding author upon reasonable request.                                28, 3–15 (2020).
+                                                                                      10
+                                                                                         V. Fthenakis, “Lifecycle assessment of photovoltaics,” in Photovoltaic Solar
+                                                                                         Energy, from Fundamentals to Applications, edited by A. Reinders (Wiley,
+    REFERENCES                                                                           Chichester, UK, 2017).
+      1                                                                               11
+      L. E. Edwards, “What is the Anthropocene?,” Eos 96, 6–7 (2015).                   Y. F. Chen, personal communication (August 1, 2019).
+      2                                                                               12
+      H. Ritchie and M. Roser, “CO2 and greenhouse gas emissions” (2017), available      G. M. Wilson et al., “The 2020 photovoltaic technologies roadmap,” J. Phys. D
+      at https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions.              53, 493001 (2020).
+
+
+
+
+J. Renewable Sustainable Energy 12, 053505 (2020); doi: 10.1063/5.0020380                                                                                        12, 053505-6
+Published under license by AIP Publishing
+

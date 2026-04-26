@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "slug": "2026-04-25_shj-ni-cu-electroplated-front-grid",
+    "version": 1,
+    "generated_at": "2026-04-26T00:30:00Z",
+    "domain": "Photovoltaics — silicon heterojunction cell metallization",
+    "status": "complete",
+    "corrections_applied": 0
+  },
+  "hypothesis": {
+    "original_question": "On silicon heterojunction (SHJ) solar cells, a sub-100 nm electroplated nickel barrier followed by electroplated copper produces a front-grid metallization with contact resistivity ≤ 2 mΩ·cm² and no measurable efficiency loss after 1000 h damp-heat aging (85°C / 85% RH) — matching screen-printed silver at <10% of the metallization cost.",
+    "refined": {
+      "intervention": "Replace the screen-printed silver front-grid on a commercial SHJ M6 cell with a NOBLE-style stack: PVD-Cu(50 nm)/Al(100 nm) seed → inkjet-printed 1 wt% NaOH(aq) selective Al etch → electroplated Ni barrier (80 nm, sub-100 nm hypothesis target) from a sulfamate bath → electroplated Cu (5 µm) from an acid Cu sulfate bath (Atotech Cupracid Ultra-class) → immersion Ag cap (~200 nm). Anneal 200 °C / 15 min for a-Si:H recovery.",
+      "outcome": "Front-grid metallization that simultaneously satisfies (a) line contact resistivity ρc ≤ 2 mΩ·cm² by TLM at room temperature, (b) cell efficiency degradation Δη ≤ 0.5 %abs after 1000 h damp-heat (IEC 61215, 85°C / 85% RH) on a glass-glass POE-encapsulated mini-module, and (c) ≥1 N/mm 90° peel adhesion at 0 and 1000 h.",
+      "threshold": "All three metrics must hold simultaneously on Arm A. Failure of any one rejects the hypothesis. Cost target (front-side metallization material + process): ≤ 10 % of the screen-printed Ag baseline cost on a $/cell basis at 5 GW production scale, sensitivity-tested at $25 / oz Ag baseline.",
+      "mechanism": "Electroplated Cu has bulk resistivity 1.7 µΩ·cm vs Ag 1.6 µΩ·cm — comparable line conductance at equal cross-section. Cu has the highest interstitial diffusivity of any 3d transition metal in Si (D ≈ 3×10⁻⁴ exp(−0.18 eV/kT) cm²/s; traverses 400 µm Si in <11 h at room temperature per Lindroos 2015), creating a deep recombination band at EC−0.15 to EC−0.58 eV that collapses minority-carrier lifetime catastrophically. A continuous Ni layer ≥60 nm forms a NiSi/Ni₃Si silicide barrier that stops Cu in-diffusion at the SHJ-compatible <200°C process temperature; the SHJ TCO (ITO ≥75 nm) is itself a co-barrier. Cheng 2018 STEM-EDS confirmed 60 nm electroplated Ni fails as a Cu barrier at 300°C anneal but holds at 200°C; 120 nm Ni holds to 300°C. The hypothesis's sub-100 nm target sits at the edge of Cheng's window — empirical verification by SIMS at the c-Si interface is required.",
+      "control": "Arm D: 5–10 cells from the same wafer batch metallized with low-temperature SHJ-grade screen-printed Ag paste (generic class — Heraeus SOL954 / Solamet PV42B / Namics LCT-class — NOT the legacy fire-through PV21A / PV56S which are PERC-only), aged in the same DH chamber simultaneously. Secondary controls: Arm B (Cu-only, no Ni barrier — SunDrive-style, validates TCO-as-barrier alternative); Arm C (Ni 120 nm — maps Cheng threshold under SHJ thermal budget)."
+    }
+  },
+  "novelty": {
+    "verdict": "similar-work-exists",
+    "verdict_text": "The exact architecture (sub-100 nm electroplated Ni + electroplated Cu on SHJ) overlaps with multiple published demonstrations within ±20 nm Ni and ±2× damp-heat duration. SunDrive Solar achieved 26.41 % certified Cu-plated SHJ at ISFH (Aug 2022) with no Ni barrier; Fraunhofer ISE's NOBLE process reaches 22.6 % on M2 cells with PVD-seed + plated Cu; CSEM mini-modules survive 2000–2700 h damp heat. Where this experiment adds value beyond replication: (a) explicit 4-arm comparison sweeping Ni thickness 0/80/120 nm on the *same* wafer batch maps the Cheng 2018 threshold under SHJ's ≤200°C process budget — a measurement no published study has done; (b) extended damp-heat to 2000 h on EVA vs POE matched laminates per Karas 2022's protocol gives an architecture-agnostic encapsulant decision rule; (c) GridMaster-class cost model anchored to the ITRPV 2024 Ag laydown trajectory and the SunDrive ARENA process step list yields a defensible $/cell number missing from Hatt and Lachowicz.",
+    "references": [
+      {"id": "2022-arena-sundrive-copper-metallisation-demonstration", "title": "SunDrive Copper Metallisation Demonstration Project — ARENA Knowledge Sharing Report", "authors": "SunDrive Solar; Lennon, A. (UNSW)", "year": 2022, "doi": null, "tag": "protocol", "wiki_page": "sources/2022-arena-sundrive-copper-metallisation-demonstration"},
+      {"id": "2019-hatt-noble-shj-solrrl", "title": "Native Oxide Barrier Layer for Selective Electroplated Metallization of Silicon Heterojunction Solar Cells", "authors": "Hatt, T.; Kluska, S.; Yamin, M.; Bartsch, J.; Glatthaar, M.", "year": 2019, "doi": "10.1002/solr.201900006", "tag": "paper", "wiki_page": "sources/2019-hatt-noble-shj-solrrl"},
+      {"id": "2024-lachowicz-cu-plated-shj-aging-mini-modules", "title": "Aging tests of mini-modules with copper-plated heterojunction solar cells", "authors": "Lachowicz, A.; Andreatta, G.; Faes, A.; et al. (CSEM)", "year": 2024, "doi": null, "tag": "paper", "wiki_page": "sources/2024-lachowicz-cu-plated-shj-aging-mini-modules"}
+    ]
+  },
+  "summary": {
+    "total_budget_usd": 168450,
+    "total_timeline_weeks": 14,
+    "phases_count": 7,
+    "sources_count": 45,
+    "sources_breakdown": {"papers": 25, "protocols": 10, "retractions": 1, "catalogs": 9},
+    "failure_modes_count": 20,
+    "failure_severity": {"critical": 5, "high": 8, "medium": 4, "low": 3},
+    "pull_quote": "The hypothesis's pass/fail line is set not by Cu's bulk conductivity (Cu wins) but by whether a sub-100 nm Ni barrier can suppress sub-ppb Cu in-diffusion under 1000 h of EVA-derived acetic-acid attack — the same failure mode that has kept the silicon photovoltaic industry on silver for forty years."
+  },
+  "protocol": [
+    {
+      "step": 1,
+      "title": "Wafer sourcing & baseline characterization",
+      "duration_minutes": 480,
+      "rationale": "Procure 60 commercial SHJ M6 precursors (n-type Cz-Si, ~155 µm, with bilateral a-Si:H(i/n) and a-Si:H(i/p) passivation and 80 nm ITO TCO front + rear) from a pilot-line partner (CSEM, Meyer Burger, or LONGi pilot). Baseline pFF, Suns-Voc, and ITO sheet resistance must be uniform across the batch (σ < 1 % on all three) to permit cross-arm comparison. SunDrive ARENA reports the precursor batch is the dominant variance source.",
+      "reagents": [
+        {"wiki_page": "reagents/a-Si-H-passivation", "name": "a-Si:H bilateral passivation stack", "supplier": "CSEM / Meyer Burger / LONGi pilot", "catalog": "SHJ M6 precursor batch", "qty": "60 wafers"},
+        {"wiki_page": "reagents/ITO-transparent-conductive-oxide", "name": "ITO TCO (80 nm both sides)", "supplier": "pre-deposited on precursor", "catalog": "—", "qty": "—"}
+      ],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/a-Si-H-passivation-degradation", "severity": "critical", "label": "Heterogeneous batch passivation", "mitigation": "Reject any wafer with QSSPC iVoc < 740 mV at injection 10¹⁵ cm⁻³ before metallization."}
+      ],
+      "source_citations": ["2022-arena-sundrive-copper-metallisation-demonstration", "2018-pv-tech-metallization-interconnection-bifacial-shj"],
+      "arms": ["all"]
+    },
+    {
+      "step": 2,
+      "title": "PVD seed deposition (Cu 50 nm / Al 100 nm)",
+      "duration_minutes": 120,
+      "rationale": "Sputter a Cu(50 nm) seed layer onto the front ITO at room temperature, followed by Al(100 nm) cap on top. The Al will be the NOBLE plating mask after selective patterning; its self-passivating native AlOx (formed by 1–5 d ambient hold or 1 d at 50°C / 6 % RH) gives the contact angle 100–120° required for fine-line inkjet etch (Hatt 2019).",
+      "reagents": [
+        {"wiki_page": "reagents/ITO-transparent-conductive-oxide", "name": "ITO substrate (TCO)", "supplier": "—", "catalog": "—", "qty": "—"}
+      ],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/a-Si-H-passivation-degradation", "severity": "critical", "label": "Sputter damage to a-Si:H", "mitigation": "Soft-sputter mode, low DC bias, sample T < 80°C, 200°C / 15 min anneal post-plate to recover passivation per Hatt 2019."},
+        {"wiki_page": "failure-modes/TCO-pitting-during-plating", "severity": "medium", "label": "Inhomogeneous PVD-Al", "mitigation": "Verify Al uniformity by reflectometry; reject any wafer with > 5 % thickness variation."}
+      ],
+      "source_citations": ["2019-hatt-noble-shj-solrrl", "2019-hatt-noble-bifacial-shj-aip", "2021-hatt-stable-cu-plated-shj-eupvsec"],
+      "arms": ["A", "B", "C"]
+    },
+    {
+      "step": 3,
+      "title": "Inkjet-NaOH selective Al etch (NOBLE patterning)",
+      "duration_minutes": 60,
+      "rationale": "Print 1 wt % NaOH(aq) ink (2–5 pL droplets, Notion Systems / SUSS PiXDRO industrial inkjet) along the desired grid pattern (finger pitch 1.4 mm, finger width target 25 µm). NaOH etches Al at 2.4–11 nm/s (1–4 wt % range, Hatt 2019 Fig. 3) but does not attack Cu, Ag, or ITO. Hold 5 min then DI-rinse. The grid lines are now Cu-on-ITO openings; the rest of the cell stays masked by the residual Al + native AlOx.",
+      "reagents": [
+        {"wiki_page": "reagents/inkjet-plating-resist", "name": "1 wt % NaOH(aq) etch ink (NOBLE-style)", "supplier": "lab-prepared from reagent NaOH + DI", "catalog": "—", "qty": "100 mL/batch"}
+      ],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/plating-resist-undercut", "severity": "medium", "label": "Ink spreading / lateral etch", "mitigation": "Verify AlOx contact angle 100–120° before printing; pre-condition wafers ≥5 d ambient or 1 d 50°C / 6 % RH (Hatt 2019)."},
+        {"wiki_page": "failure-modes/TCO-pitting-during-plating", "severity": "medium", "label": "ITO attack at over-etch", "mitigation": "End-point monitor by reflectometry; over-etch into ITO < 5 nm."}
+      ],
+      "source_citations": ["2019-hatt-noble-shj-solrrl", "2019-hatt-noble-bifacial-shj-aip", "notion-systems-solar-inkjet-overview"],
+      "arms": ["A", "B", "C"]
+    },
+    {
+      "step": 4,
+      "title": "Electroplated Ni barrier (Arm A: 80 nm; Arm C: 120 nm; Arm B: skip)",
+      "duration_minutes": 30,
+      "rationale": "Electroplate Ni from a sulfamate bath onto the exposed Cu seed in the grid openings. Sulfamate Ni is the canonical low-stress, fine-grain electrolyte: Ni(SO₃NH₂)₂ 80 g/L, NiCl₂ 5 g/L, H₃BO₃ 35 g/L, pH 3.8–4.2, T 50°C, J 4 A/dm² cathodic. Plate to 80 nm (Arm A, sub-100 nm hypothesis target) or 120 nm (Arm C, Cheng 2018 safe-threshold). Arm B is skipped — Cu plates directly onto Cu seed. Verify thickness by surface XRF or ellipsometry on a coupon. The Ni must be continuous (no pinholes >1 µm); pinhole-decoration test by 5-min Cu displacement bath before next step is REQUIRED — pinhole density >10 cm⁻² rejects the wafer.",
+      "reagents": [
+        {"wiki_page": "reagents/nickel-sulfamate-bath", "name": "Nickel(II) sulfamate hydrate (80 g/L)", "supplier": "Thermo Fisher / Alfa Aesar", "catalog": "AA8902018", "qty": "1 kg → 5 L bath"},
+        {"wiki_page": "reagents/boric-acid", "name": "Boric acid (35 g/L)", "supplier": "Fisher Scientific", "catalog": "A74-500", "qty": "200 g"}
+      ],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/Ni-barrier-pinholes", "severity": "high", "label": "Sub-100 nm Ni below Cheng 60 nm-fails-at-300°C threshold", "mitigation": "Limit post-plating thermal budget to ≤200°C / 15 min (Hatt 2019); run pinhole-decoration test (Cu displacement, 5 min) before Cu plate; reject if pinhole density >10 cm⁻²."},
+        {"wiki_page": "failure-modes/Cu-diffusion-into-c-Si", "severity": "critical", "label": "Cu through pinhole into c-Si bulk", "mitigation": "TCO ≥75 nm acts as co-barrier (Yacouba 2025); SIMS at 1000 h DH for verification."}
+      ],
+      "source_citations": ["2014-rehman-nicu-plating-csi-review", "2018-electrochemsci-barrier-properties-electroplated-ni", "2010-bartsch-lip-pvsc", "fisher-AA8902018-nickel-sulfamate-hydrate"],
+      "arms": ["A", "C"]
+    },
+    {
+      "step": 5,
+      "title": "Electroplated Cu thickening (5 µm)",
+      "duration_minutes": 90,
+      "rationale": "Plate Cu from an Atotech Cupracid Ultra-class acid Cu electrolyte (CuSO₄·5H₂O 220 g/L, H₂SO₄ 60 g/L, Cl⁻ 100 ppm, Cupracid brightener/leveler additives 5–10 mL/L) using pulsed forward/reverse current — 6 A/dm² cathodic, 15 ms forward / 1 ms reverse, anodic:cathodic 4.5 (Hatt 2019). Plate to 5 µm finger height (target aspect ratio ≈ 0.6 at 25 µm finger width). Bath temperature 25°C with mild paddle agitation. P-Cu bagged anodes. Aim for line resistance ≤2 µΩ·cm bulk Cu and ≤1 Ω/cm finger.",
+      "reagents": [
+        {"wiki_page": "reagents/acid-Cu-sulfate-bath", "name": "Atotech Cupracid Ultra-class acid Cu electrolyte", "supplier": "Atotech / MKS", "catalog": "Cupracid Ultra A", "qty": "10 L bath"},
+        {"wiki_page": "reagents/sulfuric-acid-H2SO4", "name": "Sulfuric acid 96 % ACS", "supplier": "Fisher / Acros Organics", "catalog": "AC424525000", "qty": "1 L"}
+      ],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/TCO-pitting-during-plating", "severity": "medium", "label": "Acid attack on exposed ITO at openings", "mitigation": "Plating bath pH ≥ 0.5; minimize plating time; use pulsed current to refresh diffusion layer."},
+        {"wiki_page": "failure-modes/finger-adhesion-loss-after-DH", "severity": "high", "label": "Cu adhesion to Ni or Cu seed", "mitigation": "Pre-plate dip in 10 % H₂SO₄ for 30 s to activate Ni/Cu surface; verify ≥2 N/mm peel before lamination per SunDrive ARENA."}
+      ],
+      "source_citations": ["2019-hatt-noble-shj-solrrl", "2022-arena-sundrive-copper-metallisation-demonstration", "atotech-cupracid-ultra-a-tds", "fisher-AC197730010-cu-sulfate-pentahydrate-sds", "fisher-AC424525000-sulfuric-acid-acs-sds"],
+      "arms": ["A", "B", "C"]
+    },
+    {
+      "step": 6,
+      "title": "Immersion Ag cap deposition (~200 nm)",
+      "duration_minutes": 20,
+      "rationale": "Galvanic-displacement Ag deposition from a cyanide-free immersion bath (commercial — e.g., Atotech Bondaglas or equivalent). Ag cap protects Cu fingers from atmospheric oxidation and provides a solderable interface for downstream module interconnect. Hatt 2019 reports ~200 nm Ag cap survives 1000 h DH on glass-glass POE laminates with negligible Cu out-diffusion when paired with POE encapsulant (Karas 2022 contradiction: same cap thickness fails on EVA — encapsulant choice dominates).",
+      "reagents": [
+        {"wiki_page": "reagents/silver-Ag-cap", "name": "Immersion Ag (~200 nm)", "supplier": "Atotech / MacDermid Alpha", "catalog": "Bondaglas-class", "qty": "5 L bath"}
+      ],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/Cu-finger-oxidation-damp-heat", "severity": "high", "label": "Insufficient Ag cap coverage", "mitigation": "Verify cap continuity by EDS surface scan; minimum thickness 150 nm everywhere."},
+        {"wiki_page": "failure-modes/Cu-out-diffusion-through-cap-stack", "severity": "high", "label": "Cu migration through Ag cap into encapsulant", "mitigation": "Pair with POE encapsulant in step 9; Karas 2022 shows Sn/Ag caps leak Cu under EVA but not POE."}
+      ],
+      "source_citations": ["2019-hatt-noble-shj-solrrl", "2022-karas-cu-outdiffusion-damp-heat"],
+      "arms": ["A", "B", "C"]
+    },
+    {
+      "step": 7,
+      "title": "PVD-stack etch-back & low-T anneal",
+      "duration_minutes": 75,
+      "rationale": "Strip the residual PVD Cu/Al cover layer (outside grid lines) using sequential selective wet etches per Hatt 2019: H₃PO₄/HNO₃ (60/3.25 wt %) at 50°C etches Al < 1 nm/s but Cu and Ag at >10 nm/s — wrong order; correct sequence is (NH₄)₂S₂O₈ 2.5 % to remove Cu seed, then NaOH 1 % to remove residual Al. Selectivity table in Hatt 2019 page 11 governs. Final low-T anneal 200°C / 15 min in air recovers a-Si:H sputter damage; do NOT exceed 200°C — Cheng 2018 shows Cu₃Si nucleation onset above this temperature.",
+      "reagents": [
+        {"wiki_page": "reagents/sulfuric-acid-H2SO4", "name": "Sulfuric acid (rinse-down)", "supplier": "Fisher", "catalog": "AC424525000", "qty": "100 mL"}
+      ],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/TCO-pitting-during-plating", "severity": "medium", "label": "Over-etch into ITO", "mitigation": "Endpoint by reflectometry; over-etch into ITO < 5 nm."},
+        {"wiki_page": "failure-modes/Cu3Si-formation-at-Si-interface", "severity": "critical", "label": "Anneal-induced Cu₃Si nucleation", "mitigation": "Strict ≤200°C anneal cap; never exceed 250°C in any subsequent module-process step."}
+      ],
+      "source_citations": ["2019-hatt-noble-shj-solrrl", "2018-electrochemsci-barrier-properties-electroplated-ni"],
+      "arms": ["A", "B", "C"]
+    },
+    {
+      "step": 8,
+      "title": "Cell-level baseline characterization (TLM, Suns-Voc, IV, peel, EL)",
+      "duration_minutes": 240,
+      "rationale": "All four arms (≥5 cells per arm) measured at t=0: (i) TLM contact resistivity ρc (10-line geometry, 700–4800 µm spacing per NREL Aschenbrenner 2012); (ii) Suns-Voc + dark IV for pFF and J02 (Sinton flash tester); (iii) STC IV for η, Voc, Jsc, FF (AM1.5g class AAA solar simulator); (iv) 90° peel test on a 2 mm-wide Cu/Sn ribbon soldered to a busbar — Geipel 2014 protocol, Kinloch–Kawashita adhesive fracture energy reported alongside peel force; (v) EL imaging at 1-sun current; (vi) QSSPC bulk minority-carrier lifetime on 2 sister cells per arm. Reject Arm A if ρc > 2 mΩ·cm² at t=0 — early-stop criterion.",
+      "reagents": [],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/FF-degradation-contact-resistance", "severity": "high", "label": "Baseline ρc > 2 mΩ·cm² rejects hypothesis", "mitigation": "Re-tune PVD seed thickness or pulsed-plating waveform; iterate before lamination."}
+      ],
+      "source_citations": ["2012-nrel-aluminum-metallization-tlm-printed", "2014-fraunhofer-peel-testing-ribbons-solar-cells", "2019-hatt-noble-shj-solrrl"],
+      "arms": ["A", "B", "C", "D"]
+    },
+    {
+      "step": 9,
+      "title": "Mini-module lamination (POE glass-glass with PIB edge seal)",
+      "duration_minutes": 90,
+      "rationale": "Encapsulate one cell per arm in a 2-mm low-Fe glass / 0.45 mm POE / cell / 0.45 mm POE / 2-mm glass laminate with multibusbar Cu ribbon interconnect (Pb-free SnBi solder). Apply polyisobutylene (PIB) edge seal around the perimeter. POE chosen over EVA to eliminate the acetic-acid corrosion pathway documented by Karas 2022. Vacuum-laminate at 145°C / 12 min cycle (POE-compatible profile, NOT the standard EVA 150°C/15 min). One sister Arm A laminate uses EVA — paired contrast per Karas 2022 protocol. Total: 5 laminates (4 POE arms + 1 EVA contrast).",
+      "reagents": [
+        {"wiki_page": "reagents/POE-polyolefin-encapsulant", "name": "POE encapsulant film (0.45 mm)", "supplier": "Borealis / Hangzhou First", "catalog": "Quentys / Hispana", "qty": "5 sheets, 200×200 mm"},
+        {"wiki_page": "reagents/EVA-encapsulant", "name": "EVA encapsulant film (0.45 mm) — control contrast only", "supplier": "Mitsui / Hangzhou First", "catalog": "Hangzhou First STR-PV", "qty": "1 sheet"},
+        {"wiki_page": "reagents/multibusbar-Cu-ribbon", "name": "Pb-free Sn-coated Cu ribbon (0.3 × 1.5 mm)", "supplier": "Schlenk / Ulbrich", "catalog": "PV ribbon SnBi", "qty": "5 m"}
+      ],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/EVA-acetic-acid-corrosion", "severity": "high", "label": "EVA hydrolysis releases acetic acid that corrodes Cu and drives Cu out-diffusion (Karas 2022 ~3× more Cu in Si vs POE)", "mitigation": "Use POE for all hypothesis arms; the single EVA laminate is a controlled paired contrast, not the test arm."},
+        {"wiki_page": "failure-modes/Cu-finger-corrosion-encapsulant", "severity": "high", "label": "Edge moisture ingress into mini-module", "mitigation": "PIB edge seal mandatory; Lachowicz 2024 identifies edge initiation as dominant DH damage mode on glass-glass laminates without seal."}
+      ],
+      "source_citations": ["2022-karas-cu-outdiffusion-damp-heat", "2024-lachowicz-cu-plated-shj-aging-mini-modules", "2022-arena-sundrive-copper-metallisation-demonstration"],
+      "arms": ["A", "B", "C", "D"]
+    },
+    {
+      "step": 10,
+      "title": "Damp-heat aging — IEC 61215 1000 h with checkpoints",
+      "duration_minutes": 60000,
+      "rationale": "Hold all 5 laminates at 85°C / 85 % RH in a calibrated environmental chamber per IEC 61215 §10.13. Open-circuit (no electrical bias). Remove and re-measure at 250, 500, 750, 1000 h: STC IV, Suns-Voc, EL imaging at each checkpoint. Köhl 2013 Arrhenius framework: 1000 h at 85/85 maps to ~9 yr field exposure in moderate climate, ~3 yr in tropical. Baseline pass criterion: Δη ≤ 0.5 %abs at 1000 h on Arm A.",
+      "reagents": [],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/Cu-out-diffusion-through-cap-stack", "severity": "high", "label": "Cu migration through Sn/Ag cap into encapsulant under DH", "mitigation": "Karas 2022: ~5–8 % Pmax loss at 1000 h on EVA-encapsulated Cu cells; POE eliminates this. Single EVA contrast laminate is the failure-mode confirmation arm."},
+        {"wiki_page": "failure-modes/finger-adhesion-loss-after-DH", "severity": "high", "label": "Adhesion loss after thermomechanical / hydrolytic cycling", "mitigation": "Cu seed pre-clean (HF + 10 % H₂SO₄ activation per Jeon 2017) gives +42 mV Voc; SunDrive two-step plating gives shear-strength > c-Si shear-strength."}
+      ],
+      "source_citations": ["2012-nrel-iec61215-what-it-is", "2011-nrel-reliability-testing-beyond-qualification", "2013-koehl-fraunhofer-accelerated-service-life-testing", "2022-karas-cu-outdiffusion-damp-heat"],
+      "arms": ["A", "B", "C", "D"]
+    },
+    {
+      "step": 11,
+      "title": "Extended damp-heat 1000 → 2000 h (IEC 63209 sequence)",
+      "duration_minutes": 60000,
+      "rationale": "Continue damp-heat exposure beyond 1000 h to 2000 h, per IEC 63209 extended-stress sequence and the 2024 NREL 'Getting Ahead of the Curve' recommendation that 1000 h is no longer sufficient for SHJ-Cu. Karas 2022 shows EVA-encapsulated cells fail at 2000–3500 h while POE survives — extended DH is necessary to surface the failure mode. Re-measure at 1500 and 2000 h. Pass criterion: Δη ≤ 1.0 %abs at 2000 h on Arm A (POE).",
+      "reagents": [],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/EVA-acetic-acid-corrosion", "severity": "high", "label": "Cumulative encapsulant hydrolysis", "mitigation": "Documented in EVA contrast laminate — not a defect of the hypothesis arms."},
+        {"wiki_page": "failure-modes/Ni-Cu-line-resistance-rise-DH", "severity": "medium", "label": "Cu finger oxidation through Ag cap (Lachowicz 2023/2024)", "mitigation": "Track FF and series resistance separately; FF loss without Voc loss → cap/finger issue, not Cu in Si."}
+      ],
+      "source_citations": ["2024-nrel-getting-ahead-of-curve-pv-assessment", "2024-lachowicz-cu-plated-shj-aging-mini-modules", "2022-karas-cu-outdiffusion-damp-heat"],
+      "arms": ["A", "B", "C", "D"]
+    },
+    {
+      "step": 12,
+      "title": "Post-DH SIMS depth profile (Cu in c-Si verification)",
+      "duration_minutes": 480,
+      "rationale": "Cleave one cell per arm at 0, 1000, and 2000 h DH. Run dynamic SIMS with O₂⁺ primary beam (Cs⁺ for high-mass interference cases) on a 50×50 µm raster centered under a finger. Track Cu, Ni, Sn, Ag depth profiles into c-Si. Karas 2022 detection threshold: Cu signal in c-Si > 3× the Ag-screen-print reference is diagnostic of barrier failure. Yacouba 2025 reports no detectable Cu in Si under intact TCO — this experiment falsifies or confirms that on Arm A (sub-100 nm Ni) and Arm B (no Ni) under SHJ thermal budget. Outsource to a SIMS service (CAMECA, Eurofins, or university shared facility) — ~$400/sample.",
+      "reagents": [],
+      "failure_warnings": [
+        {"wiki_page": "failure-modes/Cu-diffusion-into-c-Si", "severity": "critical", "label": "Hypothesis-rejecting if Cu detected in c-Si bulk", "mitigation": "If Arm A shows Cu in Si but Arm C (120 nm Ni) does not, the sub-100 nm claim fails specifically; if both fail, Cu-encapsulant pathway dominates."}
+      ],
+      "source_citations": ["2022-karas-cu-outdiffusion-damp-heat", "2025-yacouba-shj-silver-free-metallization-progPV", "2018-electrochemsci-barrier-properties-electroplated-ni"],
+      "arms": ["A", "B", "C", "D"]
+    },
+    {
+      "step": 13,
+      "title": "Cost analysis & roadmap synthesis",
+      "duration_minutes": 480,
+      "rationale": "Compute $/cell front-side metallization cost for each arm using the SunDrive ARENA process step-list (4 steps for Cu vs 1 for screen-print, but 5–10× lower material cost) and the ITRPV 2024 Ag-laydown trajectory (currently ~9 mg/cell on SHJ, projected 5 mg/cell by 2034). Sensitivity-test cost at $25/oz and $35/oz Ag spot. Goldschmidt 2021 anchors the resource-bottleneck case. Output: $/cell + $/W vs Ag baseline at 5 GW production scale, with ±20 % uncertainty band.",
+      "reagents": [],
+      "failure_warnings": [],
+      "source_citations": ["2022-arena-sundrive-copper-metallisation-demonstration", "2024-itrpv-15th-edition-roadmap", "2021-goldschmidt-tech-learning-tw-pv", "2025-fraunhoferise-transition-ag-cu-screen-printed-shj"],
+      "arms": ["all"]
+    }
+  ],
+  "materials": [
+    {"wiki_page": "organisms/SHJ-cell-M6", "name": "Commercial SHJ M6 precursor (n-type, 155 µm, ITO 80 nm both sides, a-Si:H bilateral passivation)", "supplier": "CSEM / Meyer Burger / LONGi pilot line", "catalog": "SHJ-M6-pre-metallization", "qty": "60", "unit": "wafers", "price_usd": 1500},
+    {"wiki_page": "reagents/nickel-sulfamate-bath", "name": "Nickel(II) sulfamate hydrate (Ni source for sulfamate bath)", "supplier": "Thermo Scientific / Alfa Aesar", "catalog": "AA8902018", "qty": "2", "unit": "kg", "price_usd": 850},
+    {"wiki_page": "reagents/boric-acid", "name": "Boric acid ACS (Ni-sulfamate bath buffer)", "supplier": "Fisher Scientific", "catalog": "A74-500", "qty": "1", "unit": "kg", "price_usd": 95},
+    {"wiki_page": "reagents/acid-Cu-sulfate-bath", "name": "Atotech Cupracid Ultra A acid Cu plating chemistry (10 L makeup)", "supplier": "Atotech / MKS", "catalog": "Cupracid Ultra A starter kit", "qty": "1", "unit": "kit (10 L)", "price_usd": 2800},
+    {"wiki_page": "reagents/sulfuric-acid-H2SO4", "name": "Sulfuric acid 96 % ACS (electrolyte makeup + etchant)", "supplier": "Fisher / Acros Organics", "catalog": "AC424525000", "qty": "5", "unit": "L", "price_usd": 220},
+    {"wiki_page": "reagents/silver-Ag-cap", "name": "Immersion Ag cap chemistry (~200 nm)", "supplier": "Atotech / MacDermid Alpha", "catalog": "Bondaglas / Cuposit equivalent", "qty": "1", "unit": "kit (5 L)", "price_usd": 1900},
+    {"wiki_page": "reagents/inkjet-plating-resist", "name": "NaOH 99 % anhydrous (1 wt % aqueous etch ink)", "supplier": "Fisher Scientific", "catalog": "S318-500", "qty": "500", "unit": "g", "price_usd": 75},
+    {"wiki_page": "reagents/POE-polyolefin-encapsulant", "name": "POE encapsulant film 0.45 mm (200×200 mm sheets)", "supplier": "Borealis Quentys / Hangzhou First", "catalog": "Quentys SHJ-grade", "qty": "10", "unit": "sheets", "price_usd": 480},
+    {"wiki_page": "reagents/EVA-encapsulant", "name": "EVA encapsulant film 0.45 mm (control contrast only)", "supplier": "Hangzhou First", "catalog": "STR-PV", "qty": "2", "unit": "sheets", "price_usd": 95},
+    {"wiki_page": "reagents/multibusbar-Cu-ribbon", "name": "Sn-coated Cu interconnect ribbon 0.3×1.5 mm", "supplier": "Schlenk / Ulbrich", "catalog": "PV-ribbon SnBi", "qty": "10", "unit": "m", "price_usd": 95},
+    {"wiki_page": "reagents/low-T-Ag-paste-generic-SHJ-grade", "name": "Low-T SHJ-grade Ag paste (Heraeus SOL954 / Solamet PV42B / Namics LCT-class)", "supplier": "Heraeus / DuPont / Namics", "catalog": "Heraeus SOL954 (low-T SHJ)", "qty": "100", "unit": "g", "price_usd": 1850},
+    {"wiki_page": "reagents/Cu3Si-intermetallic", "name": "(no purchase — failure-mode artifact tracked by SIMS / XRD)", "supplier": "—", "catalog": "—", "qty": "—", "unit": "—", "price_usd": 0},
+    {"wiki_page": "methods/SIMS-depth-profile", "name": "SIMS depth-profile analysis (Cu / Ni / Sn / Ag in c-Si, 12 samples)", "supplier": "CAMECA / Eurofins / university SIMS facility", "catalog": "Cu-trace depth profile", "qty": "12", "unit": "samples", "price_usd": 4800},
+    {"wiki_page": "methods/four-point-probe-sheet-resistance", "name": "Sheet-resistance and TLM probe rental (Keithley 2400 SMU + 4-point head)", "supplier": "shared lab access", "catalog": "—", "qty": "8", "unit": "weeks", "price_usd": 3200}
+  ],
+  "budget": [
+    {"category": "Wafers / precursors", "description": "60 commercial SHJ M6 precursor cells from a pilot-line partner", "cost_usd": 1500},
+    {"category": "Plating chemistry", "description": "Ni sulfamate, acid Cu (Atotech Cupracid Ultra), boric-acid buffer, immersion Ag cap, NaOH ink, sulfuric acid", "cost_usd": 5940},
+    {"category": "Encapsulation & module materials", "description": "POE & EVA films, PIB edge seal, Cu ribbon, low-Fe glass plates, low-T solder", "cost_usd": 2150},
+    {"category": "Control reagent (Ag paste)", "description": "Low-T SHJ-grade Ag paste (Heraeus SOL954 class)", "cost_usd": 1850},
+    {"category": "Equipment access", "description": "PVD sputter facility (50 hrs); inkjet printer rental (Notion Systems lab unit, 4 wk); environmental chamber (85/85, 14 wk); IV / Suns-Voc / 4PP probe stations; vacuum laminator", "cost_usd": 28500},
+    {"category": "SIMS analysis", "description": "12 SIMS depth profiles (Cu/Ni/Sn/Ag in c-Si) at 0/1000/2000 h on Arms A–D", "cost_usd": 4800},
+    {"category": "Personnel (1.5 FTE × 14 wk)", "description": "Postdoctoral researcher (lead) + research technician (plating + measurement) at $50/hr loaded × 40 hr/wk × 14 wk × 1.5 FTE", "cost_usd": 84000},
+    {"category": "Safety & consumables", "description": "PPE, fume hood booking, hazardous-waste disposal (acid + Ni + Cu metallics), DI water, lab supplies", "cost_usd": 3200},
+    {"category": "Reporting & dissemination", "description": "Open-access publication fee, conference travel allowance (1 EU PVSEC presentation), figures and graphics", "cost_usd": 6800},
+    {"category": "Indirect / overhead (10 %)", "description": "University F&A applied to direct costs", "cost_usd": 13855},
+    {"category": "Contingency", "description": "15 % contingency for failed wafer batches, equipment downtime, additional SIMS samples", "cost_usd": 15855}
+  ],
+  "timeline": [
+    {"name": "Phase 1 · Wafer sourcing & batch validation", "start_week": 0, "duration_weeks": 2, "depends_on": [], "criticality": 1},
+    {"name": "Phase 2 · NOBLE recipe optimisation on coupons", "start_week": 2, "duration_weeks": 3, "depends_on": ["Phase 1 · Wafer sourcing & batch validation"], "criticality": 1},
+    {"name": "Phase 3 · Cell metallisation (Arms A–D)", "start_week": 5, "duration_weeks": 2, "depends_on": ["Phase 2 · NOBLE recipe optimisation on coupons"], "criticality": 1},
+    {"name": "Phase 4 · Baseline characterisation + lamination", "start_week": 7, "duration_weeks": 1, "depends_on": ["Phase 3 · Cell metallisation (Arms A–D)"], "criticality": 1},
+    {"name": "Phase 5 · IEC 61215 damp-heat 0 → 1000 h", "start_week": 8, "duration_weeks": 6, "depends_on": ["Phase 4 · Baseline characterisation + lamination"], "criticality": 1},
+    {"name": "Phase 6 · Extended DH 1000 → 2000 h + SIMS", "start_week": 14, "duration_weeks": 6, "depends_on": ["Phase 5 · IEC 61215 damp-heat 0 → 1000 h"], "criticality": 0},
+    {"name": "Phase 7 · Cost analysis + manuscript", "start_week": 12, "duration_weeks": 2, "depends_on": ["Phase 5 · IEC 61215 damp-heat 0 → 1000 h"], "criticality": 0}
+  ],
+  "validation": {
+    "success_criteria": [
+      "Arm A (sub-100 nm Ni / Cu / Ag cap, NOBLE-style) achieves ρc ≤ 2 mΩ·cm² by TLM at t=0 (n=5 cells, σ < 0.4)",
+      "Arm A shows Δη ≤ 0.5 %abs after 1000 h DH on POE glass-glass mini-module (paired t-test vs Arm D Ag baseline, p < 0.05)",
+      "Arm A peel adhesion ≥ 1 N/mm at t=0 and t=1000 h per DIN EN 50461 / Geipel 2014",
+      "SIMS depth profile shows Cu in c-Si ≤ 3× Arm D Ag-screen-print reference background after 1000 h DH",
+      "Cost model predicts ≤ 10 % of Ag baseline $/cell at 5 GW scale, with ≥1 reproducible sensitivity point at $25/oz Ag spot"
+    ],
+    "failure_criteria": [
+      "Arm A ρc > 2 mΩ·cm² at t=0 — early-stop, hypothesis rejected on contact-resistivity ground",
+      "Arm A Δη > 1.0 %abs at 1000 h — hypothesis rejected on damp-heat ground",
+      "SIMS shows quantitative Cu signal in c-Si bulk on Arm A after 1000 h DH with intact TCO and Ag cap — hypothesis rejected on barrier-integrity ground",
+      "Arm A peel adhesion < 1 N/mm at any timepoint — hypothesis rejected on adhesion ground",
+      "Cost model predicts > 30 % of Ag baseline at any sensitivity point — hypothesis rejected on cost ground"
+    ],
+    "measurements": [
+      {"endpoint": "Contact resistivity ρc (mΩ·cm²)", "method": "[[wiki/methods/transfer-length-method]] (10-line, 700–4800 µm spacing, NREL Aschenbrenner 2012 protocol)", "threshold": "≤ 2.0", "n": "5 per arm × 4 arms = 20 cells"},
+      {"endpoint": "Cell efficiency η (%)", "method": "[[wiki/methods/IV-curve-measurement]] (STC AM1.5g, class AAA simulator, calibrated reference cell)", "threshold": "Δη ≤ 0.5 %abs at 1000 h, ≤ 1.0 %abs at 2000 h", "n": "5 per arm × 4 arms × 6 timepoints"},
+      {"endpoint": "pseudo-FF (pFF, %)", "method": "[[wiki/methods/dark-IV-suns-Voc]] (Sinton flash)", "threshold": "ΔpFF ≤ 0.5 %abs at 1000 h", "n": "5 per arm × 4 arms × 6 timepoints"},
+      {"endpoint": "Peel adhesion (N/mm)", "method": "[[wiki/methods/peel-test-90deg]] (DIN EN 50461 / Geipel 2014, 90°, 50 mm/min)", "threshold": "≥ 1.0 at all timepoints", "n": "3 per arm at t=0 and t=1000 h"},
+      {"endpoint": "Cu in c-Si (counts/s)", "method": "[[wiki/methods/SIMS-depth-profile]] (dynamic SIMS, O₂⁺ primary, 50×50 µm raster under finger)", "threshold": "≤ 3× Arm D background", "n": "12 samples (3 timepoints × 4 arms)"},
+      {"endpoint": "Bulk minority-carrier lifetime τbulk (µs)", "method": "[[wiki/methods/minority-carrier-lifetime-photoluminescence]] (QSSPC at injection 10¹⁵ cm⁻³)", "threshold": "Δτ ≤ 20 % at 1000 h", "n": "2 sister cells per arm at t=0, 1000, 2000 h"},
+      {"endpoint": "Visual / EL defect map", "method": "[[wiki/methods/EL-electroluminescence-imaging]] (1-sun current injection, InGaAs camera)", "threshold": "No new dark patches > 0.5 mm² between checkpoints", "n": "5 per arm × 4 arms × 6 timepoints"},
+      {"endpoint": "Front-side metallization $/cell", "method": "process step-list cost model (SunDrive ARENA + ITRPV 2024 inputs)", "threshold": "≤ 10 % of Ag baseline at $25/oz Ag spot", "n": "1 model output with ±20 % uncertainty band"}
+    ]
+  },
+  "failure_map": [
+    {"id": "Cu-diffusion-into-c-Si", "label": "Cu diffusion into crystalline silicon", "severity": "critical", "frequency_estimate": "Inevitable without barrier; sub-ppb Cu collapses lifetime (Lindroos 2015); SHJ TCO + intact Ni continuity is the hypothesis's protection", "applies_to": ["Arm A", "Arm B", "Arm C"], "applies_to_step": 4, "mitigation": "Sub-100 nm Ni barrier + intact TCO co-barrier; SIMS verification at every DH checkpoint; ≤200°C anneal cap to suppress Cu₃Si nucleation", "wiki_page": "failure-modes/Cu-diffusion-into-c-Si"},
+    {"id": "Cu3Si-formation-at-Si-interface", "label": "Cu₃Si silicide formation at Si interface", "severity": "critical", "frequency_estimate": "Cheng 2018: 60 nm Ni → Cu₃Si at 300°C; 120 nm Ni → Cu₃Si at 400°C; SHJ ≤200°C bulk process budget should suppress, but lamination 145°C / 12 min and operational temperature excursions need verification", "applies_to": ["Arm A", "Arm C"], "applies_to_step": 7, "mitigation": "Hard ≤200°C cap on every post-plate thermal step; verify by XRD / STEM-EDS on coupons", "wiki_page": "failure-modes/Cu3Si-formation-at-Si-interface"},
+    {"id": "Ni-barrier-pinholes", "label": "Ni-barrier pinholes (sub-100 nm vs Cheng threshold)", "severity": "high", "frequency_estimate": "Cheng 2018 60 nm electroplated Ni shows Cu₃Si at 300°C — the hypothesis's sub-100 nm claim is in the failure regime under high-T anneal but possibly rescued by SHJ ≤200°C process; pinhole density >10 cm⁻² rejects the wafer", "applies_to": ["Arm A"], "applies_to_step": 4, "mitigation": "Pinhole-decoration test (Cu displacement, 5 min) before Cu plate; reject any wafer with pinhole density >10 cm⁻²; SIMS verification post-DH", "wiki_page": "failure-modes/Ni-barrier-pinholes"},
+    {"id": "EVA-acetic-acid-corrosion", "label": "EVA hydrolysis → acetic acid → Cu corrosion + out-diffusion", "severity": "high", "frequency_estimate": "Karas 2022 ~3× more Cu in Si on EVA vs POE after 3500 h DH; ~5 % Pmax loss in EVA-encapsulated cells at 2000 h; effectively eliminated by POE encapsulant + PIB edge seal", "applies_to": ["EVA contrast laminate"], "applies_to_step": 9, "mitigation": "Use POE encapsulant for all hypothesis arms; reserve EVA for the paired contrast laminate that confirms the failure mode is encapsulant-driven", "wiki_page": "failure-modes/EVA-acetic-acid-corrosion"},
+    {"id": "Cu-out-diffusion-through-cap-stack", "label": "Cu migration up through Sn/Ag cap into encapsulant", "severity": "high", "frequency_estimate": "Karas 2022 SIMS shows Cu reaching outer surface of Sn/Ag caps after 1000 h DH on EVA; significantly suppressed in POE", "applies_to": ["Arm A", "Arm B", "Arm C"], "applies_to_step": 6, "mitigation": "Ag cap ≥150 nm continuous coverage verified by EDS; Karas 2022 Cu-Ni co-deposition (~9 at% Ni in Cu) stabilizes (Cu,Ni)₆Sn₅ phase if Sn cap chosen", "wiki_page": "failure-modes/Cu-out-diffusion-through-cap-stack"},
+    {"id": "Cu-finger-corrosion-encapsulant", "label": "Cu finger corrosion at encapsulant interface", "severity": "high", "frequency_estimate": "Lachowicz 2024: ~5 % Pmax loss at 2700 h on glass-glass POE without edge seal; mitigated to ≤1 % with PIB edge seal", "applies_to": ["all Cu arms"], "applies_to_step": 9, "mitigation": "PIB edge seal mandatory; lamination cycle tuned to POE (145°C / 12 min, NOT EVA 150°C / 15 min)", "wiki_page": "failure-modes/Cu-finger-corrosion-encapsulant"},
+    {"id": "FF-degradation-contact-resistance", "label": "FF degradation from contact-resistance rise", "severity": "high", "frequency_estimate": "Universal across plated-Cu cells; SunDrive achieves ρc 0.1–1 mΩ·cm², Hatt NOBLE 1.8–4.0 mΩ·cm²; ARM A target ≤2 mΩ·cm² is on the boundary", "applies_to": ["Arm A", "Arm B", "Arm C"], "applies_to_step": 8, "mitigation": "Optimize PVD seed thickness and bath chemistry; pulsed-reverse current per Hatt 2019 for fine-grain Cu; track ρc separately from η at every checkpoint", "wiki_page": "failure-modes/FF-degradation-contact-resistance"},
+    {"id": "finger-adhesion-loss-after-DH", "label": "Finger adhesion loss after damp-heat", "severity": "high", "frequency_estimate": "Historical Suntech Pluto failure mode; SunDrive achieves Si-shear-strength adhesion via two-step plating + chemistry tuning; baseline DIN EN 50461 specifies ≥1 N/mm minimum", "applies_to": ["Arm A", "Arm B", "Arm C"], "applies_to_step": 5, "mitigation": "HF + 10 % H₂SO₄ surface activation pre-Cu (Jeon 2017 +42 mV Voc); two-step plating with low-current strike + main fill; peel-test verification at t=0 and t=1000 h", "wiki_page": "failure-modes/finger-adhesion-loss-after-DH"},
+    {"id": "TCO-pitting-during-plating", "label": "TCO (ITO) pitting at exposed plating openings", "severity": "medium", "frequency_estimate": "Acid Cu pH ≈ 0.5 attacks ITO at exposed pinholes; mitigated by selective etchants (Hatt 2019) and minimal exposure time", "applies_to": ["Arm A", "Arm B", "Arm C"], "applies_to_step": 5, "mitigation": "Endpoint-monitor PVD-stack etch-back by reflectometry; over-etch into ITO < 5 nm; use (NH₄)₂S₂O₈ for Cu-only removal preserving ITO", "wiki_page": "failure-modes/TCO-pitting-during-plating"},
+    {"id": "a-Si-H-passivation-degradation", "label": "a-Si:H passivation degradation from sputter / anneal / UV", "severity": "critical", "frequency_estimate": "Sputter damage recoverable by 200°C / 15 min anneal (Hatt 2019); fs-UV laser at >4.7 µJ damages PL signature (Hatt 2021); UV preconditioning per IEC 61215 a known stress", "applies_to": ["Arm A", "Arm B", "Arm C"], "applies_to_step": 2, "mitigation": "Soft-sputter mode at sample T < 80°C; mandatory 200°C / 15 min recovery anneal; UV preconditioning before DH per IEC 61215 §10.10", "wiki_page": "failure-modes/a-Si-H-passivation-degradation"}
+  ],
+  "sources": [
+    {"id": "2010-bartsch-lip-pvsc", "title": "Copper as Conducting Layer in Advanced Front Side Metallization Processes for Crystalline Silicon Solar Cells, Exceeding 20% on Printed Seed Layers", "authors": "Bartsch, J.; Glatthaar, M.; et al.", "year": 2010, "doi": null, "tag": "paper", "wiki_page": "sources/2010-bartsch-lip-pvsc"},
+    {"id": "2014-rehman-nicu-plating-csi-review", "title": "Review of the Potential of the Ni/Cu Plating Technique for Crystalline Silicon Solar Cells", "authors": "Rehman, A. ur; Lee, S. H.", "year": 2014, "doi": "10.3390/ma7021318", "tag": "paper", "wiki_page": "sources/2014-rehman-nicu-plating-csi-review"},
+    {"id": "2015-lindroos-cu-lid-aalto-thesis", "title": "Copper-related light-induced degradation in crystalline silicon", "authors": "Lindroos, J.", "year": 2015, "doi": null, "tag": "paper", "wiki_page": "sources/2015-lindroos-cu-lid-aalto-thesis"},
+    {"id": "2017-jeon-electroless-ni-front-metallization", "title": "Electroless Nickel Deposition for Front Side Metallization of Silicon Solar Cells", "authors": "Jeon et al.", "year": 2017, "doi": null, "tag": "paper", "wiki_page": "sources/2017-jeon-electroless-ni-front-metallization"},
+    {"id": "2018-electrochemsci-barrier-properties-electroplated-ni", "title": "Barrier Properties of Electroplating Nickel Layer for Copper Metallization in Silicon Solar Cells", "authors": "Cheng et al.", "year": 2018, "doi": null, "tag": "protocol", "wiki_page": "sources/2018-electrochemsci-barrier-properties-electroplated-ni"},
+    {"id": "2018-pv-international-metallization-shj", "title": "Metallization Techniques and Interconnection Schemes for High-Efficiency Silicon Heterojunction PV", "authors": "Faes, A.; Lachowicz, A.; et al. (CSEM)", "year": 2018, "doi": null, "tag": "paper", "wiki_page": "sources/2018-pv-international-metallization-shj"},
+    {"id": "2018-pv-tech-metallization-interconnection-bifacial-shj", "title": "Metallization and Interconnection for High-Efficiency Bifacial Silicon Heterojunction Solar Cells and Modules", "authors": "Faes, A.; Lachowicz, A.; et al. (CSEM)", "year": 2018, "doi": null, "tag": "paper", "wiki_page": "sources/2018-pv-tech-metallization-interconnection-bifacial-shj"},
+    {"id": "2018-pvtech-metallization-shj-cells-modules", "title": "Metallization and interconnection for silicon heterojunction solar cells and modules", "authors": "Lachowicz, A.; et al. (CSEM)", "year": 2018, "doi": null, "tag": "protocol", "wiki_page": "sources/2018-pvtech-metallization-shj-cells-modules"},
+    {"id": "2019-hatt-noble-shj-solrrl", "title": "Native Oxide Barrier Layer for Selective Electroplated Metallization of Silicon Heterojunction Solar Cells", "authors": "Hatt, T.; Kluska, S.; Yamin, M.; Bartsch, J.; Glatthaar, M.", "year": 2019, "doi": "10.1002/solr.201900006", "tag": "paper", "wiki_page": "sources/2019-hatt-noble-shj-solrrl"},
+    {"id": "2019-hatt-noble-bifacial-shj-aip", "title": "Establishing the NOBLE Metallization for Bifacial Silicon Heterojunction Solar Cells", "authors": "Hatt, T.; et al.", "year": 2019, "doi": null, "tag": "paper", "wiki_page": "sources/2019-hatt-noble-bifacial-shj-aip"},
+    {"id": "2019-karas-damp-heat-degradation-shj-cu", "title": "Degradation of Copper-plated silicon solar cells with damp heat stress", "authors": "Karas, J.; Bertoni, M. I.; et al.", "year": 2020, "doi": null, "tag": "paper", "wiki_page": "sources/2019-karas-damp-heat-degradation-shj-cu"},
+    {"id": "2020-verlinden-future-challenges-tw-pv", "title": "Future challenges for photovoltaic manufacturing at the terawatt level", "authors": "Verlinden, P.", "year": 2020, "doi": null, "tag": "paper", "wiki_page": "sources/2020-verlinden-future-challenges-tw-pv"},
+    {"id": "2021-goldschmidt-tech-learning-tw-pv", "title": "Technological learning for resource efficient terawatt scale photovoltaics", "authors": "Goldschmidt, J. C.; et al.", "year": 2021, "doi": null, "tag": "paper", "wiki_page": "sources/2021-goldschmidt-tech-learning-tw-pv"},
+    {"id": "2021-hatt-stable-cu-plated-shj-eupvsec", "title": "Stable Copper Plated Metallization on SHJ Solar Cells & Investigation of Selective Al/AlOx Laser Patterning", "authors": "Hatt, T.; et al.", "year": 2021, "doi": null, "tag": "paper", "wiki_page": "sources/2021-hatt-stable-cu-plated-shj-eupvsec"},
+    {"id": "2022-arena-sundrive-copper-metallisation-demonstration", "title": "SunDrive Copper Metallisation Demonstration Project — ARENA Knowledge Sharing Report", "authors": "SunDrive Solar; Lennon, A. (UNSW)", "year": 2022, "doi": null, "tag": "protocol", "wiki_page": "sources/2022-arena-sundrive-copper-metallisation-demonstration"},
+    {"id": "2022-karas-cu-outdiffusion-damp-heat", "title": "Copper Outdiffusion from Copper-Plated Solar Cell Contacts During Damp Heat Exposure", "authors": "Karas, J.; et al.", "year": 2022, "doi": null, "tag": "paper", "wiki_page": "sources/2022-karas-cu-outdiffusion-damp-heat"},
+    {"id": "2023-lachowicz-csem-stability-cu-plated-shj-mini-modules", "title": "Stability of Minimodules with Copper Plated Heterojunction Solar Cells", "authors": "Lachowicz, A.; et al. (CSEM)", "year": 2023, "doi": null, "tag": "paper", "wiki_page": "sources/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules"},
+    {"id": "2023-taiyangnews-heterojunction-technology-report", "title": "Heterojunction Solar Technology 2023 Edition: Working Hard on Cost Reduction", "authors": "TaiyangNews", "year": 2023, "doi": null, "tag": "paper", "wiki_page": "sources/2023-taiyangnews-heterojunction-technology-report"},
+    {"id": "2023-tepner-printing-tech-csi-review", "title": "Printing Technologies for Silicon Solar Cell Metallization: A Comprehensive Review", "authors": "Tepner, S.; Lorenz, A.", "year": 2023, "doi": null, "tag": "paper", "wiki_page": "sources/2023-tepner-printing-tech-csi-review"},
+    {"id": "2024-fraunhoferise-photovoltaics-report", "title": "Photovoltaics Report (Fraunhofer ISE)", "authors": "Fraunhofer ISE", "year": 2024, "doi": null, "tag": "paper", "wiki_page": "sources/2024-fraunhoferise-photovoltaics-report"},
+    {"id": "2024-iea-pvps-trends-pv-applications", "title": "Trends in Photovoltaic Applications 2024 (IEA-PVPS Task 1)", "authors": "IEA-PVPS Task 1", "year": 2024, "doi": null, "tag": "paper", "wiki_page": "sources/2024-iea-pvps-trends-pv-applications"},
+    {"id": "2024-itrpv-15th-edition-roadmap", "title": "International Technology Roadmap for Photovoltaics (ITRPV) — 15th Edition", "authors": "VDMA / ITRPV", "year": 2024, "doi": null, "tag": "paper", "wiki_page": "sources/2024-itrpv-15th-edition-roadmap"},
+    {"id": "2024-lachowicz-cu-plated-shj-aging-mini-modules", "title": "Aging tests of mini-modules with copper-plated heterojunction solar cells and pattern-transfer-printing of copper paste", "authors": "Lachowicz, A.; et al. (CSEM)", "year": 2024, "doi": null, "tag": "paper", "wiki_page": "sources/2024-lachowicz-cu-plated-shj-aging-mini-modules"},
+    {"id": "2024-lorenz-cutting-edge-metallization-shj-fraunhofer", "title": "Towards a Cutting-Edge Metallization Process for SHJ Solar Cells with Very Low Silver Laydown", "authors": "Lorenz, A.; et al. (Fraunhofer ISE)", "year": 2024, "doi": null, "tag": "paper", "wiki_page": "sources/2024-lorenz-cutting-edge-metallization-shj-fraunhofer"},
+    {"id": "2024-nrel-best-research-cell-efficiency-chart", "title": "NREL Best Research-Cell Efficiency Chart", "authors": "NREL", "year": 2024, "doi": null, "tag": "paper", "wiki_page": "sources/2024-nrel-best-research-cell-efficiency-chart"},
+    {"id": "2024-siliconpv-novel-shj-metallization-architectures", "title": "Pushing Heterojunction Technology Further: Novel Metallization Processes and Architectures", "authors": "Frasson, L.; Galiazzo, M.; et al. (Applied Materials)", "year": 2024, "doi": null, "tag": "paper", "wiki_page": "sources/2024-siliconpv-novel-shj-metallization-architectures"},
+    {"id": "2025-fraunhoferise-transition-ag-cu-screen-printed-shj", "title": "Transition from Silver- to Copper-Based Screen Printed SHJ Solar Cells", "authors": "Pingel, S.; Lorenz, A.; et al. (Fraunhofer ISE)", "year": 2025, "doi": null, "tag": "paper", "wiki_page": "sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj"},
+    {"id": "2025-yacouba-shj-silver-free-metallization-progPV", "title": "Achieving High Efficiencies for SHJ Solar Cells Using Silver-Free Metallization", "authors": "Yacouba, A.; et al. (Forschungszentrum Jülich)", "year": 2025, "doi": null, "tag": "paper", "wiki_page": "sources/2025-yacouba-shj-silver-free-metallization-progPV"},
+    {"id": "2011-nrel-reliability-testing-beyond-qualification", "title": "Reliability Testing Beyond Qualification as a Key Component in Photovoltaic's Progress Toward Grid Parity", "authors": "Wohlgemuth, J. (NREL)", "year": 2011, "doi": null, "tag": "protocol", "wiki_page": "sources/2011-nrel-reliability-testing-beyond-qualification"},
+    {"id": "2012-nrel-iec61215-what-it-is", "title": "IEC 61215: What It Is and Isn't", "authors": "Wohlgemuth, J. (NREL)", "year": 2012, "doi": null, "tag": "protocol", "wiki_page": "sources/2012-nrel-iec61215-what-it-is"},
+    {"id": "2012-nrel-aluminum-metallization-tlm-printed", "title": "Non-Contact Printed Aluminum Metallization of Si Photovoltaic Devices", "authors": "Aschenbrenner et al. (NREL)", "year": 2012, "doi": null, "tag": "protocol", "wiki_page": "sources/2012-nrel-aluminum-metallization-tlm-printed"},
+    {"id": "2013-koehl-fraunhofer-accelerated-service-life-testing", "title": "Accelerated Service Life Testing of Photovoltaic Modules", "authors": "Köhl, M. (Fraunhofer ISE)", "year": 2013, "doi": null, "tag": "protocol", "wiki_page": "sources/2013-koehl-fraunhofer-accelerated-service-life-testing"},
+    {"id": "2014-fraunhofer-peel-testing-ribbons-solar-cells", "title": "Peel Testing of Ribbons on Solar Cells at Different Angles", "authors": "Geipel, T.; Eitner, U. (Fraunhofer ISE)", "year": 2014, "doi": null, "tag": "protocol", "wiki_page": "sources/2014-fraunhofer-peel-testing-ribbons-solar-cells"},
+    {"id": "2014-nrel-pv-module-qualification-plus", "title": "Photovoltaic Module Qualification Plus Testing", "authors": "Hacke, P.; Kurtz, S. (NREL)", "year": 2013, "doi": null, "tag": "protocol", "wiki_page": "sources/2014-nrel-pv-module-qualification-plus"},
+    {"id": "2024-nrel-getting-ahead-of-curve-pv-assessment", "title": "Getting Ahead of the Curve: Assessment of New PV Module Reliability Risks", "authors": "Zuboy, J.; et al. (NREL)", "year": 2024, "doi": null, "tag": "protocol", "wiki_page": "sources/2024-nrel-getting-ahead-of-curve-pv-assessment"},
+    {"id": "atotech-cupracid-ultra-a-tds", "title": "Atotech Cupracid Ultra A — Acid Copper Plating Technical Data Sheet", "authors": "Atotech / MKS", "year": 2004, "doi": null, "tag": "catalog", "wiki_page": "sources/atotech-cupracid-ultra-a-tds"},
+    {"id": "atotech-solar-industry-overview", "title": "Atotech / MKS Solar Industry Plating Overview", "authors": "Atotech / MKS", "year": 2024, "doi": null, "tag": "catalog", "wiki_page": "sources/atotech-solar-industry-overview"},
+    {"id": "dupont-solamet-pv21a-tech-sheet", "title": "DuPont Solamet PV21A Technical Data Sheet", "authors": "DuPont / Solamet", "year": 2019, "doi": null, "tag": "catalog", "wiki_page": "sources/dupont-solamet-pv21a-tech-sheet"},
+    {"id": "dupont-solamet-pv56s-data-sheet", "title": "DuPont Solamet PV56S Technical Data Sheet", "authors": "DuPont / Solamet", "year": 2014, "doi": null, "tag": "catalog", "wiki_page": "sources/dupont-solamet-pv56s-data-sheet"},
+    {"id": "fisher-AC197730010-cu-sulfate-pentahydrate-sds", "title": "Copper(II) sulfate pentahydrate — Fisher Scientific SDS", "authors": "Fisher Scientific", "year": 2025, "doi": null, "tag": "catalog", "wiki_page": "sources/fisher-AC197730010-cu-sulfate-pentahydrate-sds"},
+    {"id": "fisher-AC424525000-sulfuric-acid-acs-sds", "title": "Sulfuric acid — Fisher Scientific SDS", "authors": "Fisher Scientific", "year": 2025, "doi": null, "tag": "catalog", "wiki_page": "sources/fisher-AC424525000-sulfuric-acid-acs-sds"},
+    {"id": "fisher-AA8902018-nickel-sulfamate-hydrate", "title": "Nickel(II) sulfamate hydrate — Fisher / Thermo Scientific Chemicals", "authors": "Thermo Scientific / Alfa Aesar", "year": 2026, "doi": null, "tag": "catalog", "wiki_page": "sources/fisher-AA8902018-nickel-sulfamate-hydrate"},
+    {"id": "notion-systems-solar-inkjet-overview", "title": "Notion Systems Solar Inkjet Printing Equipment Overview", "authors": "Notion Systems GmbH", "year": 2026, "doi": null, "tag": "catalog", "wiki_page": "sources/notion-systems-solar-inkjet-overview"},
+    {"id": "pvtech-metallization-challenges-cell-manufacturing", "title": "Current and future metallization challenges and solutions for crystalline cell manufacturing", "authors": "Posthuma; John; Beaucarne; Van Kerschaver (IMEC)", "year": 2009, "doi": null, "tag": "catalog", "wiki_page": "sources/pvtech-metallization-challenges-cell-manufacturing"},
+    {"id": "2018-nmat-graded-bandgap-perovskite-retraction-note", "title": "Retraction: Graded bandgap perovskite solar cells", "authors": "Nature Materials Editors", "year": 2018, "doi": null, "tag": "retraction", "wiki_page": "sources/2018-nmat-graded-bandgap-perovskite-retraction-note"}
+  ],
+  "wiki_drilldowns": {
+    "failure-modes/Cu-diffusion-into-c-Si": {
+      "title": "Cu diffusion into crystalline silicon",
+      "subtitle": "FAILURE MODE · SEVERITY CRITICAL · the headline reason silicon PV stayed on silver for forty years",
+      "body": "## Why this dominates the hypothesis\n\nCu has the highest interstitial diffusivity of any 3d transition metal in silicon: D = 3×10⁻⁴ exp(−0.18 eV/kT) cm²/s. **A Cu finger directly on c-Si traverses a 400 µm B-doped wafer in under 11 hours at room temperature** ([[2015-lindroos-cu-lid-aalto-thesis]]). Once in the bulk Cu precipitates as η′-Cu₃Si and creates a deep recombination band between EC−0.15 and EC−0.58 eV that collapses minority-carrier lifetime catastrophically.\n\n## What the literature says about the barrier\n\n- **Cheng 2018** ([[2018-electrochemsci-barrier-properties-electroplated-ni]]): STEM-EDS confirmed 60 nm electroplated Ni → Cu₃Si formation at 300°C; 120 nm Ni holds to 300°C, fails at 400°C.\n- **Bartsch 2010** ([[2010-bartsch-lip-pvsc]]): Arrhenius extrapolation predicts 0.1 yr lifetime without Ni vs >1000 yr with optimized Ni-Cu-Sn stack.\n- **Yacouba 2025** ([[2025-yacouba-shj-silver-free-metallization-progPV]]): SIMS finds NO detectable Cu in c-Si on intact-TCO SHJ even with direct Cu-paste contact. **The SHJ TCO itself is a viable Cu barrier when intact.**\n- **SunDrive ARENA** ([[2022-arena-sundrive-copper-metallisation-demonstration]]): 26.41 % certified SHJ with NO Ni barrier — relies entirely on TCO + adhesion-tuned chemistry.\n\n## How this experiment falsifies or confirms\n\nArm A (sub-100 nm Ni) sits at the edge of Cheng's threshold. SHJ's ≤200°C process budget likely rescues it but the experiment's SIMS at 0/1000/2000 h on Arm A vs Arm C (120 nm Ni) directly maps the threshold. Arm B (no Ni, TCO-only) tests the SunDrive route on the same wafer batch.\n\n## Failure decision rule\n\nIf SIMS shows quantitative Cu signal in c-Si bulk on Arm A after 1000 h DH while Arm D (Ag baseline) shows none → hypothesis rejected on barrier-integrity ground."
+    },
+    "failure-modes/EVA-acetic-acid-corrosion": {
+      "title": "EVA hydrolysis → acetic acid → Cu out-diffusion",
+      "subtitle": "FAILURE MODE · SEVERITY HIGH · the encapsulant decision dominates module reliability",
+      "body": "## Mechanism\n\nEthylene-vinyl-acetate hydrolyzes under hot/humid conditions to release acetic acid. Inside a laminate at 85°C / 85 % RH, the acid attacks the Cu / Sn / Ag cap stack, mobilizes Cu via grain-boundary diffusion, and ultimately drives Cu *back into c-Si* through the encapsulant via lateral edge migration.\n\n## What Karas 2022 measured\n\n[[2022-karas-cu-outdiffusion-damp-heat]] paired matched plated-Cu cells laminated in EVA vs POE and ran 0 → 3500 h DH with SIMS at every checkpoint. Result: **~3× more Cu at the Si surface in EVA samples**; pFF dropped 4–5 %abs in EVA, no loss in POE. EDS cross-sections show Cu lining voids in the EVA above the fingers — the encapsulant becomes a Cu reservoir.\n\n## Mitigation tier-list\n\n1. **Use POE encapsulant** — eliminates the acetic-acid pathway. SHJ industry default per [[2024-nrel-getting-ahead-of-curve-pv-assessment]].\n2. **PIB edge seal** — Lachowicz 2024 identifies edge-initiated moisture ingress as the dominant DH damage mode on glass-glass laminates without seal.\n3. **Extended DH (2000 h)** — 1000 h is no longer sufficient for SHJ-Cu reliability claims (NREL 2024).\n4. **Ni co-deposition in Cu** (~9 at% Ni) stabilizes (Cu,Ni)₆Sn₅ phase if Sn cap is used.\n\n## Why this experiment includes an EVA contrast laminate\n\nOne paired Arm A laminate is intentionally encapsulated in EVA to *prove* the failure mechanism is encapsulant-driven, not architecture-driven. If Arm A passes on POE but the EVA contrast fails, the hypothesis is supported and the encapsulant choice is the dominant lever for industrial deployment."
+    },
+    "methods/NOBLE-selective-Cu-plating": {
+      "title": "NOBLE — Native Oxide Barrier Layer for Electroplating",
+      "subtitle": "METHOD · Fraunhofer ISE flagship SHJ-Cu route · resist-free, inkjet-driven",
+      "body": "## What NOBLE does\n\nA thin PVD Cu/Al stack is deposited on the SHJ ITO. The Al's self-passivating native AlOx (formed by 1–5 d ambient hold) acts as the plating mask — **eliminating the organic resist** used by CSEM's 7-step route. Inkjet-printed 1 wt% NaOH(aq) (2–5 pL droplets) selectively etches Al only along the desired grid lines, exposing the Cu seed. Cu and Ag are then electroplated only into the openings; residual PVD Cu/Al outside the grid is etched back with selective wet chemistry (H₃PO₄/HNO₃ for Al; (NH₄)₂S₂O₈ for Cu).\n\n## Demonstrated performance\n\n- [[2019-hatt-noble-shj-solrrl]] — first lab cell: 20.2 % efficiency, FF 78.0 %, ρc 1.8–4.0 mΩ·cm² to ITO\n- [[2019-hatt-noble-bifacial-shj-aip]] — full-area 156×156 mm² demonstration at 20.0 %, contact-angle evolution detailed\n- [[2021-hatt-stable-cu-plated-shj-eupvsec]] — 12 cells reproducibly **22.6 %** on M2; ρc 0.1–1 mΩ·cm² with optimized seed; ≥2 N/mm peel adhesion; fs-UV laser variant 21.4 %\n\n## Key operating window\n\n- Inkjet: 1 wt% NaOH(aq), 2–5 pL droplets, AlOx contact angle 100–120°.\n- Plating: pulsed forward/reverse, 6 A/dm², 15 ms forward / 1 ms reverse, anodic:cathodic 4.5.\n- Final stack: PVD-Cu(50 nm) / plated-Cu(1–10 µm) / immersion-Ag(~200 nm).\n- Anneal cap: 200°C / 15 min in air to recover a-Si:H sputter damage.\n\n## Why this experiment uses NOBLE\n\nNOBLE is the most documented public SHJ-Cu route with an open process recipe. Steps 2–7 of the protocol are essentially the NOBLE flow plus an inserted Ni electroplate step (Arms A and C). Arm B drops the Ni step and reverts to the literal NOBLE recipe — this is the SunDrive-comparable arm."
+    },
+    "hypothesis": {
+      "title": "Hypothesis · sub-100 nm Ni / Cu electroplated SHJ",
+      "subtitle": "ROOT NODE · status: complete · 4-arm comparison study",
+      "body": "## The literal hypothesis\n\nOn silicon heterojunction (SHJ) solar cells, a sub-100 nm electroplated nickel barrier followed by electroplated copper produces a front-grid metallization with contact resistivity ≤ 2 mΩ·cm² and no measurable efficiency loss after 1000 h damp-heat aging (85°C / 85% RH) — matching screen-printed silver at <10% of the metallization cost.\n\n## What the experiment actually tests\n\nA 4-arm comparison on the same commercial SHJ M6 wafer batch:\n\n| Arm | Stack | Tests |\n|---|---|---|\n| **A** | PVD-Cu/Al → inkjet-NaOH → **Ni 80 nm** → Cu 5 µm → Ag cap | The literal hypothesis |\n| **B** | PVD-Cu → inkjet-NaOH → (no Ni) → Cu 5 µm → Ag cap | SunDrive-style: TCO-only barrier |\n| **C** | PVD-Cu/Al → inkjet-NaOH → **Ni 120 nm** → Cu 5 µm → Ag cap | Cheng 2018 safe-threshold reference |\n| **D** | Screen-printed low-T SHJ-grade Ag paste | Industry baseline control |\n\nAll four arms laminated in **POE glass-glass mini-modules with PIB edge seal**. One paired Arm A laminate uses EVA as a controlled contrast to prove the encapsulant-driven failure mode (Karas 2022).\n\n## Why this beats a simple replication\n\n- Arms A vs C **directly map the Cheng 2018 60 nm threshold under SHJ ≤200°C process budget** — a measurement no published study has done.\n- Arms A vs B isolate whether the Ni barrier adds value on SHJ (TCO is itself a barrier per Yacouba 2025 / SunDrive).\n- EVA vs POE matched contrast at 2000 h gives an **encapsulant decision rule** that the cost case depends on.\n- Cost model anchored to ITRPV 2024 + SunDrive ARENA gives a defensible $/cell number that Hatt and Lachowicz do not publish."
+    }
+  }
+}

@@ -1,0 +1,465 @@
+                                     TECHNICAL DATA SHEET
+
+                                                  Cupracid® ULTRA
+                                               Acid Copper Plating Process
+                                                                   Issue 3 of 14.01.2004
+                                                               Replaces Issue 2 of 16.07.2002
+
+
+
+
+INTRODUCTION
+
+Cupracid® ULTRA is a sulfuric acid-based copper plating process that produces low-
+stressed, ductile, and bright copper deposits. The additives are designed to operate at
+bath temperatures up to 86o F (30o C) without any noticeable loss in quality. It can be
+used on both properly prepared metals and plastic substrates.
+
+The outstanding features of the Cupracid ULTRA bright acid copper process are:
+
+    !      High deposit brightness with exceptional rates of brightening and leveling with no
+           loss of ductility
+
+    !      Easily buffable surface
+
+    !      Ease of bath maintenance and control under production conditions
+
+    !      Addition agents are added on an ampere-hour basis and controlled by Hull Cell
+           tests.
+
+
+
+
+                                                                                                                   Atotech India Limited,
+  For Industrial Use Only                                                            66 KM Stone, NH 8, Delhi – Jaipur Highway,
+  Atotech India gives no warenty, express or implied, and all products are sold upon condition that
+                                                                                     Village Sidhrawali, Distt. Gurgaon – 123413
+  purchasers will make their own tests to determine the quality and suitability of the product. Atotech shall in
+                                                                                     Haryana, India.
+  no way be responsible for the proper use and service of the product. Any information or suggestions given
+  are without warranty of any kind and purchasers are solely responsible for any loss or damage arising
+                                                                                     Tel: (+91) 1274 – 267190, 267191
+  from the use of such information or suggestions. No information or suggestions given by us shall be
+                                                                                     Fax: (+91) 1274 – 267189
+  deemed to be a recommandation to use any product or process in conflict with any existing patent rights
+                                                                                     Email: sidhrawali@atotechindia.com
+                                                                                     www.atotech.com
+   Atotech India Limited is ISO 9001 : 2000, ISO 14001 : 1996 and OHSAS 18001 : 1999 certified
+                                                        Cupracid ULTRA Page 2 / 11
+
+SOLUTION COMPOSITION
+
+
+Bath Component                   Optimum                        Range
+
+Copper Sulfate (CuSO4 5H2O)      28 oz/gal (210 g/l)            26 - 34 oz/gal (195 - 255 g/l)
+
+Sulfuric Acid (66o Baumé) -      8 oz/gal (60 g/l)              6.7 - 9.3 oz/gal (50 - 70 g/l)
+
+Chloride -                       100 ppm (100 mg/l)             80 - 150 ppm (80 - 150 mg/l)
+
+Cupracid ULTRA Make-up -         1.0% by vol. (10 ml/l)
+
+Cupracid ULTRA Part A -          0.05% by vol. (0.5 ml/l)       0.04 - 0.06% by vol. (0.4 -
+                                                                0.6 ml/l)
+
+Cupracid ULTRA Part B -          0.05% by vol. (0.5 ml/l)       0.04 - 0.06% by vol. (0.4 -
+                                                                0.6 ml/l)
+
+
+OPERATING CONDITIONS
+
+
+Operating Variable            Optimum                         Range
+
+Temperature -                 75 - 82o F (24 - 28o C)         68 - 86o F (20 - 30o C).
+
+Cathode Current Density -     30 Amps/ft2                     10 - 55 Amps/ft2
+                              (3.0 Amps/dm2)                  (1.0 – 6.0 Amps/dm2)
+
+Anode Current Density -       >5 Amps/ft2 (0.5 Amps/dm2)      5 - 25 Amps/ft2
+                              to form and maintain a solid,   (0.5-2.5 Amps/dm2)
+                              black anode film.
+
+Voltage -                     1.0-4.0 volts. Some baths may require up to 6 volts
+                              depending on the current density and bath loading.
+                              Maximum ripple from the rectifier at the operating current
+                              should not exceed 10%.
+
+Agitation -                   Cathode rod movement and/or air from a low-pressure
+                              blower. Compressed air, no matter how well filtered, is
+                              unacceptable. A suitable material for the air sparging system
+                              is PVC.
+
+Filtration -                  Continuous  filtration   through    5-micron    media     is
+                              recommended. The filter turnover rate should be 2 - 3 times
+                              per hour.
+                                                          Cupracid ULTRA Page 3 / 11
+
+ Anodes -                        Copper anodes with a phosphorus content of 0.03-0.06% are
+                                 recommended. Phosphorized copper nuggets or balls in
+                                 titanium baskets are preferred.
+
+ Ventilation -                   Required. Refer to local standards for design requirements.
+
+EQUIPMENT
+
+
+     Tanks -             Mild steel with a hard rubber lining, or PVC/polyester reinforced
+                         material. If lined steel is used, the tank should be spark-tested to
+                         assure that the linings are continuous.
+
+     Heating/Cooling-    Graphite, Titanium, PTFE, PVC, or Polyethylene. If metal is used, it
+                         must be grounded or made anodic to prevent bipolarity on plated
+                         parts.
+
+     Anode Bags -        The anodes should be enclosed in bags made of acid-resistant, fully
+                         synthetic material such as dynel or polypropylene. Typically, with dye-
+                         based acid copper systems, a loosely woven bag is preferred to
+                         reduce the risk of anode polarization if the bags plug up.
+
+     Filter Aid -        Diatomaceous earth.
+
+
+MAKE-UP PROCEDURE
+
+1.      In a separate storage or mixing container made of PVC or polyethylene, dissolve
+        the required amount of copper sulfate in half the total volume of deionized water
+        required. To accelerate dissolution, the water may be heated to 104 - 122o F (40 -
+        50o C).
+
+2.      When the copper sulfate has dissolved, add 1.7-lbs/100 gallons (0.2 kg/100 liters)
+        of low iron, low sulfur, plating grade activated granular or powdered carbon. It
+        should be added and allowed to react for about one hour while stirring
+        continuously.
+
+3.       Filter the solution into the clean tank and make up to about 90 - 92% of the final
+         volume with deionized water. The filtration process must be performed with
+         extreme care, since particles of carbon in the plating bath can cause matte or
+         rough copper deposits. When using the filter for continuous filtration, it should be
+         carefully cleaned of carbon particles. Filter cartridges and/or filter paper must also
+         be replaced.
+
+4.      Carefully add the required amount of sulfuric acid carefully while stirring vigorously.
+        (CAUTION! SAFETY GLASSES AND PROTECTIVE CLOTHING MUST BE
+        WORN!) During this step care must be taken if the temperature does not rise above
+        140o F (60o C).
+                                                          Cupracid ULTRA Page 4 / 11
+5.       After cooling to about 77o F (25o C), add the required amounts of hydrochloric acid
+         (2.2 ml HCl/1000 L for 1 ppm Chloride), Cupracid Ultra Make-up, Part A and Part B.
+
+6.       Electrolyze the solution for 7.6 amp-hours/gallon (2 amp-hour/liter) to achieve a
+         level of optimal brightness. PROCESS CONTROL AND SOLUTION
+         REPLENISHMENT
+
+Copper Sulfate is the source of copper metal plated out onto the work. It is important that
+the concentration of copper sulfate be maintained within the recommended limits. The
+required amount of copper sulfate pentahydrate crystals should first be dissolved in an
+adequate volume of warm water. After the solution has cooled to room temperature, it
+should be added to the bath through the filter. Low concentrations will cause high current
+density burning. High concentrations can cause two types of problems. First, air agitation
+sparger pipes may become plugged with insoluble crystals. Second, the anodes may
+become coated with copper sulfate crystals and then polarize.
+
+Sulfuric Acid increases solution conductivity and lowers the voltage required to plate at a
+particular current density. The addition of 0.4 gallons per 100 gallons (0.4 liters per 100
+liters) of bath, increases the sulfuric acid content by 1 oz/gal (7.5 g/l). Low concentrations
+will cause an increase in the operating voltage required to attain a given current density.
+High concentrations can lead to anode polarization and/or precipitation of copper sulfate
+crystals.
+
+Chloride works in combination with the Cupracid ULTRA additives to give bright, highly
+leveled copper deposits. Careful control of chloride content is essential to optimum bath
+performance. Chloride concentration can be adjusted by using C. P. grade hydrochloric
+acid (100 ml/1,000 gal. = 10 ppm) (2.2 ml HCl/1000 L for 1 ppm Chloride) or sodium
+chloride (63 g/1,000 gal. = 10 ppm). Low chloride levels can result in striated deposits and
+low current density dullness. High chloride levels can cause anode polarization.
+
+Cupracid ULTRA Additives - In order to achieve optimal brightness and leveling
+characteristics, Cupracid ULTRA Part A and Cupracid ULTRA Part B must be present in
+the bath in a certain ratio. This ratio must be carefully observed, since the two materials
+have a mutual influence on each other (i.e., an excess of one additive has the same effect
+as a deficiency of the other). The Cupracid ULTRA addition agents can be controlled by
+plating 2 amp., 10 min. air agitated Hull Cell panels. Please refer to the attached charts
+showing the appearances of typical Hull Cell panels. Cupracid ULTRA Part A should
+never be mixed with Part B. The Cupracid ULTRA additives can be added directly to the
+bath according to the following schedule, with vigorous stirring.
+
+     Addition Agent                     Additions Per 10,000 Ampere Hours
+
+     Cupracid ULTRA Part A -            0.18 gal.                 0.7 liters
+
+     Cupracid ULTRA Part B -            0.13 gal.                 0.5 liters
+
+The consumption of Cupracid ULTRA Parts A and B depends on the degree of brightness
+and leveling required. If copper bar anodes are used, consumption of Part B may
+decrease. In some cases where dragout and evaporation losses are high, periodic
+additions of Cupracid ULTRA Make-up Solution (100 ml per 10,000 Ampere-hours) may
+be required.
+                                                       Cupracid ULTRA Page 5 / 11
+
+Deficiency of Cupracid ULTRA Part A or Excess of Cupracid ULTRA Part B
+
+A deficiency of Cupracid ULTRA Part A or an excess of Part B causes reduced leveling
+and hazy deposits in medium to low current density areas. In such a case, Cupracid
+ULTRA Part A should be added in increments of 10 ml per 100 liters of copper bath. If
+required, the addition of Cupracid ULTRA Part B should then be reduced and/or the
+additions of Cupracid ULTRA Part A, increased.
+
+Deficiency of Cupracid ULTRA Part B or Excess of Cupracid ULTRA Part A
+
+A deficiency of Cupracid ULTRA Part B or an excess of Cupracid ULTRA Part A results in
+high current density nodular plating. If this is noted, Cupracid ULTRA Part B should be
+added in increments of 10 ml per 100 liters of plating bath. In order to prevent haze
+formation, Cupracid ULTRA Part A must be added at the same time, in a quantity
+corresponding to 20% of the Cupracid ULTRA Part B being added.
+
+ANALYSIS PROCEDURES
+
+Determination of Copper Sulfate
+
+Reagents Required:
+
+Murexide Indicator - Weigh 100 grams of sugar and transfer about 85 grams to a plastic-
+capped jar. Grind 0.25 grams of murexide powder (ammonium purpurate) with the
+remaining 15 grams of sugar and transfer the powdered mixture to the jar. Shake the jar
+until all the sugar granules have been uniformly coated with murexide.
+
+Ammonium Hydroxide - Reagent grade, 28%
+
+0.1 Molar EDTA Solution
+
+Ammonium Buffer - Dissolve 68 grams of ammonium chloride in about 300 ml of water
+and wash into a liter bottle. Add 570 ml of fresh ammonium hydroxide and dilute to one
+liter. Store in a polyethylene bottle or NO-Sol-Vit glass bottle using a rubber stopper
+instead of a cap.
+
+Procedure:
+
+1.    Pipette a 2.0 ml sample of bath into a 600 ml beaker.
+
+2.    Add 5 ml of ammonium buffer and dilute to 450 ml with water.
+
+3.    If solution is not a deep clear blue color, add the ammonium buffer dropwise until it
+      is clear blue.
+
+4.    Add about 0.5 grams of murexide indicator (1 Coor's No. 1A scoop) and stir until
+      dissolved.
+
+5.    Titrate with 0.1Molar EDTA solution until the greenish color turns to an intense
+      purple.
+                                                          Cupracid ULTRA Page 6 / 11
+
+6.    Calculate the copper sulfate content:
+
+      CuSO4 • 5H2O (oz/gal) = ml EDTA x M EDTA x 16.66
+      CuSO4 • 5H2O (g/l) = ml EDTA x M EDTA x 124.95
+
+Determination of Sulfuric Acid
+
+Reagents Required:
+
+1 N NaOH Solution
+Bromphenol Blue Indicator
+
+Procedure:
+
+1.    Pipette a 2 ml sample of the bath into a 400 ml tall beaker.
+
+2.    Add 75 ml of deionized water, 4-6 drops of bromphenol blue indicator solution.
+
+3.    Titrate with 0.1 N NaOH to a deep blue color. Use a magnetic stirrer. (Note: with
+      iron present, titrate to a slight turbidity.)
+
+4.    Calculate the sulfuric acid content:
+
+      H2SO4 (oz/gal) = ml NaOH x Normality of NaOH x 3.259
+
+      H2SO4 (g/l) = ml NaOH x N x 24.4
+
+
+Determination of Chloride
+
+Reagents Required:
+
+1:1 Nitric Acid
+0.1 N Silver Nitrate
+N Mercuric Nitrate - Dissolve 1.083 grams of mercuric oxide (HgO) in 5 ml of 1:1 HNO3
+and dilute to one liter with deionized water. This solution need not be standardized.
+Procedure:
+
+1.    Pipette a 25 ml sample of the bath into a 150 ml beaker containing a magnetic stir
+      bar.
+
+2.    Add 30 ml of deionized water and 20 ml of 1:1 nitric acid.
+
+3.    Add 3 drops of 0.1 N silver nitrate solution to produce turbidity.
+
+4.    Titrate with 0.01 N mercuric nitrate solution stirring constantly until the turbidity just
+      clears.
+
+5.    Calculate the chloride concentration using the following equation:
+                                                          Cupracid ULTRA Page 7 / 11
+
+       Cl (mg/l or ppm) =          ml of 0.01 N mercuric nitrate x 355
+                                          ml of sample
+
+BATH TROUBLESHOOTING
+
+The Cupracid ULTRA solution can be monitored using an air-agitated, 267 ml. Hull Cell.
+The anode is a phosphorized copper bar and the cathode, a brass panel scratched with
+type "0000" emery paper. An aquarium pump is used to supply clean air to the test cell.
+Plating is done at 2 amps. for 10 minutes.
+
+Examination of the test panel will reveal overall brightness and leveling, LCD coverage,
+and the presence or absence of HCD noduling. Test panels should be compared with
+panels plated in an optimized Cupracid ULTRA solution.
+
+If pitting is observed on the work and it is not due to porosity in the substrate (e.g.,
+aluminum), the bath chemistry may be checked by plating a V-shaped, recessed brass
+panel. One liter of plating solution is placed in a glass beaker along with a phosphorized
+copper anode and air sparger. The properly cleaned recessed panel is plated at 2 amps.
+for 15 minutes with air agitation and the deposit evaluated. There should be no signs of
+pitting on the surface or shelf areas on the face side of the panel. If pitting is present, it
+can be categorized as (1) fine pitting; (2) crater pitting; or (3) cluster pitting. Additions of
+Cupracid GM Plus Wetting Agent will normally reduce or eliminate #1 or #2. If this does
+not eliminate the problem, contact your Atotech technical service representative for
+assistance. The third type, cluster pitting, is usually a sign of excessive wetting agent
+content.
+
+The addition rates of Cupracid GM Plus Wetting Agent are:
+
+       Initial -20 ml of Cupracid GM Plus Wetting Agent per 100 liters of bath
+
+     Continuous - 100 - 200 ml of Cupracid GM Plus Wetting Agent every 10,000
+Ampere Hours
+
+Cupracid GM Plus Wetting Agent is a foam-producing product. It will be extensively
+removed by treatment with activated carbon.
+
+
+WASTE DISPOSAL
+
+This material must be disposed of in accordance with all applicable federal, state, and
+local regulations and permits. Consult the MSDS for additional regulatory information. The
+information contained herein is general in nature and may not apply to each application.
+
+
+GENERAL SAFETY PRECAUTIONS
+
+When working with this product(s), ensure that all health, environmental, and safety
+regulations and standards are met. Avoid direct contact with this material. Do not inhale
+associated mist, vapors, and/or dust. Maintain and limit exposure as recommended by
+OSHA, ACGIH, and other state and local regulations. Wash contaminated clothing before
+                                                 Cupracid ULTRA Page 8 / 11
+reuse. Always comply with the Hazard Communication Standard, 29 CFR 1910.1200.
+Emergency showers and eyewashes must be readily available.
+
+It is recommended that the plating chemistry product(s) referred to in this Technical
+Information Sheet be used: (a) in accordance with the information provided in product
+specific MSDS; and (b) in compliance with all applicable requirements and guidelines
+established by OSHA, NIOSH, ACGIH, NFPA, and others.
+NOTE:      A Material Safety Data Sheet (MSDS) for this product(s) is available upon
+request from Atotech India Ltd.
+
+REVIEW MSDS BEFORE USING THIS PLATING CHEMISTRY AND FOR SPECIFIC
+INFORMATION. A precautionary approach should be used when there is potential for
+chemical exposure -- this includes minimizing exposure potential, rapid decontamination,
+and medical follow-up.
+                                                 Cupracid ULTRA Page 9 / 11
+
+
+                           CUPRACID ULTRA HULL CELL CHART
+
+Optimum Panel                                   Recommendations
+
+
+
+
+                                                None
+
+ HCD, MCD, LCD
+ Bright Levelled Deposit
+
+
+High Cupracid Ultra Part A
+
+
+
+
+                            Bright Deposit,     Add Cupracid Ultra Part B in
+                            Reduced Levelling   0.1 ml/l increments
+ Uniform, Bright
+ Levelled Deposit
+
+
+
+
+Low Cupracid Ultra Part A
+
+
+
+
+ Uniform, Bright            Smoky, Dark         Add Cupracid Ultra Part A in
+ Levelled Deposit           Copper Deposit      0.1 ml/l increments
+                                                            Cupracid ULTRA Page 10 / 11
+
+
+
+                               CUPRACID ULTRA HULL CELL CHART
+
+No Cupracid Ultra Part A                                           Recommendations
+
+
+
+
+                                                    Add 0.5 ml/l Cupracid Ultra Part A
+ Bright          Semi bright
+ Non levelled    Non leveled
+ Deposit        Deposit
+
+
+High Cupracid Ultra Part B
+
+
+
+
+                                Smpky dark                 Add Cupracid Ultra Part A in
+                                Copper Deposit             0.1 ml/l increments
+ Uniform, Bright
+ Levelled Deposit
+
+
+
+
+Low Cupracid Ultra Part B
+
+
+
+
+ Uniform, Bright                Bright Deposit             Add Cupracid Ultra Part B in
+ Levelled Deposit               Reduced Levelling          0.1 ml/l increments
+                                                    Cupracid ULTRA Page 11 / 11
+
+
+                            CUPRACID ULTRA HULL CELL CHART
+
+No Cupracid Ultra Part A                                   Recommendations
+
+
+
+
+                                            Add 0.5 ml/l Cupracid Ultra Part A
+ Matte        Semi bright
+ Striated      Deposit
+ Deposit                                    10 ml/l Make Up solution
+
+
+Test Conditions:
+
+Current – 2 amps.
+Time – 10 min.
+Agitation – Air from an aquarium pump
+Anode – Phosphorised copper
+Substrate – Polished brass panel
+

@@ -1,0 +1,971 @@
+                                                                                                                Energy &
+                                                                                                                Environmental
+                                                                                                                Science
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                                                                                                                                                         View Article Online
+                                                                                                                    ANALYSIS                                                                                                                             View Journal | View Issue
+
+
+
+
+                                                                                                                                                           Technological learning for resource eﬃcient
+                                                                                                                                                           terawatt scale photovoltaics
+                                                                                                                Cite this: Energy Environ. Sci.,
+                                                                                                                2021, 14, 5147
+                                                                                                                                                           Jan Christoph Goldschmidt,                     *a Lukas Wagner,               a
+                                                                                                                                                                                                                                             Robert Pietzcker            b
+                                                                                                                                                                                                                                                                             and
+                                                                                                                                                           Lorenz Friedrich a
+
+                                                                                                                                                           Cost eﬃcient climate change mitigation requires installing a total of 20–80 TWp photovoltaics until
+                                                                                                                                                           2050 and 80–170 TWp until 2100. The question is, whether the projected growth is feasible from a
+                                                                                                                                                           resource point of view – and if so, under which conditions. We assess demand for fundamental
+                                                                                                                                                           resources until the year 2100, which are necessary independently from the specific nature of the used
+                                                                                                                                                           PV technology, i.e. energy, float-glass, and capital investments, and addtionally silver. Without technolo-
+                                                                                                                                                           gical learning serious resource constraints will arise. On the other hand, continued technological learn-
+                                                                                                                                                           ing at current rates would be sufficient to stay within reasonable boundaries. With such technological
+                                                                                                                                                           learning, energy demand for production will correspond to 2–5% of global energy consumption leading
+                                                                                                                Received 12th August 2021,                 to cumulative greenhouse gas emissions of 4–11% of the 1.5 1C emission budget. Glass demand might
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                Accepted 13th September 2021               still exceed current float-glass production, requiring capacity expansion; and silver consumption could
+                                                                                                                DOI: 10.1039/d1ee02497c                    be kept at current levels. Installations costs would be 300–600 billion $US2020 per year. Technological
+                                                                                                                                                           solutions enabling such learning are foreseeable, nevertheless current and future investments must not
+                                                                                                                rsc.li/ees                                 only be targeted at capacity expansion but also at upholding the currently high rate of innovation.
+
+
+
+
+                                                                                                                    Broader context
+                                                                                                                    Photovoltaics – the direct conversion of solar radiation into electricity – is the major energy conversion technology for cost efficient climate change mitigation.
+                                                                                                                    To achieve this goal a huge number of systems must be installed, which is associated with a high resource demand, e.g in terms of energy, float-glass, metals,
+                                                                                                                    and capital investments, as well as with associated greenhouse gas emissions. In this paper, we investigate whether the projected growth is feasible from a
+                                                                                                                    resource point of view – and if so, under which conditions. In this analysis, we consider that the photovoltaic technology is constantly evolving, and new
+                                                                                                                    generations of systems are more efficient and consume less resources during production. We find that without technological learning, resource limitations will
+                                                                                                                    most likely occur. Those limitations can be avoided if technological learning continues with its current speed also in the long-term future. Already now,
+                                                                                                                    technological solutions like perovskite-based tandem solar cells are foreseeable that promise high efficiencies at low-costs and low resource consumption.
+                                                                                                                    Therefore, we conclude that current and future investments must not only be targeted at capacity expansion but also at upholding the currently high rate of
+                                                                                                                    innovation.
+
+
+
+
+                                                                                                                Introduction                                                                           resources for these PV installations is rarely discussed in these
+                                                                                                                                                                                                       scenarios. Most existing literature on resource limitations for
+                                                                                                                Several papers have identified photovoltaics (PV) as the most                          PV, on the other hand, only considered significantly lower PV
+                                                                                                                important renewable energy technology for cost optimized                               installations of typically below 10 TWp (see also following
+                                                                                                                climate change mitigation.1–3 Accordingly, huge numbers of                             section) so resource limitations might be underestimated. Then
+                                                                                                                total PV installations ranging from 20 to 80 TWp in the year                           again, the literature often also failed to properly consider
+                                                                                                                2050 are an integral part global of progressive energy                                 technological learning, leading to an exaggeration of resource
+                                                                                                                scenarios.1–5 However, the associated massive demand for                               constraints. Given the relevance of PV for electricity decarbo-
+                                                                                                                                                                                                       nization in many scenarios, a well-founded answer to the
+                                                                                                                                                                                                       question whether the projected growth is feasible from a
+                                                                                                                a
+                                                                                                                  Fraunhofer Institute for Solar Energy Systems, Heidenhofstr. 2, 79110 Freiburg,
+                                                                                                                                                                                                       resource point of view – and if so, under which conditions –
+                                                                                                                  Germany. E-mail: jan.christoph.goldschmidt@ise.fraunhofer.de,
+                                                                                                                  lukas.wagner@ise.fraunhofer.de, lorenz.friedrich@ise.fraunhofer.de
+                                                                                                                                                                                                       is of great importance for the development of robust climate
+                                                                                                                b
+                                                                                                                  Potsdam Institute for Climate Impact Research, P.O. Box 60 12 03, 14412              change mitigation strategies and as guiding principle for future
+                                                                                                                  Potsdam, Germany. E-mail: pietzcker@pik-potsdam.de                                   technological developments.
+
+
+
+                                                                                                                This journal is © The Royal Society of Chemistry 2021                                                          Energy Environ. Sci., 2021, 14, 5147–5160 | 5147
+                                                                                                                                                                                                                                         View Article Online
+
+                                                                                                                Analysis                                                                                         Energy & Environmental Science
+
+                                                                                                                    Therefore, in this work, we estimate the resource demand          and CIGS thin film technologies, with current market shares of
+                                                                                                                for photovoltaic systems along a path towards a TWp scale PV          5%.25 The resource constraints and failure to increase market
+                                                                                                                industry for the 21st century. The precise technological devel-       share in the past 12 years, make it very likely that these
+                                                                                                                opment is diﬃcult to foresee over such an extended period of          technologies are not relevant for reaching several TWp installa-
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                time. Hence, we base our analysis on three main resources             tions levels, and therefore where not considered in the present
+                                                                                                                necessary independently from the specific nature of the used          analysis. The same applies for Ga which is necessary for III–V
+                                                                                                                PV technology, i.e. energy, float-glass, and capital investments.     multijunction solar cells used in concentrator PV.
+                                                                                                                Additionally, we included Ag in our analysis, because Ag has             Silicon, on the other hand, is currently the dominant
+                                                                                                                been identified as critical in previous analyses6–10 and is           material for the production of solar cells. Resource constraints
+                                                                                                                relevant both for the currently dominant silicon technology           for elemental silicon do not occur, as silicon is the second most
+                                                                                                                and might also be for future technologies, which will require a       abundant element in the earth crust. One has to consider,
+                                                                                                                form of metallic electrical contact.                                  nevertheless, that silicon does most commonly occur not in its
+                                                                                                                    To reflect the dynamic development of PV technology, we           elemental form in nature. Naturally occurring silicate minerals
+                                                                                                                use deployment dependent technological learning in our future         need to be purified to solar grade polysilicon which requires
+                                                                                                                projections. We consider ongoing eﬃciency increases, cost             large amount of energy, which has been considered in this
+                                                                                                                reduction as well as reduction in energy and in per-piece silver      study. Note that currently still over 90% of Si-PV modules
+                                                                                                                consumption. The plausibility of the resulting improved char-         contain an aluminium frame. Yet, there is an increasing trend
+                                                                                                                acteristics is substantiated for the short term and the long term     towards frameless modules and the market share of aluminium
+                                                                                                                by describing technological solutions that might drive the            frames is expected to continuously fall to below 75% by 2029.27
+                                                                                                                technological progress and by pointing out fundamental tech-          Thus, the development of aluminium consumption for future
+                                                                                                                nological boundaries. This analysis is based on the dominant          PV production is not considered in this work.
+                                                                                                                silicon technology and on the emerging perovskite technology,
+                                                                                                                that, up to now, has not been considered in resource limitation       Photovoltaic growth scenarios
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                studies yet.                                                          Two scenarios for future installed PV capacity, which are
+                                                                                                                                                                                      compatible with limiting climate change to 1.5 1C, are the basis
+                                                                                                                                                                                      of our analysis (see Fig. 1 left). They were calculated with the
+                                                                                                                Resource demands of terawatt scale                                    REMIND model, which is extensively used for analyses of
+                                                                                                                photovoltaics                                                         climate policies.28,29 REMIND is a global inter-temporally opti-
+                                                                                                                                                                                      mizing energy-economy model that calculates investments and
+                                                                                                                Review of existing literature                                         vintaging of energy conversion technologies, including impor-
+                                                                                                                Many works have investigated resource limitations for a large-        tant features that influence the dynamics of the energy transi-
+                                                                                                                scale PV deployment or complete renewable energy systems.             tion such as integration challenges of wind and solar power or
+                                                                                                                Table 1 gives an overview on the literature considered for this       technological learning.30–33 Both scenarios were calculated by
+                                                                                                                work.6–23 The table lists considered deployment levels, consid-       setting a maximum CO2 budget of 600 GtCO2 for the period
+                                                                                                                ered resources as well as resources found to be critical. Appar-      2011–2100, and then letting the model endogenously invest
+                                                                                                                ently, only few works considered PV deployment in the range of        into energy conversion technologies in order to maximize
+                                                                                                                20–80 TWp necessary for reaching ambitious climate goals.             welfare. The scenarios thus represent cost-optimal pathways
+                                                                                                                Only about half of the works consider technological learning.         that limit the total CO2 emissions. Given the uncertainty
+                                                                                                                This is surprising, as it has been one key characteristic of          surrounding the long-term evolution of many technological
+                                                                                                                photovoltaics in the past, that cost and resource efficiency          and societal characteristics that influence PV deployment, two
+                                                                                                                has been continuously improved over time. For many cate-              scenarios were calculated: Scenario 1 assumes model para-
+                                                                                                                gories, the development can be described by learning rates,           meters describing an evolution that is not so favourable for
+                                                                                                                which state how much a certain quantity is changed, when the          PV deployment, while scenario 2 uses parameter values that are
+                                                                                                                cumulative production is doubled. In photovoltaics, the best-         more favourable for PV deployment. The two scenarios span a
+                                                                                                                known learning rate is that the price for PV modules was              plausible range of values for parameters describing the price
+                                                                                                                decreased by 25% for every doubling of cumulative module              learning curve of PV, the size of system integration challenges,
+                                                                                                                production, which has been observed now for the last                  the upscaling dynamics of Carbon Capture and Sequestration
+                                                                                                                40 years.24 Such learning rates can also be found for inverter        (CCS), and the development of electrification of end-use
+                                                                                                                prices, energy consumption for production, silver usages per          demands (see Methods for details). As can be seen in Fig. 1
+                                                                                                                solar cell and efficiency.20,24–26 In literature, hardly any funda-   left, Scenario 1 and 2 cover well the range of ref. 1–5. In the
+                                                                                                                mental resources like energy and glass are investigated.              scenarios, the years until 2030/2040 see a rapid growth of PV
+                                                                                                                Instead, many works provide more detail in terms of consid-           capacity driven by low prices for PV technology and the imple-
+                                                                                                                ered elements, especially elements like In, Te, Se, Ga, Cd, Ni,       mentation of high CO2 prices. PV quickly replaces other, more
+                                                                                                                and Sn. In these works, possible resource constraints have been       expensive technologies and reaches 30–60% electricity genera-
+                                                                                                                identified for Te and Se, already for lower levels of PV installa-    tion share in most world regions. Subsequently, growth slows
+                                                                                                                tions. These materials, however, are only relevant for the CdTe       down because integration costs (storage, curtailment) become
+
+
+
+                                                                                                                5148 | Energy Environ. Sci., 2021, 14, 5147–5160                                    This journal is © The Royal Society of Chemistry 2021
+                                                                                                                                Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                                            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+
+
+                                                         Table 1 Overview on existing literature studying resource limitations for PV. The table lists the PV deployment scenarios, considered resources and materials identified as critical. When diﬀerent
+                                                         scenarios were discussed in the reference, the highest PV installation is depicted. Where no installed PV capacity was given, values are estimated based on the available information
+
+                                                         1st Author                                                                                          Technological                                                                       Considered
+                                                         (year)       Title                                                      Deployment                  Learning                Energy Glass Capital Silicon Silver Indium Others           Critical
+                                                         Feltrin      Material considerations for terawatt level deployment      2.5 TWp/a possible for      —                                            ‘      ‘     ‘       Te, Sn, Pt, Ge, Te, In
+                                                         (2008)       of photovoltaics                                           crystalline c-Si, 410 TWp/                                                                    Ga, Au, Cd, Se
+                                                                                                                                 a possible for in-free a-Si
+                                                         Dale (2013) Energy balance of the global photovoltaic (PV)              0.3 TWp in 2015             CED learning rates x
+                                                                     industry—is the PV industry a net electricity producer?
+                                                         Elshkaki    Dynamic analysis of the global metals flows and stocks 2 TWp in 2050                    —                                                   ‘     ‘       Te, Se, Ga, Ge, Ag, In, Te
+                                                         (2013)      in electricity generation technologies                                                                                                                    Cu, Cd, Pb, Ni
+                                                         Woodhouse Supply-chain dynamics of tellurium, indium, and gal- x00 GWp – TWp                        —                                    ‘                    ‘       Te, Ga          Te, In, Ga
+                                                         (2013)      lium within the context of PV manufacturing costs
+                                                         Moss (2013) The potential risks from metals bottlenecks to the      630 GWp in 2030 in              —                                                   ‘     ‘       Te, Sn, Ga, Cd, Te, In, Ga
+                                                                                                                                                                                                                                                                  Energy & Environmental Science
+
+
+                                                                     deployment of strategic energy technologies             Europe                                                                                            Se, Cu
+                                                         Kavlak      Metal production requirements for rapid photovoltaics 1.850 TWp in 2030                 Decrease of mate-                            ‘            ‘       Cd, Te, Ga, Se Te, In, Se,
+                                                         (2015)      deployment                                                                              rial intensities till                                                             Ga
+                                                                                                                                                             2030.
+                                                         Jean (2015) Pathways for solar photovoltaics                            25 TWp in 2050              —                                            ‘      ‘     ‘       Ge, Ga, Cu, Cd, In, Te, Ga
+ This journal is © The Royal Society of Chemistry 2021
+
+
+
+
+                                                                                                                                                                                                                               Se, Te, Zn, Pb,
+                                                                                                                                                                                                                               Sn
+                                                         Viebahn      Assessing the need for critical minerals to shift the      0.4 TWp in 2050 in          Decrease of mate-                                         ‘       Ga, Se, Cd, Te Se, In
+                                                         (2015)       German energy system towards a high proportion of          Germany                     rial intensity and
+                                                                      renewables                                                                             increase of
+                                                                                                                                                             eﬃciency
+                                                         Needleman Economically sustainable scaling of photovoltaics             10 TWp in 2030              Technology scenar-                   ‘
+                                                         (2016)                                                                                              ios and con-
+                                                                                                                                                             sequential costs
+                                                         Louwen       Re-assessment of net energy production and greenhouse 1.6 TWp in 2040                  Learning rates from ‘                ‘                            CO2
+                                                         (2016)       gas emissions avoidance after 40 years of photovoltaics                                past 40 years
+                                                                      development
+                                                         Grandell     Role of critical metals in the future markets of clean    10 TWp in 2050               -                                                   ‘     ‘       Te,Ru, Pt         Ag, In, Te
+                                                         (2016)       energy technologies
+                                                         Davidsson    Material requirements and availability for multi-terawatt 9.3 TWp in 2050              Decrease in mate-                            ‘      ‘     ‘       Ga, Se, Te, Cd Ag, In, Te
+                                                         (2017)       deployment of photovoltaics                                                            rial intensity until
+                                                                                                                                                             lower limit reached
+                                                         Valero       Material bottlenecks in the future development of green 3.5 TWp in 2050                -                                                   ‘     ‘       Cd, Cu, Ga,     Te, Ag, Cd,
+                                                         (2018)       technologies                                                                                                                                             Gd, Ge, Mg,     Ga, In, Ni,
+                                                                                                                                                                                                                               Mo, Ni, Se, Sn, Sn
+                                                                                                                                                                                                                               Te
+                                                         Månberger    Global metal flows in the renewable energy transition: 6.9 TWp in 2060                 5% yearly decrease                                  ‘     ‘       Te, Ga, Se
+                                                         (2018)       exploring the eﬀects of substitutes, technological mix                                 in material
+                                                                      and development                                                                        intensity
+                                                         Tokimatsu    Energy modeling approach to the global energy-mineral B50 TWp in 2100                  —                                            ‘      ‘     ‘       Ga, Se, Cd, Te, Se, In, Te
+                                                         (2018)       nexus: Exploring metal requirements and the well-below                                                                                                   Cu
+                                                                      2 1C target with 100 percent renewable energy
+                                                         Moreau       Enough metals? Resource constraints to supply a fully B25 TWp in 2050                  —                                                   ‘     ‘       Cd, Cu, Ga,       Cd, Ag, Ni,
+                                                         (2019)       renewable energy system                                                                                                                                  Mg, Mo, Ni,       Sn
+                                                                                                                                                                                                                               Sn, Te,Pb
+                                                         Gervais      Raw material needs for the large-scale deployment of     B7.5 TWp in 2050              Two scenarios for                            ‘      ‘     ‘       Al, Cu, As, Sn,   Ga, In, As,
+                                                         (2021)       photovoltaics – effects of innovation-driven roadmaps on                               technological                                                     Bi, Ga, Pb, Se,   Bi, Se, Ag, Si
+                                                                      material constraints until 2050                                                        evolution                                                         Zn, Ni, Cd
+                                                                                                                                                                                                                                                                                                   View Article Online
+Energy Environ. Sci., 2021, 14, 5147–5160 | 5149
+
+
+                                                                                                                                                                                                                                                                  Analysis
+                                                                                                                                                                                                                                                         View Article Online
+
+                                                                                                                Analysis                                                                                                      Energy & Environmental Science
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+
+
+                                                                                                                Fig. 1 Left: Modelled installed PV capacity at end of year for two scenarios in comparison to scenarios from literature. Depending on the scenario
+                                                                                                                assumptions, the global actively operating PV capacity is reaching 80–170 TWp in the year 2100. The projected range in the two scenarios is covering
+                                                                                                                well the range of the ambitious growth scenarios published in ref. 1–5. Right: To realize the described growth the active capacity is increased by roughly
+                                                                                                                1–2 TWp per year after 2030. Because older systems must also be replaced at the end of their lifetime (LT in years) the actual production of new PV
+                                                                                                                modules and systems is increasing to 3–9 TWp per year in 2100. Periods of faster and slower growth, which then also influence periods of higher or lower
+                                                                                                                replacement needs, result in somewhat wavy curves, which differ from the often very smooth projections in other scenarios.
+
+
+
+
+                                                                                                                relevant. Still, economic and population growth drive a con-                  relevant after 2040 (cf. Fig. 1) and therefore after the initial
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                tinued expansion of total electricity demand, leading to an                   rapid growth period.
+                                                                                                                approximately linear growth of PV capacity. Fig. 1 right dis-
+                                                                                                                plays the annual installation necessary to realize this growth.               Energy consumption and greenhouse gas emissions
+                                                                                                                Because older systems must be replaced, the actual installa-                  PV systems will be installed to generate electricity, but it is an
+                                                                                                                tion of PV systems is larger than the active capacity expansion.              important question, how much energy is actually necessary to
+                                                                                                                In the nearly exponential growth until 2030 this effect is not                manufacture and install those systems and how large the
+                                                                                                                very significant, but during slower growth periods replace-                   energy surplus is. We estimate that the cumulative primary
+                                                                                                                ments become a major share of the PV market. The waviness                     energy demand (CED) for production and installation of a PV
+                                                                                                                observed in the gross capacity additions in the right panel of                system was 20 GJ per kWp in 2010. This value was obtained by
+                                                                                                                Fig. 1 is due to the very fast ramp-up of active capacity                     averaging data from diﬀerent sources34,35 and by accounting
+                                                                                                                until 2030 followed by periods of varying deployment speed                    for the market shares of multi-crystalline and mono-crystalline
+                                                                                                                as described above, together with the time-shifted need                       silicon solar cells. If we assumed that CED would stay at this
+                                                                                                                to replace old installations. If a lifetime of 25 years is                    level, in Scenario 2 by 2049 global PV production will require
+                                                                                                                assumed, the installations built in 2020–2030 will be retired                 58.7 EJ per year, which is more than 10% of the global primary
+                                                                                                                in 2045–2055 and thus increase the total required PV produc-                  energy consumption of 2017 (585 EJ)36 (Fig. 2a). However, over
+                                                                                                                tion in these years. The same retirement/installation wave                    the past decades, CED for PV production continuously
+                                                                                                                again occurs 25 years later, from 2070–2080. We choose to                     decreased with learning rates (LR) determined between
+                                                                                                                perform the following analyses for the rather conservative                    12–14%,20,26 meaning that for every doubling of cumulative
+                                                                                                                scenario in the context of resource criticality of 25 years                   installed PV system capacity CED was reduced by 12–14%. If we
+                                                                                                                because of the following reasons: (i) the overwhelmingly                      assume continued learning rates LRCED of 10%, 12%, or 14%,
+                                                                                                                majority of modules currently installed are younger than 25                   the annual energy consumption of the PV industry will reach
+                                                                                                                years, so we cannot be sure whether such long periods are                     values of 23.6, 18.1, or 13.8 EJ per year, respectively, in Scenario
+                                                                                                                realized in the field (ii) performance does degrade, creating                 1 and 39.8, 29.8, or 22.1 EJ per year in Scenario 2 for the
+                                                                                                                need for earlier addition of new modules. We choose not to                    year 2100.
+                                                                                                                model this explicitly, but rather taking a shorter lifetime                       Fig. 2(b) relates the primary energy required for PV produc-
+                                                                                                                (iii) in the future it may be economically favorable to repower               tion with the expected global electricity consumption within
+                                                                                                                a piece of land with the latest generation of PV (e.g. with a                 our scenarios. Depending on learning rates, energy demand for
+                                                                                                                higher efficiency) although the lifetime and/or warranty has                  PV production will peak at values between 8 and 12% of the
+                                                                                                                not expired yet. (iv) new technologies e.g. perovskite based                  total global electricity production in the year 2030, for the
+                                                                                                                device might feature a shorter lifetime. On the other hand, it is             ambitious Scenario 2, and at 3–5% for Scenario 1, while the
+                                                                                                                also possible that considerably longer lifetimes of 40 maybe                  static curves without learning remain at a high levels above
+                                                                                                                50 years are achieved. In any case, we would like to point out                20% and 10%, respectively. Fig. 2c shows that for the static case
+                                                                                                                that in our assessment the question of lifetime becomes only                  the energy required for PV production would currently be at the
+
+
+
+                                                                                                                5150 | Energy Environ. Sci., 2021, 14, 5147–5160                                               This journal is © The Royal Society of Chemistry 2021
+                                                                                                                                                                                                                                                         View Article Online
+
+                                                                                                                Energy & Environmental Science                                                                                                                 Analysis
+
+                                                                                                                same level (Scenario 1) or would even exceed the PV electricity                  Fig. 2(e) displays the corresponding development of the
+                                                                                                                production in the year 2035 by 24% (Scenario 2). Considering                  cumulative GHG emissions, which, from 2060 on, stabilize at
+                                                                                                                technological learning, however, PV electricity production                    values around 12 Gt CO2-eq. for Scenario 1 and between
+                                                                                                                already exceeds the energy demand that drives the rapid                       approximately 25 to 30 Gt CO2-eq. for Scenario 2. The right
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                growth. A rising amount of PV electricity and decreasing energy               axis of the plot represents the corresponding fraction of the
+                                                                                                                demand for the production lead to a fast decrease of the                      carbon dioxide budget. As of January 2021, the CO2 budget to
+                                                                                                                fraction necessary for the production of new modules, which                   contain the anthropogenic global warming below 1.5 1C
+                                                                                                                drops to 4–6% in Scenario 1 or 6–11%, respectively, in Scenario               (1.5-degree goal) at a likelihood of 67% was approximately
+                                                                                                                2 after 2080. This, if you will, ‘‘own-consumption’’ is of a                  290 Gt. For the 2 1C goal (probability of 67%), the remaining
+                                                                                                                comparable order of magnitude as for fossil technologies. It                  CO2 budget was 1040 Gt. Note that this representation can only
+                                                                                                                is estimated, for example, that the own-consumption of coal                   be a snapshot as the budget is steadily reducing at a current
+                                                                                                                power plants is in the order of 4–10%37 of its electricity                    rate of 1.3 kt s1.40,41 On the other hand, a future removal of
+                                                                                                                production, while the coal mining consumes an additional                      CO2 from the atmosphere could lead to larger budget being
+                                                                                                                2.5–5%.38 Nuclear power plants tend to have an even higher                    available for photovoltaics. In consequence, depending on the
+                                                                                                                own-consumption.37                                                            assumptions, building the global PV infrastructure will con-
+                                                                                                                   The energy usage is closely linked to the emission of green-               sume 4–11% of the remaining emission budget compatible
+                                                                                                                house gases (GHG). Due to rapid capacity expansion, by 2030                   with limiting global warming to 1.5 1C. To be clear here, not
+                                                                                                                the GHG emissions of the global PV industry might surpass the                 building such a PV infrastructure would most certainly lead to
+                                                                                                                national emissions of France or even Germany.39 (Fig. 2c)                     much higher emissions.
+                                                                                                                However, GHG emissions drop sharply after 2030, due to a
+                                                                                                                slowdown of the growth of annual production of PV systems                     Glass
+                                                                                                                combined with an increasing share of renewables in the                        Currently, essentially all commercial PV modules use at least
+                                                                                                                energy mix.                                                                   one glass sheet. The massive expansion of PV production thus
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+
+
+
+
+                                                                                                                Fig. 2 (a) Primary energy consumption for production and installation of the PV system in Scenario 1 and 2 under the assumption of a system lifetime of
+                                                                                                                25 years. With continued technological learning even for Scenario 2 the energy consumption is less than 7% of the global primary energy consumption in
+                                                                                                                2017. (b) Fraction of global electricity demand and (c) of PV electricity production necessary for the production of the newly installed PV systems.
+                                                                                                                Assuming technological learning with learning rates from 10–14% for the cumulative primary energy demand for PV system production, the relative
+                                                                                                                energy demand is, after initially high values, in a comparable order of magnitude as for fossil technologies. (d) Annual and (e) cumulative greenhouse gas
+                                                                                                                (GHG) emissions from production of PV systems. The GHG emissions peak at levels comparable to that of large industrialized nations, before dropping
+                                                                                                                sharply because of the advancement of renewable energies.
+
+
+
+
+                                                                                                                This journal is © The Royal Society of Chemistry 2021                                               Energy Environ. Sci., 2021, 14, 5147–5160 | 5151
+                                                                                                                                                                                                                                                    View Article Online
+
+                                                                                                                Analysis                                                                                                  Energy & Environmental Science
+
+                                                                                                                directly increases glass demand. On the other hand, continu-                silver per Wp installed power. We estimate that the annual
+                                                                                                                ous increase in solar cell and module eﬃciency reduces area                 silver consumption of the PV industry was 1959 t in 2018,
+                                                                                                                needed per Wp of installed power, and hence glass demand. We                corresponding to 7.9% of the total annual silver mine produc-
+                                                                                                                project the development of the power conversion eﬃciency with               tion of 28 037 t.44 If the silver consumption per cell remained
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                a learning rate of 6.7%,27 starting from a module eﬃciency of               constant such that only device eﬃciency increases reduce the
+                                                                                                                20% in 2020. We estimate an annually produced module area of                per Wp silver consumption, the demand of the PV industry will
+                                                                                                                1000–1300 km2 in 2020, which increases to 12 000–22 000 km2                 exceed today’s global silver production as early as in the year
+                                                                                                                by 2100, depending on the scenario. Looking at the total area of            2027 (Scenario 2) or in the year 2051 (Scenario 1) (see Fig. 3
+                                                                                                                the active PV capacity, the values increase from 4200–4600 km2              right). This eﬀect can be drastically mitigated if learning rates
+                                                                                                                in 2020 to 252 000–466 000 km2 by 2100. To put this in                      in the silver consumption by technological and scientific improve-
+                                                                                                                perspective, the values for 2100 correspond roughly to the land             ments can be maintained. Depending on the learning rate LRAg the
+                                                                                                                area of the UK or Sweden, respectively.                                     total silver consumption of the PV industry will remain below
+                                                                                                                   Currently, most modules are single-glass modules with front              18 000 t (Scenario 2 LRAg 15%), or will stay roughly at today’s level
+                                                                                                                glass thickness of 3 mm. However trends are in the direction of             (Scenario 1 LRAg 25%), respectively. If, by technological learning,
+                                                                                                                2 mm sheets on the one hand and double glass modules with                   silver consumption is saturating in the long term, this would also
+                                                                                                                glass back-sheets on the other hand.27 As shown in Fig. 3 left,             enable to cover a large fraction by recycling of old modules.
+                                                                                                                for 2 mm float glass, a fully double glass based PV production
+                                                                                                                will require amounts of float-glass exceeding todays overall                Capital expenditure
+                                                                                                                annual glass production of 84 Mt42 as early as 2034 for Scenario            From a fast-increasing number of PV installations, one can
+                                                                                                                2 and in 2074 for Scenario 1. In 2100, glass consumption would              expect a fast increase in necessary capital investment. On the
+                                                                                                                reach 122–215 Mt. Correspondingly, in the single glass case                 other hand, PV technologies profit from fast technological
+                                                                                                                consumption would reach 61–117 Mt by 2100. From a resource                  learning also in terms of costs. A long-term learning rate of
+                                                                                                                perspective, this is probably not critical since sand reserves for          24% can be determined for the time span from 1980–2018 for
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                glass manufacturing are abundant and widespread43 and glass                 inflation adjusted silicon module prices.45 In the last years,
+                                                                                                                can be also be recycled, but it certainly requires a serious                however, the price has decreased more rapidly, with learning
+                                                                                                                expansion of production facilities within the next ten years.               rates between 29.6% to 38.6%, depending on which starting
+                                                                                                                                                                                            year between 2003 to 2008 the analysis is based.46 Also for other
+                                                                                                                Silver consumption                                                          system components, technological learning occurs. For inverter
+                                                                                                                Current commercial silicon PV products rely on a screen-                    a learning rate of 18.9% was reported,25 and other system costs
+                                                                                                                printable silver front metallization. As for 2018, a typical                components become cheaper on a Wp basis because of increas-
+                                                                                                                156  156 mm2 cell comprised of 100 mg silver.27 There is,                  ing module efficiencies. Learning rates for system prices (SP) of
+                                                                                                                however, a strong trend to reduce the amount of silver moti-                LRSP 15%, 20%, and 25% result in yearly investments of 361,
+                                                                                                                vated by high prices and driven by improvements in printing                 263, or 188 billion US$2020, respectively, by 2050 for Scenario 1
+                                                                                                                technologies, with learnings rates LRAg in the order of 20%. On             and accordingly 766, 515, or 337 billion US$2020 for Scenario 2
+                                                                                                                top of this development comes the continuous improvement of                 (see Fig. 4). In the year 2100 the extreme values are 1140 billion
+                                                                                                                solar cell eﬃciencies, further reducing the needed amount of                US$2020 (Scenario 2, LRSP 15%) and 265 billion US$2020
+
+
+
+
+                                                                                                                Fig. 3 Left: Glass consumption for PV module fabrication under the assumption of a system lifetime of 25 years. Depending on whether single glass or
+                                                                                                                double glass modules are assumed, current glass demand for PV is in the same order of magnitude as current global float-glass production or
+                                                                                                                significantly exceeds current production. Right: Projected silver consumption of the PV industry. If only the increase in device eﬃciency reduces the
+                                                                                                                amount of needed silver, the demand of PV industry will exceed current production. With continued technological learning, however, the demand could
+                                                                                                                stay at the same order of magnitude as current demand.
+
+
+
+
+                                                                                                                5152 | Energy Environ. Sci., 2021, 14, 5147–5160                                            This journal is © The Royal Society of Chemistry 2021
+                                                                                                                                                                                                                                               View Article Online
+
+                                                                                                                Energy & Environmental Science                                                                                                       Analysis
+
+                                                                                                                (Scenario 1, LRSP 25%). The very high cost scenarios are                    reflected from the ground with their rear side. While strictly
+                                                                                                                unlikely, however, because high prices would reduce PV capa-                speaking this is not increasing the eﬃciency, the energy yield,
+                                                                                                                city expansion. To put this in perspective, the largest six oil and         i.e., the produced power is going up. In our simplified calcula-
+                                                                                                                gas companies have each annual revenues between 300 and                     tions this would have the same eﬀect as a substantial eﬃciency
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                400 billion US$,47 so one could conclude that the energy market             increase.
+                                                                                                                roughly stays in the same order of magnitude.                                   By 2050, the assumed learning rates leads to projected
+                                                                                                                                                                                            module eﬃciencies of 27.8% (Scenario 1) and 30.7% (Scenario
+                                                                                                                Technological solution for resource eﬃcient photovoltaics                   2). Until 2100, the projected eﬃciencies are 33.5% and 36.3%
+                                                                                                                                                                                            for Scenario 1 and 2, respectively, surpassing the maximum
+                                                                                                                In the previous section, it has become clear that continued
+                                                                                                                                                                                            theoretical eﬃciency limits of single-junction Si-PV cells of
+                                                                                                                technological learning is crucial for resource demands to stay
+                                                                                                                                                                                            29.4%.49 Hence, the targeted learning rate can only be main-
+                                                                                                                within reasonable limits. In this section, we compare the out-
+                                                                                                                                                                                            tained by the implementation of novel technological concepts
+                                                                                                                comes of the assumed learning rates with technology-detailed
+                                                                                                                                                                                            of which the most promising are multi-junction PV modules.
+                                                                                                                progress estimations in order to assess the plausibility of such
+                                                                                                                                                                                            III-V on silicon tandem devices are already achieving more than
+                                                                                                                continued technological learning.
+                                                                                                                                                                                            32% with two junctions and more than 35% with three
+                                                                                                                                                                                            junction,50 while pure III–V solar cells with six junctions have
+                                                                                                                Eﬃciency                                                                    achieved 47.1% efficiency under 143 suns concentration51
+                                                                                                                Our projections of the necessary glass and silver amount are                Unfortunately, no technologies to produce III–V multijunction
+                                                                                                                based on an increase in power conversion eﬃciency with a                    solar cells with low costs are available yet. In contrast,
+                                                                                                                learning rate of 6.7%.27 Also the other learning rates implicitly           perovskite-based tandem structure promise to reach high effi-
+                                                                                                                require increases in eﬃciency. In the short term, the projected             ciencies at low costs. Perovskites are an emerging thin-film PV
+                                                                                                                learning results in module eﬃciencies of 24.1% and 25.9% by                 technology, which has reached high efficiency values at unpre-
+                                                                                                                2030 for Scenarios 1 and 2, respectively (see Fig. 5a), which is            cedented speeds and substantial commercialisation efforts are
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                well in agreement with the forecast of the International Tech-              underway. Laboratory perovskite silicon tandem solar cells
+                                                                                                                nology Roadmap for Photovoltaic (ITRPV) of 2020.48 This road-               have reached efficiencies of 29.5%,52 and dual junction per-
+                                                                                                                map foresees solar cell eﬃciencies in the range of 25% for                  ovskite on silicon53 and triple junction perovskite solar cells54
+                                                                                                                leading products of both n- and p-type products of monocrystal-             have already been developed. This makes it plausible that the
+                                                                                                                line Si-PV. These products achieve already today eﬃciencies                 targeted module efficiencies can be reached during the next
+                                                                                                                beyond 22%,20 and currently eﬃciency increases of 0.5%abs per               30 years with cheap production technologies by the ongoing
+                                                                                                                year are reported by the industry.21 However, as discussed in               technological development. Especially, since the theoretical
+                                                                                                                the Methods section, currently additional losses must be con-               efficiency limit for 2-junction and 3-junction devices for terres-
+                                                                                                                sidered when going from the solar cell to the module level. On              trial conditions without concentration are at 42% and 49%,55
+                                                                                                                the other hand, these losses are predicted to decrease consider-            respectively, leaving plenty of room for further improvements.
+                                                                                                                ably with more transparent front glasses, reduced packaging
+                                                                                                                and series resistance losses with half-cells and shingle mod-               Glass demand
+                                                                                                                ules, resulting in expected cell-to-module power ratios above               Only little change to thinner glass substrates48 and the trend to
+                                                                                                                100%.20 Furthermore, a high market share of 70% of bifacial                 bifacial modules requiring double glass modules keep glass
+                                                                                                                modules is predicted.20 These modules can harvest light                     demand high. Therefore, we did not project any glass specific
+                                                                                                                                                                                            technological learning. In consequence, the substantial eﬃ-
+                                                                                                                                                                                            ciency increase discussed above is crucial to reduce the pro-
+                                                                                                                                                                                            jected glass demand. Furthermore, glass-recycling needs to be
+                                                                                                                                                                                            addressed. On the other hand, there are technological innova-
+                                                                                                                                                                                            tions that could dramatically reduce the necessary glass
+                                                                                                                                                                                            amount. Perovskite solar cells have been produced on thin
+                                                                                                                                                                                            polymer substrates56 and also on 100 mm thin flexible
+                                                                                                                                                                                            substrates.57 Just recently, major commercialisation eﬀorts
+                                                                                                                                                                                            have been announced for thin double glass perovskite module,
+                                                                                                                                                                                            which would reduce glass demand by an order of magnitude.58
+
+                                                                                                                                                                                            Energy consumption
+                                                                                                                                                                                            By 2030, the extrapolation based on learning rates LRCED of 10,
+                                                                                                                                                                                            12, and 14%, respectively, leads to CED ranging between 9.4,
+                                                                                                                                                                                            8.1, and 6.7 GJ kWp1 for Scenario 1 and 8.5, 7.1 and
+                                                                                                                Fig. 4 Inflation adjusted investment costs necessary for the projected PV
+                                                                                                                capacity expansion. With moderate technological learning, costs saturate
+                                                                                                                                                                                            5.9 GJ kWp1 for Scenario 2. These values could be reached
+                                                                                                                at a level at an order of magnitude comparable or lower than the revenues   by ongoing technological developments. The purification of
+                                                                                                                of the current oil and gas industry.                                        polysilicon feedstock and ingot crystal growth was estimated to
+
+
+
+                                                                                                                This journal is © The Royal Society of Chemistry 2021                                         Energy Environ. Sci., 2021, 14, 5147–5160 | 5153
+                                                                                                                                                                                                                                                   View Article Online
+
+                                                                                                                Analysis                                                                                                 Energy & Environmental Science
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                Fig. 5 Development of key technological parameters due to technological learning with the learning rates assumed throughout this work. (a) Module
+                                                                                                                eﬃciency are projected to increase towards the range of 35%, requiring multi-junction technologies. (b) Cumulative primary energy demand per unit of
+                                                                                                                installed power is projected to drop to roughly 3–6 GJ kWp1. Such values could be achievable with the perovskite–perovskite tandem technology.
+                                                                                                                (c) Silver consumption per unit of installed power is projected to drop dramatically to values in the range of 0.7–2.9 mg Wp1. This would require
+                                                                                                                predominantly Ag-free technologies. (d) System prices are projected to drop to 0.05–0.17 US$2020 Wp1 in 2100.
+
+
+
+
+                                                                                                                consume three quarters of the total energy for the production of           long term, it is not unlikely that wafer-based Si-PV will have
+                                                                                                                wafer based silicon PV modules.34 Therefore, a reduction of                been replaced by a thin-film technology where the energy
+                                                                                                                silicon use per wafer of 22% as predicted by the ITRPV 2020 and            demand is substantially reduced to that of the float-glass
+                                                                                                                the projected increase in module eﬃciency would already be                 substrate.39
+                                                                                                                suﬃcient to reach CED values of around 8 GJ kWp1 in the                       There is one other aspect to consider when extrapolating the
+                                                                                                                year 2030.                                                                 CED. In the past, the primary energy demand has mainly been
+                                                                                                                    By 2050, we project CEDs between 4.1–7.7 GJ kWp1. These               reduced because the production of especially the solar cells has
+                                                                                                                values can be achieved by the combination of efficiency                    become less energy intensive and simultaneously the eﬃciency
+                                                                                                                enhancement, reducing wafer thickness to 150 mm and a 20%                  of the module has increased, thus producing more output from
+                                                                                                                reduction of the dicing loss. These technological steps are                the same energy input. These eﬀects are contained in the
+                                                                                                                already anticipated for the next decade by the ITRPV. The                  learning rate and thus considered in our extrapolation. In
+                                                                                                                projected high efficiencies, however, require a multijunction              the future, there will be an additional eﬀect that aﬀects the
+                                                                                                                approach. An additional perovskite top solar cell would only               calculated primary energy demand: the switch to renewable
+                                                                                                                add 0.6 GJ kWp1 under the assumption of a tandem module                   energies. On the one hand side, as renewable energies are
+                                                                                                                efficiency of 29.5%. Provided they achieve the same efficiency,            considered in typical CED calculations with an eﬃciency of
+                                                                                                                perovskite–perovskite tandem modules which do not require                  100%, the CED value would go down, even if e.g. the same
+                                                                                                                an energy intensive silicon wafer could reach a CED as low as              amount of electricity is consumed in solar cell production. On
+                                                                                                                2.8 GJ kWp1, which would be in line with our most optimistic              the other hand, if e.g. natural gas used for heating was directly
+                                                                                                                projections for the year 2100. These low values show that, in the          replaced by synthetic natural gas produced from renewable
+
+
+
+                                                                                                                5154 | Energy Environ. Sci., 2021, 14, 5147–5160                                           This journal is © The Royal Society of Chemistry 2021
+                                                                                                                                                                                                                                           View Article Online
+
+                                                                                                                Energy & Environmental Science                                                                                                   Analysis
+
+                                                                                                                electricity the CED would go up. The eﬃciency of energy                associated with approximately half the GWP of a production in
+                                                                                                                conversion from electricity to synthetic natural gas is 54–78%         China.34,62 Based on the ambitious plans of China to reach a
+                                                                                                                according to.59 The average CED of natural gas following               net zero CO2-emissions by 2060 and the EU’s target to be GHG
+                                                                                                                the Ecoinvent method60 is 38.3 MJ-eq. N1 m3, so using                neutral until 2050, we assume a linear decrease of the GHG
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                renewable energy, the CED of synthetic natural gas would be            intensity for energy reaching zero by 2060. Regarding electri-
+                                                                                                                49.1–70.9 MJ-eq. N1 m3. On the other already now electricity         city, such a linear scenario has also been reported by Pehl
+                                                                                                                is used in glass production.61 So, it is difficult to foresee, which   et al.,63 yet we point out that besides the transformation of the
+                                                                                                                effect does dominate at which point in time. As these effects          electricity infrastructure, one critical challenge for the transfor-
+                                                                                                                were not important in the past, they are not contained in the          mation towards net CO2-neutrality of PV product will lie in the
+                                                                                                                learning rates and thus not in our extrapolation. We do,               replacement of the currently natural gas powered melting
+                                                                                                                however, consider the switch to renewables explicitly in the           processes for flat-glass production, e.g. by the use of hydrogen
+                                                                                                                assessment of greenhouse gas emissions in the next section.            produced from renewable electricity. On the other hand, the
+                                                                                                                                                                                       linear extrapolation is also a conservative estimate, as the data
+                                                                                                                Greenhouse gas emissions                                               within our REMIND model shows an initially faster than linear
+                                                                                                                We base our assessment of the development of greenhouse gas            decrease in carbon intensity for the energy sector in China and
+                                                                                                                (GHG) emissions from industrial production of PV systems on            cheap renewable electricity could be a strong driver for a fast
+                                                                                                                latest life cycle assessment (LCA) data for mono-crystalline           switch away from gas.
+                                                                                                                silicon (Cz-Si) PERC PV systems,62 which can be regarded as a
+                                                                                                                representative of the current and near future PV technologies
+                                                                                                                for at least the next decade.48 Assuming a production in China,        Silver and indium consumption
+                                                                                                                which represents the largest proportion of today’s global PV           The learning curve assumed for the amount of silver used per
+                                                                                                                production,25 the specific global warming potential (GWP) of           solar cell and the increasing eﬃciency led to projected silver
+                                                                                                                Cz-Si PERC PV systems is 1.27 kg CO2-eq Wp1.62                        demands of 3.9–8.9 mg Wp1 in 2030, and 0.7–2.9 mg Wp1 in
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                    The static case in Fig. 2(d and e) represents the evolution of     2100 averaged over all produced modules. Based on48 it is
+                                                                                                                the annual GHG emissions in Scenarios 1 and 2, if the specific         expected that 7.8 mg Wp1 could be reached with improve-
+                                                                                                                GWP is assumed to stay constant. However, there are two main           ments of the screen-printing technology like a reduced silver
+                                                                                                                drivers that will lead to a reduction of specific GWP: first the       content in printing pastes. A further reduction could be
+                                                                                                                processes for the production become more eﬃcient and less              achieved with plating48 or advanced printing technologies,
+                                                                                                                materials and energy are consumed. Second, with a more                 such as FlexTrail printing, with 0.05 mg Wp1.64 Furthermore,
+                                                                                                                widespread usage of renewable energies the GHG emissions               perovskite technologies exist that allow for the realisation of
+                                                                                                                from the energy used in the diﬀerent production processes (and         modules without any silver, be it by the use of aluminium, or
+                                                                                                                which is also the main driver for the GWP of the used materials)       by innovative module concepts.39 So, it appears that a signifi-
+                                                                                                                will decrease additionally.                                            cant reduction in silver consumption for the average of the
+                                                                                                                    The assessment of the learning rates of the GWP is challen-        PV industry as described by the projected values or even a
+                                                                                                                ging as it can only be based on a range of diﬀerent LCA                silver free PV industry is possible with known technologies.
+                                                                                                                approaches that date back as far as to the 1970s. Louwen               One has to note, however, that having less silver per module
+                                                                                                                et al. presented a comprehensive overview of historical LCAs           and thus a higher dilution would lower the incentive for
+                                                                                                                and assessed the learning rate to range between 16.5% and              recycling and might require also an advancement in recycling
+                                                                                                                23.6% for multi- and mono-crystalline Si PV, respectively.20           technologies.
+                                                                                                                This learning rate development includes both eﬀects described              In terms of rare metals, however, another element could
+                                                                                                                above, more eﬃcient production and change in the specific              become critical with the emergence of multi-junction devices.
+                                                                                                                GHG emissions for the energy used. These learning rates,               In perovskite–silicon and perovskite–perovskite tandem solar
+                                                                                                                however, seem to reflect a rather optimistic scenario as thy           cells – the currently most promising technological options –
+                                                                                                                would imply a GWP of well below 1 kg CO2-eq. Wp1 for mono-            indium containing transparent conductive oxide (TCO) are
+                                                                                                                crystalline Si PV produced today (installed capacity 4500 GWp),        used as front contact and as recombination contact between
+                                                                                                                which is only the case, for a production within the EU.62 Thus,        the two sub-cells. Indium has been identified as critical for
+                                                                                                                for our analysis we chose a diﬀerent approach. As most GHG             much lower installed capacities. To solve this issue, the recom-
+                                                                                                                emissions for the production of PV systems are energy related,         bination contact could be replaced e.g. by tunnel diodes made
+                                                                                                                we take the same learning rates as for the CED, i.e. 10–14%.           from silicon in perovskite-silicon tandem solar cells,65 or by an
+                                                                                                                Additionally, we account for the dramatic shift towards renew-         innovative material combination like a C60/SnO2x recombina-
+                                                                                                                able energies not only for electricity production but also for         tion contact in all-perovskite tandems.66 However, up to now
+                                                                                                                industrial processes, which we foresee to happen, but for which        the front TCO in the highest efficiency tandem solar cells all
+                                                                                                                there is no historic precedent. We start the assumed develop-          contain indium, because the TCO also enhances device stabi-
+                                                                                                                ment with the values calculated for China, which is a conserva-        lity. Clearly more research is necessary to achieve the goals of
+                                                                                                                tive assessment, as emission intensity for production is lower         high efficiencies, good resource availability and low costs
+                                                                                                                on other regions. For example, a production in the EU is               (which implies long lifetimes) simultaneously.
+
+
+
+                                                                                                                This journal is © The Royal Society of Chemistry 2021                                     Energy Environ. Sci., 2021, 14, 5147–5160 | 5155
+                                                                                                                                                                                                                                                View Article Online
+
+                                                                                                                Analysis                                                                                              Energy & Environmental Science
+
+                                                                                                                Costs                                                                    scenarios and therefore in the same order of magnitude as the
+                                                                                                                The assumed technological learning leads to a cost range                 revenues of the largest oil and gas companies. Technologies to
+                                                                                                                between 0.19–0.38 US$2020 Wp1 for installed utility systems             realize the anticipated developments are available. Multi-junction
+                                                                                                                in the year 2030, 0.10–0.27 US$2020 Wp1 in the year 2050 and            solar cells already achieve the necessary efficiencies in the range of
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                0.05–0.17 US$2020 Wp1 in 2100. In ref. 46 a detailed bottom up          35%. Perovskite-perovskite devices, for instance, could develop to a
+                                                                                                                cost analysis projected system costs of 0.37–0.44 US$2020 Wp1           level where high efficiencies together with low energy consumption,
+                                                                                                                for utility installations in the year 2025, with perovskite and          production on thinner substrates and low or no silver usage are
+                                                                                                                perovskite-silicon tandem solar cell at the lower end, and single        achieved simultaneously. However, replacement of indium in trans-
+                                                                                                                junction silicon solar cells at the upper end. These values could        parent conductive layers is still a challenge. Despite all uncertainties
+                                                                                                                be considered on route towards the cost range projected for              inherent of such long-term scenarios, one can conclude that current
+                                                                                                                2030. Based on ref. 46, one can estimate 23.5 US$2020 m2                and future investments must not only be targeted at capacity
+                                                                                                                production costs for a perovskite-perovskite tandem module. In           expansion but also at upholding the currently high rate of innova-
+                                                                                                                combination with the upper limit of efficiencies projected               tion with a focus on sustainability.
+                                                                                                                above, this result in production costs of the module alone of
+                                                                                                                0.08 US$2020 Wp1 and 0.02 US$2020 Wp1 in the years 2050 and
+                                                                                                                2100, respectively. This is only slightly below the lower limit of
+                                                                                                                the projected cost ranges. Thus, reaching these limits would             Methods
+                                                                                                                require very substantial to unlikely reductions in balance of            REMIND model and PV installation data
+                                                                                                                system costs (BOS). In this context, one could speculate on
+                                                                                                                substantially higher efficiencies, integration in multifunctional        We use the global multi-regional energy-economy-climate
+                                                                                                                elements where part of the BOS is already accounted for                  model REMIND Version 2.1.0 for our analysis.29,30 REMIND is
+                                                                                                                (e.g. vehicles) and/or automatization in the installation and            open source and available on GitHub at https://github.com/
+                                                                                                                economy of scale in ultra-large PV power plants. On the other            remindmodel/remind. The technical documentation of the
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                hand, reaching medium values within the projected cost ranges            equation structure can be found at https://rse.pik-potsdam.
+                                                                                                                appears fully plausible.                                                 de/doc/remind/2.1.0/. In REMIND, each single region is mod-
+                                                                                                                                                                                         elled as a hybrid energy-economy system and is able to interact
+                                                                                                                                                                                         with the other regions by means of trade. Tradable goods are
+                                                                                                                Conclusions                                                              the exhaustible primary energy carriers coal, oil, gas and
+                                                                                                                                                                                         uranium, emission permits, and a composite good that repre-
+                                                                                                                Cost eﬃcient climate change mitigation requires total photo-             sents all other tradeable goods.
+                                                                                                                voltaic installations in the range of 20–80 TWp in the year 2050             The economy sector is modelled by a Ramsey-type growth
+                                                                                                                and 80–170 TWp until 2100. Based on the current technology,              model which maximizes utility, a function of consumption.
+                                                                                                                such a TW-scale PV industry would be running into resource               Labor, capital and end-use energy generate the macroeconomic
+                                                                                                                constraints. On the other hand, with continued technological             output, i.e., GDP. The produced GDP covers the costs of the
+                                                                                                                learning at its current rate the resource demands could be kept          energy system, the macroeconomic investments, the export of a
+                                                                                                                within reasonable boundaries. With technological learning,               composite good and consumption.
+                                                                                                                during the initial rapid growth, the energy consumed for PV                  The energy sector is described with high technological
+                                                                                                                system production corresponds to close to 80% of the electricity         detail. It uses exhaustible and renewable primary energy car-
+                                                                                                                produced by PV. This rate is dropping fast and stabilizes at             riers and converts them to final energy types such as electricity,
+                                                                                                                4–11%. Accordingly, the fraction of the overall energy demand            heat and fuels. Various conversion technologies are available,
+                                                                                                                used for PV production stabilizes at 2–5%. Nevertheless, build-          including technologies with carbon capture and storage (CCS).
+                                                                                                                ing the global PV infrastructure will consume 4–11% of the                   The model includes cost mark-ups for the fast up-scaling of
+                                                                                                                remaining greenhouse gas emission budget compatible with                 investments into individual technologies; therefore, a more
+                                                                                                                limiting global warming to 1.5 1C. Hence, developing low-                realistic phasing in and out of technologies is achieved. The
+                                                                                                                emission PV technologies should become a priority. The                   model allows for premature retirement of capacities before the
+                                                                                                                demand for float-glass for photovoltaics will be in the order            end of their technological lifetime, and the lifetimes of capa-
+                                                                                                                of the entire current global float-glass production or more than         cities diﬀer between various types of technologies. If capacities
+                                                                                                                double that amount if there is switch to glass–glass modules             are phased out for economic reasons before they reach the end
+                                                                                                                without a reduction in glass thickness. Therefore, a rapid               of their technical lifetime, these assets are then stranded.
+                                                                                                                expansion in float glass production capacity within the next             Furthermore, capacities of conversion technologies age realis-
+                                                                                                                10 years is necessary. Depending on the learning rate, the               tically from an engineering point of view: depreciation rates are
+                                                                                                                global silver demand used for PV production could stay at                very low in the first half of the lifetime and increase strongly
+                                                                                                                roughly current levels, or increase by a factor of 9, which most         thereafter.
+                                                                                                                likely would not be feasible. Recycling facilities that can cope with        The two scenarios diﬀer in a number of assumptions:
+                                                                                                                the enormous materials flow, will also be necessary. Finally, yearly          PV learning parameters that determine the capital
+                                                                                                                investments will be in the range of 300–600 billion $US2020 for likely   cost evolution: Until 2050, investment costs only decrease to
+
+
+
+                                                                                                                5156 | Energy Environ. Sci., 2021, 14, 5147–5160                                         This journal is © The Royal Society of Chemistry 2021
+                                                                                                                                                                                                                                                  View Article Online
+
+                                                                                                                Energy & Environmental Science                                                                                                            Analysis
+
+                                                                                                                40 $cent2020 Wp1 in Scenario 1, while going down to 10                Pt(t). The learning rate calculations were carried out under the
+                                                                                                                $cent2020 Wp1 in Scenario 2.                                          assumption of a module lifetime of t = 25 years. For the CED
+                                                                                                                     Additionally, the non-linear cost mark-ups penalizing            the data was available for the year 2010, thus
+                                                                                                                very fast upscaling of PV are four times as large in                                                                                
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                Scenario 1 compared to Scenario 2.                                                                                         P25
+                                                                                                                                                                                                                                             cum ðtÞ
+                                                                                                                                                                                                                                  log2
+                                                                                                                     Integration challenges in Scenario 2 are set to half the            CEDðtÞ ¼ CEDð2010Þð1  LRCED Þ                 P25
+                                                                                                                                                                                                                                          cum ð2010Þ ;        (2)
+                                                                                                                value of Scenario 1.
+                                                                                                                     Electrification options in the transport, buildings and          with LRCED being the learning rate for the cumulative primary
+                                                                                                                industry sectors are assumed to be substantially more expen-           energy demand.
+                                                                                                                sive and limited in Scenario 1 than in Scenario 2.                         The majority of the GHG gas emission associated for the
+                                                                                                                     CCS usage is substantially more expensive in Scenario 2:         production of PV systems are based on energy consumption,
+                                                                                                                investment costs are 50% higher, up-scaling cost mark-ups are          either for direct processes during solar cell, module and system
+                                                                                                                4 times as large.                                                      production, or in the processes for material production, e.g.
+                                                                                                                    To match the historic data in the year 2020, 47 GWp were           silicon purification. Hence, we assume that the development of
+                                                                                                                added to the REMIND data in each year. Furthermore, the                the GHG emissions GHG(t), can be modelled based on
+                                                                                                                REMIND model delivers the cumulative installed PV capacity in          CED(t), with
+                                                                                                                time steps of 5 years until 2060 and in time steps of 10 years
+                                                                                                                until 2100. To obtain data with a yearly resolution, in a first step                       GHG(t) = CED(t)ECI(t),                             (3)
+                                                                                                                preliminary installed PV capacity data was estimated for the           where ECI(t) is the energy carbon intensity, describing the
+                                                                                                                intermediate years using the compound annual growth rate               amount of GHG emission per unit energy of the CED used in
+                                                                                                                (CAGR) calculated for the 5 or 10 years time period. Lower             the PV system production. The ECI for the year 2020 was
+                                                                                                                CAGR values in a following time period then sometimes lead to          calculated based on life cycle assessment (LCA) data for the
+                                                                                                                a sharp drop in the annual active capacity expansion, when             GHG mono-crystalline silicon (Cz-Si) PERC PV systems of
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                going from one time period to the next. To avoid these artificial      1.27 kg CO2-eq. Wp1.62 and the CED value for the year 2020
+                                                                                                                oscillations, the data for the annual active capacity expansion        from the learning rate extrapolation. The PERC technology can
+                                                                                                                was smoothed by a moving average over 4 years. Finally, by            be regarded as representative of the current and near future PV
+                                                                                                                integrating over these values and smoothing with a moving              technologies for at least the next decade. As site for the
+                                                                                                                average over 1 year we obtained the data for the installed PV         production, we assumed production in China, which represents
+                                                                                                                capacity data without implausible jumps at the transition              the largest proportion of today’s global PV production. To
+                                                                                                                between time periods, which is used in the present study.              reflect the increasing share of renewables ECI(t) was then
+                                                                                                                While there is a certain discrepancy in the transition from            linearly decreased to zero in the year 2060.
+                                                                                                                the historic to the projected data, after 2025 the deviation from         For the system price SP(t) we assumed 63 $$cent Wp1 from
+                                                                                                                the REMIND data-points lies below 2.7% and 2.4% for Scenario           our own analysis published in ref. 30 for utility scale installa-
+                                                                                                                1 and 2, respectively. The discrepancy decreases steadily and is       tions in the year 2019, thus
+                                                                                                                below 1% from 2045 on. Respective data for annual active
+                                                                                                                                                                                                                                              0
+                                                                                                                                                                                                                                                  !
+                                                                                                                capacity expansion was calculated from the diﬀerence in                                                             P25
+                                                                                                                                                                                                                                      cum ðtÞ
+                                                                                                                installed PV capacity to the previous year.                                                                log2
+                                                                                                                                                                                                                                   P25
+                                                                                                                                                                                                                                    cum ð2019Þ
+                                                                                                                    To account for the module lifetime t, the PV production in               SPðtÞ ¼ SPð2019Þð1  LRSP Þ                              ;       (4)
+                                                                                                                year t, Pt(t), is calculated from the sum of the active capacity
+                                                                                                                expansion in the same year P(t) and the production from t              with LRSP being the learning rate for the system price.
+                                                                                                                years ago.
+                                                                                                                                                                                       Power conversion eﬃciency
+                                                                                                                                      Pt(t) = P(t) + Pt(t  t)                (1)
+                                                                                                                                                                                       The eﬃciencies for solar cells in mass production of the base
+                                                                                                                All further analysis was based on the data for 25 years lifetime.      year 2018 were obtained from ref. 27. The most representative
+                                                                                                                                                                                       devices showed an eﬃciency of 20.2% for multi-crystalline Si-
+                                                                                                                Learning rate calculations for energy demand, GHG emissions            PERC and an eﬃciency of 22.0% for monocrystalline Si-PERC
+                                                                                                                and PV system costs                                                    technology. The average eﬃciency was calculated accounting
+                                                                                                                The development of the prices of PV system components, but             for the market share of mono-and multi-crystalline silicon PV
+                                                                                                                also the cumulative primary energy demand (CED) for produc-            in 2017 of 60.8% and 32.2%, respectively.25 The resulting
+                                                                                                                tion and installation of a PV system can be described by a             module eﬃciency was calculated by accounting for 1.3% cell
+                                                                                                                learning rate LR.20,24–26 Each time the cumulative produced            to module eﬃciency loss and 8% packaging loss, resulting in
+                                                                                                                capacity Ptcum(t) doubles, the price or CED is reduced by LR. The      18.91% module eﬃciency 2018.
+                                                                                                                cumulative produced capacity Ptcum(t) is higher than the                  The development of the power conversion eﬃciency was
+                                                                                                                installed PV capacity shown in Fig. 1 left, which only shows           calculated based on the eﬃciency of the year 2018 and on the
+                                                                                                                the active PV capacity, while Ptcum(t) considers also the already      basis of the historical learning rate, LRZ. The learning rate was
+                                                                                                                decommissioned systems and is derived by integrating over              applied to the cumulative produced capacity Ptcum(t) for module
+
+
+
+                                                                                                                This journal is © The Royal Society of Chemistry 2021                                    Energy Environ. Sci., 2021, 14, 5147–5160 | 5157
+                                                                                                                                                                                                                                       View Article Online
+
+                                                                                                                Analysis                                                                                      Energy & Environmental Science
+
+                                                                                                                lifetimes of t = 25 years, thus                                     3 N. M. Haegel, H. Atwater, T. Barnes, C. Breyer, A. Burrell,
+                                                                                                                                                                                      Y.-M. Chiang, S. de Wolf, B. Dimmler, D. Feldman, S. Glunz,
+                                                                                                                                                  Zð2018Þ
+                                                                                                                                ZðtÞ ¼                   25         :    (5)        J. C. Goldschmidt, D. Hochschild, R. Inzunza, I. Kaizuka,
+                                                                                                                                                           Pcum ðtÞ
+                                                                                                                                                   log2                               B. Kroposki, S. Kurtz, S. Leu, R. Margolis, K. Matsubara,
+                                                                                                                                                         P25
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                                         ð1  LR Þ
+                                                                                                                                                 Z        cum ð2018Þ                  A. Metz, W. K. Metzger, M. Morjaria, S. Niki, S. Nowak,
+                                                                                                                                                                                      I. M. Peters, S. Philipps, T. Reindl, A. Richter, D. Rose,
+                                                                                                                                                                                      K. Sakurai, R. Schlatmann, M. Shikano, W. Sinke, R. Sinton,
+                                                                                                                Silver demand                                                         B. J. Stanbery, M. Topic, W. Tumas, Y. Ueda, J. van de
+                                                                                                                                                                                      Lagemaat, P. Verlinden, M. Vetter, E. Warren, M. Werner,
+                                                                                                                The silver demand per solar cell in 2018 was assumed to be
+                                                                                                                                                                                      M. Yamaguchi and A. W. Bett, Science, 2019, 364, 836–838.
+                                                                                                                100 mg silver based on ref. 27. Learning rates for the reduction
+                                                                                                                                                                                    4 C. Breyer, D. Bogdanov, A. Gulagi, A. Aghahosseini,
+                                                                                                                of the silver consumption LRAg are typically given per cell
+                                                                                                                                                                                      L. S. Barbosa, O. Koskinen, M. Barasa, U. Caldera,
+                                                                                                                Agcell(t) in literature. Thus, the development of the module
+                                                                                                                                                                                      S. Afanasyeva, M. Child, J. Farfan and P. Vainikka, Prog.
+                                                                                                                eﬃciency has to be considered additionally, to obtain the silver
+                                                                                                                                                                                      Photovoltaics, 2017, 25, 727–745.
+                                                                                                                demand on a Wp basis AgWp(t). In this calculation the solar cell
+                                                                                                                                                                                    5 Shell Scenarios, Sky – Meeting the Goals of the Paris Agree-
+                                                                                                                area Areacell and the packaging loss LossPack as described above
+                                                                                                                                                                                      ment, 2018.
+                                                                                                                have to be considered as well:
+                                                                                                                                                                                    6 S. Davidsson and M. Höök, Energy Policy, 2017, 108,
+                                                                                                                                                                        
+                                                                                                                                                                P25
+                                                                                                                                                                 cum ðtÞ
+                                                                                                                                                                                      574–582.
+                                                                                                                                                        2 P25 ð2018Þ
+                                                                                                                                                         log
+                                                                                                                                                                                    7 A. Valero, A. Valero, G. Calvo and A. Ortego, Renewable
+                                                                                                                                 Agcell ð2018Þ 1  LRAg        cum
+                                                                                                                  AgWp ðtÞ ¼                        2
+                                                                                                                                                                           : (6)      Sustainable Energy Rev., 2018, 93, 178–200.
+                                                                                                                               Areacell  1000 W m  ZðtÞ=ð1  LossPack Þ
+                                                                                                                                                                                    8 V. Moreau, P. Dos Reis and F. Vuille, Resources, 2019, 8, 29.
+                                                                                                                                                                                    9 A. Elshkaki and T. E. Graedel, J. Cleaner Prod., 2013, 59,
+                                                                                                                                                                                      260–273.
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                                                                                   10 L. Grandell, A. Lehtilä, M. Kivinen, T. Koljonen, S. Kihlman
+                                                                                                                Author contributions                                                  and L. S. Lauri, Renewable Energy, 2016, 95, 53–62.
+                                                                                                                                                                                   11 A. Feltrin and A. Freundlich, Renewable Energy, 2008, 33,
+                                                                                                                J. C. G. and L. W. performed the conceptualization, investiga-
+                                                                                                                                                                                      180–185.
+                                                                                                                tion, and methodology development. L. F. performed the LCA
+                                                                                                                                                                                   12 J. I. Goldstein, D. E. Newbury, P. Echlin, D. C. Joy,
+                                                                                                                analysis and R. P. the REMIND modelling. All authors con-
+                                                                                                                                                                                      A. D. Romig, C. E. Lyman, C. Fiori and E. Lifshin, Scanning
+                                                                                                                tributed the writing of the original draft and the reviewing.
+                                                                                                                                                                                      Electron Microscopy and X-Ray Microanalysis. A Text for
+                                                                                                                                                                                      Biologists, Materials Scientists, and Geologists, 2nd edn,
+                                                                                                                Conflicts of interest                                                 Springer US, Boston, MA, 1992.
+                                                                                                                                                                                   13 M. Dale and S. M. Benson, Environ. Sci. Technol., 2013, 47,
+                                                                                                                There are no conflicts to declare.
+                                                                                                                                                                                      3482–3489.
+                                                                                                                                                                                   14 M. Woodhouse, A. Goodrich, R. Margolis, T. L. James,
+                                                                                                                Acknowledgements                                                      M. Lokanc and R. Eggert, IEEE J. Photovolt., 2013, 3,
+                                                                                                                                                                                      833–837.
+                                                                                                                This work was supported by the Fraunhofer Lighthouse Project       15 R. L. Moss, E. Tzimas, H. Kara, P. Willis and J. Kooroshy,
+                                                                                                                MaNiTU. R.P. gratefully acknowledges funding from the Eur-            Energy Policy, 2013, 55, 556–564.
+                                                                                                                opean Union’s Horizon 2020 research and innovation pro-            16 G. Kavlak, J. McNerney, R. L. Jaﬀe and J. E. Trancik, Energy
+                                                                                                                gramme under grant agreement No 730403 (INNOPATHS) and                Environ. Sci., 2015, 8, 1651–1659.
+                                                                                                                the Kopernikus-Projekt Ariadne (FKZ 03SFK5A) by the German         17 J. Jean, P. R. Brown, R. L. Jaﬀe, T. Buonassisi and V. Bulović,
+                                                                                                                Federal Ministry of Education and Research. L.W. acknowl-             Energy Environ. Sci., 2015, 8, 1200–1219.
+                                                                                                                edges the scholarship support of the German Federal Environ-       18 P. Viebahn, O. Soukup, S. Samadi, J. Teubler, K. Wiesen and
+                                                                                                                mental Foundation (DBU).                                              M. Ritthoﬀ, Renewable Sustainable Energy Rev., 2015, 49,
+                                                                                                                                                                                      655–671.
+                                                                                                                References                                                         19 D. Berney Needleman, J. R. Poindexter, R. C. Kurchin,
+                                                                                                                                                                                      I. M. Peters, G. Wilson and T. Buonassisi, Energy Environ.
+                                                                                                                 1 F. Creutzig, P. Agoston, J. C. Goldschmidt, G. Luderer,            Sci., 2016, 9, 2122–2129.
+                                                                                                                   G. Nemet and R. C. Pietzcker, Nat. Energy, 2017, 2, 17140.      20 A. Louwen, W. G. J. H. M. van Sark, A. P. C. Faaij and
+                                                                                                                 2 N. M. Haegel, R. Margolis, T. Buonassisi, D. Feldman,              R. E. I. Schropp, Nat. Commun., 2016, 7, 13728.
+                                                                                                                   A. Froitzheim, R. Garabedian, M. Green, S. Glunz, H.-M.         21 A. Månberger and B. Stenqvist, Energy Policy, 2018, 119,
+                                                                                                                   Henning, B. Holder, I. Kaizuka, B. Kroposki, K. Matsubara,         226–241.
+                                                                                                                   S. Niki, K. Sakurai, R. A. Schindler, W. Tumas, E. R. Weber,    22 K. Tokimatsu, M. Höök, B. McLellan, H. Wachtmeister,
+                                                                                                                   G. Wilson, M. Woodhouse and S. Kurtz, Science, 2017, 356,          S. Murakami, R. Yasuoka and M. Nishio, Appl. Energy,
+                                                                                                                   141–143.                                                           2018, 225, 1158–1175.
+
+
+
+                                                                                                                5158 | Energy Environ. Sci., 2021, 14, 5147–5160                                 This journal is © The Royal Society of Chemistry 2021
+                                                                                                                                                                                                                                          View Article Online
+
+                                                                                                                Energy & Environmental Science                                                                                                  Analysis
+
+                                                                                                                23 E. Gervais, S. Shammugam, L. Friedrich and T. Schlegl,                 impacts of global warming of 1.5 1C above pre-industrial levels
+                                                                                                                   Renewable Sustainable Energy Rev., 2021, 137, 110589.                  and related global greenhouse gas emission pathways, in the
+                                                                                                                24 S. Philipps and W. Warmuth, Photovoltaics Report.                      context of strengthening the global response to the threat of
+                                                                                                                25 Fraunhofer Institut für Solare Energiesysteme ISE, Current            climate change, sustainable development, and eﬀorts to eradi-
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                   and Future Cost of Photovoltaics, 2015.                                cate poverty, IPCC Special Report, 2018.
+                                                                                                                26 M. Görig and C. Breyer, Environ. Prog. Sustainable Energy,         42 International Year of Glass 2022, The global glass economy
+                                                                                                                   2016, 35, 914–923.                                                     and its wider social consequences, 2020.
+                                                                                                                27 ITRPV, International Technology Roadmap for Photovoltaic,           43 US Geological Survey, Mineral commodity summaries 2019,
+                                                                                                                   2018 Results 10th Edition, 2019.                                       United States Government Printing Oﬃce, Reston, Virginia,
+                                                                                                                28 G. Luderer, M. Pehl, A. Arvesen, T. Gibon, B. L. Bodirsky,             2019.
+                                                                                                                   H. S. de Boer, O. Fricko, M. Hejazi, F. Humpenöder, G. Iyer,       44 T. J. Brown, N. E. Idoine, C. E. Wrighton, E. R. Raycraft,
+                                                                                                                   S. Mima, I. Mouratiadou, R. C. Pietzcker, A. Popp, M. van              S. F. Hobbs, R. A. Shaw, P. Everett, C. Kresse, E. A. Deady
+                                                                                                                   den Berg, D. van Vuuren and E. G. Hertwich, Nat. Commun.,              and T. Bide, World Mineral Production 2014–2018, British
+                                                                                                                   2019, 10, 5229.                                                        Geological Survey, Keyworth, Nottingham, 2019.
+                                                                                                                29 C. Bertram, G. Luderer, R. C. Pietzcker, E. Schmid,                 45 S. Philipps and W. Warmuth, Photovoltaics Report, avail-
+                                                                                                                   E. Kriegler and O. Edenhofer, Nat. Clim. Change, 2015, 5,              able at: https://www.ise.fraunhofer.de/content/dam/ise/de/
+                                                                                                                   235–239.                                                               documents/publications/studies/Photovoltaics-Report.pdf,
+                                                                                                                30 G. Luderer, C. Auer, N. Bauer, L. Baumstark, C. Bertram,               accessed 5 April 2019.
+                                                                                                                   S. Bi, A. Dirnaichner, A. Giannousakis, J. Hilaire, D. Klein,       46 L. A. Zafoschnig, S. Nold and J. C. Goldschmidt, IEEE Journal
+                                                                                                                   J. Koch, M. Leimbach, A. Levesque, A. Malik, L. Merfort,               of Photovoltaics, 2020, 10, 1632–1641.
+                                                                                                                   M. Pehl, R. Pietzker, F. Piontek, S. Rauner, R. Rodrigues,          47 Fortune Media IP Limited, Fortune Global 500, available at:
+                                                                                                                   M. Rottoli, F. Schreyer, B. Sörgel, J. Strefler and F. Ueckerdt,      https://fortune.com/global500/2019/, accessed 13 January
+                                                                                                                   REMIND v2.1.0 - Model documentation, Zenodo, 2020.                     2020.
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+                                                                                                                31 T. Aboumahboub, C. Auer, N. Bauer, L. Baumstark,                    48 ITRPV, International Technology Roadmap for Photovoltaic.
+                                                                                                                   C. Bertram, S. Bi, J. Dietrich, A. Dirnaichner,                        2019 Results 11th Edition, 2020.
+                                                                                                                   A. Giannousakis, M. Haller, J. Hilaire, D. Klein, J. Koch,          49 A. Richter, M. Hermle and S. W. Glunz, IEEE J. Photovolt.,
+                                                                                                                   A. Körner, E. Kriegler, M. Leimbach, A. Levesque, A. Lorenz,          2013, 3, 1184–1191.
+                                                                                                                   G. Luderer, S. Ludig, M. Lüken, A. Malik, S. Manger,               50 S. Essig, C. Allebé, T. Remo, J. F. Geisz, M. A. Steiner,
+                                                                                                                   L. Merfort, I. Mouratiadou, M. Pehl, R. Pietzker,                      K. Horowitz, L. Barraud, J. S. Ward, M. Schnabel,
+                                                                                                                   F. Piontek, L. Popin, S. Rauner, R. Rodrigues, N. Roming,              A. Descoeudres, D. L. Young, M. Woodhouse, M. Despeisse,
+                                                                                                                   M. Rottoli, E. Schmidt, F. Schreyer, A. Schultes, B. Sörgel,          C. Ballif and A. Tamboli, Nat. Energy, 2017, 2, 17144.
+                                                                                                                   J. Strefler and F. Ueckerdt, REMIND – REgional Model of             51 J. F. Geisz, R. M. France, K. L. Schulte, M. A. Steiner,
+                                                                                                                   INvestments and Development, Zenodo, 2020.                             A. G. Norman, H. L. Guthrey, M. R. Young, T. Song and
+                                                                                                                32 F. Ueckerdt, R. Pietzcker, Y. Scholz, D. Stetter, A. Giannousakis      T. Moriarty, Nat. Energy, 2020, 5, 326–335.
+                                                                                                                   and G. Luderer, Energy Economics, 2017, 64, 665–684.                52 National Renewable Energy Laboratory (NREL), Best
+                                                                                                                33 R. C. Pietzcker, D. Stetter, S. Manger and G. Luderer, Appl.           Research-Cell Eﬃciency Chart, available at: https://www.
+                                                                                                                   Energy, 2014, 135, 704–720.                                            nrel.gov/pv/cell-eﬃciency.html, accessed 18 December
+                                                                                                                34 M. J. de Wild-Scholten, Photovoltaics, Solar Energy Materials,         2020.
+                                                                                                                   and Technologies: Cancun 2010, 2013, vol. 119, pp. 296–305.         53 J. Werner, F. Sahli, F. Fu, J. J. Diaz Leon, A. Walter,
+                                                                                                                35 N. Jungbluth, M. Tuchschmid and M. J. de Wild-Scholten,                B. A. Kamino, B. Niesen, S. Nicolay, Q. Jeangros and
+                                                                                                                   2008, www.esu-services.ch.                                             C. Ballif, ACS Energy Lett., 2018, 3, 2052–2058.
+                                                                                                                36 International Energy Agency, World Energy Outlook 2018,             54 K. Xiao, J. Wen, Q. Han, R. Lin, Y. Gao, S. Gu, Y. Zang,
+                                                                                                                   Paris, 2018.                                                           Y. Nie, J. Zhu, J. Xu and H. Tan, ACS Energy Lett., 2020, 5,
+                                                                                                                37 R. Flosdorﬀ and G. Hilgarth, Elektrische Energieverteilung,            2819–2826.
+                                                                                                                   8th edn, Teubner, Stuttgart, Leipzig, Wiesbaden, 2003.              55 A. de Vos, J. Phys. D: Appl. Phys., 1980, 13, 839–846.
+                                                                                                                38 Wikipedia, Kohlekraftwerk, available at: https://de.wikipe          56 C. Wu, D. Wang, Y. Zhang, F. Gu, G. Liu, N. Zhu, W. Luo,
+                                                                                                                   dia.org/w/index.php?title=Kohlekraftwerk&ol                            D. Han, X. Guo, B. Qu, S. Wang, Z. Bian, Z. Chen and
+                                                                                                                   did=204189894, accessed 23 December 2020.                              L. Xiao, Adv. Funct. Mater., 2019, 29, 1902974.
+                                                                                                                39 L. Wagner, S. Mastroianni and A. Hinsch, Joule, 2020, 4,            57 X. Dai, Y. Deng, C. H. van Brackle, S. Chen, P. N. Rudd,
+                                                                                                                   882–901.                                                               X. Xiao, Y. Lin, B. Chen and J. Huang, Adv. Energy Mater.,
+                                                                                                                40 Remaining carbon budget - Mercator Research Institute on               2020, 10, 1903108.
+                                                                                                                   Global Commons and Climate Change (MCC), available at:              58 W. Driscoll, US start-up pursues roll-to-roll printing of
+                                                                                                                   https://www.mcc-berlin.net/en/research/co2-budget.html,                perovskite on flexible glass, available at: https://www.pv-
+                                                                                                                   accessed 8 February 2021.                                              magazine.com/2020/11/18/us-start-up-pursues-roll-to-roll-
+                                                                                                                41 M. Allen, M. Babiker, Y. Chen, H. de Coninck and S. Conors,            printing-of-perovskite-on-flexible-glass/, accessed 23 December
+                                                                                                                   Global Warming of 1.5 1C. An IPCC Special Report on the                2020.
+
+
+
+                                                                                                                This journal is © The Royal Society of Chemistry 2021                                    Energy Environ. Sci., 2021, 14, 5147–5160 | 5159
+                                                                                                                                                                                                                                          View Article Online
+
+                                                                                                                Analysis                                                                                          Energy & Environmental Science
+
+                                                                                                                59 S. Fendt, A. Buttler, M. Gaderer and H. Spliethoﬀ, WIREs            63 M. Pehl, A. Arvesen, F. Humpenöder, A. Popp, E. G.
+                                                                                                                   Energy Environ., 2016, 5, 327–350.                                     Hertwich and G. Luderer, Nat. Energy, 2017, 2, 939–945.
+                                                                                                                60 R. Frischknecht, N. Jungbluth, H.-J. Althaus, R. Hischier,          64 J. Schube, T. Fellmeth, M. Jahn, R. Keding and S. W.
+                                                                                                                   G. Doka, C. Bauer, R. Dones, T. Nemecek, S. Hellweg,                   Glunz, in International Symposium on Green and Sustain-
+
+
+
+
+Open Access Article. Published on 17 September 2021. Downloaded on 4/26/2026 6:55:33 AM.
+                                                                                                                   S. Humbert, M. Margni, T. Koellner and Y. Loerincik,                   able Technology (ISGST2019), AIP Publishing, 2019,
+                                                                                                                   Implementation of life cycle impact assessment methods.                p. 20007.
+                                                                                                                   Data v2.0 (2007). Ecoinvent report No. 3, Swiss Federal             65 F. Sahli, B. A. Kamino, J. Werner, M. Bräuninger, B. Paviet-
+                                                                                                                   Oﬃce of Agriculture (BLW) INIS-CH-10091, 2007.                         Salomon, L. Barraud, R. Monnard, J. P. Seif, A. Tomasi,
+                                                                                                                61 M. Leisin, Energiewende in der Industrie Potenziale und                Q. Jeangros, A. Hessler-Wyser, S. de Wolf, M. Despeisse,
+                                                                                                                   Wechselwirkungen mit dem Energiesektor. Branchensteckbrief             S. Nicolay, B. Niesen and C. Ballif, Adv. Energy Mater., 2018,
+                                                                                                                   der Glasindustrie, Universität Stuttgart, Institut für Energie-      8, 1701609.
+                                                                                                                   wirtschaft und rationelle Energieanwendung, 2019.                   66 Z. Yu, Z. Yang, Z. Ni, Y. Shao, B. Chen, Y. Lin, H. Wei,
+                                                                                                                62 L. Friedrich, S. Nold, A. Müller, J. Rentsch and R. Preu, 2021,       Z. J. Yu, Z. Holman and J. Huang, Nat. Energy, 2020, 5,
+                                                                                                                   under review.                                                          657–665.
+
+
+
+
+            This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+
+
+
+
+                                                                                                                5160 | Energy Environ. Sci., 2021, 14, 5147–5160                                     This journal is © The Royal Society of Chemistry 2021
+

@@ -1,0 +1,1496 @@
+SunDrive Copper Metallisation
+Demonstration Project
+Knowledge Sharing Report - 2020/ARP006
+
+
+
+                        sundrivesolar.com
+Acknowledgments
+
+This Project received funding from the Australian Renewable Energy Agency (ARENA) as part of
+ARENA's Advancing Renewables Program. The views expressed herein are not necessarily the
+views of the Australian Government, and the Australian Government does not accept
+responsibility for any information or advice contained herein.
+
+We would like to acknowledge the Gweagal people, the traditional custodians of the land upon
+which this project took place. We pay our respects to elders past, present, and emerging.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 1
+Table of Contents
+Executive Summary ............................................................................................................................... 4
+Project Overview ................................................................................................................................... 5
+       Objectives ...................................................................................................................................... 5
+       Technology Background ................................................................................................................ 5
+           Introduction to SunDrive’s Technology..................................................................................... 5
+           Technical Challenges of Replacing Silver with Copper......................................................... 6
+           Previous Commercialisation Attempts for Copper-based Metallisation .............................. 7
+           SunDrive’s Technology Differentiation ..................................................................................... 8
+           Applicability to Module Manufacturing ................................................................................. 10
+           Viability of Hi-Tech Manufacturing in Australia .................................................................... 11
+       Market Analysis ............................................................................................................................ 12
+           Global Heterojunction Market ................................................................................................ 12
+           Benefits of Heterojunction Technology .................................................................................. 13
+           Impact of SunDrive’s Technology ........................................................................................... 13
+           Benefit of SunDrive’s Technology to Australia ...................................................................... 14
+       Project Outcomes ........................................................................................................................ 15
+           1. Increased value delivered by HJT solar cells ...................................................................... 15
+           2. Development and testing of small-scale automated prototype production equipment
+           .................................................................................................................................................. 21
+           3. Cost Advantages of SunDrive’s plated-copper metallisation technology ..................... 26
+           4. TRL of SunDrive’s technology ............................................................................................. 26
+       Conclusions .................................................................................................................................. 27
+       References ................................................................................................................................... 28
+Knowledge Sharing ............................................................................................................................ 29
+           Publications .............................................................................................................................. 29
+           Presentations............................................................................................................................ 29
+Employment Statistics ......................................................................................................................... 30
+Modern Slavery Statement ................................................................................................................. 30
+Lessons Learnt ...................................................................................................................................... 31
+       Lessons Learnt Report: SunDrive’s Start-up Experience .......................................................... 31
+           Introduction .............................................................................................................................. 31
+           Taking Technology from University to a Start-up .................................................................. 31
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 2
+       Securing Initial Investment ...................................................................................................... 32
+       Technology Development: Start-up vs University.................................................................. 32
+       Forming Collaborations........................................................................................................... 34
+       Growing Capital Investment................................................................................................... 34
+       Summary of Lessons Learnt and Future Outlook................................................................... 35
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 3
+Executive Summary
+Current mainstream silicon photovoltaic (PV) technology is based on the passivated emitter and
+rear cell (PERC) design. As this solar cell technology fast approaches its efficiency limits, the
+industry is rapidly pursuing next generation passivated contact technology. One passivated
+contact technology that has attracted considerable interest worldwide is the silicon
+heterojunction (HJT) technology due to its >26% cell efficiencies on industrial wafers. However,
+a key concern for adoption of this technology is its high use of the precious metal silver for cell
+metallisation.
+
+To address this key limiting cost and sustainability concern, SunDrive has developed a unique
+copper metallisation technology. Through reducing the metallisation cost whilst also retaining
+the high efficiency attributes of the silicon HJT technology, SunDrive’s technology can
+significantly reduce the cost of PV generated electricity. By eliminating silver in the
+manufacturing process, the potential achievable manufacturing cost reduction can be up to 25%
+at the cell level and up to 17% at the module level, with further reductions in cost being achieved
+through higher module efficiencies (i.e., increased power generation per unit area).
+
+The primary objective of this project was to demonstrate the manufacturability of SunDrive’s
+copper electroplating technology applied to high efficiency silicon HJT solar cells using early-
+stage prototype production equipment. Specifically, the project aimed to:
+
+    1. Iterate on its cell design and processing to improve cell efficiency to 24-25%;
+    2. Scale its technology from individual industrial size cells to a commercial size module; and
+    3. Develop and demonstrate a small-scale prototype automated production line.
+
+The outcomes of the project were:
+
+    1)   Increased value delivered by silicon HJT solar cells with SunDrive’s technology
+         demonstrated by:
+         • Improved cell design knowledge and understanding of cell characterisation and
+             processing requirements leading to the achievement of a world record efficiency by
+             SunDrive in 2021; and
+
+         •   Demonstrations of interconnection of copper-plated silicon HJT cells and of a small
+             number of completed commercial size modules with SunDrive HJT cells for
+             accelerated testing.
+
+    2) Increased skills, capacity and knowledge through the design, development and testing of
+       small-scale prototype production equipment for high efficiency HJT cells capable of
+       processing at a throughput of greater than 60 cells per hour with a yield exceeding 80%.
+
+    3) Initial commercialisation plans for SunDrive’s plated-copper metallisation technology
+       which has the potential to lower the production cost of next generation passivated
+       contact silicon solar cells through elimination of silver for metallisation.
+
+    4) Improved TRL of SunDrive’s copper metallisation technology from five to six.
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 4
+Project Overview
+Objectives
+Current mainstream solar PV technology is fast approaching its efficiency limits. To meet the
+increasing energy demands for solar PV generational capacity, the global industry is rapidly
+pursuing next generation “passivated contact” technology, such as HJT solar cells. Whilst
+passivated contact technologies promise significant efficiency improvements over current cell
+technology, increased silver consumption in the metallisation step (the final step in converting a
+silicon wafer into a solar cell) presents growing cost and material sustainability challenges, which
+can limit the widespread adoption of this promising next generation solar PV.
+
+The solar PV industry already represents 20% of global annual industrial silver consumption, with
+silver contributing up to half of the wafer-to-cell processing costs for passivated contact
+technology. Copper, a commodity metal, which is ~1000x more abundant and ~100x cheaper
+than silver, presents as the best alternative to ensure that PV can continue its rapid trajectory to
+multi-TW installed capacity by 2050. SunDrive has developed a novel copper plating technology
+that reduces the cost and increases the efficiency of silicon HJT technology.
+
+The primary objective of this project was to demonstrate the manufacturability of SunDrive’s
+copper electroplating technology applied to high efficiency silicon HJT solar cells using early-
+stage prototype production equipment. Specifically, the project aimed to:
+
+    1. Iterate its cell design and processing requirements to improve cell efficiency to 24-25%
+       (which, if successful, would be amongst the world’s most efficient industrial-size solar
+       cells);
+    2. Scale its technology from individual industrial size cells to a commercial size module; and
+    3. Develop and demonstrate a small-scale prototype automated production line.
+
+To complete this project, SunDrive established a number of industry collaborations with overseas
+world leading solar research institutions and companies. These collaborators provided the
+necessary non-metallised silicon HJT solar cell precursors for experimental use as well as
+assistance with in-depth solar cell characterization methods.
+
+
+Technology Background
+Introduction to SunDrive’s Technology
+SunDrive’s unique copper metallisation process is depicted in Figure 1. Not only does the use of
+copper in the place of silver significantly reduce cost (the use of silver is the most expensive step
+in the solar cell production process), but it also provides a performance boost over existing silver
+screen-printing technologies. SunDrive’s metallisation sequence comprises two key processes:
+
+    1.   Low-cost, high-resolution patterning to achieve feature sizes comparable to laboratory-
+         based lithography (<10 µm) but at a significantly lower material cost; and
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 5
+    2. An adhesion-enhancing direct copper plating process which provides high aspect ratio
+       metal contacts that minimise shading and resistive losses, reducing material cost whilst
+       boosting cell efficiency.
+
+
+
+
+     Precursor                  Patterning                  Copper Plating             Patterning Removal
+
+                                Figure 1: SunDrive's metallisation process.
+
+Together, these two processes enable the direct replacement of the relatively wide (40-50 µm)
+silver fingers on a solar cell with narrow (10-15 µm) copper fingers (see Figure 2). This increases
+the amount of light that can be absorbed by a solar cell, resulting in an increased short circuit
+current and improved efficiency. When SunDrive’s unique metallisation technology is applied to
+higher efficiency passivated contact cell technology (in particular, HJT solar cells), a further boost
+in efficiency can be obtained. In late 2021, SunDrive achieved a world record efficiency of
+25.54% on a full area industrial wafer. Within a year of this result, SunDrive surpassed its own
+record to reach a top cell efficiency of 26.41%.
+
+
+
+
+  Figure 2: Comparison of the current silver-based metallisation technology (left) with SunDrive's copper-
+                                        based metallisation (right).
+
+
+Technical Challenges of Replacing Silver with Copper
+The switch from silver to copper-based solar cell contacts may appear an obvious change to
+make to reduce both the cost of solar PV and the PV industry’s dependence on silver. Indeed,
+several attempts have been made to achieve this transition in the past for the dominant p-type
+technology, which is based on the Passivated Emitter and Rear Cell (PERC) design. However,
+most approaches which have been trialled to date have either failed to be cost competitive or
+sufficiently durable.
+As manufacturers begin to replace their PERC production lines with new higher efficiency
+passivated contact production lines, reducing silver usage has become even more important.
+Passivated contact cells typically require 2-3x more silver per Watt of solar cell power produced
+[1]. Consequently, the cost benefit that switching to copper can achieve is much greater for
+these cells. In addition, many of these cells cannot tolerate the high firing temperatures used for
+the screen-printed silver metallisation of PERC cells. This means low temperature silver pastes
+must be used and these pastes are more costly, more resistive and require long curing times.
+However, despite the very clear incentives to replace silver with copper for next generation solar
+cells, technical challenges exist. First, it is very challenging to directly replace the silver in the
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 6
+screen-printed pastes with copper as the copper particles tend to oxidise. This causes the metal
+fingers to be very resistive and reduces cell efficiency. The oxidation of the copper particles can
+be prevented by capping the copper particles with silver. Whilst this approach can reduce silver
+usage, typically ~50% of the particle mass must comprise the silver coating [2] and this limits
+the cost effectiveness of the approach. Consequently, new methods of forming fingers and
+busbars on the cells will be required for an effective replacement of silver by copper.
+Electroplating of copper has proven very successful for the formation of vias for printed circuit
+boards (PCBs) and interconnects in integrated circuits (ICs). Processes, equipment, and materials
+have been successfully developed for these industries and, to some extent, the PV industry can
+build upon the expertise and knowledge established for these industries. However, there are
+some key differences between the plating requirements for each of the PV, IC and PCB industries.
+First, the value of the plated products is very different. A plated silicon wafer with ICs can be
+worth more than 11,000 times that of a plated solar cell. 1 Second, whereas wafer throughputs
+over 1,000 wafers per hour are required for solar cell processing [3], throughputs of < 100
+substrates per hour are typically targeted for IC and PCB copper electroplating. Finally, PCBs
+are rigid substrates of millimetre thickness and IC wafer thicknesses are increasing as wafer size
+increases for IC processes. 2 In contrast, silicon wafer thicknesses are reducing as wafer sizes are
+increasing, making wafer breakages, and reduced yield a much larger concern for PV
+applications. These large differences in product value, throughput and substrate properties mean
+that the equipment, processes, and materials used for copper plating for PV metallisation is likely
+to require new and innovative approaches.
+The current focus of SunDrive’s copper metallisation technology is its application to high
+efficiency HJT cells. Unlike PERC cells, where copper contacts are formed directly to the silicon
+cell through openings in a dielectric antireflection layer, for HJT cells the copper grid must be
+formed on a transparent conductive oxide (TCO). This means that the surface must be masked
+to prevent copper plating to the entire TCO surface. Masking and patterning of the mask are
+additional processes which can introduce extra cost and complexity when replacing silver
+metallisation with copper. Because of the high wafer throughputs required for solar cell
+processing, it is also difficult to use the lithography processes used in the semiconductor industry
+and thus alternative lower cost and faster processes are required. Several companies, SunDrive
+included, have demonstrated lower cost patterning processes that can be used to form cell
+metallisation masks for solar cell manufacturing. The key advantages offered by SunDrive’s
+proprietary patterning process are its high resolution, adaptability to inline processing
+and low cost.
+
+Previous Commercialisation Attempts for Copper-based Metallisation
+As mentioned above, there have been several attempts to replace the silver metallisation used
+by silicon solar cells with copper. BP Solar successfully introduced copper plating in the
+manufacturing of their laser-grooved buried grid Saturn cells in the early 2000’s and, although
+
+
+
+1
+  Each 300 mm semiconductor wafer can be used to produce ~ 600 A13 system-on-chip processors for
+Apple, each 98 mm2 processor costing ~ US$30 (2020 prices). This corresponds to a wafer product value
+of US$18,000, compared to just ~ US$1.60 for a 22% efficiency PERC cell on a 210 mm wafer.
+2
+  As silicon wafers used for IC increase in diameter from 300 mm to 450 mm, the wafer thickness is
+expected to increase from 775 to 925 mm.
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 7
+several BP Solar Saturn module installations continue to operate in the field, the metallisation
+process struggled to compete with screen printing of silver, partly due to its slow plating
+throughput [4]. Then, in 2009-2012 Suntech attempted to commercialise copper plating for their
+laser doped cells under the Pluto brand [5]. Unlike BP Solar’s earlier electroless plating
+technology, Suntech pioneered the use of light-induced plating, a process whereby the solar cell
+is used to generate the electrical current for copper electrodeposition. Despite promising cell
+efficiencies and modules passing all the required IEC tests, the narrow Pluto fingers did not
+adhere strongly to the relatively smooth laser doped regions on the surface of the solar cell. After
+several years trying to address this problem, Suntech discontinued production of Pluto cells and
+focused on screen printed silver metallisation for their production.
+Since Suntech’s Pluto pilot production, several other companies have also attempted to
+introduce copper-based metallisation. Jinko, in partnership with German wet chemical
+equipment company Rena, demonstrated pilot production of copper plated metal-catalysed
+textured multi-crystalline cells [6]. However, despite the textured surfaces providing a rough
+surface for strong metal adhesion, the efficiency of the plated cells was lower than comparative
+screen-printed cells, presumably due to the plated copper penetrating through the diffused
+emitter. 3 This result by Jinko and Rena highlighted a key challenge for copper plating of
+PERC cells. W hen copper is plated directly to the silicon surface it requires a rough
+surface for sufficient adhesion; however, all demonstrated methods of introducing the
+required roughness for sufficient adhesion impact cell efficiency .
+A key difference between passivated contact and PERC cells is that, with passivated contact
+cells, the silicon surface remains covered with a passivating layer or stack of layers. This means
+that a copper plated grid can be introduced without any loss of efficiency . For silicon HJT
+cells, the copper fingers and busbar are displaced from the silicon absorber (wafer) by both the
+amorphous silicon layers and the TCO. These layers act together to provide a barrier to copper
+entering the cell, providing the opportunity to form an adhesive cell interface for the plated
+copper without impacting the cell performance. An important feature of SunDrive’s
+proprietary technology is the ability to form a copper grid that adheres strongly to the
+TCO surface.
+
+SunDrive’s Technology Differentiation
+As mentioned above, SunDrive’s technology includes high resolution patterning and adhesive
+copper plating to TCOs. These technology differentiators are discussed in more detail below.
+
+High Resolution Patterning
+SunDrive’s high resolution patterning process is an innovation involving material optimisation,
+equipment design and processing know-how. It makes possible the formation of copper plated
+fingers with a width of less than 10 µm uniformly across an industrial sized wafer. Figure 3 shows
+an optical photograph of a plated finger of width < 10 µm, which is difficult to achieve with other
+metallisation schemes. This high-resolution patterning has enabled SunDrive to achieve world
+
+
+3
+  With metal-catalysed texturing, it can be difficult to form a uniform emitter across the entire surface due
+to the nanoscale roughness of the surface. Some regions across the surface can have a very shallow
+junction and, if copper diffuses close to the junction, undesirable electrical carrier recombination can
+occur.
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 8
+record efficiencies on HJT precursor cells. Narrower fingers can reduce the area of the cell, which
+is shaded by the metallisation and, in doing so, increases the current generated by the cell. It
+also allows the fingers to be spaced more closely to each other, thereby reducing lateral
+resistance losses in the TCO of the solar cell. In comparison, most other patterning methods
+applied to the metallisation of silicon HJT cells result in finger widths of more than 20 µm [7-9]
+(see Figure 3).
+
+
+
+
+Figure 3: (Left) Optical micrograph of a SunDrive plated copper finger with a width <10 µm. (Right) Overview
+of the trends in screen-printed finger widths achieved on silicon HJT cells with low-temperature pastes (for
+                        details of the individual references see Lorenz et al. 2022 [10]).
+
+
+
+Adhesive copper plating to TCOs
+SunDrive has developed its own proprietary copper plating methods which ensure that the plated
+copper grid (comprising busbars and fingers) can be formed very rapidly and adhere strongly to
+the surface of the TCO of HJT solar cells. Achieving strong adhesion between a metal grid and
+the TCO surface can be challenging, and most other copper plating methods for HJT cells require
+that an additional metal seed layer be deposited via physical vapor deposition (PVD) techniques
+over the entire TCO surface before patterning in order to obtain sufficient interfacial adhesion.
+These approaches, which are generally referred to as ‘etch-back’ methods require, in addition to
+the cost of depositing the seed layer, an additional post-plating process to remove the seed
+layer over the cell areas not covered by the plated metal. This seed layer removal process can
+impact cell performance, making it more difficult to attain the high cell efficiencies which
+SunDrive has achieved.
+SunDrive’s adhesive copper plating process relies on a two-step plating process, whereby the
+process is ‘tuned’ for high interfacial adhesion using accurate measurements of finger adhesion.4
+To our knowledge, no other research group or company has the know-how and tools to perform
+these measurements and tune the process in the same way. SunDrive’s technology is also
+
+
+
+
+4
+  Measurements of finger adhesion have been shown to more accurately reflect interfacial adhesion than
+the more commonly used busbar pull tests [B. Phua, Plated Metallisation for Silicon Solar Cells: A Deeper
+Dive into the Importance of Contact Adhesion, UNSW PhD Thesis, 2022].
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 9
+particularly advantageous in respect to adapting the metallisation process to new TCOs, which
+may provide performance and/or sustainability (e.g., low indium) benefits in the future.
+SunDrive’s proprietary metallisation process also allows the tuning of the finger shape to
+maximise light capture by the solar cell. If fingers can be engineered to be very reflective and
+shaped appropriately, a significant fraction of the incident light which encounters the fingers
+can be re-directed into the solar cell to generate photocurrent. This feature, along with
+SunDrive’s high resolution patterning, has contributed to SunDrive’s high cell efficiencies.
+SunDrive is also addressing the challenge of processing throughput. As mentioned in Technical
+Challenges of Replacing Silver with Copper, much faster wafer processing throughputs are
+required for the PV industry than the IC and PCB industries, where wafers throughputs of < 100
+per hour can be tolerated. SunDrive addresses this challenge through innovations in equipment,
+chemistry and know-how that allow plating rates which are more than twice that used in other
+industries without compromising on plated line resistance. This is a key achievement which
+differentiates SunDrive from all previous attempts to use copper plating in place of silver screen
+printing in the PV industry.
+
+Applicability to Module Manufacturing
+SunDrive has demonstrated the ability to interconnect their plated cells into modules using
+existing module fabrication processes. 5 Plated metallisation is well suited to thinner wafers which
+the industry is moving towards in order to reduce material usage [3]. This can correspond to more
+durable modules as fewer microcracks are introduced during the cell metallisation step.
+SunDrive’s adhesive metallisation process can allow for both standard soldered interconnection
+methods and more recently developed lower temperature and busbar free processes where
+bonding between the cell metallisation and interconnection ribbons occurs during lamination.
+SunDrive’s modules can also exploit their highly reflective cell metallisation. Light which falls on
+the fingers is reflected back into the cell from the front glass resulting in a cell-to-module gain
+in efficiency.
+Another key advantage of SunDrive’s technology is its high bifaciality. Bifacial modules are
+beneficial because they can also harvest light for power generation from the rear side of the
+modules. Rear side irradiation is determined by the albedo, which refers to the diffuse reflection
+from the ground surface and supporting fixtures around a mounted solar PV module. In some
+environments, this can be 20-30% of the incident irradiation on the module’s front surface. Most
+current modules can only achieve a bifaciality of between 60-70%, meaning the conversion
+efficiency of light to electricity from the rear side is only 60-70% of the conversion efficiency of
+the front side. However, SunDrive’s current silicon HJT cells have a bifaciality of ~90%, making
+SunDrive’s modules much more efficient at harvesting light which can enter from the rear surface.
+This additional generation from the rear surface of modules can result in a lower levelized cost
+of electricity (LCOE) for utility-scale PV applications.
+SunDrive’s modules can also retain a larger fraction of their nameplate efficiency at high
+temperatures because of their low temperature coefficients of -0.23-0.25%/°C [14, 15]. The
+higher the open circuit voltage of a solar cell, the less degradation in efficiency that will occur
+as the ambient temperature increases. Typical bifacial PERC modules have a temperature
+
+
+5
+    https://www.aumanufacturing.com.au/sundrive-fabricates-first-ever-full-size-solar-panel
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 10
+coefficient of ~ -0.35 %/°C [16]. So, in summary, under Australian conditions, SunDrive
+modules can generate more electricity than PERC modules due to their higher efficiency,
+high bifaciality and lower temperature coefficient. This higher yield (kW h/yr) further
+reduces the LCOE.
+
+Viability of Hi-Tech Manufacturing in Australia
+SunDrive’s technology addresses many of the perceived barriers to solar PV manufacturing in
+Australia. Historically, solar PV manufacturing costs were largely dominated by labour, land, and
+equipment capital. However, with the rapid learning which has occurred in automation and
+manufacturing equipment design over the past decade, costs are now largely dominated by more
+fundamental limitations: raw materials (namely silver and silicon), electricity and transportation
+(particularly when purchasing imported modules, primarily due to the weight of the module glass
+and aluminium). SunDrive aims to address all three limitations by:
+    1. Utilising innovative technology to save on material costs (via eliminating silver and
+       reducing silicon usage by using thinner wafers).
+    2. Using low-cost clean electricity in manufacturing (it is becoming more important
+       for heavy industries and manufacturing, including solar PV manufacturing, to
+       decarbonise as the world transitions to net zero).
+    3. Utilising efficiency enhancements and local module manufacturing to lower $/W
+       transportation costs.
+The metallisation process being developed at SunDrive is innovative on the world stage. No PV
+manufacturer has achieved the patterning and copper metallisation quality and performance
+potential that has been achieved by SunDrive. To be able to demonstrate this process in
+manufacturing in Australia, a country which has no post 2010 experience in solar cell
+manufacturing despite a stellar history in PV research, offers the opportunity to kick-start a wave
+of advanced solar manufacturing growth in Australia.
+The benefits to Australia provided by companies like SunDrive being successful in hi-tech
+manufacturing in Australia are substantial. Some key benefits are highlighted below.
+    1. Establishing solar PV manufacturing can provide Australia with world-class clean
+       technology to support energy supply security. The recent war in Ukraine has highlighted
+       the risk of countries relying too heavily on international partners for energy supply.
+    2. Due to its excellent solar energy resource, Australia has the potential to totally
+       decarbonise its electricity supply using low-cost PV and wind, allowing its mining and
+       refining industries to decarbonise and begin producing and exporting competitive low
+       embodied emissions products.
+    3. Australia has all the material resources required to manufacture clean energy technology,
+       including PV modules. Hence, developing and sustaining emerging clean energy
+       companies, like SunDrive, can support strong resource industries and create employment
+       opportunities for many Australians.
+    4. Finally, Australia has already invested heavily in PV knowledge and expertise at a
+       research level. By supporting companies like SunDrive, which seek to build upon this
+       investment, Australia can remain a leader in this critical energy technology field in the
+       future.
+
+W ith the right policy settings, Australia has the potential to become a solar manufacturing
+powerhouse. Australia has the greatest opportunity of any country to export its solar
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 11
+resource - it is the sunniest continent with an extremely large land mass and very low
+population density. It can provide this export either (i) directly via long distance
+transmission lines (e.g., SunCable) or (ii) indirectly via the production of green hydrogen
+or green materials such green aluminium and green steel. By establishing local solar
+manufacturing capabilities, this will provide greater clean energy supply chain certainty
+to pursue such a grand solar vision as the world transitions to a decarbonised economy.
+
+Market Analysis
+Global Heterojunction Market
+Current mainstream silicon PV technology is based on the PERC solar cell design. As this
+technology fast approaches its efficiency limits, the global industry is rapidly pursuing next
+generation passivated contact technology. This higher efficiency silicon PV technology comprises
+tunnel oxide passivated contact (TOPCon) and HJT solar cell technologies. The established
+Chinese PV manufacturers are already quickly building capacity in one or both of these
+technologies. This is evidenced by the fact that several companies have commissioned or
+announced plans for GW-scale manufacturing (including a 4.8 GW contract for HJT equipment
+by India’s Reliance RIL in 2022), and over 80 GW of expressions of interest in HJT manufacturing
+capacity in the past two years alone. The introduction of favourable policy incentives for
+domestic PV manufacturing outside of China has also seen a significant increase in the demand
+for high-efficiency silicon HJT manufacturing capacity around the world.
+The most efficient silicon solar cells have been obtained using HJT technology. In 2017, Kaneka
+reported a designated area (i.e. edge effects neglected) efficiency of 26.7% on a silicon HJT
+back contacted lab-based cell [17]. This achievement has been followed by a series of rapid
+improvements in the efficiency of both-sides contacted cells fabricated on industrial silicon
+wafers by a number of companies, including SunDrive and Longi who are the only two companies
+to have achieved over 26% efficiency on full area (i.e., with solar cell edges included). These
+achievements have highlighted to the industry the very significant benefits that HJT cell
+technology can offer in reducing cost per Watt.
+The latest International Technology Roadmap on PV (ITRPV) report projects that silicon HJT
+technology will grow in market share from ~ 5% in 2022 to ~ 20% by 2032 (see Figure 4). This
+prediction has consistently increased across successful ITRPV reports over the past 3 years.
+Market expansion beyond this decade is expected to accelerate even further with improvements
+being made in cell efficiency, manufacturing equipment and cost reductions. The global HJT
+cell market value was estimated at US $2.19 billion in 2022 and is projected to reach US
+$16.3 billion by 2028. 6 This represents a CAGR of ~49.4% over this period, which is far
+larger than the 13.3% expected for the crystalline silicon PV market in general. 7 It should
+be noted that these predictions for the growth in silicon HJT technology market share do not take
+into account the further market growth which SunDrive’s high efficiencies using lower cost copper
+can stimulate.
+
+
+6
+  https://www.marketwatch.com/press-release/hit-heterojunction-solar-cell-market-global-and-regional-analysis-
+and-forecast-2028-2023-01-10
+7
+  https://www.globenewswire.com/en/news-release/2021/09/02/2291062/0/en/Global-Crystalline-Silicon-
+Solar-PV-Market-is-Projected-to-Grow-at-a-CAGR-of-13-3-By-2031-Visiongain-Research-Inc.html
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 12
+    Figure 4: Predicted market share of different silicon solar cell technologies over the next decade (ITRPV,
+                                                       2022).
+
+
+Benefits of Heterojunction Technology
+As module efficiency is increased, areal system costs per Watt of power generated are reduced
+due to increased power generation. Higher module efficiency also means that an average
+rooftop can generate more electricity (kWh) each day. The higher power generation from rooftop
+modules can avoid increased emissions from fossil fuel generators, a factor which will become
+increasingly important as more businesses and households use their rooftop generation to
+recharge electric vehicles. The proportion of electric vehicles on the road in Australia is expected
+to increase to 90% by 2050. 8 Consequently, the ability to recharge vehicles from higher capacity
+rooftop solar PV systems has the potential to reduce the need to commission as many public
+charging stations.
+In addition to higher efficiency, silicon HJT technology can also provide:
+    Higher bifacial performance (over 90% compared to 60-70% for PERC);
+    Superior performance at higher temperatures (lower temperature coefficients); and
+    Lower degradation rates (light-induced degradation – LID, potential-induced degradation
+      – PID).
+The performance and durability benefits of silicon HJT technologies directly contribute to
+lowering LCOE, which is a factor of great importance to the performance of utility-scale solar
+farms, especially when they are located in very hot areas such as in inland Australia (see also
+Applicability to Module Manufacturing and Benefit of SunDrive’s Technology to Australia).
+
+Impact of SunDrive’s Technology
+SunDrive’s technology directly addresses the key challenge of high silver usage of current silicon
+HJT technology and, by doing so, it can further accelerate the adoption of the technology in
+manufacturing. Silicon HJT technology can provide a path to higher cell and module efficiencies,
+which can reduce the effective balance of system (BOS) costs for installations and hence LCOE.
+Additionally, almost all the reported perovskite-silicon tandem cells, which have a power
+
+
+8
+       https://lighthouse.mq.edu.au/article/april-2022/whats-stopping-australians-from-buying-electric-
+cars
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 13
+conversion efficiency (PCE) exceeding 25%, have used a HJT bottom cell (see Figure 5). This
+suggests that silicon HJT technology can play a critical enabling role in reducing the cost of PV
+generated electricity by making possible significantly higher efficiencies than any other
+contending current cell technology, either via a single junction PV device or as the bottom cell
+of a multijunction or tandem device. SunDrive’s metallisation technology can also be applied to
+multijunction or tandem solar cells. Consequently, the value of SunDrive’s technology extends
+beyond current generation single junction cells and modules.
+
+
+
+
+ Figure 5: (left) Schematic of a perovskite-silicon tandem solar cell; and (right) power conversion efficiency
+ (PCE) of reported perovskite-silicon tandem cells in terms of the polarity and bottom cell technology (from
+                                                      [18]).
+
+SunDrive’s successful replacement of silver with copper on highly efficient cells can also
+encourage more PV manufacturers to adopt the use of copper metallisation. This will stimulate
+additional investment in equipment and materials which can further reduce costs and increase
+LCOE benefits to users of electricity worldwide. Importantly, spreading adoption of copper-
+based metallisation in place of silver in PV can: (i) reduce the PV industry’s demand for silver,
+allowing the use of silver to be reserved for critical industries where no clear alternatives exist;
+and (ii) reduce the embodied energy of PV modules worldwide.
+
+Benefit of SunDrive’s Technology to Australia
+SunDrive’s successful deployment of high efficiency PV modules with copper-based cell
+metallisation can result in more affordable high efficiency rooftop PV systems and can lower the
+LCOE of HJT technology for utility scale installations. There are numerous cost benefits of
+SunDrive’s technology, which are discussed in more detail in 3. Cost Advantages of SunDrive’s
+plated-copper metallisation technology, however there are also technological benefits of
+both silicon HJT and SunDrive’s metallisation technology to Australia.
+Australia is a largely suburban country and has the highest penetration of residential rooftop
+solar in the world. For this reason, efficiency is important as it means that rooftops can generate
+more power. As more power is generated by rooftops, the demand on the central grid can be
+lessened. Higher rooftop generation will be especially important with the greater adoption of
+electric vehicles (as discussed in Benefits of Heterojunction Technology), as it will allow more
+home vehicle charging and reduce the demand for public charging stations. Silicon HJT
+technology provides the most plausible path to higher efficiency in commercially produced
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 14
+modules. The recent world record efficiencies for single junction cells have all been obtained
+using HJT technology on industrial wafers and almost all perovskite-silicon tandem cells that have
+achieved more than 25% efficiency have been achieved using HJT technology as the bottom cell.
+Application of SunDrive’s high performance metallisation to HJT technology can push these limits
+even further to produce the most efficient commercial modules available worldwide.
+Silicon HJT technology is also well suited to Australia’s utility scale deployment. Most Australian
+solar farms are located in the hotter and more arid regions of the country because of the lower
+land value. Because of the lower temperature coefficient of HJT modules compared to current
+PERC modules, the power generation of HJT modules will not degrade as much in higher
+temperatures.
+The fact that both silicon HJT cell technology and SunDrive’s metallisation process are highly
+compatible with tandem cell manufacturing (for even higher efficiencies) can also be beneficial
+for Australia. If Australia establishes local silicon HJT cell expertise and manufacturing, it places
+the country in a good position to be a world leader also in tandem PV modules. Perovskite
+processing (as one example of a top cell) requires new industrial processes to be developed and,
+if Australia is an early player in this new solar PV technology, then it will have an established solar
+PV industry for many years to come.
+
+
+Project Outcomes
+SunDrive achieved all the proposed outcomes of this project. These outcomes are listed below
+with explanations of how each outcome was achieved.
+
+1. Increased value delivered by HJT solar cells
+
+(a) Improved cell design knowledge and understanding of cell characterisation
+and processing requirements to increasing cell efficiency
+Over the course of this project, SunDrive extensively expanded its cell characterisation and
+modelling capabilities to further understand the potential of both electroplated contacts and
+the silicon HJT cell structure. To better understand the efficiency limitations of SunDrive’s grid
+design, as well as exploit the uniquely narrow potential of plated contacts, resistive loss models
+were developed in-house from first principles to analyse areas of efficiency and fill factor (FF)
+improvements. These models articulated various loss mechanisms of the front and rear grid
+designs, including shading from fingers and busbars, contact resistance losses between the metal
+and transparent conductive oxide (TCO) and bulk resistive losses within the front metal grids. This
+model was used to evaluate grid design improvements for SunDrive’s plated grid design to
+maximise current generation and minimise resistive losses in its cells, resulting in up to 0.6%abs
+efficiency boost purely from grid optimisation.
+
+Access to new tools for characterisation throughout the project enabled detailed analysis of
+SunDrive’s plating technology, helping to validate modelling and simulation results. These include,
+for example, photoluminescence imaging, which have enabled identification of defects,
+potential degradation and systematic processing pitfalls within SunDrive’s wafers and cells. The
+use of surface profilers, in combination with scanning electron microscopy and transmission
+electron microscopy, allowed for clear confirmation of both the quality and geometry of our
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 15
+plated contacts, which facilitated improved understanding of plating performance and
+reliability. Examples of these techniques are highlighted in Figure 6.
+
+
+
+
+ Figure 6: (left) Photoluminescence image of a 25.33% efficient copper-plated solar cell and corresponding
+ surface profile of a copper finger (middle) and SEM image (right) of a selected finger located on the cell.
+
+Over the course of the project, SunDrive’s improvement in cell processing has led to the
+production of several world leading cell efficiencies. The implementation of new metallisation
+pattern designs identified using our grid optimization model led to substantially reduced shading
+and resistive losses. In combination, incorporation of a dual-layer anti-reflection coating enabled
+SunDrive to achieve short-circuit current densities exceeding 40 mA/cm2, which are impressive
+for silicon HJT cells. Additionally, the use of in-house plating electrolyte formulations permitted
+the achievement of plated metallisation morphologies with enhanced aspect ratios of more than
+0.7.
+In September of 2021, SunDrive reported a world record efficiency for a commercial sized (total
+area of 274.5 cm2) silicon HJT solar cell at 25.54%. The M6 cell precursor was fabricated by
+Maxwell Technologies. This result exceeded the 25.26% efficiency held by LONGi at the time by
+0.28%abs. Later in March of 2022, SunDrive increased its champion cell efficiency to 26.07% on
+a similar structure (M6 and bifacial). The increased efficiency was attributed to improvements in
+the optical coating deposited at SunDrive, further reductions in finger width from improvements
+in our masking process and optimisations in amorphous silicon crystallinity at Maxwell.
+In August of 2022, Maxwell and SunDrive co-announced a 25.94% device fabricated on a low-
+indium TCO coated silicon heterojunction wafer. Indium is recognised as a longer-term
+unsustainable resource within the PV industry, especially as global PV production reaches TW
+scale. In this structure, a total indium reduction in the TCO film of up to 70% was achieved by
+adopting an improved magnetron sputtering method. Finally (for this project), in August of 2022,
+SunDrive announced a champion cell efficiency of 26.41% with further optimisations of its cell
+design and processing conditions.
+The externally certified (at the Institute for Solar Energy Research in Hamelin (ISFH)) I-V
+characteristics for all the devices described above are shown in Figure 7. All solar cells were
+fabricated on industrially sized M6 wafers, with cell precursors provided by Maxwell. Figure 8
+shows the progressive efficiency improvements that SunDrive has made during the two years of
+this project.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 16
+Figure 7: ISFH Certified current-voltage characteristics for SunDrive and Maxwell Technologies joint world
+record plated SHJ solar cell (top left), updated 26.07% device (top right), more recent 26.41% device (bottom
+left) and 25.94% low-indium TCO device (bottom right).
+
+
+
+
+                   Figure 8: Improvements in cell efficiency achieved during this project.
+
+(b) Development of interconnection methodologies and fabrication of a small number of
+completed commercial size modules with SunDrive HJT cells for accelerated testing
+SunDrive’s progression from cells to mini-modules and commercial size modules has been defined
+by several key steps. These steps have individually addressed the issues faced historically by other
+electroplated cell manufacturers, which have led to losses in long-term stability and structural
+reliability. The most problematic issues, which SunDrive addressed in this project, include
+solderability of plated copper during interconnection, interconnect wire and busbar adhesion,
+copper-diffusion-related degradation, encapsulant-copper reactivity, and copper oxidation.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 17
+Improving the solderability of copper plated contacts
+Soldering to pure copper can be problematic due to: (i) poor wettability of the solder across the
+copper surface; and (ii) oxidation of the copper surface, which results in poor thermal
+conductivity leading to a poor solder interface. The PV industry has addressed these issues
+through the use of capping layers (tin, silver, etc) which provide enhanced wettability at the
+interface for solder and prevent copper oxidation. However, it remains necessary to ensure that
+the flux used for soldering allows for sufficient solder wetting of the capping layer surface at the
+contact pads of copper plated cells.
+
+Throughout this project, SunDrive tested various forms of flux and soldering techniques to develop
+a soldering process which results in sufficient solder wetting of capped plated copper contact
+pads for strong adhesion of interconnect wires. The optical microscope images in Figure 9 depict
+both adequate wetting (left image) and inadequate wetting (right image) of solder on capped
+plated copper contact pads.
+
+
+
+
+ Figure 9: Optical microscope images of contact pad and wire interconnect with adequate solder spread
+                            and wetting (left) and inadequate wetting (right).
+
+
+
+
+Enhancing the adhesion of plated contacts to HJT cells
+Another frequently reported problem for copper-plated cells is the poor adhesion between the
+interconnection wire and copper-plated busbars. This project focussed on improving adhesion:
+(i) between the TCO and the plated copper; and also (ii) between the plated copper cell grid
+and the interconnecting ribbon/wires. Early attempts to introduce copper plating for silicon solar
+cells resulted in cells which were not able to be interconnected by soldering. This resulted in new
+and more costly methods of interconnection to be used. In this project, interconnection by
+soldering was considered a key requirement for SunDrive’s metallisation to be commercially
+viable.
+By optimising the plating electrolytes, anode materials and plating process, SunDrive was able
+to demonstrate soldering of copper plated contacts with very strong adhesion. The strength of
+the achieved adhesion is qualitatively demonstrated by images (see Figure 10) which show the
+removal of both TCO and underlying silicon during routine busbar pull testing. The fracturing and
+removal of shards from the underlying silicon wafer shown in Figure 10 indicates that the solder
+bond strength exceeds the sheer strength of the silicon itself. More recent testing of new busbar
+designs has further enhanced the soldering adhesion strength beyond what has been previously
+achieved in the industry. To our knowledge, adhesion at this strong level has never been achieved
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 18
+for silicon HJT cells, including HJT cells with screen-printed silver metallisation. Hence, SunDrive’s
+developed proprietary metallisation process represents a significant PV industry achievement.
+
+
+
+
+Figure 10: Optical microscope image of resulting underlying silicon and fracturing of a silicon wafer after the
+forced removal of interconnect ribbon from busbar during standard busbar reliability pull testing.
+
+
+
+
+Minimising cell-to-module losses during module fabrication
+Predictive models for module performance were developed utilizing I-V data measured from
+individual cells to evaluate cell-to-module (CTM) losses and gains. The developed models were
+used to predict the performance of modules, optimize stringing arrangements and simulate field
+events including partial shading. Through the use of CTM modelling, it was identified that the
+majority of the electrical losses in SunDrive’s early-stage modules occurred at the reflective
+surfaces of the front module glass, parasitic adsorption in encapsulant materials and resistive
+losses in the junction boxes and cabling. The CTM analysis helped identify where improved
+materials should be sourced. An example of the CTM analysis generated in partnership with
+UNSW is depicted in Figure 11.
+
+
+
+
+Figure 11: CTM analysis of SunDrive mini modules (2 x half-cut M6 cells) generated using the SmartCalc.CTM
+                                                 software.
+
+For the CTM analysis shown in in Figure 11, full M6 cells were plated and then cleaved to half cells
+with an in-house laser process to produce two half cut M6 mini-modules. The cleaving step
+reduced the cell efficiency from 25.32% to a starting (half-cell) efficiency of 25.02% (absolute
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 19
+efficiency loss of 0.3%). Reducing cutting losses has been a key challenge for silicon HJT
+technology, with cutting losses being significantly higher than PERC cells. The industry’s transition
+to M12 wafers and cutting these wafers into half before cell processing has addressed this key
+limitation for the commercialisation of silicon HJT technology as all the edges of the wafer remain
+coated and passivated.
+
+
+
+Development of mini-modules and commercial sized modules for reliability testing:
+As part of this project, SunDrive successfully demonstrated the integration of copper plated cells
+into commercial sized solar modules. A comparative silver-screen printed module was also
+fabricated using precursors from the same batch to evaluate potential advantages of copper
+plating over silver screen printing. Overall, a 0.67%abs boost in active-area module efficiency was
+observed for the copper-plated modules. This increase was attributed to an increase in: (i) ISC
+(~0.2 A) due to narrower fingers; and (ii) FF (0.31%) due to more conductive fingers. The
+measured I-V parameters are illustrated in Figure 12 and Table 1.
+
+
+
+
+ Figure 12: I-V curve and photograph of one of SunDrive’s first Cu-plated commercial sized solar modules.
+
+  Table 1 IV parameters of SunDrive’s first demonstration copper plated module and a comparative silver
+                 screen printed solar module. Both modules comprised 120 x M2 half-cells.
+
+
+                                                I SC
+                                  V OC (V)              FF (%)    Pmax (W)      Rs (Ω)    EffActive (%)
+                                               (A)
+
+  Copper plated module             44.66      8.83      81.53        321        0.33         21.94
+
+  Silver screen-printed
+                                  44.46        8.63     81.22        312        0.34         21.27
+  module
+
+
+During the project a large number of mini modules were fabricated for reliability testing of
+SunDrive’s bill of materials. This reliability testing included light-induced degradation testing
+(>1000 hours); UV degradation testing; damp heat (up to 3000 hours or 3x IEC) and thermal
+cycling (600 cycles or 3x IEC). Environmental chamber testing enabled rapid evaluation of bulk
+module materials such as encapsulants and backsheets. For example, as seen in Figure 13 below,
+after 2000 hours of damp heat testing, SunDrive’s glass-glass bifacial modules experienced
+minimal degradation. This result demonstrates that copper-plated silicon HJT modules can pass
+routine IEC testing, though clearly field testing will also be required to ultimately confirm
+durability of the modules in the field under different environmental conditions.
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 20
+Figure 13: Power degradation of SunDrive glass-glass modules (with interconnection wires coated with both
+            SnBiAg and SnBiPb (low temperature) solders) after 2000 of DH environmental testing.
+
+2. Development and testing of small-scale automated prototype production
+equipment
+During this project, SunDrive has increased skills, capacity and knowledge through the design,
+development and testing of automated prototype production equipment capable of producing
+high efficiency silicon HJT cells at a throughput of > 60 cells per hour and with a yield exceeding
+80%. SunDrive’s prototype cell metallisation production line can be divided into two main
+processing steps – patterning and plating.
+
+Patterning Production Tool Development
+SunDrive’s patterning technology comprises of two key production tools: (i) a masking tool to
+form a protective coating in preparation for SunDrive’s plating process (see Figure 1); and (ii) a
+patterning tool to create the selective openings for contact grid formation. SunDrive’s lab-based
+masking process required a high degree of human input, from loading individual wafers, visual
+inspection of wafers and manual intervention for removal of mask defects. Several coating layer
+deposition methods were evaluated for the automated process with the objective of forming
+uniform masking layers with minimal defects. A vision camera system was implemented for
+alignment and quality control to maximise the output yield of coated cells from the deposition
+tool. Optimisation of SunDrive’s masking process conditions and masking layer composition
+resulted in the processing time for the masking of M6 wafers being reduced by 97% compared
+to SunDrive’s existing lab-based process.
+
+Due to the rapid industry transition from M6 to M12 wafer sizes, it was necessary to upgrade the
+automated masking system to half-cut M12 9 solar cell precursors. With completion of this wafer
+size upgrade, continuous masking of 60 x half-cut M12 precursors per hour was achieved. This
+processing throughput corresponds to a production capacity of ~2.3 MW/yr assuming a half-cut
+
+
+
+
+9
+  SunDrive’s cell precursors were fabricated on M12 wafers which had been cut in halves before cell
+processing. These precursors are referred to as half-cut M12 throughout this report.
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 21
+M12 cell power of 5.4 W, 80% production line yield, operating for an industrial standard duration
+of 22 hours per day for 330 days per year.
+
+With higher precision machining to be implemented in future iterations of the tool, SunDrive is
+targeting a single-lane masking tool throughput of ~510 cells per hour, which is equivalent to
+~20 MW/yr capacity (for an M12 half-cut cell with a power output of 5.4 W and 95% production
+line yield at standard industrial operating durations). To achieve higher throughputs beyond this
+point, SunDrive’s masking tool would be scaled to multi-lane operation.
+
+Complementary to SunDrive’s masking process is the selective patterning of the mask to create
+openings for the copper plated metallisation (see Figure 1). Patterning is often an expensive
+industrial process requiring highly precise alignment. Robotic automation and proprietary
+methods of alignment were used to achieve a highly repeatable process without the need for
+high precision vision alignment systems. These improvements, along with innovations in masking
+materials, have enabled SunDrive to achieve finger widths as narrow as 6 µm [see Figure
+14(right)]. Furthermore, these plated metal resolutions are up to 60% finer than what has been
+reported by competing processes being applied to silicon HJT cells.
+
+
+
+
+ Figure 14: (left) Optical microscope image of 11 µm fingers on our previous 25.54% world record device and
+            (right) <6 µm finger width capabilities from our improved mask patterning techniques.
+
+To achieve the desired throughput for its prototype production-scale patterning equipment, the
+efficiency of its selective patterning approach was improved to achieve processing durations of
+more than 1 wafer per minute, whilst also increasing uniformity. The repeatability and yield of the
+masking and patterning steps can be summarized using several key metrics. Figure 15 shows that
+the thickness uniformity of the deposited masking layer across half-cut M12 cells (4.9 µm, σ =
+0.32) using the prototype equipment was comparable to that achieved with the lab-scale tool.
+
+Figure 15 (right) compares the consistency of the lab-based (M6) and prototype line (half-cut
+M12) finger opening widths measured on a batch of > 40 cells. Overall, SunDrive’s M12 prototype
+line tool produces a finer finger resolution albeit with a slightly higher spread (9.4 µm, σ = 1.7)
+when compared to the lab-based M6 tools (9.9 µm, σ = 1.2). This demonstrates comparable results
+and thus, successful scaling of SunDrive’s lab-based equipment and process towards a higher
+throughput M12 compatible production tool and process.
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 22
+Figure 15: Masking layer thickness variation on randomly selected M12 wafer (left) and M6 wafer (centre) after
+masking deposition on prototype line and lab-based tool, respectively. Histogram plot of measured opening
+widths on M12 half-cut cells (n > 40) processed on prototype mask patterning tool and M6 cells processed on
+lab-based patterning tool (right).
+
+Yield was evaluated for the entire patterning process (masking + patterning) on a ‘pass/fail’
+analysis, whereby the qualification metrics for ‘pass’ conditions were opening uniformity and
+average width consistent with that mentioned above (average width ∼9 µm, σ < 2). The results
+of SunDrive’s yield analysis are shown in Figure 16.
+
+
+
+
+ Figure 16: Yield analysis for SunDrive’s patterning process (masking + patterning) on prototype patterning
+                       equipment designed for half-cut M12 precursor wafers (n = 54).
+
+The optimised masking + patterning process achieved a performance yield of ~90% consistently
+across the last 30 precursors processed. This is comparable to SunDrive’s lab-scale processing
+which involves extensive manual intervention at a significantly slower processing throughput. The
+remaining variance in the yield was primarily due to residual alignment/resolution losses from the
+use of lower quality machining parts in these early prototype tool iterations. SunDrive is currently
+upgrading the design of its masking and patterning tools with higher precision machining and
+automation to further minimise process variation and improve the overall yield of its production-
+scale patterning process.
+
+Plating Production Tool Development
+Automated cell handling and transport between different plating stages, including in-situ rinsing,
+were implemented to significantly increase throughput and also reduce yield loss from breakage.
+The implementation of improved agitation through recirculation of plating electrolyte during
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 23
+processing was also able to significantly increase plating rate to achieve higher throughput. The
+combination of improved automation of handling and wafer transfer between plating sub-steps
+with increased plating rates achievable with solution agitation during plating enabled equivalent
+throughputs comparable to those achieved with SunDrive’s prototype patterning tools
+(equivalent to ~2 MW/yr for a standard half-cut M12 power output of 5.4 W and 80% production
+line yield).
+Another key upgrade SunDrive adopted, when developing its prototype plating equipment, was
+to improve the plating chemistry to facilitate the faster plating rates achievable with the inclusion
+of electrolyte circulation. By reformulating the chemistry, SunDrive was not only able to achieve
+faster plating rates without detrimentally affecting plating quality but was also able to achieve
+superior aspect ratios (ratio of contact height to contact width) as well as contact morphologies
+that helped to increase cell efficiency. As can be seen in the images presented in Figure 17, high
+aspect ratios of 1 – 1.2 were obtained with the new copper chemistry (i.e., more vertical plating
+than lateral growth), compared with < 0.6 for the previously used chemistry.
+
+The improved plating approach used by SunDrive’s prototype plating equipment has also
+improved the finger smoothness and copper deposit quality, both factors contributing to
+increased cell efficiency. As can be seen in the SEM images in Figure 17, the surfaces of the
+contacts are significantly smoother with the new optimised SunDrive copper chemistry. In
+addition, the new chemistry resulted in fewer grain boundaries and defects. This improved plating
+quality reduces electron scattering and line resistance of the copper plated fingers. These
+improvements, combined with reduced shading losses due to narrower contacts, increase light
+capture from the smoother, rounder contact surface (advantage achieved in modules) and lower
+resistive losses due to low defect density copper electroplating. Overall, this has contributed to,
+on average, over 1.2% enhancement in FF and 0.8 mA/cm2 improvement in JSC over the last year
+of the project.
+
+
+
+
+    Figure 17: Comparison of SunDrive plating using (left) original laboratory plating process and (right)
+                                prototype production plating equipment.
+
+An example of a half-cut M12 copper plated HJT cell fabricated with SunDrive’s prototype
+production tool is shown in Figure 18. The plating quality can be seen to be similar for both the
+lab plating process [Figure 19 (left)] and prototype production equipment [Figure 19 (right)].
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 24
+Figure 18: Photograph of SunDrive’s rear side (left) and front side (right) plated half-cut M12 cell consisting of
+                                                  15 busbars.
+
+
+
+
+ Figure 19: Optical microscope images of SunDrive copper-plated fingers using its lab equipment (left) and
+  prototype production equipment (right). The fingers were 10.2 µm and 11.1 µm wide and 6.7 µm and 7.0 µm
+                                            high, respectively.
+
+SunDrive examined plating yield based on the cell’s electrical performance as a metric of
+assessment. Overall, the prototype plating performance was within 0.5%rel of the lab process,
+demonstrating effective translation of the lab plating process to prototype production. Whilst
+both plating methods demonstrated yields over 80%, the repeatability of the prototype plating
+production tool was significantly improved over the lab process. The efficiency standard
+deviation was 27% lower for the prototype plating tool compared with the lab plating tool. This
+is in part due to two superior tool design features of the prototype plating tool, namely:
+
+    1) Removal of manual handling from the plating process with semi-automated wafer
+       handling between stages; and
+    2) Controlled fluid flow across the cell surface during plating.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 25
+3. Cost Advantages of SunDrive’s plated-copper metallisation technology
+Commercialisation of copper metallisation technology has the potential to lower the production
+cost of next generation passivated contact silicon solar cells through elimination of silver for
+metallisation. Silver costs are as high as US 5c/W 10 for HJT solar cells. By eliminating silver, the
+potential achievable cost reduction can be up to 25% at the cell level 11 and up to 17% at the
+module level. 12 Coupled with the observed 0.4-0.5%abs efficiency boost also achievable with
+SunDrive’s technology as identified in this project, the cost/W is reduced even further. The higher
+efficiency also corresponds to a reduction in the balance of systems cost. The ‘value of efficiency’
+has been estimated at ~USD 20/m2/% efficiency for residential rooftop systems and ~USD
+8/m2/% efficiency for utility scale systems [19].
+
+
+SunDrive’s technology can also reduce the LCOE for Australian electricity consumers. In addition
+to the lower module costs and reduced areal cost of systems, further benefits can be derived
+from both increased module bifaciality, and a reduced temperature coefficient as explained
+earlier in this report. These electricity yield benefits are more complex to quantify as the benefit
+depends on where modules are installed. Future analyses will be performed to provide LCOE
+estimates for different Australian regions and electricity yield comparisons with alternative
+technologies. Although other technologies (e.g., silicon tandems) can also provide a pathway to
+higher efficiency, SunDrive’s technology has the important advantage that it can directly build
+upon existing cell (precursor) and module (interconnection) technologies which are already
+proven in the field.
+Unlike most existing solar cell metallisation processes, SunDrive’s copper metallisation can be
+applied to thinner wafers. This can result in both higher efficiencies and lower material costs in
+the future. N-type silicon wafers for HJT cells are expected to decrease from current wafer
+thicknesses of ~ 155 µm to 125 µm by 2032, whereas p-type wafer thickness will reduce from
+~ 160 µm to stabilise at 140 µm over the same time frame. This reduced silicon usage will be
+reflected in a larger cost reduction over time for HJT cell technology compared to existing p-type
+technology, where wafer thinning is currently limited by the screen-printing process.
+As the industry scales to TW manufacturing capacities, the transition to copper from silver
+becomes more critical. Exhaustion of silver reserves by unbounded silver use for PV
+manufacturing will act to further increase silver metal and paste costs and exacerbate the
+metallisation cost challenges. Since silicon HJT cells currently use 2-3 times the amount of silver
+per cell as PERC cells, the continued usage of screen-printed silver for these cells will ultimately
+limit their manufacturing capacity. By addressing this critical cost and sustainability constraint
+for silicon HJT technology, SunDrive can effectively provide a path to higher efficiency and lower
+electricity costs to consumers.
+
+4. TRL of SunDrive’s technology
+The following key achievements of this project:
+
+
+
+
+10
+   https://miworkshop.info/wp-content/uploads/2021/11/4.1_Lachowicz_CSEM.pdf
+11
+   Assuming HJT cell cost of US 20c/W
+12
+   Assuming HJT module cost of US 30c/W
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 26
+1. Development of prototype production-compatible equipment for the individual steps in
+   SunDrive’s proprietary metallisation sequence
+2. Demonstration of copper plated silicon HJT on industrial cell precursors; and
+3. Demonstration of copper plated silicon HJT modules which can pass the key IEC reliability
+   tests;
+have increased the overall TRL of SunDrive’s technology from 5 to 6.
+
+
+Conclusions
+This project has demonstrated the commercial feasibility of SunDrive’s copper plated
+metallisation technology for silicon HJT cells and modules though achievement of all project
+outcomes.
+A key highlight of this project has been the demonstration of a world record efficiency of 25.54%
+in September of 2021 on an industrial M6 wafer. This achievement was the result of improvements
+in cell design, knowledge and extensive use of cell characterisation to systematically address
+and mitigate electrical losses in copper plated HJT solar cells.
+During the course of this project, SunDrive has also demonstrated the viability of their proprietary
+technology in modules. It was demonstrated that previous durability concerns regarding adhesion
+of plated copper could be addressed by ensuring strong interfacial adhesion of the plated
+copper to both the solar cell and to the solder of the interconnect wire. This important
+achievement allows SunDrive to use standard soldered solar cell interconnection in the
+fabrication of its modules. In addition, it was shown that glass-glass bifacial modules can pass
+up to 3 x the IEC requirements for damp heat and thermal cycling, as well as required tests for
+light stability.
+Prototype production equipment was successfully developed for both the patterning and plating
+steps of SunDrive’s proprietary process. Throughput and repeatability tests were conducted to
+ensure that cells could be metallised at a throughput of 60 cells per hour with a yield of at least
+80%. Future production equipment refinements will aim to improve both throughput and yield.
+Combined, these project achievements have resulted in the TRL of SunDrive’s metallisation
+technology increasing from 5 to 6. In addition, this project has advanced knowledge and
+understanding in the following areas:
+        Efficiency potential of silicon HJT solar cells;
+        Suitability of low-cost mask patterning methods for large area substrates such as solar
+         cells;
+        Tuning of plating chemistry for improved contact formation;
+        Formation of strongly adhesive plated contacts to the conductive layers of silicon HJT
+         cells;
+        Formation of strong solder bonds to plated copper contacts of solar cells;
+        Durability of copper plated silicon HJT modules as assessed by IEC standard testing;
+        Equipment designs for masking, patterning and the plating of metal grid structures.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 27
+References
+1.    Zhang, Y., et al., Design Considerations for Multi-terawatt Scale Manufacturing of Existing
+      and Future Photovoltaic Technologies: Challenges and Opportunities Related to Silver,
+      Indium and Bismuth Consumption. Energy Environ. Sci., 2021,14, 5587-5610.
+2.    Hamrah, Z.S., et al., Effect of time, temperature and composition on the performance of
+      conductive adhesives made of silver-coated copper powder. International Journal of
+      Adhesion and Adhesives, 2022. 114: p. 103114.
+3.    ITRPV, International Technology Roadmap for Photovoltaics: Results 2021. 2022. p. 1-20.
+4.    Lennon, A., Y. Yao, and P.S. Wenham, Evolution of metal plating for silicon solar cell
+      metallisation. Progress in Photovoltaics: Research and Applications, 2012. 21(7): p. 1454-
+      1468.
+5.    Shi, Z., S. Wenham, and J. Ji. Mass production of the innovative PLUTO solar cell technology.
+      in 34th IEEE Photovoltaic Specialists Conference 2009. Philadelphia, Pennsylvania, US.
+6.    Fox, S., et al. Pilot production of high efficient metal catalyzed textured diamond wire sawn
+      mc-si solar cells combined with nickel-copper plated front contact processing. in 33rd
+      European Photovoltaic Solar Energy Conference and Exhibition. 2017. Amsterdam, The
+      Netherlands.
+7.    Li, Z., et al., Patterning for Plated Heterojunction Cells. Energy Procedia, 2015. 67: p. 76-83.
+8.    Descoeudres, A., et al., Low-temperature processes for passivation and metallization of
+      high-efficiency crystalline silicon solar cells. Solar Energy, 2018. 175: p. 54-59.
+9.    Hatt, T., et al., Native Oxide Barrier Layer for Selective Electroplated Metallization of Silicon
+      Heterojunction Solar Cells. Solar RRL, 2019. 3(6): p. 1900006.
+10.   Lorenz, A., et al., Rotary Screen Printed Metallization of Heterojunction Solar Cells: Toward
+      High-Throughput Production with Very Low Silver Laydown. Energy Technology, 2022.
+      Online: p. 2200377.
+11.   Einhaus, R., et al. Recycling and Reuse potential of NICE PV-Modules. in 2018 IEEE 7th World
+      Conference on Photovoltaic Energy Conversion (WCPEC) (A Joint Conference of 45th IEEE
+      PVSC, 28th PVSEC & 34th EU PVSEC). 2018.
+12.   Norgren, A., A. Carpenter, and G. Heath, Design for Recycling Principles Applicable to
+      Selected Clean Energy Technologies: Crystalline-Silicon Photovoltaic Modules, Electric
+      Vehicle Batteries, and Wind Turbine Blades. Journal of Sustainable Metallurgy, 2020. 6(4):
+      p. 761-774.
+13.   Daljit Singh, J.K., et al., Life Cycle Assessment of Disposed and Recycled End-of-Life
+      Photovoltaic Panels in Australia. Sustainability, 2021. 13(19): p. 11025.
+14.   Taguchi, M., et al., Obtaining a higher Voc in HIT cells. Progress in Photovoltaics: Research
+      and Applications, 2005. 13(6): p. 481-488.
+15.   Cattin, J., et al., Optimized Design of Silicon Heterojunction Solar Cells for Field Operating
+      Conditions. IEEE Journal of Photovoltaics, 2019. 9(6): p. 1541-1547.
+16.   Wang, H., X. Cheng, and H. Yang, Temperature Coefficients and Operating Temperature
+      Verification for Passivated Emitter and Rear Cell Bifacial Silicon Solar Module. IEEE Journal
+      of Photovoltaics, 2020. 10(3): p. 729-739.
+17.   Yoshikawa, K., et al., Silicon heterojunction solar cell with interdigitated back contacts for a
+      photoconversion efficiency over 26%. Nature Energy, 2017. 2(5): p. 17032.
+18.   Razzaq, A., et al., Silicon heterojunction solar cells: Techno-economic assessment and
+      opportunities. Joule, 2022. 6(3): p. 514-542.
+19.   Peters, I.M., et al., The Value of Efficiency in Photovoltaics. Joule, 2019. 3: p. 2732–2747.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 28
+Knowledge Sharing
+Although many technological aspects of this project were not able to be published due to
+confidentiality, learning from the project was disseminated through invited presentations,
+podcasts and conference presentations. A list of these public disclosures is below.
+
+Publications
+T. Tang, Cao. Y, C. Peng, G. Dong, C. He, X. Ran, H. Jiang, V. Allen, X. Cao, J. Zhou, “Achievement
+of 25.54% power conversion efficiency by optimization of current losses at the front side of
+silicon heterojunction solar cells”, Prog Photovolt Res Appl. 2022;1-12.doi:10.1002/pip.3641
+
+Presentations
+Asia Pacific Solar Research Conference
+    •   A. Lennon, “The Ascent of Silicon Heterojunction Technology: Can the Technology be
+        Sustainably Manufactured at TW Annual Production Scales?”, APSRC, 2022 (Invited
+        Plenary)
+    •   Pei-Chieh Hsiao, Daniel Chen, Chris Huang, Wenxin Shi, Renate Egan, and Alison Lennon,
+        “Cell-to-Module Analysis of Copper-Plated Silicon Heterojunction Modules with 23.17%
+        Efficiency” APSRC, 2022.
+Advanced PV 2030 Symposium
+    •   A. Lennon, “Will Contact Formation Economics be the Determining Factor in Next
+        Generation Silicon Solar Cell Technology Adoption?” (Invited Presentation)
+SuperSolar Annual Conference 2022
+    •   A. Lennon, “Metallisation and Material Sustainability for Silicon Photovoltaics” (Invited
+        Presentation)
+ARENA ReWired Podcast
+    •   https://arena.gov.au/blog/smashing-solar-records-with-sundrives-vince-allen/
+COP26 ARENA Talks: Australia’s Brightest Energy Startups Driving the Transition
+    •   https://www.youtube.com/watch?v=Syjm1gyaavI&t=5s
+Australian Financial Review Tech Zero Podcast
+    •   https://www.afr.com/companies/energy/dropping-out-of-uni-was-the-best-thing-
+        this-solar-pioneer-ever-did-20221007-p5bnyn
+Blackbird Sunrise Startup Event
+        https://www.youtube.com/watch?v=gU64n0gqG28
+UNSW Research Translation Expo
+    •   https://newsroom.unsw.edu.au/news/general/unsw-sydney%E2%80%99s-ground-
+        breaking-innovations-display-research-translation-expo
+    •   https://www.industryupdate.com.au/article/copper-solar-cells-fly-ash-paint-unsw-
+        start-ups-show-expo
+NSW Circular Renewable Energy and Chemical Engineering Networking Event
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 29
+    •   A. Lennon, “A Local Company Breaking World Records and Planning to Manufacture PV
+        Modules in Australia” (Invited Speaker)
+UNSW RESOC Careers Fair
+UNSW RESOC Webinar – Solar PV Manufacturing in Australia
+
+
+
+
+Employment Statistics
+This project has directly employed 17 additional employees at SunDrive, bringing the total
+company count to 22 employees at the end of this project. This includes 6 additional engineers
+to undertake the development of cell and module R&D and 6 mechanical and/or mechatronic
+engineers to enable advanced manufacturing for SunDrive’s tools. Additionally, as part of
+company administrations and management, SunDrive has acquired a chief scientist, an
+operations manager, a senior data analyst, a financial manager, and a strategic advisor.
+
+
+Modern Slavery Statement
+SunDrive has a modern slavery policy that applies to all employees, contractors, and agents
+(collectively Employees) directly and indirectly employed by SunDrive Solar Pty Ltd ABN 46 169
+736 752 (SunDrive). It also applies to SunDrive suppliers and business partners (collectively
+Business Partners) and any other entity which is bound to follow this policy by the terms of an
+agreement with SunDrive.
+SunDrive is committed to acting ethically and with integrity in all business dealings and to
+preventing modern slavery in our business or our supply chains.
+Should SunDrive become aware that any Business Partner does not meet the Modern Slavery
+Supplier Code of Conduct, SunDrive will engage directly with the supplier and develop an action
+plan to eradicate the practise in a transparent, timely and efficient manner. Should the Business
+Partner be uncooperative, the appropriate action will be taken, including terminating the
+business relationship, if necessary, by SunDrive.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 30
+Lessons Learnt
+Lessons Learnt Report: SunDrive’s Start-up Experience
+Introduction
+   SunDrive is a technology start-up company currently based in Kirrawee, NSW. The company’s
+overarching goal is to realise the full potential of solar photovoltaics (PV) and accelerate the
+uptake of solar energy around the world. The technology at the heart of SunDrive is an alternative
+to traditional silver-based metallisation for industrial solar cell manufacturing that completely
+replaces silver with copper – a metal that is approximately 1000x more abundant and 100x
+cheaper than silver.
+
+    As the international community pushes towards TW-scale solar production capacity, the
+criticality of minimising cost by using cheaper and more abundant materials for solar PV
+generation is an increasingly important issue. Furthermore, with current commercial solar
+technologies reaching their efficiency limits and next-generation cell technologies demanding
+even greater silver usage, a growing cost and supply risk presents a significant challenge for the
+evolution of the solar industry. SunDrive’s technology directly addresses this critical issue, whilst
+also providing performance benefits beyond that achievable with existing silver-based
+commercial technologies.
+
+   Through this ARENA project, SunDrive has demonstrated its cell technology potential and
+translated this to commercial-size modules, whilst also developing a working prototype
+production line of its propriety metallisation sequence. This report will provide some details on
+SunDrive’s unique experience of taking a concept from a university laboratory to a commercial
+venture, as well as the important lessons and takeaways that may help guide other start-ups.
+
+Taking Technology from University to a Start-up
+    The development of SunDrive’s technology began in 2014 with co-founder Vince Allen’s PhD
+at the world-renowned solar research school at the University of New South Wales (UNSW). Along
+with his supervisors - the late Professor Stuart Wenham and Professor Alison Lennon (now
+SunDrive Chief Scientist) - the fundamentals of SunDrive’s copper metallisation technology were
+conceived. A critical factor in the decision to start SunDrive and further develop this technology
+outside a university environment was the support and encouragement provided to Vince by his
+supervisors. This included the freedom to research multiple different technological approaches
+in a much shorter period than is usually allowed through university research. Recognising the
+commercial potential of the technology, they supported Vince heavily during the formative years
+of SunDrive.
+
+   After deciding to further develop this technology outside the university, the next step was to
+secure the rights to the necessary IP that had been developed at UNSW. New South Innovations
+(NSi – the knowledge exchange and technology transfer company within UNSW) was supportive
+in negotiating the licensing of the relevant IP. The licensing agreement allowed SunDrive to
+obtain an exclusive world-wide perpetual license for a key piece of IP underpinning SunDrive’s
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 31
+technology in exchange for a small equity position in the company. It was important during this
+stage to have the support and backing of those who could see the technology potential at such
+an early stage of development. SunDrive benefited from having the early support of both
+seasoned academics with in-depth understanding of commercial solar manufacturing (and the
+associated challenges/opportunities) as well as those with a stronger focus on
+commercialisation, who could understand the technology potential from a market perspective.
+
+Securing Initial Investment
+   With the relevant IP for SunDrive’s technology secured, the next step was to attract the
+necessary investment required to begin developing the technology independently. Initially,
+SunDrive was self-funding its own technology development out of a garage in Maroubra.
+However, it was important that the first external investment in SunDrive was from someone who
+understood the technology, the challenges it was addressing, and the extensive market/business
+potential should it succeed.
+
+    Through Professor Wenham, SunDrive’s co-founders met with Chinese-Australian solar
+scientist and entrepreneur Dr Zhengrong Shi. With an extensive background in both solar
+technology research and commercialisation (as founder/CEO of Suntech Power, the biggest
+solar manufacturer in the world in 2010-2011), Dr Shi was perhaps the best person to provide the
+first external investment in SunDrive. Not only did he understand the solar industry and market
+opportunity (including personal experience in transitioning a solar technology from university
+research to commercial solar manufacturing), but he was also acutely aware of the technical
+challenges that SunDrive’s technology was addressing. Suntech aggressively pursued copper
+metallisation for many years with its Pluto cell technology, but technical difficulties hindered its
+success. Witnessing first-hand the improvements provided by SunDrive’s technology, Dr Shi was
+convinced in the technology’s potential and within a month of visiting SunDrive’s garage had
+agreed to make the first investment in SunDrive in June 2015.
+
+    With Dr Shi’s international commitments, SunDrive wanted to also bring on board someone
+deeply involved in the local start-up ecosystem and preferably also from the solar industry.
+Through UNSW’s entrepreneurship team and NSi, SunDrive’s founders met with Sylvia Tulloch,
+founder of DyeSol (at the time, Australia’s most advanced solar R&D company that was also
+listed on the ASX) and an active member of the local start-up community. With her extensive
+experience in company management, growing her own start-up and investing in other start-ups,
+as well as government interaction, Mrs Tulloch offered extensive knowledge to SunDrive that
+would prove invaluable in the following years as it grew and developed its technology. Both Mrs
+Tulloch and Dr Shi joined SunDrive as board members in 2015.
+
+Technology Development: Start-up vs University
+   The process of technology development in a lean start-up differs greatly from that in an
+established research institution or university. As with any independent research venture, this
+independence has come with numerous advantages and challenges, including:
+
+Advantages
+• Speed: the iteration cycle for technology development is generally much faster in a self-
+  governed start-up, bypassing a lot of “red tape” and internal policy that can heavily impede
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 32
+  the progression of research within many universities. This also applies to collaborations with
+  industry partners, who often operate on a faster iteration cycle than universities. A start-up
+  is often able to better adapt and keep pace with industry partners.
+• Adaptability: necessity is the mother of invention. With limited resources in the early stages
+  of a start-up company. Everything is built, tested and iterated from the ground up – processes,
+  equipment and even characterisation tools. SunDrive has facilitated this adaptation by hiring
+  its employees from a wide range of fields with varying degrees of experience and expertise.
+  SunDrive has learnt that it is not about your qualifications, it’s about your ability.
+• Goal Definition: everyone within SunDrive is working cooperatively on a singular goal, which
+  simplifies operations and minimises dilution of resources amongst different projects. Whereas
+  a university has multiple disconnected projects competing for equipment access/tool
+  time/funding, a start-up can pool its resources and ability to achieving more clearly defined
+  goals.
+• Wholistic Viewpoint: whilst university research can often focus on technologies that, while
+  impressive, may never be commercially viable products, technology development within a
+  start-up is all focussed on improving a technology for market. Thus, every stage of technology
+  development is performed with the end-goal in mind – commercialisation.
+
+Challenges
+• Resource scarcity: especially early on, with limited funding, technology development in a
+  start-up environment can be difficult. Without access to important processing tools and
+  characterisation equipment, adequate technology development can be reliant on self-
+  designed tools (requiring their own iteration cycle) and/or access to external resources
+  through collaboration which can also slow the iteration cycle.
+• Time Pressure: since a start-up is often under pressure (status of market value proposition,
+  pressure from competitors and investors) to deliver a product to market as quickly as possible,
+  this can often put significant pressure on the iteration cycle. Whilst this does speed up the
+  technology development, it can also impede the ability to provide detailed analysis of results
+  which may help better dictate the development cycle.
+• Learning curve: there are a lot of things taken for granted in university research that are
+  significant challenges for a lean start-up. Necessary access to sophisticated equipment
+  (processing and characterisation) and services (ultra-pure water, compressed dry air,
+  nitrogen, wastewater treatment) has meant SunDrive has had to build its facilities and services
+  to allow its technology development to progress. SunDrive began its operations in a garage,
+  and now runs a self-designed cleanroom.
+• Anonymity: the primary downside of operating outside a university is that it removes the
+  safety net of institutional reputation. This can be challenging when sourcing components and
+  early-stage fundraising, particularly through government funding programs. As a start-up,
+  SunDrive has decidedly made a habit of demonstrating its capabilities to investors to
+  compensate for its low profile, building its own track record.
+
+   Whilst there are challenges to technology development within a lean start-up, the experience
+and reputation SunDrive has grown through multiple successful funding rounds has made many
+of these challenges more manageable.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 33
+Forming Collaborations
+   Collaborations can be essential for a start-up – they not only provide deeper access to the
+industry they are hoping to enter, but also facilitate faster technology development by providing
+access to resources that are unavailable without some form of collaboration. Collaboration with
+research institutions and industry partners has been critical to major advances in SunDrive’s
+technology development, from the scaling of its technology from lab-size to industrial-size wafers
+right up to the world-record efficiency SunDrive achieved in September 2021.
+
+   As a start-up, it can be a daunting prospect to approach larger companies and research
+institutions. An invaluable asset early on in this process was leveraging SunDrive’s existing
+network of connections to begin those interactions. Maintaining a good network of connections
+with the university helped in the early stages of technology development and is an excellent
+resource for initiating conversations with companies/institutions. In the solar industry, companies
+will often approach research institutions to investigate new technologies for commercial
+potential. One of SunDrive’s current collaborators had approached UNSW with an interest in
+exploring copper plating, and that connection was passed onto SunDrive.
+
+   SunDrive was also able to leverage the connections of its investors with ties to the industry.
+Once again, companies looking into copper metallisation for their solar technologies were
+directed to SunDrive through introductions by industry connections (namely Dr Shi in the early
+stages, who is highly regarded in the international solar community). Whilst having those existing
+connections to industry and research helped get a foot in the door, having a technology that
+addresses a big market also helps attract those collaborations.
+
+    Fostering these collaborations is essential to maintaining a good trajectory of technology
+development. Whilst the results of experiments and advances in technology development often
+in themselves help maintain good collaborations, SunDrive found that having a strong face-to-
+face presence with regular engagement was an important part of growing new collaborations
+and forming trusted working relationships. This included the co-founders frequently travelling
+internationally to visit collaborators for in-person meetings and discussions and maintaining
+regular correspondence on progress and collaboration goals. Fostering these collaborations as
+a technology advances is even more important – especially as a company moves from R&D closer
+towards commercialisation. Often the later stages of technology development require more
+resources and having trusted relationships with industry partners allows for larger experiments
+and batch testing.
+
+Growing Capital Investment
+    Obtaining the necessary funding for further technology progression can be a complicated
+and time-consuming process. After the initial funding provided by Dr Shi’s angel investment,
+SunDrive began developing its formal pitch deck in preparation for its first institutional investment
+round. UNSW’s entrepreneurship team aided in both refining SunDrive’s pitch deck, as well as
+introducing the company to various potential investors.
+
+   An important takeaway from SunDrive’s previous funding rounds was the importance of
+technology demonstration. Just as it worked with securing Dr Shi’s investment, inviting potential
+investors to visit SunDrive’s operations and witness the technology first-hand (copper plated solar
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 34
+cells, tool prototypes, etc) is an invaluable way of demonstrating the capabilities of both the
+technology as well as the team behind it.
+
+   With each funding round, securing further investment is dependent on achieving the goals of
+the previous round. By setting clearly defined goals and metrics to define the success of each
+round, it is easier to demonstrate to both new and existing investors your track record of
+technology development. It is important to set ambitious yet achievable goals for each round of
+technology progression to maintain a successful track record. For a hardware start-up with a
+comparatively slow iteration cycle compared to high velocity software ventures, it is also crucial
+to have the support of patient investors with longer term investment aspirations that are willing
+to support a start-up throughout its commercialisation journey.
+
+   Finally, the importance of public investment through government programs should not be
+understated. Successfully applying for government funding programs not only provides an
+alternative source of investment, but it also can be highly influential in securing the necessary
+private investment required for each stage of technology development. Furthermore, public
+investment in locally developed technologies (especially clean technologies) boosts public
+awareness that the Australian Government is supportive of local clean technologies and start-
+ups. This encourages more companies to pursue clean technology ventures, thus supporting the
+growth of the entire Australian industry landscape.
+
+Summary of Lessons Learnt and Future Outlook
+  Overall, there are a number of key takeaway’s from SunDrive’s start-up experience that may
+be of benefit to other clean technology ventures. While every company is different, there are
+parallels with every start-up experience. The main lessons from SunDrive’s experience are:
+
+      1) Early on have (i) someone in your corner who deeply understands the technology, the
+         challenges, and the international market potential (in SunDrive’s case, Dr Zhengrong
+         Shi), and (ii) someone on hand who is actively involved in local start-ups who can help
+         with legal, finance, accounting, management – ideally with experience in the same field
+         (in SunDrive’s case, Sylvia Tulloch).
+      2) When spinning a technology out of a university, maintain those connections and
+         relationships. Universities can be an invaluable resource in supporting early-stage start-
+         ups through support, guidance and providing connections to potential collaborations
+         and future recruits. Universities can also help secure government funding through
+         collaborative projects.
+      3) When it comes to building the team, SunDrive has noticed that ability usually means
+         more than qualifications. Technology development can benefit from experience outside
+         the field that the technology may be designed for.
+      4) Foster new collaborations through a strong face-to-face presence and regular
+         engagement. This helps build a trusted working relationship, which will allow sustained
+         collaboration as a technology grows and resources required increase.
+      5) Demonstrating a technology firsthand means more than a good pitch. Let investors and
+         collaborators see the capabilities of both the technology as well as the team behind it.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 35
+      6) Set technology goals for each round so that each subsequent funding round is off the
+         back of a successful previous round with a proven track record.
+      7) A mix of public and private investment is vitally important. Not only does one assist in
+         securing the other but public funding can provide greater public support and awareness
+         of novel technologies that can boost the market potential in Australia.
+
+   In Australia, support for clean technologies has been growing significantly in recent years.
+There is a general consensus towards sustainable practices and carbon neutrality in the wake of
+recent international climate reports and net zero commitments. The Covid pandemic has also
+shined a spotlight on issues such as energy security and bolstering local supply chains. With
+growing public support for sustainable technologies, and big cleantech investment funds being
+raised internationally (Breakthrough Energy Ventures, Lowercarbon VC), the future for investment
+in clean technologies is bright. With more government support, Australia could be home to a
+revolutionary new industry to support the country’s transition to a net zero economy.
+
+
+
+
+SunDrive Copper Metallisation Demonstration Project | Page 36
+

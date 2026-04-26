@@ -1,0 +1,175 @@
+Modification C – 3.14.2019
+
+
+
+DuPont™ Solamet® PV21A
+photovoltaic metallization
+
+Preliminary Technical Data Sheet
+
+Product Description
+DuPont™ Solamet® PV21A photovoltaic metallization front side paste is a highly conductive
+silver composition with innovative material science which enables finer line design and excellent
+printability. This paste can be co-fired with back side (p-type) aluminum conductors and tabbing
+silver such as Solamet® PV5xx. It is designed for rapid dry and fast (spike) firing.
+
+Product Benefit
+• Improved efficiency up to 0.1% over DuPont™ Solamet® PV20x series
+• Superior metallization contact on LDE/ ultra LDE (standard or PERC cell)
+• Excellent ink transfer capability at versatile fine line design
+• High electrical conductivity after firing
+• Reduced carrier recombination at Ag/Si interface
+• Optimized for low stress and good soldered adhesion with excellent solderability
+• Fast drying and firing
+• Cadmium free*
+
+*Cadmium ‘free’ as used herein means that cadmium is not an intentional ingredient in and is not
+intentionally added to the referenced product. Trace amounts however may be present.
+
+Processing Summary
+        Application
+       Standard screen print process
+        Printing
+       Speed: 200 – 350 mm/sec
+        Screen Type
+       325, 360, 380, 400 and 430 mesh stainless steel (SS) preferred for <40um*
+       High open ratio screens with heavy calendar preferred for <35um*
+       *Narrow side of screen pattern
+                                         (I)        ( II )    ( III )     (IV)      (V)
+       Mesh (stainless steel)            325        360        380        400      430
+       Wire Diameter (µm)                 16         16         14         16       13
+       Mesh Thickness (µm)                                    17-28
+       Emulsion Thickness (µm)                               12 - 18
+       Mesh Angle (degrees)                                  22 - 30
+        Drying
+       Vertical Dryer 170 – 230°C 10 minutes
+       IR Belt Dryer 150 – 400°C 1 min
+       Flexible in accordance with industry practice. Actual settings to be determined by drier
+       type
+        Typical Line Resolution
+        30 – 40µm* screen designed width
+        Soldering
+        Compatible with industry standard material & condition.
+        Flux type: non-clean, reactivity level L0/M0. (Standard: ANSI/J-STD-004)
+        Ribbon: Compatible with Pb contained and Pb free solder material, i.e. 60Sn/40Pb,
+        62Sn/36Pb/2Ag, 96.5Sn/3.5Ag
+
+Table 1 Typical Physical Properties
+     Viscosity (Pa.S)                             200-320
+     (Brookfield HBT, 20 rpm, SC4-
+     14/6R utility cup and spindle,
+     15°C)
+     Solids (%) at 750°C                          91 – 93
+     Fineness of Grind (4th / 50%)             <12m / <6m
+     Resistivity (m Ω /sq/10m)                     <5
+     Thinner                                       9450
+     Shelf Life (months)                             6
+
+
+Paste Preparation
+The composition should be thoroughly mixed before use to ensure good printing performance.
+Several pre-treatment methods are recommended: a) Hand mixing thoroughly. b) Thinky 60-180
+sec, temperature controlled at 25-35°C. c) Jar rolling 12-48 hours under 30 rpm. Jar rolling over
+48 hours is not recommended due to changes in rheological behavior. Care should be taken to
+avoid air entrapment.
+
+Printing
+Printing should be carried out in a clean, well-ventilated area. Solamet® PV21A photovoltaic
+composition, in its container, should be at ambient temperature prior to commencement of
+printing.
+
+Firing
+Solamet® PV21A is designed for rapid (spike) firing. To get the best electrical performance,
+PV21A should be fired at a peak temperature similar to Solamet® PV20x. Firing optimization is
+strongly recommended.
+See chart 1 for typical firing profile.
+Actual furnace settings and belt speed will depend on the wafer thickness, texturing and emitter
+resistivity as these influence the temperature of the wafer during firing.
+It is important that wafers are fired in a well ventilated furnace, with a continuous supply of clean
+filtered air. Airflow and extraction rates should be optimized to ensure that oxidizing conditions
+exist within the furnace firing chamber, especially when front and back side conductors are co-
+fired.
+Chart 1
+Typical Firing Profile
+
+
+
+
+Thinner
+Solamet® PV21A composition is optimized for screen printing and thinning is not normally
+required. Use the DuPont recommended thinner for slight adjustments to viscosity or to replace
+evaporation losses. The use of too much thinner or the use of a non recommended thinner may
+affect the rheological behavior of the material and its printing characteristics. Please refer to table
+1.
+
+Storage
+Containers may be stored in a clean, stable environment at room temperature (between 5°C –
+25°C) with their lids tightly sealed. Storage in high temperature (>25°C) or in freezers
+(temperature <0°C) is NOT recommended as this could cause irreversible changes in the
+material.
+
+Safety and Handling
+For information on health and safety regulations please refer to the specific product MSDS.
+
+For more information on DuPontTM Solamet® PV21A or other DuPont Microcircuit Materials
+products, please contact your local representative:
+
+Americas
+DuPont Microcircuit Materials
+14 T.W. Alexander Drive
+Research Triangle Park, NC 27709
+USA
+Tel. +1800 284 3382 (calls within USA)
+Tel. +1919 248 5188 (calls outside USA)
+Europe, Middle East & Africa
+Du Pont (U.K.) Limited
+Coldharbour Lane
+Bristol BS16 1QD
+U.K.
+Tel. +44 117 931 3191
+
+Asia
+DuPont Kabushiki Kaisha
+MCM Technical Lab
+DuPont Electronics Center
+KSP R&D B213, 2-1
+Sakado 3-chome, Takatsu-ku,
+Kawasaki-shi, Kanagawa, 213-0012
+Japan
+Tel +81 44 820 7575
+
+DuPont Taiwan Ltd
+45, Hsing-Pont Road
+Taoyuan, 330
+Taiwan
+Tel. + 886 3 377 3616
+
+DuPont China Holding Co. Ltd
+Bldg 11, 399 Keyuan Road
+Zhangjiang Hi-Tech Park
+Pudong New District,
+Shanghai 201203
+China
+Tel. +86 21 3862 2888
+
+DuPont Korea Inc.
+3-5th Floor, Asia tower #726,
+Yeoksam-dong, Gangnam-gu
+Seoul 135-719,
+Korea
+Tel. +82 2 2222 5275
+
+E. I. DuPont India Private Limited
+7th Floor, Tower C, DLF Cyber Greens,
+Sector-25A, DLF City, Phase-III
+Gurgaon 122 002 Haryana, India
+Tel. +91-124-4091818
+
+Du Pont Company (Singapore) Pte Ltd
+1 HarbourFront Place, #11-01
+HarbourFrong Tower One
+Singapore 098633
+Tel. +65-6586-3022
+
+http://photovoltaics.dupont.com
+

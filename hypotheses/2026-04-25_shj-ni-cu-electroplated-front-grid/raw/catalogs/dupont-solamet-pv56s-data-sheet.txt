@@ -1,0 +1,106 @@
+    DuPont™ Solamet® PV56S
+    Technical Data Sheet
+
+
+
+Product Description                                                                  Table 1: Typical Physical Properties
+DuPont™ Solamet® PV56S photovoltaic metallization back                     Viscosity (Pa·s)                               50–100
+side paste is a highly conductive solderable silver composition,           (Brookfield HADV, SC4-14/6R
+developed to lower consumption yet providing excellent                     @ 10 rpm, 25­°C))
+adhesion to SiNx on localized back surface field cells.
+                                                                           Solids (%) at 750°C                             59–61
+This paste is also designed to enable high Voc by reducing
+charge carrier recombination in passivation layer when used                Fineness of Grind (4th/50%)                <12 µm/<6 µm
+in conjunction with back side aluminum compositions.                       Thinner                                         9450
+Solamet® PV56S is able to co-fire with front side (n-type)                 Shelf Life (months)                                6
+silver conductors such as DuPont™ Solamet® PV17x, PV18x
+and with back side (p-type) aluminum conductors such as
+DuPont™ Solamet® PV36x.                                                   Paste Preparation
+                                                                          The composition should be thoroughly mixed before use.
+Product Benefit                                                           This is best achieved by slow, gentle hand stirring with a
+•   Non fire-through capability                                           clean burr-free spatula (flexible plastic) for 0.5–1 minutes.
+•   High adhesion with low consumption                                    Jar rolling is NOT recommended, as this could change the
+•   Co-fireable with front side silver and back side aluminum             rheology of the material. Care should be taken to avoid air
+•   Cadmium free*                                                         entrapment.
+
+*Cadmium ‘free’ as used herein means that cadmium is not an intentional   Printing
+ingredient in and is not intentionally added to the referenced product.   Printing should be carried out in a clean, well-ventilated
+Trace amounts however may be present.                                     area. DuPont™ Solamet® PV56S photovoltaic composition,
+                                                                          in its container, should be at ambient temperature prior to
+Processing Summary                                                        commencement of printing.
+•   Application
+    Standard screen print process                                         Firing
+•   Printing                                                              Solamet® PV56S is designed for rapid (spike) firing. Thermal
+    Speed 180–250 mm/sec                                                  budget above 600°C should be kept to minimum, ideally
+•   Drying                                                                <8 seconds to ensure optimum electrical contact to the wafer.
+    Vertical Dryer 170 – 230°C 10 minutes                                 See Chart 1 for typical firing profile. Actual furnace settings
+    IR Belt Dryer 220–270°C 30 seconds                                    and belt speed will depend on the wafer thickness, texturing
+    Flexible in accordance with industry practice. Actual                 and emitter resistivity as these influence the temperature of
+    settings to be determined by dryer type                               the wafer during firing.
+•   Screen Type
+    200 or 250 mesh stainless steel is recommended                        It is important that wafers are fired in a well ventilated
+•   Soldering                                                             furnace, with a continuous supply of clean filtered air.
+    Compatible with industry standard material and
+    condition                                                             Airflow and extraction rates should be optimized to ensure
+    Flux type: non-clean, reactivity level L0/M0 (Standard:               that oxidizing conditions exist within the furnace firing
+    ANSI/J-STD-004)                                                       chamber, especially when front and backside conductors are
+    Ribbon: compatible with Pb contained and Pb free solder               co-fired.
+    material, i.e. 60Sn/40Pb, 62Sn/36Pb/2Ag, 96.5Sn/3.5Ag
+        DuPont™ Solamet® PV56S
+        Technical Data Sheet
+
+                                                                                                                Chart 1
+Thinner                                                                                                  Typical Firing Profile
+Solamet® PV56S composition is optimized for screen printing
+and thinning is not normally required. Use the DuPont
+recommended thinner for slight adjustments to viscosity or to
+replace evaporation losses. The use of too much thinner or the
+use of a non recommended thinner may affect the rheological
+behavior of the material and its printing characteristics. Please
+refer to Table 1.
+
+Storage
+Containers may be stored in a clean, stable environment at
+room temperature (between 5°C–25°C) with their lids tightly
+sealed. Storage in high temperature (>30°C) or in freezers
+(temperature <0°C) is NOT recommended as this could cause
+irreversible changes in the material.
+
+Safety and Handling
+For information on health and safety regulations please refer
+to the specific product MSDS.
+
+
+
+For more information on DuPont™ Solamet® PV56S or other DuPont Microcircuit Materials products, please contact your
+local representative:
+Americas                                             DuPont Taiwan Ltd                                              Du Pont Company (Singapore) Pte Ltd
+DuPont Microcircuit Materials                        45, Hsing-Pont Road,                                           1 HarbourFront Place, #11-01
+14 T.W. Alexander Drive                              Taoyuan, 330                                                   HarbourFront Tower One,
+Research Triangle Park, NC 27709                     Taiwan                                                         Singapore 098633
+USA                                                  Tel. +886-3-377-3616                                           Tel. +65-6586-3022
+Tel. +1800 284-3382 (calls within USA)
+Tel. +1919 248 5188 (calls outside USA)              DuPont China Holding Co. Ltd                                   http://mcm.dupont.com
+                                                     Bldg 11, 399 Keyuan Rd., Zhangji Hi-Tech Park,
+Europe, Middle East & Africa                         Pudong New District, Shanghai 201203                           http://photovoltaics.dupont.com
+Du Pont (U.K.) Limited                               China
+Coldharbour Lane                                     Tel. +86-21-6386-6366 ext.2202
+Bristol BS16 1QD
+U.K.                                                 DuPont Korea Inc.
+Tel. +44-117-931-3191                                3~5th Floor, Asia tower #726,
+                                                     Yeoksam-dong, Gangnam-gu
+Asia                                                 Seoul 135-719, Korea
+DuPont Kabushiki Kaisha                              Tel. +82-10-6385-5399
+MCM Technical Lab
+DuPont Electronics Center                            E. I. DuPont India Private Limited
+KSP R&D B213                                         7th Floor, Tower C, DLF Cyber Greens,
+2-1, Sakado 3-chom, Takatsu-ku,                      Sector-25A, DLF City, Phase-III,
+Kawasaki-shi, Kanagawa, 213-0012                     Gurgaon 122 002 Haryana, India
+Japan                                                Tel. +91-124-4091818
+Tel +81 44 820 7575
+
+Copyright © 2014 DuPont. All rights reserved. The DuPont Oval Logo, DuPont™, and all DuPont products denoted with ® or ™ are registered trademarks or trademarks of
+E. I. du Pont de Nemours and Company or its affiliates.
+
+K-27823 02/14
+
