@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "slug": "2026-04-25_shj-ni-cu-electroplated-front-grid",
+  "title": "Plated Cu Front-Grid for SHJ Solar Cells",
+  "scene": {
+    "stations": [
+      {
+        "id": "shj-cell",
+        "label": "SHJ M6 cell",
+        "kind": "solar-cell",
+        "color": "#1f4ed8",
+        "position": [-0.40, 0, 0.10],
+        "wiki_page": "organisms/SHJ-cell-M6"
+      },
+      {
+        "id": "pvd-sputter",
+        "label": "PVD sputter chamber",
+        "kind": "tall-instrument",
+        "color": "#94a3b8",
+        "position": [-0.30, 0, -0.10],
+        "wiki_page": "methods/NOBLE-selective-Cu-plating"
+      },
+      {
+        "id": "inkjet-printer",
+        "label": "Inkjet patterning printer",
+        "kind": "printer",
+        "color": "#e5e7eb",
+        "position": [-0.18, 0, 0.10],
+        "wiki_page": "methods/inkjet-mask-patterning"
+      },
+      {
+        "id": "plating-station",
+        "label": "Plating bath",
+        "kind": "beaker",
+        "color": "#a3a3a3",
+        "position": [-0.05, 0, -0.10],
+        "wiki_page": "methods/electroplated-Ni-Cu-stack"
+      },
+      {
+        "id": "anneal-hotplate",
+        "label": "Recovery hotplate",
+        "kind": "hotplate",
+        "color": "#374151",
+        "position": [0.08, 0, 0.10],
+        "wiki_page": "reagents/a-Si-H-passivation"
+      },
+      {
+        "id": "laminator",
+        "label": "Vacuum laminator",
+        "kind": "flat-instrument",
+        "color": "#475569",
+        "position": [0.20, 0, -0.10],
+        "wiki_page": "organisms/mini-module-glass-glass"
+      },
+      {
+        "id": "damp-heat-chamber",
+        "label": "Damp-heat chamber",
+        "kind": "incubator",
+        "color": "#cbd5e1",
+        "position": [0.31, 0, 0.05],
+        "wiki_page": "methods/damp-heat-aging-1000h"
+      },
+      {
+        "id": "sims-instrument",
+        "label": "SIMS depth profiler",
+        "kind": "tall-instrument",
+        "color": "#0f172a",
+        "position": [0.42, 0, -0.10],
+        "wiki_page": "methods/SIMS-depth-profile"
+      }
+    ]
+  },
+  "step_bindings": [
+    {
+      "step": 1,
+      "focus_station": "shj-cell",
+      "animation": "observe",
+      "label_override": "Inspect SHJ M6 wafer batch — reject any iVoc < 740 mV",
+      "state_changes": [
+        { "station": "shj-cell", "property": "active", "to": true },
+        { "station": "shj-cell", "property": "label", "to": "SHJ M6 precursor (n-type, ITO 80 nm)" }
+      ]
+    },
+    {
+      "step": 2,
+      "focus_station": "pvd-sputter",
+      "animation": "operate",
+      "label_override": "Sputter PVD Cu (50 nm) / Al (100 nm) seed",
+      "state_changes": [
+        { "station": "pvd-sputter", "property": "active", "to": true },
+        { "station": "pvd-sputter", "property": "label", "to": "PVD seed: Cu / Al stack" }
+      ]
+    },
+    {
+      "step": 3,
+      "focus_station": "inkjet-printer",
+      "animation": "operate",
+      "label_override": "Inkjet 1 wt% NaOH ink — selective Al etch (NOBLE)",
+      "state_changes": [
+        { "station": "pvd-sputter", "property": "active", "to": false },
+        { "station": "inkjet-printer", "property": "active", "to": true },
+        { "station": "inkjet-printer", "property": "label", "to": "NaOH inkjet — NOBLE patterning" }
+      ]
+    },
+    {
+      "step": 4,
+      "focus_station": "plating-station",
+      "animation": "mix",
+      "label_override": "Plate Ni barrier 80 nm (Arm A) — sulfamate bath",
+      "state_changes": [
+        { "station": "inkjet-printer", "property": "active", "to": false },
+        { "station": "plating-station", "property": "active", "to": true },
+        { "station": "plating-station", "property": "label", "to": "Ni sulfamate bath (Arm A 80 nm / Arm C 120 nm)" },
+        { "station": "plating-station", "property": "color", "to": "#9ca3af" }
+      ]
+    },
+    {
+      "step": 5,
+      "focus_station": "plating-station",
+      "animation": "mix",
+      "label_override": "Plate Cu 5 µm — Atotech Cupracid Ultra acid bath",
+      "state_changes": [
+        { "station": "plating-station", "property": "label", "to": "Acid Cu sulfate bath (5 µm finger)" },
+        { "station": "plating-station", "property": "color", "to": "#b45309" }
+      ]
+    },
+    {
+      "step": 6,
+      "focus_station": "plating-station",
+      "animation": "mix",
+      "label_override": "Immersion Ag cap (~200 nm) — Bondaglas",
+      "state_changes": [
+        { "station": "plating-station", "property": "label", "to": "Immersion Ag cap bath" },
+        { "station": "plating-station", "property": "color", "to": "#d1d5db" }
+      ]
+    },
+    {
+      "step": 7,
+      "focus_station": "anneal-hotplate",
+      "animation": "heat",
+      "label_override": "Etch back PVD seed; anneal 200°C / 15 min — recover a-Si:H",
+      "state_changes": [
+        { "station": "plating-station", "property": "active", "to": false },
+        { "station": "anneal-hotplate", "property": "active", "to": true },
+        { "station": "anneal-hotplate", "property": "color", "to": "#dc2626" },
+        { "station": "anneal-hotplate", "property": "label", "to": "Anneal hotplate (200°C cap)" }
+      ]
+    },
+    {
+      "step": 8,
+      "focus_station": "shj-cell",
+      "animation": "measure",
+      "label_override": "Baseline TLM / IV / Suns-Voc / peel — early-stop if ρc > 2 mΩ·cm²",
+      "state_changes": [
+        { "station": "anneal-hotplate", "property": "active", "to": false },
+        { "station": "anneal-hotplate", "property": "color", "to": "#374151" },
+        { "station": "shj-cell", "property": "label", "to": "Metallized SHJ cell (baseline t=0)" }
+      ]
+    },
+    {
+      "step": 9,
+      "focus_station": "laminator",
+      "animation": "operate",
+      "label_override": "Laminate POE glass-glass mini-module + PIB edge seal",
+      "state_changes": [
+        { "station": "laminator", "property": "active", "to": true },
+        { "station": "laminator", "property": "label", "to": "Vacuum laminator (POE 145°C / 12 min)" }
+      ]
+    },
+    {
+      "step": 10,
+      "focus_station": "damp-heat-chamber",
+      "animation": "heat",
+      "label_override": "Damp-heat 85°C / 85% RH — 0 → 1000 h (IEC 61215)",
+      "state_changes": [
+        { "station": "laminator", "property": "active", "to": false },
+        { "station": "damp-heat-chamber", "property": "active", "to": true },
+        { "station": "damp-heat-chamber", "property": "color", "to": "#dc2626" },
+        { "station": "damp-heat-chamber", "property": "label", "to": "Damp-heat 85/85 (IEC 61215, 1000 h)" }
+      ]
+    },
+    {
+      "step": 11,
+      "focus_station": "damp-heat-chamber",
+      "animation": "heat",
+      "label_override": "Extended damp-heat 1000 → 2000 h (IEC 63209)",
+      "state_changes": [
+        { "station": "damp-heat-chamber", "property": "label", "to": "Extended DH 1000 → 2000 h (IEC 63209)" }
+      ]
+    },
+    {
+      "step": 12,
+      "focus_station": "sims-instrument",
+      "animation": "measure",
+      "label_override": "SIMS Cu-in-c-Si depth profile at 0 / 1000 / 2000 h",
+      "state_changes": [
+        { "station": "damp-heat-chamber", "property": "active", "to": false },
+        { "station": "damp-heat-chamber", "property": "color", "to": "#cbd5e1" },
+        { "station": "sims-instrument", "property": "active", "to": true },
+        { "station": "sims-instrument", "property": "label", "to": "Dynamic SIMS (O₂⁺, 50×50 µm raster)" }
+      ]
+    },
+    {
+      "step": 13,
+      "focus_station": "shj-cell",
+      "animation": "none",
+      "label_override": "Cost model vs Ag baseline — target ≤ 10% at 5 GW scale",
+      "state_changes": [
+        { "station": "sims-instrument", "property": "active", "to": false },
+        { "station": "shj-cell", "property": "label", "to": "SHJ Ni/Cu cell — cost vs Ag baseline" }
+      ]
+    }
+  ]
+}

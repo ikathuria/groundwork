@@ -68,7 +68,7 @@ hypothesis (plain English)
         │
         ▼
 ┌──────────────────────┐
-│ Pass 4: AR sim spec  │  → plan/ar.json (consumed by the live AR viewer)
+│ Pass 4: AR sim spec  │  → plan/ar.json; live scene at /ar/<slug> (Next.js + ARViewer)
 └──────────────────────┘
 ```
 
@@ -530,25 +530,25 @@ Pass 3 produces the user-facing deliverable: a complete, polished, single-file L
 
 **What it does:**
 1. Reads `hypothesis.md`, `plan/plan.json`, `plan/plan.md`, `wiki/index.md`, and the entity pages cited by the plan's protocol steps.
-2. Generates `plan/ar.json` — the **custom AR scene spec**: a list of `stations` (3–8 per experiment) tailored to the actual equipment / vessels the protocol uses, plus `step_bindings` mapping every protocol step to a station + animation + cumulative `state_changes`. See `lib/plan-schema.ts` (`LabSceneSpec`) for the schema and `.claude/commands/pass-4.md` (§Schema, §Runtime context, §Quality checklist) for the authoring contract.
-3. Files the AR spec back into the wiki at `wiki/plans/ar-v<n>.md` (frontmatter + fenced JSON), so it joins the Obsidian graph.
+2. Generates `plan/ar.json` — the **custom AR scene spec**: a list of `stations` (3–8 per experiment) tailored to the actual equipment / vessels the protocol uses, plus `step_bindings` mapping every protocol step to a station + animation + cumulative `state_changes`. See `lib/plan-schema.ts` (`LabSceneSpec`) for the schema and `.claude/commands/pass-4.md` (§Schema, §Live scene route, §Runtime context, §Quality checklist) for the authoring contract.
+3. Files the AR spec back into the wiki at `wiki/plans/ar-v<n>.md` (frontmatter + lead paragraph naming **`/ar/<slug>`** + fenced JSON), so it joins the Obsidian graph and points at the shareable app URL.
 4. Updates `hypothesis.md` frontmatter (`latest_ar`).
-5. Appends `session.log.md`.
+5. Appends `session.log.md` (include **`Live scene: /ar/<slug>`** in the ar entry).
 
-**Pass 4 does NOT generate any HTML / static webpage / slide deck.** The live AR viewer in `components/ar/` (Three.js scene + Gemini Live voice assistant + on-screen pointer arrows + drag-and-drop bench) is the only renderer; `plan/ar.json` is the spec it consumes.
+**Pass 4 does NOT generate the Pass 3 Lab Brief (`plan/index.html`) or any other static webpage / slide deck.** The shared Next.js page **`/ar/<slug>`** (`app/ar/[slug]/page.tsx`) mounts the live AR viewer in `components/ar/` (Three.js scene + Gemini Live + pointer arrows + drag-and-drop bench); it loads `plan/ar.json` via `/api/ar/<slug>`. Legacy `/ar?slug=<slug>` redirects to `/ar/<slug>`.
 
 **Output:** `plan/ar.json`, `wiki/plans/ar-v<n>.md`.
 
 **Constraints:**
 - Reads from `wiki/`, `plan/`, and `hypothesis.md` only.
-- Writes to `plan/ar.json`, `wiki/plans/ar-v<n>.md`, `hypothesis.md` frontmatter, and the session log. Nothing else.
+- Writes to `plan/ar.json`, `wiki/plans/ar-v<n>.md`, `hypothesis.md` frontmatter, and the session log. **Does not** modify `app/` — the dynamic AR route is framework code, not a per-hypothesis artifact.
 - **Every protocol step must have exactly one `step_bindings` entry** with a real `focus_station` (the runtime's gate-hint pointer arrow needs a target on every step).
 - **Every station must trace to a wiki entity** via `wiki_page`, OR be a generic vessel (`beaker`, `tube-rack`, `dish`, `pipette`, `scaffold`) that doesn't need one.
 - Station `id`s are kebab-case and read naturally when spoken — Gemini Live uses them as voice tool targets (`highlight_object`, `point_at`).
 - `kind` must come from the runtime's supported set: `printer | furnace | hotplate | microscope | incubator | plate-reader | dish | beaker | tube-rack | pipette | scaffold | tall-instrument | flat-instrument | solar-cell | pv-module`.
 - Idempotent — re-running bumps the version (`ar-v2.md`) and overwrites `plan/ar.json`.
 
-The Lab Brief UI (`web/`) consumes `plan/ar.json` via `/api/ar/[slug]`. The historical `/h/[slug]` static-HTML route still serves any pre-existing `plan/wiki.html` files but is no longer produced by Pass 4 — new hypotheses surface their experiment exclusively through the live AR simulation.
+`plan/ar.json` is served by `/api/ar/[slug]` and drives the 3D viewer. The **primary live scene URL** is **`/ar/<slug>`**; Pass 3 owns the read-only static Lab Brief at `plan/index.html` (served at `/h/<slug>` with legacy `plan/wiki.html` fallback). New hypotheses: Lab Brief (Pass 3) + 3D lab at `/ar/<slug>` (Pass 4 spec + shared app route).
 
 ### 7.5 Lint pass (run on demand)
 

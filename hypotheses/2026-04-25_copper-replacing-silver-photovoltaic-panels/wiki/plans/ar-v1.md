@@ -21,7 +21,7 @@ tags: [ar, lab-scene, plan-v1, photovoltaics]
 # AR scene spec — ar-v1
 
 Mirror of [[../../plan/ar.json]] so the AR spec joins the wiki graph.
-The interactive page lives at `/ar?slug=2026-04-25_copper-replacing-silver-photovoltaic-panels` —
+The interactive page lives at `/ar/2026-04-25_copper-replacing-silver-photovoltaic-panels` —
 two `solar-cell` coupons (Ag baseline + Cu test) and one `pv-module` are interactive
 3D objects the user can flip and inspect.
 

@@ -13,6 +13,7 @@ created: 2026-04-25
 updated: 2026-04-26
 sources_count: 45
 latest_plan: plan-v1
+latest_ar: wiki/plans/ar-v2
 plan_total_budget_usd: 168450
 plan_total_timeline_weeks: 14
 plan_novelty_verdict: similar-work-exists

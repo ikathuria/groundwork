@@ -113,3 +113,10 @@ Pass 3 generated the Lab Brief experiment plan. **Total budget: $168,450. Timeli
 - The "≤10% of Ag baseline" cost target depends on the SunDrive ARENA report's process step-list and ITRPV 2024 Ag-laydown trajectory; the cost step (Step 13) is presented as a *sensitivity-tested model output*, not a measurement. A defensible $/cell number requires GridMaster-class simulation outside the lab brief.
 - Equipment-access cost ($28,500) assumes shared-facility rates (PVD sputter 50 hr; vacuum laminator; environmental chamber 14 wk; IV/Suns-Voc/probe 8 wk). If purchased outright, capex would be ~$80–120k more — flagged as a sensitivity in the budget contingency.
 - The single EVA contrast laminate is one cell, not a full statistical arm; sufficient to confirm/reject the encapsulant mechanism per Karas 2022 protocol but not a publication-grade EVA-vs-POE study on its own.
+
+## [2026-04-26 03:30] ar | ar-v1
+Stations: 8. Steps bound: 13.
+
+## [2026-04-26 04:10] ar | ar-v2
+Live scene: /ar/2026-04-25_shj-ni-cu-electroplated-front-grid
+Stations: 8. Steps bound: 13.

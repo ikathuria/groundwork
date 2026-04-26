@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-import { redirect } from 'next/navigation'
 import { SAMPLE_EXPERIMENT } from '@/lib/experiment-steps'
 
 // ARViewer must be client-side only (needs window, WebXR, getUserMedia)
@@ -15,20 +14,12 @@ const ARViewer = dynamic(() => import('@/components/ar/ARViewer'), {
   ),
 })
 
-// /ar — sample experiment and sessionStorage plan; /ar?slug= redirects to /ar/<slug>.
-// /ar/<slug> — see app/ar/[slug]/page.tsx (canonical).
-export default function ARPage({
-  searchParams,
-}: {
-  searchParams?: { slug?: string }
-}) {
-  const raw = searchParams?.slug?.trim()
-  if (raw) {
-    redirect(`/ar/${encodeURIComponent(raw)}`)
-  }
+// /ar/<slug> — canonical: fetches hypotheses/<slug>/plan/{plan,ar}.json (same as legacy /ar?slug=).
+export default function ARBySlugPage({ params }: { params: { slug: string } }) {
+  const slug = params.slug?.trim() || undefined
   return (
     <main className="fixed inset-0 overflow-hidden">
-      <ARViewer plan={SAMPLE_EXPERIMENT} />
+      <ARViewer plan={SAMPLE_EXPERIMENT} slug={slug} />
     </main>
   )
 }

@@ -128,7 +128,7 @@ export default function ResearchProgress({
         if (!res.ok) throw new Error(`Plan not on disk (${res.status})`)
         const plan = (await res.json()) as LabBriefPlan
         storePlan(plan)
-        router.push(`/ar?slug=${encodeURIComponent(slug)}`)
+        router.push(`/ar/${encodeURIComponent(slug)}`)
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load plan')
         setNavigating(false)

@@ -1,5 +1,5 @@
 ---
-description: Pass 4 of the GROUNDWORK pipeline — generate the custom AR lab simulation spec from a finished Pass 3 plan. Produces `plan/ar.json` (the canonical scene spec consumed by the AR/3D viewer) and files a copy back into the wiki. Pass 4 does NOT generate any HTML; the AR viewer in `components/ar/` is the only consumer.
+description: Pass 4 of the GROUNDWORK pipeline — generate the custom AR lab simulation spec from a finished Pass 3 plan. Produces `plan/ar.json` (consumed at the live scene `/ar/<slug>` and via `/api/ar/<slug>`) and files a copy back into the wiki. Pass 4 does NOT generate the Lab Brief HTML or any other static page; the AR viewer in `components/ar/` is the 3D renderer.
 argument-hint: <date_prefixed_slug>
 allowed-tools:
   - Read
@@ -13,7 +13,7 @@ allowed-tools:
 
 You are running **Pass 4** of the GROUNDWORK pipeline. **Read `context.md` first** if you haven't this session — especially §7 (agent operations) and §8 (Lab Brief artifact shape).
 
-Pass 4 has a single job: take the protocol from Pass 3 and translate it into a **simulation spec** (`plan/ar.json`) that the live AR viewer in `components/ar/` can render as an interactive 3D bench. Wiki HTML, slide decks, and other static artifacts are explicitly out of scope — the simulation IS the deliverable.
+Pass 4 has a single job: take the protocol from Pass 3 and translate it into a **simulation spec** (`plan/ar.json`) that the live AR viewer in `components/ar/` can render as an interactive 3D bench, exposed in the app at **`/ar/<slug>`** (see §Live scene route). Pass 3's Lab Brief HTML, slide decks, and other static artifacts are out of scope for this pass — the on-disk deliverable here is the JSON spec plus wiki filing that points to the live route.
 
 ## Input (filled in at invocation)
 
@@ -35,17 +35,19 @@ Pass 4 has a single job: take the protocol from Pass 3 and translate it into a *
 
 2. **Generate `hypotheses/$1/plan/ar.json`** — the custom AR lab spec. Schema, runtime semantics, and quality bar are documented in §Schema and §Runtime context below. Validate the result against §Quality checklist before writing.
 
-3. **File the AR spec back into the wiki** at `hypotheses/$1/wiki/plans/ar-v<n>.md`. `<n>` matches the latest `plan-v<n>.md` if one exists; otherwise `1`. The page is a thin wrapper: YAML frontmatter (`type: ar-spec`, `derived_from: plan-v<n>.md`), then a fenced ` ```json ` block with the full `ar.json` content. This puts the AR spec in the Obsidian graph so the wiki and the simulation stay linked.
+3. **File the AR spec back into the wiki** at `hypotheses/$1/wiki/plans/ar-v<n>.md`. `<n>` matches the latest `plan-v<n>.md` if one exists; otherwise `1`. The page is a thin wrapper: YAML frontmatter (`type: ar-spec`, `derived_from: plan-v<n>.md`), then a short lead paragraph, then a fenced ` ```json ` block with the full `ar.json` content. The paragraph **must** name the **canonical live scene URL** for this hypothesis: `/ar/<slug>` (web app path; same slug as the folder). It may also note that the API serves the spec at `/api/ar/<slug>`. This puts the AR spec in the Obsidian graph and links the wiki to the runnable simulation.
 
-4. **Update `hypotheses/$1/hypothesis.md`** — set `latest_ar: wiki/plans/ar-v<n>` in frontmatter. Do not change `status`. Do not add or update any `latest_wiki_html` field — Pass 4 no longer produces wiki HTML.
+4. **Update `hypotheses/$1/hypothesis.md`** — set `latest_ar: wiki/plans/ar-v<n>` in frontmatter. Do not change `status`. Do not add or update any Lab-Brief HTML pointer field (e.g. `latest_index_html`, legacy `latest_wiki_html`) — Pass 4 no longer produces any HTML; the Lab Brief at `plan/index.html` is Pass 3's deliverable.
 
 5. **Append `hypotheses/$1/session.log.md`**:
    ```
    ## [YYYY-MM-DD HH:MM] ar | ar-v<n>
+   Live scene: /ar/<slug>
    Stations: <count>. Steps bound: <count>.
    ```
 
-6. **Stop and report.** 4-line summary:
+6. **Stop and report.** 5-line summary:
+   - **Canonical live scene URL:** `/ar/<slug>`
    - Stations defined (count + names)
    - Steps bound to stations (count)
    - Path to the new `plan/ar.json`
@@ -160,6 +162,12 @@ When in doubt, prefer `operate` over `none` — the bench should look alive on e
 
 `property` ∈ `color | label | active`. `to` is a hex string for `color`, a string for `label`, a boolean for `active`. The runtime ignores unknown properties without erroring.
 
+## Live scene route
+
+The GROUNDWORK app serves the 3D lab at **`/ar/<slug>`** (implementation: `app/ar/[slug]/page.tsx`). The page passes `<slug>` into `ARViewer`, which fetches `plan/plan.json` and `plan/ar.json` through `/api/plans/<slug>` and `/api/ar/<slug>`. Legacy **`/ar?slug=<slug>`** redirects to the path form.
+
+**Pass 4 does not create or edit anything under `app/`** — the dynamic route is shared framework code. Completing Pass 4 means: `plan/ar.json` exists, and `wiki/plans/ar-v<n>.md` + `session.log.md` name **`/ar/<slug>`** so the wiki graph points at the live scene.
+
 ## Runtime context
 
 The AR viewer (`components/ar/ARViewer.tsx`) consumes `ar.json` to drive a live, multimodal experience. Keep the consumer in mind when authoring the spec:
@@ -184,12 +192,14 @@ Before writing, confirm:
 - [ ] `state_changes` are cumulative across steps and tell a coherent story (instruments turn on, then off; samples get labelled; colors evolve).
 - [ ] Stations laid out left → right roughly in protocol order. No two stations within 0.05 m of each other.
 - [ ] `id`s are kebab-case, descriptive, and read naturally when spoken — Gemini will say "let's tap the {id}" and the user should immediately understand.
+- [ ] The `ar-v<n>.md` lead paragraph and `session.log.md` entry name the canonical web route **`/ar/<slug>`** (and optionally mention `/api/ar/<slug>`).
 
 ## Constraints
 
 - Read from `wiki/`, `plan/`, and `hypothesis.md` only.
 - Write to `plan/ar.json`, `wiki/plans/ar-v<n>.md`, and append to `session.log.md` and `hypothesis.md` frontmatter (`latest_ar` only). **Nothing else.**
-- **Do not generate `plan/wiki.html`, `plan/index.html`, or any other static webpage.** Pass 4 produces only the simulation spec; the live AR viewer in `components/ar/` is the only renderer.
+- **Do not add or change files under `app/`** — the `/ar/[slug]` page is app infrastructure, not per-hypothesis output.
+- **Do not generate `plan/index.html` (that's Pass 3's Lab Brief) or any other static Lab Brief / wiki HTML file.** On-disk for this pass is the simulation JSON; the 3D renderer is the shared AR viewer, reachable at `/ar/<slug>`.
 - **Every station must trace to a wiki entity** (`wiki_page` field) or be a generic vessel. No invented equipment.
 - **Every protocol step must have exactly one `step_bindings` entry.** No skipped steps, no orphan bindings.
 - `plan/ar.json` is the single source of truth for the simulation. Downstream tooling (`/api/ar/[slug]`, the AR viewer, Gemini Live system prompt) reads from this file directly.
