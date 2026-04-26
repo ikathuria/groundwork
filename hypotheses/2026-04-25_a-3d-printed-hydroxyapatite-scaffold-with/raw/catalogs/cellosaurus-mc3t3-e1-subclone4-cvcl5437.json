@@ -1,0 +1,362 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_5437"
+          }
+        ],
+        "age": "<1D",
+        "breed": "C57BL/6",
+        "category": "Spontaneously immortalized cell line",
+        "cell-type": {
+          "value": "Osteoblast",
+          "xref": {
+            "accession": "CL_0000062",
+            "category": "Anatomy/cell type resources",
+            "database": "CL",
+            "iri": "http://purl.obolibrary.org/obo/CL_0000062",
+            "label": "osteoblast",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCL_0000062"
+          }
+        },
+        "child-list": [
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_C8WY"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "MC3T3-E1 Subclone 14-Luc"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_E0Y9"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "Ubigene MC3T3-E1 Subclone 14 Clk4 KO"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_E0YA"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "Ubigene MC3T3-E1 Subclone 14 Egfr KO"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_E0YB"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "Ubigene MC3T3-E1 Subclone 14 Notum KO"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_E0YC"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "Ubigene MC3T3-E1 Subclone 14 Npnt KO"
+            }
+          },
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_E0YD"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "Ubigene MC3T3-E1 Subclone 14 Tsc1 KO"
+            }
+          }
+        ],
+        "comment-list": [
+          {
+            "category": "Characteristics",
+            "source-list": [
+              {
+                "xref": {
+                  "accession": "CRL-2594",
+                  "category": "Cell line collections (Providers)",
+                  "database": "ATCC",
+                  "url": "https://www.atcc.org/products/CRL-2594"
+                }
+              }
+            ],
+            "value": "Exhibits high levels of osteoblast differentiation after growth in ascorbic acid and 3 to 4 mM inorganic phosphate. Forms a well mineralized extracellular matrix (ECM) after 10 days (ATCC=CRL-2594)"
+          }
+        ],
+        "created": "2012-04-04",
+        "derived-from": [
+          {
+            "accession": "CVCL_0409",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "MC3T3-E1",
+            "url": "https://www.cellosaurus.org/CVCL_0409"
+          }
+        ],
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "In situ",
+              "value": "Bone, calvaria",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0004339",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0004339",
+                  "label": "vault of skull",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0004339"
+                }
+              ]
+            }
+          }
+        ],
+        "entry-version": "17",
+        "last-updated": "2025-04-10",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "MC3T3-E1 Subclone 14"
+          },
+          {
+            "type": "synonym",
+            "value": "MC3T3-E1 SUBCLONE 14"
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "PubMed=10352097"
+          }
+        ],
+        "sex": "Sex unspecified",
+        "species-list": [
+          {
+            "accession": "10090",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+            "label": "Mus musculus (Mouse)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=10090&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Mouse STR 12-1",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 15-3",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "22.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 18-3",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "15"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 4-2",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "20.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 5-5",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 6-4",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "18"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR 6-7",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Mouse STR X-1",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "28"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            {
+              "xref": {
+                "accession": "YC-C026",
+                "category": "Cell line collections (Providers)",
+                "database": "Ubigene",
+                "url": "https://www.ubigene.us/product/?cate=0&mykeyword=YC-C026"
+              }
+            }
+          ]
+        },
+        "xref-list": [
+          {
+            "accession": "CLO_0007583",
+            "category": "Cell line databases/resources",
+            "database": "CLO",
+            "iri": "http://purl.obolibrary.org/obo/CLO_0007583",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/clo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCLO_0007583"
+          },
+          {
+            "accession": "CRL-2594",
+            "category": "Cell line collections (Providers)",
+            "database": "ATCC",
+            "url": "https://www.atcc.org/products/CRL-2594"
+          },
+          {
+            "accession": "0285",
+            "category": "Cell line collections (Providers)",
+            "database": "BCRJ",
+            "url": "https://bcrj.org.br/pesquisa/?search=0285"
+          },
+          {
+            "accession": "3101MOUGNM15",
+            "category": "Cell line databases/resources",
+            "database": "CCRID",
+            "url": "http://www.cellresource.cn/cellsearch.aspx?sc=1&where=3101MOUGNM15"
+          },
+          {
+            "accession": "305185",
+            "category": "Cell line collections (Providers)",
+            "database": "CLS",
+            "url": "https://www.cytion.com/305185"
+          },
+          {
+            "accession": "KCB 200786YJ",
+            "category": "Cell line collections (Providers)",
+            "database": "KCB"
+          },
+          {
+            "accession": "YC-C026",
+            "category": "Cell line collections (Providers)",
+            "database": "Ubigene",
+            "url": "https://www.ubigene.us/product/?cate=0&mykeyword=YC-C026"
+          },
+          {
+            "accession": "Q54904202",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54904202"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Dian",
+            "last-name": "Wang",
+            "name": "Wang D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kurt",
+            "last-name": "Christensen",
+            "name": "Christensen K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kanwal",
+            "last-name": "Chawla",
+            "name": "Chawla K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Guo-Zhi",
+            "last-name": "Xiao",
+            "name": "Xiao G.-Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "Paul H.",
+            "last-name": "Krebsbach",
+            "name": "Krebsbach P.H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Renny Theodore",
+            "last-name": "Franceschi",
+            "name": "Franceschi R.T.",
+            "type": "person"
+          }
+        ],
+        "date": "1999",
+        "first-page": "893",
+        "internal-id": "PubMed=10352097",
+        "journal-name": "J. Bone Miner. Res.",
+        "last-page": "903",
+        "title": "Isolation and characterization of MC3T3-E1 preosteoblast subclones with distinct in vitro and in vivo differentiation/mineralization potential.",
+        "type": "article",
+        "volume": "14",
+        "xref-list": [
+          {
+            "accession": "10.1359/jbmr.1999.14.6.893",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1359/jbmr.1999.14.6.893"
+          },
+          {
+            "accession": "10352097",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/10352097"
+          }
+        ]
+      }
+    ]
+  }
+}

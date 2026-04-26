@@ -1,0 +1,451 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xml:lang="en" article-type="methods-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Bio Protoc</journal-id><journal-id journal-id-type="iso-abbrev">Bio Protoc</journal-id><journal-id journal-id-type="pmc-domain-id">3912</journal-id><journal-id journal-id-type="pmc-domain">bioprot</journal-id><journal-id journal-id-type="publisher-id">Bio Protoc</journal-id><journal-id journal-id-type="publisher-id">Bio-Protoc</journal-id><journal-title-group><journal-title>Bio-protocol</journal-title></journal-title-group><issn pub-type="epub">2331-8325</issn><publisher><publisher-name>Bio-protocol, LLC</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC11865830</article-id><article-id pub-id-type="pmcid-ver">PMC11865830.1</article-id><article-id pub-id-type="pmcaid">11865830</article-id><article-id pub-id-type="pmcaiid">11865830</article-id><article-id pub-id-type="pmid">40028031</article-id><article-id pub-id-type="doi">10.21769/BioProtoc.5207</article-id><article-id pub-id-type="publisher-id">e5207</article-id><article-id pub-id-type="publisher-id">5207</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="heading"><subject>Methods Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Clinical Protocols</subject></subj-group></subj-group></article-categories><title-group><article-title>A Micro-Computed Tomography-Based Simplified Approach to Measure Body Composition, Osteoporosis, and Lung Fibrosis in Mice</article-title></title-group><contrib-group><contrib contrib-type="author"><name name-style="western"><surname>Landau</surname><given-names initials="MB">Madeleine B.</given-names></name><xref rid="aff1" ref-type="aff">1</xref><xref rid="fn1" ref-type="author-notes">#</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Zou</surname><given-names initials="B">Binghao</given-names></name><xref rid="aff2" ref-type="aff">2</xref><xref rid="fn1" ref-type="author-notes">#</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Yang</surname><given-names initials="Z">Ziqi</given-names></name><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Rowan</surname><given-names initials="BG">Brian G.</given-names></name><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib contrib-type="author" corresp="yes"><name name-style="western"><surname>Anbalagan</surname><given-names initials="M">Muralidharan</given-names></name><xref rid="aff2" ref-type="aff">2</xref><xref rid="fn1" ref-type="author-notes">$</xref><xref rid="cor1" ref-type="corresp">*</xref></contrib><aff id="aff1">
+<label>1</label>Tulane University School of Medicine, New Orleans, LA, USA</aff><aff id="aff2">
+<label>2</label>Department of Structural and Cellular Biology, Tulane University School of Medicine, New Orleans, LA, USA</aff></contrib-group><author-notes><fn fn-type="other" id="fn1"><label>$</label><p>Present address: 1430 Tulane Avenue, New Orleans, LA, USA</p></fn><corresp id="cor1">*For correspondence: <email>manbalag@tulane.edu</email>
+</corresp><fn id="fn2"><label>#</label><p>Contributed equally to this work</p></fn></author-notes><pub-date pub-type="epub"><day>20</day><month>2</month><year>2025</year></pub-date><pub-date pub-type="collection"><day>20</day><month>2</month><year>2025</year></pub-date><volume>15</volume><issue>4</issue><issue-id pub-id-type="pmc-issue-id">483056</issue-id><elocation-id>e5207</elocation-id><history><date date-type="received"><day>17</day><month>9</month><year>2024</year></date><date date-type="rev-recd"><day>16</day><month>12</month><year>2024</year></date><date date-type="accepted"><day>18</day><month>12</month><year>2024</year></date></history><pub-history><event event-type="pmc-release"><date><day>20</day><month>02</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>28</day><month>02</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-03-20 01:25:59.040"><day>20</day><month>03</month><year>2025</year></date></event></pub-history><permissions><copyright-statement>©Copyright : © 2025 The Authors; This is an open access article under the CC BY license </copyright-statement><copyright-year>2025</copyright-year><ali:free_to_read xmlns:ali="http://www.niso.org/schemas/ali/1.0/"/><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the CC BY license (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="BioProtoc-15-4-5207.pdf"/><abstract><p>Micro-computed tomography (micro-CT) is a powerful, non-destructive imaging technique that creates high-resolution 3D images of the internal structures of small animal models such as mice and rats. Familiarizing oneself with micro-CT imaging and data analysis can be overwhelming without easy-to-follow, clear instructions. Training on new instruments is often a task exclusive to a select subset of researchers, leaving the majority of potential trainees without a technical grasp of how to navigate the instructions. This protocol on the use of micro-CT aims to bridge that gap by providing a clear, step-by-step guide to acquire and analyze micro-CT images from mice for quantitative data. By exclusively detailing the necessary procedural steps from start to finish and overcoming complex user interfaces during imaging operations and analysis, this protocol will equip new micro-CT users with the ability to measure mouse body composition (bone, body fat, and lean muscle mass) and identify and quantify lung fibrosis. This approach applies to researchers with a basic understanding of medical imaging, animal care, and software analysis.</p><p>
+Key features
+</p><p>• Analysis of tissue-specific body composition using mice as model organisms.</p><p>• An easy-to-follow guide for novice users of high-resolution micro-computed tomography imaging systems.</p><p>• Enhances accessibility, workflow, standardization, training, and breadth of application in the research community.</p><p>• Effectively employing non-invasive live imaging allows for a longitudinal study of tissue architecture for examining age-related changes in vivo.</p><p>
+Graphical overview
+</p><p>
+<inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="BioProtoc-15-4-5207-ga001.jpg"/>
+</p></abstract><kwd-group><kwd>Micro-computed tomography</kwd><kwd>Micro-CT</kwd><kwd>Murine models</kwd><kwd>Body composition</kwd><kwd>Bone mineral density</kwd><kwd>Adipose</kwd><kwd>Lean tissue</kwd><kwd>Lung fibrosis</kwd><kwd>Tissue structure</kwd></kwd-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="s2"><title>Background</title><p>The role of small animal models in basic science research has rapidly expanded amidst the emergence of novel quantification techniques [1]. Precision measurement in such models has endeavored to unearth underlying mechanisms of action in estrogen-receptor signaling and innovative modes of drug delivery for quality improvement [2,3]. Genetically modified mice have an indispensable purpose in assessing the role of specific genes in key physiological functions and phenotypic changes that are often measured through histological analysis [4,5]. Nonetheless, such models may fail to provide either pertinent longitudinal data, an important consideration for examining structural development (fat, muscle, bone), or pathological changes in tissues such as lung fibrosis.</p><p>As an alternative approach to examining in vivo features at a fixed point in time, non-invasive techniques that allow for periodic imaging over time can quantitatively measure varied physiologic and pathologic phenotypes [5]. The benefits of live imaging of murine structures include quantifiable measurements for organic tissue-dependent changes at specific growth stages without inflicting harm or interruption to the life cycle. Non-invasive tools also enhance experimental designs by yielding a series of data points over the entire study duration, limiting the overall cohort size needed, and allowing more precise measures of inter-animal variability [6].</p><p>One of the most frequently utilized tools for diagnostic imaging is X-ray computed tomography (CT), which relies on employing X-ray beams in direct contact with the organism to create a cross-sectional tomographic representation. Hounsfield units (HU) is a relative quantitative measurement of radio density used in the interpretation of computer tomography images in the linear scale; the radio density of distilled water at a standard temperature and pressure is defined as 0 HU, whereas the radio density of air is -1,000 HU. A phantom with a known radio density calibrates machines, ensuring they provide the correct HU. Most animal tissues do not exceed +2,000 HU and standard clinical limits range from -1,000 to +3,071 [7].</p><p>In pre-clinical research, the ability of the micro-CT scanner to elicit information on body composition comes highly appreciated, enhancing surveillance of disease development, classification, and ramifications [8]. Whether analyzing bone mineral density for studying osteoporosis, distinguishing airspace changes for characterizing lung fibrosis, or comparing adipose volume change, non-invasive in vivo imaging using micro-CT scanners enables high spatial resolution with longitudinal monitoring [9].</p><p>Without a standardized protocol for utilization, not only does the reproducibility of research suffer, but it also hinders the ability to build upon the ever-evolving field of structural analysis and to develop an eventual gold standard for body composition characterization. Simple method articles serve as valuable resources for researchers who wish to incorporate micro-CT into their studies.</p><p>In this article, we propose an easy-to-follow guide for micro-CT users to reconstruct the physical structure of mice to obtain standard non-invasive imaging in mice-based long-term experiments. Our protocol improves upon existing methods by providing accessible, step-by-step instructions that minimize the need for specialized training. It simplifies workflows into manageable tasks, promotes standardization with many visual aids and troubleshooting guidance, and improves reliability. This protocol details a reproducible manner by which researchers can precisely attain data on lean tissue, adipose, bone structure, bone mineral density, and airspace quantification in the lung, enabling the investigation of gene-based translational applications.</p></sec><sec id="s3"><title>Materials and reagents</title><p>
+<bold>Biological materials</bold>
+</p><p>1. C57BL/6 mice, 3 months old (C57BL/6J from The Jackson Laboratory, Bar Harbor, ME)</p><p>
+<bold>Reagents</bold>
+</p><p>1. Fluriso<sup>TM</sup>, isoflurane (VETone, catalog number: 502017), store at 20–25 °C for up to five years</p><p>2. Oxygen [50 pounds per square inch gauge (psig) (345 kPA) to 60 psig (414 kPA) required] (air gas)</p><p>
+<italic toggle="yes">Note: Oxygen can be a fire hazard, so always turn it off when not in use. Do not expose oxygen cylinders to temperatures higher than 50 °C. The oxygen tank should be securely fastened upright to prevent falling off and kept in a well-ventilated area completely separated from flammable materials and heating sources. Always keep the oxygen tank valve protected with the cap when not in use and ensure proper labeling indicating the contents as OXYGEN and whether it is full or empty. Never attempt to handle a damaged or leaking cylinder. Be aware of your laboratory-specific safety procedures while handling the oxygen tank.</italic>
+</p><p>3. Bleomycin solution 10 mg/mL in water (Sigma, catalog number: B7216); should be protected from light and stored at -20 °C. Mice were given 60 µL of bleomycin (1.25 U·kg<sup>-1 </sup>body weight) via oropharyngeal route to induce a fibrotic response that is more pronounced at day 21 after the treatment [10]. The Institutional Animal Care Use Committee (IACUC) approved this bleomycin-induced lung fibrosis protocol (Protocol ID: 1874)</p></sec><sec id="s4"><title>Equipment</title><p>1. RAS-4 anesthesia system (PerkinElmer, catalog number: CLS146737)</p><p>2. Quantum GX2 micro-CT (PerkinElmer, catalog number: CLS149276)</p><p>3. PC: DELL Precision 5820 tower XCTO high-performance acquisition computer, Windows<sup>®</sup>10 Pro, Intel<sup>®</sup> (R) Xeon (R) W-2123 processor, NVIDIA Quadro P2000 5GB graphics card, 32 GB 2666 MHz RAM, 8 TB HD.</p><p>
+<italic toggle="yes">Note: Researchers working with animals in our vivarium must have taken proper animal training and lectures. They must wear appropriate personal protective equipment (PPE), including a dedicated lab coat or disposable gown, gloves, mask, and head and shoe covers. All PPE is available at the entrances to our animal facilities. Additionally, researchers must take radiation safety training before operating the micro-CT instrument. We recommend that researchers follow the institution-dependent regulations and use PPE accordingly.</italic>
+</p></sec><sec id="s5"><title>Software and datasets</title><p>1. Quantum GX2 Image Analysis Software (PerkinElmer)</p><p>2. PerkinElmer Database, version 3.5.3.110 (free software with the purchase of Quantum GX2)</p><p>3. Analyze 14.0 (AnalyzeDirect, Inc., Lexana, KS, USA, license needed, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://analyzedirect.com/analyze14/" ext-link-type="uri">https://analyzedirect.com/analyze14/</ext-link>)</p><p>4. Prism v9.3 (GraphPad, 11/15/2021, license needed, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.graphpad.com/" ext-link-type="uri">https://www.graphpad.com/</ext-link>). To perform a t-test in Prism: Launch the software and create a new project. Choose the <italic toggle="yes">Column</italic> table format and enter the data into the appropriate columns. Click the <italic toggle="yes">Analyze</italic> button and, under the <italic toggle="yes">Column Analyses</italic> group, select <italic toggle="yes">t-tests (and nonparametric tests)</italic>.</p><p>5. BioRender (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.biorender.com/" ext-link-type="uri">https://www.biorender.com/</ext-link>). The following figures were created using BioRender: Graphical overview, Created in BioRender. Landau, M. (2024) <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://BioRender.com/c08f795" ext-link-type="uri">https://BioRender.com/c08f795</ext-link>.</p></sec><sec id="s6"><title>Procedure</title><p>
+<bold>A. Micro-CT calibration and scanning for body composition</bold>
+</p><p>1. Turn on the Quantum GX2 Micro-CT imaging system and switch the safety key to <italic toggle="yes">On</italic> (<xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1A</xref>).</p><fig position="float" id="BioProtoc-15-4-5207-g001" orientation="portrait"><label>Figure 1.</label><caption><title>Quantum GX2 micro-CT imaging system.</title><p>A) Quantum GX2 micro-CT system with the computer in our facility. B) RAS-4 rodent anesthesia system. C) Anesthetized C57BL/6 mouse placed on the mouse bed with the nose inserted inside the nose cone continuously receiving anesthesia from the RAS-4 anesthesia system. D) Mouse’s whole body scan with coronal, sagittal, and axial views.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="BioProtoc-15-4-5207-g001.jpg"/></fig><p>2. Open the Quantum GX2 Image Analysis Software and click the <bold>
+<italic toggle="yes">Warm-Up</italic>
+</bold> button in the lower left corner.</p><p>
+<bold>Pause point:</bold> The warm-up process takes 15 min if the duration of imaging system disuse is &lt;1 month. For durations of 1–3 months, it takes 40 min; for &gt;3 months, it takes 2 h.</p><p>3. <bold>Critical:</bold> In the database window, click <bold>
+<italic toggle="yes">Create New Database</italic>
+</bold> to set the folder for saving the imaging data files. Then click <bold>
+<italic toggle="yes">Create New Sample</italic>
+</bold> and enter the information of the new sample to set the folder for saving the data of the particular scan. Click the sample that will be scanned next and click <bold>
+<italic toggle="yes">Set Image Save Location</italic>
+</bold>.</p><p>4. The Quantum GX2 micro-CT may require gain or HU calibration if the indicator turns yellow or red before animal scanning.</p><p>a. To complete the gain calibration, select <bold>
+<italic toggle="yes">Gain Calibration</italic>
+</bold> from <bold>
+<italic toggle="yes">Options</italic>
+</bold> of the control panel. Select the required <italic toggle="yes">Scan mode, Filter</italic>, and <italic toggle="yes">Voltage</italic> combination that is needed to be calibrated and click <bold>
+<italic toggle="yes">Execute</italic>
+</bold> (Figure S1A).</p><p>
+<italic toggle="yes">Note: The indicator should turn green after the gain calibration process is complete.</italic>
+</p><p>b. Set up a HU calibration water phantom by adding 25 mL of DI water into a 50 mL conical centrifuge tube. Place the water phantom into the Quantum GX2 micro-CT and configure the control panel to the required <italic toggle="yes">Scan mode, Filter</italic>, and <italic toggle="yes">Voltage</italic> combination. Create a new sample to store the scan file. Enter live mode by clicking the <bold>
+<italic toggle="yes">Live Mode</italic>
+</bold> button. <italic toggle="yes">Stage control</italic> on the front panel is used to adjust the position of the bed, and <italic toggle="yes">rotation control</italic> is used to confirm that the conical centrifuge tube is centered in the field. Click <bold>
+<italic toggle="yes">Start Scan</italic>
+</bold> to complete a scan.</p><p>c. After scanning, right-click the sample in the <italic toggle="yes">series information</italic> and select <bold>
+<italic toggle="yes">Launch HU Calibration</italic>
+</bold>. Select <bold>
+<italic toggle="yes">Settings</italic>
+</bold> and <bold>
+<italic toggle="yes">VOX Number Calibration (V)</italic>
+</bold> to launch an ROI selection window. Move the green square that represents <italic toggle="yes">AIR</italic> to the air area in the conical centrifuge tube and the <italic toggle="yes">TARGET</italic> green square to the water area. In the <italic toggle="yes">CT number adjustment</italic>, click <bold>
+<italic toggle="yes">ROI read</italic>
+</bold> for AIR CT and TARGET CT and click <bold>
+<italic toggle="yes">OK</italic>
+</bold> (Figure S1B). Close the measurement window. On the control panel, select <bold>
+<italic toggle="yes">Options</italic>
+</bold> and <bold>
+<italic toggle="yes">HU Calibration Settings</italic>
+</bold>. Find the scan mode that requires HU Calibration, choose the most recent calibration file, and the indicator should turn green (Figure S1C).</p><p>5. Before beginning animal scanning, anesthetize the mouse with 2.5% isoflurane in the RAS-4 rodent anesthesia system induction chamber.</p><p>
+<italic toggle="yes">Note: It takes 2 min to fully anesthetize a mouse (<xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1B</xref>).</italic>
+</p><p>6. Place the anesthetized mouse on the mouse bed and close the imaging system door (<xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1C</xref>).</p><p>
+<bold>Critical:</bold> Place only one mouse into the mouse bed at a time. Individual micro-CT scanning is encouraged for animal safety and best imaging results. The mouse's nose must be fully inserted into the nose cone to ensure consistent anesthesia delivery through inhalation of isoflurane (Figure S2).</p><p>7. Adjust the scan settings in the control window as follows:</p><p>a. <bold>For bone marrow density (BMD):</bold> voltage: 90 kV; current: 88 µA; acquisition: 36; recon: 36; scan mode: standard, 18 s; display settings: off; X-ray filter: Cu 0.06+Al 0.5.</p><p>b. <bold>For body composition (other):</bold> voltage: 45 kV; current: 133 µA; acquisition: 36; recon: 36; scan mode: standard, 18 s; display settings: off; X-ray filter: none.</p><p>8. The field of view (FOV) will present the size of each micro-CT scan. A FOV of 36 mm was used, which requires stitching five separate scans together to capture the entire mouse.</p><p>
+<italic toggle="yes">Note: A larger FOV of 72 mm requires just three scan stitches to obtain the entire coverage. However, increasing from 36 to 72 mm for the FOV will move the camera further away from the mouse, subsequently reducing the resolution of the image. For larger rodents, such as rats or rabbits, a larger FOV may be the only plausible option.</italic>
+</p><p>9. Each of the four changeable filters can be used for optimal imaging of different structures:</p><p>a. No filter (open): low contrast samples at low voltages.</p><p>b. AI 0.5 mm: Low contrast samples.</p><p>c. AI 1.0 mm: Soft tissue (fat analysis).</p><p>d. AI 0.5 mm + Cu 0.06 mm: Standard CT scanning.</p><p>e. Cu 0.1 mm: Dense samples at high voltages.</p><p>10. Set the body orientation as desired. Click <bold>
+<italic toggle="yes">Initialize</italic>
+</bold> in the control window to initialize the stage control.</p><p>11. At the bottom of the control window, click <bold>
+<italic toggle="yes">Live Mode</italic>
+</bold> to turn on the live mode and use the stage controls on the front control panel to locate the animal in the center of the live window. Use the “rotation control” to ensure the animal is centered. Move the stage to position the nose of the mouse to the center of the FOV and record the stage location.</p><p>
+<italic toggle="yes">Note: This should be the starting point of the five stitches.</italic>
+</p><p>12. To set a stitching job, select <bold>
+<italic toggle="yes">Options</italic>
+</bold> &gt; <bold>
+<italic toggle="yes">Job Scan Settings</italic>
+</bold> and click <bold>
+<italic toggle="yes">New</italic>
+</bold> in the <italic toggle="yes">Job Menu</italic> (Figure S3). Press <bold>
+<italic toggle="yes">Add</italic>
+</bold> in the <italic toggle="yes">Row Menu</italic> to create a 5-Job scan. Enter the recorded number of the position of the nose as the starting point in the <italic toggle="yes">stage Z(mm)</italic>.</p><p>
+<bold>Pause Point:</bold> The Quantum GX2 can stitch up to five scans, which is sufficient to reconstruct the micro-CT image for the body of an adult mouse at a 36 mm FOV.</p><p>
+<bold>Pause Point:</bold> The range of the stage for stitching is 2–206, so it may be necessary to adjust the location of the nose cone to ensure that the starting and the end of the five stitches do not exceed this range.</p><p>13. Change the <italic toggle="yes">stitching</italic> to <bold>
+<italic toggle="yes">On</italic>
+</bold> and adjust the other parameters that are required for the scan. Click <bold>
+<italic toggle="yes">OK</italic>
+</bold>.</p><p>14. In <bold>
+<italic toggle="yes">Scan Acquisition</italic>
+</bold> settings, select the job just created and confirm the parameters are correct for the scan.</p><p>15. Start scanning by clicking the CT Scan button. When the machine status becomes <italic toggle="yes">stand by</italic>, remove the animal and ensure the <italic toggle="yes">X-RAY ON</italic> light is off.</p><p>
+<italic toggle="yes">Note: Scans are viewable from the coronal, sagittal, and axial viewpoints (<xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1D</xref>).</italic>
+</p><p>16. A phantom plot is required to calculate the standard curve for BMD quantification. A phantom has five different densities (0, 50, 200, 800, and 1,200 mg HA/cc) of hydroxyapatite (HA). Use the same setting for the phantom as for BMD scanning (Figure S4A).</p><p>
+<bold>B. Micro-CT phantom plot generation</bold>
+</p><p>1. To analyze 3D scans generated from the Quantum GX2 micro-CT, the associated software, the Quantum GX2 Database application, must be opened on the desktop. The user must consent to allow an existing database to connect. Once the data via USB is transferred to the computer, and upon enabling the existing database to connect to the Quantum GX2 micro-CT program, each scan becomes viewable.</p><p>
+<bold>Pause Point:</bold> If Analyze 14.0 is not installed on the same computer used to control Quantum GX2 scanning, the data must be transferred to a computer with Analyze 14.0 software. To transfer data, copy the entire database folder (the same directory as shown on the database location) or select <italic toggle="yes">Export File</italic> to export the selected sample.</p><p>2. In the Quantum GX2 Database application, select a given image file for loading, then double-click to open and enlarge the image. The unique file name should have a signature sample ID, sample name, date of birth, sex, and weight.</p><p>3. Open Analyze 14.0 on the Desktop and click <bold>
+<italic toggle="yes">New Workspace</italic>
+</bold>. Select the <bold>
+<italic toggle="yes">Input/Output</italic>
+</bold> function on the right-hand side. The user must manually search for the corresponding file opened previously in the Quantum GX2 Database based on the file ID number. The .<italic toggle="yes">VOX file</italic> should be chosen for file type. Then, select <bold>
+<italic toggle="yes">Calculate it</italic>
+</bold>.</p><p>4. Once the image appears in the workspace, click <bold>
+<italic toggle="yes">Load Volume</italic>
+</bold> in the bottom left-hand corner of the screen. Click <bold>
+<italic toggle="yes">Exit</italic>
+</bold>, then <bold>
+<italic toggle="yes">Rename</italic>
+</bold>. The file desired for analysis may then be designated according to the preferred naming system.</p><p>5. Select <bold>
+<italic toggle="yes">Transform</italic>
+</bold> on the right-hand side to localize the region of interest within the image. Choose <bold>
+<italic toggle="yes">Spatial Transforms</italic>
+</bold> and <bold>
+<italic toggle="yes">Subregion</italic>
+</bold> function within, then click <bold>
+<italic toggle="yes">Extract Sub-Volume</italic>
+</bold> to delete unnecessary regions and save computing power. Click <bold>
+<italic toggle="yes">Save Volume</italic>
+</bold> in the lower left-hand corner of the screen, which saves the transformed image in the new workspace.</p><p>6. Select <bold>
+<italic toggle="yes">Process</italic>
+</bold> from the right-hand side of the screen. Click <bold>
+<italic toggle="yes">Spatial Filter</italic>
+</bold> for the <italic toggle="yes">Process Type</italic>, <bold>
+<italic toggle="yes">Median</italic>
+</bold> for the <italic toggle="yes">Filter Type</italic>, <bold>
+<italic toggle="yes">Kernel Size 3</italic>
+</bold> for the <italic toggle="yes">Subtype</italic>, and <bold>
+<italic toggle="yes">Automatic</italic>
+</bold> for the <italic toggle="yes">Preview Type</italic>. Then, click <bold>
+<italic toggle="yes">Process Volume</italic>
+</bold> to generate a smoother image and reduce background noise, overall increasing image quality. Press <bold>
+<italic toggle="yes">Save Volume</italic>
+</bold>.</p><p>
+<bold>Pause Point:</bold> At this point, three images are saved in the workspace: the original image from the hard drive import, the image after applying the <italic toggle="yes">Transform</italic> function, and the image after applying the <italic toggle="yes">Process</italic> function.</p><p>7. Select <bold>
+<italic toggle="yes">Segment</italic>
+</bold> on the right-hand side. With the five standards in view, select <bold>
+<italic toggle="yes">Fabricate Shapes</italic>
+</bold> under <bold>
+<italic toggle="yes">Manual</italic>
+</bold>. For dimensions, click <bold>
+<italic toggle="yes">3-D</italic>
+</bold>, and for <italic toggle="yes">Shape</italic>, click <bold>
+<italic toggle="yes">Cylinder</italic>
+</bold> in the <italic toggle="yes">Object to Create</italic> tab, then check the box adjacent to <italic toggle="yes">Filled</italic>.</p><p>8. Adjust the radius of the cylinder within the standard to accurately sample the density of the standard. Adjustments of X, Y, and Z coordinates can be made through settings in the <italic toggle="yes">Location</italic> and <italic toggle="yes">Size</italic> section. When the desired size and location adjustments are complete, select <bold>
+<italic toggle="yes">Apply</italic>
+</bold> to fix the volume and placement of the cylinder.</p><p>9. Click <bold>
+<italic toggle="yes">Add Object</italic>
+</bold> and drag the new Object from the original segment to a new standard. Once in position, click <italic toggle="yes">Apply.</italic> Repeat this step so all standards contain a cylinder (Figure S4B, C).</p><p>10. Choose <bold>
+<italic toggle="yes">Save Object</italic>
+</bold> and open <bold>
+<italic toggle="yes">Measure</italic>
+</bold> on the right-hand side.</p><p>11. All five circular density samples should be visible within the confines of each standard. Select <bold>
+<italic toggle="yes">3D</italic>
+</bold> under the <italic toggle="yes">Sample Type</italic>, then choose <bold>
+<italic toggle="yes">Enabled Objects</italic>
+</bold>. Under the <italic toggle="yes">Stats to View</italic> section, click <bold>
+<italic toggle="yes">Size Intensity</italic>
+</bold> and pick <bold>
+<italic toggle="yes">Mean</italic>
+</bold>. Check the box for <italic toggle="yes">auto log stats</italic>, and under <italic toggle="yes">Sample Options</italic>, click <bold>
+<italic toggle="yes">Sample Enabled Objects</italic>
+</bold>. The mean value is generated from all five standards, visible below the scanned image.</p><p>12. Open a new Excel file spreadsheet and copy the computed values into the Excel file. Title one column <italic toggle="yes">Object Name</italic> and input the standard densities in this row. Create an adjacent column for <italic toggle="yes">Mean</italic> and then plot the standard curve with the standards on the X-axis and means on the Y-axis. Use Excel to calculate the equation of the standard curve. The trendline of this graph can be referenced when prompted for scaling parameters (“SigmaCT” = slope, “BetaCT” = offset) (Figure S4D).</p><p>
+<bold>C. Quantification of bone mineral density (BMD) of mouse femur</bold>
+</p><p>Upload the mouse data and start the software applications in the same manner as outlined in section B.</p><p>1. Select an image file for loading, then double-click to open and enlarge the image. All captured images should have a unique file name including a signature sample ID, sample name, date of birth, sex, and weight.</p><p>2. Open Analyze 14.0 on the Desktop and click <bold>
+<italic toggle="yes">New Workspace</italic>
+</bold>. Select <bold>
+<italic toggle="yes">Input</italic>
+</bold> on the right-hand side. Manually search for the identical sample ID number.</p><p>3. Find the corresponding file opened previously in the Quantum GX2 Database based on the file ID number. The .<italic toggle="yes">VOX file</italic> should be selected for file type. Then, click <bold>
+<italic toggle="yes">Calculate it</italic>
+</bold>.</p><p>4. Once the image appears in the designated workspace, click <bold>
+<italic toggle="yes">Load Volume</italic>
+</bold> in the bottom left-hand corner of the screen. Click <bold>
+<italic toggle="yes">Exit</italic>
+</bold>, then <bold>
+<italic toggle="yes">Rename</italic>
+</bold> (if desired).</p><p>5. Select <bold>
+<italic toggle="yes">Transform</italic>
+</bold> on the right-hand side to localize the region of interest within the image. Choose <bold>
+<italic toggle="yes">Spatial Transforms</italic>
+</bold> and the <bold>
+<italic toggle="yes">Subregion</italic>
+</bold> function within, then click <bold>
+<italic toggle="yes">Extract Sub-Volume</italic>
+</bold> to compute the new volume. Click <bold>
+<italic toggle="yes">Save Volume</italic>
+</bold> in the lower left-hand corner of the screen.</p><p>6. Select <bold>
+<italic toggle="yes">Process</italic>
+</bold> from the right-hand side of the screen. Click <bold>
+<italic toggle="yes">Spatial Filter</italic>
+</bold> for the “Process Type,” <bold>
+<italic toggle="yes">Median</italic>
+</bold> for the “Filter Type,” <bold>
+<italic toggle="yes">Kernel Size 3</italic>
+</bold> for the “Subtype,” and <bold>
+<italic toggle="yes">Automatic</italic>
+</bold> for the “Preview Type.” Then, click <bold>
+<italic toggle="yes">Process Volume</italic>
+</bold>. Press <bold>
+<italic toggle="yes">Save Volume</italic>
+</bold>.</p><p>7. Select <bold>
+<italic toggle="yes">Segment</italic>
+</bold> on the right-hand side. Under the <italic toggle="yes">Semi-Automatic</italic> tab, click <bold>
+<italic toggle="yes">Threshold Volume</italic>
+</bold> and adjust the threshold to find the best range for the object density imaged. Once the optimal threshold range is attained, choose <bold>
+<italic toggle="yes">Threshold Object</italic>
+</bold> to isolate the bones (<xref rid="BioProtoc-15-4-5207-g002" ref-type="fig">Figure 2A</xref>).</p><fig position="float" id="BioProtoc-15-4-5207-g002" orientation="portrait"><label>Figure 2.</label><caption><title>Segmentation of the mouse bone (Femur) and bone mineral density (BMD) quantification.</title><p>A) Image shows the threshold to segment the mouse skeleton, B) Image showing that the manual trace tool was used to select the femur (green), C) Image shows the removal of other bones with only the femur present, D) This image shows the use BMA tool to segment cortical and trabecular bone E) This image shows the window for calculating and analyzing the density of the femur.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="BioProtoc-15-4-5207-g002.jpg"/></fig><p>8. Select <bold>
+<italic toggle="yes">Manual</italic>
+</bold>, which enables manual tracing of the desired Object (bone). Press <bold>
+<italic toggle="yes">Add Object</italic>
+</bold> (green), and then trace around excess structures outside the object of interest with the cursor to isolate the precise structure (<xref rid="BioProtoc-15-4-5207-g002" ref-type="fig">Figure 2B</xref>). Objects may be hidden by unchecking the corresponding box. New objects can be added as many times as necessary to refine the specificity of the structure and reduce spatial background noise. Once background noise is traced, these features may be deleted by deleting the “Object” with which they are affiliated. The desired object should be the only “Object” (all others deleted) (<xref rid="BioProtoc-15-4-5207-g002" ref-type="fig">Figure 2C</xref>) at the end of this process, at which point one must click <bold>
+<italic toggle="yes">File</italic>
+</bold> → <bold>
+<italic toggle="yes">Save Object Map</italic>
+</bold> → <bold>
+<italic toggle="yes">Current Directory</italic>
+</bold>.</p><p>9. Click <bold>
+<italic toggle="yes">BMA</italic>
+</bold> on the right-hand side of the main panel. Select the Excel file in the folder to open the pre-generated phantom plot. Input the SigmaCT (slope) and BetaCT (offset) into the BMD scaling parameters (<xref rid="BioProtoc-15-4-5207-g002" ref-type="fig">Figure 2D</xref>).</p><p>10. Choose <bold>
+<italic toggle="yes">Initial Segmentation</italic>
+</bold>, click <bold>
+<italic toggle="yes">Initial Object Map</italic>
+</bold>, and find the saved file of the desired object. Select this file under the Bone Object drop-down menu. <italic toggle="yes">Note: This should be the only object available for input since it is the only one saved.</italic> Click on <bold>
+<italic toggle="yes">Segment Cortex</italic>
+</bold> and <bold>
+<italic toggle="yes">Segment Trabeculae</italic>
+</bold>. Select <bold>
+<italic toggle="yes">Measure Bone</italic>
+</bold>, utilizing all default settings for this action (<xref rid="BioProtoc-15-4-5207-g002" ref-type="fig">Figure 2E</xref>).</p><p>11. With the cursor, click and drag the image planes along the longitudinal axis of the body to grossly assess the anatomical orientation of the cortex and trabeculae by ensuring the corresponding colors for each respective bone type overlap with the correct area on the image consistently. If the color borders are inaccurate, the <italic toggle="yes">Cortex Threshold</italic> or <italic toggle="yes">Trabecular Threshold</italic> may be adjusted until proper boundaries are accomplished (<xref rid="BioProtoc-15-4-5207-g002" ref-type="fig">Figure 2E</xref>).</p><p>12. Check the <italic toggle="yes">All Measures</italic> tab, which shows numerical values for all structural metrics. These measurements are automatically saved in the .CSV file within the Current Directory (<xref rid="BioProtoc-15-4-5207-g002" ref-type="fig">Figure 2E</xref>).</p><p>
+<bold>D. Micro-CT quantification of lean tissue (muscle) and adipose tissue</bold>
+</p><p>1. Upload the mouse data and start the software applications in the same manner as outlined in section B.</p><p>2. Select an image file for loading, then double-click to open and enlarge the image. All captured images should have a unique file name including a signature sample ID, sample name, date of birth, sex, and weight.</p><p>3. Open Analyze 14.0 on the Desktop and click <bold>
+<italic toggle="yes">New Workspace</italic>
+</bold>. Select <bold>
+<italic toggle="yes">Input</italic>
+</bold> on the right-hand side. Manually search for the identical sample ID number.</p><p>4. Find the corresponding file opened previously in the Quantum GX2 Database based on the file ID number. The .<italic toggle="yes">VOX file</italic> should be selected for file type. Then, click <bold>
+<italic toggle="yes">Calculate it</italic>
+</bold>.</p><p>5. Once the image appears in the designated workspace, click <bold>
+<italic toggle="yes">Load Volume</italic>
+</bold> in the bottom left-hand corner of the screen. Click <bold>
+<italic toggle="yes">Exit</italic>
+</bold>, then <bold>
+<italic toggle="yes">Rename</italic>
+</bold> (if desired).</p><p>6. Select <bold>
+<italic toggle="yes">Transform</italic>
+</bold> on the right-hand side to localize the region of interest within the image. Choose <bold>
+<italic toggle="yes">Spatial Transforms</italic>
+</bold> and the <bold>
+<italic toggle="yes">Subregion</italic>
+</bold> function within, then click <bold>
+<italic toggle="yes">Extract Sub-Volume</italic>
+</bold> to compute the new volume. Click <bold>
+<italic toggle="yes">Save Volume</italic>
+</bold> in the lower left-hand corner of the screen.</p><p>7. Select <bold>
+<italic toggle="yes">Process</italic>
+</bold> from the right-hand side of the screen. Click <bold>
+<italic toggle="yes">Spatial Filter</italic>
+</bold> for the <italic toggle="yes">Process Type</italic>, <bold>
+<italic toggle="yes">Median</italic>
+</bold> for the <italic toggle="yes">Filter Type</italic>, <bold>
+<italic toggle="yes">Kernel Size 3</italic>
+</bold> for the <italic toggle="yes">Subtype</italic>, and <bold>
+<italic toggle="yes">Automatic</italic>
+</bold> for the <italic toggle="yes">Preview Type</italic>. Then, click <bold>
+<italic toggle="yes">Process Volume</italic>
+</bold>. Press <bold>
+<italic toggle="yes">Save Volume</italic>
+</bold>.</p><p>8. Select <bold>
+<italic toggle="yes">Segment</italic>
+</bold>. Under the <italic toggle="yes">Semi-Automatic</italic> tab, click <bold>
+<italic toggle="yes">Threshold Volume</italic>
+</bold>. Adjust the upper and lower limits of the Threshold range until only the well-circumscribed hypodensity regions of the 3D scans are within range (depicted in red).</p><p>
+<italic toggle="yes">Note: This may be verified further by literature discussing appropriate numerical HU values for adipose density.</italic>
+</p><p>9. Move the cursor along one of the scans to shift the positional viewpoint within the axial, coronal, and sagittal sections. Ensure that the <italic toggle="yes">Threshold Rendering</italic> function is checked. Then, click <bold>
+<italic toggle="yes">Threshold Object</italic>
+</bold> (<xref rid="BioProtoc-15-4-5207-g003" ref-type="fig">Figure 3A</xref>).</p><p>10. Noise can be removed by choosing <bold>
+<italic toggle="yes">Add Object</italic>
+</bold>. Click the <italic toggle="yes">Manual</italic> tab, select <bold>
+<italic toggle="yes">Manual Trace</italic>
+</bold>, and trace along the scan to encircle background noise within the new object domains to delineate between the body of the mouse and external structures of similar density detected by the software.</p><p>a. <bold>For example:</bold> The lung has a similar HU mean as adipose tissue. To exclude the lung from adipose, from semi-automatic, select <bold>
+<italic toggle="yes">Object Extractor</italic>
+</bold>, and <bold>
+<italic toggle="yes">Select Seed</italic>
+</bold> in the lung region. Adjust the threshold so that the whole lung is automatically selected by the Object Extractor. Select <bold>
+<italic toggle="yes">Extract Object</italic>
+</bold> (<xref rid="BioProtoc-15-4-5207-g003" ref-type="fig">Figure 3B</xref>) to assign the lung to the new Object.</p><p>b. To exclude the mouse holder that has a similar HU mean as adipose tissue, go to <italic toggle="yes">Manual</italic>, select <bold>
+<italic toggle="yes">Polygon Trace</italic>
+</bold> or <bold>
+<italic toggle="yes">Manual Trace</italic>
+</bold>, and manually select the mouse holder to a new object (<xref rid="BioProtoc-15-4-5207-g003" ref-type="fig">Figure 3C</xref>). Once all noise is included in the new <italic toggle="yes">Object</italic>, delete this <italic toggle="yes">Object</italic> by clicking the corresponding box and trashcan icon [<xref rid="BioProtoc-15-4-5207-g003" ref-type="fig">Figure 3C</xref> (see the inset in the white box)]. Re-title the original Object as <italic toggle="yes">Fat</italic>.</p><fig position="float" id="BioProtoc-15-4-5207-g003" orientation="portrait"><label>Figure 3.</label><caption><title>Adipose tissue segmentation and quantification.</title><p>The 3D volume rendering screenshot shows that the object extractor and threshold volume tools were used to separate fat mass. A–C. Process of separating adipose: A) threshold to segment adipose tissue; B) use <bold>
+<italic toggle="yes">Object Extractor</italic>
+</bold> to exclude the lungs; C) use <bold>
+<italic toggle="yes">Manual Trace</italic>
+</bold> tool to remove the sample bed.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="BioProtoc-15-4-5207-g003.jpg"/></fig><p>11. To isolate the lean tissue, click <bold>
+<italic toggle="yes">Add Object</italic>
+</bold> and adjust <bold>
+<italic toggle="yes">Threshold</italic>
+</bold> within <bold>
+<italic toggle="yes">Threshold Volume</italic>
+</bold> under the <italic toggle="yes">Semi-Automatic</italic> tab so that the filled regions within the threshold range show color complementary to the fat and exclude bone. Check and uncheck the objects for <italic toggle="yes">fat</italic> and <italic toggle="yes">lean tissue</italic> to assess that the borders of each threshold range are non-overlapping and identifiable. Move the cursor along one of the scans to shift the positional viewpoint within the axial, coronal, and sagittal sections. Ensure that the <italic toggle="yes">Threshold Rendering</italic> function is checked. Then, click <bold>
+<italic toggle="yes">Threshold Object</italic>
+</bold> (<xref rid="BioProtoc-15-4-5207-g004" ref-type="fig">Figure 4A</xref>).</p><fig position="float" id="BioProtoc-15-4-5207-g004" orientation="portrait"><label>Figure 4.</label><caption><title>Lean tissue segmentation and quantification.</title><p>The object extractor and threshold volume tools can be used to separate lean mass, as seen in the 3D volume rendering screenshot. A–C: Process of separating lean tissue: A) threshold to segment lean tissue; B) use Object Extractor to exclude brain; C) use Manual Trace to remove the sample bed; the image in the inset shows the merged 3D rendering of lean and adipose tissue. D) Coronal view of the mouse micro-CT image, segmented adipose tissue, segmented lean tissue, and all three images merged. E) Screenshot of measure tool to quantify the adipose and lean mass volume.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="BioProtoc-15-4-5207-g004.jpg"/></fig><p>12. Noise can be removed by choosing <bold>
+<italic toggle="yes">Add Object</italic>
+</bold>. Click the <italic toggle="yes">Manual</italic> tab, select <bold>
+<italic toggle="yes">Manual Trace</italic>
+</bold>, and trace along the scan to encircle background noise within the new object domains to delineate between the body of the mouse and surrounding pieces of equipment, as well as external structures of similar density detected by the software.</p><p>a. <bold>For example:</bold> The brain has a similar HU mean as lean tissue. To exclude the brain from lean tissue, from <italic toggle="yes">semi-automatic</italic>, select <bold>
+<italic toggle="yes">Object Extractor</italic>
+</bold> and <bold>
+<italic toggle="yes">select seed</italic>
+</bold> in the brain region. Adjust the <italic toggle="yes">Threshold</italic> so that the <italic toggle="yes">Object Extractor</italic> automatically selects the whole brain. Select <bold>
+<italic toggle="yes">Extract Object</italic>
+</bold> (<xref rid="BioProtoc-15-4-5207-g004" ref-type="fig">Figure 4B</xref>) so the brain can be assigned to the new Object.</p><p>b. To exclude the mouse holder (which has a HU mean similar to lean tissue), from <italic toggle="yes">Manual</italic>, select <bold>
+<italic toggle="yes">Polygon Trace</italic>
+</bold> or <bold>
+<italic toggle="yes">Manual Trace</italic>
+</bold>, and manually assign the mouse holder to a new object (<xref rid="BioProtoc-15-4-5207-g004" ref-type="fig">Figure 4C</xref>). Once all noise is included in the new Object, delete this Object by clicking the corresponding box and trashcan icon [<xref rid="BioProtoc-15-4-5207-g004" ref-type="fig">Figure 4C</xref> (see the inset in the white box)]. Re-title the original Object as <italic toggle="yes">lean tissue</italic>. The merged view of segmented lean and adipose tissue is shown in <xref rid="BioProtoc-15-4-5207-g004" ref-type="fig">Figure 4D</xref>.</p><p>13. Click <bold>
+<italic toggle="yes">File</italic>
+</bold> → <bold>
+<italic toggle="yes">Save Object Map</italic>
+</bold> to save the object map to the current directory. Click the X in the upper right corner to exit.</p><p>14. Click <bold>
+<italic toggle="yes">Measure</italic>
+</bold> on the right-hand side.</p><p>15. Click <bold>
+<italic toggle="yes">File</italic>
+</bold> → <bold>
+<italic toggle="yes">Load Object Map</italic>
+</bold> → <bold>
+<italic toggle="yes">Current Directory</italic>
+</bold> → select the file just saved and click to open.</p><p>16. Under <italic toggle="yes">3-D</italic> tab, click <bold>
+<italic toggle="yes">Enabled Objects</italic>
+</bold>; under <bold>
+<italic toggle="yes">Stats to View</italic>
+</bold>, click the <italic toggle="yes">size intensity</italic> tab, and select <bold>
+<italic toggle="yes">Volume</italic>
+</bold> without changing other default settings.</p><p>17. Click <bold>
+<italic toggle="yes">Auto Log Stats</italic>
+</bold> and select <bold>
+<italic toggle="yes">Sample Enabled Objects</italic>
+</bold> in the <italic toggle="yes">Sample Options</italic> section (<xref rid="BioProtoc-15-4-5207-g004" ref-type="fig">Figure 4E</xref>).</p><p>18. Copy the volumes generated for both <italic toggle="yes">fat</italic> and <italic toggle="yes">lean tissue</italic> underneath the scanned image and paste them into an Excel sheet for further calculation to obtain the percentage of body fat and lean tissue (see Data analysis).</p><p>
+<bold>E. Micro-CT scanning of the lungs with respiratory gating</bold>
+</p><p>1. Anesthetize the mouse with 2.5% isoflurane in the RAS-4 rodent anesthesia system induction chamber.</p><p>
+<italic toggle="yes">Note: It takes 2 min to fully anesthetize the mice.</italic>
+</p><p>
+<bold>Critical:</bold> For successful respiratory gating, the time between breaths should be &gt;1,000 ms. Thus, observe the mouse during the anesthesia and ensure that the breathing is stable and not too fast.</p><p>2. Place anesthetized mice on the mouse bed and close the imaging system door. Adjust the scan settings in the control window as follows: 90 kV; current: 88 µA; acquisition: 36; recon: 36; scan mode: gating 4 min; display settings: off; X-ray filter: Cu 0.06 + Al 0.5.</p><p>
+<italic toggle="yes">Note: No stitching is necessary in this section because one scan at FOV 36 mm is sufficient to capture the chest area of an adult mouse (<xref rid="BioProtoc-15-4-5207-g005" ref-type="fig">Figure 5A</xref>).</italic>
+</p><fig position="float" id="BioProtoc-15-4-5207-g005" orientation="portrait"><label>Figure 5.</label><caption><title>Micro-CT acquisition of mouse lungs.</title><p>A, B. Video image pop-up screen of the mouse in the Quantum GX2 scanner, with the blue square indicating the FOV for the scan and the green rectangle (dotted) placed partially over the diaphragm for respiratory gating. A) Respiratory interval of less than 1,000 ms, which is incorrect. B) Corrected respiratory interval of more than 1,000 ms. C) Image shows the axial view of the mouse lungs.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="BioProtoc-15-4-5207-g005.jpg"/></fig><p>3. On the control panel, select the <italic toggle="yes">high speed</italic> scan mode and check the <italic toggle="yes">respiratory gating</italic> icon in the <italic toggle="yes">gating technique</italic> panel.</p><p>4. Start <bold>
+<italic toggle="yes">Live Mode</italic>
+</bold> and move and resize the green ROI rectangle so that the moving diaphragm is covered by the ROI rectangle. Wait until the breathing is stable and the time between breaths is longer than 1,000 ms (<xref rid="BioProtoc-15-4-5207-g005" ref-type="fig">Figure 5B</xref>, C).</p><p>5. Start CT scan. After the scanning, click <bold>
+<italic toggle="yes">Reconstruct</italic>
+</bold> to reconstruct the images of the inspiratory and expiratory phases.</p><p>
+<bold>F. Micro-CT quantification of lung volume and fibrotic structures</bold>
+</p><p>1. In the Quantum GX2 database application, select the image file to be loaded, then double-click to open and enlarge the image. All captured images should have a signature sample ID, sample name, date of birth, gender, and weight.</p><p>2. Launch the Analyze 14.0 application on the desktop and click <bold>
+<italic toggle="yes">Create New Workspace</italic>
+</bold>. Select the <italic toggle="yes">input</italic> function on the right. Users must manually search for the same sample ID number.</p><p>3. Find the corresponding file opened before in the Quantum GX2 Database. Then click the .VOX file to ascertain file type and select the <bold>
+<italic toggle="yes">Calculate It</italic>
+</bold> button.</p><p>4. After the image appears in the specified workspace, click <bold>
+<italic toggle="yes">Load Volume</italic>
+</bold> in the lower-left corner of the screen. Click <bold>
+<italic toggle="yes">Exit</italic>
+</bold>, then click <bold>
+<italic toggle="yes">Rename</italic>
+</bold>. Then, specify the file that needs analysis according to the preferred naming system.</p><p>5. To crop the image, use the <bold>
+<italic toggle="yes">Transform</italic>
+</bold> tab and click <bold>
+<italic toggle="yes">Subregion</italic>
+</bold>, then click on <bold>
+<italic toggle="yes">Extract Subvolume</italic>
+</bold> to remove the excess parts and retain only the section with the lung image. Afterward, click <bold>
+<italic toggle="yes">Save Volume</italic>
+</bold>, rename the file, and add “_transform” to it.</p><p>6. Select <bold>
+<italic toggle="yes">Segment</italic>
+</bold> and click the <italic toggle="yes">Semi-Automatic</italic> tab. Select <bold>
+<italic toggle="yes">Object Extractor</italic>
+</bold> and <bold>
+<italic toggle="yes">select seed</italic>
+</bold> in the lung region. Adjust the <italic toggle="yes">Threshold</italic> so that the <italic toggle="yes">Object Extractor</italic> automatically selects the whole lung. Simultaneously, one can manually input threshold values to adjust the selection range here, using HU values from -1294.1 to 0 (13) as the criteria for delineating the lung area (depicted in red) (<xref rid="BioProtoc-15-4-5207-g006" ref-type="fig">Figure 6A</xref>).</p><fig position="float" id="BioProtoc-15-4-5207-g006" orientation="portrait"><label>Figure 6.</label><caption><title>Highlighting and thresholding of lung volume and fibrotic structures using Analyze software.</title><p>The red areas represent non-aerated regions, indicative of fibrotic tissue. The blue areas represent normally aerated regions, reflecting healthy, well-ventilated lungs. The yellow areas correspond to hypo-aerated regions, reflecting moderate fibrosis. A) This screenshot shows how to draw ROI around the fibrosis area using the <italic toggle="yes">object extractor</italic> tool and adjust the binary threshold values to display the lung with a red outline. B, C) Use the <italic toggle="yes">Threshold Volume</italic> tool to segment normal breath and high-density areas. The blue region is the high-aerated lung area, and the red region is the high-density area in the lungs. D) Image shows that the <italic toggle="yes">Measure</italic> tool was used to calculate the volume of each object.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="BioProtoc-15-4-5207-g006.jpg"/></fig><p>7. Lock the original image, select the <italic toggle="yes">semi-automatic</italic> button, use the <bold>
+<italic toggle="yes">Threshold Volume</italic>
+</bold> key to set the threshold from -1294.1 to -435, and frame the normal breathing image (depicted in blue) (<xref rid="BioProtoc-15-4-5207-g006" ref-type="fig">Figure 6B</xref>).</p><p>8. Continue to select the <italic toggle="yes">semi-automatic</italic> button, use the <bold>
+<italic toggle="yes">Threshold Volume</italic>
+</bold> key to set the Threshold from -121 to 0, and frame the high-density area (depicted in red) (<xref rid="BioProtoc-15-4-5207-g006" ref-type="fig">Figure 6C</xref>).</p><p>9. Click <bold>
+<italic toggle="yes">File</italic>
+</bold> → <bold>
+<italic toggle="yes">Save Object Map</italic>
+</bold> to save the object map to the current directory. Click the X in the upper right corner to exit.</p><p>10. Click <bold>
+<italic toggle="yes">Measure</italic>
+</bold> on the right-hand side.</p><p>11. Click <bold>
+<italic toggle="yes">File</italic>
+</bold> → <bold>
+<italic toggle="yes">Load Object Map</italic>
+</bold> → <bold>
+<italic toggle="yes">Current Directory</italic>
+</bold> → select the file just saved and click to open.</p><p>12. Under the <italic toggle="yes">3-D</italic> tab, click <bold>
+<italic toggle="yes">Enabled Objects</italic>
+</bold>. Under the <bold>
+<italic toggle="yes">Stats to View</italic>
+</bold>, click <italic toggle="yes">Size Intensity</italic>, and select options such as <bold>
+<italic toggle="yes">Volume, Histogram, Mean Sum Entropy Number of Voxels, Std. Dev</italic>
+</bold>, etc.</p><p>13. Click <bold>
+<italic toggle="yes">Auto Log Stats</italic>
+</bold> and select <bold>Sample Enabled Objects</bold> in the sample options section (<xref rid="BioProtoc-15-4-5207-g006" ref-type="fig">Figure 6D</xref>).</p><p>14. Segmentation validation: Compare the segmented areas (non-aerated, aerated, and moderately aerated regions) with the original micro-CT images (<xref rid="BioProtoc-15-4-5207-g007" ref-type="fig">Figure 7A</xref>–F).</p><p>
+<bold>Pause point:</bold> Focus on the regions highlighted by the red circles to confirm that the segmented areas correctly represent the corresponding severity of lung fibrosis.</p><fig position="float" id="BioProtoc-15-4-5207-g007" orientation="portrait"><label>Figure 7.</label><caption><title>Micro-CT images of normal and fibrotic mice lungs.</title><p>A–C) Axial, coronal, and sagittal lung CT images of the wild-type control C57BL/6 mouse. D–F) Axial, coronal, and sagittal lung CT images after bleomycin-induced lung fibrosis at day 21. The red circle shows the high-density area of the bleomycin-induced fibrosis mouse lungs and the normal lung area in the control mouse lungs.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="BioProtoc-15-4-5207-g007.jpg"/></fig></sec><sec id="s7"><title>Data analysis</title><p>Copy the volume generated for both “fat” and “lean tissue” underneath the scanned image and paste this into an Excel sheet (convert from mm<sup>3</sup> to cm<sup>3</sup>). Manually input the known densities for each (0.95 g/cm<sup>3</sup> for soft tissue and 1.06 g/cm<sup>3</sup> for adipose and lean tissue) [11]. Multiply the volume by density to obtain the mass (g). Then, divide the mass obtained for these values by the body weight to obtain the percentage of body fat and lean tissue.</p><p>Data analysis was performed in GraphPad Prism to calculate statistical significance (n = 5–7 biological replicates) using the Student’s unpaired t-test [12]. A p-value of &lt;0.05 was considered statistically significant. Familiarity with GraphPad Prism is necessary.</p></sec><sec id="s8"><title>Validation of protocol</title><p>BMD calculation validation: The BMD values obtained from the calculation of the micro-CT scan of the femur cortical bone of WT mice were between 749.4 and 828.47 HA/cc. These values align with the range previously reported by Mohan et al. (845.4 ± 60.2 HA/cc) [13]. The consistency with previously reported data supports the accuracy of our BMD measurements.</p><p>Fat and lean tissue calculation validation: To validate the accuracy of fat and lean tissue quantification, we scanned a WT male mouse using micro-CT and dissected out the abdominal fat and muscle from the hind limbs. The dissected fat and lean tissue were weighed, and the measured weights (fat: 1.169 g, lean: 1.385 g) matched the values calculated from the micro-CT scan (fat: 1.349 g, lean: 1.547 g). The challenges of perfect dissection can explain the differences. This result supports the accuracy of the micro-CT quantification for fat and lean tissue.</p><p>Fibrosis scan validation: To validate the accuracy of fibrosis quantification, we performed a micro-CT scan and H&amp;E staining on the same lung tissue samples. The micro-CT results showed that mice with lower aerated lung volumes had higher levels of fibrosis, as evidenced by the increased fibrotic areas in the corresponding H&amp;E staining. This correlation between micro-CT and histological analysis supports the accuracy of lung fibrosis measurement using micro-CT.</p></sec><sec id="s9"><title>General notes and troubleshooting</title><p>
+<bold>General notes</bold>
+</p><p>1. <bold>Experimental design.</bold> The Quantum GX2 micro-computed tomography scanner, which is commercially available, is used in this protocol to optimize image acquisition parameters for low radiation dose, high-resolution, and high-throughput computed tomography imaging. This methods paper presents a simplified workflow for acquiring and analyzing micro-CT images for mouse body composition, BMD, and mouse lungs by comparing normal and fibrotic lungs. It takes 4–8 min to acquire an image of each animal and 10–30 min to analyze the data. Researchers should be able to use this approach in various mouse models for research purposes if they have a basic understanding of medical imaging, animal care, and software analysis.</p><p>2. <bold>Imaging workflow.</bold> The Quantum GX2 is an advanced micro-CT imaging system (<xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1A</xref>) designed for pre-clinical research across a wide range of applications. The RAS-4 Rodent anesthesia system (<xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1B</xref>) connected to the Quantum GX2, where the animal can be kept anesthetized for several minutes (<xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1C</xref>), is ideal for non-invasive, longitudinal studies, producing high-quality images (<xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1D</xref>). The instrument has four fields of view ranging from 18 to 86 mm, with the highest resolutions of 2.3 µm voxels. Quantum GX2 is ideal for imaging pre-clinical animals, including mice, rats, rabbits, zebrafish, and ex vivo samples. This system is also capable of two-phase retrospective respiratory and cardiac gating.</p><p>3. <bold>Radiation dosing.</bold> The X-ray radiation dose is an important consideration in micro-CT application. Although micro-CT provides high-resolution images in a non-invasive manner that can be valuable in longitudinal studies, X-ray exposure can potentially affect both DNA repair and the cell cycle in mice [14]. Depending on the strain, the LD50/30 for mice is approximately 5–7.6 Gy [15]. However, the radiation dosage for a respiratory-gated lung scan is about 926 mGy. Thus, to avoid damage caused by radiation, the mouse should not be scanned too frequently. For reference, the mice utilized in this study were safe at a rate of two scans per month. Parameters in micro-CT scanning influencing X-ray dose include the exposure time, type of filters, voltage, and current. In longitudinal studies, researchers should optimize these parameters to minimize the radiation dose while obtaining high-quality images [14,15].</p><p>
+<bold>Troubleshooting</bold>
+</p><p>Problem 1: The prescribed stepwise quantification does not account for differences in adipose tissue.</p><p>Possible Cause: Similar density values between subcutaneous and visceral fat cause a lack of distinction between these tissue subtypes after micro-CT scanning acquisition.</p><p>Solution: The only method by which such tissue types may be separated would be through manual segmentation based on known anatomical location. <xref rid="BioProtoc-15-4-5207-g001" ref-type="fig">Figure 1</xref> in the work by Judex et al. demonstrates manual segmentation for this purpose [14], which is not discussed in this article.</p><p>
+<bold>Other limitations:</bold>
+</p><p>1. The high cost of micro-CT can limit accessibility, especially for smaller research labs or institutions with limited funding.</p><p>2. The learning curve associated with micro-CT technology may lead to inconsistencies in data quality and interpretation, particularly among less experienced users.</p><p>3. Without adequate training resources, researchers may struggle to fully utilize micro-CT technology's capabilities or produce reliable, reproducible results. This could lead to discrepancies in data quality.</p><p>4. Animal handling and animal positioning could impact the image quality and measurements.</p></sec><sec sec-type="supplementary-material" id="s10"><title>Supplementary information</title><p>The following supporting information can be downloaded <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://cdn.bio-protocol.org/journal/static/2405585_Supplementary%20information.docx?v=3456" ext-link-type="uri">here</ext-link>:</p><p>1. Figure S1. Gain and HU calibration</p><p>2. Figure S2. Nose cone setup for isoflurane anesthesia delivery using the RAS-4 system</p><p>3. Figure S3. This screenshot image shows the settings for creating a new Job scan with five stitches</p><p>4. Figure S4. BMD calibration using phantom</p></sec></body><back><ack><p>We thank representatives and manufacturers from PerkinElmer who responded to our requests for information on their micro-CT GX2 scanner and previous works as outlined in the Validation of protocol from which our methods were derived. This research work was supported by the Lavin-Bernick grant and Tulane Center of Excellence: Sex-based Biology and Medicine (TCESBM) pilot award to M.A.</p></ack><fn-group><title>Citation</title><fn id="fn3" fn-type="other" specific-use="citation-format"><p>Readers should cite both the Bio-protocol article and the original research article where this protocol was used.</p></fn></fn-group><fn-group><title>Q&amp;A</title><fn id="fn4" fn-type="other" specific-use="citation-format"><p>Post your question about this protocol in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://bio-protocol.org/e5207?source=PMC#bbs" ext-link-type="uri">Q&amp;A</ext-link> and get help from the authors of the protocol and some of its users.</p></fn></fn-group><notes notes-type="COI-statement"><title>Competing interests</title><p>All authors of the present manuscript have no competing interests concerning the research conducted and presented in this manuscript, including but not limited to paid employment or consultancy, stock ownership, patent applications, personal relationships with individuals involved in the submission or evaluation of a protocol, and receipt of funding or free products from the vendors of the reagents/equipment or other advertisers.</p></notes><notes><title>Ethical considerations</title><p>The animals used for micro-CT analysis have been approved by the Institutional Animal Care and Use Committee Office (IACUC), Tulane University School of Medicine.</p></notes><ref-list><title>References</title><ref id="r1"><label>1</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Mukherjee</surname><given-names>P.</given-names></name>, <name name-style="western"><surname>Roy</surname><given-names>S.</given-names></name>, <name name-style="western"><surname>Ghosh</surname><given-names>D.</given-names></name> and <name name-style="western"><surname>Nandi</surname><given-names>S. K.</given-names></name>
+</person-group>(<year>2022</year>). <article-title>Role of animal models in biomedical research: a review</article-title>. <source>Lab Anim Res</source>. <volume>38</volume>(<issue>1</issue>): <fpage>18</fpage>.<pub-id pub-id-type="pmid">35778730</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s42826-022-00128-1</pub-id><pub-id pub-id-type="pmcid">PMC9247923</pub-id></mixed-citation></ref><ref id="r2"><label>2</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Tang</surname><given-names>Z. R.</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>R.</given-names></name>, <name name-style="western"><surname>Lian</surname><given-names>Z. X.</given-names></name>, <name name-style="western"><surname>Deng</surname><given-names>S. L.</given-names></name> and <name name-style="western"><surname>Yu</surname><given-names>K.</given-names></name>
+</person-group>(<year>2019</year>). <article-title>Estrogen-Receptor Expression and Function in Female Reproductive Disease</article-title>. <source>Cells</source>. <volume>8</volume>(<issue>10</issue>): <fpage>1123</fpage>.<pub-id pub-id-type="pmid">31546660</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/cells8101123</pub-id><pub-id pub-id-type="pmcid">PMC6830311</pub-id></mixed-citation></ref><ref id="r3"><label>3</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Nasrazadani</surname><given-names>A.</given-names></name>, <name name-style="western"><surname>Thomas</surname><given-names>R. A.</given-names></name>, <name name-style="western"><surname>Oesterreich</surname><given-names>S.</given-names></name> and <name name-style="western"><surname>Lee</surname><given-names>A. V.</given-names></name>
+</person-group>(<year>2018</year>). <article-title>Precision Medicine in Hormone Receptor-Positive Breast Cancer</article-title>. <source>Front Oncol</source>. <volume>8</volume>: <elocation-id>e00144</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fonc.2018.00144</pub-id><pub-id pub-id-type="pmcid">PMC5945817</pub-id><pub-id pub-id-type="pmid">29780747</pub-id></mixed-citation></ref><ref id="r4"><label>4</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Fang</surname><given-names>K.</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>Q.</given-names></name>, <name name-style="western"><surname>Wei</surname><given-names>Y.</given-names></name>, <name name-style="western"><surname>Zhou</surname><given-names>C.</given-names></name>, <name name-style="western"><surname>Guo</surname><given-names>W.</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>J.</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>R.</given-names></name>, <name name-style="western"><surname>Ying</surname><given-names>W.</given-names></name>, <name name-style="western"><surname>Yu</surname><given-names>L.</given-names></name>, <name name-style="western"><surname>Zi</surname><given-names>J.</given-names></name>, <etal/>
+</person-group>.(<year>2021</year>). <article-title>Prediction and Validation of Mouse Meiosis-Essential Genes Based on Spermatogenesis Proteome Dynamics</article-title>. <source>Mol Cell Proteomics</source>. <volume>20</volume>: <fpage>100014</fpage>.<pub-id pub-id-type="pmid">33257503</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1074/mcp.RA120.002081</pub-id><pub-id pub-id-type="pmcid">PMC7950215</pub-id></mixed-citation></ref><ref id="r5"><label>5</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>da Silva-Buttkus</surname><given-names>P.</given-names></name>, <name name-style="western"><surname>Spielmann</surname><given-names>N.</given-names></name>, <name name-style="western"><surname>Klein-Rodewald</surname><given-names>T.</given-names></name>, <name name-style="western"><surname>Schütt</surname><given-names>C.</given-names></name>, <name name-style="western"><surname>Aguilar-Pimentel</surname><given-names>A.</given-names></name>, <name name-style="western"><surname>Amarie</surname><given-names>O. V.</given-names></name>, <name name-style="western"><surname>Becker</surname><given-names>L.</given-names></name>, <name name-style="western"><surname>Calzada-Wack</surname><given-names>J.</given-names></name>, <name name-style="western"><surname>Garrett</surname><given-names>L.</given-names></name>, <name name-style="western"><surname>Gerlini</surname><given-names>R.</given-names></name>, <etal/>
+</person-group>.(<year>2023</year>). <article-title>Knockout mouse models as a resource for the study of rare diseases</article-title>. <source>Mamm Genome</source>. <volume>34</volume>(<issue>2</issue>): <fpage>244</fpage>-<lpage>261</lpage>.<pub-id pub-id-type="pmid">37160609</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00335-023-09986-z</pub-id><pub-id pub-id-type="pmcid">PMC10290595</pub-id></mixed-citation></ref><ref id="r6"><label>6</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zaw Thin</surname><given-names>M.</given-names></name>, <name name-style="western"><surname>Moore</surname><given-names>C.</given-names></name>, <name name-style="western"><surname>Snoeks</surname><given-names>T.</given-names></name>, <name name-style="western"><surname>Kalber</surname><given-names>T.</given-names></name>, <name name-style="western"><surname>Downward</surname><given-names>J.</given-names></name> and <name name-style="western"><surname>Behrens</surname><given-names>A.</given-names></name>
+</person-group>(<year>2022</year>). <article-title>Micro-CT acquisition and image processing to track and characterize pulmonary nodules in mice</article-title>. <source>Nat Protoc</source>. <volume>18</volume>(<issue>3</issue>): <fpage>990</fpage>-<lpage>1015</lpage>.<pub-id pub-id-type="pmid">36494493</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41596-022-00769-5</pub-id></mixed-citation></ref><ref id="r7"><label>7</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ketten</surname><given-names>D. R.</given-names></name>, <name name-style="western"><surname>Simmons</surname><given-names>J. A.</given-names></name>, <name name-style="western"><surname>Riquimaroux</surname><given-names>H.</given-names></name> and <name name-style="western"><surname>Simmons</surname><given-names>A. M.</given-names></name>
+</person-group>(<year>2021</year>). <article-title>Functional Analyses of Peripheral Auditory System Adaptations for Echolocation in Air vs. Water</article-title>. <source>Front Ecol Evol</source>. <volume>9</volume>: <elocation-id>e661216</elocation-id>.</mixed-citation></ref><ref id="r8"><label>8</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Clark</surname><given-names>D.</given-names></name> and <name name-style="western"><surname>Badea</surname><given-names>C.</given-names></name>
+</person-group>(<year>2021</year>). <article-title>Advances in micro-CT imaging of small animals</article-title>. <source>Physica Med</source>. <volume>88</volume>: <fpage>175</fpage>-<lpage>192</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ejmp.2021.07.005</pub-id><pub-id pub-id-type="pmcid">PMC8447222</pub-id><pub-id pub-id-type="pmid">34284331</pub-id></mixed-citation></ref><ref id="r9"><label>9</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zheng</surname><given-names>D.</given-names></name>, <name name-style="western"><surname>He</surname><given-names>X.</given-names></name> and <name name-style="western"><surname>Jing</surname><given-names>J.</given-names></name>
+</person-group>(<year>2023</year>). <article-title>Overview of Artificial Intelligence in Breast Cancer Medical Imaging</article-title>. <source>J Clin Med</source>. <volume>12</volume>(<issue>2</issue>): <fpage>419</fpage>.<pub-id pub-id-type="pmid">36675348</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jcm12020419</pub-id><pub-id pub-id-type="pmcid">PMC9864608</pub-id></mixed-citation></ref><ref id="r10"><label>10</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Sanders</surname><given-names>Y. Y.</given-names></name>, <name name-style="western"><surname>Lyv</surname><given-names>X.</given-names></name>, <name name-style="western"><surname>Zhou</surname><given-names>Q. J.</given-names></name>, <name name-style="western"><surname>Xiang</surname><given-names>Z.</given-names></name>, <name name-style="western"><surname>Stanford</surname><given-names>D.</given-names></name>, <name name-style="western"><surname>Bodduluri</surname><given-names>S.</given-names></name>, <name name-style="western"><surname>Rowe</surname><given-names>S. M.</given-names></name> and <name name-style="western"><surname>Thannickal</surname><given-names>V. J.</given-names></name>
+</person-group>(<year>2020</year>). <article-title>Brd4-p300 inhibition downregulates Nox4 and accelerates lung fibrosis resolution in aged mice</article-title>. <source>JCI Insight</source>. <volume>5</volume>(<issue>14</issue>): <elocation-id>e137127</elocation-id>.<pub-id pub-id-type="pmid">32544088</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1172/jci.insight.137127</pub-id><pub-id pub-id-type="pmcid">PMC7453889</pub-id></mixed-citation></ref><ref id="r11"><label>11</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Beaucage</surname><given-names>K. L.</given-names></name>, <name name-style="western"><surname>Pollmann</surname><given-names>S. I.</given-names></name>, <name name-style="western"><surname>Sims</surname><given-names>S. M.</given-names></name>, <name name-style="western"><surname>Dixon</surname><given-names>S. J.</given-names></name> and <name name-style="western"><surname>Holdsworth</surname><given-names>D. W.</given-names></name>
+</person-group>(<year>2016</year>). <article-title>Quantitative in vivo micro-computed tomography for assessment of age-dependent changes in murine whole-body composition</article-title>. <source>Bone Rep</source>. <volume>5</volume>: <fpage>70</fpage>-<lpage>80</lpage>.<pub-id pub-id-type="pmid">28326349</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.bonr.2016.04.002</pub-id><pub-id pub-id-type="pmcid">PMC4926843</pub-id></mixed-citation></ref><ref id="r12"><label>12</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wergedal</surname><given-names>J. E.</given-names></name>, <name name-style="western"><surname>Kesavan</surname><given-names>C.</given-names></name>, <name name-style="western"><surname>Brommage</surname><given-names>R.</given-names></name>, <name name-style="western"><surname>Das</surname><given-names>S.</given-names></name> and <name name-style="western"><surname>Mohan</surname><given-names>S.</given-names></name>
+</person-group>(<year>2015</year>). <article-title>Role of WNT16 in the Regulation of Periosteal Bone Formation in Female Mice</article-title>. <source>Endocrinology</source>. <volume>156</volume>(<issue>3</issue>): <fpage>1023</fpage>-<lpage>1032</lpage>.<pub-id pub-id-type="pmid">25521583</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1210/en.2014-1702</pub-id><pub-id pub-id-type="pmcid">PMC4330302</pub-id></mixed-citation></ref><ref id="r13"><label>13</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Mohan</surname><given-names>S.</given-names></name>, <name name-style="western"><surname>Richman</surname><given-names>C.</given-names></name>, <name name-style="western"><surname>Guo</surname><given-names>R.</given-names></name>, <name name-style="western"><surname>Amaar</surname><given-names>Y.</given-names></name>, <name name-style="western"><surname>Donahue</surname><given-names>L. R.</given-names></name>, <name name-style="western"><surname>Wergedal</surname><given-names>J.</given-names></name> and <name name-style="western"><surname>Baylink</surname><given-names>D. J.</given-names></name>
+</person-group>(<year>2003</year>). <article-title>Insulin-Like Growth Factor Regulates Peak Bone Mineral Density in Mice by Both Growth Hormone-Dependent and-Independent Mechanisms</article-title>. <source>Endocrinology</source>. <volume>144</volume>(<issue>3</issue>): <fpage>929</fpage>-<lpage>936</lpage>.<pub-id pub-id-type="pmid">12586770</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1210/en.2002-220948</pub-id><pub-id pub-id-type="pmcid">PMC2923925</pub-id></mixed-citation></ref><ref id="r14"><label>14</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Judex</surname><given-names>S.</given-names></name>, <name name-style="western"><surname>Luu</surname><given-names>Y.</given-names></name>, <name name-style="western"><surname>Ozcivici</surname><given-names>E.</given-names></name>, <name name-style="western"><surname>Adler</surname><given-names>B.</given-names></name>, <name name-style="western"><surname>Lublinsky</surname><given-names>S.</given-names></name> and <name name-style="western"><surname>Rubin</surname><given-names>C.</given-names></name>
+</person-group>(<year>2010</year>). <article-title>Quantification of adiposity in small rodents using micro-CT</article-title>. <source>Methods</source>. <volume>50</volume>(<issue>1</issue>): <fpage>14</fpage>-<lpage>19</lpage>.<pub-id pub-id-type="pmid">19523519</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ymeth.2009.05.017</pub-id><pub-id pub-id-type="pmcid">PMC2818008</pub-id></mixed-citation></ref><ref id="r15"><label>15</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Martin</surname><given-names>L. M.</given-names></name>, <name name-style="western"><surname>Marples</surname><given-names>B.</given-names></name>, <name name-style="western"><surname>Lynch</surname><given-names>T. H.</given-names></name>, <name name-style="western"><surname>Hollywood</surname><given-names>D.</given-names></name> and <name name-style="western"><surname>Marignol</surname><given-names>L.</given-names></name>
+</person-group>(<year>2014</year>). <article-title>Exposure to low dose ionising radiation: Molecular and clinical consequences</article-title>. <source>Cancer Lett</source>. <volume>349</volume>(<issue>1</issue>): <fpage>98</fpage>-<lpage>106</lpage>.<pub-id pub-id-type="pmid">24983100</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.canlet.2013.12.015</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

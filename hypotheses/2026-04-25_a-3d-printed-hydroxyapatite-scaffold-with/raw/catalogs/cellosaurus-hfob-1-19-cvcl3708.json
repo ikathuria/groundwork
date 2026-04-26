@@ -1,0 +1,683 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_3708"
+          }
+        ],
+        "age": "Fetus",
+        "category": "Conditionally immortalized cell line",
+        "cell-type": {
+          "value": "Osteoblast",
+          "xref": {
+            "accession": "CL_0000062",
+            "category": "Anatomy/cell type resources",
+            "database": "CL",
+            "iri": "http://purl.obolibrary.org/obo/CL_0000062",
+            "label": "osteoblast",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCL_0000062"
+          }
+        },
+        "child-list": [
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_DG20"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "hFOB/ER9"
+            }
+          }
+        ],
+        "comment-list": [
+          {
+            "category": "Anecdotal",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=10719274"
+                }
+              }
+            ],
+            "value": "Have been flown in space on shuttle flight STS-80 to study growth in microgravity (PubMed=10719274)"
+          },
+          {
+            "category": "Group",
+            "value": "Space-flown cell line (cellonaut)"
+          },
+          {
+            "category": "Group",
+            "value": "Patented cell line"
+          }
+        ],
+        "created": "2012-04-04",
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "In situ",
+              "value": "Fetal bone, limb",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0002428",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0002428",
+                  "label": "limb bone",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0002428"
+                }
+              ]
+            }
+          }
+        ],
+        "doubling-time-list": [
+          {
+            "doubling-time-note": "At permissive temperature of 33.5 Celsius",
+            "doubling-time-value": "36 hours",
+            "source-list": [
+              {
+                "xref": {
+                  "accession": "CRL-11372",
+                  "category": "Cell line collections (Providers)",
+                  "database": "ATCC",
+                  "url": "https://www.atcc.org/products/CRL-11372"
+                }
+              }
+            ]
+          }
+        ],
+        "doubling-time-range": {
+          "max": "36",
+          "min": "36",
+          "unit": "hour"
+        },
+        "entry-version": "31",
+        "genetic-integration-list": [
+          {
+            "method": "Transfection",
+            "xref": {
+              "accession": "P03070",
+              "category": "Sequence databases",
+              "database": "UniProtKB",
+              "iri": "http://purl.uniprot.org/uniprot/P03070",
+              "label": "Simian virus 40 (SV40) large T antigen",
+              "url": "https://www.uniprot.org/uniprotkb/P03070/entry"
+            }
+          },
+          {
+            "method": "Transfection",
+            "xref": {
+              "accession": "P00552",
+              "category": "Sequence databases",
+              "database": "UniProtKB",
+              "iri": "http://purl.uniprot.org/uniprot/P00552",
+              "label": "Klebsiella pneumoniae transposon Tn5 neo",
+              "url": "https://www.uniprot.org/uniprotkb/P00552/entry"
+            }
+          }
+        ],
+        "last-updated": "2025-08-14",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "hFOB 1.19"
+          },
+          {
+            "type": "synonym",
+            "value": "hFOB1.19"
+          },
+          {
+            "type": "synonym",
+            "value": "hFOB"
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "Patent=US5693511"
+          },
+          {
+            "resource-internal-ref": "PubMed=7754797"
+          },
+          {
+            "resource-internal-ref": "PubMed=10719274"
+          },
+          {
+            "resource-internal-ref": "PubMed=12210717"
+          }
+        ],
+        "registration-list": [
+          {
+            "registration-number": "CRL-11372",
+            "registry": "International Depositary Authority, American Type Culture Collection (ATCC)"
+          }
+        ],
+        "sex": "Female",
+        "species-list": [
+          {
+            "accession": "9606",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "label": "Homo sapiens (Human)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9606&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Amelogenin",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "X"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "CSF1PO",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10,13"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D12S391",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "20,23"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D13S317",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D16S539",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9,13"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D18S51",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10,17"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D19S433",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "13,15"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D21S11",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "29,32.2"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D2S1338",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "23,24"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D3S1358",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17,18"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D5S818",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D6S1043",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "13,16"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D7S820",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,10"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D8S1179",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10,14"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "FGA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "19,22"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Penta E",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TH01",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "7,9.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TPOX",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "vWA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "16,18"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            {
+              "xref": {
+                "accession": "3101HUMGNHu14",
+                "category": "Cell line databases/resources",
+                "database": "CCRID",
+                "url": "http://www.cellresource.cn/cellsearch.aspx?sc=1&where=3101HUMGNHu14"
+              }
+            },
+            {
+              "xref": {
+                "accession": "CRL-3602",
+                "category": "Cell line collections (Providers)",
+                "database": "ATCC",
+                "url": "https://www.atcc.org/products/CRL-3602"
+              }
+            },
+            {
+              "xref": {
+                "accession": "T0004005/4973",
+                "category": "Cell line collections (Providers)",
+                "database": "AddexBio",
+                "url": "https://www.addexbio.com/productdetail?pid=4973"
+              }
+            }
+          ]
+        },
+        "transformant-list": [
+          {
+            "transformant-note": "tsA58",
+            "xref": {
+              "accession": "1891767",
+              "category": "Taxonomy",
+              "database": "NCBI_TaxID",
+              "iri": "http://purl.obolibrary.org/obo/NCBITaxon_1891767",
+              "label": "Simian virus 40 (SV40)",
+              "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=1891767&lvl=3"
+            }
+          }
+        ],
+        "xref-list": [
+          {
+            "accession": "BTO_0004827",
+            "category": "Anatomy/cell type resources",
+            "database": "BTO",
+            "iri": "http://purl.obolibrary.org/obo/BTO_0004827",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/bto/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FBTO_0004827"
+          },
+          {
+            "accession": "BTO_0005224",
+            "category": "Anatomy/cell type resources",
+            "database": "BTO",
+            "iri": "http://purl.obolibrary.org/obo/BTO_0005224",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/bto/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FBTO_0005224"
+          },
+          {
+            "accession": "CLO_0003737",
+            "category": "Cell line databases/resources",
+            "database": "CLO",
+            "iri": "http://purl.obolibrary.org/obo/CLO_0003737",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/clo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCLO_0003737"
+          },
+          {
+            "accession": "T0007",
+            "category": "Cell line collections (Providers)",
+            "database": "ABM",
+            "discontinued": "true"
+          },
+          {
+            "accession": "T0004005/4973",
+            "category": "Cell line collections (Providers)",
+            "database": "AddexBio",
+            "url": "https://www.addexbio.com/productdetail?pid=4973"
+          },
+          {
+            "accession": "CRL-3602",
+            "category": "Cell line collections (Providers)",
+            "database": "ATCC",
+            "url": "https://www.atcc.org/products/CRL-3602"
+          },
+          {
+            "accession": "CRL-11372",
+            "category": "Cell line collections (Providers)",
+            "database": "ATCC",
+            "discontinued": "true"
+          },
+          {
+            "accession": "60357",
+            "category": "Cell line collections (Providers)",
+            "database": "BCRC",
+            "url": "https://catalog.bcrc.firdi.org.tw/BcrcContent?bid=60357"
+          },
+          {
+            "accession": "SAMN03471334",
+            "category": "Biological sample resources",
+            "database": "BioSample",
+            "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN03471334"
+          },
+          {
+            "accession": "3101HUMGNHu14",
+            "category": "Cell line databases/resources",
+            "database": "CCRID",
+            "url": "http://www.cellresource.cn/cellsearch.aspx?sc=1&where=3101HUMGNHu14"
+          },
+          {
+            "accession": "305069",
+            "category": "Cell line collections (Providers)",
+            "database": "CLS",
+            "discontinued": "true"
+          },
+          {
+            "accession": "GSM320833",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM320833"
+          },
+          {
+            "accession": "BS CL 198",
+            "category": "Cell line collections (Providers)",
+            "database": "IZSLER"
+          },
+          {
+            "accession": "1462",
+            "category": "Cell line databases/resources",
+            "database": "TOKU-E",
+            "url": "http://cell-lines.toku-e.com/Cell-Lines_1462.html"
+          },
+          {
+            "accession": "Q54883300",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54883300"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Steven A.",
+            "last-name": "Harris",
+            "name": "Harris S.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Min-Zhi",
+            "last-name": "Zhang",
+            "name": "Zhang M.-Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "Louis S.",
+            "last-name": "Kidder",
+            "name": "Kidder L.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Glenda L.",
+            "last-name": "Evans",
+            "name": "Evans G.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas C.",
+            "last-name": "Spelsberg",
+            "name": "Spelsberg T.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Russell T.",
+            "last-name": "Turner",
+            "name": "Turner R.T.",
+            "type": "person"
+          }
+        ],
+        "date": "2000",
+        "first-page": "325",
+        "internal-id": "PubMed=10719274",
+        "journal-name": "Bone",
+        "last-page": "331",
+        "title": "Effects of orbital spaceflight on human osteoblastic cell physiology and gene expression.",
+        "type": "article",
+        "volume": "26",
+        "xref-list": [
+          {
+            "accession": "10.1016/S8756-3282(00)00234-9",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/S8756-3282(00)00234-9"
+          },
+          {
+            "accession": "10719274",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/10719274"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Steven A.",
+            "last-name": "Harris",
+            "name": "Harris S.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert J.",
+            "last-name": "Enger",
+            "name": "Enger R.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "B. Lawrence",
+            "last-name": "Riggs",
+            "name": "Riggs B.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas C.",
+            "last-name": "Spelsberg",
+            "name": "Spelsberg T.C.",
+            "type": "person"
+          }
+        ],
+        "date": "1995",
+        "first-page": "178",
+        "internal-id": "PubMed=7754797",
+        "journal-name": "J. Bone Miner. Res.",
+        "last-page": "186",
+        "title": "Development and characterization of a conditionally immortalized human fetal osteoblastic cell line.",
+        "type": "article",
+        "volume": "10",
+        "xref-list": [
+          {
+            "accession": "10.1002/jbmr.5650100203",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1002/jbmr.5650100203"
+          },
+          {
+            "accession": "7754797",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/7754797"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Steven A.",
+            "last-name": "Harris",
+            "name": "Harris S.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas C.",
+            "last-name": "Spelsberg",
+            "name": "Spelsberg T.C.",
+            "type": "person"
+          }
+        ],
+        "date": "02-Dec-1997",
+        "internal-id": "Patent=US5693511",
+        "title": "Immortalized human fetal osteoblastic cells.",
+        "type": "patent",
+        "xref-list": [
+          {
+            "accession": "US5693511",
+            "category": "Reference resources",
+            "database": "Patent",
+            "url": "https://patents.google.com/patent/US5693511"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Malayannan",
+            "last-name": "Subramaniam",
+            "name": "Subramaniam M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Syed M.",
+            "last-name": "Jalal",
+            "name": "Jalal S.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "David J.",
+            "last-name": "Rickard",
+            "name": "Rickard D.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Steven A.",
+            "last-name": "Harris",
+            "name": "Harris S.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Mark E.",
+            "last-name": "Bolander",
+            "name": "Bolander M.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas C.",
+            "last-name": "Spelsberg",
+            "name": "Spelsberg T.C.",
+            "type": "person"
+          }
+        ],
+        "date": "2002",
+        "first-page": "9",
+        "internal-id": "PubMed=12210717",
+        "journal-name": "J. Cell. Biochem.",
+        "last-page": "15",
+        "title": "Further characterization of human fetal osteoblastic hFOB 1.19 and hFOB/ER alpha cells: bone formation in vivo and karyotype analysis using multicolor fluorescent in situ hybridization.",
+        "type": "article",
+        "volume": "87",
+        "xref-list": [
+          {
+            "accession": "10.1002/jcb.10259",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1002/jcb.10259"
+          },
+          {
+            "accession": "12210717",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/12210717"
+          }
+        ]
+      }
+    ]
+  }
+}

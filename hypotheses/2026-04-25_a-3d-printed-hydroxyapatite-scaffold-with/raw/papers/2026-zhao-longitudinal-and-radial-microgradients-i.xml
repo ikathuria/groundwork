@@ -1,0 +1,992 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Front Bioeng Biotechnol</journal-id><journal-id journal-id-type="iso-abbrev">Front Bioeng Biotechnol</journal-id><journal-id journal-id-type="pmc-domain-id">2507</journal-id><journal-id journal-id-type="pmc-domain">frontbb</journal-id><journal-id journal-id-type="publisher-id">Front. Bioeng. Biotechnol.</journal-id><journal-title-group><journal-title>Frontiers in Bioengineering and Biotechnology</journal-title></journal-title-group><issn pub-type="epub">2296-4185</issn><publisher><publisher-name>Frontiers Media SA</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC13038985</article-id><article-id pub-id-type="pmcid-ver">PMC13038985.1</article-id><article-id pub-id-type="pmcaid">13038985</article-id><article-id pub-id-type="pmcaiid">13038985</article-id><article-id pub-id-type="pmid">41929424</article-id><article-id pub-id-type="doi">10.3389/fbioe.2026.1789149</article-id><article-id pub-id-type="publisher-id">1789149</article-id><article-version-alternatives><article-version article-version-type="pmc-version">1</article-version><article-version article-version-type="Version of Record" vocab="NISO-RP-8-2008"/></article-version-alternatives><article-categories><subj-group subj-group-type="heading"><subject>Original Research</subject></subj-group></article-categories><title-group><article-title>Longitudinal and radial microgradients in porosity and canal diameter in femur bone and its implications for bone regeneration and bone repair implants</article-title><alt-title alt-title-type="left-running-head">Zhao et al.</alt-title><alt-title alt-title-type="right-running-head">
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://doi.org/10.3389/fbioe.2026.1789149" ext-link-type="uri">10.3389/fbioe.2026.1789149</ext-link>
+</alt-title></title-group><contrib-group><contrib contrib-type="author"><name name-style="western"><surname>Zhao</surname><given-names initials="X">Xiao</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing - original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal Analysis</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Yu</surname><given-names initials="X">Xiaojun</given-names></name><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/155836"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Naz</surname><given-names initials="S">Swera</given-names></name><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing - original draft</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Zhussupova</surname><given-names initials="A">Agila</given-names></name><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing - original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role></contrib><contrib contrib-type="author" corresp="yes" equal-contrib="yes"><name name-style="western"><surname>Kalyon</surname><given-names initials="DM">Dilhan M.</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="c001" ref-type="corresp">*</xref><xref rid="fn001" ref-type="author-notes">
+<sup>†</sup>
+</xref><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/124203"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Resources" vocab-term-identifier="https://credit.niso.org/contributor-roles/resources/">Resources</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role></contrib><contrib contrib-type="author" corresp="yes" equal-contrib="yes"><name name-style="western"><surname>Erisken</surname><given-names initials="C">Cevat</given-names></name><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="c001" ref-type="corresp">*</xref><xref rid="fn001" ref-type="author-notes">
+<sup>†</sup>
+</xref><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/1866019"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal Analysis</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<institution>Department of Chemical Engineering and Materials Science, Stevens Institute of Technology, Charles V. Schaefer, Jr. School of Engineering &amp; Science</institution>, <city>Hoboken</city>, <state>NJ</state>, <country country="US">United States</country>
+</aff><aff id="aff2">
+<label>2</label>
+<institution>Department of Biomedical Engineering, Stevens Institute of Technology, Charles V. Schaefer, Jr. School of Engineering &amp; Science</institution>, <city>Hoboken</city>, <state>NJ</state>, <country country="US">United States</country>
+</aff><aff id="aff3">
+<label>3</label>
+<institution>Department of Chemical and Materials Engineering, School of Engineering and Digital Sciences, Nazarbayev University</institution>, <city>Astana</city>, <country country="KZ">Kazakhstan</country>
+</aff><author-notes><corresp id="c001">
+<label>*</label>Correspondence: Dilhan M. Kalyon, <email xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:dkalyon@stevens.edu">dkalyon@stevens.edu</email>; Cevat Erisken, <email xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:cevat.erisken@nu.edu.kz">cevat.erisken@nu.edu.kz</email>
+</corresp><fn fn-type="equal" id="fn001"><label>†</label><p>These authors have contributed equally to this work</p></fn></author-notes><pub-date publication-format="electronic" date-type="pub" iso-8601-date="2026-03-18"><day>18</day><month>3</month><year>2026</year></pub-date><pub-date publication-format="electronic" date-type="collection"><year>2026</year></pub-date><volume>14</volume><issue-id pub-id-type="pmc-issue-id">506024</issue-id><elocation-id>1789149</elocation-id><history><date date-type="received"><day>16</day><month>1</month><year>2026</year></date><date date-type="rev-recd"><day>11</day><month>2</month><year>2026</year></date><date date-type="accepted"><day>24</day><month>2</month><year>2026</year></date></history><pub-history><event event-type="pmc-release"><date><day>18</day><month>03</month><year>2026</year></date></event><event event-type="pmc-live"><date><day>02</day><month>04</month><year>2026</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-04-03 09:25:16.257"><day>03</day><month>04</month><year>2026</year></date></event></pub-history><permissions><copyright-statement>Copyright © 2026 Zhao, Yu, Naz, Zhussupova, Kalyon and Erisken.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Zhao, Yu, Naz, Zhussupova, Kalyon and Erisken</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense" start_date="2026-03-18">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open-access article distributed under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License (CC BY)</ext-link>. The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="fbioe-14-1789149.pdf"/><abstract><sec><title>Introduction</title><p>Bone exhibits hierarchical structural gradients that optimize mechanical performance and regenerative potential. Longitudinal and radial variations in porosity and canal architecture of the femur influence load distribution, vascularization, and remodeling. Understanding these gradients is essential for designing scaffolds and implants that mimic native bone structure and function. This study quantified longitudinal and radial microgradients in porosity and canal diameter along the rabbit femur and explored their implications for bone regeneration and repair implant design. Rabbit femora were divided into proximal, mid-shaft, and distal regions.</p></sec><sec><title>Methods</title><p>High-resolution micro-computed tomography quantified cortical thickness, porosity, and canal diameter along radial and longitudinal axes in micron-scale resolutions.</p></sec><sec><title>Results and Discussion</title><p>Compressive mechanical testing of slices determined local moduli, which were correlated with microstructural parameters to establish structure–function relationships. Cortical thickness peaked at the mid-shaft and decreased toward both ends. Porosity and canal diameter increased radially toward the medullary cavity and longitudinally toward the bone ends. Upto 500 μm bone thickness from the outer surface toward modullary cavity, porosity and canal diameter ranged, respectively, from ∼5% to 40 μm at the mid-shaft to ∼40% and 110 μm at the ends. At 750 μm thickness, porosity and canal diameter ranged, respectively, from ∼5% to 50 ∼m at the mid-shaft to ∼80% and 200 μm at the ends. As expected, compressive moduli declined with increasing porosity and canal size. The mid-shaft, with the lowest porosity and smallest canals, exhibited the highest modulus of around 15 MPa, which decreased to 5 MPa toward the ends. The rabbit femur displays distinct longitudinal and radial microgradients in porosity and canal architecture that govern local stiffness. These gradients define structural benchmarks for designing functionally graded tissue engineering scaffolds and bone implants that replicate native tissue structure and stiffness transitions to promote osteoconduction, osteoinduction, osteogenesis in bone regeneration and improve osseointegration of bone implants.</p></sec></abstract><kwd-group><kwd>bone microstructure</kwd><kwd>bone regeneration</kwd><kwd>canal diameter</kwd><kwd>cortical porosity</kwd><kwd>femur</kwd><kwd>gradient biomaterials</kwd><kwd>implant design</kwd><kwd>mechanical properties</kwd></kwd-group><funding-group><funding-statement>The author(s) declared that financial support was received for this work and/or its publication. This research was funded by the Science Committee of the Ministry of Science and Higher Education of the Republic of Kazakhstan, grant number AP26195607, awarded to CE.</funding-statement></funding-group><counts><fig-count count="7"/><table-count count="0"/><equation-count count="0"/><ref-count count="101"/><page-count count="15"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>section-at-acceptance</meta-name><meta-value>Tissue Engineering and Regenerative Medicine</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="s1"><label>1</label><title>Introduction</title><p>Bone quality encompasses more than just bone mineral density (BMD), incorporating critical microstructural features that determine mechanical competence and fracture resistance (<xref rid="B4" ref-type="bibr">Augat and Schorlemmer, 2006</xref>; <xref rid="B75" ref-type="bibr">Rizzoli, 2010</xref>). These include cortical thickness, porosity, and trabecular architecture (<xref rid="B10" ref-type="bibr">Brandi, 2009</xref>; <xref rid="B73" ref-type="bibr">Rachidi et al., 2008</xref>). While BMD remains a clinical standard, it often fails to predict fracture risk accurately, highlighting the importance of assessing bone microstructure (<xref rid="B42" ref-type="bibr">Jindal, 2018</xref>; <xref rid="B58" ref-type="bibr">Martin and Correa, 2010</xref>; <xref rid="B9" ref-type="bibr">Boskey and Imbert, 2017</xref>). Bone quality changes are associated with conditions like osteoporosis and aging, contributing to increased fracture risk (<xref rid="B9" ref-type="bibr">Boskey and Imbert, 2017</xref>). Advanced imaging techniques, such as high-resolution CT and MRI, can provide detailed information about bone microarchitecture, potentially improving fracture risk prediction and treatment efficacy assessment (<xref rid="B75" ref-type="bibr">Rizzoli, 2010</xref>; <xref rid="B54" ref-type="bibr">Lorentzon, 2020</xref>). Understanding and quantifying bone microstructure is vital for enhancing diagnostic accuracy, developing therapeutic interventions, and informing biomimetic strategies in implant and scaffold design (<xref rid="B10" ref-type="bibr">Brandi, 2009</xref>; <xref rid="B58" ref-type="bibr">Martin and Correa, 2010</xref>).</p><p>Cortical bone exhibits a complex hierarchical structure from the macroscale to the nanoscale, which underlies its mechanical properties and ability to resist fracture (<xref rid="B101" ref-type="bibr">Zimmermann and Ritchie, 2015</xref>; <xref rid="B34" ref-type="bibr">Fratzl et al., 2004</xref>). This hierarchical organization spans from the diaphyseal shaft to microscopic osteons and vascular canals, down to the collagen-mineral matrix (<xref rid="B57" ref-type="bibr">Martin, 1991</xref>; <xref rid="B4" ref-type="bibr">Augat and Schorlemmer, 2006</xref>). Cortical bone accounts for approximately 80% of skeletal mass and plays a critical role in load-bearing, with its mechanical performance governed by mineral content and microstructural organization (<xref rid="B10" ref-type="bibr">Brandi, 2009</xref>; <xref rid="B60" ref-type="bibr">Milovanovic et al., 2014</xref>). Microstructural parameters such as porosity, canal diameter, and cortical thickness serve as essential indicators of bone health and mechanical resilience (<xref rid="B78" ref-type="bibr">Schmidutz et al., 2021</xref>). The spatial distribution and density of vascular canals act as stress concentrators, influencing bone’s fatigue life (<xref rid="B55" ref-type="bibr">Loundagin et al., 2021</xref>). Quantitative assessment of cortical microarchitecture provides valuable insight into bone quality and structural integrity, especially in regions subject to high mechanical loads.</p><p>Recent studies have demonstrated that bone microarchitecture significantly influences its mechanical properties. Increased cortical porosity and enlarged vascular canals are associated with reduced bone strength (<xref rid="B4" ref-type="bibr">Augat and Schorlemmer, 2006</xref>; <xref rid="B79" ref-type="bibr">Schneider et al., 2013</xref>). The intracortical canal network acts as a stress concentrator, affecting fracture risk (<xref rid="B91" ref-type="bibr">Uniyal et al., 2021</xref>). Accordingly, bone mineral density alone is insufficient to predict fracture risk, as microarchitectural parameters improve the prediction of mechanical behavior (<xref rid="B96" ref-type="bibr">Wegrzyn et al., 2010</xref>).</p><p>Heterogeneity in material properties and microstructure contributes to fracture resistance and energy dissipation in bone tissue (<xref rid="B53" ref-type="bibr">Lloyd et al., 2015</xref>; <xref rid="B33" ref-type="bibr">Feng and Todoh, 2021</xref>), while age-related increases in cortical porosity and Haversian canal size negatively impact bone’s ability to withstand mechanical loads (<xref rid="B19" ref-type="bibr">Dong and Guo, 2001</xref>). Although porosity remains the primary determinant of cortical bone elasticity, other microarchitectural features also contribute at varying degrees (<xref rid="B12" ref-type="bibr">Cai et al., 2019</xref>). These findings highlight the importance of mapping compressive modulus alongside microstructural gradients, a more accurate and functional understanding of structure-function relationship can be achieved, enhancing the predictive value of microarchitectural assessment.</p><p>Spatial gradients in cortical thickness, porosity, and canal diameter are not merely an anatomical curiosity; they determine how host bone interacts with load-bearing implants such as femoral stems, tibial trays, and acetabular cups. Uniform titanium stems frequently over-stiffen the mid-shaft and under-support the more compliant metaphysis, promoting stress shielding and aseptic loosening. Implants with graded porosity, such as distally increasing axial gradients or inwardly increasing radial gradients, can improve osseointegration and reduce bone resorption (<xref rid="B95" ref-type="bibr">Wang et al., 2020</xref>). Designing implants with stiffness similar to cortical bone can minimize stress shielding and promote more physiological load transfer (<xref rid="B48" ref-type="bibr">Krishna et al., 2007</xref>; <xref rid="B86" ref-type="bibr">Sumner et al., 1998</xref>). Likewise, tissue-engineered scaffolds mimicking the natural bone structure, with a radial gradient of increasing porosity towards the center, have shown enhanced osteogenesis and vascularization. Studies demonstrate that higher porosity and larger pore canal diameters (&gt;300 μm) promote bone ingrowth and vascularization <italic toggle="yes">in vivo</italic> (<xref rid="B46" ref-type="bibr">Karageorgiou and Kaplan, 2005</xref>; <xref rid="B1" ref-type="bibr">Abbasi et al., 2020</xref>). Biomimetic gradient scaffolds with fine internal pillars (∼400 μm) and coarse external pillars (∼800 μm) promote osteogenic differentiation and new bone formation (<xref rid="B52" ref-type="bibr">Li et al., 2024</xref>). Quantitative mapping of these gradients in the present study therefore provides design targets for next-generation joint-replacement devices and bone/osteochondral grafts.</p><p>The choice of the rabbit femur as an experimental model in this study is supported by its well-documented translational relevance to human clinical applications. Rabbits are among the most frequently utilized species in musculoskeletal research, accounting for approximately 35% of all animal studies in the field (<xref rid="B50" ref-type="bibr">Li et al., 2015</xref>). This preference is due to the presence of secondary Haversian systems in mature rabbit bone, a characteristic shared with humans but absent in smaller rodents (<xref rid="B94" ref-type="bibr">Wancket, 2015</xref>). Furthermore, the rabbit femur provides a suitable macro-environment for testing internal fixation devices and implants, as its healing patterns and mineral density profiles correlate significantly with human long bones (<xref rid="B69" ref-type="bibr">Pearce et al., 2007</xref>). While the accelerated bone turnover rate in rabbits, reaching skeletal maturity by 20–30 weeks, necessitates caution in direct temporal extrapolation, it serves as an excellent high-throughput screening tool for the early-phase validation of novel biomaterials and osseointegration (<xref rid="B76" ref-type="bibr">Scarano et al., 2024</xref>). Thus, the findings from this model provide a critical physiological and mechanical baseline for the potential development of human orthopedic implants.</p><p>The rabbit femur is widely used as a preclinical model for studying bone structure and mechanics due to its similarities to human long bones (<xref rid="B38" ref-type="bibr">Harrison et al., 2020</xref>; <xref rid="B16" ref-type="bibr">Cvetkovic et al., 2013</xref>). While not identical in scale or remodeling rates, the rabbit femur exhibits comparable cortical organization and loading environments to humans (<xref rid="B68" ref-type="bibr">Pearce et al., 1991</xref>; <xref rid="B5" ref-type="bibr">Bagi et al., 2011</xref>). The femoral shaft is particularly relevant for investigating microstructural features and biomechanics, with applications in orthopedic implant research (<xref rid="B39" ref-type="bibr">Huiskes, 1982</xref>; <xref rid="B40" ref-type="bibr">Huiskes et al., 1983</xref>). Rabbit models offer practical advantages including manageable bone size and established experimental protocols (<xref rid="B77" ref-type="bibr">Schindeler et al., 2018</xref>).</p><p>However, it is important to note that no animal model perfectly replicates human bone, and understanding interspecies differences is crucial for accurate extrapolation of results (<xref rid="B16" ref-type="bibr">Cvetkovic et al., 2013</xref>; <xref rid="B37" ref-type="bibr">Gauthier et al., 2018</xref>). Despite some limitations, the rabbit femur remains a valuable platform for evaluating bone microstructure and biomechanics with translational relevance to human orthopedic applications.</p><p>Recent advancements in imaging techniques have significantly enhanced our ability to characterize bone microarchitecture and mechanical properties. Micro-computed tomography (micro-CT) allows high-resolution, three-dimensional quantification of bone structural parameters (<xref rid="B13" ref-type="bibr">Campbell and Sophocleous, 2014</xref>; <xref rid="B66" ref-type="bibr">Palacio-Mancheno et al., 2014</xref>). This imaging modality, combined with sophisticated image processing, enables detailed analysis of bone architecture (<xref rid="B93" ref-type="bibr">Voide et al., 2006</xref>; <xref rid="B11" ref-type="bibr">Burghardt et al., 2011</xref>). The micro-CT resolution is sufficient for mapping porosities associated with vascular canals but not for the osteocyte lacuno-canalicular system. Micro-CT resolution can reach 1 μm for <italic toggle="yes">ex vivo</italic> samples using synchrotron radiation (<xref rid="B70" ref-type="bibr">Peyrin et al., 2001</xref>; <xref rid="B24" ref-type="bibr">Engelke et al., 1993</xref>), while <italic toggle="yes">in vivo</italic> imaging is limited to about 82 μm voxel size due to extensive radiation exposure concerns (<xref rid="B11" ref-type="bibr">Burghardt et al., 2011</xref>). Complementing imaging data, mechanical testing on bone samples provides critical information about functional performance (<xref rid="B22" ref-type="bibr">El-Gizawy et al., 2023</xref>). These techniques offer volumetric insights unattainable with traditional histology and have become standard tools for pre-clinical assessment of bone architecture during disease progression and treatment (<xref rid="B13" ref-type="bibr">Campbell and Sophocleous, 2014</xref>; <xref rid="B8" ref-type="bibr">Bolger et al., 2019</xref>). The rabbit femur is particularly suitable for this dual mode characterization; its size permits both detailed imaging and consistent mechanical testing across multiple spatial planes. In contrast, the large diameter and density of human femurs often pose challenges for achieving the resolution and slice uniformity required for high-fidelity 3D structural-mechanical correlation, justifying the use of animal models in this context.</p><p>Despite growing interest in bone quality, most existing studies have focused either on global measures of bone mineral density or limited two-dimensional assessments of microstructure, without capturing the full spatial complexity of cortical bone. High-resolution, co-localized datasets that integrate three-dimensional microstructural metrics with corresponding mechanical properties remain scarce, particularly in the femoral shaft - a critical region for load-bearing and orthopedic applications. Furthermore, the radial and longitudinal gradients of features such as porosity and canal diameter is frequently overlooked, despite their likely influence on local mechanical behavior.</p><p>Few studies have quantitatively linked these microstructural parameters to compressive modulus in a spatially resolved manner. This study addresses these gaps by performing complete 3D profiling of cortical microarchitecture in the rabbit femoral shaft and systematically correlating these metrics with compressive properties across multiple spatial regions. The findings aim to advance our understanding of structure-function relationship of bone and inform the design of biomimetic materials with spatially optimized mechanical performance.</p><p>The primary aim of this study is to conduct a comprehensive three-dimensional characterization of cortical bone microarchitecture and its mechanical properties in the rabbit femoral shaft. Specifically, the objectives are: (1) to quantify gradual changes in porosity, canal diameter, and cortical thickness along both radial and longitudinal axes; (2) to measure compressive modulus in corresponding anatomical regions using mechanical testing on bone slices; and (3) to evaluate the correlations between microstructural parameters and localized mechanical properties. By integrating high-resolution imaging with direct biomechanical assessment, this study seeks to enhance the understanding of bone’s structure-function relationship and provide foundational data for the development of spatially informed designs. It is expected that the comprehensive and detailed characterization of the properties and structure of native bone that are presented here will allow for more realistic functionally graded design and fabrication of synthetic implants and scaffolds for tissue engineering.</p></sec><sec sec-type="materials|methods" id="s2"><label>2</label><title>Materials and methods</title><p>Specimen preparation, instruments, and experimental design are demonstrated in <xref rid="F1" ref-type="fig">Figure 1</xref>.</p><fig position="float" id="F1" orientation="portrait"><label>FIGURE 1</label><caption><p>Specimen preparation, instruments, and experimental design. Femur bones <bold>(A1,A2)</bold> were harvested from rabbits, sectioned <bold>(A3)</bold> to fit into the sampling chamber of the micro-CT <bold>(A4)</bold>, and analyzed in terms of pore and canal diameter by collecting data from different regions of the femur <bold>(A5)</bold>. For mechanical characterization, the femurs were sliced in 2 mm thicknesses <bold>(B1)</bold>, processed <bold>(B2)</bold> to obtained uniform slice thickness <bold>(B3)</bold>, and tested under compression <bold>(B4)</bold>. A total of six rabbits were divided equally for micro-CT analysis and mechanical characterization <bold>(C)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fbioe-14-1789149-g001.jpg"><alt-text content-type="machine-generated">Panel A shows sequential femur preparation steps for analysis, including gross and cleaned bone segments. Panel B illustrates the sectioning process, the cutting tool, and a cross-sectional bone sample. Panel A4 shows a micro-CT scanner, A5 presents micro-CT images with labeling, and B4 depicts a mechanical testing device. Panel C provides a flowchart outlining experimental groups, imaging, and mechanical testing endpoints for correlation analysis in six rabbits.</alt-text></graphic></fig><sec id="s2-1"><label>2.1</label><title>Sample preparation</title><p>Femoral bones were obtained from commercially sourced rabbits (<italic toggle="yes">Oryctolagus cuniculus</italic>) purchased from a local butcher shop (Jersey City, NJ). These rabbits (male and male) are meat-producing breeds (New Zealand White), slaughtered at an age of approximately 8–12 weeks.</p><p>Upon procurement, soft tissues surrounding the femur were carefully removed using a scalpel. The bones were then rinsed with phosphate-buffered saline (PBS) to remove residual debris and immediately stored at −20 °C to preserve structural integrity prior to analysis. All samples were thawed at room temperature for 2 h before any subsequent imaging or mechanical testing. No chemical fixation or decalcification was applied, in order to preserve the native microarchitecture and mechanical properties of the bone tissue.</p><p>For imaging (n = 3), following thawing at room temperature, each femur was segmented into three anatomical regions: the distal section containing the femoral condyles, the proximal section containing the trochanters, and the midshaft. The segmentation into distal, midshaft, and proximal regions was performed to analyze region-specific structural variations relevant to different loading conditions and enabled localized structural analysis across the major functional zones of the femur. After dissection, each bone section was thoroughly dried in a vacuum oven at 60 °C for 12 h to ensure complete removal of residual moisture. This dehydration step was essential to prevent any water-related distortion or imaging artifacts and to maintain the structural integrity of the samples during subsequent handling. Care was taken to preserve the native morphology of each segment throughout the drying process.</p><p>For the compressive testing, fresh femoral bones were used (n = 3). Mechanical testing was performed on femurs from a separate cohort (additional animals) prepared and tested in the thawed/wet state; thus, mechanical properties were not measured on the dried micro-CT specimens. In this case, only the midshaft portion of the femur was utilized; the distal (condyle) and proximal (trochanter) ends were removed and excluded from analysis. The remaining shaft was evenly sectioned longitudinally into 2.5 mm-thick slices using a low-speed diamond saw (Dremel Multipro Model 395, Racine, WI). The longitudinal position of each slice along the femur was carefully recorded to preserve anatomical context. Each slice was then sanded down to a final thickness of 2.0 ± 0.05 mm using a handheld drill fitted with a sanding attachment (Dremel Micro Model 8050, Mt. Prospect, IL). To avoid thermal damage or structural distortion, sanding was performed under continuous water cooling. This ensured the preservation of native mechanical properties and microarchitecture for downstream analysis.</p></sec><sec id="s2-2"><label>2.2</label><title>Micro-CT imaging and analysis</title><p>Micro-computed tomography (micro-CT) imaging was conducted on a separate set of dehydrated segments using the SkyScan 1272 system (Bruker microCT, Kontich, Belgium) equipped with a Photonic Science PS52 detector. Imaging was performed at a tube voltage of 100 kV and a current of 94 µA. A dual-filter configuration consisting of a 0.5 mm aluminum filter and a 0.038 mm copper filter was used to reduce beam hardening effects. The exposure time was set to 4,000 ms per projection, with frame averaging set to three frames per projection. Scanning was carried out over a full 360° rotation with a rotation step of 0.4°, yielding a total of 900 projections per scan. The effective voxel size of the reconstructed images was 5.8 µm. Image reconstruction was performed using NRecon software (version 2.2.0.6, Bruker) with GPU acceleration enabled. Binary segmentation for porosity quantification was performed in CTAn (CT Analyser v1.23.0.1) using global thresholding with a lower gray threshold of 80 and upper gray threshold of 255 (applied consistently across the analyzed images/ROI). After thresholding, a despeckle filter was applied to remove isolated segmentation artifacts by eliminating white speckles in 2D smaller than 25 pixels. Porosity was computed as the void volume fraction within each ROI. Ring artifact correction was applied at level 12. Beam hardening correction and image smoothing were not applied in order to preserve the original grayscale distribution for subsequent quantitative analysis.</p><p>For the microstructural analysis, the 3D reconstructed model was sliced at 1 mm intervals. On each slice, the region of interest (ROI) was defined as a rectangular window measuring 500 × 250 μm<sup>2</sup>, positioned from the outer cortical surface toward the inner cortex. Measurements were taken at four orthogonal orientations—anterior, posterior, medial, and lateral—within each transverse micro-CT slice. These directional measurements were averaged to represent the radial structural profile at each longitudinal position, with data points collected at 250, 500, 750, 1,000 μm, etc., from the outer surface, continuing inward until no bone material remained within the ROI. Quantitative structural parameters extracted from each ROI included porosity (%), canal diameter (µm), and bone thickness (mm). All measurements were performed on the entire bone area within the defined ROI, restricted to the shaft region and excluding the distal and proximal femur, using calibrated image analysis protocols.</p><p>For the distal femur, proximal femur, and shaft segments, canal diameters were binned into defined size ranges, and the corresponding volume occupied by canals in each range was computed. The canal diameter distribution was expressed as the percentage volume of canals within a given diameter range relative to the total canal volume in the analyzed bone segment. This analysis allowed for comparative evaluation of canal architecture across distinct anatomical regions of the femur. Structural parameters derived from micro-CT imaging guided the interpretation of mechanical responses measured during subsequent compression tests.</p></sec><sec id="s2-3"><label>2.3</label><title>Compression testing</title><p>Compression testing was performed on bone slices using a uniaxial testing system (Instron 5980, Norwood, MA). Each specimen had a thickness of 2.0 ± 0.05 mm and was derived from the femoral shaft region, excluding the distal and proximal ends. Prior to testing, all specimens were visually inspected to ensure parallel surfaces and absence of visible defects. Tests were conducted at room temperature with a crosshead displacement rate of 1 mm/min. No preload was applied. Load and displacement data were recorded continuously during each test and used to generate stress–strain curves.</p><p>Three mechanical parameters were extracted from the data: modulus 1, defined as the slope of the stress–strain curve in the first linear region; modulus 2, defined as the slope of the stress–strain curve in the second linear region; and maximum compressive strength, defined as the peak stress before failure. A total of three rabbits were used for this analysis, with multiple slices tested per animal to capture gradients along the femoral shaft. The exact number of slices per sample was recorded based on their anatomical position.</p></sec><sec id="s2-4"><label>2.4</label><title>Statistical analysis</title><p>Statistical analyses were performed to evaluate the relationship between porosity and Modulus. The Pearson correlation coefficient (r) was used to measure the strength and direction of the linear association between the variables. Data were analyzed both as individual experimental replicates (n = 3) and as a pooled dataset for means to identify consistent trends. All statistical tests were two-tailed, with the alpha level for significance set at p &lt; 0.05. Analysis was conducted using Excel.</p></sec></sec><sec sec-type="results" id="s3"><label>3</label><title>Results</title><sec id="s3-1"><label>3.1</label><title>Cortical thickness variation along the femur</title><p>To understand load-bearing adaptations, we first assessed variations in cortical bone thickness along the femoral shaft. Bone thickness was measured at 1 mm intervals along the longitudinal axis of the femur, starting from the distal end. The results demonstrated a non-uniform distribution of bone thickness along the length of the bone. As shown in <xref rid="F2" ref-type="fig">Figure 2A</xref>, cortical thickness first decreased and then increased from the distal femur toward the midshaft, reaching a maximum in the central portion of the shaft, followed by a gradual decrease toward the proximal end.</p><fig position="float" id="F2" orientation="portrait"><label>FIGURE 2</label><caption><p>Change in cortical thickness with respect to distance from distal femur <bold>(A)</bold>, and histogram of volume percent of the canal diameter for the distal femur <bold>(B)</bold>, shaft <bold>(C)</bold>, and proximal femur <bold>(D)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fbioe-14-1789149-g002.jpg"><alt-text content-type="machine-generated">Panel A shows a line graph of cortical thickness versus position along a bone, with error bars and a micrograph of a bone below indicating the region measured. Panels B, C, and D display bar charts of canal diameter frequency distributions, each charting volume percentage by canal diameter in micrometers with distinct distributions.</alt-text></graphic></fig></sec><sec id="s3-2"><label>3.2</label><title>Regional canal diameter distribution</title><p>Canal diameter distributions were quantified for the distal femur, shaft, and proximal femur to evaluate how intracortical vascular space varied regionally. <xref rid="F2" ref-type="fig">Figures 2B–D</xref> show the volume percentage of canals distributed across diameter bins ranging from 0 to 375 µm. In the distal femur (<xref rid="F2" ref-type="fig">Figure 2B</xref>), canal volume was primarily concentrated in the 50–200 µm range. The shaft region (<xref rid="F2" ref-type="fig">Figure 2C</xref>) exhibited a narrower distribution, with the majority of canal volume confined to the 0–50 µm range. In the proximal femur (<xref rid="F2" ref-type="fig">Figure 2D</xref>), canal diameters were mostly concentrated within the 0–100 µm range, with minimal volume beyond this threshold and a maximum diameter of approximately 250 µm.</p><p>The observed variability in canal diameter distributions across anatomical regions supports the selection of a fixed region of interest measuring 500 × 250 μm<sup>2</sup> for micro-CT analysis. As demonstrated in <xref rid="F2" ref-type="fig">Figure 2</xref>, canal diameters in the femoral shaft are predominantly below 50 μm, while the proximal and distal femur contain a broader distribution with canal diameters extending beyond 100 μm, and in some cases exceeding 250 μm, particularly in the distal region.</p><p>The chosen ROI dimensions allow for the consistent capture of the majority of canal structures present across all regions, while maintaining sufficient resolution for small-diameter canals in the shaft. Although some of the largest canals may partially fall outside the defined ROI, especially in the distal femur, the selected size offers a practical balance between resolution and anatomical coverage for comparative analysis. The distinct regional shifts in canal diameter suggested that void morphology varies not only in magnitude but also in spatial distribution; therefore, the following subsection maps porosity and mean canal diameter along both the femur’s length and its cortical thickness to integrate size metrics with overall void fraction.</p></sec><sec id="s3-3"><label>3.3</label><title>Radial gradients in porosity and canal diameter</title><p>Porosity and canal diameter were analyzed along the radial direction (distance from the outer surface) of the femur using reconstructed micro-CT slices at 1 mm intervals in the longitudinal direction. <xref rid="F3" ref-type="fig">Figure 3A1</xref> presents a representative image of the full femur, with white dotted lines indicating the portion of the bone of which the porosity and canal diameter were measured as a function of the distance from the outer surface. Similar regional indicators are shown for the distal, shaft, and proximal segments in <xref rid="F3" ref-type="fig">Figures 3B1, 3C1, 3D1</xref>, respectively.</p><fig position="float" id="F3" orientation="portrait"><label>FIGURE 3</label><caption><p>Change in porosity and canal diameter with respect to distance from the outer surface for the entire femur <bold>(A)</bold>, distal end <bold>(B)</bold>, shaft <bold>(C)</bold>, and proximal end <bold>(D)</bold>. The femur was scanned at 1 mm intervals in the longitudinal direction for the segmented bones <bold>(B1,C1,D1)</bold> and merged to report the variation over the entire bone <bold>(A1)</bold>. Porosity and canal diameter variation were measured from the scanned slices for the segmented bones (<bold>(B2,C2,D2,B4,C4,D4)</bold>, respectively), and overlaid to obtain porosity change and canal diameter change over the entire scanned region (<bold>(A2,A4)</bold>, respectively). Representative micro-CT images were provided from each segmented region <bold>(B3,C3,D3)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fbioe-14-1789149-g003.jpg"><alt-text content-type="machine-generated">Panel of four grouped bone samples labeled A1, B1, C1, and D1, each with dashed lines marking measurement regions, accompanied by corresponding sets of line graphs illustrating porosity percentage and canal diameter as a function of distance from the bone outer shell, grayscale microstructure images for B3, C3, and D3, and measurement keys indicating sample positions in millimeters. Each sample demonstrates a trend of increasing porosity and canal diameter with greater distance from the outer shell.</alt-text></graphic></fig><p>Regional measurements are detailed in <xref rid="F3" ref-type="fig">Figures 3B2–D2</xref> for porosity and <xref rid="F3" ref-type="fig">Figures 3B4–D4</xref> for canal diameter. In the distal femur, shaft, and proximal region, the porosity gradually increased from the outer surface towards the core of the bone. Representative transverse micro-CT images from each region are shown in <xref rid="F3" ref-type="fig">Figures 3B3, 3C3, 3D3</xref>. The distal (<xref rid="F3" ref-type="fig">Figure 3B3</xref>) and proximal (<xref rid="F3" ref-type="fig">Figure 3D3</xref>) regions show more porous bone with visibly larger and more numerous canals, while the shaft region (<xref rid="F3" ref-type="fig">Figure 3C3</xref>) displays a denser structure with fewer and smaller canals, consistent with the quantitative porosity and canal diameter data.</p></sec><sec id="s3-4"><label>3.4</label><title>Longitudinal microstructural gradients</title><p>The data presented in <xref rid="F4" ref-type="fig">Figure 4</xref> were extracted from the same dataset used in <xref rid="F3" ref-type="fig">Figure 3</xref>. For this analysis, porosity and canal diameter values were obtained specifically at 250, 500, and 750 µm from the outer surface and plotted against the longitudinal position along the femur.</p><fig position="float" id="F4" orientation="portrait"><label>FIGURE 4</label><caption><p>Porosity <bold>(A)</bold> and canal diameter <bold>(B)</bold> distribution in the femur as a function of longitudinal distance. Overlaid porosity distribution at 250, 500, and 750 μm distance from the outer surface <bold>(A1)</bold>, and porosity distributions at 250 μm <bold>(A2)</bold>, 500 μm <bold>(A3)</bold>, and 750 μm <bold>(A4)</bold>. Overlaid canal diameter distribution at 250, 500, and 750 μm distance from the outer surface <bold>(B1)</bold>, and canal diameter distributions at 250 μm <bold>(B2)</bold>, 500 μm <bold>(B3)</bold>, and 750 μm <bold>(B4)</bold>. The distal and proximal regions, where porosity is ∼40% and above are indicated by dotted green lines in <bold>(A1)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fbioe-14-1789149-g004.jpg"><alt-text content-type="machine-generated">Figure with eight panels comparing bone porosity and canal diameter along the position of a bone for three distances from the outer surface—two hundred fifty, five hundred, and seven hundred fifty micrometers. Panels A1–A4 show porosity percentage by position; Panels B1–B4 show canal diameter by position. Both porosity and canal diameter are lowest in the bone midshaft and higher near the ends, for all depths. X-ray bone images below each plot illustrate the measured regions highlighted with colored lines and shaded areas.</alt-text></graphic></fig><p>The longitudinal overall trend in porosity is shown in <xref rid="F4" ref-type="fig">Figure 4A</xref> for the entire bone length. Porosity values were higher in the distal and proximal regions, with values between 40%–80%, and lower in the shaft, with values between 5%–35%. This behavior is more pronounced in the outer regions of the bone as measured at 250 μm and 500 μm distance from the outer surface. Although the transition from highly porous trabecular (distal and proximal regions) to low porosity cortical (shaft region) demonstrates gradual change, a line of separation approximating the location of transition from cortical to trabecular bone was placed in <xref rid="F4" ref-type="fig">Figure 4A1</xref>. A similar trend was observed for canal diameter (<xref rid="F4" ref-type="fig">Figure 4B</xref>), with reduced values in the shaft and elevated diameters toward both ends of the femur.</p><p>
+<xref rid="F4" ref-type="fig">Figure 4A1</xref> presents the overlay of porosity distributions at these three distances. The profiles shift with increasing distance, showing lower porosity at 250 µm and elevated porosity at greater distances from the outer surface. Individual porosity distributions at 250, 500, and 750 µm are shown in <xref rid="F4" ref-type="fig">Figures 4A2–A4</xref>, respectively. Porosity at 250 µm was relatively low and exhibited a narrow distribution, while porosity at 500 and 750 µm increased in both magnitude and spread, indicating a gradient in structural void content across the cortical thickness.</p><p>Canal diameter distributions across the same distances from the outer surface are shown in <xref rid="F4" ref-type="fig">Figure 4B1</xref> as an overlay, with individual profiles at 250, 500, and 750 µm presented in <xref rid="F4" ref-type="fig">Figures 4B2–B4</xref>, respectively. At 250 μm, canal diameter along the femur was concentrated within the 0–75 µm range, with limited variation between anatomical regions. At 500 μm, the overall range remained similar, with most values still falling below 75 μm; however, slight local increases were observed in the distal and proximal regions. In contrast, at 750 μm, canal diameter increased noticeably in the distal and proximal regions, reaching values up to 200 μm, while the shaft remained confined to a lower range comparable to that at 250 μm and 500 µm. These data indicate that substantial enlargement of canals with respect to longitudinal position primarily occurs at greater distances from the outer surface.</p><p>
+<xref rid="F5" ref-type="fig">Figure 5A</xref> presents the correlation between porosity and canal diameter at 250, 500, and 750 µm from the outer surface. This plot was generated using the same dataset shown in <xref rid="F4" ref-type="fig">Figure 4</xref> by pairing porosity and canal diameter values at corresponding positions along the femur. A linear relationship was observed at each distance, with comparable slopes across the three curves. While the overall trend was consistent, the curve at 750 µm extended to higher values than those at 250 and 500 µm. Specifically, porosity reached approximately 80% and was associated with canal diameters up to 200 µm in the distal and proximal regions. This extended range at 750 µm reflects the localized increase in both canal size and void volume deeper within the bone at those positions.</p><fig position="float" id="F5" orientation="portrait"><label>FIGURE 5</label><caption><p>
+<bold>(A)</bold> Correlation of porosity and canal diameter at 250, 500, and 750 µm distance from the outer surface. Gradients of canal diameter at Anterior, Posterior, Medial and Lateral directions over the length of the femur at <bold>(B)</bold> 250 µm, <bold>(C)</bold> 500 µm, and <bold>(D)</bold> 750 µm from the outer surface.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fbioe-14-1789149-g005.jpg"><alt-text content-type="machine-generated">Panel A shows a scatter plot of porosity percentage versus canal diameter in micrometers for three groups: 250, 500, and 750 micrometers, with a positive correlation observed. Panels B, C, and D display scatter plots of porosity percentage versus position in millimeters at 250, 500, and 750 microns from the outer surface, respectively, with data differentiated by anatomical locations—anterior, posterior, medial, and lateral—represented by various colored markers.</alt-text></graphic></fig><p>Quantifying how porosity and canal diameter evolve from the outer to the inner cortex raised the question of whether these microstructural changes translate into local mechanical behavior; accordingly, the next section relates the radial data to position-matched compressive moduli.</p><p>The position-dependent (Anterior, Posterior, Medial and Lateral) gradients of porosity were plotted in <xref rid="F5" ref-type="fig">Figures 5B–D</xref> at 250, 500 and 750 µm from the outer surface, respectively. Generally, the posterior and medial quadrants consistently exhibit higher porosity compared to the anterior and lateral regions across all depths (<xref rid="F5" ref-type="fig">Figure 5D</xref>). Specifically, at the 750 µm depth, the posterior region shows very high porosity values at several longitudinal positions, whereas the lateral and anterior regions maintain relatively lower, though still elevated, porosity levels.</p></sec><sec id="s3-5"><label>3.5</label><title>Mechanical properties and microstructure correlation</title><p>Relationships between microstructural parameters and mechanical properties were evaluated to confirm the role of microarchitecture in stiffness. Correlations between bone microstructure and compressive properties were assessed by relating porosity and canal diameter to modulus 1 and modulus 2. <xref rid="F6" ref-type="fig">Figure 6A1</xref> shows the relationship between porosity and modulus 1. As porosity increased from approximately 5%–40%, modulus 1 decreased from about 15 MPa to 5 MPa. A similar inverse correlation was observed between porosity and modulus 2 in <xref rid="F6" ref-type="fig">Figure 6A2</xref>. Over the same porosity range (5%–40%), modulus 2 declined from approximately 1.4 MPa–0.7 MPa.</p><fig position="float" id="F6" orientation="portrait"><label>FIGURE 6</label><caption><p>Correlation of modulus 1 and porosity <bold>(A1)</bold>, modulus 2 and porosity <bold>(A2)</bold>. Correlation of modulus 1 and canal diameter <bold>(B1)</bold>, modulus 2 and canal diameter <bold>(B2)</bold>. Compressive stress and strain curve for mechanical compression test <bold>(C)</bold>. In <bold>(C)</bold>, the legend shows the number of sections with ∼2 mm thickness.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fbioe-14-1789149-g006.jpg"><alt-text content-type="machine-generated">Panel A1 displays a scatter plot of modulus 1 versus porosity with an inverse trend; panel A2 shows modulus 2 versus porosity, also decreasing with increased porosity; panel B1 presents modulus 1 versus canal diameter with similar inverse patterns; panel B2 illustrates modulus 2 versus canal diameter, again decreasing with diameter. Panel C displays a line chart of compressive stress versus strain for twelve samples, showing increasing compressive stress with strain and color-coded data series, each with error bars.</alt-text></graphic></fig><p>A Pearson correlation analysis was conducted to assess the association between porosity and Modulus 1. Across the combined dataset, we observed a very weak negative correlation for the pooled data (r = −0.158), p = 0.405). Analysis of a specific subset (n = 3) of 13 data pairs similarly yielded a non-significant, weak negative relationship (r = −0.116, p = 0.706). The same analysis was performed on porosity and modulus 2. We observed a very weak negative correlation for the pooled data (r = −0.214, p = 0.305). Analysis of a specific subset of 13 data pairs similarly yielded a non-significant, weak negative relationship (r = −0.116, p = 0.706). Apparently, the relationship between modulus and porosity is non-linear.</p><p>
+<xref rid="F6" ref-type="fig">Figures 6B1,B2</xref> show the correlations between average canal diameter and modulus 1 and modulus 2, respectively. As canal diameter increased from approximately 20 µm–110 μm, both modulus 1 and modulus 2 exhibited decreasing trends. Modulus 1 declined from around 15 MPa to approximately 5 MPa over this range. Similarly, modulus 2 decreased from about 1.4 MPa to 0.7 MPa. Although the data were more scattered compared to the porosity-based correlations, the overall negative association between canal diameter and compressive stiffness was consistently observed in both metrics.</p><p>
+<xref rid="F6" ref-type="fig">Figure 6C</xref> presents compressive stress–strain curves for all femur slices subjected to mechanical testing. The legends indicate the slice numbers, which correspond to their longitudinal positions along the femur. Each curve exhibited two distinct linear regions. The slope of the first linear region was used to calculate modulus 1, while the slope of the second linear region was used to calculate modulus 2, as described in the methods section. The presence of two linear regions across all tested slices demonstrates the consistency of this mechanical behavior throughout the femur. While the point correlations confirm that stiffness diminishes with increasing void volume and canal size, a continuous profile is required to visualise how structural and mechanical properties co-vary along the entire femoral shaft; the subsequent analysis provides this integrated longitudinal map.</p></sec><sec id="s3-6"><label>3.6</label><title>Longitudinal variation of mechanical and structural properties</title><p>Finally, structural and mechanical profiles were integrated to reveal spatial coordination along the femur shaft. <xref rid="F7" ref-type="fig">Figure 7</xref> presents the variation of microstructural and mechanical parameters along the longitudinal axis of the femur. Average porosity and average canal diameter trends are shown in <xref rid="F7" ref-type="fig">Figures 7A,B</xref>, respectively. Average porosity values were lowest in the shaft region, ranging between 2% and 5%, and increased progressively toward the distal and proximal ends, reaching up to approximately 40%. Average canal diameter exhibited a similar longitudinal pattern, with values between 30 and 40 µm in the shaft and increasing to as high as 110 μm at the bone ends. These trends are consistent with the regional and radial analyses presented in earlier sections.</p><fig position="float" id="F7" orientation="portrait"><label>FIGURE 7</label><caption><p>Porosity <bold>(A)</bold> and canal diameter <bold>(B)</bold> distribution in the femur as a function of the position. Correlation of modulus 1 and position <bold>(C)</bold>, modulus 2 and position <bold>(D)</bold>. Longitudinal variation in bone thickness <bold>(E)</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fbioe-14-1789149-g007.jpg"><alt-text content-type="machine-generated">Figure containing five panels labeled A through E displaying quantitative data across the length of a bone, with each graph paired to a bone illustration marked by red lines denoting measurement regions. Panel A shows porosity percentage decreasing and then increasing along the position axis. Panel B plots canal diameter, which is highest at both ends and lowest in the middle. Panels C and D display two different modulus measurements, with Modulus 1 increasing and Modulus 2 peaking then declining. Panel E illustrates cortical thickness rising to a peak then falling. All data points feature error bars.</alt-text></graphic></fig><p>
+<xref rid="F7" ref-type="fig">Figures 7C,D</xref> show the variation of modulus 1 and modulus 2 along the longitudinal axis of the femur. It is noted here that modulus 1 and modulus 2 are the apparent moduli influenced by the highly porous structure of the bone. Both modulus values peaked in the shaft region and decreased toward the bone ends. Modulus 1 ranged from approximately 5 MPa at the distal end (0 mm), increased to around 25 MPa in the central shaft, and then declined to about 10 MPa at the proximal end (50 mm). Modulus 2 followed a similar trend, rising from approximately 0.7 MPa at the distal end to 1.4 MPa in the shaft and decreasing to around 1.0 MPa at the proximal end. These longitudinal profiles reflect a central zone of greater compressive stiffness, consistent with the lower porosity and smaller canal diameter observed in the shaft region.</p><p>
+<xref rid="F7" ref-type="fig">Figure 7E</xref> shows the longitudinal variation in bone thickness. The overall pattern of bone thickness closely follows the trends observed for modulus 1 and modulus 2 in <xref rid="F7" ref-type="fig">Figures 7C,D</xref>. Bone thickness increased from the distal end toward the shaft and then gradually decreased toward the proximal end. This progression corresponds with the region of highest compressive stiffness and lowest porosity along the shaft, as shown in <xref rid="F7" ref-type="fig">Figures 7A,B</xref>. The spatial alignment of bone thickness with structural and mechanical parameters suggests a consistent anatomical transition along the femur.</p></sec></sec><sec sec-type="discussion" id="s4"><label>4</label><title>Discussion</title><p>Our micro-CT analysis revealed that cortical thickness was highest at the femoral mid-shaft and tapered toward both proximal and distal ends. This region is known to carry the largest bending and axial loads during routine gait, so the extra thickness likely reinforces the bone against fracture (<xref rid="B85" ref-type="bibr">Someya et al., 2020</xref>; <xref rid="B43" ref-type="bibr">Johannesdottir et al., 2011</xref>; <xref rid="B61" ref-type="bibr">Nawathe et al., 2015</xref>). The thinner cortices near the bone ends may represent an anatomical compromise that provides space for blood vessels and allows a gradual transition to trabecular bone at the metaphysis (<xref rid="B35" ref-type="bibr">Gabet et al., 2008</xref>; <xref rid="B23" ref-type="bibr">Ellis et al., 2011</xref>). Previously, Pazzaglia et al. studied New Zeeland rabbits and found no significant difference between the cortical thicknesses of distal and proximal femur (<xref rid="B67" ref-type="bibr">Pazzaglia et al., 2014</xref>). Overall, these results support that region-specific variations in cortical thickness are a key structural factor governing the mechanical competence of long bones.</p><p>Following the thickness analysis, micro-CT imaging showed that vascular canals were widest in the distal cortex (50–200 µm), smallest at the mid-shaft (&lt;50 µm), and intermediate proximally. This regional pattern means that screws or rods of implants pressed into the distal cortex engage a more porous, less stiff substrate than at the shaft, creating a stiffness mismatch that has been linked to early screw loosening and plate-end failure in clinical studies (<xref rid="B7" ref-type="bibr">BOBYN et al., 1992</xref>; <xref rid="B6" ref-type="bibr">Bobyn et al., 1981</xref>; <xref rid="B95" ref-type="bibr">Wang et al., 2020</xref>). A mismatch between the implants and the native bone tissue could additionally place unbalanced loads over the knee joint, further damaging the joint components, including the anterior cruciate ligament (ACL). This unbalanced loading may tear/rupture the ACL, leading to joint instability (<xref rid="B44" ref-type="bibr">Kadyr et al., 2024</xref>; <xref rid="B84" ref-type="bibr">Smatov et al., 2023</xref>; <xref rid="B2" ref-type="bibr">Ad et al., 2022</xref>). Modern plates and scaffolds are usually uniform in density; reproducing the larger distal canals while preserving the tighter mid-shaft architecture could reduce such failures and speed blood-vessel ingrowth during regeneration. Our quantitative canal-diameter map therefore offers practical dimensions for graded implants and additively manufactured scaffolds that aim to match native cortical structure along the bone length.</p><p>Both longitudinally and radially, porosity and canal diameter increased notably toward the femoral ends. Porosity and mean canal diameter were roughly three-times higher at the femoral ends (∼28% porosity; ∼110 µm canals) than at the mid-shaft (∼9%; ∼40 µm). These longitudinal gradients lower stiffness where loads are smaller and boost blood supply and remodeling capacity near joints, but it also means that uniform metal plates or nails over-stiffen the porous ends and can concentrate stresses that lead to screw loosening or end-fracture. Additively manufactured implants and scaffolds that grade pore size—larger at the ends, denser at mid-shaft—would better share load with the host bone (<xref rid="B92" ref-type="bibr">Velioglu et al., 2019</xref>) and speed vascular invasion during healing (<xref rid="B51" ref-type="bibr">Li et al., 2020</xref>; <xref rid="B36" ref-type="bibr">Gallab et al., 2024</xref>; <xref rid="B41" ref-type="bibr">Jin et al., 2025</xref>).</p><p>Moving from lengthwise patterns to the radial direction, porosity and canal diameter rose steadily from the periosteal surface toward the medullary cavity, reaching values of about 80% porosity and ∼200 µm canals in the inner cortex of distal and proximal regions. The radial gradient in porosity and canal diameter, increasing notably from the periosteal surface inward, indicates structural adaptation that might prevent full-thickness fracture propagation (<xref rid="B90" ref-type="bibr">Uhthoff et al., 2006</xref>). Layered implants or scaffold struts that are denser externally and more open internally would better match native load transfer and speed marrow-side vascular invasion (<xref rid="B17" ref-type="bibr">Di Luca et al., 2016a</xref>); present devices rarely achieve such through-thickness grading.</p><p>Long bones exhibit functional adaptation to bending, meaning the medial (compressive) and lateral (tensile) cortices often have different microstructural signatures. In this study, the primary figures report an averaged ‘global’ profile to emphasize the robust longitudinal and through-thickness trends; however, direction-resolved analysis is included to show whether asymmetry exists and to prevent clinically relevant gradients from being obscured by averaging. The experimental results should also be interpreted in the context of the femur’s functional adaptation to asymmetrical loading, where the medial and lateral cortices develop distinct microstructural signatures. During gait, the medial cortex is subjected to high compressive loads, while the lateral cortex predominantly resists tensile stress. Because bone is naturally weaker in tension than in compression, the lateral cortex is more sensitive to structural failure. Our findings show that even at 250 µm, the lateral cortex maintains lower porosity compared to the medial region in certain longitudinal positions, a microstructural strategy likely intended to maximize tensile strength. Furthermore, research indicates that tensile-stressed cortices often exhibit greater porosity and different osteonal patterns—such as fewer, larger osteons—compared to compressive cortices, which typically favor denser, interstitial bone to maintain stiffness. The high porosity observed at 750 µm in the lateral region (<xref rid="F5" ref-type="fig">Figure 5D</xref>) could therefore represent a critical structural vulnerability, as the combination of high tensile stress and increased porosity exponentially reduces the bone’s fracture toughness and bending resistance.</p><p>Building on the spatial gradients already described, our findings showed that both modulus 1 (initial modulus) and modulus 2 (secondary modulus) dropped wherever porosity or mean canal diameter increased: denser regions with smaller canals were stiffer, while more porous regions with larger canals were more compliant. To our knowledge, this is the first study to chart modulus 1 and modulus 2 against porosity and canal diameter across the full shaft of the rabbit femur model, giving a practical way to estimate position-specific stiffness with regard to microstructural properties. Together, these findings support microarchitecture, rather than bulk mineral density, governs cortical mechanics and supply reference values for future comparative or modelling work (<xref rid="B4" ref-type="bibr">Augat and Schorlemmer, 2006</xref>; <xref rid="B80" ref-type="bibr">Seeman, 2017</xref>; <xref rid="B74" ref-type="bibr">Renders et al., 2007</xref>; <xref rid="B79" ref-type="bibr">Schneider et al., 2013</xref>; <xref rid="B91" ref-type="bibr">Uniyal et al., 2021</xref>).</p><p>Thermal changes in collagen structure have been documented in the literature, with denaturation/shrinkage behavior depending on tissue state and conditions (<xref rid="B98" ref-type="bibr">Zhang et al., 2020</xref>; <xref rid="B87" ref-type="bibr">Surowiec et al., 2022</xref>). In our study, the structural metrics extracted by micro-CT (porosity and canal diameter) quantify the mineralized cortical void network geometry, which is less sensitive to hydration than mechanical properties. Importantly, prior work has reported no measurable difference in intracortical porosity by micro-CT between wet and partially dried cortical bone specimens under low-energy drying conditions (<xref rid="B62" ref-type="bibr">Nyman et al., 2013</xref>). Nonetheless, drying at 60 °C could, in principle, introduce microcracks or alter apparent pore morphology. Therefore, micro-CT and mechanical testing were performed on different sample sets, and it is clarified here that “dry-state” micro-CT was used for geometric microarchitecture mapping, whereas mechanical testing was performed in the thawed (hydrated) state to better represent functional behavior.</p><p>Our integrated analysis clearly showed mid-shaft as the zone of highest structural robustness and stiffness. Modulus 1 and modulus 2 were highest at the femoral mid-shaft and declined by roughly 40% toward both distal and proximal ends, matching the longitudinal shifts in thickness, porosity, and canal size described earlier. This alignment shows that the femur gradually softens where loads are lower, a strategy that avoids stress peaks and saves material. Conventional plates and intramedullary rods are uniform in stiffness; by over-supporting the naturally stiff mid-shaft and under-matching the more flexible ends, they can shift load to screw holes and promote plate-end failure (<xref rid="B95" ref-type="bibr">Wang et al., 2020</xref>; <xref rid="B20" ref-type="bibr">Ebrahi et al., 2012</xref>). Functionally graded implants that are rigid at the mid-shaft and progressively more compliant toward the ends would better track the native modulus profile as would additively manufactured scaffolds printed with a similar stiffness gradient to guide regeneration (<xref rid="B63" ref-type="bibr">Oshkour et al., 2013</xref>; <xref rid="B3" ref-type="bibr">Ataollahi Oshkour et al., 2015</xref>).</p><p>The spatial maps of bone thickness, porosity, canal diameter, and modulus presented here offer quantitative targets for the next-generation of total hip and knee replacement devices and for tissue-engineered osteochondral grafts (<xref rid="B29" ref-type="bibr">Erisken et al., 2008a</xref>; <xref rid="B97" ref-type="bibr">Yildirim et al., 2023</xref>; <xref rid="B21" ref-type="bibr">Effanga et al., 2024</xref>; <xref rid="B99" ref-type="bibr">Zhao et al., 2025</xref>). Metallic stems, cups, and tibial trays manufactured from uniform Ti-6Al-4V or Co–Cr alloys typically possess elastic moduli far exceeding those of host bone, particularly at the metaphyseal ends, thereby redistributing load and promoting stress shielding (<xref rid="B95" ref-type="bibr">Wang et al., 2020</xref>). By documenting a pronounced axial drop in cortical stiffness from the femoral mid-shaft toward both the distal and proximal regions concomitant with a marked rise in porosity and canal diameter, the present study defines the magnitude and length-scale of the gradient that graded stems or trays must reproduce to maintain physiological load transfer and mitigate aseptic loosening.</p><p>Axial grading alone, however, cannot resolve interfacial mismatch if radial heterogeneity is ignored. The observed progressive increase in porosity and canal diameter from the outer cortex toward the medullary cavity demonstrates that cortical bone functions as a dense shell surrounding a more compliant, highly vascularized core. Functionally graded scaffolds/grafts (<xref rid="B21" ref-type="bibr">Effanga et al., 2024</xref>; <xref rid="B100" ref-type="bibr">Zhao et al., 2026</xref>; <xref rid="B45" ref-type="bibr">Kadyr et al., 2025</xref>) with seamless gradient that emulate this radial transition can therefore couple high interfacial stiffness and wear resistance at the surface with enhanced vascular and cellular infiltration internally (<xref rid="B52" ref-type="bibr">Li et al., 2024</xref>; <xref rid="B18" ref-type="bibr">Di Luca et al., 2016b</xref>). Such bimodal designs align with emerging porous-metal and polymer-ceramic composites that report accelerated osseointegration when inner canal diameters exceed one hundred micrometers (<xref rid="B46" ref-type="bibr">Karageorgiou and Kaplan, 2005</xref>).</p><p>Beyond empirical design, the strong relationships quantified here between local modulus and structural metrics such as porosity and canal diameter establish data-driven rules for assigning position-dependent material properties in the analysis of implants and grafts. Incorporating this relationship allows simulations to capture the gradual load hand-off from implant to host tissue, providing a foundation for optimizing regional implant density, structure thickness, and material composition prior to manufacturing. Earlier, a strong dependence of modulus on porosity was determined at smaller length scales (<xref rid="B47" ref-type="bibr">Kaya et al., 2017</xref>); however, in our study we could not find a strong and significant correlation.</p><p>Our approach combined high micro-CT with location-matched compression tests, allowing us to link local modulus values to canal diameter and porosity with millimeter-scale precision. Although the rabbit model provides valuable insights due to practical advantages, higher turnover rates and anatomical differences limit direct translation of absolute thresholds to human bones, highlighting the need for cautious extrapolation. Additional limitations include the modest sample size, removal of periosteum during preparation (which may alter hydration), and the use of uniaxial compression rather than bending, all of which could influence absolute modulus values. Even so, the thorough 3D study and profiling of rabbit femur microstructural and biomechanical properties strengthen confidence in the positional patterns reported here and provide a clear baseline for future graded-implant and scaffold studies.</p><p>Future studies should extend these findings to larger animal or human cadaveric models, evaluate changes with aging and disease, and use these refined data sets to directly guide the design of implants and scaffolds optimized for clinical translation. Second, longitudinal micro-CT and matched mechanical testing in ageing or osteoporotic rabbits could track how these spatial patterns evolve with disease or time and establish thresholds for intervention. Third, the quantitative maps of thickness, porosity, canal size, and modulus reported here can be integrated into the design loop for implants and scaffolds for tissue engineering, enabling graded biomaterials that better match native stiffness and vascular requirements than today’s uniform devices. Functionally graded materials (FGMs), i.e., composites characterized by spatially varying properties that transition continuously or discretely across dimensions (<xref rid="B79" ref-type="bibr">Schneider et al., 2013</xref>; <xref rid="B91" ref-type="bibr">Uniyal et al., 2021</xref>; <xref rid="B71" ref-type="bibr">Pompe et al., 2003</xref>; <xref rid="B59" ref-type="bibr">Mikos et al., 2006</xref>; <xref rid="B49" ref-type="bibr">Leong et al., 2008</xref>; <xref rid="B72" ref-type="bibr">Puppi et al., 2010</xref>) can be used. Such materials can be designed to address the limitations inherent in homogeneous systems, particularly at interfaces where abrupt property differences can lead to mechanical failure or poor biological integration (<xref rid="B91" ref-type="bibr">Uniyal et al., 2021</xref>; <xref rid="B96" ref-type="bibr">Wegrzyn et al., 2010</xref>). FGMs enable gradual changes in composition, microstructure, or porosity, facilitating improved load transfer, stress distribution, and material compatibility in structural and biomedical applications (<xref rid="B79" ref-type="bibr">Schneider et al., 2013</xref>; <xref rid="B53" ref-type="bibr">Lloyd et al., 2015</xref>; <xref rid="B33" ref-type="bibr">Feng and Todoh, 2021</xref>; <xref rid="B72" ref-type="bibr">Puppi et al., 2010</xref>).</p><p>The osteochondral interface, which connects articular cartilage to the underlying subchondral bone, is a prototypical example of a biological FGM. It transitions from a viscoelastic, avascular cartilage layer to a highly mineralized bone layer, reflecting a continuous increase in mechanical stiffness across the interface (<xref rid="B95" ref-type="bibr">Wang et al., 2020</xref>; <xref rid="B1" ref-type="bibr">Abbasi et al., 2020</xref>). Mimicking this gradient would be essential to engineering grafts that perform comparably to native tissue under physiological loading conditions (<xref rid="B46" ref-type="bibr">Karageorgiou and Kaplan, 2005</xref>; <xref rid="B48" ref-type="bibr">Krishna et al., 2007</xref>).</p><p>An additional recent focus in biomaterials research has been on integrating fabrication techniques that are industrially relevant, such as extrusion-based bioprinting, hybrid extrusion and electrospinning, coextrusion for multiple layers, hybrid extrusion and spiral winding, melt electrowriting to develop FGMs with fine-tuned gradients in mineral content and mechanical properties (<xref rid="B29" ref-type="bibr">Erisken et al., 2008a</xref>; <xref rid="B30" ref-type="bibr">Erisken et al., 2008b</xref>; <xref rid="B15" ref-type="bibr">Chung et al., 2018</xref>; <xref rid="B88" ref-type="bibr">Tourlomousis et al., 2017</xref>; <xref rid="B89" ref-type="bibr">Tourlomousis et al., 2019</xref>; <xref rid="B83" ref-type="bibr">Senturk-Ozer et al., 2016</xref>; <xref rid="B64" ref-type="bibr">Ozkan et al., 2009</xref>; <xref rid="B65" ref-type="bibr">Ozkan et al., 2010</xref>; <xref rid="B31" ref-type="bibr">Erisken et al., 2010</xref>; <xref rid="B25" ref-type="bibr">Ergun et al., 2011a</xref>; <xref rid="B26" ref-type="bibr">Ergun et al., 2011b</xref>; <xref rid="B27" ref-type="bibr">Ergun et al., 2012a</xref>; <xref rid="B28" ref-type="bibr">Ergun et al., 2012b</xref>; <xref rid="B14" ref-type="bibr">Chen et al., 2013</xref>). Bioartificial scaffolds could also serve as useful biomaterials due to the preserved structure of the tissue (<xref rid="B82" ref-type="bibr">Seitzhaparova et al., 2025</xref>). Such technologies have the potential to facilitate seamless transitions between distinct biomaterial phases and can be instrumental in the development of osteochondral scaffolds that closely mimic the native interface (<xref rid="B56" ref-type="bibr">Lu et al., 2010</xref>; <xref rid="B32" ref-type="bibr">Erisken et al., 2011</xref>; <xref rid="B81" ref-type="bibr">Seidi et al., 2011</xref>).</p><p>Lastly, while the rabbit model provides rapid healing and tractable size, its higher turnover rate and thinner cortex mean that absolute thresholds may differ from those in larger animals or in humans. Extending the present mapping to ovine or cadaveric femoral shafts, and tracking how the gradients shift with age, disease, and cyclic loading, will refine the design window for clinical devices. Integrating our micro-CT–derived modulus relationships into finite-element simulations and iterative implant prototyping will further accelerate translation. Additionally, micro-CT imaging was conducted on dehydrated specimens (60 °C, 12 h), whereas mechanical testing was performed a separate cohort. Because hydration strongly affects bone mechanical behavior, modulus values are not directly comparable across hydration states. While the micro-CT analysis targets the mineralized void network geometry (porosity/canal diameter), future studies will include paired scans of wet/chemically fixed <italic toggle="yes">versus</italic> dried specimens to directly verify that the dehydration protocol does not introduce microcracking or bias porosity quantification. Furthermore, the lacunocanalicular system (LCS) is the primary site for osteocyte mechanosensing and plays a critical role in bone biomechanics <italic toggle="yes">via</italic> fluid shear stress perception. Here we focused mainly on the vascular canal system due to following considerations: Firstly, the primary goal of this study was to define structural benchmarks for functionally graded scaffolds and macroscopic implants. While the LCS is essential for cellular signaling, the macroscopic stiffness and bulk permeability of cortical bone, which govern load distribution and initial vascular ingrowth in regenerative medicine, are primarily dictated by the larger-scale cortical porosity and vascular canal architecture (∼40–200 µm in our study). Replicating these larger gradients is the first essential step in creating “native-like” stiffness transitions in synthetic implants. Also, our study utilized high-resolution micro-computed tomography (micro-CT) to quantify microgradients. While this technology is excellent for capturing vascular canals (typically 50–100 µm), the canaliculi themselves are sub-micron structures requiring advanced techniques like Synchrotron Radiation CT or Confocal Laser Scanning Microscopy, which were beyond the scope of this baseline structural study. Finally, it is important to note that the Haversian canals act as local “sinks” for the fluid flow that moves through the LCS. Therefore, by mapping the longitudinal and radial gradients of these larger canals, we have implicitly provided a framework for the boundary conditions that govern LCS fluid dynamics and subsequent mechanotransduction. In this regard, while our study focuses on the vascular scale necessary for scaffold design, the interplay between these macro-pores and the microscopic lacunocanalicular mechanosensing network is a vital area for future multi-scale modeling.</p></sec><sec sec-type="conclusion" id="s5"><label>5</label><title>Conclusion</title><p>This work set out to create a detailed, spatially resolved picture of structure–function relationships along the rabbit femoral shaft and to translate those insights into design criteria for next-generation orthopedic implants and tissue-engineered scaffolds. By pairing high-resolution micro-CT imaging with location-matched compression testing, we mapped bone thickness, porosity, vascular-canal diameter, and local modulus at millimeter-scale precision, producing, to the best of our knowledge, the first full-wall dataset of its kind for any long bone in the rabbit model.</p><p>Three consistent patterns emerged. First, bone thickness peaked at mid-shaft and tapered toward both ends, aligning with the region of greatest habitual bending and axial load. Second, porosity and mean canal diameter rose not only from shaft to ends but also from the outer surface toward the medullary cavity, creating combined longitudinal and radial gradients in void fraction. Third, both the initial and post-yield moduli fell wherever porosity or canal size increased, demonstrating that microarchitecture—rather than bulk mineral density—governs cortical stiffness. Together, these findings reveal a shaft that is simultaneously thick, dense, and stiff, flanked by ends that are thinner, more porous, and mechanically compliant. Translating these observations to practice, the numeric profiles reported here offer concrete targets for functionally graded plates, intramedullary rods, and additively manufactured scaffolds. Implants that preserve a stiff mid-shaft segment while gradually reducing stiffness and increasing permeability toward the bone ends—and toward the marrow side—could mitigate screw loosening, stress shielding, and delayed union. Likewise, scaffolds patterned with smaller, load-bearing pores at mid-shaft and larger, angiogenic pores distally and medially should better balance mechanical support with vascular access during regeneration.</p></sec></body><back><fn-group><fn fn-type="edited-by"><p>
+<bold>Edited by:</bold>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/418504/overview" ext-link-type="uri">Elisa Mazzoni</ext-link>, University of Ferrara, Italy</p></fn><fn fn-type="reviewed-by"><p>
+<bold>Reviewed by:</bold>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/2987629/overview" ext-link-type="uri">Yu Wei-Lu N.</ext-link>, Jilin Medical University, China</p><p>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/3133043/overview" ext-link-type="uri">Sachin Kalsi</ext-link>, Chandigarh University, India</p></fn></fn-group><sec sec-type="data-availability" id="s6"><title>Data availability statement</title><p>The original contributions presented in the study are included in the article/supplementary material, further inquiries can be directed to the corresponding authors.</p></sec><sec sec-type="ethics-statement" id="s7"><title>Ethics statement</title><p>Ethical approval was not required for the study involving animals in accordance with the local legislation and institutional requirements because the bone tissue was obtained from a local butcher. Animals were sacrificed for for food production.</p></sec><sec sec-type="author-contributions" id="s8"><title>Author contributions</title><p>XZ: Validation, Methodology, Data curation, Investigation, Writing – original draft, Formal Analysis, Visualization. XY: Validation, Writing – review and editing. SN: Methodology, Visualization, Writing – original draft. AZ: Writing – original draft, Methodology, Visualization. DK: Writing – review and editing, Methodology, Supervision, Resources, Investigation, Visualization, Project administration, Validation. CE: Formal Analysis, Data curation, Investigation, Writing – review and editing, Conceptualization, Methodology, Visualization, Funding acquisition.</p></sec><sec sec-type="COI-statement" id="s10"><title>Conflict of interest</title><p>The author(s) declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></sec><sec sec-type="ai-statement" id="s11"><title>Generative AI statement</title><p>The author(s) declared that generative AI was not used in the creation of this manuscript.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></sec><sec sec-type="disclaimer" id="s12"><title>Publisher’s note</title><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></sec><ref-list><title>References</title><ref id="B1"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Abbasi</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Hamlet</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Love</surname><given-names>R. M.</given-names></name>
+<name name-style="western"><surname>Nguyen</surname><given-names>N. T.</given-names></name>
+</person-group> (<year>2020</year>). <article-title>Porous scaffolds for bone regeneration</article-title>. <source>J. Sci. Adv. Mater. Devices</source>
+<volume>5</volume>, <fpage>1</fpage>–<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1016/j.jsamd.2020.01.007</pub-id>
+</mixed-citation></ref><ref id="B2"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Adeoye</surname><given-names>A. O.</given-names></name>
+<name name-style="western"><surname>Mukasheva</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Smatov</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Khumyrzakh</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Kadyr</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Shulgau</surname><given-names>Z.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>A biomimetic synthetic nanofiber-based model for anterior cruciate ligament regeneration</article-title>. <source>Front. Bioeng. Biotechnol.</source>
+<volume>10</volume>, <fpage>969282</fpage>. <pub-id pub-id-type="doi">10.3389/fbioe.2022.969282</pub-id>
+<pub-id pub-id-type="pmid">36394020</pub-id>
+<pub-id pub-id-type="pmcid">PMC9644221</pub-id></mixed-citation></ref><ref id="B3"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ataollahi Oshkour</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Pramanik</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Mehrali</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Yau</surname><given-names>Y. H.</given-names></name>
+<name name-style="western"><surname>Tarlochan</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Abu Osman</surname><given-names>N. A.</given-names></name>
+</person-group> (<year>2015</year>). <article-title>Mechanical and physical behavior of newly developed functionally graded materials and composites of stainless steel 316L with calcium silicate and hydroxyapatite</article-title>. <source>J. Mech. Behav. Biomed. Mater.</source>
+<volume>49</volume>, <fpage>321</fpage>–<lpage>331</lpage>. <pub-id pub-id-type="doi">10.1016/j.jmbbm.2015.05.020</pub-id>
+<pub-id pub-id-type="pmid">26072197</pub-id>
+</mixed-citation></ref><ref id="B4"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Augat</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Schorlemmer</surname><given-names>S.</given-names></name>
+</person-group> (<year>2006</year>). <article-title>The role of cortical bone and its microstructure in bone strength</article-title>. <source>Age Ageing</source>
+<volume>35</volume>, <fpage>ii27</fpage>–<lpage>ii31</lpage>. <pub-id pub-id-type="doi">10.1093/ageing/afl081</pub-id>
+<pub-id pub-id-type="pmid">16926200</pub-id>
+</mixed-citation></ref><ref id="B5"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Bagi</surname><given-names>C. M.</given-names></name>
+<name name-style="western"><surname>Berryman</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Moalli</surname><given-names>M. R.</given-names></name>
+</person-group> (<year>2011</year>). <article-title>Comparative bone anatomy of commonly used laboratory animals: implications for drug discovery</article-title>. <source>Comp. Med.</source>
+<volume>61</volume>, <fpage>76</fpage>–<lpage>85</lpage>.
+<pub-id pub-id-type="pmid">21819685</pub-id>
+<pub-id pub-id-type="pmcid">PMC3060425</pub-id></mixed-citation></ref><ref id="B6"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Bobyn</surname><given-names>J. D.</given-names></name>
+<name name-style="western"><surname>Pilliar</surname><given-names>R. M.</given-names></name>
+<name name-style="western"><surname>Cameron</surname><given-names>H. U.</given-names></name>
+<name name-style="western"><surname>Weatherly</surname><given-names>G. C.</given-names></name>
+</person-group> (<year>1981</year>). <article-title>Osteogenic phenomena across endosteal bone-implant spaces with porous surfaced intramedullary implants</article-title>. <source>Acta Orthop. Scand.</source>
+<volume>52</volume>, <fpage>145</fpage>–<lpage>153</lpage>. <pub-id pub-id-type="doi">10.3109/17453678108991775</pub-id>
+<pub-id pub-id-type="pmid">7246092</pub-id>
+</mixed-citation></ref><ref id="B7"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Bobyn</surname><given-names>J. D.</given-names></name>
+<name name-style="western"><surname>Mortimer</surname><given-names>E. S.</given-names></name>
+<name name-style="western"><surname>Glassman</surname><given-names>A. H.</given-names></name>
+<name name-style="western"><surname>Engh</surname><given-names>C. A.</given-names></name>
+<name name-style="western"><surname>Miller</surname><given-names>J. E.</given-names></name>
+<name name-style="western"><surname>Brooks</surname><given-names>C. E.</given-names></name>
+<etal/>
+</person-group> (<year>1992</year>). <article-title>Producing and avoiding stress shielding</article-title>. <source>Clin. Orthop. Relat. Res.</source>
+<volume>274</volume>, <fpage>79</fpage>–<lpage>96</lpage>. <pub-id pub-id-type="doi">10.1097/00003086-199201000-00010</pub-id>
+<pub-id pub-id-type="pmid">1729025</pub-id>
+</mixed-citation></ref><ref id="B8"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Bolger</surname><given-names>M. W.</given-names></name>
+<name name-style="western"><surname>Romanowicz</surname><given-names>G. E.</given-names></name>
+<name name-style="western"><surname>Kohn</surname><given-names>D. H.</given-names></name>
+</person-group> (<year>2019</year>). <article-title>Advancements in composition and structural characterization of bone to inform mechanical outcomes and modeling</article-title>. <source>Curr. Opin. Biomed. Eng.</source>
+<volume>11</volume>, <fpage>76</fpage>–<lpage>84</lpage>. <pub-id pub-id-type="doi">10.1016/j.cobme.2019.09.011</pub-id>
+<pub-id pub-id-type="pmid">32864522</pub-id>
+<pub-id pub-id-type="pmcid">PMC7450708</pub-id></mixed-citation></ref><ref id="B9"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Boskey</surname><given-names>A. L.</given-names></name>
+<name name-style="western"><surname>Imbert</surname><given-names>L.</given-names></name>
+</person-group> (<year>2017</year>). <article-title>Bone quality changes associated with aging and disease: a review</article-title>. <source>Ann. N. Y. Acad. Sci.</source>
+<volume>1410</volume>, <fpage>93</fpage>–<lpage>106</lpage>. <pub-id pub-id-type="doi">10.1111/nyas.13572</pub-id>
+<pub-id pub-id-type="pmid">29265417</pub-id>
+<pub-id pub-id-type="pmcid">PMC5774017</pub-id></mixed-citation></ref><ref id="B10"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Brandi</surname><given-names>M. L.</given-names></name>
+</person-group> (<year>2009</year>). <article-title>Microarchitecture, the key to bone quality</article-title>. <source>Rheumatol. (United Kingdom)</source>
+<volume>48</volume>, <fpage>iv3</fpage>–<lpage>iv8</lpage>. <pub-id pub-id-type="doi">10.1093/rheumatology/kep273</pub-id>
+<pub-id pub-id-type="pmid">19783591</pub-id>
+</mixed-citation></ref><ref id="B11"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Burghardt</surname><given-names>A. J.</given-names></name>
+<name name-style="western"><surname>Link</surname><given-names>T. M.</given-names></name>
+<name name-style="western"><surname>Majumdar</surname><given-names>S.</given-names></name>
+</person-group> (<year>2011</year>). <article-title>High-resolution computed tomography for clinical imaging of bone microarchitecture</article-title>. <source>Clin. Orthop. Relat. Res.</source>
+<volume>469</volume>, <fpage>2179</fpage>–<lpage>2193</lpage>. <pub-id pub-id-type="doi">10.1007/s11999-010-1766-x</pub-id>
+<pub-id pub-id-type="pmid">21344275</pub-id>
+<pub-id pub-id-type="pmcid">PMC3126972</pub-id></mixed-citation></ref><ref id="B12"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Cai</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Brenner</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Peralta</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Olivier</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Gouttenoire</surname><given-names>P. J.</given-names></name>
+<name name-style="western"><surname>Chappard</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group> (<year>2019</year>). <article-title>Homogenization of cortical bone reveals that the organization and shape of pores marginally affect elasticity</article-title>. <source>J. R. Soc. Interface</source>
+<volume>16</volume>, <fpage>20180911</fpage>. <pub-id pub-id-type="doi">10.1098/rsif.2018.0911</pub-id>
+<pub-id pub-id-type="pmid">30958180</pub-id>
+<pub-id pub-id-type="pmcid">PMC6408344</pub-id></mixed-citation></ref><ref id="B13"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Campbell</surname><given-names>G. M.</given-names></name>
+<name name-style="western"><surname>Sophocleous</surname><given-names>A.</given-names></name>
+</person-group> (<year>2014</year>). <article-title>Quantitative analysis of bone and soft tissue by micro-computed tomography: applications to <italic toggle="yes">ex vivo</italic> and <italic toggle="yes">in vivo</italic> studies</article-title>. <source>Bonekey Rep.</source>
+<volume>3</volume>, <fpage>564</fpage>. <pub-id pub-id-type="doi">10.1038/bonekey.2014.59</pub-id>
+<pub-id pub-id-type="pmid">25184037</pub-id>
+<pub-id pub-id-type="pmcid">PMC4140449</pub-id></mixed-citation></ref><ref id="B14"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Chen</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Ergun</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Gevgilili</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Ozkan</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>H.</given-names></name>
+</person-group> (<year>2013</year>). <article-title>Shell-core bi-layered scaffolds for engineering of vascularized osteon-like structures</article-title>. <source>Biomaterials</source>
+<volume>34</volume>, <fpage>8203</fpage>–<lpage>8212</lpage>. <pub-id pub-id-type="doi">10.1016/j.biomaterials.2013.07.035</pub-id>
+<pub-id pub-id-type="pmid">23896002</pub-id>
+</mixed-citation></ref><ref id="B15"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Chung</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Valdevit</surname><given-names>A.</given-names></name>
+</person-group> (<year>2018</year>). <article-title>Segmental bone replacement via patient‐specific, three‐dimensional printed bioresorbable graft substitutes and their use as templates for the culture of mesenchymal stem cells under mechanical stimulation at various frequencies</article-title>. <source>Biotechnol. Bioeng.</source>
+<volume>115</volume>, <fpage>2365</fpage>–<lpage>2376</lpage>. <pub-id pub-id-type="doi">10.1002/bit.26780</pub-id>
+<pub-id pub-id-type="pmid">29940090</pub-id>
+</mixed-citation></ref><ref id="B16"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Cvetkovic</surname><given-names>V. J.</given-names></name>
+<name name-style="western"><surname>Najman</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Rajkovic</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Zabar</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Vasiljevic</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Djordjevic</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2013</year>). <article-title>A comparison of the microarchitecture of lower limb long bones between some animal models and humans: a review</article-title>. <source>Vet. Med. (Praha)</source>
+<volume>58</volume>, <fpage>339</fpage>–<lpage>351</lpage>. <pub-id pub-id-type="doi">10.17221/6914-vetmed</pub-id>
+</mixed-citation></ref><ref id="B17"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Di Luca</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Ostrowska</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Lorenzo-Moldero</surname><given-names>I.</given-names></name>
+<name name-style="western"><surname>Lepedda</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Swieszkowski</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Van Blitterswijk</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group> (<year>2016a</year>). <article-title>Gradients in pore size enhance the osteogenic differentiation of human mesenchymal stromal cells in three-dimensional scaffolds</article-title>. <source>Sci. Rep.</source>
+<volume>6</volume>, <fpage>22898</fpage>. <pub-id pub-id-type="doi">10.1038/srep22898</pub-id>
+<pub-id pub-id-type="pmid">26961859</pub-id>
+<pub-id pub-id-type="pmcid">PMC4790631</pub-id></mixed-citation></ref><ref id="B18"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Di Luca</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Longoni</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Criscenti</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Mota</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>van Blitterswijk</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Moroni</surname><given-names>L.</given-names></name>
+</person-group> (<year>2016b</year>). <article-title>Toward mimicking the bone structure: design of novel hierarchical scaffolds with a tailored radial porosity gradient</article-title>. <source>Biofabrication</source>
+<volume>8</volume>, <fpage>045007</fpage>. <pub-id pub-id-type="doi">10.1088/1758-5090/8/4/045007</pub-id>
+<pub-id pub-id-type="pmid">27725338</pub-id>
+</mixed-citation></ref><ref id="B19"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Dong</surname><given-names>X. N.</given-names></name>
+<name name-style="western"><surname>Guo</surname><given-names>X. E.</given-names></name>
+</person-group> (<year>2001</year>). <article-title>Predicting a power law between elastic modulus and porosity in cortical bone: a micromechanics model</article-title>. <source>Am. Soc. Mech. Eng. Bioeng. Div. BED</source>
+<volume>51</volume>, <fpage>65</fpage>–<lpage>66</lpage>.</mixed-citation></ref><ref id="B20"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ebrahimi</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Rabinovich</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Vuleta</surname><given-names>V.</given-names></name>
+<name name-style="western"><surname>Zalcman</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Shah</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Dubov</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group> (<year>2012</year>). <article-title>Biomechanical properties of an intact, injured, repaired, and healed femur: an experimental and computational study</article-title>. <source>J. Mech. Behav. Biomed. Mater.</source>
+<volume>16</volume>, <fpage>121</fpage>–<lpage>135</lpage>. <pub-id pub-id-type="doi">10.1016/j.jmbbm.2012.09.005</pub-id>
+<pub-id pub-id-type="pmid">23182385</pub-id>
+</mixed-citation></ref><ref id="B21"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Effanga</surname><given-names>V. E.</given-names></name>
+<name name-style="western"><surname>Akilbekova</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Mukasheva</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Zhao</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>
+<italic toggle="yes">In vitro</italic> investigation of 3D printed hydrogel scaffolds with electrospun tidemark component for modeling osteochondral interface</article-title>. <source>Gels Basel, Switzerland</source>
+<volume>10</volume>, <fpage>745</fpage>. <pub-id pub-id-type="doi">10.3390/gels10110745</pub-id>
+<pub-id pub-id-type="pmid">39590101</pub-id>
+<pub-id pub-id-type="pmcid">PMC11593412</pub-id></mixed-citation></ref><ref id="B22"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>El-Gizawy</surname><given-names>A. S.</given-names></name>
+<name name-style="western"><surname>Ma</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Pfeiffer</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Schiffbauer</surname><given-names>J. D.</given-names></name>
+<name name-style="western"><surname>Selly</surname><given-names>T.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>Characterization of microarchitectures, stiffness and strength of human trabecular bone using micro-computed tomography (Micro-CT) scans</article-title>. <source>BioMed</source>
+<volume>3</volume>, <fpage>89</fpage>–<lpage>100</lpage>. <pub-id pub-id-type="doi">10.3390/biomed3010007</pub-id>
+</mixed-citation></ref><ref id="B23"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ellis</surname><given-names>S. L.</given-names></name>
+<name name-style="western"><surname>Grassinger</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Jones</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Borg</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Camenisch</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Haylock</surname><given-names>D.</given-names></name>
+<etal/>
+</person-group> (<year>2011</year>). <article-title>The relationship between bone, hemopoietic stem cells, and vasculature</article-title>. <source>Blood</source>
+<volume>118</volume>, <fpage>1516</fpage>–<lpage>1524</lpage>. <pub-id pub-id-type="doi">10.1182/blood-2010-08-303800</pub-id>
+<pub-id pub-id-type="pmid">21673348</pub-id>
+</mixed-citation></ref><ref id="B24"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Engelke</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Graeff</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Meiss</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Hahn</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Delling</surname><given-names>G.</given-names></name>
+</person-group> (<year>1993</year>). <article-title>High spatial resolution imaging of bone mineral using computed microtomography. Comparison with microradiography and undecalcified histologic sections</article-title>. <source>Invest. Radiol.</source>
+<volume>28</volume>, <fpage>341</fpage>–<lpage>349</lpage>. <pub-id pub-id-type="doi">10.1097/00004424-199304000-00016</pub-id>
+<pub-id pub-id-type="pmid">7683009</pub-id>
+</mixed-citation></ref><ref id="B25"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ergun</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Valdevit</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Ritter</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+</person-group> (<year>2011a</year>). <article-title>
+<italic toggle="yes">In vitro</italic> analysis and mechanical properties of twin screw extruded single-layered and coextruded multilayered poly(caprolactone) scaffolds seeded with human fetal osteoblasts for bone tissue engineering</article-title>. <source>J. Biomed. Mater. Res. A</source>
+<volume>99</volume>, <fpage>354</fpage>–<lpage>366</lpage>. <pub-id pub-id-type="doi">10.1002/jbm.a.33190</pub-id>
+<pub-id pub-id-type="pmid">22021183</pub-id>
+</mixed-citation></ref><ref id="B26"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ergun</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Valdevit</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Ritter</surname><given-names>A.</given-names></name>
+</person-group> (<year>2011b</year>). <article-title>Compressive fatigue behavior of osteoblast seeded tissue constructs of poly(caprolactone) multilayered scaffolds for bone graft substitute applications</article-title>. in <source>Orthopaedic research society transactions</source>, <fpage>1850</fpage>.</mixed-citation></ref><ref id="B27"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ergun</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Valdevit</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Ritter</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+</person-group> (<year>2012a</year>). <article-title>Radially and axially graded multizonal bone graft substitutes targeting critical-sized bone defects from polycaprolactone/hydroxyapatite/tricalcium phosphate</article-title>. <source>Tissue Eng. Part A</source>
+<volume>18</volume>, <fpage>2426</fpage>–<lpage>2436</lpage>. <pub-id pub-id-type="doi">10.1089/ten.TEA.2011.0625</pub-id>
+<pub-id pub-id-type="pmid">22764839</pub-id>
+<pub-id pub-id-type="pmcid">PMC3501112</pub-id></mixed-citation></ref><ref id="B28"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ergun</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Chung</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Ward</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Valdevit</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Ritter</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+</person-group> (<year>2012b</year>). <article-title>Unitary bioresorbable cage/core bone graft substitutes for spinal arthrodesis coextruded from polycaprolactone biocomposites</article-title>. <source>Ann. Biomed. Eng.</source>
+<volume>40</volume>, <fpage>1073</fpage>–<lpage>1087</lpage>. <pub-id pub-id-type="doi">10.1007/s10439-011-0484-1</pub-id>
+<pub-id pub-id-type="pmid">22179683</pub-id>
+</mixed-citation></ref><ref id="B29"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>H.</given-names></name>
+</person-group> (<year>2008a</year>). <article-title>Functionally graded electrospun polycaprolactone and β-tricalcium phosphate nanocomposites for tissue engineering applications</article-title>. <source>Biomaterials</source>
+<volume>29</volume>, <fpage>4065</fpage>–<lpage>4073</lpage>. <pub-id pub-id-type="doi">10.1016/j.biomaterials.2008.06.022</pub-id>
+<pub-id pub-id-type="pmid">18649939</pub-id>
+</mixed-citation></ref><ref id="B30"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>H.</given-names></name>
+</person-group> (<year>2008b</year>). <article-title>A hybrid twin screw extrusion/electrospinning method to process nanoparticle-incorporated electrospun nanofibres</article-title>. <source>Nanotechnology</source>
+<volume>19</volume>, <fpage>165302</fpage>. <pub-id pub-id-type="doi">10.1088/0957-4484/19/16/165302</pub-id>
+<pub-id pub-id-type="pmid">21825641</pub-id>
+</mixed-citation></ref><ref id="B31"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>H.</given-names></name>
+</person-group> (<year>2010</year>). <article-title>Viscoelastic and biomechanical properties of osteochondral tissue constructs generated from graded polycaprolactone and beta-tricalcium phosphate composites</article-title>. <source>J. Biomech. Eng.</source>
+<volume>132</volume>, <fpage>091013</fpage>. <pub-id pub-id-type="doi">10.1115/1.4001884</pub-id>
+<pub-id pub-id-type="pmid">20815647</pub-id>
+</mixed-citation></ref><ref id="B32"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Ornek-Ballanco</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>J.</given-names></name>
+</person-group> (<year>2011</year>). <article-title>Osteochondral tissue formation through adipose-derived stromal cell differentiation on biomimetic polycaprolactone nanofibrous scaffolds with graded insulin and beta-glycerophosphate concentrations</article-title>. <source>Tissue Eng. Part A</source>
+<volume>17</volume>, <fpage>1239</fpage>–<lpage>1252</lpage>. <pub-id pub-id-type="doi">10.1089/ten.TEA.2009.0693</pub-id>
+<pub-id pub-id-type="pmid">21189068</pub-id>
+</mixed-citation></ref><ref id="B33"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Feng</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Todoh</surname><given-names>M.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Effect of microstructure and bone mineral density on mechanical properties of cortical bone</article-title>. <source>Proc. Mater. Mech. Conf.</source>
+<volume>2021</volume>, <fpage>OS0409</fpage>. <pub-id pub-id-type="doi">10.1299/jsmemm.2021.os0409</pub-id>
+</mixed-citation></ref><ref id="B34"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Fratzl</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Gupta</surname><given-names>H. S.</given-names></name>
+<name name-style="western"><surname>Paschalis</surname><given-names>E. P.</given-names></name>
+<name name-style="western"><surname>Roschger</surname><given-names>P.</given-names></name>
+</person-group> (<year>2004</year>). <article-title>Structure and mechanical quality of the collagen–mineral nano-composite in bone</article-title>. <source>J. Mater. Chem.</source>
+<volume>14</volume>, <fpage>2115</fpage>–<lpage>2123</lpage>. <pub-id pub-id-type="doi">10.1039/b402005g</pub-id>
+</mixed-citation></ref><ref id="B35"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Gabet</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Kohavi</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Kohler</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Baras</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Müller</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Bab</surname><given-names>I.</given-names></name>
+</person-group> (<year>2008</year>). <article-title>Trabecular bone gradient in rat long bone metaphyses: mathematical modeling and application to morphometric measurements and correction of implant positioning</article-title>. <source>J. Bone Min. Res.</source>
+<volume>23</volume>, <fpage>48</fpage>–<lpage>57</lpage>. <pub-id pub-id-type="doi">10.1359/jbmr.070901</pub-id>
+<pub-id pub-id-type="pmid">17892373</pub-id>
+</mixed-citation></ref><ref id="B36"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Gallab</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Le</surname><given-names>P. T. M.</given-names></name>
+<name name-style="western"><surname>Shintani</surname><given-names>S. A.</given-names></name>
+<name name-style="western"><surname>Takadama</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Ito</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Kitagaki</surname><given-names>H.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Mechanical, bioactive, and long-lasting antibacterial properties of a Ti scaffold with gradient pores releasing iodine ions</article-title>. <source>Biomater. Adv.</source>
+<volume>158</volume>, <fpage>213781</fpage>. <pub-id pub-id-type="doi">10.1016/j.bioadv.2024.213781</pub-id>
+<pub-id pub-id-type="pmid">38335763</pub-id>
+</mixed-citation></ref><ref id="B37"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Gauthier</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Langer</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Follet</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Olivier</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Gouttenoire</surname><given-names>P. J.</given-names></name>
+<name name-style="western"><surname>Helfen</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2018</year>). <article-title>3D micro structural analysis of human cortical bone in paired femoral diaphysis, femoral neck and radial diaphysis</article-title>. <source>J. Struct. Biol.</source>
+<volume>204</volume>, <fpage>182</fpage>–<lpage>190</lpage>. <pub-id pub-id-type="doi">10.1016/j.jsb.2018.08.006</pub-id>
+<pub-id pub-id-type="pmid">30107234</pub-id>
+</mixed-citation></ref><ref id="B38"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Harrison</surname><given-names>K. D.</given-names></name>
+<name name-style="western"><surname>Hiebert</surname><given-names>B. D.</given-names></name>
+<name name-style="western"><surname>Panahifar</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Andronowski</surname><given-names>J. M.</given-names></name>
+<name name-style="western"><surname>Ashique</surname><given-names>A. M.</given-names></name>
+<name name-style="western"><surname>King</surname><given-names>G. A.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Cortical bone porosity in rabbit models of osteoporosis</article-title>. <source>J. Bone Min. Res.</source>
+<volume>35</volume>, <fpage>2211</fpage>–<lpage>2228</lpage>. <pub-id pub-id-type="doi">10.1002/jbmr.4124</pub-id>
+<pub-id pub-id-type="pmid">32614975</pub-id>
+<pub-id pub-id-type="pmcid">PMC7702175</pub-id></mixed-citation></ref><ref id="B39"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Huiskes</surname><given-names>R.</given-names></name>
+</person-group> (<year>1982</year>). <article-title>On the modelling of long bones in structural analyses</article-title>. <source>J. Biomech.</source>
+<volume>15</volume>, <fpage>65</fpage>–<lpage>69</lpage>. <pub-id pub-id-type="doi">10.1016/0021-9290(82)90036-7</pub-id>
+<pub-id pub-id-type="pmid">7061529</pub-id>
+</mixed-citation></ref><ref id="B40"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Huiskes</surname><given-names>H. W. J.</given-names></name>
+<name name-style="western"><surname>Janssen</surname><given-names>J. D.</given-names></name>
+<name name-style="western"><surname>Slooff</surname><given-names>T. J. J. H.</given-names></name>
+</person-group> (<year>1983</year>). <article-title>A detailed comparison of experimental and theoretical stress-analysis of a human femur</article-title>. in <source>Mechanical properties of bone</source>. <publisher-loc>New York</publisher-loc>: <publisher-name>American Society of Mechanical Engineers</publisher-name>, <fpage>211</fpage>–<lpage>234</lpage>. <comment>Available online at: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://research.tue.nl/en/publications/a-detailed-comparison-of-experimental-and-theoretical-stress-anal" ext-link-type="uri">https://research.tue.nl/en/publications/a-detailed-comparison-of-experimental-and-theoretical-stress-anal</ext-link> (Accessed July 20, 2025).</comment>
+</mixed-citation></ref><ref id="B41"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Jin</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Fan</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Du</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>He</surname><given-names>Y.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Biomechanics and mechanobiology of additively manufactured porous load-bearing bone implants</article-title>. <source>Small</source>
+<volume>21</volume>, <fpage>e2409955</fpage>. <pub-id pub-id-type="doi">10.1002/smll.202409955</pub-id>
+<pub-id pub-id-type="pmid">40244634</pub-id>
+</mixed-citation></ref><ref id="B42"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Jindal</surname><given-names>M.</given-names></name>
+</person-group> (<year>2018</year>). <article-title>Bone density versus bone quality as a predictor of bone strength</article-title>. <source>Orthop. Rheumatol. Open Access J.</source>
+<volume>12</volume>, <fpage>555830</fpage>. <pub-id pub-id-type="doi">10.19080/oroaj.2018.12.555830</pub-id>
+</mixed-citation></ref><ref id="B43"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Johannesdottir</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Poole</surname><given-names>K. E. S.</given-names></name>
+<name name-style="western"><surname>Reeve</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Siggeirsdottir</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Aspelund</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Mogensen</surname><given-names>B.</given-names></name>
+<etal/>
+</person-group> (<year>2011</year>). <article-title>Distribution of cortical bone in the femoral neck and hip fracture: a prospective case-control analysis of 143 incident hip fractures; the AGES-REYKJAVIK study</article-title>. <source>Bone</source>
+<volume>48</volume>, <fpage>1268</fpage>–<lpage>1276</lpage>. <pub-id pub-id-type="doi">10.1016/j.bone.2011.03.776</pub-id>
+<pub-id pub-id-type="pmid">21473947</pub-id>
+<pub-id pub-id-type="pmcid">PMC3129599</pub-id></mixed-citation></ref><ref id="B44"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kadyr</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Nurmanova</surname><given-names>U.</given-names></name>
+<name name-style="western"><surname>Khumyrzakh</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Zhakypbekova</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Saginova</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Daniyeva</surname><given-names>N.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Braided biomimetic PCL grafts for anterior cruciate ligament repair and regeneration</article-title>. <source>Biomed. Mater.</source>
+<volume>19</volume>. <pub-id pub-id-type="doi">10.1088/1748-605X/ad2555</pub-id>
+<pub-id pub-id-type="pmid">38306680</pub-id>
+</mixed-citation></ref><ref id="B45"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kadyr</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Khumyrzakh</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Naz</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Abdossova</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Askarbek</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Hydrogels for osteochondral interface regeneration: biomaterial types, processes, and animal models</article-title>. <source>Gels</source>
+<volume>12</volume>, <fpage>24</fpage>. <pub-id pub-id-type="doi">10.3390/gels12010024</pub-id>
+<pub-id pub-id-type="pmid">41590050</pub-id>
+<pub-id pub-id-type="pmcid">PMC12841089</pub-id></mixed-citation></ref><ref id="B46"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Karageorgiou</surname><given-names>V.</given-names></name>
+<name name-style="western"><surname>Kaplan</surname><given-names>D.</given-names></name>
+</person-group> (<year>2005</year>). <article-title>Porosity of 3D biomaterial scaffolds and osteogenesis</article-title>. <source>Biomaterials</source>
+<volume>26</volume>, <fpage>5474</fpage>–<lpage>5491</lpage>. <pub-id pub-id-type="doi">10.1016/j.biomaterials.2005.02.002</pub-id>
+<pub-id pub-id-type="pmid">15860204</pub-id>
+</mixed-citation></ref><ref id="B47"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Kaya</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Basta-Pljakic</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Seref-Ferlengez</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Majeska</surname><given-names>R. J.</given-names></name>
+<name name-style="western"><surname>Cardoso</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Bromage</surname><given-names>T. G.</given-names></name>
+<etal/>
+</person-group> (<year>2017</year>). <article-title>Lactation-induced changes in the volume of osteocyte lacunar-canalicular space alter mechanical properties in cortical bone tissue</article-title>. <source>J. Bone Min. Res.</source>
+<volume>32</volume>, <fpage>688</fpage>–<lpage>697</lpage>. <pub-id pub-id-type="doi">10.1002/jbmr.3044</pub-id>
+<pub-id pub-id-type="pmid">27859586</pub-id>
+<pub-id pub-id-type="pmcid">PMC5395324</pub-id></mixed-citation></ref><ref id="B48"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Krishna</surname><given-names>B. V.</given-names></name>
+<name name-style="western"><surname>Bose</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Bandyopadhyay</surname><given-names>A.</given-names></name>
+</person-group> (<year>2007</year>). <article-title>Low stiffness porous Ti structures for load-bearing implants</article-title>. <source>Acta Biomater.</source>
+<volume>3</volume>, <fpage>997</fpage>–<lpage>1006</lpage>. <pub-id pub-id-type="doi">10.1016/j.actbio.2007.03.008</pub-id>
+<pub-id pub-id-type="pmid">17532277</pub-id>
+</mixed-citation></ref><ref id="B49"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Leong</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Chua</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Sudarmadji</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Yeong</surname><given-names>W.</given-names></name>
+</person-group> (<year>2008</year>). <article-title>Engineering functionally graded tissue engineering scaffolds</article-title>. <source>J. Mech. Behav. Biomed. Mater.</source>
+<volume>1</volume>, <fpage>140</fpage>–<lpage>152</lpage>. <pub-id pub-id-type="doi">10.1016/j.jmbbm.2007.11.002</pub-id>
+<pub-id pub-id-type="pmid">19627779</pub-id>
+</mixed-citation></ref><ref id="B50"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>S. K.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Qin</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>X. L.</given-names></name>
+<name name-style="western"><surname>Lai</surname><given-names>Y. X.</given-names></name>
+</person-group> (<year>2015</year>). <article-title>Bone defect animal models for testing efficacy of bone substitute biomaterials</article-title>. <source>J. Orthop. Transl.</source>
+<volume>3</volume>, <fpage>95</fpage>–<lpage>104</lpage>. <pub-id pub-id-type="doi">10.1016/j.jot.2015.05.002</pub-id>
+<pub-id pub-id-type="pmid">30035046</pub-id>
+<pub-id pub-id-type="pmcid">PMC5982383</pub-id></mixed-citation></ref><ref id="B51"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Hou</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Qing</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Huang</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>The response of host blood vessels to graded distribution of macro-pores size in the process of ectopic osteogenesis</article-title>. <source>Mater. Sci. Eng. C</source>
+<volume>109</volume>, <fpage>110641</fpage>. <pub-id pub-id-type="doi">10.1016/j.msec.2020.110641</pub-id>
+<pub-id pub-id-type="pmid">32228974</pub-id>
+</mixed-citation></ref><ref id="B52"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Li</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Han</surname><given-names>Q.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Advanced biomimetic design strategies for porous structures promoting bone integration with additive-manufactured Ti6Al4V scaffolds</article-title>. <source>J. Mater. Res. Technol.</source>
+<volume>32</volume>, <fpage>1901</fpage>–<lpage>1915</lpage>. <pub-id pub-id-type="doi">10.1016/j.jmrt.2024.08.040</pub-id>
+</mixed-citation></ref><ref id="B53"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Lloyd</surname><given-names>A. A.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>Z. X.</given-names></name>
+<name name-style="western"><surname>Donnelly</surname><given-names>E.</given-names></name>
+</person-group> (<year>2015</year>). <article-title>Multiscale contribution of bone tissue material property heterogeneity to trabecular bone mechanical behavior</article-title>. <source>J. Biomech. Eng.</source>
+<volume>137</volume>, <fpage>108011</fpage>–<lpage>108018</lpage>. <pub-id pub-id-type="doi">10.1115/1.4029046</pub-id>
+<pub-id pub-id-type="pmid">25383615</pub-id>
+<pub-id pub-id-type="pmcid">PMC4296240</pub-id></mixed-citation></ref><ref id="B54"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Lorentzon</surname><given-names>M.</given-names></name>
+</person-group> (<year>2020</year>). <article-title>The importance and possible clinical impact of measuring trabecular and cortical bone microstructure to improve fracture risk prediction</article-title>. <source>J. Bone Min. Res.</source>
+<volume>35</volume>, <fpage>831</fpage>–<lpage>832</lpage>. <pub-id pub-id-type="doi">10.1002/jbmr.3940</pub-id>
+<pub-id pub-id-type="pmid">31910297</pub-id>
+</mixed-citation></ref><ref id="B55"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Loundagin</surname><given-names>L. L.</given-names></name>
+<name name-style="western"><surname>Pohl</surname><given-names>A. J.</given-names></name>
+<name name-style="western"><surname>Edwards</surname><given-names>W. B.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Stressed volume estimated by finite element analysis predicts the fatigue life of human cortical bone: the role of vascular canals as stress concentrators</article-title>. <source>Bone</source>
+<volume>143</volume>, <fpage>115647</fpage>. <pub-id pub-id-type="doi">10.1016/j.bone.2020.115647</pub-id>
+<pub-id pub-id-type="pmid">32956853</pub-id>
+</mixed-citation></ref><ref id="B56"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Lu</surname><given-names>H. H.</given-names></name>
+<name name-style="western"><surname>Subramony</surname><given-names>S. D.</given-names></name>
+<name name-style="western"><surname>Boushell</surname><given-names>M. K.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>X.</given-names></name>
+</person-group> (<year>2010</year>). <article-title>Tissue engineering strategies for the regeneration of orthopedic interfaces</article-title>. <source>Ann. Biomed. Eng.</source>
+<volume>38</volume>, <fpage>2142</fpage>–<lpage>2154</lpage>. <pub-id pub-id-type="doi">10.1007/s10439-010-0046-y</pub-id>
+<pub-id pub-id-type="pmid">20422291</pub-id>
+<pub-id pub-id-type="pmcid">PMC3665605</pub-id></mixed-citation></ref><ref id="B57"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Martin</surname><given-names>R. B.</given-names></name>
+</person-group> (<year>1991</year>). <article-title>Determinants of the mechanical properties of bones</article-title>. <source>J. Biomech.</source>
+<volume>24</volume> (<issue>Suppl. 1</issue>), <fpage>79</fpage>–<lpage>88</lpage>. <pub-id pub-id-type="doi">10.1016/0021-9290(91)90379-2</pub-id>
+<pub-id pub-id-type="pmid">1842337</pub-id>
+</mixed-citation></ref><ref id="B58"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Martin</surname><given-names>R. M.</given-names></name>
+<name name-style="western"><surname>Correa</surname><given-names>P. H. S.</given-names></name>
+</person-group> (<year>2010</year>). <article-title>Bone quality and osteoporosis therapy</article-title>. <source>Arq. Bras. Endocrinol. Metabol.</source>
+<volume>54</volume>, <fpage>186</fpage>–<lpage>199</lpage>. <pub-id pub-id-type="doi">10.1590/s0004-27302010000200015</pub-id>
+<pub-id pub-id-type="pmid">20485908</pub-id>
+</mixed-citation></ref><ref id="B59"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Mikos</surname><given-names>A. G.</given-names></name>
+<name name-style="western"><surname>Herring</surname><given-names>S. W.</given-names></name>
+<name name-style="western"><surname>Ochareon</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Elisseeff</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Lu</surname><given-names>H. H.</given-names></name>
+<name name-style="western"><surname>Kandel</surname><given-names>R.</given-names></name>
+<etal/>
+</person-group> (<year>2006</year>). <article-title>Engineering complex tissues</article-title>. <source>Tissue Eng.</source>
+<volume>12</volume>, <fpage>3307</fpage>–<lpage>3339</lpage>. <pub-id pub-id-type="doi">10.1089/ten.2006.12.3307</pub-id>
+<pub-id pub-id-type="pmid">17518671</pub-id>
+<pub-id pub-id-type="pmcid">PMC2821210</pub-id></mixed-citation></ref><ref id="B60"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Milovanovic</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Rakocevic</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Djonic</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Zivkovic</surname><given-names>V.</given-names></name>
+<name name-style="western"><surname>Hahn</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Nikolic</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2014</year>). <article-title>Nano-structural, compositional and micro-architectural signs of cortical bone fragility at the superolateral femoral neck in elderly hip fracture patients vs. healthy aged controls</article-title>. <source>Exp. Gerontol.</source>
+<volume>55</volume>, <fpage>19</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1016/j.exger.2014.03.001</pub-id>
+<pub-id pub-id-type="pmid">24614625</pub-id>
+</mixed-citation></ref><ref id="B61"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Nawathe</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Nguyen</surname><given-names>B. P.</given-names></name>
+<name name-style="western"><surname>Barzanian</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Akhlaghpour</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Bouxsein</surname><given-names>M. L.</given-names></name>
+<name name-style="western"><surname>Keaveny</surname><given-names>T. M.</given-names></name>
+</person-group> (<year>2015</year>). <article-title>Cortical and trabecular load sharing in the human femoral neck</article-title>. <source>J. Biomech.</source>
+<volume>48</volume>, <fpage>816</fpage>–<lpage>822</lpage>. <pub-id pub-id-type="doi">10.1016/j.jbiomech.2014.12.022</pub-id>
+<pub-id pub-id-type="pmid">25582355</pub-id>
+</mixed-citation></ref><ref id="B62"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Nyman</surname><given-names>J. S.</given-names></name>
+<name name-style="western"><surname>Gorochow</surname><given-names>L. E.</given-names></name>
+<name name-style="western"><surname>Adam Horch</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Uppuganti</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Zein-Sabatto</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Manhard</surname><given-names>M. K.</given-names></name>
+<etal/>
+</person-group> (<year>2013</year>). <article-title>Partial removal of pore and loosely bound water by low-energy drying decreases cortical bone toughness in young and old donors</article-title>. <source>J. Mech. Behav. Biomed. Mater.</source>
+<volume>22</volume>, <fpage>136</fpage>–<lpage>145</lpage>. <pub-id pub-id-type="doi">10.1016/j.jmbbm.2012.08.013</pub-id>
+<pub-id pub-id-type="pmid">23631897</pub-id>
+<pub-id pub-id-type="pmcid">PMC3655090</pub-id></mixed-citation></ref><ref id="B63"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Oshkour</surname><given-names>A. A.</given-names></name>
+<name name-style="western"><surname>Osman</surname><given-names>N. A. A.</given-names></name>
+<name name-style="western"><surname>Yau</surname><given-names>Y. H.</given-names></name>
+<name name-style="western"><surname>Tarlochan</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Abas</surname><given-names>W. A. B. W.</given-names></name>
+</person-group> (<year>2013</year>). <article-title>Design of new generation femoral prostheses using functionally graded materials: a finite element analysis</article-title>. <source>Proc. Inst. Mech. Eng. H.</source>
+<volume>227</volume>, <fpage>3</fpage>–<lpage>17</lpage>. <pub-id pub-id-type="doi">10.1177/0954411912459421</pub-id>
+<pub-id pub-id-type="pmid">23516951</pub-id>
+</mixed-citation></ref><ref id="B64"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ozkan</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>McKelvey</surname><given-names>C. A.</given-names></name>
+<name name-style="western"><surname>Lowinger</surname><given-names>M.</given-names></name>
+</person-group> (<year>2009</year>). <article-title>Multifunctional protein-encapsulated polycaprolactone scaffolds: fabrication and <italic toggle="yes">in vitro</italic> assessment for tissue engineering</article-title>. <source>Biomaterials</source>
+<volume>30</volume>, <fpage>4336</fpage>–<lpage>4347</lpage>. <pub-id pub-id-type="doi">10.1016/j.biomaterials.2009.04.050</pub-id>
+<pub-id pub-id-type="pmid">19481253</pub-id>
+</mixed-citation></ref><ref id="B65"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ozkan</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>X.</given-names></name>
+</person-group> (<year>2010</year>). <article-title>Functionally graded β‐TCP/PCL nanocomposite scaffolds: <italic toggle="yes">in vitro</italic> evaluation with human fetal osteoblast cells for bone tissue engineering</article-title>. <source>J. Biomed. Mater. Res. Part A</source>
+<volume>92A</volume>, <fpage>1007</fpage>–<lpage>1018</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jbm.a.32425</pub-id><pub-id pub-id-type="pmid">19296543</pub-id></mixed-citation></ref><ref id="B66"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Palacio-Mancheno</surname><given-names>P. E.</given-names></name>
+<name name-style="western"><surname>Larriera</surname><given-names>A. I.</given-names></name>
+<name name-style="western"><surname>Doty</surname><given-names>S. B.</given-names></name>
+<name name-style="western"><surname>Cardoso</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Fritton</surname><given-names>S. P.</given-names></name>
+</person-group> (<year>2014</year>). <article-title>3D assessment of cortical bone porosity and tissue mineral density using high-resolution µCT: effects of resolution and threshold method</article-title>. <source>J. Bone Min. Res.</source>
+<volume>29</volume>, <fpage>142</fpage>–<lpage>150</lpage>. <pub-id pub-id-type="doi">10.1002/jbmr.2012</pub-id>
+<pub-id pub-id-type="pmid">23775635</pub-id>
+<pub-id pub-id-type="pmcid">PMC3870034</pub-id></mixed-citation></ref><ref id="B67"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Pazzaglia</surname><given-names>U. E.</given-names></name>
+<name name-style="western"><surname>Congiu</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Sibilia</surname><given-names>V.</given-names></name>
+<name name-style="western"><surname>Quacci</surname><given-names>D.</given-names></name>
+</person-group> (<year>2014</year>). <article-title>Osteoblast-osteocyte transformation. A SEM densitometric analysis of endosteal apposition in rabbit femur</article-title>. <source>J. Anat.</source>
+<volume>224</volume>, <fpage>132</fpage>–<lpage>141</lpage>. <pub-id pub-id-type="doi">10.1111/joa.12138</pub-id>
+<pub-id pub-id-type="pmid">24251983</pub-id>
+<pub-id pub-id-type="pmcid">PMC3969057</pub-id></mixed-citation></ref><ref id="B68"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Pearce</surname><given-names>R. H.</given-names></name>
+<name name-style="western"><surname>Thompson</surname><given-names>J. P.</given-names></name>
+<name name-style="western"><surname>Bebault</surname><given-names>G. M.</given-names></name>
+<name name-style="western"><surname>Flak</surname><given-names>B.</given-names></name>
+</person-group> (<year>1991</year>). <article-title>Magnetic resonance imaging reflects the chemical changes of aging degeneration in the human intervertebral disk</article-title>. <source>J. Rheumatol. Suppl.</source>
+<volume>27</volume>, <fpage>42</fpage>–<lpage>43</lpage>.
+<pub-id pub-id-type="pmid">2027127</pub-id>
+</mixed-citation></ref><ref id="B69"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Pearce</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Richards</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Milz</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Schneider</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Pearce</surname><given-names>S.</given-names></name>
+</person-group> (<year>2007</year>). <article-title>Animal models for implant biomaterial research in bone: a review</article-title>. <source>Eur. Cells Mater.</source>
+<volume>13</volume>, <fpage>1</fpage>–<lpage>10</lpage>. <pub-id pub-id-type="doi">10.22203/ecm.v013a01</pub-id>
+<pub-id pub-id-type="pmid">17334975</pub-id>
+</mixed-citation></ref><ref id="B70"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Peyrin</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Muller</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Carillon</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Nuzzo</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Bonnassie</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Briguet</surname><given-names>A.</given-names></name>
+</person-group> (<year>2001</year>). <article-title>Synchrotron radiation µCT: a reference tool for the characterization of bone samples</article-title>. <source>Adv. Exp. Med. Biol.</source>
+<volume>496</volume>, <fpage>129</fpage>–<lpage>142</lpage>. <pub-id pub-id-type="doi">10.1007/978-1-4615-0651-5_14</pub-id>
+<pub-id pub-id-type="pmid">11783615</pub-id>
+</mixed-citation></ref><ref id="B71"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Pompe</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Worch</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Epple</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Friess</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Gelinsky</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Greil</surname><given-names>P.</given-names></name>
+<etal/>
+</person-group> (<year>2003</year>). <article-title>Functionally graded materials for biomedical applications</article-title>. <source>Mater. Sci. Eng. A</source>
+<volume>362</volume>, <fpage>40</fpage>–<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1016/s0921-5093(03)00580-x</pub-id>
+</mixed-citation></ref><ref id="B72"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Puppi</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Chiellini</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Piras</surname><given-names>A. M.</given-names></name>
+<name name-style="western"><surname>Chiellini</surname><given-names>E.</given-names></name>
+</person-group> (<year>2010</year>). <article-title>Polymeric materials for bone and cartilage repair</article-title>. <source>Prog. Polym. Sci.</source>
+<volume>35</volume>, <fpage>403</fpage>–<lpage>440</lpage>. <pub-id pub-id-type="doi">10.1016/j.progpolymsci.2010.01.006</pub-id>
+</mixed-citation></ref><ref id="B73"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Rachidi</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Breban</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Benhamou</surname><given-names>C. L.</given-names></name>
+</person-group> (<year>2008</year>). <article-title>Les enjeux de la microarchitecture osseuse</article-title>. <source>J. Soc. Biol.</source>
+<volume>202</volume>, <fpage>265</fpage>–<lpage>273</lpage>. <pub-id pub-id-type="doi">10.1051/jbio:2008035</pub-id>
+<pub-id pub-id-type="pmid">19094925</pub-id>
+</mixed-citation></ref><ref id="B74"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Renders</surname><given-names>G. A. P.</given-names></name>
+<name name-style="western"><surname>Mulder</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>van Ruijven</surname><given-names>L. J.</given-names></name>
+<name name-style="western"><surname>van Eijden</surname><given-names>T. M. G. J.</given-names></name>
+</person-group> (<year>2007</year>). <article-title>Porosity of human mandibular condylar bone</article-title>. <source>J. Anat.</source>
+<volume>210</volume>, <fpage>239</fpage>–<lpage>248</lpage>. <pub-id pub-id-type="doi">10.1111/j.1469-7580.2007.00693.x</pub-id>
+<pub-id pub-id-type="pmid">17331174</pub-id>
+<pub-id pub-id-type="pmcid">PMC2100285</pub-id></mixed-citation></ref><ref id="B75"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Rizzoli</surname><given-names>R.</given-names></name>
+</person-group> (<year>2010</year>). <article-title>Microarchitecture in focus</article-title>. <source>Osteoporos. Int.</source>
+<volume>21</volume> (<issue>Suppl. 2</issue>), <fpage>403</fpage>–<lpage>406</lpage>. <pub-id pub-id-type="doi">10.1007/s00198-010-1242-1</pub-id>
+<pub-id pub-id-type="pmid">20464373</pub-id>
+</mixed-citation></ref><ref id="B76"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Scarano</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Khater</surname><given-names>A. G. A.</given-names></name>
+<name name-style="western"><surname>Gehrke</surname><given-names>S. A.</given-names></name>
+<name name-style="western"><surname>Inchingolo</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Tari</surname><given-names>S. R.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Animal models for investigating osseointegration: an overview of implant research over the last three decades</article-title>. <source>J. Funct. Biomater.</source>
+<volume>15</volume>, <fpage>83</fpage>. <pub-id pub-id-type="doi">10.3390/jfb15040083</pub-id>
+<pub-id pub-id-type="pmid">38667540</pub-id>
+<pub-id pub-id-type="pmcid">PMC11051165</pub-id></mixed-citation></ref><ref id="B77"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Schindeler</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Mills</surname><given-names>R. J.</given-names></name>
+<name name-style="western"><surname>Bobyn</surname><given-names>J. D.</given-names></name>
+<name name-style="western"><surname>Little</surname><given-names>D. G.</given-names></name>
+</person-group> (<year>2018</year>). <article-title>Preclinical models for orthopedic research and bone tissue engineering</article-title>. <source>J. Orthop. Res.</source>
+<volume>36</volume>, <fpage>832</fpage>–<lpage>840</lpage>. <pub-id pub-id-type="doi">10.1002/jor.23824</pub-id>
+<pub-id pub-id-type="pmid">29205478</pub-id>
+</mixed-citation></ref><ref id="B78"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Schmidutz</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Milz</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Schiuma</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Richards</surname><given-names>R. G.</given-names></name>
+<name name-style="western"><surname>Windolf</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Sprecher</surname><given-names>C. M.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Cortical parameters predict bone strength at the tibial diaphysis, but are underestimated by HR-pQCT and μCT compared to histomorphometry</article-title>. <source>J. Anat.</source>
+<volume>238</volume>, <fpage>669</fpage>–<lpage>678</lpage>. <pub-id pub-id-type="doi">10.1111/joa.13337</pub-id>
+<pub-id pub-id-type="pmid">33084063</pub-id>
+<pub-id pub-id-type="pmcid">PMC7855080</pub-id></mixed-citation></ref><ref id="B79"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Schneider</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Voide</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Stampanoni</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Donahue</surname><given-names>L. R.</given-names></name>
+<name name-style="western"><surname>Müller</surname><given-names>R.</given-names></name>
+</person-group> (<year>2013</year>). <article-title>The importance of the intracortical canal network for murine bone mechanics</article-title>. <source>Bone</source>
+<volume>53</volume>, <fpage>120</fpage>–<lpage>128</lpage>. <pub-id pub-id-type="doi">10.1016/j.bone.2012.11.024</pub-id>
+<pub-id pub-id-type="pmid">23219945</pub-id>
+</mixed-citation></ref><ref id="B80"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Seeman</surname><given-names>E.</given-names></name>
+</person-group> (<year>2017</year>). <article-title>Overview of bone microstructure, and treatment of bone fragility in chronic kidney disease</article-title>. <source>Nephrology</source>
+<volume>22</volume>, <fpage>34</fpage>–<lpage>35</lpage>. <pub-id pub-id-type="doi">10.1111/nep.13024</pub-id>
+<pub-id pub-id-type="pmid">28429552</pub-id>
+</mixed-citation></ref><ref id="B81"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Seidi</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Ramalingam</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Elloumi-Hannachi</surname><given-names>I.</given-names></name>
+<name name-style="western"><surname>Ostrovidov</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Khademhosseini</surname><given-names>A.</given-names></name>
+</person-group> (<year>2011</year>). <article-title>Gradient biomaterials for soft-to-hard interface tissue engineering</article-title>. <source>Acta Biomater.</source>
+<volume>7</volume>, <fpage>1441</fpage>–<lpage>1451</lpage>. <pub-id pub-id-type="doi">10.1016/j.actbio.2011.01.011</pub-id>
+<pub-id pub-id-type="pmid">21232635</pub-id>
+</mixed-citation></ref><ref id="B82"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Seitzhaparova</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Timur</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Mirasbek</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Kadyr</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Lesbekov</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Zhakypbekova</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Rabbit heart bioartificial tissue: perfusion decellularization and characterization</article-title>. <source>Biomed. Phys. Eng. Express</source>
+<volume>11</volume>, <fpage>015033</fpage>. <pub-id pub-id-type="doi">10.1088/2057-1976/ad99de</pub-id>
+<pub-id pub-id-type="pmid">39626314</pub-id>
+</mixed-citation></ref><ref id="B83"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Senturk-Ozer</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Aktas</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>He</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Fisher</surname><given-names>F. T.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+</person-group> (<year>2016</year>). <article-title>Nanoporous nanocomposite membranes via hybrid twin-screw extrusion—multijet electrospinning</article-title>. <source>Nanotechnology</source>
+<volume>28</volume>, <fpage>025301</fpage>. <pub-id pub-id-type="doi">10.1088/0957-4484/28/2/025301</pub-id>
+<pub-id pub-id-type="pmid">27905320</pub-id>
+</mixed-citation></ref><ref id="B84"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Smatov</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Mukasheva</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>Collagen fibril diameter distribution of sheep anterior cruciate ligament</article-title>. <source>Polym. (Basel)</source>
+<volume>15</volume>, <fpage>752</fpage>. <pub-id pub-id-type="doi">10.3390/polym15030752</pub-id>
+<pub-id pub-id-type="pmid">36772054</pub-id>
+<pub-id pub-id-type="pmcid">PMC9920528</pub-id></mixed-citation></ref><ref id="B85"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Someya</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Mochizuki</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Katsumi</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Hokari</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Tanifuji</surname><given-names>O.</given-names></name>
+<name name-style="western"><surname>Kobayashi</surname><given-names>K.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Correlation between cortical thickness and bowing of the femoral diaphysis in healthy elderly people</article-title>. <source>Osteoarthr. Cartil.</source>
+<volume>28</volume>, <fpage>S216</fpage>–<lpage>S217</lpage>. <pub-id pub-id-type="doi">10.1016/j.joca.2020.02.353</pub-id>
+</mixed-citation></ref><ref id="B86"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Sumner</surname><given-names>D. R.</given-names></name>
+<name name-style="western"><surname>Turner</surname><given-names>T. M.</given-names></name>
+<name name-style="western"><surname>Igloria</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Urban</surname><given-names>R. M.</given-names></name>
+<name name-style="western"><surname>Galante</surname><given-names>J. O.</given-names></name>
+</person-group> (<year>1998</year>). <article-title>Functional adaptation and ingrowth of bone vary as a function of hip implant stiffness</article-title>. <source>J. Biomech.</source>
+<volume>31</volume>, <fpage>909</fpage>–<lpage>917</lpage>. <pub-id pub-id-type="doi">10.1016/s0021-9290(98)00096-7</pub-id>
+<pub-id pub-id-type="pmid">9840756</pub-id>
+</mixed-citation></ref><ref id="B87"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Surowiec</surname><given-names>R. K.</given-names></name>
+<name name-style="western"><surname>Allen</surname><given-names>M. R.</given-names></name>
+<name name-style="western"><surname>Wallace</surname><given-names>J. M.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>Bone hydration: how we can evaluate it, what can it tell us, and is it an effective therapeutic target?</article-title>
+<source>Bone Rep.</source>
+<volume>16</volume>, <fpage>101161</fpage>. <pub-id pub-id-type="doi">10.1016/j.bonr.2021.101161</pub-id>
+<pub-id pub-id-type="pmid">35005101</pub-id>
+<pub-id pub-id-type="pmcid">PMC8718737</pub-id></mixed-citation></ref><ref id="B88"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Tourlomousis</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Ding</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Chang</surname><given-names>R. C.</given-names></name>
+</person-group> (<year>2017</year>). <article-title>Melt electrospinning writing process guided by a “Printability Number”</article-title>. <source>J. Manuf. Sci. Eng.</source>
+<volume>139</volume>, <fpage>081004</fpage>. <pub-id pub-id-type="doi">10.1115/1.4036348</pub-id>
+</mixed-citation></ref><ref id="B89"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Tourlomousis</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Jia</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Karydis</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Mershin</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<etal/>
+</person-group> (<year>2019</year>). <article-title>Machine learning metrology of cell confinement in melt electrowritten three-dimensional biomaterial substrates</article-title>. <source>Microsystems Nanoeng.</source>
+<volume>5</volume>, <fpage>15</fpage>. <pub-id pub-id-type="doi">10.1038/s41378-019-0055-4</pub-id>
+<pub-id pub-id-type="pmid">31057942</pub-id>
+<pub-id pub-id-type="pmcid">PMC6431680</pub-id></mixed-citation></ref><ref id="B90"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Uhthoff</surname><given-names>H. K.</given-names></name>
+<name name-style="western"><surname>Poitras</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Backman</surname><given-names>D. S.</given-names></name>
+</person-group> (<year>2006</year>). <article-title>Internal plate fixation of fractures: short history and recent developments</article-title>. <source>J. Orthop. Sci.</source>
+<volume>11</volume>, <fpage>118</fpage>–<lpage>126</lpage>. <pub-id pub-id-type="doi">10.1007/s00776-005-0984-7</pub-id>
+<pub-id pub-id-type="pmid">16568382</pub-id>
+<pub-id pub-id-type="pmcid">PMC2780616</pub-id></mixed-citation></ref><ref id="B91"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Uniyal</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Sihota</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Tikoo</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Kumar</surname><given-names>N.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Anatomical variation in intracortical canal network microarchitecture and its influence on bone fracture risk</article-title>. <source>J. Mech. Behav. Biomed. Mater.</source>
+<volume>123</volume>, <fpage>104770</fpage>. <pub-id pub-id-type="doi">10.1016/j.jmbbm.2021.104770</pub-id>
+<pub-id pub-id-type="pmid">34392038</pub-id>
+</mixed-citation></ref><ref id="B92"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Velioglu</surname><given-names>Z. B.</given-names></name>
+<name name-style="western"><surname>Pulat</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Demirbakan</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Ozcan</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Bayrak</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+</person-group> (<year>2019</year>). <article-title>3D-printed poly(lactic acid) scaffolds for trabecular bone repair and regeneration: scaffold and native bone characterization</article-title>. <source>Connect. Tissue Res.</source>
+<volume>60</volume>, <fpage>274</fpage>–<lpage>282</lpage>. <pub-id pub-id-type="doi">10.1080/03008207.2018.1499732</pub-id>
+<pub-id pub-id-type="pmid">30058375</pub-id>
+</mixed-citation></ref><ref id="B93"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Voide</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>van Lenthe</surname><given-names>G. H.</given-names></name>
+<name name-style="western"><surname>Schneider</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Thurner</surname><given-names>P. J.</given-names></name>
+<name name-style="western"><surname>Wyss</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Sennhauser</surname><given-names>U.</given-names></name>
+<etal/>
+</person-group> (<year>2006</year>). <article-title>Functional microimaging: an integrated approach for advanced bone biomechanics and failure analysis</article-title>. in <source>Medical Imaging 2006: Physiology, Function, and Structure from Medical Images</source>
+<volume>6143</volume>, <pub-id pub-id-type="doi">10.1117/12.650485</pub-id>
+</mixed-citation></ref><ref id="B94"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wancket</surname><given-names>L. M.</given-names></name>
+</person-group> (<year>2015</year>). <article-title>Animal models for evaluation of bone implants and devices</article-title>. <source>Vet. Pathol.</source>
+<volume>52</volume>, <fpage>842</fpage>–<lpage>850</lpage>. <pub-id pub-id-type="doi">10.1177/0300985815593124</pub-id>
+<pub-id pub-id-type="pmid">26163303</pub-id>
+</mixed-citation></ref><ref id="B95"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Zhou</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Shi</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Hao</surname><given-names>Y.</given-names></name>
+</person-group> (<year>2020</year>). <article-title>On the design and properties of porous femoral stems with adjustable stiffness gradient</article-title>. <source>Med. Eng. Phys.</source>
+<volume>81</volume>, <fpage>30</fpage>–<lpage>38</lpage>. <pub-id pub-id-type="doi">10.1016/j.medengphy.2020.05.003</pub-id>
+<pub-id pub-id-type="pmid">32505662</pub-id>
+</mixed-citation></ref><ref id="B96"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wegrzyn</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Roux</surname><given-names>J. P.</given-names></name>
+<name name-style="western"><surname>Arlot</surname><given-names>M. E.</given-names></name>
+<name name-style="western"><surname>Boutroy</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Vilayphiou</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Guyen</surname><given-names>O.</given-names></name>
+<etal/>
+</person-group> (<year>2010</year>). <article-title>Role of trabecular microarchitecture and its heterogeneity parameters in the mechanical behavior of <italic toggle="yes">ex vivo</italic> human L3 vertebrae</article-title>. <source>J. Bone Min. Res.</source>
+<volume>25</volume>, <fpage>2324</fpage>–<lpage>2331</lpage>. <pub-id pub-id-type="doi">10.1002/jbmr.164</pub-id>
+<pub-id pub-id-type="pmid">20564249</pub-id>
+<pub-id pub-id-type="pmcid">PMC3179283</pub-id></mixed-citation></ref><ref id="B97"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Yildirim</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Amanzhanova</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Kulzhanova</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Mukasheva</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>Osteochondral interface: regenerative engineering and challenges</article-title>. <source>ACS Biomater. Sci. Eng.</source>
+<volume>9</volume>, <fpage>1205</fpage>–<lpage>1223</lpage>. <pub-id pub-id-type="doi">10.1021/acsbiomaterials.2c01321</pub-id>
+<pub-id pub-id-type="pmid">36752057</pub-id>
+</mixed-citation></ref><ref id="B98"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Shen</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>G.</given-names></name>
+</person-group> (<year>2020</year>). <article-title>Factors affecting thermal stability of collagen from the aspects of extraction, processing and modification</article-title>. <source>J. Leather Sci. Eng.</source>
+<volume>2</volume>, <fpage>19</fpage>. <pub-id pub-id-type="doi">10.1186/s42825-020-00033-0</pub-id>
+</mixed-citation></ref><ref id="B99"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zhao</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Advanced bioprinting of hydrogels with controlled mineral gradients for osteochondral interface</article-title>. <source>Tissue Eng. Part A</source>
+<volume>31</volume>, <fpage>e1327</fpage>–<lpage>e1442</lpage>.</mixed-citation></ref><ref id="B100"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zhao</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Kalyon</surname><given-names>D. M.</given-names></name>
+<name name-style="western"><surname>Erisken</surname><given-names>C.</given-names></name>
+</person-group> (<year>2026</year>). <article-title>Bioextrusion of hydrogels with controlled mineral gradients for regenerative engineering of osteochondral interfaces</article-title>. <source>Bio-Design Manuf.</source>
+<volume>9</volume>, <fpage>122</fpage>–<lpage>136</lpage>. <pub-id pub-id-type="doi">10.1631/bdm.2500291</pub-id>
+</mixed-citation></ref><ref id="B101"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zimmermann</surname><given-names>E. A.</given-names></name>
+<name name-style="western"><surname>Ritchie</surname><given-names>R. O.</given-names></name>
+</person-group> (<year>2015</year>). <article-title>Bone as a structural material</article-title>. <source>Adv. Healthc. Mater.</source>
+<volume>4</volume>, <fpage>1287</fpage>–<lpage>1304</lpage>. <pub-id pub-id-type="doi">10.1002/adhm.201500070</pub-id>
+<pub-id pub-id-type="pmid">25865873</pub-id>
+</mixed-citation></ref></ref-list></back></article></pmc-articleset>
