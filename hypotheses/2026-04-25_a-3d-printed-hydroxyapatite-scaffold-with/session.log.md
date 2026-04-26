@@ -71,3 +71,18 @@ Files written:
 - hypothesis.md status: wiki → complete; latest_plan: wiki/plans/plan-v1
 - wiki/index.md plans count: 0 → 1
 - wiki/log.md and session.log.md appended.
+
+## [2026-04-25 21:15] ar | ar-v1
+Stations: 8 (dlp-printer, sintering-furnace, microct-imager, cytotox-bench, cell-incubator, perfusion-bioreactor, plate-reader, confocal-microscope). Steps bound: 12 (every protocol step has exactly one binding). Wiki HTML: 156,278 bytes.
+
+Files written:
+- plan/ar.json (custom AR scene spec; 8 stations + 12 step_bindings)
+- plan/wiki.html (single-file static Lab Brief render with inline CSS + vanilla-JS TOC; print-friendly)
+- wiki/plans/ar-v1.md (AR spec filed back into the wiki graph; thin wrapper around the JSON)
+- hypothesis.md frontmatter: added latest_ar=wiki/plans/ar-v1 and latest_wiki_html=plan/wiki.html
+
+Mapping notes:
+- Station coverage: 7 stations trace to wiki entities (DLP-vat-photopolymerization, ceramic-sintering, micro-CT-imaging, MC3T3-E1-subclone-4, cell-seeding-dynamic-perfusion, alamarBlue-proliferation-assay, confocal-microscopy). cytotox-bench is a generic dish (no wiki_page required).
+- Step 1 (CAD design) is bound to dlp-printer with animation=none — no physical operation occurs at this step but the geometry will be sliced for that printer downstream.
+- Steps 9 & 10 both bind to plate-reader (PicoGreen and alamarBlue both run there); DAPI confocal at Step 10 is annotated via the state_change activating confocal-microscope.
+- Step 12 (statistics + image audit) binds to confocal-microscope for the second-reviewer image-audit aspect — the only physical instrument needed to re-open and verify imaging panels.

@@ -12,6 +12,8 @@ created: 2026-04-25
 updated: 2026-04-25
 sources_count: 65
 latest_plan: wiki/plans/plan-v1
+latest_ar: wiki/plans/ar-v1
+latest_wiki_html: plan/wiki.html
 tags: [bone-tissue-engineering, hydroxyapatite, 3D-printing, scaffold, gradient-porosity, osteoblast]
 ---
 

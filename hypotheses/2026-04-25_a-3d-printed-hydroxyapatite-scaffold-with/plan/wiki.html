@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lab Brief — Gradient-pore HA scaffold vs uniform HA scaffold (plan-v1)</title>
+<style>
+  :root{--bg:#0a0f1a;--bg-2:#111827;--bg-3:#1f2937;--text:#e2e8f0;--muted:#64748b;--accent:#00d4aa;--danger:#f87171;--warn:#fbbf24;--border:#1f2937;--link:#7dd3fc;}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:14px/1.55 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  a{color:var(--link);text-decoration:none}
+  a:hover{text-decoration:underline}
+  code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+  h1,h2,h3,h4{color:#fff;font-weight:600;margin:1.5em 0 .5em}
+  h1{font-size:1.6rem;margin-top:0}
+  h2{font-size:1.25rem;border-bottom:1px solid var(--border);padding-bottom:.3em;margin-top:2em}
+  h3{font-size:1.05rem;color:#cbd5e1}
+  h4{font-size:.95rem;color:#94a3b8;margin-bottom:.3em}
+  p{margin:.5em 0}
+  hr{border:none;border-top:1px solid var(--border);margin:2em 0}
+  table{border-collapse:collapse;width:100%;margin:.6em 0;font-size:13px}
+  th,td{padding:.45em .6em;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+  th{color:#94a3b8;font-weight:500;background:#0f172a}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .layout{display:grid;grid-template-columns:220px 1fr;gap:32px;max-width:1200px;margin:0 auto;padding:24px}
+  nav.toc{position:sticky;top:24px;align-self:start;border-right:1px solid var(--border);padding-right:16px;max-height:calc(100vh - 48px);overflow:auto}
+  nav.toc ul{list-style:none;padding:0;margin:0}
+  nav.toc li{margin:.2em 0}
+  nav.toc a{color:var(--muted);font-size:13px}
+  nav.toc a:hover{color:var(--text)}
+  nav.toc a.active{color:var(--accent)}
+  main{min-width:0}
+  .badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;font-weight:600;letter-spacing:.02em;background:var(--bg-3);color:#cbd5e1;border:1px solid var(--border)}
+  .badge.high{background:#3b1d1d;color:var(--danger);border-color:#7f1d1d}
+  .badge.medium{background:#3a2c0c;color:var(--warn);border-color:#92400e}
+  .badge.low{background:#0e2a1f;color:#34d399;border-color:#065f46}
+  .badge.critical{background:#3b1d1d;color:#fff;border-color:#fca5a5}
+  .badge.verdict{background:#0e2a1f;color:var(--accent);border-color:#065f46}
+  .badge.verdict.exact{background:#3b1d1d;color:var(--danger);border-color:#7f1d1d}
+  .badge.verdict.similar{background:#3a2c0c;color:var(--warn);border-color:#92400e}
+  .chip{display:inline-block;padding:4px 10px;margin:0 6px 6px 0;border-radius:14px;background:var(--bg-3);color:#cbd5e1;font-size:12px;border:1px solid var(--border)}
+  .chip.metric{background:#0e1f2a;color:var(--accent);border-color:#0e3a3a;font-weight:600}
+  .chip a{color:inherit}
+  .step{border:1px solid var(--border);border-radius:8px;padding:16px 20px;margin:14px 0;background:var(--bg-2)}
+  .step header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .step .step-num{display:inline-block;width:28px;height:28px;line-height:28px;text-align:center;border-radius:50%;background:#1f2937;color:var(--accent);font-weight:600}
+  .step h3{margin:0;flex:1}
+  .step .duration{color:var(--muted);font-size:12px}
+  .step section{margin-top:.8em}
+  .step h4{margin-top:.8em}
+  .callout{border-left:3px solid var(--danger);background:#1a1010;padding:8px 12px;border-radius:4px;margin:6px 0;font-size:13px}
+  .callout.medium{border-left-color:var(--warn);background:#1a160a}
+  .callout.low{border-left-color:#34d399;background:#0e1a14}
+  .callout .head{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+  .reagent-list{list-style:none;padding:0;margin:0}
+  .reagent-list li{padding:4px 0;border-bottom:1px dashed var(--border);font-size:13px}
+  .reagent-list li:last-child{border-bottom:none}
+  .reagent-list .qty{color:var(--accent)}
+  .reagent-list .sup{color:var(--muted)}
+  .citations{font-size:12px;color:var(--muted)}
+  .citations a{color:var(--link)}
+  details{border:1px solid var(--border);border-radius:6px;padding:8px 12px;margin:6px 0;background:var(--bg-2)}
+  details > summary{cursor:pointer;color:#cbd5e1;font-weight:500;list-style:none}
+  details > summary::-webkit-details-marker{display:none}
+  details > summary::before{content:"▸ ";color:var(--muted);font-size:12px}
+  details[open] > summary::before{content:"▾ "}
+  details summary .count{color:var(--muted);font-weight:400;margin-left:6px;font-size:12px}
+  .entity{padding:6px 0;border-bottom:1px dashed var(--border)}
+  .entity:last-child{border-bottom:none}
+  .entity-id{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--muted)}
+  .entity-name{color:#fff;font-weight:500}
+  .entity-desc{font-size:13px;color:#cbd5e1;margin-top:2px}
+  .entity-link{font-size:12px;color:var(--muted)}
+  .total-row{font-weight:600;color:#fff;background:#0f172a}
+  .meta-grid{display:grid;grid-template-columns:140px 1fr;gap:6px 12px;font-size:14px;margin:.6em 0}
+  .meta-grid dt{color:var(--muted);font-weight:500}
+  .meta-grid dd{margin:0;color:var(--text)}
+  .verdict-panel{border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin:12px 0;background:var(--bg-2)}
+  .ref{padding:8px 0;border-bottom:1px dashed var(--border)}
+  .ref:last-child{border-bottom:none}
+  .ref .title{color:#fff;font-weight:500}
+  .ref .meta{color:var(--muted);font-size:12px}
+  .ref .relevance{font-size:13px;margin-top:4px;color:#cbd5e1}
+  .source-cite{display:inline-block;padding:1px 5px;background:#1f2937;border-radius:3px;font-size:11px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--accent);margin-right:4px}
+  .source-cite:hover{background:#334155;text-decoration:none}
+  .caution{border-left:3px solid var(--warn);background:#1a160a;padding:8px 12px;border-radius:4px;margin:6px 0;font-size:13px}
+  .footer{color:var(--muted);font-size:12px;text-align:center;margin:3em 0 1em}
+  @media print{
+    nav.toc{display:none}
+    .layout{grid-template-columns:1fr;padding:0}
+    .step{break-inside:avoid;page-break-inside:avoid}
+    body{background:#fff;color:#000}
+    h1,h2,h3,h4{color:#000}
+    a{color:#000;text-decoration:underline}
+    .badge,.chip{border:1px solid #999;color:#000;background:#fff}
+    .step{border:1px solid #999;background:#fff}
+    .callout{background:#fff;color:#000;border-left:3px solid #000}
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+<nav class="toc">
+  <strong style="color:#cbd5e1;font-size:13px;display:block;margin-bottom:8px">Lab Brief</strong>
+  <ul>
+    <li><a href="#hypothesis">Hypothesis</a></li>
+    <li><a href="#novelty">Literature QC</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#protocol">Protocol</a></li>
+    <li><a href="#materials">Materials</a></li>
+    <li><a href="#budget">Budget</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#validation">Validation</a></li>
+    <li><a href="#failure-map">Failure Map</a></li>
+    <li><a href="#wiki">Wiki digest</a></li>
+  </ul>
+</nav>
+<main>
+
+<h1 id="hypothesis">Lab Brief — Gradient-pore HA scaffold vs uniform HA scaffold (plan-v1)</h1>
+<p style="color:#cbd5e1">Continuous radial 100 → 500 μm pore gradient, phase-pure 3D-printed HA, vs uniform 300 μm pore HA control. Primary endpoint: day-14 PicoGreen DNA on MC3T3-E1 Subclone 4. Threshold: ≥ 25 % higher on the gradient scaffold.</p>
+<p class="citations">Hypothesis root: <a href="../hypothesis.md">hypothesis.md</a> · Plan markdown: <a href="plan.md">plan.md</a> · Plan JSON: <a href="plan.json">plan.json</a> · AR scene: <a href="ar.json">ar.json</a></p>
+
+<h3>Original question</h3>
+<p style="color:#cbd5e1;font-style:italic">A 3D-printed hydroxyapatite scaffold with a gradient pore size (from 100 μm to 500 μm) will exhibit higher osteoblast proliferation rates compared to a uniform pore structure because it better mimics the natural transition between cortical and cancellous bone.</p>
+
+<h3>Refined hypothesis</h3>
+<table>
+  <tr><th style="width:130px">Intervention</th><td>DLP-printed phase-pure HA cylinder (6 mm Ø × 4 mm) with a continuous radial pore gradient: 100 μm at the outer surface increasing to 500 μm at the central axis. Method: <a href="#methods-DLP-vat-photopolymerization">DLP vat photopolymerization</a> of an HA-loaded photocurable slurry, debinded and sintered to a phase-pure ceramic.</td></tr>
+  <tr><th>Outcome</th><td>Osteoblast proliferation by <a href="#methods-PicoGreen-DNA-quantification">PicoGreen dsDNA</a> (primary) and <a href="#methods-alamarBlue-proliferation-assay">alamarBlue</a> (orthogonal), with <a href="#methods-DAPI-staining">DAPI</a> confocal radial cross-sections to verify spatial distribution. Cells: <a href="#organisms-MC3T3-E1-subclone-4">MC3T3-E1 Subclone 4</a> (ATCC CRL-2593, CVCL_5440).</td></tr>
+  <tr><th>Threshold</th><td>Day-14 dsDNA ≥ 1.25× uniform-control dsDNA (one-sided two-sample t-test, α = 0.05, n = 6 per group), conditional on match-on-confound: porosity ±3 pp, mass ±5 %, BET ±10 %, XRD β-TCP &lt; 5 %, ICP-MS Ca/P 1.667 ± 0.05.</td></tr>
+  <tr><th>Mechanism</th><td>Cortical → cancellous trabecular-spacing mimicry; small-pore outer shell for early attachment, large-pore core for nutrient/waste diffusion; avoids the necrotic core (uniform large-pore) and surface-skin (uniform small-pore) failure modes; graded curvature/permeability cues per <a href="#sources-2022-yang-gaussian-curvature-driven-direction-of-c">Yang 2022</a>.</td></tr>
+  <tr><th>Control</th><td>Uniform 300 μm HA scaffold matched on porosity, mass, BET surface area, HA chemistry (XRD-verified phase-pure HA, ICP-MS Ca/P), and outer geometry. Same printer, same slurry batch, same debinding + sintering schedule, seeded and cultured identically in parallel.</td></tr>
+</table>
+
+<h2 id="novelty">Literature QC</h2>
+<div class="verdict-panel">
+  <div><span class="badge verdict similar">VERDICT: similar-work-exists</span></div>
+  <p>Two close-but-imperfect precedents exist (Daskalakis 2024 PCL/HA three-zone gradient; Conoscenti 2025 PLLA continuous 70→200 μm) plus one closest-pure-CaP precedent (Wang 2024 CDHA gradient). No paper fabricates a continuous radial pure-HA pore gradient at 100 → 500 μm with osteoblast proliferation as the primary endpoint. The hypothesis is plausibly novel.</p>
+  <h3 style="margin-top:1em">References</h3>
+  <div class="ref">
+    <div class="title">In Vitro Evaluation of Pore Size Graded Bone Scaffolds with Different Material Composition</div>
+    <div class="meta">Daskalakis et al. (2024) · DOI <a href="https://doi.org/10.1089/3dp.2022.0138" target="_blank" rel="noopener">10.1089/3dp.2022.0138</a> · <a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone">wiki source</a></div>
+    <div class="relevance">Closest direct precedent: 3D-printed three-zone radial pore gradient PCL/HA bone bricks; PCL/HA wins d14 proliferation (243,413 ± 22,484 cells vs PCL 186,579 ± 14,221, p = 0.0003, +30 %), and cell number monotonically increases inner → outer pore region.</div>
+  </div>
+  <div class="ref">
+    <div class="title">Continuous pore size gradient enhances zonal-specific differentiation of stem cells in an osteochondral scaffold</div>
+    <div class="meta">Conoscenti et al. (2025) · DOI <a href="https://doi.org/10.1039/d5ra00540j" target="_blank" rel="noopener">10.1039/d5ra00540j</a> · <a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z">wiki source</a></div>
+    <div class="relevance">Strongest mechanistic precedent for a continuous gradient driving zonal cell response — pore size alone biases hMSC fate under identical media (PLLA TIPS, 70 → 200 μm).</div>
+  </div>
+  <div class="ref">
+    <div class="title">Polydopamine-functionalized calcium-deficient hydroxyapatite 3D-printed scaffold</div>
+    <div class="meta">Wang et al. (2024) · DOI <a href="https://doi.org/10.1016/j.mtbio.2024.101253" target="_blank" rel="noopener">10.1016/j.mtbio.2024.101253</a> · <a href="#sources-2024-wang-polydopamine-functionalized-calcium-defi">wiki source</a></div>
+    <div class="relevance">Closest pure-CaP gradient-pore precedent: extrusion-printed CDHA scaffold with explicit gradient pore structure supports BMSC proliferation and ALP/RUNX2/OPN expression.</div>
+  </div>
+  <h3 style="margin-top:1em">Literature cautions</h3>
+  <div class="caution">Pore-size optimum is genuinely contested across the literature (200–350 μm vs 300–500 μm vs 600 μm vs hierarchical). See <a href="#methods-gradient-pore-design">gradient-pore-design</a>.</div>
+  <div class="caution">Native rabbit-femur Haversian/Volkmann canal diameters are 40–200 μm — the 500 μm core is closer to trabecular spacing than cortical canal diameter. See <a href="#sources-2026-zhao-longitudinal-and-radial-microgradients-i">Zhao 2026</a>.</div>
+  <div class="caution">Karageorgiou &amp; Kaplan 2005 (canonical "100 μm minimum, ~300 μm optimal") is non-OA and not in <code>raw/</code>; cited transitively only. See <a href="#failure-modes-paywalled-or-non-OA-canonical-source-not-captured">paywalled-or-non-OA-canonical-source-not-captured</a>.</div>
+  <div class="caution">At least one HA-scaffold + osteogenesis claim was retracted in 2025 for image reuse; cross-validate every imaging-based readout. See <a href="#failure-modes-image-reuse-unsupported-osteogenesis-claims">image-reuse-unsupported-osteogenesis-claims</a>.</div>
+</div>
+
+<h2 id="summary">Summary</h2>
+<p>
+  <span class="chip metric">Total budget: $23,360 USD</span>
+  <span class="chip metric">Timeline: 12 weeks</span>
+  <span class="chip metric">Sources used: 65</span>
+  <span class="chip metric">Protocol steps: 12</span>
+  <span class="chip metric">Scaffolds: 72 (n = 6 × 5 time points × 2 groups + 12 spares)</span>
+</p>
+<h3>Top failure modes (inline at protocol steps)</h3>
+<p>
+  <span class="chip"><a href="#failure-modes-cad-vs-actual-pore-size-mismatch">cad-vs-actual-pore-size-mismatch</a></span>
+  <span class="chip"><a href="#failure-modes-sintering-shrinkage-pore-deviation">sintering-shrinkage-pore-deviation</a></span>
+  <span class="chip"><a href="#failure-modes-HA-phase-decomposition-during-sintering">HA-phase-decomposition-during-sintering</a></span>
+  <span class="chip"><a href="#failure-modes-nutrient-diffusion-limitation-in-scaffold-core">nutrient-diffusion-limitation-in-scaffold-core</a></span>
+  <span class="chip"><a href="#failure-modes-cell-seeding-uniformity-loss-large-pores">cell-seeding-uniformity-loss-large-pores</a></span>
+  <span class="chip"><a href="#failure-modes-HA-autofluorescence-confounds-livedead">HA-autofluorescence-confounds-livedead</a></span>
+  <span class="chip"><a href="#failure-modes-incomplete-cell-lysis-3d-scaffold-picogreen">incomplete-cell-lysis-3d-scaffold-picogreen</a></span>
+  <span class="chip"><a href="#failure-modes-mc3t3-e1-subclone-variability">mc3t3-e1-subclone-variability</a></span>
+</p>
+
+<h2 id="protocol">Protocol</h2>
+
+<div class="step" id="step-1">
+  <header><span class="step-num">1</span><h3>Generate parametric CAD: gradient and uniform-pore scaffolds</h3><span class="duration">4 h</span></header>
+  <p>The hypothesis specifies a continuous 100 → 500 μm radial gradient. Two cylindrical 6 mm Ø × 4 mm scaffolds are designed: (a) gradient — pore-size field d(r) = 100 μm at r = 3 mm increasing linearly to 500 μm at r = 0; (b) uniform — pore size 300 μm throughout. Both matched on total porosity (target 65 ± 3 pp) and outer geometry. The 4 mm height puts the diffusion-limited core threshold inside the scaffold so the gradient's diffusion-mitigation claim is testable. <a href="#methods-TPMS-scaffold-design">TPMS gyroid topology</a> is preferred for its CAD-to-physical fidelity.</p>
+  <h4>Failure warnings</h4>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-cad-vs-actual-pore-size-mismatch">cad-vs-actual-pore-size-mismatch</a></div>Treat the CAD pore-size axis as a target, not the truth. Build a parametric model that allows S = d_post/d_CAD compensation per pore-bin from Step 2's calibration; do not lock final geometry until Step 2 produces a measured shrinkage lookup.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-abrupt-interface-stress-concentration">abrupt-interface-stress-concentration</a></div>Use a continuous radial pore-size field (voxel-by-voxel), not a discrete-zone/biphasic design — continuous gradients avoid stress concentrators at zone boundaries.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-gradient-pore-design">gradient-pore-design</a> · <a href="#methods-TPMS-scaffold-design">TPMS-scaffold-design</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z" class="source-cite">2025-conoscenti</a><a href="#sources-2017-zhang-additively-manufactured-scaffolds-for-bo" class="source-cite">2017-zhang</a><a href="#sources-2020-chen-porous-scaffold-design-for-additive-manu" class="source-cite">2020-chen</a><a href="#sources-2025-liu-gradient-scaffolds-in-bone-soft-tissue-i" class="source-cite">2025-liu</a><a href="#sources-2026-liu-design-and-fabrication-of-biomimetic-gra" class="source-cite">2026-liu</a></p>
+</div>
+
+<div class="step" id="step-2">
+  <header><span class="step-num">2</span><h3>Print + sinter calibration array; build CAD-to-measured shrinkage lookup</h3><span class="duration">24 h</span></header>
+  <p>Every claim of "100 → 500 μm gradient" fails without μCT verification: AM resolution + slurry rheology + sintering shrinkage compound to shift pores 15–25 % and obliterate features below ~80 μm. Print and sinter a 6×6 array with CAD pores 50 / 100 / 150 / 200 / 300 / 500 / 700 μm; μCT post-sinter; compute S = d_post/d_CAD per pore bin; build a lookup so the experimental CAD is pre-compensated (e.g., 100 μm target → ~125 μm CAD if S ≈ 0.80). Bose 2017 cites 60–70 vol % HA loading minimises shrinkage. The output is a per-batch lookup that defines the actual experimental geometry for Step 3.</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list">
+    <li><a href="#reagents-hydroxyapatite">hydroxyapatite</a> · <span class="qty">60 vol % slurry loading</span> · <span class="sup">Plasma Biotal · P88 / Captal</span></li>
+    <li><a href="#reagents-photoinitiator-TPO">photoinitiator-TPO</a> · <span class="qty">1 wt % of resin phase</span> · <span class="sup">Sigma-Aldrich · 415952</span></li>
+  </ul>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-sintering-shrinkage-pore-deviation">sintering-shrinkage-pore-deviation</a></div>Pre-compensate CAD by S = d_post/d_CAD ≈ 0.80; calibrate per powder lot, slurry batch, sintering schedule. 6×6 array spans 50–700 μm CAD pores.</div>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-HA-phase-decomposition-during-sintering">HA-phase-decomposition-during-sintering</a></div>Cap sintering at 1200–1250 °C; verify Ca/P 1.667 ± 0.05 by ICP-MS; XRD post-sinter to confirm β-TCP fraction &lt; 5 %.</div>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-cytotoxic-residue-from-binders-or-photoinitiators">cytotoxic-residue-from-binders-or-photoinitiators</a></div>Slow 0.5 °C/min debinding through 300–600 °C with ≥ 2 h soak; EtOH/water reflux leach; ISO-10993-5 cytotoxicity gate at Step 5.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-cad-vs-actual-pore-size-mismatch">cad-vs-actual-pore-size-mismatch</a></div>Pair μCT (≤ 10 μm voxel) with SEM cross-sections; mercury intrusion porosimetry on a sister scaffold for an independent pore-throat distribution.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-slurry-preparation-for-DLP">slurry-preparation-for-DLP</a> · <a href="#methods-DLP-vat-photopolymerization">DLP-vat-photopolymerization</a> · <a href="#methods-debinding-thermal-treatment">debinding-thermal-treatment</a> · <a href="#methods-ceramic-sintering">ceramic-sintering</a> · <a href="#methods-micro-CT-imaging">micro-CT-imaging</a> · <a href="#methods-XRD-phase-analysis">XRD-phase-analysis</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-2017-bose-additive-manufacturing-of-biomaterials" class="source-cite">2017-bose</a><a href="#sources-2020-garot-additive-manufacturing-of-material-scaff" class="source-cite">2020-garot</a><a href="#sources-2015-ishack-bone-regeneration-in-critical-bone-defec" class="source-cite">2015-ishack</a><a href="#sources-2022-yang-gaussian-curvature-driven-direction-of-c" class="source-cite">2022-yang</a><a href="#sources-2017-eliaz-calcium-phosphate-bioceramics-a-review-o" class="source-cite">2017-eliaz</a></p>
+</div>
+
+<div class="step" id="step-3">
+  <header><span class="step-num">3</span><h3>Fabricate experimental scaffolds (gradient and uniform)</h3><span class="duration">48 h</span></header>
+  <p>Print n = 36 gradient + n = 36 uniform scaffolds (60 for the 5×6 time-point experiment + 12 spares for QC, characterization, and replacement). Use the Step-2 shrinkage lookup to pre-compensate CAD pore sizes. Same slurry, same debinding, same sintering run for both groups so post-sinter chemistry / surface state is matched. Half each batch printed cylinder-axis-vertical, half horizontal — controls for pore-anisotropy.</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list">
+    <li><a href="#reagents-hydroxyapatite">hydroxyapatite</a> · <span class="qty">same slurry batch as Step 2</span> · <span class="sup">Plasma Biotal · P88 / Captal</span></li>
+    <li><a href="#reagents-photoinitiator-TPO">photoinitiator-TPO</a> · <span class="qty">1 wt %</span> · <span class="sup">Sigma-Aldrich · 415952</span></li>
+  </ul>
+  <h4>Failure warnings</h4>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-pore-anisotropy-from-print-direction">pore-anisotropy-from-print-direction</a></div>Print half of each batch with the cylinder axis vertical, half horizontal; test for orientation effects on pore distribution and downstream cell response.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-batch-to-batch-HA-stoichiometry-variation">batch-to-batch-HA-stoichiometry-variation</a></div>Use a single HA powder lot for the entire study; ICP-MS Ca/P at lot receipt; XRD on every sintered batch.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-brittle-ceramic-mechanical-failure">brittle-ceramic-mechanical-failure</a></div>Compression test 3 sister scaffolds per group destructively; reject batch if Young's modulus drops &gt; 2× from FE prediction (microcrack signature).</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-DLP-vat-photopolymerization">DLP-vat-photopolymerization</a> · <a href="#methods-slurry-preparation-for-DLP">slurry-preparation-for-DLP</a> · <a href="#methods-debinding-thermal-treatment">debinding-thermal-treatment</a> · <a href="#methods-ceramic-sintering">ceramic-sintering</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-2017-bose-additive-manufacturing-of-biomaterials" class="source-cite">2017-bose</a><a href="#sources-2022-yang-gaussian-curvature-driven-direction-of-c" class="source-cite">2022-yang</a><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a></p>
+</div>
+
+<div class="step" id="step-4">
+  <header><span class="step-num">4</span><h3>Characterise each batch: μCT, XRD, BET, ICP-MS, mechanical</h3><span class="duration">48 h (parallel)</span></header>
+  <p>Match-on-confound parameters must be verified, not assumed. μCT every experimental scaffold (≤ 10 μm voxel); thresholded pore-size histogram per radial bin (outer 0–500 μm, mid, core). XRD on one scaffold per batch (Cu-Kα, 2θ = 20–60°, 0.02° step, 2 s dwell, Rietveld); BET N₂ adsorption surface area; ICP-MS Ca/P; mercury intrusion on a sister scaffold; SEM-EDX cross-sections; mechanical compression on 3 sister scaffolds per group.</p>
+  <p><strong>Acceptance gate:</strong> gradient and uniform groups within ±3 pp porosity, ±10 % BET, β-TCP &lt; 5 %, Ca/P 1.667 ± 0.05, mass within ±5 %.</p>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-cad-vs-actual-pore-size-mismatch">cad-vs-actual-pore-size-mismatch</a></div>Reject any scaffold whose measured outer-zone pore mean falls outside 100 ± 25 μm or core mean outside 500 ± 50 μm.</div>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-HA-phase-decomposition-during-sintering">HA-phase-decomposition-during-sintering</a></div>XRD per batch; reject batch if β-TCP fraction &gt; 5 % by Rietveld.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-HA-stoichiometry-affects-resorption">HA-stoichiometry-affects-resorption</a></div>ICP-MS Ca/P on acid-digested scaffold (one per batch); confirm 1.667 ± 0.05.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-micro-CT-imaging">micro-CT-imaging</a> · <a href="#methods-XRD-phase-analysis">XRD-phase-analysis</a> · <a href="#methods-BET-surface-area-analysis">BET-surface-area-analysis</a> · <a href="#methods-ICP-MS">ICP-MS</a> · <a href="#methods-SEM-imaging">SEM-imaging</a> · <a href="#methods-mercury-intrusion-porosimetry">mercury-intrusion-porosimetry</a> · <a href="#methods-mechanical-compression-testing">mechanical-compression-testing</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2026-thammarakcharoen-comprehensive-toxicological-evaluation-o" class="source-cite">2026-thammarakcharoen</a><a href="#sources-2017-eliaz-calcium-phosphate-bioceramics-a-review-o" class="source-cite">2017-eliaz</a><a href="#sources-2018-zhang-effect-of-microporosity-on-scaffolds-for" class="source-cite">2018-zhang</a></p>
+</div>
+
+<div class="step" id="step-5">
+  <header><span class="step-num">5</span><h3>Sterilise scaffolds; ISO-10993-5 cytotoxicity pre-screen on L929</h3><span class="duration">24 h</span></header>
+  <p>Soxhlet-style EtOH/water reflux leach for 24 h; vacuum dry; gamma-sterilise (25 kGy) or autoclave (121 °C × 30 min, dry cycle). Run ISO-10993-5 cytotoxicity on <a href="#organisms-L929-fibroblast">L929 fibroblasts</a> (24 h scaffold-conditioned medium, n = 6) — viability ≥ 80 % required to release the batch for MC3T3 work. Residual TPO is the dominant cytotoxicity risk for DLP HA scaffolds; Thammarakcharoen 2026 used this exact pipeline for binder-jet HA.</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list"><li><a href="#reagents-PBS">PBS</a> · <span class="qty">1× sterile, 500 mL</span> · <span class="sup">Gibco · 10010-023</span></li></ul>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-cytotoxic-residue-from-binders-or-photoinitiators">cytotoxic-residue-from-binders-or-photoinitiators</a></div>Non-negotiable gate; do NOT seed MC3T3 if L929 viability &lt; 80 %.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-live-dead-staining">live-dead-staining</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-2026-thammarakcharoen-comprehensive-toxicological-evaluation-o" class="source-cite">2026-thammarakcharoen</a><a href="#sources-2020-garot-additive-manufacturing-of-material-scaff" class="source-cite">2020-garot</a></p>
+</div>
+
+<div class="step" id="step-6">
+  <header><span class="step-num">6</span><h3>Receive cells, expand, STR-authenticate, mycoplasma-screen</h3><span class="duration">~96 h spread over 1 week</span></header>
+  <p>Source <a href="#organisms-MC3T3-E1-subclone-4">MC3T3-E1 Subclone 4</a> from <strong>ATCC CRL-2593</strong> (CVCL_5440, high-mineraliser) — <em>not</em> parental CVCL_0409, <em>not</em> Subclone 14 (CVCL_5437, ATCC CRL-2594), and <em>not</em> the wiki's mis-labelled <code>cellosaurus-mc3t3-e1-subclone4-cvcl5437.json</code> file. STR-authenticate at receipt (mouse 9-locus); PlasmoTest mycoplasma; passage ≤ 10 throughout the study.</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list">
+    <li><a href="#reagents-alpha-MEM">alpha-MEM</a> · <span class="qty">5 × 500 mL</span> · <span class="sup">Gibco · 12571-063 (ascorbic-acid-free)</span></li>
+    <li><a href="#reagents-FBS">FBS</a> · <span class="qty">1 × 500 mL, single lot</span> · <span class="sup">Gibco · 16140-071</span></li>
+    <li><a href="#reagents-penicillin-streptomycin">penicillin-streptomycin</a> · <span class="qty">100×, 100 mL</span> · <span class="sup">Gibco · 15140-122</span></li>
+    <li><a href="#reagents-L-glutamine">L-glutamine</a> (GlutaMAX) · <span class="qty">100×, 100 mL</span> · <span class="sup">Gibco · 35050-061</span></li>
+  </ul>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-mc3t3-e1-subclone-variability">mc3t3-e1-subclone-variability</a></div>Source explicitly from ATCC CRL-2593 (CVCL_5440); ignore the wiki's mis-labelled cellosaurus file.</div>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-cell-line-misidentification">cell-line-misidentification</a></div>STR-authenticate at receipt (mouse 9-locus, PubMed 37712227 reference); reject on locus mismatch.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-STR-cell-line-authentication">STR-cell-line-authentication</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-cellosaurus-mc3t3-e1-cvcl0409" class="source-cite">cellosaurus-mc3t3-e1-cvcl0409</a><a href="#sources-cellosaurus-mc3t3-e1-subclone4-cvcl5437" class="source-cite">cellosaurus-subclone4 (mislabel)</a><a href="#sources-protocol-2025-amin-murine-osteoblast-and-osteoclast-co-cult" class="source-cite">protocol-2025-amin</a><a href="#sources-protocol-2025-sheikh-isolation-of-in-vitro-osteoblastic-deriv" class="source-cite">protocol-2025-sheikh</a></p>
+</div>
+
+<div class="step" id="step-7">
+  <header><span class="step-num">7</span><h3>Pre-coat scaffolds, dynamic-perfusion seed at 5 × 10⁴ MC3T3 per scaffold</h3><span class="duration">8 h</span></header>
+  <p>Static seeding loses 30–60 % of cells through 500 μm pores and biases the readout in favour of small-pore scaffolds — falsely inflating the gradient effect. Pre-coat with 10 μg/mL fibronectin × 1 h at 37 °C; mount each scaffold in custom perfusion chamber; oscillating flow at 0.5 mL/min × 4 h; recover outlet medium and count by hemocytometer to compute per-scaffold seeding efficiency. Reject any scaffold where seeded count differs from group mean by &gt; 2 SD. Conoscenti 2025 reported 22.8 ± 1.3 % efficiency uniformly across a gradient.</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list">
+    <li><a href="#reagents-PBS">PBS</a> · <span class="qty">wash buffer</span> · <span class="sup">Gibco · 10010-023</span></li>
+    <li><a href="#reagents-alpha-MEM">alpha-MEM</a> + 10 % <a href="#reagents-FBS">FBS</a> + 1 % P/S · <span class="qty">seeding medium</span></li>
+  </ul>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-cell-seeding-uniformity-loss-large-pores">cell-seeding-uniformity-loss-large-pores</a></div>Dynamic perfusion (4 h, 0.5 mL/min) + fibronectin pre-coating; per-scaffold seeding-efficiency QC.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-edge-effect-in-scaffold-cell-seeding">edge-effect-in-scaffold-cell-seeding</a></div>Sentinel DAPI cross-sections at 24 h on one scaffold per group to verify radial cell distribution before counting day-1 endpoints.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-cell-seeding-efficiency-variation">cell-seeding-efficiency-variation</a></div>Recover medium from perfusion outlet at 4 h; count; report per-scaffold efficiency.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-cell-seeding-dynamic-perfusion">cell-seeding-dynamic-perfusion</a> · <a href="#methods-cell-seeding-static">cell-seeding-static</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z" class="source-cite">2025-conoscenti</a><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2008-palmer-biomimetic-systems-for-hydroxyapatite-mi" class="source-cite">2008-palmer</a></p>
+</div>
+
+<div class="step" id="step-8">
+  <header><span class="step-num">8</span><h3>Culture in proliferation medium (no osteogenic induction) with daily medium change</h3><span class="duration">21 d (504 h)</span></header>
+  <p>The hypothesis is about proliferation, so the primary experiment runs in non-osteogenic α-MEM + 10 % FBS only — dexamethasone explicitly suppresses proliferation, β-glycerophosphate triggers spontaneous mineralisation that confounds DNA recovery. Daily medium change. n = 6 scaffolds per group per time point × 5 time points × 2 groups = 60 scaffolds; perfusion bioreactor with parallel chambers (≥ 1× scaffold-volume turnover/min).</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list">
+    <li><a href="#reagents-alpha-MEM">alpha-MEM</a> · <span class="qty">10 mL / scaffold / day</span> · <span class="sup">Gibco · 12571-063</span></li>
+    <li><a href="#reagents-FBS">FBS</a> · <span class="qty">10 % v/v</span> · <span class="sup">Gibco · 16140-071</span></li>
+    <li><a href="#reagents-penicillin-streptomycin">penicillin-streptomycin</a> · <span class="qty">1 % v/v</span></li>
+    <li><a href="#reagents-L-glutamine">L-glutamine</a> · <span class="qty">1 % v/v</span></li>
+  </ul>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-nutrient-diffusion-limitation-in-scaffold-core">nutrient-diffusion-limitation-in-scaffold-core</a></div>Perfusion bioreactor (0.5 mL/min, ≥ 1× scaffold-volume turnover/min); CFD-predict permeability ≥ 10⁻⁹ m² before printing; DAPI cross-section radial bins to confirm core not necrotic.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-proliferation-vs-differentiation-tradeoff">proliferation-vs-differentiation-tradeoff</a></div>Non-osteogenic medium for primary cohort (no β-GP, no AsAP, no dexamethasone); differentiation tracked separately on a parallel cohort at Step 11.</div>
+  <div class="callout low"><div class="head"><span class="badge low">low</span> <a href="#failure-modes-short-term-proliferation-vs-long-term-bone-formation">short-term-proliferation-vs-long-term-bone-formation</a></div>Pre-register d14 as the primary endpoint; frame the claim as "in-vitro proliferation," not "bone formation."</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-cell-seeding-dynamic-perfusion">cell-seeding-dynamic-perfusion</a> · <a href="#methods-computational-fluid-dynamics-permeability">computational-fluid-dynamics-permeability</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z" class="source-cite">2025-conoscenti</a><a href="#sources-2010-murphy-understanding-the-effect-of-mean-pore-size-on" class="source-cite">2010-murphy</a><a href="#sources-2008-chan-scaffolding-in-tissue-engineering-general-approaches" class="source-cite">2008-chan</a></p>
+</div>
+
+<div class="step" id="step-9">
+  <header><span class="step-num">9</span><h3>Serial alamarBlue (non-destructive) at d1, d4, d7, d14, d21</h3><span class="duration">~6 h per time point</span></header>
+  <p>10 % v/v alamarBlue in medium, 1 mL per scaffold, 1–4 h at 37 °C, read 560/590 nm fluorescence. Non-destructive — same scaffolds re-read at every time point and then sacrificed at the corresponding endpoint. The (alamarBlue / PicoGreen) ratio across time is itself diagnostic: if it drops, cells are shifting from proliferative to differentiating state, which would invalidate proliferation-only conclusions.</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list">
+    <li><a href="#reagents-alamarBlue">alamarBlue</a> · <span class="qty">10 % v/v in medium, 1 mL / scaffold</span> · <span class="sup">Bio-Rad / Thermo Fisher · BUF012B / DAL1025</span></li>
+    <li><a href="#reagents-PBS">PBS</a> · <span class="sup">Gibco · 10010-023</span></li>
+  </ul>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-HA-autofluorescence-confounds-livedead">HA-autofluorescence-confounds-livedead</a></div>Scaffold-only no-cell blank per geometry per plate; subtract; verify signal-to-blank &gt; 3× before reporting.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-alamarBlue-proliferation-assay">alamarBlue-proliferation-assay</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-thermo-picogreen-p11496" class="source-cite">thermo-picogreen-p11496</a><a href="#sources-protocol-2025-battistelli-a-quantitative-spectrophotometric-assay" class="source-cite">protocol-2025-battistelli</a></p>
+</div>
+
+<div class="step" id="step-10">
+  <header><span class="step-num">10</span><h3>Terminal sampling at each time point: lyse, PicoGreen DNA, DAPI cross-section</h3><span class="duration">8 h per time point</span></header>
+  <p>PicoGreen DNA is the primary proliferation endpoint. Chaotropic lysis (proteinase-K 200 μg/mL in TE, 56 °C × 30 min + 10 × 5 s sonication on ice + 1 % SDS); PicoGreen at 1:200 working dilution, 480/520 nm; scaffold-only no-cell blanks per geometry per plate. Validate ≥ 80 % recovery on 3 sentinel scaffolds (known seed → immediate lysis) before any group comparison. DAPI confocal cross-sections in 3 radial bins (outer / middle / inner) on n = 2 sentinel scaffolds per group at d1 / d7 / d14. Live/dead at d14 on n = 2 per group as sanity check.</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list">
+    <li><a href="#reagents-PicoGreen">PicoGreen</a> · <span class="qty">1:200 working dilution</span> · <span class="sup">Thermo Fisher · P11496</span></li>
+    <li><a href="#reagents-DAPI">DAPI</a> · <span class="qty">1 μg/mL</span> · <span class="sup">Sigma / Thermo · D9542 / 62248</span></li>
+    <li><a href="#reagents-PBS">PBS</a> · <span class="sup">Gibco · 10010-023</span></li>
+    <li><a href="#reagents-calcein-AM">calcein-AM</a> · <span class="qty">2 μM</span> · <span class="sup">Thermo Fisher · C1430</span></li>
+    <li><a href="#reagents-ethidium-homodimer">ethidium-homodimer</a> · <span class="qty">4 μM</span> · <span class="sup">Thermo Fisher · E1169</span></li>
+  </ul>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-incomplete-cell-lysis-3d-scaffold-picogreen">incomplete-cell-lysis-3d-scaffold-picogreen</a></div>Proteinase-K + sonication + 1 % SDS chaotropic lysis (NOT single freeze-thaw + Triton, which recovers only 40–70 %). Validate ≥ 80 % recovery on 3 sentinel scaffolds.</div>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-HA-autofluorescence-confounds-livedead">HA-autofluorescence-confounds-livedead</a></div>Scaffold-only no-cell blank per geometry per batch; "scaffold + known DNA spike" control to detect HA quenching of PicoGreen signal.</div>
+  <div class="callout low"><div class="head"><span class="badge low">low</span> <a href="#failure-modes-cad-vs-actual-pore-size-mismatch">cad-vs-actual-pore-size-mismatch</a></div>Sample DAPI cross-sections in three radial bins; per-bin DNA differing &gt; 2× outer→inner is a diffusion-limit signature even if total DNA is high.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-PicoGreen-DNA-quantification">PicoGreen-DNA-quantification</a> · <a href="#methods-DAPI-staining">DAPI-staining</a> · <a href="#methods-confocal-microscopy">confocal-microscopy</a> · <a href="#methods-live-dead-staining">live-dead-staining</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-thermo-picogreen-p11496" class="source-cite">thermo-picogreen-p11496</a><a href="#sources-2025-de-carvalho-three-dimensional-printing-of-calcium-ph" class="source-cite">2025-de-carvalho</a><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a></p>
+</div>
+
+<div class="step" id="step-11">
+  <header><span class="step-num">11</span><h3>Secondary differentiation panel (parallel cohort, osteogenic medium): ALP, RUNX2/COL1/OCN qPCR</h3><span class="duration">~24 h end-to-end</span></header>
+  <p>Parallel cohort (n = 4 per group, separate scaffolds), osteogenic medium = α-MEM + 10 % FBS + 50 μg/mL AsAP + 10 mM β-GP + 10 nM dexamethasone. Readouts: ALP (d7, d14), qPCR for RUNX2 / COL1A1 / OCN / GAPDH (d14), ARS at d21 (semi-quantitative on HA scaffolds, cross-validated with von Kossa and SEM-EDX). Critically a separate cohort because differentiation media confound proliferation readout; the primary hypothesis stands or falls on Step 10's data alone.</p>
+  <h4>Reagents</h4>
+  <ul class="reagent-list">
+    <li><a href="#reagents-L-ascorbic-acid-2-phosphate">L-ascorbic-acid-2-phosphate</a> · <span class="qty">50 μg/mL</span> · <span class="sup">Sigma · A8960</span></li>
+    <li><a href="#reagents-beta-glycerophosphate">beta-glycerophosphate</a> · <span class="qty">10 mM</span> · <span class="sup">Sigma · G9422</span></li>
+    <li><a href="#reagents-dexamethasone">dexamethasone</a> · <span class="qty">10 nM</span> · <span class="sup">Sigma · D4902</span></li>
+    <li><a href="#reagents-p-nitrophenyl-phosphate">p-nitrophenyl-phosphate</a> · <span class="qty">5 mM ALP substrate</span> · <span class="sup">Sigma · N1891</span></li>
+    <li><a href="#reagents-alizarin-red-S">alizarin-red-S</a> · <span class="qty">40 mM, pH 4.1</span> · <span class="sup">Sigma · A5533</span></li>
+  </ul>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-proliferation-vs-differentiation-tradeoff">proliferation-vs-differentiation-tradeoff</a></div>Daskalakis 2024: PCL/HA wins proliferation but PCL/Bioglass wins differentiation. Report as separate primary endpoints; do NOT combine into a single "osteogenicity score."</div>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-ARS-binds-residual-scaffold-HA">ARS-binds-residual-scaffold-HA</a></div>ARS binds the scaffold itself. Always include scaffold-only no-cell blank; calibrate ARS curve on synthetic HA per Battistelli 2025; cross-validate with von Kossa + EDX.</div>
+  <div class="callout medium"><div class="head"><span class="badge medium">medium</span> <a href="#failure-modes-spontaneous-dystrophic-mineralization-bglycerophosphate">spontaneous-dystrophic-mineralization-bglycerophosphate</a></div>β-GP at 10 mM can produce cell-free mineral; run no-cell scaffold + osteogenic medium parallel control to subtract baseline.</div>
+  <h4>Methods</h4>
+  <p class="citations"><a href="#methods-osteogenic-differentiation-induction">osteogenic-differentiation-induction</a> · <a href="#methods-ALP-activity-assay">ALP-activity-assay</a> · <a href="#methods-qPCR">qPCR</a> · <a href="#methods-alizarin-red-staining">alizarin-red-staining</a> · <a href="#methods-spectrophotometric-calcium-assay">spectrophotometric-calcium-assay</a></p>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a><a href="#sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z" class="source-cite">2025-conoscenti</a><a href="#sources-protocol-2025-battistelli-a-quantitative-spectrophotometric-assay" class="source-cite">protocol-2025-battistelli</a><a href="#sources-protocol-2025-amin-murine-osteoblast-and-osteoclast-co-cult" class="source-cite">protocol-2025-amin</a></p>
+</div>
+
+<div class="step" id="step-12">
+  <header><span class="step-num">12</span><h3>Statistics, data integrity, pre-registration</h3><span class="duration">~12 h</span></header>
+  <p>Pre-register on OSF before Step 7 begins: primary endpoint = d14 PicoGreen, one-sided two-sample t-test, α = 0.05, n = 6 per group, expected effect size ≥ 25 %. Power analysis: detect 25 % mean difference with σ = 15 % (typical from Daskalakis 2024) at 80 % power → n = 6. Report n, exact p-values, effect sizes, and Bayes factors. Second-reviewer image audit before any submission.</p>
+  <h4>Failure warnings</h4>
+  <div class="callout"><div class="head"><span class="badge high">high</span> <a href="#failure-modes-image-reuse-unsupported-osteogenesis-claims">image-reuse-unsupported-osteogenesis-claims</a></div>Archive all raw images with original filenames; second-reviewer audit; do not splice or duplicate confocal panels (8 retractions in <code>raw/retractions/</code>).</div>
+  <div class="callout low"><div class="head"><span class="badge low">low</span> <a href="#failure-modes-donor-variability-hMSC">donor-variability-hMSC</a></div>MC3T3 is a cell line, not donor-variable; flagged for any future hBMSC follow-up.</div>
+  <h4>Sources</h4>
+  <p class="citations"><a href="#sources-crossref-retraction-10-3892-mmr-2025-13519" class="source-cite">retraction-10-3892-mmr-2025-13519</a><a href="#sources-crossref-retraction-10-1111-clr-12656" class="source-cite">retraction-10-1111-clr-12656</a><a href="#sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone" class="source-cite">2024-diez-escudero</a></p>
+</div>
+
+<h2 id="materials">Materials</h2>
+<p style="color:var(--muted);font-size:13px"><strong>Vendor caveat.</strong> ATCC and Sigma direct catalog pages were not captured in <code>raw/</code> (see <a href="#failure-modes-ATCC-Sigma-vendor-pages-not-captured">ATCC-Sigma-vendor-pages-not-captured</a>) — confirm catalog numbers and grades on live vendor pages before purchase. PubChem CID 24856 is potassium alum, NOT HA (<a href="#failure-modes-pubchem-cid-mismatch-for-inorganic-mineral">pubchem-cid-mismatch-for-inorganic-mineral</a>); HA properties used here come from Eliaz 2017, Palmer 2008, and Thammarakcharoen 2026.</p>
+<table>
+  <thead><tr><th>Category</th><th>Item</th><th>Supplier</th><th>Catalog</th><th>Qty</th><th class="num">Price (USD)</th></tr></thead>
+  <tbody>
+    <tr><td>Scaffold raw</td><td><a href="#reagents-hydroxyapatite">hydroxyapatite</a></td><td>Plasma Biotal</td><td>P88 / Captal</td><td>500 g</td><td class="num">600</td></tr>
+    <tr><td>Scaffold raw</td><td><a href="#reagents-photoinitiator-TPO">photoinitiator-TPO</a></td><td>Sigma-Aldrich</td><td>415952</td><td>50 g</td><td class="num">250</td></tr>
+    <tr><td>Scaffold raw</td><td><a href="#reagents-PEG-DA">PEG-DA</a> + diluents</td><td>Sigma-Aldrich</td><td>455008</td><td>500 mL</td><td class="num">400</td></tr>
+    <tr><td>Cells</td><td><a href="#organisms-MC3T3-E1-subclone-4">MC3T3-E1 Subclone 4</a></td><td>ATCC</td><td>CRL-2593 (CVCL_5440)</td><td>1 vial</td><td class="num">625</td></tr>
+    <tr><td>Cells (cytotox ref)</td><td><a href="#organisms-L929-fibroblast">L929 fibroblast</a></td><td>ATCC</td><td>CCL-1</td><td>1 vial</td><td class="num">580</td></tr>
+    <tr><td>Media</td><td><a href="#reagents-alpha-MEM">alpha-MEM</a></td><td>Gibco</td><td>12571-063</td><td>5 × 500 mL</td><td class="num">250</td></tr>
+    <tr><td>Media</td><td><a href="#reagents-FBS">FBS</a> (single lot)</td><td>Gibco</td><td>16140-071</td><td>1 × 500 mL</td><td class="num">500</td></tr>
+    <tr><td>Media</td><td><a href="#reagents-penicillin-streptomycin">penicillin-streptomycin</a></td><td>Gibco</td><td>15140-122</td><td>1 × 100 mL</td><td class="num">80</td></tr>
+    <tr><td>Media</td><td><a href="#reagents-L-glutamine">L-glutamine</a> (GlutaMAX)</td><td>Gibco</td><td>35050-061</td><td>1 × 100 mL</td><td class="num">40</td></tr>
+    <tr><td>Media</td><td><a href="#reagents-PBS">PBS</a></td><td>Gibco</td><td>10010-023</td><td>5 × 500 mL</td><td class="num">100</td></tr>
+    <tr><td>Osteogenic</td><td><a href="#reagents-L-ascorbic-acid-2-phosphate">L-ascorbic-acid-2-phosphate</a></td><td>Sigma</td><td>A8960</td><td>5 g</td><td class="num">80</td></tr>
+    <tr><td>Osteogenic</td><td><a href="#reagents-beta-glycerophosphate">beta-glycerophosphate</a></td><td>Sigma</td><td>G9422</td><td>100 g</td><td class="num">60</td></tr>
+    <tr><td>Osteogenic</td><td><a href="#reagents-dexamethasone">dexamethasone</a></td><td>Sigma</td><td>D4902</td><td>100 mg</td><td class="num">30</td></tr>
+    <tr><td>Assay</td><td><a href="#reagents-PicoGreen">PicoGreen</a></td><td>Thermo Fisher</td><td>P11496</td><td>1 kit</td><td class="num">475</td></tr>
+    <tr><td>Assay</td><td><a href="#reagents-alamarBlue">alamarBlue</a></td><td>Thermo Fisher</td><td>DAL1025</td><td>100 mL</td><td class="num">250</td></tr>
+    <tr><td>Assay</td><td><a href="#reagents-calcein-AM">calcein-AM</a></td><td>Thermo Fisher</td><td>C1430</td><td>1 mg</td><td class="num">200</td></tr>
+    <tr><td>Assay</td><td><a href="#reagents-ethidium-homodimer">ethidium-homodimer</a></td><td>Thermo Fisher</td><td>E1169</td><td>1 mL of 2 mM</td><td class="num">100</td></tr>
+    <tr><td>Assay</td><td><a href="#reagents-DAPI">DAPI</a></td><td>Thermo Fisher</td><td>62248</td><td>10 mL</td><td class="num">30</td></tr>
+    <tr><td>Assay</td><td><a href="#reagents-alizarin-red-S">alizarin-red-S</a></td><td>Sigma</td><td>A5533</td><td>100 g</td><td class="num">60</td></tr>
+    <tr><td>Assay</td><td><a href="#reagents-p-nitrophenyl-phosphate">p-nitrophenyl-phosphate</a></td><td>Sigma</td><td>N1891</td><td>ALP kit</td><td class="num">200</td></tr>
+    <tr><td>Mol bio</td><td>Trizol + cDNA + qPCR + RUNX2 / COL1A1 / OCN / GAPDH primers</td><td>Various</td><td>—</td><td>Bundle</td><td class="num">800</td></tr>
+    <tr><td>Plastics</td><td>Plates / dishes / tips / perfusion tubing</td><td>Various</td><td>—</td><td>Bundle</td><td class="num">1,500</td></tr>
+    <tr><td>QC</td><td>STR (mouse 9-locus) + PlasmoTest mycoplasma</td><td>ATCC / IDEXX</td><td>—</td><td>1 + 4</td><td class="num">350</td></tr>
+    <tr><td>Equipment</td><td>DLP slurry printer (Lithoz CeraFab 7500 / Tethon3D)</td><td>Univ. CMC</td><td>—</td><td>5 days</td><td class="num">1,000</td></tr>
+    <tr><td>Equipment</td><td>Debinding + sintering furnace</td><td>Univ. CMC</td><td>—</td><td>3 runs</td><td class="num">300</td></tr>
+    <tr><td>Equipment</td><td>μCT @ ≤ 10 μm voxel (Bruker SkyScan / ScanCo)</td><td>Univ. CMC</td><td>—</td><td>24 scans</td><td class="num">4,800</td></tr>
+    <tr><td>Equipment</td><td>BET / XRD / ICP-MS / Hg-porosimetry / mech / SEM-EDX</td><td>Univ. CMC</td><td>—</td><td>Bundled</td><td class="num">1,700</td></tr>
+    <tr><td>Personnel</td><td>Postdoc 0.5 FTE × 12 weeks (academic rate)</td><td>—</td><td>—</td><td>—</td><td class="num">5,500</td></tr>
+    <tr><td>Other</td><td>OSF pre-reg + biostats + 15 % buffer</td><td>—</td><td>—</td><td>—</td><td class="num">2,500</td></tr>
+  </tbody>
+</table>
+
+<h2 id="budget">Budget</h2>
+<table>
+  <thead><tr><th>Bucket</th><th>Description</th><th class="num">Cost (USD)</th></tr></thead>
+  <tbody>
+    <tr><td>Scaffold raw materials</td><td>Plasma Biotal P88 HA + TPO + PEG-DA / diluents</td><td class="num">1,250</td></tr>
+    <tr><td>Cells</td><td>MC3T3-E1 Subclone 4 (ATCC CRL-2593) + L929 reference</td><td class="num">1,205</td></tr>
+    <tr><td>Cell-culture media + supplements</td><td>α-MEM, FBS (single lot), P/S, L-glutamine, PBS, AsAP, β-GP, dex</td><td class="num">1,140</td></tr>
+    <tr><td>Assay kits + reagents</td><td>PicoGreen P11496, alamarBlue, calcein-AM/EthD-1, DAPI, ARS, pNPP</td><td class="num">1,315</td></tr>
+    <tr><td>Molecular biology</td><td>Trizol + cDNA + qPCR + RUNX2/COL1A1/OCN/GAPDH primers</td><td class="num">800</td></tr>
+    <tr><td>Plasticware</td><td>Well plates, perfusion tubing, tips, tubes</td><td class="num">1,500</td></tr>
+    <tr><td>Cell-line authentication / mycoplasma</td><td>STR + PlasmoTest</td><td class="num">350</td></tr>
+    <tr><td>DLP printer access</td><td>5 days CMC fee</td><td class="num">1,000</td></tr>
+    <tr><td>Furnace access</td><td>3 debinding + sintering runs</td><td class="num">300</td></tr>
+    <tr><td>μCT access</td><td>24 scans @ ≤ 10 μm voxel</td><td class="num">4,800</td></tr>
+    <tr><td>Other characterisation</td><td>BET, XRD, ICP-MS, mercury porosimetry, mechanical, SEM-EDX</td><td class="num">1,700</td></tr>
+    <tr><td>Personnel</td><td>Postdoc 0.5 FTE × 12 weeks (academic rate)</td><td class="num">5,500</td></tr>
+    <tr><td>Statistics / pre-reg / 15 % buffer</td><td>OSF pre-reg, biostatistics consult, overhead</td><td class="num">2,500</td></tr>
+    <tr class="total-row"><td colspan="2">Total</td><td class="num">23,360</td></tr>
+  </tbody>
+</table>
+
+<h2 id="timeline">Timeline</h2>
+<table>
+  <thead><tr><th>Phase</th><th>Weeks</th><th>Depends on</th><th>Deliverables</th></tr></thead>
+  <tbody>
+    <tr><td>1. CAD design + slurry development</td><td>1–2</td><td>—</td><td>Gradient + uniform CAD STL; 60 vol % HA / TPO / PEG-DA slurry on rheology spec</td></tr>
+    <tr><td>2. Calibration array + shrinkage lookup</td><td>3–4</td><td>1</td><td>S = d_post/d_CAD lookup per pore bin; pre-compensated experimental CAD</td></tr>
+    <tr><td>3. Fabricate + characterise</td><td>5–6</td><td>2</td><td>72 sintered scaffolds; μCT/XRD/BET/ICP-MS/SEM/mech QC; match-on-confound acceptance</td></tr>
+    <tr><td>4. Sterilise + cyto pre-screen + cell expansion</td><td>7</td><td>3</td><td>Sterile scaffolds released; STR-authenticated MC3T3 stocks; mycoplasma-negative</td></tr>
+    <tr><td>5. Seeding + perfusion culture + serial alamarBlue</td><td>8–11</td><td>4</td><td>Serial alamarBlue d1/d4/d7/d14/d21; per-scaffold seeding-efficiency QC</td></tr>
+    <tr><td>6. Endpoint + stats</td><td>12</td><td>5</td><td>PicoGreen, DAPI, ALP, qPCR, ARS; pre-registered statistical report</td></tr>
+    <tr class="total-row"><td colspan="3">Total</td><td>12 weeks</td></tr>
+  </tbody>
+</table>
+
+<h2 id="validation">Validation</h2>
+<p><strong>Primary endpoint:</strong> day-14 dsDNA per scaffold (<a href="#methods-PicoGreen-DNA-quantification">PicoGreen</a>, lysate, blank-subtracted) — gradient vs uniform 300 μm control.</p>
+
+<h3>Success criteria</h3>
+<ul>
+  <li>Gradient d14 dsDNA ≥ 1.25× uniform-control d14 dsDNA (one-sided two-sample t-test, α = 0.05, n = 6 per group).</li>
+  <li>alamarBlue d14 fluorescence directionally consistent; (alamarBlue / PicoGreen) ratio within ±25 % between groups (both groups remained proliferative).</li>
+  <li>Scaffold groups pass match-on-confound spec: porosity ±3 pp, BET ±10 %, β-TCP &lt; 5 %, Ca/P 1.667 ± 0.05, mass ±5 %.</li>
+  <li>Seeding efficiency between groups within ±20 %, no group below 60 % (perfusion).</li>
+  <li>L929 ISO-10993-5 viability ≥ 80 % on conditioned medium pre-MC3T3 release.</li>
+  <li>DAPI cross-sections show gradient-core cell density ≥ 50 % of outer-zone density (confirms diffusion-mitigation).</li>
+</ul>
+
+<h3>Failure criteria</h3>
+<ul>
+  <li>Gradient d14 dsDNA &lt; 1.25× uniform-control AND/OR p &gt; 0.05 → <strong>hypothesis falsified</strong>.</li>
+  <li>Match-on-confound spec violated → result inadmissible (gradient effect not isolable from chemistry/porosity confound).</li>
+  <li>Seeding efficiency between groups &gt; ±20 % OR DAPI hollow large-pore core in gradient → re-design seeding (longer perfusion, fibronectin) before re-running.</li>
+  <li>L929 viability &lt; 80 % → re-process scaffolds; do NOT seed MC3T3.</li>
+  <li>alamarBlue / PicoGreen ratio drifts &gt; 50 % by d14 → cells differentiated unintentionally; revisit medium / passage.</li>
+  <li>Image-audit discrepancy → full re-audit before any reporting.</li>
+</ul>
+
+<h3>Measurements</h3>
+<table>
+  <thead><tr><th>Measurement</th><th>Method</th><th>Time points (d)</th><th class="num">n / group</th></tr></thead>
+  <tbody>
+    <tr><td>PicoGreen dsDNA (lysate)</td><td><a href="#methods-PicoGreen-DNA-quantification">PicoGreen-DNA-quantification</a></td><td>1, 4, 7, 14, 21</td><td class="num">6</td></tr>
+    <tr><td>alamarBlue (non-destructive)</td><td><a href="#methods-alamarBlue-proliferation-assay">alamarBlue-proliferation-assay</a></td><td>1, 4, 7, 14, 21</td><td class="num">6</td></tr>
+    <tr><td>DAPI confocal radial bins</td><td><a href="#methods-DAPI-staining">DAPI-staining</a> · <a href="#methods-confocal-microscopy">confocal-microscopy</a></td><td>1, 7, 14</td><td class="num">2</td></tr>
+    <tr><td>Live/dead (calcein-AM + EthD-1)</td><td><a href="#methods-live-dead-staining">live-dead-staining</a></td><td>14</td><td class="num">2</td></tr>
+    <tr><td>ALP (osteogenic cohort)</td><td><a href="#methods-ALP-activity-assay">ALP-activity-assay</a></td><td>7, 14</td><td class="num">4</td></tr>
+    <tr><td>qPCR RUNX2/COL1A1/OCN/GAPDH</td><td><a href="#methods-qPCR">qPCR</a></td><td>14</td><td class="num">4</td></tr>
+    <tr><td>Alizarin Red S (semi-quant)</td><td><a href="#methods-alizarin-red-staining">alizarin-red-staining</a></td><td>21</td><td class="num">4</td></tr>
+    <tr><td>μCT pore-size acceptance</td><td><a href="#methods-micro-CT-imaging">micro-CT-imaging</a></td><td>pre-seeding</td><td class="num">12</td></tr>
+  </tbody>
+</table>
+
+<h2 id="failure-map">Failure Map</h2>
+<p style="color:var(--muted);font-size:13px">Top failure modes inlined at protocol steps; full ledger in <a href="../wiki/index.md">wiki/index.md</a> § Failure modes (33).</p>
+<table>
+  <thead><tr><th>Failure mode</th><th>Severity</th><th>Frequency</th><th>Step</th><th>Mitigation</th></tr></thead>
+  <tbody>
+    <tr><td><a href="#failure-modes-cad-vs-actual-pore-size-mismatch">cad-vs-actual-pore-size-mismatch</a></td><td><span class="badge high">high</span></td><td>dominant — every AM route ≥ 10 % CAD-vs-built drift</td><td>2, 4</td><td>Per-batch S calibration; μCT every scaffold; reject outside 100 ± 25 / 500 ± 50 μm</td></tr>
+    <tr><td><a href="#failure-modes-sintering-shrinkage-pore-deviation">sintering-shrinkage-pore-deviation</a></td><td><span class="badge high">high</span></td><td>dominant — 15–25 % linear shrinkage at 1200–1300 °C</td><td>2</td><td>Pre-compensate CAD by S ≈ 0.80; per-lot S calibration; 60–70 vol % HA loading</td></tr>
+    <tr><td><a href="#failure-modes-HA-phase-decomposition-during-sintering">HA-phase-decomposition-during-sintering</a></td><td><span class="badge high">high</span></td><td>recurring — significant β/α-TCP conversion above ~1300 °C</td><td>2</td><td>Cap sintering 1200–1250 °C; ICP-MS Ca/P 1.667 ± 0.05; XRD β-TCP &lt; 5 %</td></tr>
+    <tr><td><a href="#failure-modes-cytotoxic-residue-from-binders-or-photoinitiators">cytotoxic-residue-from-binders-or-photoinitiators</a></td><td><span class="badge high">high</span></td><td>recurring — incomplete debinding leaves TPO/LAP residue</td><td>5</td><td>Slow 0.5 °C/min debinding ≥ 2 h soak; EtOH/water reflux leach; ISO-10993-5 L929 ≥ 80 % gate</td></tr>
+    <tr><td><a href="#failure-modes-cell-seeding-uniformity-loss-large-pores">cell-seeding-uniformity-loss-large-pores</a></td><td><span class="badge high">high</span></td><td>recurring — pores &gt; 400 μm lose 30–60 % statically</td><td>7</td><td>Dynamic perfusion (4 h, 0.5 mL/min); fibronectin pre-coating; per-scaffold efficiency QC</td></tr>
+    <tr><td><a href="#failure-modes-nutrient-diffusion-limitation-in-scaffold-core">nutrient-diffusion-limitation-in-scaffold-core</a></td><td><span class="badge high">high</span></td><td>dominant — nearly every static-cultured 3D scaffold &gt; 2 mm</td><td>8</td><td>Perfusion ≥ 1× scaffold-volume turnover/min; CFD permeability ≥ 10⁻⁹ m²; DAPI radial bins</td></tr>
+    <tr><td><a href="#failure-modes-HA-autofluorescence-confounds-livedead">HA-autofluorescence-confounds-livedead</a></td><td><span class="badge high">high</span></td><td>dominant — affects almost every fluorescence assay on HA without blanks</td><td>9, 10</td><td>Scaffold-only no-cell blank per geometry per plate; signal-to-blank &gt; 3×</td></tr>
+    <tr><td><a href="#failure-modes-incomplete-cell-lysis-3d-scaffold-picogreen">incomplete-cell-lysis-3d-scaffold-picogreen</a></td><td><span class="badge high">high</span></td><td>dominant — single freeze-thaw + Triton recovers only 40–70 %</td><td>10</td><td>Proteinase-K + sonication + 1 % SDS; recovery validation ≥ 80 % before group comparisons</td></tr>
+    <tr><td><a href="#failure-modes-mc3t3-e1-subclone-variability">mc3t3-e1-subclone-variability</a></td><td><span class="badge high">high</span></td><td>high — parental vs Sub-4 vs Sub-14 differ ≥ 10× in mineralisation</td><td>6</td><td>Source Subclone 4 from ATCC CRL-2593; STR at receipt; passage ≤ 10; ignore mis-labelled cellosaurus file</td></tr>
+    <tr><td><a href="#failure-modes-proliferation-vs-differentiation-tradeoff">proliferation-vs-differentiation-tradeoff</a></td><td><span class="badge medium">medium</span></td><td>frequent in pore-architecture/composition studies</td><td>8, 11</td><td>Non-osteogenic medium for primary cohort; differentiation tracked separately at Step 11</td></tr>
+    <tr><td><a href="#failure-modes-ARS-binds-residual-scaffold-HA">ARS-binds-residual-scaffold-HA</a></td><td><span class="badge high">high</span></td><td>dominant for ARS-on-HA-scaffold quantification</td><td>11</td><td>Scaffold-only blank; calibrate ARS curve on synthetic HA; cross-validate with von Kossa + EDX</td></tr>
+    <tr><td><a href="#failure-modes-image-reuse-unsupported-osteogenesis-claims">image-reuse-unsupported-osteogenesis-claims</a></td><td><span class="badge high">high</span></td><td>recurring retraction signature (8 retractions in <code>raw/retractions/</code>)</td><td>12</td><td>Archive raw images with original filenames; second-reviewer audit; no panel splicing</td></tr>
+  </tbody>
+</table>
+
+<h2 id="wiki">Wiki digest</h2>
+<p style="color:var(--muted);font-size:13px">A browseable index of all 250 wiki entity pages compiled by Pass 2. Each entry has a one-line summary lifted from <a href="../wiki/index.md">wiki/index.md</a> (which itself was synthesised from the entity pages); follow the link to open the full Obsidian markdown for the entity. Source of truth is the vault, not this digest.</p>
+
+<details open><summary><strong>Methods</strong><span class="count">71</span></summary>
+<div class="entity" id="methods-3D-printing-stereolithography"><div class="entity-name">3D-printing-stereolithography</div><div class="entity-desc">Vat-photopolymerization umbrella (SLA, DLP, LCD, 2PP).</div><div class="entity-link"><a href="../wiki/methods/3D-printing-stereolithography.md">→ wiki/methods/3D-printing-stereolithography.md</a></div></div>
+<div class="entity" id="methods-DLP-vat-photopolymerization"><div class="entity-name">DLP-vat-photopolymerization</div><div class="entity-desc">Digital-light-processing curing of HA-loaded slurries; whole-layer DMD UV exposure of ceramic-loaded photocurable resin, then debinding + sintering. Limited to ~100 μm features in routine BTE practice.</div><div class="entity-link"><a href="../wiki/methods/DLP-vat-photopolymerization.md">→ wiki/methods/DLP-vat-photopolymerization.md</a></div></div>
+<div class="entity" id="methods-robocasting-direct-ink-writing"><div class="entity-name">robocasting-direct-ink-writing</div><div class="entity-desc">Extrusion of viscous HA inks; 200–1000 μm strut control.</div><div class="entity-link"><a href="../wiki/methods/robocasting-direct-ink-writing.md">→ wiki/methods/robocasting-direct-ink-writing.md</a></div></div>
+<div class="entity" id="methods-binder-jet-3D-printing"><div class="entity-name">binder-jet-3D-printing</div><div class="entity-desc">Powder-bed printing with droplet binder; 300–845 μm pores typical.</div><div class="entity-link"><a href="../wiki/methods/binder-jet-3D-printing.md">→ wiki/methods/binder-jet-3D-printing.md</a></div></div>
+<div class="entity" id="methods-extrusion-based-3D-printing"><div class="entity-name">extrusion-based-3D-printing</div><div class="entity-desc">Generic FDM/MEW/DIW family; HA-PCL composites.</div><div class="entity-link"><a href="../wiki/methods/extrusion-based-3D-printing.md">→ wiki/methods/extrusion-based-3D-printing.md</a></div></div>
+<div class="entity" id="methods-fused-deposition-modeling"><div class="entity-name">fused-deposition-modeling</div><div class="entity-desc">Thermoplastic filament extrusion.</div><div class="entity-link"><a href="../wiki/methods/fused-deposition-modeling.md">→ wiki/methods/fused-deposition-modeling.md</a></div></div>
+<div class="entity" id="methods-selective-laser-sintering"><div class="entity-name">selective-laser-sintering</div><div class="entity-desc">Laser-fused powder beds.</div><div class="entity-link"><a href="../wiki/methods/selective-laser-sintering.md">→ wiki/methods/selective-laser-sintering.md</a></div></div>
+<div class="entity" id="methods-inkjet-3D-printing"><div class="entity-name">inkjet-3D-printing</div><div class="entity-desc">Droplet-on-demand bioprinting.</div><div class="entity-link"><a href="../wiki/methods/inkjet-3D-printing.md">→ wiki/methods/inkjet-3D-printing.md</a></div></div>
+<div class="entity" id="methods-two-photon-polymerization"><div class="entity-name">two-photon-polymerization</div><div class="entity-desc">Sub-micron resolution photolithography.</div><div class="entity-link"><a href="../wiki/methods/two-photon-polymerization.md">→ wiki/methods/two-photon-polymerization.md</a></div></div>
+<div class="entity" id="methods-electrospinning"><div class="entity-name">electrospinning</div><div class="entity-desc">Nanofibre meshes for fibrous-gradient sub-layers.</div><div class="entity-link"><a href="../wiki/methods/electrospinning.md">→ wiki/methods/electrospinning.md</a></div></div>
+<div class="entity" id="methods-thermally-induced-phase-separation"><div class="entity-name">thermally-induced-phase-separation</div><div class="entity-desc">Solvent-quench pore generation; Conoscenti continuous-gradient route.</div><div class="entity-link"><a href="../wiki/methods/thermally-induced-phase-separation.md">→ wiki/methods/thermally-induced-phase-separation.md</a></div></div>
+<div class="entity" id="methods-freeze-drying-scaffold-fabrication"><div class="entity-name">freeze-drying-scaffold-fabrication</div><div class="entity-desc">Controlled-lyophilisation pore network.</div><div class="entity-link"><a href="../wiki/methods/freeze-drying-scaffold-fabrication.md">→ wiki/methods/freeze-drying-scaffold-fabrication.md</a></div></div>
+<div class="entity" id="methods-multi-nozzle-extrusion"><div class="entity-name">multi-nozzle-extrusion</div><div class="entity-desc">Parallel composition / pore-size gradients.</div><div class="entity-link"><a href="../wiki/methods/multi-nozzle-extrusion.md">→ wiki/methods/multi-nozzle-extrusion.md</a></div></div>
+<div class="entity" id="methods-coaxial-printing-spinning"><div class="entity-name">coaxial-printing-spinning</div><div class="entity-desc">Radial gradient inside one filament.</div><div class="entity-link"><a href="../wiki/methods/coaxial-printing-spinning.md">→ wiki/methods/coaxial-printing-spinning.md</a></div></div>
+<div class="entity" id="methods-gradient-photocuring"><div class="entity-name">gradient-photocuring</div><div class="entity-desc">Light-dose modulation for crosslink gradient.</div><div class="entity-link"><a href="../wiki/methods/gradient-photocuring.md">→ wiki/methods/gradient-photocuring.md</a></div></div>
+<div class="entity" id="methods-microfluidic-gradient-fabrication"><div class="entity-name">microfluidic-gradient-fabrication</div><div class="entity-desc">Hydrogel composition gradients.</div><div class="entity-link"><a href="../wiki/methods/microfluidic-gradient-fabrication.md">→ wiki/methods/microfluidic-gradient-fabrication.md</a></div></div>
+<div class="entity" id="methods-mask-photolithography-gradient"><div class="entity-name">mask-photolithography-gradient</div><div class="entity-desc">UV-mask-defined crosslink gradient.</div><div class="entity-link"><a href="../wiki/methods/mask-photolithography-gradient.md">→ wiki/methods/mask-photolithography-gradient.md</a></div></div>
+<div class="entity" id="methods-precision-extruding-deposition"><div class="entity-name">precision-extruding-deposition</div><div class="entity-desc">Lee 50-μm-nozzle PED variant.</div><div class="entity-link"><a href="../wiki/methods/precision-extruding-deposition.md">→ wiki/methods/precision-extruding-deposition.md</a></div></div>
+<div class="entity" id="methods-peptide-amphiphile-self-assembly"><div class="entity-name">peptide-amphiphile-self-assembly</div><div class="entity-desc">Stupp-group nanofibre HA templating.</div><div class="entity-link"><a href="../wiki/methods/peptide-amphiphile-self-assembly.md">→ wiki/methods/peptide-amphiphile-self-assembly.md</a></div></div>
+<div class="entity" id="methods-TPMS-scaffold-design"><div class="entity-name">TPMS-scaffold-design</div><div class="entity-desc">Triply-periodic-minimal-surface unit-cell architecture; preferred CAD route for continuous gradients.</div><div class="entity-link"><a href="../wiki/methods/TPMS-scaffold-design.md">→ wiki/methods/TPMS-scaffold-design.md</a></div></div>
+<div class="entity" id="methods-gradient-pore-design"><div class="entity-name">gradient-pore-design</div><div class="entity-desc">Central method to the hypothesis. Continuous (voxel-by-voxel) vs discrete-zone gradients; canonical implementation is the radial cortical→cancellous mimic. Pore-size optimum is contested in the literature; gradients sidestep this by spanning multiple sub-optima.</div><div class="entity-link"><a href="../wiki/methods/gradient-pore-design.md">→ wiki/methods/gradient-pore-design.md</a></div></div>
+<div class="entity" id="methods-ceramic-sintering"><div class="entity-name">ceramic-sintering</div><div class="entity-desc">Densification of green-body HA scaffolds; cap at 1200–1250 °C to avoid β/α-TCP conversion.</div><div class="entity-link"><a href="../wiki/methods/ceramic-sintering.md">→ wiki/methods/ceramic-sintering.md</a></div></div>
+<div class="entity" id="methods-slurry-preparation-for-DLP"><div class="entity-name">slurry-preparation-for-DLP</div><div class="entity-desc">HA-loaded photocurable resin formulation; 60–70 vol % HA loading minimises shrinkage.</div><div class="entity-link"><a href="../wiki/methods/slurry-preparation-for-DLP.md">→ wiki/methods/slurry-preparation-for-DLP.md</a></div></div>
+<div class="entity" id="methods-debinding-thermal-treatment"><div class="entity-name">debinding-thermal-treatment</div><div class="entity-desc">Controlled pyrolysis of organic binders before sintering; 0.5 °C/min through 300–600 °C with ≥ 2 h soak.</div><div class="entity-link"><a href="../wiki/methods/debinding-thermal-treatment.md">→ wiki/methods/debinding-thermal-treatment.md</a></div></div>
+<div class="entity" id="methods-biphasic-osteochondral-bioreactor"><div class="entity-name">biphasic-osteochondral-bioreactor</div><div class="entity-desc">Conoscenti dual-medium perfusion rig.</div><div class="entity-link"><a href="../wiki/methods/biphasic-osteochondral-bioreactor.md">→ wiki/methods/biphasic-osteochondral-bioreactor.md</a></div></div>
+<div class="entity" id="methods-micro-CT-imaging"><div class="entity-name">micro-CT-imaging</div><div class="entity-desc">3D pore-architecture verification (CAD vs as-built); ≤ 10 μm voxel resolution required for 100–500 μm pore quantification.</div><div class="entity-link"><a href="../wiki/methods/micro-CT-imaging.md">→ wiki/methods/micro-CT-imaging.md</a></div></div>
+<div class="entity" id="methods-micro-CT-bone-volume-quantification"><div class="entity-name">micro-CT-bone-volume-quantification</div><div class="entity-desc">BV/TV scoring in defect models.</div><div class="entity-link"><a href="../wiki/methods/micro-CT-bone-volume-quantification.md">→ wiki/methods/micro-CT-bone-volume-quantification.md</a></div></div>
+<div class="entity" id="methods-BET-surface-area-analysis"><div class="entity-name">BET-surface-area-analysis</div><div class="entity-desc">N₂ adsorption surface area; match-on-confound prerequisite for gradient vs uniform comparison.</div><div class="entity-link"><a href="../wiki/methods/BET-surface-area-analysis.md">→ wiki/methods/BET-surface-area-analysis.md</a></div></div>
+<div class="entity" id="methods-XRD-phase-analysis"><div class="entity-name">XRD-phase-analysis</div><div class="entity-desc">HA / β-TCP / α-TCP phase identification post-sinter; Rietveld β-TCP &lt; 5 % gate.</div><div class="entity-link"><a href="../wiki/methods/XRD-phase-analysis.md">→ wiki/methods/XRD-phase-analysis.md</a></div></div>
+<div class="entity" id="methods-SEM-imaging"><div class="entity-name">SEM-imaging</div><div class="entity-desc">Surface morphology and cell-attachment imaging.</div><div class="entity-link"><a href="../wiki/methods/SEM-imaging.md">→ wiki/methods/SEM-imaging.md</a></div></div>
+<div class="entity" id="methods-EDX-spectroscopy"><div class="entity-name">EDX-spectroscopy</div><div class="entity-desc">Element-composition spot analysis paired with SEM.</div><div class="entity-link"><a href="../wiki/methods/EDX-spectroscopy.md">→ wiki/methods/EDX-spectroscopy.md</a></div></div>
+<div class="entity" id="methods-TGA-thermogravimetric-analysis"><div class="entity-name">TGA-thermogravimetric-analysis</div><div class="entity-desc">Binder burn-off and decomposition profile.</div><div class="entity-link"><a href="../wiki/methods/TGA-thermogravimetric-analysis.md">→ wiki/methods/TGA-thermogravimetric-analysis.md</a></div></div>
+<div class="entity" id="methods-mercury-intrusion-porosimetry"><div class="entity-name">mercury-intrusion-porosimetry</div><div class="entity-desc">Pore-volume / median pore-diameter cross-check (independent of μCT).</div><div class="entity-link"><a href="../wiki/methods/mercury-intrusion-porosimetry.md">→ wiki/methods/mercury-intrusion-porosimetry.md</a></div></div>
+<div class="entity" id="methods-mechanical-compression-testing"><div class="entity-name">mechanical-compression-testing</div><div class="entity-desc">Modulus / yield-strength of porous ceramics.</div><div class="entity-link"><a href="../wiki/methods/mechanical-compression-testing.md">→ wiki/methods/mechanical-compression-testing.md</a></div></div>
+<div class="entity" id="methods-contact-angle-wettability"><div class="entity-name">contact-angle-wettability</div><div class="entity-desc">Surface energy after coatings / treatments.</div><div class="entity-link"><a href="../wiki/methods/contact-angle-wettability.md">→ wiki/methods/contact-angle-wettability.md</a></div></div>
+<div class="entity" id="methods-ICP-MS"><div class="entity-name">ICP-MS</div><div class="entity-desc">Trace-element / dopant quantification; Ca/P stoichiometry verification (1.667 ± 0.05).</div><div class="entity-link"><a href="../wiki/methods/ICP-MS.md">→ wiki/methods/ICP-MS.md</a></div></div>
+<div class="entity" id="methods-finite-element-analysis"><div class="entity-name">finite-element-analysis</div><div class="entity-desc">Strut-stress modelling for graded geometries.</div><div class="entity-link"><a href="../wiki/methods/finite-element-analysis.md">→ wiki/methods/finite-element-analysis.md</a></div></div>
+<div class="entity" id="methods-computational-fluid-dynamics-permeability"><div class="entity-name">computational-fluid-dynamics-permeability</div><div class="entity-desc">Predicted nutrient-flow through pore network; target permeability ≥ 10⁻⁹ m².</div><div class="entity-link"><a href="../wiki/methods/computational-fluid-dynamics-permeability.md">→ wiki/methods/computational-fluid-dynamics-permeability.md</a></div></div>
+<div class="entity" id="methods-histomorphometry"><div class="entity-name">histomorphometry</div><div class="entity-desc">Quantitative slice-by-slice bone histology.</div><div class="entity-link"><a href="../wiki/methods/histomorphometry.md">→ wiki/methods/histomorphometry.md</a></div></div>
+<div class="entity" id="methods-H-and-E-staining"><div class="entity-name">H-and-E-staining</div><div class="entity-desc">General histological stain for cell distribution.</div><div class="entity-link"><a href="../wiki/methods/H-and-E-staining.md">→ wiki/methods/H-and-E-staining.md</a></div></div>
+<div class="entity" id="methods-TEM-imaging"><div class="entity-name">TEM-imaging</div><div class="entity-desc">HA crystallite morphology.</div><div class="entity-link"><a href="../wiki/methods/TEM-imaging.md">→ wiki/methods/TEM-imaging.md</a></div></div>
+<div class="entity" id="methods-cell-seeding-static"><div class="entity-name">cell-seeding-static</div><div class="entity-desc">Drop-on-scaffold seeding; high edge-effect; loses 30–60 % cells through &gt; 400 μm pores.</div><div class="entity-link"><a href="../wiki/methods/cell-seeding-static.md">→ wiki/methods/cell-seeding-static.md</a></div></div>
+<div class="entity" id="methods-cell-seeding-dynamic-perfusion"><div class="entity-name">cell-seeding-dynamic-perfusion</div><div class="entity-desc">Perfusion-bioreactor seeding for uniformity; Conoscenti reported 22.8 ± 1.3 % efficiency uniform across a gradient.</div><div class="entity-link"><a href="../wiki/methods/cell-seeding-dynamic-perfusion.md">→ wiki/methods/cell-seeding-dynamic-perfusion.md</a></div></div>
+<div class="entity" id="methods-PicoGreen-DNA-quantification"><div class="entity-name">PicoGreen-DNA-quantification</div><div class="entity-desc">Orthogonal DNA-content endpoint; primary proliferation readout for this hypothesis. Requires chaotropic lysis on 3D scaffolds.</div><div class="entity-link"><a href="../wiki/methods/PicoGreen-DNA-quantification.md">→ wiki/methods/PicoGreen-DNA-quantification.md</a></div></div>
+<div class="entity" id="methods-alamarBlue-proliferation-assay"><div class="entity-name">alamarBlue-proliferation-assay</div><div class="entity-desc">Non-destructive metabolic proliferation; same scaffolds re-read at every time point.</div><div class="entity-link"><a href="../wiki/methods/alamarBlue-proliferation-assay.md">→ wiki/methods/alamarBlue-proliferation-assay.md</a></div></div>
+<div class="entity" id="methods-MTS-assay"><div class="entity-name">MTS-assay</div><div class="entity-desc">Colorimetric metabolic-activity readout.</div><div class="entity-link"><a href="../wiki/methods/MTS-assay.md">→ wiki/methods/MTS-assay.md</a></div></div>
+<div class="entity" id="methods-MTT-assay"><div class="entity-name">MTT-assay</div><div class="entity-desc">Formazan precipitate metabolic readout.</div><div class="entity-link"><a href="../wiki/methods/MTT-assay.md">→ wiki/methods/MTT-assay.md</a></div></div>
+<div class="entity" id="methods-CCK-8-assay"><div class="entity-name">CCK-8-assay</div><div class="entity-desc">Water-soluble formazan metabolic readout.</div><div class="entity-link"><a href="../wiki/methods/CCK-8-assay.md">→ wiki/methods/CCK-8-assay.md</a></div></div>
+<div class="entity" id="methods-ALP-activity-assay"><div class="entity-name">ALP-activity-assay</div><div class="entity-desc">Early osteogenic differentiation marker; pNPP substrate.</div><div class="entity-link"><a href="../wiki/methods/ALP-activity-assay.md">→ wiki/methods/ALP-activity-assay.md</a></div></div>
+<div class="entity" id="methods-live-dead-staining"><div class="entity-name">live-dead-staining</div><div class="entity-desc">Calcein-AM / EthD-1 viability imaging; HA autofluorescence is a known confound.</div><div class="entity-link"><a href="../wiki/methods/live-dead-staining.md">→ wiki/methods/live-dead-staining.md</a></div></div>
+<div class="entity" id="methods-DAPI-staining"><div class="entity-name">DAPI-staining</div><div class="entity-desc">Nuclear counter-stain; used for radial-bin cell-density verification.</div><div class="entity-link"><a href="../wiki/methods/DAPI-staining.md">→ wiki/methods/DAPI-staining.md</a></div></div>
+<div class="entity" id="methods-phalloidin-actin-staining"><div class="entity-name">phalloidin-actin-staining</div><div class="entity-desc">F-actin cytoskeletal morphology.</div><div class="entity-link"><a href="../wiki/methods/phalloidin-actin-staining.md">→ wiki/methods/phalloidin-actin-staining.md</a></div></div>
+<div class="entity" id="methods-confocal-microscopy"><div class="entity-name">confocal-microscopy</div><div class="entity-desc">Depth-resolved fluorescence imaging; required for radial DAPI bins through 4 mm scaffold.</div><div class="entity-link"><a href="../wiki/methods/confocal-microscopy.md">→ wiki/methods/confocal-microscopy.md</a></div></div>
+<div class="entity" id="methods-fluorescence-microscopy"><div class="entity-name">fluorescence-microscopy</div><div class="entity-desc">Wide-field imaging.</div><div class="entity-link"><a href="../wiki/methods/fluorescence-microscopy.md">→ wiki/methods/fluorescence-microscopy.md</a></div></div>
+<div class="entity" id="methods-qPCR"><div class="entity-name">qPCR</div><div class="entity-desc">RUNX2 / OCN / OPN / COL1A1 osteogenic transcript quantification.</div><div class="entity-link"><a href="../wiki/methods/qPCR.md">→ wiki/methods/qPCR.md</a></div></div>
+<div class="entity" id="methods-RT-PCR"><div class="entity-name">RT-PCR</div><div class="entity-desc">Semi-quantitative transcript detection.</div><div class="entity-link"><a href="../wiki/methods/RT-PCR.md">→ wiki/methods/RT-PCR.md</a></div></div>
+<div class="entity" id="methods-western-blot"><div class="entity-name">western-blot</div><div class="entity-desc">Osteogenic-marker protein quantification.</div><div class="entity-link"><a href="../wiki/methods/western-blot.md">→ wiki/methods/western-blot.md</a></div></div>
+<div class="entity" id="methods-ELISA"><div class="entity-name">ELISA</div><div class="entity-desc">Secreted-protein (e.g. OCN) quantification.</div><div class="entity-link"><a href="../wiki/methods/ELISA.md">→ wiki/methods/ELISA.md</a></div></div>
+<div class="entity" id="methods-alizarin-red-staining"><div class="entity-name">alizarin-red-staining</div><div class="entity-desc">Cell-deposited Ca²⁺ staining; HA-scaffold confound — ARS binds the scaffold itself.</div><div class="entity-link"><a href="../wiki/methods/alizarin-red-staining.md">→ wiki/methods/alizarin-red-staining.md</a></div></div>
+<div class="entity" id="methods-von-kossa-staining"><div class="entity-name">von-kossa-staining</div><div class="entity-desc">Silver-staining of phosphate mineral deposits; cross-validates ARS on HA scaffolds.</div><div class="entity-link"><a href="../wiki/methods/von-kossa-staining.md">→ wiki/methods/von-kossa-staining.md</a></div></div>
+<div class="entity" id="methods-alcian-blue-staining"><div class="entity-name">alcian-blue-staining</div><div class="entity-desc">Chondrogenic GAG histology (Conoscenti gradient zonal differentiation).</div><div class="entity-link"><a href="../wiki/methods/alcian-blue-staining.md">→ wiki/methods/alcian-blue-staining.md</a></div></div>
+<div class="entity" id="methods-spectrophotometric-calcium-assay"><div class="entity-name">spectrophotometric-calcium-assay</div><div class="entity-desc">Quantitative Ca²⁺ readout (Battistelli protocol).</div><div class="entity-link"><a href="../wiki/methods/spectrophotometric-calcium-assay.md">→ wiki/methods/spectrophotometric-calcium-assay.md</a></div></div>
+<div class="entity" id="methods-osteogenic-differentiation-induction"><div class="entity-name">osteogenic-differentiation-induction</div><div class="entity-desc">β-GP + AsAP + dex cocktail; do NOT use in proliferation cohort.</div><div class="entity-link"><a href="../wiki/methods/osteogenic-differentiation-induction.md">→ wiki/methods/osteogenic-differentiation-induction.md</a></div></div>
+<div class="entity" id="methods-osteoblast-osteoclast-coculture"><div class="entity-name">osteoblast-osteoclast-coculture</div><div class="entity-desc">DBP co-culture (Amin protocol).</div><div class="entity-link"><a href="../wiki/methods/osteoblast-osteoclast-coculture.md">→ wiki/methods/osteoblast-osteoclast-coculture.md</a></div></div>
+<div class="entity" id="methods-STR-cell-line-authentication"><div class="entity-name">STR-cell-line-authentication</div><div class="entity-desc">Short-tandem-repeat profiling for cell-line ID; mouse 9-locus required for MC3T3 Subclone 4.</div><div class="entity-link"><a href="../wiki/methods/STR-cell-line-authentication.md">→ wiki/methods/STR-cell-line-authentication.md</a></div></div>
+<div class="entity" id="methods-matrix-vesicle-isolation"><div class="entity-name">matrix-vesicle-isolation</div><div class="entity-desc">Ultracentrifugation MV preparation (Sheikh).</div><div class="entity-link"><a href="../wiki/methods/matrix-vesicle-isolation.md">→ wiki/methods/matrix-vesicle-isolation.md</a></div></div>
+<div class="entity" id="methods-ultracentrifugation"><div class="entity-name">ultracentrifugation</div><div class="entity-desc">Physical step within MV-isolation pipeline.</div><div class="entity-link"><a href="../wiki/methods/ultracentrifugation.md">→ wiki/methods/ultracentrifugation.md</a></div></div>
+<div class="entity" id="methods-in-vivo-calvarial-defect-model"><div class="entity-name">in-vivo-calvarial-defect-model</div><div class="entity-desc">Non-load-bearing critical-size cranial defect.</div><div class="entity-link"><a href="../wiki/methods/in-vivo-calvarial-defect-model.md">→ wiki/methods/in-vivo-calvarial-defect-model.md</a></div></div>
+<div class="entity" id="methods-in-vivo-femoral-defect-model"><div class="entity-name">in-vivo-femoral-defect-model</div><div class="entity-desc">Load-bearing long-bone defect.</div><div class="entity-link"><a href="../wiki/methods/in-vivo-femoral-defect-model.md">→ wiki/methods/in-vivo-femoral-defect-model.md</a></div></div>
+<div class="entity" id="methods-kidney-capsule-transplantation"><div class="entity-name">kidney-capsule-transplantation</div><div class="entity-desc">Ectopic osteogenesis assay (Uchida).</div><div class="entity-link"><a href="../wiki/methods/kidney-capsule-transplantation.md">→ wiki/methods/kidney-capsule-transplantation.md</a></div></div>
+<div class="entity" id="methods-limiting-dilution-assay"><div class="entity-name">limiting-dilution-assay</div><div class="entity-desc">ELDA-style stem-cell frequency.</div><div class="entity-link"><a href="../wiki/methods/limiting-dilution-assay.md">→ wiki/methods/limiting-dilution-assay.md</a></div></div>
+</details>
+
+<details><summary><strong>Reagents</strong><span class="count">58</span></summary>
+<div class="entity" id="reagents-hydroxyapatite"><div class="entity-name">hydroxyapatite (HA)</div><div class="entity-desc">Ca₁₀(PO₄)₆(OH)₂; CAS 1306-06-5. Central scaffold material for this hypothesis. Note: PubChem CID 24856 is potassium alum, NOT HA — use Eliaz 2017 / Palmer 2008 / supplier specs as authoritative property sources.</div><div class="entity-link"><a href="../wiki/reagents/hydroxyapatite.md">→ wiki/reagents/hydroxyapatite.md</a></div></div>
+<div class="entity" id="reagents-calcium-deficient-hydroxyapatite"><div class="entity-name">calcium-deficient-hydroxyapatite</div><div class="entity-desc">Non-stoichiometric HA precursor (Ca/P &lt; 1.67); used in Wang 2024 gradient.</div><div class="entity-link"><a href="../wiki/reagents/calcium-deficient-hydroxyapatite.md">→ wiki/reagents/calcium-deficient-hydroxyapatite.md</a></div></div>
+<div class="entity" id="reagents-beta-tricalcium-phosphate"><div class="entity-name">beta-tricalcium-phosphate</div><div class="entity-desc">β-Ca₃(PO₄)₂; resorbable comparator; CAS 7758-87-4.</div><div class="entity-link"><a href="../wiki/reagents/beta-tricalcium-phosphate.md">→ wiki/reagents/beta-tricalcium-phosphate.md</a></div></div>
+<div class="entity" id="reagents-alpha-tricalcium-phosphate"><div class="entity-name">alpha-tricalcium-phosphate</div><div class="entity-desc">α-polymorph; CPC ingredient.</div><div class="entity-link"><a href="../wiki/reagents/alpha-tricalcium-phosphate.md">→ wiki/reagents/alpha-tricalcium-phosphate.md</a></div></div>
+<div class="entity" id="reagents-biphasic-calcium-phosphate"><div class="entity-name">biphasic-calcium-phosphate</div><div class="entity-desc">HA + β-TCP blend; tunable resorption.</div><div class="entity-link"><a href="../wiki/reagents/biphasic-calcium-phosphate.md">→ wiki/reagents/biphasic-calcium-phosphate.md</a></div></div>
+<div class="entity" id="reagents-bioglass-45S5"><div class="entity-name">bioglass-45S5</div><div class="entity-desc">Hench bioactive silica-CaO-Na₂O-P₂O₅ glass.</div><div class="entity-link"><a href="../wiki/reagents/bioglass-45S5.md">→ wiki/reagents/bioglass-45S5.md</a></div></div>
+<div class="entity" id="reagents-mesoporous-bioactive-glass"><div class="entity-name">mesoporous-bioactive-glass</div><div class="entity-desc">High-surface-area drug-delivery glass.</div><div class="entity-link"><a href="../wiki/reagents/mesoporous-bioactive-glass.md">→ wiki/reagents/mesoporous-bioactive-glass.md</a></div></div>
+<div class="entity" id="reagents-polycaprolactone"><div class="entity-name">polycaprolactone</div><div class="entity-desc">Slow-degrading thermoplastic for HA-PCL composites.</div><div class="entity-link"><a href="../wiki/reagents/polycaprolactone.md">→ wiki/reagents/polycaprolactone.md</a></div></div>
+<div class="entity" id="reagents-polylactic-acid"><div class="entity-name">polylactic-acid</div><div class="entity-desc">PLA; faster-degrading polyester.</div><div class="entity-link"><a href="../wiki/reagents/polylactic-acid.md">→ wiki/reagents/polylactic-acid.md</a></div></div>
+<div class="entity" id="reagents-PLGA"><div class="entity-name">PLGA</div><div class="entity-desc">Tunable-degradation copolymer.</div><div class="entity-link"><a href="../wiki/reagents/PLGA.md">→ wiki/reagents/PLGA.md</a></div></div>
+<div class="entity" id="reagents-PEG-DA"><div class="entity-name">PEG-DA</div><div class="entity-desc">UV-curable hydrogel resin; resin base for HA DLP slurries.</div><div class="entity-link"><a href="../wiki/reagents/PEG-DA.md">→ wiki/reagents/PEG-DA.md</a></div></div>
+<div class="entity" id="reagents-collagen"><div class="entity-name">collagen</div><div class="entity-desc">Type-I matrix protein; physiological osteoid analogue.</div><div class="entity-link"><a href="../wiki/reagents/collagen.md">→ wiki/reagents/collagen.md</a></div></div>
+<div class="entity" id="reagents-collagen-glycosaminoglycan"><div class="entity-name">collagen-glycosaminoglycan</div><div class="entity-desc">Murphy CG scaffold matrix.</div><div class="entity-link"><a href="../wiki/reagents/collagen-glycosaminoglycan.md">→ wiki/reagents/collagen-glycosaminoglycan.md</a></div></div>
+<div class="entity" id="reagents-chitosan"><div class="entity-name">chitosan</div><div class="entity-desc">Cationic polysaccharide.</div><div class="entity-link"><a href="../wiki/reagents/chitosan.md">→ wiki/reagents/chitosan.md</a></div></div>
+<div class="entity" id="reagents-gelatin"><div class="entity-name">gelatin</div><div class="entity-desc">Denatured collagen; methacrylated GelMA common variant.</div><div class="entity-link"><a href="../wiki/reagents/gelatin.md">→ wiki/reagents/gelatin.md</a></div></div>
+<div class="entity" id="reagents-alginate"><div class="entity-name">alginate</div><div class="entity-desc">Divalent-cation-crosslinkable polysaccharide.</div><div class="entity-link"><a href="../wiki/reagents/alginate.md">→ wiki/reagents/alginate.md</a></div></div>
+<div class="entity" id="reagents-silk-fibroin"><div class="entity-name">silk-fibroin</div><div class="entity-desc">High-toughness biopolymer.</div><div class="entity-link"><a href="../wiki/reagents/silk-fibroin.md">→ wiki/reagents/silk-fibroin.md</a></div></div>
+<div class="entity" id="reagents-hyaluronic-acid"><div class="entity-name">hyaluronic-acid</div><div class="entity-desc">GAG; methacrylated HAMA in 3D printing.</div><div class="entity-link"><a href="../wiki/reagents/hyaluronic-acid.md">→ wiki/reagents/hyaluronic-acid.md</a></div></div>
+<div class="entity" id="reagents-alpha-MEM"><div class="entity-name">alpha-MEM</div><div class="entity-desc">Standard MC3T3-E1 / hBMSC medium; ascorbic-acid-free formulation for parental MC3T3 maintenance.</div><div class="entity-link"><a href="../wiki/reagents/alpha-MEM.md">→ wiki/reagents/alpha-MEM.md</a></div></div>
+<div class="entity" id="reagents-DMEM"><div class="entity-name">DMEM</div><div class="entity-desc">Dulbecco's MEM; Saos-2 / HUVEC default.</div><div class="entity-link"><a href="../wiki/reagents/DMEM.md">→ wiki/reagents/DMEM.md</a></div></div>
+<div class="entity" id="reagents-FBS"><div class="entity-name">FBS</div><div class="entity-desc">10–20 % v/v fetal-bovine-serum supplement; lock single lot for entire study to avoid lot variation.</div><div class="entity-link"><a href="../wiki/reagents/FBS.md">→ wiki/reagents/FBS.md</a></div></div>
+<div class="entity" id="reagents-penicillin-streptomycin"><div class="entity-name">penicillin-streptomycin</div><div class="entity-desc">Antibiotic standard.</div><div class="entity-link"><a href="../wiki/reagents/penicillin-streptomycin.md">→ wiki/reagents/penicillin-streptomycin.md</a></div></div>
+<div class="entity" id="reagents-L-glutamine"><div class="entity-name">L-glutamine</div><div class="entity-desc">Essential amino-acid supplement (or GlutaMAX).</div><div class="entity-link"><a href="../wiki/reagents/L-glutamine.md">→ wiki/reagents/L-glutamine.md</a></div></div>
+<div class="entity" id="reagents-PBS"><div class="entity-name">PBS</div><div class="entity-desc">Phosphate-buffered saline.</div><div class="entity-link"><a href="../wiki/reagents/PBS.md">→ wiki/reagents/PBS.md</a></div></div>
+<div class="entity" id="reagents-beta-glycerophosphate"><div class="entity-name">beta-glycerophosphate</div><div class="entity-desc">Phosphate donor for ALP-mediated mineralization. At 10 mM can produce cell-free mineral; needs no-cell baseline control.</div><div class="entity-link"><a href="../wiki/reagents/beta-glycerophosphate.md">→ wiki/reagents/beta-glycerophosphate.md</a></div></div>
+<div class="entity" id="reagents-L-ascorbic-acid-2-phosphate"><div class="entity-name">L-ascorbic-acid-2-phosphate</div><div class="entity-desc">Stable-form vitamin C for collagen synthesis.</div><div class="entity-link"><a href="../wiki/reagents/L-ascorbic-acid-2-phosphate.md">→ wiki/reagents/L-ascorbic-acid-2-phosphate.md</a></div></div>
+<div class="entity" id="reagents-dexamethasone"><div class="entity-name">dexamethasone</div><div class="entity-desc">Synthetic glucocorticoid; suppresses proliferation — do NOT use in proliferation cohort.</div><div class="entity-link"><a href="../wiki/reagents/dexamethasone.md">→ wiki/reagents/dexamethasone.md</a></div></div>
+<div class="entity" id="reagents-BMP-2"><div class="entity-name">BMP-2</div><div class="entity-desc">Bone-morphogenetic protein-2; rhBMP-2 (InFUSE catalog).</div><div class="entity-link"><a href="../wiki/reagents/BMP-2.md">→ wiki/reagents/BMP-2.md</a></div></div>
+<div class="entity" id="reagents-BMP-7"><div class="entity-name">BMP-7</div><div class="entity-desc">Alternative osteogenic BMP.</div><div class="entity-link"><a href="../wiki/reagents/BMP-7.md">→ wiki/reagents/BMP-7.md</a></div></div>
+<div class="entity" id="reagents-VEGF"><div class="entity-name">VEGF</div><div class="entity-desc">Vascular-endothelial growth factor.</div><div class="entity-link"><a href="../wiki/reagents/VEGF.md">→ wiki/reagents/VEGF.md</a></div></div>
+<div class="entity" id="reagents-TGF-beta"><div class="entity-name">TGF-beta</div><div class="entity-desc">Chondrogenesis-biasing growth factor.</div><div class="entity-link"><a href="../wiki/reagents/TGF-beta.md">→ wiki/reagents/TGF-beta.md</a></div></div>
+<div class="entity" id="reagents-dipyridamole"><div class="entity-name">dipyridamole</div><div class="entity-desc">A2A-adenosine agonist; bone-regeneration adjuvant.</div><div class="entity-link"><a href="../wiki/reagents/dipyridamole.md">→ wiki/reagents/dipyridamole.md</a></div></div>
+<div class="entity" id="reagents-doxorubicin"><div class="entity-name">doxorubicin</div><div class="entity-desc">Chemotherapeutic loaded into Wang 2024 scaffold.</div><div class="entity-link"><a href="../wiki/reagents/doxorubicin.md">→ wiki/reagents/doxorubicin.md</a></div></div>
+<div class="entity" id="reagents-erythropoietin"><div class="entity-name">erythropoietin</div><div class="entity-desc">Implicated in retracted Liu 2018 study.</div><div class="entity-link"><a href="../wiki/reagents/erythropoietin.md">→ wiki/reagents/erythropoietin.md</a></div></div>
+<div class="entity" id="reagents-norcantharidin"><div class="entity-name">norcantharidin</div><div class="entity-desc">Implicated in retracted Hindawi 2020 study.</div><div class="entity-link"><a href="../wiki/reagents/norcantharidin.md">→ wiki/reagents/norcantharidin.md</a></div></div>
+<div class="entity" id="reagents-strontium"><div class="entity-name">strontium</div><div class="entity-desc">Sr²⁺ doping for bone formation.</div><div class="entity-link"><a href="../wiki/reagents/strontium.md">→ wiki/reagents/strontium.md</a></div></div>
+<div class="entity" id="reagents-bismuth"><div class="entity-name">bismuth</div><div class="entity-desc">Bi³⁺ antimicrobial dopant.</div><div class="entity-link"><a href="../wiki/reagents/bismuth.md">→ wiki/reagents/bismuth.md</a></div></div>
+<div class="entity" id="reagents-polydopamine"><div class="entity-name">polydopamine</div><div class="entity-desc">Bioinspired surface coating.</div><div class="entity-link"><a href="../wiki/reagents/polydopamine.md">→ wiki/reagents/polydopamine.md</a></div></div>
+<div class="entity" id="reagents-DAPI"><div class="entity-name">DAPI</div><div class="entity-desc">Nuclear stain.</div><div class="entity-link"><a href="../wiki/reagents/DAPI.md">→ wiki/reagents/DAPI.md</a></div></div>
+<div class="entity" id="reagents-PicoGreen"><div class="entity-name">PicoGreen</div><div class="entity-desc">Quant-iT P11496 dsDNA fluorescent stain; primary endpoint dye.</div><div class="entity-link"><a href="../wiki/reagents/PicoGreen.md">→ wiki/reagents/PicoGreen.md</a></div></div>
+<div class="entity" id="reagents-alamarBlue"><div class="entity-name">alamarBlue</div><div class="entity-desc">Resazurin metabolic dye.</div><div class="entity-link"><a href="../wiki/reagents/alamarBlue.md">→ wiki/reagents/alamarBlue.md</a></div></div>
+<div class="entity" id="reagents-MTS"><div class="entity-name">MTS</div><div class="entity-desc">Tetrazolium-formazan substrate.</div><div class="entity-link"><a href="../wiki/reagents/MTS.md">→ wiki/reagents/MTS.md</a></div></div>
+<div class="entity" id="reagents-MTT"><div class="entity-name">MTT</div><div class="entity-desc">Original tetrazolium-formazan substrate.</div><div class="entity-link"><a href="../wiki/reagents/MTT.md">→ wiki/reagents/MTT.md</a></div></div>
+<div class="entity" id="reagents-p-nitrophenyl-phosphate"><div class="entity-name">p-nitrophenyl-phosphate</div><div class="entity-desc">pNPP; ALP enzymatic substrate.</div><div class="entity-link"><a href="../wiki/reagents/p-nitrophenyl-phosphate.md">→ wiki/reagents/p-nitrophenyl-phosphate.md</a></div></div>
+<div class="entity" id="reagents-alizarin-red-S"><div class="entity-name">alizarin-red-S</div><div class="entity-desc">Ca²⁺-binding red dye; HA-scaffold confound — binds the scaffold itself.</div><div class="entity-link"><a href="../wiki/reagents/alizarin-red-S.md">→ wiki/reagents/alizarin-red-S.md</a></div></div>
+<div class="entity" id="reagents-calcein-AM"><div class="entity-name">calcein-AM</div><div class="entity-desc">Viable-cell green-fluorescent dye.</div><div class="entity-link"><a href="../wiki/reagents/calcein-AM.md">→ wiki/reagents/calcein-AM.md</a></div></div>
+<div class="entity" id="reagents-ethidium-homodimer"><div class="entity-name">ethidium-homodimer</div><div class="entity-desc">Dead-cell red-fluorescent dye.</div><div class="entity-link"><a href="../wiki/reagents/ethidium-homodimer.md">→ wiki/reagents/ethidium-homodimer.md</a></div></div>
+<div class="entity" id="reagents-photoinitiator-TPO"><div class="entity-name">photoinitiator-TPO</div><div class="entity-desc">DLP photoinitiator; the dominant cytotoxicity risk in DLP HA scaffolds if not fully debinded.</div><div class="entity-link"><a href="../wiki/reagents/photoinitiator-TPO.md">→ wiki/reagents/photoinitiator-TPO.md</a></div></div>
+<div class="entity" id="reagents-photoinitiator-LAP"><div class="entity-name">photoinitiator-LAP</div><div class="entity-desc">Alternative DLP photoinitiator.</div><div class="entity-link"><a href="../wiki/reagents/photoinitiator-LAP.md">→ wiki/reagents/photoinitiator-LAP.md</a></div></div>
+<div class="entity" id="reagents-ammonium-bicarbonate"><div class="entity-name">ammonium-bicarbonate</div><div class="entity-desc">Porogen / pH-buffer in retracted Heliyon 2024 study.</div><div class="entity-link"><a href="../wiki/reagents/ammonium-bicarbonate.md">→ wiki/reagents/ammonium-bicarbonate.md</a></div></div>
+<div class="entity" id="reagents-eggshell-calcium-carbonate"><div class="entity-name">eggshell-calcium-carbonate</div><div class="entity-desc">Alternative biogenic Ca source (retracted study).</div><div class="entity-link"><a href="../wiki/reagents/eggshell-calcium-carbonate.md">→ wiki/reagents/eggshell-calcium-carbonate.md</a></div></div>
+<div class="entity" id="reagents-alcian-blue"><div class="entity-name">alcian-blue</div><div class="entity-desc">GAG histology dye.</div><div class="entity-link"><a href="../wiki/reagents/alcian-blue.md">→ wiki/reagents/alcian-blue.md</a></div></div>
+<div class="entity" id="reagents-chondroitin-6-sulphate"><div class="entity-name">chondroitin-6-sulphate</div><div class="entity-desc">GAG component of CG scaffolds.</div><div class="entity-link"><a href="../wiki/reagents/chondroitin-6-sulphate.md">→ wiki/reagents/chondroitin-6-sulphate.md</a></div></div>
+<div class="entity" id="reagents-amelogenin"><div class="entity-name">amelogenin</div><div class="entity-desc">Enamel-matrix HA-templating protein.</div><div class="entity-link"><a href="../wiki/reagents/amelogenin.md">→ wiki/reagents/amelogenin.md</a></div></div>
+<div class="entity" id="reagents-peptide-amphiphile"><div class="entity-name">peptide-amphiphile</div><div class="entity-desc">Stupp self-assembling nanofibre material.</div><div class="entity-link"><a href="../wiki/reagents/peptide-amphiphile.md">→ wiki/reagents/peptide-amphiphile.md</a></div></div>
+<div class="entity" id="reagents-osteopontin"><div class="entity-name">osteopontin</div><div class="entity-desc">Non-collagenous bone-matrix protein.</div><div class="entity-link"><a href="../wiki/reagents/osteopontin.md">→ wiki/reagents/osteopontin.md</a></div></div>
+<div class="entity" id="reagents-osteonectin"><div class="entity-name">osteonectin</div><div class="entity-desc">Non-collagenous bone-matrix protein.</div><div class="entity-link"><a href="../wiki/reagents/osteonectin.md">→ wiki/reagents/osteonectin.md</a></div></div>
+<div class="entity" id="reagents-bone-sialoprotein"><div class="entity-name">bone-sialoprotein</div><div class="entity-desc">Non-collagenous bone-matrix protein.</div><div class="entity-link"><a href="../wiki/reagents/bone-sialoprotein.md">→ wiki/reagents/bone-sialoprotein.md</a></div></div>
+</details>
+
+<details><summary><strong>Organisms / cell lines</strong><span class="count">23</span></summary>
+<div class="entity" id="organisms-MC3T3-E1"><div class="entity-name">MC3T3-E1</div><div class="entity-desc">Mouse calvarial pre-osteoblast; canonical bone-TE in-vitro line; Cellosaurus CVCL_0409 (parental, heterogeneous).</div><div class="entity-link"><a href="../wiki/organisms/MC3T3-E1.md">→ wiki/organisms/MC3T3-E1.md</a></div></div>
+<div class="entity" id="organisms-MC3T3-E1-subclone-4"><div class="entity-name">MC3T3-E1 Subclone 4</div><div class="entity-desc">High-mineralizing subclone (canonical CVCL_5440 / ATCC CRL-2593). The cell line invoked when modern bone-TE papers say "MC3T3-E1" without qualification. Filename mismatch flagged: wiki source `cellosaurus-mc3t3-e1-subclone4-cvcl5437.json` is actually Subclone 14.</div><div class="entity-link"><a href="../wiki/organisms/MC3T3-E1-subclone-4.md">→ wiki/organisms/MC3T3-E1-subclone-4.md</a></div></div>
+<div class="entity" id="organisms-Saos-2"><div class="entity-name">Saos-2</div><div class="entity-desc">Human osteosarcoma (TP53-null); CVCL_0548.</div><div class="entity-link"><a href="../wiki/organisms/Saos-2.md">→ wiki/organisms/Saos-2.md</a></div></div>
+<div class="entity" id="organisms-hFOB-1.19"><div class="entity-name">hFOB-1.19</div><div class="entity-desc">Conditionally-immortalized human fetal osteoblast; CVCL_3708; 33.5 °C / 39.5 °C temperature-shift.</div><div class="entity-link"><a href="../wiki/organisms/hFOB-1.19.md">→ wiki/organisms/hFOB-1.19.md</a></div></div>
+<div class="entity" id="organisms-MG63"><div class="entity-name">MG63</div><div class="entity-desc">Alternative human osteosarcoma osteoblast-like line.</div><div class="entity-link"><a href="../wiki/organisms/MG63.md">→ wiki/organisms/MG63.md</a></div></div>
+<div class="entity" id="organisms-hBMSC"><div class="entity-name">hBMSC</div><div class="entity-desc">Primary human bone-marrow MSC; multilineage gold standard.</div><div class="entity-link"><a href="../wiki/organisms/hBMSC.md">→ wiki/organisms/hBMSC.md</a></div></div>
+<div class="entity" id="organisms-mouse-BMSC-primary"><div class="entity-name">mouse-BMSC-primary</div><div class="entity-desc">Mouse-equivalent primary BMSC.</div><div class="entity-link"><a href="../wiki/organisms/mouse-BMSC-primary.md">→ wiki/organisms/mouse-BMSC-primary.md</a></div></div>
+<div class="entity" id="organisms-rat-BMSC-primary"><div class="entity-name">rat-BMSC-primary</div><div class="entity-desc">Rat-equivalent primary BMSC (Rosa et al. cited in 2018-zhang).</div><div class="entity-link"><a href="../wiki/organisms/rat-BMSC-primary.md">→ wiki/organisms/rat-BMSC-primary.md</a></div></div>
+<div class="entity" id="organisms-hADSC"><div class="entity-name">hADSC</div><div class="entity-desc">Human adipose-derived stem cell (Daskalakis 2024).</div><div class="entity-link"><a href="../wiki/organisms/hADSC.md">→ wiki/organisms/hADSC.md</a></div></div>
+<div class="entity" id="organisms-mouse-skeletal-stem-cell"><div class="entity-name">mouse-skeletal-stem-cell</div><div class="entity-desc">Surface-marker-defined SSC (Uchida protocol).</div><div class="entity-link"><a href="../wiki/organisms/mouse-skeletal-stem-cell.md">→ wiki/organisms/mouse-skeletal-stem-cell.md</a></div></div>
+<div class="entity" id="organisms-HUVEC"><div class="entity-name">HUVEC</div><div class="entity-desc">Angiogenic co-culture partner.</div><div class="entity-link"><a href="../wiki/organisms/HUVEC.md">→ wiki/organisms/HUVEC.md</a></div></div>
+<div class="entity" id="organisms-RAW264.7-osteoclast-precursor"><div class="entity-name">RAW264.7-osteoclast-precursor</div><div class="entity-desc">Osteoclastogenesis model.</div><div class="entity-link"><a href="../wiki/organisms/RAW264.7-osteoclast-precursor.md">→ wiki/organisms/RAW264.7-osteoclast-precursor.md</a></div></div>
+<div class="entity" id="organisms-L929-fibroblast"><div class="entity-name">L929-fibroblast</div><div class="entity-desc">ISO-10993-5 cytotoxicity reference; ATCC CCL-1.</div><div class="entity-link"><a href="../wiki/organisms/L929-fibroblast.md">→ wiki/organisms/L929-fibroblast.md</a></div></div>
+<div class="entity" id="organisms-K7M2-mouse-osteosarcoma"><div class="entity-name">K7M2-mouse-osteosarcoma</div><div class="entity-desc">Orthotopic osteosarcoma model (Wang 2024).</div><div class="entity-link"><a href="../wiki/organisms/K7M2-mouse-osteosarcoma.md">→ wiki/organisms/K7M2-mouse-osteosarcoma.md</a></div></div>
+<div class="entity" id="organisms-salmonella-typhimurium-ames-strains"><div class="entity-name">salmonella-typhimurium-ames-strains</div><div class="entity-desc">TA1535/1538/98/100/102 mutagenicity panel.</div><div class="entity-link"><a href="../wiki/organisms/salmonella-typhimurium-ames-strains.md">→ wiki/organisms/salmonella-typhimurium-ames-strains.md</a></div></div>
+<div class="entity" id="organisms-primary-human-osteoblast"><div class="entity-name">primary-human-osteoblast</div><div class="entity-desc">Donor-variable but physiological.</div><div class="entity-link"><a href="../wiki/organisms/primary-human-osteoblast.md">→ wiki/organisms/primary-human-osteoblast.md</a></div></div>
+<div class="entity" id="organisms-primary-rat-calvarial-osteoblast"><div class="entity-name">primary-rat-calvarial-osteoblast</div><div class="entity-desc">Rosa et al. and others.</div><div class="entity-link"><a href="../wiki/organisms/primary-rat-calvarial-osteoblast.md">→ wiki/organisms/primary-rat-calvarial-osteoblast.md</a></div></div>
+<div class="entity" id="organisms-mouse-cranial-defect-model"><div class="entity-name">mouse-cranial-defect-model</div><div class="entity-desc">Small calvarial critical-size defect.</div><div class="entity-link"><a href="../wiki/organisms/mouse-cranial-defect-model.md">→ wiki/organisms/mouse-cranial-defect-model.md</a></div></div>
+<div class="entity" id="organisms-rat-calvarial-defect-model"><div class="entity-name">rat-calvarial-defect-model</div><div class="entity-desc">5–8 mm critical-size defect.</div><div class="entity-link"><a href="../wiki/organisms/rat-calvarial-defect-model.md">→ wiki/organisms/rat-calvarial-defect-model.md</a></div></div>
+<div class="entity" id="organisms-rat-femoral-defect-model"><div class="entity-name">rat-femoral-defect-model</div><div class="entity-desc">Load-bearing segmental defect.</div><div class="entity-link"><a href="../wiki/organisms/rat-femoral-defect-model.md">→ wiki/organisms/rat-femoral-defect-model.md</a></div></div>
+<div class="entity" id="organisms-rabbit-bone-defect-model"><div class="entity-name">rabbit-bone-defect-model</div><div class="entity-desc">Femoral / cranial; common comparator.</div><div class="entity-link"><a href="../wiki/organisms/rabbit-bone-defect-model.md">→ wiki/organisms/rabbit-bone-defect-model.md</a></div></div>
+<div class="entity" id="organisms-canine-bone-defect-model"><div class="entity-name">canine-bone-defect-model</div><div class="entity-desc">Large-animal mandibular / radial.</div><div class="entity-link"><a href="../wiki/organisms/canine-bone-defect-model.md">→ wiki/organisms/canine-bone-defect-model.md</a></div></div>
+<div class="entity" id="organisms-ovine-bone-defect-model"><div class="entity-name">ovine-bone-defect-model</div><div class="entity-desc">Large-animal long-bone.</div><div class="entity-link"><a href="../wiki/organisms/ovine-bone-defect-model.md">→ wiki/organisms/ovine-bone-defect-model.md</a></div></div>
+</details>
+
+<details><summary><strong>Failure modes</strong><span class="count">33</span></summary>
+<div class="entity" id="failure-modes-sintering-shrinkage-pore-deviation"><div class="entity-name">sintering-shrinkage-pore-deviation</div><div class="entity-desc">15–30 % linear shrinkage at 1200–1300 °C; pre-compensate CAD by S = d_post/d_CAD ≈ 0.80 per powder lot.</div><div class="entity-link"><a href="../wiki/failure-modes/sintering-shrinkage-pore-deviation.md">→ wiki/failure-modes/sintering-shrinkage-pore-deviation.md</a></div></div>
+<div class="entity" id="failure-modes-HA-phase-decomposition-during-sintering"><div class="entity-name">HA-phase-decomposition-during-sintering</div><div class="entity-desc">HA → β-TCP / α-TCP &gt; ~1300 °C; cap at 1200–1250 °C; XRD β-TCP &lt; 5 % per batch.</div><div class="entity-link"><a href="../wiki/failure-modes/HA-phase-decomposition-during-sintering.md">→ wiki/failure-modes/HA-phase-decomposition-during-sintering.md</a></div></div>
+<div class="entity" id="failure-modes-cad-vs-actual-pore-size-mismatch"><div class="entity-name">cad-vs-actual-pore-size-mismatch</div><div class="entity-desc">Every paper running μCT diverges from CAD by ≥ 10 %. Garot 2020: "impossible to print features &lt; 100 μm" in routine BTE AM.</div><div class="entity-link"><a href="../wiki/failure-modes/cad-vs-actual-pore-size-mismatch.md">→ wiki/failure-modes/cad-vs-actual-pore-size-mismatch.md</a></div></div>
+<div class="entity" id="failure-modes-pore-anisotropy-from-print-direction"><div class="entity-name">pore-anisotropy-from-print-direction</div><div class="entity-desc">Vertical vs horizontal pores differ; split prints between orientations.</div><div class="entity-link"><a href="../wiki/failure-modes/pore-anisotropy-from-print-direction.md">→ wiki/failure-modes/pore-anisotropy-from-print-direction.md</a></div></div>
+<div class="entity" id="failure-modes-pore-clogging-by-sintering-aids"><div class="entity-name">pore-clogging-by-sintering-aids</div><div class="entity-desc">Residual binder fillets pores.</div><div class="entity-link"><a href="../wiki/failure-modes/pore-clogging-by-sintering-aids.md">→ wiki/failure-modes/pore-clogging-by-sintering-aids.md</a></div></div>
+<div class="entity" id="failure-modes-cytotoxic-residue-from-binders-or-photoinitiators"><div class="entity-name">cytotoxic-residue-from-binders-or-photoinitiators</div><div class="entity-desc">TPO/LAP residue if not fully debinded; non-negotiable ISO-10993-5 L929 ≥ 80 % gate before cell seeding.</div><div class="entity-link"><a href="../wiki/failure-modes/cytotoxic-residue-from-binders-or-photoinitiators.md">→ wiki/failure-modes/cytotoxic-residue-from-binders-or-photoinitiators.md</a></div></div>
+<div class="entity" id="failure-modes-brittle-ceramic-mechanical-failure"><div class="entity-name">brittle-ceramic-mechanical-failure</div><div class="entity-desc">Toughness gap vs cancellous bone; compression test sister scaffolds.</div><div class="entity-link"><a href="../wiki/failure-modes/brittle-ceramic-mechanical-failure.md">→ wiki/failure-modes/brittle-ceramic-mechanical-failure.md</a></div></div>
+<div class="entity" id="failure-modes-batch-to-batch-HA-stoichiometry-variation"><div class="entity-name">batch-to-batch-HA-stoichiometry-variation</div><div class="entity-desc">Ca/P ratio drift; QC by XRD/ICP-MS; single lot per study.</div><div class="entity-link"><a href="../wiki/failure-modes/batch-to-batch-HA-stoichiometry-variation.md">→ wiki/failure-modes/batch-to-batch-HA-stoichiometry-variation.md</a></div></div>
+<div class="entity" id="failure-modes-HA-stoichiometry-affects-resorption"><div class="entity-name">HA-stoichiometry-affects-resorption</div><div class="entity-desc">Non-stoichiometric HA dissolves faster; Ca/P 1.667 ± 0.05 verification required.</div><div class="entity-link"><a href="../wiki/failure-modes/HA-stoichiometry-affects-resorption.md">→ wiki/failure-modes/HA-stoichiometry-affects-resorption.md</a></div></div>
+<div class="entity" id="failure-modes-stress-shielding-from-uniform-stiffness-implants"><div class="entity-name">stress-shielding-from-uniform-stiffness-implants</div><div class="entity-desc">Zhao biomimetic argument for graded stiffness.</div><div class="entity-link"><a href="../wiki/failure-modes/stress-shielding-from-uniform-stiffness-implants.md">→ wiki/failure-modes/stress-shielding-from-uniform-stiffness-implants.md</a></div></div>
+<div class="entity" id="failure-modes-abrupt-interface-stress-concentration"><div class="entity-name">abrupt-interface-stress-concentration</div><div class="entity-desc">Biphasic vs continuous gradient — discrete-zone designs concentrate stress at zone boundaries.</div><div class="entity-link"><a href="../wiki/failure-modes/abrupt-interface-stress-concentration.md">→ wiki/failure-modes/abrupt-interface-stress-concentration.md</a></div></div>
+<div class="entity" id="failure-modes-edge-effect-in-scaffold-cell-seeding"><div class="entity-name">edge-effect-in-scaffold-cell-seeding</div><div class="entity-desc">Rim-biased cell distribution; sentinel DAPI cross-sections at 24 h.</div><div class="entity-link"><a href="../wiki/failure-modes/edge-effect-in-scaffold-cell-seeding.md">→ wiki/failure-modes/edge-effect-in-scaffold-cell-seeding.md</a></div></div>
+<div class="entity" id="failure-modes-cell-seeding-uniformity-loss-large-pores"><div class="entity-name">cell-seeding-uniformity-loss-large-pores</div><div class="entity-desc">Pores &gt; 500 μm let cells fall through (30–60 % loss statically); use dynamic perfusion + fibronectin pre-coat.</div><div class="entity-link"><a href="../wiki/failure-modes/cell-seeding-uniformity-loss-large-pores.md">→ wiki/failure-modes/cell-seeding-uniformity-loss-large-pores.md</a></div></div>
+<div class="entity" id="failure-modes-cell-seeding-efficiency-variation"><div class="entity-name">cell-seeding-efficiency-variation</div><div class="entity-desc">Drop-on vs perfusion variance; per-scaffold count QC.</div><div class="entity-link"><a href="../wiki/failure-modes/cell-seeding-efficiency-variation.md">→ wiki/failure-modes/cell-seeding-efficiency-variation.md</a></div></div>
+<div class="entity" id="failure-modes-nutrient-diffusion-limitation-in-scaffold-core"><div class="entity-name">nutrient-diffusion-limitation-in-scaffold-core</div><div class="entity-desc">Necrotic-core risk &gt; 2 mm thick; perfusion ≥ 1× scaffold-volume turnover/min mandatory.</div><div class="entity-link"><a href="../wiki/failure-modes/nutrient-diffusion-limitation-in-scaffold-core.md">→ wiki/failure-modes/nutrient-diffusion-limitation-in-scaffold-core.md</a></div></div>
+<div class="entity" id="failure-modes-proliferation-vs-differentiation-tradeoff"><div class="entity-name">proliferation-vs-differentiation-tradeoff</div><div class="entity-desc">Opposite winners depending on readout — Daskalakis 2024 PCL/HA wins proliferation, PCL/Bioglass wins differentiation.</div><div class="entity-link"><a href="../wiki/failure-modes/proliferation-vs-differentiation-tradeoff.md">→ wiki/failure-modes/proliferation-vs-differentiation-tradeoff.md</a></div></div>
+<div class="entity" id="failure-modes-short-term-proliferation-vs-long-term-bone-formation"><div class="entity-name">short-term-proliferation-vs-long-term-bone-formation</div><div class="entity-desc">d14 cell number ≠ d56 BV/TV; pre-register endpoint precisely.</div><div class="entity-link"><a href="../wiki/failure-modes/short-term-proliferation-vs-long-term-bone-formation.md">→ wiki/failure-modes/short-term-proliferation-vs-long-term-bone-formation.md</a></div></div>
+<div class="entity" id="failure-modes-in-vivo-vs-in-vitro-discordance"><div class="entity-name">in-vivo-vs-in-vitro-discordance</div><div class="entity-desc">Best-in-vitro often loses in-vivo.</div><div class="entity-link"><a href="../wiki/failure-modes/in-vivo-vs-in-vitro-discordance.md">→ wiki/failure-modes/in-vivo-vs-in-vitro-discordance.md</a></div></div>
+<div class="entity" id="failure-modes-monoculture-misses-osteoclast-coupling"><div class="entity-name">monoculture-misses-osteoclast-coupling</div><div class="entity-desc">Bone homeostasis needs both lineages.</div><div class="entity-link"><a href="../wiki/failure-modes/monoculture-misses-osteoclast-coupling.md">→ wiki/failure-modes/monoculture-misses-osteoclast-coupling.md</a></div></div>
+<div class="entity" id="failure-modes-donor-variability-hMSC"><div class="entity-name">donor-variability-hMSC</div><div class="entity-desc">Inter-donor variance in primary cells; pool ≥ 3 donors.</div><div class="entity-link"><a href="../wiki/failure-modes/donor-variability-hMSC.md">→ wiki/failure-modes/donor-variability-hMSC.md</a></div></div>
+<div class="entity" id="failure-modes-HA-autofluorescence-confounds-livedead"><div class="entity-name">HA-autofluorescence-confounds-livedead</div><div class="entity-desc">HA emits in green channel; scaffold-only blanks every plate, signal-to-blank &gt; 3×.</div><div class="entity-link"><a href="../wiki/failure-modes/HA-autofluorescence-confounds-livedead.md">→ wiki/failure-modes/HA-autofluorescence-confounds-livedead.md</a></div></div>
+<div class="entity" id="failure-modes-ARS-binds-residual-scaffold-HA"><div class="entity-name">ARS-binds-residual-scaffold-HA</div><div class="entity-desc">Alizarin Red stains the scaffold itself; calibrate standard curve on synthetic HA, cross-validate with von Kossa + EDX.</div><div class="entity-link"><a href="../wiki/failure-modes/ARS-binds-residual-scaffold-HA.md">→ wiki/failure-modes/ARS-binds-residual-scaffold-HA.md</a></div></div>
+<div class="entity" id="failure-modes-spontaneous-dystrophic-mineralization-bglycerophosphate"><div class="entity-name">spontaneous-dystrophic-mineralization-bglycerophosphate</div><div class="entity-desc">False-positive cell-free mineralization at 10 mM β-GP.</div><div class="entity-link"><a href="../wiki/failure-modes/spontaneous-dystrophic-mineralization-bglycerophosphate.md">→ wiki/failure-modes/spontaneous-dystrophic-mineralization-bglycerophosphate.md</a></div></div>
+<div class="entity" id="failure-modes-incomplete-cell-lysis-3d-scaffold-picogreen"><div class="entity-name">incomplete-cell-lysis-3d-scaffold-picogreen</div><div class="entity-desc">Buried cells under-quantified; single freeze-thaw + Triton recovers only 40–70 %. Use proteinase-K + sonication + 1 % SDS chaotropic lysis.</div><div class="entity-link"><a href="../wiki/failure-modes/incomplete-cell-lysis-3d-scaffold-picogreen.md">→ wiki/failure-modes/incomplete-cell-lysis-3d-scaffold-picogreen.md</a></div></div>
+<div class="entity" id="failure-modes-temperature-shift-nonuniform-in-3d-scaffold"><div class="entity-name">temperature-shift-nonuniform-in-3d-scaffold</div><div class="entity-desc">hFOB 1.19 differential heating across scaffold depth.</div><div class="entity-link"><a href="../wiki/failure-modes/temperature-shift-nonuniform-in-3d-scaffold.md">→ wiki/failure-modes/temperature-shift-nonuniform-in-3d-scaffold.md</a></div></div>
+<div class="entity" id="failure-modes-cell-line-misidentification"><div class="entity-name">cell-line-misidentification</div><div class="entity-desc">STR authentication required; mouse 9-locus reference.</div><div class="entity-link"><a href="../wiki/failure-modes/cell-line-misidentification.md">→ wiki/failure-modes/cell-line-misidentification.md</a></div></div>
+<div class="entity" id="failure-modes-mc3t3-e1-subclone-variability"><div class="entity-name">mc3t3-e1-subclone-variability</div><div class="entity-desc">Parental vs Subclone 4 vs Subclone 14 disparity (≥ 10× mineralisation difference). Source Subclone 4 from ATCC CRL-2593 explicitly.</div><div class="entity-link"><a href="../wiki/failure-modes/mc3t3-e1-subclone-variability.md">→ wiki/failure-modes/mc3t3-e1-subclone-variability.md</a></div></div>
+<div class="entity" id="failure-modes-saos-2-tumor-derived-not-physiological"><div class="entity-name">saos-2-tumor-derived-not-physiological</div><div class="entity-desc">TP53-null caveat for Saos-2.</div><div class="entity-link"><a href="../wiki/failure-modes/saos-2-tumor-derived-not-physiological.md">→ wiki/failure-modes/saos-2-tumor-derived-not-physiological.md</a></div></div>
+<div class="entity" id="failure-modes-image-reuse-unsupported-osteogenesis-claims"><div class="entity-name">image-reuse-unsupported-osteogenesis-claims</div><div class="entity-desc">Recurring retraction signature; second-reviewer image audit before submission, archive raw images.</div><div class="entity-link"><a href="../wiki/failure-modes/image-reuse-unsupported-osteogenesis-claims.md">→ wiki/failure-modes/image-reuse-unsupported-osteogenesis-claims.md</a></div></div>
+<div class="entity" id="failure-modes-retracted-claim"><div class="entity-name">retracted-claim</div><div class="entity-desc">Generic retraction-watch ledger (8 retractions in raw/retractions/).</div><div class="entity-link"><a href="../wiki/failure-modes/retracted-claim.md">→ wiki/failure-modes/retracted-claim.md</a></div></div>
+<div class="entity" id="failure-modes-pubchem-cid-mismatch-for-inorganic-mineral"><div class="entity-name">pubchem-cid-mismatch-for-inorganic-mineral</div><div class="entity-desc">Fetcher accepted CID 24856 (alum) as HA — generic ingestion-pipeline failure for inorganic substances.</div><div class="entity-link"><a href="../wiki/failure-modes/pubchem-cid-mismatch-for-inorganic-mineral.md">→ wiki/failure-modes/pubchem-cid-mismatch-for-inorganic-mineral.md</a></div></div>
+<div class="entity" id="failure-modes-ATCC-Sigma-vendor-pages-not-captured"><div class="entity-name">ATCC-Sigma-vendor-pages-not-captured</div><div class="entity-desc">Materials-table completeness gap; confirm catalog numbers at purchase.</div><div class="entity-link"><a href="../wiki/failure-modes/ATCC-Sigma-vendor-pages-not-captured.md">→ wiki/failure-modes/ATCC-Sigma-vendor-pages-not-captured.md</a></div></div>
+<div class="entity" id="failure-modes-paywalled-or-non-OA-canonical-source-not-captured"><div class="entity-name">paywalled-or-non-OA-canonical-source-not-captured</div><div class="entity-desc">Karageorgiou &amp; Kaplan 2005 missing — cited transitively only.</div><div class="entity-link"><a href="../wiki/failure-modes/paywalled-or-non-OA-canonical-source-not-captured.md">→ wiki/failure-modes/paywalled-or-non-OA-canonical-source-not-captured.md</a></div></div>
+</details>
+
+<details><summary><strong>Sources</strong><span class="count">65</span></summary>
+<h4 style="color:var(--muted);margin-top:.5em">Direct gradient-pore precedents</h4>
+<div class="entity" id="sources-2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone"><div class="entity-name">Daskalakis et al. 2024 — In Vitro Evaluation of Pore Size Graded Bone Scaffolds (filename: 2024-diez-escudero)</div><div class="entity-desc">Closest direct precedent: extrusion-printed PCL/HA-vs-PCL/TCP-vs-PCL/Bioglass three-zone radial gradient bone bricks. PCL/HA wins d14 hADSC proliferation 243k ± 22k vs PCL 187k ± 14k (p = 0.0003, +30 %); cell number monotonically increases inner→outer pore region. PCL/Bioglass wins differentiation. <a href="https://doi.org/10.1089/3dp.2022.0138" target="_blank" rel="noopener">DOI 10.1089/3dp.2022.0138</a></div><div class="entity-link"><a href="../wiki/sources/2024-diez-escudero-in-vitro-evaluation-of-pore-size-graded-bone.md">→ wiki/sources/2024-diez-escudero-…md</a></div></div>
+<div class="entity" id="sources-2025-conoscenti-continuous-pore-size-gradient-enhances-z"><div class="entity-name">Conoscenti et al. 2025 — Continuous pore size gradient enhances zonal differentiation</div><div class="entity-desc">PLLA TIPS continuous 70→200 μm gradient drives zonal hMSC differentiation under identical media. Strongest mechanistic precedent for a continuous-gradient effect. <a href="https://doi.org/10.1039/d5ra00540j" target="_blank" rel="noopener">DOI 10.1039/d5ra00540j</a></div><div class="entity-link"><a href="../wiki/sources/2025-conoscenti-continuous-pore-size-gradient-enhances-z.md">→ wiki/sources/2025-conoscenti-…md</a></div></div>
+<div class="entity" id="sources-2024-wang-polydopamine-functionalized-calcium-defi"><div class="entity-name">Wang et al. 2024 — Polydopamine-functionalized CDHA gradient scaffold</div><div class="entity-desc">Extruded CDHA gradient + DOX + PDA composite; closest pure-CaP gradient precedent. <a href="https://doi.org/10.1016/j.mtbio.2024.101253" target="_blank" rel="noopener">DOI 10.1016/j.mtbio.2024.101253</a></div><div class="entity-link"><a href="../wiki/sources/2024-wang-polydopamine-functionalized-calcium-defi.md">→ wiki/sources/2024-wang-…md</a></div></div>
+<div class="entity" id="sources-2025-lee-pcl-scaffold-with-well-defined-hierarchi"><div class="entity-name">Lee et al. 2025 — PCL "grid-in-grid" hierarchical pore architecture</div><div class="entity-desc">PCL hierarchical multi-scale pore design.</div><div class="entity-link"><a href="../wiki/sources/2025-lee-pcl-scaffold-with-well-defined-hierarchi.md">→ wiki/sources/2025-lee-…md</a></div></div>
+
+<h4 style="color:var(--muted);margin-top:.5em">Pore-size effect canon</h4>
+<div class="entity" id="sources-2010-murphy-understanding-the-effect-of-mean-pore-size-on"><div class="entity-name">Murphy/O'Brien 2010 — Effect of mean pore size on cell behaviour</div><div class="entity-desc">CG scaffold 85–325 μm; non-linear pore-size effect; reconciles Karageorgiou-Kaplan.</div><div class="entity-link"><a href="../wiki/sources/2010-murphy-understanding-the-effect-of-mean-pore-size-on.md">→ wiki/sources/2010-murphy-…md</a></div></div>
+<div class="entity" id="sources-2013-loh-three-dimensional-scaffolds-for-te-role-of-porosity"><div class="entity-name">Loh 2013 — Porosity / pore-size review</div><div class="entity-desc">Includes graded-porosity section.</div><div class="entity-link"><a href="../wiki/sources/2013-loh-three-dimensional-scaffolds-for-te-role-of-porosity.md">→ wiki/sources/2013-loh-…md</a></div></div>
+<div class="entity" id="sources-2014-polo-corrales-scaffold-design-for-bone-regeneration"><div class="entity-name">Polo-Corrales 2014 — Hulbert pore-size series; cites Karageorgiou-Kaplan</div><div class="entity-desc">Transitive citation pathway for the canonical 100 μm/300 μm claim.</div><div class="entity-link"><a href="../wiki/sources/2014-polo-corrales-scaffold-design-for-bone-regeneration.md">→ wiki/sources/2014-polo-corrales-…md</a></div></div>
+<div class="entity" id="sources-2018-zhang-effect-of-microporosity-on-scaffolds-for"><div class="entity-name">Zhang 2018 — Microporosity / proliferation U-shape</div><div class="entity-desc">5–15 % microporosity helps; 30 % hurts proliferation.</div><div class="entity-link"><a href="../wiki/sources/2018-zhang-effect-of-microporosity-on-scaffolds-for.md">→ wiki/sources/2018-zhang-…md</a></div></div>
+
+<h4 style="color:var(--muted);margin-top:.5em">Gradient / multi-gradient reviews</h4>
+<div class="entity" id="sources-2026-liu-design-and-fabrication-of-biomimetic-gra"><div class="entity-name">Liu 2026 — Single → multi-gradient review</div><div class="entity-desc">Biomimetic graded-scaffold review.</div><div class="entity-link"><a href="../wiki/sources/2026-liu-design-and-fabrication-of-biomimetic-gra.md">→ wiki/sources/2026-liu-…md</a></div></div>
+<div class="entity" id="sources-2025-liu-gradient-scaffolds-in-bone-soft-tissue-i"><div class="entity-name">Liu 2025 — Gradient scaffolds at bone–soft-tissue interfaces</div><div class="entity-desc">Continuous gradients reduce stress concentrators at zone boundaries.</div><div class="entity-link"><a href="../wiki/sources/2025-liu-gradient-scaffolds-in-bone-soft-tissue-i.md">→ wiki/sources/2025-liu-…md</a></div></div>
+<div class="entity" id="sources-2025-xie-recent-advances-in-gradient-biomimetic-s"><div class="entity-name">Xie 2025 — Tendon-bone interface gradient review</div><div class="entity-desc">Biomimetic gradient scaffolds for tendon-bone enthesis.</div><div class="entity-link"><a href="../wiki/sources/2025-xie-recent-advances-in-gradient-biomimetic-s.md">→ wiki/sources/2025-xie-…md</a></div></div>
+<div class="entity" id="sources-2026-zhao-longitudinal-and-radial-microgradients-i"><div class="entity-name">Zhao 2026 — Native rabbit-femur canal-diameter / porosity gradient</div><div class="entity-desc">Native bone canal diameters 40–200 μm; 500 μm core targets trabecular spacing rather than canal diameter.</div><div class="entity-link"><a href="../wiki/sources/2026-zhao-longitudinal-and-radial-microgradients-i.md">→ wiki/sources/2026-zhao-…md</a></div></div>
+<div class="entity" id="sources-2022-yang-gaussian-curvature-driven-direction-of-c"><div class="entity-name">Yang 2022 — TPMS curvature-driven osteogenesis (β-TCP)</div><div class="entity-desc">Quantitative pore-curvature → osteogenesis link; supports the mechanism clause.</div><div class="entity-link"><a href="../wiki/sources/2022-yang-gaussian-curvature-driven-direction-of-c.md">→ wiki/sources/2022-yang-…md</a></div></div>
+
+<h4 style="color:var(--muted);margin-top:.5em">General bone-tissue-engineering reviews</h4>
+<div class="entity" id="sources-2008-chan-scaffolding-in-tissue-engineering-general-approaches"><div class="entity-name">Chan 2008 — Foundational TE-scaffold review</div><div class="entity-desc">General-approaches reference.</div><div class="entity-link"><a href="../wiki/sources/2008-chan-scaffolding-in-tissue-engineering-general-approaches.md">→ wiki/sources/2008-chan-…md</a></div></div>
+<div class="entity" id="sources-2008-palmer-biomimetic-systems-for-hydroxyapatite-mi"><div class="entity-name">Palmer 2008 — Biomimetic systems for HA mineralization (Chem Rev)</div><div class="entity-desc">Authoritative HA biomineralization review.</div><div class="entity-link"><a href="../wiki/sources/2008-palmer-biomimetic-systems-for-hydroxyapatite-mi.md">→ wiki/sources/2008-palmer-…md</a></div></div>
+<div class="entity" id="sources-2012-amini-bone-tissue-engineering-recent-advances"><div class="entity-name">Amini 2012 — Bone-TE state-of-art</div><div class="entity-desc">2012 bone-TE review.</div><div class="entity-link"><a href="../wiki/sources/2012-amini-bone-tissue-engineering-recent-advances.md">→ wiki/sources/2012-amini-…md</a></div></div>
+<div class="entity" id="sources-2012-bose-recent-advances-in-bone-tissue-engineeri"><div class="entity-name">Bose 2012 — Center-to-periphery porosity gradient endorsement</div><div class="entity-desc">Bone-TE review.</div><div class="entity-link"><a href="../wiki/sources/2012-bose-recent-advances-in-bone-tissue-engineeri.md">→ wiki/sources/2012-bose-…md</a></div></div>
+<div class="entity" id="sources-2013-henkel-bone-regeneration-based-on-tissue-engine"><div class="entity-name">Henkel 2013 — 21st-century TE conceptions</div><div class="entity-desc">Bone-regeneration TE perspective.</div><div class="entity-link"><a href="../wiki/sources/2013-henkel-bone-regeneration-based-on-tissue-engine.md">→ wiki/sources/2013-henkel-…md</a></div></div>
+<div class="entity" id="sources-2014-thavornyutikarn-bone-tissue-engineering-scaffolding-comp"><div class="entity-name">Thavornyutikarn 2014 — CAD + AM survey</div><div class="entity-desc">Bone-TE scaffolding compendium.</div><div class="entity-link"><a href="../wiki/sources/2014-thavornyutikarn-bone-tissue-engineering-scaffolding-comp.md">→ wiki/sources/2014-thavornyutikarn-…md</a></div></div>
+<div class="entity" id="sources-2015-baino-bioceramics-and-scaffolds-a-winning-comb"><div class="entity-name">Baino 2015 — Bioceramic scaffold review</div><div class="entity-desc">Cites Karageorgiou-Kaplan directly.</div><div class="entity-link"><a href="../wiki/sources/2015-baino-bioceramics-and-scaffolds-a-winning-comb.md">→ wiki/sources/2015-baino-…md</a></div></div>
+<div class="entity" id="sources-2017-eliaz-calcium-phosphate-bioceramics-a-review-o"><div class="entity-name">Eliaz 2017 — CaP bioceramics review</div><div class="entity-desc">Authoritative HA properties source (replaces erroneous PubChem CID 24856).</div><div class="entity-link"><a href="../wiki/sources/2017-eliaz-calcium-phosphate-bioceramics-a-review-o.md">→ wiki/sources/2017-eliaz-…md</a></div></div>
+<div class="entity" id="sources-2017-gao-bone-biomaterials-and-interactions-with"><div class="entity-name">Gao 2017 — Biomaterial / stem-cell interactions</div><div class="entity-desc">Bone biomaterials review.</div><div class="entity-link"><a href="../wiki/sources/2017-gao-bone-biomaterials-and-interactions-with.md">→ wiki/sources/2017-gao-…md</a></div></div>
+<div class="entity" id="sources-2016-murphy-scaffolds-and-cells-for-tissue-regeneration"><div class="entity-name">Bruzauskaite et al. 2016 (filename: 2016-murphy)</div><div class="entity-desc">Filename mismatch flagged: actual authors are Bruzauskaite, Bironaite, Bagdonas, Bernotiene 2016.</div><div class="entity-link"><a href="../wiki/sources/2016-murphy-scaffolds-and-cells-for-tissue-regeneration.md">→ wiki/sources/2016-murphy-…md</a></div></div>
+<div class="entity" id="sources-2025-hossen-biomimetic-strategies-for-bone-regenerat"><div class="entity-name">Hossen 2025 — Biomimetic / smart scaffolds</div><div class="entity-desc">2025 biomimetic-scaffolds review.</div><div class="entity-link"><a href="../wiki/sources/2025-hossen-biomimetic-strategies-for-bone-regenerat.md">→ wiki/sources/2025-hossen-…md</a></div></div>
+<div class="entity" id="sources-2023-koushik-bone-tissue-engineering-scaffolds-functi"><div class="entity-name">Koushik 2023 — Multi-material hierarchical scaffold review</div><div class="entity-desc">Bone-TE functional scaffolds.</div><div class="entity-link"><a href="../wiki/sources/2023-koushik-bone-tissue-engineering-scaffolds-functi.md">→ wiki/sources/2023-koushik-…md</a></div></div>
+<div class="entity" id="sources-2021-montoya-on-the-road-to-smart-biomaterials-for-bo"><div class="entity-name">Montoya 2021 — Smart-biomaterial taxonomy</div><div class="entity-desc">Counter-200 μm in-vivo evidence.</div><div class="entity-link"><a href="../wiki/sources/2021-montoya-on-the-road-to-smart-biomaterials-for-bo.md">→ wiki/sources/2021-montoya-…md</a></div></div>
+<div class="entity" id="sources-2019-chocholata-fabrication-of-scaffolds-for-bone-tissue"><div class="entity-name">Chocholata 2019 — Scaffold-fabrication review</div><div class="entity-desc">10–100 μm pores not suitable for osteoblast seeding (disputed).</div><div class="entity-link"><a href="../wiki/sources/2019-chocholata-fabrication-of-scaffolds-for-bone-tissue.md">→ wiki/sources/2019-chocholata-…md</a></div></div>
+
+<h4 style="color:var(--muted);margin-top:.5em">3D-printing / additive-manufacturing reviews</h4>
+<div class="entity" id="sources-2015-chia-recent-advances-in-3d-printing-of-biomat"><div class="entity-name">Chia 2015 — 3DP biomaterials review</div><div class="entity-desc">Recent 3D-printing advances.</div><div class="entity-link"><a href="../wiki/sources/2015-chia-recent-advances-in-3d-printing-of-biomat.md">→ wiki/sources/2015-chia-…md</a></div></div>
+<div class="entity" id="sources-2015-do-3d-printing-of-scaffolds-for-tissue-rege"><div class="entity-name">Do 2015 — TE scaffold 3DP; HA 500 μm channels MC3T3</div><div class="entity-desc">Channel-array MC3T3 study.</div><div class="entity-link"><a href="../wiki/sources/2015-do-3d-printing-of-scaffolds-for-tissue-rege.md">→ wiki/sources/2015-do-…md</a></div></div>
+<div class="entity" id="sources-2017-bose-additive-manufacturing-of-biomaterials"><div class="entity-name">Bose 2017 — Comprehensive AM-route review</div><div class="entity-desc">60–70 vol % HA loading minimises shrinkage and warping.</div><div class="entity-link"><a href="../wiki/sources/2017-bose-additive-manufacturing-of-biomaterials.md">→ wiki/sources/2017-bose-…md</a></div></div>
+<div class="entity" id="sources-2017-zhang-additively-manufactured-scaffolds-for-bo"><div class="entity-name">Zhang 2017 — TPMS / FGM mechanical-prediction review</div><div class="entity-desc">200–2200 μm acceptable for bone in-growth.</div><div class="entity-link"><a href="../wiki/sources/2017-zhang-additively-manufactured-scaffolds-for-bo.md">→ wiki/sources/2017-zhang-…md</a></div></div>
+<div class="entity" id="sources-2020-chen-porous-scaffold-design-for-additive-manu"><div class="entity-name">Chen 2020 — Design-taxonomy review</div><div class="entity-desc">Porous scaffold design taxonomy.</div><div class="entity-link"><a href="../wiki/sources/2020-chen-porous-scaffold-design-for-additive-manu.md">→ wiki/sources/2020-chen-…md</a></div></div>
+<div class="entity" id="sources-2020-garot-additive-manufacturing-of-material-scaff"><div class="entity-name">Garot 2020 — AM clinical-translation review</div><div class="entity-desc">Garot dictum: "impossible to print features below 100 μm" in routine BTE AM.</div><div class="entity-link"><a href="../wiki/sources/2020-garot-additive-manufacturing-of-material-scaff.md">→ wiki/sources/2020-garot-…md</a></div></div>
+<div class="entity" id="sources-2020-wang-3d-printing-of-bone-tissue-engineering-s"><div class="entity-name">Wang 2020 — 3DP for bone TE (gradient endorsement)</div><div class="entity-desc">3D-printing bone-TE gradient endorsement.</div><div class="entity-link"><a href="../wiki/sources/2020-wang-3d-printing-of-bone-tissue-engineering-s.md">→ wiki/sources/2020-wang-…md</a></div></div>
+<div class="entity" id="sources-2025-picado-tejero-recent-advances-in-3d-bioprinting-of-por"><div class="entity-name">Picado-Tejero 2025 — 112-paper critical review</div><div class="entity-desc">Comprehensive 3D-bioprinting critical review.</div><div class="entity-link"><a href="../wiki/sources/2025-picado-tejero-recent-advances-in-3d-bioprinting-of-por.md">→ wiki/sources/2025-picado-tejero-…md</a></div></div>
+<div class="entity" id="sources-2025-tang-advances-in-3d-printed-scaffolds-for-bon"><div class="entity-name">Tang 2025 — 3DP-bone strategies</div><div class="entity-desc">2025 3DP-bone-scaffold strategies.</div><div class="entity-link"><a href="../wiki/sources/2025-tang-advances-in-3d-printed-scaffolds-for-bon.md">→ wiki/sources/2025-tang-…md</a></div></div>
+<div class="entity" id="sources-2026-daghrery-advances-in-3d-printed-scaffolds-for-per"><div class="entity-name">Daghrery 2026 — Periodontal multiphasic scaffolds</div><div class="entity-desc">Periodontal-scope multiphasic 100/300/600 μm.</div><div class="entity-link"><a href="../wiki/sources/2026-daghrery-advances-in-3d-printed-scaffolds-for-per.md">→ wiki/sources/2026-daghrery-…md</a></div></div>
+
+<h4 style="color:var(--muted);margin-top:.5em">HA-specific experimental</h4>
+<div class="entity" id="sources-2015-ishack-bone-regeneration-in-critical-bone-defec"><div class="entity-name">Ishack 2015 — TCP/HA + dipyridamole/BMP-2 cranial critical defect</div><div class="entity-desc">Robocasted HA/β-TCP at 1100 °C × 4 h.</div><div class="entity-link"><a href="../wiki/sources/2015-ishack-bone-regeneration-in-critical-bone-defec.md">→ wiki/sources/2015-ishack-…md</a></div></div>
+<div class="entity" id="sources-2025-de-carvalho-three-dimensional-printing-of-calcium-ph"><div class="entity-name">De Carvalho 2025 — CPC + MBG hMSC proliferation</div><div class="entity-desc">CPC + mesoporous bioactive glass scaffold; hMSC proliferation gains.</div><div class="entity-link"><a href="../wiki/sources/2025-de-carvalho-three-dimensional-printing-of-calcium-ph.md">→ wiki/sources/2025-de-carvalho-…md</a></div></div>
+<div class="entity" id="sources-2025-qi-3d-printed-bioceramic-scaffolds-for-bone"><div class="entity-name">Qi 2025 — Bioceramic / aging / immune-microenvironment</div><div class="entity-desc">600 μm for M2-macrophage-driven bone formation.</div><div class="entity-link"><a href="../wiki/sources/2025-qi-3d-printed-bioceramic-scaffolds-for-bone.md">→ wiki/sources/2025-qi-…md</a></div></div>
+<div class="entity" id="sources-2026-thammarakcharoen-comprehensive-toxicological-evaluation-o"><div class="entity-name">Thammarakcharoen 2026 — Binder-jet 3DPHA ISO-10993 toxicology</div><div class="entity-desc">Authoritative HA cytotoxicity-pipeline reference.</div><div class="entity-link"><a href="../wiki/sources/2026-thammarakcharoen-comprehensive-toxicological-evaluation-o.md">→ wiki/sources/2026-thammarakcharoen-…md</a></div></div>
+
+<h4 style="color:var(--muted);margin-top:.5em">Bio-protocol step-by-step protocols</h4>
+<div class="entity" id="sources-protocol-2023-uchida-determining-bone-forming-ability-and-fre"><div class="entity-name">Uchida 2023 — Kidney-capsule + ELDA SSC frequency</div><div class="entity-desc">Bone-forming ability and stem-cell frequency.</div><div class="entity-link"><a href="../wiki/sources/protocol-2023-uchida-determining-bone-forming-ability-and-fre.md">→ wiki/sources/protocol-2023-uchida-…md</a></div></div>
+<div class="entity" id="sources-protocol-2025-amin-murine-osteoblast-and-osteoclast-co-cult"><div class="entity-name">Amin 2025 — Murine osteoblast + osteoclast co-culture</div><div class="entity-desc">DBP osteoblast-osteoclast co-culture protocol.</div><div class="entity-link"><a href="../wiki/sources/protocol-2025-amin-murine-osteoblast-and-osteoclast-co-cult.md">→ wiki/sources/protocol-2025-amin-…md</a></div></div>
+<div class="entity" id="sources-protocol-2025-battistelli-a-quantitative-spectrophotometric-assay"><div class="entity-name">Battistelli 2025 — ARS spectrophotometric Ca²⁺ + ESEM</div><div class="entity-desc">Quantitative ARS calibrated on synthetic HA.</div><div class="entity-link"><a href="../wiki/sources/protocol-2025-battistelli-a-quantitative-spectrophotometric-assay.md">→ wiki/sources/protocol-2025-battistelli-…md</a></div></div>
+<div class="entity" id="sources-protocol-2025-bertacchi-a-hybrid-2d-3d-approach-for-neural-diffe"><div class="entity-name">Bertacchi 2025 — Telencephalic organoid (out-of-domain)</div><div class="entity-desc">Out-of-domain neural-organoid protocol; minimal page kept.</div><div class="entity-link"><a href="../wiki/sources/protocol-2025-bertacchi-a-hybrid-2d-3d-approach-for-neural-diffe.md">→ wiki/sources/protocol-2025-bertacchi-…md</a></div></div>
+<div class="entity" id="sources-protocol-2025-landau-a-micro-computed-tomography-based-simpli"><div class="entity-name">Landau 2025 — μCT BMD / body-composition simplified</div><div class="entity-desc">Simplified μCT BMD pipeline.</div><div class="entity-link"><a href="../wiki/sources/protocol-2025-landau-a-micro-computed-tomography-based-simpli.md">→ wiki/sources/protocol-2025-landau-…md</a></div></div>
+<div class="entity" id="sources-protocol-2025-sheikh-isolation-of-in-vitro-osteoblastic-deriv"><div class="entity-name">Sheikh 2025 — MV ultracentrifugation + cell-free mineralization</div><div class="entity-desc">Uses MC3T3-E1 Subclone 4 explicitly (CRL-2593).</div><div class="entity-link"><a href="../wiki/sources/protocol-2025-sheikh-isolation-of-in-vitro-osteoblastic-deriv.md">→ wiki/sources/protocol-2025-sheikh-…md</a></div></div>
+
+<h4 style="color:var(--muted);margin-top:.5em">Crossref retraction notices</h4>
+<div class="entity" id="sources-crossref-retraction-10-3892-mmr-2025-13519"><div class="entity-name">Retraction 10.3892/mmr.2025.13519 — Grooved-HA / mitochondria / BMSC</div><div class="entity-desc">2025 retraction; image-reuse signature.</div><div class="entity-link"><a href="../wiki/sources/crossref-retraction-10-3892-mmr-2025-13519.md">→ wiki/sources/crossref-retraction-10-3892-mmr-2025-13519.md</a></div></div>
+<div class="entity" id="sources-crossref-retraction-10-1111-clr-12656"><div class="entity-name">Retraction 10.1111/clr.12656 — HA/β-TCP/collagen in vivo</div><div class="entity-desc">Explicit Figure-4 image manipulation.</div><div class="entity-link"><a href="../wiki/sources/crossref-retraction-10-1111-clr-12656.md">→ wiki/sources/crossref-retraction-10-1111-clr-12656.md</a></div></div>
+<div class="entity" id="sources-crossref-retraction-10-1039-d3bm90030d"><div class="entity-name">Retraction 10.1039/d3bm90030d — Li-doped HA / gelatin / EPO</div><div class="entity-desc">Femoral-head osteonecrosis study.</div><div class="entity-link"><a href="../wiki/sources/crossref-retraction-10-1039-d3bm90030d.md">→ wiki/sources/crossref-retraction-10-1039-d3bm90030d.md</a></div></div>
+<div class="entity" id="sources-crossref-retraction-10-1088-1748-605x-ace76a"><div class="entity-name">Retraction 10.1088/1748-605x/ace76a — silk-fibroin / nano-HA / HAc</div><div class="entity-desc">2024 retraction.</div><div class="entity-link"><a href="../wiki/sources/crossref-retraction-10-1088-1748-605x-ace76a.md">→ wiki/sources/crossref-retraction-10-1088-1748-605x-ace76a.md</a></div></div>
+<div class="entity" id="sources-crossref-retraction-10-1021-acsami-8b04360"><div class="entity-name">Retraction 10.1021/acsami.8b04360 — Bi-doped HA on SPU</div><div class="entity-desc">Antimicrobial-coating retraction.</div><div class="entity-link"><a href="../wiki/sources/crossref-retraction-10-1021-acsami-8b04360.md">→ wiki/sources/crossref-retraction-10-1021-acsami-8b04360.md</a></div></div>
+<div class="entity" id="sources-crossref-retraction-10-1016-j-lfs-2020-118038"><div class="entity-name">Retraction 10.1016/j.lfs.2020.118038 — PLA/PCL/HA + MSC rat radius defect</div><div class="entity-desc">2020 retraction.</div><div class="entity-link"><a href="../wiki/sources/crossref-retraction-10-1016-j-lfs-2020-118038.md">→ wiki/sources/crossref-retraction-10-1016-j-lfs-2020-118038.md</a></div></div>
+<div class="entity" id="sources-crossref-retraction-10-1016-j-heliyon-2024-e36493"><div class="entity-name">Retraction 10.1016/j.heliyon.2024.e36493 — Eggshell HA + ammonium-bicarbonate</div><div class="entity-desc">Heliyon 2024 retraction.</div><div class="entity-link"><a href="../wiki/sources/crossref-retraction-10-1016-j-heliyon-2024-e36493.md">→ wiki/sources/crossref-retraction-10-1016-j-heliyon-2024-e36493.md</a></div></div>
+<div class="entity" id="sources-crossref-retraction-10-1155-2024-9893086"><div class="entity-name">Retraction 10.1155/2024/9893086 — Sr/chitosan/HA/norcantharidin (Hindawi)</div><div class="entity-desc">2024 Hindawi retraction.</div><div class="entity-link"><a href="../wiki/sources/crossref-retraction-10-1155-2024-9893086.md">→ wiki/sources/crossref-retraction-10-1155-2024-9893086.md</a></div></div>
+
+<h4 style="color:var(--muted);margin-top:.5em">PubChem / Cellosaurus / Thermo catalog snapshots</h4>
+<div class="entity" id="sources-pubchem-hydroxyapatite-cid24856"><div class="entity-name">PubChem CID 24856 — MISMATCH: alum, NOT HA</div><div class="entity-desc">Catalog file ingested as HA but resolves to potassium alum (AlKO8S2). Tracked under <a href="#failure-modes-pubchem-cid-mismatch-for-inorganic-mineral">pubchem-cid-mismatch-for-inorganic-mineral</a>.</div><div class="entity-link"><a href="../wiki/sources/pubchem-hydroxyapatite-cid24856.md">→ wiki/sources/pubchem-hydroxyapatite-cid24856.md</a></div></div>
+<div class="entity" id="sources-pubchem-tricalcium-phosphate-cid24456"><div class="entity-name">PubChem β-TCP CID 24456</div><div class="entity-desc">Ca₃(PO₄)₂ reference (correct).</div><div class="entity-link"><a href="../wiki/sources/pubchem-tricalcium-phosphate-cid24456.md">→ wiki/sources/pubchem-tricalcium-phosphate-cid24456.md</a></div></div>
+<div class="entity" id="sources-pubchem-dexamethasone-cid5743"><div class="entity-name">PubChem dexamethasone CID 5743</div><div class="entity-desc">Synthetic glucocorticoid.</div><div class="entity-link"><a href="../wiki/sources/pubchem-dexamethasone-cid5743.md">→ wiki/sources/pubchem-dexamethasone-cid5743.md</a></div></div>
+<div class="entity" id="sources-pubchem-l-ascorbic-acid-2-phosphate-cid54679073"><div class="entity-name">PubChem L-ascorbic-acid-2-phosphate CID 54679073</div><div class="entity-desc">Stable vitamin-C form.</div><div class="entity-link"><a href="../wiki/sources/pubchem-l-ascorbic-acid-2-phosphate-cid54679073.md">→ wiki/sources/pubchem-l-ascorbic-acid-2-phosphate-cid54679073.md</a></div></div>
+<div class="entity" id="sources-pubchem-sodium-glycerophosphate-cid14754"><div class="entity-name">PubChem sodium-glycerophosphate CID 14754</div><div class="entity-desc">Phosphate donor for ALP-mediated mineralization.</div><div class="entity-link"><a href="../wiki/sources/pubchem-sodium-glycerophosphate-cid14754.md">→ wiki/sources/pubchem-sodium-glycerophosphate-cid14754.md</a></div></div>
+<div class="entity" id="sources-cellosaurus-mc3t3-e1-cvcl0409"><div class="entity-name">Cellosaurus MC3T3-E1 CVCL_0409</div><div class="entity-desc">Parental MC3T3-E1.</div><div class="entity-link"><a href="../wiki/sources/cellosaurus-mc3t3-e1-cvcl0409.md">→ wiki/sources/cellosaurus-mc3t3-e1-cvcl0409.md</a></div></div>
+<div class="entity" id="sources-cellosaurus-mc3t3-e1-subclone4-cvcl5437"><div class="entity-name">Cellosaurus subclone4 (MISLABEL — actually CVCL_5437 = Subclone 14)</div><div class="entity-desc">Filename mismatch flagged. Canonical Subclone 4 = CVCL_5440 / ATCC CRL-2593.</div><div class="entity-link"><a href="../wiki/sources/cellosaurus-mc3t3-e1-subclone4-cvcl5437.md">→ wiki/sources/cellosaurus-mc3t3-e1-subclone4-cvcl5437.md</a></div></div>
+<div class="entity" id="sources-cellosaurus-saos-2-cvcl0548"><div class="entity-name">Cellosaurus Saos-2 CVCL_0548</div><div class="entity-desc">TP53-null human osteosarcoma.</div><div class="entity-link"><a href="../wiki/sources/cellosaurus-saos-2-cvcl0548.md">→ wiki/sources/cellosaurus-saos-2-cvcl0548.md</a></div></div>
+<div class="entity" id="sources-cellosaurus-hfob-1-19-cvcl3708"><div class="entity-name">Cellosaurus hFOB-1.19 CVCL_3708</div><div class="entity-desc">SV40-tsLT conditionally-immortalized human fetal osteoblast.</div><div class="entity-link"><a href="../wiki/sources/cellosaurus-hfob-1-19-cvcl3708.md">→ wiki/sources/cellosaurus-hfob-1-19-cvcl3708.md</a></div></div>
+<div class="entity" id="sources-thermo-picogreen-p11496"><div class="entity-name">Thermo PicoGreen P11496</div><div class="entity-desc">Quant-iT PicoGreen dsDNA assay kit.</div><div class="entity-link"><a href="../wiki/sources/thermo-picogreen-p11496.md">→ wiki/sources/thermo-picogreen-p11496.md</a></div></div>
+</details>
+
+<div class="footer">plan-v1 / ar-v1 — generated by GROUNDWORK Pass 3 + Pass 4 on 2026-04-25 from <code>wiki/index.md</code>. Source of truth: the Obsidian vault at <code>wiki/</code>.</div>
+
+</main>
+</div>
+<script>
+(function(){
+  document.querySelectorAll('nav.toc a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href').slice(1);var el=document.getElementById(id);
+      if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'',a.getAttribute('href'))}
+    });
+  });
+  var sections=Array.from(document.querySelectorAll('main h2[id]'));var links=Array.from(document.querySelectorAll('nav.toc a'));
+  function onScroll(){var y=window.scrollY+120;var cur=sections[0];sections.forEach(function(s){if(s.offsetTop<=y)cur=s});links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur.id)})}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+})();
+</script>
+</body>
+</html>
