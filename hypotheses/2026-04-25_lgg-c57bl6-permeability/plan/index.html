@@ -619,6 +619,196 @@ section.lab:first-of-type { border-top: 0; padding-top: 0; }
   .step .step__chev { display: none; }
   section.lab { page-break-inside: avoid; padding: 24px 0; }
   body { background: white; }
+  .gw-mic, .gw-tx, .gw-modal { display: none !important; }
+}
+
+/* ─────────── voice tutor (Gemini Live) ─────────── */
+.gw-mic {
+  position: fixed; bottom: 22px; right: 22px; z-index: 100;
+  width: 64px; height: 64px; border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, var(--live), var(--live-deep));
+  border: 1.5px solid rgba(141, 63, 28, 0.55);
+  box-shadow:
+    0 6px 18px rgba(141, 63, 28, 0.35),
+    0 1px 0 rgba(255, 245, 230, 0.4) inset;
+  cursor: pointer;
+  display: grid; place-items: center;
+  color: var(--paper);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, width 0.3s ease, height 0.3s ease;
+  --gw-amp: 0;
+  font-family: var(--ui);
+}
+.gw-mic:hover { transform: scale(1.06); box-shadow: 0 10px 26px rgba(141, 63, 28, 0.45); }
+.gw-mic:focus-visible { outline: 3px solid var(--barrier); outline-offset: 3px; }
+.gw-mic[aria-pressed="true"] { width: 88px; height: 88px; }
+.gw-mic .gw-mic__icon { width: 26px; height: 26px; pointer-events: none; }
+.gw-mic[data-state="connecting"], .gw-mic[data-state="idle"], .gw-mic[data-state="listening"], .gw-mic[data-state="speaking"], .gw-mic[data-state="tool"] {
+  background: radial-gradient(circle at 35% 30%, #f1d8c3, var(--live) 55%, var(--live-deep));
+}
+.gw-mic[data-state="speaking"] .gw-mic__icon,
+.gw-mic[data-state="listening"] .gw-mic__icon { opacity: 0.0; }
+.gw-mic .gw-orb { position: absolute; inset: 0; pointer-events: none; }
+.gw-mic .gw-orb__ring {
+  position: absolute; inset: 0; border-radius: 50%;
+  border: 1.5px solid var(--live);
+  opacity: 0;
+  transform: scale(1);
+}
+.gw-mic[data-state="connecting"] .gw-orb__ring--spin {
+  opacity: 1;
+  border-top-color: var(--barrier);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  animation: gw-spin 1.1s linear infinite;
+}
+.gw-mic[data-state="idle"] .gw-orb__ring--breath,
+.gw-mic[data-state="listening"] .gw-orb__ring--breath,
+.gw-mic[data-state="speaking"] .gw-orb__ring--breath,
+.gw-mic[data-state="tool"] .gw-orb__ring--breath {
+  opacity: 0.55;
+  animation: gw-breath 2.6s ease-in-out infinite;
+}
+.gw-mic[data-state="listening"] .gw-orb__ring--pulseA,
+.gw-mic[data-state="listening"] .gw-orb__ring--pulseB,
+.gw-mic[data-state="speaking"] .gw-orb__ring--pulseA,
+.gw-mic[data-state="speaking"] .gw-orb__ring--pulseB {
+  opacity: 0.75;
+  border-color: var(--live);
+  animation: gw-pulse 1.8s ease-out infinite;
+}
+.gw-mic[data-state="listening"] .gw-orb__ring--pulseB,
+.gw-mic[data-state="speaking"] .gw-orb__ring--pulseB {
+  animation-delay: 0.9s;
+  border-color: var(--barrier);
+}
+.gw-mic[data-state="speaking"] {
+  transform: scale(calc(1 + var(--gw-amp) * 0.18));
+  box-shadow: 0 6px 22px rgba(141, 63, 28, calc(0.35 + var(--gw-amp) * 0.4));
+}
+.gw-mic[data-state="listening"] {
+  transform: scale(calc(1 + var(--gw-amp) * 0.12));
+  box-shadow: 0 6px 22px rgba(90, 107, 58, calc(0.30 + var(--gw-amp) * 0.4));
+}
+.gw-mic[data-state="tool"] {
+  animation: gw-shimmer 0.9s ease-out;
+}
+.gw-mic .gw-mic__live-dot {
+  position: absolute; bottom: 6px; right: 6px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--barrier-deep);
+  border: 2px solid var(--paper);
+  box-shadow: 0 0 0 0 rgba(62, 74, 38, 0.6);
+  display: none;
+}
+.gw-mic[aria-pressed="true"] .gw-mic__live-dot {
+  display: block;
+  animation: gw-livedot 1.6s ease-out infinite;
+}
+
+@keyframes gw-spin   { to { transform: rotate(360deg); } }
+@keyframes gw-breath { 0%,100% { transform: scale(1); opacity: 0.45; } 50% { transform: scale(1.18); opacity: 0.10; } }
+@keyframes gw-pulse  { 0% { transform: scale(0.85); opacity: 0.85; } 100% { transform: scale(1.7); opacity: 0; } }
+@keyframes gw-shimmer{ 0% { box-shadow: 0 0 0 0 var(--barrier); } 100% { box-shadow: 0 0 0 18px rgba(90,107,58,0); } }
+@keyframes gw-livedot{ 0% { box-shadow: 0 0 0 0 rgba(62,74,38,0.6); } 100% { box-shadow: 0 0 0 10px rgba(62,74,38,0); } }
+
+/* transcript drawer */
+.gw-tx {
+  position: fixed; right: 22px; bottom: 100px; z-index: 99;
+  width: min(380px, calc(100vw - 44px));
+  max-height: min(58vh, 540px);
+  display: flex; flex-direction: column;
+  background: rgba(243, 236, 218, 0.96);
+  border: 1px solid rgba(141, 63, 28, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 16px 38px rgba(29, 24, 20, 0.18);
+  font-family: var(--ui);
+  color: var(--ink);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+  transform-origin: bottom right;
+  animation: gw-tx-in 0.22s ease-out;
+}
+.gw-tx[hidden] { display: none; }
+@keyframes gw-tx-in { from { opacity: 0; transform: translateY(10px) scale(0.96); } to { opacity: 1; transform: none; } }
+.gw-tx__head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px;
+  background: rgba(245, 238, 222, 0.92);
+  border-bottom: 1px solid rgba(141, 63, 28, 0.14);
+  font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--live-deep);
+  font-weight: 600;
+}
+.gw-tx__head .gw-tx__title { flex: 1; }
+.gw-tx__head .gw-tx__model { font-weight: 400; text-transform: none; letter-spacing: 0; color: var(--ink); opacity: 0.55; font-size: 11px; }
+.gw-tx__head button {
+  background: transparent; border: none; color: var(--ink); opacity: 0.6;
+  cursor: pointer; padding: 4px 6px; border-radius: 6px;
+  font: inherit; text-transform: none; letter-spacing: 0;
+}
+.gw-tx__head button:hover { opacity: 1; background: rgba(0,0,0,0.05); }
+.gw-tx__body {
+  flex: 1; overflow-y: auto;
+  padding: 12px 14px; display: flex; flex-direction: column; gap: 10px;
+  scroll-behavior: smooth;
+  font-size: 13.5px; line-height: 1.45;
+}
+.gw-tx__body::-webkit-scrollbar { width: 6px; }
+.gw-tx__body::-webkit-scrollbar-thumb { background: rgba(141, 63, 28, 0.35); border-radius: 3px; }
+.gw-bubble {
+  padding: 8px 11px; border-radius: 10px;
+  max-width: 92%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.gw-bubble--user { align-self: flex-end; background: var(--live-soft); color: var(--live-deep); border: 1px solid rgba(141,63,28,0.18); }
+.gw-bubble--ai { align-self: flex-start; background: var(--barrier-soft); color: var(--barrier-deep); border: 1px solid rgba(90,107,58,0.22); }
+.gw-bubble--tool { align-self: center; background: transparent; color: var(--ink); opacity: 0.55; font-size: 11.5px; font-style: italic; padding: 2px 8px; }
+.gw-bubble--sys { align-self: center; background: transparent; color: var(--crit); font-size: 12px; font-weight: 600; padding: 2px 8px; }
+.gw-tx__hint {
+  padding: 8px 14px; font-size: 11px; color: var(--ink); opacity: 0.55;
+  border-top: 1px solid rgba(141,63,28,0.10);
+  background: rgba(250, 245, 234, 0.7);
+  text-align: center;
+}
+
+/* api-key modal (uses native <dialog>) */
+.gw-modal {
+  border: none; padding: 0; border-radius: 14px;
+  background: var(--paper);
+  color: var(--ink);
+  max-width: 460px; width: 92vw;
+  font-family: var(--ui);
+  box-shadow: 0 24px 60px rgba(29, 24, 20, 0.35);
+}
+.gw-modal::backdrop { background: rgba(29, 24, 20, 0.45); backdrop-filter: blur(2px); }
+.gw-modal__inner { padding: 22px 26px; display: flex; flex-direction: column; gap: 14px; }
+.gw-modal h3 { margin: 0; font-family: var(--display); font-size: 24px; color: var(--live-deep); font-weight: 500; }
+.gw-modal p { margin: 0; font-size: 13.5px; line-height: 1.5; color: var(--ink); opacity: 0.85; }
+.gw-modal a { color: var(--live-deep); }
+.gw-modal input[type="password"], .gw-modal input[type="text"] {
+  width: 100%; padding: 10px 12px;
+  font: inherit; font-family: var(--mono); font-size: 13px;
+  border: 1px solid rgba(141, 63, 28, 0.3); border-radius: 8px;
+  background: var(--paper-deep);
+  color: var(--ink);
+}
+.gw-modal input:focus { outline: 2px solid var(--live); outline-offset: 1px; }
+.gw-modal label.gw-modal__check { display: flex; gap: 8px; align-items: center; font-size: 13px; cursor: pointer; }
+.gw-modal__row { display: flex; gap: 10px; justify-content: flex-end; align-items: center; }
+.gw-modal__row .gw-modal__spacer { flex: 1; }
+.gw-modal__btn {
+  padding: 9px 16px; border-radius: 8px; font: inherit; font-weight: 600;
+  border: 1px solid transparent; cursor: pointer;
+}
+.gw-modal__btn--primary { background: var(--live); color: var(--paper); border-color: var(--live-deep); }
+.gw-modal__btn--primary:hover { background: var(--live-deep); }
+.gw-modal__btn--ghost { background: transparent; color: var(--ink); }
+.gw-modal__btn--ghost:hover { background: rgba(0,0,0,0.05); }
+.gw-modal__note { font-size: 11.5px; color: var(--ink); opacity: 0.55; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gw-mic, .gw-mic .gw-orb__ring, .gw-tx { animation: none !important; transition: none !important; }
 }
 </style>
 </head>
@@ -2047,6 +2237,614 @@ section.lab:first-of-type { border-top: 0; padding-top: 0; }
   readHash();
 
 })();
+</script>
+
+<!-- ─────────── voice tutor (Gemini Live) ─────────── -->
+<button id="gw-mic" class="gw-mic" type="button" aria-label="Connect voice tutor" aria-pressed="false" data-state="off" title="Ask the Lab — voice tutor with the wiki as context">
+  <span class="gw-orb" aria-hidden="true">
+    <span class="gw-orb__ring gw-orb__ring--breath"></span>
+    <span class="gw-orb__ring gw-orb__ring--pulseA"></span>
+    <span class="gw-orb__ring gw-orb__ring--pulseB"></span>
+    <span class="gw-orb__ring gw-orb__ring--spin"></span>
+  </span>
+  <svg class="gw-mic__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="9" y="3" width="6" height="11" rx="3"/>
+    <path d="M5 11a7 7 0 0 0 14 0"/>
+    <line x1="12" y1="18" x2="12" y2="22"/>
+    <line x1="8" y1="22" x2="16" y2="22"/>
+  </svg>
+  <span class="gw-mic__live-dot" aria-hidden="true"></span>
+</button>
+
+<aside id="gw-tx" class="gw-tx" hidden aria-live="polite" aria-label="Voice tutor transcript">
+  <div class="gw-tx__head">
+    <span class="gw-tx__title">Voice tutor</span>
+    <span class="gw-tx__model" id="gw-tx-model"></span>
+    <button type="button" id="gw-tx-key" title="Edit API key">key</button>
+    <button type="button" id="gw-tx-end" title="Disconnect">end</button>
+  </div>
+  <div class="gw-tx__body" id="gw-tx-body"></div>
+  <div class="gw-tx__hint">Speak naturally. The agent can scroll, open wiki pages, and search the web.</div>
+</aside>
+
+<dialog id="gw-key" class="gw-modal" aria-labelledby="gw-key-title">
+  <form method="dialog" class="gw-modal__inner" id="gw-key-form">
+    <h3 id="gw-key-title">Connect a voice tutor</h3>
+    <p>Paste a Google AI Studio API key. Your key stays in this browser — get one at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a>.</p>
+    <input type="password" id="gw-key-input" placeholder="AIza…" autocomplete="off" spellcheck="false" required />
+    <label class="gw-modal__check"><input type="checkbox" id="gw-key-remember" checked /> Remember on this device</label>
+    <p class="gw-modal__note">Demo only — anyone with access to this browser can read the key from <code>localStorage</code>. Don't share an HTML file with a key embedded.</p>
+    <div class="gw-modal__row">
+      <button type="button" class="gw-modal__btn gw-modal__btn--ghost" id="gw-key-cancel">Cancel</button>
+      <button type="submit" class="gw-modal__btn gw-modal__btn--primary" id="gw-key-save">Connect</button>
+    </div>
+  </form>
+</dialog>
+
+<script type="module">
+// ─────────── Voice tutor (Gemini Live) ───────────
+// Self-contained. Uses the wiki-corpus JSON already inlined above for context,
+// and drives the existing wiki panel via #wiki-{slug} hash navigation.
+
+// User-tunable defaults — change here, no other edits needed.
+const GW_MODEL        = "gemini-3.1-flash-live-preview"; // newest Live model (Apr 2026). Fallback: "gemini-2.5-flash-live-preview"
+const GW_VOICE        = "Aoede";                          // alternatives: Puck, Charon, Kore, Fenrir, Leda, Orus, Zephyr
+const GW_SDK_URL      = "https://esm.sh/@google/genai@^1";
+const GW_INPUT_HZ     = 16000;
+const GW_OUTPUT_HZ    = 24000;
+const GW_KEY_STORAGE  = "groundwork.gemini.apiKey";
+
+// ────────── Key manager ──────────
+const KeyMgr = {
+  get()    { try { return localStorage.getItem(GW_KEY_STORAGE) || ""; } catch { return ""; } },
+  set(k, remember) {
+    if (remember) { try { localStorage.setItem(GW_KEY_STORAGE, k); } catch {} }
+    else          { try { localStorage.removeItem(GW_KEY_STORAGE); } catch {} }
+    this._mem = k;
+  },
+  use() { return this._mem || this.get(); },
+  clear() { try { localStorage.removeItem(GW_KEY_STORAGE); } catch {} this._mem = ""; },
+  _mem: "",
+};
+
+// ────────── Corpus index (built once) ──────────
+function buildCorpusIndex() {
+  let pages = {}, plan = null;
+  try { pages = JSON.parse(document.getElementById('wiki-corpus').textContent).pages || {}; } catch (e) { console.error("[gw] wiki-corpus parse failed", e); }
+  try { plan  = JSON.parse(document.getElementById('plan-data').textContent) || null;  } catch (e) { console.error("[gw] plan-data parse failed", e); }
+
+  // Compact index: slug | type | title (one per line)
+  const indexLines = [];
+  Object.values(pages).forEach(p => {
+    if (!p || !p.slug) return;
+    if (p.type === 'log' || p.slug === 'session-log') return; // skip session log noise
+    indexLines.push(`- ${p.slug} (${p.type||'?'}) — ${p.title||p.slug}`);
+  });
+  indexLines.sort();
+
+  // Plan summary block
+  let planBlock = '';
+  if (plan) {
+    const steps = (plan.protocol||[]).map(s => `${s.step}. ${s.title} (${s.duration_minutes||'?'} min)`).join('\n');
+    const fmTop = (plan.failure_map||[]).slice(0,5).map(f => `- ${f.wiki_page} [${f.severity}] — ${f.mitigation||''}`.slice(0,180)).join('\n');
+    planBlock = [
+      `# Plan summary`,
+      `Hypothesis: ${(plan.hypothesis && plan.hypothesis.statement) || ''}`,
+      `Plan version: v${plan.plan_version||1}  ·  Generated ${plan.generated_at||''}`,
+      `Total budget: $${plan.budget && plan.budget.total_usd ? Number(plan.budget.total_usd).toLocaleString() : '?'}`,
+      `Timeline: ${plan.timeline ? (plan.timeline.total_weeks||'?')+' weeks across '+(plan.timeline.phases||[]).length+' phases' : '?'}`,
+      `Lit-QC verdict: ${plan.literature_qc && plan.literature_qc.verdict || '?'}`,
+      ``,
+      `## Protocol steps`,
+      steps,
+      ``,
+      `## Top failure modes`,
+      fmTop,
+    ].join('\n');
+  }
+
+  return { pages, plan, indexLines, planBlock };
+}
+
+const CORPUS = buildCorpusIndex();
+console.log(`[gw] indexed ${CORPUS.indexLines.length} wiki pages for the voice tutor`);
+
+// ────────── System prompt ──────────
+function buildSystemPrompt() {
+  const h = (CORPUS.plan && CORPUS.plan.hypothesis) || {};
+  let headline = "this scientific hypothesis";
+  if (typeof h.statement === 'string' && h.statement) headline = h.statement;
+  else if (typeof h.refined === 'string' && h.refined) headline = h.refined;
+  else if (h.refined && typeof h.refined === 'object') {
+    headline = [h.refined.intervention, h.refined.outcome, h.refined.threshold].filter(Boolean).join(' → ');
+  } else if (typeof h.original_question === 'string' && h.original_question) headline = h.original_question;
+  const stepCount = (CORPUS.plan && CORPUS.plan.protocol) ? CORPUS.plan.protocol.length : '?';
+  return [
+    `You are the GROUNDWORK Voice Tutor, embedded in a single-page Lab Brief about: ${headline}`,
+    ``,
+    `The reader is looking at a one-page interactive plan with ${stepCount} protocol steps and a wiki of ${CORPUS.indexLines.length} pages (organisms, methods, reagents, failure modes, sources). They asked you to act as a tutor: explain things clearly, cite specifics, and **drive the page** so what you discuss is what they see.`,
+    ``,
+    `# Tools you have`,
+    `- **getWikiPage(slug)** — fetches the full markdown of any wiki page. Use this aggressively when the user asks about a specific entity. Don't guess from titles.`,
+    `- **searchWiki(query, type?)** — substring search across titles + slugs. Use to find the right slug before getWikiPage.`,
+    `- **openWikiPage(slug)** — opens the page visibly in the right-side panel. Call this whenever you reference an entity by name. The user sees what you mention.`,
+    `- **scrollToSection(section)** — scrolls the main page to one of: hero, breakdown, litqc, mechanism, protocol, materials, budget, timeline, validation, fmap, sources.`,
+    `- **openProtocolStep(n)** — scrolls to protocol step N (1–10).`,
+    `- **closeWikiPanel()** — closes the side panel.`,
+    `- **googleSearch** (built in) — for live web information; cite sources when used.`,
+    ``,
+    `# Behaviour`,
+    `- Speak naturally and concisely (default ~20 seconds per turn unless asked for depth).`,
+    `- When you mention a step, immediately call openProtocolStep. When you mention a wiki entity by name, immediately call openWikiPage with its slug.`,
+    `- If you're not sure of a slug, call searchWiki first.`,
+    `- If asked something current/external (recent papers, prices, news), use googleSearch.`,
+    `- If the wiki disagrees with web search, prefer the wiki and flag the discrepancy out loud.`,
+    `- Never fabricate a slug. If a page doesn't exist, say so.`,
+    ``,
+    CORPUS.planBlock,
+    ``,
+    `# Wiki page index (slug, type, title)`,
+    CORPUS.indexLines.join('\n'),
+  ].join('\n');
+}
+
+// ────────── Tool dispatcher ──────────
+function findPage(slug) {
+  if (!slug) return null;
+  if (CORPUS.pages[slug]) return CORPUS.pages[slug];
+  // tolerate bare names: try by title or by slug-tail
+  const lc = String(slug).toLowerCase();
+  for (const k in CORPUS.pages) {
+    const p = CORPUS.pages[k];
+    if (k.toLowerCase() === lc) return p;
+    if ((p.title||'').toLowerCase() === lc) return p;
+    if (k.toLowerCase().endsWith('/' + lc)) return p;
+  }
+  return null;
+}
+
+const Tools = {
+  getWikiPage({ slug }) {
+    const p = findPage(slug);
+    if (!p) return { ok: false, error: `No wiki page with slug "${slug}". Try searchWiki first.` };
+    return {
+      ok: true, slug: p.slug, type: p.type, title: p.title,
+      frontmatter: p.frontmatter || {},
+      body_md: (p.body_md || '').slice(0, 16000),
+    };
+  },
+  searchWiki({ query, type }) {
+    if (!query) return { ok: false, error: "query is required" };
+    const q = String(query).toLowerCase();
+    const out = [];
+    for (const k in CORPUS.pages) {
+      const p = CORPUS.pages[k];
+      if (type && p.type !== type) continue;
+      const title = (p.title || '').toLowerCase();
+      const slug  = k.toLowerCase();
+      const aliases = (p.frontmatter && p.frontmatter.aliases) || [];
+      const aliasHit = Array.isArray(aliases) && aliases.some(a => String(a).toLowerCase().includes(q));
+      if (title.includes(q) || slug.includes(q) || aliasHit) {
+        out.push({ slug: p.slug, type: p.type, title: p.title });
+      }
+    }
+    out.sort((a,b)=> (a.title||'').length - (b.title||'').length);
+    return { ok: true, results: out.slice(0, 10), total_matches: out.length };
+  },
+  openWikiPage({ slug }) {
+    const p = findPage(slug);
+    if (!p) return { ok: false, error: `No wiki page with slug "${slug}".` };
+    location.hash = '#wiki-' + p.slug;  // triggers existing hashchange → openPanel
+    OrbView.flash('tool');
+    Transcript.tool(`opened wiki: ${p.title}`);
+    return { ok: true, slug: p.slug };
+  },
+  scrollToSection({ section }) {
+    const valid = ['hero','breakdown','litqc','mechanism','protocol','materials','budget','timeline','validation','fmap','sources'];
+    if (!valid.includes(section)) return { ok: false, error: `section must be one of: ${valid.join(', ')}` };
+    const el = document.getElementById(section);
+    if (!el) return { ok: false, error: `no #${section} on this page` };
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    OrbView.flash('tool');
+    Transcript.tool(`scrolled to: ${section}`);
+    return { ok: true };
+  },
+  openProtocolStep({ n }) {
+    const step = Number(n);
+    if (!Number.isFinite(step) || step < 1 || step > 20) return { ok: false, error: `n must be 1–20` };
+    const el = document.getElementById('step-' + step);
+    if (!el) return { ok: false, error: `step-${step} not found on page` };
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // expand collapsed step if needed
+    const head = el.querySelector('.step__head');
+    if (head && el.classList.contains('step--closed')) head.click();
+    OrbView.flash('tool');
+    Transcript.tool(`opened step ${step}`);
+    return { ok: true };
+  },
+  closeWikiPanel() {
+    if (location.hash.startsWith('#wiki-')) {
+      history.pushState(null, '', location.pathname + location.search);
+      window.dispatchEvent(new HashChangeEvent('hashchange'));
+    }
+    Transcript.tool('closed wiki panel');
+    return { ok: true };
+  },
+};
+
+const TOOL_DECLS = [
+  { name: "getWikiPage",     description: "Fetch full markdown of a wiki page by slug (e.g. 'organisms/LGG').", parameters: { type: "OBJECT", required: ["slug"], properties: { slug: { type: "STRING" } } } },
+  { name: "searchWiki",      description: "Substring search across wiki titles, slugs, and aliases. Optional type filter (organism|method|reagent|failure-mode|source|plan).", parameters: { type: "OBJECT", required: ["query"], properties: { query: { type: "STRING" }, type: { type: "STRING" } } } },
+  { name: "openWikiPage",    description: "Open a wiki page in the side panel so the reader sees what you reference.", parameters: { type: "OBJECT", required: ["slug"], properties: { slug: { type: "STRING" } } } },
+  { name: "scrollToSection", description: "Scroll the main page to a top-level section. One of: hero, breakdown, litqc, mechanism, protocol, materials, budget, timeline, validation, fmap, sources.", parameters: { type: "OBJECT", required: ["section"], properties: { section: { type: "STRING" } } } },
+  { name: "openProtocolStep",description: "Scroll to and expand protocol step N (1–10).", parameters: { type: "OBJECT", required: ["n"], properties: { n: { type: "NUMBER" } } } },
+  { name: "closeWikiPanel",  description: "Close the right-side wiki panel.", parameters: { type: "OBJECT", properties: {} } },
+];
+
+// ────────── Orb view (state + amplitude) ──────────
+const OrbView = {
+  btn: null,
+  set(state) {
+    if (!this.btn) this.btn = document.getElementById('gw-mic');
+    this.btn.setAttribute('data-state', state);
+    this.btn.setAttribute('aria-pressed', state === 'off' ? 'false' : 'true');
+  },
+  amp(v) {
+    if (!this.btn) this.btn = document.getElementById('gw-mic');
+    this.btn.style.setProperty('--gw-amp', String(Math.max(0, Math.min(1, v))));
+  },
+  flash(state) {
+    const prev = this.btn && this.btn.getAttribute('data-state');
+    this.set(state);
+    setTimeout(() => { if (this.btn && this.btn.getAttribute('data-state') === state) this.set(prev || 'idle'); }, 700);
+  },
+};
+
+// ────────── Transcript view ──────────
+const Transcript = {
+  el: null, body: null, modelLabel: null,
+  init() {
+    this.el = document.getElementById('gw-tx');
+    this.body = document.getElementById('gw-tx-body');
+    this.modelLabel = document.getElementById('gw-tx-model');
+    if (this.modelLabel) this.modelLabel.textContent = GW_MODEL;
+  },
+  show() { this.init(); this.el.hidden = false; },
+  hide() { this.init(); this.el.hidden = true; this.body.innerHTML = ''; this._user = null; this._ai = null; },
+  _user: null, _ai: null,
+  _bubble(kind, text) {
+    const div = document.createElement('div');
+    div.className = 'gw-bubble gw-bubble--' + kind;
+    div.textContent = text;
+    this.body.appendChild(div);
+    this.body.scrollTop = this.body.scrollHeight;
+    return div;
+  },
+  user(text) {
+    if (!this._user) this._user = this._bubble('user', text);
+    else { this._user.textContent += text; this.body.scrollTop = this.body.scrollHeight; }
+  },
+  userTurnEnd() { this._user = null; },
+  ai(text) {
+    if (!this._ai) this._ai = this._bubble('ai', text);
+    else { this._ai.textContent += text; this.body.scrollTop = this.body.scrollHeight; }
+  },
+  aiTurnEnd() { this._ai = null; },
+  tool(text) { this._bubble('tool', '→ ' + text); },
+  sys(text)  { this._bubble('sys',  text); },
+};
+
+// ────────── Audio plumbing ──────────
+function b64encode(uint8) {
+  let s = '';
+  for (let i = 0; i < uint8.length; i++) s += String.fromCharCode(uint8[i]);
+  return btoa(s);
+}
+function b64decode(b64) {
+  const s = atob(b64);
+  const u = new Uint8Array(s.length);
+  for (let i = 0; i < s.length; i++) u[i] = s.charCodeAt(i);
+  return u;
+}
+function pcm16FromFloat(f32) {
+  const out = new Int16Array(f32.length);
+  for (let i = 0; i < f32.length; i++) {
+    const s = Math.max(-1, Math.min(1, f32[i]));
+    out[i] = s < 0 ? s * 0x8000 : s * 0x7fff;
+  }
+  return out;
+}
+function floatFromPcm16(int16) {
+  const out = new Float32Array(int16.length);
+  for (let i = 0; i < int16.length; i++) out[i] = int16[i] / 0x8000;
+  return out;
+}
+
+class AudioIO {
+  constructor() {
+    this.stream = null;
+    this.inCtx = null; this.inSrc = null; this.inProc = null; this.inAnalyser = null;
+    this.outCtx = null; this.outAnalyser = null;
+    this.outNextStart = 0;
+    this.activeOutSources = [];
+    this._rafIn = null; this._rafOut = null;
+    this.onPcmFrame = null;       // callback(base64Pcm)
+    this.onInputAmp = null;       // callback(0..1)
+    this.onOutputAmp = null;      // callback(0..1)
+  }
+  async startCapture() {
+    this.stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, sampleRate: GW_INPUT_HZ } });
+    this.inCtx = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: GW_INPUT_HZ });
+    if (this.inCtx.sampleRate !== GW_INPUT_HZ) console.warn(`[gw] mic ctx ran at ${this.inCtx.sampleRate}Hz; expected ${GW_INPUT_HZ}. Server may misinterpret.`);
+    this.inSrc = this.inCtx.createMediaStreamSource(this.stream);
+    this.inAnalyser = this.inCtx.createAnalyser();
+    this.inAnalyser.fftSize = 256;
+    // Use ScriptProcessor — deprecated but ubiquitous and avoids worklet loading.
+    this.inProc = this.inCtx.createScriptProcessor(4096, 1, 1);
+    this.inSrc.connect(this.inAnalyser);
+    this.inSrc.connect(this.inProc);
+    this.inProc.connect(this.inCtx.destination); // ScriptProcessor needs a sink to fire
+    // Mute the local sink so the mic doesn't echo locally.
+    const mute = this.inCtx.createGain(); mute.gain.value = 0; this.inProc.disconnect(); this.inProc.connect(mute); mute.connect(this.inCtx.destination);
+    this.inProc.onaudioprocess = (e) => {
+      const ch = e.inputBuffer.getChannelData(0);
+      const pcm = pcm16FromFloat(ch);
+      const b64 = b64encode(new Uint8Array(pcm.buffer));
+      if (this.onPcmFrame) this.onPcmFrame(b64);
+    };
+    const inBuf = new Uint8Array(this.inAnalyser.frequencyBinCount);
+    const ampLoop = () => {
+      this.inAnalyser.getByteFrequencyData(inBuf);
+      let sum = 0; for (let i = 0; i < inBuf.length; i++) sum += inBuf[i];
+      const amp = (sum / inBuf.length) / 255;
+      if (this.onInputAmp) this.onInputAmp(amp);
+      this._rafIn = requestAnimationFrame(ampLoop);
+    };
+    ampLoop();
+  }
+  startPlayback() {
+    this.outCtx = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: GW_OUTPUT_HZ });
+    this.outAnalyser = this.outCtx.createAnalyser();
+    this.outAnalyser.fftSize = 256;
+    this.outAnalyser.connect(this.outCtx.destination);
+    this.outNextStart = this.outCtx.currentTime;
+    const buf = new Uint8Array(this.outAnalyser.frequencyBinCount);
+    const ampLoop = () => {
+      this.outAnalyser.getByteFrequencyData(buf);
+      let sum = 0; for (let i = 0; i < buf.length; i++) sum += buf[i];
+      const amp = (sum / buf.length) / 255;
+      if (this.onOutputAmp) this.onOutputAmp(amp);
+      this._rafOut = requestAnimationFrame(ampLoop);
+    };
+    ampLoop();
+  }
+  enqueuePcm(b64, sampleRate) {
+    if (!this.outCtx) return;
+    const u8 = b64decode(b64);
+    const i16 = new Int16Array(u8.buffer, u8.byteOffset, Math.floor(u8.byteLength / 2));
+    const f32 = floatFromPcm16(i16);
+    const ab = this.outCtx.createBuffer(1, f32.length, sampleRate || GW_OUTPUT_HZ);
+    ab.getChannelData(0).set(f32);
+    const src = this.outCtx.createBufferSource();
+    src.buffer = ab;
+    src.connect(this.outAnalyser);
+    const t = Math.max(this.outCtx.currentTime, this.outNextStart);
+    src.start(t);
+    this.outNextStart = t + ab.duration;
+    this.activeOutSources.push(src);
+    src.onended = () => {
+      const i = this.activeOutSources.indexOf(src);
+      if (i >= 0) this.activeOutSources.splice(i, 1);
+    };
+  }
+  flushPlayback() {
+    this.activeOutSources.forEach(s => { try { s.stop(); } catch {} });
+    this.activeOutSources = [];
+    if (this.outCtx) this.outNextStart = this.outCtx.currentTime;
+  }
+  async stop() {
+    if (this._rafIn)  cancelAnimationFrame(this._rafIn);
+    if (this._rafOut) cancelAnimationFrame(this._rafOut);
+    try { this.inProc && this.inProc.disconnect(); } catch {}
+    try { this.inSrc  && this.inSrc.disconnect(); } catch {}
+    if (this.stream) this.stream.getTracks().forEach(t => t.stop());
+    if (this.inCtx)  await this.inCtx.close().catch(()=>{});
+    if (this.outCtx) await this.outCtx.close().catch(()=>{});
+    this.stream = this.inCtx = this.inSrc = this.inProc = this.inAnalyser = null;
+    this.outCtx = this.outAnalyser = null;
+  }
+}
+
+// ────────── Gemini Live client ──────────
+class GeminiClient {
+  constructor() { this.session = null; this.audio = null; this.connected = false; this.SDK = null; }
+  async loadSDK() {
+    if (this.SDK) return this.SDK;
+    try {
+      const mod = await import(GW_SDK_URL);
+      this.SDK = mod;
+      return mod;
+    } catch (e) {
+      Transcript.sys(`Failed to load Gemini SDK: ${e.message}`);
+      throw e;
+    }
+  }
+  async connect(apiKey) {
+    OrbView.set('connecting');
+    Transcript.show();
+    Transcript.sys('connecting…');
+    const { GoogleGenAI, Modality } = await this.loadSDK();
+    const ai = new GoogleGenAI({ apiKey });
+    this.audio = new AudioIO();
+    this.audio.onPcmFrame = (b64) => {
+      if (!this.session) return;
+      try {
+        this.session.sendRealtimeInput({ audio: { data: b64, mimeType: `audio/pcm;rate=${GW_INPUT_HZ}` } });
+      } catch (e) { console.warn('[gw] send mic frame failed', e); }
+    };
+    this.audio.onInputAmp  = (a) => { if (OrbView.btn && OrbView.btn.getAttribute('data-state') === 'listening') OrbView.amp(a); };
+    this.audio.onOutputAmp = (a) => { if (OrbView.btn && OrbView.btn.getAttribute('data-state') === 'speaking') OrbView.amp(a); };
+    this.audio.startPlayback();
+
+    try {
+      this.session = await ai.live.connect({
+        model: GW_MODEL,
+        callbacks: {
+          onopen:    () => { OrbView.set('idle'); Transcript.sys('connected — speak any time'); },
+          onmessage: (m) => this._handleMessage(m),
+          onerror:   (e) => { console.error('[gw] live error', e); Transcript.sys('error: ' + (e?.message || e)); },
+          onclose:   (e) => { console.log('[gw] live closed', e); this._teardown(); },
+        },
+        config: {
+          responseModalities: [Modality.AUDIO],
+          systemInstruction: { parts: [{ text: buildSystemPrompt() }] },
+          speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: GW_VOICE } } },
+          tools: [
+            { googleSearch: {} },
+            { functionDeclarations: TOOL_DECLS },
+          ],
+          inputAudioTranscription: {},
+          outputAudioTranscription: {},
+        },
+      });
+    } catch (e) {
+      Transcript.sys('connect failed: ' + (e?.message || e));
+      OrbView.set('off');
+      await this.audio.stop();
+      this.audio = null;
+      throw e;
+    }
+
+    await this.audio.startCapture();
+    OrbView.set('listening');
+    this.connected = true;
+  }
+  _handleMessage(m) {
+    // Server content (text + audio + transcripts + interruptions)
+    const sc = m.serverContent;
+    if (sc) {
+      if (sc.interrupted) {
+        if (this.audio) this.audio.flushPlayback();
+        Transcript.aiTurnEnd();
+      }
+      if (sc.inputTranscription && sc.inputTranscription.text) {
+        Transcript.user(sc.inputTranscription.text);
+        OrbView.set('listening');
+      }
+      if (sc.outputTranscription && sc.outputTranscription.text) {
+        Transcript.ai(sc.outputTranscription.text);
+      }
+      const parts = (sc.modelTurn && sc.modelTurn.parts) || [];
+      for (const p of parts) {
+        if (p.inlineData && p.inlineData.data) {
+          OrbView.set('speaking');
+          // Parse sample rate from mimeType if present
+          const mt = p.inlineData.mimeType || '';
+          const rateMatch = /rate=(\d+)/.exec(mt);
+          const rate = rateMatch ? Number(rateMatch[1]) : GW_OUTPUT_HZ;
+          this.audio && this.audio.enqueuePcm(p.inlineData.data, rate);
+        }
+        if (p.text) Transcript.ai(p.text);
+      }
+      if (sc.turnComplete) {
+        Transcript.userTurnEnd();
+        Transcript.aiTurnEnd();
+        // After model finishes speaking, return to listening state
+        setTimeout(() => { if (this.connected) OrbView.set('listening'); }, 300);
+      }
+    }
+    // Tool calls
+    const tc = m.toolCall;
+    if (tc && Array.isArray(tc.functionCalls)) {
+      const responses = [];
+      for (const call of tc.functionCalls) {
+        const fn = Tools[call.name];
+        let result;
+        try {
+          result = fn ? fn(call.args || {}) : { ok: false, error: `unknown tool ${call.name}` };
+        } catch (e) {
+          result = { ok: false, error: String(e && e.message || e) };
+        }
+        responses.push({ id: call.id, name: call.name, response: { result } });
+      }
+      try { this.session.sendToolResponse({ functionResponses: responses }); }
+      catch (e) { console.warn('[gw] tool response send failed', e); }
+    }
+  }
+  async disconnect() {
+    if (this.session) { try { this.session.close(); } catch {} this.session = null; }
+    await this._teardown();
+  }
+  async _teardown() {
+    this.connected = false;
+    if (this.audio) { await this.audio.stop(); this.audio = null; }
+    OrbView.set('off');
+    Transcript.hide();
+  }
+}
+
+// ────────── UI bindings ──────────
+const client = new GeminiClient();
+const micBtn   = document.getElementById('gw-mic');
+const keyDlg   = document.getElementById('gw-key');
+const keyForm  = document.getElementById('gw-key-form');
+const keyInput = document.getElementById('gw-key-input');
+const keyRem   = document.getElementById('gw-key-remember');
+const keyCancel= document.getElementById('gw-key-cancel');
+const txEnd    = document.getElementById('gw-tx-end');
+const txKey    = document.getElementById('gw-tx-key');
+
+OrbView.set('off');
+Transcript.init();
+
+function ensureKeyAndConnect() {
+  const stored = KeyMgr.get();
+  if (stored) {
+    KeyMgr._mem = stored;
+    return startConnect();
+  }
+  keyInput.value = '';
+  keyDlg.showModal();
+}
+
+async function startConnect() {
+  if (client.connected) return;
+  const key = KeyMgr.use();
+  if (!key) { keyDlg.showModal(); return; }
+  try {
+    await client.connect(key);
+  } catch (e) {
+    console.error(e);
+    micBtn.setAttribute('data-state', 'off');
+    micBtn.setAttribute('aria-pressed', 'false');
+  }
+}
+
+micBtn.addEventListener('click', async () => {
+  if (client.connected) { await client.disconnect(); return; }
+  ensureKeyAndConnect();
+});
+
+keyForm.addEventListener('submit', (e) => {
+  // method="dialog" closes via returnValue; prevent default form submit only if invalid
+  const k = (keyInput.value || '').trim();
+  if (!k) { e.preventDefault(); return; }
+  KeyMgr.set(k, keyRem.checked);
+  // Let the dialog close naturally, then connect.
+  setTimeout(() => startConnect(), 0);
+});
+keyCancel.addEventListener('click', () => { keyDlg.close(); });
+txEnd.addEventListener('click', async () => { await client.disconnect(); });
+txKey.addEventListener('click', () => {
+  keyInput.value = KeyMgr.get();
+  keyRem.checked = !!KeyMgr.get();
+  keyDlg.showModal();
+});
+
+// Allow Esc to close key modal cleanly
+keyDlg.addEventListener('cancel', (e) => { e.preventDefault(); keyDlg.close(); });
+
+window.addEventListener('beforeunload', () => { if (client.connected) client.disconnect(); });
 </script>
 
 </body>
