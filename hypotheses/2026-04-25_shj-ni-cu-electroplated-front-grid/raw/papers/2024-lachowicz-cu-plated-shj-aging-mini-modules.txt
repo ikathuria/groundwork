@@ -1,0 +1,369 @@
+EPJ Photovoltaics 15, 11 (2024)
+© A. Lachowicz et al., Published by EDP Sciences, 2024                                                                  EPJ Photovoltaics
+https://doi.org/10.1051/epjpv/2024008
+
+                                                                                                                            Available online at:
+Special Issue on ‘EU PVSEC 2023: State of the Art and Developments in Photovoltaics’,                                        www.epj-pv.org
+edited by Robert Kenny and João Serra
+
+    ORIGINAL ARTICLE
+
+
+
+Aging tests of mini-modules with copper-plated heterojunction
+solar cells and pattern-transfer-printing of copper paste
+Agata Lachowicz1,* , Nicolas Badel1, Alexis Barrou1, Vincent Barth2, Samuel Harrison2, Nicola Frasson3,
+Marco Galiazzo3, Natali Cohen4, Eyal Cohen4, Jun Zhao1, Bertrand Paviet-Salomon1 and Christophe Ballif1
+1
+  CSEM PV-Center, Jaquet-Droz 1, 2000 Neuchâtel, Switzerland
+2
+  CEA INES, 50 Av. du Lac Léman, 73370 Le Bourget-du-Lac, France
+3
+  AMAT, Via Postumia Ovest, 244, 31048 Olmi TV, Italy
+4
+  DR Utilight, HaYarmuch St 1, Yavne, Israel
+
+
+            Received: 28 September 2023 / Accepted: 24 January 2024
+
+
+            Abstract: Mini-module aging tests with differently interconnected heterojunction solar cells having
+            industrially viable copper metallization are presented. The plating process comprises 3 steps: ﬁrstly, screen
+            printing of a seed-grid layout using a copper-based paste, followed by deposition of a dielectric layer over the
+            entire wafer surface, and ﬁnally, selective copper electrodeposition on grid positions. Modules with Smartwire
+            interconnection, fabricated with M6 half-cells, are stable in extended TC and PID tests. DH degradation is at 5%
+            after 2700 h (glass-glass modules without edge sealing). Shingle modules, realized in collaboration with CEA
+            INES and AMAT, exhibit notably higher ﬁll factor compared to reference modules with screen-printed silver
+            paste. This improvement is attributed to the superior line conductivity achieved with plated copper. TC
+            stability of shingle modules is very good, whereas after 2000 h damp-heat aging more than 2% loss in ﬁll factor is
+            observed. Using pattern-transfer-printing technology narrow, high aspect-ratio lines have been obtained: with a
+            seed-grid of pure copper paste, reinforced with electrodeposited copper. Line dimensions and line resistance as
+            well as ﬁrst cell results are presented.
+            Keywords: Heterojunction solar cells / copper metallization / plating / module stability / pattern transfer
+            printing / electrodeposition
+
+
+
+
+1 Introduction                                                              implemented in production [5,6]. Regrettably, these meth-
+                                                                            ods didn’t endure in the long run. The competition with
+The substitution of silver with copper is considered a pivotal              screen printing persists, as silver consumption per watt-peak
+step in enabling the large-scale production of PV while                     —and thus the cost—continues to decline. Additionally, the
+continuously driving down costs [1]. The heterojunction                     recent introduction of silver-coated-copper paste and its
+structure offers a signiﬁcant advantage when it comes to                    seamless integration into the production of heterojunction
+copper plating. This advantage arises from the absence of a                 cells have alleviated the need for the immediate introduction
+direct contact between the metal and the silicon, and the                   of new processes [7].
+presence of transparent conductive oxide (TCO), which is an                     The three-step plating process involves screen printing
+excellent barrier against copper diffusion [2,3].                           and the deposition of a dielectric layer as plating mask
+    Although copper is substantially more cost-effective than               (usually by PECVD), both of which are well-established and
+silver, its application is not as straightforward as conven-                proven techniques in solar cell manufacturing. Furthermore,
+tional screen printing. The complexity of the process must be               the application of a dielectric layer is part of two strategies to
+factored in, as each additional step adds to the overall cost.              reduce indium consumption: (i) creating a stack of thin
+Several processing routes for copper-plated metallization on                indium tin oxide (ITO  30 nm) and a dielectric layer to form
+heterojunction cells have been developed [4], with some even                an antireﬂective coating and (ii) adding a dielectric layer on
+                                                                            top of aluminum zinc oxide (AZO) to ensure good module
+                                                                            stability [8,9]. Just the plating step itself is new to solar cell
+* e-mail: agata.lachowicz@csem.ch                                           manufacturers.
+
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0),
+             which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+2                                      A. Lachowicz et al.: EPJ Photovoltaics 15, 11 (2024)
+
+
+                                                                    PECVD dielectric layer, electrodeposited copper and
+                                                                    capping layer (on the same SCC seed-grid).
+                                                                        All modules exhibited excellent stability in thermocy-
+                                                                    cling (TC), with minor degradation after 690 cycles: 1.4%
+                                                                    for the SCC reference and 0.2% for modules with copper
+                                                                    (see Fig. 2). In damp-heat (DH) strong degradation of
+                                                                    modules with silver-coated-copper paste only was ob-
+                                                                    served, mainly in ﬁll factor. This particular paste had not
+                                                                    been previously tested with materials used in this
+                                                                    experiment. In general, the stability of commercial SCC
+                                                                    pastes in DH is good, conﬁrmed even by the industry
+Fig. 1. Contact structure resulting from the 3-step process: with   through the fast implementation of this paste type in
+thin TCO, dielectric layer, seed-grid of copper particle paste,     production [7].
+electrodeposited copper, and capping layer.                             Degradation of modules with copper, and probably
+                                                                    more important in this case, with a dielectric layer, was
+                                                                    signiﬁcantly reduced and at 5% after 2700 h.
+                                                                        In electroluminescence images (EL, Fig. 3) we observe
+2 Plating process                                                   the onset of degradation at cell edges closest to the unsealed
+                                                                    module edge. Such small modules may represent the
+The key for selectivity is that the dielectric layer is not         hardest condition for DH testing due to their high ratio of
+continuous on a line consisting of particles, while it tightly      perimeter to module area, resulting in increased moisture
+covers the transparent conductive oxide in between the              ingress per cell area. For the next module experiment the
+printed grid (Fig. 1). Current for electrodeposition is             application of an edge sealant is planned. Edge sealing with
+applied by contacting the printed grid and passes through           polyisobutylene is used in commercial heterojunction
+the voids in the dielectric on top of the paste, resulting in       modules to improve the stability in damp-heat [11].
+selective copper deposition on grid positions. However,                 Modules after storage and after TC were further
+both the paste and the dielectric layer need to be carefully        subjected to potential induced degradation (PID). The
+chosen. The formation of voids is more likely to be induced         testing was conducted under standard conditions: 85 °C
+by the presence of larger particles and more directional            and 85% rel. humidity and an applied potential of either
+deposition method for the dielectric, such as plasma-               +1000 or 1000 V. All modules have withstood two 96-h
+enhanced chemical vapor deposition (PECVD) rather than              testing cycles, without any deterioration.
+thermal atomic layer deposition (ALD).
+    The requirement on seed-grid conductivity is not high.
+It has to transport the current for electrodeposition,
+                                                                    4 Shingle modules
+typically in the range of 10–20% of the photogenerated
+current in the ﬁnal cell. Remarkably, uniform plating over          The shingle pattern consists of separate tiles of 25 mm
+the wafer surface has been observed even on a seed-grid of          width. The effective current path on the cell is signiﬁcantly
+pure copper paste, with line resistivity close to 100 V/cm.         longer than for multi-busbar conﬁguration, comparable
+Depending on the paste and on plating conditions copper is          rather to a 3-busbar-cell, and thus lower ﬁll factors are
+deposited not only on the surface of the lines but also in          achieved, despite of the high amount of silver generally
+between the paste particles. More details about the process         deposited on such devices [12]. Furthermore, the current
+are available in reference [10].                                    transport in the module occurs entirely through the ﬁngers.
+    Pure copper paste is still in development by the suppliers      Copper metallization is therefore particularly interesting
+for screen printing of narrow lines without interruptions.          for shingle interconnection.
+In the interim, we have used silver-coated-copper paste                 The modules were realized in collaboration with CEA
+(SCC) for seed-grid formation and obtained lines of about           INES and AMAT. Heterojunction M2 precursors were
+30 mm width using knotless screens. The best cell result with       manufactured in the CEA INES pilot-line, incorporating
+SCC seed-grid, PECVD dielectric layer, and electrodepos-            amorphous silicon and standard ITO layers on both sides.
+ited copper on a high quality industrial M6 precursors is           A seed-grid was then printed using silver low-temperature
+at 24.2% (bifacial cell with 9 busbar-layout, internal              paste and in standard six-shingle layout.
+measurement) [10].                                                      In this experiment, lines of ∼60 mm width were printed
+                                                                    with signiﬁcantly reduced silver paste consumption than
+                                                                    usual (single print, lower line aspect ratio targeted: reduction
+3 Smartwire modules                                                 of ∼1/3 of paste deposit) because of the planned subsequent
+                                                                    reinforcement with electrodeposited copper. Cells with
+Glass–glass modules with one M6 half-cell were fabricat-            initial efﬁciencies at 22.5% (ﬁll factor in the 80.5% range)
+ed using wires with In-free low melting point alloy and             were fabricated. After deposition of the dielectric layer
+with polyoleﬁn encapsulant. The cells were prepared on              and copper plating at CSEM, the line conductivity and,
+M6 external industrial heterojunction cell precursors               consequently, the ﬁll factor were signiﬁcantly improved,
+with standard ITO, either with screen-printed                       resulting in an overall higher efﬁciency of 22.9% (group
+silver-coated-copper paste only or with additional                  mean value).
+                                           A. Lachowicz et al.: EPJ Photovoltaics 15, 11 (2024)                                     3
+
+
+          Pmax [%]                  TC                                     Pmax [%]                   DH
+          101                                                              105
+          100                                                              100
+           99
+                                                                            95
+           98
+           97                                                               90
+           96                                                               85
+           95                                                               80
+           94
+                                                                            75
+           93
+                                                                            70
+           92
+           91                                                               65
+                                                          CYCLES                                                  HOURS
+           90                                                               60
+                0        200           400          600            800           0            1000         2000           3000
+                      SCC-M2                        copper-M2                         SCC storage             copper storage
+                      SCC-M4                        copper-M4                         SCC-M1                  copper-M1
+                                                                                      SCC-M3                  copper-M3
+                      IEC norm limit -5%
+                                                                                      IEC norm limit -5%
+
+Fig. 2. Smartwire module power decrease after TC (on the left) and DH (on the right). Grey lines represent modules with silver-coated
+copper paste only, orange/brown lines modules with copper, dashed lines represent control modules only stored in the laboratory.
+
+
+
+                                                                             The shingling process was performed on an automatic
+  SCC-M1
+                                                                         tool developed at Applied Materials, suitable for produc-
+                        SCC-M1                    SCC-M1
+                                                                         tion as well as for small strings processing. The HJT cells
+  Reference             1008 hours DH             2076 hours DH
+                                                                         were scribed with a 100 W nanosecond IR laser to
+                                                                         approximately half of the thickness and subsequently
+                                                                         mechanically separated. About 3.5 mg electrically conduc-
+                                                                         tive adhesive were applied per shingle by screen printing
+                                                                         and six shingles per string were then automatically aligned
+                                                                         with an offset of 1 mm and cured at 150 °C. The ﬁnal
+                                                                         module lamination was conducted at CEA INES, with
+                                                                         polyoleﬁn encapsulant and in glass-glass conﬁguration
+                                                                         (without edge sealing).
+                                                                             The stability in TC is very good, with less than 0.5%
+                                                                         change in power after 400 cycles. A signiﬁcant decline in ﬁll
+                                                                         factor, exceeding 2%, is observed after 2000 h damp-heat
+                                                                         testing. EL images conﬁrm that degradation initiates at the
+                                                                         module’s edges (Fig. 4). Application of edge sealing is
+  Copper-M1             Copper-M1                Copper-M1               considered for future modules.
+  Reference             1008 hours DH            2076 hours DH
+                                                                         5 Pattern-transfer-printing technology (PTP)
+                                                                         The PTP process involves two stages: ﬁrst, ﬁlling of
+                                                                         trenches in a transparent ﬁlm and then transferring the
+                                                                         paste using a laser. A metal blade pushes the paste into the
+                                                                         trenches and simultaneously cleans excess paste from the
+                                                                         surface in between the trenches. The ﬁlm is then positioned
+                                                                         above the wafer with a small gap (non-contact printing),
+                                                                         and the ﬁlled trenches are scanned by a continuous-wave
+                                                                         infrared high-power laser that drives the paste out of the
+                                                                         trenches, resulting in the deposition of an entire line onto
+Fig. 3. EL images of modules with Smartwire interconnection in           the wafer. The laser transfer takes less than 1 s per M10
+damp-heat test. Top row: module with silver-coated-copper paste          wafer (per side).
+only, at test start (“Reference”), after 1008 and after 2076 h.              In Figure 5, lines obtained from trapezoid-shaped
+Bottom row: with additional dielectric layer and plated copper, at       trenches and using either SCC or copper paste are shown.
+test start (“Reference”), after 1008 and after 2076 h.                   The line width is approximately 20 mm after PTP and
+4                                     A. Lachowicz et al.: EPJ Photovoltaics 15, 11 (2024)
+
+
+                                                                              102.5
+                                                                                                                       TC
+                                                                              100.0
+            0 TC                    200 TC                  400 TC
+                                                                               97.5
+
+                                                                               95.0
+                                                                                             Copper-TC             CYCLES
+                                                                               92.5
+                                                                                      0    100    200     300
+                                                                                                           0     400        500
+                                                                              102.5
+                                                                                                                       DH
+                                                                              100.0
+            DH 0h                   DH 1000 h             DH 2000h
+                                                                               97.5
+
+                                                                               95.0
+                                                                                             Copper-DH             HOURS
+                                                                               92.5
+                                                                                      0    500    1000   1500   2000    2500
+
+Fig. 4. EL images of shingle modules after TC (top row) and DH (bottom row) testing and corresponding Pmax degradation
+diagrams. The vertical lines are traces of transport belts in the cell pilot line.
+
+
+
+
+Fig. 5. Confocal microscope images of PTP lines and corresponding proﬁles. On the left: silver-coated-copper paste, center: copper
+paste, right: electrodeposited copper on copper paste.
+
+
+25 mm with electrodeposited copper. All line dimension            determined through scanning electron microscopy (SEM)
+values and line resistance are given in Table 1. Line             of the cross-section, are 26.1 mm in width and 21.9 mm in
+resistance measurements were conducted using Kelvin               height.
+probes directly on the cell layout, on pads intended as               The contact resistivity of the copper paste on indium
+contacting areas for plating (placed on busbars, distance         thin oxide is at 1.5 mV · cm2. This value has been
+26 mm).                                                           determined with screen-printed TLM pattern.
+    Figure 6 illustrates an ion beam cross-section of a line          At the time of the experiment, the laboratory equipment
+that has copper plated on copper paste, along with an EDX         at DR Utilight could handle only M2 precursors. Therefore,
+material analysis. This line consists solely of copper and        older industrial HJT precursors were used for this test. SCC
+organic material from the paste. Line dimensions, as              or copper paste from Namics were printed on the front side.
+                                     A. Lachowicz et al.: EPJ Photovoltaics 15, 11 (2024)                                      5
+
+
+Table 1. Line dimensions (obtained from confocal microscope), cross sectional area, and line resistance measurement
+after pattern transfer printing and after copper plating on Cu paste.
+
+Line                          Unit                     SCC paste                      Cu paste                     Cu paste
+                                                                                                                   + plated Cu
+Width                         mm                       18.9                           21.5                         25.0
+Height                        mm                       10.3                           9.3                          17.6
+CS area                       mm2                      116                            102                          335
+Resistance                    V                        1.5                            5.1                          0.2
+
+
+
+
+Fig. 6. SEM image of an ion beam cross section and EDX element maps of a line with copper plated on copper paste. Line dimensions
+measured on the cross section: width 26.1 mm, height 21.9 mm.
+
+
+
+Both pastes underwent identical thermal treatment: at             the performance of cells with screen-printed silver or SCC
+200 °C and in air (on a hot plate). For cell evaluation           paste. The extremely low ﬁll factor observed with copper
+additional back ﬁngers and busbars, including contacting          paste alone can be attributed to its high line resistivity.
+pads, were screen-printed at CSEM, all with SCC paste.            However, when copper was electrodeposited onto the copper
+Drying and curing were done in a belt oven.                       paste, values close to the SCC reference were achieved. The
+    All the thermal treatments led to signiﬁcant oxidation        diagram shows the results of only the three best plated cells
+of the copper paste surface and the pretreatment before           that underwent the modiﬁed deoxidation step.
+copper electrodeposition, speciﬁcally the deoxidation step,           Process optimization is ongoing, mainly focused on the
+had to be modiﬁed to ensure complete removal of the oxide.        pretreatment, in order to further improve ﬁll factor and
+    The cell IV values are shown in Figure 7. The result with     overall cell efﬁciency. DR Utilight has upgraded its
+SCC paste, with 80.2% ﬁll factor and 22.5% efﬁciency, aligns      laboratory equipment, and the upcoming experiment will
+with expectation for these precursors, i.e., is comparable with   utilize M10 precursors.
+6                                      A. Lachowicz et al.: EPJ Photovoltaics 15, 11 (2024)
+
+
+
+
+Fig. 7. IV measurement of M2 cells with silver-coated-copper paste (SCC-PTP), copper paste (Cu-PTP) or with copper
+electrodeposited on copper paste (PLATED).
+
+
+
+6 Summary                                                           being new in this ﬁeld or even by start-ups [14–16]. Also,
+                                                                    the interest in plating on Topcon cells is high [17]. Given
+The process has several advantages: ﬁrstly, it comprises only       the considerable activity in the industry, it appears that
+three steps, of which printing is already part of the               plating, after more than three decades of development
+production. Even a pure copper paste can be used for                and production trials, may ﬁnally be on the path toward
+seed-grid formation because it only needs to conduct a small        broad implementation in solar cell manufacturing. The
+current for electrodeposition. Once some copper is electro-         trend seems to be progressing, even without a highly urgent
+deposited, the transport occurs through this highly conduc-         need to completely eliminate silver.
+tive layer. The presence of a dielectric layer enables the use of
+thin ITO, leading to a reduction in indium consumption;
+moreover, it is beneﬁcial for module stability [13]. There is no    Acknowledgments
+material waste: all deposited materials are integral parts of       We thank the company Namics Corp. for providing us copper paste and
+the ﬁnal cell. Consequently, there is no need for additional        the companies Atotech, Dupont and Sytron for plating chemistry. We also
+steps to remove or etch material.                                   thank Lucie Navratilova from EPFL CiME laboratory for ion beam cross
+    Very good module stability in thermocycling has been            sections, SEM pictures and EDX analysis.
+conﬁrmed for both Smartwire and shingle interconnection.
+DH heat stability is to improve. Edge sealing is planned for
+the next modules to enhance the resistance to damp-heat.            Funding
+Laser pattern transfer enables printing of narrow and high
+aspect ratio all-copper lines. Higher efﬁciency is still to         This work has been partially carried out within the European projects
+demonstrate on larger industrial precursors and module              HighLite (GA 857793) and Resilex (GA 101058583).
+stability to reevaluate with new pastes and materials.
+Overall, the process seems to be industrially feasible, with
+                                                                    Conﬂicts of interest
+electrodeposition being the only unconventional step in
+solar cell manufacturing.                                           The authors have nothing to disclose.
+    Remarkably, several HJT manufacturers have already
+established pilot production with copper plating. New
+                                                                    Data availability statement
+plating lines have been developed for these companies and
+their speciﬁc processes, partially by equipment suppliers           This article has no associated data generated and/or analyzed.
+                                              A. Lachowicz et al.: EPJ Photovoltaics 15, 11 (2024)                                                         7
+
+Author contribution statement                                                      7. J. Ye (Risen), Scaling up cost-optimized HJT production, presented at
+                                                                                      TaiyangNews Virtual Conference, High Efﬁciency Solar Technologies
+Agata Lachowicz: coordination, writing, plating process; Nicolas Badel:               Conference, December 14th, 2023. https://www.youtube.com/
+screen printing, module manufacturing; Alexis Barrou: module                          watch?v=t3WFK-DcD30&list=PLyiE7DzJFGZbn
+manufacturing, aging tests, data evaluation; Vincent Barth and Samuel                 NOEsdMnVNBxjbPaxL12B&index=4
+Harrison: contribution shingles and shingle modules aging tests, Marco             8. A. Cruz, D. Erfurt, Ph. Wagner et al., Optoelectrical analysis of TCO
+                                                                                      +silicon oxide double layers at the front and rear side of silicon
+Galliazzo and Nicola Frasson: contribution shingle separation and                     heterojunction solar cells, Solar Energy Mater. Sol. Cells 236, 111493
+stringing; Natali Cohen and Eyal Cohen: contribution pattern transfer                 (2022)
+printing; Jun Zhao, Betrand Paviet-Salomon and Christophe Ballif:                  9. A. Morales-Vilches, A. Cruz, S. Pingel et al., ITO-free silicon
+support and review.                                                                   heterojunction solar cells with ZnO:Al/SiO2 front electrodes reach-
+                                                                                      ing a conversion efﬁciency of 23%, IEEE J. Photovoltaics 9, 34 (2018)
+                                                                                  10. A. Lachowicz, N. Badel, N. Pernès et al., Self-aligned copper
+                                                                                      electrodeposition process for heterojunction solar cells, in: Proceed-
+                                                                                      ings of the 8th World Conference on Photovoltaic Energy Conver-
+References                                                                            sion, 2022
+                                                                                  11. T. Hong (Huasun), How HJT performs in utility scale applications,
+  1. P.J. Verlinden, Future challenges for photovoltaic manufacturing at              presented at TaiyangNews Virtual Conference, September 1st, 2023.
+     the terawatt level, J. Renew. Sustain. Energy 12, 53505 (2020)                   URL: Tracy Hong, Huasun: How HJT Performs in Utility-Scale
+  2. W.L. Liu, W.J. Chen, T.K. Tsai et al., Effect of tin-doped indium                Applications (youtube.com)
+     oxide ﬁlm thickness on the diffusion barrier between silicon and             12. S. Harrison, C. Carriere, V. Barth et al., 400 W in Shingle SHJ
+     copper, Thin Solid Films 515, 2387 (2006)                                        conﬁguration: promising optimization path for high power modules,
+  3. J. Yu, J. Bian, L. Jiang et al., Tungsten-doped indium oxide thin ﬁlm            in: Proceedings of the 48th IEEE PVSC, 2021. https://doi.org/
+     as an effective high-temperature copper diffusion barrier, ECS Solid             10.1109/PVSC43889.2021.9518854
+     State Lett. 3, N15 (2014)                                                    13. W. Li, L. Zhang, X. Yang et al., Damp-heat-stable, high efﬁciency,
+  4. T. Dullweber, A. Bettinelli, A. Lachowicz et al., Metallization of speciﬁc       industrial-size silicon heterojunction solar cells, Joule 4, 913 (2020)
+     solar cells, in T. Dullweber L. Tous (Eds.), Silicon Solar Cell              14. Suzhou Sunwell New Energy Ltd, http://en.sunwellpower.com/
+     Metallization and Module Technology (IET 2021). https://digital-                 About12.html
+     library.theiet.org/content/books/po/pbpo174e                                 15. P. Wolf, High throughput and low CapEx production equipment
+  5. O. Schultz-Wittmann, A. Turner, B. Eggleston et al., High volume                 solution from Maxwell, presented at TaiyangNews Virtual Conference,
+     manufacturing of high efﬁciency crystalline solar cells with shielded            High Efﬁciency Solar Technologies Conference, December 14th, 2023.
+     metal contacts, in Proceedings of the 32nd EU PVSEC, 2016                        https://www.youtube.com/watch?v=Eujw8t0-7Vo&list=
+     https://doi.org/10.4229/EUPVSEC20162016-2CO.4.5                                  PLyiE7DzJFGZbnNOEsdMnVNBxjbPaxL12B&index=6
+  6. W. Ma, A. Jackson, C. Wang et al., 24% Efﬁciency hybrid cell                 16. C. Yu, K. Gao, C.-W. Peng et al., Industrial-scale deposition of
+     technology integrating a low-cost, precision-pattern Cu metalliza-               nanocrystalline silicon oxide for 26.4%-efﬁcient silicon heterojunc-
+     tion used for advanced PCB, in: Proceedings of the 7th World                     tion solar cells with copper electrodes, Nat. Energy 8, 1375 (2023)
+     Conference on Photovoltaic Energy Conversion (IEEE, 2018).                   17. Numerous personal communications with cell manufacturers,
+     https://doi.org/10.1109/PVSC.2018.8548258                                        equipment and electrolyte suppliers.
+
+
+
+ Cite this article as: Agata Lachowicz, Nicolas Badel, Alexis Barrou, Vincent Barth, Samuel Harrison, Nicola Frasson, Marco
+ Galiazzo, Natali Cohen, Eyal Cohen, Jun Zhao, Bertrand Paviet-Salomon, Christophe Ballif, Aging tests of mini-modules with
+ copper-plated heterojunction solar cells and pattern-transfer-printing of copper paste, EPJ Photovoltaics 15, 11 (2024)
+

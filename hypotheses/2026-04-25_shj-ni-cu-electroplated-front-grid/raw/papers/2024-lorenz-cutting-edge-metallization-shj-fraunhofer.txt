@@ -1,0 +1,469 @@
+Received: 9 October 2023       Revised: 26 March 2024       Accepted: 2 April 2024
+DOI: 10.1002/pip.3808
+
+
+RESEARCH ARTICLE
+
+
+
+
+Towards a cutting-edge metallization process for silicon
+heterojunction solar cells with very low silver laydown
+
+Andreas Lorenz 1                     | Timo Wenzel 1,2 |                     Sebastian Pingel 1                | Milad Salimi Sabet 1 |
+Marc Retzlaff 1 |                 Florian Clement 1
+
+1
+  Fraunhofer Institute for Solar Energy Systems
+(ISE), Freiburg, Germany                             Abstract
+2
+ Yageo Nexensos GmbH, Kleinostheim,                  Within this work, we investigate the potential to optimize the screen-printed front
+Germany
+                                                     side metallization of silicon heterojunction (SHJ) solar cells. Three iterative experi-
+Correspondence                                       ments are conducted to evaluate the impact of the utilized fine mesh screen configu-
+Andreas Lorenz, Fraunhofer Institute for Solar
+Energy Systems (ISE), Heidenhofstraße
+                                                     rations and grid layout adaption (finger pitch) for the front side metallization on silver
+2, Freiburg 79110, Germany.                          laydown and electrical performance of the solar cells. With respect to the screen con-
+Email: andreas.lorenz@ise.fraunhofer.de
+                                                     figuration, we compare the performance of a fine-mesh knotless screen to a conven-
+                                                     tionally angled screen demonstrating an additional gain of Δη = +0.1%abs due to
+                                                     reduced shading losses. Additionally, a grid layout is improved by increasing the num-
+                                                     ber of contact fingers from 120 to 156. Furthermore, the current possibility to push
+                                                     the fine-line printing process for low-temperature pastes to the limit is investigated
+                                                     by reducing the nominal finger width wn to 20, 18, and 15 μm. It is shown that even
+                                                     the smallest nominal width of wn = 15 μm can be printed with high quality, leading
+                                                     to an additional efficiency gain of Δη = +0.15%abs as well as a reduction of silver
+                                                     paste laydown by 5 mg. Finally, a batch of champion cells is fabricated by applying
+                                                     the findings of the previous experiments, which results in a maximum efficiency of
+                                                     ηmax = 23.2%. Compared to the reference group without optimization, this corre-
+                                                     sponds to a gain of Δη = +0.17%abs, which comes along with an additional decrease
+                                                     of the silver paste laydown by approximately 2 mg. This emphasizes the signifi-
+                                                     cance of consistent optimization of the screen-printing process in terms of cell per-
+                                                     formance and resource utilization for SHJ solar cells.
+
+                                                     KEYWORDS
+                                                     fine-line metallization, screen printing, silicon heterojunction solar cells, silver laydown
+
+
+
+
+1    |    I N T RO DU CT I O N                                                       fabricated high-efficiency cell concepts, silicon heterojunction (SHJ)
+                                                                                     solar cells1,3 represent a particularly promising approach with recently
+High-efficiency solar cell concepts with passivating contacts have     1
+                                                                                     demonstrated record conversion efficiencies up to η = 26.81%.4
+gained a considerable share in the global industrial PV production and               However, several challenges must be addressed to ensure the long-
+will increasingly displace the currently dominating PERC (passivating                term cost competitiveness of industrially fabricated SHJ solar cells
+emitter and rear contact) cell concept.2 Among various industrially                  and modules. One of the primary challenges for the coming years is
+
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited.
+© 2024 The Authors. Progress in Photovoltaics: Research and Applications published by John Wiley & Sons Ltd.
+
+Prog Photovolt Res Appl. 2024;32:655–663.                                                                              wileyonlinelibrary.com/journal/pip     655
+                                                                                                                                                            1099159x, 2024, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.3808 by Fraunhofer IRB, Wiley Online Library on [09/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+656                                                                                                                                        LORENZ ET AL.
+
+
+
+the increasing shortage of critical resources, namely, silver, indium,              However, achieving this goal requires a reliable and industrially
+and bismuth.5 Based on the projected growth of installed PV capacity            applicable fine-line printing process on the front and rear side of SHJ
+in the coming years, the silver consumption of the PV industry could            solar cells which is even more challenging with low-temperature
+increase to up to 90% of the global annual production volume until              (LT) pastes. Reliably printing fine-line contacts below 20 μm or less
+2030.5 The need to reduce silver laydown is particularly urgent for SHJ         requires high-performance materials (screen and paste). Furthermore,
+solar cells as silver paste is usually applied on the front and rear sides of   the printing conditions (printing speed and pressure) can have a signif-
+typical cell architectures. Various promising approaches for a substantial      icant impact on the metallization result.22,23 Furthermore, the grid lay-
+reduction of the silver consumption per Wp are currently investigated,          out must be optimally designed to obtain an optimal balance
+namely, fine line screen printing with very low silver laydown,6,7              regarding shading losses (finger width and number of contacts) and
+replacement of conventional silver paste by silver-coated copper paste8         series resistance losses (grid resistance and number of contacts).
+                     9
+or reactive silver ink or new metallization approaches with very low sil-       Within this work, we evaluate several important parameters for a
+ver laydown like FlexTrail,10 rotary screen printing,11 and parallel dis-       cutting-edge fine-line printing process including screen configuration
+pensing.12 Promising results have also been demonstrated using                  (standard angled screen vs. knotless screen6,24), grid layout design
+electroplating of copper (Cu) electrodes on SHJ solar cells.13                  (number of contact fingers), and nominal finger width wn (target finger
+      Focusing on the reduction of silver laydown using fine line screen        width in the grid layout).
+printing, it is crucial to minimize the finger width of the printed con-
+tact grid while maintaining a sufficiently low grid resistance RGrid for
+the intended interconnection concept.14 The maximum tolerable                   2    |   RESULTS AND DISCUSSION
+mean contact finger resistance Rl for a given series resistance contri-
+bution Δrs of the front and rear side grid strongly depends on the              2.1 | Comparison of knotless versus standard
+selected interconnection approach and the resulting optimal grid                screens
+layout. Using a cell interconnection concept with multiple wires
+(multi-wire interconnection15–17) as shown in Figure 1 instead of the           The usage of so-called “knotless” screens with a mesh angle of 0 has
+traditional interconnection via soldered ribbons on printed busbars             proven to be beneficial for the reliable printing of narrow and uniform
+substantially reduces the finger segment length in between the wires            contact fingers in various recent studies.6,24,25 However, it is impor-
+(thus substantially increasing the tolerance regarding rs-losses due to         tant to note that these studies conducted the experiments using high-
+                                   15,18
+the lateral finger resistance RL       ) and in parallel increases the jsc by   temperature sintering silver paste on PERC solar cells. To assess the
+reduced shading losses on module level.17,19,20                                 impact of the screen mesh angle on the front side metallization of SHJ
+      Thus, multi-wire concepts like SmartWire Interconnection Tech-            solar cells, the first experiment focuses on the comparison of an
+nology (SWCT)16,21 can increase the efficiency on module level on the           advanced knotless fine-mesh screen (520  11  0 ) to a conven-
+one hand and in parallel substantially decrease the silver usage on cell        tional angled fine-mesh screen (520  11  22.5 ). The front side
+                          17
+level on the other hand.       Using fine-mesh screens to print very fine       metallization is screen printed using both screen types with the same
+contacts,6,7 even the predicted goal to reduce the silver consumption           printing conditions as described in Section 4 and a printing/flooding
+below 5 mg/Wp5 seems to be within reach.7 Yet, while such intercon-             speed of vprint/vflood = 300 mm/s. Both types of screens obtained
+nection concepts can help to drastically reduce the silver usage on the         excellent printing results with respect to the front side metallization
+one hand, the necessity to use low temperature alloys that usually              of the cells. Table 1 shows the results of the finger geometry analysis
+include rare materials like indium or bismuth does pose other chal-             based on confocal laser scanning microscopy (CLSM) measurement
+lenges with respect to sustainability.                                          and image analysis of selected contact fingers.
+
+
+
+
+F I G U R E 1 Schematic illustration of different interconnection technologies. Left side: metallized busbarless solar cell with screen printed front
+side contacts. Middle: busbarless solar cell interconnected via multiple wires. Right: interconnection via soldered ribbons on screen printed
+busbars. The considerably smaller finger segment length between the wires for a multi-wire interconnection is clearly visible.
+                                                                                                                                                             1099159x, 2024, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.3808 by Fraunhofer IRB, Wiley Online Library on [09/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+LORENZ ET AL.                                                                                                                                          657
+
+
+
+TABLE 1         Mean values and 95% confidence interval of finger geometry parameters of all groups based on CLSM measurement and image
+analysis
+
+                                    Nom. finger width (front side)   Avg. shading finger width       Avg. finger height hf   Avg. cross-section area
+  Group       Screen type           wn (μm)                          wf (μm)                         (μm)                    Af (μm)
+  1           520  11  0         20                               27 ± 2.2                        7 ± 0.6                  94 ± 9.0
+                                
+  2           520  11  22.5       20                               28 ± 2.5                        7 ± 0.8                 100 ± 14.3
+
+
+
+
+F I G U R E 2 I-V results of Experiment 1 using a knotless versus conventionally angled screen for the front side metallization. The knotless
+screen proved to be particularly beneficial to increase the jsc by approximately +0.5 mA/cm2 (reduced finger shading width wf), while the average
+fill factor FF is on the same level (with a greater dispersion of the measurement values for Group 2). These effects result in a total efficiency
+increase of Δη = 0.1%abs.
+
+
+
+
+      The results show that a narrower mean finger width                        Group 1 showing a smaller dispersion of the measurement values due
+(Δwf ≈ 1.3 μm) can be obtained using the knotless instead of a                  to the better uniformity of the printed contact fingers.
+standard-angled screen. The average finger height hf of both groups                   In summary, these effects result in a total efficiency increase of
+is comparable resulting in a slightly lower average finger cross-               Δη = 0.1%abs, which proves the advantage of knotless fine-mesh
+section area Af for Group 1. The front side grids printed with the              screens with respect to an increased performance of the front side
+knotless screen also show a better uniformity, indicated by the lower           metallization and thus an overall efficiency increase.
+variation of wf, hf, and Af. This is particularly important when printing
+very narrow fingers as pronounced variations of the finger unifor-
+mity (i.e., constrictions and interruptions) often negatively affect the        2.2      |   Variation of finger pitch
+lateral resistance and thus the FF of the solar cells. Knotless screens
+are thus particularly beneficial when printing grid layouts with a very         Printing narrower contact fingers requires a parallel optimization of
+narrow nominal finger width wn. Figure 2 illustrates the results of             the metallization grid layout to find an optimal trade-off between
+the I-V measurement of the SHJ solar cells printed with both types              series resistance losses (due to a typically increased average finger
+of screens.                                                                     contact resistance of shallower/smaller contacts) and jsc gains (less
+      The I-V results indicate that the knotless screen proved to be            shading due to a narrower average shading finger width wf). Thus, a
+beneficial with respect to an increased short-circuit current density jsc       variation of the finger pitch of the front side grid layout is conducted
+by +0.056 mA/cm2, which is attributed to the smaller finger shading             in the second experiment. Using the beneficial knotless screen config-
+width wf. Both groups achieve an average FF at the same level, with             uration (520  11  0 ) from the first experiment, two busbarless grid
+                                                                                                                                                            1099159x, 2024, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.3808 by Fraunhofer IRB, Wiley Online Library on [09/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+658                                                                                                                                        LORENZ ET AL.
+
+
+
+
+F I G U R E 3 I-V results of Experiment 2 with varying finger pitch of the front side grid layout. Decreasing the finger pitch from 1.3 mm
+(120 fingers) to 1.0 mm (156 fingers) results in an increasing FF (ΔFF = +0.4%abs) on the one hand and a decreasing jsc (Δjsc ≈ 0.25 mA/cm2) on
+the other hand. In total, a closely similar conversion efficiency for both groups is visible.
+
+
+
+layout variants with a finger pitch of 1.3 mm (120 fingers) and 1.0 mm        expense of an increased Ag laydown. While very narrow contact fingers
+(156 fingers) are used for the front side metallization. By increasing        down to a width of 20 μm and less6,25 have been successfully demon-
+the amount of contact fingers in the front side grid layout, a decreas-       strated, it is far more challenging to reliably print such narrow finger
+ing jsc due to higher shading losses (increased total area of metalliza-      widths using low-temperature sintering silver paste. To date, typical fin-
+tion) can be expected. On the other side, the FF should increase due          ger widths using LT silver paste on industrially fabricated SHJ solar cells
+to a reduced grid resistance in between two wires used for the inter-         are in the range of 30–40 μm. A systematic evaluation of the current
+connection of the cells (more fingers for current transport available)        limit with respect to a decreasing finger width using LT silver paste is
+and the smaller finger pitch that results in reduced losses in lateral        thus highly interesting and relevant for a further improvement of SHJ
+transport (base, TCO) to the grid fingers. Figure 3 shows the I-V             solar cells and a substantial reduction of silver usage. To identify the
+results of both groups. Consistent with expectations, reducing the fin-       current limit, three advanced fine-mesh screens (520  11  0 ) with
+ger pitch from 1.3 mm (120 fingers) to 1.0 mm (156 fingers) results in        varying nominal finger width wn (20, 18, and 15 μm) are fabricated and
+an increased FF (ΔFF = +0.4%abs), while the short-circuit current den-        used for printing the front side metallization. Table 2 shows the average
+sity jsc (Δjsc ≈ 0.25 mA/cm2) decreases due to increased shading.            printed finger geometry as well as the silver paste laydown of the three
+Both effects offset each other to a large extent in this specific case,       screen variations after curing. Reducing the nominal finger width wn
+resulting in a comparable conversion efficiency for both groups. With         obviously affects the finger geometry as well as the silver paste lay-
+respect to silver consumption, reducing the finger pitch increases the        down on the front side, which is clearly visible when comparing the
+Ag paste laydown from 19 mg (1.3 mm pitch, 120 fingers) to 21 mg              results shown in Table 2 and Figure 4.
+(1.0 mm pitch, 156 fingers).                                                      Surprisingly, it is possible to print even the grid layout with a very
+                                                                              small nominal finger width of wn = 15 μm reliably and with good
+                                                                              visual quality using the given high-performance screen specification
+2.3    |    Variation of nominal finger width                                 and LT silver paste. This enables a reduction of the shading finger
+                                                                              width from wf1 = 26 μm (nom. finger width wn = 20 μm) to
+Reducing the printed finger width of the front (and rear) side metalliza-     wf3 = 23 μm (nom. finger width wn = 15 μm). The silver laydown on
+tion is beneficial with respect to an increased efficiency (reduced shad-     the front side can be consequently reduced from mAg1 = 21 mg to
+ing losses) and a substantial silver reduction. By adequately reducing        mAg3 = 16 mg.
+the finger pitch (increasing the number of contact fingers in the grid lay-       Considering the I-V results shown in Figure 5, an increase of the
+out), grid-related series resistance losses can be avoided, yet at the        short-circuit current by approximately Δjsc ≈ +0.1 mA/cm2 due to the
+                                                                                                                                                    1099159x, 2024, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.3808 by Fraunhofer IRB, Wiley Online Library on [09/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+LORENZ ET AL.                                                                                                                                 659
+
+
+
+T A B L E 2 Mean values and 95% confidence interval of finger geometry parameters of all groups based on CLSM measurement and image
+analysis and average silver paste laydown
+
+                               wn         Avg. finger width wf   Avg. finger height hf   Avg. cross-section area Af   Avg. silver paste laydown
+  Group     Screen type        (μm)       (μm)                   (μm)                    (μm)                         (mg)
+  1         520  11  0      20         27 ± 2.2               7 ± 0.6                 94 ± 9.0                     21
+                           
+  2         520  11  0       18         26 ± 2.2               6 ± 0.6                 86 ± 8.1                     20
+  3         520  11  0      15         23 ± 2.2               6 ± 0.5                 71 ± 6.8                     16
+
+
+
+
+F I G U R E 4 CLSM images and image analysis results of the finger geometry using screens with a nominal finger width of wn1 = 20, wn2 = 18,
+and wn3 = 15 μm. All three screens could be printed with excellent and reproducible quality leading to a minimum average core finger width of
+wc = (17 ± 1) μm and a shading finger width of wf = (23 ± 1) μm using the screen width a nominal finger width of wn = 15 μm.
+
+
+
+
+F I G U R E 5 I-V results of Experiment
+3 using three screen variations with
+varying nominal finger width wn (20, 18,
+and 15 μm). It is clearly visible that the
+reduction of the wn from 20 to 15 μm
+particularly leads to a jsc gain (due to the
+smaller average finger shading width and
+thus reduced shading losses), resulting in
+an average efficiency gain of Δη =
++0.14%abs.
+                                                                                                                                                                  1099159x, 2024, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.3808 by Fraunhofer IRB, Wiley Online Library on [09/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+660                                                                                                                                               LORENZ ET AL.
+
+
+
+T A B L E 3 I-V-results of the bifacial heterojunction solar cells measured with a GridTouch® unit in an industrial cell tester as well as silver
+laydown values on the front side
+
+    Group         Screen type          wn (μm)   pf (mm)    Avg/best        Jsc (mA/cm2)       Voc (mV)        FF (%)    η (%)    Avg. silver laydown (mg)
+                                   
+    1           520  11  22.5        20        1.3        Avg             38.41              736.1           81.44    23.02     18.7
+                                                 1.3        Best cell       38.42              736.6           82.15    23.25          -
+                               
+    2           520  11  0           15        1.0        Avg.            38.33              738.0           81.98    23.19     16.3
+                                                 1.0        Best cell       38.35              739.2           82.44    23.37          -
+
+
+
+smaller contact fingers and thus less shading losses is clearly visible.        +0.4%abs) due to additional current paths in between the wires (and
+The average FF also shows minor variations when comparing all three             shorter       distance    in     the    TCO)     and       a   decreasing   jsc
+groups. It is likely that these minor variations do not result from the         (Δjsc ≈ 0.25 mA/cm2) due to additional shading. In this particular
+metallization but from variations within the used precursor material            case, both effects more or less balance each other out, resulting in a
+(as indicated by pFF variations). Group 3 achieves an average effi-             closely similar conversion efficiency for both groups yet at the
+ciency gain of approximately Δη = + 0.14%abs compared to Group                  expense of an increased silver paste laydown by 2 mg. However, it
+1. Considering the additionally reduced silver paste laydown, it can be         is very likely that a further decrease of the printed finger width wf
+clearly concluded that reducing the nominal finger width can have a             combined with a reduced finger pitch (higher amount of fingers) will
+beneficial effect on both conversion efficiency and silver reduction            have a positive effect on the overall conversion efficiency.
+provided that an optimal screen configuration is used.                                The third experiment evaluates the limit of fine-line printing
+                                                                                under the given conditions by varying the nominal finger width
+                                                                                between 20, 18, and 15 μm. The results show that even the smallest
+2.4 | Fabrication of SHJ solar cells with optimized                             nominal finger, width wn = 15 μm can be printed reliably and with
+parameters                                                                      good quality leading to an increase of the short-circuit current density
+                                                                                by approximately Δjsc ≈ +0.1 mA/cm2 compared to a broader nominal
+Based on the findings of the previous experiments, high-performance             finger width of wn = 20 μm. This leads to a substantial efficiency gain
+SHJ solar cells are manufactured using the knotless screen                      of approximately Δη = 0.14%abs. At the same time, the silver laydown
+(520  11  0 ) with a finger pitch of pf = 1.0 mm and a nominal fin-          can be reduced by 5 mg on the front side, which is a highly benefi-
+ger width wn = 15 μm. The front side metallization is carried out at a          cial effect for industrial production.
+printing speed of vprint/vflood = 300 mm/s. The I-V results (measured                 Finally, SHJ solar cells are fabricated with optimized conditions
+with GridTouch®) of both groups are shown in Table 3. Optimized                 based on the previous findings. The best group obtained an average
+Group 2 achieved an average efficiency gain of Δη = +0.17%abs com-              conversion efficiency of ηmax = 23.2%, which corresponds to a gain of
+pared to non-optimized Group 1, representing a substantial increase.            Δη = +0.17%abs compared to the reference cells without the
+Furthermore, the average silver laydown of Group 2 could be                     described optimization. Furthermore, the silver paste laydown of this
+decreased by 2 mg compared to Group 1. This indicates a clear                  group could be reduced by 2 mg.
+advantage of the utilized knotless fine-mesh screen in combination                    In summary, we demonstrate several approaches to optimize the
+with an adapted grid layout.                                                    front side metallization and in parallel substantially reduce the silver
+                                                                                laydown of SHJ solar cells, leading to a reduced silver laydown and an
+                                                                                overall efficiency increase of 0.17%abs.
+3       |   S U M M A R Y A N D CO N C L U S I O N
+
+Within this work, three iterative experiments are conducted to                  4     |       EX PE RI MENT AL M ET H ODS
+assess and optimize the fine-line screen-printing process of SHJ
+solar cells. Within the first experiment, a high-performance knotless           4.1       |    Experimental setup
+screen is compared to a conventionally angled fine-mesh screen
+regarding the metallization result. The knotless screen proved to be            Within this work, three experiments have been conducted to evaluate
+beneficial with respect to an increased short-circuit current density           and optimize the fine-line screen-printing process for SHJ solar cells.
+jsc by approximately +0.5 mA/cm due to a reduced finger shading
+                                       2
+                                                                                An actual low-temperature silver paste from Namics Corporation and a
+width wf. However, the fill factor FF is also slightly lower, leading to        fine-mesh knotless screen (520  11  0 ) with a nominal finger
+an overall efficiency gain of Δη = +0.14%abs for the knotless                   width of wn = 20 μm on the front side and wn = 40 μm on the rear
+screen.                                                                         side is used for the metallization process. All cells are metallized on an
+        Within the second experiment, the finger pitch pf is decreased by       ASYS screen-printing line at Fraunhofer ISE PVTEC. Subsequently,
+using 156 instead of 120 finger in the front side grid layout. As               the cells are dried and cured at a curing time of tcure = 1 min and a
+expected, the reduced finger pitch leads to an increasing FF (ΔFF =             curing temperature of Tcure = 220 C.
+                                                                                                                                                             1099159x, 2024, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.3808 by Fraunhofer IRB, Wiley Online Library on [09/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+LORENZ ET AL.                                                                                                                                         661
+
+
+
+
+FIGURE 6        Experimental setup and process steps for Experiments 1–3
+
+
+
+T A B L E 4 Overview of the various
+                                                   Exp. No.       Variation                                   Value                     Cells per group
+experiments conducted within this work
+                                                                                                                          
+                                                   1              Screen: mesh angle                          22.5 and 0                10
+                                                   2              Grid layout: No. of contact fingers nf      120 to 156 fingers        10
+                                                   3              Grid layout: Nom. finger width wf           20-18-15 μm               10
+
+
+
+
+      Figure 6 illustrates the experimental plan for Experiments 1–3.          thickness of tEOM = 13 μm. To compare the impact of the mesh angle on
+Within Experiment 1, the screen specification (mesh angle) to apply the        the front side metallization and the cell performance, two screen variants
+fine-line front side metallization is varied by comparing the performance      have been compared: on the one hand, a fine-mesh screen with a stan-
+of a fine-mesh screen with a mesh count of 520 wires/in., a wire thick-        dard mesh angle of φ1 = 22.5 and, on the other hand, a so-called “knot-
+ness    of   dwire = 11 μm    and    a   mesh    angle    of   φ = 22.5       less screen” with a mesh angle of φ2 = 0 . Due to the prevention of wire
+(520  11  22.5 ) to a fine-mesh knotless screen (520  11  0 ).           intersections (knots) in the finger channels, this type of screen typically
+The same type of paste and comparable printing parameters are used             enables a substantially better uniformity of the contact fingers (consid-
+for the print run.                                                             erably less “mesh marks”24) and thus a lower mean lateral finger resis-
+      Experiment 2 focuses on the impact of the busbarless grid layout         tance RLINE compared to standard screens with a mesh angle of
+by increasing the number of contact fingers from 120 to 156 fingers            φ1 = 22.5 .6,24,26 All screens are printed with the same printing condi-
+or, respectively, decreasing the finger pitch from pf1 = 1.3 mm to             tions. An overview of the utilized screens is shown in Table 5.
+pf2 = 1.0 mm in order to optimize the amount of current paths in
+between to wires/busbars. Within Experiment 3, the nominal finger
+width wn is varied in three stages (20, 18, and 15 μm) to identify the         4.4     |    Grid layout
+minimal printable finger width wf with the applied paste, screen, and
+printing parameters. An overview of the experimental groups is pre-            Various grid layout designs are used for Experiments 1 to 4. The indi-
+sented in Table 4.                                                             vidual grid layouts and screen specifications for the different test runs
+                                                                               are shown in Table 5.
+
+
+4.2     |    Materials
+                                                                               4.5     |    Screen-printing process
+Industrially prefabricated SHJ cells (157.35 mm  157.35 mm) with
+transparent conductive oxide (TCO) on both sides but without metalli-          The screen-printing process is carried out on a ASYS screen-printing
+zation have been used for the experiment. The used material can                line at Fraunhofer ISE PVTEC. To compare the performance of the dif-
+obtain a maximum efficiency potential in the range of 23–24%.                  ferent screen variants, the printing process for Experiments 2 and 3 is
+                                                                               performed with identical printing parameters, namely, a printing speed
+                                                                               of vprint = 300 mm/s and a squeegee pressure of pprint = 75 N.
+4.3     |    Variation of fine-mesh screens
+
+The front side metallization of the SHJ solar cells is realized using fine     4.6     |    Drying and curing parameters
+mesh screens with a mesh count of mc = 520 wires/in. and a nominal
+wire thickness of dwire = 11 μm. All screens are equipped with a high-         All cells are dried and cured in an inline belt drying furnace at a set
+performance emulsion with a nominal emulsion over mesh (EOM)                   temperature of Tc = 220 for tc = 1 min.
+                                                                                                                                                                  1099159x, 2024, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.3808 by Fraunhofer IRB, Wiley Online Library on [09/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+662                                                                                                                                              LORENZ ET AL.
+
+
+
+TABLE 5         Overview of the screen and grid layout parameters used for Experiments 1–3
+
+                                             Wire
+  Exp.       Front/ rear   Mesh count        diameter       Mesh             Nom. Finger width       Number of             Finger pitch     Number of
+  No.        side          (1/in.)           (μm)           angle φ ( )     wn (μm)                 fingers nf ()        (mm)             busbars ()
+  1          Front         520               11             22.5             20                      120                   1.3              -
+             Front         520               11              0               20                      120                   1.3              -
+             Rear          520               11              0               24                      196                   0.8              -
+  2          Front         520               11              0               20                      120                   1.3              -
+             Front         520               11              0               20                      156                   1.0
+             Rear          520               11              0               24                      196                   0.8              -
+  3          Front         520               11              0               20                      156                   1.0              -
+             Front         520               11              0               18                      156                   1.0              -
+             Front         520               11              0               15                      156                   1.0              -
+             Rear          520               11              0               24                      196                   0.8              -
+
+
+
+
+4.7 | I-V-parameters and grid resistance                                          AC KNOW LEDG EME NT S
+measurement                                                                       We would like to express our sincere gratitude to our partners, partic-
+                                                                                  ularly Namics Corporation, ASADA MESH CO., LTD., and Murakami
+The metallized and cured cells are measured using an industrial cell              Co., Ltd., for their invaluable support and fruitful discussions through-
+tester with GridTouch®-unit to evaluate the I-V-results. The Grid-                out this work. We truly appreciate your expertise and dedication to
+         ®
+Touch -unit is equipped with 30 wires for current and 5 wires for                 our collaboration. Open Access funding enabled and organized by
+voltage measurement. The lateral resistance RGrid and, respectively,              Projekt DEAL.
+the average lateral finger resistance RLINE of the grid cannot be mea-
+sured accurately with GridTouch®. Thus, a separate dual printing step             DATA AVAILABILITY STAT EMEN T
+to apply five busbars (wb = 800 μm) on the front and rear side using              The data that support the findings of this study are available on
+low temperature paste is applied. Subsequently, the SHJ cells with                request from the corresponding author. The data are not publicly
+imprinted busbars are measured again on the cell tester using stan-               available due to privacy or ethical restrictions.
+dard measuring bars for H-pattern grids to precisely determine the lat-
+eral grid resistance RGrid on the front and rear side. The mean lateral           OR CID
+finger resistance RLINE per contact finger can be calculated by                   Andreas Lorenz     https://orcid.org/0000-0002-4335-8307
+Equation (1) using measured busbar to busbar resistance RBB-BB, the
+number of contact fingers nf, and the finger segment length lf between
+two busbars24:                                                                    RE FE RE NCE S
+                                                                                   1. Hermle M, Feldmann F, Bivour M, Goldschmidt JC, Glunz SW. Passiv-
+                              nf  RBBBB                                             ating contacts and tandem concepts: approaches for the highest
+                     RLINEØ ¼             for rBB < < rf:              ð1Þ
+                                    lf                                                silicon-based solar cell efficiencies. Appl. Phys. Rev. 2020;7(2):21305.
+                                                                                      doi:10.1063/1.5139202
+                                                                                   2. ITRPV, International Technology Roadmap for Photovoltaics (ITRPV):
+                                                                                      Results 2021, thirteenth edition, 2022.
+                                                                                   3. de Wolf S, Descoeudres A, Holman ZC, Ballif C. High-efficiency sili-
+                                                                                      con heterojunction solar cells. A review. Green. 2012;2(1):7-24. doi:
+                                                                                      10.1515/green-2011-0018
+4.8      |   Finger geometry measurement                                           4. Lin H, Yang M, Ru X, et al. Silicon heterojunction solar cells with up to
+                                                                                      26.81% efficiency achieved by electrically optimized nanocrystalline-
+An in-depth analysis of the finger geometry after printing and curing                 silicon hole contact layers. Nat. Energy. 2023;8(8):789-799. doi:10.
+                                                                                      1038/s41560-023-01255-2
+is conducted. Twnety-five measurements per group are carried out on
+                                                                                   5. Zhang Y, Kim M, Wang L, Verlinden P, Hallam B. Design consider-
+the front side grid using an Olympus LEXT confocal laser-scanning
+                                                                                      ations for multi-terawatt scale manufacturing of existing and future
+microscope (CLSM) with 500X magnification. All images are statisti-                   photovoltaic technologies: challenges and opportunities related to sil-
+cally analyzed using the Fraunhofer ISE image analysis software                       ver, indium and bismuth consumption. Energ. Environ. Sci. 2021;
+Dash.6 This software allows a statistical determination of all relevant               14(11):5587-5610. doi:10.1039/D1EE01814K
+                                                                                   6. Wenzel T, Lorenz A, Lohmüller E, et al. Progress with screen printed
+geometry parameters including average values for the core finger
+                                                                                      metallization of silicon solar cells - towards 20 μm line width and
+width wc, the shading-relevant finger width wf, finger height hf, and                 20 mg silver laydown for PERC front side contacts. Sol. Energy Mater.
+finger cross-section area Af.                                                         2022;244:111804. doi:10.1016/j.solmat.2022.111804
+                                                                                                                                                                 1099159x, 2024, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.3808 by Fraunhofer IRB, Wiley Online Library on [09/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+LORENZ ET AL.                                                                                                                                             663
+
+
+
+ 7. Pingel S, Wenzel T, Göttlicher N, et al. Progress on the reduction of        19. Braun S, Micard G, Hahn G. Solar cell improvement by using a multi
+    silver consumption in metallization of SHJ solar cells. Sol. Energy              busbar design as front electrode. Energy Procedia. 2012;27:227-233.
+    Mater. 2024;265:112620. doi:10.1016/j.solmat.2023.112620                         doi:10.1016/j.egypro.2012.07.056
+ 8. Nam J-B, Jang YR, Hwang YT, Kim HH, Jung IH, Kim HS. Intense                 20. Braun S, Hahn G, Nissler R, Pönisch C, Habermann D. Multi-busbar
+    pulsed light sintering of screen-printed paste electrode on silicon solar        solar cells and modules: high efficiencies and low silver consumption.
+    cell for high throughput and cost-effective low temperature metalliza-           Energy Procedia. 2013;38:334-339. doi:10.1016/j.egypro.2013.
+    tion. Int. J. Precis. Eng. Manuf. Green Technol. 2021;9(2):523-535. doi:         07.286
+    10.1007/s40684-021-00346-3                                                   21. Hermans JP, Papet P, Pacheco K, et al. “Advanced metallization con-
+ 9. DiGregorio SJ, Martinez-Szewczyk M, Raikar S, Bertoni MI,                        cepts by inkjet printing,” In: Proc. of the 29th Photovoltaic Solar
+    Hildreth OJ. Investigation of reactive silver ink formula for reduced            Energy Conference (EUPVSEC) Amsterdam, Netherlands, pp. 518–
+    silver consumption in silicon heterojunction metallization. ACS Appl.            522, 2014.
+    Energy Mater. 2023;6(5):2747-2757. doi:10.1021/acsaem.2c03503                22. Tepner S, Wengenmeyr N, Linse M, Lorenz A, Pospischil M,
+10. Schube J, Jahn M, Pingel S, et al. FlexTrail printing as direct metalliza-       Clement F. The link between ag-paste rheology and screen-printed
+    tion with low silver consumption for silicon heterojunction solar cells:         solar cell metallization. Adv. Mater. Technol. 2020;5(10):2000654. doi:
+    evaluation of solar cell and module performance. Energ. Technol.                 10.1002/admt.202000654
+    2022;10(12):ente.202200702. doi:10.1002/ente.202270124                       23. Erath D, Pingel S, Khotimah R, et al. Fast screen printing and curing
+11. Lorenz A, Klawitter M, Linse M, et al. Rotary screen printed metalliza-          process for silicon heterojunction solar cells. In: AIP Conference Pro-
+    tion of heterojunction solar cells: toward high-throughput production            ceedings. Vol.2367, No. 1. AIP Publishing LLC; 2021:20006.
+    with very low silver laydown. Energ. Technol. 2022;10(8):2200377.            24. Lorenz A, Linse M, Frintrup H, et al. “Screen printed thick film metalli-
+    doi:10.1002/ente.202200377                                                       zation of silicon solar cells—recent developments and future
+12. Gensowski K, Jimenez A, Tepner S, et al. Dispensing of low-                      perspectives,” In: Proc. of the 35th Photovoltaic Solar Energy Confer-
+    temperature silver pastes. In: AIP Conference Proceedings. Vol.2367,             ence (EUPVSEC) Brussels, Belgium, pp. 819–824, 2018.
+    No. 1. AIP Publishing LLC; 2021:20007.                                       25. Tepner S, Ney L, Linse M, Lorenz A, Pospischil M, Clement F. Study-
+13. Yu J, Bai Y, Li J, et al. Process challenges of high-performance silicon         ing knotless screen patterns for fine-line screen printing of Si-solar
+    heterojunction solar cells with copper electrodes. Sol. Energy Mater.            cells. IEEE J. Photovolt. 2020;10(2):319-325. doi:10.1109/JPHOTOV.
+    2023;250:112057. doi:10.1016/j.solmat.2022.112057                                2019.2959939
+14. Tepner S, Lorenz A. Printing technologies for silicon solar cell metalli-    26. Tepner S, Ney L, Linse M, Lorenz A, Pospischil M, Clement F. Knotless
+    zation: a comprehensive review. Progr. Photovolt. Res. Appl. 2023;               screens for ultra-fine line screen printing of Si-solar cells—towards
+    31(6):557-590. doi:10.1002/pip.3674                                              front-side silver electrode widths below 20 μm.
+15. Schneider A, Rubin L, Rubin G. “Solar cell efficiency improvement by
+    new metallization techniques—the Day4 electrode concept,” In: 2006
+    IEEE 4th WCPEC, Hawaii, pp. 1095–1098, 2006.
+16. Söderström T, Papet P, Ufheil J. “Smart wire connection technology,”             How to cite this article: Lorenz A, Wenzel T, Pingel S,
+    In: Proc. of the 28th Photovoltaic Solar Energy Conference
+                                                                                     Sabet MS, Retzlaff M, Clement F. Towards a cutting-edge
+    (EUPVSEC) Paris, France, pp. 495–499, 2013.
+17. Braun S, Nissler R, Ebert C, Habermann D, Hahn G. High efficiency                metallization process for silicon heterojunction solar cells with
+    multi-busbar solar cells and modules. IEEE J. Photovolt. 2014;4(1):              very low silver laydown. Prog Photovolt Res Appl. 2024;32(10):
+    148-153. doi:10.1109/JPHOTOV.2013.2286525                                        655‐663. doi:10.1002/pip.3808
+18. Walter J, Tranitz M, Volk M, Ebert C, Eitner U. Multi-wire intercon-
+    nection of busbar-free solar cells. Energy Procedia. 2014;55:380-388.
+    doi:10.1016/j.egypro.2014.08.109
+

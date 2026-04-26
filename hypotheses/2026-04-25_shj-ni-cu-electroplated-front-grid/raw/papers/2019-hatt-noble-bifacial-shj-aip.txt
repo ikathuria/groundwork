@@ -1,0 +1,240 @@
+AUTHORS' POSTPRINT Originally published in AIP Conference Proceedings 2147, 040005
+(2019); https://doi.org/10.1063/1.5123832
+
+
+
+
+  Establishing the “Native Oxide Barrier Layer for Selective
+       Electroplated” Metallization for Bifacial Silicon
+                  Heterojunction Solar Cells
+         Thibaud Hatt1, a), Jonas Bartsch1, Sven Kluska1 and Markus Glatthaar1
+        1
+            Fraunhofer Institute for Solar Energy Systems ISE, Heidenhofstraße 2, 79110 Freiburg, Germany.
+                                a)
+                                     Corresponding author: thibaud.hatt@ise.fraunhofer.de
+
+   Abstract. The metallization of silicon heterojunction (SHJ) solar cells by selective Cu electroplating onto a structured
+   PVD Cu-Al seed and mask layer stack is established by using the native oxide of the Al as insulating barrier. The
+   NOBLE metallization (native oxide barrier layer for selective electroplating) allows reaching a first promising efficiency
+   of 20.0% on full area SHJ solar cell with low contact resistivity on ITO. The approach features several advantages: low
+   temperature processing, high metal conductivity of plated copper, no organic making and low material costs (almost Ag-
+   free).
+
+
+                                                  INTRODUCTION
+    The bifaciality of the crystalline silicon heterojunction (SHJ) architecture is quite attractive to increase the
+energy yield and lower the energy costs. However, the metallization costs for a standard screen-printed silver metal-
+grid on both sides of the SHJ solar cells become then more significant. Since the amorphous silicon (a-Si) or
+passivating layers are temperature sensitive, the standard silver metallization paste has to be adjusted for a low-
+temperature process [1,2]. These low-temperature (200°C) metal pastes are less conductive and a lot of efforts are
+actually dedicated to these metallization kind [3].
+    An attractive alternative metallization is the electroplating of highly conductive copper contacts already used in
+the printed electronics field [4]. Electroplating proved its potential with the outstanding efficiency of 25.1%,
+achieved on a large area bifacial SHJ solar cell [5]. The carrier selective junction (CSJ) solar cells are generally
+covered by transparent conductive oxide (TCO) as antireflective coating ARC and to promote the lateral
+conductivity on the passivating layers.
+    Plated metallization on TCO for solar cells faces several challenges [6–11]. While plated copper features low
+adhesion on TCOs, both-sides of the cell area are susceptible to plating. A metal seed layer deposited by physical
+vacuum deposition can promote the adhesion and serve as current distribution layer for plating. It can be deposited
+directly after vacuum deposition of the TCO on both sides of the solar cell, to allow bifacial plating. A standard
+metallization process – adapted from the microelectronics field, consists in plating the grid-positions after mask
+patterning of almost the full cell area with an organic resist. As illustrated in FIGURE 1 (a), the current distribution
+is not homogeneous without metal seed-layer leading to the half metallization of bifacial SHJ solar cells. On the
+contrary, the thin metal-seed layer deposited onto the TCO allows fast simultaneous bifacial electrodeposition of
+copper – FIGURE 1 (b). CSEM also demonstrated that high efficiencies above 24% are reached on bifacial full area
+SHJ solar cells with this metallization process [12].
+    However, the use of organic resist (consumables) covering almost 95% of the cell area – removed after plating,
+might be a hindrance for industrial implementation (resist cost, treatment of the water-wastes contaminated with
+organic products). Our established plated metallization concept aimed at reducing the process complexity and cost
+by avoiding the use of any organic masking to be even cheaper: low temperature, organic-free and almost Ag-free.
+A thin multifunctional metal stack with aluminum on top is deposited following the TCO deposition without
+
+
+                                                               1
+vacuum breaking. After structuration of the Al layer only in the grid-positions (≈ 5% of the cell area), selective Cu
+electroplating is performed on the thin metal-seed layer (below the Al) taking advantage of the self-passivation of
+the Al layer.
+
+
+
+
+ FIGURE 1. Pictures of the front side of two SHJ solar cells after full immersion in copper electrolyte for simultaneous bifacial
+plating of the contacts (fingers and busbars), (a) without metal seed-layer on the TCO and (b) with thin PVD metal seed-layer on
+                                                             the TCO.
+
+                                                       APPROACH
+    Our novel NOBLE – “native oxide barrier layer for selective electroplated” metallization process is suitable for
+simultaneous bifacial plating onto SHJ or CSJ solar cells covered by TCOs [11]. The process development was
+carried on one batch of SHJ commercial precursors, covered on both-sides by indium-tin-oxide (ITO). This work
+focused on the optimization of several steps of the NOBLE metallization – depicted in FIGURE 2.
+    A thin PVD metal stack (Cu and Al on top < 200 nm thick) is sputtered following the TCO deposition –
+FIGURE 2 (1). The multifunctional physical vapor deposited (PVD) layers allow a homogeneous distribution of the
+current for simultaneous plating on both-sides of the solar cell as described above in FIGURE 1 (b). Furthermore,
+the self-passivation of the Al surface in ambient conditions is convenient for the selective plating of highly
+conductive Cu-contacts [9]. The grid-patterning (fingers and busbars) is then performed into the thin Al layer by
+chemical etching with inkjet-printing of an aqueous low concentrated caustic soda (NaOHaq) ink in the desired grid
+positions – FIGURE 2 (2). The selective Cu electrodeposition is then achieved in the grid-positions onto the thin
+PVD Cu seed-layer – FIGURE 2 (3). Thin immersion silver capping (≈ 200 nm) is then deposited to protect the Cu-
+contacts from oxidation. The remaining PVD layers (Cu metal-seed and Al) in non-grid positions are then totally
+etched-back by chemical processing without damaging the underlying TCO – FIGURE 2 (4).
+    For early stage development only the front sides of the SHJ solar cells were metallized by the NOBLE process,
+first on small area after wafer dicing. However the PVD Cu-Al layers were deposited on both sides to allow I-V
+measurements. Besides the 1-sun current voltage (I-V) parameters of the solar cells measured under standard testing
+conditions (STC: AM1.5g, 100mW/cm²), contact angle measurements, optical and scanning electron microscopy
+(SEM) were also realized to characterize the process.
+
+
+
+
+                                                               2
+      FIGURE 2. Sketch of the NOBLE metallization flow for bifacial SHJ solar cells and microscopic pictures of a finger
+(width < 30 µm) along the process. In step (1) the TCO and PVD metal-layers are deposited by PVD. (2) Inkjet-printing of a self-
+ made low-concentrated NaOHaq ink follows to structure the Al layer in grid positions and (3) plate the Cu in the patterned areas
+  simultaneously on both-sides of the solar cell. The PVD metal layers in non-grid positions are then chemically etched-back.
+
+                                         RESULTS AND DISCUSSIONS
+    The I-V parameters and the efficiencies of the lab-scale SHJ solar cells after NOBLE metallization are reported
+and plotted respectively in FIGURE 3. The I-V characteristics of the earliest mentioned solar cell metallized
+highlight several issues in the process flow at that time. The solar cell efficiency is limited by the short-circuit
+current Jsc (33.8 mA/cm²) among other characteristics. Indeed, the fingers metallized at that time were quite wide
+(> 100 µm). The other main limiting factor is the fill-factor FF of 70.7% lowered by finger interruptions and by an
+increase of the ITO sheet resistance Rsh after etchback of the PVD seed-layers (step (4) in FIGURE 2) due to
+chemical damaging. Finally, the open-circuit voltage Voc is reduced by the small cell area [13] and by the damage of
+the passivation layers caused by a non-optimized sputtering.
+
+
+
+
+                                                                      [11]
+
+
+
+
+     FIGURE 3. History of the NOBLE process development and I-V data on small area SHJ solar cells for the early stage
+                        development and on full cell area (156 x 156 mm²) for the current status.
+
+
+
+
+                                                               3
+                                    Fine Line Structuring in the Al-Layer
+    Inkjet-printing of the low concentrated NaOHaq solution is impacted by the ink composition but also by the
+wetting properties between the water-based ink and the Al surface. To create fine lines in the Al-layer a hydrophobic
+wetting is suited, but this has to be weighed against the risk of discontinuities in the lines since the droplet volume is
+very low (2-5 pL). The PVD metal stack was deposited on the ITO covering the textured SHJ cells (random
+pyramids 4-7 µm) with sputtering or electron beam evaporation. During inkjet-printing of the NaOHaq solution,
+more or less spreading was observed, depending on the Al-layer deposition technique and history. The surface
+nanostructure of the samples was characterized by SEM before (FIGURE 4 (a)) and after (FIGURE 4 (b-c)) metal
+deposition. The thin ITO layer (≈ 75 nm) is polycrystalline with a random dendritic grain size around 20-30 nm.
+After metal stack deposition (Cu100nm / Al on top), the nanostructure of the amorphous Al surface is flatter
+(FIGURE 4 (b), Al50nm). The deposition of more Al – 100 nm, changes again the nanostructures to a porous rounder
+surface. The required quantity of NaOHaq ink to structure the Al-layer is higher for 100 nm but these different
+nanostructures did not show a significant impact on the spreading during inkjet-printing.
+
+
+
+
+FIGURE 4. SEM pictures of the SHJ solar cell surface and nanostructures on a pyramid flank covered by (a) ITO and after metal
+                          sputtering on the ITO of (b) Cu100nm / Al50nm and (c) Cu100nm / Al 100nm.
+
+    The wetting properties on the Al surface might also be impacted by its chemical composition. The wetting
+behaviour on the Al layer after different durations of air-exposure was studied by contact angle measurements (CA)
+with deionized water. The etching reaction of Al with low concentrated NaOHaq does not start instantaneously, so
+wetting properties should play a role in line width. After PVD deposition, the Al surface is well hydrophilic (contact
+angle – CA ≈ 30°). The samples were stored at ambient atmosphere (temperature of 23°C and humidity of 35%) to
+allow growth of the dense amorphous native oxide layer Al2O3 (self-passivation of Al). Twenty hours are sufficient
+for the surface to become less hydrophilic (CA ≈ 90°). Almost five days allow reaching a hydrophobic surface
+(CA ≈ 100-120°) which stabilizes after that time. The Al surface might be covered by a porous Al(OH)3 which
+grows over the time depending of the storage temperature and humidity and decrease after the bonding capacity of
+the surface [14]. However, a drier storage atmosphere (50°C, 6% humidity) shows that the hydrophobic surface is
+reached already after one day (CA > 100°C). The native oxide and hydroxide growing at the Al-surface after PVD
+seem to be a key-factor to obtain a hydrophobic surface suitable for fine line etching in the Al layer with NaOHaq
+inkjet-printing. Pre-treatments of aluminum surfaces to instantaneously obtain and strengthen this behavior are
+currently under investigation.
+    Following this principle, a second SHJ solar cell was metallized by first patterning fine lines (20-30 µm wide) in
+the thin Al layer as observed in the microscopic picture in FIGURE 2 (2) where the underlying Cu-seed layer is
+visible. The following selective plating and etching steps were then performed. As reported and plotted in
+FIGURE 3, a better efficiency was reached due to a significant increase in Jsc to 38.4 mA/cm². Indeed, the
+shadowing at the SHJ solar cells was significantly reduced with the fingers below 30 µm wide – FIGURE 2 (3-4).
+However, finger interruptions occurred in the printing process. In addition, parasitic etching of the TCO upon
+etching of the PVD metal layer was also observed. Both effects still limit the FF of this cell.
+
+
+
+
+                                                             4
+                               Selective Etching of the PVD Metal Layers
+    Selective etching already allows the Al-patterning with NaOHaq without impacting significantly the underlying
+Cu-seed. This selectivity was also investigated to remove the thin PVD layers (Cu / Al) in the non-grid positions
+without affecting the plated contacts and the ITO. Prior to etching, a thin immersion silver layer (≈ 200 nm) is
+deposited on the Cu to protect the contact from oxidation. Our self-made NaOHaq ink can then also be used to etch
+the Al layer in non-grid positions as already described in another publication [11]. The Cu-seed can then be removed
+in an acidic solution of ammonium persulfate (NH4)2S2O8.
+    This further optimization of the NOBLE metallization enables to reach a first promising efficiency of 20.2% with
+low contact resistivity to ITO as observed in FIGURE 3. No finger interruptions were noticed explaining the good
+FF of 78.0% (pFF limited to 80.5% due to small area SHJ solar cell with large rim fraction [13]). However, the
+metal-grid design and the metal sputtering were not optimized explaining the remaining difference with the pseudo-
+efficiency simulated with SunsVoc measurements (lowered Voc and pFF).
+
+                       “NOBLE” Metallization on Full Area SHJ Solar Cells
+    Full area SHJ solar cells were metallized after this first process optimization of the NOBLE metallization on
+small area cells. As reference on 156 x156 mm² cells, SHJ precursors of the same batch were also metallized by the
+standard screen-printing technology of low-temperature Ag-paste. The highest efficiency reaches 21.5% with a
+moderate FF of 79.0%, still significantly below the pseudo-efficiency (FIGURE 3). The NOBLE metallization of a
+first full area SHJ solar cell reaches an encouraging efficiency of 20.0% with a Voc up to 731 mV meaning that the
+sputtering of metal did not impact the passivation quality and the rim effect could be overcome as expected. As
+mentioned earlier, the optimization of the inkjet-printing process should prevent finger interruptions and attain the
+full potential of these SHJ precursor solar cells around 22%.
+
+                                     CONLUSION AND OUTLOOK
+    Our metallization by the novel developed NOBLE approach – i.e. native oxide barrier layer for selective
+electroplating, creates advanced plated copper contacts for solar cells with TCO layers at greatly reduced process
+complexity. A first promising efficiency of 20.0% was established by this route on a full area SHJ solar cell.
+Optimizing Al-patterning by inkjet-printing of a self-made low concentrated NaOHaq ink to prevent finger
+interruptions is ongoing to reach the full potential of the SHJ solar cell technology.
+
+                                         ACKNOWLEDGMENTS
+    This work was funded by the German Federal Ministry for Economic Affairs and Energy within the research
+project “PV-BAT400” (contract no. 0324145) and by the European project DISC under the European Union’s
+Horizon 2020 research and innovation program under grant agreement N°727529. The colleagues at ISE are
+acknowledged for fruitful discussion and technical assistance. The authors especially would like to thank
+VON ARDENNE, P. Schäfer, S. Bogatti for providing PVD metal stacks, P. Trümper, T. Fellmeth, D. Erath,
+R. Haberstroh, F. Martin, E. Schäffer, N. Bab and T. Nguyen for sample characterization and measuring the solar
+cells.
+
+                                                REFERENCES
+1.   J. Schube, L. Tutsch, T. Fellmeth, M. Bivour, F. Feldmann, T. Hatt, F. Maier, R. Keding, F. Clement, and S.
+     W. Glunz, IEEE J. Photovoltaics 8, 1208 (2018).
+2.   D. Erath, M. Pospischil, R. Keding, M. Jahn, I. Lacmago Lontchi, A. Lorenz, and F. Clement, Energy Procedia
+     124, 869 (2017).
+3.   A. Faes, A. Lachowicz, A. Bettinelli, P-J. Ribeyron, J-F. Lerat, D. Munoz, J. Geissbühler, H-Y. Li, C. Ballif,
+     M. Despeisse, Photovoltaics Bulletin 41 (2018).
+4.   A. Lennon, J. Colwell, and K. P. Rodbell, Prog Photovolt Res Appl 27, 67 (2019).
+5.   D. Adachi, J. L. Hernandez, and K. Yamamoto, Appl. Phys. Lett. 107, 233506 (2015).
+
+
+
+
+                                                         5
+6.    A. Khanna, K.-U. Ritzau, M. Kamp, A. Filipovic, C. Schmiga, M. Glatthaar, A. G. Aberle, and T. Mueller,
+      Applied Surface Science 349, 880 (2015).
+7.    A. Aguilar, S. Y. Herasimenka, J. Karas, H. Jain, J. Lee, K. Munoz, L. Michaelson, T. Tyson, W. J. Dauksher,
+      and S. Bowden, IEEE 43rd Photovoltaic Specialists Conference (PVSC) (2016).
+8.    M. Glatthaar, R. Rohit, A. Rodofili, Y. J. Snow, J. Nekarda, and J. Bartsch, IEEE J. Photovoltaics 7, 1569
+      (2017).
+9.    T. Hatt, V.P. Mehta, J. Bartsch, S. Kluska, M. Jahn, D. Borchert, and M. Glatthaar, AIP Conference
+      Proceedings 1999, 040009 (2018).
+10.   J. Geissbuhler, S. de Wolf, A. Faes, N. Badel, Q. Jeangros, A. Tomasi, L. Barraud, A. Descoeudres, M.
+      Despeisse, and C. Ballif, IEEE J. Photovoltaics 4, 1055 (2014).
+11.   T. Hatt, S. Kluska, M. Yamin, J. Bartsch, and M. Glatthaar, Sol. RRL 3, 1900006 (2019).
+12.   A. Lachowicz, J. Geissbühler, A. Faes, J. Champliaud, F. Debrot, E. Kobayashi, J. Horzel, C. Ballif, and M.
+      Despeisse, 33rd European Photovoltaic Solar Energy Conference and Exhibition (2017).
+13.   M. Rauer, A. Mondon, C. Schmiga, J. Bartsch, M. Glatthaar, and S. W. Glunz, Energy Procedia 38, 449
+      (2013).
+14.   J. van den Brand, On the adhesion between aluminium and polymers, PhD Thesis, TU Delft (2004).
+
+
+
+
+                                                        6
+

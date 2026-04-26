@@ -1,0 +1,265 @@
+Presented at the 29th European PV Solar Energy Conference and Exhibition, 22-26 September 2014, Amsterdam, The Netherlands
+
+
+
+
+                  PEEL TESTING OF RIBBONS ON SOLAR CELLS AT DIFFERENT ANGLES:
+                  CONSISTENT COMPARISON BY USING ADHESIVE FRACTURE ENERGIES
+
+                                                     U. Eitner and L.C. Rendler
+                  Fraunhofer Institute for Solar Energy Systems ISE, Heidenhofstraße 2, 79110 Freiburg, Germany
+
+
+   ABSTRACT: The peel test is a very simple and fast method to determine the adhesion of interconnector ribbons to solar cell
+   metallizations. It is part of the solar cell standard DIN EN 50461 and is, due to its ease of use, widely accepted to qualify cell
+   metallizations and the soldering process. In the standard a minimum force of 1 N per mm of joint width is specified but other
+   relevant quantities are missing, for example the peeling angle. We show that this lack of specification influences the peel
+   testing results. We therefore apply the mechanical theory of Kinloch and Kawashita [1,2] where measured peel forces are
+   translated into adhesive fracture energies GA. The fracture energy is a geometry-independent parameter that describes the
+   energy to break the interfacial bondings at the peel front. It incorporates the dimensions of the ribbon and its stress-strain-curve.
+   We perform 121 peel experiments at 45°, 90°, 135° and 180° of ribbons on continuous front side busbars of cells from one
+   stringing batch. We measure very high forces at 45° (mean value 9.74 N), while the mean values are in the range of 3 N for 90°
+   (3.14 N), 135° (2.46 N) and 180° (3.49 N). The force level at 45° is thus a factor of 4 higher compared to 90°, 135° and 180°.
+   Transforming the force values into adhesive fracture energies, the mean values deviate only by a factor of 0.6 (45°: 510 J/m2,
+   90°: 395 J/m2, 135°: 441 J/m2, 595 J/m2). This indicates that the method improves the interpretation of peel testing data by
+   using the adhesive fracture energies as mechanical material parameters to quantify the adhesion.
+
+       Keywords: PV module, solder joint, peel test, adhesion, cell metallization, ribbon
+
+
+   1   INTRODUCTION                                                      fracture energies, the method requires the input of the
+                                                                         stress-strain-relation of the ribbon.
+        The first test to qualify the interconnection of                     To characterize the mechanical properties of the
+   crystalline silicon solar cells after soldering is the peel           ribbon we use the same SnPbAg-coated ribbon material.
+   test. The interconnector ribbons are peeled off from the
+   solar cell measuring the force. This easy and fast method             2.2 Measurements
+   is used to accept or reject new cells in a module
+   production line and to optimize the soldering process of a                We perform 5 tensile tests on unsoldered copper
+   tabber stringer. Although the test is part of the standard            ribbons until fracture on a Zwick tensile testing machine.
+   DIN EN 50461, various configurations of the test are                  As an example, one of these stress-strain curves is shown
+   possible. The weakness of the peel test in terms of                   in Fig.1. Due to the large strains the true stress is
+   consistent testing procedures and equipment is addressed              computed from the engineering stress.
+   by Klengel and Wendt [3-5]. Their solution is a peel
+   testing machine designed for peel testing solar ribbons                                            8
+                                                                                                   x 10
+   where the ribbon is held down at 90° by a low-wear                                        3.5
+
+   material to avoid cell cracking. However, the use of                                                   eng. stress
+                                                                                              3           true stress
+   different peel testing devices and non-identical testing
+   procedures in the PV industry has led to a variety of
+                                                                                             2.5
+   individual requirements concerning minimum force
+   thresholds or desired fracture patterns.
+
+
+                                                                             stress σ [Pa]
+                                                                                              2
+        Here, we focus on the mechanics of the peel test
+   itself. We investigate the impact of the peeling angle to
+                                                                                             1.5
+   the measured forces and propose the method of Kinloch
+   [1] and Kawashita [2] to determine adhesive fracture
+                                                                                              1
+   energies to quantify the adhesion of the ribbon to the cell.
+                                                                                             0.5
+
+
+                                                                                              0
+   2   EXPERIMENTAL                                                                            0            0.1             0.2        0.3   0.4
+                                                                                                                        strain ε [-]
+   2.1 Sample Preparation
+                                                                         Figure 1: Measured stress-strain-curve of the unsoldered
+       For the peel experiments we use standard                          ribbon in tensile mode.
+   multicrystalline solar cells with three continuous busbars.
+   The cells are soldered to a 160 µm x 1.6 mm copper
+   ribbon with SnPbAg-coating in a commercially available                    We perform 36 peel tests at a peel angle of 180°, 15
+   tabber stringer. The soldering method is infrared                     tests at an angle of 135°, 35 tests at an angle of 90° and
+   soldering. The strings are cut into single soldered cells to          35 tests at an angle of 45°.
+   obtain 40 solar cells. The rear side of the each cell is
+   attached to a rigid substrate to avoid cell cracking at high
+   peel forces.
+                                                                         3                   THEORY
+       In order to translate the peel forces into adhesive
+Presented at the 29th European PV Solar Energy Conference and Exhibition, 22-26 September 2014, Amsterdam, The Netherlands
+
+
+
+       The geometrical configuration of the peel test is
+   shown in Fig 2. Following the work of Kinloch [1] the                                                                                  6
+   adhesive fracture energy GA is derived from an energy
+   balance equation                                                                                                                       5
+
+
+
+
+                                                                                                                  180° peel force F [N]
+                                                                                                                                          4
+
+       where Gext is the external energy, GS is the stored                                                                                3
+   strain energy in the peeling arm, GT is the dissipated
+   energy by plastic tensile deformation of the peeling arm
+                                                                                                                                          2
+   and GB is the dissipated energy by plastic bending
+   deformation at the peel front. These energies are
+   determined by                                                                                                                          1
+
+
+                                                                                                                                          0
+                                                                                                                                           0    20   40     60    80 100      120    140
+                                                                                                                                                          Peel path s [mm]
+
+
+                                                                  Figure 3: Measured forces of 36 peel tests at 180°. The
+       where F is the measured force, α the peeling angle as      red marks indicate the machine accuracy.
+   illustrated in Fig. 2, b the width of the peeling arm, ε the
+   strain and σ the stress in the peeling arm. In case of
+   plastic deformation it holds GT ≠0.                                                                            18
+
+                                                                                                                  16
+
+
+
+
+                                                                                      Measured peel force F [N]
+                                                                                                                  14
+
+                                                                                                                  12
+
+                                                                                                                  10
+
+                                                                                                                         8
+
+                                                                                                                         6
+
+                                                                                                                         4
+
+                                                                                                                         2
+
+   Figure 2: Configuration of the peel test.                                                                             0
+                                                                                                                                               45         90           135          180
+                                                                                                                                                          Peel angle φ [°]
+       The energy dissipated by plastic bending GB is
+   determined by an iterative method that accounts for the        Figure 4: Measured forces of all 121 peel tests grouped
+   different loading states, such as plastic deformation          by peeling angle.
+   during bending with elastic deformation during
+   unbending and plastic bending and unbending.
+
+
+                                                                                                             1000
+   4   RESULTS
+                                                                                                                  900
+
+
+
+
+                                                                   Adhesive fracture energy GA [J/m ]
+                                                                   2
+        Figure 3 shows all 36 peel curves of the 180° tests. In                                                   800
+   all tests very homogeneous cohesive fracture in the cell
+                                                                                                                  700
+   metallization is observed and the peel fronts remain in
+   perfect shape without sharp kinks during the tests. For                                                        600
+   each angle we use every datapoint of every peel curve to                                                       500
+   create the statistical plot for the measured forces. These
+                                                                                                                  400
+   data is shown in Fig. 4. We find the peel forces at 45° to
+   be in the range of 8 N to 12 N which is significantly                                                          300
+
+   higher than those at 90°, 135° or 180°. Comparing the                                                          200
+   mean values for each angle, the mean force at 45° (9.74                                                        100
+   N) is a factor 4 higher than at 135° (2.46 N).
+                                                                                                                                          0
+        Applying the method of Kinloch and Kawashita the                                                                                       45          90          135          180
+   force values of each peel experiment are transformed into                                                                                               Peel angle φ [°]
+   values of the adhesive fracture energy and are shown in
+   Figure 5. The values are on the same level with the            Figure 5: Adhesive fracture energies calculated from
+   largest difference between 90° and 180°. The difference        peel forces in Fig.4 with the method of Kinloch and
+   between the mean adhesive fracture energies at 90° (395        Kawashita.
+   J/m2) and 180° (595 J/m2) is 200 J/m2 which corresponds
+   to a factor of 0.66.
+Presented at the 29th European PV Solar Energy Conference and Exhibition, 22-26 September 2014, Amsterdam, The Netherlands
+
+
+
+                                                                                     Proceedings of 18th European Microelectronics and
+                                         900                                         Packaging Conference (EMPC), 2011.
+                                         800    1N                               [5] J. Wendt et al., "Improved quality test method for
+
+
+
+
+    Adhesive fracture energy GA [J/m ]
+   2
+                                                2N
+                                                                                     solder ribbon interconnects on silicon solar cells",
+                                         700    3N
+                                                4N                                   12th IEEE Intersociety Conference on Thermal and
+                                         600                                         Thermomechanical Phenomena in Electronic Systems
+                                                                                     (ITherm), (2010).
+                                         500
+
+                                         400
+
+                                         300
+
+                                         200
+
+                                         100
+
+                                          0
+                                           0    45       90          135   180
+                                                      Peel angle φ [°]
+
+
+   Figure 6: Computed adhesive fracture energies for
+   constant force levels over different peeling angles.
+
+
+   5                                     CONCLUSION
+
+       We apply the adhesive fracture energy method by
+   Kinloch and Kawashita to solar cells and ribbons and can
+   thereby describe the adhesive forces in a solder joint
+   independent of the peeling angle. Assuming constant
+   adhesive fracture energies we find the forces to increase
+   for decreasing angles as shown in Fig.6. Using this
+   information a manufacturer can thus increase or decrease
+   the probability of rejecting novel cell types in his
+   production if his peel test guidelines do not specify the
+   peel angle. We believe this subject to be of major
+   importance for qualifying novel technologies that come
+   along with lower adhesion such as plated contacts or
+   conductive gluing.
+       As the amount of energy, that is absorbed by plastic
+   bending of the ribbon, depends on the ribbon cross-
+   section, a direct comparison of peel forces for ribbons
+   with different geometries but identical mechanical
+   properties under identical peel testing conditions is not
+   consistent. Again, the use of adhesive fracture energies
+   will allow for a consistent comparison.
+
+
+   6                                     ACKNOWLEDGEMENTS
+
+       The authors like to thank A. Riethmüller and T.
+   Fischer from teamtechnik for providing the soldered cells
+   and T. Barp and M. Ernst for performing the peel tests.
+
+
+   7                                     REFERENCES
+
+   [1] A.J. Kinloch et al., "The peeling of flexible
+       laminates", International Journal of Fracture 66, 45-
+       70 (1994).
+   [2] L.F. Kawashita, The Peeling of Adhesive Joints,
+       Ph D thesis University of London (2006).
+   [3] R. Klengel et al., "Evaluation of the Mechanical
+       Strength of Solar Cell Solder Joint Interconnects and
+       Their Microstructural Properties by Developing a
+       New Test and Inspection Equipment", Proceedings of
+       the 26th European Photovoltaic Solar Energy
+       Conference, 1507-1511 (2011).
+   [4] R. Klengel et al., "Improved testing of soldered
+       busbar interconnects on silicon solar cells",
+

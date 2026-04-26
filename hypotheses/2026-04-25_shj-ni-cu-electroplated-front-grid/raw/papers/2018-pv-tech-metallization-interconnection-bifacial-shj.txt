@@ -1,0 +1,698 @@
+                                                                                        Metallization & interconnection | Cell Processing
+
+
+
+
+Metallization and interconnection
+for high-efficiency bifacial silicon
+heterojunction solar cells and
+modules
+Antonin Faes1, Agata Lachowicz1, Armand Bettinelli2, Pierre-Jean Ribeyron2, Jean-François Lerat2, Delfina Munoz2,
+Jonas Geissbühler1, Heng-Yu Li1, Christophe Ballif1 & Matthieu Despeisse1
+1
+ CSEM, PV-Centre, CH-2002 Neuchâtel, Switzerland; 2CEA, INES, Le Bourget du Lac, France
+
+
+Abstract
+Silicon heterojunction (SHJ) solar cells demonstrate a high conversion            increasing as several companies around the world
+efficiency, reaching up to 25.1% using a simple and lean process flow             have chosen this technology to differentiate from
+for both-sides-contacted devices, and achieving a record silicon solar            the mainstream. These companies are usually
+cell efficiency of 26.7% in back-contacted configuration. In addition,            new comers that want to use a new technology
+the field advantages of SHJ cell technology are a native bifaciality and          with expected higher potential than mainstream.
+low thermal coefficient providing impressive energy yield. Finally, the           Thus, in 2018, about 2 GW of capacity was reported
+technology demonstrates potential cost reduction as it is perfectly               to be SHJ technology with the main player still
+suited for thin wafers integration. The SHJ technology is therefore today         being Panasonic, the founder of the technology
+triggering strong interest in the PV industry, appearing on the roadmap           in the 90s. Panasonic has about 1 GW capacity
+of different cell manufacturers, with several production lines and pilot          in Japan and Malaysia and has established an
+lines being installed worldwide. One limiting factor of the technology is         agreement with TESLA for the implementation of a
+related to the metallization: due to temperature restrictions on hetero-          Gigafactory in Buffalo based on SHJ cells, allowing
+contacts, the standard firing through silver paste needs to be replaced           it to at least double its production capacity.
+by low curing temperature paste. This type of pastes yield fingers with              In Europe, several players have chosen SHJ
+higher bulk resistivity (two to three times the one obtained with high            technology: in Russia, HEVEL, formerly producing
+temperature cured silver pastes) and lower adhesion after soldering. In           thin film silicon modules, has shifted its
+this paper, materials, processes and costs figures will be reviewed for           production facility to SHJ with a capacity of about
+the metallization and module integration of SHJ solar cells, with a focus         200 MW [10]. In Italy, ENEL Green Power, one
+on copper plating benchmarked to silver screen-printing, for varying              of the biggest renewable electricity companies,
+module interconnection technologies.                                              decided to invest in the technology in Catania
+                                                                                  (Sicilia) at a level of about 200 MW. One of the
+                          Introduction                                            main reasons for this choice is the capacity of
+                          The first publications of silicon heterojunction        SHJ to reduce LCOE to a level that can’t reach
+                          (SHJ) solar cells emerged at the end of the             mainstream technologies.
+                          1980s and beginning of the 1990s by Sanyo in a             In Asia, more and more players are considering
+                          Japanese and a British patent relating to their HIT     SHJ. Among them, NSP (Neo Solar Power) has
+                          (heterojunction intrinsic thin-layer) cell technology   implemented a 50 MW line in Taiwan to evaluate
+                          [1,2]. Already in 1992, the HIT cell conversion         properly the potential and cost reduction
+                          efficiency was above 18% [3]. Important milestones      capabilities of SHJ. In China, Hanergy and Jinergy
+                          for the technology were the two world record            are true believers of the technology, investing at a
+                          conversion efficiencies for Si-based solar cells        level of hundreds of MW each. Recently, Tongwei
+                          obtained on interdigitated back-contacted (IBC)         has announced its intention to invest in the
+                          SHJ configuration, with 25.6% and 26.7% in 2014 and     manufacturing of the technology to a level of 500
+                          2017, respectively [4,5].                               MW with Three Gorges Capital Holding.
+                             SHJ technology are bifacial by nature and               These announcements are creating an ecosystem
+                          present a low temperature coefficient in the range      that will be able to bring cost down on the material
+                          of -0.23% to -0.3%/°C [6,7]; these two elements         as well as the equipment side, enabling SHJ to hold
+                          improve the energy yield and reduce the levelized       an increasing part of the PV market.
+                          cost of electricity (LCOE) [8]. The reliability of         The process steps of the SHJ cells are simple and
+                          SHJ is confirmed in the field as the first HIT          require temperatures below 250°C (Figure 1). Initial
+                          modules were produced in 1997 and data show no          steps consist of n-type monocrystalline silicon
+                          degradation of SHJ module after 14 years [9].           wafer texturing and cleaning (with wafer as thin
+                             Today, even if SHJ module technology is still a      as 120 microns); followed by PECVD of intrinsic
+                          niche market, the production level is promisingly       hydrogenated amorphous Si (a-Si:H) deposition
+
+
+                                                                                                          Photovoltaics International       65
+     Cell Processing | Metallization & interconnection
+
+
+
+
+            Figure 1. Manufacturing steps and schematic cross-section of a finished bifacial silicon heterojunction solar cell.
+
+
+            on both sides. On respective sides, phosphorus
+            and boron-doped a-Si:H layers are deposited. Then
+            the wafer is coated on both sides by sputtering
+            with a transparent conductive oxide (TCO) that
+            acts as an anti-reflective coating (ARC) and lateral
+            electrical transport layer. To improve conductivity,
+            metal grids are deposited on the TCO usually by
+            screen-printing [11], and specific silver paste needs
+            to be used as the curing temperature should be
+            below 250°C. The bulk resistivity of the fingers
+            printed with low curing temperature (LCT) silver
+            paste is strongly improving with the years but is
+            still about two times higher than firing through
+            silver paste (figure 2). For standard soldered
+            ribbons interconnection, relatively thick busbars
+            (between 25 and 35 microns) need to be printed
+            for reaching the requirement of ribbon peel test
+            (usually 1 N/mm). Finally, as a similar TCO contact
+            is done at both the front and back sides, LCT
+            silver paste is screen-printed on both sides, which
+            steps up again the silver consumption compared
+            to Al backside metallization of p-type cells. These            Figure 2. Specific bulk resistivity of low curing temperature silver paste evolution
+                                                                           compared to pure silver (horizontal line). Continuous line is from paste measurement
+            three reasons increase the silver consumption for
+                                                                           after 30 minutes curing at 200°C, dashed line is the forecast for curing 30 minutes
+            standard metallization and interconnection (M&I)               at 200°C and diamond are curing at 200°C for shorter time also with forecast (data
+            applied for SHJ solar cells technology, limiting the           courtesy of Namics Corporation).
+            cost effectiveness of the technology [12]. Thus,
+            innovative approaches avoiding excessive amount               only 10% with 3BB and the last 10% shared between
+            of silver are welcomed. The M&I cost for SHJ cells            6BB and wire interconnection. In seven years from
+            technology is the topic of the presented paper.               now, predictions from [13] indicate that 5BB could
+                                                                          have about 50% of the market share, 6BB and more
+            Metallization                                                 could have about 30% and the rest could be covered
+            In the PV market end of 2017, industrial                      by busbar-less design: meaning that three and 4BB
+            metallization designs were the following: about               will have disappeared from the market. Today, 97%
+            40% with four busbars (4BB), 40 % as well with 5BB,           of the metallization is done by screen-printing in
+
+
+66      www.pv-tech.org
+                                                                                                Metallization & interconnection | Cell Processing
+
+
+
+
+                  Soldering			                                 ECA-gluing			                                Wire interconnection
+                  4BB              5BB          6BB            4BB              5BB             6BB         Certified         Optimized
+
+  Front mg        165              155          145            75               70              65          40                20
+  Back mg         255              220          190            170              135             110         60                40
+
+  Total mg        420              375          335            245              205             175         100               60
+
+
+Table 1. Screen-printed silver paste deposited mass at front and backside for 4, 5, 6 busbars for soldering, electrical conductive adhesive
+(ECA) gluing and wire interconnection grid design (“certified” can pass five times IEC reliability test and “optimized” for lower silver usage).
+
+                             the PV industry, most of the rest is plating. Copper       extrapolate the value down to 3.5 µΩ.cm in 2020
+                             electroplating could grow from 3% today to about           and 3.0 µΩ.cm in 2022 [14]. As the bulk resistivity
+                             8% in seven years [13].                                    is higher, more silver or more busbars are needed
+                                                                                        on the cells for similar performance. The second
+                             Screen-printing                                            limitation is the soldering on LCT silver paste;
+                             As discussed in the introduction, screen-printing          adhesion can reach 1 N/mm with a minimum BB
+                             for SHJ solar cells consumes more silver compared          thickness between 25 and 35 µm. This induces also
+                             to standard cells due to three reasons. Indeed,            a higher silver consumption compared to standard
+                             the bulk resistivity of the printed material is still      paste. The final reason is clearly observed in Table 1:
+                             higher than the one achieved with standard firing          as LCT paste is printed on both sides, consumption
+                             through paste, even though the evolution in                of LCT silver paste is important and reaches 420
+                             low temperature cured material is impressive, as           mg in total for 4BB design. This consumption is
+                             shown in Figure 2. Today, the best silver paste has        reduced to 375 mg and 335 mg for 5BB and 6BB,
+                             specific bulk resistivity (ρc) of 6 and 5 µΩ.cm after      respectively.
+                             10 and 30 minutes of curing at 200°C, respectively.           Front side laydown of high temperature silver
+                             In four years, ρc could be at 5 and 3.8 µΩ.cm for          paste is about 90 mg; in the case of SHJ, the front
+                             5 and 30 min of curing at 200°C, respectively. In          side laydown for soldering interconnection is
+                             literature, some pastes have shown already today           about 50% to 80% higher depending on the number
+                             bulk resistivity from 4 to 4.5 µΩ.cm after only 5          of BB due to higher ρc and thicker BB as shown
+                             to 10 min at 200°C [14]. The future ρc perspectives        in Table 1 [13]. If the interconnection is done via
+     Cell Processing | Metallization & interconnection
+
+
+
+
+            Figure 3. Comparison of process steps for fabrication of seed-layer and masking before copper electro-plating: (A) seed layer + organic mask, (B)
+            patterned seed layer + dielectric and (C) printed seed-grid + dielectric.
+
+
+
+
+            Figure 4. Cells plated with sputtered seed layer and hotmelt inkjet mask and interconnected with soldered ribbons: Peel force test at 180° and
+            thermo-cycles and damp-heat reliability test of small R&D module. Source: CSEM.
+
+
+            gluing the LCT silver paste mass at the front side            conductive adhesive (ECA) can be done directly on
+            drops by more than 50% to values as low as 65 mg              TCO surface and on optimized BB design.
+            for 6BB. This saving in paste is possible as busbars            In the case of wire interconnection, busbar-less
+            are drastically reduced; the gluing using electrical          (BB-less) design is used with ultra-fine fingers
+
+
+68      www.pv-tech.org
+                                                                Metallization & interconnection | Cell Processing
+
+
+
+
+(silver line) dropping the laydown to 40 or 20 mg.       conductivity along the wafer surface. Basically
+The wire interconnection uses 12 or more wires,          three processing routes are conceivable: first (3A),
+which strongly reduces the power loss in the finger      the deposition of a seed layer over the entire wafer
+due to charge transportation as compared to 4 to         surface and an organic plating mask (figure 3A)
+6BB [15]. As the ohmic loss in the finger is heavily     or a conductive “seed-grid” and a dielectric layer
+reduced, the silver mass can be strongly decreased.      to prevent metal deposition on the TCO, where
+The laydown of 20 mg gives module with high              the conductive seed-grid is formed either through
+performance but the reliability might be affected        patterning of a sputtered seed layer (figure 3B) or
+with today’s paste and wire interconnection.             by printing of a metal paste (figure 3C).
+   The silver mass at the backside is always higher         For the first processing route (figure 3A), the seed
+compared to the front side because the number of         layer is usually deposited by PVD (A2) and consists
+fingers is higher to reduce the power loss in the        of a stack comprising a barrier or adhesion layer and
+backside TCO to optimize the cell fill factor (FF).      a conductive layer [22]. The type of masking (A3)
+                                                         determines the shape and dimensions of plated
+Copper electroplating                                    lines. The simplest is a screen-printed mask (non-
+Owing to the impressive improvements in screen           photosensitive organic resist) with rather wide
+printing and the reduction of silver price the           openings, usually above 70 µm [23] and with bevel
+share of plating in production is much lower than        edges leading to increasing finger width as the
+originally predicted [13,16], with Sunpower and IBC      thickness of plated copper increases. This method
+cells being the main contributor. Plating activities     is applicable to cells without constraints for
+for SHJ solar cells (or similar) have been reported      shadowing by metallization, like for IBC cells. With
+by several companies such as Panasonic [4], Kaneka       photolithography, narrow and rectangular fingers
+[17], Choshu Industry Co. LTD [18], Tetrasun [19, 20],   (~20 µm) can be defined. However, even though
+Silevo and Sunpreme [21].                                photolithography is used for mass production of
+   Having the advantage of the intrinsic bifaciality     (low-cost) printed circuit boards, for solar cells
+of heterojunction cells and taking into account the      photoimaging-free alternatives are needed for
+fast increasing market share of bifacial cells [13] we   further cost reduction. A non-photosensitive liquid
+focus on processing routes enabling simultaneous         photoresist, applied by spraying and patterned
+plating on both sides. This implies sufficient lateral   by inkjet printing of a functional liquid, has been
+
+
+
+
+                                                Visit our booth at the EU PVSEC 2018: B2. www.vonardenne.biz
+
+
+
+
+     SCALA GLASS & WAFER COATING SYSTEM    XEA|nova® WAFER COATING SYSTEM          PIA|nova® GLASS COATING SYSTEM
+
+
+
+
+        SCALED-UP PERFECTION IN COATING EQUIPMENT
+        FOR HIGH-PERFORMANCE PHOTOVOLTAICS
+    Are you looking for coating equipment with a low cost of ownership for crystalline solar cells or thin-film
+    photovoltaics? Then VON ARDENNE is your partner of choice. We provide the perfect technology and system
+    solutions in all scales, even for high-volume tasks on a very large coating area.
+
+
+
+
+                                              XENIA GLASS & WAFER COATING SYSTEM
+     Cell Processing | Metallization & interconnection
+
+
+
+
+            described for metallization of busbar-less cells
+            for SmartWire interconnection [24], with finger                                                     ECA screen-printing process
+
+            width 20-25 µm and finger height 5-10 µm. Another                                                   4BB              5BB            6BB
+            photoimaging-free method is inkjet printing of a
+                                                                       ECA deposit (mg 2 sides) - reliable      80               100            120
+            hotmelt ink [25]. It requires only one process step
+                                                                       ECA deposit (mg 2 sides) - optimized     32               40             48
+            for patterning, with geometries of plated lines
+            comparable to photolithography [26]. After copper
+                                                                     Table 2. Electrical conductive adhesive deposit done by screen-printing
+            and finish layer (for example silver or tin) plating     process for 4, 5 and 6 busbars (“reliable” pass two time IEC reliability test).
+            (A4), the organic mask is removed and the seed
+            layer is etched back (A5). CSEM has develop further
+            this process sequence to obtain up to a 24.1% record
+            4BB cell efficiency [26], high peel force of standard
+            PbSn coated ribbon soldering and good coupon
+            module reliability even after three times IEC (see
+            Figure 4).
+               In the second processing route (Figure 3B),
+            the processing sequence can start with a blanket
+            seed layer. Onto the seed layer a grid pattern is
+            deposited by inkjet printing of an UV-curable ink
+            (B3) and the seed layer blanket in between the grid
+            is etched away (B4). Subsequently a dielectric layer
+            like silicon oxide or silicon nitride is deposited for
+            instance by PECVD over the entire surface (B5),          Figure 5. Busbarless cells and the GridTouch measurement, the SWCT concept and
+            including also the UV-ink. The dielectric serves         bifacial record module for 60 and 72 SHJ cells at 1 Sun.
+            at the same time as an additional antireflective
+            coating, giving the possibility for TCO thickness        after standard soldering with force bellow 1 N/
+            reduction. The openings in the dielectric are            mm. To reduce the stress between the cell and
+            formed through removal of the UV-ink (B6),               the ribbon, solder based on BiSnAg can be used as
+            simultaneously exposing the seed layer grid for the      shown by Isofoton 10 years ago for standard c-Si
+            plating of copper and finish layer (B7).                 solar cell [28, 29]. As the melting temperature of
+               The third processing route (figure 3C), is based      BiSnAg is about 40°C lower compared to PbSn, the
+            on a seed-grid formed by simple screen printing          stress between cell and ribbon is reduced as well as
+            or inkjet printing of a metal paste or respectively      the silver leaching from the busbar into the solder.
+            a metal ink (C2). Because of the rough surface           Nowadays some companies are proposing bismuth
+            of the printed metal the subsequently deposited          based solder and dedicated flux for PV application
+            dielectric layer (C3) is non-continuous on the           [30, 31]. Paste manufacturers also improved the
+            seed-grid. Plating selectively occurs (C4) where the     paste formulation to enable standard PbSn
+            printed grid is present underneath the dielectric.       soldering on the LCT busbar paste.
+            The industrial feasibility of this process sequence
+            has been confirmed by Kaneka, moreover the               Ribbon gluing
+            module stability during damp-heat ageing has been        Nowadays the ribbon interconnection can be
+            significantly improved through the dielectric, a         attached with electrical conductive adhesives
+            PECVD-SiOx layer [17].                                   (ECA) or conductive films using production
+               Numerous variations of the processes described        tools while keeping the same reliability as for
+            above have been reported and new processes are           the soldered ones [32-36]. ECA is a conductive
+            being developed with the aim to further simplify         glue composed normally by silver particles; for
+            the process sequence and to reduce cost [27].            cost reduction other metals are used like Ni, Cu
+                                                                     or Sn based alloys [37, 38]. ECA can be applied
+            Cell interconnection                                     by screen-printing, dispensing or valve jetting.
+            Interconnection of SHJ cells was for a long time         The conductive films are composed of preformed
+            the critical point as standard soldering is not well     conductive adhesive in foil shape. Beside silver
+            adapted on LCT silver paste. Due to this limitation      screen-printing paste saving, the second advantage
+            new approaches of cell interconnection were tested       of ribbon gluing is the possibility of using textured
+            and developed for SHJ cells like gluing of ribbon        ribbons (like the light-capturing ribbons from
+            using electrical conductive adhesive (ECA) or wire       Ulbrich), which allows the recycling of the light
+            interconnection well adapted to SHJ cells proposed       falling on the ribbon and increases the module
+            by Meyer Burger and called SmartWire Connection          power up to 2% relative [39, 40]. The silver paste
+            Technology (SWCT).                                       saving is balanced by the use of ECA, that has
+                                                                     a similar price, as shown in Table 2. For reliable
+            Soldering                                                process, 10 mg of ECA per ribbon are needed
+            Usually, the silver busbar peels off the TCO surface     to date, whereas only 4 mg can be used after
+
+
+70      www.pv-tech.org
+                                                                                              Metallization & interconnection | Cell Processing
+
+
+
+
+                                Print + Soldering		        Print + ECA-gluing		        Print + SWCT		            Plating + soldering
+
+  Cell Efficiency (%)           4BB       5BB     6BB      4BB      5BB       6BB      Certified    Optimized    4BB        5BB        6BB
+                                22.4      22.5    22.7     23.0     23.1      23.2     22.8         23.0         22.7       22.7       22.7
+
+  CTM performance               1.01      1.01    1.01     1.00     1.00      1.00     1.01         1.01         1.01       1.01       1.01
+  Module power (Wp)             398       400     403      404      406       408      405          408          403        403        403
+  Module power Bifi20 (Wp)      470       472     476      477      479       482      478          482          476        476        476
+
+Table 3. Performance of the cells done by screen-printing and plating with different grid design, module with 72 cells in glass/glass
+configuration and the respective cell-to-module (CTM) factor. Module power is calculated for a bifacial module with 20% power
+from the backside due to the albedo (Bifi20). Module bifaciality is 90%.
+
+                             important process optimization (module reliability        module [46]. Thanks to light reflection inside the
+                             under investigation).                                     module, shadowing of textured ribbons and wire is
+                                                                                       reduced by 40% and 30%, respectively.
+                             Wire interconnection
+                             Wire interconnection has been implemented by              Cost methodology
+                             different major solar manufacturers such as LG and        The cost calculation is done for seven years of
+                             Hanwa Q CELLS. The major gains are reduction              amortization for the equipment price and includes
+                             of power loss in the metallization grid, reduced          standard consumables such as silver paste, screen
+                             interconnection shadowing, improved module                and squeegee for screen-printing. In the case of
+                             reliability against cell cracks and increased power       plating, the cost depreciation and consumables for
+                             output by more than 3% relative [8, 41]. SWCT             all processing steps have been considered, including
+                             from Meyer Burger is composed of low melting              seed layer deposition, patterning, plating chemistry
+                             temperature alloys coated on copper wire that are         and waste treatment. Most of the country-
+                             supported by a polymer foil, which was initially          dependent costs such as manpower, land, electricity
+                             developed by day4 Energy [42] (see Figure 5). In          and interest rate are being excluded.
+                             the last years, an important development has been            The costs of both metallization and
+                             done to reduce the cost of the wire and adapt the         interconnection are in the range of €0.022/Wp
+                             foil-wire assembly to improve the performance             to €0.049/Wp (see Figure 6). These values are
+                             as well as the reliability, enabling power output         between 7 and 16% of the module price if one
+                             higher than 335 Wp for 60 cells and 410 Wp for            considers standard modules. Today’s price for
+                             72 cells and module passing five times IEC for            modules based on multi-Si cells is about €0.3/Wp;
+                             thermo-cycles (1,000 cycles between -40°C and             as modules based on SHJ cells can be considered as
+                             +85°C) without noticeable degradation and five            high-efficiency bifacial module (about 18% relative
+                             times IEC for damp-heat (5,000 hours at 85°C and          higher efficiency compared to multi-Si) the price
+                             85% relative humidity) [43, 44]. As a validation          can be increased due to higher energy yield and
+                             of the strong improvement in the Meyer Burger             reduced surface and balance-of-system (BOS) costs
+                             interconnection technology, SWCT equipment                of the PV installation [13].
+                             was ordered last May by Panasonic in Osaka for               By using standard soldering about 90% of the
+                             interconnection of its HIT cell technology [45].          costs is due to the LCT silver paste. With ECA-
+                                                                                       gluing the silver paste cost is nearly divided by two
+                             Cell and module power                                     but some of the reduced costs are transferred to the
+                             The cell efficiencies and module power shown in           ECA glue and textured ribbon coated with silver.
+                             Table 3 have been measured experimentally on R&D          Finally the cost reduction of passing from standard
+                             runs of a few hundred cells from paired wafers in         soldering to ECA-gluing is in the range of -8 to -15%
+                             the case of printed cells. In the case of plated cells,   for 6 to 4BB, respectively. By optimizing the process
+                             the values are based on a few dozen cells based on        of ECA deposition and using silver-free textured
+                             paired wafers with printed cells. The module power        ribbons, the metal and interconnection cost will be
+                             is based on a smaller size module and extrapolated        reduced again by about -20% (figure 7).
+                             to 72-cell modules in the case of plated cells. Cell         SmartWire Connection Technology enables the
+                             efficiencies are increasing with busbar numbers           silver cost to be divided by four or by seven in the
+                             for printed cells as the power loss in the fingers        case of a certified bill-of-materials (passing five
+                             is reduced; this is not the case for plated cells as      times IEC reliability test) and optimized processes
+                             the finger line resistance is lower. For the ECA-         still at R&D stage, respectively. Compared to
+                             gluing case, the cell efficiency is higher thanks to      standard soldering the absolute cost saving for the
+                             reduced shadowing from fine busbars. In the case          metallization and interconnection (M&I) is about
+                             of busbar-less cells (SWCT), the contacting for cell      €-0.02/Wp or about -10 eurocents/wafer or €-7/
+                             measurement is done with GridTOUCH from Meyer             module. The second interesting point with SWCT is
+                             Burger: the efficiency is then corrected as effective     that the silver cost represents less than half (or less
+                             efficiency to account for wire shadowing in the           than a third with the light process) of the M&I total
+
+
+                                                                                                                Photovoltaics International       71
+     Cell Processing | Metallization & interconnection
+
+
+
+
+            cost, so the silver price variability on the PV module   Figure 6. Metallization and interconnection (M&I) cost comparison for the different
+            cost will be reduced.                                    technologies for bifacial modules. First group is for low curing temperature
+              To remove totally the silver variability of the PV     silver paste screen-printing (SP) and standard soldering, then SP + electrically
+                                                                     conductive adhesive (ECA) gluing of textured ribbons, third group SP + SmartWire
+            module, copper electroplating will be the solution.      ConnectionTechnology (SWCT) and finally copper plating using PVD seed layer with
+            A plating process with sputtered seed layer and          hotmelt inkjet mask process.
+            hotmelt inkjet mask is included for comparison.
+            Today’s price for this process is better than standard
+            soldering and competitive with screen-printing
+            and ECA-gluing of textured ribbons. Alternative
+            processing routes are described in the plating
+            section.
+
+            Cost comparison for three plating sequences
+            The calculation is based on cost figures provided
+            by equipment and chemistry suppliers, partially
+            on literature values [12] and on calculations
+            implementing experience from our R&D pilot line.
+            As already mentioned for screen printing, only
+            depreciation for equipment (over seven years) and
+            costs for materials, consumables and waste water
+            treatment are included.
+
+            The considered processes are:
+                                                                     Figure 7. Metallization and interconnection (M&I) cost of screen-printing + ECA-gluing
+            A.	first a PVD seed layer with hotmelt inkjet mask      of light capturing (LCR) silver-coated ribbons passing two times IEC (ECA-reliab) versus
+                (figure 3A)                                          optimized deposition of ECA and silver-free LCR ribbons.
+            B.	a patterned PVD seed with a silicon oxide layer
+                deposited by PECVD (figure 3B)                       consists mainly of commonly available waxes and
+            C.	an inkjet-printed seed-grid, also with silicon       a huge potential for cost reduction with increasing
+                oxide (figure 3C).                                   production volumes and more competition in the
+                                                                     market may be assumed.
+              First, it is worth commenting that the                    For the second process with patterned PVD seed,
+            depreciation cost is significantly higher than for       one more piece of equipment is required – PECVD
+            screen printing mainly due to several process steps      for the dielectric layer – further increasing the
+            being involved: PVD, inkjet-printing and plating         capex. On the other side the cost for consumables
+            and chemical steps (figure 6 and 8). Additionally,       is reduced, still with potential for reduction by
+            the actual production volumes for these equipment        volume effects e.g. for UV-curable ink.
+            types are small and the price consequently higher           For the last process also inkjet-printing of
+            compared to screen printers.                             silver nanoparticles ink is considered for the sake
+              For the A process the biggest portion of the           of comparability with the other two processes
+            consumables is the price for hotmelt-ink. The ink        utilizing an inkjet printer. The consumption of
+
+
+72      www.pv-tech.org
+                                                                                              Metallization & interconnection | Cell Processing
+
+
+
+
+                                                                                        includes cell efficiency and throughput increase
+                                                                                        with equipment and consumable price reduction)
+                                                                                        reduction by 50% for equipment as well as for
+                                                                                        materials and consumables simply by volume
+                                                                                        effects and continuous process improvement, once
+                                                                                        the implementation of plating in production has
+                                                                                        gained a bit more momentum. Such evolution
+                                                                                        has been seen for screen printing during the last
+                                                                                        seven years, with savings even higher than 50%
+                                                                                        taking into account the reduction in silver paste
+                                                                                        consumption (-60%), the equipment throughput
+                                                                                        increase (+50%), cell efficiency improvement (+18%
+                                                                                        relative) and the silver price decrease between
+                                                                                        2011 and 2018 (-60%). [13, 48-50]. This supposed
+                                                                                        cost reduction places the plating + standard
+Figure 8. Metallization only cost comparison of three different masking processes for   soldering as the cheapest M&I option for SHJ PV
+copper-plating (current status).                                                        bifacial module. Nevertheless, as plating is not
+                                                                                        already implemented for metallization in SHJ cell
+                                                                                        production, some more R&D work needs to be
+                                                                                        done on the topic, to improve and develop the best
+                                                                                        option in term of efficiency, reliability and cost
+                                                                                        approach. But the conclusions of this work show
+                                                                                        the cost reduction potential of this metallization
+                                                                                        technology to make it competitive for high
+                                                                                        efficiency SHJ cells and modules.
+
+                                                                                        Conclusion
+                                                                                        When new technologies enter the market, like
+                                                                                        silicon-heterojunction (SHJ) solar cells and
+                                                                                        modules for the PV market, new opportunities
+                                                                                        and challenges are present. In the aforementioned
+                                                                                        case, the metallization and interconnection (M&I)
+                                                                                        combined processes could be a nice opportunity
+Figure 9. Future scenario with 50% average cost/Wp reduction for copper plating         for new technologies – in particular for the light-
+equipment and process using PVD seed layer with hotmelt inkjet mask process.
+                                                                                        capturing (LCR) ribbons attached with electrical
+                              the nano-ink is extremely low, even below 10 mg           conductive adhesive (ECA) interconnection that can
+                              for the front side of a busbar-less cell [25], but the    save today 10% of cost for 5BB cell design with 6 Wp
+                              price of the nano-ink is at the R&D stage. Here the       gain on a 72-cell module and up to 30% with process
+                              processing cost increases for 5 or 6 busbars because      optimization.
+                              of higher ink consumption, contrary to the other             SmartWire Connection Technology was
+                              two processes with a slightly lower price for 5 or 6      developed with a strong emphasis for the SHJ
+                              busbars, because of thinner required copper plated        technology in the last years, and this technology
+                              fingers and consequently slightly shorter plating         reduces the cost of M&I by 50% thanks to silver
+                              line.                                                     consumption divided by four in the case of reliable
+                                 As demonstrated by Kaneka, screen-printed              modules and by seven in the case of the light-silver
+                              silver paste can be used in spite of nano-ink,            approach. The power gain for a 72-cell module is
+                              with paste consumption at 20 mg for the entire            5 and 8 Wp in the case of the reliable module and
+                              seed-grid on the front [17], which entails not only       light-silver approach, respectively.
+                              lower paste cost but also cheaper equipment. The             In spite of the high complexity of plating there
+                              value for efficiency has been kept constant for all       are processing routes available already today with
+                              processes at 22.5%. A small gain in Jsc is achievable     costs comparable to screen printing for ribbon
+                              with plated fingers defined by hotmelt ink; the           interconnection. Further cost savings are possible
+                              difference with screen printing depends on the            simply by volume effects and continuous process
+                              layout and achievable printed line width for the          improvements, provided the implementation
+                              given layout (number of busbars). On the other            of plating in production would finally start.
+                              side, the round shape of the plated line done over        But the hurdle is high: different technologies,
+                              a thin dialectric mask (Figure 3 B and C) reduces         high investment, only small amounts of data on
+                              the optical finger width in the module, similar to        reliability. A technological need will be necessary
+                              screen-printed fingers [47].                              to make the decision for plating like in case of
+                                 In Figure 9, an optimistic future scenario is          IBC cells. The high conductivity of copper lines
+                              shown, supposing average price/Wp (which                  would also enable a reduction in the number of cell
+
+
+                                                                                                                Photovoltaics International       73
+     Cell Processing | Metallization & interconnection
+
+
+
+
+            segments for shingling, and thus a reduction in                climates”, Energy & Environmental Science, DOI:
+            laser cutting steps.                                           10.1039/c7ee00286f, (2017)
+               The silver consumption for PV accounts for                  [8] T. Söderström, et al., “Low cost high energy yield
+            7.5% of the world silver supply and the production             solar module lines and its applications”, Proc. 42nd
+            capacity is supposed to be at least three times                IEEE PVSC, New Orleans, Louisiana, USA. (2015)
+            higher in 2025 [13]. The higher demand may lead to             [9] Panasonic Solar: HIT, Mai 2017, https://
+            a higher silver price and give an additional stimulus          panasonic.net/ecosolutions/solar/
+            for copper plating.                                            [10] D. Andronikov, A. Abramov, S. Abolmasov,
+                                                                           K. Emtsev, G. Ivanov, A. Kukin, I. Nyapshaev, D.
+            Acknowledgment                                                 Orekhov, A. Semenov, G. Shelopin, E. Terukova, E.
+            This work was supported by the EU with projects                Terukov, N. Belkova, A. Dubrovskiy, P. Ishmuratov,
+            NEXTBASE, DISC and AMPERE. The authors would                   A. Ivanov, D. Saykin, I. Shakhray, A. Smirnov, V.
+            like to acknowledge Mark Francis from EMS, Marco               Tarasov, V. Timakov, A. Tomchinskiy, G. Kekelidze,
+            Galiazzo and Giorgio Cellere from Baccini Cell                 “A Successful Conversion of Silicon Thin-Film
+            System/Applied Materials, Christian Prischmann                 Solar Module Production to High Efficiency
+            from Ulbrich, Tero Horttana from Luvata, Dmitriy               Heterojunction Technology” 33rd European
+            Andronikov from Hevel Solar, Martijn Zweegers                  Photovoltaic Solar Energy Conference and
+            from Meco, Joost Hermans from Meyer Burger                     Exhibition, p. 732 – 735.
+            (Netherlands) B.V. and Bruce Lee from MacDermid-               [11] S. DeWolf, A. Descoeudres, Z. C. Holman and C.
+            Enthone.                                                       Ballif, “High-efficiency Silicon Heterojunction Solar
+                                                                           Cells: A Review”, Green, Vol. 2 (2012), pp. 7–24, (2012)
+                                                                           [12] A. Louwen, W. van Sark, R. Schropp and A. Faaij,
+            References                                                     “A cost roadmap for silicon heterojunction solar
+            [1] H. Kuriyama, S. Nakano, S. Okamoto, T.                     cells“ Solar Energy Materials and Solar Cells, Vol.
+            Takahama, “Photovoltaic Device”, JP2846651B2,                  147, pp. 295-314. (2016)
+            March 1989.                                                    [13] International Technology Roadmap for
+            [2] S. Nakano, S. Okamoto, T. Takahama, M.                     Photovoltaic (ITRPV) 9th Edition report, March
+            Nishikuni, “Photovoltaic Device”, GB2230138, Oct.              2018, itrpv.net
+            1990.                                                          [14] A. Bettinelli, et al., “Busbar and busbar-less
+            [3] M. Tanaka, M. Taguchi, T. Matsuyama, T. Sawada,            heterojunction cell printing on CEA-INES pilot
+            S. Tsuda, S. Nakano, H. Hanafusa and Y. Kuwano,                line ribbons and SWCT module performance”,
+            “Development of New a-Si/c-Si Heterojunction                   Metallization and Interconnection Workshop,
+            Solar Cells: ACJ-HIT (Artificially Constructed                 Konstanz, 24 October 2017.
+            Junction-Heterojunction with Intrinsic Thin-                   [15] A. Faes, M. Despeisse, J. Levrat et al., “SmartWire
+            Layer)”, Japanese Journal of Applied Physics, Volume           Solar Cell Interconnection Technology”, Proc. 29th
+            31, Part 1, Number 11, (1992)                                  EU PVSEC, Amsterdam, The Netherlands, (2014)
+            [4] K. Masuko, M. Shigematsu, T. Hashiguchi, D.                [16] ITRPV International Technology Roadmap for
+            Fujishima, M. Kai, N. Yoshimura, T. Yamaguchi, Y.              Photovoltaic, 5th Edition, 2014
+            Ichihashi, T. Mishima, N. Matsubara, T. Yamanishi,             [17] D. Adachi, T. Terashita, T. Uto, J. L. Hernández
+            T. Takahama, M. Taguchi, E. Maruyama and                       and K. Yamamoto, “Effect of SiOx barrier layer
+            S. Okamoto. “Achievement of More Than 25%;                     prepared by plasma-enchanced chemical vapor
+            Conversion Efficiency With Crystalline Silicon                 deposition on improvement of long-term reliability
+            Heterojunction Solar Cell”, Journal of Photovoltaics,          and production coast for Cu-plated amorphous
+            IEEE, vol. 4, no. 6, pages 1433–1435, (2014)                   Si/crystalline Si heterojunction solar cells”, Solar
+            [5] K. Yoshikawa, H. Kawasaki, W. Yoshida, T.                  Energy Material and Solar Cells, 2017
+            Irie, K. Konishi, K. Nakano, T. Uto, D. Adachi, M.             [18] F. Ishimura, W. Li, E. Kobayashi, K. Hashimoto,
+            Kanematsu, H. Uzu and K. Yamamoto, “Silicon                    S. Sato, Y. Watabe,E. Bende, and G. Coletti, ”Metal
+            heterojunction solar cell with interdigitated back             Wrap Through Heterojunction Solar Cell with
+            contacts for a photoconversion efficiency over 26%”,           Plated Electrode”, 32nd European Photovoltaic Solar
+            NATURE ENERGY 2, 17032, (2017)                                 Energy Conference and Exhibition (2016)
+            [6] T. Mishima, M. Taguchi, H. Sakata and E.                   [19] https://phys.org/news/2013-11-solar-cell-
+            Maruyama, “Development status of high-efficiency               efficient-costly.html
+            HIT solar cells”, Solar Energy Materials & Solar Cells,        [20] Luca Pavani, Adrian Turner, Oliver Schultz-
+            (2011)                                                         Wittmann, “Silicon Cracking in Plated c-Si Solar
+            [7] J. Haschke, J. P. Seif, Y. Riesen, A. Tomasi, J. Cattin,   Cells”, Reliability Workshop, NREL, 2012.
+            L. Tous, P. Choulat, M. Aleman, E. Cornagliotti, A.            [21] B. Li “Industrial bifacial silicon heterojunction
+            Uruena, R. Russell, F. Duerinckx, J. Champliaud, J.            technology that improves system LCOE”, Hercules
+            Levrat, A. A. Abdallah, B. Aissa, N. Tabet, N. Wyrsch,         Workshop, Berlin, 2016
+            M. Despeisse, J. Szlufcik, S. De Wolf and C. Ballif,           [22] S. Singh, B. O’Sullivan, M. Kyuzo, S. Jambaldinni,
+            “The impact of silicon solar cell architecture and             L. Tous, R. Russel, M. Debucquoy, J. Szlufcik and
+            cell interconnection on energy yield in hot & sunny            J. Poortmans, “Application of seed and plate
+
+
+74      www.pv-tech.org
+                                                                Metallization & interconnection | Cell Processing
+
+
+
+
+metallization to 15.6cm x 15.6cm IBC cells”,             interconnection of crystalline silicon heterojunction
+Photovoltaics International, Vol. 29 (2015)              solar cells“, Photovoltaics International, Volume 40,
+[23] A. Khanna et al., “Screen-printed masking of        2018.
+transparent conductive oxide layers for copper           [37] M. Yoshidaa, H. Tokuhisaa, U. Itoha, T. Kamataa,
+plating of silicon heterojunction cells”, Applied        I. Sumitab, S. Sekinec, “Novel Low-Temperature-
+Surface Science, 2015                                    Sintering Type Cu-Alloy Pastes for Silicon Solar
+[24] Z. Li, P.-C. Hsiao, W. Zhang, R. Chen, Y.           Cells” Energy Procedia Vol. 21, pp. 66 – 74, (2012)
+Yao, P. Papet, A. Lennon, “Patterning for Plated         [38] G. Beaucarne, I. Kuzma-Filipek, F. Campeol, et
+Heterojunction Cells”, Energy Procedia, Volume 67,       al. “Innovative cell interconnection based on ribbon
+Pages 76-83, (2015)                                      bonding of busbarless cells using silicone-based
+[25] J.P. Hermans, R. von Knippenberg, E. Kamp,          electrically conductive adhesives”, Energy Procedia
+W.J.M Brok, P. Papet, B. Legradic, B. Strahm,            Vol. 67, pp. 185 – 193., (2015)
+“Inkjet Printing for Solar Cell Mass Production          [39] W. Muehleisen, L. Neumaier, C. Hirschl et al.,
+on the PIXDRO JETX Platform”, 28th European              “Comparison of output power for solar cells with
+Photovoltaic Solar Energy Conference and                 standard and structured ribbons”, EPJ Photovoltaics
+Exhibition, Paris, 2013                                  Vol. 7, pp. 70701, (2016)
+[26] A. Lachowicz, J. Geissbühler, A. Faes, J.           [40] H. Holst, H. Schulte-Huxel, M. Winter et al.
+Champliaud, F. Debrot, E. Kobayashi, J. Horzel,          “Increased light harvesting by structured cell
+C. Ballif, M. Despeisse, “Copper Plating Process         interconnection ribbons: an optical ray tracing
+for Bifacial Heterojunction Cells”, 33rd European        study using a realistic daylight model” Energy
+Photovoltaic Solar Energy Conference and                 Procedia, Vol. 92, Pages 505-514, (2016)
+Exhibition, Amsterdam, 2017                              [41] S. Braun, G. Micard and G. Hahn, “Solar cell
+[27] A. Rodofili, W. Wolke, L. Kroely, M. Bivour, G.     improvement by using a multi busbar design as
+Cimiotti, J. Bartsch, M. Glathaar, J. Nekarda, “Laser-   front electrode” Energy Procedia Vol. 27, pp. 227 –
+transferred Ni-seed for the Metallization of Silicon     233, (2012)
+Heterojunction Solar Cells by Cu Plating”, 33rd          [42] A. Schneider, L. Rubin, & G. Rubin, “Solar cell
+European Photovoltaic Solar Energy Conference and        improvement by new metallization techniques –
+Exhibition, Amsterdam, 2017                              The DAY4TM electrode concept”, Proc. 4th WCPEC,
+[28] B. Lalaguna, P. Sánchez-Friera, I.J. Bennett, D.    Waikoloa, Hawaii, USA, p. 1095, (2006).
+Sánchez, L. J. Caballero, J. Alonso, EVALUATION OF       [43] C. Ballif et al., “Novel designs and materials for
+BISMUTH-BASED SOLDER ALLOYS FOR LOW-                     durable PV modules: applications on the ground,
+STRESS INTERCONNECTION OF INDUSTRIAL                     in cities and in the air” IEEE PVSC-44, Washinton,
+CRYSTALLINE SILICON PV CELLS, 22nd European              (2017)
+Photovoltaic Solar Energy Conference, 3-7                [44] CEA, Meyer Burger, “Record 410 watt module
+September 2007, Milan, Italy.                            with photovoltaic heterojunction cell technology”,
+[29] B. Lalaguna, P. Sánchez-Friera, H. Mäckel,          28.04.2018, http://liten.cea.fr/cea-tech/liten/en/
+D. Sánchez, J. Alonso (Isofoton), EVALUATION             Pages/News/record-photovoltaic-heterojunction.
+OF STRESS ON CELLS DURING DIFFERENT                      aspx
+INTERCONNECTION PROCESSES, 23rd European                 [45] Meyer Burger, Panasonic, “Meyer Burger’s
+Photovoltaic Solar Energy Conference, 1-5                SmartWire Connection Technology selected by
+September 2008, Valencia, Spain                          Panasonic Solar for evaluation in the manufacture
+[30] https://alphaassembly.com/Products/                 of its innovative high efficiency solar modules”,
+Photovoltaic, 28.08.2018                                 28.05.2018, https://www.meyerburger.com/jp/en/
+[31] http://www.indium.com/solar-assembly-               meyer-burger/media/news-detail/article/meyer-
+materials/, 28.08.2018                                   burgers-smartwire-connection-technology-selected-
+[32] Teamtechnik, https://www.teamtechnik.com/           by-panasonic-solar-for-evaluation-in-the-man/
+en/news/major-contract-for-teamtechnik-italian-          [46] P. Papet, et al., “Effective Efficiency of
+pv-manufacturer-orders-stringers-for-pro-duction-        Busbarless solar cells”, Metallization and
+of-high-efficiency-modules-with-hjt-cells/               Interconnection Workshop, Konstanz, 24 October
+[33] A. Schneider, R. Harney, S. Aulehla, E. Lemp, S.    2017.
+Koch, “Progress in interconnection of busbar-less        [47] Y.Chen, Y. Yang, W. Deng, A. Ali, P.P. Altermatt,
+solar cells by means of conductive gluing“ Energy        and P.J. Verlinden, “Shape and homogeneity of front
+Procedia Vol. 38, pp. 387 – 394, (2013)                  metal fingers – impact on cell efficiency and its
+[34] T. Geipel, Z. Huq and U. Eitner, “Reliable          distribution in production lines”, 6th Metallization
+interconnection of the front side grid fingers           Workshop, Konstanz, (2016)
+using silver-reduced conductive adhesives”, Energy       [48] ITRPV International Technology Roadmap for
+Procedia Vol. 55, pp. 336 – 341, (2014)                  Photovoltaic, 2nd Edition, 2011
+[35] Engineered Materials Systems, Inc., Nagase          [49] ITRPV International Technology Roadmap for
+Group, http://nagaseamerica.com/product/                 Photovoltaic, 4th Edition, 2014
+conductive-ribbonstringer-attach-adhesives/              [50] https://silverprice.org/silver-price-history.html,
+[36] A. De Rose, et al., “Challenges for the             31.08.2018.
+
+
+                                                                                  Photovoltaics International       75
+     Cell Processing | Metallization & interconnection
+
+
+
+
+            About the Authors                                       Delfina Muñoz is a senior researcher in
+                           Antonin Faes received his PhD in         photovoltaic technology. She got her PhD
+                           2010 for his work on solid oxide fuel    in the Technical University of Catalunya on
+                           cells at the Interdisciplinary Centre    heterojunction solar cell development. She joined
+                           for Electron Microscopy (CIME) and       CEA-INES in 2008 in the heterojunction solar cell
+                           the Industrial Energy System             team. Since then, she has been actively working
+                           Laboratory (LENI) at EPFL. In 2012       in material, device and integration improvement.
+            he joined the CSEM PV-center in Neuchâtel, where        She has been coordinating the successful FP7
+            he is responsible for c-Si solar cell metallization     HERCULES project.
+            and interconnection activities, with a particular
+            focus on silicon heterojunction solar cells.                           Jonas Geissbühler received his PhD
+                                                                                   from EPFL, Switzerland in 2015,
+                           Agata Lachowicz studied chemistry                       writing his thesis on high-efficiency
+                           at Heinrich Heine University                            silicon heterojunction solar cells. He
+                           Düsseldorf and worked initially on                      joined the CSEM PV-Centre in 2016.
+                           processes for printed circuit boards,                   His research interests include the
+                           followed by development of etching       metallization of silicon heterojunction solar cells,
+                           and plating processes for solar cells    inkjet printing and high efficiency silicon
+            at Schott Solar and optimization of PERC cells at       heterojunction solar cells.
+            Meyer Burger Germany. She joined CSEM
+            PV-centre in 2014 for development of plating            Heng-Yu Li received his PhD from EPFL,
+            processes for silicon heterojunction cells.             Switzerland in 2013 on c-Si PV module
+                                                                    technology. He joined the CSEM PV-Centre
+                           Armand Bettinelli received his           in 2014 and since then has been developing
+                           PhD in 1987 for his work on              functional encapsulation materials and
+                           cofiring of alumina and tungsten         innovative module designs for BIPV, PIPV,
+                           at the Strasburg University. He          advanced interconnection technology, etc.
+                           worked in the industry as Process        Since 2018, he has also been working towards
+                           or Technical manager in the field        ultra-long module lifetime and module lifetime
+            of High and Low T° Cofired Ceramics then                modelling.
+            Plasma Display Panels. In 2005 he joined the
+            CEA-INES centre, where he works as senior               Christophe Ballif received his PhD from EPFL,
+            expert for c-Si solar cell metallization and            Switzerland, in 1998. In 2004 he became a full
+            interconnection, for both homo and                      professor with the Institute of Microengineering
+            heterojunction c-Si solar cells.                        at the University of Neuchâtel, where he directs
+                                                                    the Photovoltaics and Thin-Film Electronics
+                           Pierre-Jean Ribeyron has been            Laboratory, which is now part of EPFL. Since
+                           involved in photovoltaic energy          2013 he has also been the director of the CSEM
+                           since 1994. He received his PhD          PV-centre. His research interests include materials
+                           from Grenoble University in 1998 on      for PV, high-efficiency c-Si solar cells, module
+                           the crystallization of                   technology, BIPV and energy systems.
+                           multicrystalline silicon for PV
+            applications. In 2000, he joined CEA to build a first   Matthieu Despeisse received his PhD in 2006
+            photovoltaic solar cell platform and moved in 2007      for his work on advanced detectors at CERN in
+            to CEA-INES as silicon solar cell lab manager.          Geneva, Switzerland. He then joined EPFL in 2009
+            Since 2014, he has been a member of the executive       as head of the thin-film silicon photovoltaics
+            board at CEA-INES. His research interest cover the      research team. Since 2013 he has led research
+            whole value chain of PV, from silicon material to       activities at CSEM concerning crystalline silicon
+            modules and systems as well as related                  photovoltaics and metallization, with a special
+            technological transfer to industry.                     focus on silicon heterojunction technology,
+                                                                    passivating contacts, metallization and
+            Jean-François Lerat studied engineering in materials    interconnection.
+            science & nanotechnologies at INSA Rennes (France)
+            and at RWTH Aachen (Germany). He developed
+            applications for a laser equipment manufacturer         Enquiries
+            for four years in the semiconductor industry before     Antonin Faes
+            joining CEA-INES. Since 2016, his work has focused      Email: antonin.faes@csem.ch
+            on development in silicon heterojunction solar cells    Tel: +41 32 720 51 11,
+            and advanced metallization.                             Website: www.csem.ch
+
+
+
+
+76      www.pv-tech.org
+

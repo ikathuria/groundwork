@@ -1,0 +1,239 @@
+Non-Contact Printed Aluminum
+Metallization of Si Photovoltaic
+Devices
+Preprint
+Heather A.S. Platt and Maikel F.A.M. van Hest
+National Renewable Energy Laboratory
+
+Yunjun Li and James P. Novak
+Applied Nanotech, Inc.
+Presented at the 2012 IEEE Photovoltaic Specialists Conference
+Austin, Texas
+June 3–8, 2012
+
+
+
+
+NREL is a national laboratory of the U.S. Department of Energy, Office of Energy
+Efficiency & Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.
+
+Conference Paper
+NREL/CP-5200-54171
+June 2012
+
+Contract No. DE-AC36-08GO28308
+                                                       NOTICE
+
+The submitted manuscript has been offered by an employee of the Alliance for Sustainable Energy, LLC
+(Alliance), a contractor of the US Government under Contract No. DE-AC36-08GO28308. Accordingly, the US
+Government and Alliance retain a nonexclusive royalty-free license to publish or reproduce the published form of
+this contribution, or allow others to do so, for US Government purposes.
+This report was prepared as an account of work sponsored by an agency of the United States government.
+Neither the United States government nor any agency thereof, nor any of their employees, makes any warranty,
+express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of
+any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately
+owned rights. Reference herein to any specific commercial product, process, or service by trade name,
+trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation,
+or favoring by the United States government or any agency thereof. The views and opinions of authors
+expressed herein do not necessarily state or reflect those of the United States government or any agency thereof.
+
+
+                         Available electronically at http://www.osti.gov/bridge
+
+                         Available for a processing fee to U.S. Department of Energy
+                         and its contractors, in paper, from:
+
+                                 U.S. Department of Energy
+                                 Office of Scientific and Technical Information
+
+                                 P.O. Box 62
+                                 Oak Ridge, TN 37831-0062
+                                 phone: 865.576.8401
+                                 fax: 865.576.5728
+                                 email: mailto:reports@adonis.osti.gov
+
+                         Available for sale to the public, in paper, from:
+
+                                 U.S. Department of Commerce
+                                 National Technical Information Service
+                                 5285 Port Royal Road
+                                 Springfield, VA 22161
+                                 phone: 800.553.6847
+                                 fax: 703.605.6900
+                                 email: orders@ntis.fedworld.gov
+                                 online ordering: http://www.ntis.gov/help/ordermethods.aspx
+
+
+
+      Cover Photos: (left to right) PIX 16416, PIX 17423, PIX 16560, PIX 17613, PIX 17436, PIX 17721
+
+      Printed on paper containing at least 50% wastepaper, including 10% post consumer waste.
+       Non-Contact Printed Aluminum Metallization of Si Photovoltaic
+                                 Devices
+                  Heather A.S. Platt,1 Yunjun Li,2 James P. Novak,2 and Maikel F.A.M. van Hest1
+                     1
+                         National Renewable Energy Laboratory, Golden, Colorado, United States
+                                  2
+                                    Applied Nanotech, Inc., Austin, Texas, United States
+
+   Abstract — Alternative solution-based techniques such as
+aerosol jet printing offer the dual benefits of contactless pattern
+deposition and high material utilization. We have used aerosol jet                          II. METHODS AND RESULTS
+printing to investigate non-contact printed Al metal ink as a
+replacement for screen printed Al back contacts on wafer Si solar         A. Aerosol jet printed Al lines
+cells. This particle-based ink can be prepared at high loadings of
+60 weight % metal, which enables rapid deposition of 1 - 10 µm
+thick lines. Al lines printed on Si wafers and heated between 550
+                                                                          Aerosol jet printing is a very versatile technique that can
+and 800 °C form low resistance contacts suitable for current              handle inks that have a wide range of viscosities and
+extraction. The effectiveness of these printed Al back contacts           components.[3] This is particularly advantageous for printing
+has further been demonstrated by incorporating them into a                Applied Nanotech’s particle-based Al ink, which can be
+series of 21 cm2 crystalline Si solar cells that produced a
+champion power conversion efficiency of 13%.
+   Index Terms — printing, aluminum, photovoltaic cells, silicon.
+
+
+                          I. INTRODUCTION
+   Rapid deposition of electrically active metal patterns on Si
+wafers can be accomplished by a variety of techniques in the
+large-scale manufacturing environment. Screen printing of
+                                                                                                                      100μm
+metal contacts is the usual method of choice for solar cell
+production because it is relatively simple and reliable.[1] Cost
+savings efforts are driving Si wafers thinner, however, and
+contact metallization methods like screen printing must be
+replaced by non-contact methods in order to prevent a
+concurrent increase in broken wafers. Any non-contact
+                                                                           Figure 1. Top down image of an aerosol jet printed Al line.
+technique that replaces screen printing in large-scale
+manufacturing must also be capable of depositing films and
+patterns very quickly (>2000 wafers/hour). Solution-based                 prepared at high loadings of 60 weight % metal. This ink has
+techniques such as spray pyrolysis and aerosol or ink jet                 been used to deposit lines with thicknesses in the range of 1 to
+printing satisfy both of these criteria. These large-area ink             120 μm thick. As the 10 μm thick line in Figure 1 shows,
+deposition tools have been incorporated into the Atmospheric              these lines are just over 100 μm wide with very little
+Processing Platform (APP) at NREL,[2] along with                          overspray beyond the edges of the lines. The resistivities of
+complementary rapid thermal processing and characterization               such lines printed on glass are 10 μΩ-cm (~6 x bulk Al) after
+equipment. The APP provides an inert environment in which                 appropriate sintering.
+substrates up to 156 mm x 156 mm can be placed to deposit
+metal films and lines to act as front and back contacts for a             B. Al – Si Contact Formation
+wide variety of solar cells.
+   We have used the aerosol jet printing capability in the APP            Al lines printed on Si wafers have been heated over a wide
+to investigate non-contact printed Al metal ink as a possible             temperature range of 550 – 800 °C to form low resistance
+low-cost replacement for screen printed Al back contacts on               ohmic contacts suitable for current extraction. This range
+wafer Si solar cells. The printed Al features have been heated            includes temperatures above and below the Si-Al eutectic at
+over a wide temperature range to form low resistance contacts             577 °C and the melting point of Al at 660 °C. Transfer length
+to Si that are suitable for extracting current from solar cells.          method patterns consisting of ten parallel lines with line-to-
+The effectiveness of these printed Al back contacts has further           line spacings ranging from 700 μm to 4800 μm were printed
+been demonstrated by incorporating them into a series of 21               on textured Si wafers and sintered for 4 min at each
+cm2 Si solar cells that produced champion efficiencies of 13%.            temperature to determine contact resistivities. These values
+
+
+
+                                                                      1
+fell from 80 mΩ-cm2 at both 550 and 600 °C to 20 mΩ-cm2 at             or pads were printed on the back of Si wafers after
+800 °C. Profiles of the sintered Al lines in Figure 2 show that        commercial Ag paste was screen printed on the SiNx anti-
+                                                                       reflective coating (ARC) on the opposite side. The cells were
+                                                                       then fired using a rapid thermal processor to diffuse Al into
+                                                                       the back surface of the wafers and burn the Ag paste through
+                                                                       the ARC on the front surface.
+                                                                          Co-firing two different metals simultaneously to form
+                                                                       useful contacts to both sides of a wafer requires careful
+                                                                       consideration of the interaction of both metals with Si.
+                                                                       Burning through the ARC also necessitates the inclusion of an
+                                                                       oxide-based frit in the Ag paste,[4] which further narrows the
+                                                                       processing window. The wide temperature range established
+                                                                       for making good electrical contact to Si with non-contact
+                                                                       printed Al ink allowed us to focus on finding appropriate
+                                                                       firing conditions for the Ag paste. Between 300 and 600 °C
+                                                                       the organic binding agents that boost the Ag paste’s viscosity
+                                                                       will typically burn off as long as there is sufficient oxygen
+                                                                       present. Then a short spike into the 700 – 800 °C range drives
+                                                                       the frit-SiNx burn through reaction. Figure 3 shows three of
+                                                                       the profiles used to test the effect of the amount of time a
+                                                                       wafer spent above 600 °C on the final cell performance. The
+ Figure 2. Profiles of Al lines printed on textured Si wafers          peak temperature was also varied.
+ and fired at the indicated temperatures.
+                                                                          Figure 4 provides a summary of the efficiencies of cells
+all of the temperatures investigated cause the lines to                fired for three different times above 600 °C. There is a clear
+compress significantly from the original 9 μm thick “as
+printed” line. This behavior is consistent with the Al melting
+and Al-Si alloying taking place in this temperature range.
+
+C. Solar Cell Preparation and Performance
+   The effectiveness of aerosol jet printed Al back contacts
+has further been demonstrated by incorporating them into 21
+cm2 Si solar cells with Ag grids as the front contacts. Al lines
+
+
+
+
+     Figure 2. Profiles of Al lines printed on textured Si
+     wafers and fired at the indicated temperatures.
+
+
+
+
+                                                                            Figure 4. The efficiencies of solar cells heated for
+                                                                            different times above 600 °C.
+
+
+                                                                       trend toward higher efficiency with shorter firing time, which
+                                                                       is driven by a concurrent decrease in the series resistance of
+                                                                       the cells. Longer firing times likely cause an increase in series
+                                                                       resistance due the reaction of the oxide frit and the oxygen
+  Figure 3. Firing profiles used to form Ag front contacts and         atmosphere with the Si wafer to form some SiOx. Peak firing
+  Al back contacts to Si solar cells. Labels indicate the length       temperature also appears to play a role in device performance,
+  of time above 600 °C.                                                as demonstrated by the higher efficiencies of cells fired at 760
+
+
+
+
+                                                                   2
+°C than those that only reached 730 °C. In this case, the               finger pattern after rotating the original fingers 90°. These
+additional activation energy from the higher temperature may            cells were fired by rapid thermal processing as described
+drive the burn through reaction faster.                                 above. Fig. 5 shows the efficiencies of these cells increasing
+   In addition to the firing optimization studies, we also              with increasing Al coverage of the back surface of the cell
+evaluated the impact of the geometry of the Al back contact             before dropping again when the entire surface is covered with
+on the performance of the solar cells. The aerosol jet printer is       the pad.
+designed to print straight lines, so fingers were printed across
+the back of the wafers with either 1.5 or 0.7 mm between
+                                                                                                III. CONCLUSION
+them. Overlapping lines were also printed on other cells to
+form continuous pads. The efficiencies of the cells increased           We have demonstrated non-contact printed Al pads and
+as the space between lines decreased, which is the expected             patterns on Si wafers that can be heated over a wide
+trend with increasing Al coverage on the back of the cell. The          temperature range to form low resistance contacts suitable for
+efficiencies of the pads decreased again, however (see the 5 s          extracting photo-generated current from Si solar cells. The
+series of cells in Figure 4). This unexpected result may be due         effectiveness of these printed Al back contacts has further
+to cracking in the pads as the Al contracted during firing,             been demonstrated by incorporating them into 21 cm2
+while the additional space around the fingers provided less             crystalline Si solar cells that produced champion efficiencies
+destructive routes to stress relief during the heating process.         of 13%. These promising results demonstrate the potential for
+Cracks in the pads were easily visible to the eye after firing.         non-contact printed Al to contribute to the fabrication of low-
+   This hypothesis was confirmed by preparing a second series           cost photovoltaic devices.
+of cells using a different Ag paste and slightly different Al
+geometries. In addition to full Al pads and 0.7 mm spaced
+fingers, crossed fingers were printed by repeating the 0.7 mm                                 ACKNOWLEDGEMENT
+                                                                        Applied Nanotech, Inc. would like to thank the US Dept. of
+                                                                        Energy for funding this work under contract DE-FG02-
+                                                                        08ER85085.
+
+
+                                                                                                  REFERENCES
+                                                                        [1] M Ghannam, S. Sivoththaman, J. Poortmans, J. Szlufcik, J. Nijs,
+                                                                            R. Mertens, and R. V. Overstraeten, "Trends in Industrial
+                                                                            Silicon Solar Cell Processes," Solar Energy, vol. 59, pp. 101-
+                                                                            110, 1997.
+                                                                        [2] National         Renewable          Energy         Laboratory,
+                                                                            http://www.nrel.gov/pv/pdil/ap_capabilities.html.
+                                                                        [3] Optomec, http://www.optomec.com.
+                                                                        [4] M. Horteis, T. Gutberlet, A. Reller, and S. W. Glunz, "High-
+                                                                            Temperature Contact Formation on n-Type Silicon: Basic
+                                                                            Reactions and Contact Model for Seed-Layer Contacts,"
+                                                                            Advanced Functional Materials, vol. 20, p. 476 – 484, 2010.
+     Figure 5. The efficiencies of solar cells prepared
+     with different Al back contact geometries.
+
+
+
+
+                                                                    3
+

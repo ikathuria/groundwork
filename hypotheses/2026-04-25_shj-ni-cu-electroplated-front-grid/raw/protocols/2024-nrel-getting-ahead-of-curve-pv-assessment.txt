@@ -1,0 +1,1203 @@
+4                                                                                       IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+
+     Getting Ahead of the Curve: Assessment of New
+     Photovoltaic Module Reliability Risks Associated
+          With Projected Technological Changes
+            Jarett Zuboy , Martin Springer , Elizabeth C. Palmiotti , Joseph Karas , Brittany L. Smith ,
+                                   Michael Woodhouse , and Teresa M. Barnes
+
+
+    Abstract—Maintaining the reliability of photovoltaic (PV) mod-             630 GW/year by 2030 [1]. Reliable PV modules and systems
+ules in the face of rapidly changing technology is critical to maxi-           are key to meeting these ambitious deployment targets [2].
+mizing solar energy’s contribution to global decarbonization. Our              Reliable modules last longer, produce more energy, are more
+review describes expected changes in PV technology and their
+impacts on performance and reliability. We leverage PV market                  cost-competitive, and have less environmental impact [2], [3].
+reports, interviews with PV researchers and other industry stake-              They can also help maintain energy resilience during catas-
+holders, and peer-reviewed literature to narrow the multitude of               trophic events. Moreover, reliability builds confidence in PV
+possible changes into a manageable set of 11 impactful trends likely           technology among potential end users and financiers, enabling
+to be incorporated in near-term crystalline-silicon module designs.            faster and more widespread deployment. PV has been reliable to
+We group the trends into four categories (module architecture,
+interconnect technologies, bifacial modules, and cell technology)              date, with product warranties spanning decades and less than 1%
+and explore the drivers behind the changes, their interactions,                of modules installed in the United States failing within their first
+and associated reliability risks and benefits. Our analysis iden-              five years [4]. Degradation rates have remained mostly constant
+tifies specific areas that would benefit from accelerating the PV              between less expensive modern modules and previous gener-
+reliability learning cycle to assess emerging module products and              ations of technologies. However, multiple factors will affect
+designs more accurately. We recommend that researchers continue
+tracking module technologies and their reliability implications, so            future module reliability and efforts to extend module lifetimes
+efforts can be focused on the most impactful trends. As the rapid              past 30 years [5].
+technological turnover continues, it is also critical to incorporate              First, an exponential deployment growth curve along with
+fundamental knowledge into models that can predict module re-                  rapidly evolving technology means a large proportion of tech-
+liability. Predictive capabilities complete the PV reliability learn-          nologies in PV systems at any given time will be new. Such
+ing cycle—reducing the time required to assess new designs and
+mitigating the risks associated with large-scale deployment of new             technologies may not have a field history, they may be deployed
+products.                                                                      in environments where they have not been deployed before, or
+                                                                               both. Most will lack the three years of data required to calculate
+   Index Terms—Bifacial, cell, degradation, durability, forecast,
+interconnection, module, photovoltaic (PV), projection, reliability,
+                                                                               accurate degradation rates. The rapid pace of introducing new
+solar, technology, trend.                                                      PV technologies into the field creates a potentially greater risk of
+                                                                               encountering premature failures and long-term reliability issues
+                                                                               [6].
+                           I. INTRODUCTION                                        Second, manufacturers are under pressure to reduce module
+     OLAR photovoltaic (PV) technology is central to global                    prices while increasing efficiency, resulting in PV technology
+S    decarbonization efforts, requiring deployments of at least                changes [4]. Technology choices can also be influenced by
+                                                                               changes in the global PV supply chain [7]. These technology
+                                                                               changes often lead to higher performance, lower cost, or both,
+   Manuscript received 5 October 2023; revised 10 November 2023; accepted 13   but some may increase reliability risks. One well-known exam-
+November 2023. Date of publication 7 December 2023; date of current version
+18 December 2023. This work was authored by the National Renewable Energy      ple is the failure of backsheets made of a type of AAA polyamide,
+Laboratory, operated by Alliance for Sustainable Energy, LLC, for the U.S.     which entered the market in 2010. The AAA backsheets became
+Department of Energy under Contract No. DE-AC36-08GO28308. Funding was         popular because of their low cost and because the supply of con-
+provided as part of the Durable Module Materials Consortium 2 (DuraMAT
+2) funded by the U.S. Department of Energy, Office of Energy Efficiency        ventional backsheets was constrained. These AAA backsheets
+and Renewable Energy, Solar Energy Technologies Office, agreement number       passed standard damp-heat and ultraviolet (UV) light tests, but
+38259. (Corresponding author: Jarett Zuboy.)                                   many began cracking after five to ten years owing to mechanical
+   The authors are with the National Renewable Energy Laboratory, Golden,
+CO 80401 USA (e-mail: jarett.zuboy@nrel.gov; martin.springer@nrel.gov;         stresses from production and environmental exposure that had
+elizabeth.palmiotti@nrel.gov; joseph.karas@nrel.gov; brittany.smith@nrel.      not been part of standard testing [4]. In addition to the impacts
+gov; michael.woodhouse@nrel.gov; teresa.barnes@nrel.gov).                      of individual changes, the complex interactions among multiple
+   Color versions of one or more figures in this article are available at
+https://doi.org/10.1109/JPHOTOV.2023.3334477.                                  module materials exacerbate the reliability impacts of techno-
+   Digital Object Identifier 10.1109/JPHOTOV.2023.3334477                      logical change [8].
+
+
+                  © 2023 The Authors. This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see
+                                                       https://creativecommons.org/licenses/by/4.0/
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                 5
+
+
+
+   Finally, there is pressure to increase module lifetimes. Typical   from PV market reports, interviews with PV researchers and
+module warranties were 10 years in 1990 and 30 years in 2020          other industry stakeholders, and peer-reviewed literature helps
+[6], with one product achieving a 40-year warranty in 2022            link academic and business concerns and better capture rapidly
+[9]. The U.S. Department of Energy is targeting a 50-year             evolving knowledge and viewpoints. Key market sources in-
+useful module life [10]. These expectations call for module           clude the International Technology Roadmap for Photovoltaic
+design choices, manufacturing processes, and testing that can         (ITRPV) [16], [17], [18], [19], [20], [21], [22], PV Tech [15],
+enable longer lifetimes, while longer lifetimes create additional     and InfoLink [23], [24]. The Acknowledgment section specifies
+uncertainty around very long-term degradation and failure rates.      individuals and groups who contributed their expertise.
+Current standards and new accelerated tests have effectively             Fig. 1 highlights the major trends in crystalline-silicon module
+reduced premature failures [11], but the PV community knows           evolution that we identified, starting in 2014 at the left and
+less about degradation after 10 or 20 years because systems using     proceeding beyond 2022 at the right. First, modules are be-
+current technology have not yet been deployed in the field that       coming larger. Second, interconnect technologies are changing
+long.                                                                 from cells with several wide busbars connected by wide ribbons
+   To ensure that PV can continue driving global decarbonization      to cells with more numerous, thinner busbars, and ribbons.
+under these circumstances, the PV community must get ahead            Furthermore, interconnect changes include a transition to cells
+of the curve on module reliability. In their review of module         connected by wires with or without busbars and approaches
+degradation and failure phenomena, Aghaei et al. [8] call for         with little or no gap between cells such as shingling. Third,
+research on new materials and module designs as they are              modules are switching from monofacial designs, which only
+introduced, considering reliability along with performance, cost,     convert sunlight at the front of the module, to bifacial de-
+and sustainability. They also stress the importance of developing     signs, which also convert light hitting the back of the mod-
+tests that can predict long-term reliability in the context of        ule. This change is driving evolution in glass, backsheet, and
+multiple materials and multiple stresses that vary over time [12].    encapsulant choices. Finally, cell technologies are changing
+Reliability researchers have started to make progress on this         from aluminum back surface field (Al-BSF) cells in the recent
+effort but it is difficult to keep up with product development and    past to the p-type passivated emitter and rear cell (PERC)
+deployment cycles [6], [13].                                          that is dominant today, to the emerging n-type tunnel oxide
+   We contribute toward this effort by identifying and linking        passivating contact (TOPCon) and silicon heterojunction (SHJ)
+specific new module technology trends with potential reliability      technologies.
+impacts. The PV module industry uses different trade names               The icons at the bottom of Fig. 1 estimate the impact of these
+and descriptions for many of these technology changes, which          trends, showing metrics for typical past, recent, and emerging
+we define, describe, and categorize for clarity. For each of          module technologies that would be used in utility-scale PV
+the 11 trends, we analyze technology drivers (e.g., improved          systems, based on ITRPV data. In this example, module size
+performance, cost, or sustainability), deployment projections,        increases from 1.7 m2 in mainstream products sold around 2014
+reliability implications, options for mitigating reliability risks,   to 2.0 m2 in recent mainstream products, to 2.5 m2 and larger in
+and the need for additional research and testing. We also ex-         emerging products. Across these same three evolutionary steps,
+plore reliability-related interactions among multiple trends. The     the cell-to-module (CTM) power ratio increases from 99% to
+results are meant to provide an early step toward identifying         101% and greater. The CTM ratio is calculated by dividing the
+future reliability issues that have yet to materialize owing to the   module power by the total power of the individual cells within the
+lack of historical field data for novel technologies. We conclude     module [25], [26]; a value above 100%—enabled by improved
+by suggesting areas related to the reliability of new module          module architectures and interconnection technologies—means
+trends that would benefit from additional research as well as         an integrated module produces more power than the sum of the
+the development of standards and testing.                             individual cells from which it is made. The bifaciality factor
+   Note that we address only crystalline-silicon PV technology        is the ratio of a cell’s rear efficiency to front efficiency; it
+and exclude other module technologies including those based           improves from zero in the past to almost one in emerging
+on thin films and tandem cells. Crystalline-silicon technology        modules. Finally, cell efficiency increases from 18% to 25%
+accounts for more than 80% of PV installed in the United States,      and greater. All these trends affect module power. The first icon
+accounts for more than 90% worldwide, and is projected to             in each series of icons shows the estimated trend in increased
+remain dominant over the next decade [14], [15]. Thin-film            power from 280 peak watts (Wp) to 500 Wp and greater. These
+modules are primarily made by a single manufacturer and do not        power estimates are calculated based on the front side of the
+have as much variation in technology changes or descriptions of       modules only. Calculating power contributions from the rear
+those changes. They will be covered in future work.                   face of bifacial modules is more complex and can depend on PV
+                                                                      system design and site characteristics. Bifacial module power
+                                                                      ratings are determined following International Electrotechnical
+     II. ASSESSING MODULE TECHNOLOGY TRENDS AND                       Commission (IEC) Standard 60904-1-2, where the measurement
+                 RELIABILITY IMPLICATIONS                             and rating are collected on the front but incorporate a previously
+   We synthesize a range of sources to identify likely and            determined contribution from the rear of the module. For utility-
+impactful near-term module technology trends and assess the           scale applications, a bifacial power gain of around 6.6%–14.5%
+reliability implications of those trends. Combining information       could be expected [27].
+6                                                                                              IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+
+Fig. 1. Overview of crystalline-silicon PV module technology trends, showing the evolution from mainstream, utility-scale module products sold around 2014
+to recent mainstream products, to emerging products. The icons at the bottom quantify the approximate impact of these trends across several metrics, based on
+ITRPV data. The label colors and icons suggest the connections between items in this figure and our technology categories illustrated in Fig. 2.
+
+                                                                                         We recognize that our limited set of trends does not fully
+                                                                                      represent the large number of potential variations in commercial
+                                                                                      module technologies in the context of a rapidly evolving PV
+                                                                                      industry and the entry of new manufacturers. The proprietary
+                                                                                      nature of specific module designs and commercial research
+                                                                                      hinders a shared understanding of product-specific variations,
+                                                                                      which could have important impacts on reliability even if they
+                                                                                      are seemingly minor. That said we believe tracking consen-
+                                                                                      sus projections of major technology changes, analyzing their
+                                                                                      reliability implications, and identifying research, testing, and
+                                                                                      standards-development needs are valuable ways of staying ahead
+Fig. 2. Total of 11 technology trends analyzed in this article are grouped into       of the curve on module reliability. In the following sections,
+four categories. The interlocking-gear motif indicates our analysis of reliability-
+related interactions among multiple trends.                                           we analyze the potential reliability implications of each trend
+                                                                                      individually and as part of integrated systems.
+
+   Ultimately, we chose to analyze the reliability implications of
+                                                                                                       III. MODULE ARCHITECTURE
+11 key trends within four categories. The categories and trends
+are shown in Fig. 2; the figure’s interlocking-gear motif suggests                       This section discusses technology trends related to module
+the presence of reliability-related interactions among multiple                       architecture, including trends toward larger modules, larger
+trends. Throughout the article, we illustrate trend trajectories                      cells, cell cutting, and thinner cells. All these interrelated areas
+with data from the ITRPV—typically in terms of market shares                          have implications for mechanical reliability, such as cell crack-
+over time—which enables us to consistently present technology                         ing, interconnect breakage or wear out, and associated failure
+projections through 2032. ITRPV data are collected by sur-                            and safety concerns. Cell cracking is an umbrella term for a
+veying PV-related organizations, primarily from Europe [28].                          multistep degradation process that can lead to power loss. We
+As with all projections, the passage of time exposes devia-                           use it as an example of interacting degradation mechanisms to
+tions between ITRPV projections and real-world technology                             highlight the importance of holistically assessing the reliability
+developments, with deviations typically increasing as projection                      implications of interrelated design changes. Cell cracks can be
+timespans increase. The accuracy of past projections is analyzed                      initiated by stresses arising during cell manufacturing as well as
+in the ITRPV annual reports and in publications including [28].                       during module transportation, installation, and operation. The
+We use additional data sources—including PV Tech, InfoLink,                           reliability consequences of cell cracking range from no impact
+academic literature, and expert opinions—to add context to the                        to the formation of hotspots and dead areas leading to module
+ITRPV-based projection figures.                                                       power loss [8]. In one study, 84% of PV modules had at least
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                       7
+
+
+
+one type of crack, but only 60% of the modules had cracks that
+caused significant power loss [29].
+   The wide range of reliability consequences stems from the
+multistep nature of the degradation process. In the first step,
+cracks are initiated. In the second step, cracks can propagate
+as the module is subjected to additional stresses over time [8],
+[30]. In the third step, cell fragments created by cracking can
+move in response to thermal or mechanical loading, which wears
+the fragment-bridging metallization and can result in loss of
+electrical contact and thus power loss [31]. However, the degra-
+dation rates for each step depend on a multitude of factors such
+as module architecture, loading, and the environment. Some            Fig. 3. Historical (2021) and projected (2022–2032) ITRPV data on utility-
+                                                                      scale module size [22].
+cell cracks might never propagate, whereas others might cause
+power loss immediately. Thus, technology changes can impact
+all or none of the degradation steps, making the appropriate          agreement on uniform sizes for modules with 210-mm half-cut
+reliability assessment of multistep degradation processes an          cells [37]. Projected module weight increases as well. About
+ongoing challenge.                                                    half of utility-scale modules weigh less than 25 kg in 2021,
+   For all the module architecture trends, cracking issues can be     declining to 5% in 2032, at which time the remaining market
+mitigated through improved manufacturing processes as well            share is split approximately evenly across modules weighing
+as regular sampling and fracture mechanics evaluation of cells        25–30 kg and modules weighing 30–40 kg. Projected changes
+from the production line [32]. Cracking-related reliability issues    in residential module sizes are less dramatic, with the share of
+also interact with other trends covered in this article. New          modules smaller than 1.8 m2 declining from 49% in 2021 to
+interconnect technologies, for example, create redundancy by          38% in 2032.
+increasing the number of electrical connections within a cell,           For the same module loading condition, cells within larger
+which allow cell fragments to remain electrically connected and       modules are more likely to fracture [38]. Thus, larger modules
+produce power in the event of cell fracture [33], as discussed in     are potentially susceptible to more frequent cell breakage due to
+Section IV. Furthermore, glass–glass module architectures—as          weather, shipping, handling, or installation. In addition, if larger
+used for bifacial modules—are heavier than standard glass–            modules produce higher electrical currents, electrical balance-
+backsheet constructions, and manufacturers are trying to reduce       of-system components (e.g., wire size, fuses, bypass diodes)
+weight by using thinner glass sheets, which change the mechan-        must be modified appropriately.
+ical stresses throughout the package (see Section V).                    Improving installation methods and mounting structure de-
+   Cell cracking and mechanical damage are examples of critical       signs could mitigate reliability issues related to larger module
+areas for further research in determining the relationship be-        sizes. One key may simply be proper workmanship, such as
+tween material or design changes and the incidence and timing         checking connections between frames and racks for wind load-
+of long-term module degradation and failure. In addition, the         ing, using the right fasteners and clips and installing them cor-
+newness of all these trends means more field data must be col-        rectly, checking torque, and so forth [39], [40]. For utility-scale
+lected to aid in understanding and predicting potential reliability   systems, issues related to transitioning from modules mounted
+risks arising during operation. The following sections provide        at their edges (in fixed mounting structures) to their centers (in
+details specific to each module architecture trend, reliability       tracking structures) are exacerbated by using larger modules
+implications, and interactions with other trends.                     [35], [41]. Appropriate shipping techniques must be established
+                                                                      for large modules, similar to how stacking moderately sized
+A. Larger Modules                                                     modules vertically instead of horizontally has mitigated the
+                                                                      formation of microcracks during transportation [42]. However,
+   Increasing the size of PV modules increases the active area of     reliability considerations established for smaller modules might
+PV systems, and thus, fewer modules are needed to construct           not translate directly to larger modules. Hence, reliability tests
+a system with a given power output, which tends to reduce             and testing equipment must be modified to accommodate large
+installed system costs [34]. In some situations, however, very        modules, such as dynamic mechanical loading tests to assess
+large modules may require more labor to install than smaller          wind loading and hail damage [31]. In addition, computational
+modules [35], [36]; this might increase installation costs if the     modeling can be a powerful tool for assessing scaling rela-
+additional labor cost is not offset by installing fewer modules.      tionships [13]. Models validated for moderately sized models
+Installers must balance these competing considerations.               can be used in numerical studies to assess the implications of
+   Nevertheless, the ITRPV projects significant size increases        size increases on design parameters, such as module deflection,
+over the next decade. Fig. 3 shows modules smaller than               thermomechanical stresses, or material fatigue [43], [44], [45].
+2.5 m2 constituting about half of the utility-scale market share
+in 2021 and then declining to 15% in 2032, at which time
+                                                                      B. Larger Cells
+69% are 2.5–3.0 m2 and 16% are larger than 3.0 m2 . Utility-
+scale module sizes may stabilize between 2.6 and 3.1 m2 af-              Manufacturing advances have enabled the production of
+ter the China Photovoltaic Industry Association achieved an           larger wafers and cells, which may help reduce PV installed
+8                                                                                        IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+
+                                                                              Fig. 5. Historical (2016–2021) and projected (2022–2032) ITRPV data on cell
+                                                                              aspect ratios for wafer sizes of at least 182 mm × 182 mm [17], [18], [19], [20],
+                                                                              [21], [22].
+Fig. 4. Historical (2016–2021) and projected (2022–2032) ITRPV data on
+Czochralski monocrystalline wafer size in mass production [17], [18], [19],
+[20], [21], [22].                                                                Once well-manufactured cut cells are laminated inside mod-
+                                                                              ules, they present a similar fracture risk compared with full cells
+system costs by enabling higher module power [46] (see Sec-                   [51]. In addition, recent research suggests that rotating cut cells
+tion III-A). Larger wafers also provide efficiency benefits by                90° from their orientation in typical modules can reduce the
+enabling cell cutting [34], [47] (see Section III-C).                         probability of fracture further [54].
+   ITRPV historical estimates and projections show rapid growth
+of monocrystalline wafers larger than 166 mm × 166 mm (see                    D. Thinner Cells
+Fig. 4). Wafer sizes of 182 mm × 182 mm and larger capture
+                                                                                 Making cells thinner reduces PV costs by reducing the amount
+about 85% of the market share by 2026 and 100% by 2032.
+                                                                              of polysilicon used for the same amount of power capacity.
+By comparison, InfoLink provides a more aggressive projection
+                                                                              During the 2009–2019 period, wafer thickness did not decrease
+(not shown in the figure), reaching a 100% share of 182- and
+                                                                              as fast as the ITRPV predicted, possibly because of declining
+210-mm wafers by 2025 [23].
+                                                                              polysilicon prices and the greater resistance to breakage during
+   Using larger wafers may increase the risk of damage during
+                                                                              packaging offered by wafers at least 180 µm thick [16], [17],
+the handling, manufacturing, and packaging of large-format
+                                                                              [18], [22]. Industry instead introduced diamond wire sawing
+modules. Larger wafers are more susceptible to cracking than
+                                                                              to reduce polysilicon consumption in wafer manufacturing via
+smaller wafers [38]. However, the most important reliability
+                                                                              lower kerf loss. Starting in 2020, however, wafer thicknesses
+considerations relate to cell-cutting processes and the resulting
+                                                                              have dropped more significantly, likely due in part to the indus-
+cut-cell dimensions, which are discussed as follows.
+                                                                              try’s desire to reduce polysilicon use further during a time of
+                                                                              rising polysilicon prices [22]. ITRPV [22] states that reducing
+C. Cell Cutting
+                                                                              the as-cut wafer thickness is now becoming the “method of
+   Using cut cells reduces resistive losses in modules by lowering            choice” for further polysilicon-related cost reductions, project-
+electric currents [48], [49], and it provides potentially higher              ing thickness declines of 10%–20% between 2022 and 2032 (see
+shade tolerance [49], [50]. Full cells have largely disappeared               Fig. 6). Current predictions associate the thinnest wafer forecasts
+for wafer sizes smaller than 182 mm × 182 mm, and they have                   with n-type cell architectures, which best exploit the efficiency
+completely disappeared for larger wafer sizes (see Fig. 5). Half              gains possible from thin wafers (see Section VI).
+cells are now the dominant configuration and are expected to                     Thinner silicon cells are more flexible and could allow for
+remain so for the next decade.                                                new curved module designs. However, there are concerns that
+   From a reliability perspective, the smaller cells resulting from           thinner cells might be more susceptible to cracking than thicker
+cutting are less susceptible to cracking than larger cells [38].              cells. With decreasing wafer size, surface damage introduced by
+However, the cutting process introduces the potential for cell                the sawing process can have a higher impact on fracture strength
+cracking due to defects along the cut edges [51], [52], [53].                 when compared to the sawing of thick wafers [55]. Similarly,
+   The risk of cell damage can be reduced by optimizing the                   wafer thickness reduction leads to higher sensitivity of the solar
+cutting process. Bosco et al. [53] demonstrated that an opti-                 cell to mechanical loads, and optimization of the manufacturing
+mized cutting process can essentially eliminate cracked cells                 and handling processes becomes necessary [56].
+due to static and dynamic mechanical loading, compared with                      Because thinner cells are more difficult to handle during
+nonoptimized processes that result in significant cell cracking.              manufacturing, it is often assumed that their fracture risk is
+Researchers have also demonstrated that cutting cells via thermal             greater in general. However, thin cells might not be inherently
+laser separation produces less damage than cutting them via laser             more susceptible to cracking after they have been laminated
+scribing and cleavage [51], [52].                                             inside a module. A holistic approach is required to address cell
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                     9
+
+
+
+                                                                            Moving to the right in Fig. 7, interconnect technologies
+                                                                         change from the traditional approach toward higher-energy-
+                                                                         yield technologies. The second cell from the left uses five
+                                                                         busbars, which decreases the distance between busbars and
+                                                                         reduces resistance losses. Because the collected current is split
+                                                                         into more busbars, the cross section of the tabbing ribbons and
+                                                                         busbars becomes smaller, and shading losses are reduced. In the
+                                                                         third cell, even more busbars are used, and the tabbing ribbon
+                                                                         is replaced by a tabbing wire with a round cross section. In
+                                                                         addition, the rectangular footprint of the busbar is changed to
+                                                                         a dash-line pattern, which reduces the amount of metallization
+                                                                         paste needed by using dedicated solder pads connected with a
+                                                                         thin metallization strip. The fourth cell illustrates a “busbarless”
+                                                                         approach. Here, the screen-printed busbars are omitted, and the
+                                                                         tabbing wires are directly connected to the grid fingers (see
+Fig. 6. Historical (2016–2021) and projected (2022–2032) ITRPV data on   Section IV-B for further details). Finally, shingled cells elim-
+global as-cut wafer thickness [17], [18], [19], [20], [21], [22].
+                                                                         inate the gap between cells altogether, with cells overlapping
+                                                                         each other by 1–2 mm and typically connected by electrically
+fracture risk, accounting for updated manufacturing processes,           conductive adhesive (ECA). Shingled cell approaches can ei-
+improved quality control, and overall PV module designs. In par-         ther use or omit busbars [58]; hence, we refer to shingling
+ticular, multiple concurrent changes must be considered when             as zero-gap technology. We only use the term “busbarless” if
+assessing the fracture risk of thinner cells, such as changes            there is no screen-printed metallization perpendicular to the grid
+to the interconnect technology, the stress localizations around          fingers.
+those interconnects, the mechanical stress state and effective              These trends are driven by several factors. As cells are getting
+area of cells under tension, module packaging technology, edge-          larger, wider interconnection ribbons are required to conduct
+damage caused by the cutting process, cell thickness control,            larger currents. However, the difference in coefficient of thermal
+cell handling, as well as residual stresses caused by firing of the      expansion (CTE) of the ribbon and silicon wafer lead to a
+metallization and lamination process [33], [57]. Refined testing         build-up of thermomechanical stresses that limits the possible
+methods, improved models, and more research are needed to                cross-section size of the ribbon [59]. By including more busbars
+holistically address cell fracture risk and its implications for         and interconnections, the individual ribbon size can be kept
+module design and power output.                                          small, and the buildup of mechanical stresses can be reduced (see
+                                                                         Section IV-B). More busbars and interconnections also enable
+               IV. INTERCONNECT TECHNOLOGIES                             reductions in cell finger width, which reduces costs by reducing
+   We identified three main trends in interconnect technology:           silver metallization and increases efficiency by increasing the
+increased redundancy, geometry and process changes, and ma-              active cell area [60]. Finally, additional connections increase
+terial changes. These individual trends are accompanied by an            the likelihood of keeping fractured cell fragments electrically
+overarching trend of shrinking or eliminating the gap between            connected in the event of cell fracture, which increases reliability
+cells to create high-energy-yield modules.                               [61].
+                                                                            ITRPV projections show 9- to 10-busbar cells largely disap-
+                                                                         pearing over the next decade, while the share of 11- to 12-busbar
+A. Increased Redundancy                                                  cells stays relatively constant and the shares with more than 12
+   Traditionally, the front-side metallization of a PV cell consists     busbars and no busbars increase (see Fig. 8). Note that these
+of grid fingers and busbars. The grid fingers are printed on the         projections apply to M10 (182 mm × 182 mm) and larger cells;
+cell to collect the current generated by a fraction of the PV cell.      smaller cells may use fewer busbars.
+Busbars are printed perpendicular to the grid fingers to collect            On the risk side, the increase in the numbers of busbars has led
+the current from the fingers. Tabbing ribbons are then soldered          to geometry, process, and material changes. Rectangular tabbing
+onto the busbars, establishing the interconnection of cells within       ribbons are being replaced by round tabbing wires in multiwire
+modules by connecting the front side of one cell to the back of          configurations, which can use conventional busbars, or busbar-
+the next. At the end of a cell string, a bus ribbon is used to           less approaches. The latter may introduce new processes and
+connect the multiple tabbing ribbons together and wire them              materials that can require the development of new tests and stan-
+into the junction box. This traditional interconnect technology          dards to assess long-term reliability [62]. Furthermore, tabbing
+is shown at left in Fig. 7, where three tabbing ribbons are used         ribbons or wires may be entirely replaced by new materials such
+to collect the current from the PV cell. The tabbing ribbons have        as ECA that enable zero-gap configurations through shingling.
+rectangular cross sections and are typically made from copper            These changes could adversely affect cell stresses, if not properly
+and coated with a layer of solder to facilitate soldering. A cell        designed, and increase cell fracture risk as outlined in [63].
+using such an interconnect technology is typically referred to as        Sections IV-B and C discuss the geometry, process, and material
+a three-busbar cell.                                                     changes in detail.
+10                                                                                          IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+
+Fig. 7. Evolution of interconnection technology from traditional ribbon bonding on polycrystalline cells (blue) to zero-gap shingling with monocrystalline cells
+(black). Grid fingers have been omitted for clarity (see Fig. 10 for details).
+
+
+                                                                                   metallization consisting of grid fingers and busbars, as indicated
+                                                                                   in the left-hand sketch in Fig. 10. Here, the electrical connection
+                                                                                   between the busbar and tabbing ribbon is established through
+                                                                                   soldering, which creates a metallurgical connection. A mod-
+                                                                                   ification of this method is the so-called double-print process
+                                                                                   [68]. Here, a two-step screen print process is used to increase
+                                                                                   the height of grid fingers and busbars while decreasing their
+                                                                                   width, keeping the cross-sectional area constant. This process
+                                                                                   decreases shading losses by reducing the grid finger width [69]
+                                                                                   and covering the surface area of the front-side metallization.
+                                                                                   In the dual-print process, again a two-step process is used
+                                                                                   [70]. However, here the grid fingers are printed in the first
+                                                                                   step followed by a second step to add the busbars. Instead of
+                                                                                   using a simple rectangular shape for the busbars, as shown in
+                                                                                   the previous two processes, a dash-line pattern with dedicated
+Fig. 8. Historical (2021) and projected (2022–2032) ITRPV data on market           solder pads is shown in the illustration, which depicts a more
+shares by number of busbars, for double-side contacted cells in new and upgraded
+lines, and for wafers of M10 size (182 mm × 182 mm) and larger [22].
+                                                                                   modern approach to reduce the material input required for the
+                                                                                   metallization [71]. Both tabbing ribbons and tabbing wires can
+                                                                                   be used with the dual-print process, and soldering is used to
+                                                                                   establish the electrical connection between the busbar and wire
+                                                                                   or ribbon. In contrast, the structured foil approach eliminates
+                                                                                   the soldering process by establishing an electrical connection
+                                                                                   directly between the tabbing wire and grid fingers. Dedicated
+                                                                                   busbars and soldering are omitted in this approach. Instead,
+                                                                                   the wires are embedded in a polymer foil and placed between
+Fig. 9. Geometry changes from flat ribbons (left) to round wires (right). The
+arrows illustrate the impact of the geometry on the incident light reaching the    the cells during the lamination process [64]. The electrical
+cell.                                                                              connections rely on establishing mechanical contact between
+                                                                                   the grid fingers and the low-temperature solder-coated tabbing
+                                                                                   wires during the lamination process (see Section IV-C for details
+B. Geometry and Process Changes                                                    and consequences of this technology change).
+   Geometry changes in interconnect technologies can be ob-                           The changes in interconnect geometry and manufacturing
+served in Fig. 7 by the narrowing of the flat ribbons from left                    processes are being driven by the efficiency benefits due to
+to right, which eventually turn into wires and disappear in the                    increasing the active cell area, reflecting more light onto the cell,
+case of shingled cells. Multiwire approaches [64], [65], [66],                     and reducing or eliminating the gap between cells. In addition,
+[67] improve efficiency by increasing the active cell area and                     the trend toward multiwire and shingling is driven by the need
+leveraging light reflections off the wire. In Fig. 9, the impact on                for low-temperature interconnect approaches. Structured foil
+incident light is illustrated by changing from a flat ribbon (left) to             and low-temperature solders lower the temperature requirements
+a round wire interconnect (right). The round wire shades less of                   during the module packaging process and enable the use of new
+the cell and reflects more light down onto the cell. These benefits                cell technologies, such as SHJ, that require lower processing
+offset the efficiency loss caused by the additional shaded area due                temperatures after fabrication (see Section VI). Similarly, ECA
+to more busbars. Ultimately, the shaded cell area is eliminated                    can be cured at lamination temperature or below and is, there-
+through zero-gap approaches such as shingling.                                     fore, suitable for temperature-sensitive technologies. ITRPV
+   Fig. 10 shows process changes from a traditional tabbing                        projections show round wires displacing flat ribbons over the
+process (left) toward a structured foil approach (right) [64].                     next decade, with increased use of structured foil and shingled
+Traditionally, a single print was used to create the front-side                    technologies as well (see Fig. 11).
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                                          11
+
+
+
+
+Fig. 10. Process changes. (a) Single print—a traditional tabbing process with few busbars and rectangular-shaped ribbons. (b) Double print—a modification of
+the traditional tabbing process to increase the metallization height, while decreasing the covered cell area. (c) Dual print—grid fingers and busbars are printed in
+separate steps, and in recent designs, more interconnects are used. (d) Busbarless—busbars are omitted, and only grid fingers are printed onto the cell.
+
+
+
+                                                                                     been updated to account for all the emerging changes introduced
+                                                                                     in new module designs. Hence, additional research is necessary
+                                                                                     to assess whether the current standards are still sufficient to test
+                                                                                     modern PV module designs and materials, which are covered in
+                                                                                     the next section.
+
+
+                                                                                     C. Interconnect Material Changes
+                                                                                        Fig. 12 illustrates material changes, comparing traditional
+                                                                                     metallurgical connections versus emerging connections relying
+                                                                                     on mechanical contact to establish the electrical connectivity
+                                                                                     of the interconnect. As shown in the first two diagrams from
+                                                                                     the left, traditional metallurgical connections use conventional
+                                                                                     tin–lead (Sn–Pb) solders to bond ribbons and wires to the busbars
+                                                                                     across a wide contact area. In contrast, the last two diagrams
+                                                                                     show emerging interconnect technologies based on establishing
+                                                                                     a mechanical contact as the primary contacting mode instead
+                                                                                     of a metallurgical connection and incorporating new materials,
+Fig. 11. Historical (2016–2021) and projected (2022–2032) ITRPV data on
+shares of interconnect technologies [17], [18], [19], [20], [21], [22]; structured   such as low-temperature solders (In–Sn, Sn–Bi) or ECA. The
+foil diagram modified from [73].                                                     first diagram in the mechanical contact category shows the
+                                                                                     structured foil technology described above. This technology
+                                                                                     eliminates busbars and a dedicated soldering process. Instead,
+   Some of these changes can be incorporated easily into ex-                         electrical contact between the tabbing wire and grid finger is
+isting manufacturing processes (e.g., more busbars), but those                       established during the lamination process. The tabbing wire
+requiring the introduction of new materials and processes require                    is coated in a low-temperature solder that is intended to es-
+significant redesign of the entire PV module manufacturing                           tablish a metallurgical connection with the grid finger during
+and packaging process. Structured foil approaches, for exam-                         lamination. However, thermomechanical fatigue resistance of
+ple, introduce new manufacturing steps and require changes to                        low-temperature solders is generally poor when compared to
+adjacent packaging materials such as thicker encapsulants to                         conventional solders, and—coupled with the small contact area
+accompany the round wires, which are thicker than flat ribbons.                      of this interconnect type—there is reason to believe that the
+They further introduce new materials such as low-temperature                         primary contacting mode is not a metallurgical joint but rather
+solder alloys to establish a connection between the wire and the                     a mechanical contact. Furthermore, Sn–Bi alloys were found
+cell metallization, which introduces potential reliability risks.                    to have thermal cycling acceleration factors of less than one,
+Similarly, shingled cell approaches significantly change the                         which may require accelerated testing protocols different from
+packaging process and the structural integrity of the whole                          those used for conventional modules [62]. In the fourth dia-
+module while introducing new materials such as ECA [72].                             gram, an ECA—consisting of conductive particles in a polymer
+Current qualification standards such as IEC 61215 have not yet                       matrix—connects shingled cells directly without the need for an
+12                                                                                             IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+
+Fig. 12. Material changes related to interconnect technologies that use a metallurgical connection versus a mechanical contact to establish an electrical connection
+between tabbing ribbons or wires and the cell metallization.
+
+
+                                                                                   degradation mechanisms such as debonding or corrosion of
+                                                                                   nonsilver conductive particles [45], [80], [81].
+
+
+                                                                                                                   V. BIFACIAL
+                                                                                      This section discusses technology trends and reliability im-
+                                                                                   plications related to bifacial modules, including the implications
+                                                                                   of using thinner glass, transparent backsheets, and encapsulants
+                                                                                   based on polyolefin elastomer (POE).
+                                                                                      The market share of bifacial modules—typically with glass-
+                                                                                   glass configurations—has been increasing. Bifacial modules
+                                                                                   yield more power than monofacial modules because their cells
+                                                                                   are exposed to light on front and rear surfaces, which is effective
+                                                                                   for current p-type PERC cell technologies and is even more
+Fig. 13. Historical (2016–2021) and projected (2022–2032) ITRPV data on            effective for emerging n-type technologies (see Section VI).
+shares of interconnect materials [17], [18], [19], [20], [21], [22].               Bifacial modules are used primarily in utility-scale systems [22]
+                                                                                   and are suitable for use on flat rooftops; typical sloped residential
+                                                                                   rooftop installations do not provide significant bifacial gain [82].
+additional ribbon or wire. The electrical connection is created                    The proliferation of bifacial technologies has also been driven by
+through shrinkage of the polymer matrix during curing, which                       the decreasing cost difference between monofacial and bifacial
+causes the conductive particles to mechanically contact each                       modules [83], [84], [85]. In the United States, an import tariff
+other and establishes a conductive path.                                           exemption has further enhanced the competitiveness of bifacial
+   Such material changes are being driven by the other inter-                      modules [82].
+connect trends discussed above but also by factors including                          ITRPV [22] projections show the bifacial module market
+regulatory restrictions on lead content in solders and the desire to               share increasing from 30% in 2022 to 60% in 2032, with most
+cut costs by reducing silver use [74]. Additional drivers include                  of those modules in a glass–glass configuration (see Fig. 14).
+the need to reduce cell stresses introduced during the soldering                   Modules with front glass and transparent polymer backsheets,
+process [75] and to accommodate new cell technologies, such                        which are not specified here, could also play a role, depending on
+as SHJ, that require low-temperature interconnects [76].                           whether their cost premium over glass–glass modules decreases.
+   ITRPV projections show a decrease in solders that contain                          Bifacial module designs could experience new degradation
+lead and an increase in lead-free solders over time (see Fig. 13).                 and failure mechanisms that have not been present in traditional
+Historically, conventional solders were associated with lead-                      monofacial designs. For example, the greater weight of glass–
+containing solder such as Sn–Pb alloys, and lead-free solders                      glass modules is driving a trend toward thinner glass, but thinner
+were associated with low-temperature solders such as In–Sn                         glass presents potential reliability risks (see Section V-A). In
+or Sn–Bi alloys. However, this simplified distinction no longer                    addition, compared with glass-backsheet modules, glass–glass
+holds true as solder advances are incorporating new materials                      modules trap more of the acetic acid formed from the breakdown
+into new alloys for conventional and low-temperature applica-                      of encapsulants based on ethylene–vinyl acetate (EVA), which
+tions [77], [78]. Still, the ITRPV projections suggest a trend                     increases the risk of component corrosion. Using POE-based
+toward lead-free solutions with regard to solders and ECA.                         encapsulants, which do not degrade to form acetic acid, can
+   On the risk side, new solder alloys might have different                        mitigate this problem (see Section V-B).
+mechanical, metallurgical, and chemical characteristics com-                          A bifacial structure may also change typical module and
+pared with established materials, and new accelerated tests and                    cell degradation modes, including potential-induced degradation
+standards will be needed to address the change away from metal-                    (PID) [86]. PID refers to several different mechanisms that
+lurgical connections toward interconnects based on mechanical                      result from the high potential difference between cells and the
+contact [65], [79]. For ECA, there are potential risks of new                      module frame during operation, and it can affect different cell
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                            13
+
+
+
+
+Fig. 14. Historical (2021) and projected (2022–2032) ITRPV data on bifacial   Fig. 15. Historical (2017–2021) and projected (2022–2032) ITRPV data on
+and monofacial module, cell, and frontsheet–backsheet market shares [22].     module front and back glass thickness [18], [19], [20], [21], [22].
+
+
+                                                                              with it, minimizing stresses. However, a rigid glass layer does not
+architectures differently (including bifacial versus monofacial
+                                                                              contract as easily with the encapsulant, resulting in higher cell
+PERC cells). It ultimately results in power losses, but it can be
+                                                                              deflections and stresses around the ribbon-shaped tap wires. This
+mitigated at the system, module, or cell level, and it is sometimes
+                                                                              mechanism is especially prominent in laminates using EVA-
+reversible in the field. See, for example, [87] for a review.
+                                                                              based encapsulants, leading to higher cell stresses compared
+Shunting-type PID (PID-s) occurs owing to the diffusion of ions,
+                                                                              with laminates using POE-based encapsulants. Changing from
+specifically Na+ , from the front glass into the cell, decreasing
+                                                                              EVA- to POE-based encapsulant reduces the effect of residual
+shunt resistance [87]. Additional PID mechanisms can occur
+                                                                              stresses in glass–glass type constructions because the storage
+on the rear side of bifacial cells and modules: degradation due
+                                                                              modulus and CTE for POE are lower than for EVA [98].
+to polarization of the cell surface (PID-p) [88], [89], [90] and
+corrosion of the silicon below the passivating layers PID (PIC-c)
+[90], [91]. Current PID testing (IEC 62804-1 ed. 1) is optimized              A. Thinner Glass and Transparent Backsheets
+for the monofacial configuration with the goal of detecting                      Making glass thinner than the standard 3.2 mm is one solution
+PID-s. However, performing only IEC 62804-1 ed. 1 may cause                   to the challenges presented by heavy, large bifacial modules.
+effects unique to bifacial modules to go undetected; updated PID              Thinner glass reduces transportation and installation costs, and
+testing for bifacial cells and modules should be considered [92].             it enhances solar transmittance. ITRPV projections show front
+Some PID mechanisms may be mitigated by encapsulant choice                    glass thicker than 3 mm losing market share primarily to glass
+(see Section V-B).                                                            between 2 and 3 mm thick (see Fig. 15). The diamond symbols
+   Currently, there are contradictory results with respect to                 in Fig. 15 show the parallel trend for back glass thickness. Most
+any difference in module operating temperature for glass–glass                back glass is already thinner than front glass, at 2 to 3 mm (see the
+and glass–backsheet configurations [93], [94]. Higher operating               area between the purple and gray diamonds), and it is projected
+temperatures are undesirable for two reasons. First, the increased            to continue thinning over time.
+temperature (reversibly) reduces power output by reducing cell                   Potential risks of thinner glass include reduced structural
+efficiency [95]. Second, the increased temperature can accelerate             integrity and resistance to damage of modules from severe
+irreversible degradation processes, risking module reliability                weather events and handling during installation. Thinner glass
+[96]. Glass is a better thermal conductor compared to polymer                 can also require a change in the heat treatment process. Tem-
+backsheets and may dissipate heat more quickly, mitigating such               pered glass thinner than about 3 mm is not widely available
+concerns. Further studies are required to identify and validate               owing to fabrication difficulties and high costs. Alternative
+whether glass–glass and glass–backsheet modules consistently                  treatments for thin glass—including heat strengthening and
+run at similar temperatures.                                                  chemical toughening—affect the mechanical properties of the
+   Initially, glass–glass module designs were expected to re-                 glass sheet [99]. Both heat-strengthened and tempered glass are
+duce cell fracture risk by moving cells closer to the neutral                 treated through a high-temperature anneal followed by a quench,
+axis of the PV laminate [96]. However, recent work suggests                   resulting in compressive stresses at the outer surface of the
+that glass–glass module designs may introduce higher residual                 glass. The modulus of elasticity after the heat treatment remains
+stresses into the cells during the lamination process compared                unchanged, but the material strength increases proportionally to
+with traditional glass–backsheet designs [97], [98]. As the en-               the rate of the quenching step. Tempered glass is quenched at a
+capsulant contracts, a typical polymer backsheet can contract                 faster rate, which makes it stronger than heat-strengthened glass
+14                                                                             IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+and less likely to fracture, given the same dimensions [100].
+In addition, changing from tempered to heat-strengthened glass
+changes the fracture pattern. Heat-strengthened glass fractures
+into much larger pieces, whereas tempered glass fractures into
+small pieces. Chemical toughening also induces compressive
+stresses at the outer surface of thin glass layers and increases
+the material strength, but its application is limited by high
+processing costs [101].
+   More testing and characterization are needed to better un-
+derstand the reliability of using thin, heat-strengthened glass
+instead of thicker, tempered glass in modules [96]. Thinner, heat-
+strengthened glass with an inherently lower material strength
+will change the resistance of modules to hail impacts, although
+active mitigation options such as smart-stowing trackers could
+help prevent module damage from severe weather events [102].
+Current hail testing procedures (ASTM E1038 and IEC 61215)
+                                                                     Fig. 16. Historical (2021) and projected (2022–2032) ITRPV data on encap-
+might not be sufficient for the new locations in which PV is being   sulant material market shares [17], [18], [19], [20], [21], [22].
+deployed and might need to be updated with more representative
+hail information. Glass testing is further complicated by inter-
+actions with other module trends such as increasing module size      side groups; it eliminates the acetic acid problem because it does
+(see Section III). Updated testing and standards are needed to       not have a vinyl acetate side group and thus does not form acetic
+appropriately account for thinner glass designs and should be        acid during degradation [113]. Moreover, POE-based encapsu-
+carefully considered separately from other module variables.         lants typically have a greater volume resistivity and lower water
+   Transparent polymer backsheets are another option for reduc-      vapor transmission rate than EVA-based encapsulants, and these
+ing the weight of bifacial modules [103]. Similar to traditional     characteristics result in less PID [107], [112], [114], [115], [116],
+backsheets, transparent backsheets in bifacial modules offer         [117], [118], [119].
+corrosion resistance and easier manufacturing [96], [103], [104].       Factors hindering POE use include its higher cost and lower
+Smith et al. [104] demonstrated that transparent backsheets          light transmission compared to EVA [120]. Still, ITRPV pro-
+are appropriate for bifacial modules but care must be taken          jections show the use of EVA-based encapsulants decreasing
+when designing the backsheet layers, particularly in relation        over time, while the shares of encapsulants based on POE and
+to their susceptibility to UV degradation. Transparent polymer       extruded EVA with POE increase up to about a third of the
+backsheets require additional accelerated and field testing to       market within a decade (see Fig. 16).
+understand their long-term reliability [104].                           Reliability risks associated with using POE in modules are
+                                                                     largely associated with a lack of long-term durability testing.
+                                                                     Such risks may be compounded by using POE with bills of
+B. Polyolefin-Based Encapsulants
+                                                                     materials optimized for EVA, which may affect the adhesion
+   Encapsulants are polymer materials that include many ad-          of the encapsulant to other components [107]. POE may also
+ditives, including adhesion promoters, UV stabilizers, and so        be associated with longer manufacturing times and narrower
+forth. Because of variability in composition and processing,         control windows for temperature, which might necessitate im-
+encapsulant properties and reliability can vary widely by manu-      proved process and quality control. In addition, reliability risks
+facturer. In this article, we compare “EVA-based encapsulants”       might be introduced by manufacturing processes meant to re-
+with “POE-based encapsulants,” but we acknowledge that the           duce manufacturing costs. One such process is the use of mixed
+resulting generalizations may not hold true across all potential     encapsulants (e.g., EVA in the front for lower cost and increased
+encapsulant formulations based on these materials.                   transmission and POE in the rear for reduced corrosion and PID),
+   The trend toward bifacial modules is contributing to the          which might introduce new, unknown failure modes given the
+increased use of POE-based encapsulants and decreased use of         differences in material properties. Another process is the use of
+EVA-based encapsulants. EVA is a semicrystalline copolymer           coextruded encapsulants, where a thinner layer of POE is sand-
+of ethylene and 28%–33% vinyl acetate, with curing agents to         wiched between two layers of EVA to reach the desired thickness
+induce crosslinking of the polymer chains during the lamination      [120]. The coextruded encapsulant reduces the lamination time
+step [105]. EVA degrades in the presence of moisture to form         and improves adhesion to glass [120]. However, understanding
+acetic acid [106], [107], [108]. Acetic acid can typically escape    of the long-term reliability of this approach is limited by a lack of
+a glass–polymer module through the permeable polymer back-           accelerated and field testing as well as a lack of known products
+sheet [106]. However, in a glass–glass module, the acetic acid       using it. The recently published IEC TS 63209-2 is intended to
+diffuses at a slower rate and may result in accelerated oxidation    provide a menu of tests to evaluate the long-term durability of
+and corrosion of the interconnection and metallized layers [106],    polymeric materials and combinations of materials, and it would
+[109], [110], [111]. POE is also a semicrystalline copolymer,        provide important data for evaluating new materials and module
+generally composed of a polyethylene backbone with different         designs.
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                                15
+
+
+
+                                                                                       TOPCon cells have high efficiencies due to the physical
+                                                                                    separation of the rear metal layer from the bulk silicon by
+                                                                                    a tunnel oxide layer, which improves surface passivation and
+                                                                                    VOC up to approximately 720 mV. TOPCon cells have a higher
+                                                                                    bifaciality factor compared with PERC cells while using many of
+                                                                                    the same fundamental manufacturing processes, so industrial fa-
+                                                                                    miliarity might promote TOPCon adoption. SHJ cells have high
+                                                                                    efficiencies due to superior surface passivation accomplished
+                                                                                    through intrinsic amorphous silicon layers, labeled “i-type a-Si”
+                                                                                    in the figure. This increases VOC as high as 750 mV, higher
+                                                                                    than TOPCon, while achieving very high bifaciality. On the
+                                                                                    other hand, SHJ has a substantially different manufacturing
+                                                                                    process compared with PERC or TOPCon, along with higher
+                                                                                    manufacturing equipment costs, which could hinder widespread
+                                                                                    introduction into the market.
+Fig. 17. Historical (2016–2021) and projected (2022–2032) ITRPV data on                Further n-type efficiency gains are possible with interdigi-
+cell technologies (ITRPV cell categories reclassified by authors to highlight key   tated back contact (IBC) cell structures (called “back contact”
+trends) [17], [18], [19], [20], [21], [22].
+                                                                                    in Fig. 17), which combine the high-efficiency potential of
+                                                                                    n-type TOPCon or SHJ surface passivation while eliminating
+                        VI. CELL TECHNOLOGY                                         the self-shading of the front contacts [129]. IBC concepts have
+   Fig. 17 shows past and predicted cell transitions in terms                       historically produced very high efficiencies in laboratories and
+of market share, synthesized from ITRPV. All silicon wafers                         factory production but commercially have been limited primarily
+are intentionally doped with impurity atoms to tune electronic                      to premium market segments (e.g., rooftop PV systems) owing
+properties: those doped with boron or gallium (electron accep-                      to their high cost [130]. Relatively high projected costs limit the
+tors in silicon) are called p-type, whereas wafers doped with                       market shares of this technology, as shown in Fig. 17.
+phosphorus (an electron donor in silicon) are called n-type and                        While the anticipated transition from gallium-doped p-type
+have opposite polarity. Monocrystalline p-type PERC is the                          to n-type cells is primarily motivated by performance, n-type
+dominant silicon technology in 2022, having rapidly replaced                        cells also offer reliability benefits, e.g., through lower LETID
+p-type Al-BSF. ITRPV projects a transition toward n-type cells                      risk. LETID degrades performance when susceptible wafers are
+over the next decade, with n-type technologies achieving a                          exposed to light at temperatures above ∼50 °C, and it is caused
+market share of 60% in 2032 (see Fig. 17). PV Tech projects                         at least in part by hydrogen in the silicon bulk. It can be mitigated
+a faster transition, with n-type technologies achieving a market                    via a number of factory approaches that essentially manipulate
+share of 90% by 2030 [15].                                                          the quantity and chemical state of hydrogen in the cell [131].
+   Fig. 18 shows cross-section schematics of the cell architec-                     LETID can occur in n-type wafers, but the risk seems to be
+tures discussed here. A recent review by Ballif et al. [121]                        reduced in n-type cell architectures, possibly due to reduced
+addresses the improvements associated with these architectures.                     hydrogen introduced into the wafer bulk in n-type cell processing
+PERC cells improved upon Al-BSF by improving rear surface                           and/or other factors related to the precise processing history of
+passivation, resulting in open-circuit voltage (VOC) gain from                      the cells [131].
+∼640 to ∼680 mV in the best industrial devices of each type.                           PID mechanisms need further investigation for n-type cells.
+Common PERC cell reliability issues include LID due to boron–                       As described in Section V, p-type PERC cells (particularly
+oxygen defects, light- and elevated temperature-induced degra-                      when bifacial) have been susceptible to several PID mechanisms;
+dation (LETID), and PID (see Section V). Boron–oxygen LID                           some of these have also been observed in some experiments on
+reduces performance when susceptible cells are exposed to light                     n-type cells. However, different n-type cell architectures exhibit
+but has been mitigated by a hydrogenation step [122], [123] and                     different trends and susceptibility, and many open questions
+the transition away from boron-doped wafers, which produce                          remain [132], [133]. Cells with a transparent conducting oxide
+the boron–oxygen defect, to gallium-doped wafers [124], [125].                      (TCO) layer, such as typical SHJ cells, might be at risk of
+From 2020 to 2022, gallium quickly supplanted boron as the                          an additional corrosion-type PID mechanism, depending on
+dominant p-type dopant [20], [21], [22].                                            their specific structure and the module architecture around them
+   The transition to n-type is led by two cell architectures, shown                 [134]. The risks of PID in n-type cells may not be any greater
+in Fig. 18: TOPCon and SHJ. This transition is driven largely by                    than in p-type cells in practice but more testing and study are
+enhanced efficiency stemming from the typically higher charge                       necessary. An emphasis should be placed on understanding and
+carrier lifetime of n-type monocrystalline silicon, which is best                   mitigating PID risk in industrial implementations of the TOPCon
+exploited when combined with TOPCon or SHJ architectures                            and SHJ architectures, and standard PID tests specific to bifacial
+[126]. Also, these architectures are likely best optimized when                     modules should be codified.
+applied on wafers thinner than the ∼170 µm typical of PERC                             Cells based on high-lifetime n-type wafers in general have
+cells today, so they provide additional motivation to reduce wafer                  several more conceivable reliability risks. First, the high bulk
+thickness [127], [128].                                                             lifetime of the wafer and the complexity of the surface
+16                                                                                      IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+
+Fig. 18.   Cross-sectional schematics of PERC, TOPCon, and SHJ cell architectures.
+
+layers multiply their sensitivities [121]. The performance of                  the need for low-temperature interconnect approaches, related
+both TOPCon and SHJ relies critically on ultrathin and sophis-                 to the proliferation of n-type cells. The rise of high-efficiency
+ticated surface passivation layers (tunnel oxide for TOPCon,                   n-type cells, with their high bifaciality factors, has a synergistic
+a-Si-based layers for SHJ), which are an active area of global                 relationship with the rise of bifacial modules. The popularity
+research and development. These layers could be susceptible                    of bifacial modules is driving the use of POE-based encapsu-
+to UV light-induced degradation, surface-related degradation,                  lants (to mitigate corrosion risk) and thinner glass (to reduce
+corrosion, or other as-yet unknown degradation modes, which                    weight but with potential implications for reliability, especially
+would require testing and engineering to mitigate [135], [136],                in increasingly large modules).
+[137], [138], [139], [140]. Reliability testing of these cells may                Individual technology changes have a range of potential ef-
+require new specific stress combinations and sequences [12].                   fects on module reliability, from decreasing the risk of reli-
+Finally, n-type cells typically require higher silver content in               ability problems, to having little or no impact, to increasing
+their contacts compared to p-type cells, which increases costs,                the risk. More important, and more complex, are the com-
+raises concerns about the global supply of silver, and motivates               pounding effects of multiple concurrent changes. One prominent
+redesign of the metallization and interconnection scheme, as                   example is the significant increase in module area occurring
+discussed previously [141]. Copper is an attractive alternative                simultaneously with the thinning of both wafers and cover
+material owing to being both cheaper and more earth-abundant                   glass plus, in some cases, the use of less-supportive framing
+than silver, and SHJ has an additional requirement for low                     and mounting—resulting in what many industry observers have
+process temperature metallization and interconnection, which                   informally dubbed “big floppy modules.” This “big floppi-
+gives further motivation to replace silver. Plated copper metal-               ness” from multiple changes likely increases the risk of me-
+lization has been demonstrated in both TOPCon and SHJ cell                     chanical damage more than the risk presented by any of the
+architectures [142], [143], and copper-based screenprint pastes                changes alone. A forward-looking evaluation of module relia-
+have been demonstrated on SHJ and IBC cells [144], [145]. Cop-                 bility risks must account for the potential compound advantages
+per contacts could conceivably introduce new reliability issues,               and disadvantages of concurrent technology changes, which
+including increased risk of degradation from copper ingress into               may in many cases be less intuitive than the example given
+the cell and adhesion of plated contacts to the cell [146]. Plated             here.
+copper might also require the adoption of new manufacturing                       As our review shows, many reliability issues and mitigation
+processes and tools as well as different interconnection schemes               strategies related to recent module technology trends have been
+[146]. On the other hand, some promising lab- and pilot-scale                  at least partially characterized. For example, PID-s is a widely
+work has demonstrated equal or better performance by plated                    studied degradation mechanism for monofacial cells and mod-
+copper contacts in various reliability tests [143], [147], [148].              ules, and increased rear-side PID-c and PID-p susceptibility
+                                                                               in bifacial glass-glass technologies has been studied. However,
+                                                                               recent work has highlighted the need for tailoring qualification
+            VII. DISCUSSION AND RECOMMENDATIONS                                tests to bifacial products, accounting for differences between bi-
+   Our selected module technology trends have numerous, in-                    facial PID and monofacial PID. Similar reasoning can be applied
+terrelated drivers and reliability implications. To give a few                 to all module material and technology changes. At a minimum,
+examples, more busbars and interconnections are needed to                      all changes should be assessed through established test proce-
+maintain performance in larger cells, and they improve reliability             dures. The IEC retest guidelines (IEC TS 62915, implemented
+in larger, thinner cells because the cells are more likely to                  in 2018) require qualification retesting when significant module
+remain electrically connected if they crack. This interconnection              material or process changes are made. Such retesting subjects
+trend has helped drive interconnection geometry, process, and                  the new configurations to stresses known to induce failures in
+material changes—including use of round wires in multiwire                     past products. Still, new failure mechanisms could arise owing to
+configurations and shingled cells connected by ECA—each                        module changes or interactions within the bill of materials, and
+of which has its own reliability benefits and risks. The trend                 these new mechanisms may require new qualification standards
+toward multiwire and shingling with ECA is also driven by                      and test procedures.
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                          17
+
+
+
+   In general, our review highlights the ongoing need to as-
+sess the reliability implications of new module trends. For all
+new module technologies, it remains critical to collect and
+analyze long-term field data, although keeping up with rapid
+technological turnover is challenging, as discussed in Section I.
+Keeping standards and testing protocols aligned with emerging
+module designs and materials is similarly important yet difficult.
+Standards typically are developed to screen for known failure
+modes that have been observed in fielded modules. In this article,
+we note multiple examples of “new” failure modes that were
+missed by existing standards, including those related to AAA
+backsheets, hail damage, some PID modes, and cell-specific
+degradation modes such as LETID. The rapid pace of mate-
+rial and design evolution in PV cells and modules introduces
+multiple changes at once that may not be detected by tests
+developed for issues that have been seen before. Test protocols
+are needed to assess weaknesses without prior knowledge of the
+likely failure modes. The reliability community is constantly             Fig. 19. PV reliability learning cycle, enabling continuous improvement to
+working to update testing protocols to test new materials and             ensure quality despite ongoing technological changes.
+designs. For example, it is becoming more common to test for
+UV effects, larger hail, and so forth, even though these are not
+required by current standards.                                               Finally, for cell technology trends, there is a need to develop
+   We also identify research needs related to specific technology         specific stress combinations and sequences for testing the re-
+trends. For module architecture trends, research is needed to             liability of n-type cells and their ultrathin surface passivation
+characterize the reliability implications of larger and thinner           layers. In particular, testing and standards development are
+cells in conjunction with variations in module design, including          necessary to assess and screen for UV light-induced degradation
+interconnect type and thinner glass. Research and modified tests          and PID risk in industrial implementations of bifacial TOPCon
+are required for assessing the effect of larger modules on cell           and SHJ architectures.
+cracking due to weather, shipping, handling, and installation.               We identified these research areas through our review and
+More broadly, a better understanding is needed for the multistep          analysis at one point in time. We anticipate they will be useful
+relationships between observable defects/cracks and long-term             to stakeholders in the near term. However, the evolution of
+module degradation causing potential power loss.                          PV module technology will be continuous, so the assessment
+   For interconnection trends, research on potential new degra-           of module reliability must be continuous as well. One way of
+dation mechanisms associated with ECA, such as debonding and              conceptualizing a continuous improvement process is the PV
+corrosion of nonsilver conductive particles, would be valuable.           reliability learning cycle shown in Fig. 19. The cycle employs
+In addition, existing tests and standards developed for traditional       several steps to maintain module quality in lockstep with tech-
+metallurgical interconnections might not be suitable for emerg-           nological change. In the first step of each trip through the cycle,
+ing technologies, such as structured foil approaches. The latter          introducing new products and designs produces anticipated and
+may be better characterized as using mechanical contact rather            unanticipated effects within integrated modules. The remaining
+than metallurgical connection as the primary contacting mode.             steps in the cycle represent the holistic reliability assessment
+Thus, the associated reliability tests should be updated to account       needed to address the implications of these changes [6]. Field
+for this change.                                                          diagnostics are used to detect unexpected changes in module
+   For bifacial trends, the need for PID tests tailored to bifacial       performance, followed by degradation and failure analysis to
+modules is mentioned above. In addition, accelerated and field            detect the root causes of the changes. The results of these
+testings are needed to assess the long-term reliability of mixed          analyses inform accelerated tests and standards development to
+and coextruded encapsulants, and similar work is needed to                account for new degradation mechanisms and detect any pos-
+assess the reliability of transparent polymer backsheets. Anec-           sible new failure modes in next-generation products. Currently,
+dotal reports based on fielded bifacial systems suggest that the          the industry relies on accelerated testing and standards to screen
+transition to thinner glass increases reliability risks related to hail   out previously observed failure modes and weaknesses. In the
+impacts. Hail testing may require modifications to account for            future, these tests and standards must add methods to detect and
+more hail-prone PV system locations. Smart-stowing trackers               screen out unanticipated weaknesses and failure modes as well.
+could help prevent damage to bifacial modules using thinner               Lifetime estimation and predictive modeling have the potential
+glass. Furthermore, the structural integrity of modules with              to enable the simultaneous assessment of multiple degradation
+thinner glass might be reduced, which elevates the need for               mechanisms and their interactions through a unifying model-
+appropriate mounting and racking configurations to provide                ing framework [13]. Thus, lifetime estimation and predictive
+the necessary structural support to avoid glass breakage during           modeling complement field diagnostics, failure analysis, and
+severe weather events.                                                    accelerated testing to enable the detection and mitigation of
+18                                                                              IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+the unanticipated effects of new technologies before design          the authors. The views expressed in the article do not necessarily
+changes are introduced into manufactured products. The PV            represent the views of the DOE or the U.S. Government.
+reliability learning cycle begins again when findings from a
+previous cycle are incorporated into module performance and
+reliability improvements through new technological changes.
+                                                                                                        REFERENCES
+                      VIII. CONCLUSION                                 [1] Int. Energy Agency, “Net zero by 2050: A roadmap for the global energy
+                                                                           sector,” Int. Energy Agency, Paris, France, 2021. [Online]. Available:
+   Maintaining the reliability of PV modules in the face of                https://iea.blob.core.windows.net/assets/deebef5d-0c34-4539-9d0c-10
+rapidly changing technology is critical to maximizing solar en-            b13d840027/NetZeroby2050-ARoadmapfortheGlobalEnergySector_
+ergy’s contribution to global decarbonization. Our review helps            CORR.pdf
+                                                                       [2] H. Mirletz, S. Ovaitt, S. Sridhar, and T. M. Barnes, “Circular economy
+identify potential future reliability risks before they become             priorities for photovoltaics in the energy transition,” PLoS One, vol. 17,
+widespread in the market by linking emerging technology trends             no. 9, Sep. 2022, Art. no. e0274351, doi: 10.1371/journal.pone.0274351.
+with their reliability implications. We leverage information and       [3] I. M. Peters, J. Hauch, C. Brabec, and P. Sinha, “The value of stability
+                                                                           in photovoltaics,” Joule, vol. 5, no. 12, pp. 3137–3153, Dec. 2021,
+viewpoints from PV market reports, interviews with PV re-                  doi: 10.1016/j.joule.2021.10.019.
+searchers and other industry stakeholders, and peer-reviewed           [4] D. Jordan, T. Barnes, N. Haegel, and I. Repins, “Build solar-energy
+literature to narrow the multitude of possible changes into a              systems to last—Save billions,” Nature, vol. 600, no. 7888, pp. 215–217,
+                                                                           Dec. 2021, doi: 10.1038/d41586-021-03626-9.
+manageable set of 11 impactful trends likely to be incorporated        [5] M. Theristis et al., “Onymous early-life performance degradation analysis
+in near-term crystalline-silicon module designs. We group the              of recent photovoltaic module technologies,” Prog. Photovolt., vol. 31,
+trends into four categories (module architecture, interconnect             pp. 149–160, Aug. 2022, doi: 10.1002/pip.3615.
+                                                                       [6] D. C. Jordan, N. Haegel, and T. M. Barnes, “Photovoltaics module
+technologies, bifacial modules, and cell technology) and explore           reliability for the terawatt age,” Prog. Energy, vol. 4, no. 2, Apr. 2022,
+the drivers behind the changes, their interactions, and associated         Art. no. 022002, doi: 10.1088/2516-1083/ac6111.
+reliability risks.                                                     [7] L. Stoker, “PV Talks: PVEL’s Tristan Erion-Lorico on 2022’s so-
+                                                                           lar module performance trends,” PV Tech, May 31, 2022. [Online].
+   Anticipating emerging technological changes in this way can             Available: https://www.pv-tech.org/pv-talks-pvels-tristan-erion-lorico-
+help accelerate the PV reliability learning cycle. Our analysis            on-2022s-solar-module-performance-trends/
+identifies specific areas that would benefit from faster progress      [8] M. Aghaei et al., “Review of degradation and failure phenomena in pho-
+                                                                           tovoltaic modules,” Renewable Sustain. Energy Rev., vol. 159, May 2022,
+through the cycle, including needs for data collection, standards          Art. no. 112160, doi: 10.1016/j.rser.2022.112160.
+and test development, and research related to emerging module          [9] A. Fischer, “Maxeon 40-year solar panel warranty available in select
+products and designs. Researchers should continue tracking                 markets,” PV Mag., Feb. 4, 2022. [Online]. Available: https://pv-maga
+                                                                           zine-USA.com/2022/02/04/maxeon-40-year-solar-panel-warranty-av
+module technologies and their reliability implications so efforts          ailable-in-select-markets/
+can be focused on the most impactful trends. As the rapid tech-       [10] U.S. Dept. Energy, “SETO FY21—Photovoltaics,” 2022. [Online]. Avail-
+nological evolution continues, it is also critical to incorporate          able: https://www.energy.gov/eere/solar/seto-fy21-photovoltaics
+                                                                      [11] J. Kim et al., “A review of the degradation of photovoltaic modules for
+fundamental knowledge into models that can predict module                  life expectancy,” Energies, vol. 14, no. 14, Jan. 2021, Art. no. 4278,
+reliability. Predictive capabilities complete the PV reliability           doi: 10.3390/en14144278.
+learning cycle—reducing the time required to assess new designs       [12] M. Owen-Bellini et al., “Advancing reliability assessments of photo-
+                                                                           voltaic modules and materials using combined-accelerated stress test-
+and mitigating the risks associated with large-scale deployment            ing,” Prog. Photovolt. Res. Appl., vol. 29, no. 1, pp. 64–82, Jan. 2021,
+of new products. Thus, getting ahead of the curve on module                doi: 10.1002/pip.3342.
+reliability will help ensure that PV continues to play a central      [13] M. Springer, D. C. Jordan, and T. M. Barnes, “Future-proofing pho-
+                                                                           tovoltaics module reliability through a unifying predictive modeling
+role in the global energy transition.                                      framework,” Prog. Photovolt., Res. Appl., vol. 31, pp. 546–553, 2022.
+                                                                      [14] P. Basore and D. Feldman, “Solar photovoltaics: Supply chain deep dive
+                      ACKNOWLEDGMENT                                       assessment,” U.S. Dept. Energy, Washington, DC, USA, DOE/OP-0012,
+                                                                           2022. [Online]. Available: https://www.energy.gov/sites/default/files/
+   The authors would like to thank the National Renewable                  2022-02/Solar%20Energy%20Supply%20Chain%20Report%20-%20
+                                                                           Final.pdf
+Energy Laboratory researchers, whom they interviewed about            [15] L. Stoker, “The race to the TOPCon,” PV Tech Power, Nov. 2021.
+technology trends and reliability implications, including N.               [Online]. Available: http://www.pv-tech.org/power
+Bosco, P. Hacke, M. Kempe, D. Miller, and I. Repins. They             [16] ITRPV, International Technology Roadmap for Photovoltaic (ITRPV):
+                                                                           2015 Results, 7th ed. Frankfurt, Germany: VDMA, 2016.
+would also like to thank the Industry Advisory Board of the           [17] ITRPV, International Technology Roadmap for Photovoltaic (ITRPV):
+Durable Module Materials (DuraMAT) Consortium for provid-                  2016 Results, 8th ed. Frankfurt, Germany: VDMA, 2017.
+ing input on the trends and reliability implications, as well as      [18] ITRPV, International Technology Roadmap for Photovoltaic (ITRPV):
+                                                                           2017 Results, 9th ed. Frankfurt, Germany: VDMA, 2018.
+the members of the broader DuraMAT community who provided             [19] ITRPV, International Technology Roadmap for Photovoltaic (ITRPV):
+feedback on an early presentation of their findings. They also             2018 Results, 10th ed. Frankfurt, Germany: VDMA, 2019.
+appreciate additional input that they received from D. Feldman        [20] ITRPV, International Technology Roadmap for Photovoltaic (ITRPV):
+                                                                           2019 Results, 11th ed. Frankfurt, Germany: VDMA, 2020.
+(NREL), A. Jeffries (Senergy Technical Services), D. Jordan           [21] ITRPV, International Technology Roadmap for Photovoltaic (ITRPV):
+(NREL), H. Mirletz (NREL, Colorado School of Mines), S.                    2020 Results, 12th ed. Frankfurt, Germany: VDMA, 2021.
+Ovaitt (NREL), M. Owen-Bellini (NREL), L. Schelhas (NREL),            [22] ITRPV, International Technology Roadmap for Photovoltaic (ITRPV):
+                                                                           2021 Results, 13th ed. Frankfurt, Germany: VDMA, 2022.
+and T. Silverman (NREL). They would also like to thank VDMA           [23] InfoLink Consulting, “Forecast for market share by wafer size,” 2022.
+for permission to reproduce and synthesize ITRPV data in their             [Online]. Available: https://www.infolink-group.com/
+figures. Finally, they thank A. Hicks (NREL) for graphic design       [24] InfoLink Consulting, “N-type module: Capacity and shipment (2020–
+                                                                           2025),” 2022. [Online]. Available: https://www.infolink-group.com
+assistance. Any errors or omissions are the sole responsibility of
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                                              19
+
+
+
+ [25] M. Mittag and M. Ebert, “Systematic PV-module optimization with the           [46] S. Chunduri and M. Schmela, Advantages of 210mm Solar Modules.
+      cell-to-module (CTM) analysis software,” Sol. Cells, vol. 4, p. 585,               Düsseldorf, Germany: TaiyangNews, 2021.
+      2014.                                                                         [47] S. Guo et al., “Investigation of the short-circuit current in-
+ [26] H. Yousuf et al., “Cell-to-module simulation analysis for optimizing the           crease for PV modules using halved silicon wafer solar cells,”
+      efficiency and power of the photovoltaic module,” Energies, vol. 15, no. 3,        Sol. Energy Mater. Sol. Cells, vol. 133, pp. 240–247, Feb. 2015,
+      Jan. 2022, Art. no. 1176, doi: 10.3390/en15031176.                                 doi: 10.1016/j.solmat.2014.11.012.
+ [27] E. Urrejola et al., “BifiPV2020 Bifacial Workshop: A Technology               [48] S. Guo, J. P. Singh, I. M. Peters, A. G. Aberle, and T. M. Walsh, “A
+      Overview. Golden, CO, USA: Nat. Renewable Energy Lab., NREL/TP-                    quantitative analysis of photovoltaic modules using halved cells,” Int. J.
+      5K00-77817, 2020, doi: 10.2172/1710156.                                            Photoenergy, vol. 2013, pp. 1–8, 2013, doi: 10.1155/2013/739374.
+ [28] P. Baliozian et al., “The international technology roadmap for photo-         [49] D. W. Cunningham et al., “Reaching grid parity using BP solar crystalline
+      voltaics and the significance of its decade-long projections,” in Proc.            silicon technology,” in Proc. 35th IEEE Photovolt. Spec. Conf., 2010,
+      37th Eur. PV Sol. Energy Conf. Exhib., 2020, pp. 7–11.                             pp. 1197–1202. doi: 10.1109/PVSC.2010.5614084.
+ [29] M. Dhimish, V. Holmes, B. Mehrdadi, and M. Dales, “The impact of              [50] A. Calcabrini, R. Weegink, P. Manganiello, M. Zeman, and O. Isabella,
+      cracks on photovoltaic power performance,” J. Sci., Adv. Mater. Devices,           “Simulation study of the electrical yield of various PV module topologies
+      vol. 2, no. 2, pp. 199–209, Jun. 2017, doi: 10.1016/j.jsamd.2017.05.005.           in partially shaded urban scenarios,” Sol. Energy, vol. 225, pp. 726–733,
+ [30] M. Köntges, I. Kunze, S. Kajari-Schröder, X. Breitenmoser, and B.                  Sep. 2021, doi: 10.1016/j.solener.2021.07.061.
+      Bjørneklett, “Quantifying the risk of power loss in PV modules due to         [51] F. Kaule et al., “Mechanical damage of half-cell cutting technologies
+      micro cracks,” in Proc. 25th Eur. Photovolt. Sol. Energy Conf., 2010,              in solar cells and module laminates,” presented at the SILICONPV, 8th
+      pp. 3745–3752.                                                                     Int. Conf. Crystalline Silicon Photovolt., Lausanne, Switzerland, 2018,
+ [31] T. J. Silverman, N. Bosco, M. Owen-Bellini, C. Libby, and M. G.                    Art. no. 020013, doi: 10.1063/1.5049252.
+      Deceglie, “Millions of small pressure cycles drive damage in cracked          [52] C. Zhang et al., “Influence of laser condition on the electrical and
+      solar cells,” IEEE J. Photovolt., vol. 12, no. 4, pp. 1090–1093, Jul. 2022,        mechanical performance of bifacial half-cutting PERC solar cell and
+      doi: 10.1109/JPHOTOV.2022.3177139.                                                 module,” Int. J. Energy Res., vol. 46, pp. 15290–15299, Jun. 2022,
+ [32] M. Mathusuthanan, M. Gembali, K. R. Narayanan, and K. Jayabal,                     doi: 10.1002/er.8229.
+      “Analysis of micro-cracks evolution in silicon cell during entire solar       [53] N. Bosco et al., “Employing fracture statistics to track cell reliability
+      photovoltaic module manufacturing process,” Sol. Energy, vol. 224,                 through module fabrication,” presented at the 47th IEEE Photovolt. Spec.
+      pp. 1160–1169, Aug. 2021, doi: 10.1016/j.solener.2021.06.075.                      Conf., 2020, pp. 263–265.
+ [33] L. Papargyri et al., “Modelling and experimental investigations of micro-     [54] N. Bosco, “Turn your half-cut cells for a stronger module,” IEEE J.
+      cracks in crystalline silicon photovoltaics: A review,” Renewable Energy,          Photovolt., vol. 12, no. 5, pp. 1149–1153, Sep. 2022, doi: 10.1109/JPHO-
+      vol. 145, pp. 2387–2408, Jan. 2020, doi: 10.1016/j.renene.2019.07.138.             TOV.2022.3192118.
+ [34] S. Chunduri and M. Schmela, Advanced Module Technologies, 2021                [55] H. Sekhar et al., “Mechanical strength problem of thin silicon wafers (120
+      Edition. Düsseldorf, Germany: TaiyangNews, 2021.                                   and 140 µm) cut with thinner diamond wires (Si kerf 120 → 100 µm) for
+ [35] T. Sylvia, “Large format modules present a new set of challenges,”                 photovoltaic use,” Mater. Sci. Semicond. Process., vol. 119, Nov. 2020,
+      PV Mag. Int., 2021. Accessed: Sep. 9, 2022. [Online]. Available:                   Art. no. 105209, doi: 10.1016/j.mssp.2020.105209.
+      https://www.pv-magazine.com/2021/10/27/large-format-modules-pre               [56] S. Pingel, Y. Zemen, O. Frank, T. Geipel, and J. Berghold, “Mechanical
+      sent-a-new-set-of-challenges/                                                      stability of solar cells within solar panels,” in Proc. 24th Eur. Photo-
+ [36] T. Sylvia, “The opportunities and challenges presented by large-format             volt. Sol. Energy Conf., 2009, vol. 21/25, p. 5, doi: 10.4229/24THE-
+      modules,” PV Mag., Mar. 3, 2022. [Online]. Available: https://pv-maga              UPVSEC2009-4AV.3.49.
+      zine-USA.com/2022/03/03/the-opportunities-and-challenges-presen               [57] M. W. Akram et al., “Study of manufacturing and hotspot formation in
+      ted-by-large-format-modules/                                                       cut cell and full cell PV modules,” Sol. Energy, vol. 203, pp. 247–259,
+ [37] Trina Solar, “Standardization of 210mm-size modules significantly                  Jun. 2020, doi: 10.1016/j.solener.2020.04.052.
+      boosts the PV industrial chain and system value,” Trina Solar,                [58] W. Oh, H. Jee, J. Bae, and J. Lee, “Busbar-free electrode patterns of
+      2021. Accessed: Sep. 29, 2022. [Online]. Available: https://www.                   crystalline silicon solar cells for high density shingled photovoltaic mod-
+      trinasolar.com/en-glb/resources/newsroom/mastandardization-210mm-                  ule,” Sol. Energy Mater. Sol. Cells, vol. 243, Aug. 2022, Art. no. 111802,
+      size-modules-significantly-boosts-pv-industrial-chain-and                          doi: 10.1016/j.solmat.2022.111802.
+ [38] N. Bosco, M. Springer, J. Liu, S. N. Venkat, and R. H. French, “Em-           [59] M. T. Zarmai, N. N. Ekere, C. F. Oduoza, and E. H. Amalu, “A review of
+      ploying Weibull analysis and weakest link theory to resolve crystalline            interconnection technologies for improved crystalline silicon solar cell
+      silicon PV Cell strength between bare cells and reduced- and full-sized            photovoltaic module assembly,” Appl. Energy, vol. 154, pp. 173–182,
+      modules,” IEEE J. Photovolt., vol. 11, no. 3, pp. 731–741, May 2021,               Sep. 2015, doi: 10.1016/j.apenergy.2015.04.120.
+      doi: 10.1109/JPHOTOV.2021.3056673.                                            [60] J. Walter, M. Tranitz, M. Volk, C. Ebert, and U. Eitner, “Multi-wire
+ [39] C. Doyle et al., Solar Access to Public Capital (SAPC) Working Group:              interconnection of busbar-free solar cells,” Energy Procedia, vol. 55,
+      Best Practices in PV System Installation, Version 1.0. Golden, CO, USA:            pp. 380–388, Jan. 2014, doi: 10.1016/j.egypro.2014.08.109.
+      Nat. Renewable Energy Lab., NREL/SR-6A20-63234, 2015.                         [61] T. J. Silverman et al., “Movement of cracked silicon solar cells during
+ [40] Nat. Renewable Energy Lab., Sandia Nat. Lab., SunSpec Alliance, and                module temperature changes,” in Proc. IEEE 46th Photovolt. Spec. Conf.,
+      SunShot Nat. Lab. Multiyear Partnership (SuNLaMP) PV O&M Best                      2019, pp. 1517–1520, doi: 10.1109/PVSC40753.2019.8981150.
+      Practices Working Group, Best Practices for Operation and Maintenance         [62] L. Spinella and N. Bosco, “Thermomechanical fatigue resistance of low
+      of Photovoltaic and Energy Storage Systems, 3rd ed. Golden, CO, USA:               temperature solder for multiwire interconnects in photovoltaic modules,”
+      Nat. Renewable Energy Lab., NREL/TP-7A40-7382, 2018.                               Sol. Energy Mater. Sol. Cells, vol. 225, Jun. 2021, Art. no. 111054,
+ [41] E. Young, X. He, R. King, and D. Corbus, “A fluid-structure interaction            doi: 10.1016/j.solmat.2021.111054.
+      solver for investigating torsional galloping in solar-tracking photovoltaic   [63] N. Klasen et al., “Root cause analysis of solar cell cracks at shingle joints,”
+      panel arrays,” J. Renewable Sustain. Energy, vol. 12, no. 6, Nov. 2020,            Sol. Energy Mater. Sol. Cells, vol. 238, May 2022, Art. no. 111590,
+      Art. no. 063503, doi: 10.1063/5.0023757.                                           doi: 10.1016/j.solmat.2022.111590.
+ [42] M. Köntges et al., “Impact of transportation on silicon wafer-based           [64] C. Ballif et al., “SmartWire solar cell interconnection technol-
+      photovoltaic modules,” Prog. Photovolt., Res. Appl., vol. 24, no. 8,               ogy,” in Proc. 29th Eur. Photovolt. Sol. Energy Conf. Exhib., 2014,
+      pp. 1085–1095, 2016, doi: 10.1002/pip.2768.                                        pp. 2555–2561, doi: 10.4229/EUPVSEC20142014-5DO.16.3.
+ [43] J. Y. Hartley et al., “Effects of photovoltaic module materials and design    [65] L. Spinella et al., “Reliability implications of solder in multiwire modules
+      on module deformation under load,” IEEE J. Photovolt., vol. 10, no. 3,             under dynamic mechanical loading,” in Proc. IEEE 48th Photovolt. Spec.
+      pp. 838–843, May 2020, doi: 10.1109/JPHOTOV.2020.2971139.                          Conf., 2021, pp. 108–111. doi: 10.1109/PVSC43889.2021.9518566.
+ [44] A. J. Beinert et al., “The effect of cell and module dimensions on            [66] T. Söderström et al., “Low cost high energy yield solar module lines
+      thermomechanical stress in PV modules,” IEEE J. Photovolt., vol. 10,               and its applications,” in Proc. IEEE 42nd Photovolt. Spec. Conf., 2015,
+      no. 1, pp. 70–77, Jan. 2020, doi: 10.1109/JPHOTOV.2019.2949875.                    pp. 1–6, doi: 10.1109/PVSC.2015.7356431.
+ [45] M. Springer and N. Bosco, “Environmental influence on crack-                  [67] J. Govaerts et al., “Encapsulant-integrated interconnection of bifacial
+      ing and debonding of electrically conductive adhesives,” Eng.                      solar cells for BIPV applications: Latest results in the TWILL-BIPV
+      Fracture Mechanics, vol. 241, Jan. 2021, Art. no. 107398,                          project,” in Proc. EU PVSEC, Oct. 2020, pp. 33–37, doi: 10.4229/EU-
+      doi: 10.1016/j.engfracmech.2020.107398.                                            PVSEC20202020-1AO.3.3.
+20                                                                                               IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+ [68] M. Galiazzo, V. Furin, D. Tonini, G. Cellere, and A. Baccini, “Double            [89] S. Yamaguchi, K. Nakamura, A. Masuda, and K. Ohdaira, “Rapid pro-
+      printing of front contact Ag in C-Si solar cells,” in Proc. 25th Eur.                 gression and subsequent saturation of polarization-type potential-induced
+      Photovolt. Sol. Energy Conf., 2010.                                                   degradation of n-type front-emitter crystalline-silicon photovoltaic mod-
+ [69] T. Wenzel et al., “Progress with screen printed metallization of silicon              ules,” Jpn. J. Appl. Phys., vol. 57, no. 12, Nov. 2018, Art. no. 122301.
+      solar cells—Towards 20 µm line width and 20 mg silver laydown for                [90] K. Sporleder et al., “Quick test for reversible and irreversible
+      PERC front side contacts,” Sol. Energy Mater. Sol. Cells, vol. 244,                   PID of bifacial PERC solar cells,” Sol. Energy Mater. Sol.
+      Aug. 2022, Art. no. 111804, doi: 10.1016/j.solmat.2022.111804.                        Cells, vol. 219, 2021, Art. no. 110755, doi: 10.1016/j.solmat.2020.
+ [70] H. Hannebauer, T. Dullweber, T. Falcon, X. Chen, and R.                               110755.
+      Brendel, “Record low Ag paste consumption of 67.7 mg with                        [91] K. Sporleder et al., “Local corrosion of silicon as root cause for
+      dual print,” Energy Procedia, vol. 43, pp. 66–71, Jan. 2013,                          potential-induced degradation at the rear side of bifacial PERC solar
+      doi: 10.1016/j.egypro.2013.11.089.                                                    cells,” Phys. Status Solidi Regional Res. Lab., vol. 13, no. 9, Sep. 2019,
+ [71] K. L. Ho et al., “The influence of cell busbar pattern on PV module                   Art. no. 1900163, doi: 10.1002/pssr.201900163.
+      reliability,” in Proc. 29th Eur. Photovolt. Sol. Energy Conf. Exhib., 2014,      [92] J. Carolus et al., “Why and how to adapt PID testing for bifacial PV
+      pp. 2562–2565, doi: 10.4229/EUPVSEC20142014-5DO.16.4.                                 modules?,” Prog. Photovolt., vol. 28, no. 10, pp. 1045–1053, 2020,
+ [72] B. Litzenburger et al., “Innovative and gentle interconnection tech-                  doi: 10.1002/pip.3311.
+      nique for high efficiency c-Si solar cells and cost-of-ownership-analysis        [93] B. M. Cote, I. M. Slauch, T. J. Silverman, M. G. Deceglie, and V. E.
+      (COO),” in Proc. 26th Eur. Photovolt. Sol. Energy Conf. Exhib., 2011,                 Ferry, “Insulation or irradiance: Exploring why bifacial photovoltaics run
+      pp. 3125–3132, doi: 10.4229/26thEUPVSEC2011-4CO.6.4.                                  hot,” in Proc. IEEE 48th Photovolt. Spec. Conf., 2021, pp. 1228–1232,
+ [73] SolarTech Universal, “Smart wire connection technology,” 2022.                        doi: 10.1109/PVSC43889.2021.9518868.
+      [Online]. Available: https://www.solartechuniversal.com/smartwire-               [94] M. W. P. E. Lamers et al., “Temperature effects of bifacial modules:
+      technology                                                                            Hotter or cooler?,” Sol. Energy Mater. Sol. Cells, vol. 185, pp. 192–197,
+ [74] D. Güldali and A. D. Rose, “Material joint analysis of lead-                          Oct. 2018, doi: 10.1016/j.solmat.2018.05.033.
+      free interconnection technologies for silicon photovoltaics,” in                 [95] O. Dupré, R. Vaillon, and M. A. Green, Thermal Behavior
+      Proc. 45th Int. Spring Seminar Electron. Technol., 2022, pp. 1–8,                     of Photovoltaic Devices. Berlin, Germany: Springer-Verlag, 2017,
+      doi: 10.1109/ISSE54558.2022.9812798.                                                  doi: 10.1007/978-3-319-49457-9.
+ [75] A. J. Beinert et al., “Enabling the measurement of thermomechani-                [96] A. Sinha et al., “Glass/glass photovoltaic module reliability and degra-
+      cal stress in solar cells and PV modules by confocal micro-Raman                      dation: A review,” J. Phys. D, Appl. Phys., vol. 54, no. 41, 2021,
+      spectroscopy,” Sol. Energy Mater. Sol. Cells, vol. 193, pp. 351–360,                  Art. no. 413002, doi: 10.1088/1361-6463/ac1462.
+      May 2019, doi: 10.1016/j.solmat.2019.01.028.                                     [97] F. Rahman et al., “Lamination process induced residual stress in glass-
+ [76] Y. Zeng et al., “Review on metallization approaches for high-efficiency               glass vs. glass-backsheet modules,” presented at the IEEE Photovolt.
+      silicon heterojunction solar cells,” Trans. Tianjin Univ., vol. 28, no. 5,            Spec. Conf., Philadelphia, PA, USA, 2022.
+      pp. 358–373, Oct. 2022, doi: 10.1007/s12209-022-00336-9.                         [98] I. M. Slauch et al., “Manufacturing induced bending stresses: Glass-glass
+ [77] P. Schmitt, P. Kaiser, C. Savio, M. Tranitz, and U. Eitner, “In-                      vs. glass-backsheet,” in Proc. IEEE 48th Photovolt. Spec. Conf., 2021,
+      termetallic phase growth and reliability of SN-AG-soldered so-                        pp. 1943–1948, doi: 10.1109/PVSC43889.2021.9518938.
+      lar cell joints,” Energy Procedia, vol. 27, pp. 664–669, Jan. 2012,              [99] N. Sheth et al., “Effects of tempering and heat strengthening on
+      doi: 10.1016/j.egypro.2012.07.126.                                                    hardness, indentation fracture resistance, and wear of soda lime float
+ [78] T. Geipel, D. Eberlein, and A. Kraft, “Lead-free solders for ribbon                   glass,” Int. J. Appl. Glass Sci., vol. 10, no. 4, pp. 431–440, 2019,
+      interconnection of crystalline silicon PERC solar cells with infrared                 doi: 10.1111/ijag.13507.
+      soldering,” Amer. Inst. Phys. Conf. Proc., vol. 2156, no. 1, Sep. 2019,         [100] Vitro Architectural Glass, “Why annealed, heat strengthened and tem-
+      Art. no. 020015, doi: 10.1063/1.5125880.                                              pered glass all deflect the same amount,” 2001. [Online]. Available:
+ [79] A. Fairbrother, L. Gnocchi, C. Ballif, and A. Virtuani, “Corro-                       https://www.vitroglazings.com/media/xnsnzgog/vitro-td-113.pdf
+      sion testing of solar cells: Wear-out degradation behavior,” Sol.               [101] M. Kambe et al., “Chemically strengthened cover glass for prevent-
+      Energy Mater. Sol. Cells, vol. 248, Dec. 2022, Art. no. 111974,                       ing potential induced degradation of crystalline silicon solar cells,”
+      doi: 10.1016/j.solmat.2022.111974.                                                    in Proc. IEEE 39th Photovolt. Spec. Conf., 2013, pp. 3500–3503,
+ [80] M. Springer and N. Bosco, “Linear viscoelastic characterization of                    doi: 10.1109/PVSC.2013.6744441.
+      electrically conductive adhesives used as interconnect in photovoltaic          [102] “Reducing the threat of hail damage to solar plants,” Nextracker, 2021.
+      modules,” Prog. Photovolt., Res. Appl., vol. 28, no. 7, pp. 659–681, 2020,            Accessed: Aug. 12, 2022. [Online]. Available: https://www.nextra
+      doi: 10.1002/pip.3257.                                                                cker.com/2021/03/reducing-the-threat-of-hail-damage-to-utility-
+ [81] X. M. Zhang, X.-L. Yang, and B. Wang, “Electrical properties of electri-              scale-solar-plants/
+      cally conductive adhesives from epoxy and silver-coated copper powders          [103] W. Gambogi et al., “Transparent backsheets for bifacial photo-
+      after sintering and thermal aging,” Int. J. Adhesion Adhesives, vol. 105,             voltaic modules,” in Proc. IEEE 47th Photovolt. Spec. Conf., 2020,
+      Mar. 2021, Art. no. 102785, doi: 10.1016/j.ijadhadh.2020.102785.                      pp. 1651–1657, doi: 10.1109/PVSC45281.2020.9300924.
+ [82] D. Feldman et al., “Spring 2022 solar industry update (national renew-          [104] S. Smith et al., “Transparent backsheets for bifacial photovoltaic (PV)
+      able energy laboratory),” presented at the Nat. Renewable Energy Lab.,                modules: Material characterization and accelerated laboratory test-
+      Golden, CO, USA, Apr. 26, 2022.                                                       ing,” Prog. Photovolt., Res. Appl., vol. 30, no. 8, pp. 959–969, 2022,
+ [83] C. Deline, S. A. Pelaez, B. Marion, M. Woodhouse, and J. Stein, “Bi-                  doi: 10.1002/pip.3494.
+      facial PV system performance: Separating fact from fiction (PVSC 46,            [105] C. Hirschl et al., “Determining the degree of crosslinking of ethy-
+      Chicago),” presented at the Photovolt. Spec. Conf., Chicago, IL, USA,                 lene vinyl acetate photovoltaic module encapsulants—A comparative
+      2019.                                                                                 study,” Sol. Energy Mater. Sol. Cells, vol. 116, pp. 203–218, Sep. 2013,
+ [84] C. D. Rodríguez-Gallegos et al., “Monofacial vs bifacial Si-                          doi: 10.1016/j.solmat.2013.04.022.
+      based PV modules: Which one is more cost-effective?,” Sol. En-                  [106] G. Oreski, A. Mihaljevic, Y. Voronko, and G. C. Eder, “Acetic acid
+      ergy, vol. 176, pp. 412–438, Dec. 2018, doi: 10.1016/j.solener.2018.                  permeation through photovoltaic backsheets: Influence of the composi-
+      10.012.                                                                               tion on the permeation rate,” Polym. Testing, vol. 60, pp. 374–380, 2017,
+ [85] C. D. Rodríguez-Gallegos et al., “Global techno-economic performance                  doi: 10.1016/j.polymertesting.2017.04.025.
+      of bifacial and tracking photovoltaic systems,” Joule, vol. 4, no. 7,           [107] G. Oreski et al., “Properties and degradation behaviour of polyolefin
+      pp. 1514–1541, Jul. 2020, doi: 10.1016/j.joule.2020.05.005.                           encapsulants for photovoltaic modules,” Prog. Photovolt., vol. 28,
+ [86] P. Hacke et al., “Evaluation of bifacial module technologies with                     pp. 1277–1288, 2020, doi: 10.1002/pip.3323.
+      combined-accelerated stress testing,” Prog. Photovolt., vol. 31,                [108] B.-Å. Sultan and E. Sörvik, “Thermal degradation of EVA
+      pp. 1270–1284, 2023, doi: 10.1002/pip.3636.                                           and EBA—A comparison. I. Volatile decomposition products,” J.
+ [87] W. Luo et al., “Potential-induced degradation in photovoltaic modules:                Appl. Polym. Sci., vol. 43, no. 9, pp. 1737–1745, Nov. 1991,
+      A critical review,” Energy Environ. Sci., vol. 10, pp. 43–68, 2017,                   doi: 10.1002/app.1991.070430917.
+      doi: 10.1039/c6ee02271e.                                                        [109] P. Klemchuk, M. Ezrin, G. Lavigne, W. Halley, and J. Galid, “Investi-
+ [88] R. Swanson et al., “The surface polarization effect in high-efficiency                gation of the degradation and stabilization of EVA-based encapsulant in
+      silicon solar cells,” in Proc. 15th Int. Photovolt. Sol. Energy Conf. Exhib.,         field-aged solar energy modules,” Polym. Degradation Stability, vol. 55,
+      2005, pp. 410–413.                                                                    no. 3, pp. 347–365, 1997, doi: 10.1016/S0141-3910(96)00162-0.
+ZUBOY et al.: GETTING AHEAD OF THE CURVE: ASSESSMENT OF NEW PV MODULE RELIABILITY RISKS                                                                            21
+
+
+
+[110] M. D. Kempe et al., “Acetic acid production and glass transi-                  [130] D. Lachenal et al., “Optimization of tunnel-junction IBC solar cells based
+      tion concerns with ethylene-vinyl acetate used in photovoltaic de-                   on a series resistance model,” Sol. Energy Mater. Sol. Cells, vol. 200,
+      vices,” Sol. Energy Mater. Sol. Cells, vol. 91, no. 4, pp. 315–329,                  Sep. 2019, Art. no. 110036, doi: 10.1016/j.solmat.2019.110036.
+      2007.                                                                          [131] D. Chen et al., “Progress in the understanding of light- and elevated
+[111] U. Weber et al., “Acetic acid production, migration and corrosion ef-                temperature-induced degradation in silicon solar cells: A review,” Prog.
+      fects in ethylene-vinyl-acetate-(EVA-) based PV modules,” in Proc.                   Photovolt., Res. Appl., vol. 29, no. 11, pp. 1180–1201, Nov. 2021,
+      27th Eur. Photovolt. Sol. Energy Conf. Exhib., 2012, pp. 2992–2995,                  doi: 10.1002/pip.3362.
+      doi: 10.4229/27thEUPVSEC2012-4CO.9.4.                                          [132] K. Hara, S. Jonai, and A. Masuda, “Potential-induced degradation
+[112] B. M. Habersberger, P. Hacke, and L. S. Madenjian, “Evaluation of the                in photovoltaic modules based on n-type single crystalline Si solar
+      PID-s susceptibility of modules encapsulated in materials of varying                 cells,” Sol. Energy Mater. Sol. Cells, vol. 140, pp. 361–365, 2015,
+      resistivity,” in Proc. IEEE 7th World Conf. Photovolt. Energy Convers.               doi: 10.1016/j.solmat.2015.04.037.
+      (Joint Conf. 45th IEEE PVSC, 28th PVSEC, 34th EU PVSEC), 2018,                 [133] S. Yamaguchi, B. B. Van Aken, A. Masuda, and K. Ohdaira,
+      pp. 3807–3809, doi: 10.1109/PVSC.2018.8548117.                                       “Potential-induced degradation in high-efficiency n-type crystalline-
+[113] G. Oreski, B. Ottersböck, and A. Omazic, “Degradation processes and                  silicon photovoltaic modules: A literature review,” Sol. Re-
+      mechanisms of encapsulants,” in Durability and Reliability of Polymers               gional Res. Lab., vol. 5, no. 12, Dec. 2021, Art. no. 2100708,
+      and Other Materials in Photovoltaic Modules. Norwich, NY, USA:                       doi: 10.1002/solr.202100708.
+      William Andrew, 2019, pp. 135–152.                                             [134] S. Yamaguchi, C. Yamamoto, K. Ohdaira, and A. Masuda, “Compre-
+[114] G. Stollwerck, W. Schoeppel, A. Graichen, and C. Jaeger, “Polyolefin                 hensive study of potential-induced degradation in silicon heterojunction
+      backsheet and new encapsulant suppress cell degradation in the mod-                  photovoltaic cell modules,” Prog. Photovolt., Res. Appl., vol. 26, no. 9,
+      ule,” in Proc. 28th Eur. Photovolt. Sol. Energy Conf. Exhib., 2013,                  pp. 697–708, Sep. 2018, doi: 10.1002/pip.3006.
+      pp. 3318–3320, doi: 10.4229/28THEUPVSEC2013-4AV.5.44.                          [135] S. Theingi et al., “Accelerated reliability tests of n+ and p+ poly-Si
+[115] J. Berghold, S. Koch, B. Frohmann, P. Hacke, and P. Grunow, “Properties              passivated contacts,” Sol. Energy Mater. Sol. Cells, vol. 236, Mar. 2022,
+      of encapsulation materials and their relevance for recent field failures             Art. no. 111469, doi: 10.1016/j.solmat.2021.111469.
+      (IEEE 40th photovoltaic specialist conference),” presented at the IEEE         [136] A. Sinha et al., “Assessing UV-induced degradation in bifacial mod-
+      40th Photovolt. Spec. Conf., 2014, pp. 1987–1992.                                    ules of different cell technologies,” in Proc. IEEE 48th Photovolt.
+[116] S. Pingel et al., “Potential induced degradation of solar cells and panels,”         Spec. Conf., 2021, pp. 0767–0770, doi: 10.1109/PVSC43889.2021.
+      in Proc. IEEE 35th Photovolt. Spec. Conf., 2010, pp. 002817–002822,                  9518728.
+      doi: 10.1109/PVSC.2010.5616823.                                                [137] J. Cattin et al., “Influence of light soaking on silicon heterojunc-
+[117] M. C. López-Escalante et al., “Polyolefin as PID-resistant encapsulant               tion solar cells with various architectures,” IEEE J. Photovolt.,
+      material in PV modules,” Sol. Energy Mater., vol. 144, pp. 691–699,                  vol. 11, no. 3, pp. 575–583, May 2021, doi: 10.1109/JPHOTOV.2021.
+      2016, doi: 10.1016/j.solmat.2015.10.009.                                             3065537.
+[118] L. Spinella et al., “Chemical and mechanical interfacial degradation in bi-    [138] D. Kang et al., “Long-term stability study of the passivation qual-
+      facial glass/glass and glass/transparent backsheet photovoltaic modules,”            ity of polysilicon-based passivation layers for silicon solar cells,”
+      Prog. Photovolt., Res. Appl., vol. 30, no. 12, pp. 1423–1432, Dec. 2022,             Sol. Energy Mater. Sol. Cells, vol. 215, Sep. 2020, Art. no. 110691,
+      doi: 10.1002/pip.3602.                                                               doi: 10.1016/j.solmat.2020.110691.
+[119] D. B. Sulas-Kern et al., “Electrochemical degradation modes in bi-             [139] W. Liu et al., “Damp-heat-stable, high-efficiency, industrial-size silicon
+      facial silicon photovoltaic modules,” Prog. Photovolt., vol. 30, no. 8,              heterojunction solar cells,” Joule, vol. 4, no. 4, pp. 913–927, Apr. 2020,
+      pp. 948–958, 2022, doi: 10.1002/pip.3530.                                            doi: 10.1016/j.joule.2020.03.003.
+[120] S. K. Chunduri and M. Schmela, Bifacial Solar Technology 2021—Part             [140] T. Ishii and A. Masuda, “Annual degradation rates of recent crystalline
+      1: Cells & Modules. Dusseldorf, Germany: TaiyangNews, 2021.                          silicon photovoltaic modules: Annual degradation rates of recent c-Si
+[121] C. Ballif, F.-J. Haug, M. Boccard, P. J. Verlinden, and G. Hahn, “Status             PV modules,” Prog. Photovolt., Res. Appl., vol. 25, no. 12, pp. 953–967,
+      and perspectives of crystalline silicon photovoltaics in research and                Dec. 2017, doi: 10.1002/pip.2903.
+      industry,” Nature Rev. Mater., vol. 7, no. 8, pp. 597–616, Aug. 2022,          [141] Y. Zhang, M. Kim, L. Wang, P. Verlinden, and B. Hallam, “De-
+      doi: 10.1038/s41578-022-00423-2.                                                     sign considerations for multi-terawatt scale manufacturing of ex-
+[122] B. J. Hallam et al., “Development of advanced hydrogenation processes                isting and future photovoltaic technologies: Challenges and op-
+      for silicon solar cells via an improved understanding of the behaviour of            portunities related to silver, indium and bismuth consumption,”
+      hydrogen in silicon,” Prog. Photovolt., vol. 28, no. 12, pp. 1217–1238,              Energy Environ. Sci., vol. 14, no. 11, pp. 5587–5610, 2021,
+      2020, doi: 10.1002/pip.3240.                                                         doi: 10.1039/D1EE01814K.
+[123] S. Wilking, C. Beckh, S. Ebert, A. Herguth, and G. Hahn, “Influence of         [142] B. Grübel et al., “Progress of plated metallization for industrial bifacial
+      bound hydrogen states on BO-regeneration kinetics and consequences                   TOPCon silicon solar cells,” Prog. Photovolt., vol. 30, no. 6, pp. 615–621,
+      for high-speed regeneration processes,” Sol. Energy Mater. Sol. Cells,               2021, doi: 10.1002/pip.3528.
+      vol. 131, pp. 2–8, 2014, doi: 10.1016/j.solmat.2014.06.027.                    [143] J. Yu et al., “Copper metallization of electrodes for silicon het-
+[124] N. E. Grant et al., “Lifetime instabilities in gallium doped monocrystalline         erojunction solar cells: Process, reliability and challenges,” Sol.
+      PERC silicon solar cells,” Sol. Energy Mater. Sol. Cells, vol. 206, 2020,            Energy Mater. Sol. Cells, vol. 224, 2021, Art. no. 110993,
+      Art. no. 110299, doi: 10.1016/j.solmat.2019.110299.                                  doi: 10.1016/j.solmat.2021.110993.
+[125] N. E. Grant et al., “Gallium-doped silicon for high-efficiency commercial      [144] N. Frasson and M. Galiazzo, “Evaluation of different approaches for
+      passivated emitter and rear solar cells,” Regional Res. Lab. Sol., vol. 5,           HJT cells metallization based on low temperature copper paste,” Amer.
+      no. 4, 2021, Art. no. 2000754, doi: 10.1002/solr.202000754.                          Inst. Phys. Conf. Proc., vol. 2709, no. 1, 2022, Art. no. 020004,
+[126] H. Steinkemper, M. Hermle, and S. W. Glunz, “Comprehensive simu-                     doi: 10.1063/5.0126222.
+      lation study of industrially relevant silicon solar cell architectures for     [145] N. Chen et al., “Thermal stable high-efficiency copper screen printed
+      an optimal material parameter choice: Study on silicon solar cell archi-             back contact solar cells,” Regional Res. Lab. Sol., vol. 7, no. 2, 2023,
+      tectures,” Prog. Photovolt., Res. Appl., vol. 24, no. 10, pp. 1319–1331,             Art. no. 2200874, doi: 10.1002/solr.202200874.
+      Oct. 2016, doi: 10.1002/pip.2790.                                              [146] A. Lennon, J. Colwell, and K. P. Rodbell, “Challenges facing copper-
+[127] A. Augusto, J. Karas, P. Balaji, S. G. Bowden, and R. R. King, “Exploring            plated metallisation for silicon photovoltaics,” Prog. Photovolt., vol. 27,
+      the practical efficiency limit of silicon solar cells using thin solar-grade         pp. 67–97, 2018, doi: 10.1002/pip.3062.
+      substrates,” J. Mater. Chem. A, vol. 8, no. 32, pp. 16599–16608, 2020,         [147] D. Adachi, T. Terashita, T. Uto, J. L. Hernández, and K. Yamamoto,
+      doi: 10.1039/D0TA04575F.                                                             “Effects of SiOx barrier layer prepared by plasma-enhanced chemical
+[128] A. Richter, M. Hermle, and S. W. Glunz, “Reassessment of the limiting                vapor deposition on improvement of long-term reliability and produc-
+      efficiency for crystalline silicon solar cells,” IEEE J. Photovolt., vol. 3,         tion cost for Cu-plated amorphous Si/crystalline Si heterojunction solar
+      no. 4, pp. 1184–1191, Oct. 2013, doi: 10.1109/JPHOTOV.2013.2270351.                  cells,” Sol. Energy Mater. Sol. Cells, vol. 163, pp. 204–209, Apr. 2017,
+[129] K. Yoshikawa et al., “Silicon heterojunction solar cell with in-                     doi: 10.1016/j.solmat.2016.12.029.
+      terdigitated back contacts for a photoconversion efficiency over               [148] S. Kluska et al., “Plated TOPCon solar cells and modules with reliable
+      26%,” Nature Energy, vol. 2, no. 5, May 2017, Art. no. 17032,                        fracture stress and soldered module interconnection,” Eur. Phys. J. Pho-
+      doi: 10.1038/nenergy.2017.32.                                                        tovolt., vol. 12, p. 10, 2021, doi: 10.1051/epjpv/2021010.
+22                                                                                             IEEE JOURNAL OF PHOTOVOLTAICS, VOL. 14, NO. 1, JANUARY 2024
+
+
+
+                          Jarett Zuboy received the B.S. degree in geology                                      Michael Woodhouse received the B.A. degree in
+                          from Colorado State University, Fort Collins, CO,                                     secondary education (physics and chemistry) from
+                          USA, and the M.A. degree in history from the Uni-                                     the University of Wyoming, Laramie, WY, USA, and
+                          versity of Colorado, Denver, CO, USA.                                                 the Ph.D. degree in physical chemistry and materials
+                             He is a Markets and Policy Analyst with the Strate-                                science from Colorado State University, Fort Collins,
+                          gic Energy Analysis Center, National Renewable En-                                    CO, USA.
+                          ergy Laboratory, Golden, CO, USA. He has served as                                       He is a Senior Analyst and Project Lead with
+                          an Analyst and Writer on major solar energy reports                                   the National Renewable Energy Laboratory (NREL),
+                          for the U.S. Department of Energy, including the                                      Golden, CO, USA. He currently leads a multiyear
+                          Solar Futures Study and SunShot Vision Study. His                                     project focused on the design and development of
+                          work focuses on technoeconomic analysis, supply                                       NREL’s cloud-based software platform for bottom-up
+chain issues, markets, and policy related to PV.                                    component manufacturing and total system capital costs modeling (https://dcam.
+                                                                                    openei.org). As part of NREL’s solar and storage technoeconomic analysis team,
+                                                                                    he has internationally recognized expertise in PV and storage system perfor-
+                                                                                    mance and levelized cost of electricity modeling, and he has worked on numerous
+                                                                                    projects for the U.S. Department of Energy’s Solar Energy Technologies Office
+                                                                                    related to solar technology advancements and trade, supply chain, and policy
+                                                                                    issues. He also serves as an Associate Editor for energy economics and policy for
+                                                                                    the Journal of Renewable and Sustainable Energy and on the Steering Committee
+                        Martin Springer received the B.S., M.S., and Ph.D.          for the International Technology Roadmap for Photovoltaic.
+                        degrees in mechanical engineering from the Vienna
+                        University of Technology, Vienna, Austria, in 2013,
+                        2014, and 2017, respectively, and the MBA degree
+                        from the University of Colorado, Colorado Springs,
+                        CO, USA, in 2020.
+                           He is a Researcher with the National Renewable
+                        Energy Laboratory, Golden, CO, USA. His current
+                        research interests focus on durability and reliability                                 Teresa M. Barnes received the B.S. degree in chem-
+                        assessment of emerging PV cell interconnect tech-                                      ical engineering from the University of Maryland,
+                        nologies, cell and glass fracture in large-format PV                                   College Park, MD, USA, and the Ph.D. degree in
+modules, and performance degradation analysis of PV systems.                                                   chemical engineering from the Colorado School of
+                                                                                                               Mines, Golden, CO, USA.
+                                                                                                                  She manages the Materials Reliability and Dura-
+                                                                                                               bility Group with the National Renewable Energy
+                                                                                                               Laboratory (NREL), Golden, CO, USA. She is also
+                                                                                                               the Principal Investigator and Director of the Dura-
+                           Elizabeth C. Palmiotti, originally from New York,                                   MAT Consortium for module materials research and
+                           received the B.S. degree in metallurgical and mate-                                 a Distinguished Member of the Research Staff. Her
+                           rials engineering in 2017 and the M.S. and Ph.D.         group focuses on PV module and system reliability, including accelerated test
+                           degrees in materials science in 2021, all from the       development, materials and interface modeling, degradation mechanisms, field
+                           Colorado School of Mines, Golden, CO, USA.               failure modes, sustainability, and materials science. The group she leads has
+                              She is currently a Postdoctoral Researcher with the   worked with stakeholders throughout the PV value chain on the development
+                           National Renewable Energy Laboratory, Golden, CO,        of industry standards for reliability testing and energy yield. They conduct
+                           USA. Previously, she was a Postdoctoral Researcher       application-driven research on adhesion, cell and module degradation, mechan-
+                           with Sandia National Laboratories in Albuquerque,        ical damage, material weathering, and other topics. She has worked in PV at
+                           NM, USA. During her graduate studies, she was            NREL for 20 years on thin-film PV, flexible devices, and transparent contacts
+                           an IIE-GIRE Fellow and conducted her fellowship          and started focusing on reliability in 2016.
+work with the Institut des Matériaux de Nantes, Université de Nantes, Nantes,
+France. She was an intern with the National Renewable Energy Laboratory
+during her undergraduate studies. Her research interests include thin-film PV,
+vapor deposition techniques, PV module packaging materials, and PV module
+reliability.
+
+
+
+
+                          Joseph Karas received the B.S. degree in polymer
+                          science and engineering from Case Western Reserve
+                          University, Cleveland, OH, USA, in 2012 and the
+                          Ph.D. degree in materials science and engineering
+                          from Arizona State University, Tempe, AZ, USA, in
+                          2020.
+                             He is currently a Postdoctoral Researcher with the
+                          National Renewable Energy Laboratory’s PV Relia-
+                          bility and System Performance Group, Golden, CO,
+                          USA, where he studies solar cell and module reliabil-
+                          ity.
+
+
+
+
+Brittany L. Smith, photograph and biography not available at the time of
+publication.
+

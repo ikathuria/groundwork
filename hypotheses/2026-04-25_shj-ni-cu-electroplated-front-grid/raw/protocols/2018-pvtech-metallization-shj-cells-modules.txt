@@ -1,0 +1,387 @@
+Metallization and interconnection for                                                                                                           Fab &
+                                                                                                                                                Facilities
+
+
+silicon heterojunction solar cells and                                                                                                          Materials
+
+
+modules                                                                                                                                         Cell
+                                                                                                                                                Processing
+Matthieu Despeisse, Christophe Ballif, Antonin Faes & Agata Lachowicz, CSEM, Neuchâtel, Switzerland
+                                                                                                                                                Thin
+                                                                                                                                                Film
+  ABSTRACT
+                                                                                                                                                PV
+  Silicon heterojunction (SHJ) solar cells demonstrate key advantages of high conversion efficiency, maximum                                    Modules
+  field performance and simplicity of processing. The dedicated materials, processes and technologies used for
+  the metallization and interconnection of this type of cell are reviewed in this paper. It is shown that fine-line
+  printing, combined with multiple-wire interconnection, allows the cost of cell metallization to be drastically                                Market
+  reduced, with as little as 30mg of Ag being used per cell side, which is compatible with high-performance and                                 Watch
+  reliable modules. Copper-plating technology is demonstrated to be applicable to silicon heterojunction solar
+  cells, allowing highly conductive fine fingers as well as high performance. While this process eliminates Ag
+  usage, dedicated low-cost patterning technologies are nevertheless required.
+
+
+Introduction                                    One of the key advantages of the                    transmission. An optimum trade-
+Silicon heterojunction (SHJ) technology      passivated contacts of SHJ solar cells                 off can be realized, and an efficiency
+is triggering a lot of interest in the PV    is that increased operating voltages                   above 22.5% at the production level
+community, owing to the high conversion      are attainable; for instance, with this                can be achieved [6,8]. The hetero-
+efficiency achieved at an industrial         te chnolog y op en-circuit voltages                    structure can be further optimized,
+production level with a limited number       above 740mV can be achieved on                         and a record conversion efficiency was
+of production steps (a prerequisite for      commercial 180µm-thick (nominal                        recently demonstrated by the company
+keeping costs low). The SHJ cell structure   thickness) Cz silicon wafers [3–7].                    Kaneka in Japan [7] at the R&D level
+is an excellent demonstration of so-called   The main performance limitation is                     using this SHJ cell structure, with up to
+‘passivating contacts’. Hydrogenated         then linked to the fact that the full-                 25.1% cell efficiency being achieved on
+amorphous silicon (a-Si:H) layers and        area hetero-contacts exhibit parasitic                 151.9cm2. This is the highest efficiency
+transparent conductive oxide (TCO)           light absorption in the thin TCO and                   ever achieved on such an area for a
+layers are deposited on both sides of a      a-Si:H layers. Advanced engineering                    double-side-contacted silicon solar
+textured and cleaned n-type silicon wafer,   of these layers is therefore required in               cell, and demonstrates the potential
+over the entire surface, forming carrier-    order to maintain the high operating                   for high performance of the simple SHJ
+selective hetero-contacts with high-         v o l t a g e w h i l e m a x i m i z i n g l i g ht   cell architecture.
+passivation properties [1,2].
+   The intrinsic a-Si:H layers deposited
+directly on the wafer surfaces provide
+excellent chemical passivation
+properties, yielding a minority-carrier
+lifetime that is potentially on a par with
+theoretical limits [3]. The doped a-Si:H
+layers then allow the selective collection
+of one type of carrier while blocking
+the other: the p-type doped layer acts
+as a hole-selective contact, and the
+n-type doped layer as an electron-
+selective contact. Finally, the TCO
+layers enable an efficient contact to be
+made between the a-Si:H doped layers
+and the cell metallization, and moreover
+provide lateral conduction and an anti-
+reflection effect. The typical structure
+of an SHJ cell is illustrated in Fig. 1.
+
+
+ “One of the key advantages
+  of the passivated contacts
+   of SHJ solar cells is that
+increased operating voltages
+                                              Figure 1. Schematic representation of the symmetrical structure of a bifacial
+       are attainable.       ”                silicon heterojunction solar cell with a rear-emitter configuration.
+
+
+                                                                                                          Photovol t ai c s Inter n ati onal         61
+                In addition, SHJ solar cells exhibit                 (5BB): not only is more Ag required                       paste and ink manufacturers continue
+             a key advantage of maximum field                        to achieve similar line resistance, but                   to improve their low-temperature-
+             p er for mance, or in other words                       also lines with higher resistivities                      cured products, allowing the bulk
+             improved kWh/kWp. These cells have                      or larger dimensions have to b e                          resistivity of the printed Ag lines to
+             a low temperature coefficient of –0.2                   employed. With the use of state-of-                       be decreased. A reduction to less than
+             to –0.3%/°C, in contrast to around                      the-art low-temperature-cured Ag                          5×10-6Ω·cm, for instance, will allow the
+             –0.4%/°C for st and ard dif f u s e d-                  pastes for H-pattern cells with 3BB                       amount of Ag to be typically decreased
+      Cell   junction technologies. Moreover, they                   to 5BB, improved performance can                          to around 130mg, which reduces the
+Processing   are bifacial ‘by nature’ and can be                     be achieved by, for instance, multiple                    cost to ~5.7$cts/cell.
+             used and optimized either with the p                    printing . A typical laydown mass                           For the interconnection of SHJ
+             layer on the sunny side (referred to as                 of 180mg of Ag per side represents                        cells with busbars, standard ribbon
+             a front-emitter structure), or with the                 a metallization cost of 8$cts/cell                        soldering can be applied on optimized
+             n layer on the sunny side (referred                     (assuming a Ag price of $460/kg);                         pastes for that purpose, as proposed
+             to as a rear-emitter structure). The                    for a cell efficiency above 22.5%, the                    in early 2013, for example, for a 5BB
+             symmetrical SHJ architecture therefore                  costs are typically ~1.5$cts/Wp per                       interconnection of SHJ cells [9]. To
+             allows high bifaciality above 90%, and                  side, or 3$cts/Wp for a bifacial cell.                    limit the temperature during ribbon
+             potentially up to 100%. The passivated                  (For simplicity, it is assumed that                       contacting, alternative technologies
+             contacts and symmetrical structure                      the Ag paste cost is the same as the                      have since b e en prop o s e d, such
+             of cells of this type also make them                    Ag cost.) To overcome this cost and                       as the printing or the dispensing
+             perfectly suited to an efficient use                    performance limitation because of the                     application of electrically conductive
+             of thin silicon wafers. The excellent                   metallization, three approaches are                       adhesives for ribbon attachment (e.g.
+             s u r f a ce p a s s i v at i o n a l l o w s h i g h   taken: 1) a continuous enhancement                        the method proposed by teamtechnik
+             performance to be maintained, even                      o f th e el e c t r i c a l ch a r a c te r i s t i c s   [10]). The latter approach further
+             for thin wafers less than 100µm [4],                    of low-temperature cured Ag                               facilitates the introduction of light-
+             while the symmetrical layer structure                   lines; 2) a switch to multiple-                           capturing ribbons, which can increase
+             on both sides of the wafer equilibrates                 wire interconnection; and/or 3) a                         the module power output by about 1
+             me chanic al stre ss , re duc ing the                   switch to copper lines by employing                       to 2% [11].
+             risk of wafer bending and breakage.                     electroplating processes.
+             These factors make SHJ solar cells                                                                                Fine-line printing and multi-wire
+             the technology of choice for pushing                                                                              interconnection
+                                                                     Advanced metallization and
+             forward the industrial implementation                                                                             In the second approach, alternative
+             of thinner wafers.
+                                                                     interconnection for silicon                               advanced interconnection technologies
+                The SHJ process sequence is kept                     heterojunction solar cells                                using multiple wires can be employed
+             simple, with just a few well-established                                                                          to significantly relax the constraints
+             production steps consisting of full-                    Screen printing and busbar/ribbon                         on the SHJ solar cell metallization
+             wafer deposition by plasma-enhanced                     interconnection                                           conductivity. SmartWire Contacting
+             v ap our dep osition (a-Si:H ba se d                    In the first approach, as SHJ cell                        Technology (SWCT) makes use of
+             layers) and mostly sputtering (TCO),                    te ch n o l o g y co nt i nu e s to att r a c t           copper wires supported by a polymer
+             all occurring at a low temperature                      increasing industrial interest, certain                   foil (see Fig. 2) [12–14]. The wires are
+             (~200°C ). This simple process
+             sequence enables the best efficiency to
+             be achieved.
+                An intrinsic process limitation
+             of SHJ solar cells, compared with
+             diffused silicon technologies, is the
+             requirement of a low-temperature
+             processing step following the a-Si:H
+             layer depositions, in order to avoid
+             degradation of the passivation
+             properties. At the metallization level
+             this constraint imposes the use of
+             low-temperature-cured Ag pastes,
+             with curing temperatures typically
+             below 250°C. The printing of state-
+             of-the-art low-temperature-cured Ag
+             pastes yields Ag lines demonstrating
+             typical bulk resistivity higher than 6 to
+             10×10 -6 Ω·cm, or approximately a
+             factor of two to three times higher
+             than that for state-of-the-art
+             metallization based on the firing-
+             through of high- temp erature Ag
+             pa stes . The higher Ag line bulk
+             resistance for SHJ solar cells,
+             compared with homojunction solar                         Figure 2. The interconnection concept of using a SmartWire foil-wire assembly
+             cells, therefore imposes economical                      for string production. The insert shows a confocal microscope image of a
+             and p er for mance limit ations for                      30µm-wide finger that has been screen printed on a silicon heterojunction solar
+             standard H-pattern metallization with                    cell using low-temperature-cured Ag paste, allowing the high performance of
+             two busbars (2BB) to five busbars                        SmartWire modules [12].
+
+
+   62        w w w.p v - te ch . o rg
+coated with a thin alloy layer that has      ribbons to interconnections with              fingers, Rf is the finger line resistance,
+a low melting point; this melts during       more than 18 wires, without                   nBB is the number of busbars and C is a
+the module lamination process and            increasing the shadowing losses of the        constant [12,16].
+builds up a solder contact with the cell     interconnections.                                The increase in the number of
+metallization fingers, thereby keeping                                                     i nte rco n n e c t i o n w i re s ( b u sb a r s )
+the temperature budget low, which                                                          therefore enables the implementation
+is perfectly suited to SHJ cells and to
+thin-wafer cell–module integration.
+                                               “The use of multiple-wire                   of more resistive fingers than in the
+                                                                                           case of state-of-the-art busbar cells.                Cell
+                                                connections means that                                                                           Processing
+This approach replaces state-of-the-                                                       Similar power losses can be achieved
+art busbar and ribbon technology,             the ohmic losses in the cell                 with a 5BB design and an 18-wire
+and is applicable to cells having front                                                    design having a finger line resistance
+metallization without busbars and
+                                               metallization fingers are                   13 times higher than that of the 5BB
+solely fingers (see Fig. 2), referred to
+as busbar-less cells. First introduced
+                                               significantly decreased.          ”         case. Consequently, while fingers with
+                                                                                           a line resistance of less than 1Ω/cm
+by Day4 Energy [14], the technology                                                        should be implemented in 5BB cells
+i s to d ay m a s s p ro d u ce d b y th e      The use of multiple-wire connections       to achieve optimum performance, the
+Meyer Burger group with automated            means that the ohmic losses in the cell       SWCT method with 18 wires allows
+production equipment [12,13].                metallization fingers are significantly       the integration of fingers with a line
+   B e c ause of a low w ire optic al        decreased. By using 18 wires (the             resistance of up to 10Ω/cm, to realize
+dimension and the direct                     standard arrangement for SWCT),               similar electrical losses in the fingers.
+interconnection to the neighbouring          the power loss (Pf) in the cell metallic         The use of SWC T therefore
+cell, SWCT allows the use of more            fingers can be divided by 13, compared        significantly relaxes the constraints
+distributed current extraction paths         with a 5BB design, provided the other         on the conductance of the printed
+perpendicular to the cell metallic           parameters are kept constant (Equation        fingers ; this , in turn, completely
+fingers than with standard busbar            1). This because the power dissipation        changes the way of thinking when
+technology. Wires with a diameter            losses in the fingers, P f, is inversely      optimizing the metallization of the
+of 200µm are typically employed,             proportional to the square of the             fingers. The challenge in the printing
+exhibiting an optic al dimension             number of busbars:                            technology thus shifts from making the
+of about 140µm as a result of the                                                          high aspect ratio fingers required for
+re-collection of part of the light                                                         sufficient conductance and minimum
+reflected onto the circular wire surface                                             (1)   shadowing (for instance achieved
+[12–15]. This allows the passage                                                           by multiple printing), to printing
+from standard interconnection                  where J is the current density, L is the    continuous fingers that are as fine as
+schemes using three or five busbars/         width of the cell, n f is the number of       possible in order to reduce the silver
+      Cell
+Processing
+
+
+
+
+              Figure 3. Semi-transparent facade of the renovated CSEM building in Neuchâtel, Switzerland, which comprises bifacial
+              silicon heterojunction solar cells that are interconnected using SmartWire Contacting Technology [17].
+
+             lay-down (cost reduction) and to                        cell efficiency obtained using standard    combination with SWCT, and reliable
+             increase the current density (efficiency                printing, an efficiency of 22.7% can       modules were also demonstrated
+             enhancement).                                           be achieved using fine-line printing,      [16]; moreover, the cost-reduction
+                 Recent developments in the fine-                    yielding finger metallization costs        potential of SWCT has been shown by
+             line printing of low-temperature cured                  of ~0.23$cts/Wp, which is around           implementing an alternative coating
+             Ag pastes have demonstrated the                         one-sixth the cost of the standard         material for the wires [16]. Yet further
+             possibility of printing low-temperature                 case. SWCT technology therefore            advancements have been demonstrated
+             cured Ag lines with sufficient                          demonstrates how an initial weakness       in the form of the first bifacial single-
+             conductivity using minimum screen                       of SHJ technology can be turned into       cell modules with an efficiency of
+             openings down to 20µm; this has                         a strength, as record low usage of Ag      19.9% without any cell metallization on
+             resulted in approximately 30µm-wide                     is made possible, resulting in an ultra-   the front side or the back [16]. Direct
+             fingers with a line resistance of 5Ω/                   low cost of the printed Ag and an          contacting is realized between the
+             cm, which is sufficient for module                      increased cell performance.                wires and the conductive front surface
+             integration using SWC T without                            In 2014 the high- p er for mance        of SHJ solar cells; this , however,
+             adding electrical losses from the                       potential was demonstrated with a          necessitates the implementation of a
+             f i n g e r s [ 1 2 , 1 6 ] . Th i s re p re s e nt s   327Wp module which integrated 60           large number of wires.
+             a double benefit : first, since only                    silicon heterojunction solar cells,
+             30mg of Ag is necessary per side,                       corresponding to a total-area module
+             considerable savings in metallization
+             costs are realized; second, thanks
+                                                                     efficiency of 20% [15]. In addition,
+                                                                     high reliability with this technology
+                                                                                                                   “By switching to copper-
+                                                                                                                  electroplating processing
+             to the reduced shadowing of the                         can be demonstrated: a degradation
+             finer printed fingers, an increase                      of less than 5% after undergoing more         for the formation of the
+             in performance is achieved, with a                      than three times the IEC standard test
+             relative gain of about 1% possible                      criteria for accelerated degradation has
+                                                                                                                  electrical grid, the use of
+             [12,16].                                                been reported [8].                            silver can be suppressed
+                 When SWCT is used, the                                 At the R&D level, there have been
+             consideration of a typical lay-                         further developments in order to profit         and the metallization
+             down mass of Ag of 30mg per side                        from the relaxed constraints provided
+             represents a metallization cost of                      by SWCT. For instance, the printing of
+                                                                                                                 process maintained at room
+             1.33$cts/cell (for an assumed Ag price
+             of $460/kg). Compared with a 22.5%
+                                                                     copper lines was demonstrated to yield
+                                                                     sufficient line conduction for use in
+                                                                                                                        temperature.        ”
+
+   64        w w w.p v - te ch . o rg
+               Finally, the aesthetics of SWCT
+             modules are today highlighted by the
+             CSEM PV facade, which comprises
+             spaced bifacial SHJ solar cells that                      (a)
+             are interconnected using SWCT, as
+             shown in Fig. 3 [17].
+
+      Cell   Copper electroplating
+Processing   In the third approach, certain
+             technologies that enable the
+             ap p l i c at i o n o f s i l v e r- f r e e m e t a l
+             stacks with improved line
+             conductance can be implemented. By
+             switching to copper-electroplating
+             processing for the formation
+             of the electrical grid, the use of
+             silver can be suppressed and the
+             metallization process maintained
+                                                                       (b)
+             at room temperature. The plated
+             copper lines typically demonstrate
+             a low resistivity of down to
+             2 × 1 0 -6Ω · c m , w h i c h i s o n l y
+             slightly higher than the
+             resistivity of pure bulk copper
+             (1.7×10-6Ω·cm).
+                Copper electroplating is a possible
+             alternative to the screen printing of
+             silver paste that is currently used for
+             diffused-junction silicon solar cells. In
+             this case, the dielectric anti-reflection
+             layer can be used as a plating mask
+             by opening it by, for instance, laser
+             a b l a t i o n . Th e s t a n d a r d p r o c e s s      Figure 4. (a) Line resistance as a function of the line width/spreading, for plated
+             then consists of the growth of a                          and screen-printed lines of a test layout at CSEM. (b) A copper-plating module
+             nickel–copper stack by plating. The                       in CSEM’s vertical R&D line, with two sets of copper electrodes for bifacial
+             nickel layer will form a nickel silicide                  deposition.
+             barrier to copper diff usion af ter
+             annealing, while the copper acts as the
+             conductive layer. Such metallization
+             technology was recently demonstrated
+                                                                      successfully demonstrated for
+                                                                      silicon heterojunction (SHJ) solar
+                                                                                                                    “20µm-wide copper-plated
+             on commercial equipment to enable                        cells [19–20]. One patterning                fingers can be produced with
+             low resistivity contacts on lightly                      technique that potentially offers cost          a line resistance of about
+             doped emitters as well [18].                             competitiveness with screen-printed
+                For the application of
+             co p p e r el e c t ro p l at i n g to s i l i co n
+                                                                      metallization is the inkjet printing of
+                                                                      a hot melt ink using a sophisticated
+                                                                                                                               1Ω/cm.      ”
+             heterojunction solar cells, the                          process with significantly reduced          Conclusions
+             situation is different: the plating is                   ink consumption, as presented by
+             performed on the conductive front                        Hermans et al. [21].                        Various technological approaches
+             TCO layer of the SHJ solar cell [19–                       The possibilities of achieving fine-      have been purposefully developed
+             20]. This TCO layer will already                         plated lines with low line resistance       during the last few years to completely
+             act as an efficient barrier to copper                    are illustrated in Fig. 4, in comparison    overcome the initial limitation in
+             migration towards the silicon, and                       to the use of low-temperature cured         performance and cost originating
+             therefore limit potential degradation.                   Ag paste; 20µm-wide copper-plated           f rom the re quirement of a low -
+             Since the layer is conductive,                           fingers can be produced with a line         temperature-cured silver paste for
+             however, it requires the application                     resistance of ab out 1Ω/cm. This            silicon heterojunction solar cells. A
+             of additional protective layers and                      therefore allows the achievement of         switch to copper-plating processes
+             processes in order to achieve the                        high performance to be considered           permits fine, highly conductive fingers
+             definition of a patterning mask to                       with silicon heterojunction solar cells     to be realized, with today’s established
+             permit the selective plating . The                       that also use a three- to five-busbar       processes guaranteeing high adhesion
+             development of the application of                        H-pattern design, the fine, conductive      and performance.
+             copper electroplating to SHJ solar                       plated fingers yielding low electrical         Fur ther work is under w ay by
+             cells therefore focuses on achieving                     and optical losses . Fur thermore,          the different industr y players to
+             low cont ac t re sist ance and high                      the high finger conductivity may            determine their own cost-effective
+             adhesion of plated materials onto                        offer additional advantages for low-        patterning technology. With some of
+             TC O layers , a s well a s on co st-                     concentration solar devices, as well as     the commercially available solutions,
+             effective patterning technologies.                       in new interconnection technologies,        plating already offers the prospect of
+                Ele c tropl ate d copp er f ront-                     such as shingling, also referred to as      improved cost compared with screen
+             contact metallization has been                           dense cell interconnection [22].            printing in the case of busbar and
+
+
+
+   66        w w w.p v - te ch . o rg
+ribbon interconnection; moreover,                          lines and its applications”, Proc.               About the Authors
+plating facilitates alternative module                     42nd IEEE PVSC, New Orleans,                                    Matthieu Desp eisse
+technologies.                                              Louisiana, USA.                                                 received his Ph.D. in 2006
+   I m p o r t a n t l y, m u l t i p l e - w i r e   [9] SOMONT [http://www.somont.                                       for his work on advanced
+interconnection was shown to be a                          com/en/].                                                       detectors at CERN in
+paradigm shift in technology ; the                    [10] t e a m t e c h n i k [ h t t p : / / w w w .                   Geneva, Switzerland. He
+method relaxes the constraints of                          teamtechnik .com/en/solar/                                      then joined EPFL in 2009
+the metallization finger conductivity                      stringer-tt/stringer-tt1400-eca/].               as head of the thin-film silicon                   Cell
+to the same level achieved by today’s                 [11] Ebner, R. et al. 2013, “Increased                photovoltaics research team. Since 2013            Processing
+low-temperature-cured silver paste.                        p o w e r o u tp u t o f c r y s t a l l i n e   he has led research activities at CSEM
+Ultra-low Ag consumption has been                          silicon PV modules by alternative                concerning cr ystalline silicon
+demonstrated (down to 30mg per cell                        interconnection applications”,                   photovoltaics and metallization, with a
+side), yielding a significant reduction                    P roc . 28th EU PV SEC, Paris ,                  special focus on silicon heterojunction
+in metallization costs, which is even                      France.                                          technolog y, passivating contacts ,
+more pronounce d in the ca se of                      [12] Faes A., Despeisse M., Levrat J.                 metallization and interconnection.
+bifacial modules.                                          et al. 2014, “SmartWire Solar Cell
+   In conclusion, the different                            Interconnection Technolog y ”,                                   Christophe Ballif
+alternative metallization and                              Proc. 29th EU PVSEC,                                            received his Ph.D. from
+interconnection technologies                               Amsterdam, The Netherlands.                                     EPFL, Switzerland, in
+developed in recent years are                         [13] P a p e t , P. e t a l . 2 0 1 4 ,                              1998. In 2004 he became a
+now further advancing silicon                              “Metallization schemes dedicated                                full professor with the
+heterojunction solar cell technology                       t o S m a r t Wi r e C o n n e c t i o n                        I n s t i t u t e      o f
+a s a cost-comp etitive high-                              Technology for heterojunction                    Microengineering at the University of
+performance technology.                                    solar cells”, Proc. 29th EU PVSEC,               Neuchâtel, where he directs the
+                                                           Amsterdam, The Netherlands.                      Photovoltaics and Thin-Film Electronics
+References                                            [14] Schneider, A., Rubin, L. & Rubin,                Laboratory, which is now part of EPFL.
+[1] Ta n a k a , M . e t a l . 1 9 9 2 ,                   G. 2006, “Solar cell improvement                 Since 2013 he has also been the director
+    “Development of new a-Si/c-Si                          by new metallization techniques                  of the CSEM PV-center. His research
+    heterojunction solar cells: ACJ-                       – T h e D AY 4 TM e l e c t r o d e              interests include materials for PV, high-
+    HIT (ar tif icially constr ucte d                      conce pt ”, P ro c . 4th W C PEC ,               efficiency c-Si solar cells, module
+    junction-heterojunction with                           Waikoloa, Hawaii, USA, p. 1095.                  technology, BIPV and energy systems.
+    intrinsic thin-layer”, Jap. J. Appl.              [15] Braun, S., Micard, G. & Hahn, G.
+    Phys., Vol. 31, pp. 3518–3522.                         2013, “Solar cell improvement by                                 Antonin Faes received his
+[2] De Wolf, S. et al. 2012, “High-                        using a multi busbar design as                                   Ph.D. in 2006 for his work
+    efficiency silicon heterojunction                      front electrode”, Energy Procedia,                               on solid oxide fuel cells at
+    solar cells: a review”, Green, Vol.                    Vol. 21, pp. 227–233.                                            the Interdi s c iplinar y
+    2, pp 7–24.                                       [16] Yao, Y. et al. 2015, “Mo dule                                    C e nt e r f o r E l e c t r o n
+[3] D e s co e u d re s , A . , A l l eb é , C .           integration of solar cells                                       Microscopy (CIME) and
+    & Badel, N. 2015, “Silicon                             with diverse metallization                       the Industrial Energy System Laboratory
+    heterojunction solar cells:                            schemes enabled by SmartWire                     (LENI) at EPFL. In 2012 he joined the
+    Towards low-cost high-efficiency                       Connection Technology”, Proc.                    CSEM PV-center in Neuchâtel, where he
+    industrial devices and application                     30th EU PV SEC, Hamburg ,                        is responsible for c-Si solar cell
+    to low-concentration PV”, Energy                       Germany.                                         metallization and interconnection
+    Procedia, Vol. 77, pp. 508–514.                   [17] CSEM [http://www.csem.ch/site/                   activities, with a particular focus on
+[4] Taguchi, M. et al. 2014, “24.7%                        card.asp?pid=33107].                             silicon heterojunction solar cells.
+    record efficiency HIT solar cell                  [18] Horzel, J.T. et al. 2015, “Industrial
+    on thin silicon wafer”, IEEE J.                        solar cells with Cu-based plated                                 Agata Lachowicz studied
+    Photovolt., Vol. 4, pp. 96–99.                         contacts”, IEEE J. Photovolt., Vol.                              chemistry at Heinrich
+[5] M a s u k o , K . e t a l . 2 0 1 4 ,                  5, No. 6.                                                        Heine University
+    “Ac h i e v e m e nt o f m o r e t h a n          [19] Hernández, J.L. et al. 2012, “High                               Düsseldorf, and worked
+    25% conversion efficiency with                         efficiency copper electroplated                                  initially on the
+    crystalline silicon heterojunction                     heterojunction solar cells”, Proc.                               development of processes
+    solar cell”, IEEE J. Photovolt., Vol.                  2 7 t h E U P V SE C , Fr a n k f u r t ,        for manufacturing printed-circuit boards,
+    4, pp. 1433–1435.                                      Germany.                                         such as final finishes, copper plating and
+[6] Strahm, B. et al. 2015, “ The                     [20] G e i s s b u h l e r, J . e t a l . 2 0 1 4 ,   conductive polymers. She worked at
+    Swiss Inno-HJT project : Fully                         “Silicon heterojunction solar                    Schott Solar and Meyer Burger Germany,
+    integrated R&D to boost Si-HJT                         cells with copper- plated                        focusing on PERC processes, before
+    module performance”, Proc. 31st                        grid electrodes: Status and                      joining CSEM PV-center to work on the
+    EU PVSEC, Hamburg, Germany.                            comparison with silver thick-film                development of plating for silicon
+[7] Ya m a m o t o , K . e t a l . 2 0 1 5 ,               techniques”, IEEE J. Photovolt.,                 heterojunction solar cells.
+    “ P ro g re s s a n d ch a l l e n g e s i n           Vol. 4, No. 4, pp. 1055–1062.
+    thin-film silicon photovoltaics:                  [21] H e r m a n s , J . e t a l . 2 0 1 4 ,          Enquiries
+    Heterojunctions                       and              “Advanced metallization concepts                 Matthieu Despeisse
+    multijunctions”, Proc. 31st EU                         by inkjet printing”, Proc. 29th                  Jaquet Droz 1
+    PVSEC, Hamburg, Germany.                               EU PV SEC, Amsterdam, The                        CH-2002 Neuchâtel
+[8] S o d e r s t r o m , T. , Ya o , Y. &                 Netherlands.                                     Switzerland
+    Grischke, R . 2015, “Low cost                     [22] Cogenra [www.cogenra.com/dci-
+    high energy yield solar module                         technology/].                                    Email: mde@csem.ch
+
+
+
+                                                                                                                   Photovol t ai c s Inter n ati onal              67
+

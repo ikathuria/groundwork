@@ -1,0 +1,587 @@
+                                     SAFETY DATA SHEET
+Creation Date 19-Oct-2009                          Revision Date 19-Dec-2025                  Revision Number 10
+
+This safety data sheet was created pursuant to the requirements of: US OSHA Hazard Communication Standard 2024 (29
+                                                    CFR 1910.1200)
+
+
+
+
+                                                      1. Identification
+Product Name                          Copper(II) sulfate pentahydrate
+
+Cat No. :                             AC197730000; AC197730010; AC197730050; AC197730250
+CAS No                                7758-99-8
+Synonyms                              Blue Vitriol.
+
+Recommended Use                       Laboratory chemicals.
+Uses advised against                  Food, drug, pesticide or biocidal product use.
+
+
+Details of the supplier of the safety data sheet
+
+Company
+Fisher Scientific Company                    Acros Organics
+One Reagent Lane                             One Reagent Lane
+Fair Lawn, NJ 07410                          Fair Lawn, NJ 07410
+Tel: (201) 796-7100
+
+
+Emergency Telephone Number
+For information US call: 001-800-227-6701 / Europe call: +32 14 57 52 11
+Emergency Number US:001-201-796-7100 / Europe: +32 14 57 52 99
+CHEMTREC Tel. No. US:001-800-424-9300 / Europe:001-703-527-3887
+
+
+
+                                           2. Hazard(s) identification
+Classification
+This chemical is considered hazardous according to [US] OSHA (29 CFR 1910.1200, 2024)
+
+
+
+
+Acute oral toxicity                                             Category 4
+Serious Eye Damage/Eye Irritation                               Category 1
+
+
+
+Label Elements
+
+Signal Word
+Danger
+
+Hazard Statements
+Harmful if swallowed
+Causes serious eye damage
+
+______________________________________________________________________________________________
+
+                                                          Page 1 / 9
+Copper(II) sulfate pentahydrate                                          Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+
+
+
+Precautionary Statements
+Prevention
+Wash face, hands and any exposed skin thoroughly after handling
+Do not eat, drink or smoke when using this product
+Wear protective gloves/protective clothing/eye protection/face protection
+Eyes
+IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to do. Continue rinsing
+Immediately call a POISON CENTER or doctor/physician
+Ingestion
+IF SWALLOWED: Call a POISON CENTER or doctor/physician if you feel unwell
+Rinse mouth
+Disposal
+Dispose of contents/container to an approved waste disposal plant
+Hazards not otherwise classified (HNOC)
+Very toxic to aquatic life with long lasting effects
+
+Hazards classified under paragraph (d)(1)(ii) of 1910.1200
+No information available
+
+
+
+
+                              3. Composition/information on Ingredients
+                    Component                                        CAS No                                    Weight %
+      Copper (II) sulfate pentahydrate (1:1:5)                      7758-99-8                                    >95
+                   Cupric sulfate                                   7758-98-7                                     -
+
+                                                 4. First-aid measures
+General Advice                         If symptoms persist, call a physician.
+
+Eye Contact                            Rinse immediately with plenty of water, also under the eyelids, for at least 15 minutes. Get
+                                       medical attention.
+
+Skin Contact                           Wash off immediately with plenty of water for at least 15 minutes. If skin irritation persists,
+                                       call a physician.
+
+Inhalation                             Remove to fresh air. If not breathing, give artificial respiration. Get medical attention if
+                                       symptoms occur.
+
+Ingestion                              Clean mouth with water and drink afterwards plenty of water. Get medical attention if
+                                       symptoms occur.
+
+Most important symptoms and            Causes severe eye damage.
+effects
+Notes to Physician                     Treat symptomatically
+
+                                             5. Fire-fighting measures
+
+
+______________________________________________________________________________________________
+
+                                                            Page 2 / 9
+Copper(II) sulfate pentahydrate                                          Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+Unsuitable Extinguishing Media            No information available
+
+    Flash Point                           No information available
+    Method -                              No information available
+
+Autoignition Temperature            No information available
+Explosion Limits
+   Upper                            No data available
+   Lower                            No data available
+   Sensitivity to Mechanical Impact No information available
+   Sensitivity to Static Discharge No information available
+
+Specific Hazards Arising from the Chemical
+Thermal decomposition can lead to release of irritating gases and vapors. Do not allow run-off from fire-fighting to enter drains or
+water courses.
+
+Hazardous Combustion Products
+Sulfur oxides. Copper oxides.
+Protective Equipment and Precautions for Firefighters
+As in any fire, wear self-contained breathing apparatus pressure-demand, MSHA/NIOSH (approved or equivalent) and full
+protective gear.
+
+NFPA
+             Health                          Flammability                       Instability                   Physical hazards
+               2                                 0                                  1                               N/A
+
+                                          6. Accidental release measures
+Personal Precautions                      Ensure adequate ventilation. Use personal protective equipment as required. Avoid dust
+                                          formation.
+Environmental Precautions                 Do not flush into surface water or sanitary sewer system. Do not allow material to
+                                          contaminate ground water system. Prevent product from entering drains. Local authorities
+                                          should be advised if significant spillages cannot be contained. Should not be released into
+                                          the environment.
+
+Methods for Containment and Clean Sweep up and shovel into suitable containers for disposal. Keep in suitable, closed
+Up                                containers for disposal.
+
+                                                  7. Handling and Storage
+Handling                                  Wear personal protective equipment/face protection. Ensure adequate ventilation. Avoid
+                                          dust formation. Do not get in eyes, on skin, or on clothing. Avoid ingestion and inhalation.
+
+Storage.                                  Keep containers tightly closed in a dry, cool and well-ventilated place. Store under an inert
+                                          atmosphere. Air sensitive. Incompatible Materials. Strong oxidizing agents.
+
+                                 8. Exposure controls / personal protection
+Exposure Guidelines
+
+       Component                    ACGIH TLV                   OSHA PEL                    NIOSH                 Mexico OEL (TWA)
+     Copper (II) sulfate           TWA: 1 mg/m3                                        IDLH: 100 mg/m3
+    pentahydrate (1:1:5)                                                             REL = 1 mg/m3 (TWA)
+       Cupric sulfate              TWA: 1 mg/m3                                        IDLH: 100 mg/m3
+                                                                                     REL = 1 mg/m3 (TWA)
+
+
+Legend
+
+ACGIH - American Conference of Governmental Industrial Hygienists
+NIOSH: NIOSH - National Institute for Occupational Safety and Health
+
+
+
+
+______________________________________________________________________________________________
+
+                                                               Page 3 / 9
+Copper(II) sulfate pentahydrate                                          Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+Engineering Measures                  Ensure that eyewash stations and safety showers are close to the workstation location.
+                                      Ensure adequate ventilation, especially in confined areas.
+
+Personal Protective Equipment
+
+   Eye/face Protection                Wear appropriate protective eyeglasses or chemical safety goggles as described by
+                                      OSHA's eye and face protection regulations in 29 CFR 1910.133 or European Standard
+                                      EN166. Tight sealing safety goggles.
+
+   Skin and body protection           Wear appropriate protective gloves and clothing to prevent skin exposure.
+
+   Respiratory Protection             Follow the OSHA respirator regulations found in 29 CFR 1910.134 or European Standard
+                                      EN 149. Use a NIOSH/MSHA or European Standard EN 149 approved respirator if
+                                      exposure limits are exceeded or if irritation or other symptoms are experienced.
+
+   Recommended Filter type:           Particulates filter conforming to EN 143.
+
+   Hygiene Measures                   Handle in accordance with good industrial hygiene and safety practice.
+
+                                   9. Physical and chemical properties
+
+Appearance
+Physical State                        Solid
+Color                                 Blue
+Odor                                  Odorless
+Odor Threshold                        No information available
+Property                              Values                                  Remarks       •Met
+                                                                                               hod
+Melting Point/Range                   110 °C / 230 °F
+Softening Point                       No data available
+Boiling Point/Range                   No information available
+Flash Point                           No information available                Method - No information available
+Flammability (liquid)                 Not applicable                          Solid
+Flammability (solid,gas)              No information available
+Explosion Limits                      No data available
+
+Autoignition Temperature              No data available
+Decomposition Temperature             No data available
+pH                                     3.5-4.5                                5% aq. solution
+Viscosity                             Not applicable                          Solid
+Water Solubility                      320 g/L (20°C)
+Solubility in other solvents          No information available
+Partition Coefficient (n-octanol/water)
+Vapor Pressure                        7.3 mmHg @ 25 °C
+Density / Specific Gravity            No data available
+Bulk Density                          No data available
+Vapor Density                         Not applicable                          Solid
+Particle characteristics              No data available
+
+Other Information
+Molecular Formula                     CuO4S.5H2O
+Molecular Weight                      249.68
+Evaporation Rate                      Not applicable - Solid
+
+
+
+                                          10. Stability and reactivity
+Reactive Hazard                       None known, based on information available
+
+
+
+______________________________________________________________________________________________
+
+                                                          Page 4 / 9
+Copper(II) sulfate pentahydrate                                          Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+Stability                                    Stable under normal conditions.
+
+Conditions to Avoid                          Avoid dust formation. Incompatible products. Excess heat. Exposure to moist air or water.
+
+Incompatible Materials                       Strong oxidizing agents
+
+Hazardous Decomposition Products Sulfur oxides, Copper oxides
+
+Hazardous Polymerization                     Hazardous polymerization does not occur.
+
+Hazardous Reactions                          None under normal processing.
+
+                                               11. Toxicological information
+Information on expected route of exposure
+
+Inhalation                                   Not an expected route of exposure.
+Ingestion                                    May be harmful if swallowed.
+Eyes                                         Avoid contact with eyes. Corrosive to the eyes and may cause severe damage including
+                                             blindness.
+Skin                                         Avoid contact with skin. Skin Corrosion/Irritation.
+
+Toxicology data for the components
+
+                Component                              LD50 Oral                        LD50 Dermal                       LC50 Inhalation
+  Copper (II) sulfate pentahydrate (1:1:5)      LD50 = 960 mg/kg ( Rat )            LD50 > 8 g/kg ( Rabbit )                     -
+
+              Cupric sulfate                    LD50 = 481 mg/kg ( Rat )          LD50 > 1000 mg/kg ( Rabbit )                   -
+
+Toxicologically Synergistic                  No information available
+Products
+
+(b) skin corrosion/irritation;               Based on available data, the classification criteria are not met
+
+
+(c) serious eye damage/irritation;           Category 1
+
+
+(d) respiratory or skin sensitization;
+    Respiratory                        Based on available data, the classification criteria are not met
+    Skin                               Based on available data, the classification criteria are not met
+
+(e) germ cell mutagenicity;                  Based on available data, the classification criteria are not met
+
+(f) carcinogenicity;                         Based on available data, the classification criteria are not met
+                                             The table below indicates whether each agency has listed any ingredient as a carcinogen
+
+    Component                CAS No                IARC                NTP                   ACGIH                OSHA                Mexico
+  Copper (II) sulfate       7758-99-8             Not listed         Not listed             Not listed           Not listed          Not listed
+ pentahydrate (1:1:5)
+    Cupric sulfate          7758-98-7             Not listed         Not listed             Not listed           Not listed          Not listed
+
+(g) reproductive toxicity;                   Based on available data, the classification criteria are not met
+
+
+
+
+(h) STOT-single exposure;                    Based on available data, the classification criteria are not met
+
+
+
+
+______________________________________________________________________________________________
+
+                                                                 Page 5 / 9
+Copper(II) sulfate pentahydrate                                          Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+(i) STOT-repeated exposure;            Based on available data, the classification criteria are not met
+
+   Target Organs                      None known.
+
+
+(j) aspiration hazard;                 Not applicable
+                                       Solid
+
+Symptoms / effects,both acute and No information available.
+delayed
+
+
+Other Adverse Effects                  The toxicological properties have not been fully investigated.
+
+Endocrine Disrupting Properties        This product does not contain any known or suspected endocrine disruptors.
+
+                                               12. Ecological information
+Ecotoxicity
+The product contains following substances which are hazardous for the environment. Very toxic to aquatic organisms, may cause
+long-term adverse effects in the aquatic environment. May cause long-term adverse effects in the environment. Do not allow
+material to contaminate ground water system.
+
+       Component              Freshwater Algae             Freshwater Fish                Microtox                 Water Flea
+     Copper (II) sulfate          Not listed            Onchorhynchus mykiss:          Photobacterium          EC50 = 0.24 mg/L/48h
+    pentahydrate (1:1:5)                                LC50 = 0.1-2.5 mg/L/96h   phosphoreum: EC50 = 0.25
+                                                                                     mg/L/30min as Cu++
+                                                                                       Photobacterium
+                                                                                   phosphoreum EC50= 1.3
+                                                                                     mg/L/5 min as Cu++
+       Cupric sulfate             Not listed             LC50: = 0.1 mg/L, 96h            Not listed           EC50 = 0.024 mg/L/48h
+                                                        (Oncorhynchus mykiss)
+
+Persistence and Degradability          May persist based on information available.
+
+Bioaccumulation/ Accumulation          No information available.
+
+Mobility                               Will likely be mobile in the environment due to its water solubility.
+
+                                           13. Disposal considerations
+Waste Disposal Methods                 Chemical waste generators must determine whether a discarded chemical is classified as a
+                                       hazardous waste. Chemical waste generators must also consult local, regional, and
+                                       national hazardous waste regulations to ensure complete and accurate classification.
+
+                                               14. Transport information
+DOT
+   UN-No                              UN3077
+   Proper Shipping Name               ENVIRONMENTALLY HAZARDOUS SUBSTANCE, SOLID, N.O.S.
+   Technical Shipping Name            Copper (II) sulfate pentahydrate
+   Hazard Class                       9
+   Packing Group                      III
+ TDG
+   UN-No                              UN3077
+   Proper Shipping Name               ENVIRONMENTALLY HAZARDOUS SUBSTANCE, SOLID, N.O.S.
+   Technical Shipping Name            Copper (II) sulfate pentahydrate
+   Hazard Class                       9
+   Packing Group                      III
+IATA
+   UN-No                              UN3077
+   Proper Shipping Name               ENVIRONMENTALLY HAZARDOUS SUBSTANCE, SOLID, N.O.S.
+   Technical Shipping Name            Copper (II) sulfate pentahydrate
+
+
+______________________________________________________________________________________________
+
+                                                             Page 6 / 9
+Copper(II) sulfate pentahydrate                                          Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+   Hazard Class                           9
+   Packing Group                          III
+IMDG/IMO
+   UN-No                                  UN3077
+   Proper Shipping Name                   ENVIRONMENTALLY HAZARDOUS SUBSTANCE, SOLID, N.O.S.
+   Technical Shipping Name                Copper (II) sulfate pentahydrate
+   Hazard Class                           9
+   Packing Group                          III
+                                                15. Regulatory Information
+United States of America Inventory
+
+          Component                     CAS No                TSCA                  TSCA Inventory notification -    TSCA - EPA Regulatory
+                                                                                          Active-Inactive                    Flags
+ Copper (II) sulfate pentahydrate      7758-99-8                 -                               -                             -
+              (1:1:5)
+         Cupric sulfate                7758-98-7                X                              ACTIVE                             -
+
+Legend:
+TSCA US EPA (TSCA) - Toxic Substances Control Act, (40 CFR Part 710)
+X - Listed
+'-' - Not Listed
+
+TSCA - Per 40 CFR 751, Regulation of Certain Chemical                  Not applicable
+Substances & Mixtures, Under TSCA Section 6(h) (PBT)
+
+TSCA 12(b) - Notices of Export                                         Not applicable
+
+
+
+International Inventories
+Canada (DSL/NDSL), Europe (EINECS/ELINCS/NLP), Philippines (PICCS), Japan (ENCS), Japan (ISHL), Australia (AICS), China (IECSC), Korea
+(KECL).
+
+          Component                   CAS No         DSL      NDSL         EINECS      PICCS    ENCS        ISHL    AICS    IECSC       KECL
+ Copper (II) sulfate pentahydrate    7758-99-8        -         -             -          X        X                   X       X           -
+              (1:1:5)
+         Cupric sulfate              7758-98-7        X          -         231-847-6     X         X         X       X        X        KE-08956
+
+KECL - NIER number or KE number (http://ncis.nier.go.kr/en/main.do)
+
+U.S. Federal Regulations
+
+SARA 313
+Section 313 of Title III of the Superfund Amendments and Reauthorization Act of 1986 (SARA). This product contains a chemical
+or chemicals which are subject to the reporting requirements of the Act and Title 40 of the Code of Federal Regulations, Part 372.
+
+       Component                      CAS No                     Weight %                 SARA 313 - Threshold       SARA 313 - Reporting
+                                                                                               Values %                 threasholds
+    Copper (II) sulfate              7758-99-8                        >95                        1.0 %                        -
+   pentahydrate (1:1:5)
+      Cupric sulfate                 7758-98-7                         -                           1.0 %                       -
+
+SARA 311/312 Hazard Categories
+Should this product meet EPCRA 311/312 Tier reporting criteria at 40 CFR 370, refer to Section 2 of this SDS for appropriate
+classifications.
+
+CWA (Clean Water Act)
+        Component                      CWA - Hazardous           CWA - Reportable            CWA - Toxic Pollutants CWA - Priority Pollutants
+                                         Substances                Quantities
+Copper (II) sulfate pentahydrate              -                         -                               X                          -
+             (1:1:5)
+
+______________________________________________________________________________________________
+
+                                                               Page 7 / 9
+Copper(II) sulfate pentahydrate                                          Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+          Cupric sulfate                         X                          10 lb                       X                          -
+
+Clean Air Act                              Not applicable
+
+OSHA - Occupational Safety and             Not applicable
+Health Administration
+
+
+CERCLA
+.
+
+                      Component                              Hazardous Substances             CERCLA Extremely         SARA Reportable Quantity
+                                                                     RQs                     Hazardous Substances              (RQ)
+                                                                                                     RQs
+                     Cupric sulfate                                     10 lb                          -                        10 lb
+                                                                                                                               4.54 kg
+
+California Proposition 65                  This product does not contain any Proposition 65 chemicals.
+
+U.S. State Right-to-Know
+Regulations
+
+      Component                 Massachusetts              New Jersey               Pennsylvania            Illinois           Rhode Island
+    Copper (II) sulfate               -                        X                         X                      -                   -
+   pentahydrate (1:1:5)
+      Cupric sulfate                   X                       X                         X                     -                       -
+
+U.S. Department of Transportation
+Reportable Quantity (RQ):                  Y
+DOT Marine Pollutant                       Y
+DOT Severe Marine Pollutant                Y
+
+U.S. Department of Homeland                This product does not contain any DHS chemicals.
+Security
+
+Other International Regulations
+
+Mexico - Grade                             No information available
+
+
+Authorisation/Restrictions according to EU REACH
+
+           Component                           CAS No            REACH (1907/2006) -      REACH (1907/2006) -        REACH Regulation (EC
+                                                                Annex XIV - Substances Annex XVII - Restrictions 1907/2006) article 59 -
+                                                                Subject to Authorization on Certain Dangerous          Candidate List of
+                                                                                               Substances           Substances of Very High
+                                                                                                                       Concern (SVHC)
+  Copper (II) sulfate pentahydrate          7758-99-8                       -            Use restricted. See entry            -
+               (1:1:5)                                                                               75.
+                                                                                          (see link for restriction
+                                                                                                  details)
+           Cupric sulfate                   7758-98-7                       -            Use restricted. See entry            -
+                                                                                                     75.
+                                                                                          (see link for restriction
+                                                                                                  details)
+
+REACH links
+https://echa.europa.eu/substances-restricted-under-reach
+
+
+Safety, health and environmental regulations/legislation specific for the substance or mixture
+
+        Component                     CAS No                OECD HPV            Persistent Organic     Ozone Depletion         Restriction of
+
+______________________________________________________________________________________________
+
+                                                                   Page 8 / 9
+Copper(II) sulfate pentahydrate                                          Revision Date 19-Dec-2025
+______________________________________________________________________________________________
+
+                                                                         Pollutant             Potential          Hazardous
+                                                                                                               Substances (RoHS)
+     Copper (II) sulfate       7758-99-8              Listed           Not applicable        Not applicable      Not applicable
+    pentahydrate (1:1:5)
+       Cupric sulfate          7758-98-7              Listed           Not applicable        Not applicable      Not applicable
+
+
+Contains component(s) that meet a 'definition' of per & poly fluoroalkyl substance (PFAS)?
+Not applicable
+
+
+
+Other International Regulations
+
+       Component                  CAS No       Seveso III Directive Seveso III Directive      Rotterdam         Basel Convention
+                                                 (2012/18/EC) -        (2012/18/EC) -       Convention (PIC)   (Hazardous Waste)
+                                              Qualifying Quantities Qualifying Quantities
+                                               for Major Accident    for Safety Report
+                                                   Notification        Requirements
+     Copper (II) sulfate       7758-99-8          Not applicable       Not applicable        Not applicable      Annex I - Y22
+    pentahydrate (1:1:5)
+       Cupric sulfate          7758-98-7          Not applicable       Not applicable        Not applicable      Annex I - Y22
+
+
+
+                                              16. Other Information
+Prepared By                           Product stewardship (Regulatory Affairs)
+                                      Thermo Fisher Scientific
+                                      email - begel.sdsdesk@thermofisher.com
+
+Creation Date                         19-Oct-2009
+Revision Date                         19-Dec-2025
+Print Date                            19-Dec-2025
+Revision Summary                      Updatedt otheU.  S.Depar  tmentofLabor   ’sOccupat i
+                                                                                         onalSaf  etyandHeal    t
+                                                                                                                hAdmi nist
+                                                                                                                         rat
+                                                                                                                           ion
+                                      (OSHA) which published its Final Rule in the Federal Register revising the Hazard
+                                      Communication Standard (HCS/HazCom), 29 CFR 1910.1200 (2024) (HCS §1910.1200,
+                                      2024), May 20, 2024, effective July 19, 2024.
+
+                                                          Disclaimer
+  The information provided in this Safety Data Sheet is correct to the best of our knowledge, information and belief at the
+ date of its publication. The information given is designed only as a guidance for safe handling, use, processing, storage,
+   transportation, disposal and release and is not to be considered a warranty or quality specification. The information
+relates only to the specific material designated and may not be valid for such material used in combination with any other
+                                   materials or in any process, unless specified in the text
+
+                                                      End of SDS
+
+
+
+
+______________________________________________________________________________________________
+
+                                                         Page 9 / 9
+

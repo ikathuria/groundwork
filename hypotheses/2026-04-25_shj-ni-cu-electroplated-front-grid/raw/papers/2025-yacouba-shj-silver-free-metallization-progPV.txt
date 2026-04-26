@@ -1,0 +1,674 @@
+Progress in Photovoltaics: Research and Applications
+
+
+
+
+   RESEARCH ARTICLE                    OPEN ACCESS
+
+
+
+
+Achieving High Efficiencies for Silicon Heterojunction
+Solar Cells Using Silver-­Free Metallization
+Mohamed Issifi Yacouba1   | Andreas Lambertz1                        | Yanxin Liu1          | Henrike Gattermann1 | Volker Lauterbach1 |
+Karsten Bittkau1   | Uwe Rau1,2 | Kaining Ding1
+
+1IMD-­3 Photovoltaics, Forschungszentrum Jülich GmbH, Jülich, Germany
+                                                                    | 2 Jülich Aachen Research Alliance (JARA-­Energy) and Faculty of Electrical
+Engineering and Information Technology, RWTH Aachen University, Aachen, Germany
+
+Correspondence: Mohamed Issifi Yacouba (m.issifi.yacouba@fz-juelich.de) | Kaining Ding (k.ding@fz-juelich.de)
+
+Received: 25 September 2024 | Revised: 17 June 2025 | Accepted: 12 August 2025
+
+Funding: The SHJ Solar Cell and Module Group at the Institute of Energy Materials and Devices–Photovoltaics (IMD-­3), Forschungszentrum Jülich,
+funded and supported this research.
+
+Keywords: copper paste | dispensing | metallization | screen printing | SHJ solar cell | silver-­coated copper paste
+
+
+  ABSTRACT
+  This work investigates the influence of the metallization of low-­temperature Cu paste and AgCu paste on the performance of SHJ
+  solar cells through a comprehensive study of two techniques—screen printing (SP) and dispensing. The research successfully
+  applied Cu and AgCu pastes as metal contacts on SHJ solar cells, yielding promising results. Notably, cells with AgCu paste SP on
+  the front side and Ag paste SP on the rear side achieved a 0.13% efficiency gain over reference Ag SP bifacial cells. Moreover, cells
+  with AgCu paste SP on the front side and Cu paste SP on the rear side reached an efficiency of 23.6%, just 0.35% lower than the
+  reference cells, while saving approximately 70% of Ag paste. Cells with Cu paste SP on both sides recorded an average efficiency
+  of 22.4% and a maximum of 23.08%, the highest efficiency reported for cells using Cu SP on both sides (zero Ag). Cells with Cu
+  dispensing on the rear side also demonstrated superior performance compared to cells with Cu SP on the rear side. Along, we
+  assessed the finger-­printed characteristics of the three pastes and the performance of SHJ solar cells under various annealing
+  conditions including the Cu annealing conditions (300°C for 5 s). The solar cells maintained stable performance up to 280°C for
+  5 s, with degradation observed above this temperature, and light soaking partially recovered some of the efficiency loss. A 0.2%
+  drop persisted under Cu annealing conditions, but light soaking reversed this effect back to the original efficiency. This work
+  advances SHJ solar cell technology by highlighting the potential of AgCu and Cu pastes to efficiently replace or reduce Ag paste
+  consumption in SHJ solar cell metallization.
+
+
+1   |   Introduction                                                                on both sides [4] and 27.30% for cells with an interdigitated back-­
+                                                                                    contact structure (IBC) [5, 6].
+Among the silicon-­based PV technologies, silicon heterojunc-
+tion (SHJ) solar cells are attracting a growing interest with a                     SHJ solar cells are a low-­temperature device that has to be pro-
+projected market share of 25% by 2030 [1] due to their straight-                    cessed below 250°C [7]. Due to such temperature constraints, the
+forward processes, high open-­circuit voltage, high conversion                      use of low-­temperature Ag paste is important for metal contacts
+efficiency, superior passivation, high bifaciality, and low silicon                 on both cell surfaces. However, low-­temperature Ag paste has
+consumption [2, 3]. This technology has achieved a remarkable                       a relatively higher resistivity than the high-­temperature metal-
+record power conversion efficiency (PCE) of 27.08% for contacts                     lization pastes used for passivated emitter and rear cell (PERC)
+
+
+
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited.
+© 2025 The Author(s). Progress in Photovoltaics: Research and Applications published by John Wiley & Sons Ltd.
+
+
+Progress in Photovoltaics: Research and Applications, 2025; 33:1223–1235                                                                                      1223
+https://doi.org/10.1002/pip.70016
+                                                                                                                                                    1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+silicon cells. Therefore, more paste is required to achieve the       The manufacture of metal contacts for crystalline silicon solar
+necessary finger conductivity [8]. Additionally, low-­temperature     cells is dominated by screen printing because of its efficiency,
+silver paste is the most expensive non-­silicon component of a        dependability, and affordability. Nevertheless, contactless meth-
+silicon-­based solar cell, and its increasing demand makes it a       ods such as dispenser printing provide accurate, thin, high as-
+critical factor in cost considerations [9]. Consequently, higher      pect ratio, uniform lines, increasing productivity and lowering
+Ag consumption significantly increases the cost of SHJ solar          paste consumption. Efficiency gains of up to 2% were reported
+cells [10–12].                                                        compared to screen-­printed contacts [38]. Dispenser printing
+                                                                      reduces silver laydown, and stretching effects plus parallel dis-
+Verlinden highlighted that silver consumption for solar cells         pensing further optimize material usage [24, 39]. Despite its ad-
+must be reduced to 5 mg/W or less, or alternative metallization       vantages, challenges such as nozzle clogging need to be solved.
+technologies using copper (Cu) must be developed to ensure ma-        Ongoing research is needed to address these challenges and fur-
+terial sustainability. At a consumption rate of 5 mg/W of silver,     ther develop dispenser printing technology.
+achieving a yearly production capacity of 3 TWp—a target set
+between 2032 and 2050—would consume more than half of the             In this paper, we investigate the influence of low-­temperature
+current global annual silver supply [13]. Additionally, according     Cu paste and AgCu paste (with a weight percentage of ∼50 wt%
+to Zhang et al., to ensure sustainable multi-­T W scale production    Ag) metallization on the performance of industrial SHJ solar
+of solar PV within the next decade, long-­term silver consump-        cells through a comprehensive examination of two techniques—
+tion for solar cells must be restricted to no more than 2 mg/W        screen printing (SP) and dispensing. The aim is to assess the
+[14, 15]. If the consumption of Ag is not reduced soon, it will       viability of Cu and AgCu pastes as reliable and effective met-
+lead to higher costs for solar cells and hinder the sustainable de-   allization materials for SHJ solar cells, particularly regarding
+velopment of the PV industry [16]. Various approaches are being       the stability of the SHJ solar cell at the temperatures required
+explored to significantly reduce silver consumption in solar cells    for Cu paste annealing. Therefore, we metalized the front and
+[17], including:                                                      rear sides of the cells with Ag, AgCu, and Cu paste and com-
+                                                                      pared them. Additionally, finger characteristics such as width,
+  • First, implementation of fine-­line printing by screen print-     height, line resistance, contact resistance, and bulk resistance
+    ing (SP) process and optimization of screen design [18–20].       were evaluated.
+  • Second, develop alternative printing technologies such as
+    laser pattern transfer printing, rotary screen printing, flex
+                                                                      2   |   Experiments and Methods
+    trail printing, and dispenser printing which offer low silver
+    consumption capacity and high aspect ratio [21–24].
+                                                                      To investigate the application of AgCu and Cu pastes on in-
+  • Finally, reducing or replacing Ag with Cu or AgCu is con-         dustrial SHJ solar cells compared to reference solar cells uti-
+    sidered due to the abundance and lower cost of Cu [25–28].        lizing Ag paste, this study employs M2 (244.32 cm2) solar cells
+                                                                      with a wafer thickness of approximately 135 μm (see Figure 1).
+Focusing on using Cu paste and/or AgCu paste as an alterna-           These solar cells feature a-­Si:H (p/i/n) layers, TCO coating, and
+tive to traditional silver fingers and busbars for metallization in   have no metallization, serving as the starting material for the
+SHJ solar cells offers a promising solution to address Ag scarcity    research. Before considering the metallization of actual solar
+and rising cost challenges [29, 30]. Despite copper's potential to    cells on both sides, the study first examined the performance
+degrade devices due to rapid diffusion into silicon, heterojunc-      of screen printed and dispensed fingers from the three different
+tion solar cells mitigate this risk as their transparent conductive   pastes on one side of the wafer. Following this, a preliminary
+oxides (TCO) serve as effective diffusion barriers [16, 31–33].       investigation was conducted to assess the impact of various an-
+Recently, Cao et al. achieved a certified efficiency of 26.4% by      nealing conditions, including those used for Cu metallization,
+using the electroplating method to prepare Cu electrodes on           on the performance of industrial SHJ solar cells.
+SHJ cells. Though the impressive photovoltaic performance of
+Cu electroplating, its complex processes, costly equipment, and
+environmental concerns pose significant challenges [34–36].           2.1   |   Printed-­Finger Study
+Alternatively, AgCu-­based metallization offers a low-­cost, envi-
+ronmentally friendly solution, achieving an average efficiency        Flatbed screen printing (SP) was used for printing Ag and
+of 25.18% on SHJ solar cells while reducing Ag consumption by         AgCu fingers with a knotless screen featuring a 23-­μ m fin-
+46% compared to traditional Ag electrodes [2]. Similarly, screen-­    ger opening, 430 wires per inch, a wire diameter of 13 μm,
+printed Cu paste metallization, replacing most of the Ag in IBC       and an emulsion thickness of 8 μm. For the higher viscosity
+cells as busbars and fingers, delivers comparable performance         Cu paste (500 Pa·s vs. 250 Pa·s for Ag), a 30-­μ m finger open-
+to IBC cells using Ag paste with an average efficiency of 23%.        ing screen was used with 430 wires per inch, a wire diame-
+Notably, no Cu diffusion was observed, even under damp-­              ter of 13 μm, and an emulsion thickness of 19 μm. The same
+heat and thermal stress, and Cu fingers remained resistant to         screen design was utilized for all three pastes, incorporating
+oxidation after thermal treatment up to 300°C [16], which is          96 fingers with a pitch of 1.6 mm. Additionally, single-­nozzle
+beyond the 250°C process temperature of SHJ solar cells. As           dispensing was employed to print Ag, AgCu, and Cu pastes.
+a low-­temperature manufactured device, SHJ solar cells face          Specific printing parameters, such as squeegee speed, snap-­off
+challenges with the high-­temperature annealing required for          distance, and flat-­bed speed, were adjusted for each paste type,
+Cu metallization, as it can degrade passivation quality, increase     with separate dispensing parameters tailored to accommo-
+recombination losses, and ultimately reduce efficiency [7, 37].       date the distinct properties of each paste. This setup enabled
+
+1224                                                                                   Progress in Photovoltaics: Research and Applications, 2025
+                                                                                                                                                         1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 1    |    The schematic structure of a bifacial SHJ solar cell used in this study with different metallization pastes (not to scale).
+
+
+
+a comparative analysis of the printability performance of the                   on their performance. This investigation involved using three
+different pastes. After printing, the lines were dried at 150°C                 cells for each of the following annealing conditions:
+for 10 min for Ag and AgCu pastes and at 100°C for 2 min for
+Cu paste. Subsequently, the fingers were annealed at 170°C for                    • For 5 s of annealing, temperatures of 280°C, 320°C, and
+40 min for Ag and AgCu and at 300°C for 5 s for Cu as recom-                        360°C were tested.
+mended by the paste manufacturers. The Ag and AgCu fingers
+                                                                                  • For 300°C, durations of 5, 20, and 40 s were tested.
+were annealed using an oven, while the Cu fingers annealing
+was done using a manual process that places the solar cells on
+                                                                                After each annealing condition, light soaking was performed on
+a hot plate.
+                                                                                the cells to evaluate if any efficiency losses observed could be re-
+                                                                                covered. For this experiment, fast light soaking was made on the
+Due to Cu's sensitivity to oxidation, especially during anneal-
+                                                                                characterized solar cells (∼90 s). During the process, the solar
+ing, Cu lines were annealed under a protective cover (e.g., back-
+                                                                                cells were exposed to an LED-­based light source with an input
+ing paper) to prevent contact with atmospheric oxygen [26, 27].
+                                                                                intensity of 55 kW/m2 at about 175°C [43].
+Additionally, as we typically employ double printing for front-­
+side SP, the drying process is usually carried out after the first
+printing before applying the second printing, or after printing                 2.3   |   Application of the Pastes on SHJ Solar Cells
+one side before moving on to print the other side. For Cu fingers,              and Characterization
+drying is also performed prior to wrapping the cells with Cu fin-
+gers in the protective cover for annealing.                                     After studying the finger performance of the three pastes and in-
+                                                                                vestigating the impact of various annealing conditions, including
+Here, we aim to figure out information about the electrical                     the standard annealing conditions for Cu paste on industrial SHJ
+performance and geometry for the aforementioned pastes. The                     solar cells, we proceeded to apply those pastes (Ag, AgCu, Cu) on
+investigation included examining the geometry (width, height,                   metallization-­free industrial SHJ solar cells coated with TCO to
+and cross-­section) of the metal fingers (Ag, AgCu, Cu) using a                 assess their influence on the performance of SHJ solar cells (see
+Zeta 3D microscope and a laser scanning confocal microscope.                    Figure 1). These metallization-­free cells were selected for their
+Following this, the line resistance was measured and calculated                 similarity to our in-­house SHJ solar cells. They were chosen to
+using the four-­probe method after annealing the samples under                  simplify the study. In this experiment, the pastes and printing
+the specified conditions. The contact resistivity of metals to TCO              tools for metallization were varied for both the front and rear sides.
+in final SHJ solar cells was also measured via the transmission
+line method (TLM), which utilizes variable distanced pads of                    For the front-­  side metallization with Ag, AgCu, and Cu
+2 mm width and 10 mm length [40, 41]. Subsequently, the fingers                 pastes, the SP fingers were done using the same screens used
+bulk resistance was calculated. The weight of the fingers was                   for finger-­printed study (in Section 2.1). For the rear-­side met-
+measured using a precise electronic balance [42] with an accu-                  allization, only Cu and Ag were considered and compared. A
+racy of 0.1 mg.                                                                 screen with a finger opening of 60 μm, 350 wires per inch, a
+                                                                                wire diameter of 16 μm, and an emulsion thickness of 9 μm
+                                                                                was used for the rear-­side screen printing of all pastes. This
+2.2   |   Impact of Annealing on SHJ Solar Cell's                               screen design incorporated 250 fingers with a pitch of 0.9 mm.
+Performance                                                                     Additionally, single-­nozzle dispensing was employed for Cu
+                                                                                rear-­side metallization. Due to the wider finger dimensions,
+SHJ solar cell devices are manufactured below 250°C [7]. In con-                this approach necessitated a modification, with only 96 fin-
+trast, the standard annealing conditions for Cu paste metalliza-                gers dispensed on the rear side while maintaining a pitch of
+tion are 300°C for 5 s. Therefore, before applying standard Cu                  1.6 mm. Notably, metallization on both sides of the cells was
+metallization annealing conditions to SHJ solar cells, an investi-              carried out without busbars.
+gation was conducted on externally Ag screen-­printed SHJ solar
+cells with busbars to evaluate the potential effects of different               AgCu paste application has already been investigated in previ-
+annealing conditions, including those used for Cu metallization,                ous research [2, 23], and it is mainly used here for comparison
+
+
+Progress in Photovoltaics: Research and Applications, 2025                                                                                      1225
+                                                                                                                                                             1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+with Ag and Cu. In SHJ solar cells, front-­side metallization is             height aspect ratio, line resistance, contact resistivity, bulk resis-
+more critical than rear-­side metallization due to the trade-­off be-        tance, and Ag weight.
+tween optical shading and electrical performance, which affects
+the overall cell efficiency, short-­circuit current density Jsc, fill        Figure 2 shows the finger shapes produced by SP and dispens-
+factor FF, and series resistance R s [44]. Therefore, this work pri-         ing methods in our laboratory using Ag paste, AgCu paste,
+marily focused on the front-­side metallization by applying and              and Cu paste. Due to limitations of the dispenser such as noz-
+comparing the performance of the three pastes Ag, AgCu, and                  zle clogging, the dispensing method results in wider, yet more
+Cu. For rear-­side metallization, only Cu paste with Ag paste was            homogeneous and continuous fingers compared to screen
+considered and compared.                                                     printing, making it suitable for rear-­side applications [16] and
+                                                                             potentially improving electrical contact performance. Using
+After printing, the annealing of the metallized fingers (for the             the same screen type, AgCu SP fingers produce almost similar
+different pastes) was performed as described in Section 2.1.                 average line widths compared to Ag SP, while Cu SP fingers
+However, light soaking (LiSo) was not performed on these met-                are wider than both Ag and AgCu SP fingers, which is due to
+allized solar cells because the Cu fingers cannot currently be ad-           the use of a wider screen opening for Cu. However, the finger
+equately protected from oxidation at the 175°C LS temperature.               geometry of Cu SP in our study is similar to the Cu fingers
+Methods like protective wrapping are being explored to enable                reported by Teo et al. [46] and finer than those in previous
+LiSo for Cu cells. The electrical characteristics, including IV              reports with Chen et al. [16].
+parameters and electroluminescence (EL) measurements of the
+solar cells were then assessed using the LOANA system from
+pv-­tools with a Wavelabs LED light source (Sinus 220) under
+standard test conditions (STC: AM1.5 G, 25°C, 1000 W/m2). A
+12-­contact bar frame was used for front-­side contact, which has
+a voltage sense of approximately 25% between contact bars. This
+means that finger line resistance is not accounted for during IV
+measurement [45]. Back-­side contact of the cells is performed
+using a fully conductive chuck. Therefore, the effect of rear-­side
+line resistance is negligible. The EL measurements of the cells
+were conducted with a high injection current of 8 A to capture
+detailed EL images.
+
+
+3   |   Results and Discussion
+
+3.1   |   Analysis of the Printed Fingers
+
+This study aims to investigate the electrical performance and ge-
+ometry of fingers for all pastes. Figure 2 presents the finger pat-
+terns and widths measured with a confocal microscope for the
+three pastes, while Figure 3 illustrates the measured and calcu-             FIGURE 3    |    Line resistance (LR) as function of finger width (w) of
+lated line resistance as a function of finger width. Additionally,           metal fingers for Ag SP in grey, Ag dispensed in green, AgCu SP in blue,
+Table 1 presents the average data for measured finger widths,                Cu SP in purple, and Cu dispensed in red.
+
+
+
+
+FIGURE 2    |    Microscopy images of (a) Ag SP finger, (b) AgCu SP finger, (c) Cu SP finger, and (d) Cu dispensed finger.
+
+
+1226                                                                                            Progress in Photovoltaics: Research and Applications, 2025
+                                                                                                                                                              1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+TABLE 1    |    Electrical performance and geometry of Ag, AgCu, and Cu fingers.
+
+                                                                Aspect               Line                 Contact               Bulk
+                           Width              Height             ratio            resistance             resistivity         resistance     Ag weight
+  Finger                  (W, μm)            (H, μm)            (H/W)               (Ω/cm)               (mΩ*cm2)           (10 −6 Ω*cm)      (mg)
+  Ag SP                     46.56              14.21              0.30                 1.15                  5.04               3.51           35.45
+  Cu SP                      56.18             10.22              0.18                4.24                  10.28              12.62           0.00
+  Cu dispensed              152.98             34.51              0.22                0.90                     a                1.68           0.00
+ AgCu SP                     45.26             12.55              0.27                3.20                   8.10               7.20           16.80
+Note: These results are the mean values and concern only the front-­side screen printed fingers and dispensed Cu fingers.
+a Not measured.
+
+
+
+
+Figure 3 shows the line resistance versus finger width for                            lower line resistance and volume resistance for dispensed Cu
+various pastes and printing techniques. The legend, defined                           lines. Furthermore, AgCu paste fingers exhibits higher line
+by color, indicates the line resistance for fingers made by Ag                        resistance, bulk resistance, and contact resistivity than the
+SP in grey, Ag dispensing in green, Cu SP in purple, Cu dis-                          pure Ag paste due to the presence of Cu and other factors such
+pensing in red, and AgCu SP in blue, plotted as a function of                         as printability, and finger morphology, which might include
+their respective finger widths. A consistent pattern emerges,                         rheological behavior, aggregation, dispersion, and particle dis-
+indicating a decline in finger line resistance with increasing                        tribution, among other things. Additionally, due to the unop-
+finger width across all pastes and printing methods examined.                         timized screen printing process on the rear side, this analysis
+Additionally, both Cu dispensing and Cu SP typically exhibit                          only considers the Ag weight from the front-­side metalliza-
+higher average line resistance compared to Ag SP when ex-                             tion and Cu dispensing. The results show an Ag weight of
+trapolating the finger width of Ag SP to have the same width as                       35.45 mg when using pure Ag paste SP, whereas an Ag weight
+Cu printed lines. Specifically, fingers from Cu screen printing                       of 16.80 mg is achieved with the AgCu paste SP. This reduction
+show approximately three times the average line resistance of                         of the Ag content is due to the AgCu paste containing 50% less
+fingers from Ag SP (3.6 Ω/cm compared to 1 Ω/cm for a 60 μm                           silver, with the remaining metal content being replaced by Cu.
+finger width). Furthermore, AgCu fingers demonstrate higher                           In contrast, using only Cu (via screen printing or dispensing)
+line resistance compared to pure Ag fingers (3.2 Ω/cm com-                            for metallization results in zero Ag weight.
+pared to 1.8 Ω/cm for a finger width of around 40 μm), yet
+lower than that of Cu. By extrapolating the trend from Ag SP                          The use of Cu and/or AgCu as an alternative to Ag in solar
+fingers line resistance data, it reveals that Ag dispensed fin-                       cells can reduce dependency on the expensive and scarce Ag.
+gers have similar line resistance to Ag SP fingers, and Cu dis-                       However, their significantly higher line resistance and bulk
+pensing still presents higher line resistance compared to Ag                          resistance pose challenges for their application. AgCu paste,
+SP and dispensed fingers. Therefore, the homogeneity of dis-                          which contains approximately 50% Cu particles, results in an
+pensed lines does not appear to impact significantly the line                         estimated 50% reduction in Ag consumption when applied to
+resistance. The large distribution in Cu SP finger line resis-                        SHJ solar cells while still maintaining high efficiency in solar
+tance for a constant finger width can be attributed to a slight                       cells [2].
+variation during the annealing process. While the standard
+conditions are 300°C for 5 s, the process still involves some
+manual steps, making it challenging to ensure precise timing                           3.2   |   Solar Cell Results and Discussion
+for all samples. Table 1 presents the average finger line char-
+acteristics for the three types of paste, including finger width,                      This section presents the analysis and discussion of the solar
+height, aspect ratio, line resistance, contact resistivity, bulk                       cells IV parameters results and some electroluminescence (EL)
+resistance, and Ag weight. For all the pastes, the front-­side                         images. It is structured into two parts. First, it addresses the in-
+printing fingers and Cu dispensing were considered for the                             vestigations on the impact of annealing conditions on the perfor-
+measurements of finger width, height, aspect ratio, bulk re-                           mance of SHJ solar cells. Second, it examines the applications of
+sistance, Ag weight, and line resistance. In Table 1, Ag fingers                       different pastes on SHJ solar cells.
+serve as the reference, and the data for the other two pastes are
+compared to that of Ag fingers.                                                        Figure 4 shows the efficiency of solar cells versus the anneal-
+                                                                                       ing conditions on solar cells. For each annealing condition,
+Table 1 shows that, despite using a wider opening screen for                           we have the cells' performance for before sintering (bS), after
+Cu, compared to Ag and AgCu, Cu fingers exhibit higher line                            sintering (aS), and light-­soaked (LiSo). Figure 4a shows the
+resistance, contact resistivity, and bulk resistance, approxi-                         efficiency versus different sintering temperatures, each for
+mately 4.24 Ω/cm, 10.28 mΩ*cm 2 , and 12.62 × 10 −6 Ωcm, re-                           5 s. Figure 4b plots efficiency against different sintering times
+spectively. Evidently, the wider screen opening has resulted                           at 300°C.
+in wider fingers and a lower aspect ratio. Cu-­d ispensed lines,
+as previously noted, are currently wider but exhibit more                              Figure 4a indicates a gradual decrease in solar cell performance
+homogeneous line features compared to SP lines; hence, it                              with increasing annealing temperature, with some recovery
+is used only for the rear side. These characteristics provide                          after light soaking, except for the 280°C annealing temperature,
+
+Progress in Photovoltaics: Research and Applications, 2025                                                                                             1227
+                                                                                                                                                                   1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 4    |    (a) Efficiency for SHJ solar cells before sintering (bS), after sintering (aS) at different temperatures (280°C, 320°C, and 360°C) for 5 s
+and light soaked (LiSo). (b) Efficiency for SHJ solar cells before sintering (bS), after sintering (aS) for different sintering times (5, 20, and 40 s) at 300°C
+and light soaked (LiSo) for different batches of SHJ solar cells with Ag fingers and busbars.
+
+
+
+
+which actually resulted in an improvement in efficiency after                     reasons previously outlined regarding the significance of front-­
+light soaking. Treatments at 320°C and 360°C resulted in a de-                    side metallization.
+crease in efficiency of about 0.5%abs and 1.5%abs, respectively.
+These reductions are likely due to the partial escape of hydrogen
+atoms from the passivation film, thus increasing the dangling                     3.2.1   |   Variation of the Rear-­Side Metallization
+bond density in the amorphous layer and at the a-­Si:H/c-­Si inter-
+face [47]. Slight efficiency improvements were observed in these                  From Figure 5, we first analyze the effect of rear-­side paste ap-
+treated cells after light soaking, consistent with previous reports               plication and variations, while keeping the front side constant.
+[48], which are attributed to their improved open-­circuit voltage                As highlighted in Figure 5a, taking Ag SP on the rear side as
+Voc and fill factor FF (see Figure A1).                                           a reference, we observe a decrease in efficiency with Cu SP on
+                                                                                  the rear side, regardless of the front side paste. Cells with Cu
+Similarly, solar cells treated at different sintering times at 300°C              dispensed on the rear side also show a decrease in efficiency
+showed similar effects, as shown in Figure 4b. There was a                        compared to Ag SP rear side cells, but this decrease is less
+decrease in efficiency of about 0.2%abs for a 5-­s sintering time                 pronounced than for cells with Cu SP rear side, highlighting
+at 300°C, the standard condition for annealing Cu pastes, but                     the potential advantage of paste dispensing as reported in the
+light soaking reversed this effect back to the original efficiency.               GECKO project [38].
+Beyond this condition, irreversible performance degradation is
+evident. IV (or photovoltaics) parameters explaining this effi-                   Including the absolute efficiency loss of 0.2%abs for cells with
+ciency variation are provided in Figure A2.                                       Cu due to annealing conditions, the average efficiency of cells
+                                                                                  with Cu SP on the rear side is 22.7%, 23.35%, and 22.4% when
+Subsequently, we analyze the results of applying various pastes                   combined with Ag SP, AgCu SP, and Cu SP on the front side,
+to SHJ solar cells with different metallization combinations.                     respectively. In comparison, cells with Ag SP on the rear side
+Precisely, cells with Cu on the rear side were combined with Cu,                  have an average efficiency of 23.7%, 23.9%, and 22.6% with Ag
+AgCu, and Ag on the front side. Similarly, cells with Ag on the                   SP, AgCu SP, and Cu SP on the front side, respectively. Cells
+rear side were combined with Cu, AgCu, and Ag on the front                        with Cu dispensed on the rear side and Ag SP on the front side
+side. In Figure 5, the IV (or photovoltaics) parameters are or-                   show an average efficiency of 22.96%abs. This corresponds to
+ganized such that the front-­side metallization is shown in the                   a drop in efficiency for cells with Cu SP on the rear side com-
+first (upper) row, and the rear-­side metallization is shown in the               pared to Ag SP as follows: 1%abs (Ag SP front), 0.55%abs (AgCu
+second (lower) row. Notably, due to the inability to achieve fine                 SP front), and 0.2%abs (Cu SP front) as indicated by grey, red,
+dispensed lines with the current setup and pastes, dispensing is                  and blue arrows, respectively. This indicates that the efficiency
+used for Cu paste and only on the rear side.                                      drop for cells with Cu rear side is more pronounced when there
+                                                                                  is Ag SP on the front side, then with AgCu SP on front side,
+Figure 5 shows the measured IV parameters of solar cells with                     and lastly with Cu SP front. For cells with Cu dispensed on the
+various front and rear side metallizations applying both screen                   rear side and Ag SP on the front, the efficiency drop is about
+printing (SP) and dispensing as printing tools. The results of                    0.74%abs (grey dashed arrows) compared to cells with Ag SP on
+some special champion cells are presented in Table 2.                             the rear side.
+
+In each graph, the first set of solar cells has Ag SP on the rear                 These results highlight the impact of using Cu (both SP and
+side and Ag SP, AgCu SP, and Cu on the front side. The second                     dispensed) on the front side, rear side, or both sides of SHJ
+set has Cu SP on the rear side and Ag SP, AgCu SP, and Cu SP on                   solar cells, particularly the impact of the Cu annealing condi-
+the front side. The final set has Ag SP on the front side and Cu                  tions. Compared to cells with Ag on the rear side, those with
+dispensed on the rear side. This structure was selected for the                   Cu exhibit reduced efficiency, attributed to a lower fill factor
+
+1228                                                                                                  Progress in Photovoltaics: Research and Applications, 2025
+                                                                                                                                                                       1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 5    |    Photovoltaics parameters showing (a) the efficiencies (η), (b) the open-­circuit voltages (Voc), (c) the short-­circuit current densities (Jsc),
+(d) the fill factors (FF), (e) the series resistances (R s), and (f) the pseudo-­f ill factors (pFF), of solar cells with various front and rear side metallizations
+applying both screen printing (SP) and dispensing as printing tools. The parameters are organized such that the front-­side metallization is shown in
+the first (upper) row, and the rear-­side metallization is shown in the second (lower) row.
+
+
+TABLE 2    |    IV-­summary of some champion cells with a reduction of Ag usage.
+
+ Cells                             Ag reduction (%)             η (%)       Jsc (mA/cm2)            Voc (mV)         Rs (Ωcm2)           FF (%)        pFF (%)
+ Ag bifacial (reference)                     00                 23.79             38.94               739.60             0.59             82.62          85.60
+ AgCu front/Ag rear                          25                 23.95             39.16               743.50             0.66             82.27          85.70
+ AgCu front/Cu rear                          70                 23.62             39.13               743.30              0.91            81.20          85.60
+ Cu bifacial                                100                 23.08             37.88              742.40              0.85             82.07          85.70
+
+
+
+(FF) with an average decrease of 0.5% to 3%. This FF reduc-                         on the rear side show a 0.53% absolute increase in efficiency
+tion is associated with higher R s , as illustrated in Figure 5d,e.                 compared to cells with Ag SP on the front side and Cu SP on
+Notably, cells with Ag SP on the front side and Cu dispensed                        the rear side.
+
+Progress in Photovoltaics: Research and Applications, 2025                                                                                                    1229
+                                                                                                                                                     1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+3.2.2   |   Variation of the Front-­Side Metallization                 lower Voc performance compared to Cu SP rear side, all having
+                                                                       an Ag SP front side. Therefore, the higher efficiency of cells
+Now, we analyze the results of paste variations on the front side      with Cu-­d ispensing rear side compared to those with Cu SP
+for each type of rear-­side paste application (Ag and Cu). Front-­     rear side is attributed to their lower contact resistance due to
+side metallization was done with Ag SP (grey), AgCu SP (red),          the higher metal coverage of the Cu dispensed lines on the
+and Cu SP (blue). Considering the average efficiency of all the        backside brought by the wider fingers in combination with the
+cells with Ag SP on the rear side, we observed an increase in          more homogeneous features, thus resulting in a lower series
+efficiency of 0.2%abs for AgCu on the front side and a decrease in     resistance (R s) and higher fill factor (FF). The fill factor (FF)
+efficiency of 1.1%abs for Cu on the front side with respect to Ag on   of cell batches is illustrated in Figure 5d, which shows a lower
+the front side. For cells with Cu SP on the rear side, we observed     FF compared to all the reference solar cells. In general, cells
+an increase in efficiency of 0.65%abs for AgCu on the front side       with at least one side Cu metallization show low FF, and the
+and a decrease in efficiency of 0.3%abs for Cu on the front side       data are scattered in the same range, making direct compar-
+compared to Ag on the front side.                                      isons challenging. Cells with AgCu SP pattern is consistent
+                                                                       with some previous data [2], where the AgCu front side re-
+The 0.2%abs efficiency increase for the AgCu front side con-           sults in slightly higher R s and lower FF compared to Ag for
+trasts with previous results [1], which reported a 0.13%abs de-        cells with Ag rear side. As previously mentioned, the higher
+crease in efficiency for AgCu on the front side. This increase         average FF for cells with Cu dispensed on rear side compared
+in efficiency is even more pronounced (0.85%abs) for cells with        to cells with Cu SP on the rear is due to metallization design
+Cu on the rear side, leading to the following observation:             and the higher metal coverage of the Cu dispensed lines on
+Although AgCu SP exhibits higher bulk resistance and con-              the backside brought by the wider fingers in combination with
+tact resistivity compared to Ag SP, its application in solar cells     the more homogeneous features. This trend in FF inversely
+front side metallization results in higher efficiency due to its       correlates with the variation in R s , which displays the opposite
+resulting higher Jsc and Voc. Notably, cells with AgCu SP on           pattern. In Figure 5e, the R s data show an increase from Ag
+the front side and Cu SP on the rear side show impressive per-         front to AgCu front, and then to Cu front for cells with Ag rear
+formance, achieving up to 23.6%abs efficiency with minimal             side metallization. Similarly to FF, cells with Cu metalliza-
+Ag usage. This represents only a 0.35%abs decline in efficiency        tion present scattered R s data. Nonetheless, the R s increase is
+compared to bifacial Ag cells while offering approximately             less pronounced for cells with rear-­side Cu dispensing, there-
+70% savings in Ag consumption due to the Cu content in the             fore displaying higher FF compared to cells with rear-­side Cu
+AgCu paste.                                                            SP. Since our IV tester does not take into account the line re-
+                                                                       sistance effect of the fingers, the higher R s observed may be
+Another important result is that despite their lower Jsc, FF, and      brought by the higher contact resistivity of AgCu and Cu re-
+higher R s (see Figure 5c–e), cells with Cu SP on both sides (zero     spectively, which is worsened by the larger number of fingers,
+Ag) achieve an outstanding average efficiency of 22.4%abs and a        especially for both sides of Cu metallization cells (96 fingers
+champion cell's efficiency of 23.08%abs. Furthermore, cells with       on the front and 250 fingers on the rear side). Additionally,
+one side (front or rear) Cu application with Ag at the opposite        scanning electron microscopy (SEM) was used to analyze the
+side show as well remarkable performance. To our knowledge,            microstructural changes of SP Cu paste at various stages of
+this result is the highest efficiency of a SHJ solar cell achieved     curing. This analysis revealed unsintered Cu nanoparticle
+using Cu SP (without Ag) on both sides.                                regions and areas where Cu nanoparticles exhibited poor
+                                                                       contact with each other and with ITO, even after sintering at
+To provide further insights into the causes of the observed ef-        300°C. This is a possible reason for a higher contact resistivity
+ficiency variations in the cells, Figure 5 presents further IV         of fingers with TCO, reducing efficiency of electron transfer
+parameters: Figure 5b shows the open-­circuit voltage (Voc) of         during conduction, therefore contributing to an increase in
+the cell batches. It shows a similar range of Voc across all solar     the R s [46].
+cell batches, with cells having Cu dispensed on the rear side
+showing slightly lower Voc. In addition, Figure 5c illustrates         The pseudo-­f ill factor (pFF) results for all cells are plotted in
+the short-­circuit current density (Jsc) of the cell batches. This     Figure 5f. The data show approximately similar average pFF
+graph shows a slightly higher Jsc for cells with AgCu front            values for all cell types, except for cells with Cu dispensed on
+compared to cells with Ag front and much lower Jsc for cells           the rear side, which exhibited a lower pFF of approximately
+with Cu finger on the front side. Given that the average differ-       0.6%abs. This slight reduction of pFF and Voc observed in cells
+ence in finger width is only 1 μm between Ag and AgCu and              with Cu dispensed on the rear suggests the absence of diffu-
+10 μm between Ag and Cu (see Table 1), the slightly higher             sion of Cu. Chen et al. reported that, if significant Cu diffu-
+Jsc of cells with AgCu front compared to cells with Ag front           sion into silicon had occurred, it would have led to a much
+can only be slightly attributed to the finer AgCu fingers, and         greater degradation in pFF and Voc [16]. This slight decrease
+the lower Jsc for cells with Cu finger on the front side can be        in pFF and Voc could be attributed to minor cell damage
+partly attributed to the wider fingers. Further analysis and           caused by handling during the dispensing process, which in-
+additional experiments are necessary and currently under-              volves more manual steps compared to SP. Despite the differ-
+way to fully understand the underlying mechanisms driving              ences in performance observed for all the types of cells, cells
+this behavior. As suggested by Siraj et al., this increase might       with at least one side Cu, in particular, exhibit scattered data
+also result from an improvement in optical reflectance [49].           for all the other IV parameters. This scattering is caused by
+Additionally, as expected, cells with a Cu-­d ispensed rear side       the inherent variability of the Cu annealing process in timing
+show similar Jsc to those with a Cu SP rear side but exhibit           across samples, making it more challenging to achieve stable
+
+1230                                                                                    Progress in Photovoltaics: Research and Applications, 2025
+                                                                                                                                                              1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 6    |    (a) EL image for the reference solar cells, (b) EL image for solar cells with Cu SP front side and Ag SP rear side, (c) EL image for solar
+cells with Ag SP front side and Cu SP rear side, and (d) EL image solar cells with both sides SP Cu, each under high current injection of 8 A (32.74 mA/
+cm2).
+
+
+
+
+performance. In addition, this scattering indicates the need                    4   |   Conclusion
+to optimize the Cu printing and annealing processes. A sum-
+mary of the IV results for the champion cells is provided in                    In this work, the influence of metallization with Cu paste and
+Table 2.                                                                        AgCu paste on SHJ solar cells was investigated through screen
+                                                                                printing and dispensing, and their performance was compared
+Figure 6 shows electroluminescence (EL) images of some SHJ                      to that of the reference cells with Ag on both sides. Initially, we
+solar cells metallized with Cu SP, compared to reference cells                  compared the line resistance, finger width, aspect ratio, contact
+with Ag SP on both sides. The EL images reveal dark areas on                    resistivity, and bulk resistance of AgCu, Cu, and Ag pastes. This
+all Cu-­metalized cells, particularly at the edges. This darken-                comparison revealed that Cu exhibited higher performance met-
+ing indicate potential contact issues between the Cu fingers                    rics than AgCu, which in turn outperformed Ag. Investigation
+and the TCO, likely due to poorly sintered regions as reported                  of SHJ solar cells under different annealing conditions revealed
+Teo et al. [46], which is especially problematic for cells with                 a degradation threshold at temperatures exceeding 280°C for
+Cu on both sides (see Figure 6d). Addressing these Cu con-                      5 s, but recovery can be achieved through light-­soaking tech-
+tact issues could potentially resolve the problem and improve                   niques. This results in 0.2%abs efficiency drop of SHJ solar cells
+the efficiency in a more stable manner. However, the bent                       under Cu annealing conditions (300°C, 5 s). SHJ solar cells with
+appearance of the test line in Figure 6d results from a slight                  screen-­printed (SP) AgCu paste on the front and Ag paste on the
+misalignment of the current bar in the IV testing frame. This                   rear side achieved an average efficiency improvement of +0.13%
+misalignment leads to uneven current distribution during EL                     absolute compared to reference Ag SP bifacial cells. Cells with
+imaging. These features do not reflect actual defects in the                    SP AgCu on the front and SP Cu on the rear side reached an ef-
+solar cell structure.                                                           ficiency of up to 23.6% absolute, only 0.35% lower than reference
+
+
+
+Progress in Photovoltaics: Research and Applications, 2025                                                                                           1231
+                                                                                                                                                                                            1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+cells, while saving approximately 70% of Ag paste. Notably,                   Transactions of Tianjin University 28 (2022): 358–373, https://​doi.​org/​
+cells with SP Cu on both sides achieved an average efficiency of              10.​1007/​s1220​9 -­​022-­​0 0336​-­​9.
+22.4% absolute and a maximum of 23.08% absolute, represent-                   4. “Trina Solar Hits New 27.08% Record for HJT Solar Cell,” pv Mag-
+ing the highest performance recorded for cells with Cu SP on                  azine International, accessed Feb 23, 2025, https://​w ww.​pv-­​magaz​
+both sides (zero Ag). Furthermore, Cu dispensing on the rear                  ine.​c om/​2 024/​1 2/​19/​t rina​- ­​s olar​-­​h its-­​new-­​2 7- ­​0 8-­​r ecor​d-­​f or-­​hjt- ­​s olar​
+side demonstrated better performance than Cu SP. To maximize                  -­​c ell/​.
+the potential of AgCu and Cu pastes, it is essential to optimize              5. LONGi, “LONGi Sets a New World Record of 27.09% for the Efficiency
+and standardize Cu screen printing and dispensing processes,                  of Silicon Heterojunction Back-­            Contact (HBC) Solar Cells,” LONGi
+reduce dispensed finger widths, and conduct further research                  News, accessed Mar 2, 2024, https://​w ww.​longi.​com/​en/​news/​heter​
+on printing processes, stability, reliability, and economic bene-             ojunc​tion-­​back-­​conta​ct-­​batte​r y/​.
+fits. The findings demonstrated that SHJ solar cells with silver-­            6. “LONGi Unveils HBC Cell With Record 27.3% Conversion Efficiency,”
+free metallization on both sides achieved efficiencies above 23%,             PVTECH, accessed May 22, 2024, https://​w ww.​pv-­​tech.​org/​longi​-­​heter​
+indicating that the target of 2 mg/W of Ag consumption per cell               ojunc​tion-­​back-­​conta​ct-­​cell-­​27-­​3 -­​conve​rsion​- ­​effic​iency/​​.
+is feasible with high-­efficiency SHJ solar cells.                            7. D. Chen, L. Zhao, H. Diao, W. Zhang, G. Wang, and W. Wang, “Choice
+                                                                              of the Low-­Temperature Sintering Ag Paste for a-­Si:H/c-­Si Heterojunc-
+                                                                              tion Solar Cell Based on Characterizing the Electrical Performance,”
+                                                                              Journal of Alloys and Compounds 618 (2015): 357–365, https://​doi.​org/​
+Author Contributions                                                          10.​1016/j.​jallc​om.​2 014.​08.​175.
+Mohamed Issifi Yacouba and Andreas Lambertz: Conceptualization of             8. M. Taguchi, A. Yano, S. Tohoda, et al., “24.7% Record Efficiency
+the study. Experiments and characterization: Mohamed Issifi Yacouba,          HIT Solar Cell on Thin Silicon Wafer,” IEEE Journal of Photovolta-
+Yanxin Liu, Henrike Gattermann, and Volker Lauterbach. Data analy-            ics 4, no. 1 (2014): 96–99, https://​doi.​org/​10.​1109/​J PHOT​OV.​2 013.​
+sis: Mohamed Issifi Yacouba, Andreas Lambertz, Yanxin Liu, Henrike            2282737.
+Gattermann, Volker Lauterbach, Karsten Bittkau, Kaining Ding, and
+Uwe Rau. Mohamed Issifi Yacouba wrote the original draft. Study su-           9. N. Amin, S. Santhiran, N. M. Kassim, A. A. Alkahtani, M. A. Islam,
+pervision: Andreas Lambertz, Kaining Ding, and Uwe Rau. All authors           and M. Y. Mohd Yusof, “Impact Analysis of Metallization Design and
+read and approved the final version.                                          Recombination Losses on Performance of Crystalline Silicon Solar
+                                                                              Cells,” Energies 16, no. 18 (2023): 6505, https://​doi.​org/​10.​3390/​en161​
+                                                                              86505​.
+Acknowledgments
+                                                                              10. A. Razzaq, T. G. Allen, W. Liu, Z. Liu, and S. De Wolf, “Silicon Het-
+We sincerely thank the SHJ Solar Cell and Module Group at the                 erojunction Solar Cells: Techno-­Economic Assessment and Opportu-
+Institute of Energy Materials and Devices–Photovoltaics (IMD-­     3),        nities,” Joule 6 (2022): 514–542, https://​doi.​org/​10.​1016/j.​joule.​2 022.​
+Forschungszentrum Jülich, for their funding and support of this re-           02.​0 09.
+search. Our gratitude also extends to Wilfried Reetz, Gunnar Schöpe,
+and the entire institute staff for their invaluable assistance and re-        11. K. Yoshikawa, W. Yoshida, T. Irie, et al., “Exceeding Conversion
+sources, which significantly contributed to this work. Additionally,          Efficiency of 26% by Heterojunction Interdigitated Back Contact
+we acknowledge the support from the European projects Nordstrom,              Solar Cell With Thin Film Si Technology,” Solar Energy Materials
+EMPower, and SiLEAN and the Energy and Green Hydrogen program                 and Solar Cells 173 (2017): 37–42, https://​doi.​org/​10.​1016/j.​solmat.​
+under WASCAL. We also appreciate the valuable contributions from the          2017.​0 6.​0 24.
+COPRRINT team. Lastly, we would like to thank the reviewers for their         12. S. DeWolf, A. Descoeudres, Z. C. Holman, and C. Ballif, “High-­
+insightful comments throughout the review process. Open Access fund-          Efficiency Silicon Heterojunction Solar Cells: A Review,” Green 2 (2012):
+ing enabled and organized by Projekt DEAL.                                    7–24, https://​doi.​org/​10.​1515/​green​-­​2 011-­​0 018.
+The authors used DeepL and Chat GPT to enhance the text's readability         13. P. J. Verlinden, “Future Challenges for Photovoltaic Manufacturing
+when preparing this article. The writers took full responsibility for the     at the Terawatt Level,” Journal of Renewable and Sustainable Energy 12,
+publication's content after using this tool, reviewing and editing it as      no. 5 (2020): 053505, https://​doi.​org/​10.​1063/5.​0 020380.
+necessary.
+                                                                              14. Y. Zhang, M. Kim, L. Wang, P. Verlinden, and B. Hallam, “Design
+                                                                              Considerations for Multi-­ Terawatt Scale Manufacturing of Existing
+Conflicts of Interest                                                         and Future Photovoltaic Technologies: Challenges and Opportunities
+The authors declare no conflicts of interest.                                 Related to Silver, Indium and Bismuth Consumption,” Energy & Envi-
+                                                                              ronmental Science 14, no. 11 (2021): 5587–5610, https://​doi.​org/​10.​1039/​
+                                                                              d1ee0​1814k​.
+Data Availability Statement
+                                                                              15. M. Kim, L. Wang, Y. Zhang, R. Underwood, S. Drury, and B. Hal-
+The data that support the findings of this study are available from the       lam, “Roadmap Towards Sustainable SHJ Solar Cell Design,” in AIP
+corresponding author upon reasonable request.                                 Conference Proceedings (AIP Publishing, 2023): 2826, https://​doi.​org/​10.​
+                                                                              1063/5.​0140906.
+
+References                                                                    16. N. Chen, D. Rudolph, C. Peter, et al., “Thermal Stable High Effi-
+                                                                              ciency Copper Screen Printed Back Contact Solar Cells,” RRL Solar 7,
+1. “International Technology Roadmap for Photovoltaic_itrpv_re-               no. 2 (2023): 2200874.
+sults_14th Edition_2023,” 2023.
+                                                                              17. S. Pingel, T. Wenzel, N. Göttlicher, et al., “Progress on the Reduc-
+2. D. Du, H. Huang, X. Li, et al., “Low-­Cost Metallization Based on Ag/      tion of Silver Consumption in Metallization of Silicon Heterojunction
+Cu Fingers for Exceeding 25% Efficiency in Industrial Silicon Hetero-         Solar Cells,” Solar Energy Materials and Solar Cells 265 (2024): 112620,
+junction Solar Cells,” Solar RRL 8 (2024): 2400052, https://​doi.​org/​10.​   https://​doi.​org/​10.​1016/j.​solmat.​2 023.​112620.
+1002/​solr.​2 0240​0 052.
+                                                                              18. T. Wenzel, A. Lorenz, E. Lohmüller, et al., “Progress With Screen
+3. Y. Zeng, C. W. Peng, W. Hong, et al., “Review on Metallization Ap-         Printed Metallization of Silicon Solar Cells—Towards 20 μm Line
+proaches for High-­ Efficiency Silicon Heterojunction Solar Cells,”           Width and 20 mg Silver Laydown for PERC Front Side Contacts,” Solar
+
+
+1232                                                                                                     Progress in Photovoltaics: Research and Applications, 2025
+                                                                                                                                                                                                  1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Energy Materials and Solar Cells 244 (2022): 111804, https://​doi.​org/​10.​                  Circuit Technology Development,” Progress in Photovoltaics: Research and
+1016/j.​solmat.​2 022.​111804.                                                                Applications 27, no. 1 (2019): 67–97, https://​doi.​org/​10.​1002/​pip.​3062.
+19. S. Tepner, N. Wengenmeyr, M. Linse, A. Lorenz, M. Pospischil, and                         34. C. Yu, K. Gao, C. W. Peng, et al., “Industrial-­Scale Deposition of
+F. Clement, “The Link Between Ag-­Paste Rheology and Screen-­Printed                          Nanocrystalline Silicon Oxide for 26.4%-­Efficient Silicon Heterojunc-
+Solar Cell Metallization,” Advanced Materials Technologies 5, no. 10                          tion Solar Cells With Copper Electrodes,” Nature Energy 8 (2023): 1375–
+(2020): 1–9, https://​doi.​org/​10.​1002/​admt.​2 0200​0654.                                  1385, https://​doi.​org/​10.​1038/​s 4156​0 -­​023-­​01388​- ­​4.
+20. S. Tepner, L. Ney, M. Linse, et al., “Screen Pattern Simulation for                       35. “Products—Copprint,” accessed July 16, 2023, https://​w ww.​coppr​
+an Improved Front-­Side Ag-­Electrode Metallization of Si-­Solar Cells,”                      int.​com/​produ​cts/#​LF-­​380.
+Progress in Photovoltaics: Research and Applications 28, no. 10 (2020):
+                                                                                              36. “SunDrive Achieves 26.41% Efficiency With Copper-­Based Solar
+1054–1062, https://​doi.​org/​10.​1002/​pip.​3313.
+                                                                                              Cell Tech,” pv magazine International, accessed July 14, 2023, https://​
+21. M. Pospischil, T. Fellmeth, A. Brand, et al., “Optimizing Fine Line                       www.​p v-­​m agaz ​i ne.​c om/​2 022/​0 9/​0 5/​s undr ​i ve-­​a chie ​v es-­​2 6- ­​41- ­​effic​
+Dispensed Contact Grids,” Energy Procedia 55 (2014): 693–701, https://​                       iency​-­​w ith-­​coppe​r-­​based​-­​solar​- ­​cell-­​tech/​.
+doi.​org/​10.​1016/j.​egypro.​2 014.​08.​0 46.
+                                                                                              37. J. Haschke, R. Lemerle, B. Aïssa, et al., “Annealing of Silicon Hetero-
+22. M. Pospischil, T. Riebe, A. Jimenez, et al., “Applications of Paral-                      junction Solar Cells: Interplay of Solar Cell and Indium Tin Oxide Prop-
+lel Dispensing in PV Metallization,” AIP Conference Proceedings 2156                          erties,” IEEE Journal of Photovoltaics 9, no. 5 (2019): 1202–1207, https://​
+(2019): 020005, https://​doi.​org/​10.​1063/1.​5125870.                                       doi.​org/​10.​1109/​J PHOT​OV.​2 019.​2924389.
+23. J. Schube, T. Fellmeth, M. Jahn, R. Keding, and S. W. Glunz, “Ad-                         38. “Öffentlicher Abschlussbericht des For-­    schungsvorhabens “Groß-
+vanced Metallization With Low Silver Consumption for Silicon Hetero-                          flächige, kontaktlose Druckverfahren und Materialen zur Erzeugung
+junction Solar Cells,” AIP Conference Proceedings 2156 (2019): 020007,                        feiner Struk-­turen für Hocheffiziente Solarzellen” Akronym: “GECKO”.”
+https://​doi.​org/​10.​1063/1.​5125872.
+                                                                                              39. K. Gensowski, M. Palme, I. Langhof, et al., “Paste Development for
+24. K. Gensowski, M. Much, E. Bujnoch, S. Spahn, S. Tepner, and F.                            an Optimized Filament Stretching Effect During Parallel Dispensing
+Clement, “Filament Stretching During Micro-­E xtrusion of Silver Pastes                       on Transparent Conductive Oxide Layers for Solar Cell Metallization,”
+Enables an Improved Fine-­Line Silicon Solar Cell Metallization,” Sci-                        Advanced Engineering Materials 25, no. 17 (2023): 1–15, https://​doi.​org/​
+entific Reports 12, no. 1 (2022): 12318, https://​doi.​org/​10.​1038/​s 4159​8-­​             10.​1002/​adem.​2 0230​0 010.
+022-­​16249​-­​5.
+                                                                                              40. R. Janoch, A. M. Gabor, A. Anselmo, and C. E. Dube, “Contact Re-
+25. “Conductive Copper Pastes Portfolio Overview,” https://​coppr​int.​                       sistance Measurement—Observations on Technique and Test Param-
+com/​w p-­​c onte​nt/​uploa​d s/​2 021/​0 4/​c oppr​i nts-­​produ​ct-­​p ortf​olio-­​april​   eters,” in 2015 IEEE 42nd Photovolt. Spec. Conf. PVSC (IEEE, 2015),
+-­​2 021.​pdf.                                                                                https://​doi.​org/​10.​1109/​P VSC.​2 015.​7355851.
+26. A. Ebong, S. Huneycutt, S. Grempels, K. Ankireddy, R. Dharma-                             41. S. Zogbo, W. Favre, O. Bonino, and M. E. Gueunier-­Farret, “Defin-
+dasa, and T. Druffel, “Progress of Atmospheric Screen-­Printable Cu                           ing Specifications for Accurate Metal/TCO Specific Contact Resistivity
+Paste for High Efficiency PERC Solar Cells,” in Conference Record of                          Measurements by TLM in Silicon Heterojunction Devices,” Solar En-
+the IEEE Photovoltaic Specialists Conference, (Institute of Electrical and                    ergy Materials & Solar Cells 265, no. September 2023 (2024): 112623,
+Electronics Engineers Inc., 2021): 1417–1420, https://​doi.​org/​10.​1109/​                   https://​doi.​org/​10.​1016/j.​solmat.​2 023.​112623.
+PVSC4​3889.​2 021.​9518703.
+                                                                                              42. “G&G Electronic Balance JJ224BC Analytical Balance 0.1mg -­
+27. S. Grempels, S. Huneycutt, A. Ebong, R. Dharmadasa, K. Ankireddy,                         China Electronic Balance and Balance Jj224bc,” accessed May 28, 2024,
+and T. Druffel, “Rapid Thermal Annealing of Screen-­Printable Atmo-                           https://​w ww.​made-­​in-­​china.​com/​showr​oom/​jingy​anggz/​​produ​ct-­​detai​
+spheric Cu Pastes for Perc Solar Cell,” in HONET 2020—IEEE 17th                               lBxZr​LuPba​g Rz/​C hina​- ­​G - ­​G -­​E lect​ronic​-­​B alan​c e-­​JJ224​B C-­​A naly​t ical​
+International Conference on Smart Communities: Improving Quality of                           -­​Balan​ce- ­​0 -­​1mg.​html.
+Life Using ICT, IoT and AI, (Institute of Electrical and Electronics Engi-
+                                                                                              43. W. Duan, T. Rudolph, H. T. Gebrewold, et al., “Insights Into the
+neers Inc., 2020): 244–248, https://​doi.​org/​10.​1109/​HONET​50430.​2 020.​
+                                                                                              Heat-­A ssisted Intensive Light-­Soaking Effect on Silicon Heterojunction
+9322819.
+                                                                                              Solar Cells,” Solar RRL 8 (2024): 2400383, https://​doi.​org/​10.​1002/​solr.​
+28. T. Druffel, R. Dharmadasa, K. Ankireddy, K. Elmer, A. Ebong, and                          20240​0383.
+S. Huneycutt, “Copper Based Front Side Metalization Contacts Screen
+                                                                                              44. H. Park, Y. J. Lee, J. Park, et al., “Front and Back TCO Research Re-
+Printed and Fired in Air Demonstrating Durability,” in Conf. Rec. IEEE
+                                                                                              view of a-­Si/c-­Si Heterojunction With Intrinsic Thin Layer (HIT) Solar
+Photovolt. Spec. Conf. (IEEE, 2020): 2609–2611, https://​doi.​org/​10.​1109/​
+                                                                                              Cell,” Transactions on Electrical and Electronic Materials. Korean In-
+PVSC4​5281.​2 020.​9300763.
+                                                                                              stitute of Electrical and Electronic Material Engineers June 19 (2018):
+29. B. Hallam, M. Kim, Y. Zhang, et al., “The Silver Learning Curve                           165–172, https://​doi.​org/​10.​1007/​s 4234​1-­​018-­​0 026-­​8.
+for Photovoltaics and Projected Silver Demand for Net-­Zero Emissions
+                                                                                              45. K. Bothe, C. Kruse, D. Hinken, and R. Brendel, “Contacting of Bus-
+by 2050,” Progress in Photovoltaics: Research and Applications 31, no. 6
+                                                                                              barless Solar Cells for Accurate I-­V Measurements,” in 37th European
+(2023): 598–606, https://​doi.​org/​10.​1002/​pip.​3661.
+                                                                                              Photovoltaic Solar Energy Conference and Exhibition, vol. 19, No. 5 (AIP
+30. Y. Zhang, S. Wang, L. Wang, et al., “Ultra-­L ean Silver Screen-­                         Publishing, 2020): 277–281.
+Printing for Sustainable Terawatt-­Scale Photovoltaic,” Solar RRL 8, no.
+                                                                                              46. B. H. Teo, A. Khanna, V. Shanmugam, et al., “Development of
+17 (2024): 2400478, https://​doi.​org/​10.​1002/​solr.​2 0240​0 478.
+                                                                                              Nanoparticle Copper Screen Printing Pastes for Silicon Heterojunction
+31. J. Yu, J. Li, Y. Zhao, et al., “Copper Metallization of Electrodes for                    Solar Cells,” Solar Energy 189 (2019): 179–185, https://​doi.​org/​10.​1016/j.​
+Silicon Heterojunction Solar Cells: Process, Reliability and Challenges,”                     solen​er.​2 019.​07.​055.
+Solar Energy Materials and Solar Cells 224 (2021): 110993, https://​doi.​
+                                                                                              47. M. Mikolášek, M. Nemec, J. Kováč, et al., “The Influence of Post-­
+org/​10.​1016/j.​solmat.​2 021.​110993.
+                                                                                              Deposition Annealing Upon Amorphous Silicon/Crystalline Silicon
+32. A. Ebong, D. Intal, S. Huneycutt, et al., “Screen Printable Copper                        Heterojunction Solar Cells,” Materials Science & Engineering, B: Solid-­
+Pastes for Silicon Solar Cells,” Solar Energy Materials and Solar Cells                       State Materials for Advanced Technology 189 (2014): 1–6, https://​doi.​org/​
+265 (2024): 112633, https://​doi.​org/​10.​1016/j.​solmat.​2 023.​112633.                     10.​1016/j.​mseb.​2 014.​07.​0 03.
+33. A. Lennon, J. Colwell, and K. P. Rodbell, “Challenges Facing Copper-­                     48. X. Li, Y. Xiong, Y. Yang, et al., “Intensive Light Soaking Improves
+Plated Metallisation for Silicon Photovoltaics: Insights From Integrated                      Electricity Generation of Silicon Heterojunction Solar Cells by the
+
+
+Progress in Photovoltaics: Research and Applications, 2025                                                                                                                             1233
+                                                                                                                                                                          1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Anomalous Staebler-­Wronski Effect,” Applied Physics Express 15, no. 9                the results section. The observed decrease in efficiency with increasing
+(2022): 091001, https://​doi.​org/​10.​35848/​​1882-­​0786/​ac8784.                   sintering temperature is attributed to the corresponding declines in Voc,
+                                                                                      Jsc, pFF, and FF. Light soaking, on the other hand, aids in partially re-
+49. S. Siraj, S. Tahir, A. Ali, N. Amin, K. Mahmood, and A. Manzoor,
+                                                                                      covering these losses, particularly by improving Voc, pFF, and FF.
+“Assessing the Impact of Front Grid Metallization Pattern on the Per-
+formance of BSF Silicon Solar Cells,” SILICON 13, no. 12 (2021): 4237–
+4245, https://​doi.​org/​10.​1007/​s1263​3 -­​021-­​01235​-­​9.                       Figure A2 presents the photovoltaic parameters for SHJ solar cells,
+                                                                                      including efficiency (η) in (a), open-­circuit voltage (Voc) in (b), short-­
+                                                                                      circuit current density (Jsc) in (c), fill factor (FF) in (d), pseudo-­f ill fac-
+Appendix A
+                                                                                      tor (pFF) in (e), and series resistance (Rs) in (f). The data are shown
+Figure A1 presents the photovoltaic parameters for SHJ solar cells,                   for cells before sintering (bS), after sintering (aS) at different times (5,
+including efficiency (η) in (a), open-­circuit voltage (Voc) in (b), short-­          20, and 40 s) at 300°C and after light soaking (LiSo). These parameters
+circuit current density (Jsc) in (c), fill factor (FF) in (d), pseudo-­f ill factor   provide insights into the efficiency variations discussed in the results
+(pFF) in (e), and series resistance (Rs) in (f). The data are shown for               section. The observed decrease in efficiency with increasing sintering
+cells before sintering (bS), after sintering (aS) at different temperatures           temperature is attributed to the corresponding declines in Voc, Jsc, pFF,
+(280°C, 320°C, and 360°C) for 5 s, and after light soaking (LiSo). These              and FF. Light soaking, on the other hand, aids in partially recovering
+parameters provide insights into the efficiency variations discussed in               these losses, particularly by improving Voc, pFF, and FF.
+
+
+
+
+FIGURE A1    |    Photovoltaics parameters showing in (a) the efficiencies (η), (b) the open circuit voltages (Voc), (c) the short circuit current densities
+(Jsc), (d) the fill factors (FF), (e) the pseudo-­f ill factors (pFF), and (f) the series resistances (R s), for SHJ solar cells before sintering (bS), after sintering
+(aS) at different temperatures (280°C, 320°C, and 360°C) for 5 s and light soaked (LiSo).
+
+
+1234                                                                                                       Progress in Photovoltaics: Research and Applications, 2025
+                                                                                                                                                                      1099159x, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pip.70016 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [19/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE A2    |    Photovoltaics parameters showing in (a) the efficiencies (η), (b) the open circuit voltages (Voc), (c) the short circuit current densities
+(Jsc), (d) the fill factors (FF), (e) the pseudo-­f ill factors (pFF), and (f) the series resistances (R s), of solar cells for different sintering times at 300°C.
+
+
+
+
+Progress in Photovoltaics: Research and Applications, 2025                                                                                                   1235
+

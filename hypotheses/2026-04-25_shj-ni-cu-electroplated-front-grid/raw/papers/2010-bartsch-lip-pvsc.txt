@@ -1,0 +1,283 @@
+                                 Presented at the 35th PVSC, June 20-25, 2010, Honolulu, Hawaii
+
+
+
+   COPPER AS CONDUCTING LAYER IN ADVANCED FRONT SIDE METALLIZATION
+   PROCESSES FOR CRYSTALLINE SILICON SOLAR CELLS, EXCEEDING 20% ON
+                        PRINTED SEED LAYERS
+
+                                 J. Bartsch, A. Mondon, C. Schetter, M. Hörteis, S.W. Glunz
+                              Fraunhofer Institute for Solar Energy Systems, Freiburg, Germany
+
+
+                        ABSTRACT                                  mobility in silicon, combined with its property as a highly
+                                                                  active recombination centre in solar cells. Therefore, its
+Our work deals with the creation of copper-containing             penetration into the solar cell must be prevented with a
+stack systems for the front side metallization of silicon         diffusion-inhibiting intermediate layer. The functionality
+solar cells. In this contribution, we give an overview of         and industrial viability of such a contact system has been
+different approaches from our labs. We have developed             proven in a cell process by BP solar with laser grooved
+processes to apply nickel diffusion barriers onto seed            buried contacts consisting of a nickel layer (seed and
+layers and directly onto silicon with both electrolytic and       barrier) and a copper layer (main conductor) [3].
+electroless processes. These are reinforced by a light-
+induced copper plating process. On aerosol-printed seed                                Silver      Copper         Nickel
+layers, cell efficiencies equal to those of reference cells         Conductivity       61,39        59,1           13,9
+                                                                         6
+with advanced silver metallization have been achieved                [10 S/m]
+with a nickel/copper/tin stack system (16.8% on 5x5cm²                ρ [g/cm³]        10,49        8,92           8,9
+industrial Cz-material, 20.3% on FZ high-efficiency                 Costs (2 year      388,8         4,1           12,8
+                                                                    mean) [€/kg]
+substrates, 2x2cm²).
+                                                                  Table 1 Properties of different metals considered for
+As the long term stability of the resulting cells is a critical   solar cell metallization
+factor, there is need for a method to characterize this
+aspect. We developed a thermally accelerated ageing               In order to enable the use of copper as main conducting
+procedure, mirroring the total copper diffusion during a          material and thus reduce the cell manufacturing costs,
+typical cell life cycle. Solar cells with advanced metal stack    processes need to be developed and evaluated. Metal
+systems have shown no significant decrease in                     layers with suitable thickness have to be deposited
+performance during this thermal stress test.                      homogenously and by an industrially viable route. Also,
+                                                                  other cell properties (e.g. antireflexion coating, edge
+                      INTRODUCTION                                isolation) or the corresponding process steps may be
+                                                                  required to be optimized if copper is introduced.
+Besides the silicon wafer, the metallization of solar cells is    At Fraunhofer ISE, we follow different approaches towards
+the most important cost factor in present-day industrial          a copper based solar cell front side metallization. One
+solar cell production (~30% of the total cell processing          approach is very close to the current industrial solar cell
+cost) due to the use of expensive contact pastes,                 process and could be suitable to quickly introduce this
+particularly silver-containing pastes for the front grid.         cost saving method into production. It is based on silver
+In order to reach grid parity for photovoltaic solar energy       seed layers that are printed and fired comparably to the
+conversion, combined efforts are made to reduce the               current standard. The amount of silver is kept as low as
+manufacturing costs for crystalline silicon solar cells while     possible by using fine line screen printing or alternative
+at the same time increasing their efficiency. In this context,    techniques like inkjet- or aerosol printing. The printed and
+increasing the typical cell size has led to a demand for an       fired seed layer is plated with a nickel barrier layer, a
+advanced front side metallization, in order to keep series        conducting layer of copper and finished with tin (Figure 1,
+resistance losses at a low level. A two-step concept,             upper scheme). The second approach is based on direct
+similar to the front side metallization of high-efficiency        plating of nickel onto bare silicon, using a subsequent
+laboratory solar cells has been shown to exhibit various          thermal step to achieve Ni-silicide and contact formation.
+advantages [1]. Process schemes with fine line printed            Prior to Ni deposition, the SiNx antireflexion coating (ARC)
+seed layers and light-induced plating (LIP) of silver are         needs to be ablated according to the desired grid design.
+already close to industrial introduction [2].                     The deposition will occur only on the ablated areas, so the
+                                                                  process is self-aligning. Nickel is used as seed and barrier
+While these approaches mainly address an increased                layer. The contact is finished as in the former case by
+efficiency, an advanced front side metallization may              light-induced copper plating and tin deposition (Fig. 1,
+additionally lower the cell production costs. Many efforts        lower scheme). This approach has an even higher
+have been made to replace the relatively expensive silver         potential, but requires more changes with regard to the
+by cheaper and almost equally conductive copper (see              state-of-the-art industrial production line.
+table 1). The major disadvantage of copper is its high
+                                Presented at the 35th PVSC, June 20-25, 2010, Honolulu, Hawaii
+
+
+
+                                                                 pseudo fill-factor (pFF) measurements were made with the
+                                                                 Suns-VOC technique as described by Sinton and Cuevas
+                                                                 [6], using the generalized analysis type, with temperature
+                                                                 correction to 25°C.
+
+
+
+
+                                                                 Figure 2 Schematic image of the used plating
+Figure 1 Schematic images of the approaches                      equipment
+followed at Fraunhofer ISE to enable the use of copper
+for the front side metallization of silicon solar cells.                                     RESULTS
+Upper image: Barrier + copper plated on printed and
+fired seed layer. Lower image: Contact and barrier               Solar cell results on printed and fired seed layers
+formation by plated nickel.
+                                                                 The first approach described above implies only very
+                                                                 minor changes compared to the already established two-
+                    EXPERIMENTAL                                 step metallization process with silver as conducting layer
+                                                                 [2]. The replacement of silver with copper means
+For the plating experiments, we used different solar cell        exchanging one highly conductive material with another.
+substrates with either aerosol-printed seed layers [4] or        The intermediate nickel barrier layer is not expected to
+screen printed seed layers. For most experiments, solar          introduce any significant transfer resistance. Accordingly,
+cell test structures as described in Ref. [5] were used. The     the solar cell performance should be comparable.
+plating of nickel and copper was carried our in                  We tested a front side metallization stack consisting of an
+experimental setup as schematically shown in Fig. 2 and          aerosol-printed and fired silver seed layer, a barrier layer
+which is described in more detail elsewhere [5]. Separate        deposited by light-supported electroless nickel plating and
+setups were used for the different metals and deposition         a conducting layer created by copper (LIP) on high
+methods (light-enhanced electroless nickel deposition,           efficiency substrates. These were made of 4’’ FZ silicon
+light-induced electrolytic nickel deposition, light-induced      wafers (0.5 Ω cm), a 110 Ω/sq shallow emitter, passivated
+copper deposition and light-induced silver deposition). The      rear and front side and laser fired contacts (LFC). The cell
+cells used in our experiments were fabricated with a             size was 2x2 cm². The best cell we obtained had an
+PECVD SiNX-ARC. It is worthy to mention that we did not          efficiency of η = 20.3% and a FF of 80.8% (see table 2),
+experience any problems with “background”-plating on the         which was comparable to the reference with aerosol-
+ARC, which has been reported especially in the context of        printed seed and silver-LIP. This result shows the high
+nickel plating.                                                  potential of the metallization system.
+The used electrolytes were commercially available silver,          Voc [mV]      Jsc [mA/cm²]     FF [%]         η [%]
+copper and electroless nickel plating solutions, and a
+                                                                     646.4           38.86         80.8          20.3
+simple Watts type nickel electrolyte set up in our labs.
+                                                                 Table 2 Solar cell result on 2x2cm² high-efficiency
+Temperature and electrolyte properties were kept constant
+                                                                 substrate with aerosol-nickel-copper-tin metallization
+for all experiments and according to the manufacturer’s
+                                                                 demonstrating the potential of this concept.
+specifications. Potentials and currents were applied and
+measured by either using a versatile multichannel
+                                                                 In a second batch of experiments, we used cell structures
+potentiostat (VMP, Bio-Logic) for the silver deposition
+                                                                 with a size of 50x50 mm² that were cut out of
+experiments, or a programmable source measure unit
+                                                                 156x156 mm² Cz Wafers using a dicing saw. The samples
+(Keithley) with a coupled power amplifier.
+                                                                 have a shallow emitter with a sheet resistance of
+Temperature stress experiments were carried out using an
+ordinary hotplate with programmable control unit. The            RSH = 65 Ω/sq, passivated by an SiNx ARC-layer, full rear
+                                                                 Al-BSF and an aerosol-printed seed layer as described in
+                                   Presented at the 35th PVSC, June 20-25, 2010, Honolulu, Hawaii
+
+
+
+ Ref. [5]. These industrially produced standard solar cell                               VOC     JSC        FF      pFF     η [%]
+ samples have been used for the optimization of plating                                 [mV]   [mA/cm²]     [%]     [%]
+ processes in our lab for some time. The efficiencies
+ achieved with the described nickel-copper-tin stack are in          Ni-Ni-Cu-Sn        619         35.7    72.7    79.4    16.4
+                                                                     (best cell, full
+ the same order of magnitude as for equally processed                area 25 cm²)
+ cells with aerosol + silver-LIP metallization (table 3). The        Ni-Cu-Sn (best     624         35.4    69.5    79.7    15.4
+ use of a nickel layer deposited by LIP instead of                   cell,       full
+ electroless plating had no influence on the cell                    area 25 cm²)
+ performance. With a new batch of Cz material, an even               Ni-Cu-Sn (best     623         37.3    74.2    79.7    17.2
+ higher efficiency of 17.2% could be achieved in a first             cell,     good
+ experiment (not shown in table 3).                                  area 20.5 cm²)
+                                                                    Table 4 Solar cell result on 5x5 cm² Cz test substrates
+                          VOC        JSC         FF [%]      η      with nickel plated seed layer. In the first case, seed
+                         [mV]      [mA/cm²]                 [%]     layer and diffusion barrier were plated separately, with
+                                                                    contact formation after the first step. In the second
+Aerosol-Ni-Cu-Sn         613.8       35.74        74.9     16.4     case, seed and barrier were plated in one step before
+(average of 9 cells)                                                formation of the contact.
+Aerosol-Ni-Cu-Sn         616.8       35.69        76.2     16.8
+(best cell)
+                                                                    Long Term Stability
+
+Aerosol-Ag-reference     607.2       35.75        76.2     16.5     As explained above, the long term stability of the solar cell
+group (best cell)                                                   performance is the most critical aspect regarding copper
+                                                                    metallization. The development of industrially usable
+ Table 3 Solar cell result on 5x5cm² Cz test substrates             metallization systems must incorporate an evaluation of
+ with different metallization systems, based on printed             their suitability in this respect. We had to develop a
+ and fired seed layer                                               relatively quick procedure to simulate the ageing process
+                                                                    of the cell under outdoor conditions. As the diffusion of
+ Solar cell results with fully plated contacts                      copper is accelerated at higher temperatures, applying
+                                                                    thermal stress is a suitable and calculable method for this
+ The described test structures were used to test several            purpose. With the different diffusion coefficients at various
+ metallization systems based on a direct nickel-silicon             temperatures, one can find a thermal profile that roughly
+ contact. The ARC of the substrates was ablated and                 mirrors the ageing of the cell at assumed 80°C for a time
+ structured with a laser prior to the nickel deposition [7].        of 20 years. Thermal steps following the metallization in
+ The plating of the seed layer was done by light-supported          module production, such as soldering and lamination, can
+ electroless plating or LIP of nickel. Silicide formation was       also be taken into account. A quick method to evaluate the
+ done at elevated temperatures for several minutes under            state of the solar cell is the Suns-VOC-measurement,
+ forming gas atmosphere, in order to obtain a good                  giving the pseudo fill-factor (pFF) which rapidly decreases
+ electrical contact between metal and silicon. A variation of       if copper diffuses into the space charge region. Application
+ the thickness and the plating sequence (before/after               of this thermal profile to solar cells with the stack systems
+ contact formation) of the barrier layer was made.                  that are to be tested can not replace a full climate
+ All cells were found to give comparable cell efficiencies of       chamber test cycle, but will allow a first evaluation of the
+ about 15-16%, which is slightly below the values found for         suitability of the metal stack. This evaluation can be done
+ the metallization system based on printed and fired seed.          very quickly (typically one week per stack system) and
+ The cell parameters of the best cells are given in table 4.        requires only sparse equipment. It is described in more
+ The fill factor for this group of cells was found to be slightly   detail elsewhere [8].
+ lower than expected. However, a SunsVOC-measurement                The above mentioned test structures were subjected to
+ showed no significant loss in pseudo fill factor (pFF),            this accelerated ageing procedure. For printed and fired
+ which indicates that the contact formation process worked          seed layers, references were produced by plating copper
+ well and is not responsible for the reduced cell                   directly onto the screen- or aerosol printed silver contacts.
+ performance. We believe that either the ablation process           As can be seen in Fig. 3, the introduction of a nickel
+ or the plating process did not work entirely homogenous,           diffusion barrier layer is highly effective. It leads to a very
+ so that some areas of the cell suffer from higher series           important decrease in the degradation rate of the samples.
+ resistance. Inhomogeneities in the metallization were              Also, a thicker seed layer (e.g. screen printed silver)
+ observed, some areas of the cells were insufficiently              delays the copper penetration into the cells. Cells were
+ plated. This increased series resistance is causing the            tempered at different temperatures, and the corresponding
+ difference between FF and pFF. Repetition of the                   degradation data was plotted in an Arrhenius plot. A linear
+ measurements of only the homogenously metallized areas             fit to the data and an extrapolation to assumed module
+ (covering the rest of the cell with a non-transparent mask)        exposure conditions (constant thermal load of 80°C) gave
+ led to far better results. Again, the best sample is given in      an estimation of the limitation of the lifetime of such cells
+ table 4. We are currently working on a further optimization        due to copper penetration. Fig. 4 shows such an Arrhenius
+ of both the ablation and plating process.                          plot for several metal layer systems.
+                                  Presented at the 35th PVSC, June 20-25, 2010, Honolulu, Hawaii
+
+
+
+                                                                   cells into an Arrhenius plot. However, a superior estimated
+                                                                   lifetime can be expected for these solar cells. We believe
+                                                                   that such a stack system would be very suitable for
+                                                                   industrial application. The curve displayed in Fig. 5
+                                                                   belongs to the same cell that is mentioned in the first row
+                                                                   of table 4. The light IV-curve was measured after almost
+                                                                   1000 h of thermal exposure at 200°C. The IV parameters
+                                                                   were the same as before the degradation experiment.
+
+
+
+
+Figure 3 Degradation behaviour of solar cells with
+copper containing metallization and different diffusion
+barrier layer designs at thermal stress of 200°C.
+
+It can be seen that a copper-containing metallization
+without diffusion barrier layer suffers from a rather quick
+degradation and is estimated to keep 95% of relative
+efficiency for 0.1 (aerosol seed) or 3 years (screen printed
+seed). However, the introduction of a diffusion inhibiting         Figure 5 Degradation behaviour of a cell with Ni-seed
+nickel layer of suitable properties leads to a very important      + barrier and copper at thermal stress of 200°C.
+increase in the estimated lifetime, giving estimations that
+are far beyond the required lifetime which is necessary for                               CONCLUSION
+solar cells (Fig. 4, red squares: 1000 years estimated cell
+lifetime). If the nickel layer is insufficient regarding certain   Solar cells with different copper-containing front side
+parameters (e.g. thickness, coverage, homogeneity), the            metallization systems have been manufactured and tested
+diffusion inhibiting effect is diminished.                         regarding their efficiency potential and their long term
+                                                                   stability compared to conventionally manufactured solar
+                                                                   cells with a silver based front side metallization. The
+                                                                   copper containing metallization offers a high potential to
+                                                                   reduce the costs of solar cell production and has been
+                                                                   found to be competitive with the conventional metallization
+                                                                   regarding both examined properties. The highest
+                                                                   efficiency obtained was 20.3% on a high-efficiency cell
+                                                                   structure. Although some technical details remain to be
+                                                                   solved, we believe that an introduction into industrial
+                                                                   production is possible in the near future.
+
+
+
+                                                                                     ACKNOWLEDGEMENT
+
+                                                                   The authors gratefully acknowledge the contributions of
+                                                                   Katharina Bay, Felix Schätzle, Elisabeth Schäffer,
+                                                                   Christian Reichel and Julia Pedroni.
+Figure 4 Arrhenius plot of the stack systems based on
+printed and fired seed layers, with extrapolation of the                                  REFERENCES
+data to 80°C.
+
+For fully plated contacts, cells have been manufactured            [1] S.W. Glunz et al., “Progress in advanced metallization
+that did not show any signs of degradation, even after very        technology at Fraunhofer ISE”, Proceedings of the 33rd
+long times at elevated temperature (Fig. 5). Just like the         IEEE Photovoltaic Specialists Conference, 2008
+non-copper-containing references, these samples could
+                                                                   [2] J. Bartsch et al., “Achievements and challenges in two-
+not yet be reduced to 95% relative pFF! Thus, it has not
+                                                                   step metallization processes for crystalline silicon solar
+been possible to incorporate degradation data for these
+                                 Presented at the 35th PVSC, June 20-25, 2010, Honolulu, Hawaii
+
+
+
+cells”, Photovoltaics International, 6th edition 2009, pp.54-
+63.
+[3] S. Wenham et al., “Pilot line production of laser
+grooved silicon solar cells”, Proceedings of the 11th
+European Photovoltaic Solar Energy Conference, 1992
+[4] M. Hoerteis, et al., “Further Progress in Metal-
+Aerosoljet printing for Front Side Metallization of Silicon
+Solar Cells”, Proceedings of the 22nd EU-PVSEC, 2007.
+
+[5] J. Bartsch et al., „Electrochemical methods to
+characterize the light induced plating process”,
+Journal of Applied Electrochemistry, 40, 2010,
+pp. 757–765
+
+[6] R.A. Sinton and A. Cuevas, “A quasi-steadystate open-
+circuit voltage method for solar cell characterization”,
+Proceedings of the 16th EU-PVSEC, 2000.
+
+[7] A. Knorz et al., “Laser ablation of antireflection coatings
+for plated contacts yielding solar cell efficiencies above
+20 %”, Proceedings of the 24th EU-PVSEC, 2009.
+
+[8] J. Bartsch et al., “Quick Determination of Copper-
+Metallization Long-Term Impact on Solar Cells”, J. of the
+electrochem. Society, under review.
+

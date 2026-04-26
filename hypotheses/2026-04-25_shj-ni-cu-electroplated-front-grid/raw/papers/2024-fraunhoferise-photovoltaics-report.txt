@@ -1,0 +1,1362 @@
+Photovoltaics Report
+—
+Fraunhofer Institute for Solar Energy Systems ISE
+with the support of PSE Projects GmbH
+
+Freiburg, 31 October 2025
+www.ise.fraunhofer.de
+CONTENT
+
+
+
+ Quick Facts
+ Topics:
+     PV Market
+     Solar Cells / Modules / System Efficiency
+     Life cycle assessment (LCA) and sustainability aspects
+     Price Development
+ Abbreviations
+ Further Studies and Analyses
+ Acknowledgements
+
+
+
+
+2
+©Fraunhofer ISE
+public
+Introduction
+Preliminary Remarks
+
+
+ The intention of this presentation is to provide up-to-date information. However, facts and figures change rapidly,
+  and the given information may soon be outdated again.
+
+ This work has been carried out under the responsibility of Dr. Simon Philipps (Fraunhofer ISE) and Werner
+  Warmuth (PSE Projects GmbH).
+
+ Price indications are always to be understood as nominal, unless stated explicitly. For example, prices in the
+  learning curves are inflation adjusted.
+
+ The slides have been made as accurate as possible. Please send any comments or suggestions for improvement to
+  both simon.philipps@ise.fraunhofer.de and warmuth@pse-projects.de
+
+ Please cite the information presented in these slides as follows:
+  ©Fraunhofer ISE: Photovoltaics Report, updated: 31 October 2025
+
+3
+©Fraunhofer ISE
+public
+Quick Facts
+ Parameter                                  Value                                Status        Reference         Date of data
+                                                   Germany / EU27 / Worldwide
+ PV installation market [GW]                15.3 / 55.9 / 456 GW                 End of 2023   BNA / SPE / IEA   04/2025; 12/2023; 04/2025
+                                            16.9 / 76.4 / 602 GW                 End of 2024   BNA / SPE / IEA   04/2025; 04/2025; 04/2025
+
+
+ Cumulative installation [GW]               76.8net / 211.6net / 1,581 GW        End of 2023   ISE / ISE / IEA   09/2025; 04/2025; 04/2025
+                                            92.2net / 251.1net / 2,156.5 GW      End of 2024   ISE / ISE / IEA   09/2025; 04/2025; 04/2025
+
+
+ PV power generation [TWh]                                                                     ISE / EI / EI
+                                            53.9net / 251.9gross / 1650.9gross   2023                            06/2024; 06/2025; 06/2025
+                                                                                               ISE / EI / EI
+                                            59.7net / 302.9gross / 2111.7gross   2024                            05/2025
+
+ PV electricity share                       12.5%net / 9.2%gross / 5.5%gross     2023          ISE / EI / EI     06/2024; 06/2025; 06/2025
+                                            14.5%net / 10.8%gross / 6.8%gross    2024          ISE / EI / EI     05/2025; 06/2025; 06/2025
+
+
+                                                              Worldwide
+ c-Si share of production                   98%                                  2024          ITRPV             03/2025
+
+ Record solar cell efficiency: III-V MJ                                                        Green et al.
+                                            47.6 / 27.8 / 26.9 / 23.4 / 21.0%    04/2025       Version 66
+                                                                                                                 04/2025
+ (conc.) /mono-Si /Perovskite /CIGS /CdTe
+                                                                Germany
+ Price PV rooftop system (3 to 10 kWp)      900 to 1,300 €/kWp                   2024          gruenes.haus      12/2024
+
+ LCOE PV power plant                        4.1 to 5.0 ct€ / kWh                 2024          ISE               08/2024
+
+4Lowest/Latest PV-tender price              4.33 ct€ / kWh                       02/2018;
+                                                                                               BNA               04/2025
+ (average, volume-weighted value)
+©Fraunhofer ISE                             4.66 ct€ / kWh                       03/2025
+public
+Executive Summary
+PV Market: Global
+
+
+ Photovoltaics is a fast-growing market: The Compound Annual Growth Rate (CAGR) of cumulative
+  PV installations was about 27% between the years 2014 and 2024.
+ Wafer size increased. Keeping the same number of cells, larger PV module sizes are realized, allowing a power
+  range of up to 750 W per module.
+ In 2024, Europe’s contribution to the total cumulative PV installations amounted to 18%. In contrast, installations
+  in China accounted for 48% (in 2023 43%) and in North America for 10% respectively.
+ Silicon wafer-based technology accounted for about 98% of total production in 2024 with a 70% share of n-
+  type wafers according to ITRPV. Monocrystalline technology became the dominant technology in c-Si production.
+ Market shifts from subsidy-driven to a competitive pricing model (Power Purchase Agreements PPA).
+ In addition to building-integrated systems (on roofs or building facades) and ground-mounted systems, more and
+  more PV systems are being installed on agricultural land (agrivoltaics) and on bodies of water (floating PV).
+  Furthermore, vehicle-integrated PV is entering the market.
+ With increasing share of power generated by renewables, the integration of batteries with energy management
+  systems is becoming increasingly important.
+5
+©Fraunhofer ISE
+public
+Executive Summary
+PV Market: Focus Germany
+
+
+ In 2024, PV installations in Germany (approximately 4.8 million PV systems with a capacity of over 800 W) accounted
+  for about 4.8% (92 GWp) of the cumulative PV capacity installed worldwide (2156.5 GWp). According to the BNA,
+  newly installed capacity in Germany amounted to approximately 16.9 GWp in 2024, compared to 15.3 GWp in 2023.
+ In 2024, PV accounted for 14.5% of net electricity generation and all renewable energies for around 62%.
+ In 2024 GHG emissions of about 51 million tons CO2 equivalents were avoided due to 74 TWh PV electricity consumed
+  in Germany.
+ PV system performance has strongly improved. Before 2000 the typical Performance Ratio was about 70%, while today
+  it is around 80% to 90%.
+ Today residential and small commercial PV systems are often installed together with battery storage and a charging
+  station for electric vehicles. Due to relative high electricity tariffs in Germany, self consumption is the prevailing business
+  model. The installation of balcony solar systems is another growing trend.
+ With increasing generation capacity from solar and wind, the flexible integration of volatile electricity into the grid
+  becomes more important. Grid expansion, load management, smart grids, bidirectional charging of vehicle batteries,
+  etc. must be promoted in order to avoid curtailment of renewable power plants.
+
+
+6
+©Fraunhofer ISE
+public
+Executive Summary
+Solar Cell / Module Efficiencies
+
+
+ The record lab cell efficiency* is 27.8% for monocrystalline wafer-based technology. The highest lab efficiency in
+  thin film technology is 23.4% for CIGS and 21.0% for CdTe solar cells. Record lab cell efficiency for perovskite
+  solar cells is 26.9%.
+ In the last 10 years, the efficiency of commercial monocrystalline wafer-based silicon modules increased from
+  about 16% to values over 24%. At the same time, the CdTe module efficiency increased from 9% to almost
+  20%.
+ In the laboratory, the best performing modules are based on monocrystalline silicon with 26.0% efficiency.
+  Record efficiencies demonstrate the potential for further efficiency increases at the production level.
+ In the laboratory, high concentration multi-junction solar cells achieve an efficiency of up to 47.6% today. With
+  concentrator technology, module efficiencies of up to 38.9% have been reached.
+
+
+
+
+7
+                  * Only official lab record efficiencies with minimum cell area of 1 cm2 are listed. Latest reference: Solar Cell Efficiency Tables (Version 66), Progress in
+©Fraunhofer ISE
+public            Photovoltaics: Research and Applications, 04/2025
+Executive Summary
+Energy Payback Time
+
+
+ Silicon usage for silicon cells has been reduced significantly during the last 20 years from around
+  16 g/Wp (in 2004) to about 2.0 g/Wp in 2024 due to increased efficiencies, thinner wafers (140 µm) using
+  diamond wire saws, and larger ingots.
+ The Energy Payback Time of PV systems is dependent on the geographical location: PV systems manufactured in
+  Europe and installed in Northern Europe require approximately 1.1 years to pay back the energy input, while PV
+  systems installed in the South require 0.9 years to pay back the energy input, depending on the technology
+  installed and the grid efficiency.
+ A PV system located in Sicily using wafer-based silicon modules has an Energy Payback Time of about one year.
+  Assuming a 20-year lifetime, this type of system can produce twenty times the energy invested in it.
+ PV modules can be recycled, recovering rare and valuable materials. Further research and development is needed
+  to make these recycling processes more in-depth and cost-effective.
+
+
+
+
+8
+©Fraunhofer ISE
+public
+Executive Summary
+Price Development
+
+
+ Due to the coronavirus crisis and the associated disruptions to supply and trade chains, market prices rose
+  noticeably in 2022 and at times some products were not available in sufficient quantities. In 2023 prices fell
+  again and have continued to fall in 2024.
+ In Germany, a typical 10 to 100 kWp PV rooftop-system cost around 14,000 €/kWp in 1990. At the end of 2024,
+  such systems cost less than 9% of that in 1990. Over the last 34 years, the compound annual growth rate
+  (CAGR) of net prices was -6.9%.
+ The Experience Curve (also called Learning Curve) shows that in the last 44 years the module price decreased by
+  25.7% with each doubling of the cumulated global module production. Cost reductions result from economies
+  of scale and technological improvements. The global average selling price (ASP) was about 0.13 US$/Wp in 2024.
+
+
+
+
+9
+©Fraunhofer ISE
+public
+1. PV Market
+
+
+
+ By region
+ By technology
+
+
+
+
+10
+©Fraunhofer ISE
+public
+PV Module Production by Region 1990-2024
+Percentage of Total MWp Produced
+
+
+
+
+11
+                  Data: from 2000 to 2009: Navigant; from 2010 to 2021 IHS Markit; from 2022 estimates based on IEA and
+©Fraunhofer ISE
+public            other sources. Graph: PSE Projects GmbH 2025 . Date of data: 05/2025
+PV Module Production by Region
+Global Annual Production
+
+
+
+                                                                                                                                                                           Annual Production Today
+                                                                                                                                                                           —
+                                                                                                                                                                           Annual production has increased
+                                                                                                                                                                           14-fold over the past decade. In
+                                                                                                                                                                           2024, approximately 96% of
+                                                                                                                                                                           solar modules and their
+                                                                                                                                                                           components came from Asia,
+                                                                                                                                                                           primarily from China with a
+                                                                                                                                                                           module production share of
+                                                                                                                                                                           about 86%, which also controls
+                                                                                                                                                                           more than 95% of the market
+                                                                                                                                                                           for certain components, such as
+                                                                                                                                                                           ingots and wafers.
+
+Data from 2000 to 2009: Navigant; from 2010 to 2021 IHS Markit; from 2022 estimates basaed on IEA and other sources. Graph: PSE Projects GmbH 2025. Date of data 05/2025
+
+12
+©Fraunhofer ISE
+public
+Global Production Capacities (w/o China)
+Current and Announced Capacities September 2025
+
+
+
+
+Data and Graph: Dr. Jochen Rentsch, Fraunhofer ISE 2025; last update: 09/2025
+
+13
+©Fraunhofer ISE
+ public
+EU PV Manufacturing Landscape – Status Quo
+EU 27
+
+                                                                                                                                                                                                Value Chain Step
+                                                                                                                                                                                                    Poly-Si
+                                                                                                                                                                                                    Ingot / Wafer
+                                                                                                                                                                                                    Solar cell
+                                                                                                                                                                                                    Module
+                                                                                                                                                            Midsummer
+                                                                                                                                                                                                 Fab Size
+                                                                                                                                                                                    SoliTek             > 1 GWp
+
+                                                                                                                                                       Sonnenstromfabrik                                > 500 MWp
+
+                                                                                                                                                      MeyerBurger                                       > 100 MWp
+                                                                                                                             Solarge
+                                                                                                                                                                         Bruk-Bet
+                                                                                                                                Soluxtec
+                                                                                                                                                        Sunmaxx
+
+                                                                                                                                        Voltec        Wacker
+
+                                                                                                                                         Megasol            Kioto                         KarpatSolar
+                                                                                                                              Heliup     3S Eclipse/
+Status Quo in the EU                                                                                                Reden              Peimar
+                                                                                                                                              Solarday BiSol    Solvis
+                                                                                                                                                                             Domi Eko
+                                                                                                      Escelco
+ Many PV Module manufacturers still exist. But almost all of                                                                                         Sunerg
+                                                                                                                                                                                    PiKCell
+  them with a small production capacity (< 1 GWp/a).                                                            Exiom
+
+
+ Cell production capacity of <5 GWp/a.
+ No active Ingot & Wafer production.
+ One Polysilicon manufacturer.                                                                                                                                 ENEL
+
+                                                                                Source: ©iStock.com / Kateryna Novokhatnia
+Data and Graph: Dr. Jochen Rentsch, Fraunhofer ISE 2025; last update: 08/2025
+
+14
+©Fraunhofer ISE
+ public
+EU PV Manufacturing Landscape – Perspective
+Announced / Planned GW Fabs
+
+                                                                                                                                                                           Value Chain Step
+                                                                                                                                                                               Poly-Si
+                                                                                                                                                                               Ingot / Wafer
+                                                                                                                                                                               Solar cell
+                                                                                                                                                                               Module
+                                                                                                                                                                           Fab Size
+                                                                                                                                                                                   > 1 GWp
+
+                                                                                                                              mcpv (2027)
+
+
+
+
+                                                                                                                   Holosolis (2027)
+
+
+                                                                                                                   DAS (2025/26)
+
+                                                                                                 SunWafe (2027)                                     FUTURA Sun (2025)   SmartSolar (2025)
+                                                                                                                                        BEE Solar (2025)
+                                                                                                                                      CARBON (2027)
+                                                                                              mcpv (2027)
+                                                                                                                        TRINA (2025)
+Diversification of European PV supply:
+ GWp PV Manufacturing projects in Europe announced.
+ What is planned in other global regions?
+                                                                                Source: ©iStock.com / Kateryna Novokhatnia
+Data and Graph: Dr. Jochen Rentsch, Fraunhofer ISE 2025; last update: 08/2025
+
+15
+©Fraunhofer ISE
+ public
+PV Production in Germany - Status Quo
+PV Module Suppliers – November 2024
+                                                                                                                     Value-added stage
+                                                                                                                         mg-Si
+                                                                                                                         Poly-Si
+ Company                         Location                        Capacity   Website                                      Ingot / Wafer
+                                                                  [MW]                                                   Solar cell
+                                                                                                                         Module
+ Soluxtec                        Bitburg                             1200   https://www.soluxtec.de/
+                                                                                                                                                            Sonnenstromfabrik
+                                                                                                                     Factory size
+
+
+
+
+                                                                                                                                                                                                    Source: ©iStock.com / Kateryna Novokhatnia
+ Sonnenstromfabrik               Wismar                               525   https://www.sonnenstromfabrik.com/de/
+                                                                                                                         > 1 GWp
+ Solarwelt (Heckert)             Langenwetzendorf                     400   https://www.heckertsolar.com/standort-
+                                                                                                                         > 500 MWp                              Oxford PV    Aleo Solar
+                                                                            lwd/
+                                                                                                                         > 100 MWp
+ Heckert Solar                   Chemnitz                             400   https://www.heckertsolar.com                                                MeyerBurger         NexWafe
+                                                                                                                         > 50 MWp                                              Avancis
+ Aleo Solar                      Berlin                               300   https://www.aleo-solar.de/                                                              OPES           Wacker
+                                                                                                                                                                                         Heliatek
+                                                                                                                                                            Antec            Sunmaxx
+ Heliatek                        Dresden                              250   https://www.heliatek.com/de/
+                                                                                                                                             Soluxtec           Solarwelt Heckert
+ OPES                            Zwenkau                              200   https://www.opes-solutions.com/de/
+
+ Avancis                         Torgau                               100   https://www.avancis.de/
+
+ AxSun                           Laupheim                              50   https://www.axsun.de/
+                                                                                                                                                        AxSun                  Wacker
+ Sunmaxx                         Ottendorf-Okrilla                     50   https://sunmaxx-pvt.com/de
+
+ Antec Solar                     Arnstadt                              50   https://www.antec.solar/
+
+
+Data and Graph: Jochen Rentsch, Fraunhofer ISE 2025; last update: 11/2024
+                                                                                                                                     Status 11/24
+16
+©Fraunhofer ISE
+ public
+Global Cumulative PV Installation
+By Region
+
+
+
+
+                           © Fraunhofer ISE
+
+
+
+
+                                                                            Note: Cumulative installed
+                                                                            capacity is considered here as
+Data: IRENA 2025. Graph: PSE Projects GmbH 2025. Date of data: 24.03.2025
+                                                                            ‘aggregate annual additions.’
+
+17
+©Fraunhofer ISE
+public
+Global Cumulative PV Installation
+Cumulative Installed On-Grid and Off-Grid Capacity (2010-2024)
+
+
+
+
+                                                                         Percentages show share of cumulative off-grid PV
+                                                                         installations in relation to total cumulative PV
+                                                                         installations. Approximately 99.6% of today’s installed
+                                                                         PV capacity is connected to the grid.
+
+                                                                         The proportion of off-grid systems compared to the
+                                                                         total cumulative systems has roughly halved over time
+                                                                         from just under 1 % in 2010 to 0.40 % in 2024.
+
+
+
+
+Data: IRENA 2025. Graph: PSE Projects GmbH 2025. Date of data: 04/2025
+
+
+18
+©Fraunhofer ISE
+public
+Global Cumulative PV Installation by Region
+Status 2024
+
+
+                                                                                                                       The total cumulative installations amounted to about
+                                                                                                                       2,156.5 GWp according to IEA-PVPS at the end of year
+                                                                                                                       2024; IRENA reports 1,858.7 GWp.
+
+                                                                                                                       All percentages are related to global installed PV
+                                                                                                                       capacity, including off-grid systems.
+
+
+
+
+                                                                                 © Fraunhofer ISE
+
+
+Source: IEA-PVPS Snapshot of Global Market; Data: IRENA 2025. Graph: PSE Projects GmbH 2025. Date of data: July 2025
+
+
+19
+©Fraunhofer ISE
+public
+Annually Installed PV System Capacity in Germany
+Percentage of Annual Capacity by System Size
+
+
+                               100%
+                                                                                                                                                         The annual distribution of the
+                               90%
+                                                                                                                                                         different system size categories
+                               80%
+
+
+
+
+ Share of capacity additions
+                               70%
+                                                                                                                                                         strongly depends on current:
+                               60%
+                                                                                                                                                          regulations
+                               50%
+                                                                                                                                                          market incentives (like EEG)
+                               40%                                                                                                                        tender procedures
+                               30%                                                                                                                        bankability (trust of investors)
+                               20%
+
+                               10%
+
+                                0%
+                                                                                                                                                             Note:
+                                                                                                                                                    Years
+                                                                                                                                                             “Building” includes roofs, facades and
+                                 Building (x ≤ 10 kWp)                                          Building (10 < x < 20 kWp)                                   plug-in systems.
+                                 Building (20 ≤ x < 30 kWp)                                     Building (30 ≤ x < 100 kWp)
+                                 Building (100 ≤ x < 500 kWp)                                   Building (500 ≤ x ≤ 750 kWp)                                 “Ground-mounted” includes bodies of
+                                 Building (750 < x ≤ 1000 kWp)                                  Building (x > 1000 kWp)                                      water, parking lots and other
+                                 Ground-mounted (x ≤ 750 kWp)                                   Ground-mounted (750 < x ≤ 1000 kWp)                          structures.
+
+20                                       Source until year 2020: Fraunhofer ISE, own calculations based on EEG-master and -flow data (netztransparenz.de, Sept. 2021)
+©Fraunhofer ISE                          Source since 2021: Fraunhofer ISE, own calculations based on MaStR (Date: 05.05.2025) and data validation algorithm
+public
+Number of Total Cumulative PV Installations by System Size in 2024
+Germany
+
+
+Total Installations and Share of                               Total Installations and Share
+ Grid-Connected PV Systems                                      of PV Systems > 500 kWp Building (x ≤ 10 kWp)
+                                                                                                                      Building (10 < x < 20 kWp)
+
+                                                                                                                      Building (20 ≤ x < 30 kWp)
+                        965.582
+                          20%                  312.394                                                    1.074       Building (30 ≤ x < 100 kWp)           At the end of 2024,
+                                                 7%                                                        0%
+                                                                                                                      Building (100 ≤ x < 500 kWp)          about 4.8 million grid-
+                                                   196.873
+                                                     4%                                                    5.725
+                                                                                                                      Building (500 ≤ x ≤ 750 kWp)          connected PV systems
+                                              50.988                                                        0%
+                                                1%
+                                                                            59.143
+                                                                              1%                                      Building (750 < x ≤ 1000 kWp)
+                                                                                                                                                            were installed in
+                                                  74.790
+                                                                                                6.316
+                                                                                                 0%                   Building (x > 1000 kWp)
+                                                                                                                                                            Germany.
+                                                    1%
+           3.232.819                                                                                          1.374
+              67%                                                                                                     Ground-mounted (x ≤ 750 kWp)
+                                                                                                        1.158 0%
+                                                                                                         0%           Ground-mounted (750 < x ≤ 1000 kWp)
+
+                                                                                                                      Ground-mounted (x > 1000 kWp)
+
+
+
+Note:
+In 2024, around 800,000 plug-in systems (up to 800 W feed-in power from so-called balcony PV systems), were registered in
+Germany. Due to underreporting, the actual number is estimated to be around 3 million installed systems. [1]                                                              © Fraunhofer ISE
+
+
+
+21                     Source: Fraunhofer ISE, own calculations based on MaStR (Date: 05.05.2025) and data validation algorithm
+©Fraunhofer ISE        [1] Includes reported plug-in systems and systems assigned to this category according to MaStR (Date: 05.05.2025) and additional estimates
+public                 by Fraunhofer ISE
+Total Cumulative Capacity of PV Installations by System Size in 2024
+Germany
+
+
+      PV Capacity (in MWp) and Share                                       PV Capacity (in MWp) and Share
+     of All Grid-Connected PV Systems                                         of All Systems >500 kWp
+                                                                                                                  Building (x ≤ 10 kWp)
+                               10.870
+                                11%                                                                               Building (10 < x < 20 kWp)
+                  11.032
+                   11%
+                                                                                                                  Building (20 ≤ x < 30 kWp)       At the end of 2024,
+                                                                                                       28.065     Building (30 ≤ x < 100 kWp)      total cumulative PV
+            8.063
+             8%
+                                                                                                        28%
+                                                                                                                  Building (100 ≤ x < 500 kWp)
+                                                                                                                                                   capacity in Germany
+                                             40.038
+                                              40%
+                                                                             985
+                                                                             1%                                   Building (500 ≤ x ≤ 750 kWp)
+                                                                                                                                                   amounted to around
+            12.895
+             13%
+                                                                                       3.479
+                                                                                        4%
+                                                                                                                  Building (750 < x ≤ 1000 kWp)
+                                                                                                                                                   100.1 GWp.
+                                                                                                                  Building (x > 1000 kWp)
+                                                                                   2.115
+                           17.247                                                   2%                            Ground-mounted (x ≤ 750 kWp)
+                                                                                               4.156
+                            17%                                                    1.239        4%                Ground-mounted (750 < x ≤ 1000
+                                                                                    1%
+ © Fraunhofer ISE                                                                                                 kWp)
+                                                                                                                  Ground-mounted (x > 1000 kWp)
+
+ Note:
+ Balcony solar systems (up to 800 W feed-in power) accounted for 720 MWp in 2024. These were mostly within the
+ building PV system class (x ≤ 10 kWp), [1].
+22                         Source: Fraunhofer ISE, own calculations based on MaStR (Date: 05.05.2025) and data validation algorithm
+©Fraunhofer ISE            [1] Includes reported plug-in systems and systems assigned to this category according to MaStR (Date: 05.05.2025)
+public
+                           and additional estimates by Fraunhofer ISE
+Share of Residential Rooftop Systems with and without Battery Storage
+Germany
+
+
+
+     Share at the End of 2023                                   Share in Year of Commissioning                       By the end of 2023, over
+                      2%                                                                                             1.2 million units, or 40
+                                                100%
+                                                 90%
+                                                                                                                     percent of all residential
+                                                                                                                     PV systems have a
+                                            40% 80%
+                        1.2 million              70%                                                                 battery energy storage
+                                                 60%
+                    residential rooftop                                                                              system (BESS).
+                      PV systems are            Share
+                                                 50%
+                                                 40%
+                     combined with a
+                      battery storage
+                                                 30%                                                                 The share of
+                                                 20%
+                    system by the end            10%
+                                                                                                                     commissions for
+     58%
+                          of 2023.                0%                                                                 residential rooftop PV
+                                                               2014 2015 2016 2017 2018 2019 2020 2021 2022 2023     systems with BESS
+                                                                            Year of commissioning                    increased from <20% in
+              PV systems with battery storage             PV system without battery storage           Unknown        2014 to nearly 80% in
+ © Fraunhofer ISE
+                                                                                                                     2023.
+ Note:
+ Residential rooftop PV systems are defined as all systems on buildings with a maximum capacity of 30 kWp according to MaStR-Data.
+
+23
+©Fraunhofer ISE                                         Source: Marktstammdatenregister - MaStR (Date: 01.04.2024)
+public
+   Share of PV Installations with and without Battery Storage, BESS
+   Commercial Rooftop and Utility-Scale Systems in Germany
+
+
+                           Commercial rooftop systems                                                    Utility-scale ground-mounted systems
+        100%                                                                                      100%
+
+         80%                                                                                      80%
+
+         60%                                                                                      60%
+Share                                                                                     Share
+         40%                                                                                      40%
+
+         20%                                                                                      20%
+
+          0%                                                                                       0%
+                     2014 2015 2016 2017 2018 2019 2020 2021 2022 2023                                    2014    2015    2016       2017 2018 2019 2020           2021     2022   2023
+                                     Year of commissioning                                                                            Year of commissioning
+
+          PV systems with battery storage   PV system without battery storage   Unknown            PV systems with battery storage      PV system without battery storage   Unknown
+
+   The share of commissions for PV installations with BESS                                        In 2022 and 2023 there was a significant increase in
+   increased from 5% in 2014 to 20% in 2023 in the com-                                           commissions for PV with BESS, reaching a share of
+   mercial rooftop sector.                                                                        around 7% in the utility-scale PV power plant sector.
+
+        Note: Commercial rooftop PV systems are defined as all systems on buildings           Note: Utility-scale ground-mounted PV systems are defined as all ground-
+        with a capacity greater than 30 kWp according to MaStR-Data.                          mounted systems with a capacity greater than 1 MWp according to MaStR-Data.
+
+   24                                                     Source: Marktstammdatenregister - MaStR (Date: 05.05.2025)
+   ©Fraunhofer ISE
+   public
+                                                                                                                                     © Fraunhofer ISE
+Electrical Capacity of Renewable Energy Sources (RES)
+Germany
+
+
+
+
+Renewable energy sources accounted for 188.4 GW of the total 263.9 GW net installed electricity generation
+capacity in Germany in 2024, resulting in a RE share of 71.4% of total capacity.
+25
+                                      Data:: Energy Charts by Prof. Dr. Bruno Burger. Date of data: 03/2025
+©Fraunhofer ISE
+public
+PV Energy Generated and Resulting GHG Emissions Avoided
+Germany
+
+                                                                 80                                                                                                                      60
+
+
+
+
+                  Electrical Energy Generated by PV in Germany
+                                                                                                                                                                                              Avoided Greenhouse Gas Emissions
+                                                                 70
+                                                                                                                                                                                         50
+                                                                 60
+                                                                                                                                                                                         40
+                                                                 50
+
+
+
+
+                                                                                                                                                                                                   [Mio. t CO2 equivalten]
+                                                                 40                                                                                                                      30
+
+
+
+
+                                      [TWh]
+                                                                 30
+                                                                                                                                                                                         20
+                                                                 20
+                                                                                                                                                                                         10
+                                                                 10
+
+                                                                  0                                                                                                                      0
+                                                                      2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 Year
+                                                                                              Photovoltaics                   Avoided GHG Emissions
+
+
+In 2024, greenhouse gas emissions of about 51 Mio. t CO₂-equivalent were avoided due to 74 TWh PV electricity
+consumed in Germany.
+26
+©Fraunhofer ISE                                                                       Data: BMU, BDEW, BMWi, Federal Environmental Agency (UBA) 04/2024. Graph: PSE Projects GmbH 2025
+public
+Annual PV Production by Technology
+Worldwide (in GWp)
+
+
+                                                        About 700* GWp PV module production in 2024
+
+
+                                                                                                                                            2020
+
+                                                                                                                                                                            Thin film
+                                                                                                                               2015
+ In practice, multi-crystalline silicon technology                                                                                                                          Mono-Si
+   has disappeared from the market.                                                                                                                                            Multi-Si
+                                                                                                                   2010
+ The market share of thin film technology is                                                                                               © Fraunhofer ISE
+
+
+   currently between 2 and 3 per cent.
+
+*Estimated number (ITRPV 16th report by VDMA indicates 703                                                      2005
+GW)
+                                                                                                               2000
+
+27
+                   Data: from 1980 to 2010 estimation from different sources: Strategies Unlimited, Navigant Consulting, EUPD, pvXchange; from 2011: IHS Markit; from 2022; VDMA for 2024: ISE;
+©Fraunhofer ISE    Graph: PSE Projects GmbH 2025
+public
+Technology Overview
+Different crystalline-Silicon Cell Technology Market Shares
+
+
+
+
+                                   © Fraunhofer ISE
+
+
+
+
+Source: based on ITRPV 2013-2025
+
+
+28
+©Fraunhofer ISE
+public
+PV Production by Technology
+Percentage of Global Annual Production
+
+
+                                                                                                                                                                             Production 2024 (GWp)
+                                                                                                                                                                                Thin film*        16
+                                                                                                                                                                                Multi-Si            0
+                                                                                                                                                                                Mono-Si          687
+                                                                                                                                                                                 Total           703 (ITRPV)
+
+
+
+                                                                                                                                                                             *only First Solar and Avancis were
+                                                                                                                                                                              considered in totaling the thin film
+                                                                                                                                                                              technology.
+
+
+
+
+Data: from 2000 to 2009: Navigant; from 2010 to 2021 IHS Markit; from 2022 estimates based on IEA and other sources. Graph: PSE Projects GmbH 2025 . Date of data: 05/2025
+
+
+29
+©Fraunhofer ISE
+public
+2. Solar Cells / Modules / System Efficiency
+
+
+
+ Development in the Laboratories
+ Development in the PV Industry
+ Performance Ratio (PR)
+
+
+
+
+30
+©Fraunhofer ISE
+public
+Development of Laboratory Solar Cell Efficiencies
+
+
+
+
+Data: Solar Cell Efficiency Tables (Versions 1 to 66), Progress in Photovoltaics: Research and Applications, 1993-2025. Graph: Fraunhofer ISE 2025. Date of data: 04/2025
+
+
+31                           Only official lab record efficiencies published in the Solar Cell Efficiency Tables, Progress in Photovoltaics: Research and Applications are included in
+©Fraunhofer ISE
+                             the graph.
+public
+Efficiency Comparison of Technologies
+Best Lab Cells vs. Best Lab Modules
+
+
+
+                                                                                                                                                                      Note: In mass production, the cell-to-
+                                                                                                                                                                      module ratio (CTM) improved in past
+                                                                                                                                                                      years by reducing losses and using
+                                                                                                                                                                      possible gains when integrating solar
+                                                                                                                                                                      cells in modules.
+
+                                                                                                                                                                      Fraunhofer ISE provides the software
+                                                                                                                                                                      suite SmartCalc.CTM for determining
+                                                                                                                                                                      precise Cell-to-Module (CTM) power
+                                                                                                                                                                      loss analyses. Geometrical losses,
+                                                                                                                                                                      optical losses and gains as well as
+                                                                                                                                                                      electrical losses are considered in the
+                                                                                                                                                                      analysis.
+
+
+                                                                                                                                                                      www.cell-to-module.com
+Data: Green et al.: Solar Cell Efficiency Tables (Version 66), Progress in PV: Research and Applications 2025. Graph: PSE Projects GmbH 2025. Date of data: 04/2025
+
+
+32
+©Fraunhofer ISE
+public
+Current Efficiencies and Power of Commercial PV Modules
+Sorted by Technology
+
+
+                                                                                                  Total weighted average efficiency of crystalline
+                                                                                                   Silicon (c-Si) wafer-based modules is 22.7% in
+                                                                                                   Q4-2024 (21.6% in Q4-2023); weighting factor is
+                                                                                                   total shipments in year 2024. Lowest module
+                                                                                                   efficiency in this group is 18.9% (17.4% one year
+                                                                                                   before) and highest value is 24.8% (23.3% in 2023).
+                                                                                                  Top 10 manufacturers represent about 85% of total
+                                                                                                   shipment volume in 2024 and origin mainly in Asia.
+                                                                                                  n-type TopCon and Heterojunction replaces p-type
+                                                                                                   PERC technology.
+
+                                                                                                   Note: The selection is based on modules from the top 10 manufacturers in 2024, with module
+                                                                                                   data sheets available worldwide at the end of September 2025. For CdTe, only data from First
+                                                                                                   Solar and for CIGS technology, only modules from Avancis have been considered due to limited
+                                                                                                   number of suppliers. Some products for Building-Integrated PV (BIPV) have not been considered.
+Data Source: company product data sheets; Graph: PSE Projects GmbH 2025; Date of data: 09/2025
+
+
+33
+©Fraunhofer ISE
+public
+3. Life Cycle Assessment (LCA) and Sustainability Aspects
+
+
+
+ Silicon usage, wafer thickness and kerf loss for c-Si
+ Energy Payback Time EPBT: Development and comparison
+
+
+
+
+34
+©Fraunhofer ISE
+public
+c-Si Solar Cell Development
+Wafer Thickness [µm] & Silicon Usage [g/Wp]
+
+
+                                                                                                                                                                         Polysilicon consumption in solar cell
+                                                                                                                                                                         production (in grams per watt-peak)
+                                                                                                                                                                         has decreased by almost 10% year-
+                                                                                                                                                                         on-year since 2004 due to:
+
+                                                                                                                                                                          reductions in wafer thickness
+                                                                                                                                                                          kerf loss, and
+                                                                                                                                                                          by process optimizations such as
+                                                                                                                                                                           recycling silicon from kerf loss
+                                                                                                                                                                          Progress in cell efficiency also has
+                                                                                                                                                                           impacted the specific silicon usage.
+
+
+
+
+  © Fraunhofer ISE
+
+Data: until 2012: EU PV Technology Platform Strategic Research Agenda, from 2012: ITRPV; ; from 2016 ISE without recycling of Si; from 2017 ongoing with recycling of Si. Graph: PSE Projects
+GmbH 2025
+
+
+
+©Fraunhofer ISE
+public
+Energy Payback Time: Historical Trend
+Harmonized Study Data for Monocrystalline Silicon Rooftop PV Systems
+
+
+Learning Rate:
+Each time the cumulative production
+doubled, the EPBT went down by 15.7%
+over the last 24 years.
+
+  Harmonization methodology
+  based on Koppelaar (2016) harmonized results and harmonization parameters
+
+  1) Performance Ratio (PR)
+   based on average annual PV yield during lifetime
+   PV system lifetime (years)                                25
+   Degradation rate (average p.a.)                       0.70%
+   PR (initial)                                            80%
+   PR (incl. average degradation during lifetime)        73.6%
+  2) Grid efficiency
+   for converting PV yield in primary energy equivalents
+   Grid efficiency                                         35%                                                                                       © Fraunhofer ISE
+
+  EPBT of Leccisi (2016), Louwen (2014), Friedrich (2020), and Subasi (2022 & 2024)
+  were harmonized with 1) PR (incl. average degradation) and 2) grid efficiency to results of
+  Koppelaar (2016)*
+
+
+
+
+Data and Graph: Fraunhofer ISE 2025; adapted from Subasi et. al. (2025) - PV Module Energy Payback                                      Irradiation: 1700 kWh/m²/a at an optimized tilt angle; Years: Estimated average year of original data.
+Time Analysis for Silicon Solar Cell Technologies, EU PVSEC 2025, Bilbao, Spain                                                                    Learning Rate taking into account efficiency improvements.
+36                      *   Koppelaar (2016) - Solar-PV energy payback and net energy: Meta-assessment of study quality, reproducibility, and results harmonization, Renewable and Sustainable Energy Reviews
+                            Leccidi et al. (2016) - The Energy and Environmental Performance of Ground-Mounted Photovoltaic Systems—A Timely Update, Energies
+©Fraunhofer ISE             Louwen et al. (2014) - Life-cycle greenhouse gas emissions and energy payback time of current and prospective silicon heterojunction solar cell designs, Progress in Photovoltaics
+public                      Friedrich et al. (2020) - Global Warming Potential and Energy Payback Time Analysis of Photovoltaic Electricity by Passivated Emitter and Rear Cell (PERC) Solar Modules, submitted JPV
+                            Subasi et. al. (2025) - PV Module Energy Payback Time Analysis for Silicon Solar Cell Technologies, EU PVSEC 2025, Bilbao, Spain
+Energy Pay-Back Time of Silicon PV Rooftop Systems
+Geographical Comparison
+
+
+ Rooftop PV system using                                                                                                                           Irradiation (GTI, kWh/m²/a) EPBT***
+                                                                                                                                                               <600
+  mono-crystalline silicon cells*
+                                                                                                                                                                800
+  produced in China
+                                                                                                                                                                              2.0 years
+                                                                                                                                                                1000
+
+ EPBT is dependent on                                                                                                                                          1200
+
+  irradiation, but also on other                                                                                                                                1400
+  factors like grid efficiency**.                                                                                                                               1600
+                                                                                                                                                                              1.0 year
+                                                                                                                                                                1800
+ In addition to solar radiation,
+                                                                                                                                                                2000
+  grid efficiency also has an
+                                                                                                                                                               >2200
+  influence on EPBT. A higher
+  grid efficiency increases the
+  EPBT.
+Data source: Fraunhofer ISE. Image: JRC European Commission. Graph: PSE Projects GmbH 2020 (Modified scale with updated data from Fraunhofer ISE)
+
+
+37                            *Cz PERC cells module with 19.9% efficiency
+©Fraunhofer ISE               **relation between primary energy to produced electricity in the grid used for manufacturing of the PV system
+public
+                              ***Calculated with an average Central Europe grid efficiency of 36%.
+World Map EPBT of Silicon PV Rooftop Systems
+Comparison of EPBT China
+
+
+Influencing Factors and Interpretation                                        EPBT
+ EPBT: the lower, the better
+ Irradiation: the higher, the better
+ Grid efficiency: the higher, the better
+     in countries where upstream production is
+        located (better energy mix to generate
+        electrical power, less losses in the electrical
+        transmission network), and
+     at downstream (where PV is installed) a low
+        grid efficiency reduces the EPBT.
+                                                           © Fraunhofer ISE
+
+                                                           EPBT = Energy Pay Back Time in years: Calculated for a PV system with
+Data source: Fraunhofer ISE. Calculations for year 2021.
+                                                           Cz PERC 60-cell modules with 19.9 % efficiency, produced in China
+
+38
+©Fraunhofer ISE
+public
+Energy Payback Time of Silicon PV Rooftop Systems
+Comparison of EPBT China / EU, Local Irradiation and Grid Efficiency in 2021
+
+
+
+                    © Fraunhofer ISE                                           © Fraunhofer ISE
+
+
+
+
+ EPBT for PV systems produced in Europe is shorter than for those produced in China because of better grid efficiency in Europe.
+Data source: Fraunhofer ISE. Calculations for year 2021 made at 22-July 2022
+
+
+39
+©Fraunhofer ISE
+public
+PV Module
+Materials and Components
+
+
+                                              Glass                                          Al Frame                                        Interconnector
+                                              (67.5%)                                        AlMg3 (12.7%)                                   Cu (1.3%)               Please note: Highly transparent
+                                                                                                                                                                     glass can also be produced
+                                              Sb                                                                                             Sn (0.09%) / Pb (0.09%) without antimony (Sb), and
+                                                                                                                                                                        some European suppliers are
+                                                                                                                                                                        doing so. It is technically
+                                                                                                                                                                        feasible to recycle and reuse
+                                                                         11.6 kg/m²                                                       Solar cells                   almost 100% of the materials
+                                                                                                                                                                        used in PV modules. The
+                                                                                                                                          Si (2.7%)                     European WEEE Directive
+                                Ethylene-vinyl acetate                                                                                    Ag/PbO (0.04%)                stipulates that at least 80% of
+                                (6.7%)                                                                                                    Ag/Al/PbO (0.01%)             the module mass of old
+                                                                                                                                          Al (0.07%)                    modules must be processed and
+                                                                                                                                                                        recycled for reuse. For economic
+                                                                                                                                                                        reasons, however, only the
+                                                                                                                                                                        glass, frame and junction box (J-
+                                                                                                                                                                        Box) are recycled today.
+                                                                                                                       © Fraunhofer ISE
+                                                                                                                                                                        Color legend:
+                                                                                                                                                                        Available/harmless materials
+                                                                                                                                             J-Box                      Rare/valuable materials
+                                                                                                                                             GRP, Polyamide (1.6%)      Hazardous substances
+                                                                                                                                             Silicones (1.2%)                  Recycling takes place
+                                                      Backsheet                                                                              Diodes/Cables (0.02%)
+                                                      PVF/Glue/PET/Glue/PVF (3.7%)                                                                                             Downcycling takes
+                                                      F                                                                                                                        place
+Source: Fraunhofer ISE © 2024
+
+
+40                         Mass fraction of substance in relation to total module mass of 11.6 kg/m² (100%) given in brackets; Date of data: 2021
+©Fraunhofer ISE
+public
+PV Module
+Measures to Improve the Life Cycle
+
+
+ What to reduce or avoid?                            What solutions are available?
+ Material consumption (general)                      Higher efficiency PV modules; longer lifetime; better recyclability;
+                                                     bio-based polymers
+ Silicon                                             Thinner wafer
+ Silver (Ag)                                         Multi-busbars with more precise application of the silver paste; busbar-less cells;
+                                                     Replacing silver (Ag) by copper (Cu) or aluminium (Al)
+ Antimony (Sb) in glass                              Sb-free solar glass
+ Fluorinated backsheets                              Double-glass modules; alternative backsheets without fluorine compounds
+ Glass consumption                                   Thinner glass, reuse or recycling of solar glass instead of downcycling
+ Lead (heavy metal issues)                           Lead-free solders or alternative contacting; alternative interconnection using
+                                                     electrically conductive adhesive (ECA)
+ Aluminium frame                                     Frameless modules; steel or plastic frame
+ Module failure due to faulty bypass diode           Install replaceable bypass diode
+
+41                                     Data source: Fraunhofer ISE
+
+©Fraunhofer ISE
+public
+4. Price Development
+
+
+
+ Electricity costs
+ Market incentives in Germany
+ Costs for PV systems
+ Price Learning Curve
+
+
+
+
+42
+©Fraunhofer ISE
+public
+Electricity Prices, PV Feed-In Tariffs (FIT) and Bidding Scheme in Germany
+With Photovoltaic Rooftop Systems Partial Feed-In Tariff
+
+
+
+
+                     © Fraunhofer ISE
+
+
+
+
+Data: BNA; energy-charts.info; Design: B. Burger - Fraunhofer ISE. Graph: PSE Projects GmbH 2025; Date of data: 05/2025
+
+
+43
+©Fraunhofer ISE
+public
+PV Market Development and Incentive Schemes in Germany
+
+
+
+                                                                                      Market Incentive               Start    End
+                                                                                      1‘000 Roofs Program            1990     1995
+                                                                                      Cost-covering remuneration     1993     1999
+                                                                                      100‘000 Roofs-Program          1999     2003
+                                                                                      EEG                            2000     ongoing
+                                                                                      PV Tendering scheme            2015     ongoing
+
+                                                                                      The EEG 2023 law relies on a massive expansion of
+                                                                                      renewable energies with total installed PV capacity
+                                                                                      targets of 215 GW in 2030 and 400 GW in 2040.
+                                                                                      In 2024, new PV systems totaling around 16 GW
+                                                                                      capacity have been connected to the grid. From
+                                                                                      2026 on, the expansion target is 22 GW of new
+                                                                                      installations on an annual basis.
+Data: BNA. Graph: B. Burger, Fraunhofer ISE Energy-Charts. Date of Data: 09.04.2025
+
+
+44
+©Fraunhofer ISE
+public
+PV Tender Scheme in Germany for Free-Standing Systems
+Average, quantity weighted award value
+
+
+
+                                                                    The PV tender scheme for large
+                                                                     ground-mounted systems started in
+                                                                     April 2015. The total capacity of
+                                                                     this scheme amounted to 21.8 GW
+                                                                     in December 2024 with 4.76 ct€ /
+                                                                     kWh as latest average quantity
+                                                                     weighted award price.
+
+                                                                    PV-rooftop and special tenders are
+                                                                     not displayed in the graph.
+
+
+
+
+Data: BNA. Graph: PSE Projects GmbH 2025 – Date of data: 08/2025
+
+
+45
+©Fraunhofer ISE
+public
+PV-Tender in Germany for Large Rooftop-Systems
+Average, quantity weighted award value
+
+
+
+                                                                    PV tender scheme for large rooftop
+                                                                     systems (>750 kW) started in June 2021
+                                                                     and total capacity of this scheme
+                                                                     accumulates to 2.2 GW by October
+                                                                     2024. The average quantity weighted
+                                                                     award price for year 2024 was 8.97 ct€
+                                                                     / kWh.
+
+                                                                    Lowest PV tender round was in June
+                                                                     2021 with 6.88 ct€ / kWh as average
+                                                                     quantity weighted award price.
+
+
+Data: BNA. Graph: PSE Projects GmbH 2025 – Date of data: 08/2025
+
+
+46
+©Fraunhofer ISE
+public
+Global Weighted Average Levelized Costs of Electricity for Large PV Systems
+(with 5th percentile and 95th percentile)
+
+
+                                                                                           The global weighted average LCoE for 2024 for large PV systems is
+                                                                                            0.039 €/kWh (= 39 €/MWh).
+
+                                                                                           The 5th percentile is a value associated with the location within the
+                                                                                            data where 5% of the data is below that value. For 2024, the 5th
+                                                                                            percentile is 0.029 €/kWh (= 29 €/MWh).
+
+                                                                                           The 95th percentile is the value where 5% of the data has a higher
+                                                                                            value. For 2024 the 95th percentile is 0.112 €/kWh (= 112 €/MWh).
+
+                                                                                           Over the past 14 years, electricity generation costs of utility-scale PV
+                                                                                            systems have fallen by an average of around 14% compared to the
+                                                                                            previous year.
+Data: IRENA (2025), Renewable Power Generation Costs in 2024, International Renewable Energy Agency, Abu Dhabi. . Date of data: July 2025
+Currency converted from USD to EUR
+
+47
+©Fraunhofer ISE
+public
+Global Weighted Average Total Installed Costs For Large PV Systems
+(with 5th percentile and 95th percentile)
+
+
+                                                                                      The global weighted average total cost for large PV systems was
+                                                                                       639 €/kWp in 2024.
+
+                                                                                      The 5th percentile is a value associated with the location within the data
+                                                                                       where 5% of the data is below this value. For 2024 the 5th percentile is
+                                                                                       452 €/kWp.
+
+                                                                                      The 95th percentile is the value where 5% of the data has a higher value.
+                                                                                       For 2024, the 95th percentile is 1489 €/kWp.
+
+                                                                                      Over the past 14 years, total installed cost for utility-scale PV systems have
+                                                                                       fallen by an average of around 12% compared to the previous year.
+
+
+Data: IRENA (2025), Renewable Power Generation Costs in 2024, International Renewable Energy Agency, Abu Dhabi. . Date of data: July 2025
+Currency converted from USD to EUR
+
+48
+©Fraunhofer ISE
+public
+Breakdown of Utility-Scale PV Total Installed Costs
+By Country in 2024
+
+
+                                                                                                                                                                                   Breakdown of Cost
+                                                                                                                                                                                      Components
+                                                                                                                                                                              (average of available country data):
+
+
+
+
+Data: IRENA (2025), Renewable Power Generation Costs in 2024, International Renewable Energy Agency, Abu Dhabi. Currency converted from USD to EUR. Date of data: July 2025
+
+
+49
+©Fraunhofer ISE
+public
+Breakdown of Total Installation Costs of Utility-Scale PV
+Germany 2019 to 2024
+
+
+
+
+                                                                                                                                                                          Supply shortages due to the
+                                                                                                                                                                          coronavirus crisis led to price
+                                                                                                                                                                          turbulence in 2022. Prices are
+                                                                                                                                                                          returning to pre-crisis levels.
+
+
+
+
+Data: IRENA (2025), Renewable Power Generation Costs in 2024, International Renewable Energy Agency, Abu Dhabi. Currency converted from USD to EUR. Date of data: July 2025
+
+
+50
+©Fraunhofer ISE
+public
+Price Experience Curve
+Includes all Commercially Available PV Technologies
+
+
+
+                                                                                                                                                                  Learning Rate:
+                                                                                                                                                                  Each time the cumulative PV
+                                                                                                                                                                  module production doubled, the
+                                                                                                                                                                  module price dropped about
+                                                                                                                                                                  25.7% over the past
+                                                                                                                                                                  44 years.
+
+
+
+
+Data: from 1980 to 2010 estimation from different sources: Strategies Unlimited, Navigant Consulting, EUPD, pvXchange; from 2011: IHS Markit from 2022; VDMA for 2024: ISE; Graph: PSE Projects GmbH 2025.
+
+
+51
+©Fraunhofer ISE
+public
+Price Experience Curve
+Includes all Commercially Available PV Technologies
+
+
+
+                                                                                                                                                                  Learning Rate:
+                                                                                                                                                                  Each time the cumulative PV
+                                                                                                                                                                  module production doubled, the
+                                                                                                                                                                  module price dropped about
+                                                                                                                                                                  25.7% over the past
+                                                                                                                                                                  44 years.
+
+
+
+
+Data: from 1980 to 2010 estimation from different sources: Strategies Unlimited, Navigant Consulting, EUPD, pvXchange; from 2011: IHS Markit from 2022; VDMA for 2024: ISE; Graph: PSE Projects GmbH 2025
+
+
+52
+©Fraunhofer ISE
+public
+Further Reading
+Selected studies and analyses
+
+
+Fraunhofer-ISE Energy Charts
+
+Study: Levelized Cost of Electricity - Renewable Energy Technologies
+
+Recent facts about photovoltaics in Germany
+
+Power Generation from Renewable Energy in Germany
+
+What will the Energy Transformation Cost? Pathways for Transforming the German Energy System by 2050
+
+Sustainable PV Manufacturing in Europe – An Initiative for a 10 GW Green Fab
+
+Meta Study: Future Crosssectoral Decarbonization Target Systems in Comparison to Current Status of Technologies
+
+
+
+53
+©Fraunhofer ISE
+public
+Abbreviations
+
+
+  Abbreviation     Explanation                                                 Abbreviation     Explanation
+           AC      Alternating Current                                             HCPV         High Concentrator Photovoltaic
+         Al-BSF    Aluminum Back Surface Field                                 HJT (also HIT)   Heterojunction with Intrinsic Thin-Layer
+         BESS      Battery Energy Storage Systems                                   IBC         Interdigitated Back Contact (solar cells)
+          BIPV     Building Integrated PV                                          LCOE         Levelized Cost of Energy
+          BOS      Balance of System                                               LCPV         Low Concentrator Photovoltaic
+          CdTe     Cadmium-Telluride                                                MJ          Multi Junction
+         CI(G)S    Copper Indium (Gallium)Diselenide                                MPP         Maximum Power Point
+          CPV      Concentrating Photovoltaic                                     n-type        Negatively doped wafer (with phosphorous)
+           c-SI    Crystalline Silicon                                             PERX         Passivated emitter and rear cell
+          CTM      Cell-to-Module                                                    PR         Performance Ratio
+            Cz     Czochralski Method                                             p-type        Positively doped wafer (with boron or gallium)
+           DC      Direct current                                                    PV         Photovoltaic
+                   Renewable Energy Source Act (Erneuerbare-Energien-Gesetz,
+          EEG                                                                       RE          Renewable Energies
+                  EEG)
+          EI       The Energy Institute                                             ROI         Return on Investment
+         EPBT      Energy Payback Time                                               SI         Silicon
+         EROI      Energy Return of Invest                                          SIC         Silicon carbide
+          FZ       Floating Zone                                                  TOPCon        Tunnel Oxide Passivated Contact
+         GaAs      Gallium Arsenide                                                 VAT         Value Added Tax
+         GaN       Gallium nitride
+54
+©Fraunhofer ISE
+public
+Acknowledgements
+
+
+
+This work has been carried out with contributions from:    The information provided in this Photovoltaics Report is
+                                                           very concise by its nature . Its principal purpose is to
+                        Name              Institution      provide a rough overview about the current solar PV
+                    Andreas Bett              ISE          market, the technologies and the environmental
+                    Bruno Burger              ISE          impact.
+                   Christoph Kost             ISE
+                   Holger Neuhaus             ISE
+                                                           However, there are many more aspects. These and
+                   Sebastian Nold             ISE
+                    Simon Philipps            ISE
+                                                           further details can be provided by Fraunhofer ISE upon
+                      Ralf Preu               ISE          request. Please contact us if you are interested in
+                   Christian Reichel          ISE          receiving a tailor-made offer.
+                   Jochen Rentsch             ISE
+                  Gerhard Stryi-Hipp          ISE          simon.philipps@ise.fraunhofer.de
+                    Tobias Reuter             ISE
+                                                           warmuth@pse-projects.de
+                     Harry Wirth              ISE
+                  Werner Warmuth       PSE Projects GmbH
+
+55
+©Fraunhofer ISE
+public
+Thank You
+for Your Interest
+—
+Contact
+simon.philipps@ise.fraunhofer.de
+warmuth@pse-projects.de
+

@@ -1,0 +1,512 @@
+Reliability Testing Beyond
+Qualification as a Key
+Component in Photovoltaic’s
+Progress Toward Grid Parity
+Preprint
+John H. Wohlgemuth and Sarah Kurtz
+To be presented at the IEEE International Reliability Physics
+Symposium
+Monterey, California
+April 10-14, 2011
+
+
+
+
+NREL is a national laboratory of the U.S. Department of Energy, Office of Energy
+Efficiency & Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.
+
+Conference Paper
+NREL/CP-5200-50599
+February 2011
+
+Contract No. DE-AC36-08GO28308
+                                                       NOTICE
+
+The submitted manuscript has been offered by an employee of the Alliance for Sustainable Energy, LLC
+(Alliance), a contractor of the US Government under Contract No. DE-AC36-08GO28308. Accordingly, the US
+Government and Alliance retain a nonexclusive royalty-free license to publish or reproduce the published form of
+this contribution, or allow others to do so, for US Government purposes.
+This report was prepared as an account of work sponsored by an agency of the United States government.
+Neither the United States government nor any agency thereof, nor any of their employees, makes any warranty,
+express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of
+any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately
+owned rights. Reference herein to any specific commercial product, process, or service by trade name,
+trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation,
+or favoring by the United States government or any agency thereof. The views and opinions of authors
+expressed herein do not necessarily state or reflect those of the United States government or any agency thereof.
+
+
+                         Available electronically at http://www.osti.gov/bridge
+
+                         Available for a processing fee to U.S. Department of Energy
+                         and its contractors, in paper, from:
+
+                                 U.S. Department of Energy
+                                 Office of Scientific and Technical Information
+
+                                 P.O. Box 62
+                                 Oak Ridge, TN 37831-0062
+                                 phone: 865.576.8401
+                                 fax: 865.576.5728
+                                 email: mailto:reports@adonis.osti.gov
+
+                         Available for sale to the public, in paper, from:
+
+                                 U.S. Department of Commerce
+                                 National Technical Information Service
+                                 5285 Port Royal Road
+                                 Springfield, VA 22161
+                                 phone: 800.553.6847
+                                 fax: 703.605.6900
+                                 email: orders@ntis.fedworld.gov
+                                 online ordering: http://www.ntis.gov/help/ordermethods.aspx
+
+
+
+      Cover Photos: (left to right) PIX 16416, PIX 17423, PIX 16560, PIX 17613, PIX 17436, PIX 17721
+
+      Printed on paper containing at least 50% wastepaper, including 10% post consumer waste.
+   Reliability Testing Beyond Qualification as a Key Component in Photovoltaic’s Progress
+                                     Toward Grid Parity
+
+                                                 John H. Wohlgemuth and Sarah Kurtz
+                                                 National Renewable Energy Laboratory
+                                                           Golden, Colorado
+                                         phone: (1)-(303)-384-7982, john.wohlgemuth@nrel.gov
+
+
+Abstract— This paper discusses why it is necessary for new lower              2010. SEIA and a Lawrence Berkeley 2010 study of the PV
+cost PV modules to be tested using a reliability test sequence that           industry gave similar estimates for PV module price reductions
+goes beyond the Qualification test sequence now utilized for                  over this time period. So progress is being made in reducing the
+modules. Today most PV modules are warranted for 25 years,                    cost of PV modules.
+but the Qualification Test Sequence does not test for 25-year life.
+There is no accepted test protocol to validate a 25-year lifetime.                Whether you look at the SolarBuzz module retail selling
+This paper recommends the use of long term accelerated testing                price of $3.50/Watt peak or at the SEIA average module selling
+to compare now designs directly with older designs that have                  price for large systems of $2.21/Wp, the cost of PV generated
+achieved long lifetimes in outdoor exposure. If the new designs do            electricity is still higher than the utility costs in most parts of
+as well or better than the older ones, then it is likely that they will       the US and the world. Using the System Advisor Model (SAM)
+survive an equivalent length of time in the field.                            [5] with a retail module cost of $3.50/Wp from SolarBuzz, an
+                                                                              overall systems cost of $7.00/Wp and a module lifetime of 30
+   Keywords-Photovoltaic module reliability, Reliability Testing,             years installed in Phoenix, AZ yields a Levelized Cost of
+Qualification Testing, Levelized Cost of Electricity (LCOE), Grid             Electricity (LCOE) of $0.17/kWh with the 30% tax credit and
+Parity                                                                        $0.24/kWh without the tax credit. Neither of these costs can
+                                                                              match the local utilities’ residential electric rate. EIA reports
+                        I.     INTRODUCTION                                   that average retail electricity prices have been running about
+    The photovoltaics market has been growing rapidly. Fig. 1                 $0.12/kWh. [6] The rapid growth in PV shipments is being
+shows the annual growth rate in worldwide shipments of PV                     driven by incentive programs, particularly the feed-in-tariff
+modules from 2004 to 2009 as reported by Navigant [1] and                     programs in Germany and other European countries.
+EPIA [2]. Over this timeframe (which includes the financial                       Lower module prices and lower system costs are required in
+crisis of 2008) worldwide PV module shipments grew by an                      order to reach grid parity and therefore stimulate dramatic
+average of 50% per year. In late 2010 both SolarBuzz [3] and                  growth in PV shipments without the need for incentive
+Renewable Energy World [4] are predicting that the total                      programs. Lower module manufacturing costs and selling
+shipments for 2010 will be approximately 16 GW, which                         prices must be achieved without adversely affecting the PV
+represents more than 100% growth over the 2009 volume.                        module reliability both in terms of overall module lifetime and
+                                                                              in terms of continual performance degradation. Increases in the
+                                                                              annual degradation rate will have a negative impact on the
+                                                                              LCOE while an increase in premature module failures can
+                                                                              potentially damage PV’s reputation as a reliability electrical
+                                                                              source.
+                                                                                  So how can PV module manufacturers determine that the
+                                                                              changes they make in design, materials and/or processes do not
+                                                                              adversely affect the module reliability? They cannot wait 20 or
+                                                                              25 years to see what happens to the lower cost modules when
+                                                                              they are deployed in the field. So they must utilize accelerated
+                                                                              reliability tests to evaluate the potential for these lower cost
+                                                                              modules to survive without increased degradation of output
+                                                                              power. However there are no accelerated stress tests that we
+                                                                              know of today that can show whether a module type will
+      Figure 1: Annual Worldwide Shipments of PV Modules                      survive 25 years anywhere it is deployed.
+    Since the end of the poly-Si shortage in 2007-2008, the                       This paper proposes a process that utilizes the past
+selling price of PV modules has decreased appreciably.                        experience of a module type using both field and accelerated
+SolarBuzz [3] estimated that the retail price of PV modules for               stress test results as a baseline for testing of a new module type.
+residential applications dropped by 27% from late 2007 to late                The new module type can then be evaluated against the older
+
+
+
+                                                                          1
+design using accelerated stress tests that go beyond those                  [10, 13]. Table 3 provides a brief summary of the stress tests
+utilized in the Qualification Test Sequence. Comparison of the              developed to address the identified failure modes. [14] The list
+performance between the old and the new module types can                    in Table 3 was utilized to establish the initial qualification
+give an excellent indication of how the new design is likely to             tests that grew into IEC 61215. [14]
+perform outdoors compared with the previous design.
+                                                                                                        TABLE 3
+                   II.      QUALIFICATION TESTING                                             Accelerated Stress Tests for PV
+    Qualification tests are a set of well-defined accelerated                    Accelerated Stress               Failure Mode
+stress tests developed out of a reliability testing program.                Thermal Cycle               Broken Interconnect
+                                                                                                        Broken Cell
+Qualification tests incorporate strict pass/fail criteria. Such tests
+                                                                                                        Solder Bond Failures
+are used by customers to qualify modules for purchase and by                                            Junction Box Adhesion
+manufacturers as a means of demonstrating a degree of product                                           Module Connection Open Circuits
+reliability. Good examples of these tests are IEC 61215 [7] and                                         Open Circuits leading to Arcing
+IEC 61646 [8] for performance qualification and IEC 61730 –                 Damp Heat Exposure          Corrosion
+1 and 2 [9] for safety qualification. These test sequences were                                         Delamination of Encapsulant
+                                                                                                        Encapsulant loss of adhesion & elasticity
+developed based on the identification of field failure                                                  Junction Box Adhesion
+mechanisms.                                                                                             Electrochemical corrosion of TCO
+                                                                                                        Inadequate edge deletion
+A.     Failure Modes                                                        Humidity Freeze             Delamination of Encapsulant
+                                                                                                        Junction Box Adhesion
+     Identification of field failure modes has been ongoing                                             Inadequate edge deletion
+since the JPL Block Procurement program in the 1970’s and                   UV Test                     Delamination of Encapsulant
+1980’s. [10] A list of major failure mechanisms for crystalline                                         Encapsulant loss of adhesion & elasticity
+                                                                                                        Encapsulant Discoloration
+silicon modules is given in Table 1. [11, 12]                                                           Ground Fault due to backsheet degradation
+                                                                            Mechanical Load             Broken Interconnect
+                          TABLE 1                                                                       Broken Cell
+     Common Failure Modes for Crystalline Silicon Modules                                               Solder Bond Failures
+                                                                                                        Broken Glass
+                     Failure Modes                                                                      Structural Failures
+                 Broken Interconnects                                       Dry and Wet Insulation      Delamination of Encapsulant
+                      Broken Cells                                          Resistance                  Ground Faults
+                                                                                                        Electrochemical corrosion of TCO
+                       Corrosion                                                                        Inadequate edge deletion
+             Delamination of Encapsulant                                    Hot Spot Test               Hot Spots
+        Encapsulant loss of Elasticity or Adhesion                                                      Shunts at the scribe lines
+              Encapsulant Discoloration                                     Hail Test                   Broken Cells
+                                                                                                        Broken Glass
+                  Solder Bond Failure                                                                   Bypass Diode Failures
+                                                                            Bypass Diode Thermal Test
+                     Broken Glass
+                       Hot Spots
+                     Ground Faults                                          B.     IEC 61215 and IEC 61646 Qualification Tests
+                 Junction Box Failures                                          IEC 61215 and IEC 61646 include the following stress
+                  Connection Failures                                       tests:
+                  Structural Failures                                            • 200 Thermal cycles from -40°C to +85°C with peak
+                 Bypass Diode Failures                                                power current flow above room temperature.
+            Open circuits leading to arcing                                      • Damp heat exposure at 85°C and 85% relative
+                                                                                      humidity for 1000 hours.
+Several additional failure modes have been identified for thin                   • A combined leg of UV Preconditioning (15 kwhm-2),
+film PV modules. These are given in Table 2.                                          50 thermal cycles from -40°C to +85°C, and 10
+                                                                                      humidity freeze cycles from +85°C, 85 % RH to -
+                          TABLE 2                                                     40°C.
+          Common Failure Modes for Thin Film Modules                             • Wet leakage current test at the rated system voltage.
+          Technology                 Failure Mode                                • Mechanical load test of 3 cycles of 2,400 Pa uniform
+Glass Superstrate Designs           Electrochemical corrosion of TCO                  load, applied for 1 hour to front and back surfaces in
+Integrated Modules                  Shunts at the scribe lines
+Any thin film                       Loss of Interlayer Adhesion                       turn.
+Thin Films on Glass                 Inadequate edge deletion                     • Hail test with 25 mm diameter ice ball at 23 m⋅ s -1,
+                                                                                      directed at 11 impact locations.
+    The next important step was the identification of                            • A bypass diode thermal test, with one hour at short
+accelerated stress tests that would duplicate these failure                           circuit current and 75 °C and one hour at 1.25 times
+modes in a reasonable short amount of time. The initial steps                         short circuit current and 75 °C.
+in this work were undertaken by JPL in the Block Program
+
+
+                                                                        2
+         •      Hot spot test with 3 lowest shunt resistance cells                    •     Use material or coupon tests in situations where it
+                subjected to 1 hour exposure to 1000 W⋅m–2                                  would be too expensive to test full modules. For
+                irradiance in worst-case hot-spot condition and                             example long term UV testing at high temperature to
+                highest shunt cell subjected to 5 hours exposure to                         evaluate material discoloration and degradation is
+                1000 W⋅m-2 irradiance in worst-case hot-spot                                better performed on small coupons of the same cross-
+                condition                                                                   sectional construction as the module.
+
+     While Qualification Tests like IEC 61215 and IEC 61646                      B.    Measurement Tools
+are important and valuable, they have limitations because the                        In the Qualification Tests pass/fail measurements include
+stress levels are by design limited and the goal is to have most                 peak power at Standard Test Conditions (STC) and the dry and
+commercially available products capable of passing the test                      wet leakage currents. There are additional measurement tools
+sequence. So passing the qualification test means the product                    that can be utilized to observe problems before they impact the
+has met a specific set of requirements but doesn’t say anything                  power or leakage currents. The following measurement tools
+about which product is better for long term performance. Most                    can be valuable tools to use for identifying failure modes
+                                                                                 before they are serious enough to cause measureable power
+of today’s commercial modules pass the qualification
+                                                                                 loss.
+sequence with minimum change, meaning that they suffer
+almost no degradation in power output from the test sequence.                         •     Visual inspection can be used to observe discoloration
+This means that the Qualification test itself is not a good tool                            of encapsulant, corrosion of metals and delaminations.
+for determining whether a change in materials, processing or                          •     Infrared cameras show heat dissipation, so can be used
+design is likely to reduce the module’s lifetime or increase the                            to determine areas where collection of current has been
+annual degradation rate. However, the Qualification Test                                    disrupted (higher series resistance) or where current is
+sequence can be utilized as a starting point for developing a                               flowing where it shouldn’t (shunting). An IR camera
+methodology to evaluate the impact of new lower cost designs,                               can also be used to show whether the current path
+materials and processes on the modules long term reliability.                               through a string of cells is intact and whether the
+                                                                                            module bypass diodes are carrying current during
+                                                                                            normal operation and during shaded operation.
+             III.   RELIABILITY TESTING BEYOND QUALIFICATION                          •     Electroluminescence looks at the Near IR light
+                                                                                            generated by carriers transitioning across the cell p-n
+   The testing required for evaluation of the impact of changes                             junction. So electroluminescence can be utilized to see
+in module construction on the reliability, lifetime and                                     discontinuities in the junction such as cracks in the cell
+degradation rate must address the observed failure modes and                                or breaks in the junction itself.
+must cause degradation of the product.                                                •     Testing for adhesion of the package layers, the junction
+                                                                                            box and the frame.
+                                                                                      •     Dark I-V curves that can identify small changes in
+A.    Establishing Reliability Tests                                                        series and shunt resistance before they are large enough
+    Since the accelerated stress tests from the Qualification                               to change the light I-V curve.
+Tests are designed to address the identified field failure modes,
+                                                                                 C.       Developing specific reliability tests for specific changes
+these are a good starting point for developing reliability tests
+for evaluating the impact of changes to the product. How can                         The first step in this process is to understand which failure
+the Qualification Tests be turned into reliability tests? The                    modes the proposed change is likely to impact. A guideline for
+following methods may all contribute to the final test plan:
+                                                                                 this has been established by Working Group 2 – Modules of
+     •         Increase the test duration, for example do more thermal           IEC Technical Committee TC-82 on PV. These guidelines
+               cycles or expose the modules to damp heat for a longer            have been published as an IECEE Decision Sheet [16]. It is
+               time.                                                             now planned for them to be incoporated directly into the third
+     •         Use higher stress levels, but making sure that the                editions of IEC 61215 and IEC 61646. Table 4 provides a
+               higher stress levels don’t cause failures that are not            summary of these guidelines. These guidelines are utilized to
+               seen in the field.                                                define what retests are necessary in order to maintain product
+     •         Combine stress, for example applying voltage to the               certification under IEC 61215 or IEC 61646.
+               module during damp heat.
+     •         Utilize step stresses, where the initial stress starts with           These guidelines for retest should be used as a starting
+               the stress level from the Qualification Test and                  point for the analysis described in Subsection A. So for
+               increases until failures are seen. Once again care must           example if the change involves the encapsulation system, the
+               be taken to insure that the failures seen are the same            test sequences should be based on:
+               failure modes identified from field exposure.
+     •         Evaluate new methods to accelerate the failure modes                   • UV/50 thermal cycles,/10 humidity freeze cycles,
+               identified in the field, for example using the Dynamic                 • Damp heat, 1000 hours at 85°C/85% RH
+               Mechanical Load Test to accelerate cell breakage                       • Hail impact, if not tempered glass, and
+               caused by wind-induced vibrations. [15]                                • Hot spot, if material composition changes.
+
+
+
+
+                                                                             3
+So the question becomes “Do these tests need to be modified                  D.     Establish a Baseline
+from the qualification test to assess the ability of the change to                Since we do not have accelerated stress tests that can show
+survive 25 years without impacting failure rate or degradation               that a module type will survive 25 years outdoors where ever
+rate?” The answer to this question depends upon which test is                it is deployed, a baseline must be established for the proposed
+under discussion. Finally we must decide whether additional                  reliability tests. This baseline can be established using
+tests could be helpful in assessing the ability of the new                   modules with similar construction that have proven long term
+product to perform as well as the old product throughout the                 service life. These baseline modules must be of the same PV
+warranted lifetime.                                                          technology (i.e. crystalline silicon, CdTe, CIGS, etc.) and
+                                TABLE 4                                      preferably have similar packaging (i.e. glass superstrate design
+                                                                             or glass-glass construction). Baseline modules should then be
+ Guidelines for Retest Requirements for IEC 61215 and IEC 61646              tested through all of the accelerated stress tests proposed in
+       Modifications To                     Tests to Repeat                  Section E along with the new module type.
+Cell Technology                     200 Thermal Cycles
+                                    1000 hours of Damp Heat                  E.    Proposed changes to Qualification Tests to assess long
+                                    Hot Spot                                     term reliability after a change in product design
+                                    Mechanical Load (for reduction in
+                                    cell thickness)                              In this section each of the accelerated stress tests from IEC
+Encapsulation System                UV/TC 50/HF 10                           61215 /61646 will be discussed and recommendations made as
+                                    1000 hours of Damp Heat                  to whether it is necessary to modify them in order to use them
+                                    Hail Impact (if not tempered glass       for assessing long term reliability of lower cost PV modules.
+                                    superstrate)
+                                    Hot Spot                                 Thermal cycling: Two hundred (200) thermal cycles have been
+Superstrate                         UV/TC 50/HF 10                           equated to 10 to 11 years of outdoor exposure via comparison
+                                    Mechanical Load
+                                    Hail Impact                              to field data [17 and 18] and via modeling of weather data [19].
+                                    1000 hours of Damp Heat (if non-         Therefore more thermal cycling stress is required to assess a 25
+                                    glass)                                   year lifetime. The thermal cycle stress can be increased by
+                                    Hot Spot (if non-glass)                  cycling faster, using a wider temperature cycle or using more
+                                    Outdoor Exposure                         cycles. Cycling faster is limited both by the test chamber
+Increase in Module Size (> 20%)     200 Thermal Cycles
+                                    Mechanical Load
+                                                                             capability and the need to avoid thermal shock. Cycling at the
+                                    Hail Impact                              fastest rate allowed by IEC 61215 is probably the best
+Backsheet                           UV/TC 50/HF 10                           compromise. Expanding the temperature range is possible but
+                                    Robustness of Termination                once again is limited by equipment capability and the potential
+                                    1000 hours of Damp Heat                  to cause failures not seen in the field (phase changes at low
+                                    Hail Impact (if substrate design)
+                                                                             temperature and polymer damage at higher temperatures. If the
+                                    Mechanical Load (if mounting
+                                    depends on backsheet)                    test chamber can achieve 90°C a small degree of acceleration
+Frame or Mounting Structure         Mechanical Load                          can be achieved.
+                                    Outdoor Exposure (if plastic)
+                                    UV/TC 50/HF 10 (if plastic)                   This leaves increasing the number of cycles as the best
+                                    1000 hours of Damp Heat (if              approach. If 200 cycles equals 10 years of field exposure then
+                                    adhesive used)                           500 cycles would represent 25 years [17 and 18]. If after 500
+                                    200 Thermal Cycles (if adhesive          thermal cycles the control construction and the new, lower cost
+                                    used)
+                                    TC 50/HF 10
+                                                                             modules have similar power loss and do not exhibit detrimental
+Junction Box/Electrical
+Termination                         Robustness of Termination                changes (i.e. broken interconnects) then the two constructions
+                                    1000 hours of Damp Heat                  should have similar field performance for failure modes caused
+                                    By-pass Diode Thermal Test (if           by thermal cycling.
+                                    diodes are in J-box)
+Interconnection between Cells       200 Thermal Cycles                       Damp Heat: The 85°C/85% relative humidity exposure is as
+                                    1000 hours of Damp Heat                  accelerated as necessary. These conditions probably never
+                                    Hot Spot                                 happen in the real world as the modules tend to dry out at their
+Electrical Circuit                  Hot Spot (if more cells per diode)
+                                    By-pass Diode Thermal Test (if
+                                                                             highest temperatures, but absorb moisture at lower
+                                    current level increases)                 temperatures. It is difficult to judge what outdoor exposure the
+                                    200 Thermal Cycles (if internal          1000 hour exposure at 85/85 represents. In a recent experiment
+                                    conductors behind cells)                 10 crystalline silicon modules qualified to IEC 61215 were
+Higher or lower output (by > 10%)   Hot Spot                                 exposed to 1250 hours of 85/85. Only 2 of the 10 types
+                                    By-pass Diode Thermal Test (if           successfully passed the extended test. [18] On the other hand
+                                    higher)
+By-pass Diode                       By-pass Diode Thermal Test               some glass-glass encapsulated modules can easily endure
+                                                                             more than 2000 hours of damp heat exposure. So rather than
+                                                                             specify a particular length of time, it seems appropriate to test
+                                                                             the control technology and the new technology through
+                                                                             enough hours of damp heat that both begin to lose some power
+                                                                             (say to 90% of the original) in order to verify that the new
+
+
+
+
+                                                                         4
+technology is no worse and has no additional failure modes                module construction and/or changes in packaging design can
+than the old module technology it will replace.                           influence this result. Use of a standard transportation test such
+                                                                          as ISTA Procedure 3 [22] is recommended until an IEC PV
+UV/TC50/HF10: This sequence of tests is mainly a test for the             transportation test can be completed.
+package. If the module fails this test it indicates inadequate
+adhesion between layers or inadequate cure level in the                   UV Material Test: While IEC 61215 contains a UV test, this is
+encapsulant. It is not a lifetime test so typically does not need         only meant as a pre-screening test to address UV sensitive
+to be enhanced for reliability testing. So the recommendation             bonding issues. This test is not long enough to assess whether
+is to test both the new module construction and the old module            the polymeric materials utilized in a module are capable of
+construction to the sequence defined in IEC 61215/61646, but              surviving the UV exposure expected during the lifetime of the
+with the addition of the Dynamic Mechanical Load Test                     module. Long term UV exposure of full sized modules is
+discussed below.                                                          difficult and expensive. Therefore most long-term UV
+                                                                          exposures have been made on coupons with the same cross
+Mechanical Load: In the test a specified (wind) load is applied           sectional construction as the modules to be evaluated. STR
+to the front and the back of the modules 3 times. If the module           developed a long term UV exposure protocol during their
+is to be used in a snowy location the load is increased during            work evaluating the causes of EVA yellowing. [23] BP Solar
+the last front cycle. The wind load (2400 Pa) and snow load               reported the use of a similar UV exposure protocol for 26
+(5400 Pa) are average values from around the world. If                    weeks to verify a 25-year lifetime. [24] A similar UV testing
+modules are to be used in windy or snowy locations higher                 protocol should be used to evaluate any new polymeric
+values should be tested. In addition, mechanical loading can              material for use in a PV module. The material should be
+cause cells (especially thin ones) to crack. Modules measured             exposed to the UV within the standard package in which it
+immediately after wind or snow loading may not have                       will be used. Since there is no agreement between UV dose
+degraded power, but if these modules are thermal cycled (say              and years in the field, it would be best to perform the test with
+25 to 50 cycles) significant cell breakage will then cause                the new material side-by-side with the material it is to replace.
+power loss.                                                               The test should proceed for at least the proposed 26 weeks or
+                                                                          until one or both of the materials begin to discolor or degrade.
+Hail Test: The hail test is only required for changes in non-             At that point a comparison between old and new material will
+tempered glass superstrate modules. In this case the test should          indicate whether the new material will perform as well as that
+be run as specified in IEC 61215/61646.                                   which it is to replace.
+
+Bypass Diode Thermal Test: No change in this test is                                                 IV.     CONCLUSIONS
+recommended for assessing long-term reliability. The bypass                    A method for assessing the long term reliability and
+diodes will be stressed by the other accelerated tests (thermal           durability of new lower cost PV modules has been presented.
+cycle, damp heat, etc.) so it is extremely important to ensure            Because the new approach compares the results of the
+that each diode is working correctly after completing the                 accelerated testing with modules that have a known long
+reliability test procedures. In addition, it is important to set up       lifetime, a new module type qualified through this procedure
+a production line test to ensure that each bypass diode has               has a high likelihood of also surviving in the field. The
+been installed correctly and is operational before the module is          recommendations given in this paper can serve as a guideline
+shipped to the customer.                                                  for the establishment of a specific program of reliability
+                                                                          testing for each major cost reduction proposed. Use of this
+Hot Spot Test: The Hot Spot test in IEC 61215 edition 2 is not            methodology will reduce the risk that a change made to reduce
+a particularly good test. It will be modified in edition 3. In the        cost will have a major, negative impact on module lifetime or
+meantime use the ASTM E 2481-06 Hot Spot Test. [20]                       degradation rate.
+
+Other tests to consider in the assessment of new products:                                           ACKNOWLEDGMENT
+                                                                              This work was supported by the U.S. Department of
+Dynamic Mechanical Load Test: The only mechanical test in                 Energy under Contract No. DE-AC36-08-GO28308 with the
+IEC 61215 is a static mechanical load test that is performed              National Renewable Energy Laboratory.
+after the accelerated stress tests. A Dynamic Mechanical Load
+test followed by 50TC/10HF does a much better job of
+identifying modules with cells that are prone to breakage and                                            REFERENCES
+would cause subsequent power loss. [15] There is an available
+DIN Standard (EN12211) that can be utilized for this test. [21]
+                                                                          [1]   Navigant Consulting
+Ultimately it is likely that a similar dynamic mechanical load
+                                                                          [2]   EPIA “Global Market Outlook for Phtovoltoacis until 2014”.
+test (DML) will be incorporated into IEC 61215 as part of the
+                                                                          [3]   SolarBuzz.      http://solarbuzz.com/our-research/recent-findings/global-
+sequence UV/DML/50TC/10HF.                                                      solar-photovoltaic-demand-forecast-reach-204-gw-2 011-growth-rate
+                                                                          [4]   Renewable Energy World, Nov/Dec 2010 edition.
+Transportation Testing: PV modules are usually shipped to the
+                                                                          [5]   System Advisor Model.
+installation site. If improperly packaged significant damage
+                                                                          [6]   http://www.eia.doe.gov/cneaf/electricity/epm/table5_3.html
+and power loss can occur during the shipment. Changes in
+
+
+
+                                                                      5
+[7]   IEC 61215 “Crystalline silicon terrestrial photovoltaic (PV) modules –           [16] IECEE CTL Decision Sheet – Retest Guidelines for IEC 61215 and IEC
+      Design qualification and type approval”.                                              61646 http://www.iecee.org/ctl/sheet/pdf/PDSH0647A.pdf
+[8] IEC 61646 “Thin-Film terrestrial photovoltaic (PV) modules – Design                [17] J.H. Wohlgemuth, D. W. Cunningham, A.M. Nguyen and J. Miller,
+      qualification and type approval”                                                      “Long Term Reliability of PV Modules”, Proceedings of 20th
+[9] IEC 61730-1 and 2 “Photovoltaic Module Safety Qualification”                            EUPVSEC, 2005.
+[10] M.I. Smokler, D.H. Otth and R.C Ross Jr., “The Block Approach to                  [18] J. Wohlgemuth, D. Cunningham, D. Amin, J. Shaner, Z. Xia and J.
+      Photovoltaic Module Development”, Proceedings of the 18th IEEE                        Miller, “Using Accelerated Tests and Field Data to Predict Module
+      Photovoltaic Specialist Conference, 1985, p. 1150                                     Reliability and Lifetime”, Proceedings of 23rd EUPVSEC, 2008.
+[11] John Wohlgemuth, Daniel W. Cunningham, Andy Nguyen, George Kelly                  [19] Nick Bosco and Sarah Kurtz, “Quantifying the Weather: an analysis for
+      and Dinesh Amin, “Failure Modes of Crystalline Silicon Modules”                       thermal fatigue”, Proceedings of PV Module Reliability
+      Proceedings           of         PV            Module          Reliability            Workshop, http://www1.eere.energy.gov/solar/pv_module_reliability_w
+      Workshop”, http://www1.eere.energy.gov/solar/pv_module_reliability_                   orkshop_2010.html, 2010.
+      workshop_2010.html , 2010.                                                       [20] ASTM E 2481-06 “Standard Test Method for Hot Spot Protection
+[12] Nick Bosco “Reliability Concerns Associated with PV                                    Testing of Photovoltaic Modules”.
+      Technologies” http://www.nrel.gov/pv/performance_reliability/pdfs/fail           [21] DIN EN12211 “Windows and doors resistance to wind load – test
+      ure_references.pdf , 2010.                                                            method”
+[13] Otth and Ross “Assessing Photovoltaic Module Degradation and                      [22] ISTA Proceudre 3E “Procedure 3E: Unitized Loads of Same Product”
+      Lifetime from Long Term Environmental Tests”, Proceediings of 29th               [23] William H. Holley, Jr, Susan Agro, James P. Galica, Lynne A. Thoma,
+      Institute of Environmental Science Annual Meeting, 1983.                              Robert S. Yorgensen, “Investigation into the causes of browning in EVA
+[14] John Wohlgemuth, “Overview of Failure Mechanisms and PV                                encapsulated flat plate PV modules”, Proceedings of the 24th IEEE
+      Qualification Tests”, Proceedings of PV Module Reliability                            Photovoltaic Specialist Conference, 1994.
+      Workshop, http://www1.eere.energy.gov/solar/pv_module_reliability_w              [24] John H. Wohlgemuth, Daniel W. Cunningham, Paul Monus, Jay Miller,
+      orkshop_2010.html, 2010.                                                              and Andy Nguyen “Long Term Reliability of Photovoltaic Modules” ,
+[15] John H. Wohlgemuth, Daniel W. Cunningham, Neil V. Placer, George                       Proceedings of the 4th World Conference on Photovoltaics, 2006
+      J. Kelly and Andy M. Nguyen, “The Effect of Cell Thickness on Module
+      Reliability” Proceedings of the 33rd IEEE Photovoltaic Specialist
+      Conference, 2008.
+
+
+
+
+                                                                                   6
+                                                                                                                                           Form Approved
+                        REPORT DOCUMENTATION PAGE                                                                                         OMB No. 0704-0188
+The public reporting burden for this collection of information is estimated to average 1 hour per response, including the time for reviewing instructions, searching existing data sources,
+gathering and maintaining the data needed, and completing and reviewing the collection of information. Send comments regarding this burden estimate or any other aspect of this
+collection of information, including suggestions for reducing the burden, to Department of Defense, Executive Services and Communications Directorate (0704-0188). Respondents
+should be aware that notwithstanding any other provision of law, no person shall be subject to any penalty for failing to comply with a collection of information if it does not display a
+currently valid OMB control number.
+PLEASE DO NOT RETURN YOUR FORM TO THE ABOVE ORGANIZATION.
+1. REPORT DATE (DD-MM-YYYY)   2. REPORT TYPE                                                                                  3.   DATES COVERED (From - To)
+     February 2011                                        Conference Paper
+4.   TITLE AND SUBTITLE                                                                                          5a. CONTRACT NUMBER
+     Reliability Testing Beyond Qualification as a Key Component in                                                   DE-AC36-08GO28308
+     Photovoltaic's Progress Toward Grid Parity: Preprint
+                                                                                                                 5b. GRANT NUMBER
+
+
+                                                                                                                 5c. PROGRAM ELEMENT NUMBER
+
+
+6.   AUTHOR(S)                                                                                                   5d. PROJECT NUMBER
+     J.H. Wohlgemuth and S. Kurtz                                                                                     NREL/CP-5200-50599
+                                                                                                                 5e. TASK NUMBER
+                                                                                                                      SS10.2520
+                                                                                                                 5f. WORK UNIT NUMBER
+
+
+7.   PERFORMING ORGANIZATION NAME(S) AND ADDRESS(ES)                                                                          8.   PERFORMING ORGANIZATION
+     National Renewable Energy Laboratory                                                                                          REPORT NUMBER
+     1617 Cole Blvd.                                                                                                               NREL/CP-5200-50599
+     Golden, CO 80401-3393
+
+9.   SPONSORING/MONITORING AGENCY NAME(S) AND ADDRESS(ES)                                                                     10. SPONSOR/MONITOR'S ACRONYM(S)
+                                                                                                                                   NREL
+
+                                                                                                                              11. SPONSORING/MONITORING
+                                                                                                                                  AGENCY REPORT NUMBER
+
+
+12. DISTRIBUTION AVAILABILITY STATEMENT
+     National Technical Information Service
+     U.S. Department of Commerce
+     5285 Port Royal Road
+     Springfield, VA 22161
+13. SUPPLEMENTARY NOTES
+
+
+14. ABSTRACT (Maximum 200 Words)
+     This paper discusses why it is necessary for new lower cost PV modules to be tested using a reliability test sequence
+     that goes beyond the Qualification test sequence now utilized for modules. Today most PV modules are warranted
+     for 25 years, but the Qualification Test Sequence does not test for 25-year life. There is no accepted test protocol to
+     validate a 25-year lifetime. This paper recommends the use of long term accelerated testing to compare now
+     designs directly with older designs that have achieved long lifetimes in outdoor exposure. If the new designs do as
+     well or better than the older ones, then it is likely that they will survive an equivalent length of time in the field.
+15. SUBJECT TERMS
+     Photovoltaic module reliability; Reliability Testing; Qualification Testing; Levelized Cost of Electricity (LCOE); Grid
+     Parity
+16. SECURITY CLASSIFICATION OF:                                17. LIMITATION  18. NUMBER                     19a. NAME OF RESPONSIBLE PERSON
+                                                                   OF ABSTRACT     OF PAGES
+a. REPORT            b. ABSTRACT          c. THIS PAGE
+ Unclassified        Unclassified         Unclassified                  UL
+                                                                                                              19b. TELEPHONE NUMBER (Include area code)
+
+
+                                                                                                                                                   Standard Form 298 (Rev. 8/98)
+                                                                                                                                                   Prescribed by ANSI Std. Z39.18
+
+
+
+
+F1147-E(10/2008)
+

@@ -1,0 +1,459 @@
+     IEC 61215: What it is and isn’t
+
+
+
+                                                                                                               2012 PV Module
+                                                                                                               Reliability Workshop
+
+
+                                                                                                               John Wohlgemuth
+
+
+                                                                                                               February 29, 2012
+                                                                                                               NREL/PR-5200-54714
+
+
+
+
+NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.
+Introduction
+
+
+• The commercial success of PV is based on long term
+reliability of the PV modules.
+• Today’s modules are typically qualified/certified to:
+       IEC 61215 for Crystalline Silicon Modules
+       IEC 61646 for Thin Film Modules
+       IEC 62108 for CPV Modules
+•These qualification tests do an excellent job of
+identifying design, materials and process flaws that
+could lead to premature field failures.
+•This talk will provide a summary of how IEC 61215 was
+developed, how well it works and what its limitations
+are.
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                  2
+Evaluating Long Term Performance
+
+
+• To evaluate long term performance outdoors
+we really need outdoor performance data.
+• On the other hand we can not wait 25 years to
+determine if a module is going to have a 25
+year lifetime.
+• Therefore, we have to utilize outdoor test data
+to develop accelerated stress tests.
+•The first step in this process is to identify the
+various field failures that have been observed
+for different types of PV modules.
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY             3
+HISTORY OF FIELD FAILURES for Cry-Si
+
+
+      •   Broken interconnects
+      •   Broken cells
+      •   Corrosion
+      •   Delamination and/or loss of elastomeric properties of
+          encapsulant
+      •   Encapsulant discoloration
+      •   Solder bond failures
+      •   Broken glass
+      •   Hot Spots
+      •   Ground faults
+      •   Junction box and module connection failures
+      •   Structural failures
+      •   Bypass Diode failures
+      •   Open circuiting leading to arcing
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                              4
+Examples of Field Failures
+                                          Ground Fault   Broken Cells
+     Broken Interconnects
+
+
+
+
+                           Delamination
+
+
+                                                           Corrosion
+
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                    5
+Accelerated Stress Tests
+
+
+• Now that we have a list of failures, we can develop tests
+that duplicate the failures in a fairly short time frame (at
+least compared to outdoor exposure).
+• Our goals should be:
+    – To identify accelerated stresses that cause the same
+      types of failures as seen in the field.
+    – To determine approximately how long the accelerated
+      stress test must be performed in order to duplicate a
+      reasonable amount of field exposure.
+• In developing accelerated stress tests we must cause
+degradation in order to verify that our accelerated test is
+duplicating the failure mechanism we saw outdoors.
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                           6
+Accelerated Stress Tests
+
+Accelerated Stress         Failure Mode                                 Technology
+Test
+Thermal Cycles             Broken interconnect                          Cry-Si & CPV
+                           Broken cells                                 Cry-Si & CPV
+                           Electrical bond failure                      All
+                           Junction box adhesion                        All
+                           Module open circuit – potential for arcing   All
+Damp Heat                  Corrosion                                    All
+                           Delamination                                 All
+                           Encapsulant loss of adhesion & elasticity    All
+                           Junction box adhesion                        All
+                           Electrochemical corrosion of TCO             TF
+                           Inadequate edge deletion                     TF
+Humidity Freeze            Delamination                                 All
+                           Junction box adhesion                        All
+                           Inadequate edge deletion                     TF
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                                   7
+Accelerated Stress Tests for PV (cont)
+
+
+Accelerated Stress           Failure Mode                                Technology
+Test
+UV Test                      Delamination                                All
+                             Encapsulant loss of adhesion & elasticity   All
+                             Encapsulant & backsheet discoloration       All
+                             Ground fault due to backsheet degradation   All
+                             Degradation of Optics                       CPV
+Static Mechanical            Structural failures                         All
+Load                         Broken glass                                Cry-Si & TF
+(Simulation of wind          Broken interconnect ribbons                 All
+and snow load)               Broken Cells                                Cry-Si & CPV
+                             Electrical bond failures                    All
+Dynamic Mechanical           Broken glass                                Cry-Si & TF
+Load                         Broken interconnect ribbons                 All
+                             Broken Cells                                Cry-Si & CPV
+                             Electrical bond failures                    All
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                                    8
+Accelerated Stress Tests for PV (cont)
+
+
+Accelerated Stress Test           Failure Mode
+Hot spot test                     Hot spots                                     All
+                                  Shunts in cells or at scribe lines            All
+                                  Inadequate by-pass diode protection           All
+Hail Test                         Broken glass                                  Cry-Si & TF
+                                  Broken cells                                  Cry-Si
+                                  Broken Optics                                 CPV
+By-pass Diode Thermal Test By-pass diode failures                               All
+                           Overheating of diode causing degradation             All
+                           of encapsulant, backsheet or junction box
+Salt Spray                        Corrosion due to salt water & salt mist       All
+                                  Corrosion due to salt used for snow and ice   All
+                                  removal
+
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                                     9
+Qualification tests
+
+
+• Qualification tests are a set of well defined accelerated
+stress tests developed out of a reliability program.
+• They utilize stress tests to duplicate failure modes
+observed in the field.
+• They incorporate strict pass/fail criteria.
+• The stress levels and durations are limited so the tests can
+be completed within a reasonable amount of time and cost.
+• The goal for Qualification testing is that a significant
+number of commercial modules will pass.
+(If not there will be no commercial market.)
+• Qualifies the design and helps to eliminate infant mortality
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                        10
+History of JPL Block Buys
+
+
+JPL Block buys incorporated a set of qualification tests in each
+procurement document.
+M odules had to pass a test sequence before manufacturer could
+deliver production quantities of modules.
+So w here did tests come from?
+Block I tests were based on NASA tests utilized on space arrays.
+    – Thermal cycles extremes selected as -40 and +90 °C based
+      on guesses for worst case conditions in terrestrial
+      environment.
+    – The humidity test was for a short time because for space
+      arrays exposure to humidity was limited to the time they
+      were exposed before launch.
+    – These were really the only accelerated stress tests in Block I
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                               11
+JPL Block Qualification Tests
+
+
+     Test               I                  II            III           IV             V
+
+
+   Thermal             100                 50            50            50            200
+    Cycles         -40 to +90C         -40 to +90C   -40 to +90C   -40 to +90C   -40 to + 90C
+   Humidity         70C,90%             5 cycles      5 cycles      5 cycles      10 cycles
+                      68 hrs           40 to 23C     40 to 23C     54 to 23C     85 to -40C
+                                          90%           90%           90%           85%
+
+   Hot Spot                                                                        3 cells
+
+  (intrusive)                                                                      100 hrs
+
+ Mechanical                            100 cycles    100 cycles      10000         10000
+
+     Load                              ± 2400 Pa     ± 2400 Pa     ± 2400 Pa      ± 2400 Pa
+
+      Hail                                                         9 impacts     10 impacts
+                                                                   ¾” –45 mph    1” – 52 mph
+   High Pot                              <15 µA       < 50 µA       < 50 µA        < 50 µA
+                                         1500 V        1500 V        1500 V      2*Vs+1000
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                                          12
+Block Field Experience
+
+
+The earliest Block modules were typically utilized in small
+remote site systems.
+JPL report stated that “the major cause of module failure to
+date was by gun shot”.
+      – Black or blue CZ cells on white background are good
+        targets
+      – Squares cells on non-white back sheets reduced problem
+Many early failures were due to cracked cells:
+      – Because of module design one cracked cell resulted in total
+        loss of power.
+Non glass superstrate modules suffered from significant
+soiling and delaminations usually due to UV.
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                  13
+Testing Development
+
+
+Future procurements utilized modified qualification test
+specifications based on feedback from field failures.
+Block II
+      – Added 100 mechanical load cycles – once again probably from
+        space experience based on launch damage
+      – Added a High Pot Test to insure electrical isolation
+      – Changed the humidity test from a constant to 5 cycles between 23
+        and 40 C (Still was too mild a humidity test)
+      – Reduced the number of thermal cycles from 100 to 50
+        This was clearly a mistake. I don’t know why they reduced the
+        requirement except to guess that Block I modules had a lot of
+        trouble passing the 100 cycle test.
+Block III
+      – Changed the High Pot failure level from > 15 µA to > 50 µA as
+        modules were getting bigger.
+Block II and III modules were utilized in some larger systems and
+started to experience new failure modes.
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                    14
+Lessons from Blocks II and III
+
+
+Many Block II and III modules were used in desert
+environments
+      – Pagago Indian Reservation in AZ
+      – Tanguze, Upper Volta
+      – Natural Bridges, Utah
+Modules that survived 50 thermal cycles began failing in the
+desert after 3 to 5 years due to broken interconnects and/or
+broken cells that resulted in total loss of module power.
+      – Module manufacturers started building in redundant
+        interconnects and stress relief.
+      – Most new module types used glass superstrate
+        construction, reducing the thermal expansion and
+        contraction.
+      – In Block V Thermal Cycles increased to 200 to better
+        evaluate module performance.
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                           15
+Lessons from Blocks II and III (cont)
+
+
+Hail did significant damage to modules built without
+tempered glass superstrates:
+      – Broken cells
+      – Broken annealed glass
+Hail test added in Block IV.
+
+Large (60 kW), high voltage system at Mt. Laguna, CA
+      – Part of array built with Solar Power modules (40 – 4”
+        diameter CZ in series) with no by-pass diodes.
+      – Modules began suffering from hot spot failures – that is they
+        burned up.
+Hot Spot Test Added in Block V
+
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                               16
+Block V
+
+
+Major differences in Block V were
+      – Thermal cycles increased from 50 to 200
+      – Humidity freeze implemented (before that it was a much milder
+        humidity cycle)
+      – Addition of hot spot test
+Whipple reported on 10 years of field results in 1993 (using
+data from Rosenthal, Thomas and Durand) that
+      – Pre-Block V modules suffered from 45% field failure rate
+      – Post- Block V modules suffered from < 0.1% field failure rate
+Clearly the addition of these 3 tests dramatically reduced
+the infant mortality rate of PV modules.
+One can argue that the Block V test made growth of
+commercial PV possible.
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                    17
+Block VI
+
+
+JPL was in the process of finalizing a Block VI
+Specification when the program fell victim to
+Reagan budget cuts.
+Additions they were planning in 1985:
+      – Test for bypass diodes
+      – UV exposure test
+      – Damp heat (85C/85% RH) – To simulate the
+        corrosion failures observed in fielded PVB
+        modules.
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                 18
+IEC 61215
+
+International Standard incorporating the best ideas from
+around the world – but also remembering that it was
+developed by international compromise.
+Block VI was the basis for 61215.
+EU 502 provided UV Test, Outdoor Exposure Test and lower
+maximum temperature in thermal cycle.
+Several tests from Block VI were not included in IEC 61215 –
+most notably:
+      – Dynamic Mechanical Load Test, because the test defined in Block
+        V was unsuitable for large sized modules.
+      – Bypass Diode Thermal Test, because international community
+        didn’t think the test was adequately developed.
+IEC 61215 rapidly became the qualification test to pass in
+order to participate in the PV marketplace, especially in
+Europe.
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                      19
+IEC 61215 Edition 2
+
+
+Twist test was eliminated – no product ever failed it
+Wet leakage current test was added from IEC 61646
+Bypass diode thermal test was added from IEEE 1262
+Pass criteria for dielectric withstand and wet leakage
+current tests were made dependent on the test module
+area.
+UV test was clearly labeled a preconditioning test
+Added the requirement to run peak power current
+through the module during the 200 thermal cycles to
+evaluate a failure of solder bonds observed in the field.
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                    20
+                             IEC 61215 Outline
+
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY             21
+Passing IEC 61215
+
+
+• So what does it mean if a module type is qualified to IEC
+61215?
+• Passing the qualification test means the product has met a
+specific set of requirements.
+• Those modules that have passed the qualification test are
+much more likely to survive in the field and not have design
+flaws that lead to infant mortality.
+• Most of today’s commercial modules pass the qualification
+sequence with minimum change, meaning that they suffer
+almost no degradation in power output from the test
+sequence.
+• In many markets passing IEC 61215 is a minimum
+requirement to participate.
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                      22
+How Successful are the Qualification Tests?
+
+
+• They must be fairly successful because the PV
+industry has been growing rapidly.
+• Reports of Field Failures/ Warranty Returns:
+       Whipple report of < 0.1% field failures in 10 years
+       Hibberd from 2011 PVMRW – 125,000 modules from 11
+        different module manufacturers deployed for up to 5 years
+        with only 6 module failures. (0.005%)
+       Wohlgemuth et. al. from 20th EU PVSEC – Solarex/BP Solar
+        multi-crystalline Si modules deployed from 1994-2005 with
+        0.13% warranty return rate (1 failure every 4200 module
+        years of operation)
+       Wohlgemuth et. al. from 23rd EU PVSEC – Solarex/BP Solar
+        multi-crystalline Si modules from 2005 onward with an
+        annual return rate of 0.01%
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                23
+Limitations of Qualification Tests
+
+
+By design the qualification tests have limitations.
+They were designed to identify early infant mortality
+problems, but:
+• Not to identify and quantify wear-out mechanisms
+• Not to address failure mechanisms for all climates and system
+configurations
+(PID is an example of something that wasn't addressed because it wasn't
+important in the JPL deployments and wasn't seen early on in the typical
+low voltage applications)
+• Not to differentiate between products that may have long and
+short lifetimes
+• Not to address all failure mechanisms in all module designs
+(New designs may fail for different reasons - e.g. PCB required different
+testing than EVA)
+• Not to quantify lifetime for the intended application/climate.
+
+
+
+NATIONAL RENEWABLE ENERGY LABORATORY                                        24
+

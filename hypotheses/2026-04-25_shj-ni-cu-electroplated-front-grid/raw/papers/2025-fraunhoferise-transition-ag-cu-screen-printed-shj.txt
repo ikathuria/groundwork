@@ -1,0 +1,608 @@
+                                                             Solar Energy Materials & Solar Cells 287 (2025) 113593
+
+
+                                                                    Contents lists available at ScienceDirect
+
+
+                                                   Solar Energy Materials and Solar Cells
+                                                          journal homepage: www.elsevier.com/locate/solmat
+
+
+
+
+Transition from silver-to copper-based screen printed SHJ solar cells
+S. Pingel a,* , F.M. Maarouf a , N. Wengenmeyr a , M. Linse a , L. Folcarelli a , J. Schube a ,
+S. Hoffmann a , S. Tepner b , J. Huyeng a , A. Lorenz a , F. Clement a
+a
+    Fraunhofer Institute for Solar Energy Systems ISE, Heidenhofstr. 2, 79110, Freiburg, Germany
+b
+    Now with EKRA Automatisierungssysteme GmbH, Zeppelinstraße 16, 74357, Bönnigheim, Germany
+
+
+
+
+A R T I C L E I N F O                                      A B S T R A C T
+
+Keywords:                                                  In this work, we demonstrate the possibility to reduce silver consumption for highly efficient silicon hetero­
+Metallization                                              junction (SHJ) cells by screen printing using low temperature paste based on silver, silver-coated copper or pure
+Heterojunction                                             copper particles. The achieved grid fingers were characterized towards the line and contact resistance as well as
+Low-temperature paste
+                                                           the printed width. The most promising pastes with silver or silver-coated-copper particles allow printing of 35 μm
+Screen printing
+                                                           narrow fingers with low line resistance of well below 10 Ω/cm. Simulations show that the achieved grid fingers,
+                                                           lead to very low silver consumption. Comparing cost to efficiency optimization shows that the most cost-effective
+                                                           cell has substantially lower efficiency. This might enable the introduction of alternative low silver or silver-free
+                                                           metallization techniques. To show the currently available options to save silver in screen printed busbarless SHJ
+                                                           cells, samples were produced with specific silver consumption of 7.5 mg/W and even below 5 mg/W if the rear
+                                                           side was realized with a pure copper paste. In another test, silver-based cells with same level of efficiency,
+                                                           improved bifaciality and reduced silver laydown (1/3 compared to reference) around 8 mg/W were successfully
+                                                           introduced into modules.
+
+
+
+
+1. Introduction                                                                                    • Application of fine-line grid fingers by screen printing process, paste
+                                                                                                     and screen optimization [7].
+    With further up-scaling of photovoltaics (PV) production worldwide,                            • Reduction of the Ag content in the paste, by replacing Ag as
+the reduction of scarce material consumption in solar cell production is                             conductive particles with Ag-coated copper (Cu) particles (AgCu)
+gaining major attention. Recent studies have shown that to get silicon                               [8].
+heterojunction (SHJ) solar cells to sustainable multi-terawatt produc­                             • Complete replacement of Ag pastes with Cu pastes [9–12].
+tion scale, the use of scarce materials like Silver (Ag), Indium (In) and
+Bismuth (Bi) must be drastically reduced [1–5]. According to Zhang                                The industrial standard process for metallization with low or high
+et al. [3], the specific consumption of Ag for solar cells must be limited to                 temperature pastes is flatbed screen printing (FSP) [13]. This technology
+only 2 mg/W in the long-term to be compatible with global resources,                          is expected to remain the dominant process for Si solar cell metallization
+down from 15.5 mg/W in 2023 for SHJ cells according to Chang et al.                           due to its cost-effectiveness and flexibility towards a fast-evolving PV
+[5].                                                                                          market [14,15]. Other Ag-LTP or Ag-ink metallization technologies are
+    For SHJ metallization low-temperature pastes (LTP) are typically                          in the developing phase or shortly before industrialization, for example
+cured at temperatures of around 200 ◦ C for a few minutes [6]. Compared                       Rotary Screen Printing [16], FlexTrail [17] or Dispensing [18–20].
+to PERC or TOPCon, where high temperature firing is used, the sintering                       AgCu- or pure Cu-LTP can be applied by the techniques mentioned
+of the Ag particles is less efficient in LTP. There are different approaches                  above whilst a number of institutes and companies are also working on
+for screen printing to reduce the Ag consumption in solar cells, the most                     Cu-plating: Sundrive, PV2+, Sunwell [21–27]. The use of Cu in metal­
+relevant are.                                                                                 lization bears risks for i) cell performance degradation (due to Si base
+                                                                                              contamination) and ii) the manufacturability or module reliability (due
+                                                                                              to oxidation on the metal surface). However, first testing shows good
+
+
+
+    This article is part of a special issue entitled: MIW2024 proceedings published in Solar Energy Materials and Solar Cells.
+    * Corresponding author.
+      E-mail address: sebastian.pingel@ise.fraunhofer.de (S. Pingel).
+
+https://doi.org/10.1016/j.solmat.2025.113593
+Received 30 January 2025; Received in revised form 12 March 2025; Accepted 17 March 2025
+Available online 9 April 2025
+0927-0248/© 2025 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+S. Pingel et al.                                                                                                           Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+results for TOPCon and SHJ [9,11,12,28]. In this work, we focus on the                         Using the number of printed fingers nF between the busbars (here
+currently industrially established metallization technique for SHJ cells:                  127, leading to a finger pitch of 1.3 mm for M6 wafers) and the distance
+screen printing of LTP based on Ag or AgCu particles, but also present                     between the busbars dBB is considered to calculate the average RLINE.
+some first results of cells metallized with Cu paste.                                          To further evaluate the printed fingers in the different segments
+                                                                                           confocal laser scanning microscopy (CLSM) images were captured with
+2. Material and methods                                                                    an Olympus LEXT microscope and analyzed by the software tool DASH,
+                                                                                           developed at Fraunhofer ISE [30]. Besides the printed (or shading)
+    This paper consists out of four parts, summarized in Table 1. In the                   finger width wF, further geometrical data such as finger cross-section
+first part (1) a data set from paste screening is generated by printing of                 area AF and core finger width wC was extracted. The silver laydown
+dedicated test patterns with varying line widths on SHJ precursors.                        per finger mAg,F for the nominal opening wN,i, where i is again the
+Different Ag and AgCu pastes are used and subsequently the grid resis­                     parameter between 1 and 4 (different segments in Fig. 1), was estimated
+tance and contact resistance is measured and combined with microscopy                      by the weighting equation (2).
+analysis of the finger geometry. In part (2) grid simulations are then used                                                               (     )
+                                                                                                (    ) M                            5 × AF wN,i
+to investigate suitability of the printed fingers for module integration                   mAg,F wN,i = ×             (     )     (    )     (    )           (   )
+                                                                                                        nF 1.5 × AF wN,1 + AF wN,2 + AF wN,3 + 1.5 × AF wN,4
+with respect to highest efficiency η or lowest costs.
+    In part (3) pastes ranking among the best in the prior screening were                    × fAg
+selected and cells were produced with varied front and rear side (FS and                                                                                                       (2)
+RS) combinations of Ag and AgCu pastes. Here, also Cu paste was
+                                                                                               The first factor is the average laydown per finger that is calculated by
+applied on the RS to show the potential of completely Ag-free pastes
+                                                                                           dividing the wet laydown M by the total number of fingers nF. The
+when finger shading is less relevant.
+                                                                                           second factor is weighting the laydown by the finger cross section areas
+    In part (4) different layouts printed with Ag paste were combined on
+                                                                                           AF for the different wN,i. Here it is assumed that the AF scales linear with
+FS and RS of industrial precursors. After separation the half-cut cells
+                                                                                           mAg,F. The segments 1 and 4 are weighted by a factor of 1.5 since the top
+were integrated into modules and characterized.
+                                                                                           and bottom part outside the area used for grid resistance measurements
+                                                                                           have the same wN as the neighboring segments. Finally, the parameter
+2.1. LTP screening with test forms                                                         fAg is the mass fraction of silver in the paste that ranges typically around
+                                                                                           92 %wt for Ag LTP and between 35 and 65 %wt for AgCu in this study,
+    To investigate the fine-line capability of different pastes at                         correspondingly fCu is the mass fraction of copper. In this experiment,
+Fraunhofer ISE specific test forms have been designed [29], see Fig. 1.                    thirteen Ag and seven AgCu pastes with different values for fAg were
+These allow the evaluation of various screen openings/nominal finger                       tested and evaluated, as shown in Fig. 2. Eleven Ag pastes were printed
+widths wN on a single wafer, relying on high-throughput analysis using                     with a fine-line screen that has suitable wN especially for the FS appli­
+industrial cell characterization. With this approach the compatibility of                  cation while the seven AgCu pastes and two RS Ag references were
+the pastes with various wN can be investigated on the same wafer.                          printed with an angled screen with larger wN, smaller mesh count and
+    These screens were used on the RS of industrial SHJ-precursors (M6/                    wider wires.
+166 mm wafer format) after transparent conductive oxide (TCO) depo­                            To illustrate the advancements in terms of Ag reduction, the effective
+sition. The test forms consist of 0BB-layouts and five busbars (5BB) were                  silver usage parameter λESU [19] is calculated according to equation (3)
+applied in a second (dual) printing step using an ASYS EKRA screen                         where the finger length on the wafer lF is considered compared to the
+printing line at Fraunhofer ISE PVTEC. On the FS of the cells a reference                  achieved RLINE and the used silver amount per finger:
+5BB metallization layout was applied beforehand. After each print step,
+the laydown M was recorded and a short drying cycle at 200 ◦ C for 1 min                                             lF
+                                                                                           λESU (wN ) =                                                                        (3)
+was applied. After the last printing step, the dryer temperature was                                      RLINE (wN )× mAg,F (wN )
+increased to 220 ◦ C, acting as a quick 1 min curing step.                                     Besides the parameters dealing with the lateral finger resistance and
+    After metallization, the samples were finished and prepared for I-V                    Ag consumption also the vertical resistance between TCO and metal is a
+evaluation at a HALM cell tester. Additionally, the four grid resistances                  relevant parameter for the device performance. For its determination
+Rgrid (wN,i) (i = 1 to 4) between the 5 busbars were measured. The                         stripes with constant wN were extracted by laser separation and sheet
+average line resistance values RLINE for each segment were calculated by                   resistance Rsh and contact resistivity ρc was determined with the TLM
+the following equation (1):                                                                method using a TLM-Scan setup from PV-Tools. For the contact finger
+     (    )       (     ) nF                                                               width in the TLM model, the measured core finger width wC was used,
+RLINE wN,i = Rgrid wN,i                                                          (1)
+                         dBB                                                               since the parameter is more robust compared to wF and part of the bleed-
+                                                                                           out area might not be well contacted. This leads to a potential under­
+                                                                                           estimation of the actual ρc since the real width of the contacted area lies
+Table 1                                                                                    between wF and wC.
+Overview of the experimental and simulation steps presented in this paper.
+  Part     Section   Type   Sample     Target
+                                                                                           2.2. Simulation with GridMaster
+  1        2.1/      Exp.   M6 (166    Data generation with test forms for Ag and
+           3.1              mm)        AgCu pastes: wF/RLINE/ρC (paste, wN, …)                 The parameters wF (grid shading), RLINE (series resistance losses
+                            FC 5BB
+  2        2.2/      Sim.   M10 (182   GridMaster simulation with varied finger
+                                                                                           within grid) and contact resistivity ρc from the paste screening were used
+           3.2              mm)        pitch for 20 wires. Optimization on high η          to optimize the metallization layout by simulation, targeting high cell η
+                            HC 20      or low costs.                                       for each paste and wN. To evaluate the impact of these three parameters
+                            wires                                                          for a fixed interconnection, the tool GridMaster, developed at
+  3        2.3/      Exp.   M6 (166    Production of 0BB solar cells with different
+                                                                                           Fraunhofer ISE, was used for performance simulation [31].
+           3.3              mm)        combinations of Ag, AgCu and Cu pastes. η
+                            FC 0BB     vs. Ag consumption.                                     The expected η was simulated for a bifacial scenario with 1000 W/m2
+  4        2.4/      Exp.   M6 (166    Production of 0BB solar cells with varied           FS and 100 W/m2 RS illumination. For the cells the number of fingers/
+           3.4              mm)        layouts on FS and RS with one Ag LTP.               finger pitch on the FS or RS (nF,FS, nF,RS/pF,FS, pF,RS) was varied while the
+                            HC 16      Module integration of half cut cells.               shading and resistance of the interconnection wires was neglected since
+                            wires
+                                                                                           their impact is comparable for the simulated scenarios. The finger
+
+                                                                                       2
+S. Pingel et al.                                                                                                             Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+
+
+Fig. 1. Test form layout with varied nominal finger width for Ag paste and AgCu/RS Ag pastes. The data from the two highlighted nominal finger width are presented
+in the paper.
+
+
+
+
+                                                                       Fig. 2. Paste screening process flow.
+
+
+shading width was assumed to match the printed finger width wF.                              Compared to this reference the change in η and cost for metallization
+    Further parameters used for the simulation are summarized in                             were considered.
+Table 2 below. Photon generation and dark saturation current parame­                             The paste price Ppaste was calculated by a simple model according to
+ters were adapted to simulate SHJ precursors with a potential of η =                         equation (4) that roughly fits to the relative price difference given by the
+25.5 % without metallization related losses (no shading, no RLINE and ρc                     company Fusion in Taiyang News Presentation [32] for different Ag Cu
+losses).                                                                                     blending ratios. The parameters their values are summarized in Table 3.
+    For each paste the pF,FS and pF,RS was optimized for highest η with the                                    (                      )
+boundary condition pF,RS ≥ 0.87 mm. Since RS paste consumption is only                       Ppaste = PCFprod × fAg × PAg + fCu × PCu                                 (4)
+marginally affecting the shading for low RS irradiations the highest η
+                                                                                                For each paste and pitch the paste consumption was calculated as
+was found for all pastes for the smallest pF,RS.
+                                                                                             well as the costs due to the paste consumption.
+    Besides η-optimization also a cost optimization was conducted. As a
+                                                                                                The added value or added price AP compared to the reference was
+reference, the mAg value given in Ref. [5] was used (13.9 mg/W on cell
+                                                                                             then calculated by equation (5). Potential differences in screen costs
+level, assumed an Ag LTP with 92 % Ag content, 24.5 % assumed η).
+                                                                                             were neglected because no data for the reference was available.
+                                                                                                   (                )          (                              )
+Table 2                                                                                              Pmpp − Pmpp,Ref × Pcell − M × Ppaste − MRef × Ppaste,Ref
+                                                                                             AP =                                                               (5)
+Overview of the parameters used in the GridMaster simulation.                                                                    Pmpp
+  Description                Parameter      Value                                                Pmpp corresponds to the cell power under Standard Testing Condi­
+  Cell edge length           L              182 mm (M10)                                     tions (STC: 1000W/m2, 25 ◦ C) and Pcell to the price of the cell, M to the
+  Module wires               nBB            20 wires (∅ 250 μm), 9.1 mm wire pitch,          paste laydown and Ppaste to the price of the paste.
+                                            resistance and shading neglected
+  TCO sheet resistance       RSH            140 Ω/
+    FS and RS
+  Silicon bulk resistivity   ρSi,bulk       1 Ωcm                                            Table 3
+  Wafer thickness            dW             110 μm                                           Cost model parameters for Ag and AgCu pastes.
+  FS/RS irradiation          IrrFS,RS       1.0/0.1 sun equivalent
+                                                                                              Description                                   Parameter                   Value
+  Shading width              wF             Data from 3.1
+  Line Resistance            RLINE                                                            Cell price                                    Pcell                       0.1 €/W
+  Contact resistivity        ρmetal,TCO                                                       Ag price                                      PAg                         1000 €/kg
+  FS # fingers, pitch        nF,FS, pF,FS   Varied                                            Cu price                                      PCu                         458 €/kg
+  RS # fingers, pitch        nF,RS, pF,RS   Varied                                            Paste production cost factor                  PCFprod                     1.3
+
+
+                                                                                         3
+S. Pingel et al.                                                                                               Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+    The index Ref refers to the (partially) assumed parameters of the              enable the determination of the bifaciality or back to front ratio BFR.
+reference cell [5]. Here a 9BB cell is mentioned and with a mAg of 17.1
+mg/W on module level where BB and tab contribute about 4.2 mg/W.                   3. Results and discussion
+This leads to a mAg of 13.9 mg/W for a not optimized busbarless cell. For
+the best performing paste and wN combinations for both Ag and AgCu                    In this section the results of paste screening, the simulation as well as
+paste, the highest AP simulation was selected and compared to the                  the two cell batches and one module batch is reported. In the last part
+η-optimized simulation.                                                            the experimental results are compared in terms of specific silver con­
+                                                                                   sumption with values from literature and put into the context of up­
+2.3. Cell production                                                               coming developments.
+
+    To test the compatibility of well performing pastes with potentially
+                                                                                   3.1. LTP screening with test forms
+low Ag consumption from the paste screening, cells were produced on
+basis of industrial SHJ solar cell M6 precursors. The process flow with
+                                                                                       Different finger widths were tested according to Figs. 1 and 2. For
+different combinations of Ag 03 and AgCu 04 is shown in Fig. 3a).
+                                                                                   further analysis, we focused on the data of wN = 24 μm for Ag pastes and
+    The wet paste laydown M was measured after each print step in this
+                                                                                   wN = 30 μm for AgCu pastes, which gave reasonable printing results for
+experiment, except for all print steps with Ag 03, where existing data
+                                                                                   all tested pastes and allow a fair comparison in the achieved printed
+from previous experiments had to be used, due to malfunction of the
+                                                                                   width wF. Notably, for Ag pastes also for smaller wN suitable results were
+scale. After the final curing the cells were measured in 5BB and 9BB
+                                                                                   achieved. From the I-V measurements of the paste screening samples the
+configuration on a conductive chuck with black cuck JSC calibration. For
+                                                                                   RLINE was extracted by equation (1), the results are presented Fig. 5a).
+comparability with industrial 0BB SHJ cells 18 wire module-
+                                                                                   Based on equation (3) from the AF weighted laydown mAg,F the λESU was
+configuration (18BB) were extrapolated according to Ref. [33], based
+                                                                                   determined, shown in Fig. 5b). As third parameter the wF is presented in
+on the 9BB IV measurement using the RLINE from 5BB. In an additional
+                                                                                   Fig. 6a). For these three parameters the data is shown only for wN = 24
+batch the compatibility of the pastes Cu 01 was compared to the Ag 01
+                                                                                   and 30 μm in Fig. 5a)-b) and 6. a) due to better clarity and comparability
+paste for application on the RS, see Fig. 3b). Here two cases were
+                                                                                   in the wF for both Ag and AgCu pastes. As last parameter the ρc shown in
+compared: i) wide fingers (wN = 80 μm) and ii) narrow fingers (wN = 25
+                                                                                   Fig. 6b) not separated for the different wN.
+μm) on the RS. The FS was metallized with a reference layout and paste
+                                                                                       Most Ag pastes could be printed with wN ≥ 21 μm and gave suitable
+Ag 01. The curing conditions in this batch varies. The expected impact of
+                                                                                   low RLINE values. For wN = 18 μm only two pastes (Ag 07 and Ag 10)
+the different curing profiles on the metallization is rather small, since
+                                                                                   achieved RLINE < 5 Ω/cm. For wN ≥ 24 μm all pastes besides Ag 04 show
+the Ag 01 pastes is an ultra-low temperature paste curable at even lower
+                                                                                   similar level of RLINE in the range 2–4 Ω/cm. For AgCu the variability in
+temperatures than 180 ◦ C.
+                                                                                   RLINE for wN = 30 μm is larger. Only AgCu 04 and AgCu 05 are on a
+                                                                                   similar level as the RS Ag 13 reference slightly above RLINE = 2 Ω/cm.
+2.4. Module integration                                                            This is due to the differences in compatibility with the 430 × 13 × 22.5◦
+                                                                                   mesh. With increasing wN the variability in RLINE reduced substantially
+    In a third batch, cells were produced on M6 industrial SHJ pre­                but the data is not presented here.
+cursors. Here, the metallization layout was varied on FS and RS of the                 For the Ag pastes with a typical Ag content around 92 % the λESU
+cells. Different screens were combined on FS and RS with varying wN                varies in a band between 15 and 25 cm2/(Ω mg) for wN = 24 μm, besides
+(14–30 μm), pF (0.6–2.1 mm) and mesh type, see Fig. 4. For all layouts             the outlier Ag 04. Most of the AgCu pastes did not clearly outperform the
+pastes Ag 01 was used and after all print steps the wet laydown M was              Ag RS reference pastes (Ag 12 and Ag 13) printed with the same wN. This
+recorded. The RS was printed first, followed by a drying step at 200 ◦ C           is a surprise since the Cu content in AgCu varied roughly between 25 and
+for 1 min. Then FS was printed with a subsequent short curing step at              60 %wt (leading to a reduced Ag between 35 and 65 %wt). For most AgCu
+220 ◦ C for 1 min. The cells were then separated to half cut by a Laser            pastes printing issues or incompatibility with the mesh-opening (wN =
+Scribe Mechanical Cleave (LSMC) process and after I-V stringed to half-            30 μm) combination led to only marginally improved λESU. Only AgCu
+cut cell strings by a wire soldering process suitable for busbarless cells.        04 and AgCu 05 achieved low RLINE and had a low Ag in parallel, leading
+    Per combination 2–3 half-cut cell strings were then integrated into            to superior λESU level above 50 cm2/(Ω mg). Compared to the best λESU of
+bifacial glass-glass modules (3 mm float glass, POE encapsulation) and             the Ag pastes for wN = 24 μm, this leads to factor >2 improved λESU for
+the characterized with an I-V tester. Both the full area and masked area           these two AgCu pastes.
+(70 % open area) I-V-curve and electroluminescence (EL) images were                    Coming to the third investigated parameter wF reveals significant
+recorded. The masked I-V was necessary for a fair comparison since the             differences between the pastes. The median printed wF for both pastes
+module wires did not contact the grid fingers in the perimeter area of the         types and wN shows a minimum at wF,min ~35 μm and a maximum at wF,
+solar cells for all samples. The cells were measured on FS and RS to               max ~52 μm, leading to a range of ~17 μm. Using narrow fingers as
+
+
+
+
+                                 Fig. 3. Process flow of cell batch 1 a.) Ag vs. AgCu and cell batch 2 b) Ag vs. Cu on the RS.
+
+                                                                               4
+S. Pingel et al.                                                                                                  Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+
+
+                                            Fig. 4. Cell batch 3 for module integration with varied layouts on FS and RS.
+
+
+
+
+                   Fig. 5. Data from Ag and AgCu paste screening for wN = 24 and 30 μm, (a) Line resistance RLINE, (b) Effective Silver usage λESU.
+
+
+reference and comparing to the widest printed fingers means about 50 %                3.2. Simulation with GridMaster
+increased shading. This will have a strong impact on the optimal number
+of fingers since the shading is the most important parameter when losses                  Simulation on basis of the data from the paste screening showed that
+due to metallization are investigated.                                                AgCu pastes perform lower in η and added price AP due to lower screen
+    The last shown parameter is ρc. Here, differences are rather small for            but also lower paste quality. The results of the simulation are shown in
+the Ag pastes: all had ρc < 0.4 mΩcm2 leading to a rather small impact of             Fig. 7, in the left part the simulated η is plotted versus the mAg and on the
+ρc on the performance of the cell. For AgCu the results are different, only           right part the added price AP versus the mAg. In both graphs the simu­
+the pastes AgCu 06–07 show a low ρc comparable to pure Ag paste, while                lation results for Ag (blue) and AgCu (orange) pastes are shown for the
+AgCu 01–03 vary in the range 0.5–0.6 mΩcm2 and AgCu 04–05 had even                    two scenarios of cost- and η-optimization (closed and open symbols). An
+higher ρc between 0.8 and 1.0 mΩcm2. An important factor might be the                 interesting aspect is that mAg is not substantially improved for the AgCu
+AgCu particle size and shape. Ag04-05 achieved the best RLINE but show                pastes since paste consumption is higher compared to the finer printed
+rather high ρc, potentially larger particles are beneficial for low Ag                Ag lines but also the λESU was not improved substantially for small wN for
+consumption and low RLINE but low resistance contacting of the textured               most AgCu pastes and if it was improved (AgCu 04 and 05) it came along
+sample surface might here be more challenging.                                        with high ρc leading to an η-penalty. In the follow up experiment all
+                                                                                      pastes will be printed with the same fine-line mesh and wN to have a
+                                                                                      fairer comparison.
+                                                                                          The simulation boundary conditions, low cell price (0.1 €/Wp) and
+
+                                                                                  5
+S. Pingel et al.                                                                                                   Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+
+
+                   Fig. 6. Data from Ag and AgCu paste screening. (a) printed width wF for wN = 24 and 30 μm, (b) contact resistivity ρc for all wN.
+
+
+
+
+          Fig. 7. Simulated η (a) and added price AP (b) for cells based on Ag and AgCu pastes investigated for the two scenarios: η- and cost-optimization.
+
+
+high Ag price (1000 €/kg), have a strong impact on the cost-                           3.3. Demonstration of AgCu paste on full cells
+optimization scenario. The more expansive the Ag and less valuable
+the cell power the larger difference between the η- and cost-optimized                     SHJ solar cells with Ag/Ag, Ag/AgCu and AgCu/AgCu configuration
+scenario. For the chosen parameters in this investigation, we found                    were produced according to the proces shown in Fig. 3a), for this the
+~0.4 %abs lower η and ~3 mg/W lower mAg for the cost optimized                         pastes Ag 03 and AgCu 04 were used. The I-V results are shown in Fig. 8.
+scenario, both valid for Ag and AgCu.                                                  The short circuit current density JSC is ~0.2 mA/cm2 higher for Ag 03,
+    Compared to the reference (mAg = 12.9 mg/W, assumed η = 24.5 %                     indicating finer lines, for the same applied screen. The wider AgCu
+[5]) the investigated pastes lead to a similar or slightly higher simulated            fingers and larger cross-section AF lead to more shading which is over­
+η-level, but this is achieved for a substantially lower mAg already in the             compensated by FF improvement when AgCu is printed on the FS,
+η-optimized scenario. If costs due to paste consumption are considered                 resulting in improved η. This is visible clearly for the 5BB I-V but also for
+the resulting η is lower than the reference but for this rather aggressive             9BB the FF increases for AgCu 04 on the FS.
+scenario the AP is the highest and mAg lies in the range 3–5 mg/W. This                    For the η only 5BB profits clearly from the lower RLINE. For 9BB all
+substantial difference in η due to the price of the consumables leads to a             groups are on a similar level. For the simulated 18 BB η the group
+window of opportunity for alternative low-Ag or Ag-free metallization                  combining fine-line printable Ag on the FS and AgCu on the RS performs
+technologies. The silver price will likely increase in the future, but the             best. This confirms the findings in Ref. [7] where we found that fine-line
+development of the cell price is hard to predict in the current consoli­               LTP metallization is especially compatible with small wire pitches.
+dation phase of the PV industry.                                                           For AgCu 04, a laydown of about 32 mg on the FS and 72 mg on RS
+                                                                                       was recorded. The RS laydown is higher per finger due to the additional
+                                                                                       pseudo-busbar (pBB) in the layout that leads to about 10 % higher
+                                                                                       laydown. In total this sums up to 104 mg AgCu paste. With an Ag content
+
+
+                                                                                   6
+S. Pingel et al.                                                                                             Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+
+
+                          Fig. 8. Measured (5BB and 9BB) and simulated (18BB) I-V data for cell batch 1 with Ag and AgCu pastes.
+
+
+of 45 % the cells of the last group AgCu/AgCu were produced with about            was substantially higher compared to AgCu 4. The specific mAg is
+47 mg Ag. The corresponding mAg for the 9BB measurement (6.14 W) is               roughly estimated to be mAg < 10 mg/W based on earlier experiments
+7.7 mg/W and slightly lower for the simulated 18BB resulting in ~7.5              with the same paste.
+mg/W. Correcting for the estimated laydown of the pBB results in about               In the second cell batch, the compatibility with Cu paste applied on
+7 mg/W.                                                                           the SHJ cell RS side was investigated. The cells were produced all with
+    The laydown of Ag 03 could not be recorded in this experiment. The            the same Ag 01 LTP and layout on the FS while the RS was varied with
+wet laydown M for Ag 03 is expected to be significantly lower since RLINE         two wN and two pastes (Ag 01 and the copper paste Cu 01) on the RS
+
+
+
+
+ Fig. 9. (a) Measured η-data with 9BB contacting for cell batch 2 with Ag and Cu paste and (b) 5BB RLINE measurement after curing and 24 days storage in air.
+
+                                                                              7
+S. Pingel et al.                                                                                                 Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+according to the process flow in Fig. 3b).                                           are plotted in Fig. 11.
+    Comparing the two groups in Fig. 9a.) printed with the large wN on                   The group with the lowest mAg was printed with wN = 14 μm layouts
+the RS reveals a small drop for the median η of about 0.1 % when the Cu              (group 9) and it was compared to the group printed with reference
+paste is compared to the Ag paste. The reproducibility for the Cu group is           layouts (group 1). The specific Ag laydown could be reduced from 21.1
+worse, due to several reasons (offline manual printing of Cu paste,                  mg/W to 7.9 mg/W, cutting the Ag consumption almost by two third as
+handling issues, different curing processes compared to automated                    shown in Table 4 below. The I-V parameters changed only slightly be­
+printing process for the Ag paste).                                                  sides the series resistance RS that is clearly increasing for the low Ag
+    For a narrow wN of 25 μm, the Ag group stayed on a similar level as              samples. The reference had a lower open circuit voltage VOC that can not
+for 80 μm while the Cu group lost about 0.6 %abs in η compared to Ag.                only be explained by the differences in metallization and is more likely
+The reduction in FF is indicating series resistance RS issues. The loss is           caused by differences in precursors quality (even though randomization
+not caused by the larger RLINE for Cu groups that is shown in Fig. 9.b),             of the precursors) and/or handling defects introduced during cell and
+because the cells were measured FS up with the varied RS on a                        module fabrication. The short circuit current density JSC of the low Ag
+conductive chuck, but the root cause for the η-loss is more likely due to            group is even smaller compared to the reference but the FF is higher due
+issues with ρc on the RS. In TLM measurements Ag01 showed ρc ~0.2                    to the finer pitch and again likely due to precursor quality. Taken all
+mΩcm2 (compare to Fig. 6b) and the Cu paste had a ρc ~5 mΩcm2 for wN                 together this leads to a 1 %rel improved η. Besides the laydown reduction
+= 80 μm. The more than one magnitude larger ρc for Cu plays a more                   clearly improved is also the bifaciality/BFR due to less metal coverage
+pronounced role for the narrow fingers since the contacted areas are                 on the RS because of fine-line printing and adapted pF for the low Ag
+reduced by about factor larger than 2. The Cu paste seems not yet ready              group. Overall, the low Ag metallization worked well, and it was shown
+for fine-line contacts due to the high ρc.                                           that the IV parameters are in sum not negative affected by the reduced
+    The cells were also measured RS up in 5BB configuration to deter­
+mine the RLINE. The samples were measured after curing and after 24
+days of storage in air. The data is shown in Fig. 9b). The RLINE did not
+chance significantly indicting that the bulk and surface of the pastes is
+not significantly oxidizing. This is already a good indication for the
+stability of the paste in a production environment but needs to be fol­
+lowed up by reliability tests on module level.
+
+
+3.4. Module integration
+
+    In the third batch SHJ cells with varied metallization layouts, sum­
+marized in Fig. 4, were produced. After module integration the two half-
+cut cell modules were characterized with EL. Images of full area and
+masked module are shown in Fig. 10. In the lower edges of the full area
+EL image contact issues are visible as dark areas. Here the intercon­
+nection wire does not contact the grid fingers close to the cell edge. The
+metallization was not adapted in all cases for module integration leading
+to a high RS in this cell perimeter area for many modules. Depending on
+the cell metallization the gain from full area to masked IV was 0.2–1.3
+%abs in η. The larger pF and the finer the fingers the more pronounced the
+found η-gain.
+    To have a fairer comparison the modules were all measured with the
+                                                                                     Fig. 11. Masked module η-data over specific Ag consumption mAg for the
+mask. The found power measured under STC was corrected for the
+                                                                                     different cells with different combinations of FS and RS metallization layouts,
+masked area and was put into perspective of the Ag content of the cell
+                                                                                     the labeling represents the group ID from Fig. 4.
+laydown M. The median values of masked η-data versus the specific mAg
+
+
+
+
+            Fig. 10. EL images of a module without (left) and with mask (right). Showing the non-uniform wire contact due to not adapted metallization.
+
+                                                                                 8
+S. Pingel et al.                                                                                                 Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+Table 4
+Median module data of the reference and lowest mAg group.
+  Parameter                pF,FS/pF,R     mAg                VOCa             JSC                   FF               η                 RSa                      BFR
+                                                                                        2                                                         2
+  Units                    [mm]           [mg/W]             [mV]             [mA/cm ]              in %             in %              [mOhmcm ]                in %
+  Group 1-Ref              2.1/0.6        21.1               729              35.9                  80.5             21.1              0.9                      94.7
+  Group 9                  1.0/1.0        7.9                735              35.7                  81.0             21.3              1.1                      95.6
+
+
+
+  Rel. change              ​              ¡62.6 %            0.8 %            − 0.4 %               0.6 %            1.0 %             21.6 %                   1.0 %
+  a
+      per half-cut cell.
+
+
+Ag consumption. A clearer comparison would require better statistics                use the same screens for both type of pastes for a fair comparison. One
+and not only 2–3 small area modules per variation.                                  key finding is that also AgCu pastes need to be fine-line compatible since
+                                                                                    they still contain a certain amount of Ag and for a large AF, they can’t
+3.5. Classification of the results                                                  compete with high performance fine-line Ag fingers. With further
+                                                                                    decreasing Ag content in AgCu this assessment might change since the
+    The results from the three cell/module batches are shown in Fig. 12             paste suppliers already work with paste <30 %wt Ag but especially on
+below together with the published data [3,5]. The results of the latest             the cell FS a fine-line solution is necessary for high η cells, if bifaciality is
+cell batches are well aligned with other achievements in industry, e.g.             important fine-line is essential also on the rear. In summary the chal­
+Risen claimed to have achieved 7 mg/W. Taken all together this in­                  lenge for the paste suppliers is to provide pastes that offer good print­
+dicates a rapid reduction of Ag consumption in SHJ cells and that the               ability enabling high throughput and in parallel allow a fine-line print
+mid-term goal of 5 mg/W given in Ref. [5] is within reach and will likely           with low Ag consumption, low RLINE, low wF, low AF and finally a low ρc.
+be achieved in the next two years. The long-term goal of 2 mg/W is more             The last parameter seems to be a special challenge for AgCu paste with
+challenging and will require a substantial improvement of the AgCu                  low Ag content and high λESU since ρc was found to be significantly
+pastes or the application of pure Cu pastes.                                        higher for those pastes, potentially due to larger particles.
+                                                                                        The data from the paste screening was fed into GridMaster simula­
+4. Conclusions                                                                      tions to optimize the metallization layout of bifacial cells. The optimi­
+                                                                                    zation was done for two targets: (i) for high η and (ii) low cost. For low-
+    In this work we present tests results of Ag and AgCu LTPs for SHJ               cost optimization the Ag/AgCu consumption at a low cell price was
+cells. Compared to Ag pastes with >90 %wt Ag the investigated AgCu                  balanced with the decreasing value of the cell due to lower η. The results:
+pastes had an Ag content in the range 35–65 %wt. This reduction is ex­              Ag pastes performed better in η and cost but at least partially this can be
+pected to lead to an improved Ag utilization λESU. For narrow wN of 30              explained by the differences in the quality of the used screens. The best
+μm only two AgCu pastes showed a clear improvement by a factor of 2 or              AgCu pastes had a slight advantage in mAg, but this did not lead to better
+greater. For larger wN, not shown, two more pastes had an increase in               cost structure. Comparing the two optimization scenarios (i) and (ii) the
+λESU compared to pure Ag but three pastes did not show any appreciable              mAg improved from about 5.5 to 3.5 mg/W showing that for busbarless
+improvement compared to Ag at all. One reason might be the unequal                  cells the mid-term goal of 5 mg/W is clearly within reach for both Ag and
+comparison of 0◦ screen for Ag pastes and 22.5◦ screen for AgCu but this            AgCu metallization without severe η-penalty. The cost optimized sce­
+alone can’t explain the findings. In an upcoming paste screening, we will           nario leads to a substantial loss in η of about 0.3–0.4 %abs. compared to
+
+
+
+
+Fig. 12. Rapid development of the reduction of Ag consumption in the last few years for SHJ solar cells. Extrapolation indicates that 5 mg/W will soon be passed
+likely with optimization of Ag and AgCu pastes (and higher cell η) while 2 mg/W might make the introduction of Cu paste or alternatives necessary.
+
+                                                                               9
+S. Pingel et al.                                                                                                    Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+
+η-optimization. This huge drop indicates a window of opportunity for               References
+further screen-printing optimization or other fine-line low Ag or even
+Ag-free SHJ metallization techniques. For screen printing it will be                [1] Jonas Bartsch, The role of silver in terawatt PV production - perspectives and
+                                                                                        options, Photovoltaics Int. 48 (2022).
+necessary to continue the development of screens and pastes to reduce               [2] E. Gervais, S. Herceg, S. Nold, K.-A. Weiß, Sustainability strategies for PV:
+the costs when going fine-line. Due to the high Cu content in AgCu                      framework, status and needs, EPJ Photovolt. 12 (2021) 5, https://doi.org/
+pastes, it is expected that their prices will significantly decrease in the             10.1051/epjpv/2021005.
+                                                                                    [3] Y. Zhang, M. Kim, L. Wang, P. Verlinden, B. Hallam, Design considerations for
+future compared to silver pastes. As these pastes are becoming already                  multi-terawatt scale manufacturing of existing and future photovoltaic
+mainstream and production scales up, the costs associated with their                    technologies: challenges and opportunities related to silver, indium and bismuth
+rapid development will be reduced over time.                                            consumption, Energy Environ. Sci. 14 (11) (2021) 5587–5610, https://doi.org/
+                                                                                        10.1039/D1EE01814K.
+    In the first cell batch, the fine-line compatibility of AgCu was                [4] P.J. Verlinden, Future challenges for photovoltaic manufacturing at the terawatt
+investigated. If AgCu is applied on FS and RS a mAg of 7.5 mg/W was                     level, J. Renew. Sustain. Energy 12 (5) (2020), https://doi.org/10.1063/
+achieved, but pure Ag metallization appears to be competitive on this                   5.0020380.
+                                                                                    [5] Y.-C. Chang, et al., Silver-lean metallization and hybrid contacts via plating on
+level. In a second cell batch Ag on the FS was combined with pure Cu
+                                                                                        screen-printed metal for silicon solar cells manufacturing, Prog. Photovoltaics Res.
+paste on RS achieving similar η compared to the reference with only Ag                  Appl. (2024), https://doi.org/10.1002/pip.3799.
+metallization for 80 to 100 μm-wide contacts on the RS. The Cu group                [6] D. Erath, et al., Fast screen printing and curing process for silicon heterojunction
+fall below the mAg mid-term target of 5 mg/W. An effect on RLINE due to                 solar cells, in: PROCEEDINGS OF THE 9TH WORKSHOP ON METALLIZATION AND
+                                                                                        INTERCONNECTION FOR CRYSTALLINE SILICON SOLAR CELLS, Genk, Belgium,
+oxidation of the Cu fingers was not found after 24-day air exposure. But                2021 20006.
+cell reliability must be addressed on module level in lifetime testing.             [7] S. Pingel, et al., Progress on the reduction of silver consumption in metallization of
+This is planned. In a third cell batch high and low Ag consumption SHJ                  silicon heterojunction solar cells, Sol. Energy Mater. Sol. Cells 265 (2024) 112620,
+                                                                                        https://doi.org/10.1016/j.solmat.2023.112620.
+cells were integrated into modules. Compared to the reference layouts               [8] K. Nakamura, K. Muramatsu, A. Tanaka, Y. Ohshita, Newly Developed Ag Coated
+the η-level was maintained while the bifaciality was improved by 1 %rel.                Cu Paste for Si Hetero-Junction Solar Cell, 2018, https://doi.org/10.4229/
+and the Ag consumption was cut almost by two third (63 %).                              35thEUPVSEC20182018-2AV.3.37.
+                                                                                    [9] N. Chen, et al., Thermal stable high-efficiency copper screen printed back contact
+    For future work, we plan to investigate if the next generation of AgCu              solar cells, Sol. RRL 7 (2) (2023), https://doi.org/10.1002/solr.202200874.
+and Ag pastes can meet the targets of 5 and 2 mg/W with an as low as               [10] R. Kopecek et al., "Interdigitated Back Contact Technology as Final Evolution for
+possible η-drop. Especially for 2 mg/W the focus shifts more to pure Cu                 Industrial Crystalline Single-Junction Silicon Solar Cell,".
+                                                                                   [11] D. Rudolph, et al., Screen printable, non-fire-through copper paste applied as
+pastes on the RS. The different approaches for reducing Ag consumption                  busbar metallization for back contact solar cells, in: PROCEEDINGS OF THE 10TH
+will be tested on cell and module level including reliability testing. For              WORKSHOP ON METALLIZATION AND INTERCONNECTION FOR CRYSTALLINE
+this low Ag consumption on cell level the contribution for low temper­                  SILICON SOLAR CELLS, Genk, Belgium, 2022 20006.
+                                                                                   [12] D. Rudolph, et al., Improvement of solder interconnections applied on back contact
+ature interconnection becomes much more relevant and mAg needs to be
+                                                                                        solar cells with low-temperature copper paste busbars, Sol. Energy Mater. Sol. Cells
+reduced on module side as well for a more sustainable TW market [34].                   264 (2024) 112603, https://doi.org/10.1016/j.solmat.2023.112603.
+This topic is addressed within Fraunhofer ISE as well.                             [13] S. Tepner, A. Lorenz, Printing technologies for silicon solar cell metallization: a
+                                                                                        comprehensive review, Prog Photovolt Res Appl., to be published (2023), https://
+                                                                                        doi.org/10.1002/pip.3674.
+CRediT authorship contribution statement                                           [14] VDMA, ITRPV - International Technology Roadmap for Photovoltaic, vol. 14, 2024.
+                                                                                        Edition.
+    S. Pingel: Writing – review & editing, Writing – original draft,               [15] CPIA, China’s Photovoltaic Industry Development Roadmap, 2023-24.
+                                                                                   [16] A. Lorenz, et al., Rotary screen printed metallization of heterojunction solar cells:
+Visualization, Software, Methodology, Formal analysis, Conceptualiza­                   toward high-throughput production with very low silver laydown, Energy Technol.
+tion. F.M. Maarouf: Resources, Investigation, Conceptualization. N.                     10 (8) (2022) 2200377, https://doi.org/10.1002/ente.202200377.
+Wengenmeyr: Resources, Investigation. M. Linse: Resources, Investi­                [17] J. Schube, et al., FlexTrail printing as direct metallization with low silver
+                                                                                        consumption for silicon heterojunction solar cells: evaluation of solar cell and
+gation. L. Folcarelli: Investigation. J. Schube: Writing – review &                     module performance, Energy Technol. 10 (12) (2022) 2200702, https://doi.org/
+editing, Investigation. S. Hoffmann: Investigation, Conceptualization.                  10.1002/ente.202200702.
+S. Tepner: Writing – review & editing. J. Huyeng: Writing – review &               [18] M. Pospischil, et al., Applications of parallel dispensing in PV metallization, in: M.
+                                                                                        J.K. Bashir, T.K. Tat, H. Nisar, Y. Munusamy, W.C. Chong (Eds.), AIP Conference
+editing, Supervision, Software, Funding acquisition, Conceptualization.                 Proceedings, Volume Number 2157, International Symposium On Green and
+A. Lorenz: Writing – review & editing, Supervision, Project adminis­                    Sustainable Technology: Conference Date, 23-26 April 2019 : Location, Perak,
+tration, Funding acquisition, Conceptualization. F. Clement: Supervi­                   Malaysia, AIP Publishing, Melville, N.Y.], 2019 20005.
+                                                                                   [19] K. Gensowski, et al., Filament stretching during parallel dispensing – a way to
+sion, Project administration, Funding acquisition.
+                                                                                        reduce silver consumption in SHJ metallization, Sol. Energy Mater. Sol. Cells 245
+                                                                                        (2022) 111871, https://doi.org/10.1016/j.solmat.2022.111871.
+Declaration of competing interest                                                  [20] K. Gensowski, et al., Dispensing of low-temperature silver pastes, in: 9th Workshop
+                                                                                        on Metallization and Interconnection for Crystalline Silicon Solar Cells, Virtual
+                                                                                        Event, 2020 20007.
+    The authors declare the following financial interests/personal re­             [21] A. Lachowicz et al., "Project Ameliz: Patterning Techniques for Copper
+lationships which may be considered as potential competing interests:                   Electroplated Metallization on Heterojunction Solar Cells,".
+Sebastian Pingel reports equipment, drugs, or supplies was provided by             [22] S.N. Abolmasov, A.S. Abramov, V.N. Verbitskii, G.G. Shelopin, A.V. Kochergin, E.
+                                                                                        I. Terukov, Formation of a copper contact grid on the surface of silicon
+Paste Suppliers. If there are other authors, they declare that they have no             heterojunction solar cells, Semiconductors 57 (10) (2023) 431–439, https://doi.
+known competing financial interests or personal relationships that could                org/10.1134/S1063782623090014.
+have appeared to influence the work reported in this paper.                        [23] T. Hatt, S. Kluska, M. Yamin, J. Bartsch, M. Glatthaar, Native oxide barrier layer for
+                                                                                        selective electroplated metallization of silicon heterojunction solar cells, Sol. RRL 3
+                                                                                        (6) (2019), https://doi.org/10.1002/solr.201900006.
+Acknowledgements                                                                   [24] G. Limodio, et al., Copper-plating metallization with alternative seed layers for c-Si
+                                                                                        solar cells embedding carrier-selective passivating contacts, IEEE J. Photovoltaics
+                                                                                        10 (2) (2020) 372–382, https://doi.org/10.1109/JPHOTOV.2019.2957671.
+   The authors would like to thank the co-workers at Fraunhofer ISE for            [25] T. Hatt, et al., Copper Electroplating for SHJ Solar Cells – Adequate Contact by
+their support in processing and characterization, the paste suppliers for               Electrolyte Tuning, 2021.
+providing test material and the Federal Ministry of Economic Affairs and           [26] T. Tang et al., "Achievement of 25.54% Power Conversion Efficiency by
+                                                                                        Optimization of Current Losses at the Front Side of Silicon Heterojunction Solar
+Climate Action for funding the research project “Utility4Indium” under                  Cells,".
+contract no. 03EE1127D and “HIT“ under contract no. 03EE1197B”.                    [27] J. Yu, et al., Process challenges of high-performance silicon heterojunction solar
+                                                                                        cells with copper electrodes, Sol. Energy Mater. Sol. Cells 250 (2023) 112057,
+                                                                                        https://doi.org/10.1016/j.solmat.2022.112057.
+Data availability
+                                                                                   [28] A. Kraft, C. Wolf, J. Bartsch, M. Glatthaar, Characterization of copper diffusion in
+                                                                                        silicon solar cells, Energy Proc. 67 (2015) 93–100, https://doi.org/10.1016/j.
+    Data will be made available on request.                                             egypro.2015.03.292.
+
+
+                                                                              10
+S. Pingel et al.                                                                                                                   Solar Energy Materials and Solar Cells 287 (2025) 113593
+
+[29] F. Clement, et al., Project "FINALE" - screen and printing process development for            [32] Ocean Tang, Progress in Development of Fusion HJT Paste: 14.12.2023, Taiyang
+     ultra-fine-line contacts below 20μm finger width, in: 36th European Photovoltaic                   News, 2023 [Online], https://www.youtube.com/watch?v=B27n0L2-KV4.
+     Solar Energy Conference and Exhibition, Marseille, France, 2019, pp. 255–258.                      (Accessed 24 January 2025).
+[30] T. Wenzel, et al., Progress with screen printed metallization of silicon solar cells -        [33] M. Rauer, et al., Assessing current-voltage measurements of busbarless solar cells,
+     towards 20 μm line width and 20 mg silver laydown for PERC front side contacts,                    Sol. Energy Mater. Sol. Cells 248 (2022) 111988, https://doi.org/10.1016/j.
+     Sol. Energy Mater. Sol. Cells 244 (2022) 111804, https://doi.org/10.1016/j.                        solmat.2022.111988.
+     solmat.2022.111804.                                                                           [34] D. Güldali, A. de Rose, M. Mittag, B. Grübel, U.T.H. Neuhaus, Interconnection of
+[31] T. Fellmeth, F. Clement, D. Biro, Analytical modeling of industrial-related silicon                low-temperature metallization on silicon solar cells - the role of silver in tin-
+     solar cells, IEEE J. Photovoltaics 4 (1) (2014) 504–513, https://doi.org/10.1109/                  bismuth-based solder alloys, Sol. Energy Mater. Sol. Cells 285 (2025) 113488,
+     JPHOTOV.2013.2281105.                                                                              https://doi.org/10.1016/j.solmat.2025.113488.
+
+
+
+
+                                                                                              11
+
