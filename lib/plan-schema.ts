@@ -102,6 +102,65 @@ export interface LabBriefPlan {
   failure_map?: FailureMapEntry[]
 }
 
+// ─── Pass 4 — custom AR scene spec (plan/ar.json) ─────────────────────────
+
+export type StationKind =
+  | 'beaker'
+  | 'tube-rack'
+  | 'pipette'
+  | 'hotplate'
+  | 'tall-instrument'
+  | 'flat-instrument'
+  | 'plate-reader'
+  | 'scaffold'
+  | 'dish'
+  | 'microscope'
+  | 'incubator'
+  | 'furnace'
+  | 'printer'
+
+export type StationAnimation =
+  | 'operate'
+  | 'mix'
+  | 'heat'
+  | 'observe'
+  | 'measure'
+  | 'transfer'
+  | 'none'
+
+export interface LabStation {
+  id: string
+  label: string
+  kind: StationKind
+  color?: string // hex string, e.g. "#4a90e2"
+  position: [number, number, number]
+  wiki_page?: string
+}
+
+export interface StationStateChange {
+  station: string
+  property: 'color' | 'label' | 'active'
+  to: string | boolean
+}
+
+export interface StepBinding {
+  step: number
+  focus_station: string
+  animation?: StationAnimation
+  label_override?: string
+  state_changes?: StationStateChange[]
+}
+
+export interface LabSceneSpec {
+  version: 1
+  slug: string
+  title: string
+  scene: {
+    stations: LabStation[]
+  }
+  step_bindings: StepBinding[]
+}
+
 // Lightweight summary for the picker UI
 export interface PlanSummary {
   slug: string

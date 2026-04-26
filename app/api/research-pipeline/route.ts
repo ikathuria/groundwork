@@ -44,6 +44,9 @@ export async function POST(req: NextRequest) {
         send('stage', { stage: 'pass-3', message: 'Generating Lab Brief' })
         await runPass(send, 'pass-3', `/pass-3 ${slug}`)
 
+        send('stage', { stage: 'pass-4', message: 'Rendering wiki HTML and AR lab' })
+        await runPass(send, 'pass-4', `/pass-4 ${slug}`)
+
         send('done', { slug })
       } catch (err) {
         const msg = err instanceof Error ? err.message : String(err)

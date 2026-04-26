@@ -65,6 +65,12 @@ hypothesis (plain English)
 ┌──────────────────────┐
 │ Pass 3: Plan / brief │  → plan/  (structured Lab Brief data → web UI)
 └──────────────────────┘
+        │
+        ▼
+┌──────────────────────┐
+│ Pass 4: Wiki HTML +  │  → plan/wiki.html + plan/ar.json (web + AR)
+│        AR scene      │
+└──────────────────────┘
 ```
 
 Each pass reads the previous pass's output and writes only into its own designated folder. **Earlier artifacts are never modified by later passes.** This makes the system inspectable, debuggable, and resumable.
@@ -532,7 +538,31 @@ For future UI-triggered moments (live single-paper ingest, scientist correction 
 - Writes to `plan/` and (one file) into `wiki/plans/`.
 - **Every claim in the plan must be traceable to a wiki entity.** The UI surfaces those links.
 
-### 7.4 Lint pass (run on demand)
+### 7.4 Pass 4 — Wiki HTML + Custom AR Lab skill (`/pass-4`)
+
+**Input:** populated `wiki/` and `plan/plan.json` for a single hypothesis.
+
+**What it does:**
+1. Reads `hypothesis.md`, `plan/plan.json`, `plan/plan.md`, `wiki/index.md`, and the entity pages cited by the plan's protocol steps.
+2. Generates `plan/ar.json` — the **custom AR scene spec**: a list of `stations` (3–8 per experiment) tailored to the actual equipment / vessels the protocol uses, plus `step_bindings` mapping every protocol step to a station + animation. See `lib/plan-schema.ts` (`LabSceneSpec`) for the schema.
+3. Generates `plan/wiki.html` — a **single self-contained static HTML** rendering of the plan (refined hypothesis, novelty QC, summary, protocol with inline failure callouts, materials, budget, timeline, validation, failure map) plus a digest index of every wiki entity grouped by type. Inline CSS only, no external assets, no build step. Print-friendly. Openable from disk; also served by the Next.js `/h/[slug]` route.
+4. Files the AR spec back into the wiki at `wiki/plans/ar-v<n>.md` (frontmatter + fenced JSON), so it joins the Obsidian graph.
+5. Updates `hypothesis.md` frontmatter (`latest_ar`, `latest_wiki_html`).
+6. Appends `session.log.md`.
+
+**Output:** `plan/ar.json`, `plan/wiki.html`, `wiki/plans/ar-v<n>.md`.
+
+**Constraints:**
+- Reads from `wiki/`, `plan/`, and `hypothesis.md` only.
+- Writes to `plan/ar.*`, `wiki/plans/ar-v<n>.md`, `hypothesis.md` frontmatter, and the session log. Nothing else.
+- **Every protocol step must have exactly one `step_bindings` entry.** No skipped steps.
+- **Every station must trace to a wiki entity** via `wiki_page`, OR be a generic vessel (`beaker`, `tube-rack`, `dish`, `pipette`) that doesn't need one.
+- `wiki.html` must contain only facts traceable to the plan or the wiki — no invented content.
+- Idempotent — re-running bumps the version (`ar-v2.md`) and overwrites `plan/ar.json` and `plan/wiki.html`.
+
+The Lab Brief UI (`web/`) consumes `plan/ar.json` via `/api/ar/[slug]` and serves `plan/wiki.html` at `/h/[slug]`.
+
+### 7.5 Lint pass (run on demand)
 
 Cross-cutting health check. Run periodically and before any demo.
 
@@ -546,7 +576,7 @@ What it checks:
 
 Output: a `lint-report.md` per hypothesis or repo-wide.
 
-### 7.5 Feedback skill (`/apply-correction`) — the Learning Loop
+### 7.6 Feedback skill (`/apply-correction`) — the Learning Loop
 
 **Input:** structured scientist correction from the Lab Brief UI's review interface.
 
