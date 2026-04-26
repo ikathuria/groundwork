@@ -1,7 +1,8 @@
 {
   "schema_version": "groundwork-plan-v1",
-  "generated_at": "2026-04-25T18:00:00Z",
-  "plan_version": 1,
+  "generated_at": "2026-04-26T04:28:00Z",
+  "plan_version": 2,
+  "regen_note": "v2 regenerates the Lab Brief HTML against the new wiki-browser spec (full 118-page wiki corpus inlined, marked.js render, panel nav stack, Cmd+K, deep-linking). Plan content unchanged from v1.",
 
   "hypothesis": {
     "slug": "2026-04-25_lgg-c57bl6-permeability",

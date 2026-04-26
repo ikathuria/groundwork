@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "276ed7ea31eb4e58",
+        "id": "87221da8f6542abe",
         "type": "tabs",
         "children": [
           {
-            "id": "4ad91858add0be44",
+            "id": "a534ff9920185c85",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "4ad91858add0be44",
+  "active": "a534ff9920185c85",
   "lastOpenFiles": [
+    "sources/2026-alsayari-multi-strain-probiotic-bee-pollen.md",
+    "index.md",
+    "plans/plan-v2.md",
+    "failure-modes/LGG-viability-loss-during-gavage-prep.md",
+    "sources/2026-wu-impact-continuous-probiotic-supplementation-intestinal.md",
+    "failure-modes/coprophagy-microbiome-equilibration.md",
     "Untitled.canvas",
     "sources/2025-ferris-probiotics-intestinal-tight-junction-barrier.md",
     "methods/oral-gavage-mouse.md",

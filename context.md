@@ -578,11 +578,12 @@ Output: a `lint-report.md` per hypothesis or repo-wide.
 
 ## 8. The Lab Brief artifact (`plan/`)
 
-Pass 3 produces three artifacts in `hypotheses/<slug>/plan/`:
+Pass 3 produces four artifacts in `hypotheses/<slug>/plan/`:
 
 - **`plan.json`** — canonical structured data. Schema below. Drives the rendered HTML; also reused by future Pass 4 (voice) / Pass 5 (AR).
-- **`plan/index.html`** — the user-facing Lab Brief, a **fully bespoke single-file web page** tailored to this hypothesis. The agent generates it from scratch each run (no template). Data is embedded inline in `<script type="application/json" id="plan-data">…</script>` so the file works via `file://`. See §9 for the UX spec.
+- **`plan/index.html`** — the user-facing Lab Brief, a **fully bespoke single-file web page** tailored to this hypothesis. The agent generates it from scratch each run (no template). Both `plan.json` and `.wiki-bundle.json` are embedded inline as `<script type="application/json" id="plan-data">…</script>` and `<script type="application/json" id="wiki-corpus">…</script>` so the file works via `file://`. See §9 for the UX spec.
 - **`plan/plan.md`** — Obsidian-readable markdown mirror of `plan.json`, with wikilinks for every entity reference.
+- **`plan/.wiki-bundle.json`** — the wiki-corpus bundle (every wiki page's frontmatter + raw markdown), produced by `tools/build-wiki-bundle.py`. Embedded inline into `index.html` to power the side-panel wiki browser. Treated as a build artifact (regenerated every Pass 3 run).
 
 Plus `wiki/plans/plan-v<n>.md` filed back into the wiki graph.
 
@@ -678,7 +679,7 @@ Plus `wiki/plans/plan-v<n>.md` filed back into the wiki graph.
 }
 ```
 
-`wiki_drilldowns` populates the slide-in side panel in `plan/index.html` when a user clicks any reagent / failure mode / source. **Required** for every entry in `failure_map`. Reagents and sources can be populated for the most-cited entries; the renderer falls back to a stub for the rest.
+`wiki_drilldowns` is **optional**. The side panel in `plan/index.html` browses the **full wiki** via the embedded `<script id="wiki-corpus">` bundle (built by `tools/build-wiki-bundle.py` — see §9). Use `wiki_drilldowns` only when you want to override the default wiki-page rendering for a specific slug — for example, to show a hand-curated narrative for a marquee failure mode. Keys must be wiki slugs that exist in the corpus; the renderer prefers a `wiki_drilldowns` entry over the corpus when both are present.
 
 ---
 
@@ -705,17 +706,28 @@ Closer to a polished PI memo than a Wikipedia article. Three layers of depth on 
 - Validation (success / failure / measurements)
 - Failure Map (the differentiator surface — visualization: network graph / heatmap / severity-ranked list)
 
-### Layer 3 — Wiki drilldown (side panel)
-- Click any reagent / failure-mode / source / method anywhere on the page → side panel slides in
-- Loads `wiki_drilldowns[wiki_page]` content (markdown rendered to HTML)
-- ESC or backdrop click closes
-- The user navigates the whole graph from the brief without leaving it
+### Layer 3 — Wiki browser (side panel)
+
+The wiki is GROUNDWORK's deliverable; the Lab Brief is the lens onto it. The side panel is a working browser over **the entire wiki**, not a hand-curated subset of stubs.
+
+- Click any reagent / failure-mode / source / method / inline `[[wikilink]]` anywhere on the page → side panel slides in.
+- The panel renders the **full wiki page** for that slug from the embedded `<script id="wiki-corpus">` bundle: page title, type/severity badges, a definition list of interesting frontmatter, the rendered markdown body (wikilinks resolved to clickable in-panel links), and a **Backlinks** section listing every page that wikilinks to this one (grouped by type).
+- Wikilinks inside the panel deep-dive *within* the panel (panel maintains a navigation stack with a back button — never navigates the page itself).
+- Failure-mode wikilinks carry a leading severity dot (critical = red, high = orange, medium = amber, low = neutral) so severity is scannable inline.
+- `Cmd+K` / `Ctrl+K` opens a quick switcher: live-filter every page in the corpus by title, Up/Down arrows + Enter to open.
+- Deep-linkable: opening a page pushes `#wiki-{slug}` to the URL; on load, that hash opens the matching page; back/forward work via `hashchange`.
+- ESC or backdrop click closes the panel and clears the hash.
+- `wiki_drilldowns` overrides (in `plan.json`) take precedence over the default wiki-corpus rendering for a given slug.
+
+#### Required build artifact
+
+Pass 3 must produce `plan/.wiki-bundle.json` via `tools/build-wiki-bundle.py` and inline it into `index.html` as `<script type="application/json" id="wiki-corpus">…</script>`. The bundle is the deterministic walk-+-frontmatter-parse output described in §8. The page renders markdown bodies client-side with `marked.js`.
 
 ### Required interactivity
-Sticky header with section nav · expandable protocol steps · scroll-triggered animations that *explain* (timeline phases build, failure-graph nodes settle, doughnut sweeps in) · keyboard accessible · respects `prefers-reduced-motion` · `@media print` hides decoration.
+Sticky header with section nav · expandable protocol steps · scroll-triggered animations that *explain* (timeline phases build, failure-graph nodes settle, doughnut sweeps in) · the wiki browser behaviors above · keyboard accessible · respects `prefers-reduced-motion` · `@media print` hides decoration.
 
 ### Tech (recommended, flexible)
-CDN-loaded only — no build step. Tailwind CSS Play CDN, Alpine.js 3, GSAP + ScrollTrigger, Chart.js 4, D3 7, marked.js. Distinctive Google Fonts pairing (avoid generic Inter / Roboto / Arial). Substitute freely (Three.js, p5.js, anime.js, Observable Plot, etc.) when a particular visualization or motion idiom genuinely fits the experiment.
+CDN-loaded only — no build step for the page itself (the wiki bundle is a one-shot Python build, not a frontend build). Tailwind CSS Play CDN, Alpine.js 3, GSAP + ScrollTrigger, Chart.js 4, D3 7, **marked.js (required — powers the wiki browser)**. Distinctive Google Fonts pairing (avoid generic Inter / Roboto / Arial). Substitute freely (Three.js, p5.js, anime.js, Observable Plot, etc.) when a particular visualization or motion idiom genuinely fits the experiment.
 
 ### Review interface (stretch)
 Each section has an "edit / suggest" affordance. Corrections capture section ID, before, after, reason, reviewer. POST to a feedback endpoint that invokes the selected agent's `/apply-correction` skill semantics.

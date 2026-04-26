@@ -46,15 +46,27 @@ The deliverable of Pass 3 is a **complete, polished, interactive web page** at `
 
 5. Write `hypotheses/<slug>/plan/plan.md` (human-readable mirror with Obsidian wikilinks).
 
-6. Generate `hypotheses/<slug>/plan/index.html` — a **fully bespoke, single-file, interactive Lab Brief** tailored to this hypothesis. See "Design specification" below. Embed the data inline as `<script type="application/json" id="plan-data">…</script>` so the file works via `file://`.
+6. Build the wiki-corpus bundle (powers the side-panel wiki browser — see "Wiki browser" below):
 
-7. File the plan back into the wiki at `hypotheses/<slug>/wiki/plans/plan-v<n>.md`. Increment `<n>` based on existing plan files.
+   ```bash
+   python3 tools/build-wiki-bundle.py hypotheses/<slug>/wiki \
+     --out hypotheses/<slug>/plan/.wiki-bundle.json \
+     --commons commons
+   ```
 
-8. Update `hypotheses/<slug>/hypothesis.md`:
+   The script walks every `*.md` in the vault (plus `hypothesis.md`, `session.log.md`, and any commons content), parses YAML frontmatter, and emits one JSON object: `{ version, vault_root, pages: { <slug>: { slug, type, title, path, scope, frontmatter, body_md } }, stats }`. Bodies are kept as raw markdown and rendered on the client. If `tools/build-wiki-bundle.py` is missing, recreate it from the spec at the top of that file — the contract is the JSON shape, not the implementation.
+
+7. Generate `hypotheses/<slug>/plan/index.html` — a **fully bespoke, single-file, interactive Lab Brief** tailored to this hypothesis. See "Design specification" below. Embed both data sources inline so the file works via `file://`:
+   - `<script type="application/json" id="plan-data">…contents of plan.json…</script>`
+   - `<script type="application/json" id="wiki-corpus">…contents of .wiki-bundle.json…</script>`
+
+8. File the plan back into the wiki at `hypotheses/<slug>/wiki/plans/plan-v<n>.md`. Increment `<n>` based on existing plan files.
+
+9. Update `hypotheses/<slug>/hypothesis.md`:
    - set `status: complete`
    - link to the latest plan version
 
-9. Append `hypotheses/<slug>/session.log.md`:
+10. Append `hypotheses/<slug>/session.log.md`:
 
 ```markdown
 ## [YYYY-MM-DD HH:MM] plan | plan-v<n>
@@ -62,7 +74,7 @@ Total budget: $X. Timeline: N weeks. Sources used: M. Top failure modes: <list>.
 Novelty: <verdict>. Lab Brief: hypotheses/<slug>/plan/index.html
 ```
 
-10. Report:
+11. Report:
     - total budget and timeline
     - top 3 failure modes
     - novelty verdict
@@ -96,17 +108,43 @@ Pick a direction and execute it. State the direction as a comment at the top of 
 8. Validation (success / failure / measurements)
 9. Failure Map (the differentiator — visualization)
 10. Sources (every citation, tagged)
-11. Drilldown panel (slides in on click of any entity, renders `wiki_drilldowns` markdown)
+11. Wiki browser side panel — slides in when the user clicks any reagent / failure mode / source / method / inline `[[wikilink]]`. Renders the **full wiki page** for that slug from the embedded corpus, with frontmatter, body, and backlinks. Maintains a navigation stack so wikilinks inside the panel deep-dive without leaving the brief. See "Wiki browser" below for the contract.
 
 ### Required interactivity
 
-- Click any entity → drilldown panel
+- Click any wiki entity → wiki browser panel
 - Sticky header with section nav
 - Back-to-top affordance
 - Expandable protocol steps
 - Animations on scroll-into-view (explain, don't decorate)
 - ESC closes overlays
 - Keyboard accessible
+
+### Wiki browser (the depth surface)
+
+The wiki is GROUNDWORK's deliverable; the Lab Brief is the lens onto it. The side panel must browse the **entire wiki**, not a hand-curated subset of stubs. The corpus (built in step 6) is embedded as `<script type="application/json" id="wiki-corpus">…</script>` containing every page in the vault — frontmatter + raw markdown.
+
+The renderer is bespoke per hypothesis (it inherits the chosen aesthetic), but the *behavior* below is required. Implement in plain JS inside the page's `<script>` block.
+
+**Boot.** On `DOMContentLoaded`: parse `#wiki-corpus`, build `pages = bundle.pages` (slug → page), build `titleIndex = [{slug, title, type}, …]` for the quick switcher, and walk every page once to compute `backlinks[slug] = [...sourceSlug]` from the wikilink regex. Cache.
+
+**Wikilink resolver (pure JS).** Pattern: `/\[\[((?:\.\.\/)*[^\]|]+?)(?:\|([^\]]+?))?\]\]/g`. For each match: strip leading `../`, strip trailing `.md`, strip `#anchor` tail. Try exact match; if not found, try `<type>/<target>` for each type prefix (`methods`, `reagents`, `organisms`, `failure-modes`, `sources`, `plans`, `commons/methods`, …). Resolved → `<a class="wikilink wikilink-{type}" href="#wiki-{slug}" data-slug="{slug}">{label || page.title}</a>`. Unresolved → `<span class="wikilink wikilink-broken">{label || raw}</span>`. Failure-mode wikilinks should additionally render a leading severity dot (color from `frontmatter.severity`).
+
+**Markdown render.** Pre-resolve wikilinks in the raw markdown body, then render with `marked.parse(...)` (`marked.use({ gfm: true, breaks: false })`). Strip the leading H1 — it is shown as the panel title.
+
+**Panel rendering.** Show: page title, `type` badge (and `severity` for failure modes), a definition list of interesting frontmatter (`severity`, `frequency_estimate`, `cas`, `suppliers`, `aliases`, `applies_to_*`, `sources`, `tags`, `created`, `updated`), the rendered body, then a **Backlinks** section listing every page that wikilinks to this one, grouped by type. Each backlink chip → opens that page in the panel.
+
+**Navigation stack.** `panelStack` array. `openPanel(slug)` pushes; back arrow pops. Click on `.wikilink` inside the panel calls `openPanel(slug)` — never navigates the page.
+
+**Deep linking.** On `openPanel(slug)`: `history.pushState(null, '', '#wiki-' + slug)`. On boot: if `location.hash` matches `#wiki-(.+)`, open that page. Listen for `hashchange` (back/forward).
+
+**Quick switcher.** `Cmd+K` / `Ctrl+K` → centered modal with a search input. Live filter `titleIndex` by case-insensitive substring on `title`, ranked by match position. Up/Down + Enter, ESC closes.
+
+**Inline severity for failure-mode links.** Every wikilink in protocol callouts and rendered bodies that resolves to a `failure-mode` page carries that page's severity inline (small leading dot or colored underline). Critical = red, high = orange, medium = amber, low = neutral. Match the dots to the aesthetic palette but keep warning intent.
+
+**Performance.** Corpus is ~500–1000 KB. Parse once; render markdown lazily on first `openPanel(slug)` and cache the rendered HTML on the page object.
+
+**Optional `wiki_drilldowns` overrides.** If `plan.json` includes a `wiki_drilldowns` map, prefer its content for matching slugs. Fall back to the wiki corpus for everything else.
 
 ### Quality bar
 
@@ -116,11 +154,11 @@ Pick a direction and execute it. State the direction as a comment at the top of 
 - Mobile responsive
 - Accessible (contrast, focus rings, ARIA, `prefers-reduced-motion`)
 - Print-friendly (`@media print`)
-- Self-contained single HTML file (data inlined)
+- Self-contained single HTML file (both `plan-data` and `wiki-corpus` inlined; opens via `file://`)
 
 ### Recommended tech (flexible)
 
-CDN-loaded, zero-build: Tailwind Play CDN, Alpine.js v3, GSAP + ScrollTrigger, Chart.js v4, D3 v7, marked.js, Google Fonts. Substitute freely (Three.js, p5.js, anime.js, Observable Plot, etc.) when a visualization genuinely fits.
+CDN-loaded, zero-build: Tailwind Play CDN, Alpine.js v3, GSAP + ScrollTrigger, Chart.js v4, D3 v7, **marked.js (required for the wiki browser)**, Google Fonts. Substitute freely (Three.js, p5.js, anime.js, Observable Plot, etc.) when a visualization genuinely fits.
 
 ### Anti-patterns
 
@@ -131,9 +169,10 @@ CDN-loaded, zero-build: Tailwind Play CDN, Alpine.js v3, GSAP + ScrollTrigger, C
 
 ## Constraints
 
-- Read from `wiki/` and `commons/` only.
-- Write to `plan/` (json + md + html), `wiki/plans/`, `hypothesis.md`, and `session.log.md`.
+- Read from `wiki/` and `commons/` only (plus `hypothesis.md` and `session.log.md` at the hypothesis root, which the bundle script picks up automatically).
+- Write to `plan/` (json + md + html + `.wiki-bundle.json`), `wiki/plans/`, `hypothesis.md`, and `session.log.md`.
 - Every claim in the plan must trace to a wiki entity. No free-floating facts. If a needed entity is missing, stop and report.
-- HTML must be self-contained (data inline). Open via `file://` must render fully.
-- Re-running creates a new plan version and overwrites `plan/index.html` + `plan/plan.json`.
+- HTML must be self-contained (both `plan-data` and `wiki-corpus` inlined). Open via `file://` must render fully, including the wiki browser.
+- Re-running creates a new plan version and overwrites `plan/index.html`, `plan/plan.json`, and `plan/.wiki-bundle.json`.
 - **Generate fresh.** Do not copy from a prior hypothesis's `plan/index.html`.
+- `tools/build-wiki-bundle.py` is shared infrastructure — do not modify it casually. Fix the wiki, or extend the script with a flag and update both skills + `context.md`.

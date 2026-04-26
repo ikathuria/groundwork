@@ -17,14 +17,16 @@ wiki_pages:
   failure-modes: 15
   sources: 72
 plan:
-  version: 1
+  version: 2
   total_budget_usd: 19223
   total_timeline_weeks: 10
   novelty_verdict: similar-work-exists (with major caveats)
   canonical: plan/plan.json
   human_readable: plan/plan.md
   interactive: plan/index.html
-  wiki_copy: wiki/plans/plan-v1.md
+  wiki_copy: wiki/plans/plan-v2.md
+  prior_versions: [wiki/plans/plan-v1.md]
+  v2_note: "Lab Brief HTML regenerated against new wiki-browser spec (118-page corpus, backlinks, hash deep-link, ⌘K). Plan content unchanged."
 tags: [probiotic, LGG, intestinal-permeability, FITC-dextran, C57BL/6, gut-barrier]
 ---
 
