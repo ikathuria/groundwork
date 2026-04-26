@@ -34,11 +34,14 @@ export default function PlanPicker() {
     setLoadingSlug(slug)
     setError('')
     try {
+      // Pre-fetch validates the plan exists on disk and warms the API cache,
+      // then we hand off to /ar?slug=<slug> so the URL is shareable / refreshable.
+      // sessionStorage is kept as a fallback in case the slug fetch fails inside ARViewer.
       const res = await fetch(`/api/plans/${encodeURIComponent(slug)}`)
       if (!res.ok) throw new Error(`Failed to load plan (${res.status})`)
       const plan = (await res.json()) as LabBriefPlan
       storePlan(plan)
-      router.push('/ar')
+      router.push(`/ar?slug=${encodeURIComponent(slug)}`)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load plan')
       setLoadingSlug(null)
