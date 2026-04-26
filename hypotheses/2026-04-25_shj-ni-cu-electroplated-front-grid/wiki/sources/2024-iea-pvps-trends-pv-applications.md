@@ -2,56 +2,65 @@
 type: source
 id: 2024-iea-pvps-trends-pv-applications
 source_type: paper
-title: "Trends in Photovoltaic Applications 2024 (IEA PVPS Task 1, 27th edition)"
-authors: ["Gaëtan Masson", "Mélodie de l'Epine", "Izumi Kaizuka", "Becquerel Institute", "RTS Corporation", "IEA PVPS Task 1"]
+title: "Trends in Photovoltaic Applications 2024"
+authors: ["IEA-PVPS"]
 year: 2024
-doi: null
-url: "https://iea-pvps.org/trends_reports/trends-2024/"
+doi: ""
+url: https://iea-pvps.org/wp-content/uploads/2024/10/IEA-PVPS-Task-1-Trends-Report-2024.pdf
 raw_path: raw/papers/2024-iea-pvps-trends-pv-applications.pdf
-tags: [market-context, industry-roadmap, IEA-PVPS, SHJ, TOPCon, silver, silicon-supply-chain, China-dominance, IRA]
+tags: [IEA-PVPS, market-context, capacity, c-Si, manufacturing, China]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Trends in Photovoltaic Applications 2024 (IEA PVPS T1-43:2024)
+# Trends in Photovoltaic Applications 2024
+
+**IEA-PVPS Task 1 (Gaëtan Masson, ed.)** — *International Energy Agency Photovoltaic Power Systems Programme, 27th international survey, October 2024*. DOI: —
 
 ## Summary
-IEA PVPS Task 1's annual market report. Documents 2023 as a record PV deployment year (456 GW installed; 1642 GW cumulative end-2023) and a tumultuous one — Chinese overcapacity collapsing module spot prices to ~$0.115/W by Dec 2023. For this hypothesis, the report's most useful content is the upstream-PV-sector chapter: it pegs n-type expansion (TOPCon, SHJ, IBC) at ~30% market share in 2023 with a fast push to ~69% by end-2024, with **SHJ at 5% in 2023 and IBC at 2%**. Critically, it cites the Silver Institute confirming that **PV consumed 193.5 Moz of silver in 2023 (16% of total silver demand, +64% YoY)** — the most authoritative recent data point on the silver bottleneck thesis. The two strategic axes manufacturers are investing in are explicitly stated as "achieving higher efficiency or to reduce silver (Ag) usage." Also documents China's 91.8% solar cell, 84.6% module, and ~98% wafer manufacturing share, and IRA-driven US capacity expansions. This is the canonical "scale, supply chain, and policy context" reference for the hypothesis.
+
+The authoritative annual IEA-PVPS macro-market report on PV applications and trends. Provides PV deployment, manufacturing, jobs, climate, and policy context that frames why low-cost / high-throughput SHJ Ni/Cu metallization matters at all. Together with the Fraunhofer ISE PV Report and the ITRPV roadmap, this is the canonical 2024 macro-baseline cited by every PV review.
 
 ## Key claims
-- 2023 global PV installation: 456 GW (China 277 GW, EU 59.8 GW, USA 33.9 GW, India 13.0 GW, Brazil 12.4 GW); cumulative end-2023 = 1642 GW.
-- 2023 PV electricity output: 2135 TWh ≈ 8.3% of global electricity; CO₂ avoided 0.92 Gt.
-- 2023 polysilicon production: 1,608,000 t (61% YoY increase); >98% used for PV; China 92% share. Spot price collapsed from $22.13/kg (end-2022) to <$10/kg by mid-2023, $4.36/kg by June 2024.
-- 2023 wafer production: 682 GW; China 98%; thickness reduction continued (p-type 150 µm, n-type TOPCon 125 µm, SHJ heading to 100 µm).
-- 2023 cell production: 644 GW total; n-type TOPCon ~30% (up from 10% in 2022), expected ~50% in 2024; **SHJ 5%, IBC 2%**.
-- 2023 module production: 612 GW; China 84.6%; spot price for 182 mm PERC modules dropped 0.223 → 0.115 USD/W during 2023.
-- "The two principal technological developments that manufacturers are investing in is to achieve higher efficiency or to reduce silver (Ag) usage."
-- **Silver Institute data**: PV demand for Ag = 193.5 Moz in 2023 (+64% YoY), accounting for 16% of total silver demand (1.195 Boz).
-- US Inflation Reduction Act (IRA): >100 GW/yr module manufacturing capacity expected in 2026; 85 GW/yr announced; 43 GW/yr cell manufacturing announced.
-- India PLI scheme target: 75 GW/yr cell capacity, 150 GW/yr module capacity by 2026.
-- EU Net Zero Industry Act (NZIA, June 2024) drives regional EU manufacturing.
-- 90% of cells produced in 2023 were bifacial (though only ~50% assembled in bifacial modules).
-- Half-cell modules are mainstream (>90% of 2023 modules); 2.5–3.0 m² module area dominates utility scale.
-- Solar PV jobs reached ~7 million globally in 2023; total PV business value ~$400 B USD.
+
+- **Cumulative PV deployed early 2024:** 1.6 TW operational at the start of 2024; 1,642 GW by end of 2023 (1,186 GW at end of 2022).
+- **2023 installations:** 456 GW newly installed globally — record year. China alone 277 GW. EU 59.8 GW. USA 33.9 GW.
+- **PV electricity output (2023):** 2,135 TWh ≈ **8.3%** of global electricity demand.
+- **CO₂ avoided:** ~0.92 GtCO₂ in 2023 (≈2.5% of energy-sector emissions, assuming PV displaces baseload).
+- **PV sector business value:** $400 billion USD in 2023.
+- **Jobs:** ~7 million in the PV sector (2023).
+- **Manufacturing-supply imbalance / price collapse:** mid-2024 prices "unsustainable", flagged as threatening manufacturing-industry viability outside China.
+- **Cell technology:** "wafer-based crystalline silicon … feature commercial efficiencies between 20% and 25% (single junction)"; bulk of production = mono c-Si on 182 mm or 210 mm wafers.
+- **PV technology classification (Fig.):** wafer-based c-Si vs thin film (CdTe, CIGS/CIS, a-Si/μ-Si).
+- **Manufacturing capacity:** ~1,200 GW manufacturing capacity by end of 2023 vs ~456 GW installed — ~2× overcapacity, the source of the 2024 module-price collapse.
+- **Cumulative manufacturing distribution:** China dominant (>80% of cells/modules), with Europe / US / India as smaller producers — supply-chain resilience argument supporting non-Chinese commercializations of Cu plating (SunDrive AU, CSEM CH, Maxwell, Risen, Maxwell, Atotech).
 
 ## Methods used
-- (none — market analysis report)
+
+- [[methods/IV-curve-measurement]] — implicit baseline; STC efficiency feeds the 20–25% commercial efficiency range cited.
+- [[methods/screen-printed-Ag-paste]] — implicit dominant metallization across the entire 456 GW 2023 deployment base.
 
 ## Reagents
-- (none — references silver and indium at the supply-chain level)
+
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — implicit incumbent metallization that the SHJ Ni/Cu hypothesis would replace.
 
 ## Organisms / substrates
-- (none — references SHJ, TOPCon, IBC at technology-class level)
+
+- [[organisms/SHJ-cell-M10]] — emerging share within the c-Si dominance the report quantifies.
+- [[organisms/full-size-module-72-cell]] — module-level deployment context.
 
 ## Failure modes flagged
-- [[../failure-modes/silver-supply-bottleneck]] — Silver Institute data point makes this the central macro-context flag: PV's silver demand jumped 64% in a single year to 16% of global silver demand.
+
+- [[failure-modes/silver-supply-bottleneck]] — implicit; the rapid growth (456 GW/yr → projected TW/yr) is the upstream of this failure mode.
 
 ## Supports / contradicts
-- Supports: [[2020-verlinden-future-challenges-tw-pv]]
-- Supports: [[2021-goldschmidt-tech-learning-tw-pv]]
-- Supports: [[2024-fraunhoferise-photovoltaics-report]]
-- Supports: [[2024-itrpv-15th-edition-roadmap]]
-- Supports: [[2023-taiyangnews-heterojunction-technology-report]]
+
+- **Supports:** [[sources/2024-fraunhoferise-photovoltaics-report]] — Fraunhofer ISE PV Report cites IEA-PVPS for 2,156 GW end-2024 cumulative.
+- **Supports:** [[sources/2024-itrpv-15th-edition-roadmap]] — same n-type market-share trajectory, complementary surveys.
+- **Supports:** [[sources/2020-verlinden-future-challenges-tw-pv]] — the macro deployment numbers here are consistent with the 1 TW / year crossover Verlinden projects.
 
 ## Notable quotes
-- "The two principal technological developments that manufacturers are investing in is to achieve higher efficiency or to reduce silver (Ag) usage. According to the Silver Institute, demand for Ag for solar cells was up 64% from the previous year to 193.5 million ounces in 2023 and accounted for 16% of total silver demand (1.195 billion ounces)." — p. 54 (Solar Cell Production)
-- "According to CPIA, the share of n-type manufacturing capacity for TOPCon, silicon heterojunction solar cell (SHJ), back contact type (IBC), etc. is expected to reach 69% by the end of 2024. The share of TOPCon technology increased from 10% in 2022 to about 30% in 2023 and it is expected to increase to about 50% in 2024 and become the mainstream technology. SHJ's share in 2023 was 5% and IBC's share was 2%." — p. 54
-- "More than 1.6 TW of PV systems were operational at the beginning of the year 2024, producing more than 2 135 TWh of electricity, or 8.3% of the global electricity demand." — Foreword
+
+> "More than 1.6 TW of PV systems were operational at the beginning of the year 2024, producing more than 2 135 TWh of electricity, or 8.3% of the global electricity demand." — *Foreword, p. 2*
+
+> "Installations reached the astonishing value of 456 GW in a contrasted market: while the Chinese PV market grew significantly to absorb its own industry's overcapacities, the rest of the global PV market experienced a strong, but very much less impressive development to reach 181 GW. The year-on-year change brought the Chinese PV market well above the sum of all other markets globally, concentrating PV development at a never-seen level." — *Foreword, p. 2*

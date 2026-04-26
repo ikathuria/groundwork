@@ -1,37 +1,62 @@
 ---
 type: method
 slug: thermal-evaporation-Ag-cap
-aliases: [thermal evaporation Ag, immersion Ag cap, e-beam Ag finishing]
-related_methods: [NOBLE-selective-Cu-plating, Cu-electroplating-acid-bath, Ni-sputter-deposition]
-key_reagents: [silver-Ag-cap, acid-Cu-sulfate-bath]
-known_failure_modes: [Cu-finger-oxidation-damp-heat, Cu-finger-corrosion-encapsulant, Cu-out-diffusion-through-cap-stack]
-sources: [2019-hatt-noble-shj-solrrl]
-tags: [Ag-cap, evaporation, immersion-Ag, finishing, oxidation-protection, NOBLE]
+aliases: [evaporated Ag cap, thermal evaporation, e-beam Ag, PVD Ag finish]
+related_methods: [electroplated-Ni-Cu-stack, NOBLE-selective-Cu-plating, Ni-sputter-deposition, Cu-electroplating-acid-bath, light-induced-plating]
+key_reagents: [silver-Ag-cap, tin-Sn-cap, acid-Cu-sulfate-bath]
+known_failure_modes: [Cu-finger-oxidation-damp-heat, Cu-out-diffusion-through-cap-stack, Cu-finger-corrosion-encapsulant, finger-adhesion-loss-after-DH]
+sources: [2014-rehman-nicu-plating-csi-review]
+tags: [PVD, thermal-evaporation, Ag-cap, oxidation-protection, finishing]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Thermal Evaporation Ag Cap
+# Thermal evaporation of Ag cap
+
+**Slug:** `methods/thermal-evaporation-Ag-cap` · **Type:** method
 
 ## What it measures / does
-Deposits a thin silver capping layer (typically ~200 nm immersion or evaporated Ag) on top of the plated Cu finger. The cap protects the Cu from atmospheric and encapsulant oxidation, enables soldering with standard Pb-free or Pb-Sn ribbons, and (on the contact flank) leaves only a few nm of Cu un-capped vs the several um left exposed by organic-resist routes. Critical for plated-Cu reliability in encapsulated modules.
+
+Deposits a thin Ag (or Sn) capping layer over the plated Cu finger by thermal or electron-beam evaporation in vacuum. The cap protects Cu from atmospheric oxidation (during storage / lamination) and provides a solderable / encapsulant-compatible surface. Rehman 2014 reviews this as one of two canonical Cu-cap options (the other being electroplated/immersion Sn or LIP-Ag). Less common today than immersion / LIP Ag (NOBLE, Karas) because PVD requires breaking the plating-line vacuum and adds tool capex.
 
 ## When to use it
-Final step in the NOBLE Cu plating flow: after Cu electroplating, immersion or evaporated Ag cap is applied, then PVD layers etched back (H3PO4/HNO3 at 50 C). For commercial SHJ Cu-plating (Maxwell, SunDrive), Sn cap is more common because it pairs with conventional ribbon soldering.
 
-## Key parameters
-- Cap thickness: ~200 nm Ag (NOBLE), ~1 um Ag (Karas full LIP stack), ~1 um Sn alternative.
-- Method: immersion Ag (NOBLE) — galvanic displacement, no external bias; thermal evaporation in vacuum; e-beam.
-- Process temperature: room temperature (immersion); evaporation chamber typical 25 C.
-- Coverage: capping the *flank* of the finger is critical — NOBLE leaves only a few nm un-capped on the flank vs several um in resist routes.
+Use when an exceptionally clean, dense, oriented Ag cap is required and PVD-line capacity exists. In current SHJ Cu-plating practice, immersion Ag (NOBLE, Hatt 2019: ~200 nm) and LIP-Ag/Sn (Karas 2019/2022) dominate over evaporation; thermal-evaporated Ag caps appear primarily in older homojunction Ni/Cu work. For the SHJ Ni/Cu hypothesis Pass-3, this is a viable but capex-heavy alternative to immersion / LIP capping.
 
-## Common variants / alternatives
-- Sn cap via LIP stannous bath — more common in commercial seed-and-plate flows.
-- ENIG (electroless Ni + immersion Au) — used in PCB metallization, not standard for solar.
-- Direct Cu finger without cap — fails DH due to oxidation.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/Cu-finger-oxidation-damp-heat]] — primary purpose of the Ag cap; failure mode if cap is too thin or porous.
-- [[../failure-modes/Cu-finger-corrosion-encapsulant]] — Ag cap mitigates EVA-acetic-acid attack on Cu.
-- [[../failure-modes/Cu-out-diffusion-through-cap-stack]] — Karas 2022: even with Ag cap, Cu out-diffuses through grain boundaries after 1000-3500 h DH.
+- **Source:** Ag pellets in tungsten boat (thermal) or Ag target in e-beam crucible.
+- **Vacuum:** ≤ 10⁻⁶ mbar.
+- **Substrate temperature:** ambient or moderate; SHJ a-Si:H constraint requires ≤ 200 °C.
+- **Thickness:** 100–500 nm typical; sufficient for oxidation protection without significant optical shading.
+- **Deposition rate:** 0.5–5 nm/s.
+- **Alternatives in same role:** immersion Ag (~200 nm), LIP-Ag (~1 µm), LIP-Sn (~1 µm).
 
-## Sources
-- [[2019-hatt-noble-shj-solrrl]] — final NOBLE stack: PVD-Cu(50 nm) / plated-Cu(1-10 um) / immersion-Ag(~200 nm); on the contact flank only few nm of Cu are not protected by Ag (vs several um in resist routes).
+## Common variants
+
+- **Thermal-evaporated Ag** (Rehman 2014) — vacuum-deposited.
+- **E-beam-evaporated Ag** — denser films, higher capex.
+- **Sputtered Ag** — broader process window.
+- **Immersion Ag** (NOBLE Hatt 2019) — wet-bench, no vacuum needed; today's preferred SHJ-compatible cap.
+- **LIP-Ag / LIP-Sn** (Karas) — same wet-bench advantage.
+
+## Things to watch for
+
+- Cu-Ag has minimal mutual solid-solubility below ~700 °C, so the cap is a good immediate barrier — but Karas 2022 shows that under EVA + DH, Cu still out-diffuses through the Ag cap *along grain boundaries*, accumulating on the outer surface; thicker Ag does *not* simply solve the problem (engineer the cap with grain-boundary diffusion in mind, or switch to POE encapsulant).
+- Vacuum-line throughput is the practical limiter at production scale; this is why SunDrive / NOBLE moved to wet-process caps.
+- Ag cap thickness of ~200 nm (NOBLE) is an order of magnitude thinner than the LIP-Ag (~1 µm) of Karas; thinner cap is faster but more prone to grain-boundary leakage.
+- Toxic / flammable handling considerations for Ag in hot tungsten boat.
+
+## Related methods
+
+- [[methods/electroplated-Ni-Cu-stack]] — the stack the cap finishes.
+- [[methods/light-induced-plating]] — wet-bench alternative for the cap.
+- [[methods/NOBLE-selective-Cu-plating]] — uses immersion Ag as cap, not thermal-evaporated.
+- [[methods/Ni-sputter-deposition]] — PVD relative for upstream seed.
+- [[methods/Cu-electroplating-acid-bath]] — upstream Cu-finger step.
+
+## Citing sources
+
+- [[sources/2014-rehman-nicu-plating-csi-review]] — capping option above Cu; Sn cap also discussed.
+
+> **In-corpus coverage note:** Only one source in the Pass-1 corpus (Rehman 2014) explicitly describes thermal-evaporated Ag cap; the modern SHJ Cu-plating literature (NOBLE, Karas, SunDrive, Lachowicz) uses immersion Ag or LIP-Ag/Sn. This page is included for completeness; lint pass should consider whether to fold into a broader "Cu cap deposition" method or retain as the historical PVD reference.

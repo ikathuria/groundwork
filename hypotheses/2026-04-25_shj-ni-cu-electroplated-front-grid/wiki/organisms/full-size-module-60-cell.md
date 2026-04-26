@@ -2,50 +2,55 @@
 type: organism
 slug: full-size-module-60-cell
 organism_type: module
-external_id: 60-cell residential module (or 120-half-cell equivalent)
+source: industry-standard PV module format (residential / commercial rooftop)
+external_id: 60-cell c-Si module (IEC 61215 / IEC 61730 reference format)
 characteristics:
-  - 60 full cells (or 120 half-cells) in series-parallel layout; ~1640×990 mm M2 footprint, larger for M6/M10
-  - Bifacial glass-glass or glass-backsheet construction; SHJ favours glass-glass POE
-  - Power class 300–410 Wp depending on cell efficiency and bifacial gain
-  - Standard residential / commercial-rooftop module form factor
-  - Subjected to IEC 61215 qualification: 1000 h DH, 200 TC, UV, mechanical-load, hail
-  - SunDrive's 21.94% active-area Cu-plated 120-half-cell M2 module is the central +0.67%abs full-module reliability data point for this hypothesis
-known_failure_modes: [Cu-finger-corrosion-encapsulant, EVA-acetic-acid-corrosion, finger-adhesion-loss-after-DH, lateral-Cu-edge-migration, ECA-discoloration-after-DH]
-sources: [2011-nrel-reliability-testing-beyond-qualification, 2012-nrel-iec61215-what-it-is, 2013-koehl-fraunhofer-accelerated-service-life-testing, 2014-nrel-pv-module-qualification-plus, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2022-arena-sundrive-copper-metallisation-demonstration, 2024-nrel-getting-ahead-of-curve-pv-assessment]
-tags: [module, 60-cell, full-size, residential, bifacial, IEC61215, glass-glass]
+  - 60 cells in a 6 × 10 arrangement, the residential / commercial rooftop standard format from roughly 2010 through ~2020
+  - typical M0 / M2 / M6-era format; ~1.65 m × 1.0 m laminate, ~250–340 W power class with c-Si cells
+  - the canonical full-size laminate for IEC 61215 / IEC 61730 module qualification testing
+  - encapsulant most commonly EVA historically; POE / EPE moving in for n-type / SHJ formats
+  - relevant in this hypothesis as the field-deployed format for plated-Cu SHJ modules and the target device for accelerated-life-test extrapolations (NREL 2011/2014/2024)
+known_failure_modes: [Cu-finger-corrosion-encapsulant, Cu-finger-oxidation-damp-heat, EVA-acetic-acid-corrosion, finger-adhesion-loss-after-DH]
+sources: [2014-nrel-pv-module-qualification-plus, 2018-pvtech-metallization-shj-cells-modules, 2022-arena-sundrive-copper-metallisation-demonstration, 2024-nrel-getting-ahead-of-curve-pv-assessment]
+tags: [module, full-size, 60-cell, IEC-61215, residential]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Full-size module — 60-cell (residential class)
+# Full-size module, 60-cell
+
+**Slug:** `organisms/full-size-module-60-cell` · **Type:** organism (substrate / device under test)
 
 ## What it is
-Standard 60-cell (or 120-half-cell) crystalline-silicon photovoltaic module — the residential / commercial-rooftop form factor in which IEC 61215 qualification is run. For this hypothesis, the 60-cell module is the smallest commercially-meaningful testbed at which a Cu-plated SHJ front grid must demonstrate ≤5% Pmax loss after 1000 h damp heat *and* commercial cost parity.
 
-## Standard dimensions / spec
-- Cell count: 60 full cells in 6×10 layout, or 120 half-cells in 6×20 / 12×10.
-- Footprint: ~1640×990 mm at M2 (156.75 mm); ~1700×1000 mm at M6.
-- Cell-to-module loss (CTM): ~3–5% Pmax for SHJ glass-glass; SunDrive plated-Cu 120-half-cell M2 module measured 21.94% active-area η = +0.67%abs over Ag screen-print control built from same precursor batch ([[2022-arena-sundrive-copper-metallisation-demonstration]]).
-- Module power class 2018: 335 Wp (CSEM bifacial 6BB); 2022: 21.94% active-area = ~340–360 Wp class.
-- Encapsulant: POE preferred for SHJ; EVA still common in legacy.
-- Glass: 3.2 mm front glass standard (legacy); ≤3 mm for bifacial (NREL trend).
-- IEC 61215 acceptance: ≤5% Pmax loss after 1000 h DH (85 °C / 85% RH) and 200 TC (−40 to +85 °C).
+The 60-cell c-Si PV module — 60 cells in a 6 × 10 arrangement — is the residential and small-commercial rooftop standard format that dominated production from roughly 2010 through 2020. It is the canonical reference geometry for IEC 61215 and IEC 61730 qualification testing protocols (NREL's reliability literature in this corpus references it as the default full-size laminate for "module-level" tests). It enters this hypothesis as the field-deployed target format for plated-Cu SHJ modules and as the laminate against which mini-module accelerated-aging results must extrapolate.
 
-## Common pitfalls / handling notes
-- 60-cell glass-glass bifacial modules without edge sealing exhibit perimeter-initiated DH degradation, though less severely than 1-cell mini-modules due to lower perimeter-to-area ratio ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Edge sealing with polyisobutylene is the standard mitigation for SHJ glass-glass under DH — used commercially.
-- IEC 61215 is *qualification*, not service-life prediction; "PV reliability learning cycle" warns of failure modes outside the standardised tests (AAA-backsheet historical case) ([[2024-nrel-getting-ahead-of-curve-pv-assessment]]).
-- For Cu-plated cells: cap layers (Sn, Ag) need adhesion + oxidation-resistance verification at module level; SunDrive solder pull-test rips out TCO and Si shards rather than failing at the Cu/cap interface ([[2022-arena-sundrive-copper-metallisation-demonstration]]).
-- Bifacial 60-cell modules use round Cu wires (multi-busbar) increasingly displacing flat ribbons — reduces optical loss and module Ag laydown.
+## Geometry / format
 
-## Failure modes commonly associated
-- `[[../failure-modes/Cu-finger-corrosion-encapsulant]]` — Cu species mobility once out-diffused into encapsulant.
-- `[[../failure-modes/EVA-acetic-acid-corrosion]]` — acetic-acid driver; mitigated by POE.
-- `[[../failure-modes/finger-adhesion-loss-after-DH]]` — solder-bond and Cu-finger adhesion in field.
-- `[[../failure-modes/lateral-Cu-edge-migration]]` — Cu mobile within encapsulant once outdiffused.
-- `[[../failure-modes/ECA-discoloration-after-DH]]` — ECA-bonded shingled / multibusbar variants; novel-material risk.
+- 60 cells in a 6 × 10 grid; cells were 156 mm × 156 mm (M0/M2-era) and later up to M6 (166 mm)
+- Laminate dimensions: ~1.65 m × 1.0 m (industry-standard), ~19–22 kg
+- Power class: ~250–340 W with c-Si (lower at the start of the era, higher with mono-PERC and SHJ)
+- IEC 61215 / IEC 61730 type-test reference format — the framework by which damp-heat 1000 h, thermal cycling TC200, humidity-freeze HF10, UV preconditioning, and mechanical-load tests are defined for module qualification
+- Industry adoption: dominant rooftop format ~2010–2020; gradually displaced by 72-cell utility formats and by larger M10/G12 cell designs from ~2020 onward, but still produced for residential
 
-## Sources
-- `[[2022-arena-sundrive-copper-metallisation-demonstration]]` — 120-half-cell M2 plated-Cu module +0.67%abs vs Ag screen-print control.
-- `[[2018-pv-tech-metallization-interconnection-bifacial-shj]]` — CSEM 60-cell bifacial SHJ Cu-plating cost-economics framework.
-- `[[2011-nrel-reliability-testing-beyond-qualification]]`, `[[2012-nrel-iec61215-what-it-is]]`, `[[2014-nrel-pv-module-qualification-plus]]` — IEC 61215 testing framework.
-- `[[2013-koehl-fraunhofer-accelerated-service-life-testing]]` — Fraunhofer accelerated-aging context for full-size modules.
-- `[[2024-nrel-getting-ahead-of-curve-pv-assessment]]` — full-module reliability gap analysis for SHJ + plated Cu.
+## Construction (where relevant)
+
+- **Encapsulant:** EVA was the historical default; POE / EPE (polyolefin or co-extruded layers) increasingly used for n-type SHJ cells to avoid the acetic-acid corrosion pathway
+- **Front glass:** 3.2 mm tempered low-iron solar glass with anti-reflection coating
+- **Back layer:** opaque polymer backsheet (TPT/TPE) historically; glass-glass for bifacial
+- **Interconnection:** Cu ribbon (typically tin-coated) or multibusbar Cu ribbon; for SHJ, often via ECA rather than soldering because of the ≤200 °C cell process budget
+- **Edge frame:** anodised aluminium; junction box with bypass diodes on the rear
+
+## Common pitfalls
+
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — full-size laminate is the format in which the encapsulant-Cu corrosion pathway is ultimately certified (or rejected)
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — long-finger Cu surfaces under field DH stress
+- [[failure-modes/EVA-acetic-acid-corrosion]] — drives the move to POE / EPE for SHJ Cu modules
+- [[failure-modes/finger-adhesion-loss-after-DH]] — loss surfaces as EL-dark cells / strings in field-aged 60-cell modules
+
+## Citing sources
+
+- [[sources/2014-nrel-pv-module-qualification-plus]] — IEC 61215 module qualification, 60-cell reference
+- [[sources/2018-pvtech-metallization-shj-cells-modules]] — SHJ cell-and-module integration including 60-cell laminates
+- [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — SunDrive Cu-plating demonstrator targeting 60/72-cell formats
+- [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — NREL field-reliability assessment, 60-cell module class

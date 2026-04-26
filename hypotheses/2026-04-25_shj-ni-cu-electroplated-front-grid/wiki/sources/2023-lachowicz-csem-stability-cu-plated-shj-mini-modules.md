@@ -2,63 +2,77 @@
 type: source
 id: 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules
 source_type: paper
-title: "Stability of Minimodules with Copper Plated Heterojunction Solar Cells"
+title: "Stability of Mini-Modules with Copper-Plated Heterojunction Solar Cells (MI Workshop slides)"
 authors: ["Lachowicz, A.", "Badel, N.", "Barrou, A.", "Barth, V.", "Harrison, S.", "Frasson, N.", "Galiazzo, M.", "Zhao, J.", "Paviet-Salomon, B.", "Ballif, C."]
 year: 2023
-doi: null
-url: null
+doi:
+url: https://miworkshop.info/wp-content/uploads/2023/05/13-Minimodules_CopperMet_HJT_CSEM_AgataLachowicz.pdf
 raw_path: raw/papers/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules.pdf
-tags: [SHJ, copper-plating, smartwire, shingle, damp-heat, thermal-cycling, PID, MIW-2023, conference, edge-sealing]
+tags: [SHJ, Cu-plating, CSEM, mini-modules, damp-heat, smartwire, shingle, MI-workshop, EUPVSEC]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Stability of Minimodules with Copper Plated Heterojunction Solar Cells
+# Stability of Mini-Modules with Copper-Plated Heterojunction Solar Cells (MI Workshop slides)
+
+**Lachowicz, A., Badel, N., Barrou, A., Barth, V., Harrison, S., Frasson, N., Galiazzo, M., Zhao, J., Paviet-Salomon, B., Ballif, C.** — *MI Workshop 2023 (Neuchâtel)*. CSEM / CEA INES / AMAT.
 
 ## Summary
-CSEM/CEA-INES/AMAT presentation at MIW 2023 (Module International Workshop, Neuchâtel, May 2023) — the conference precursor to [[2024-lachowicz-cu-plated-shj-aging-mini-modules]]. Self-aligned 3-step Cu electrodeposition on SHJ (seed-grid printing → PECVD dielectric mask → Cu electrodeposition). SmartWire mini-modules (1 half-cell, M6 industrial HJT precursors, polyolefin glass-glass) and shingle mini-modules (M2 cells, 6 shingles, ECA-bonded) are aged through TC, DH (3× IEC = 3000 h) and PID (2× IEC = 192 h). SmartWire modules with copper show 0.2% PTC degradation after 690 cycles vs 1.4% for SCC reference; PID is fully stable at ±1000 V. DH is the bottleneck: copper modules degrade ~5% Pmax after ~2700 h (better than SCC-only references, which collapse), with degradation initiating at unsealed edges. Shingle modules show <0.5% TC loss after 200 cycles and ~3-4% Pmax loss after 1500 h DH. Pattern-transfer-printing demos a 26 mm pad-to-pad line resistance of 0.18 Ω with pure Cu paste + electrodeposited Cu, vs 1.5 Ω for SCC paste.
+
+CSEM presentation slides on a self-aligned 3-step Cu-plating route for SHJ (printed seed-grid → dielectric mask deposition → Cu electrodeposition) and on aging tests of resulting mini-modules with Smartwire and shingle interconnections. Reports thermal-cycling, damp-heat, PID, and EL imaging out to 2700 h DH and 690 PTC; this is the companion to the 2024 EPJ-PV journal paper.
 
 ## Key claims
-- 3-step plating process: ① seed-grid print + cure (200 °C), ② dielectric layer deposition over the wafer, ③ Cu electrodeposition through paste-particle-induced voids in the dielectric (slide 3).
-- Line resistance comparison (slide 4): Ag reference 5.3 µΩ·cm specific resistivity (1.5 Ω/cm), Cu paste alone 27 µΩ·cm (95 Ω/cm), Cu paste + plated Cu 2.0 µΩ·cm (0.3 Ω/cm).
-- Best champion plated cell on M6 industrial HJT precursor (9-busbar layout, 274.15 cm²): 24.2% efficiency, 81.7% FF, 742.4 mV Voc, 39.9 mA/cm² Jsc (slide 5).
-- SmartWire 1-half-cell M6 modules in glass-glass POE: PTC -0.2% after 690 cycles (vs -1.4% SCC ref); PID stable through 2× 96 h at +1000 V and -1000 V.
-- DH on SmartWire: SCC-only modules degrade strongly (FF dominant); copper modules degrade ~5% Pmax after 2700 h, with EL revealing edge-initiated damage in 1-cell modules (slides 7-8). Hypothesis: 1-cell modules are the worst-case for DH due to high perimeter-to-area ratio.
-- Shingle modules (M2-based, 6 shingles per string, ECA, glass-glass): TC -0.5% after 200 cycles, ~3-4% Pmax loss after 1500 h DH (slide 11). Line resistance per shingle width: 0.43 Ω as-printed (Ag paste) vs 0.07 Ω after Cu plating (slide 10).
-- Pattern transfer printing: 26.1 µm × 21.9 µm Cu line achievable; pad-to-pad resistance over 26 mm: 0.18 Ω (Cu + plated Cu) vs 5.1 Ω (Cu paste alone) vs 1.5 Ω (SCC paste). Contact resistance of paste on TCO ≈ 1.5 mΩ·cm² from prior screen-printed TLM (slide 12).
+
+- 3-step self-aligned Cu electrodeposition: (1) screen-print seed-grid using copper-based paste at 200 °C, (2) PECVD dielectric layer over entire wafer surface (acts as plating mask), (3) Cu electrodeposition only on grid positions — exploiting that the dielectric layer is not continuous on paste particles, allowing current to pass and Cu to deposit selectively.
+- Best M6 cell with silver-coated copper (SCC) seed-grid + dielectric + electrodeposited Cu, 9-busbar layout: η = 24.2 %, Voc = 742.4 mV, Jsc = 39.9 mA/cm², FF = 81.7 %, area 274.15 cm².
+- Line resistance comparison: Ag reference paste 1.5 Ω/cm (919 µm² CS), Cu paste alone 95 Ω/cm (240 µm²), Cu paste + electrodeposited Cu 0.3 Ω/cm (1160 µm²) — i.e. plating on a Cu paste seed delivers 5× lower line R than the Ag reference.
+- Smartwire mini-module DH degradation (M6 half-cell, polyolefin encapsulant, glass-glass): Cu-plated modules degrade ~5 % after 2700 h DH while SCC-paste-only references show stronger DH degradation; degradation initiates at the unsealed module edges (1-cell module = worst-case ratio of perimeter to module area).
+- PTC stability: Cu-plated SCC seed module −1.2 % after 690 PTC cycles (mostly storage component, only −0.2 % attributable to PTC); SCC reference −1.4 %.
+- PID stability: tested at 85 °C / 85 % RH + 1000 V or −1000 V, 2 × 96 h cycles, all modules stable.
+- Shingle modules from M2 precursors with reduced Ag-paste laydown + electrodeposited Cu (∼20 µm thick): line resistance per shingle width drops from 0.43 Ω (Ag paste only) to 0.07 Ω (with plated Cu).
+- Pattern-transfer printing (PTP) with pure Cu paste + Cu electrodeposition gives lines ~26 µm wide × 22 µm tall, contact resistivity on ITO of 1.5 mΩ·cm² with screen-printed TLM patterns.
 
 ## Methods used
-- [[../methods/screen-printed-Ag-paste]] — SCC reference and seed-grid
-- [[../methods/Cu-electroplating-acid-bath]] — selective electrodeposition through dielectric voids
-- [[../methods/damp-heat-aging-1000h]] — extended to 2700 h (3× IEC)
-- [[../methods/temperature-cycling-IEC61215-TC200]] — 690 cycles SmartWire, 200 shingle
-- [[../methods/transfer-length-method]] — referenced for prior contact-resistance measurement (1.5 mΩ·cm²)
-- [[../methods/EL-electroluminescence-imaging]] — module health imaging
-- [[../methods/four-point-probe-sheet-resistance]] — Kelvin probes for line resistance
+
+- [[methods/Cu-electroplating-acid-bath]] — Cu electrodeposition through dielectric mask
+- [[methods/screen-printed-Ag-paste]] — Ag (or SCC / Cu paste) seed-grid printing
+- [[methods/damp-heat-aging-1000h]] — 85 °C / 85 % RH up to 2700 h on glass-glass mini-modules
+- [[methods/temperature-cycling-IEC61215-TC200]] — 690 PTC cycles
+- [[methods/EL-electroluminescence-imaging]] — EL maps to localise edge-onset DH degradation
+- [[methods/IV-curve-measurement]] — Pmax / Voc / Isc / FF tracking through aging
+- [[methods/transfer-length-method]] — TLM ρc on ITO (1.5 mΩ·cm² for Cu paste)
 
 ## Reagents
-- [[../reagents/ITO-transparent-conductive-oxide]] — thin ITO + dielectric for Indium reduction
-- [[../reagents/POE-polyolefin-encapsulant]] — glass-glass module encapsulation
-- [[../reagents/electrically-conductive-adhesive-ECA]] — ~3.5 mg per shingle, cured at 150 °C
-- [[../reagents/Cu-paste-low-temperature]] — pure Cu paste from Namics; SCC paste also evaluated
-- [[../reagents/multibusbar-Cu-ribbon]] — SmartWires with In-free LMPA solder
+
+- [[reagents/Cu-paste-low-temperature]] — pure-copper paste used for PTP and screen printing
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — SCC reference paste
+- [[reagents/POE-polyolefin-encapsulant]] — polyolefin encapsulant in glass-glass modules
+- [[reagents/electrically-conductive-adhesive-ECA]] — used for shingle interconnection (~3.5 mg per shingle)
+- [[reagents/ITO-transparent-conductive-oxide]] — TCO under the seed grid
+- [[reagents/multibusbar-Cu-ribbon]] — Smartwire interconnection (closest slug)
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — industrial HJT precursors for SmartWire
-- [[../organisms/mini-module-glass-glass]] — 1-cell SmartWire and 6-shingle modules
+
+- [[organisms/SHJ-cell-M6]] — M6 industrial precursors for Smartwire modules
+- [[organisms/SHJ-cell-M10]] — referred to in PTP scaling discussion (closest available slug for M2; treat as M-class precursors)
+- [[organisms/mini-module-glass-glass]] — 1-cell glass-glass mini-module test vehicles
 
 ## Failure modes flagged
-- [[../failure-modes/Cu-finger-corrosion-encapsulant]] — edge-initiated DH damage
-- [[../failure-modes/Ni-Cu-line-resistance-rise-DH]] — possible contributor to FF loss
-- [[../failure-modes/FF-degradation-contact-resistance]] — observed in DH
-- [[../failure-modes/finger-adhesion-loss-after-DH]] — referenced as a concern motivating edge sealing
+
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — DH degradation initiates at the module edge where humidity ingresses
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — pure Cu paste oxidation needing an Al₂O₃ cover or capping
+- [[failure-modes/FF-degradation-contact-resistance]] — high line resistance of Cu paste alone (95 Ω/cm) is fixed only after Cu electrodeposition
 
 ## Supports / contradicts
-- Supports: [[2024-lachowicz-cu-plated-shj-aging-mini-modules]] (the journal version of this work)
-- Supports: [[2021-hatt-stable-cu-plated-shj-eupvsec]] (Cu plating on SHJ feasible)
-- Supports: [[2018-pv-tech-metallization-interconnection-bifacial-shj]], [[2018-pv-international-metallization-shj]]
-- Supports: [[2024-fraunhoferise-photovoltaics-report]] (industry transition narrative)
+
+- **Supports:** [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — same dataset, journal paper; this presentation has additional EL and shingle data
+- **Supports:** [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — Frasson/Galiazzo (AMAT) co-authors; complementary industrial-perspective paper
+- **Contradicts:** [[sources/2022-karas-cu-outdiffusion-damp-heat]] — Karas (EVA encapsulant) sees significant Cu outdiffusion / SIMS Cu in c-Si; Lachowicz (POE encapsulant + thin TCO + dielectric mask) sees much milder DH effects, isolated to module edges
 
 ## Notable quotes
-- "Pure copper paste can be printed directly on the cell surface since thin conductive oxides are excellent barriers against copper diffusion." — slide 4
-- "5% degradation of 1-cell-modules with dielectric layer + copper" after 3× IEC DH — slide 8
-- "Good stability after 200 TC and 1500 h DH, test ongoing" — slide 11 (shingle modules)
-- "Further line width reduction to <20 µm feasible and more triangular shape with conformal plating" — slide 13
+
+> "5% degradation of modules with copper after 2700 h damp-heat / To re-test / with another materials." — *slide 7*
+
+> "Pure copper paste can be printed directly on the cell surface since thin conductive oxides are excellent barriers against copper diffusion." — *slide 4*
+
+> "1-cell mini-modules: worst case for testing DH degradation? Humidity ingress from (unsealed) module edges close to the cell." — *slide 8*

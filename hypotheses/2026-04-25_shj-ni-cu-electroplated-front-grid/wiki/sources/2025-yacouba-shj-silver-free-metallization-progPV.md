@@ -5,60 +5,73 @@ source_type: paper
 title: "Achieving High Efficiencies for Silicon Heterojunction Solar Cells Using Silver-Free Metallization"
 authors: ["Yacouba, M. I.", "Lambertz, A.", "Liu, Y.", "Gattermann, H.", "Lauterbach, V.", "Bittkau, K.", "Rau, U.", "Ding, K."]
 year: 2025
-doi: "10.1002/pip.70016"
-url: "https://onlinelibrary.wiley.com/doi/10.1002/pip.70016"
+doi: 10.1002/pip.70016
+url: https://publications.rwth-aachen.de/record/1028842/files/1028842.pdf
 raw_path: raw/papers/2025-yacouba-shj-silver-free-metallization-progPV.pdf
-tags: [SHJ, copper-paste, AgCu-paste, screen-printing, dispensing, low-temperature-Ag, silver-free, Forschungszentrum-Juelich]
+tags: [SHJ, silver-free, Cu-paste, AgCu-paste, dispensing, screen-printing, ProgPV, FZ-Juelich, novelty-QC]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Achieving High Efficiencies for Silicon Heterojunction Solar Cells Using Silver-Free Metallization
 
+**Yacouba, M. I., Lambertz, A., Liu, Y., Gattermann, H., Lauterbach, V., Bittkau, K., Rau, U., Ding, K.** — *Progress in Photovoltaics: Research and Applications, 33, 1223–1235 (2025)*. DOI: 10.1002/pip.70016
+
 ## Summary
-Forschungszentrum Jülich IMD-3 study (Prog. Photovoltaics 2025) of low-temperature pure-Cu and AgCu-coated-Cu (~50 wt% Ag) metallization pastes applied to industrial M2 SHJ cells via screen printing and single-nozzle dispensing — compared to the standard low-temperature Ag-paste reference. Cells with AgCu front + Ag rear gained +0.13%abs over the bifacial Ag reference; cells with AgCu front + Cu rear achieved 23.6% with ~70% Ag savings; Cu-on-both-sides cells reached 22.4% average and 23.08% champion (highest reported zero-Ag SHJ via SP). Annealing at 280 °C for 5 s is the safe limit for SHJ cell metallization; above 280 °C, irreversible degradation of a-Si:H/c-Si passivation occurs (hydrogen out-diffusion). The Cu-paste anneal condition (300 °C for 5 s) costs 0.2%abs in efficiency, fully recovered by light soaking. No Cu diffusion into Si was detected — even with Cu paste directly on TCO. The paper anchors the "TCO is a Cu diffusion barrier" claim that justifies plated-Cu metallization on SHJ specifically.
+
+Forschungszentrum Jülich (IMD-3) survey of silver-free SHJ metallization comparing Cu paste, AgCu paste, and Ag paste deposited via screen printing (SP) or dispensing on the front and rear of bifacial SHJ M2 cells. Reaches 23.6 % with AgCu SP front + Cu SP rear (70 % Ag savings) and 23.08 % with Cu SP on both sides (zero Ag) — the highest reported Cu-SP-bifacial result. Key novelty-QC reference for the broader silver-free SHJ landscape.
 
 ## Key claims
-- Champion cells (Table 2): Ag bifacial reference 23.79%; AgCu front / Ag rear 23.95% (+0.13%); AgCu front / Cu rear 23.62% (70% Ag reduction); Cu bifacial 23.08% (100% Ag reduction).
-- Cu paste annealing condition: 300 °C for 5 s — gives ~0.2%abs cell efficiency drop, fully recovered by 90 s light soaking at ~175 °C with 55 kW/m² LED light (recovers via Voc, pFF, FF improvement).
-- 280 °C / 5 s is the cell-survival threshold; 320 °C / 5 s costs ~0.5%abs irreversibly; 360 °C / 5 s costs ~1.5%abs.
-- Cu finger geometry / electrical: Cu SP 56 µm wide, 10 µm tall (aspect ratio 0.18), line resistance 4.24 Ω/cm, contact resistivity 10.28 mΩ·cm² on ITO, bulk resistance 12.62×10⁻⁶ Ω·cm. Compare Ag SP: 46.6 µm × 14.2 µm, 1.15 Ω/cm, 5.04 mΩ·cm², 3.51×10⁻⁶ Ω·cm.
-- AgCu SP (50 wt% Ag, 50 wt% Cu): 45.3 µm × 12.6 µm, 3.20 Ω/cm, 8.10 mΩ·cm² contact resistivity on ITO.
-- Cu dispensing produces wider (153 µm) but more uniform fingers with line resistance 0.90 Ω/cm — better than Cu SP for rear-side use. Cu-rear-dispensed cells outperform Cu-rear-SP by 0.53%abs efficiency.
-- "If significant Cu diffusion into silicon had occurred, it would have led to a much greater degradation in pFF and Voc." — only minor pFF/Voc reductions observed, attributed to handling, not diffusion. Confirms TCO acts as the Cu diffusion barrier in SHJ.
-- SEM analysis of Cu paste finds unsintered Cu nanoparticle regions even after sintering at 300 °C — likely cause of higher contact resistivity than Ag.
-- The 2 mg/W Ag-consumption-per-cell target is reachable with Cu/AgCu metallization while keeping efficiency >23%.
+
+- Champion cells (Table 2): Ag bifacial reference 23.79 %; AgCu front / Ag rear 23.95 % (+0.16 %abs gain, 25 % Ag reduction); AgCu front / Cu rear 23.62 % (70 % Ag reduction); Cu bifacial 23.08 % (100 % Ag reduction).
+- Cells with AgCu SP on the front and Ag paste SP on the rear achieved a +0.13 % efficiency gain over the Ag-bifacial reference — first time AgCu front beats Ag front in this setup.
+- SHJ cells tolerate Cu-paste annealing conditions (300 °C / 5 s) with only ~0.2 %abs efficiency drop, fully recovered by light soaking; degradation onset at >280 °C.
+- Cu paste finger characteristics (50 µm screen): width 56.18 µm, height 10.22 µm, line resistance 4.24 Ω/cm, contact resistivity 10.28 mΩ·cm², bulk resistance 12.62 µΩ·cm. AgCu SP fingers: 45.26 µm wide × 12.55 µm tall, line R 3.20 Ω/cm, ρc 8.10 mΩ·cm².
+- Cu dispensed (single-nozzle) gives wider but more homogeneous lines (153 µm width) with lower bulk resistance (1.68 µΩ·cm) and lower line resistance (0.90 Ω/cm) than Cu SP — useful for the rear side.
+- TCOs are confirmed as effective Cu diffusion barriers: pFF and Voc remain unchanged in all-Cu-SP cells, "if significant Cu diffusion into silicon had occurred, it would have led to a much greater degradation in pFF and Voc" (citing Chen et al.).
+- Dark areas in EL on Cu-metallised cells correlate with poorly sintered Cu nanoparticle regions and poor Cu/ITO contact at 300 °C, not with Cu diffusion.
+- Cao et al. cited as the 26.4 % Cu-electroplated SHJ champion (Nature Energy 2023, Cu electrodes); SunDrive cited at 26.41 % Cu-based SHJ.
 
 ## Methods used
-- [[../methods/screen-printed-Ag-paste]] — Ag, AgCu, Cu pastes via flatbed SP
-- [[../methods/transfer-length-method]] — TLM with 2 mm × 10 mm pads of variable spacing
-- [[../methods/four-point-probe-sheet-resistance]] — line resistance characterisation
-- [[../methods/IV-curve-measurement]] — LOANA IV characterisation under STC
-- [[../methods/EL-electroluminescence-imaging]] — high-injection (8 A) EL imaging
-- [[../methods/UV-preconditioning]] — light-soaking (175 °C, 55 kW/m² LED, ~90 s) for recovery
+
+- [[methods/screen-printed-Ag-paste]] — knotless screen 23-µm and 30-µm finger openings on M2 SHJ
+- [[methods/four-point-probe-sheet-resistance]] — line-resistance via 4-probe after annealing
+- [[methods/transfer-length-method]] — TLM with 2 mm × 10 mm pads to measure ρc to TCO
+- [[methods/IV-curve-measurement]] — STC (AM1.5G) IV with LOANA system, Wavelabs LED source
+- [[methods/EL-electroluminescence-imaging]] — high-injection (8 A) EL imaging
+- [[methods/dark-IV-suns-Voc]] — pFF as the c-Si Cu-contamination indicator
 
 ## Reagents
-- [[../reagents/ITO-transparent-conductive-oxide]] — TCO contact and Cu diffusion barrier
-- [[../reagents/low-T-Ag-paste-generic-SHJ-grade]] — reference paste
-- [[../reagents/Cu-paste-low-temperature]] — pure Cu paste (500 Pa·s viscosity)
-- [[../reagents/a-Si-H-passivation]] — degraded above 280 °C by hydrogen out-diffusion
+
+- [[reagents/Cu-paste-low-temperature]] — Cu paste annealed at 300 °C / 5 s under protective backing
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — Ag low-T paste reference (170 °C / 40 min)
+- [[reagents/ITO-transparent-conductive-oxide]] — TCO underneath all paste fingers; cited as Cu diffusion barrier
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — closely analogous to the M2 (244.32 cm², 135 µm wafer) cells used here
-- [[../organisms/monocrystalline-Si-wafer-n-type]] — n-type SHJ precursors with a-Si:H (p/i/n)
+
+- [[organisms/SHJ-cell-M6]] — M2 (244.32 cm², 135 µm wafer) industrial SHJ precursors with TCO on both sides (closest available slug for M2)
 
 ## Failure modes flagged
-- [[../failure-modes/a-Si-H-passivation-degradation]] — hydrogen out-diffusion above 280 °C
-- [[../failure-modes/Cu-finger-oxidation-damp-heat]] — Cu fingers oxidise readily during annealing; protective wrapping required
-- [[../failure-modes/FF-degradation-contact-resistance]] — Cu SP higher Rs than Ag SP (10.28 vs 5.04 mΩ·cm²)
-- [[../failure-modes/Voc-degradation-Cu-contamination]] — explicitly tested NOT to be present in Cu-on-TCO SHJ; cited as evidence TCO is an effective barrier
+
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — Cu paste highly sensitive to atmospheric oxidation during annealing, requiring backing-paper protective covers
+- [[failure-modes/a-Si-H-passivation-degradation]] — annealing >280 °C / 5 s degrades passivation via H escape; >320 °C / 5 s gives ~0.5 %abs loss; >360 °C gives ~1.5 %abs loss
+- [[failure-modes/FF-degradation-contact-resistance]] — Cu paste FF reduction attributed to higher Rs from poor Cu/ITO contact at 300 °C / 5 s curing
+- [[failure-modes/silver-supply-bottleneck]] — explicit motivator: "if Ag is not reduced soon, it will lead to higher costs for solar cells and hinder sustainable development"
+- [[failure-modes/Cu-diffusion-into-c-Si]] — discussed and ruled out at single-cell level by stable pFF / Voc, confirming TCO as Cu barrier
 
 ## Supports / contradicts
-- Supports: [[2018-pv-international-metallization-shj]], [[2018-pv-tech-metallization-interconnection-bifacial-shj]] (TCO as Cu diffusion barrier on SHJ)
-- Supports: [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]], [[2024-fraunhoferise-photovoltaics-report]] (industrial Ag-to-Cu transition in SHJ)
-- Supports: [[2020-verlinden-future-challenges-tw-pv]] (TW-scale Ag bottleneck)
-- Contrasts with: [[2022-karas-cu-outdiffusion-damp-heat]] — Karas observed Cu diffusion into Si on plated PERC/AlBSF where there is no TCO; this paper finds no diffusion on TCO-protected SHJ
+
+- **Supports:** [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — Frasson/Galiazzo (AMAT) AgCu paste at production scale; same conclusion that AgCu is the realistic medium-term path
+- **Supports:** [[sources/2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] — Lorenz pushed the Ag baseline to 1.4 mg/W; Yacouba pushes the AgCu / Cu alternative
+- **Supports:** [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — Lachowicz electroplated route; Yacouba paste-only route — both achieve >23 % with Cu involvement and confirm TCO as Cu diffusion barrier
+- **Contradicts:** [[sources/2022-karas-cu-outdiffusion-damp-heat]] — Karas finds Cu outdiffusion through caps and into c-Si under DH for plated stacks; Yacouba reports no detectable Cu diffusion at single-cell level for paste-based stacks (DH not tested in this paper)
 
 ## Notable quotes
-- "heterojunction solar cells mitigate this risk as their transparent conductive oxides (TCO) serve as effective diffusion barriers" — Sec. 1
-- "the standard annealing conditions for Cu paste metallization are 300°C for 5 s. […] a 0.2%abs drop persisted under Cu annealing conditions, but light soaking reversed this effect back to the original efficiency." — abstract / Sec. 3.2
-- "Cells with Cu SP on both sides (zero Ag) achieve an outstanding average efficiency of 22.4%abs and a champion cell's efficiency of 23.08%abs." — Sec. 3.2.2
-- "If significant Cu diffusion into silicon had occurred, it would have led to a much greater degradation in pFF and Voc." — Sec. 3.2.2
+
+> "Notably, cells with AgCu paste SP on the front side and Cu paste SP on the rear side reached an efficiency of 23.6%, just 0.35% lower than the reference cells, while saving approximately 70% of Ag paste." — *Abstract*
+
+> "Cao et al. achieved a certified efficiency of 26.4% by using the electroplating method to prepare Cu electrodes on SHJ cells. Though the impressive photovoltaic performance of Cu electroplating, its complex processes, costly equipment, and environmental concerns pose significant challenges." — *§1 Introduction*
+
+> "If significant Cu diffusion into silicon had occurred, it would have led to a much greater degradation in pFF and Voc." — *§3.2.2 (citing Chen et al. 2023)*
+
+> "The findings demonstrated that SHJ solar cells with silver-free metallization on both sides achieved efficiencies above 23%, indicating that the target of 2 mg/W of Ag consumption per cell is feasible with high-efficiency SHJ solar cells." — *§4 Conclusion*

@@ -1,51 +1,76 @@
 ---
 type: method
 slug: electroplated-Ni-Cu-stack
-aliases: [Ni/Cu plating, plated Ni-Cu front grid, Ni-barrier + Cu-conductor stack]
-related_methods: [electroless-Ni-deposition, Cu-electroplating-acid-bath, light-induced-plating, Ni-sputter-deposition, NOBLE-selective-Cu-plating, laser-ablation-of-dielectric]
-key_reagents: [nickel-sulfamate-bath, acid-Cu-sulfate-bath, nickel-phosphorus-NiP-electroless, tin-Sn-cap, silver-Ag-cap]
-known_failure_modes: [Cu-diffusion-into-c-Si, Ni-barrier-pinholes, Cu3Si-formation-at-Si-interface, finger-adhesion-loss-after-DH, Cu-out-diffusion-through-cap-stack]
-sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2018-electrochemsci-barrier-properties-electroplated-ni, 2018-pv-international-metallization-shj, 2018-pvtech-metallization-shj-cells-modules, 2023-taiyangnews-heterojunction-technology-report, 2024-itrpv-15th-edition-roadmap, atotech-solar-industry-overview, pvtech-metallization-challenges-cell-manufacturing]
-tags: [plating, Ni-barrier, Cu-conductor, Sn-cap, Ag-cap, SHJ, PERC, two-step-metallization]
+aliases: [Ni/Cu plated grid, electroplated Ni-Cu, two-step seed-and-plate, Ni barrier + Cu finger, Ni/Cu/Ag stack, Ni/Cu/Sn stack]
+related_methods: [Cu-electroplating-acid-bath, electroless-Ni-deposition, light-induced-plating, NOBLE-selective-Cu-plating, Ni-sputter-deposition, inkjet-mask-patterning, photolithography-mask-patterning, laser-ablation-of-dielectric, SIMS-depth-profile, transfer-length-method]
+key_reagents: [nickel-sulfamate-bath, acid-Cu-sulfate-bath, nickel-phosphorus-NiP-electroless, silver-Ag-cap, tin-Sn-cap, ITO-transparent-conductive-oxide, a-Si-H-passivation, inkjet-plating-resist]
+known_failure_modes: [Cu-diffusion-into-c-Si, Cu3Si-formation-at-Si-interface, Ni-barrier-pinholes, finger-adhesion-loss-after-DH, FF-degradation-contact-resistance, Cu-out-diffusion-through-cap-stack, Ni-Cu-line-resistance-rise-DH]
+sources: [2014-rehman-nicu-plating-csi-review, 2018-electrochemsci-barrier-properties-electroplated-ni, 2018-pv-international-metallization-shj, 2018-pvtech-metallization-shj-cells-modules, 2019-hatt-noble-shj-solrrl, 2020-verlinden-future-challenges-tw-pv, 2021-goldschmidt-tech-learning-tw-pv, 2023-taiyangnews-heterojunction-technology-report, 2023-tepner-printing-tech-csi-review, 2024-itrpv-15th-edition-roadmap, atotech-solar-industry-overview, fisher-AA8902018-nickel-sulfamate-hydrate, fisher-AC197730010-cu-sulfate-pentahydrate-sds, fisher-AC424525000-sulfuric-acid-acs-sds, notion-systems-solar-inkjet-overview]
+tags: [Ni-Cu, plated-grid, barrier, stack, metallization, the-hypothesis]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Electroplated Ni/Cu Stack
+# Electroplated Ni/Cu front-grid stack
+
+**Slug:** `methods/electroplated-Ni-Cu-stack` · **Type:** method
 
 ## What it measures / does
-A composite plated front-grid metallization: a thin Ni layer (electroplated or electroless) acts as Cu-diffusion barrier and adhesion promoter; a thicker Cu layer (typically 1-10 um) is the main conductor; a Sn or Ag cap protects against oxidation and enables soldering. The architecture trades expensive screen-printed Ag for inexpensive Cu while protecting the Si/TCO interface from Cu contamination — exactly the stack the present hypothesis tests on SHJ.
+
+The composite "two-step seed-and-plate" front grid: a thin Ni (or PVD-Ni / electroless Ni-P) barrier deposited first onto the patterned cell surface, followed by an electroplated Cu finger and an optional Sn or Ag oxidation cap. The Ni layer's job is to block Cu diffusion into c-Si (forming a NiSi/Ni₂Si silicide barrier on anneal where the thermal budget allows); the Cu provides the high-conductivity bulk; the cap protects Cu from atmospheric oxidation and from EVA-driven corrosion. This *is* the intervention the SHJ Ni/Cu hypothesis is testing.
 
 ## When to use it
-The full pipeline: seed/contact opening (laser ablation, inkjet mask, or photolithography) -> Ni barrier deposition -> Cu thickening -> Sn/Ag cap. On SHJ, the Ni layer is plated onto a sputtered seed or directly onto the patterned TCO; on PERC/homojunction, the Ni is plated onto the laser-ablated Si and silicidized.
 
-## Key parameters
-- Ni barrier thickness: 60-120 nm (Cheng 2018 shows 60 nm Ni fails at 300 C anneal with Cu3Si formation; 120 nm holds to 300 C; the present hypothesis claims sub-100 nm is sufficient at SHJ-compatible <=200 C process temperatures).
-- Cu thickness: 1-10 um typical; line resistivity ~2 uOhm.cm achievable (Hatt 2021); finger widths 11-30 um in production demos.
-- Cap: Sn (~1 um, LIP acid stannous) or Ag (~200 nm-1 um, immersion or LIP); cap thickness governs upward Cu out-diffusion under damp heat.
-- Contact resistivity to ITO: 0.1-4 mOhm.cm² depending on PVD-seed (TiW, Cu, Ag); Hatt 2021 reports rho_c 0.1-1 mOhm.cm² with optimized seed.
-- Peel strength: >=1 N/mm DIN EN 50461 minimum; NOBLE Cu reaches >=2 N/mm (Hatt 2021).
-- ITRPV 2024 projects <=6% market share for plating as rear-side metallization by 2034; SHJ front-side is the open question.
+Use it whenever silver paste must be replaced and a plated metallization is acceptable. On homojunction (PERC, IBC, Al-BSF) cells the stack pairs with high-T silicidation. On SHJ the ≤200 °C thermal budget changes the barrier story significantly — the Ni layer cannot fully silicide, so the *as-deposited* Ni and/or the SHJ TCO + a-Si:H stack must do barrier duty. SunDrive (2022) and the Faes/Geissbühler/CSEM line argue that on SHJ the TCO can replace the electroplated Ni; Cheng 2018 shows the Ni-only barrier requires ≥120 nm at 300 °C — sub-100 nm is in the failure regime per Cheng but defended by hypothesis context (lower SHJ temperatures).
 
-## Common variants / alternatives
-- [[electroless-Ni-deposition]] — autocatalytic Ni-P route used in PERC buried-contact and laser-opened cells.
-- [[Ni-sputter-deposition]] — PVD Ni or Cu seed under the Ni barrier, used by Maxwell, NOBLE, CSEM seed-and-plate.
-- [[Cu-electroplating-acid-bath]] — the Cu-thickening sub-step.
-- [[NOBLE-selective-Cu-plating]] — Fraunhofer ISE variant that omits Ni and uses native AlOx as the plating mask.
-- [[screen-printed-Ag-paste]] — incumbent comparator the stack must beat.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/Cu-diffusion-into-c-Si]] — primary risk; mitigated by Ni thickness and silicide quality; on SHJ, the TCO provides additional protection.
-- [[../failure-modes/Ni-barrier-pinholes]] — Cheng 2018: at 60 nm Ni already fails at 300 C; bath chemistry / additive control governs pinhole density.
-- [[../failure-modes/Cu3Si-formation-at-Si-interface]] — XRD/STEM-confirmed at Cu/Ni(60 nm) >=300 C, Cu/Ni(120 nm) >=400 C.
-- [[../failure-modes/finger-adhesion-loss-after-DH]] — peel-force <=1 N/mm on un-optimized seed; SunDrive achieves Si-shear-strength adhesion via two-step plating.
-- [[../failure-modes/Cu-out-diffusion-through-cap-stack]] — Karas 2022: Cu through both Sn and Ag caps after 1000-3500 h damp heat.
+- **Stack:** typically Ni 60–200 nm / Cu 10–20 µm / Ag or Sn cap ~1 µm.
+- **Ni source:** electroplated from sulfamate bath (Watts-type, low-stress, pH ~4); or electroless Ni-P (Hsieh 2017 chemistry); or PVD-Ni (Ni-sputter).
+- **Cu source:** acid CuSO₄/H₂SO₄ bath (Cupracid-class), 3 A/dm² DC or pulsed (NOBLE 6 A/dm² 15/1 ms).
+- **Cap layer:** thermal-evaporated Ag, immersion Ag (~200 nm), or LIP Sn (~1 µm).
+- **Mask:** inkjet hot-melt resist, photolithographic dry-film, or laser-ablated dielectric (SiNₓ/SiOₓ); CSEM 3-step process uses a printed seed-grid + PECVD dielectric where the dielectric is naturally discontinuous on paste particles.
+- **Performance targets:** finger width 20–30 µm; line resistance 0.5–1 Ω/cm (5× lower than fine-line LCT-Ag); ρc 0.1–4 mΩ·cm² on ITO (Hatt 2019/2021).
 
-## Sources
-- [[2010-bartsch-lip-pvsc]] — foundational Ni-Cu-Sn LIP demonstration on c-Si; Arrhenius extrapolation showing >1000-yr stability with Ni barrier vs 0.1-3 yr without.
-- [[2014-rehman-nicu-plating-csi-review]] — comprehensive review; Ni/Cu offers ~2.5x conductivity of fired Ag and lower contact resistance.
-- [[2018-electrochemsci-barrier-properties-electroplated-ni]] — Cheng et al. quantitative barrier-thickness study (60 nm vs 120 nm) defining the sub-100 nm constraint.
-- [[2018-pv-international-metallization-shj]] — CSEM review including plated-Ni-Cu as adhesion-improvement variant for SHJ Cu plating onto TCO.
-- [[2018-pvtech-metallization-shj-cells-modules]] — CSEM SHJ flow; observes that on SHJ the TCO can replace or complement the Ni barrier.
-- [[2023-taiyangnews-heterojunction-technology-report]] — Maxwell/RENA/CSEM seed-and-plate roadmaps including sputter-Ni or sputter-Cu seeds + Cu plate.
-- [[2024-itrpv-15th-edition-roadmap]] — projects Cu plating + Ag-coated-Cu as the two SHJ silver-replacement paths.
-- [[atotech-solar-industry-overview]] — commercial Ni/Cu/Sn or Ni/Cu/Ag stack marketed for TOPCon and SHJ.
-- [[pvtech-metallization-challenges-cell-manufacturing]] — IMEC industry review situating two-step seed-and-plate as the silver-free path.
+## Common variants
+
+- **NOBLE** — Fraunhofer ISE PVD-Cu/Al + inkjet-NaOH + plated Cu — see [[methods/NOBLE-selective-Cu-plating]].
+- **SunDrive direct-to-TCO** — adhesive Cu plating without Ni or PVD seed; the TCO + a-Si:H supplies the diffusion barrier.
+- **Cheng / Yunlin two-step electroplated Ni** — electroless Ni seed → silicide → electroplated Ni → electroplated Cu.
+- **Atotech Ni/Cu/Ag commercial stack** — production-qualified for TOPCon and SHJ markets.
+- **CSEM printed-seed-grid + dielectric + Cu plate** — three-step self-aligned route.
+
+## Things to watch for
+
+- Pinhole density at sub-100 nm Ni is the dominant failure: Cheng 2018 directly contradicts the hypothesis's "sub-100 nm Ni" framing — flag this in any plan.
+- For SHJ, "Ni" is often a misnomer because the actual barrier is the TCO + a-Si:H stack, not an electroplated Ni layer (per SunDrive 2022, Faes 2018, Despeisse 2018).
+- Adhesion of plated Cu directly to TCO is "problematic" per Geissbühler 2018; even with a Ni adhesion layer, micro-voids appear at the interface.
+- The cap layer (Sn, Ag) must be engineered for long-term Cu retention under DH + EVA — Karas 2022 shows that 1-µm Ag and 1-µm Sn caps both leak under DH+EVA. Use POE encapsulant or thicker Cu₆Sn₅-forming Sn caps.
+- ρc target ≤ 2 mΩ·cm² is the hypothesis spec; achievable with plating (NOBLE 0.1–4 mΩ·cm²) but not with paste Cu (5–12 mΩ·cm² per Pingel 2025).
+
+## Related methods
+
+- [[methods/Cu-electroplating-acid-bath]] / [[methods/electroless-Ni-deposition]] / [[methods/light-induced-plating]] — the three deposition modes that build the stack.
+- [[methods/Ni-sputter-deposition]] — PVD alternative for the Ni layer.
+- [[methods/NOBLE-selective-Cu-plating]] — SHJ-specific implementation that omits the electroplated Ni in favour of PVD seed + Al/Al₂O₃ mask.
+- [[methods/inkjet-mask-patterning]] / [[methods/photolithography-mask-patterning]] / [[methods/laser-ablation-of-dielectric]] — patterning routes.
+- [[methods/SIMS-depth-profile]] — definitive Cu-in-c-Si verification on the stack.
+- [[methods/transfer-length-method]] — ρc measurement on the completed stack.
+
+## Citing sources
+
+- [[sources/2014-rehman-nicu-plating-csi-review]] — defines the canonical two-step Ni-seed + Cu-LIP stack.
+- [[sources/2018-electrochemsci-barrier-properties-electroplated-ni]] — Cheng et al. 60 nm vs 120 nm electroplated Ni barrier study.
+- [[sources/2018-pv-international-metallization-shj]] — Geissbühler/CSEM trade review of three SHJ Cu plating routes.
+- [[sources/2018-pvtech-metallization-shj-cells-modules]] — "the standard process consists of the growth of a nickel-copper stack by plating."
+- [[sources/2019-hatt-noble-shj-solrrl]] — bifacial Cu electrodeposition on PVD seed.
+- [[sources/2020-verlinden-future-challenges-tw-pv]] — Cu plating cited as the only sustainable Ag replacement.
+- [[sources/2021-goldschmidt-tech-learning-tw-pv]] — plating named as one of the routes to per-Wp Ag below screen-printing minima.
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — Maxwell/SunDrive Ni/Cu/Sn or Cu/Sn industrial routes.
+- [[sources/2023-tepner-printing-tech-csi-review]] — historical reference to "electroplated Cu layer after screen printing of metal pastes" as the early SHJ workflow.
+- [[sources/2024-itrpv-15th-edition-roadmap]] — Cu-containing-metallization market-share trajectory.
+- [[sources/atotech-solar-industry-overview]] — Ni/Cu/Ag stack as commercial product family.
+- [[sources/fisher-AA8902018-nickel-sulfamate-hydrate]] — Ni source-salt feeding the barrier electrolyte.
+- [[sources/fisher-AC197730010-cu-sulfate-pentahydrate-sds]] — Cu source-salt for the conductive layer.
+- [[sources/fisher-AC424525000-sulfuric-acid-acs-sds]] — H₂SO₄ for the Cu bath.
+- [[sources/notion-systems-solar-inkjet-overview]] — inkjet-resist-defined plating is the canonical mask flow for the stack.

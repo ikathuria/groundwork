@@ -1,45 +1,68 @@
 ---
 type: method
 slug: laser-ablation-of-dielectric
-aliases: [laser opening, picosecond laser ablation, fs-UV laser patterning, dielectric scribing]
-related_methods: [inkjet-mask-patterning, photolithography-mask-patterning, electroplated-Ni-Cu-stack, NOBLE-selective-Cu-plating, light-induced-plating]
-key_reagents: [ITO-transparent-conductive-oxide, a-Si-H-passivation]
-known_failure_modes: [a-Si-H-passivation-degradation, FF-degradation-contact-resistance, TCO-pitting-during-plating]
-sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2018-pvtech-metallization-shj-cells-modules, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-karas-cu-outdiffusion-damp-heat, 2023-taiyangnews-heterojunction-technology-report, 2024-itrpv-15th-edition-roadmap, pvtech-metallization-challenges-cell-manufacturing]
-tags: [patterning, laser, dielectric, SiNx, Al2O3, fs-UV, ARC-opening, selective-plating]
+aliases: [laser opening of dielectric, LCO, laser-contact opening, ps/fs laser patterning, laser-transfer]
+related_methods: [inkjet-mask-patterning, photolithography-mask-patterning, electroplated-Ni-Cu-stack, NOBLE-selective-Cu-plating, Cu-electroplating-acid-bath, light-induced-plating]
+key_reagents: [a-Si-H-passivation, ITO-transparent-conductive-oxide, inkjet-plating-resist]
+known_failure_modes: [a-Si-H-passivation-degradation, FF-degradation-contact-resistance, Ni-barrier-pinholes, Cu-diffusion-into-c-Si]
+sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2018-pvtech-metallization-shj-cells-modules, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-karas-cu-outdiffusion-damp-heat, pvtech-metallization-challenges-cell-manufacturing]
+tags: [laser-ablation, patterning, dielectric, SiNx, Al-AlOx, fs-laser, ps-laser]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Laser Ablation of Dielectric
+# Laser ablation of dielectric / cap layer
+
+**Slug:** `methods/laser-ablation-of-dielectric` · **Type:** method
 
 ## What it measures / does
-A focused laser beam removes a dielectric layer (SiNx ARC for PERC, or Al/AlOx for NOBLE) along the desired contact-grid pattern, exposing the underlying Si or TCO for selective plating. Avoids organic resist masks and aligns naturally with inline manufacturing. Pulse-duration regime governs whether the underlying passivation is preserved.
+
+Uses a focused short-pulse laser (typically 266–355 nm UV ps or fs, but also 532/1064 nm green/IR for some processes) to selectively ablate a dielectric layer (SiNₓ ARC, SiOₓ, Al₂O₃, or PVD-Al/AlOx cap) and expose the underlying conductive surface for subsequent plating or contact formation. In SHJ Cu plating: laser opens the dielectric mask between the resist-defined plating window and the TCO, or in NOBLE laser-ablates the Al/AlOx selectively as an alternative to NaOHaq inkjet patterning.
 
 ## When to use it
-Used as the patterning step before plating: PERC -> ablate SiNx -> electroless Ni / electroplated Cu; SHJ NOBLE -> ablate Al/AlOx -> electroplated Cu (alternative to NaOH inkjet); CSEM seed-and-plate -> ablate PECVD dielectric on top of Ag seed -> direct Cu plate.
 
-## Key parameters
-- Wavelength: 266 nm ps (Karas 2022); 343 nm fs UV (Hatt 2021); commonly green 532 nm or UV 355 nm.
-- Pulse energy: high regime 2.2-4.7 uJ + thicker PVD buffer (Cu 500 nm), preserves passivation up to ~4.7 uJ; low regime 0.2-0.7 uJ + 1-35 pulses, smaller damage-free window but rho_c down to 1.6 mOhm.cm² (Hatt 2021).
-- PL imaging at 1-sun used to map laser-induced passivation damage.
-- Selective-emitter laser doping: 100% PERC market share by 2023 (ITRPV).
-- Process speed: production lasers compatible with screen-print throughput (>2000 wafers/h per IMEC overview).
+Use whenever a hard inorganic mask (PECVD SiNₓ / SiOₓ / Al₂O₃) is preferred over an organic resist for chemical robustness in the plating bath, *and* photolithography is too slow/expensive for production. Hatt 2021 demonstrates fs-UV laser ablation of NOBLE Al/AlOx as a higher-throughput alternative to inkjet. Bartsch 2010 ablates SiNₓ ARC on FZ Si before direct Ni plating. Karas 2022 uses 266 nm ps laser for Cu-plated, Ag-capped sample preparation.
 
-## Common variants / alternatives
-- [[inkjet-mask-patterning]] — alternative non-thermal patterning route; NaOHaq inkjet on Al for NOBLE.
-- [[photolithography-mask-patterning]] — high-resolution lab benchmark.
-- LCMD (laser chemical metal deposition) — combines ablation + seeding in one step.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/a-Si-H-passivation-degradation]] — direct laser-induced damage to a-Si:H/c-Si interface; PL imaging the primary diagnostic.
-- [[../failure-modes/FF-degradation-contact-resistance]] — incomplete dielectric removal raises rho_c; over-ablation damages TCO.
-- [[../failure-modes/TCO-pitting-during-plating]] — over-ablation thins or pits the TCO, opening Cu-diffusion paths.
+- **Laser:** 266 nm (UV) ps Lumera Nd:YAG (Karas 2022); 343 nm (UV) fs (Hatt 2021); 355 nm UV / 532 nm green also used.
+- **Pulse energy / regime:** Hatt 2021 reports two operating regimes — (i) high pulse energy with thicker buffer Cu (500 nm) preventing passivation damage, (ii) low pulse energy with multiple repetitions on the same spot.
+- **Spot diameter:** ~10–30 µm focused; line widths down to 20 µm achievable.
+- **Repetition rate:** kHz–MHz; scanned by galvo mirror over wafer.
+- **Substrate temperature:** ambient; the SHJ ≤200 °C constraint means ablation must dissipate heat fast enough not to damage a-Si:H.
+- **Hatt 2021 result:** 21.4 % large-area SHJ with laser patterning, ρc 1.6 ± 0.3 mΩ·cm²; Voc 726.8 mV, ~10 mV below inkjet attributed to early-stage laser damage.
 
-## Sources
-- [[2010-bartsch-lip-pvsc]] — laser ablation of SiNx ARC opens contacts for direct Ni plating on Si; FF gap attributed to ablation inhomogeneity.
-- [[2014-rehman-nicu-plating-csi-review]] — review covers laser-doped selective emitter and LCMD options.
-- [[2018-pvtech-metallization-shj-cells-modules]] — laser ablation patterning route discussed; for SHJ requires additional resist mask because TCO is conductive.
-- [[2021-hatt-stable-cu-plated-shj-eupvsec]] — fs-UV (343 nm) laser ablation of Al/AlOx as patterning alternative to inkjet; 21.4% large-area cell.
-- [[2022-karas-cu-outdiffusion-damp-heat]] — 266 nm ps laser SiNx ablation prior to LIP plating.
-- [[2023-taiyangnews-heterojunction-technology-report]] — CSEM seed-and-plate uses laser-open SiNx + direct Cu plating; deposited dielectric prevents ghost plating.
-- [[2024-itrpv-15th-edition-roadmap]] — selective-emitter laser doping at 100% PERC market share since 2023.
-- [[pvtech-metallization-challenges-cell-manufacturing]] — IMEC overview of picosecond laser ablation for selective NiSi2/Cu plating.
+## Common variants
+
+- **Laser-contact opening (LCO)** — opens contact windows in dielectric for direct plating.
+- **Laser-induced metal deposition / LCMD** — uses the laser to *deposit* metal from a precursor (Rehman 2014 reviews).
+- **Laser-transfer + dielectric mask** (route 3B in Faes 2018) — pattern PVD seed by laser, then plate through dielectric.
+- **fs UV ablation** (Hatt 2021) — minimal heat-affected-zone; preferred for SHJ.
+- **ps UV ablation** (Karas 2022) — broader process window; used for sample preparation in DH studies.
+
+## Things to watch for
+
+- Laser damage to a-Si:H passivation is the primary failure: PL imaging after ablation is the standard quality gate (Hatt 2021). Even with fs UV, ~10 mV Voc loss is reported.
+- Heat-affected-zone in the dielectric may leave residue or modify the underlying TCO; SEM/EDS verification recommended.
+- Wavelength selection trades absorption depth in dielectric vs damage to underlying a-Si:H — UV ps/fs is the sweet spot for SHJ; IR penetrates too deep.
+- Throughput (cells/hour) on production lines depends on galvo speed and cell size; G12 / M10 wafers stretch the system.
+- Particulate ejecta from ablation may redeposit on the surface; in-line cleaning (rinse, wet bench) is needed.
+
+## Related methods
+
+- [[methods/inkjet-mask-patterning]] — alternative for NOBLE patterning.
+- [[methods/photolithography-mask-patterning]] — alternative for research-grade narrow features.
+- [[methods/NOBLE-selective-Cu-plating]] — Hatt 2021 introduces fs-UV laser as a NOBLE patterning alternative.
+- [[methods/Cu-electroplating-acid-bath]] — downstream plating step.
+- [[methods/light-induced-plating]] — Bartsch 2010 sequence: laser ablation of SiNₓ ARC → direct Ni plating.
+
+## Citing sources
+
+- [[sources/2010-bartsch-lip-pvsc]] — SiNx ARC opening prior to direct Ni plating on Si.
+- [[sources/2014-rehman-nicu-plating-csi-review]] — laser-induced Ni deposition (LCMD) reviewed.
+- [[sources/2018-pv-international-metallization-shj]] — laser-transfer + dielectric mask as one of three patterning routes.
+- [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — opening of dielectric mask in route 3B.
+- [[sources/2018-pvtech-metallization-shj-cells-modules]] — alternative mask-opening method.
+- [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — fs UV (343 nm) laser ablation of Al/AlOx; first 21.4 % large-area cell with laser patterning.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — 266 nm ps Lumera Nd:YAG laser ablation for Cu-plated, Ag-capped sample preparation.
+- [[sources/pvtech-metallization-challenges-cell-manufacturing]] — laser micro-sintering and laser-opened contacts in the seed-and-plate landscape.

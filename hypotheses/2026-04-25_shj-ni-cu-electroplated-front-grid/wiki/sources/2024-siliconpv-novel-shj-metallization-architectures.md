@@ -5,58 +5,71 @@ source_type: paper
 title: "Pushing Heterojunction Technology Further: Novel Metallization Processes and Architectures"
 authors: ["Frasson, N.", "Galiazzo, M."]
 year: 2024
-doi: "10.52825/siliconpv.v2i.1305"
-url: "https://www.tib-op.org/ojs/index.php/siliconpv/article/view/1305"
+doi: 10.52825/siliconpv.v2i.1305
+url: https://www.tib-op.org/ojs/index.php/siliconpv/article/download/1305/2486
 raw_path: raw/papers/2024-siliconpv-novel-shj-metallization-architectures.pdf
-tags: [SHJ, AgCu-paste, Ag-coated-Cu, reactive-Ag-ink, screen-printing, AMAT, Cu-oxidation, thermal-stability, M2-cell, G12]
+tags: [SHJ, AgCu-paste, copper-paste, screen-printing, AMAT, SiliconPV, industrial-perspective, reliability, oxidation]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Pushing Heterojunction Technology Further: Novel Metallization Processes and Architectures
 
+**Frasson, N., Galiazzo, M.** — *SiliconPV 2024 Conf. Proc. (TIB Open Publishing)*. DOI: 10.52825/siliconpv.v2i.1305
+
 ## Summary
-Applied Materials Italia (Frasson & Galiazzo) SiliconPV 2024 paper benchmarking five low-T metallization pastes for SHJ cells: standard Ag micro, two AgCu (silver-coated-copper) formulations, reactive Ag particle-free ink, and Ag nano-size. Only AgCu-1 met print-quality requirements at production-relevant speeds. AgCu-1 reaches 21.94% on M2 SHJ at 200 mm/s, equivalent to Ag micro reference (21.95%) within statistical noise, while reducing Ag consumption from ~25.7 mg/W (G12 production data) to ~10 mg/W. Pure Cu paste fails thermal stability — 200°C exposure raises Rs by ~2.3 mΩ vs +0.1 mΩ for AgCu — confirming the necessity of an Ag shell in core-shell formulations to manage Cu oxidation. Implicit but key for the SHJ-Ni/Cu-plating hypothesis: shows that screen-printed AgCu can already cut Ag consumption substantially without plating, defining the moving target that plating must beat.
+
+Applied Materials Italia industrial-perspective survey of low-Ag and Ag-free SHJ metallization pastes — Ag micro-size reference, AgCu (Cu core / Ag shell), Ag particle-free reactive ink, Ag nano-size — printed and characterised on M2 SHJ wafers. Confirms AgCu (Cu-Ag core-shell) as the only paste with production-ready printability and matches Ag reference efficiency, while pure-Cu pastes fail reliability tests due to oxidation. Industrial complement to the academic Cu-plating literature.
 
 ## Key claims
-- Pastes screened: Ag micro (94% Ag), AgCu-1 (44% Ag), AgCu-2 (55% Ag, prototype), Ag particle-free (33%, prototype), Ag nano (>75%, prototype).
-- AgCu-1 cell on M2 SHJ: η = 21.94%, FF = 79.77%, Rs = 2.38 mΩ, Voc = 727 mV at 20-min cure (Table 4) — statistically equivalent to Ag-micro reference (η = 21.95%, FF = 79.91%, Rs = 2.05 mΩ).
-- Ag consumption: lab AgCu-1 used 233 mg vs 246 mg for Ag-micro on the same M2; on G12 production "average Ag consumption of 25.7 mg/W" projected to drop to 10 mg/W with AgCu — a 2.5× reduction from screen-print paste replacement alone.
-- Pure-Cu paste fails the 200–270°C thermal stability test: ΔRs = +2.3 mΩ (200→230°C), +2.4 mΩ (230→270°C), with cells discolouring blue-green from oxidation. AgCu-1 ΔRs = +0.1 to +0.5 mΩ (same as Ag).
-- Core-shell AgCu particles (Cu core, ~few-nm Ag shell): EDX detects only 0.3% Cu exposed at surface, confirming shell integrity.
-- AgCu-1 and AgCu-2 morphology: spherical aggregates ~4.9 µm vs Ag-micro flake-shape ~8.4 µm — narrower fingers achievable.
-- AgCu paste shorter cure (10 min) viable, vs 20 min for Ag micro.
-- Earlier work (cited Frasson 2021) had reported pure-Cu metallization on SHJ with 0.8% efficiency drop and ≥40% module power loss after 200 thermal cycles — strong contradiction case study.
+
+- AgCu 1 paste (44 wt % Ag, Cu-Ag core-shell) reached η = 21.94 % at 20-min curing on M2 SHJ vs. 21.95 % for the Ag-micro-size reference — i.e. statistically indistinguishable cell efficiency.
+- Ag laydown / consumption: Ag reference at 46.4 mg/W on M2 lab cells, AgCu 1 at 19.3 mg/W (~58 % Ag reduction); on customer G12 SHJ production data, AgCu projects to 10 mg/W vs. Ag at 25.7 mg/W.
+- Reliability testing (10 min ovenings at increasing T): Ag micro-size and AgCu 1 show only +0.1 to +0.5 mΩ Rs gain across 200–270 °C; pure-Cu paste shows +2.3 to +2.4 mΩ Rs gain due to oxidation, with cell fingers visibly discoloured (blue-green).
+- Pure-Cu paste reliability failures cited at module level: thermal cycling reduces module power up to 40 % in 200 cycles for prior Cu-paste-only SHJ modules, attributed to Cu oxidation.
+- Of the five pastes tested, only AgCu 1 met minimum print-quality requirements at industrial speed (200 mm/s); other pastes failed via incomplete transfer at cell edges, slow required printing speed (<50 mm/s), high stickiness, or screen breakage from required printing force.
+- The Cu-Ag core-shell structure on AgCu particles is stable across the print-and-cure process: EDX shows only 0.3 wt % Cu exposed at the surface in AgCu 1 vs. 18.8 wt % Ag, confirming the shell remains intact.
+- Authors flag the "early results" of Cu-based metallization for SHJ as having a "−0.8 % average difference in cell efficiency vs. Ag-based SHJ solar cells due to increased grid resistance" and frame plating as the alternative high-performance route.
 
 ## Methods used
-- [[../methods/screen-printed-Ag-paste]] — primary technology; AgCu/Ag-nano/particle-free variants.
-- [[../methods/IV-curve-measurement]] — STC on AMAT Botticelli LED multi-spectral simulator.
-- [[../methods/EL-electroluminescence-imaging]] — uniformity of cell printing.
-- [[../methods/temperature-cycling-IEC61215-TC200]] — referenced for prior Cu-paste failure (40% power loss at 200 cycles).
-- [[../methods/four-point-probe-sheet-resistance]] — line resistivity from dog-bone test pattern.
+
+- [[methods/screen-printed-Ag-paste]] — Ag, AgCu, Ag nano, Cu, particle-free pastes; 380/14 mesh front, 440/13 mesh back
+- [[methods/IV-curve-measurement]] — AMAT Botticelli LED multi-spectral solar simulator
+- [[methods/EL-electroluminescence-imaging]] — EL inspection of best cells per batch
+- [[methods/four-point-probe-sheet-resistance]] — line-resistance / volume-resistivity on 3 cm long dog-bone test patterns
 
 ## Reagents
-- [[../reagents/low-T-Ag-paste-generic-SHJ-grade]] — Ag micro reference.
-- New reagent flagged: AgCu (silver-coated-copper) paste, core-shell particles — see `new_entities`.
-- New reagent flagged: reactive Ag particle-free ink — see `new_entities`.
-- [[../reagents/Cu-paste-low-temperature]] — pure-Cu paste tested and failing thermal stability.
-- [[../reagents/ITO-transparent-conductive-oxide]] — TCO base.
+
+- [[reagents/Cu-paste-low-temperature]] — pure-Cu paste under reliability test (oxidation failure)
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — Ag micro-size paste reference at 94 wt % Ag
+- [[reagents/ITO-transparent-conductive-oxide]] — TCO under printed pastes
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — closest match (M2 156.75 mm pseudo-square wafer).
-- [[../organisms/SHJ-cell-G12]] — explicitly cited for 25.7 mg/W production figure.
+
+- [[organisms/SHJ-cell-M6]] — M2 SHJ pseudo-square wafers (156.75 mm, 244.32 cm², 160 µm) with TCO on both sides (closest slug)
+- [[organisms/SHJ-cell-G12]] — referenced for customer production data scaling (G12, 210 mm pseudo square, 440.96 cm²)
 
 ## Failure modes flagged
-- [[../failure-modes/Cu-finger-oxidation-damp-heat]] — pure-Cu paste shows clear oxidation at 200–270°C in air.
-- [[../failure-modes/Ni-Cu-line-resistance-rise-DH]] — quantified for Cu vs AgCu vs Ag (ΔRs).
-- [[../failure-modes/silver-supply-bottleneck]] — explicitly framed (Fig. 7 with 1 TW production target).
-- [[../failure-modes/FF-degradation-contact-resistance]] — slightly higher Rs for AgCu attributed to material properties.
+
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — pure-Cu paste oxidises during 200–270 °C 10-min testing, +2.3–2.4 mΩ Rs gain per step, fingers visibly discoloured
+- [[failure-modes/Ni-Cu-line-resistance-rise-DH]] — closely related (Cu line R rise from oxidation under thermal stress)
+- [[failure-modes/silver-supply-bottleneck]] — explicit motivator framed via the 1 TW/y target and global Ag supply
+- [[failure-modes/Jsc-loss-from-cap-stack-shading]] — finger geometry across pastes drives Jsc trade-off
+- [[failure-modes/FF-degradation-contact-resistance]] — Cu paste-induced Rs gain dominates FF / efficiency loss
 
 ## Supports / contradicts
-- Supports: [[2018-pv-tech-metallization-interconnection-bifacial-shj]], [[2018-pv-international-metallization-shj]] (silver-reduction roadmap)
-- Supports: [[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] (parallel screen-print optimization)
-- Direct precedent for: [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] (Pingel et al. extend AgCu screening with similar findings)
-- Cites: Verlinden 2020, Zhang 2021 (Ag/In/Bi terawatt sustainability)
-- Provides the screen-printed-AgCu baseline against which plated Cu (NOBLE / Ni-Cu) must compete: [[2019-hatt-noble-shj-solrrl]], [[2021-hatt-stable-cu-plated-shj-eupvsec]]
+
+- **Supports:** [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — AgCu and Cu paste both viable on SHJ, with AgCu the practical industrial path
+- **Supports:** [[sources/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — co-authors at AMAT; same group's industrial perspective on plating
+- **Supports:** [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — co-authored
+- **Contradicts:** [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — Yacouba achieves 22.4–23.08 % with pure Cu SP on both sides whereas Frasson reports pure-Cu paste fails on print quality and reliability; the contradiction reflects different paste suppliers and 2024 vs. 2025 paste evolution
 
 ## Notable quotes
-- "Cu based metallization had -0.8% average difference in cell efficiency with respect to Ag-based SHJ solar cells due to increased grid resistance. Moreover, reliability test failures for Cu based SHJ modules have been experienced at module level due to Cu oxidation (Thermal Cycling reduces the module power up to 40% in 200 cycles)." — Section 2.1, p. 2.
-- "AgCu 1 paste, with Cu core and Ag coated particles, seems to be a valid alternative to pure Ag paste by matching the electrical and temperature stability performance of the reference Ag." — Conclusions.
+
+> "AgCu 1 paste, with Cu core and Ag coated particles, seems to be a valid alternative to pure Ag paste by matching the electrical and temperature stability performance of the reference Ag." — *§4 Conclusions*
+
+> "For pure-copper pastes, the drop in cell efficiency is very clear and the main reason is oxidation (this is clearly visible by looking at the cells, printed lines appear of blue-green colors)." — *§3.3 Temperature stability testing*
+
+> "Customer production data on G12 SHJ (210 mm pseudo square wafers, 440.96 mm²) shown an average Ag consumption of 25.7 mg/W, meaning 10 mg/W when using AgCu potentially by applying the learning curve we experimented at lab scale." — *§3.2*
+
+> "Reliability test failures for Cu based SHJ modules have been experienced at module level due to Cu oxidation (Thermal Cycling reduces the module power up to 40% in 200 cycles)." — *§2.1*

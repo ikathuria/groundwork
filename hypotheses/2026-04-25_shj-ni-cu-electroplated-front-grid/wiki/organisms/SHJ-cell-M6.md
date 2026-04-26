@@ -2,53 +2,85 @@
 type: organism
 slug: SHJ-cell-M6
 organism_type: cell
-external_id: M6 (166×166 mm pseudo-square)
+source: commercial SHJ pilot lines (Meyer Burger, Enel 3SUN, Risen, Huasun) and R&D institutes (CSEM, Fraunhofer ISE, ISC Konstanz)
+external_id: ITRPV M6 (166 mm pseudo-square)
 characteristics:
-  - 166×166 mm pseudo-square; 274.15 cm² active / 274.4 cm² aperture (industry standard for M6 SHJ certification)
-  - n-type Cz-Si base wafer, 130–155 µm thickness in production (trending to 100 µm)
-  - Symmetric a-Si:H(i)/a-Si:H(n) front and a-Si:H(i)/a-Si:H(p) rear stack with ~80 nm ITO (or low-In TCO) on both faces
-  - Bifacial by construction; bifaciality factor ~95–100%
-  - Voc up to 742–750 mV (CSEM Lachowicz champion 742.4 mV); Jsc ≈ 39.9 mA/cm²; certified champion η 24.2% (CSEM Cu-plated) up to 26.41% (SunDrive 2022, ISFH)
-  - Process-temperature ceiling 200–280 °C set by a-Si:H hydrogen out-diffusion
-known_failure_modes: [a-Si-H-passivation-degradation, Cu-finger-oxidation-damp-heat, finger-adhesion-loss-after-DH, FF-degradation-contact-resistance, Jsc-loss-from-cap-stack-shading]
-sources: [2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2018-pvtech-metallization-shj-cells-modules, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-arena-sundrive-copper-metallisation-demonstration, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-taiyangnews-heterojunction-technology-report, 2023-tepner-printing-tech-csi-review, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer, 2024-nrel-best-research-cell-efficiency-chart, 2024-siliconpv-novel-shj-metallization-architectures, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, 2025-yacouba-shj-silver-free-metallization-progPV]
-tags: [SHJ, M6, cell, 166mm, n-type, ITO, a-Si-H]
+  - silicon heterojunction (SHJ) device built on n-type CZ monocrystalline c-Si wafer
+  - M6 wafer format — 166 mm pseudo-square, ~274 cm² wafer area, ~258–262 cm² active cell area depending on chamfer
+  - intrinsic + doped a-Si:H passivation stack on both sides (≤200 °C process budget)
+  - ITO (or IWO/AZO) front and rear TCO, ~70–90 nm typical
+  - dominant SHJ R&D format 2018–2022; the workhorse cell in nearly every plated-Cu SHJ paper in this hypothesis's corpus
+  - typical short-circuit current ~10.0–10.5 A under STC; champion efficiencies 23.5–25.1 % (Adachi/Kaneka PVD-Cu seed record on M6)
+known_failure_modes: [a-Si-H-passivation-degradation, Cu-diffusion-into-c-Si, Cu-finger-corrosion-encapsulant, Cu-finger-oxidation-damp-heat, Cu-out-diffusion-through-cap-stack, FF-degradation-contact-resistance, finger-adhesion-loss-after-DH, Jsc-loss-from-cap-stack-shading, Ni-barrier-pinholes, plating-resist-undercut, TCO-pitting-during-plating, Voc-degradation-Cu-contamination]
+sources: [2018-pv-tech-metallization-interconnection-bifacial-shj, 2018-pvtech-metallization-shj-cells-modules, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2020-verlinden-future-challenges-tw-pv, 2021-goldschmidt-tech-learning-tw-pv, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-arena-sundrive-copper-metallisation-demonstration, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-taiyangnews-heterojunction-technology-report, 2023-tepner-printing-tech-csi-review, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer, 2024-nrel-best-research-cell-efficiency-chart, 2024-siliconpv-novel-shj-metallization-architectures, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, 2025-yacouba-shj-silver-free-metallization-progPV, atotech-cupracid-ultra-a-tds, atotech-solar-industry-overview, fisher-AA8902018-nickel-sulfamate-hydrate, fisher-AC197730010-cu-sulfate-pentahydrate-sds, fisher-AC424525000-sulfuric-acid-acs-sds, notion-systems-solar-inkjet-overview]
+tags: [SHJ, cell, M6, n-type, heterojunction, device-under-test]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# SHJ cell — M6 format (166×166 mm)
+# SHJ cell, M6 (166 mm) format
+
+**Slug:** `organisms/SHJ-cell-M6` · **Type:** organism (substrate / device under test)
 
 ## What it is
-Silicon-heterojunction solar cell built on a 166×166 mm pseudo-square n-type Cz-Si wafer with symmetric intrinsic + doped a-Si:H passivation/emitter and TCO (typically ITO) on both sides. M6 was the dominant SHJ format from ~2020 through 2023 and is the substrate on which most SHJ Cu-plating records and damp-heat reliability studies relevant to this hypothesis were generated.
 
-## Standard dimensions / spec
-- Wafer: 166×166 mm pseudo-square, ~274.15 cm² active area, 165 mm pseudo-square diagonal.
-- Wafer thickness: 130–155 µm typical; SHJ leads industry thickness reduction toward 100 µm (ITRPV 2024).
-- Front/rear stack: a-Si:H(i, ~5 nm) + a-Si:H(n or p, ~7 nm) + ITO (~80 nm). Low-In ITO and AZO/ITO stacks demonstrated.
-- Voc up to 742–750 mV; record cell efficiencies 24.2% (CSEM 9-BB plated-Cu, [[2024-lachowicz-cu-plated-shj-aging-mini-modules]]) → 26.41% (SunDrive plated-Cu, [[2022-arena-sundrive-copper-metallisation-demonstration]]).
-- Bifaciality factor ≥0.95 by construction.
-- Process budget: ≤200 °C for cell-level metallization; 280 °C / 5 s tolerated; ≥320 °C costs ≥0.5%abs efficiency irreversibly ([[2025-yacouba-shj-silver-free-metallization-progPV]]).
+A silicon heterojunction (SHJ) solar cell fabricated on a 166 mm pseudo-square monocrystalline n-type c-Si wafer. M6 is the dominant SHJ R&D and pilot-line format from roughly 2018 through 2022 and remains the most-cited cell-size in this hypothesis's corpus — virtually every plated-Cu SHJ proof point (Hatt NOBLE, SunDrive ARENA demonstrator, CSEM mini-module aging studies, Fraunhofer ISE Ag→Cu transition work) is built on M6.
 
-## Common pitfalls / handling notes
-- Hydrogen out-diffusion above 280 °C irreversibly degrades a-Si:H passivation — sets the metallization-cure ceiling.
-- ITO is fragile to acidic etch-back; H₃PO₄/HNO₃ etch-back checked by SEM in NOBLE preserves ~80 nm ITO ([[2019-hatt-noble-shj-solrrl]]).
-- Direct Cu in contact with c-Si is catastrophic (Cu-LID, Cu₃Si); the TCO is the front-side diffusion barrier in SHJ — confirmed by SIMS ([[2025-yacouba-shj-silver-free-metallization-progPV]]).
-- Edge handling: half-cut M6 cells lose ~0.30%abs efficiency vs full cells ([[2022-arena-sundrive-copper-metallisation-demonstration]]).
-- Sputter damage to a-Si:H: 200 °C / 15 min anneal recovers most damage ([[2019-hatt-noble-shj-solrrl]]).
-- 9-BB and 18-BB layouts mainstream; 5/6 BB no longer in production (ITRPV 2024).
+## Geometry / format
 
-## Failure modes commonly associated
-- `[[../failure-modes/a-Si-H-passivation-degradation]]` — UV and >280 °C cure attacks the front a-Si:H stack.
-- `[[../failure-modes/Cu-finger-oxidation-damp-heat]]` — pure Cu fingers oxidise without a cap.
-- `[[../failure-modes/finger-adhesion-loss-after-DH]]` — micro-voids at Cu/Ni-on-TCO and at solder pads observed in damp heat.
-- `[[../failure-modes/FF-degradation-contact-resistance]]` — driven by ITO/seed-stack ρc; target ≤2 mΩ·cm² for the hypothesis.
-- `[[../failure-modes/Jsc-loss-from-cap-stack-shading]]` — finger width / busbar shadow trade-off; SHJ at 27→15 µm trajectory.
+- Wafer: 166 mm × 166 mm pseudo-square, 223 mm corner-to-corner diagonal
+- Wafer area ≈ 274 cm²; chamfered active cell area ≈ 258–262 cm²
+- Wafer thickness: 130–170 µm typical for SHJ (thinner than PERC)
+- Front grid: 5–12 busbars (multibusbar, MBB) or SmartWire / wire-interconnect
+- Finger pitch: 1.0–1.5 mm; finger width target 20–35 µm for plated, 30–50 µm for screen-printed
+- Power class: ~6.3–7.0 W per cell at 23.5–25.0 % efficiency
+- Short-circuit current Isc: ~10.0–10.5 A under STC AM1.5g
+- Industry adoption: dominant SHJ format ~2018–2022; gradually displaced by M10 and G12 in mass production from ~2022 onward, but remains the academic/R&D reference
 
-## Sources
-- `[[2018-pv-international-metallization-shj]]` — 6" SHJ Ag-paste laydown numbers and Cu-plating routes.
-- `[[2018-pv-tech-metallization-interconnection-bifacial-shj]]` — CSEM 24.1% bifacial SHJ benchmark on M6.
-- `[[2019-hatt-noble-shj-solrrl]]` — first NOBLE plated-Cu cell on 6" SHJ precursor (6.25 cm² diced).
-- `[[2021-hatt-stable-cu-plated-shj-eupvsec]]` — stable Cu-plated SHJ at M6 scale.
-- `[[2022-arena-sundrive-copper-metallisation-demonstration]]` — 25.54 / 26.07 / 26.41 % ISFH-certified plated-Cu SHJ M6 records.
-- `[[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]]`, `[[2024-lachowicz-cu-plated-shj-aging-mini-modules]]` — 24.2% champion 9-BB M6 SHJ for damp-heat aging study.
-- `[[2025-yacouba-shj-silver-free-metallization-progPV]]` — Cu/AgCu paste benchmarks on M2 (close analogue of M6) confirming TCO as Cu diffusion barrier.
-- `[[2024-itrpv-15th-edition-roadmap]]`, `[[2023-taiyangnews-heterojunction-technology-report]]` — industry roadmap; M6 superseded by M10 from 2023 onwards but remains the reliability-data anchor.
+## Construction (where relevant)
+
+- Bare cell precursor: n-type CZ wafer, alkaline texture, intrinsic + doped a-Si:H stack both sides, ITO/IWO/AZO TCO both sides
+- Front-side metallization: low-T screen-printed Ag paste (industry baseline) or plated Ni/Cu/Ag stack (intervention)
+- Rear-side metallization: usually low-T screen-printed Ag (often a Ag/Cu hybrid for cost)
+- Cells are not typically encapsulated at this stage; module-level encapsulation tests use this cell embedded in a mini-module or full-size laminate
+
+## Common pitfalls
+
+- [[failure-modes/a-Si-H-passivation-degradation]] — any process step >200 °C or aggressive UV pre-conditioning degrades the defining a-Si:H passivation; sets the upper bound on plating thermal budget
+- [[failure-modes/Cu-diffusion-into-c-Si]] — Cu has the highest interstitial diffusivity among 3d metals in Si; without a barrier, even ppb-level Cu wrecks minority-carrier lifetime
+- [[failure-modes/Cu-out-diffusion-through-cap-stack]] — Karas 2022 reports 5–8 % Pmax loss at 1000 h DH for poorly capped plated Cu on M6 SHJ
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — exposed Cu surfaces oxidise to red CuO/Cu₂O during 85/85 aging
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — encapsulant-mediated corrosion (especially with EVA acetic-acid pathway)
+- [[failure-modes/FF-degradation-contact-resistance]] — TLM contact resistivity drift at the Ni/TCO or seed/TCO interface
+- [[failure-modes/finger-adhesion-loss-after-DH]] — peel strength drop after damp-heat; key acceptance test for plated grids
+- [[failure-modes/Jsc-loss-from-cap-stack-shading]] — wider plated fingers / extra cap layers shade Jsc
+- [[failure-modes/Ni-barrier-pinholes]] — Cheng 2018 reports 60 nm electroplated Ni fails as a Cu barrier at 300 °C; pinhole density must be verified pre-cap
+- [[failure-modes/plating-resist-undercut]] — inkjet resist undercut leads to wide / shorted fingers
+- [[failure-modes/TCO-pitting-during-plating]] — acid Cu sulfate (pH ≈ 1) attacks ITO at pinholes
+- [[failure-modes/Voc-degradation-Cu-contamination]] — Lindroos 2015 traces Voc loss to Cu in c-Si bulk via SPV / lifetime mapping
+
+## Citing sources
+
+- [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — bifacial M6 SHJ metallization survey
+- [[sources/2018-pvtech-metallization-shj-cells-modules]] — M6 SHJ metallization & module integration overview
+- [[sources/2019-hatt-noble-bifacial-shj-aip]] — NOBLE Cu-plated bifacial M6 SHJ
+- [[sources/2019-hatt-noble-shj-solrrl]] — NOBLE process on M6 SHJ
+- [[sources/2020-verlinden-future-challenges-tw-pv]] — TW PV scaling premises tied to M6 baseline
+- [[sources/2021-goldschmidt-tech-learning-tw-pv]] — TW PV roadmap built on M6/M10 cells
+- [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — DH-stable plated Cu SHJ on M6
+- [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — SunDrive ARENA demonstrator on M6
+- [[sources/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — CSEM stability study, M6 cells in mini-modules
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — industry SHJ format snapshot, M6/M10/G12
+- [[sources/2023-tepner-printing-tech-csi-review]] — printing-tech review with M6 SHJ context
+- [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — extended aging on M6 plated Cu
+- [[sources/2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] — Fraunhofer ISE M6 plated-Cu SHJ
+- [[sources/2024-nrel-best-research-cell-efficiency-chart]] — NREL chart entry, Adachi/Kaneka M6 SHJ record
+- [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — novel architectures benchmarked on M6
+- [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Ag→Cu transition pathway on M6
+- [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — Cu-paste champion on M6
+- [[sources/atotech-cupracid-ultra-a-tds]] — Cu plating bath datasheet (M6 reference cell)
+- [[sources/atotech-solar-industry-overview]] — supplier industry view, M6 SHJ
+- [[sources/fisher-AA8902018-nickel-sulfamate-hydrate]] — Ni bath chemical, M6 reference
+- [[sources/fisher-AC197730010-cu-sulfate-pentahydrate-sds]] — Cu bath chemical, M6 reference
+- [[sources/fisher-AC424525000-sulfuric-acid-acs-sds]] — bath acid, M6 reference
+- [[sources/notion-systems-solar-inkjet-overview]] — inkjet patterning on M6 SHJ

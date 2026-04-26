@@ -2,56 +2,68 @@
 type: source
 id: 2024-lorenz-cutting-edge-metallization-shj-fraunhofer
 source_type: paper
-title: "Towards a Cutting-Edge Metallization Process for Silicon Heterojunction Solar Cells with Very Low Silver Laydown"
-authors: ["Lorenz, A.", "Wenzel, T.", "Pingel, S.", "Sabet, M.S.", "Retzlaff, M.", "Clement, F."]
+title: "Towards a cutting-edge metallization process for silicon heterojunction solar cells with very low silver laydown"
+authors: ["Lorenz, A.", "Wenzel, T.", "Pingel, S.", "Salimi Sabet, M.", "Retzlaff, M.", "Clement, F."]
 year: 2024
-doi: "10.1002/pip.3808"
-url: "https://onlinelibrary.wiley.com/doi/10.1002/pip.3808"
+doi: 10.1002/pip.3808
+url: https://publica-rest.fraunhofer.de/server/api/core/bitstreams/92fcce16-5cd9-4a24-a58b-b56965b88fc4/content
 raw_path: raw/papers/2024-lorenz-cutting-edge-metallization-shj-fraunhofer.pdf
-tags: [SHJ, screen-printing, fine-line, knotless-screen, finger-pitch, low-T-Ag-paste, Fraunhofer-ISE, silver-laydown, multi-wire]
+tags: [SHJ, screen-printing, Ag-low-laydown, fine-line, knotless-screen, fraunhofer-ise, baseline-Ag]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Towards a Cutting-Edge Metallization Process for Silicon Heterojunction Solar Cells with Very Low Silver Laydown
+# Towards a cutting-edge metallization process for silicon heterojunction solar cells with very low silver laydown
+
+**Lorenz, A., Wenzel, T., Pingel, S., Salimi Sabet, M., Retzlaff, M., Clement, F.** — *Progress in Photovoltaics: Research and Applications, 32, 655–663 (2024)*. DOI: 10.1002/pip.3808
 
 ## Summary
-Fraunhofer ISE Prog. PV 2024 paper showing how fine-line knotless screen-printing of low-T Ag paste can already deliver 23.2% champion-cell efficiency on SHJ at 16 mg Ag laydown per cell front side. Three iterative experiments: (1) knotless 0° vs angled 22.5° screen — knotless gives Δη = +0.1%abs by reducing finger shading; (2) finger pitch 1.3→1.0 mm (120→156 fingers) — FF gain +0.4%abs offset by Jsc loss; (3) nominal finger width 20→18→15 µm — finest screen still printable, Δη = +0.14%abs at 5 mg Ag saved. Key context for the SHJ-Ni/Cu hypothesis: screen-printed Ag is rapidly closing the gap, so any plated route must beat ~16 mg/Wp Ag laydown and 23.2% efficiency at production speed (300 mm/s).
+
+Fraunhofer ISE journal paper pushing the screen-printed Ag baseline for SHJ to its current limit through (i) knotless fine-mesh screens, (ii) finer finger pitch (120 → 156 fingers, 1.3 → 1.0 mm), and (iii) nominal finger widths down to 15 µm. Champion cells reach η = 23.2 % with average Ag laydown of 16.3 mg per cell — the cost target the plated Cu hypothesis must beat. Sets the screen-printed Ag SHJ benchmark for the hypothesis success criterion on Ag reduction.
 
 ## Key claims
-- Champion SHJ cell: η = 23.2% with knotless screen 520×11×0°, 156 fingers, wn = 15 µm, 16.3 mg Ag laydown — 2 mg below reference (Group 1 angled screen, 120 fingers, 18.7 mg Ag).
-- Experiment 1 (Table 1): knotless 0° screen vs angled 22.5° at wn = 20 µm: average shading width 27 ± 2.2 µm vs 28 ± 2.5 µm; finger height 7 µm both; cross-section 94 vs 100 µm²; knotless gives more uniform fingers (smaller variance) and Δη = +0.1%abs.
-- Experiment 2: Finger pitch 1.3 mm (120 fingers) → 1.0 mm (156 fingers); ΔFF = +0.4%abs; Δjsc ≈ −0.25 mA/cm²; net Δη ≈ 0; Ag laydown rises 19→21 mg.
-- Experiment 3 (Table 2): wn = 20/18/15 µm with knotless 0° screen — even 15 µm prints reliably; shading-finger width 27 → 26 → 23 µm; height 7 → 6 → 6 µm; cross-section 94 → 86 → 71 µm²; Ag laydown 21 → 20 → 16 mg.
-- I-V improvements at wn=15 µm vs wn=20 µm: Δjsc ≈ +0.1 mA/cm² (less shading), Δη ≈ +0.14%abs.
-- Cell-level numbers (Table 3, GridTouch with 5BB+busbar measurement): Group 1 (reference) Avg η = 23.02%, Best 23.25%, 18.7 mg Ag laydown. Group 2 (optimized) Avg 23.19%, Best 23.37%, 16.3 mg Ag.
-- Used industrial SHJ precursors (157.35 × 157.35 mm) with TCO; max efficiency potential 23–24%.
-- Cure: 220°C / 1 min on inline belt — fast, industrially realistic.
-- Multi-wire / SmartWire interconnection (Fig. 1) reduces tolerable lateral finger resistance demands, enabling fine-line ≤20 µm fingers.
+
+- Best optimised group (knotless 520 × 11 × 0° screen, 1.0 mm pitch, 156 fingers, 15 µm nominal width): average η = 23.19 %, best cell η = 23.37 %, Voc = 738.0–739.2 mV, FF = 81.98–82.44 %, Jsc = 38.33–38.35 mA/cm², Ag laydown = 16.3 mg per cell.
+- Reference (520 × 11 × 22.5°, 1.3 mm pitch, 120 fingers, 20 µm nominal): average η = 23.02 %, Ag laydown 18.7 mg.
+- Total Δη = +0.17 %abs gain from optimisation, with Ag laydown reduced by ~2 mg per cell.
+- Knotless screen alone gives Δη = +0.1 %abs (Δjsc = +0.056 mA/cm² from reduced shading width Δwf ≈ 1.3 µm); finger uniformity also improved (lower variance in wf, hf, Af).
+- Reducing nominal finger width 20 → 18 → 15 µm yields shading width decreasing 26 → 23 µm and Ag laydown decreasing 21 → 16 mg, with Δη = +0.14 %abs gain from less shading.
+- Fine-line printing with low-T paste below 20 µm nominal width is achievable with industrial knotless screens; "even the smallest nominal finger width of wn = 15 µm can be printed reliably and with good visual quality."
+- Predicted goal of <5 mg/Wp for SHJ "seems to be within reach" via fine-line printing combined with low-T pastes — Lorenz's optimised cell laydown converts to roughly 4.4 mg/Wp at 23.2 % efficiency on a 244 cm² M2 cell.
 
 ## Methods used
-- [[../methods/screen-printed-Ag-paste]] — primary technique; Namics LCT paste, ASYS line.
-- [[../methods/IV-curve-measurement]] — GridTouch industrial cell tester, 5BB + 9BB.
-- [[../methods/four-point-probe-sheet-resistance]] — implicit in RGrid measurement.
-- [[../methods/dark-IV-suns-Voc]] — pFF reported.
+
+- [[methods/screen-printed-Ag-paste]] — knotless 520 wires/in fine-mesh screen, 11 µm wire, 13 µm EOM, low-T paste (Namics)
+- [[methods/IV-curve-measurement]] — GridTouch industrial cell tester, separately measured Rgrid using added busbars
+- [[methods/four-point-probe-sheet-resistance]] — separate dual-print 5-busbar test for accurate Rgrid
 
 ## Reagents
-- [[../reagents/low-T-Ag-paste-generic-SHJ-grade]] — Namics LCT paste, named in text.
-- [[../reagents/ITO-transparent-conductive-oxide]] — both faces of SHJ.
-- [[../reagents/a-Si-H-passivation]] — SHJ stack (precursor max potential 23–24%).
+
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — Namics low-T Ag paste used throughout, cured 220 °C / 1 min
+- [[reagents/ITO-transparent-conductive-oxide]] — TCO substrate on industrial SHJ precursors
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — 157.35 × 157.35 mm full-size industrial precursors (closest canonical slug).
+
+- [[organisms/SHJ-cell-M6]] — industrially prefabricated SHJ cells (157.35 × 157.35 mm) with TCO on both sides, no metallization (closest slug to M2 / M6 industrial SHJ)
 
 ## Failure modes flagged
-- [[../failure-modes/silver-supply-bottleneck]] — explicit motivation; Zhang 2021 cited (silver might be 90% of global Ag supply by 2030 in PV).
-- [[../failure-modes/FF-degradation-contact-resistance]] — finger uniformity / mesh marks discussed; knotless reduces this.
-- [[../failure-modes/Jsc-loss-from-cap-stack-shading]] — central trade-off in finger-width experiments.
+
+- [[failure-modes/Jsc-loss-from-cap-stack-shading]] — finger shading width is the dominant Jsc lever
+- [[failure-modes/FF-degradation-contact-resistance]] — Rgrid optimisation requires fine balance between shading and series resistance
+- [[failure-modes/silver-supply-bottleneck]] — explicit motivator: silver consumption could reach 90 % of global annual production by 2030 if untreated
 
 ## Supports / contradicts
-- Supports: [[2024-siliconpv-novel-shj-metallization-architectures]] (Frasson 2024, parallel paste-side optimization)
-- Supports: [[2018-pv-tech-metallization-interconnection-bifacial-shj]], [[2018-pv-international-metallization-shj]] (LCT-paste evolution data continued here)
-- Provides the strict screen-printed Ag benchmark that any Ni-Cu-plating hypothesis must beat: [[2019-hatt-noble-shj-solrrl]], [[2021-hatt-stable-cu-plated-shj-eupvsec]]
-- Direct precursor to: [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] (same Fraunhofer ISE team, builds on these screens)
+
+- **Supports:** [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — Yacouba's silver-free path complements Lorenz's silver-low path
+- **Supports:** [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — Frasson/Galiazzo also push fine-line / AgCu screen printing
+- **Contradicts:** [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — Hatt argues plating is the long-term path because screen printing has higher ρL and ρc; Lorenz argues fine-line screen printing can stay competitive at very low Ag laydown
 
 ## Notable quotes
-- "It is shown that even the smallest nominal width of wn = 15 μm can be printed with high quality, leading to an additional efficiency gain of Δη = +0.15%abs as well as a reduction of silver paste laydown by 5 mg." — Abstract.
-- "Maximum efficiency of ηmax = 23.2% … This emphasizes the significance of consistent optimization of the screen-printing process in terms of cell performance and resource utilization for SHJ solar cells."
+
+> "Compared to the reference group without optimization, this corresponds to a gain of Δη = +0.17 %abs, which comes along with an additional decrease of the silver paste laydown by approximately 2 mg." — *Abstract*
+
+> "Using fine-mesh screens to print very fine contacts, even the predicted goal to reduce the silver consumption below 5 mg/Wp seems to be within reach." — *§1 Introduction*
+
+> "Surprisingly, it is possible to print even the grid layout with a very small nominal finger width of wn = 15 µm reliably and with good visual quality using the given high-performance screen specification and LT silver paste." — *§2.3 Variation of nominal finger width*
+
+> "Based on the projected growth of installed PV capacity in the coming years, the silver consumption of the PV industry could increase to up to 90% of the global annual production volume until 2030." — *§1 Introduction*

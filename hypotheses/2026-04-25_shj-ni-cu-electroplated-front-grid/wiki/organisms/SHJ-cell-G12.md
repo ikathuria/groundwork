@@ -2,49 +2,61 @@
 type: organism
 slug: SHJ-cell-G12
 organism_type: cell
-external_id: G12 (210×210 mm pseudo-square)
+source: large-format SHJ pilots and mass-production lines (Trina Solar, Tongwei, Huasun, Astronergy, SunDrive)
+external_id: ITRPV G12 (210 mm pseudo-square / full-square)
 characteristics:
-  - 210×210 mm pseudo-square; ~441 cm² active area
-  - n-type Cz-Si, 130 µm typical (Risen mainstream; 100 µm in R&D at Huasun)
-  - Same SHJ a-Si:H + ITO stack as M6/M10 — area scaled, electrical headroom challenged
-  - Half-cut into ~M10-class halves for current handling in modules
-  - Largest current-production format; high per-cell current creates I²R and busbar-thermal load
-  - Used in 132-half-cell Risen Hyper-ion module; Huasun Phase-2 (2 GW) fab format
-known_failure_modes: [a-Si-H-passivation-degradation, FF-degradation-contact-resistance, Cu-finger-oxidation-damp-heat, finger-adhesion-loss-after-DH, Jsc-loss-from-cap-stack-shading]
-sources: [2022-arena-sundrive-copper-metallisation-demonstration, 2023-taiyangnews-heterojunction-technology-report, 2024-itrpv-15th-edition-roadmap, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2024-siliconpv-novel-shj-metallization-architectures]
-tags: [SHJ, G12, cell, 210mm, n-type, ITO, a-Si-H, large-area]
+  - silicon heterojunction (SHJ) cell on n-type CZ c-Si wafer in G12 format
+  - 210 mm × 210 mm pseudo-/full-square, ~441 cm² wafer area
+  - the largest mass-produced cell format; introduced by Trina ~2020 (TOPCon/PERC) and adopted for SHJ from ~2022
+  - typical Isc ~17–18 A; cell power ~10.0–11.0 W at 23.5–25 % efficiency
+  - SunDrive's ARENA Cu-plating demonstrator and Trina's bifacial SHJ records use G12
+  - large-format poses harder challenges for plated-Cu finger uniformity, current crowding, and mini-module DH testing
+known_failure_modes: [Cu-diffusion-into-c-Si, Cu-finger-corrosion-encapsulant, Cu-finger-oxidation-damp-heat, FF-degradation-contact-resistance, finger-adhesion-loss-after-DH, Jsc-loss-from-cap-stack-shading, non-reproducibility-in-solar-cell-claims, silver-supply-bottleneck]
+sources: [2022-arena-sundrive-copper-metallisation-demonstration, 2023-taiyangnews-heterojunction-technology-report, 2024-itrpv-15th-edition-roadmap, 2024-siliconpv-novel-shj-metallization-architectures, notion-systems-solar-inkjet-overview]
+tags: [SHJ, cell, G12, n-type, heterojunction, large-format]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# SHJ cell — G12 format (210×210 mm)
+# SHJ cell, G12 (210 mm) format
+
+**Slug:** `organisms/SHJ-cell-G12` · **Type:** organism (substrate / device under test)
 
 ## What it is
-Silicon-heterojunction solar cell on a 210×210 mm pseudo-square n-type Cz-Si wafer — the largest standard SHJ format. G12 SHJ is the basis of the highest-power "G12" module classes (≥600 W) and is the substrate on which the AgCu / pure-Cu paste production-scale economics are explicitly tracked.
 
-## Standard dimensions / spec
-- Wafer: 210×210 mm pseudo-square, ~441 cm² active area.
-- Thickness: 130 µm mainstream (Risen); 100 µm in Huasun R&D; ITRPV ≥G12 IBC trajectory toward 130 µm by 2034.
-- Stack: standard SHJ a-Si:H + ITO (or low-In TCO) both faces.
-- Per-cell short-circuit current ≈ 17–18 A — large; almost always half-cut to manage I²R.
-- Production Ag consumption baseline: ~25.7 mg/W on G12 SHJ (AMAT 2024) → target ~10 mg/W with AgCu.
-- 18 BB and busbarless layouts dominant; finger pitch closer than M6/M10 to manage current.
+A silicon heterojunction (SHJ) cell built on a 210 mm pseudo- or full-square n-type c-Si wafer. G12 is the largest mass-produced cell format in commercial PV — introduced by Trina Solar around 2020 (initially for TOPCon / PERC) and adopted for SHJ from roughly 2022 onward. SunDrive's ARENA Cu-plating demonstrator and Trina's bifacial SHJ-related records have used G12; ITRPV's 15th Edition (2024) tracks G12 as the high-current end of the wafer-format roadmap.
 
-## Common pitfalls / handling notes
-- Largest format → tightest finger / busbar resistance budget; line resistance ≤0.5 Ω/cm essentially mandatory, achievable only by Cu plating or thick Cu paste ([[2018-pv-international-metallization-shj]] simulation).
-- Cell cutting / half-cut steps multiply edge area — increases damp-heat moisture-ingress vulnerability at module level.
-- Module-level testing typically uses half-cut G12 (132 half-cell module) rather than full G12 cells.
-- Same a-Si:H 280 °C metallization ceiling and ITO etch-back constraints as M6/M10.
-- Large wafer + thin (≤130 µm) wafer combination raises wafer breakage risk in handling — relevant to plating-line throughput.
+## Geometry / format
 
-## Failure modes commonly associated
-- `[[../failure-modes/a-Si-H-passivation-degradation]]` — identical SHJ constraint.
-- `[[../failure-modes/FF-degradation-contact-resistance]]` — large-area exposes any ρc deviation more harshly.
-- `[[../failure-modes/Cu-finger-oxidation-damp-heat]]` — pure-Cu paste reliability concern.
-- `[[../failure-modes/finger-adhesion-loss-after-DH]]` — long fingers / many busbars increase total adhesion-failure surface.
-- `[[../failure-modes/Jsc-loss-from-cap-stack-shading]]` — fine-finger / busbarless layouts essential to manage shadowing.
+- Wafer: 210 mm × 210 mm pseudo-square (or full square), ~297 mm diagonal
+- Wafer area ≈ 441 cm² (~33 % larger than M10)
+- Wafer thickness: 130–160 µm for SHJ
+- Front grid: 12–24 busbars / SmartWire; finger pitch ≤ 1.0 mm to keep series-resistance manageable at high current
+- Power class: ~10.0–11.0 W at 23.5–25 % efficiency
+- Short-circuit current Isc: ~17–18 A — the highest-current cell format in production; drives the most aggressive plated-finger cross-section and adhesion requirements
+- Industry adoption: SHJ on G12 from ~2022; the limiting format for plated-Cu uniformity (bath agitation, current density gradients, resist patterning) and for mini-module DH chambers (footprint)
 
-## Sources
-- `[[2022-arena-sundrive-copper-metallisation-demonstration]]` — half-cut M12/G12 cells used in SunDrive plated-Cu prototype line.
-- `[[2023-taiyangnews-heterojunction-technology-report]]` — Huasun Phase-2 G12 SHJ fab; Risen Hyper-ion 132-cell G12 module.
-- `[[2024-itrpv-15th-edition-roadmap]]` — G12 tracked alongside M10 as primary SHJ format; thickness and busbar trends.
-- `[[2024-nrel-getting-ahead-of-curve-pv-assessment]]` — projected utility-scale SHJ cell size; reliability assessment context.
-- `[[2024-siliconpv-novel-shj-metallization-architectures]]` — 25.7 mg/W G12 SHJ Ag-consumption baseline; AgCu paste scaling argument.
+## Construction (where relevant)
+
+- a-Si:H + ITO chemistry identical to M6/M10
+- The challenge specific to G12 is electrochemical: maintaining uniform Cu plating thickness and finger height across a 297 mm diagonal demands careful bath fluid dynamics and current-distribution design (Atotech and SunDrive process notes)
+- Mini-modules built with a single G12 cell (or a quartered G12) need custom tooling; full-size laminates with G12 cells dominate utility-scale modules
+
+## Common pitfalls
+
+- [[failure-modes/Cu-diffusion-into-c-Si]] — barrier requirements unchanged with format
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — longer finger paths increase exposed Cu
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — increased finger-encapsulant interface area
+- [[failure-modes/FF-degradation-contact-resistance]] — high current makes ρc and finger resistance tolerances tighter than on M6/M10
+- [[failure-modes/finger-adhesion-loss-after-DH]] — longer fingers and more thermal stress per cycle
+- [[failure-modes/Jsc-loss-from-cap-stack-shading]] — G12 designs trade more / finer fingers vs Jsc shading; plated narrow fingers are a key competitive lever
+- [[failure-modes/non-reproducibility-in-solar-cell-claims]] — G12 record claims are particularly sensitive to active-area definition and certification disputes (NREL chart conventions)
+- [[failure-modes/silver-supply-bottleneck]] — per-W Ag consumption on G12 SHJ is the steepest in the lineup, sharpening the cost case for Cu
+
+## Citing sources
+
+- [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — SunDrive ARENA G12 Cu-plating demonstrator
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — industry G12 SHJ adoption snapshot
+- [[sources/2024-itrpv-15th-edition-roadmap]] — ITRPV G12 wafer-format roadmap
+- [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — novel SHJ architectures including G12 plated grids
+- [[sources/notion-systems-solar-inkjet-overview]] — inkjet patterning scalability on G12

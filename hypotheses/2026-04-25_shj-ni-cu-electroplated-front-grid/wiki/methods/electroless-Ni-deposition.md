@@ -1,46 +1,63 @@
 ---
 type: method
 slug: electroless-Ni-deposition
-aliases: [electroless Ni-P plating, autocatalytic Ni deposition, Ni-P seed]
-related_methods: [electroplated-Ni-Cu-stack, light-induced-plating, laser-ablation-of-dielectric, four-point-probe-sheet-resistance]
-key_reagents: [nickel-phosphorus-NiP-electroless, sulfuric-acid-H2SO4]
-known_failure_modes: [Ni-barrier-pinholes, Cu-diffusion-into-c-Si, Voc-degradation-Cu-contamination, FF-degradation-contact-resistance]
-sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2018-electrochemsci-barrier-properties-electroplated-ni, fisher-AA8902018-nickel-sulfamate-hydrate, fisher-AC424525000-sulfuric-acid-acs-sds, pvtech-metallization-challenges-cell-manufacturing]
-tags: [plating, autocatalytic, Ni-P, hypophosphite, native-oxide, silicide, seed-layer]
+aliases: [electroless Ni-P, electroless nickel plating, autocatalytic Ni plating, EN plating]
+related_methods: [electroplated-Ni-Cu-stack, Cu-electroplating-acid-bath, light-induced-plating, Ni-sputter-deposition, four-point-probe-sheet-resistance, laser-ablation-of-dielectric]
+key_reagents: [nickel-phosphorus-NiP-electroless, nickel-sulfamate-bath, acid-Cu-sulfate-bath, boric-acid]
+known_failure_modes: [Ni-barrier-pinholes, Cu-diffusion-into-c-Si, Cu3Si-formation-at-Si-interface, FF-degradation-contact-resistance, finger-adhesion-loss-after-DH]
+sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2018-electrochemsci-barrier-properties-electroplated-ni, atotech-solar-industry-overview, fisher-AA8902018-nickel-sulfamate-hydrate]
+tags: [plating, nickel, barrier, seed-layer, electroless, Ni-P]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Electroless Nickel Deposition
+# Electroless Ni-P deposition
+
+**Slug:** `methods/electroless-Ni-deposition` · **Type:** method
 
 ## What it measures / does
-Autocatalytic chemical reduction of Ni2+ from a nickel salt (NiSO4 or NiCl2) by sodium hypophosphite onto an activated Si/TCO surface, producing a Ni-P alloy film (typically 5-15 at% P) without external current. The film serves as the diffusion-barrier seed below electroplated Cu and, on PERC/homojunction, is annealed to form Ni-silicide (NiSi/Ni2Si) for ohmic contact.
+
+Deposits a Ni-P alloy layer (typically 6–12 wt% P) onto a seeded silicon or TCO surface autocatalytically, with no externally applied current — the reduction is driven by the hypophosphite (NaH₂PO₂) reducer in the bath. The film serves two roles: (a) the Ni acts as a Cu-diffusion barrier when later annealed to form NiSi/Ni₂Si silicide, and (b) it provides a conductive seed for subsequent Cu electroplating. SnCl₂/PdCl₂ activation (with HF) typically precedes plating to nucleate Ni on the textured Si surface.
 
 ## When to use it
-Used as the Ni barrier seed in two-step Ni/Cu plating, particularly for laser-ablated-dielectric PERC or buried-contact cells. On SHJ, electroless Ni-P is less common because the SHJ thermal budget (<=200 C) prevents silicide formation; instead, electroplated Ni or PVD Ni/Cu seeds are used. Critical pretreatment: SnCl2/HCl sensitization + PdCl2/HCl(/HF) activation.
 
-## Key parameters
-- Bath: NiSO4·6H2O + NaH2PO2·H2O at ~70 C, pH 5.
-- Deposition rate: ~1 nm/s on textured Si (Hsieh 2017; Cheng 2018).
-- Continuous coverage threshold: ~45 nm minimum thickness for pinhole-free film (Hsieh 2017).
-- Activation: PdCl2/HCl alone (B1) gives Voc 0.590 V; PdCl2 + 3 mL/L HCl + 83 mL/L HF (B2) gives Voc 0.632 V (+42 mV) by removing the native SiOx that otherwise blocks silicide formation.
-- Anneal (PERC): Ni2Si and NiSi at 300-700 C; NiSi2 + agglomeration above 700 C; sheet resistance drops 350-600 C, abruptly rises >700 C.
-- Silicide thickness: 125-160 nm after 60 s plate + 500-600 C anneal.
+Use it when a uniform, conformal Ni layer on textured Si is needed without external bias — particularly attractive on patterned SHJ where a wired cathode would be impractical. Hsieh 2017 establishes it as the canonical PV chemistry: NiSO₄/NaH₂PO₂ at pH 5 / 70 °C plates ~1 nm/s, continuous above 45 nm thickness. It is the foundation step in Cheng 2018's Ni-thickness-vs-barrier study and one of the routes Bartsch 2010 used for the Ni barrier under LIP-Cu.
 
-## Common variants / alternatives
-- [[electroplated-Ni-Cu-stack]] — DC-electroplated Ni replaces electroless Ni when current can be applied externally; dominant on SHJ with TCO front.
-- [[Ni-sputter-deposition]] — PVD Ni avoids the native-oxide / activation problem entirely.
-- [[light-induced-plating]] — light-supported electroless Ni from commercial bath as alternative to LIP-Ni.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/Ni-barrier-pinholes]] — below ~45 nm thickness the Ni-P film is discontinuous and Cu reaches Si.
-- [[../failure-modes/Cu-diffusion-into-c-Si]] — incomplete silicide / pinhole-mediated Cu transport produces deep-level recombination centres in c-Si.
-- [[../failure-modes/Voc-degradation-Cu-contamination]] — Hsieh 2017 tracks Voc as the principal indicator; HF activation +42 mV.
-- [[../failure-modes/FF-degradation-contact-resistance]] — native SiOx at the Ni/Si interface raises series resistance.
+- **Bath chemistry (Hsieh 2017):** NiSO₄·6H₂O + NaH₂PO₂·H₂O reducer + ammonium-citrate buffer + complexing agents; pH 4.5–5.5 (acidic family) or pH 8–10 (alkaline family); operating T = 60–90 °C (70 °C typical).
+- **Plating rate:** ~1 nm/s on activated textured Si; thickness scales linearly with dwell (60 / 90 / 120 / 180 s gives 58 / 95 / 106 / 184 nm per Hsieh 2017 SEM cross-sections).
+- **Activation:** SnCl₂ then PdCl₂ chemisorption; HF added to remove native SiO₂ (Hsieh 2017 reports significant Voc gain when HF is in the activation bath).
+- **As-deposited film:** amorphous Ni-P alloy (6–12 wt% P depending on bath); becomes Ni₂Si / NiSi silicide on anneal (≥500 °C produces NiSi, the lowest-resistivity phase).
+- **Continuity threshold:** ≥45 nm for continuous coverage on textured Si per Hsieh 2017; Cheng 2018 shows 60 nm electroplated Ni *fails* as Cu barrier at 300 °C while 120 nm holds — the sub-100 nm regime is the contested zone.
 
-## Sources
-- [[2010-bartsch-lip-pvsc]] — light-supported electroless Ni from commercial bath as alternative to LIP-Ni; Ni-Cu-Sn stack reaches 20.3% on FZ.
-- [[2014-rehman-nicu-plating-csi-review]] — autocatalytic Ni-P mechanism with sodium hypophosphite reductant; review of bath chemistry variants.
-- [[2017-jeon-electroless-ni-front-metallization]] — quantitative deposition rate (1 nm/s), continuity threshold (45 nm), HF activation +42 mV Voc.
-- [[2018-electrochemsci-barrier-properties-electroplated-ni]] — canonical electroless-Ni / silicide / strip / electroplate / Cu workflow.
-- [[fisher-AA8902018-nickel-sulfamate-hydrate]] — note: nickel sulfamate is for *electroplated* Ni, not electroless; included here for cross-reference (electroless uses NiSO4 + hypophosphite).
-- [[fisher-AC424525000-sulfuric-acid-acs-sds]] — pre-clean H2SO4/H2O2 (piranha) of textured Si before sensitization.
-- [[pvtech-metallization-challenges-cell-manufacturing]] — IMEC overview of buried-contact and laser-opened PERC routes using electroless Ni.
+## Common variants
+
+- **Light-supported electroless Ni** — Bartsch 2010 used illumination during electroless Ni to enhance plating uniformity on solar precursors.
+- **Acidic vs alkaline NiP** — alkaline (citrate-buffered) baths give higher P content and lower stress; acidic baths (Hsieh 2017) give faster plating and easier waste handling.
+- **Single-step seed + barrier** — electroless Ni-P fills both roles in one bath; later electroplated Ni or sputtered Ni can thicken the barrier (Cheng 2018 stack: electroless Ni → 500 °C silicide → HNO₃ etch → electroplated Ni → electroplated Cu).
+- **Sulfamate-fed electroless** — when a sulfamate Ni feed salt is used (Fisher AA8902018), bath chemistry shifts toward lower internal stress and finer grain.
+
+## Things to watch for
+
+- Pinhole density at sub-100 nm thickness drives [[failure-modes/Ni-barrier-pinholes]] and [[failure-modes/Cu-diffusion-into-c-Si]] — Cheng 2018 is the contradiction anchor for the SHJ Ni/Cu hypothesis: 60 nm electroplated Ni shows Cu₃Si already at 300 °C.
+- HF use during activation is a safety hazard (use HF-handling SOP); but skipping HF leaves native SiO₂ that raises series resistance — see Hsieh 2017.
+- Bath stability: hypophosphite spontaneously decomposes; replenish on amp-hour-equivalent basis and watch for nodulation on the cathode plane.
+- Anneal step is required to form NiSi/Ni₂Si silicide; the SHJ ≤200 °C process budget rules out high-T silicidation, so the *as-deposited* Ni-P must do barrier duty alone — a tighter constraint than homojunction work assumes.
+
+## Related methods
+
+- [[methods/electroplated-Ni-Cu-stack]] — the upstream/downstream pair that turns electroless Ni into the full plated finger.
+- [[methods/Cu-electroplating-acid-bath]] — Cu thickening on the electroless Ni seed.
+- [[methods/light-induced-plating]] — light-driven analogue that uses the cell as the cathode.
+- [[methods/Ni-sputter-deposition]] — PVD alternative for the Ni barrier.
+- [[methods/four-point-probe-sheet-resistance]] — film-quality characterisation.
+
+## Citing sources
+
+- [[sources/2010-bartsch-lip-pvsc]] — light-supported electroless Ni used as alternative for the diffusion barrier.
+- [[sources/2014-rehman-nicu-plating-csi-review]] — primary seed-layer mode reviewed (NiSO₄/hypophosphite bath).
+- [[sources/2017-jeon-electroless-ni-front-metallization]] — canonical experimental anchor: NiSO₄/NaH₂PO₂ / pH 5 / 70 °C / 1 nm/s; HF activation; NiSi formation at ≥500 °C.
+- [[sources/2018-electrochemsci-barrier-properties-electroplated-ni]] — uses electroless Ni as the first-stage seed (60 s, 70 °C, pH 5) before silicidation in the 60-vs-120-nm barrier study.
+- [[sources/atotech-solar-industry-overview]] — vendor-supplied electroless Ni / NiP chemistry for PV.
+- [[sources/fisher-AA8902018-nickel-sulfamate-hydrate]] — supplier catalog for the Ni-source salt feeding electroless and sulfamate baths.

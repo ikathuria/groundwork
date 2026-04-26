@@ -1,47 +1,65 @@
 ---
 type: method
 slug: Ni-sputter-deposition
-aliases: [PVD Ni, sputtered Ni seed, magnetron sputtering Ni, PVD seed layer]
-related_methods: [electroplated-Ni-Cu-stack, NOBLE-selective-Cu-plating, Cu-electroplating-acid-bath, thermal-evaporation-Ag-cap]
-key_reagents: [nickel-sulfamate-bath, ITO-transparent-conductive-oxide, a-Si-H-passivation]
-known_failure_modes: [a-Si-H-passivation-degradation, Ni-barrier-pinholes, finger-adhesion-loss-after-DH, TCO-pitting-during-plating]
-sources: [2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2023-taiyangnews-heterojunction-technology-report, atotech-solar-industry-overview, fisher-AA8902018-nickel-sulfamate-hydrate, fisher-AC424525000-sulfuric-acid-acs-sds]
-tags: [PVD, sputtering, Ni-seed, Cu-seed, blanket-deposition, etch-back-route]
+aliases: [PVD-Ni, sputtered Ni seed, magnetron-sputtered nickel, Ni PVD]
+related_methods: [electroplated-Ni-Cu-stack, electroless-Ni-deposition, Cu-electroplating-acid-bath, NOBLE-selective-Cu-plating, photolithography-mask-patterning]
+key_reagents: [a-Si-H-passivation, ITO-transparent-conductive-oxide, acid-Cu-sulfate-bath, nickel-sulfamate-bath]
+known_failure_modes: [Ni-barrier-pinholes, Cu-diffusion-into-c-Si, Cu3Si-formation-at-Si-interface, finger-adhesion-loss-after-DH]
+sources: [2018-electrochemsci-barrier-properties-electroplated-ni, 2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2019-hatt-noble-bifacial-shj-aip]
+tags: [PVD, sputter, nickel, seed-layer, barrier, magnetron]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Ni Sputter Deposition (PVD Seed Layer)
+# Ni / PVD seed sputter deposition
+
+**Slug:** `methods/Ni-sputter-deposition` · **Type:** method
 
 ## What it measures / does
-Magnetron-sputter or e-beam deposition of a thin metal seed (Ni, Cu, Ag, TiW) blanket-coating the SHJ TCO surface. The seed enables uniform Cu electroplating by carrying the cathodic current across the cell, then is etched back outside the plated grid. Sputtered metal also serves as the underlying layer in NOBLE (Cu/Al stack) and in Maxwell's commercial seed-and-plate flow. Note: this method slug covers PVD-seed deposition broadly — Ni, Cu, and Ag PVD all share the same equipment / process window.
+
+Magnetron-sputtered Ni (or Ni-V, NiCr, or PVD-Cu/Al/Ag stacks) deposited onto the front-side TCO as a thin seed/adhesion/barrier layer for subsequent Cu electroplating. In SHJ practice the "Ni-sputter-deposition" slug is broader than literal Ni: it covers any PVD seed deposited at low temperature compatible with the SHJ a-Si:H thermal budget (Cu/Al stack in NOBLE, NiV adhesion layer at CSEM, sputtered Cu seed at SunDrive's earlier process generations). This method is structurally equivalent to "PVD-Ni" — flag for lint pass.
 
 ## When to use it
-Use as the seed-deposition step in any SHJ Cu plating route that requires uniform current distribution (mandatory for bifacial homogeneity — Hatt 2019 shows that without PVD seed only half the cell area plates). For SHJ specifically, PVD seed gives better Cu adhesion than direct Cu electrodeposition on TCO.
 
-## Key parameters
-- Seed thickness: 50-100 nm (Cu); 50-100 nm Al (NOBLE); ~500 nm Cu buffer for high-energy laser variant.
-- SHJ thermal limit: <=200 C cumulative process; sputter-deposit cool to preserve a-Si:H.
-- Anneal recovery: 200 C / 15 min in air recovers a-Si:H sputter damage (Hatt 2019).
-- Maxwell process: sputtered Cu seed, then photoresist mask, simultaneous front+rear Cu electroplate.
-- Throughput: Maxwell PECVD 7,200 wafers/h (M10); Von Ardenne PVD 7,500 wafers/h.
-- ITO grain size 20-30 nm; 50 nm Al amorphous; 100 nm Al becomes porous (Hatt 2019).
+Use it when a uniform, fully-conformal seed layer is required to start DC Cu plating on the TCO — particularly when (a) inkjet/photolithographic resist will define the plating window and the seed must be globally conductive, or (b) when the Ni-on-Si silicide barrier mechanism (Cheng 2018) is desired and electroless Ni is unavailable. NOBLE uses sputtered Cu/Al (Hatt 2019) as both the conductive seed and (via the Al's native oxide) the plating mask.
 
-## Common variants / alternatives
-- [[electroless-Ni-deposition]] — chemical alternative without vacuum; better for non-conductive substrates.
-- [[electroplated-Ni-Cu-stack]] — fully plated alternative without PVD seed.
-- [[NOBLE-selective-Cu-plating]] — uses PVD Cu/Al stack with native AlOx as mask.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/a-Si-H-passivation-degradation]] — sputter-induced damage to a-Si:H/c-Si interface; mitigated by 200 C anneal.
-- [[../failure-modes/Ni-barrier-pinholes]] — incomplete coverage at islands / steps in the TCO topography.
-- [[../failure-modes/finger-adhesion-loss-after-DH]] — micro-voids reported between Cu and Ni-on-TCO interfaces (Geissbühler 2018).
-- [[../failure-modes/TCO-pitting-during-plating]] — etch-back step can pit the underlying ITO if selective etchant uncontrolled.
+- **Process:** DC or RF magnetron sputtering at <100 °C substrate temperature; SHJ-compatible.
+- **Thickness:** 30–500 nm depending on role — thin (50 nm) for adhesion, thicker (200–500 nm) for buffer / barrier.
+- **Stack examples:** Cu/Al (NOBLE: 100 nm Cu / 50 nm Al), Ti/Cu, NiV/Cu, Cu seed alone (SunDrive earlier process).
+- **Sputter target:** elemental Ni or Ni-V (V suppresses ferromagnetism for magnetron stability).
+- **Tool:** in-line PVD cluster tool with mask shadow (route 3B in Faes 2018) or full-area deposition followed by patterning.
 
-## Sources
-- [[2018-pv-international-metallization-shj]] — PVD seed-layer noted to give better Cu adhesion than direct Cu electrodeposition on TCO; "evidence of micro-voids" between Cu and Ni-on-TCO.
-- [[2018-pv-tech-metallization-interconnection-bifacial-shj]] — PVD seed (TiW, Ag, Cu) deposition; CSEM 24.1% record bifacial via PVD seed + hotmelt mask + plate.
-- [[2019-hatt-noble-bifacial-shj-aip]] — Cu/Al PVD stack via sputtering or e-beam evaporation; canonical NOBLE PVD step.
-- [[2019-hatt-noble-shj-solrrl]] — Cu-PVD or Ag-PVD seed (note: Ni not used in NOBLE — slug covers PVD-metal seed broadly).
-- [[2023-taiyangnews-heterojunction-technology-report]] — Maxwell sputtered Cu seed + photoresist + simultaneous front+rear plate.
-- [[atotech-solar-industry-overview]] — alternative to plated Ni; not Atotech's domain (plating only) but contextual.
-- [[fisher-AA8902018-nickel-sulfamate-hydrate]] — Ni sulfamate bath is for *electroplated* Ni, not PVD; included for cross-reference.
-- [[fisher-AC424525000-sulfuric-acid-acs-sds]] — H2SO4 used in pre-deposition wet cleans, not in PVD itself.
+## Common variants
+
+- **Cu/Al seed** (NOBLE) — Cu provides conductivity, Al's native oxide provides selective-plating mask.
+- **Ag/Al seed** (NOBLE alternative) — replaces Cu with Ag for the conductivity layer.
+- **NiV** — used as adhesion layer between Cu and TCO at CSEM.
+- **Ti/Cu** — Ti as adhesion promoter.
+- **Patterned PVD seed** (route 3B) — shadow-mask deposition only at grid positions; eliminates the etch-back step.
+- **Full-area + etch-back** (route 3A in Faes 2018) — full PVD, then plate through resist, then etch unwanted seed.
+
+## Things to watch for
+
+- Deposition rate and substrate temperature must stay below the SHJ a-Si:H damage threshold (~200 °C); cold sputter is mandatory.
+- Pinholes in thin Ni at <100 nm — Cheng 2018 indirectly contradicts: 60 nm electroplated Ni fails as Cu barrier; sputtered Ni at the same thickness has not been comprehensively tested in the SHJ regime, but the same geometric concern applies — see [[failure-modes/Ni-barrier-pinholes]].
+- Etch-back of the unwanted PVD seed risks attacking the underlying TCO; Hatt 2019 demonstrates NaOH (1–4 %) etches Al at 0.8–2.6 nm/s without attacking Cu/Ag, and H₃PO₄/HNO₃ etches Cu/Ag fast (>10 nm/s) without TCO attack at controlled dwell.
+- Sputter coverage on textured Si pyramids requires angle-tuning or rotation to avoid shadow-side pinholes.
+- For the hypothesis, a key contradiction with the literature is that PVD-Ni or PVD-Cu/Al seed is the *industrial* SHJ-Cu route (NOBLE, SunDrive's earlier process) — *not* the electroplated-Ni barrier the hypothesis proposes.
+
+## Related methods
+
+- [[methods/electroplated-Ni-Cu-stack]] — the post-PVD plating stack.
+- [[methods/electroless-Ni-deposition]] — chemical alternative for the same Ni barrier role.
+- [[methods/Cu-electroplating-acid-bath]] — the downstream Cu thickening step.
+- [[methods/NOBLE-selective-Cu-plating]] — built on PVD-Cu/Al sputter seed.
+
+## Citing sources
+
+- [[sources/2018-electrochemsci-barrier-properties-electroplated-ni]] — Cheng et al. compares electroplated Ni vs sputtering as the alternative; paper explicitly avoids sputtering, but it is the industrial reference.
+- [[sources/2018-pv-international-metallization-shj]] — implicit in PVD-seed adhesion-layer discussions; CSEM Cu/Al stack.
+- [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — PVD seed (Ni or Cu/Al) referenced as one of the three SHJ Cu-plating process flows.
+- [[sources/2019-hatt-noble-bifacial-shj-aip]] — PVD of the Cu/Al (or Ag/Al) seed and plating-mask stack (sputtering or e-beam evap).
+
+> **Aliasing note:** This page is essentially "PVD seed deposition" rather than literally Ni-only sputtering. In NOBLE the seed is Cu/Al, not Ni. The slug `Ni-sputter-deposition` is somewhat misleading; the lint pass should consider promoting to `PVD-seed-deposition` and flagging electroplated/electroless Ni as a separate barrier mechanism.

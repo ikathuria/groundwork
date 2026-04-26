@@ -2,7 +2,7 @@
 type: hypothesis
 slug: 2026-04-25_shj-ni-cu-electroplated-front-grid
 domain: photovoltaics
-status: complete
+status: wiki
 original_question: |
   On silicon heterojunction (SHJ) solar cells, a sub-100 nm electroplated nickel
   barrier followed by electroplated copper produces a front-grid metallization
@@ -12,11 +12,17 @@ original_question: |
 created: 2026-04-25
 updated: 2026-04-26
 sources_count: 45
+wiki_pages_count: 119
+methods_count: 25
+reagents_count: 21
+organisms_count: 8
+failure_modes_count: 20
 latest_plan: plan-v1
 latest_ar: wiki/plans/ar-v2
 plan_total_budget_usd: 168450
 plan_total_timeline_weeks: 14
 plan_novelty_verdict: similar-work-exists
+plan_state: stale-vs-wiki
 ---
 
 # SHJ Ni/Cu electroplated front-grid metallization
@@ -43,42 +49,49 @@ plan_novelty_verdict: similar-work-exists
 4. **No Cu in Si bulk:** SIMS or LECO Cu profile through the cell — Cu signal at the c-Si interface ≤ background after damp-heat. Falsifies the Ni barrier if exceeded.
 5. **Cost:** Process flow + material cost analysis demonstrates ≤ 10% of Ag baseline at production scale (sensitivity to Ag spot price; assume $30/oz baseline).
 
-## Key entities (Pass 2 — resolved)
+## Key entities (Pass 2 — resolved, redo run 2026-04-26)
 
 ### Most-cited methods
-- [[wiki/methods/Cu-electroplating-acid-bath]] (19 sources) — DC / pulsed Cu plating from sulfuric-acid-based CuSO₄.
-- [[wiki/methods/IV-curve-measurement]] (19) — STC AM1.5g cell IV.
-- [[wiki/methods/screen-printed-Ag-paste]] (17) — universal control / comparator.
-- [[wiki/methods/damp-heat-aging-1000h]] (14) — IEC 61215 85°C/85% RH dwell.
-- [[wiki/methods/inkjet-mask-patterning]] (11) — selective masking for plated grid.
-- [[wiki/methods/electroplated-Ni-Cu-stack]] (9) — the hypothesis's intervention.
-- [[wiki/methods/transfer-length-method]] (9) — ρc measurement.
-- [[wiki/methods/NOBLE-selective-Cu-plating]] (5) — Fraunhofer ISE flagship SHJ-Cu route (PVD-Cu/Al + inkjet-NaOH + plated Cu).
+- [[wiki/methods/IV-curve-measurement]] (25 sources) — STC AM1.5g cell IV; the universal acceptance test.
+- [[wiki/methods/screen-printed-Ag-paste]] (22) — universal control / comparator (low-T paste for SHJ).
+- [[wiki/methods/Cu-electroplating-acid-bath]] (21) — DC / LIP Cu plating from H₂SO₄-acidified CuSO₄.
+- [[wiki/methods/electroplated-Ni-Cu-stack]] (15) — the hypothesis's intervention.
+- [[wiki/methods/damp-heat-aging-1000h]] (13) — IEC 61215 85°C / 85% RH dwell.
+- [[wiki/methods/EL-electroluminescence-imaging]] (12) — primary spatial-defect imaging modality.
+- [[wiki/methods/light-induced-plating]] (10) — the SHJ-friendly default Cu plating mode.
+- [[wiki/methods/transfer-length-method]] (9) — ρc measurement; the threshold-test surface.
+- [[wiki/methods/inkjet-mask-patterning]] (9) — selective masking for the plated grid.
+- [[wiki/methods/NOBLE-selective-Cu-plating]] (3) — Fraunhofer ISE flagship route (PVD-Cu/Al + inkjet-NaOH + plated Cu).
 
 ### Most-cited reagents
-- [[wiki/reagents/acid-Cu-sulfate-bath]] (17 sources) — primary plating electrolyte.
-- [[wiki/reagents/ITO-transparent-conductive-oxide]] (16) — SHJ front TCO (and acts as a Cu-diffusion barrier per Yacouba 2025 SIMS).
-- [[wiki/reagents/EVA-encapsulant]] (14) — module-level driver of acetic-acid-mediated Cu corrosion.
-- [[wiki/reagents/a-Si-H-passivation]] (12) — SHJ defining layer; sets the ≤200°C process budget.
+- [[wiki/reagents/low-T-Ag-paste-generic-SHJ-grade]] (21 sources) — the actual SHJ Ag-paste control (NOT PV21A/PV56S, which are >600 °C fire-through).
+- [[wiki/reagents/acid-Cu-sulfate-bath]] (17) — primary Cu plating electrolyte.
+- [[wiki/reagents/ITO-transparent-conductive-oxide]] (16) — SHJ front TCO (and Cu-diffusion co-barrier per Yacouba 2025).
 - [[wiki/reagents/silver-Ag-cap]] (11) — Cu-finger oxidation protection.
-- [[wiki/reagents/low-T-Ag-paste-generic-SHJ-grade]] (11) — the actual SHJ Ag paste control (NOT PV21A/PV56S).
-- [[wiki/reagents/nickel-sulfamate-bath]] (8) — the Ni barrier electrolyte for the hypothesis's intervention.
+- [[wiki/reagents/POE-polyolefin-encapsulant]] (8) — the SHJ-friendly encapsulant; resolves Karas/EVA contradiction.
+- [[wiki/reagents/EVA-encapsulant]] (8) — driver of acetic-acid-mediated Cu corrosion.
+- [[wiki/reagents/nickel-sulfamate-bath]] (7) — Ni barrier electrolyte for the hypothesis's intervention.
+- [[wiki/reagents/Cu-paste-low-temperature]] (7) — the *paste* alternative; ρc 5–12 mΩ·cm² (cannot meet the ≤2 spec).
+- [[wiki/reagents/a-Si-H-passivation]] (7) — SHJ defining layer; sets the ≤200°C process budget.
 
 ### Top failure modes (Failure Archaeology)
-- [[wiki/failure-modes/silver-supply-bottleneck]] (20 sources, severity low) — the economic motivation; not a physical failure, but the *why*.
-- [[wiki/failure-modes/FF-degradation-contact-resistance]] (18, high).
-- [[wiki/failure-modes/finger-adhesion-loss-after-DH]] (15, high).
-- [[wiki/failure-modes/Cu-diffusion-into-c-Si]] (10, **critical**).
-- [[wiki/failure-modes/EVA-acetic-acid-corrosion]] (10, high) — Karas 2022 mechanistic anchor.
-- [[wiki/failure-modes/Cu-finger-corrosion-encapsulant]] (9, high).
-- [[wiki/failure-modes/Cu-finger-oxidation-damp-heat]] (9, high).
-- [[wiki/failure-modes/Ni-barrier-pinholes]] (6, high) — the failure mode that, per Cheng 2018, threatens the sub-100 nm Ni claim.
-- [[wiki/failure-modes/Cu-LID-light-induced-degradation]] (2, **critical**) — the bulk-c-Si consequence of even sub-ppb Cu (Lindroos 2015).
+- [[wiki/failure-modes/silver-supply-bottleneck]] (22 sources, severity low) — the economic motivation; not a physical failure, but the *why*.
+- [[wiki/failure-modes/FF-degradation-contact-resistance]] (18, high) — the threshold-test surface for ρc ≤ 2 mΩ·cm².
+- [[wiki/failure-modes/finger-adhesion-loss-after-DH]] (16, high) — peel test ≥1 N/mm threshold.
+- [[wiki/failure-modes/Cu-diffusion-into-c-Si]] (13, **critical**) — Cu interstitial diffusivity is the highest of any 3d metal in Si.
+- [[wiki/failure-modes/Cu-finger-oxidation-damp-heat]] (10, high).
+- [[wiki/failure-modes/Cu-finger-corrosion-encapsulant]] (10, high).
+- [[wiki/failure-modes/EVA-acetic-acid-corrosion]] (8, high) — Karas 2022 mechanistic anchor.
+- [[wiki/failure-modes/TCO-pitting-during-plating]] (7, high) — pH ≈ 1 acid-Cu bath dissolves TCO at pinholes.
+- [[wiki/failure-modes/Ni-barrier-pinholes]] (7, high) — the failure mode that, per Cheng 2018, threatens the sub-100 nm Ni claim.
+- [[wiki/failure-modes/Cu3Si-formation-at-Si-interface]] (2, **critical**) — Cu/Si reaction product; forms by 300 °C if barrier breaches.
+- [[wiki/failure-modes/Cu-LID-light-induced-degradation]] (1, **critical**) — sub-ppb bulk-c-Si Cu produces measurable lifetime loss (Lindroos 2015).
 
 ### Substrates / device under test
-- [[wiki/organisms/SHJ-cell-M6]] (16 sources) — primary workhorse format.
-- [[wiki/organisms/mini-module-glass-glass]] (7) — the canonical accelerated-DH testbed.
-- [[wiki/organisms/SHJ-cell-M10]] (7) — industry-dominant 2023+ format.
+- [[wiki/organisms/SHJ-cell-M6]] (23 sources) — primary workhorse format.
+- [[wiki/organisms/monocrystalline-Si-wafer-n-type]] (13) — the SHJ substrate.
+- [[wiki/organisms/SHJ-cell-M10]] (11) — industry-dominant 2023+ format.
+- [[wiki/organisms/mini-module-glass-glass]] (6) — the canonical accelerated-DH testbed.
 
 ### Key contradictions surfaced for Pass 3
 1. **Cheng 2018 vs the hypothesis itself:** 60 nm electroplated Ni fails as a Cu barrier at 300°C; only ≥120 nm survives. The hypothesis's "sub-100 nm Ni" sits in the failure regime — partially rescued by SHJ's ≤200°C process budget, but pinhole density must be verified pre-cap (Cu-displacement decoration).

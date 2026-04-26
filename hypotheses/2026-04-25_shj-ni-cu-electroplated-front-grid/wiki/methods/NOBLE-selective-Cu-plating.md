@@ -1,48 +1,66 @@
 ---
 type: method
 slug: NOBLE-selective-Cu-plating
-aliases: [NOBLE, native oxide barrier layer for selective electroplating, Fraunhofer NOBLE process]
-related_methods: [Cu-electroplating-acid-bath, inkjet-mask-patterning, laser-ablation-of-dielectric, Ni-sputter-deposition, thermal-evaporation-Ag-cap, transfer-length-method]
-key_reagents: [acid-Cu-sulfate-bath, ITO-transparent-conductive-oxide, silver-Ag-cap]
-known_failure_modes: [TCO-pitting-during-plating, Cu-finger-oxidation-damp-heat, plating-resist-undercut, a-Si-H-passivation-degradation, FF-degradation-contact-resistance]
-sources: [2018-electrochemsci-barrier-properties-electroplated-ni, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2021-hatt-stable-cu-plated-shj-eupvsec, atotech-cupracid-ultra-a-tds]
-tags: [SHJ, plating, native-oxide-mask, AlOx, resist-free, Fraunhofer-ISE, fine-line]
+aliases: [NOBLE process, Native Oxide Barrier Layer Electroplating, Fraunhofer NOBLE, Al-AlOx selective plating]
+related_methods: [Cu-electroplating-acid-bath, electroplated-Ni-Cu-stack, Ni-sputter-deposition, inkjet-mask-patterning, laser-ablation-of-dielectric, transfer-length-method, peel-test-90deg]
+key_reagents: [acid-Cu-sulfate-bath, ITO-transparent-conductive-oxide, silver-Ag-cap, a-Si-H-passivation]
+known_failure_modes: [TCO-pitting-during-plating, plating-resist-undercut, Cu-finger-oxidation-damp-heat, a-Si-H-passivation-degradation, FF-degradation-contact-resistance]
+sources: [2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2021-hatt-stable-cu-plated-shj-eupvsec]
+tags: [NOBLE, Cu-plating, SHJ, Fraunhofer-ISE, Al-AlOx, selective-plating, signature-method]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# NOBLE Selective Cu Plating
+# NOBLE: Native Oxide Barrier Layer for selective Electroplating
+
+**Slug:** `methods/NOBLE-selective-Cu-plating` · **Type:** method
 
 ## What it measures / does
-Native Oxide Barrier Layer for Electroplating: a Fraunhofer ISE-developed selective Cu-plating process for SHJ. A thin PVD Cu/Al (or Ag/Al) stack is deposited on the ITO; the Al layer's self-passivating native AlOx serves as the plating mask. NaOH(aq) inkjet ink (or fs-UV laser) selectively etches the Al only along the desired grid; Cu and Ag are then electroplated only into the openings; residual PVD layers are etched back. Saves one process step + waste-water treatment vs the CSEM 7-step organic-resist route.
+
+Fraunhofer ISE's flagship SHJ Cu-plating route. A thin sputtered Cu/Al (or Ag/Al) PVD stack is deposited onto the SHJ ITO. The aluminium top layer grows a native Al₂O₃ in ambient atmosphere; this alumina inhibits Cu electroplating everywhere it remains. NaOHaq inkjet-printed ink (or fs-UV laser ablation) selectively dissolves the Al only at grid positions, exposing the Cu seed beneath; bifacial Cu electrodeposition then proceeds *only* at the etched stripes. After plating, an immersion Ag cap covers the Cu, and (NH₄)₂S₂O₈ removes the unwanted PVD seed in non-grid areas.
 
 ## When to use it
-Used as the SHJ-specific selective-plating route in Fraunhofer ISE's Cu-on-TCO architecture. Demonstrated up to 22.6% on large-area SHJ cells (matching SP Ag reference); 21.4% with laser variant. Provides the most directly hypothesis-relevant demonstration of plated Cu reaching parity with screen-printed Ag on industrial SHJ.
 
-## Key parameters
-- PVD seed: Cu(100 nm) / Al(50-100 nm) on ITO; or Ag/Al variants.
-- Inkjet ink: 1 wt% NaOH(aq), 2-5 pL droplets.
-- AlOx contact angle: hydrophobic 100-120 deg required (achieved after ~5 d ambient or 1 d at 50 C / 6% RH).
-- Plating: pulsed forward/reverse current, 6 A/dm², 15 ms forward / 1 ms reverse, anodic:cathodic 4.5; slightly acidic CuSO4 electrolyte.
-- Etch selectivity: NaOH 1-4% etches Al at 2.4-11 nm/s; H3PO4/HNO3 (60/3.25%) etches Cu/Ag at >10 nm/s, Al <1 nm/s; (NH4)2S2O8 / FeCl3 etch Cu only.
-- Final stack: PVD-Cu(50 nm) / plated-Cu(1-10 um) / immersion-Ag(~200 nm).
-- Performance: rho_c 0.1-1 mOhm.cm² (Hatt 2021), >=2 N/mm peel; finger 25-30 um wide.
-- Anneal 200 C / 15 min recovers a-Si:H sputtering damage.
+Use it on SHJ when (a) a resist-mask-free selective plating is desired (saves consumables and one process step vs the resist route), (b) only ~5–10 % of the cell area needs to be patterned (vs >90 % for resist), and (c) bifacial Cu is wanted in a single bath dwell. It is the SHJ-specific implementation of the [[methods/electroplated-Ni-Cu-stack]] concept; Hatt 2019/2021 demonstrates competitive efficiency (22.6 % large-area, ρc 0.1–1 mΩ·cm², peel ≥ 2 N/mm) and explicitly considers it "mature enough to be tested on industrial pilot."
 
-## Common variants / alternatives
-- 7-step CSEM organic-resist route: 24.1% bifacial record but more wet steps + waste-water.
-- 6-step Kaneka dielectric route.
-- [[Cu-electroplating-acid-bath]] — direct Cu-on-TCO without mask (SunDrive proprietary).
-- [[inkjet-mask-patterning]] — analogous role with hot-melt resist instead of NaOH.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/TCO-pitting-during-plating]] — PVD-metal etch-back can attack ITO; addressed by selective etchants (Hatt 2019).
-- [[../failure-modes/Cu-finger-oxidation-damp-heat]] — Ag immersion cap mitigates; only few nm of Cu un-capped on flank.
-- [[../failure-modes/plating-resist-undercut]] — eliminated by going resist-free.
-- [[../failure-modes/a-Si-H-passivation-degradation]] — sputtering / laser risk; Hatt 2021 quantifies <=4.7 uJ fs-UV pulse-energy preserves PL.
-- [[../failure-modes/FF-degradation-contact-resistance]] — laser-pattern variant FF 76.3% vs 80.5% inkjet due to PVD-Al inhomogeneity.
+- **PVD stack:** Cu (~100 nm) / Al (~50 nm), sputtered cold (compatible with a-Si:H).
+- **Al hydrophobic ageing:** 1 day at 50 °C / 6 % RH or ≥20 h at ambient to grow the Al₂O₃ to water contact angle 90–120°.
+- **Inkjet ink:** dilute NaOHaq, droplet 2–5 pL; etches Al at 0.8–2.6 nm/s in 1–4 % NaOH without attacking Cu, Ag, ITO.
+- **Cu plating:** acid CuSO₄/H₂SO₄ pulsed forward/reverse, 6 A/dm² medium current, 15 ms forward / 1 ms reverse, anodic:cathodic = 4.5; bifacial simultaneous deposition.
+- **Cap layer:** immersion Ag (~200 nm) inhibits Cu oxidation.
+- **PVD seed-layer etch-back:** H₃PO₄/HNO₃ blend etches Cu/Ag at >10 nm/s at room temperature without attacking ITO; (NH₄)₂S₂O₈ alternative for the Cu etch.
+- **Performance (Hatt 2021):** 12 large-area M2 SHJ cells reach reproducible η ≈ 22.6 % vs Ag screen-print best 22.7 %; ρc 0.1–1 mΩ·cm², peel ≥ 2 N/mm.
+- **Laser variant (Hatt 2021):** fs-UV (343 nm) replaces inkjet; first 21.4 % large-area cell, ρc 1.6 ± 0.3 mΩ·cm², ~10 mV Voc loss vs inkjet attributed to early-stage laser damage.
 
-## Sources
-- [[2018-electrochemsci-barrier-properties-electroplated-ni]] — implicitly relevant; barrier-design half of the NOBLE-style stack.
-- [[2019-hatt-noble-bifacial-shj-aip]] — full-area 156x156 mm² demonstration at 20.0% (companion paper); contact-angle evolution detailed.
-- [[2019-hatt-noble-shj-solrrl]] — foundational paper; 20.2% lab cell, rho_c 1.8-4.0 mOhm.cm²; etch selectivity table.
-- [[2021-hatt-stable-cu-plated-shj-eupvsec]] — large-area demonstration: 12 cells reproducibly 22.6%; laser variant 21.4%.
-- [[atotech-cupracid-ultra-a-tds]] — chemistry-compatible commercial acid Cu bath.
+## Common variants
+
+- **NaOHaq inkjet patterning** (Hatt 2019, baseline) — judged industrial-pilot-ready in 2021.
+- **fs-UV laser patterning** (Hatt 2021) — higher throughput, modest Voc loss.
+- **Ag/Al seed** (Hatt 2019) — alternative to Cu/Al if the conductivity layer should be Ag.
+- **Photolithography baseline** — used internally for proof-of-concept before NOBLE.
+
+## Things to watch for
+
+- ITO non-attack is critical during seed-layer etch-back; SEM/Rsh verification is the standard quality gate (Hatt 2019: SEM confirms ITO thickness preserved).
+- Al hydrophobicity is a process-window-sensitive parameter — too hydrophilic and the inkjet ink spreads beyond the line; too hydrophobic and droplets bead up. Document ambient ageing time/RH.
+- For laser variant: fs-UV only avoids passivation damage in two operating regimes (high pulse energy + buffer Cu, or low pulse energy + multi-shot); outside those windows Voc drops noticeably.
+- Cu finger oxidation between plating and Ag-capping is a process-time risk — minimise air exposure between the two.
+- The native Al₂O₃ + Al stack is much thinner than a resist; check that bath additives don't undermine it during long Cu plating.
+
+## Related methods
+
+- [[methods/Cu-electroplating-acid-bath]] — bath chemistry NOBLE relies on.
+- [[methods/electroplated-Ni-Cu-stack]] — broader concept NOBLE specialises.
+- [[methods/Ni-sputter-deposition]] — the PVD-seed step under another name.
+- [[methods/inkjet-mask-patterning]] — NaOHaq inkjet is the canonical NOBLE patterning.
+- [[methods/laser-ablation-of-dielectric]] — fs-UV alternative.
+- [[methods/transfer-length-method]] — ρc verification.
+- [[methods/peel-test-90deg]] — adhesion verification (≥2 N/mm target).
+
+## Citing sources
+
+- [[sources/2019-hatt-noble-bifacial-shj-aip]] — bifacial scale-up; first full-area 156×156 mm² SHJ at 20.0 % via NOBLE.
+- [[sources/2019-hatt-noble-shj-solrrl]] — canonical NOBLE Solar RRL paper introducing the route; first SHJ cell at 20.2 %.
+- [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — large-area NOBLE 22.6 %; fs-UV laser variant introduced; "mature enough to be tested on industrial pilot."

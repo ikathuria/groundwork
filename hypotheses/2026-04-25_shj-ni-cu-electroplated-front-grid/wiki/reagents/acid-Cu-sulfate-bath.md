@@ -1,76 +1,89 @@
 ---
 type: reagent
 slug: acid-Cu-sulfate-bath
-aliases: [acid copper plating bath, CuSO4 plating electrolyte, Cupracid, Cu-LIP bath]
-cas: null
-formula: CuSO4·5H2O + H2SO4 + Cl- + organic additives
+aliases: [acid copper sulfate plating bath, CuSO4/H2SO4 electrolyte, bright acid Cu]
+cas: ""
 suppliers:
   - name: Atotech (MKS)
-    catalog: Cupracid ULTRA (Make-up + Part A + Part B)
-    grade: production
+    catalog: "Cupracid ULTRA"
+    grade: PV / PCB plating chemistry, full make-up + Parts A/B
     url: https://www.atotech.com/products/general-metal-finishing/solar-industry/
-  - name: Fisher / Acros Organics
-    catalog: AC197730010 (CuSO4·5H2O, 50 g, CAS 7758-99-8)
-    grade: ACS reagent ≥95%
-    url: https://www.fishersci.com/shop/products/copper-ii-sulfate-pentahydrate-acs-acros-organics/AC197730010
-  - name: Fisher / Acros Organics
-    catalog: AC424525000 (H2SO4, CAS 7664-93-9)
-    grade: ACS ≥95%
-    url: https://www.fishersci.com/shop/products/sulfuric-acid-acs-acros-organics-2/AC424525000
-storage: room-temperature, sealed PVC/polyester tank; CuSO4 air-sensitive (store under inert atmosphere); H2SO4 in corrosives cabinet
-hazards: moderate — CuSO4 acute oral tox Cat 4, eye damage Cat 1; H2SO4 skin/eye corrosion Cat 1; aquatic ecotoxicity
-known_failure_modes: [TCO-pitting-during-plating, Cu-finger-oxidation-damp-heat, Cu-diffusion-into-c-Si, Cu3Si-formation-at-Si-interface, plating-resist-undercut]
-sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2018-electrochemsci-barrier-properties-electroplated-ni, 2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2018-pvtech-metallization-shj-cells-modules, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-arena-sundrive-copper-metallisation-demonstration, 2022-karas-cu-outdiffusion-damp-heat, atotech-cupracid-ultra-a-tds, atotech-solar-industry-overview, fisher-AC197730010-cu-sulfate-pentahydrate-sds, fisher-AC424525000-sulfuric-acid-acs-sds, pvtech-metallization-challenges-cell-manufacturing]
-tags: [electrolyte, Cu-plating, sulfate-bath, primary-reagent]
+  - name: MacDermid Alpha
+    catalog: "Solderon / ViaForm acid Cu families"
+    grade: PV / interconnect grade
+    url: https://www.macdermidalpha.com
+  - name: DuPont (formerly Rohm and Haas Electronic Materials)
+    catalog: "Copper Gleam / Microfab series"
+    grade: electronics-grade acid Cu
+    url: https://www.dupont.com
+storage: bath stored in PVC / hard-rubber-lined steel tank; 24–28 °C; continuous filtration
+hazards: high — pH ≈ 1, contains H2SO4 + CuSO4 + chloride + organic brighteners; toxic to aquatic life
+known_failure_modes: [TCO-pitting-during-plating, plating-resist-undercut, lateral-Cu-edge-migration, Cu-finger-oxidation-damp-heat]
+sources: [2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2018-electrochemsci-barrier-properties-electroplated-ni, 2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2018-pvtech-metallization-shj-cells-modules, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2020-verlinden-future-challenges-tw-pv, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-arena-sundrive-copper-metallisation-demonstration, 2022-karas-cu-outdiffusion-damp-heat, atotech-cupracid-ultra-a-tds, atotech-solar-industry-overview, fisher-AC197730010-cu-sulfate-pentahydrate-sds, fisher-AC424525000-sulfuric-acid-acs-sds, pvtech-metallization-challenges-cell-manufacturing]
+tags: [electrolyte, Cu-plating, CuSO4, H2SO4, brightener, chloride, additives]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Acid Cu sulfate plating bath
 
+**Slug:** `reagents/acid-Cu-sulfate-bath` · **Type:** reagent
+
 ## What it is
-A sulfuric-acid-based copper(II) sulfate electrolyte with chloride ions and proprietary organic additives (brightener, leveler, suppressor) that produces low-stress, ductile, bright, leveled Cu deposits. It is the canonical bath for the front-grid Cu thickening step in this hypothesis: Cu is electroplated onto the Ni-barrier seed (or, in TCO-only variants, directly onto ITO) to form 5–15 µm tall fingers.
 
-## Common uses
-- Industrial plating of Ni/Cu/Sn(Ag) front-grid metallization on SHJ, PERC, TOPCon ([[atotech-solar-industry-overview]], [[2022-arena-sundrive-copper-metallisation-demonstration]]).
-- Light-induced plating (LIP) on screen-printed Ag seed layers in homojunction cells ([[2010-bartsch-lip-pvsc]], [[2014-rehman-nicu-plating-csi-review]]).
-- Pulsed forward/reverse plating for selective fill of NaOH-patterned PVD-Al/Cu seed in NOBLE process ([[2019-hatt-noble-shj-solrrl]]).
-- Three-step plating (seed-grid + dielectric mask + Cu electrodeposition) on SHJ at CSEM ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
+The acid copper sulfate bath is the canonical industrial Cu-electroplating electrolyte. It is a sulfuric-acid-acidified aqueous solution of CuSO4·5H2O containing a small amount of chloride and a proprietary organic additive package (carrier/suppressor + brightener/accelerator + leveler) that controls deposit grain size, brightness, ductility, and conformality. It is the primary chemistry by which Cu is plated onto the Ni-seeded SHJ front grid.
 
-## Key spec / concentration ranges
-- Cu source: CuSO4·5H2O 195–255 g/L (210 g/L optimum) per Atotech Cupracid ULTRA TDS ([[atotech-cupracid-ultra-a-tds]]).
-- Conducting acid: H2SO4 50–70 g/L (60 g/L optimum); 66°Bé.
-- Chloride: 80–150 mg/L (100 mg/L optimum) for grain refinement.
-- Organic additives (Cupracid ULTRA): Make-up 10 mL/L; Part A 0.4–0.6 mL/L; Part B 0.4–0.6 mL/L.
-- Operating temperature: 20–30 °C (24–28 °C optimum) — low-T bath.
-- Cathode current density: 1.0–6.0 A/dm² (3.0 A/dm² optimum); pulsed forward/reverse 6 A/dm² with 15 ms forward / 1 ms reverse, anodic:cathodic = 4.5 in NOBLE work ([[2019-hatt-noble-shj-solrrl]]).
-- Voltage 1.0–4.0 V; rectifier ripple ≤10%.
-- Anodes: phosphorus-bearing Cu (P 0.03–0.06%) in Ti baskets / dynel anode bags.
-- Filtration 5 µm at 2–3 turnovers/h; PVC sparger air agitation (no compressed air).
-- Bulk Cu resistivity achieved: ≈2×10⁻⁶ Ω·cm (vs. 1.7×10⁻⁶ for pure Cu) ([[2018-pvtech-metallization-shj-cells-modules]]).
-- Plating rate ≈1 µm/min at 3 A/dm²; ~1500 s for 1.5 µm Cu in lab cells ([[2018-electrochemsci-barrier-properties-electroplated-ni]]).
+## Common uses (in this corpus)
 
-## Alternatives / variants
-- [[nickel-sulfamate-bath]] — sequential predecessor in the Ni/Cu stack (plates the diffusion barrier).
-- [[nickel-phosphorus-NiP-electroless]] — alternative seed-layer chemistry deposited before Cu.
-- [[Cu-paste-low-temperature]] — additive (printed) Cu rather than electroplated; comparator path.
-- [[silver-Ag-cap]] / [[tin-Sn-cap]] — successor reagent in the stack (cap layer over plated Cu).
+This bath is the workhorse for the **Cu finger** in every reported Ni/Cu (or Cu-only) plated SHJ stack — used by Hatt's NOBLE, Lachowicz CSEM, SunDrive, and the Atotech production-qualified Cupracid family. It is the chemistry every plated-Cu hypothesis (this one included) inherits from PCB plating, with PV-specific tuning around line aspect ratio, finger sidewall profile, and resist compatibility.
 
-## Gotchas
-- Pitting / cluster pitting on TCO is a known fault mode; remediated by Cupracid GM Plus wetting agent (20 mL / 100 L initial; 100–200 mL per 10,000 A·h) — flagged on the Atotech TDS ([[atotech-cupracid-ultra-a-tds]]).
-- "Ghost" / parasitic plating on SiNx pinholes mitigated by piranha pre-clean (H2O2 + H2SO4) ([[2014-rehman-nicu-plating-csi-review]]).
-- Compressed air for agitation is NOT acceptable (oxidises additives); use cathode rod movement + low-pressure blower air.
-- Bath impurities (S, Cl, C, O) co-deposit into Cu and accelerate Kirkendall void formation in Cu-Sn interfaces during damp heat ([[2022-karas-cu-outdiffusion-damp-heat]]).
-- Always add H2SO4 to water (reacts violently with water); H2 evolution on Cu metals.
+## Properties / specifications
 
-## Sources
-- [[atotech-cupracid-ultra-a-tds]] — full canonical operating window (composition, current density, agitation, anodes, additive control).
-- [[atotech-solar-industry-overview]] — supplier-side anchor that the Cupracid family ships at industry scale for PV metallization.
-- [[fisher-AC197730010-cu-sulfate-pentahydrate-sds]] — CuSO4·5H2O hazard / identity / SKU.
-- [[fisher-AC424525000-sulfuric-acid-acs-sds]] — H2SO4 hazard / identity / SKU.
-- [[2010-bartsch-lip-pvsc]] — foundational LIP-Cu / Ni-Cu stack with thermal accelerated aging.
-- [[2018-pvtech-metallization-shj-cells-modules]] — quantitative SHJ-Cu plating benchmark (~2×10⁻⁶ Ω·cm bulk resistivity, 20 µm fingers, 1 Ω/cm line resistance).
-- [[2019-hatt-noble-shj-solrrl]] — pulsed-current chemistry on slightly acidic CuSO4.
-- [[2018-electrochemsci-barrier-properties-electroplated-ni]] — Cu electroplating @ 25 °C, Pt counter-electrode, magnetic stirring.
-- [[2022-arena-sundrive-copper-metallisation-demonstration]] — proprietary in-house chemistry reformulated for adhesion and smoother fingers.
-- [[2022-karas-cu-outdiffusion-damp-heat]] — bath impurity → Kirkendall void mechanism in DH.
-- [[2014-rehman-nicu-plating-csi-review]] — review of LIP / Cu plating on c-Si.
-- [[2017-jeon-electroless-ni-front-metallization]], [[2018-electrochemsci-barrier-properties-electroplated-ni]], [[2018-pv-international-metallization-shj]], [[2018-pv-tech-metallization-interconnection-bifacial-shj]], [[2019-hatt-noble-bifacial-shj-aip]], [[2021-hatt-stable-cu-plated-shj-eupvsec]], [[pvtech-metallization-challenges-cell-manufacturing]] — corroborating use cases.
+- **Composition (Atotech Cupracid ULTRA reference):** CuSO4·5H2O 195–255 g/L (210 g/L optimum), H2SO4 50–70 g/L (~0.6 M), chloride 80–150 ppm (100 ppm optimum), organic brighteners (Parts A/B) at sub-mL/L levels.
+- **Operating temperature:** 24–28 °C optimum (full range 20–30 °C).
+- **Cathode current density:** 1–6 A/dm² operating range, 3.0 A/dm² (30 A/ft²) optimum for PCB; PV LIP modes use lower CD (~0.5–1 A/dm²) to avoid TCO damage.
+- **Anode:** phosphorized-Cu (0.03–0.06 % P) nuggets/balls in titanium baskets, dynel/polypropylene anode bags.
+- **Filtration:** continuous through 5-µm media at 2–3 turnovers/hr — critical to prevent particulate inclusions.
+- **pH:** ≈ 1 (driven by ~0.6 M H2SO4) — this is what dissolves ITO/IWO at any Ni-seed pinhole.
+- **Cu deposit:** ~1.7 µΩ·cm bulk resistivity at >97 % purity, ductile, low-stress when additives are within spec.
+- **Plated finger geometry (typical SHJ NOBLE / SunDrive):** 20–40 µm wide × 10–20 µm tall after ~3–10 min of plating.
+
+## Suppliers
+
+- Atotech (MKS) — Cupracid ULTRA + PV-qualified plating-line chemistry; URL https://www.atotech.com/products/general-metal-finishing/solar-industry/
+- MacDermid Alpha — Solderon / ViaForm acid Cu families; URL https://www.macdermidalpha.com
+- DuPont — Copper Gleam / Microfab acid-Cu electronics chemistries; URL https://www.dupont.com
+- Reagent-only (lab make-up): [[reagents/sulfuric-acid-H2SO4]] (Fisher AC424525000) + CuSO4·5H2O (Fisher AC197730010).
+
+## Alternatives
+
+- [[reagents/nickel-sulfamate-bath]] — used *upstream* of the acid Cu bath in the same plating line; chemically distinct (Ni vs. Cu, sulfamate vs. sulfate, pH ~4 vs. pH ~1).
+- Pyrophosphate-Cu bath (alkaline) — less aggressive on TCO but slower deposition rate; not the production-default for PV.
+- Methanesulfonate Cu bath (Sn-plating-derived) — used in some semiconductor flows; rare in PV.
+
+## Gotchas / failure modes
+
+- [[failure-modes/TCO-pitting-during-plating]] — the bath's pH ≈ 1 dissolves ITO/IWO at any seed-layer pinhole; the dominant TCO-damage mode in plated-Cu SHJ workflows.
+- [[failure-modes/plating-resist-undercut]] — high acidity attacks inkjet plating-resist masks at the resist edge if dwell is excessive or temperature drifts up.
+- [[failure-modes/lateral-Cu-edge-migration]] — off-spec brightener / leveler ratio causes "mushrooming" Cu growth that overgrows the resist edge and increases shading.
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — Cu deposited from this bath is the long-term corrosion target; bath impurity content (S, Cl, C, O) correlates with downstream void formation under DH (Karas 2022).
+
+## Citing sources
+
+- [[sources/atotech-cupracid-ultra-a-tds]] — canonical commercial recipe (composition, CD, anode chemistry, additive control).
+- [[sources/fisher-AC197730010-cu-sulfate-pentahydrate-sds]] — Cu-source salt SDS; CAS 7758-99-8, hazard data, lab-grade make-up reference.
+- [[sources/fisher-AC424525000-sulfuric-acid-acs-sds]] — acid-component SDS for the same bath.
+- [[sources/2014-rehman-nicu-plating-csi-review]] — review naming acid CuSO4/H2SO4 as the canonical c-Si Cu-plating chemistry.
+- [[sources/2018-pv-international-metallization-shj]] — bath used in CSEM / Meyer Burger SHJ Ni/Cu workflow.
+- [[sources/2018-pvtech-metallization-shj-cells-modules]] — paired with a Ni-sulfamate seed layer in the SHJ Ni/Cu stack.
+- [[sources/2019-hatt-noble-shj-solrrl]] — NOBLE process plates Cu from acid sulfate after inkjet-NaOH patterning.
+- [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — same chemistry, longer DH-aging study.
+- [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — SunDrive uses a sulfate Cu bath in the production-pilot demonstration.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — bath impurity content tied to downstream Kirkendall void formation.
+- [[sources/2017-jeon-electroless-ni-front-metallization]] — uses sulfate Cu after electroless NiP seed.
+- [[sources/2018-electrochemsci-barrier-properties-electroplated-ni]] — paired sulfamate-Ni / sulfate-Cu electrolyte system in barrier-properties study.
+- [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — industry overview mentioning the acid Cu bath in SHJ context.
+- [[sources/2019-hatt-noble-bifacial-shj-aip]] — bifacial NOBLE plating chemistry.
+- [[sources/2020-verlinden-future-challenges-tw-pv]] — listed as the path for plated-Cu cost reduction.
+- [[sources/atotech-solar-industry-overview]] — vendor framing of the acid Cu chemistry for solar.
+- [[sources/pvtech-metallization-challenges-cell-manufacturing]] — industry challenges for plating chemistry adoption.

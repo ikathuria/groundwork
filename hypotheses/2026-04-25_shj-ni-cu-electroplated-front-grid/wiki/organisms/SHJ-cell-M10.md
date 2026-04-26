@@ -2,51 +2,68 @@
 type: organism
 slug: SHJ-cell-M10
 organism_type: cell
-external_id: M10 (182×182 mm pseudo-square)
+source: industry SHJ mass production (LONGi, Tongwei, Huasun, Risen, Aiko, Meyer Burger, Enel 3SUN)
+external_id: ITRPV M10 (182 mm pseudo-square)
 characteristics:
-  - 182×182 mm pseudo-square; ~330 cm² active area; 247 mm pseudo-square diagonal
-  - n-type Cz-Si base wafer, 125–150 µm production thickness (target 100 µm by 2034)
-  - Symmetric a-Si:H + ITO/AZO TCO; same SHJ stack as M6 with larger area and higher per-cell Isc
-  - Industry-dominant SHJ format from 2023 onwards (ITRPV 15th edition baseline)
-  - Champion plated-Cu SHJ records 26+% certified at M10 / half-cut M12 scale
-  - Module standard width 1134 mm; 700 W+ module class enabled by M10 and rectangular M10R
-known_failure_modes: [a-Si-H-passivation-degradation, Cu-finger-oxidation-damp-heat, FF-degradation-contact-resistance, finger-adhesion-loss-after-DH, Jsc-loss-from-cap-stack-shading]
-sources: [2022-arena-sundrive-copper-metallisation-demonstration, 2023-taiyangnews-heterojunction-technology-report, 2024-itrpv-15th-edition-roadmap, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-nrel-best-research-cell-efficiency-chart, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj]
-tags: [SHJ, M10, cell, 182mm, n-type, ITO, a-Si-H, mainstream]
+  - silicon heterojunction (SHJ) device on n-type CZ c-Si wafer in M10 wafer format
+  - 182 mm × 182 mm pseudo-square, ~330 cm² wafer area, ~315–320 cm² active cell area
+  - dominant industry SHJ wafer size from 2022 onward (per ITRPV 2024 and TaiyangNews HJT Report)
+  - intrinsic + doped a-Si:H passivation stack and ITO TCO, identical chemistry to M6
+  - typical Isc ~12.0–12.5 A; cell power ~7.6–8.5 W at 23.5–25 % efficiency
+  - the bridging format between R&D-favoured M6 and the very-large G12; CSEM 2023/2024 mini-module aging studies use M10 cells
+known_failure_modes: [a-Si-H-passivation-degradation, Cu-diffusion-into-c-Si, Cu-finger-corrosion-encapsulant, Cu-finger-oxidation-damp-heat, FF-degradation-contact-resistance, finger-adhesion-loss-after-DH, Jsc-loss-from-cap-stack-shading, Ni-barrier-pinholes, silver-supply-bottleneck]
+sources: [2021-goldschmidt-tech-learning-tw-pv, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-taiyangnews-heterojunction-technology-report, 2024-fraunhoferise-photovoltaics-report, 2024-iea-pvps-trends-pv-applications, 2024-itrpv-15th-edition-roadmap, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, atotech-solar-industry-overview, notion-systems-solar-inkjet-overview]
+tags: [SHJ, cell, M10, n-type, heterojunction, industry-scale]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# SHJ cell — M10 format (182×182 mm)
+# SHJ cell, M10 (182 mm) format
+
+**Slug:** `organisms/SHJ-cell-M10` · **Type:** organism (substrate / device under test)
 
 ## What it is
-Silicon-heterojunction solar cell on a 182×182 mm pseudo-square n-type Cz-Si wafer with symmetric a-Si:H passivation and ITO/low-In-TCO on both faces. M10 became the industry-dominant SHJ wafer format in 2023 and is the format for which ITRPV publishes its silver-laydown roadmap (19 mg/W → 9 mg/W) — directly relevant to the cost target of this hypothesis.
 
-## Standard dimensions / spec
-- Wafer: 182×182 mm pseudo-square, ~330 cm² active area.
-- Thickness: 125–150 µm in 2023; SHJ trajectory to 100 µm by 2034 ([[2024-itrpv-15th-edition-roadmap]]).
-- Stack: a-Si:H(i)/a-Si:H(n or p) + ~80 nm ITO; PVD seed (Cu, Ag, TiW or NOBLE Al/Cu) on top of TCO.
-- Silver-paste laydown 2023: ~120 mg/cell on M10 SHJ, target 70 mg/cell with AgCu, fully Ag-free with Cu plating.
-- Module standard width 1134 mm; rectangular M10R format enables 700 W+ modules.
-- Throughput: PECVD ~7,200 wafers/h (Maxwell), PVD ~7,500 wafers/h (Von Ardenne).
+A silicon heterojunction (SHJ) cell on a 182 mm pseudo-square n-type c-Si wafer. M10 is the dominant industry-mass-production SHJ format from 2022 onward, picked up by LONGi, Tongwei, Huasun, Risen, Aiko, Meyer Burger, and Enel 3SUN among others (per ITRPV 15th Edition 2024 and TaiyangNews HJT Report 2023). It is also the bridging format between research-favoured M6 and the still-larger G12, and is the cell size used in the most recent CSEM Cu-plated SHJ mini-module aging studies (Lachowicz 2023/2024).
 
-## Common pitfalls / handling notes
-- Larger area → higher Isc → finger line-resistance budget tightens; pushes finger count and Cu-fill cross-section.
-- Half-cut SHJ M10 used in glass-glass POE bifacial mini-modules and full-size 60/72-cell modules to reduce I²R losses.
-- Same a-Si:H 280 °C ceiling as M6; same ITO etch-back caveats.
-- GridMaster simulations on M10 show cost-optimal layouts give ~0.4%abs lower η than η-optimal at €1000/kg Ag — defining the economic window for plated Cu ([[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]).
-- Maxwell pilot Cu-plating line (2023) and first production line (2024) target M10 ([[2023-taiyangnews-heterojunction-technology-report]]).
+## Geometry / format
 
-## Failure modes commonly associated
-- `[[../failure-modes/a-Si-H-passivation-degradation]]` — same constraint as M6.
-- `[[../failure-modes/Cu-finger-oxidation-damp-heat]]` — Cu paste line resistance bench-stable but module-level DH unverified.
-- `[[../failure-modes/FF-degradation-contact-resistance]]` — driven harder by larger Isc; ≤2 mΩ·cm² target.
-- `[[../failure-modes/finger-adhesion-loss-after-DH]]` — module-perimeter / busbar adhesion under damp heat.
-- `[[../failure-modes/Jsc-loss-from-cap-stack-shading]]` — finger-width 27→15 µm trajectory dominates the M10 roadmap.
+- Wafer: 182 mm × 182 mm pseudo-square, ~247 mm diagonal
+- Wafer area ≈ 330 cm²; active cell area ≈ 315–320 cm² (chamfered)
+- Wafer thickness: 130–160 µm for SHJ
+- Front grid: 9–18 busbars (multibusbar / SmartWire); finger pitch 0.8–1.2 mm
+- Power class: ~7.6–8.5 W at 23.5–25 % efficiency
+- Short-circuit current Isc: ~12.0–12.5 A — current scaling drives finger-design pressure (more / wider fingers) and thus harder Jsc–FF trade-offs
+- Industry adoption: ~2021 first commercial SHJ M10 lines; dominant SHJ format from ~2022 (per ITRPV 2024)
 
-## Sources
-- `[[2024-itrpv-15th-edition-roadmap]]` — 19 mg/W (2023) → 9 mg/W (2034) Ag roadmap defined on M10.
-- `[[2023-taiyangnews-heterojunction-technology-report]]` — Maxwell M10 Cu-plating pilot/production roadmap.
-- `[[2022-arena-sundrive-copper-metallisation-demonstration]]` — half-cut M12 (M10-class) plated-Cu prototype line >60 cells/h.
-- `[[2024-lachowicz-cu-plated-shj-aging-mini-modules]]` — referenced for upcoming PTP Cu-plating experiments at M10.
-- `[[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]` — GridMaster cost simulations on M10 20-wire layout.
-- `[[2024-nrel-best-research-cell-efficiency-chart]]` — 27.6–27.8% SHJ records on M10-class wafers.
-- `[[2024-nrel-getting-ahead-of-curve-pv-assessment]]` — M10 projected dominant cell size for SHJ; reliability gaps flagged.
+## Construction (where relevant)
+
+- a-Si:H passivation and TCO chemistry identical to M6; only format changes
+- M10 is the size at which copper metallization economics become most compelling: per-cell Ag consumption scales with finger length and current handling, so M10/G12 cost-out leverage is larger than on M6
+- M10 cells in mini-modules with POE encapsulant are the canonical CSEM accelerated-DH testbed
+
+## Common pitfalls
+
+- [[failure-modes/a-Si-H-passivation-degradation]] — process-budget constraints identical to M6
+- [[failure-modes/Cu-diffusion-into-c-Si]] — barrier requirements identical
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — longer finger length amplifies Cu surface area exposed to encapsulant
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — same chemistry, more finger length to corrode
+- [[failure-modes/FF-degradation-contact-resistance]] — higher current per cell makes ρc tolerance tighter
+- [[failure-modes/finger-adhesion-loss-after-DH]] — longer fingers stress adhesion more during thermal cycling
+- [[failure-modes/Jsc-loss-from-cap-stack-shading]] — Jsc loss scales with finger width × number of fingers; M10 designs already push 9–18 BB to spread current
+- [[failure-modes/Ni-barrier-pinholes]] — barrier-thickness target is geometry-independent
+- [[failure-modes/silver-supply-bottleneck]] — the per-W Ag burden of M10 SHJ is what makes the Ag→Cu transition urgent (ITRPV 2024)
+
+## Citing sources
+
+- [[sources/2021-goldschmidt-tech-learning-tw-pv]] — TW PV roadmap through M10
+- [[sources/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — CSEM M10 mini-module aging
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — industry M10 SHJ adoption snapshot
+- [[sources/2024-fraunhoferise-photovoltaics-report]] — Fraunhofer ISE annual PV report, M10 baseline
+- [[sources/2024-iea-pvps-trends-pv-applications]] — IEA PVPS market data, M10 dominance
+- [[sources/2024-itrpv-15th-edition-roadmap]] — ITRPV M10/G12 wafer-format roadmap
+- [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — CSEM extended aging, M10 plated Cu
+- [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — NREL reliability analysis, M10 cells
+- [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Ag→Cu transition on M10
+- [[sources/atotech-solar-industry-overview]] — supplier view, M10 SHJ economics
+- [[sources/notion-systems-solar-inkjet-overview]] — inkjet patterning on M10 SHJ

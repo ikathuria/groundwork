@@ -2,45 +2,64 @@
 type: failure-mode
 slug: Jsc-loss-from-cap-stack-shading
 severity: medium
-frequency_estimate: "ITRPV 2024: finger width 27 µm (2023) → 15 µm (2034) needed to recover ~1 % shading area. Plated Cu (NOBLE, Hatt 2021) achieves 25–30 µm finger width at production scale; SunDrive 2022 demonstrates 11 µm record-cell finger and pathway to <6 µm. Lorenz 2024: knotless screen-printed Ag now 23 µm shading width — fine-line gap closing rapidly."
-applies_to_methods: [IV-curve-measurement, EQE-measurement, screen-printed-Ag-paste, NOBLE-selective-Cu-plating, inkjet-mask-patterning]
-applies_to_reagents: [acid-Cu-sulfate-bath, tin-Sn-cap, silver-Ag-cap, low-T-Ag-paste-generic-SHJ-grade, Cu-paste-low-temperature]
-applies_to_step_kinds: [plate, encapsulate, measure]
-sources: [2023-taiyangnews-heterojunction-technology-report, 2023-tepner-printing-tech-csi-review, 2024-itrpv-15th-edition-roadmap, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer]
-tags: [shading, finger-width, Jsc, optical-loss, busbar-count, fine-line]
+frequency_estimate: "Designed shading 3–5 % for typical SHJ grids; each 5 µm of finger width adds ~0.1 mA/cm² Jsc loss. Plated Cu at 18 µm fingers (Maxwell/SunDrive) saves ~0.5 mA/cm² Jsc vs 40 µm screen-print Ag. Lorenz 2024: reducing nominal width 20→15 µm yields shading width 26→23 µm and Δη = +0.14 %abs."
+applies_to_methods: [Cu-electroplating-acid-bath, screen-printed-Ag-paste, NOBLE-selective-Cu-plating, IV-curve-measurement, EQE-measurement]
+applies_to_reagents: [Cu-paste-low-temperature, low-T-Ag-paste-generic-SHJ-grade, silver-Ag-cap, ITO-transparent-conductive-oxide]
+applies_to_step_kinds: [plating, screen-print, cap-deposition, characterization]
+sources: [2021-goldschmidt-tech-learning-tw-pv, 2023-taiyangnews-heterojunction-technology-report, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer, 2024-siliconpv-novel-shj-metallization-architectures, pvtech-metallization-challenges-cell-manufacturing]
+tags: [Jsc, shading, finger-width, cap-stack, optical-loss, fine-line]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Jsc loss from cap-stack shading
+# Jsc loss from finger / cap-stack shading
+
+**Slug:** `failure-modes/Jsc-loss-from-cap-stack-shading` · **Severity:** medium
 
 ## What it is
-The Cu/Sn/Ag finger-and-cap stack on the front side is opaque — its projected area on the cell directly subtracts from the active area for sunlight collection. For a typical SHJ cell with 27 µm finger width and 1 mm pitch, fingers cover ~2.7 % of the front, costing ~0.7 mA/cm² Jsc. Any cap-stack process that broadens the finger (LIP overplate, Sn cap on flanks, immersion Ag halo) increases shading. Conversely, narrower fingers improve Jsc but raise series resistance. The hypothesis target is "matching screen-printed silver" — meaning the Cu/Sn/Ag stack must achieve ≤30 µm shading width with ≤2 mΩ·cm² ρc, a balance currently demonstrated by NOBLE (25–30 µm, 0.1–1 mΩ·cm²) and SunDrive (≤11 µm with proprietary patterning).
+
+The metal grid + cap stack on the front of an SHJ cell shadows ~3–5 % of the active area. Optical Jsc loss scales with effective shaded width, so finger width and busbar count drive the trade-off between optical and resistive losses. Plated Cu's headline advantage — 18 µm fingers achievable (Maxwell/SunDrive 2023) vs 30–40 µm for fine-line screen-print Ag and 56 µm for pure Cu paste (Yacouba 2025) — translates directly into ~0.5 mA/cm² Jsc gain. The "cap-stack" nomenclature includes the Sn or Ag cap on plated Cu which adds a few additional micrometres to the shaded width if not deposited selectively.
 
 ## How it manifests
-- Jsc 0.2–0.5 mA/cm² lower than expected from quantum-efficiency model for the active area.
-- Finger profilometry shows wider-than-spec footprint (e.g., spec 25 µm, measured 35 µm with cap halo).
-- EQE measurement at finger-aligned vs finger-perpendicular illumination shows non-uniform response.
-- Total finger-shaded area >3 % of front (worst case 5–6 % for screen-printed Ag with 5BB busbars).
+
+- **Jsc reduction** proportional to finger geometry; ~0.1 mA/cm² per 5 µm of effective shading width.
+- **EQE reduction in the visible band** under the finger (spatially mapped EQE shows finger fingerprints).
+- **Δη penalty** — Lorenz 2024: Δη = +0.14 %abs gain from reducing 20 µm → 15 µm nominal finger width (shading width 26→23 µm).
+- **Cap-stack contribution** — Sn or Ag cap that overhangs the Cu finger increases the effective shading; selective Ag-on-Cu (immersion or LIP-Ag) is preferred over blanket deposition.
 
 ## How to detect it
-- Optical microscopy + image processing: measure finger width (W_finger) and shading width (W_shadow); shading is typically 5–8 µm wider than the bare finger due to cap-stack geometry.
-- [[../methods/IV-curve-measurement]] — Jsc deficit vs theoretical (active-area corrected).
-- [[../methods/EQE-measurement]] — finger-aligned scans; Jsc loss localizes.
-- 3D finger reconstruction by confocal microscopy or structured-illumination profilometry.
-- Compare to ITRPV roadmap: 2023 baseline 27 µm; 2034 target 15 µm.
 
-## Mitigation (specific actions, not vague advice)
-- Use NOBLE or SunDrive-style fine-line patterning (inkjet NaOH on PVD-Al for NOBLE; proprietary mask for SunDrive) — both achieve ≤30 µm.
-- Switch to multiwire / SmartWire interconnection (≥18 wires) — reduces finger-pitch sensitivity and allows narrower fingers; ITRPV projects busbarless 37 % market share by 2034 ([[2024-itrpv-15th-edition-roadmap]]).
-- For knotless screen-printed Ag: 15 µm nominal finger width is now printable ([[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]]) — Cu plating must beat or match.
-- Use pulse-reverse plating to keep finger walls vertical (aspect ratio ≥1.0) — reduces shading-width-to-conductivity-ratio (SunDrive's chemistry achieves AR 1.0–1.2 vs <0.6 previously).
-- Specify finger geometry: W_finger ≤25 µm at base, ≥7 µm height (aspect ratio ≥1.0); W_shadow ≤30 µm including cap.
-- Acceptance: total finger+busbar shading ≤2.5 % of front area; Jsc deficit ≤0.3 mA/cm² vs active-area-only model.
+- **1-sun Jsc measurement** — [[methods/IV-curve-measurement]]: the cell-level integrated metric.
+- **Spatially-resolved EQE / LBIC mapping** — [[methods/EQE-measurement]]: identifies finger shadow.
+- **Optical microscopy + image analysis** — measure effective finger width including any cap-stack overhang.
+- **Confocal profilometry** for finger geometry (width × height × area cross-section).
+- **Optics simulation** (e.g. PVlighthouse) — compute expected Jsc for the designed grid, compare to measured.
+- **Jsc gain from grid optimisation** — Lorenz 2024 reports Δjsc = +0.056 mA/cm² from knotless screen alone (Δwf ≈ 1.3 µm reduction).
 
-## Severity ranking justification
-Medium: causes ~1 %abs efficiency loss if uncontrolled but is fully recoverable by process tuning. The hypothesis target ("matching Ag screen-printed") is the right framing — Cu plating already wins on finger width at lab scale (NOBLE 25 µm vs Ag screen-print 27–40 µm) so the failure mode is more about "achieving the design width" than "the design width itself."
+## Mitigation
 
-## Sources
-- `[[2024-itrpv-15th-edition-roadmap]]` — finger-width roadmap; 27 → 15 µm by 2034.
-- `[[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]]` — knotless screen-print 15 µm nominal; shading 23 µm.
-- `[[2023-taiyangnews-heterojunction-technology-report]]` — finger width 18.1 µm (Risen Laser PTP) vs 40 µm screen-print; busbar-count trade-off.
-- `[[2023-tepner-printing-tech-csi-review]]` — printing-technology review.
+- **Plated Cu fingers ≤20 µm width** — NOBLE: 25–30 µm; SunDrive: 11 µm at the 25.54 % record device, <6 µm on improved patterning.
+- **Aspect-ratio engineering** — SunDrive prototype line: AR 1.0–1.2 (vs 0.6 lab); higher aspect maintains line conductance at narrow base width.
+- **Selective Ag/Sn cap on Cu** — immersion Ag (~200 nm, Hatt 2019 NOBLE) covers only the Cu finger top, no lateral overhang.
+- **Low-indium TCO + dielectric mask scheme** (Lachowicz 2024) — thin (~30 nm) ITO + dielectric layer simultaneously serves as antireflective + plating mask, optimising both shading and adhesion.
+- **Multibusbar (SMBB / 16BB / 18BB)** — increases interconnection contact area while reducing per-finger current, allowing line-resistance penalty to be relaxed for further finger thinning.
+- **Knotless fine-mesh screens** for paste arms — Lorenz 2024: 520 × 11 × 0° screen with 15 µm nominal openings.
+- **TCO + cap-stack indium reduction** — Goldschmidt 2021 flags ITO indium as the *next* bottleneck after Ag; AZO + thin ITO compromises improve both Jsc (less absorption) and resource sustainability (cascades to [[failure-modes/silver-supply-bottleneck]]).
+
+## Where it applies
+
+- Methods: [[methods/Cu-electroplating-acid-bath]], [[methods/screen-printed-Ag-paste]], [[methods/NOBLE-selective-Cu-plating]], [[methods/IV-curve-measurement]], [[methods/EQE-measurement]]
+- Reagents: [[reagents/Cu-paste-low-temperature]], [[reagents/low-T-Ag-paste-generic-SHJ-grade]], [[reagents/silver-Ag-cap]], [[reagents/ITO-transparent-conductive-oxide]]
+- Step kinds: plating, screen-print, cap-deposition, characterization
+
+## Severity rationale
+
+Medium. Shading is well-modeled, geometrically determined, and tractable — every percent of efficiency in the SHJ cell-design exercise comes from this calculation. The hypothesis's success threshold (Δη ≤ 0.5 %abs at 1000 h DH) does not directly hinge on Jsc, but plated Cu's narrow-finger advantage is one of the headline reasons the route is competitive at all. Severity is medium because the failure is *quantified* and *predictable* (no surprise mechanism), unlike the Cu-contamination failures.
+
+## Citing sources
+
+- [[sources/2021-goldschmidt-tech-learning-tw-pv]] — implicit via TCO indium-bottleneck discussion; the cap-stack indium share is part of the same resource-sustainability trade-off.
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — finger width 18 µm (plated) vs 40 µm (screen-print) directly ties to Jsc / shading.
+- [[sources/2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] — Δη = +0.14 %abs from 20→15 µm; Δjsc = +0.056 mA/cm² from knotless screen.
+- [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — finger geometry across paste types drives Jsc trade-off.
+- [[sources/pvtech-metallization-challenges-cell-manufacturing]] — finger-width discussion: 100–150 µm screen-print → narrower for less shading.

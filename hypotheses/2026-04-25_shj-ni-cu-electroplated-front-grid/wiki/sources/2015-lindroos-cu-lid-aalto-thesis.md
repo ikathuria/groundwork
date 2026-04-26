@@ -5,49 +5,63 @@ source_type: paper
 title: "Copper-related light-induced degradation in crystalline silicon"
 authors: ["Lindroos, J."]
 year: 2015
-doi: null
-url: "http://urn.fi/URN:ISBN:978-952-60-6130-6"
+doi: ""
+url: https://aaltodoc.aalto.fi/bitstreams/c6afc63c-b319-4ee4-8570-606d607b73f9/download
 raw_path: raw/papers/2015-lindroos-cu-lid-aalto-thesis.pdf
-tags: [copper-LID, fast-diffuser, c-Si, Cu3Si, nickel-diffusivity, contamination, foundational]
+tags: [Cu-LID, lifetime, Cu-Si, Ni-diffusivity, doctoral-thesis]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Copper-related light-induced degradation in crystalline silicon
 
+**Lindroos, J.** — *Doctoral dissertation, Aalto University School of Electrical Engineering, 37/2015*. ISBN 978-952-60-6130-6.
+
 ## Summary
-Doctoral dissertation (Aalto University, supervisor Hele Savin) compiling six publications that establish copper as a recombination-active impurity in crystalline silicon and characterise copper-related light-induced degradation (Cu-LID). Confirms that nickel diffuses essentially as fast as copper in silicon, that Cu-LID is a bulk (not surface) effect distinct from boron-oxygen LID, that it is stable at 200 °C, and that negative surface charge (corona or Al₂O₃) plus illumination can fully prevent it. This work is the canonical reference on why even tiny amounts of Cu reaching the c-Si bulk are catastrophic for lifetime — a foundational concern motivating Ni barrier layers in plated metallisation.
+
+Doctoral dissertation (Aalto, 2015) compiling six published articles on copper-related light-induced degradation (Cu-LID) in c-Si. Establishes Cu-LID as a *bulk* (not surface) recombination effect, distinct from boron-oxygen LID. Quantifies Cu and Ni diffusivities and solubilities in Si, identifies the recombination defect candidates (substitutional Cu, Cu₃Si precipitates, Cu/Si-SiO₂ interface defects), and demonstrates that Cu-LID can be eliminated by negative surface charging (corona or Al₂O₃) — but *not* by 200 °C annealing. Includes the headline result that **Ni diffuses as fast as Cu in Si** (Publication VI, *J. Appl. Phys.* 113, 204906). This is the canonical reference quantifying *why* even a leaky Ni barrier on SHJ would catastrophically degrade minority-carrier lifetime.
 
 ## Key claims
-- Interstitial Cu diffuses through a 400 µm B-doped wafer in <11 h at room temperature; intrinsic diffusivity DCu,in = 3×10⁻⁴·exp(−0.18 eV/kBT) cm²/s (Eq. 2.1, p. 15).
-- Cu precipitates as η′-Cu₃Si forming a deep recombination band between EC−0.15 and EC−0.58 eV; precipitates can form at 200 °C at the Si/thin-film-Cu interface (p. 18–19).
-- Ni interstitial diffusivity measured as DNi = (1.69±0.74)×10⁻⁴·exp(−0.15±0.04 eV/kBT) cm²/s in the 665–885 °C range (Eq. 4.4, p. 51) — comparable to copper, contradicting the older 0.47 eV value of Bakhadyrkhanov.
-- Cu-LID occurs in B-doped FZ-Si, P-doped FZ-Si, B- and Ga-doped Cz-Si and B-doped mc-Si — boron and oxygen are NOT required (Table 4.1, p. 36).
-- Cu-LID is dominated by bulk recombination: removing the degraded Si/SiO₂ interface and re-passivating with Al₂O₃ does not recover the lifetime (p. 39).
-- Light-induced Cu defects are stable at 200 °C — they do not anneal back like BO-LID (Sec. 4.5, p. 44).
-- Negative corona charging of -0.78 µC/cm² (or built-in negative charge from Al₂O₃) accumulates Cu at the Si/SiO₂ interface and completely prevents Cu-LID (p. 47–49). Phosphorus-diffusion gettering also eliminates Cu-LID in mc-Si.
+
+- Interstitial Cu diffusivity in intrinsic/n-type Si: D_Cu,in(T) = (3.0±0.3)×10⁻⁴ exp(−0.18 eV / k_B T) cm²/s (Eq. 2.1) — among the highest of any 3d transition metal in Si.
+- B-doped p-Si (NA < 10¹⁷ cm⁻³): effective Cu diffusivity follows Eq. 2.2; Cu can cross a 400 µm wafer with [B]=4×10¹⁵ cm⁻³ in <11 h at room temperature.
+- Cu solubility: S_Cu(T) = 5×10²² exp(2.4 − 1.49 eV/k_B T) cm⁻³ (500–800 °C).
+- Cu defect levels in Si: Cu_i (E_C −0.15 to −0.20 eV); Cu_s (E_V +0.20–0.23 and +0.41–0.46 eV); Cu_s Cu_i₃ complex (E_V +0.07 eV); Cu₃Si precipitate band (E_C −0.15 to −0.58 eV).
+- Cu-LID is "predominantly a bulk recombination effect, and the formed defects are found to be stable at 200 °C" — i.e., damp-heat aging at 85 °C will *not* anneal out Cu-LID.
+- Cu-LID disappears under negative surface charging (corona or Al₂O₃), but BO-LID does not — Cu-LID and BO-LID are mechanistically distinct.
+- Cu-LID activation energy depends on Si doping concentration; effective Cu diffusivity sets the rate.
+- **Publication VI:** Ni diffuses as fast as Cu in Si — implies a leaky Ni barrier (or out-diffusing Ni from the cap stack) carries its own bulk-recombination risk, not just Cu.
 
 ## Methods used
-- [[../methods/minority-carrier-lifetime-photoluminescence]] — QSSPC and µ-PCD lifetime tracking under halogen and bias-laser illumination
-- [[../methods/SIMS-depth-profile]] — TXRF chemical analysis of near-surface Cu
-- [[../methods/IV-curve-measurement]] — referenced for solar-cell-level LID effects
+
+- [[methods/minority-carrier-lifetime-photoluminescence]] — primary characterisation tool across all six publications (μ-PCD, QSSPC, photoluminescence).
+- [[methods/SIMS-depth-profile]] — referenced for Cu / Ni profiling in bulk Si (TXRF used in Publication III).
 
 ## Reagents
-- [[../reagents/a-Si-H-passivation]] — context: surface passivation stability is needed to isolate bulk vs surface LID
+
+- [[reagents/Cu3Si-intermetallic]] — copper precipitate phase (η′-Cu₃Si) responsible for the deep defect band E_C −(0.15–0.58) eV.
 
 ## Organisms / substrates
-- [[../organisms/monocrystalline-Si-wafer-p-type]] — B-doped Cz-Si (low- and high-resistivity), Ga-doped Cz-Si, B-doped mc-Si
-- [[../organisms/monocrystalline-Si-wafer-n-type]] — high-resistivity P-doped FZ-Si
+
+- [[organisms/monocrystalline-Si-wafer-p-type]] — boron-doped Cz-Si and gallium-doped Cz-Si wafers; multicrystalline B-doped Si.
+- [[organisms/monocrystalline-Si-wafer-n-type]] — n-type Si used in some publications for comparison.
 
 ## Failure modes flagged
-- [[../failure-modes/Cu-diffusion-into-c-Si]] — entire thesis
-- [[../failure-modes/Cu-LID-light-induced-degradation]] — central topic; bulk-recombination defect, stable at 200 °C
-- [[../failure-modes/Cu3Si-formation-at-Si-interface]] — η′-Cu₃Si begins to form at 200 °C at thin-film-Cu/Si interface
-- [[../failure-modes/Voc-degradation-Cu-contamination]] — minority-carrier lifetime collapse from interstitial Cu
+
+- [[failure-modes/Cu-LID-light-induced-degradation]] — the entire thesis. Even sub-ppb Cu in the bulk causes minority-carrier lifetime collapse under illumination; defects stable at 200 °C.
+- [[failure-modes/Cu-diffusion-into-c-Si]] — quantitative diffusivity / solubility data establishing that any Cu reaching the Si bulk reaches the entire wafer.
+- [[failure-modes/Voc-degradation-Cu-contamination]] — Cu-LID manifests as Voc and Jsc loss in finished cells.
 
 ## Supports / contradicts
-- Supports: [[2014-rehman-nicu-plating-csi-review]], [[2022-karas-cu-outdiffusion-damp-heat]], [[2019-karas-damp-heat-degradation-shj-cu]]
-- Supports: [[2018-electrochemsci-barrier-properties-electroplated-ni]] (motivates Ni barrier requirement)
+
+- **Supports:** [[sources/2014-rehman-nicu-plating-csi-review]] — Rehman invokes Cu's "highly active recombination centers" as motivation for the Ni barrier; Lindroos provides the quantitative substrate.
+- **Supports:** [[sources/2018-electrochemsci-barrier-properties-electroplated-ni]] — Cheng shows when Cu reaches the Si interface (Cu₃Si formation); Lindroos shows what happens once it does.
+- **Supports:** [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — SunDrive's argument that the SHJ a-Si:H + TCO stack acts as a Cu barrier rests on the assumption that *no* Cu reaches the Si bulk; Lindroos quantifies why that is non-negotiable.
 
 ## Notable quotes
-- "Cu-LID is determined to be predominantly a bulk recombination effect, and the formed defects are found to be stable at 200°C." — abstract, p. iii
-- "At RT, such out-diffusion has been observed to occur within a few hours to several days depending on the wafer thickness and the doping concentration." — p. 16
-- "Although 45 min at 560°C predicts dissolution of precipitates smaller than 420 nm, only partial dissolution of heterogeneous precipitates has been observed at 360−560°C." — p. 18
+
+> "Cu-LID is determined to be predominantly a bulk recombination effect, and the formed defects are found to be stable at 200°C. Slower Cu-LID is observed in Ga-Si compared to B-Si, suggesting that Cu-LID formation is limited by the effective copper diffusivity." — *Abstract*
+
+> "Even though the boron doping decreases the diffusivity, CuB pairs remain unstable at RT, allowing copper to diffuse through a 400 μm wafer with [B]=4×10¹⁵ cm⁻³ in less than 11 h." — *p. 16*
+
+> "This work confirms that nickel diffuses as fast as copper in silicon, emphasizing the importance of contamination control in silicon-based devices." — *Abstract*

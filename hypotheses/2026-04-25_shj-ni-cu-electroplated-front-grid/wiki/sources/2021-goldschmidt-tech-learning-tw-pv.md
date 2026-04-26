@@ -3,51 +3,71 @@ type: source
 id: 2021-goldschmidt-tech-learning-tw-pv
 source_type: paper
 title: "Technological learning for resource efficient terawatt scale photovoltaics"
-authors: ["Jan Christoph Goldschmidt", "Lukas Wagner", "Robert Pietzcker", "Lorenz Friedrich"]
+authors: ["Goldschmidt, J. C.", "Wagner, L.", "Pietzcker, R.", "Friedrich, L."]
 year: 2021
-doi: "10.1039/d1ee02497c"
-url: "https://doi.org/10.1039/d1ee02497c"
+doi: 10.1039/D1EE02497C
+url: https://pubs.rsc.org/en/content/articlepdf/2021/ee/d1ee02497c
 raw_path: raw/papers/2021-goldschmidt-tech-learning-tw-pv.pdf
-tags: [terawatt, silver-bottleneck, learning-rates, REMIND-model, market-context, indium, perovskite-tandem, industry-roadmap]
+tags: [TW-PV, silver-bottleneck, indium, learning-curve, Goldschmidt, EE-and-S, motivation]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Technological learning for resource efficient terawatt scale photovoltaics
 
+**Goldschmidt, J. C., Wagner, L., Pietzcker, R., Friedrich, L.** — *Energy & Environmental Science 14:5147–5160, 2021*. DOI: 10.1039/D1EE02497C
+
 ## Summary
-Goldschmidt et al. couple the REMIND integrated-assessment energy/economy model with bottom-up PV learning curves (efficiency LR 6.7%, Ag LR ~20%, system-price LR 15–25%, CED LR 10–14%) to ask whether 80–170 TWp of PV by 2100 is feasible from a resources perspective. Headline finding: with continued historical learning rates the ambitious 1.5 °C-compatible deployment is feasible, but **silver would explode without learning** — running into the global mine production ceiling as early as 2027 (high scenario) or 2051 (low scenario) — and float-glass capacity must roughly double. The paper projects that average per-module Ag consumption needs to fall from ~100 mg/cell in 2018 to 0.7–2.9 mg/Wp by 2100, "requiring predominantly Ag-free technologies," and explicitly names plating and FlexTrail printing as enablers. Indium is also flagged for perovskite-Si tandems with TCO-rich stacks. This is the most rigorous quantitative case for the SHJ-Cu pathway from the resource-economics side.
+
+Open-access EE&S analysis using the REMIND integrated-assessment model to project resource demands of TW-scale PV (20–80 TWp by 2050; 80–170 TWp by 2100). Goldschmidt et al. quantify three potential bottlenecks — energy, float-glass, and *silver* — and conclude that without continued technological learning rates (LR_Ag ≥ 15%) PV silver demand exceeds global production by 2027 (worst case) or 2051 (best case). Argues *plating* and *advanced printing technologies* are the only known routes that bring per-Wp Ag down enough to be sustainable. The companion academic-rigor counterpart to Verlinden 2020.
 
 ## Key claims
-- Cost-efficient 1.5 °C mitigation requires 20–80 TWp of installed PV by 2050 and 80–170 TWp by 2100 (REMIND scenarios).
-- Without continued learning, silver demand of the PV industry exceeds today's global mine production as early as 2027 (high scenario) or 2051 (low scenario).
-- 2018 baseline: 100 mg Ag per 156×156 mm² cell, total industry consumption 1959 t Ag = 7.9% of global mine production (28,037 t).
-- Projected Ag/Wp must fall to 3.9–8.9 mg/Wp by 2030 and 0.7–2.9 mg/Wp by 2100 to stay within reasonable supply boundaries.
-- ITRPV 2020 path of paste/screen optimization caps out around 7.8 mg Ag/Wp; deeper reductions require **plating** (~1 mg/Wp class) or FlexTrail printing (0.05 mg/Wp) or perovskite all-Al cells.
-- Under continued learning, PV manufacturing energy demand peaks at 8–12% of global electricity (2030, ambitious scenario) and falls to 4–11% of the cumulative 1.5 °C CO₂ budget for buildout.
-- Even with 70% bifacial-module market share, full glass-glass deployment requires float-glass capacity expansion (current ~84 Mt/yr; PV demand could exceed this by 2034 in ambitious scenario).
-- Indium becomes the next critical element in perovskite-Si and perovskite-perovskite tandems via TCO recombination contacts; tunnel diodes or C60/SnO₂ alternatives are under investigation.
-- System-price LR of 15/20/25% gives 2050 yearly investments of 361/263/188 B$ (Scenario 1) up to 766/515/337 B$ (Scenario 2) — comparable to top oil & gas company revenues.
-- Module efficiency must reach 27.8–30.7% by 2050 and 33.5–36.3% by 2100, exceeding the 29.4% single-junction Si limit — multijunction (perovskite/Si) is required.
+
+- **Deployment scenarios:** 20–80 TWp installed PV by 2050; 80–170 TWp by 2100 (cost-optimal under REMIND with welfare-maximisation constraints).
+- **Annual production peak:** 1–2 TW/year after 2030, rising to 3–9 TW/year of new modules by 2100 (factoring 25-year replacement).
+- **2018 PV Ag consumption:** 1,959 t Ag = 7.9% of 2018 global Ag mine production (28,037 t).
+- **Per-cell Ag (2018, 156×156 mm² baseline):** 100 mg/cell.
+- **Ag bottleneck — without learning:** if only efficiency increases reduce per-Wp Ag (no LR_Ag improvement), PV demand exceeds total global production **by 2027 (Scenario 2)** or **by 2051 (Scenario 1)**.
+- **Ag bottleneck — with learning:** at LR_Ag = 15% (Scenario 2), total cumulative Ag stays below 18,000 t; at LR_Ag = 25% (Scenario 1), demand stays roughly at today's level.
+- **Per-Wp Ag projections:** 3.9–8.9 mg/Wp by 2030; 0.7–2.9 mg/Wp by 2100 (averaged across scenarios).
+- **Plating's role:** explicitly cited as one of the technologies (alongside FlexTrail printing at 0.05 mg/Wp and Ag-free perovskite paths) that enable per-Wp Ag below standard screen-printing minimums.
+- **Indium bottleneck:** front-side TCOs (ITO, IWO) in SHJ + perovskite tandems use **indium**; "Indium has been identified as critical for much lower installed capacities" — i.e. the SHJ ITO front layer itself is a future bottleneck even after the Ag problem is solved by Cu plating.
+- **Module-efficiency trajectory:** 24.1–25.9% by 2030; 27.8–30.7% by 2050; 33.5–36.3% by 2100 (latter requires multi-junction; single-junction Si is capped at 29.4% Auger limit).
+- **PERC LCA baseline:** GWP 1.27 kg CO₂-eq/Wp for monocrystalline Si PERC (China production); ~10–14% LR for embodied energy / GHG.
+- **Ag learning rate (LR_Ag) in screen printing:** ~20% historically — the empirical baseline against which Cu plating's contribution is measured.
 
 ## Methods used
-- (none — modelling/literature analysis paper)
+
+- [[methods/screen-printed-Ag-paste]] — the baseline whose 100 mg/cell figure anchors the analysis.
+- [[methods/Cu-electroplating-acid-bath]] — explicitly named as one of the routes to per-Wp Ag below screen-printing's minimum.
+- [[methods/electroplated-Ni-Cu-stack]] — implicit; covered in the "plating" trajectory.
 
 ## Reagents
-- (none directly; discusses Ag and In as critical materials at the industry level)
+
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — implicit incumbent.
+- [[reagents/ITO-transparent-conductive-oxide]] — flagged as the *next* indium-driven bottleneck after Ag.
+- [[reagents/IWO-tungsten-doped-indium-oxide]] — same indium-bottleneck implication.
 
 ## Organisms / substrates
-- (none — technology-class analysis)
+
+- [[organisms/SHJ-cell-M6]] — 156×156 baseline; aged but the per-cell Ag value (100 mg) is sourced from this cell size.
+- [[organisms/SHJ-cell-M10]] — emerging dominant format the analysis projects.
 
 ## Failure modes flagged
-- [[../failure-modes/silver-supply-bottleneck]] — quantitative silver-criticality model; the central reason this hypothesis matters at the 3 TW/yr scale.
+
+- [[failure-modes/silver-supply-bottleneck]] — quantified canonical citation (2027 / 2051 crossover dates).
+- [[failure-modes/Jsc-loss-from-cap-stack-shading]] — implicit via TCO / front-cap discussion in indium section.
 
 ## Supports / contradicts
-- Supports: [[2020-verlinden-future-challenges-tw-pv]] (independently arrives at the same Ag-bottleneck conclusion with a different methodology — REMIND model vs. linear extrapolation)
-- Supports: [[2024-itrpv-15th-edition-roadmap]]
-- Supports: [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]
-- Supports: [[2025-yacouba-shj-silver-free-metallization-progPV]]
+
+- **Supports:** [[sources/2020-verlinden-future-challenges-tw-pv]] — Verlinden's 100% of Ag at 1 TW/year crosses with Goldschmidt's 2027 worst-case crossover under no learning; the two papers are mutually-reinforcing 2020/2021 framings of the same bottleneck.
+- **Supports:** [[sources/2024-itrpv-15th-edition-roadmap]] — ITRPV's 18% of world Ag in 2023 is on Goldschmidt's projected trajectory (2018: 7.9% → 2023: ~18% with growth + per-cell reduction).
+- **Supports:** [[sources/2024-fraunhoferise-photovoltaics-report]] — Fraunhofer ISE PV Report's experience-curve learning rate of 25.7% is consistent with Goldschmidt's LR assumptions.
 
 ## Notable quotes
-- "If only the increase in device efficiency reduces the amount of needed silver, the demand of PV industry will exceed current production. With continued technological learning, however, the demand could stay at the same order of magnitude as current demand." — Fig. 3 caption, p. 5152
-- "A further reduction could be achieved with plating or advanced printing technologies, such as FlexTrail printing, with 0.05 mg Wp⁻¹." — p. 5155
-- "Cost efficient climate change mitigation requires total photovoltaic installations in the range of 20–80 TWp in the year 2050 and 80–170 TWp until 2100. Based on the current technology, such a TW-scale PV industry would be running into resource constraints." — Conclusions, p. 5156
-- "Depending on the learning rate, the global silver demand used for PV production could stay at roughly current levels, or increase by a factor of 9, which most likely would not be feasible." — p. 5156
+
+> "If the silver consumption per cell remained constant such that only device efficiency increases reduce the per Wp silver consumption, the demand of the PV industry will exceed today's global silver production as early as in the year 2027 (Scenario 2) or in the year 2051 (Scenario 1)." — *p. 5151*
+
+> "A further reduction could be achieved with plating or advanced printing technologies, such as FlexTrail printing, with 0.05 mg Wp⁻¹." — *p. 5155*
+
+> "The annual silver consumption of the PV industry was 1959 t in 2018, corresponding to 7.9% of the total annual silver mine production of 28 037 t." — *p. 5151*

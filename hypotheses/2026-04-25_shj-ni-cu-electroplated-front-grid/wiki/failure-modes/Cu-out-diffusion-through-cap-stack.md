@@ -2,44 +2,60 @@
 type: failure-mode
 slug: Cu-out-diffusion-through-cap-stack
 severity: high
-frequency_estimate: "Karas 2022: confirmed Cu accumulation at outer Sn surface and Cu-Sn IMC + Kirkendall voids every 1–2 µm after 2000 h DH; Cu also reaches outer surface of 1 µm Ag cap after 1000 h DH on Ni-Cu-Ag stacks via grain-boundary diffusion. SunDrive ARENA 2022: 2000–3000 h DH passes with Sn/Ag-capped Cu — direct contradiction at module/process level."
-applies_to_methods: [damp-heat-aging-1000h, extended-damp-heat-IEC63209, SIMS-depth-profile, EL-electroluminescence-imaging]
-applies_to_reagents: [acid-Cu-sulfate-bath, tin-Sn-cap, silver-Ag-cap, EVA-encapsulant, POE-polyolefin-encapsulant]
-applies_to_step_kinds: [plate, encapsulate, age, measure]
-sources: [2018-electrochemsci-barrier-properties-electroplated-ni, 2022-karas-cu-outdiffusion-damp-heat]
-tags: [Cu-outdiffusion, IMC, Kirkendall-voids, grain-boundary-diffusion, capping-layer, damp-heat]
+frequency_estimate: "Karas 2022 EDS detects Cu accumulation on outer Sn or Ag cap surface after 1000–3500 h DH at 85°C/85% RH. Cu/Sn samples form Kirkendall voids every 1–2 µm at the Cu–Sn interface; Cu/Ag samples show Cu mobility through Ag grain boundaries with EVA acetic acid acting as a sink reaction."
+applies_to_methods: [Cu-electroplating-acid-bath, light-induced-plating, electroplated-Ni-Cu-stack, damp-heat-aging-1000h, SIMS-depth-profile, EL-electroluminescence-imaging]
+applies_to_reagents: [silver-Ag-cap, tin-Sn-cap, EVA-encapsulant, POE-polyolefin-encapsulant, acid-Cu-sulfate-bath]
+applies_to_step_kinds: [plating, cap-deposition, encapsulation, accelerated-aging]
+sources: [2019-karas-damp-heat-degradation-shj-cu, 2022-karas-cu-outdiffusion-damp-heat]
+tags: [Cu-outdiffusion, cap-stack, Sn-cap, Ag-cap, Kirkendall-voids, IMC, Karas]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Cu out-diffusion through the cap stack
+# Cu out-diffusion through Sn / Ag cap stack
+
+**Slug:** `failure-modes/Cu-out-diffusion-through-cap-stack` · **Severity:** high
 
 ## What it is
-The Sn or Ag cap deposited on a plated Cu finger is supposed to seal the Cu in. Karas 2022 demonstrated by SEM cross-section, EDS elemental mapping, and SIMS that *both* caps fail in DH — Cu actively migrates *upward* through them. For Sn caps the mechanism is Cu-Sn intermetallic compound (IMC) growth (ε-Cu₃Sn, η-Cu₆Sn₅) accompanied by Kirkendall void formation at the Cu-Cu₃Sn interface, accelerated by impurities (S, Cl, C, O) carried over from sulphate plating baths. For Ag caps the mechanism is grain-boundary diffusion driven by a chemical sink reaction at the outer surface (Cu-acetic-acid corrosion); supported by analogy to leadframe-package and historical daguerreotype literature. Once Cu reaches the cap exterior, it becomes mobile in the encapsulant and is the source for [[lateral-Cu-edge-migration]] and [[Cu-diffusion-into-c-Si]].
+
+The Sn or Ag cap deposited above plated Cu is intended to prevent Cu oxidation (and to enable solderability), but Karas 2022's EDS / SIMS forensic evidence shows that Cu migrates **upward** through the cap during damp-heat aging and accumulates at the outer cap surface and into the encapsulant. Mechanism is encapsulant-dependent: in Sn caps, low-temperature Cu-Sn interdiffusion forms ε-Cu₃Sn and η-Cu₆Sn₅ intermetallics with Kirkendall voids every 1–2 µm at the Cu–Cu₃Sn interface; in Ag caps, Cu has minimal solid-solubility in Ag below ~700 °C so transport is via grain boundaries, with acetic acid from EVA hydrolysis acting as a chemical reaction sink at the surface to drive the outdiffusion. Bath impurities (S, Cl, C, O from sulfate-acid plating) enhance void formation.
 
 ## How it manifests
-- SEM cross-section: voids at Cu-Sn interface every 1–2 µm after 2000 h DH on Ni-Cu-Sn stacks ([[2022-karas-cu-outdiffusion-damp-heat]] Fig. 1, Fig. 2).
-- EDS elemental map: Cu accumulated at the outer Sn or Ag surface (Karas Fig. 3 for Ag-cap).
-- SIMS depth profile in c-Si under contact: ~3× higher Cu in EVA vs POE on matched samples (Karas Fig. 4).
-- pFF drops 4.7 %abs on Ni-Cu-Sn EVA cells at 3500 h DH; J02 increases >6×.
-- Cu₆Sn₅ and Cu₃Sn phase peaks in XRD at degraded contacts.
+
+- **EDS line-scan with Cu signal at outer Sn or Ag surface** after 1000–3500 h DH (Karas 2022). Cu also lining voids in EVA above the finger — i.e. Cu is actively mobilised into the encapsulant.
+- **Kirkendall microvoids** in cross-section every 1–2 µm at the Cu–Sn interface (TEM/STEM).
+- **pFF drop and J02 rise** at the cell level — see [[failure-modes/Voc-degradation-Cu-contamination]]. Karas 2022: pFF 82.1 → 77.0 % over 2000 h DH on Cu/Sn/EVA samples; J02 doubled.
+- **Encapsulant chemistry-dependent severity**: EVA encapsulant gives ~3× higher c-Si surface Cu concentration than POE after 3500 h DH; POE sister cells did not appreciably degrade.
+- **EL dark spots** under the affected fingers; visible discoloration of the cap surface in Sn (Cu₃Sn / Cu₆Sn₅ formation) and tarnished Ag.
 
 ## How to detect it
-- SEM + EDS cross-section of fingers before/after DH; voids at the Cu-cap interface or Cu signal at the outer cap surface are diagnostic.
-- [[../methods/SIMS-depth-profile]] of c-Si under contact — primary quantitative test (Karas 2022 protocol).
-- [[../methods/damp-heat-aging-1000h]] extended to 2000–3500 h; failure mode is rate-limited and underdetected at 1000 h.
-- XRD on contact regions for IMC phase identification.
-- Optical inspection: discoloration of cap surface.
 
-## Mitigation (specific actions, not vague advice)
-- For Sn caps: co-deposit ~9 at.% Ni into the Cu to stabilize (Cu,Ni)₆Sn₅ IMC phase and suppress Kirkendall void formation ([[2022-karas-cu-outdiffusion-damp-heat]] mitigations section).
-- For Ag caps: engineer grain-boundary structure (smaller grains, denser deposit) — standard immersion Ag is grain-boundary-leaky.
-- Reduce plating-bath impurities: use high-purity acid Cu sulfate bath with ≤1 ppm S, Cl, C, O; the impurity inventory directly seeds Kirkendall voids.
-- Use POE encapsulant — eliminates the acetic-acid sink reaction that drives upward grain-boundary diffusion in Ag caps ([[EVA-acetic-acid-corrosion]]).
-- Increase Ni barrier to ≥120 nm at the bottom of the stack so any Cu mobilized at the top cannot also leak out the bottom (Cheng 2018, [[2018-electrochemsci-barrier-properties-electroplated-ni]]).
-- Verify Karas's regime: extended DH (2000+ h, 2× IEC) with SEM + SIMS at intermediate timepoints (500, 1000, 2000 h).
+- **EDS line-scan / mapping on FIB cross-section** through finger after DH — the Karas 2022 forensic protocol. Track Cu/Sn/Ag/encapsulant elemental profile; Cu accumulating at cap outer surface or in encapsulant flags this failure.
+- **SIMS depth profile** — [[methods/SIMS-depth-profile]] (PHI Adept 1010, O₂⁺, 60×60 µm raster, 19×19 µm detection): Cu signal at the cell surface and into the c-Si bulk, especially at 0/250/500/750/1000 h checkpoints during DH.
+- **EL imaging** — [[methods/EL-electroluminescence-imaging]] localises degradation to specific fingers; harvest those for cross-section analysis.
+- **STEM/EDS for Kirkendall void density** at Cu–Sn or Cu–Ag interface — confirm IMC formation and void distribution.
+- **Cap surface visual / spectral inspection** — Cu₃Sn / Cu₆Sn₅ produce surface discoloration; tarnish on Ag is a leading indicator.
 
-## Severity ranking justification
-High: documented to cause >4 %abs pFF loss in EVA-encapsulated Ni-Cu-Sn at 3500 h. The mechanism is unambiguously real (cross-section imaging proof). Note the cross-source contradiction — SunDrive's POE/glass-glass mini-modules pass 2000–3000 h DH with Sn/Ag-capped Cu, suggesting that with the right encapsulant and edge-seal the failure mode is suppressed below detection. This contradiction must be resolved at Pass 3 by sampling at extended DH timepoints with SIMS.
+## Mitigation
 
-## Sources
-- `[[2022-karas-cu-outdiffusion-damp-heat]]` — definitive paper; mechanism, SEM/EDS/SIMS data, mitigations.
-- `[[2018-electrochemsci-barrier-properties-electroplated-ni]]` — analogous failure mode for the inverted (downward) stack and rationale for Ni barrier integrity.
+- **Encapsulant change EVA → POE** — Karas 2019/2022 directly: POE removes the acetic-acid sink that drives Cu outdiffusion; ~3× lower Cu in c-Si and no measurable pFF drop after 1000 h DH. See [[reagents/POE-polyolefin-encapsulant]].
+- **Thicker Sn cap** with Cu₆Sn₅ as a self-limiting barrier (Karas 2022 suggests engineering the cap so that IMC growth slows once a continuous Cu₆Sn₅ layer forms).
+- **Ni-doped Cu** to form stable (Cu,Ni)₆Sn₅ at the Sn interface — suppresses Kirkendall void formation.
+- **Bath impurity control** — Karas 2022 explicitly attributes void formation to S, Cl, C, O carried over from the plating bath; use semiconductor-grade reagents and run periodic activated-carbon treatment of [[reagents/acid-Cu-sulfate-bath]] (per the Atotech Cupracid procedure: 0.2 kg/100 L plating-grade carbon).
+- **Edge sealing of glass-glass modules** with polyisobutylene — Lachowicz 2024 showed DH degradation initiates at unsealed module edges; edge seal reduces moisture ingress that drives encapsulant hydrolysis.
+- **Thicker Ag cap with controlled grain size** to reduce grain-boundary fast paths; immersion Ag at ~200 nm (Hatt 2019 NOBLE) is the demonstrated minimum.
+
+## Where it applies
+
+- Methods: [[methods/Cu-electroplating-acid-bath]], [[methods/light-induced-plating]], [[methods/electroplated-Ni-Cu-stack]], [[methods/damp-heat-aging-1000h]], [[methods/SIMS-depth-profile]], [[methods/EL-electroluminescence-imaging]]
+- Reagents: [[reagents/silver-Ag-cap]], [[reagents/tin-Sn-cap]], [[reagents/EVA-encapsulant]], [[reagents/POE-polyolefin-encapsulant]]
+- Step kinds: plating, cap-deposition, encapsulation, accelerated-aging
+
+## Severity rationale
+
+High. Cu out-diffusion through the cap is the *only* documented failure mode that has been directly observed by EDS / SIMS in encapsulated, properly Ni-barriered Cu-plated cells under standard 1000 h DH (Karas 2022): a Ni-Cu-Sn / EVA module lost 4.7 %abs pFF and J02 increased >6× while the POE sister did not degrade. Severity is high because the failure is encapsulant-driven and tractable with a POE switch, but the Karas 2022 evidence is the most direct contradiction in the wiki to the hypothesis's "passes 1000 h DH" target.
+
+## Citing sources
+
+- [[sources/2019-karas-damp-heat-degradation-shj-cu]] — direct precursor: Cu-plated SHJ cells degrade more under DH than Ag screen-printed sisters; degradation prevented when encapsulant is POE rather than EVA.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — the SIMS/EDS forensic follow-up. EDS detects Cu on outer Sn / Ag cap surface; SIMS detects Cu in c-Si; EVA gives ~3× higher Cu surface concentration than POE. Mechanisms: Cu-Sn IMC + Kirkendall voids; Cu-Ag grain-boundary transport with EVA acetic-acid sink. Mitigations: thicker Sn (Cu₆Sn₅ self-limiting), Ni-doped Cu ((Cu,Ni)₆Sn₅), or POE substitution.

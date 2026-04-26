@@ -2,49 +2,66 @@
 type: failure-mode
 slug: Ni-barrier-pinholes
 severity: high
-frequency_estimate: "Hsieh 2017: electroless Ni-P below 45 nm is discontinuous; only above 45 nm is the film fully continuous. Cheng 2018: Cu/Ni(60 nm)/textured-Si shows Cu₃Si already at 300 °C — consistent with pinhole-mediated Cu transport. Rehman 2014 reviews ghost-plating root causes (SiNx pinholes, mechanical-stress cracks)."
-applies_to_methods: [electroless-Ni-deposition, electroplated-Ni-Cu-stack, NOBLE-selective-Cu-plating, Ni-sputter-deposition, SIMS-depth-profile, four-point-probe-sheet-resistance]
+frequency_estimate: "Cheng 2018 — 60 nm electroplated Ni shows pinhole-driven Cu₃Si formation at 300 °C, 120 nm holds. Continuous coverage thresholds reported in the literature: ~30 nm sputtered, ~45 nm electroless Ni-P (Jeon 2017), ≥120 nm electroplated Ni (Cheng)."
+applies_to_methods: [electroplated-Ni-Cu-stack, electroless-Ni-deposition, Ni-sputter-deposition, light-induced-plating, SIMS-depth-profile]
 applies_to_reagents: [nickel-sulfamate-bath, nickel-phosphorus-NiP-electroless, ITO-transparent-conductive-oxide]
-applies_to_step_kinds: [plate, etch, anneal, measure]
-sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2018-electrochemsci-barrier-properties-electroplated-ni, fisher-AA8902018-nickel-sulfamate-hydrate, pvtech-metallization-challenges-cell-manufacturing]
-tags: [Ni-barrier, pinholes, ghost-plating, continuity, sub-100nm, hypothesis-relevant]
+applies_to_step_kinds: [plating, characterization]
+sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2018-electrochemsci-barrier-properties-electroplated-ni, 2018-pv-international-metallization-shj, 2022-arena-sundrive-copper-metallisation-demonstration, 2022-karas-cu-outdiffusion-damp-heat, fisher-AA8902018-nickel-sulfamate-hydrate]
+tags: [Ni-barrier, pinholes, micro-voids, coverage, thickness-threshold, high]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Ni barrier pinholes
+# Ni barrier pinholes / discontinuity
+
+**Slug:** `failure-modes/Ni-barrier-pinholes` · **Severity:** high
 
 ## What it is
-The Ni barrier between Cu and the SHJ cell stack must be a continuous, dense film. Pinholes — small (sub-100 nm) gaps in coverage — are direct percolation pathways for Cu transport during anneal, soldering, or DH. Pinholes arise from (i) sub-critical thickness (electroless Ni-P below 45 nm is discontinuous per [[2017-jeon-electroless-ni-front-metallization]]), (ii) substrate-surface defects (native-oxide patches, particles, mechanical scratches), (iii) bath additive imbalance (organic levellers/brighteners affecting nucleation density), and (iv) hydrogen co-evolution at high current density. Bartsch 2010 names Ni "thickness, coverage, homogeneity" as the three parameters whose insufficiency lets Cu through. The hypothesis specifies "sub-100 nm electroplated nickel barrier" — this is in the regime where pinhole density is the gating parameter, and Cheng 2018's data shows 60 nm Ni already fails at 300 °C anneal.
+
+The Ni barrier in a Ni/Cu plated stack is only as good as its weakest spot. Pinholes (point discontinuities, ~10 nm to ~1 µm), micro-voids (Geissbühler 2018 reports these as the dominant adhesion-loss mechanism), and grain-boundary fast-paths constitute discrete leakage pathways through which Cu can reach the underlying TCO or c-Si during plating, anneal, or accelerated aging. Pinhole density is current-density and additive-dependent; sulfamate Ni baths are engineered for low-stress, low-pinhole films, but no electroplated Ni at sub-100 nm is pinhole-free without verification. **This is the failure mode that, per Cheng 2018, threatens the hypothesis's sub-100 nm Ni claim** — the canonical contradiction in the open-questions section of `hypothesis.md`.
 
 ## How it manifests
-- Ghost plating ("parasitic plating"): Cu nuclei form at unintended locations, indicating bath access through pinholes ([[2014-rehman-nicu-plating-csi-review]]).
-- Cu₃Si peaks in XRD at temperatures below the bulk-Ni-barrier threshold (Cheng 2018 detected Cu₃Si in 60 nm Ni at 300 °C vs 400 °C for 120 nm).
-- SIMS of c-Si shows localized Cu spikes (under pinholes) rather than uniform tail.
-- pFF degradation correlates with pinhole density measured by Cu-displacement decoration test (electrochemical: bare Si exposed to Cu²⁺ solution forms Cu deposits at every pinhole).
-- Sheet-resistance non-uniformity across the cell when measured by 4-point-probe.
+
+- **Cu₃Si nucleation at pinhole sites** under thermal stress (Cheng 2018: 60 nm Ni shows Cu₃Si peaks at 300 °C — pinholes are the proximate failure mechanism). See [[failure-modes/Cu3Si-formation-at-Si-interface]].
+- **Local Cu ingress to c-Si** under DH, surfaced by SIMS as discrete high-Cu regions and by EL as dark spots under specific fingers (Karas 2022).
+- **Adhesion loss / micro-void formation** in plated Ni adhesion layers on TCO; Geissbühler 2018 reports "evidence of micro-voids has been found, which might lead to reduced finger adhesion." See [[failure-modes/finger-adhesion-loss-after-DH]].
+- **TCO pitting at pinhole sites** when the Cu-plating step is run with a discontinuous Ni layer — the acid Cu bath (pH ≈ 1) attacks ITO at any exposure. See [[failure-modes/TCO-pitting-during-plating]].
+- **Cu-displacement decoration** of pinholes when the Ni-coated wafer is briefly immersed in a CuSO₄ test solution before the plating run (the standard pre-flight QC).
 
 ## How to detect it
-- Cu-displacement pinhole decoration: dip Ni-coated coupon in dilute CuSO₄ for 60 s, rinse, image by optical/SEM — Cu spots = pinholes. Quantify density per cm².
-- Cross-section TEM/STEM-EDS at suspected pinhole sites ([[2018-electrochemsci-barrier-properties-electroplated-ni]] Fig. 3).
-- [[../methods/four-point-probe-sheet-resistance]] mapping; pinhole-rich regions show uneven sheet resistance.
-- [[../methods/SIMS-depth-profile]] in c-Si — localized Cu spikes vs uniform tail.
-- Anneal-stress test: 200 °C / 4 h, then SIMS / pFF; pinhole-driven failure is more localized than uniform diffusion.
 
-## Mitigation (specific actions, not vague advice)
-- Increase Ni thickness to ≥120 nm where the SHJ thermal budget permits (Cheng 2018 quantitative threshold) — directly pushes the hypothesis target.
-- If holding at sub-100 nm, form a NiSi silicide buffer by 200 °C anneal — silicide grains plug residual pinholes ([[2017-jeon-electroless-ni-front-metallization]]).
-- Activate Si surface with HF immediately before plating to remove native-oxide patches that nucleate pinholes ([[2017-jeon-electroless-ni-front-metallization]]: HF activation gives +42 mV Voc).
-- Piranha clean (H₂O₂ + H₂SO₄) before Ni plating to remove organic contamination that nucleates ghost plating ([[2014-rehman-nicu-plating-csi-review]]).
-- Use sulfamate Ni bath with adequate boric-acid buffer (30–40 g/L) and pH 3.8–4.2 to keep nucleation density high and stress low ([[fisher-AA8902018-nickel-sulfamate-hydrate]]).
-- Use pulse-reverse plating (Hatt 2019: 15 ms forward / 1 ms reverse) which dissolves parasitic seeds and densifies the deposit ([[2019-hatt-noble-shj-solrrl]]).
-- For sub-100 nm targets: characterize *every* batch by Cu-displacement decoration and reject Ni layers with pinhole density >1 cm⁻².
+- **Cu-displacement decoration test** before bulk Cu plating — immerse the Ni-coated TCO wafer in dilute CuSO₄ for 30–60 s; Cu metal preferentially deposits at any pinhole exposing TCO or Si. Optical / SEM inspection then quantifies pinhole density (counts/cm²).
+- **SEM cross-section of Ni layer** at the pre-Cu-plating stage; look for discontinuous coverage on textured pyramids (the worst case). Jeon 2017 reports 45 nm electroless Ni-P is the threshold for continuous coverage on textured Si.
+- **XRD on the Ni / Cu stack after thermal stress** — Cheng 2018's protocol: track Cu₃Si peak intensity at 300/400/500 °C anneals as a proxy for Ni barrier integrity.
+- **STEM/EDS line-scan** through finger cross-section after DH — look for Cu signal in the Ni layer or Ni/Si interface at discrete locations (vs uniform).
+- **SIMS depth profile** at multiple lateral positions — [[methods/SIMS-depth-profile]] integrates the pinhole signature into a 1D Cu-in-c-Si signal that may not show without spatial resolution.
+- **EL imaging post-DH** — [[methods/EL-electroluminescence-imaging]]: dark spots localising under specific finger segments hint at pinhole-driven local degradation.
 
-## Severity ranking justification
-High: pinhole-driven barrier failure converts directly into Cu-into-Si and Cu₃Si formation, both of which are critical. Distinct from those critical modes because it's a *measurable upstream cause* with QC-actionable mitigations. The hypothesis sets a thickness target (sub-100 nm) that is empirically right at the pinhole-critical threshold per Cheng 2018 — making this the failure mode most likely to trigger Pass-3 protocol modifications.
+## Mitigation
 
-## Sources
-- `[[2018-electrochemsci-barrier-properties-electroplated-ni]]` — quantitative thickness threshold (60 nm fails @ 300 °C, 120 nm holds); STEM-EDS validation.
-- `[[2017-jeon-electroless-ni-front-metallization]]` — sub-45 nm electroless Ni-P discontinuous; HF activation reduces pinhole nucleation.
-- `[[2014-rehman-nicu-plating-csi-review]]` — ghost-plating root causes; piranha clean mitigation.
-- `[[2010-bartsch-lip-pvsc]]` — thickness/coverage/homogeneity rationale; Arrhenius-extrapolated lifetime.
-- `[[fisher-AA8902018-nickel-sulfamate-hydrate]]` — bath chemistry context.
-- `[[pvtech-metallization-challenges-cell-manufacturing]]` — industry framing of plating-coverage QC.
+- **Ni thickness ≥120 nm** (Cheng 2018) for thermal budgets to 300 °C; even sulfamate Ni at 60 nm fails the Cu₃Si test. The hypothesis's sub-100 nm Ni framing is most defensible at the 80–100 nm upper bound, not 30–60 nm.
+- **Electroless NiP (Jeon 2017)** — continuous above 45 nm thickness, includes phosphorus that gives a more amorphous, less grain-boundary-rich barrier. Use [[reagents/nickel-phosphorus-NiP-electroless]] with HF activation to remove native SiO₂.
+- **Skip the Ni layer entirely** — SunDrive (2022) and Lachowicz (2024) demonstrate that the SHJ TCO + a-Si:H stack functions as the Cu barrier without electroplated Ni, eliminating pinhole as a failure mode. This is the SHJ-specific consensus the hypothesis should consider in a "Ni-free" arm.
+- **Sputtered Ni or Cu/Al PVD seed** — Hatt's NOBLE route uses PVD seed; sputtered films at ~30 nm can be continuous but require capital equipment ([[methods/Ni-sputter-deposition]]).
+- **Pulse plating rather than DC** — pulsed Ni (forward/reverse cycle) reduces grain size and can lower pinhole density; Hatt 2019 uses 6 A/dm² pulse, 15 ms forward / 1 ms reverse for the Cu step.
+- **Bath additive control** — [[reagents/nickel-sulfamate-bath]] requires boric acid pH buffer and chloride-free pellets; out-of-spec chloride or pH drift increases stress and pinhole density.
+
+## Where it applies
+
+- Methods: [[methods/electroplated-Ni-Cu-stack]], [[methods/electroless-Ni-deposition]], [[methods/Ni-sputter-deposition]], [[methods/light-induced-plating]]
+- Reagents: [[reagents/nickel-sulfamate-bath]], [[reagents/nickel-phosphorus-NiP-electroless]], [[reagents/ITO-transparent-conductive-oxide]]
+- Step kinds: plating, anneal, characterization
+
+## Severity rationale
+
+High. Pinholes are the *physical mechanism* through which the Ni barrier fails; they directly cause the critical failure modes [[failure-modes/Cu-diffusion-into-c-Si]] and [[failure-modes/Cu3Si-formation-at-Si-interface]]. Severity is high rather than critical because (a) pinholes are detectable pre-plating (Cu-displacement decoration), so this is a tractable QC problem, and (b) the SHJ TCO + a-Si:H provides a backup barrier that converts a barrier-thickness problem into a "verify TCO continuity" problem (which is structurally easier).
+
+## Citing sources
+
+- [[sources/2018-electrochemsci-barrier-properties-electroplated-ni]] — Cheng et al. directly tests the thickness threshold: 60 nm fails, 120 nm holds. The canonical reference for this failure mode.
+- [[sources/2010-bartsch-lip-pvsc]] — Bartsch: "if the nickel layer is insufficient regarding certain parameters (e.g. thickness, coverage, homogeneity), the diffusion inhibiting effect is diminished."
+- [[sources/2014-rehman-nicu-plating-csi-review]] — Rehman: "adequate thickness and evenness over the entire front side patterned grid are the basic requirements"; pinhole-free coverage is the gating quality.
+- [[sources/2018-pv-international-metallization-shj]] — Geissbühler: "even with the addition of a nickel-plated adhesion layer, evidence of micro-voids has been found"; physically the same phenomenon as pinholes.
+- [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — SunDrive's no-Ni route renders this failure mode inapplicable; an architectural workaround.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — Karas: Ni barrier between Cu and Si discussed; Cu still detected in c-Si after DH despite the barrier — pinhole / grain-boundary leakage is the proposed mechanism.
+- [[sources/fisher-AA8902018-nickel-sulfamate-hydrate]] — the bath chemistry that produces low-stress, low-pinhole films when run on spec.

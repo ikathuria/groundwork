@@ -1,47 +1,62 @@
 ---
 type: method
 slug: four-point-probe-sheet-resistance
-aliases: [4PP, sheet-resistance probe, Kelvin probe, line-resistance measurement]
-related_methods: [transfer-length-method, IV-curve-measurement]
-key_reagents: [ITO-transparent-conductive-oxide]
-known_failure_modes: [Ni-Cu-line-resistance-rise-DH, FF-degradation-contact-resistance]
-sources: [2012-nrel-aluminum-metallization-tlm-printed, 2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-tepner-printing-tech-csi-review, 2024-itrpv-15th-edition-roadmap, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer, 2024-siliconpv-novel-shj-metallization-architectures, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, 2025-yacouba-shj-silver-free-metallization-progPV]
-tags: [characterization, sheet-resistance, line-resistance, Kelvin-probe, ITRPV-tracked]
+aliases: [4PP sheet resistance, Kelvin probe, four-probe Rs, sheet resistance measurement]
+related_methods: [transfer-length-method, IV-curve-measurement, electroless-Ni-deposition, screen-printed-Ag-paste]
+key_reagents: [acid-Cu-sulfate-bath, ITO-transparent-conductive-oxide, low-T-Ag-paste-generic-SHJ-grade, Cu-paste-low-temperature, nickel-phosphorus-NiP-electroless]
+known_failure_modes: [FF-degradation-contact-resistance, Ni-Cu-line-resistance-rise-DH]
+sources: [2012-nrel-aluminum-metallization-tlm-printed, 2017-jeon-electroless-ni-front-metallization, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer, 2024-siliconpv-novel-shj-metallization-architectures, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, 2025-yacouba-shj-silver-free-metallization-progPV]
+tags: [characterization, sheet-resistance, line-resistance, four-point-probe, Kelvin]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Four-Point Probe / Sheet Resistance
+# Four-point probe sheet resistance / line resistance
+
+**Slug:** `methods/four-point-probe-sheet-resistance` · **Type:** method
 
 ## What it measures / does
-Four-point Kelvin probe measurement eliminates probe-resistance error to give sheet resistance Rsh (Ohm/sq) of a thin film, or finger line resistance RL (Ohm/cm) of a printed/plated finger. Standard for tracking emitter sheet resistance, plating-bath film thickness/quality, and finger conductivity before and after damp heat / thermal cycling.
+
+Forces a current through the outer two probes and measures the voltage drop across the inner two on a four-in-line probe head, eliminating contact-resistance error in the voltage reading. Yields sheet resistance Rsh (Ω/sq) for thin films and line resistance RL (Ω/cm) for printed/plated fingers. For SHJ Cu-plating work it is the workhorse for Cu/Ag/Cu-paste line-resistance comparison and for verifying TCO Rsh after plating chemistry exposure.
 
 ## When to use it
-Tracks bulk and finger conductivity at every process step: emitter (130-210 Ohm/sq, ITRPV roadmap parameter); silicide (drops 350-600 C, rises >700 C — Hsieh 2017); Cu finger line resistance (NOBLE ~2 uOhm.cm vs SP Ag >=5 uOhm.cm — Hatt 2021); Cu paste line-resistance stability after 24-day air storage (Pingel 2025 — no significant change).
 
-## Key parameters
-- Probe spacing: typical 1 mm; current sourced through outer probes, voltage measured between inner probes.
-- Geometric correction factor for sample size / edge effects.
-- Reference lines: dog-bone test pattern (Frasson 2024) or pad-to-pad lines.
-- Measured ranges:
-  - Bulk Cu: ~2x10⁻⁶ Ohm.cm plated (slightly above 1.7x10⁻⁶ pure).
-  - Cu finger line resistance: 0.18 Ohm over 26 mm (CSEM PTP), 1.15 Ohm/cm Ag SP, 4.24 Ohm/cm Cu SP (Yacouba 2025).
-  - Low-T Ag paste bulk resistivity: 3.51-12.62 uOhm.cm.
+Use it after every metal-film deposition step (Ni-P, plated Cu, sputtered seed) to verify continuity and conductivity. Use it on dedicated dog-bone or Kelvin-pad test patterns to extract finger line resistance — Lachowicz reports 0.18 Ω over a 26 mm pad-to-pad span on Cu-paste + plated Cu vs 5.1 Ω on Cu paste alone. On the SHJ Ni/Cu plan it is the upstream check before TLM (TLM extracts ρc + Rsh together; 4PP gives Rsh independently).
 
-## Common variants / alternatives
-- [[transfer-length-method]] — uses 4PP electrodes but extracts contact resistivity in addition to sheet resistance.
-- Eddy-current sheet resistance — non-contact, used for ITO Rsh.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/Ni-Cu-line-resistance-rise-DH]] — finger-resistance increase under DH; tracked by 4PP before/after.
-- [[../failure-modes/FF-degradation-contact-resistance]] — FF gap implies series-resistance loss; 4PP isolates whether Rs comes from finger conductivity vs contact.
+- **Probe head:** four collinear probes, equal spacing s ~ 1 mm; spring-loaded with controlled force.
+- **Geometry correction:** for finite samples, the 4.532 (semi-infinite sheet) factor is replaced by a geometry-dependent correction; for narrow stripes use the Kelvin / dog-bone pattern instead of the sheet formula.
+- **Current source:** 1–100 mA constant current; voltmeter resolution µV.
+- **Test pattern (Lorenz / Pingel / Lachowicz):** 5-busbar dog-bone test pattern, 3 cm long fingers, separately printed and measured for accurate Rgrid extraction.
+- **Outputs:** Rsh (Ω/sq) for sheet, RL (Ω/cm) for finger; bulk resistivity ρ = Rsh × t for known thickness t.
 
-## Sources
-- [[2012-nrel-aluminum-metallization-tlm-printed]] — implicit; extract Rsh from same TLM lines.
-- [[2014-rehman-nicu-plating-csi-review]] — implied throughout for finger / silicide characterisation.
-- [[2017-jeon-electroless-ni-front-metallization]] — sheet-resistance trend across silicide phase progression (350-600 C drop, >700 C rise).
-- [[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — Kelvin probes for finger line resistance.
-- [[2023-tepner-printing-tech-csi-review]] — implicit (RGrid measurement) in screen-print review.
-- [[2024-itrpv-15th-edition-roadmap]] — emitter sheet resistance is a tracked roadmap parameter (130-210 Ohm/sq).
-- [[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] — implicit in RGrid measurement on knotless screen-print.
-- [[2024-siliconpv-novel-shj-metallization-architectures]] — line resistivity from dog-bone test pattern.
-- [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — implicit (RGrid measurement); Cu paste line-resistance stable after 24 days air.
-- [[2025-yacouba-shj-silver-free-metallization-progPV]] — line-resistance characterisation of Cu/AgCu/Ag pastes.
+## Common variants
+
+- **In-line 4PP** — handheld or automated for production lines.
+- **Eddy-current Rsh** — non-contact, but less reliable on rough/textured Si.
+- **Kelvin pad-to-pad** (Lachowicz) — long fingers contacted at both ends with low-resistance pads; deduces line resistance directly.
+- **Dual-print 5BB test** (Lorenz 2024) — separately printed busbar + finger array specifically for Rgrid extraction without confounding cell area.
+
+## Things to watch for
+
+- Probe-tip damage on soft Cu plating or thin Ag finger surfaces — use light force or a Kelvin pad pattern.
+- Contact resistance between probe tip and sample is *eliminated* in 4-probe but *not* in 2-probe; never report a 2-probe Rsh.
+- Edge effects on small samples — apply a geometric correction or use a sufficiently large area.
+- For TCO sheet-resistance after acid-Cu plating exposure, drift indicates [[failure-modes/Ni-Cu-line-resistance-rise-DH]] precursor or plating-bath etch attack.
+
+## Related methods
+
+- [[methods/transfer-length-method]] — TLM extracts both ρc and Rsh from the same line-resistance vs spacing fit.
+- [[methods/IV-curve-measurement]] — Rs from the IV slope is the finished-cell counterpart.
+- [[methods/screen-printed-Ag-paste]] — Pingel/Lorenz test screens and pastes use 4PP as the headline performance metric.
+
+## Citing sources
+
+- [[sources/2012-nrel-aluminum-metallization-tlm-printed]] — implicit companion measurement (TLM extracts both ρc and Rsh from the same fit; 4PP cross-checks Rsh).
+- [[sources/2017-jeon-electroless-ni-front-metallization]] — Ni-P film characterisation by sheet-resistance.
+- [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — Kelvin-probe line-resistance on Cu paste + plated Cu hierarchy (1.5 / 5.1 / 0.18 Ω at 26 mm).
+- [[sources/2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] — separate dual-print 5-busbar test for accurate Rgrid.
+- [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — line-resistance and volume-resistivity on 3 cm dog-bone test patterns.
+- [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Rsh measurement on the same TLM stripes used for ρc.
+- [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — line-resistance via 4-probe after annealing on Cu paste fingers (4.24 Ω/cm at 56 µm wide).

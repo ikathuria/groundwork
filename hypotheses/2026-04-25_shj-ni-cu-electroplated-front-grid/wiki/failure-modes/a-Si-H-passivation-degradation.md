@@ -1,49 +1,67 @@
 ---
 type: failure-mode
 slug: a-Si-H-passivation-degradation
-severity: critical
-frequency_estimate: "Yacouba 2025: 280 °C / 5 s is the SHJ cell-survival threshold; 320 °C / 5 s costs ~0.5 %abs irreversibly; 360 °C / 5 s costs ~1.5 %abs. Hatt 2021: fs-UV laser pulse energies >4.7 µJ damage passivation (PL-imaged)."
-applies_to_methods: [Ni-sputter-deposition, laser-ablation-of-dielectric, NOBLE-selective-Cu-plating, electroless-Ni-deposition, Cu-electroplating-acid-bath, light-induced-plating, UV-preconditioning, minority-carrier-lifetime-photoluminescence]
-applies_to_reagents: [a-Si-H-passivation, ITO-transparent-conductive-oxide, Cu-paste-low-temperature, low-T-Ag-paste-generic-SHJ-grade]
-applies_to_step_kinds: [plate, etch, anneal, age, measure]
-sources: [2018-pvtech-metallization-shj-cells-modules, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2021-hatt-stable-cu-plated-shj-eupvsec, 2023-taiyangnews-heterojunction-technology-report, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2025-yacouba-shj-silver-free-metallization-progPV, dupont-solamet-pv21a-tech-sheet]
-tags: [a-Si:H, passivation, hydrogen-out-diffusion, thermal-budget, sputter-damage, laser-damage, hypothesis-killer]
+severity: high
+frequency_estimate: "Onset >280 °C / 5 s; 320 °C / 5 s gives ~0.5 %abs efficiency loss; 360 °C gives ~1.5 %abs (Yacouba 2025). PERC firing temperatures (~750–800 °C) destroy a-Si:H passivation completely. NOBLE laser patterning ~10 mV Voc loss attributed to early-stage laser damage (Hatt 2021)."
+applies_to_methods: [laser-ablation-of-dielectric, screen-printed-Ag-paste, NOBLE-selective-Cu-plating, minority-carrier-lifetime-photoluminescence, dark-IV-suns-Voc, IV-curve-measurement]
+applies_to_reagents: [a-Si-H-passivation, low-T-Ag-paste-generic-SHJ-grade, Cu-paste-low-temperature, ITO-transparent-conductive-oxide]
+applies_to_step_kinds: [cell-prep, screen-print, cap-deposition, anneal, lamination]
+sources: [2019-hatt-noble-bifacial-shj-aip, 2021-hatt-stable-cu-plated-shj-eupvsec, 2023-tepner-printing-tech-csi-review, 2025-yacouba-shj-silver-free-metallization-progPV, dupont-solamet-pv21a-tech-sheet, dupont-solamet-pv56s-data-sheet]
+tags: [a-Si-H, passivation, thermal-budget, hydrogen-effusion, Voc, SHJ-defining]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# a-Si:H passivation degradation
+# Hydrogenated amorphous silicon (a-Si:H) passivation degradation
+
+**Slug:** `failure-modes/a-Si-H-passivation-degradation` · **Severity:** high
 
 ## What it is
-The SHJ Voc advantage (>730 mV) comes from the a-Si:H(i) intrinsic-layer passivation of the c-Si interface, which depends on hydrogen termination of dangling bonds. Above ~280 °C the hydrogen out-diffuses irreversibly, the dangling-bond density rises, and Voc collapses ([[2025-yacouba-shj-silver-free-metallization-progPV]]). Sputter damage during PVD-seed deposition introduces UV/ion damage that creates Si-H bond breakage even at ambient stage temperature ([[2019-hatt-noble-shj-solrrl]]). Laser ablation of overlying layers — used in NOBLE-laser variant — couples thermal pulses into the a-Si:H stack and can damage passivation if the pulse energy exceeds 4.7 µJ ([[2021-hatt-stable-cu-plated-shj-eupvsec]]). UV exposure in the field also slowly degrades passivation ([[2024-nrel-getting-ahead-of-curve-pv-assessment]]).
+
+The passivating contact in an SHJ cell is a thin (~5–10 nm) hydrogenated amorphous silicon (i-a-Si:H + n- or p-doped a-Si:H) layer between the c-Si wafer and the ITO TCO. The layer's passivation quality depends on hydrogen content and bond configuration; **above ~200–230 °C, hydrogen effuses out of the a-Si:H, defects re-emerge, and minority-carrier lifetime drops irrecoverably**. This sets the SHJ-defining ≤200 °C process budget — the constraint that excludes fired-Ag pastes (~750–800 °C peak) and motivates Cu plating (low-temperature, plate-compatible) in the first place. Yacouba 2025 quantifies the onset: degradation begins above 280 °C / 5 s; PERC-style firing destroys passivation entirely.
 
 ## How it manifests
-- Voc drops 10–30+ mV; pFF drops accordingly (junction recombination loss).
-- PL imaging at 1-sun shows dark patches localized to laser-ablated regions or near contact perimeters ([[2021-hatt-stable-cu-plated-shj-eupvsec]] PL maps).
-- µ-PCD or QSSPC effective lifetime drops below ~1 ms (typical SHJ ≥3-5 ms).
-- The drop is recoverable by light-soaking at ~175 °C / 55 kW/m² LED for ~90 s if mild (Yacouba 2025: 0.2 %abs Cu-paste anneal cost is fully recovered); irreversible above 280 °C / 5 s.
+
+- **Voc collapse** in the finished cell, often >20 mV. SHJ Voc baseline is 730–745 mV; degraded passivation drops it below 700 mV.
+- **pFF / Suns-VOC drop** from baseline 82–84 % to <80 %.
+- **Lifetime drop** in PL imaging at 1-sun injection — laser-damaged regions appear as dark patches.
+- **Yacouba 2025 anneal ladder** for Cu paste cure: 280 °C / 5 s recoverable; 320 °C / 5 s = 0.5 %abs loss; 360 °C / 5 s = 1.5 %abs loss.
+- **Hatt 2021 NOBLE laser patterning**: ~10 mV Voc loss vs inkjet, attributed to early-stage laser damage to a-Si:H during fs-UV (343 nm) ablation.
+- **DuPont PV21A / PV56S co-fired Ag paste** misapplied on SHJ would *immediately* destroy passivation (peak T ~750–800 °C) — the false-friend control, not a real DH-aging signature.
 
 ## How to detect it
-- [[../methods/minority-carrier-lifetime-photoluminescence]] — PL imaging at 1-sun is the canonical SHJ damage map; Hatt 2021 uses it to qualify laser pulse energy.
-- [[../methods/dark-IV-suns-Voc]] — pFF / Voc as integrated damage metric.
-- [[../methods/UV-preconditioning]] — IEC 61215 UV pre-conditioning is undersized for SHJ; NREL recommends extended UV testing per [[../methods/extended-damp-heat-IEC63209]].
-- Implant-Voc on lifetime samples (carrier density vs Voc fit) before vs after every metallization step.
 
-## Mitigation (specific actions, not vague advice)
-- Hard cap all post-TCO process steps at ≤200 °C ([[2019-hatt-noble-shj-solrrl]] uses 200 °C / 15 min recovery anneal; Yacouba 2025 confirms 280 °C / 5 s ceiling).
-- For PVD-seed deposition (NOBLE flow), characterize sputter damage with PL on lifetime samples and add a 200 °C / 15 min recovery anneal ([[2019-hatt-noble-shj-solrrl]]) — Voc 731 mV achieved on full-area cell post-anneal.
-- For laser patterning, keep fs-UV (343 nm) pulse energy ≤4.7 µJ with Cu buffer ≥500 nm; use PL imaging to qualify each laser parameter set ([[2021-hatt-stable-cu-plated-shj-eupvsec]]).
-- For Cu-paste cure, never exceed 280 °C / 5 s; standard 300 °C / 5 s costs 0.2 %abs but is fully recovered by 90 s light-soaking at ~175 °C.
-- Use POE encapsulation; the bifacial UV ingress paths in SHJ make POE/transparent-backsheet selection a passivation-protection question, not just a Cu-corrosion question ([[2024-nrel-getting-ahead-of-curve-pv-assessment]]).
-- Specify a UV preconditioning + DH sequence: UV 60 kWh/m² → 1000 h DH → re-IV; this catches passivation-degradation modes that DH alone misses.
+- **PL imaging at 1-sun** — [[methods/minority-carrier-lifetime-photoluminescence]]: dark patches reveal localised passivation damage (Hatt 2021's diagnostic for laser damage).
+- **Suns-VOC pFF measurement** — [[methods/dark-IV-suns-Voc]]: pFF drop with Voc drop and stable Jsc indicates passivation degradation, not Cu contamination (which gives pFF + Voc + J02 signature).
+- **1-sun IV** — [[methods/IV-curve-measurement]]: track Voc, Jsc, FF; Voc is the most sensitive metric.
+- **QSSPC / μ-PCD lifetime** — bulk + surface recombination separation; surface recombination velocity rise localises the failure to the passivating contact.
+- **Anneal-ladder calibration** — Yacouba 2025-style: pre-stress witness samples at 200/250/280/300/320/360 °C / 5 s and back out the thermal-budget envelope of any new process step.
 
-## Severity ranking justification
-Critical: a-Si:H passivation collapse directly destroys the SHJ Voc advantage that justifies plated-Cu in the first place. The hypothesis ("no measurable efficiency loss after 1000 h DH") cannot survive a-Si:H damage. The 280 °C ceiling is a hard physical limit — every plating, anneal, and laser step in the proposed flow must be benchmarked against it.
+## Mitigation
 
-## Sources
-- `[[2025-yacouba-shj-silver-free-metallization-progPV]]` — quantified 280 °C / 5 s cell-survival threshold; light-soak recovery characterized.
-- `[[2019-hatt-noble-shj-solrrl]]` — sputter-damage recovery via 200 °C / 15 min anneal; full-area Voc 731 mV.
-- `[[2019-hatt-noble-bifacial-shj-aip]]` — confirms PVD does not damage passivation if anneal is included.
-- `[[2021-hatt-stable-cu-plated-shj-eupvsec]]` — fs-UV laser pulse-energy threshold (4.7 µJ) by PL imaging.
-- `[[2024-nrel-getting-ahead-of-curve-pv-assessment]]` — UV/passivation susceptibility in SHJ; recommends extended UV protocols.
-- `[[2018-pvtech-metallization-shj-cells-modules]]` — <250 °C process window for SHJ.
-- `[[2023-taiyangnews-heterojunction-technology-report]]` — SHJ-specific FF degradation linked to oxygen-induced a-SiOₓ at TCO/a-Si interface; light-soak recovery.
-- `[[dupont-solamet-pv21a-tech-sheet]]` — low-T paste cure profile constrained by passivation.
+- **Stay below 200 °C peak temperature** for *every* process step that follows a-Si:H deposition — the SHJ-defining constraint. Use [[reagents/low-T-Ag-paste-generic-SHJ-grade]] (cures ≤200 °C), avoid fired pastes (PV21A / PV56S).
+- **For Cu paste**: use Cu-paste cure profiles ≤280 °C / 5 s (Yacouba 2025); deploy backing-paper protective covers to limit O₂ exposure; light-soak the cell after cure to recover passivation (Yacouba reports 0.2 %abs reversible loss at 300 °C / 5 s).
+- **For laser patterning**: low-pulse-energy multi-pass (Hatt 2021) or buffer-Cu (500 nm) protection layer to absorb laser energy before it reaches the a-Si:H.
+- **Prefer inkjet patterning over laser** when feasible — inkjet (NaOH ink on Al/AlOx in NOBLE; hot-melt resist) is a-Si:H-safe at room temperature.
+- **PVD seed deposition** at low ion energy (sputtering > thermal evap for damage minimisation in some configurations) — Hatt 2019 demonstrates Voc 731 mV after PVD step on full-area cells.
+- **Process hand-off discipline** — measure pFF / Voc immediately after each thermal or laser step; surface degradation before subsequent steps compound it.
+- **Avoid PERC pastes (PV21A, PV56S)** absolutely — these are wiki red-flagged as false-friend controls.
+
+## Where it applies
+
+- Methods: [[methods/laser-ablation-of-dielectric]], [[methods/screen-printed-Ag-paste]], [[methods/NOBLE-selective-Cu-plating]], [[methods/minority-carrier-lifetime-photoluminescence]], [[methods/dark-IV-suns-Voc]], [[methods/IV-curve-measurement]]
+- Reagents: [[reagents/a-Si-H-passivation]], [[reagents/low-T-Ag-paste-generic-SHJ-grade]], [[reagents/Cu-paste-low-temperature]], [[reagents/ITO-transparent-conductive-oxide]]
+- Step kinds: cell-prep, screen-print, cap-deposition, anneal, lamination
+
+## Severity rationale
+
+High. The a-Si:H passivation is what *defines* the SHJ architecture and its 730–745 mV Voc; loss of passivation drops Voc by 20+ mV and is in many cases not recoverable. The ≤200 °C thermal budget constraint is well-known and cleanly engineered around: low-T pastes, plated metallization, inkjet patterning. Severity is high (not critical) because process-discipline can fully prevent it — but a single thermal misstep (e.g. firing PV21A by accident) destroys the device.
+
+## Citing sources
+
+- [[sources/2019-hatt-noble-bifacial-shj-aip]] — full-area NOBLE: Voc 731 mV demonstrating PVD step does not damage a-Si:H.
+- [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — laser patterning: ~10 mV Voc loss vs inkjet from a-Si:H damage; PL imaging at 1-sun is the diagnostic.
+- [[sources/2023-tepner-printing-tech-csi-review]] — establishes ≤200–230 °C thermal-budget constraint as the SHJ-defining limitation.
+- [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — quantitative anneal ladder: 280/320/360 °C / 5 s thresholds; H effusion mechanism.
+- [[sources/dupont-solamet-pv21a-tech-sheet]] — PV21A: ~750–800 °C spike-firing peak; would destroy a-Si:H. False-friend control.
+- [[sources/dupont-solamet-pv56s-data-sheet]] — PV56S: >600 °C peak; same false-friend warning.

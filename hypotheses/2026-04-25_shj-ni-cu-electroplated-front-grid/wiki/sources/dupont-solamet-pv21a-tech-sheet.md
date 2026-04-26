@@ -2,50 +2,64 @@
 type: source
 id: dupont-solamet-pv21a-tech-sheet
 source_type: catalog
-title: "DuPont™ Solamet® PV21A photovoltaic metallization — Preliminary Technical Data Sheet"
-supplier: "DuPont"
-catalog_number: "Solamet PV21A"
+title: "DuPont Solamet PV21A Photovoltaic Metallization Paste — Preliminary Technical Data Sheet"
+authors: ["DuPont"]
 year: 2019
-url: "https://www.dupont.com/solamet"
-raw_path: raw/catalogs/dupont-solamet-pv21a-tech-sheet.txt
-tags: [reagent-spec, supplier-data, ag-paste, fire-through, perc, control-comparator, tds]
+doi: ""
+url: https://www.dupont.com/content/dam/dupont/amer/us/en/photovoltaic/public/documents/PV21ATechSheet.pdf
+raw_path: raw/catalogs/dupont-solamet-pv21a-tech-sheet.pdf
+tags: [DuPont, Solamet, Ag-paste, fire-through, NOT-SHJ-compatible, screen-print, PERC, LDE]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# DuPont Solamet PV21A — high-temperature fire-through Ag paste (PERC/PERC+)
+# DuPont Solamet PV21A Photovoltaic Metallization Paste — Preliminary Technical Data Sheet
+
+**DuPont (Solamet)** — *2019 (Modification C, 3.14.2019)*. URL: https://www.dupont.com/content/dam/dupont/amer/us/en/photovoltaic/public/documents/PV21ATechSheet.pdf
 
 ## Summary
-DuPont (now Solamet/Solar Materials division) front-side fire-through silver paste, intended for co-firing with backside (p-type) Al conductors and tabbing Ag pastes such as Solamet PV5xx. PV21A is a *high-temperature* (peak firing) Ag paste — *not* an SHJ-compatible low-T paste. It is included here as the screen-printed Ag paste benchmark and for context on industry-standard fired-Ag finger resistivity. For SHJ-relevant low-T pastes, the analog is Solamet PV56S (back-side, [[dupont-solamet-pv56s-data-sheet]]) and dedicated low-T variants of the PV-series. PV21A's specs anchor what "screen-printed Ag" means as the comparator in the hypothesis.
 
-## Key product specs
-- Application: standard screen print, 200–350 mm/sec print speed.
-- Screen: 325–430 mesh stainless steel; 16/16/14/16/13 µm wire diameter; 17–28 µm mesh thickness; 12–18 µm emulsion; mesh angle 22–30°.
-- Typical line resolution: 30–40 µm screen-designed width (narrow side).
-- Drying: vertical dryer 170–230 °C ×10 min, or IR belt dryer 150–400 °C ×1 min.
-- Firing: rapid (spike) firing co-fireable with PV20x; peak firing similar to PV20x — well above 600 °C → not compatible with SHJ thermal limit (~250 °C).
-- Soldering: industry-standard non-clean L0/M0 flux (ANSI/J-STD-004); ribbon compatible with 60Sn/40Pb, 62Sn/36Pb/2Ag, 96.5Sn/3.5Ag.
-- Physical:
-  - Viscosity 200–320 Pa·s (Brookfield HBT, 20 rpm, SC4-14/6R, 15 °C).
-  - Solids 91–93% at 750 °C.
-  - Fineness of grind <12 µm / <6 µm (4th / 50th percentile).
-  - Resistivity <5 mΩ/sq/10 µm (printed line).
-  - Thinner: DuPont 9450.
-  - Shelf life 6 months.
-- Storage: 5–25 °C, lids tightly sealed; >25 °C or freezer storage NOT recommended.
-- Cadmium-free (no intentional Cd; trace amounts may be present).
-- Pricing: not listed.
+DuPont's preliminary tech sheet for the Solamet PV21A front-side silver paste — a high-temperature, fire-through Ag composition designed for PERC/LDE n-type emitters. **PV21A is not SHJ-compatible**: it is engineered for spike firing at peak temperatures consistent with the rest of the Solamet PV20x co-fire family (>600 °C peak), which would destroy the a-Si:H passivation that defines the SHJ architecture. Included in the wiki only as a *false-friend* control to clarify which Ag paste belongs in the SHJ baseline arm — the right control is a low-temperature SHJ-grade paste (see [[reagents/low-T-Ag-paste-generic-SHJ-grade]]), not PV21A.
 
-## Reagents (linked entity)
-- [[../reagents/low-T-Ag-paste-Solamet-PV21A]] — this product (despite "PV21A" being a high-T paste, it is the entity slot reserved for it).
-- [[../reagents/silver-Ag-cap]] — silver paste underlies the silver-cap concept analogically (different application).
+## Key claims / specifications
 
-## Methods this product is used in
-- [[../methods/screen-printed-Ag-paste]] — standard fire-through Ag paste step on PERC; the comparator architecture.
+- **Class:** front-side fire-through Ag paste (n-type emitter contact); co-fireable with PV5xx tabbing Ag and PV36x p-side Al on PERC and standard cells.
+- **Firing profile:** "rapid (spike) firing"; peak temperature aligned with Solamet PV20x family — i.e. typical PERC/Al-BSF firing peak ~750–800 °C. **This thermal budget is incompatible with the ≤200 °C SHJ a-Si:H limit.**
+- **Application:** standard screen-print, 200–350 mm/s; 325–430 mesh stainless steel screens for fine lines (<35–40 µm narrow side); 12–18 µm emulsion thickness.
+- **Drying:** vertical 170–230 °C / 10 min, IR belt 150–400 °C / 1 min.
+- **Typical line resolution:** 30–40 µm screen-designed width.
+- **Solderability:** compatible with 60Sn/40Pb, 62Sn/36Pb/2Ag, 96.5Sn/3.5Ag ribbon; flux non-clean L0/M0 per ANSI/J-STD-004.
+- **Physical properties:** viscosity 200–320 Pa·s (Brookfield HBT, 20 rpm, SC4-14/6R, 15 °C); solids 91–93 % @ 750 °C; resistivity <5 mΩ/sq/10 µm; cadmium-free.
+- **Self-described benefits:** "Improved efficiency up to 0.1 % over DuPont Solamet PV20x series… Superior metallization contact on LDE/ultra-LDE (standard or PERC cell)".
+- **Storage:** 5–25 °C, sealed; 6 month shelf life.
+
+## Methods used
+
+- [[methods/screen-printed-Ag-paste]] — PV21A is a representative example of the high-T fire-through paste class — to be excluded from any SHJ control arm.
+
+## Reagents
+
+- [[reagents/low-T-Ag-paste-Solamet-PV21A]] — the entity this catalog populates (the slug name is misleading: this is *not* low-T; the page should reflect that and forward readers to the SHJ-grade generic).
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — the correct SHJ baseline reagent; PV21A is *not* a substitute.
+- [[reagents/silver-Ag-cap]] — distinct concept (Ag finish on plated Cu, not a fire-through paste).
+
+## Organisms / substrates
+
+- [[organisms/monocrystalline-Si-wafer-n-type]] — PV21A is designed for n-type emitters on diffused-junction cells; *not* the SHJ wafer in a-Si:H state.
 
 ## Failure modes flagged
-- [[../failure-modes/silver-supply-bottleneck]] — implicit; no explicit warnings on the TDS regarding Ag scarcity, but the existence of PV21A is the legacy reason for the silver-bottleneck problem.
-- [[../failure-modes/a-Si-H-passivation-degradation]] — *not* flagged on TDS, but the high firing temperature means PV21A is incompatible with SHJ — this is itself why the hypothesis exists.
+
+- [[failure-modes/a-Si-H-passivation-degradation]] — direct hazard if PV21A is mistakenly fired on an SHJ cell: spike firing at 750 °C destroys a-Si:H passivation and the c-Si surface state.
+- [[failure-modes/silver-supply-bottleneck]] — fire-through Ag paste is the cost driver the plated-Cu hypothesis is designed to displace.
+
+## Supports / contradicts
+
+- **Contradicts (architecturally):** [[sources/dupont-solamet-pv56s-data-sheet]] — PV56S is similarly a fire-through paste, also high-T, also non-SHJ-compatible — the two together illustrate the legacy DuPont catalog's PERC/Al-BSF orientation and the absence of an off-the-shelf SHJ-grade DuPont paste in the public catalog as of the 2019 revision.
+- **Compares to:** [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Fraunhofer 2025 explicitly uses SHJ-grade low-T Ag (and Ag-coated-Cu) paste for the screen-print baseline, not a fire-through composition.
+- **Compares to:** [[sources/2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] — uses SHJ-specific low-T Ag pastes; PV21A is not part of that experimental set.
 
 ## Notable quotes
-- "Solamet PV21A photovoltaic metallization front side paste is a highly conductive silver composition with innovative material science which enables finer line design and excellent printability. This paste can be co-fired with back side (p-type) aluminum conductors and tabbing silver such as Solamet PV5xx. It is designed for rapid dry and fast (spike) firing." — Product Description
-- "Resistivity (mΩ/sq/10µm) <5" — Table 1
-- "Compatible with industry standard material & condition. Flux type: non-clean, reactivity level L0/M0. Ribbon: Compatible with Pb contained and Pb free solder material, i.e. 60Sn/40Pb, 62Sn/36Pb/2Ag, 96.5Sn/3.5Ag." — Soldering
+
+> "This paste can be co-fired with back side (p-type) aluminum conductors and tabbing silver such as Solamet® PV5xx. It is designed for rapid dry and fast (spike) firing." — *Product Description, p. 1.*
+
+> "Solamet® PV21A is designed for rapid (spike) firing. To get the best electrical performance, PV21A should be fired at a peak temperature similar to Solamet® PV20x." — *Firing, p. 2.*

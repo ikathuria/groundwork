@@ -1,56 +1,73 @@
 ---
 type: reagent
 slug: sulfuric-acid-H2SO4
-aliases: [H2SO4, sulphuric acid, oil of vitriol]
+aliases: [sulphuric acid, oil of vitriol, H2SO4, hydrogen sulfate]
 cas: 7664-93-9
-formula: H2SO4
 suppliers:
-  - name: Fisher / Acros Organics
-    catalog: AC424520000 / AC424520025 / AC424520026 / AC424520100 / AC424525000 / AC424525001 / AC424528000
-    grade: ACS reagent ≥95%
-    url: https://www.fishersci.com/shop/products/sulfuric-acid-acs-acros-organics-2/AC424525000
-storage: room-temperature, corrosives cabinet; dry, well-ventilated, locked area; in glass or HDPE; segregated from oxidisers / bases / organics / metals / peroxides
-hazards: high — Skin/Eye Corrosion Cat 1 (causes severe burns), STOT-SE Cat 3 (respiratory irritation), Cal Prop 65 cancer warning (mists), reacts violently with water (always add acid to water)
-known_failure_modes: [TCO-pitting-during-plating]
-sources: [2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2018-electrochemsci-barrier-properties-electroplated-ni, atotech-cupracid-ultra-a-tds, fisher-AC424525000-sulfuric-acid-acs-sds]
-tags: [acid, electrolyte-component, pre-clean, conductivity-booster]
+  - name: Fisher Scientific
+    catalog: "AC424525000 (500 mL, ACS reagent ≥95 %)"
+    grade: ACS reagent ≥95 % w/w
+    url: https://www.fishersci.com/store/msds?partNumber=AC424525000
+  - name: Sigma-Aldrich
+    catalog: "258105 (Sulfuric acid 95–98 %, ACS reagent)"
+    grade: ACS reagent
+    url: https://www.sigmaaldrich.com/US/en/product/sial/258105
+  - name: Honeywell / VWR
+    catalog: "Sulfuric acid 96 %, 25 L drums for plating-line make-up"
+    grade: industrial / electronic
+    url: https://www.honeywell.com
+storage: tightly closed, locked-up cabinet; segregate from bases, organics, metals
+hazards: critical — corrosive Cat 1 (skin/eye); STOT-SE Cat 3 (respiratory); Prop 65 cancer warning
+known_failure_modes: [TCO-pitting-during-plating, plating-resist-undercut]
+sources: [2010-bartsch-lip-pvsc, 2019-hatt-noble-shj-solrrl, atotech-cupracid-ultra-a-tds, fisher-AC197730010-cu-sulfate-pentahydrate-sds, fisher-AC424525000-sulfuric-acid-acs-sds]
+tags: [acid, electrolyte-component, conductivity-additive, pH-driver, hazard-critical]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Sulfuric acid (H2SO4)
 
+**Slug:** `reagents/sulfuric-acid-H2SO4` · **Type:** reagent
+
 ## What it is
-Concentrated sulfuric acid — the conductivity-boosting acid of the [[acid-Cu-sulfate-bath]] and a workhorse pre-plating clean. ≥95% H2SO4, ACS grade, MW 98.07 g/mol. In the SHJ-Ni/Cu front-grid plating workflow it (i) is a bath component at 50–70 g/L, (ii) participates in piranha pre-cleans with H2O2, and (iii) adjusts pH in [[nickel-sulfamate-bath]] make-up.
 
-## Common uses
-- Acid Cu plating bath: 50–70 g/L (60 g/L optimum) per Cupracid ULTRA TDS ([[atotech-cupracid-ultra-a-tds]]).
-- Piranha pre-clean (H2SO4 / H2O2) of textured Si before Ni plating ([[2014-rehman-nicu-plating-csi-review]], [[2018-electrochemsci-barrier-properties-electroplated-ni]]).
-- pH adjustment in Ni sulfamate baths ([[fisher-AC424525000-sulfuric-acid-acs-sds]]).
-- Clean of Cu in TLM resistivity test pads (implicit across NOBLE work).
+Sulfuric acid (H2SO4) is the canonical conductivity / pH-determining additive for the [[reagents/acid-Cu-sulfate-bath]] and many other plating electrolytes. In the Cupracid Ultra recipe (Atotech) it is used at 50–70 g/L (~0.6 M) to set bath pH near 1 and raise conductivity, lowering operating voltage at given current density. Also used in cleaning / pre-treatment etches and in LIP-mode acid-Cu electrolytes.
 
-## Key spec / concentration ranges
-- ≥95% H2SO4; density 1.840 g/mL; viscosity 21 mPa·s @ 25 °C.
-- pH ≈ 1 (1 N aqueous); melting 10 °C; boiling 290 °C; decomposes 340 °C.
-- Vapor pressure 1 mmHg at 146 °C.
-- Exposure: ACGIH TLV TWA 0.2 mg/m³; OSHA PEL TWA 1 mg/m³ (vacated); NIOSH IDLH 15 mg/m³.
-- NFPA: Health 3 / Flammability 0 / Instability 2 / Special W (water-reactive).
-- Cu plating bath: 50–70 g/L (Cupracid ULTRA).
-- Piranha (typical lab recipe): 3:1 v/v 96% H2SO4 : 30% H2O2; freshly prepared each use.
+## Common uses (in this corpus)
 
-## Alternatives / variants
-- HCl — alternative for activation steps but not for the Cu plating bath itself.
-- Methanesulfonic acid — used in some Sn/Cu cap plating chemistries (lower H+ activity).
-- HNO3 — in [[2019-hatt-noble-shj-solrrl]] H3PO4/HNO3 etch-back uses HNO3 as the Cu/Ag etchant.
+H2SO4 is the **acid component** of the Cu-plating electrolyte at every site that plates Cu in this corpus — Atotech Cupracid TDS specifies 60 g/L; Fisher AC424525000 SDS confirms ACS-grade sulfuric is the lab-grade make-up reagent; Hatt 2019 SolRRL uses sulfuric-acid acid-Cu in NOBLE; Bartsch 2010 PVSC uses it in LIP. The pH-1 environment it produces is the cause of the [[failure-modes/TCO-pitting-during-plating]] failure mode that limits Cu plating directly on bare ITO/IWO/AZO.
 
-## Gotchas
-- ALWAYS add acid to water (large exotherm; spattering is a serious burn hazard).
-- Reacts with finely-divided metals to evolve flammable H2 — store away from Cu, Ni powders.
-- Do NOT use water on H2SO4 fires; use dry chemical or sand. Hazardous combustion: H2 and SOx.
-- California Prop 65 cancer warning applies to acid mists — full face shield + scrubbed exhaust hood.
-- Incompatible with strong oxidisers (HNO3/H2O2 ratio matters in piranha — exotherm is severe), bases, organics (charring), peroxides.
+## Properties / specifications
 
-## Sources
-- [[fisher-AC424525000-sulfuric-acid-acs-sds]] — full GHS/OSHA SDS, identity, hazard, exposure limits, storage, NFPA.
-- [[atotech-cupracid-ultra-a-tds]] — bath concentration spec (50–70 g/L).
-- [[2014-rehman-nicu-plating-csi-review]] — piranha pre-clean for ghost-plating mitigation.
-- [[2017-jeon-electroless-ni-front-metallization]] — pre-clean of textured Si before Ni plating.
-- [[2018-electrochemsci-barrier-properties-electroplated-ni]] — acetone / H2SO4-H2O2 / HF cleaning sequence specified.
+- Formula: H2SO4; MW 98.08 g/mol.
+- CAS: 7664-93-9.
+- Concentration in acid-Cu bath: 50–70 g/L (~0.6 M); pH ≈ 1 in operating window.
+- Concentration as sold: ACS reagent ≥95–98 % w/w.
+- GHS: Skin Corrosion Cat 1; Serious Eye Damage Cat 1; STOT-SE Cat 3 (respiratory). Signal Word: Danger. Prop 65 cancer listing (occupational mist exposure).
+- Density (95 %): 1.84 g/mL.
+- Reactivity: exothermic dilution (always add acid to water, never water to acid); reacts violently with bases, organics, alkali metals.
+- PPE: full chemical-splash goggles + face shield, neoprene/nitrile gloves, acid apron, lab fume hood; eye-wash + safety shower in plating-line proximity.
+
+## Suppliers
+
+- Fisher Scientific — AC424525000 (500 mL ACS reagent); URL https://www.fishersci.com/store/msds?partNumber=AC424525000
+- Sigma-Aldrich — 258105 (Sulfuric acid 95–98 %, ACS reagent); URL https://www.sigmaaldrich.com/US/en/product/sial/258105
+- Honeywell / VWR — industrial drums (25 L) for plating-line make-up.
+
+## Alternatives
+
+- Methanesulfonic acid (CH3SO3H) — alternative non-oxidizing strong acid for some plating chemistries; rare in PV Cu plating.
+- Hydrochloric acid (HCl) — used in pre-clean steps but not as plating-bath acid (chloride at high concentration alters Cu deposit morphology).
+
+## Gotchas / failure modes
+
+- [[failure-modes/TCO-pitting-during-plating]] — pH ≈ 1 from H2SO4 dissolves ITO / IWO / AZO at any seed-layer pinhole; the dominant TCO-damage mechanism.
+- [[failure-modes/plating-resist-undercut]] — high-acid baths attack inkjet plating-resist masks at the resist edge if dwell is excessive or temperature drifts up.
+
+## Citing sources
+
+- [[sources/fisher-AC424525000-sulfuric-acid-acs-sds]] — primary catalog source: SDS, hazard data, supplier.
+- [[sources/atotech-cupracid-ultra-a-tds]] — Atotech recipe specifies 60 g/L H2SO4 (~0.6 M).
+- [[sources/fisher-AC197730010-cu-sulfate-pentahydrate-sds]] — companion Cu-source SDS for the same bath.
+- [[sources/2010-bartsch-lip-pvsc]] — LIP acid-Cu electrolyte uses H2SO4.
+- [[sources/2019-hatt-noble-shj-solrrl]] — NOBLE process plates Cu from sulfuric-acid acid Cu bath.

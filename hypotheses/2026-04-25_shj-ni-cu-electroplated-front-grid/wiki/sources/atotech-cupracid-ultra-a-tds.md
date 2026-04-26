@@ -2,56 +2,66 @@
 type: source
 id: atotech-cupracid-ultra-a-tds
 source_type: catalog
-title: "Cupracid® ULTRA — Acid Copper Plating Process — Technical Data Sheet"
-supplier: "Atotech"
-catalog_number: "Cupracid ULTRA Make-up / Part A / Part B"
+title: "Cupracid ULTRA — Acid Copper Plating Process (Technical Data Sheet)"
+authors: ["Atotech"]
 year: 2004
-url: "https://www.atotech.com"
-raw_path: raw/catalogs/atotech-cupracid-ultra-a-tds.txt
-tags: [reagent-spec, supplier-data, electrolyte, acid-copper-bath, brightener, leveler, tds]
+doi: ""
+url: https://5.imimg.com/data5/SELLER/Doc/2022/1/OV/NO/WG/25460806/atotech-cupracid-ultra-a.pdf
+raw_path: raw/catalogs/atotech-cupracid-ultra-a-tds.pdf
+tags: [acid-Cu-bath, plating-electrolyte, Atotech, Cupracid, brightener, CuSO4, H2SO4, chloride, additives]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Cupracid® ULTRA — Atotech (acid Cu plating bath TDS)
+# Cupracid ULTRA — Acid Copper Plating Process (Technical Data Sheet)
+
+**Atotech** — *2004 (Issue 3, 14.01.2004; revised within the Atotech/MKS portfolio)*. URL: https://5.imimg.com/data5/SELLER/Doc/2022/1/OV/NO/WG/25460806/atotech-cupracid-ultra-a.pdf
 
 ## Summary
-Atotech's flagship sulfuric-acid-based bright acid Cu plating process (TDS Issue 3, 14 Jan 2004 — replaces Issue 2 of 16 Jul 2002). It is the canonical industrial reference electrolyte for the front-grid Cu plating step in this hypothesis: a CuSO4·5H2O / H2SO4 / Cl⁻ bath with proprietary organic additives (Cupracid ULTRA Part A and Part B) producing low-stress, ductile, bright, leveled deposits. Atotech's general-metal-finishing branch later supplies these chemistries adapted for solar-cell metallization (see [[atotech-solar-industry-overview]]). This TDS gives the operating window — current density, temperature, agitation, anodes, additive ratios — that the hypothesis's plating protocol can be specified against.
 
-## Key product specs
-- Bath composition (optimum / range):
-  - Copper sulfate pentahydrate (CuSO4·5H2O): 210 g/L (range 195–255 g/L).
-  - Sulfuric acid (66° Baumé): 60 g/L (range 50–70 g/L).
-  - Chloride: 100 mg/L (range 80–150 mg/L).
-  - Cupracid ULTRA Make-up: 10 mL/L.
-  - Cupracid ULTRA Part A: 0.5 mL/L (range 0.4–0.6 mL/L).
-  - Cupracid ULTRA Part B: 0.5 mL/L (range 0.4–0.6 mL/L).
-- Operating conditions:
-  - Temperature: 24–28 °C optimum, 20–30 °C range (low-temperature bath — additives function up to 30 °C without quality loss).
-  - Cathode current density: 3.0 A/dm² optimum, 1.0–6.0 A/dm² range (≈10–55 A/ft²).
-  - Anode current density: ≥0.5 A/dm² to maintain a black anode film, range 0.5–2.5 A/dm².
-  - Voltage: 1.0–4.0 V (up to 6 V depending on load); rectifier ripple ≤10%.
-  - Agitation: cathode rod movement and/or low-pressure blower air; compressed air not acceptable; PVC sparger.
-  - Filtration: continuous through 5 µm media at 2-3 turnovers/h.
-  - Anodes: phosphorus-bearing copper (P 0.03–0.06%); P-Cu nuggets/balls in Ti baskets, in dynel or polypropylene anode bags.
-- Additive control: 2 amp-Hull-cell test (10 min, air agitation, P-Cu anode, polished brass cathode). Replenishment per 10,000 A·h: 0.7 L Part A, 0.5 L Part B.
-- Equipment: hard-rubber-lined steel or PVC/polyester tanks; graphite/Ti/PTFE/PVC/PE heating-cooling.
-- Initial activation: electrolyze 2 A·h/L after make-up to reach optimum brightness.
-- Storage / hazards: refer to MSDS — H2SO4 corrosive (see [[fisher-AC424525000-sulfuric-acid-acs-sds]]) and CuSO4·5H2O harmful if swallowed / serious eye damage (see [[fisher-AC197730010-cu-sulfate-pentahydrate-sds]]). General OSHA/ACGIH/NIOSH compliance required.
-- Pricing: not listed in TDS.
+Atotech's commercial technical data sheet for the Cupracid ULTRA bright acid-Cu plating chemistry — a representative example of the industrial sulfuric-acid-based CuSO₄ electrolyte family used in PCB and PV plating lines. Documents the bath composition, operating window, additive regime (organic brightener Parts A/B + chloride), and analysis procedures that any SHJ Cu electroplating workflow must implement. Treated here as the reagent-stack reference for the [[reagents/acid-Cu-sulfate-bath]] entity.
 
-## Reagents (linked entity)
-- [[../reagents/acid-Cu-sulfate-bath]] — Cupracid ULTRA is a commercial instantiation of this canonical electrolyte family.
-- [[../reagents/sulfuric-acid-H2SO4]] — bath acid (50–70 g/L).
-- [[../reagents/boric-acid]] — not used in acid Cu (relevant to Ni sulfamate baths instead).
+## Key claims / specifications
 
-## Methods this product is used in
-- [[../methods/Cu-electroplating-acid-bath]] — direct application; the TDS gives the canonical operating window.
-- [[../methods/NOBLE-selective-Cu-plating]] — chemistry-compatible with NOBLE-style native-oxide-mask plating since same acid Cu bath is used.
+- **Bath composition (optimum):** CuSO₄·5H₂O 210 g/L (range 195–255), H₂SO₄ 60 g/L (range 50–70), chloride 100 ppm (range 80–150), Cupracid ULTRA Make-up 1.0 % v/v, Part A 0.5 mL/L, Part B 0.5 mL/L.
+- **Operating temperature:** 24–28 °C optimum; 20–30 °C usable. Higher temperatures degrade additive performance.
+- **Cathode current density:** 3.0 A/dm² optimum (1.0–6.0 A/dm² range, 30 A/ft² optimum). Anode CD ≥0.5 A/dm² to maintain phosphorized-Cu black anode film.
+- **Anodes:** phosphorized-Cu 0.03–0.06 % P content recommended; nuggets/balls in titanium baskets; bagged in dynel/polypropylene.
+- **Filtration:** continuous through 5-µm media at 2–3× turnovers/hr — critical to avoid carbon-particle inclusions that produce matte/rough deposits.
+- **Tank materials:** mild steel + hard rubber lining or PVC; anode bags in synthetic acid-resistant fabric.
+- **Additive control method:** Hull-cell tests (2 A, 10 min, air-agitated) on incremental additions; Parts A/B never pre-mixed; both are added on amp-hour-consumed basis.
+- **Make-up procedure:** dissolve CuSO₄ in DI water, treat with 0.2 kg/100 L plating-grade activated carbon (1 hr stirring, then filter), add H₂SO₄ slowly with PPE, add HCl + additives last; pre-electrolyze 2 amp-hours/L before production.
+- **Analysis:** EDTA/murexide titration for Cu, NaOH/bromphenol-blue titration for H₂SO₄, AgNO₃/Hg(NO₃)₂ for chloride.
+- **Output deposit:** "low-stressed, ductile, and bright copper deposits" suitable for PCB through-hole plating; family of chemistries used by Atotech in PV solar lines.
+
+## Methods used
+
+- [[methods/Cu-electroplating-acid-bath]] — this TDS is the canonical industrial reference recipe for the acid-Cu bath used in the Cu-plating step of the Ni/Cu stack.
+
+## Reagents
+
+- [[reagents/acid-Cu-sulfate-bath]] — primary entity this catalog populates: CuSO₄/H₂SO₄/Cl⁻/proprietary brightener formulation.
+- [[reagents/sulfuric-acid-H2SO4]] — bath acid component (60 g/L, ~0.6 M).
+- [[reagents/boric-acid]] — not used in acid-Cu bath (cross-reference: boric acid is for Ni-sulfamate baths only); included by negation to avoid confusion.
+
+## Organisms / substrates
+
+- [[organisms/SHJ-cell-M6]] — the SHJ wafer onto which the plated Cu finger is deposited via this chemistry.
 
 ## Failure modes flagged
-- [[../failure-modes/TCO-pitting-during-plating]] — TDS notes "fine pitting / crater pitting / cluster pitting" remediated with Cupracid GM Plus Wetting Agent (initial 20 mL / 100 L bath; 100–200 mL per 10,000 A·h continuous) — directly relevant to the hypothesis's TCO-pitting failure mode.
-- [[../failure-modes/Cu-finger-oxidation-damp-heat]] — TDS notes Cu deposit ductility and low stress but does not address downstream cap-stack oxidation, which is product-domain.
+
+- [[failure-modes/TCO-pitting-during-plating]] — pH ≈ 1 (sulfuric) bath dissolves ITO/IWO at any pinhole in the Ni or PVD-Cu seed; cathode current density 3.0 A/dm² also stresses TCO at edges.
+- [[failure-modes/lateral-Cu-edge-migration]] — bright additives (leveler/brightener Part A/B) directly govern deposit isotropy; off-spec additive ratio causes mushrooming that overgrows the resist edge.
+- [[failure-modes/plating-resist-undercut]] — with chloride > 150 ppm anodes polarise and bath leveling collapses, locally undercutting the resist.
+
+## Supports / contradicts
+
+- **Supports:** [[sources/2014-rehman-nicu-plating-csi-review]] — same acid-Cu chemistry described as standard for c-Si Cu plating.
+- **Supports:** [[sources/2018-electrochemsci-barrier-properties-electroplated-ni]] — uses a sulfamate Ni / sulfate-Cu paired electrolyte system consistent with this TDS.
+- **Supports:** [[sources/atotech-solar-industry-overview]] — Atotech's PV product page positions this Cupracid family as the production-proven acid-Cu chemistry for solar metallization.
 
 ## Notable quotes
-- "Cupracid® ULTRA is a sulfuric acid-based copper plating process that produces low-stressed, ductile, and bright copper deposits. The additives are designed to operate at bath temperatures up to 86 °F (30 °C) without any noticeable loss in quality." — p. 1
-- "Cathode Current Density — 30 Amps/ft² (3.0 A/dm²); Range 10–55 A/ft² (1.0–6.0 A/dm²)." — p. 2
-- "Copper anodes with a phosphorus content of 0.03–0.06% are recommended. Phosphorized copper nuggets or balls in titanium baskets are preferred." — p. 3
+
+> "Cupracid® ULTRA is a sulfuric acid-based copper plating process that produces low-stressed, ductile, and bright copper deposits. The additives are designed to operate at bath temperatures up to 86°F (30°C) without any noticeable loss in quality." — *Introduction, p. 1.*
+
+> "Continuous filtration through 5-micron media is recommended. The filter turnover rate should be 2 - 3 times per hour." — *Operating Conditions, p. 2.*

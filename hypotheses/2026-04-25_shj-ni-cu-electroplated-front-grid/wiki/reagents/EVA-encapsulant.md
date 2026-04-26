@@ -1,61 +1,77 @@
 ---
 type: reagent
 slug: EVA-encapsulant
-aliases: [ethylene vinyl acetate, EVA film, EVA encapsulant]
-cas: 24937-78-8
-formula: poly(ethylene-co-vinyl acetate); 28–33% VA content typical
+aliases: [ethylene vinyl acetate, EVA, EVA encapsulant film]
+cas: ""
 suppliers:
-  - name: First Solar / Hangzhou First / Cybrid / Bridgestone
-    catalog: standard EVA encapsulant films (e.g., EVASKY, FC-40)
-    grade: PV-grade
-    url: null
-  - name: STR (acquired by EVASA) / 3M (legacy)
-    catalog: EVA encapsulant rolls
-    grade: PV-grade
-    url: null
-storage: cool, dry, sealed roll; 18–24 months shelf life
-hazards: low — EVA itself is benign; concern is the acetic acid hydrolysis byproduct over module lifetime
-known_failure_modes: [EVA-acetic-acid-corrosion, Cu-out-diffusion-through-cap-stack, Cu-finger-corrosion-encapsulant, Cu-diffusion-into-c-Si]
-sources: [2011-nrel-reliability-testing-beyond-qualification, 2012-nrel-iec61215-what-it-is, 2013-koehl-fraunhofer-accelerated-service-life-testing, 2014-nrel-pv-module-qualification-plus, 2014-rehman-nicu-plating-csi-review, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2019-karas-damp-heat-degradation-shj-cu, 2022-arena-sundrive-copper-metallisation-demonstration, 2022-karas-cu-outdiffusion-damp-heat, 2023-taiyangnews-heterojunction-technology-report, 2023-tepner-printing-tech-csi-review, 2024-fraunhoferise-photovoltaics-report, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj]
-tags: [encapsulant, polymer-film, lamination, hydrolysis, deprecated-for-Cu]
+  - name: Mitsui Chemicals (Solar Evasky)
+    catalog: "Solar Evasky S88"
+    grade: standard fast-cure EVA, ~460 µm
+    url: https://www.mitsuichemicals.com
+  - name: Hangzhou First PV Material
+    catalog: "First-EVA F806"
+    grade: PV grade
+    url: https://www.firstpvm.com
+  - name: STR (Specialized Technology Resources)
+    catalog: "Photocap 15455P"
+    grade: PV-encapsulant
+    url: https://www.strsolar.com
+storage: cool (≤25 °C), dry; protect from UV; shelf life 6–12 months
+hazards: low (as cured film); uncured EVA contains peroxide curing agents
+known_failure_modes: [EVA-acetic-acid-corrosion, Cu-finger-corrosion-encapsulant, Cu-out-diffusion-through-cap-stack]
+sources: [2013-koehl-fraunhofer-accelerated-service-life-testing, 2014-nrel-pv-module-qualification-plus, 2014-rehman-nicu-plating-csi-review, 2019-karas-damp-heat-degradation-shj-cu, 2022-karas-cu-outdiffusion-damp-heat, 2023-taiyangnews-heterojunction-technology-report, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj]
+tags: [encapsulant, EVA, module-package, acetic-acid, Cu-corrosion-driver]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Ethylene-vinyl acetate (EVA) encapsulant
+# EVA encapsulant
+
+**Slug:** `reagents/EVA-encapsulant` · **Type:** reagent
 
 ## What it is
-The dominant photovoltaic module encapsulant film since the 1990s — a thermoplastic ethylene/vinyl-acetate copolymer typically containing 28–33% vinyl acetate. EVA is laminated between the cell stack and front glass / back sheet at ~150 °C with peroxide cross-linking. For plated-Cu SHJ, EVA is the WRONG encapsulant: hydrolysis of the vinyl-acetate side group generates acetic acid that drives Cu out-diffusion through any cap stack (Sn or Ag) and corrodes the finger. POE is the recommended replacement.
 
-## Common uses
-- Standard encapsulant for ~80% of installed PV modules historically.
-- Lamination standard 150 °C, 5–10 min cycle.
-- Reference comparator in plated-Cu DH studies — the encapsulant against which POE is benchmarked ([[2019-karas-damp-heat-degradation-shj-cu]], [[2022-karas-cu-outdiffusion-damp-heat]]).
+Ethylene vinyl acetate (EVA) is the dominant polymer encapsulant for c-Si PV modules — a thermoset crosslinked sheet (~450 µm) laminated above and below the cell stack to provide UV protection, mechanical compliance, and moisture barrier. **For plated-Cu cells, EVA is the central adversary**: under damp heat it hydrolyzes to release acetic acid, which corrodes Cu fingers and acts as a sink-reaction driving Cu out-diffusion through cap layers (Karas 2022).
 
-## Key spec / concentration ranges
-- VA content 28–33% typical; lower VA content reduces acetic-acid generation but lowers transparency.
-- Thickness 0.4–0.6 mm per layer; one front layer + one rear layer per module.
-- Cure: peroxide-driven cross-linking at 130–150 °C / 5–15 min.
-- Optical transmission >90% in 400–1100 nm.
-- Hydrolysis: H2O + EVA → ROH + CH3COOH (acetic acid); Arrhenius-accelerated at 85 °C / 85% RH.
-- Karas et al. quantification: Ni/Cu/Sn EVA-encapsulated cell loses 5.1%abs pFF after 2000 h DH; ~3× more Cu at the Si surface than POE-encapsulated sister sample after 3500 h ([[2022-karas-cu-outdiffusion-damp-heat]]).
+## Common uses (in this corpus)
 
-## Alternatives / variants
-- [[POE-polyolefin-encapsulant]] — preferred for Cu plated SHJ (no acetic acid generation).
-- EPE (EVA/POE/EVA tri-layer) — standard for SHJ in [[2023-taiyangnews-heterojunction-technology-report]]; compromise that retains EVA process compatibility while inserting a POE diffusion barrier.
-- TPO (thermoplastic polyolefin) — emerging, similar advantages to POE.
-- Ionomer (Surlyn / DNP) — niche, high-transparency.
+EVA appears across this corpus as the **default module encapsulant** and the **mechanistic anchor** for plated-Cu DH failure. Karas 2022 / 2019 demonstrate that EVA gives ~3× higher Cu surface concentration after DH than POE; Rehman 2014 names EVA as the corrosive driver for the Cu finger; NREL reliability literature treats EVA acetic-acid release as a known PV DH failure pathway. The hypothesis must explicitly choose between EVA and POE for any module-level evaluation — they produce different outcomes.
 
-## Gotchas
-- DO NOT use EVA with plated-Cu metallization — acetic-acid hydrolysis is the central DH failure driver ([[2019-karas-damp-heat-degradation-shj-cu]], [[2022-karas-cu-outdiffusion-damp-heat]]). Even Ag-capped Cu fingers degrade ~3× more in EVA than POE.
-- Fast-cure EVA formulations (lower peroxide content, anti-hydrolysis additives) reduce but don't eliminate acetic-acid evolution — POE is still the safer call for plated-Cu modules.
-- For Ag-screenprinted controls in any DH benchmark, EVA is the historical standard — keep this control to validate that DH degradation is Cu-finger-driven, not encapsulant-driven ([[2022-karas-cu-outdiffusion-damp-heat]]).
-- IEC 61215 / IEC 61730 qualification was historically tuned to EVA; new standards (UL 9540, IEC 63209) are pushing extended-DH testing to capture POE-class encapsulants.
+## Properties / specifications
 
-## Sources
-- [[2022-karas-cu-outdiffusion-damp-heat]] — quantitative EVA vs POE comparison; central evidence that acetic acid drives Cu out-diffusion.
-- [[2019-karas-damp-heat-degradation-shj-cu]] — first major DH evidence that EVA-encapsulated Cu plated cells fail and POE prevents.
-- [[2014-rehman-nicu-plating-csi-review]] — review flagging Cu/EVA interaction concern.
-- [[2023-taiyangnews-heterojunction-technology-report]] — industry: EPE encapsulant standard for SHJ; UV-conversion films layered on top.
-- [[2018-pv-tech-metallization-interconnection-bifacial-shj]] — module BOM context.
-- [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] / [[2024-fraunhoferise-photovoltaics-report]] / [[2023-tepner-printing-tech-csi-review]] — module-level discussion / comparator.
-- [[2011-nrel-reliability-testing-beyond-qualification]] / [[2012-nrel-iec61215-what-it-is]] / [[2013-koehl-fraunhofer-accelerated-service-life-testing]] / [[2014-nrel-pv-module-qualification-plus]] / [[2014-nrel-pv-module-qualification-plus]] / [[2024-nrel-getting-ahead-of-curve-pv-assessment]] — accelerated-aging / qualification framework that historically assumed EVA.
-- [[2022-arena-sundrive-copper-metallisation-demonstration]] — module BOM context for plated Cu.
+- Polymer: ethylene-vinyl acetate copolymer, ~28–33 wt% VA content (PV grade).
+- Crosslinker: typically tert-butyl peroxy ester ("TBEC"-class) or peroxide blend; cures during lamination.
+- Lamination: ~150 °C / 8–15 min hot-press in vacuum laminator (within SHJ thermal budget).
+- Thickness: 0.4–0.5 mm per sheet; double-layer (front + back) for glass-glass or glass-backsheet modules.
+- Refractive index: ~1.48 (matches glass), enabling optical coupling.
+- Acetic acid release: hydrolysis of vinyl acetate side groups under DH (85 °C / 85 % RH) accumulates CH3COOH at 10s–100s ppm levels in the encapsulant phase.
+- UV transmission: PV grade has UV stabilizers but transmits 300–400 nm; older formulations browned under UV.
+
+## Suppliers
+
+- Mitsui Chemicals — Solar Evasky S88; URL https://www.mitsuichemicals.com
+- Hangzhou First PV Material — First-EVA F806; URL https://www.firstpvm.com
+- STR — Photocap 15455P; URL https://www.strsolar.com
+- Sveck, Jinbo, Bridgestone — additional Asia-pacific PV-EVA suppliers.
+
+## Alternatives
+
+- [[reagents/POE-polyolefin-encapsulant]] — polyolefin alternative; **no acetic-acid pathway**; ~3× lower Cu out-diffusion in DH (Karas 2022). Strongly preferred for plated-Cu modules.
+- TPO (thermoplastic polyolefin), silicone encapsulants — niche / premium.
+
+## Gotchas / failure modes
+
+- [[failure-modes/EVA-acetic-acid-corrosion]] — direct hydrolysis pathway; the central anti-EVA mechanism for Cu cells.
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — combined moisture + acetic acid + Cu surface chemistry under EVA gives accelerated finger corrosion.
+- [[failure-modes/Cu-out-diffusion-through-cap-stack]] — Karas 2022 shows EVA "pulls" Cu through the cap stack via the acetic-acid sink reaction.
+
+## Citing sources
+
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — mechanistic anchor: EVA vs POE side-by-side; EVA gives ~3× Cu surface concentration in DH.
+- [[sources/2019-karas-damp-heat-degradation-shj-cu]] — Karas precursor paper; first demonstration of plated-Cu DH degradation with EVA.
+- [[sources/2014-rehman-nicu-plating-csi-review]] — review naming EVA as Cu-finger corrosive driver.
+- [[sources/2013-koehl-fraunhofer-accelerated-service-life-testing]] — service-life modeling; EVA degradation kinetics.
+- [[sources/2014-nrel-pv-module-qualification-plus]] — module qualification framework where EVA-driven failures show up.
+- [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — reliability roadmap; EVA acetic-acid pathway listed.
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — SHJ industry overview discussing encapsulant choice.
+- [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Pingel 2025 Ag-Cu paste study notes encapsulant choice as a downstream concern.

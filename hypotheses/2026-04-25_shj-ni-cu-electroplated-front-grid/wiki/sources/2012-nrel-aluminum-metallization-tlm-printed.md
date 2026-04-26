@@ -3,48 +3,50 @@ type: source
 id: 2012-nrel-aluminum-metallization-tlm-printed
 source_type: protocol
 title: "Non-Contact Printed Aluminum Metallization of Si Photovoltaic Devices"
-authors: ["Heather A. S. Platt", "Yunjun Li", "James P. Novak", "Maikel F. A. M. van Hest"]
+authors: ["Platt, H. A. S.", "Li, Y.", "Novak, J. P.", "van Hest, M. F. A. M."]
 year: 2012
-doi: null
-url: "https://www.osti.gov/biblio/1048147"
+doi: ""
+url: https://docs.nrel.gov/docs/fy12osti/54171.pdf
 raw_path: raw/protocols/2012-nrel-aluminum-metallization-tlm-printed.pdf
-tags: [protocol, methodology, transfer-length-method, TLM, contact-resistivity, aerosol-jet, NREL, reference-method]
+tags: [TLM, contact-resistivity, metallization, NREL, aerosol-jet, methodology]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Non-Contact Printed Aluminum Metallization of Si Photovoltaic Devices
 
+**Platt, H. A. S., Li, Y., Novak, J. P., and van Hest, M. F. A. M. (NREL / Applied Nanotech)** — *IEEE PVSC 2012 (NREL/CP-5200-54171)*. DOI: —
+
 ## Summary
-NREL conference paper (2012 IEEE PVSC) demonstrating aerosol-jet-printed Al metal ink as a non-contact, low-broken-wafer alternative to screen-printed Al back contacts on Si solar cells. The paper is being referenced here **as a protocol for the transfer-length method (TLM) on printed metal lines**: it builds TLM patterns of ten parallel Al lines with line-to-line spacings of 700 µm to 4800 µm on textured Si wafers, sinters them at 550–800 °C for 4 min each, and reports contact resistivities falling from 80 mΩ·cm² (550–600 °C) to 20 mΩ·cm² (800 °C). The geometry, sintering ladder, and the reported ρc range provide a directly applicable TLM workflow blueprint for measuring SHJ Ni/Cu contact resistivity. The cell-level demonstration produced champion 13% efficiency on 21 cm² wafers.
+
+A worked example of how to measure contact resistivity ρc on c-Si solar cells using the transfer length method (TLM). The paper itself is about non-contact aerosol-jet-printed Al back contacts at 13% champion efficiency, but the relevant content for the SHJ Ni/Cu hypothesis is its concrete TLM workflow — geometry, line-spacing range, and sintering conditions — that maps directly onto how the plan must measure ρc ≤ 2 mΩ·cm² on the Ni/Cu stack.
 
 ## Key claims
-- Aerosol-jet printed Al lines: ~100 µm wide, 1–10 µm thick, ~10 µΩ·cm resistivity (~6× bulk Al) after sintering.
-- TLM pattern definition for measuring printed-Al contact resistivity: 10 parallel lines, line-to-line spacings 700 µm → 4800 µm, sintered 4 min at each temperature in the 550–800 °C ladder.
-- Measured contact resistivity ρc = 80 mΩ·cm² at 550 and 600 °C, falling to 20 mΩ·cm² at 800 °C (post-Si–Al alloying above the 577 °C eutectic).
-- Below the eutectic, Al contraction during cooling caused cracking in continuous Al pads; finger geometry (0.7–1.5 mm spacing) avoided cracking.
-- Al-ink compositional/process levers documented: 60 wt% loading, line thickness 1–120 µm achievable; rapid thermal processing in NREL's Atmospheric Processing Platform (APP).
-- Champion 21 cm² c-Si solar cell with screen-printed Ag front grid + aerosol-jet-printed Al back: 13% efficiency.
-- Finer optimization showed Ag-paste burn-through window 700–800 °C; longer time-above-600 °C raised series resistance via SiO_x formation.
+
+- **TLM geometry used:** ten parallel printed lines with **line-to-line spacings ranging 700 µm to 4800 µm** on textured Si wafers — the canonical "10-line, decade-spread spacing" pattern that lets the linear regression of total resistance vs spacing back out the contact resistance intercept and the sheet resistance slope.
+- **Sintering protocol:** 4 minutes at each test temperature (550, 600, 700, 800 °C) sufficient to reach steady-state contact formation for Al on Si.
+- **Reported ρc range for printed Al on Si:** 80 mΩ·cm² at 550 °C falling to 20 mΩ·cm² at 800 °C — i.e. high-firing Al gives ~10× the resistivity threshold the SHJ Ni/Cu hypothesis is targeting (≤2 mΩ·cm²); the SHJ a-Si:H constraint forbids these temperatures anyway, but the *measurement geometry* is identical.
+- **Line resistivity on glass:** ~10 µΩ·cm = ~6× bulk Al, demonstrating how the TLM workflow also extracts the *finger* (line) resistivity in addition to the contact resistivity.
+- **Substrate prep:** TLM patterns printed on textured (pyramid) Si wafers — the same surface morphology as SHJ front side.
 
 ## Methods used
-- [[../methods/transfer-length-method]] — protocol definition: 10 parallel printed lines with progressively varying spacing (700 µm to 4800 µm), spaced sintering ladder; this is a directly applicable TLM template for evaluating Ni/Cu front-grid contact resistivity on SHJ cells (the hypothesis's ≤2 mΩ·cm² target).
-- [[../methods/four-point-probe-sheet-resistance]] — implicit, used to extract sheet resistance from the same TLM lines.
-- [[../methods/IV-curve-measurement]] — used to evaluate 21 cm² cell champion efficiency.
+
+- [[methods/transfer-length-method]] — the explicit 10-line, 700–4800 µm spacing TLM workflow that the SHJ Ni/Cu plan can adopt verbatim, swapping the printed Al for the plated Ni/Cu finger pattern.
+- [[methods/four-point-probe-sheet-resistance]] — implicitly the companion measurement (TLM extracts both ρc and sheet resistance Rs from the line-resistance vs spacing fit).
+- [[methods/IV-curve-measurement]] — used to validate the contacts in finished cells (13% champion efficiency).
 
 ## Reagents
-- (Al ink and screen-printed Ag paste — generic; not on the canonical reagent list)
+
+- *(Aerosol-jet Al ink — outside this hypothesis's scope; no entity link.)*
 
 ## Organisms / substrates
-- [[../organisms/monocrystalline-Si-wafer-p-type]] — 21 cm² Si wafers (single-crystal, textured).
+
+- [[organisms/monocrystalline-Si-wafer-p-type]] — the 21 cm² c-Si solar cells used for end-to-end validation.
 
 ## Failure modes flagged
-- [[../failure-modes/finger-adhesion-loss-after-DH]] — paper discusses Al pad cracking due to thermal-mismatch contraction during cooling; analogous mode for plated Cu fingers.
-- [[../failure-modes/FF-degradation-contact-resistance]] — TLM-measured ρc directly drives FF; the ladder data (80 → 20 mΩ·cm²) maps the relationship.
 
-## Supports / contradicts
-- Supports: [[2014-fraunhofer-peel-testing-ribbons-solar-cells]] (companion methodology reference; both define quantitative metrics for printed-metal-on-Si contacts)
-- Supports: [[2018-electrochemsci-barrier-properties-electroplated-ni]]
+- [[failure-modes/FF-degradation-contact-resistance]] — paper explicitly calls out that longer firing times raise series resistance via SiOx formation, the same Rs-rise failure mode that the Ni/Cu plated stack must avoid in damp-heat aging.
 
 ## Notable quotes
-- "Transfer length method patterns consisting of ten parallel lines with line-to-line spacings ranging from 700 μm to 4800 μm were printed on textured Si wafers and sintered for 4 min at each temperature to determine contact resistivities. These values fell from 80 mΩ-cm² at both 550 and 600 °C to 20 mΩ-cm² at 800 °C." — p. 1
-- "Any non-contact technique that replaces screen printing in large-scale manufacturing must also be capable of depositing films and patterns very quickly (>2000 wafers/hour)." — Introduction
-- "We have demonstrated non-contact printed Al pads and patterns on Si wafers that can be heated over a wide temperature range to form low resistance contacts suitable for extracting photo-generated current from Si solar cells." — Conclusion
+
+> "Transfer length method patterns consisting of ten parallel lines with line-to-line spacings ranging from 700 μm to 4800 μm were printed on textured Si wafers and sintered for 4 min at each temperature to determine contact resistivities. These values fell from 80 mΩ-cm2 at both 550 and 600 °C to 20 mΩ-cm2 at 800 °C." — *p. 2*

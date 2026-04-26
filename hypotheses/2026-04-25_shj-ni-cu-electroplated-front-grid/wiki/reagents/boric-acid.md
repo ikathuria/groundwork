@@ -1,51 +1,64 @@
 ---
 type: reagent
 slug: boric-acid
-aliases: [H3BO3, orthoboric acid]
+aliases: [orthoboric acid, H3BO3, hydrogen borate]
 cas: 10043-35-3
-formula: H3BO3
 suppliers:
-  - name: Fisher / Thermo Scientific Chemicals
-    catalog: bundled with nickel sulfamate kits (AA8902018 etc.); separate SKU for pure H3BO3
-    grade: ACS / electroplating
-    url: https://www.fishersci.com/
-  - name: Atotech (MKS)
-    catalog: bundled with proprietary Ni / Cu plating starter kits
-    grade: production
-    url: https://www.atotech.com/products/general-metal-finishing/solar-industry/
-storage: room-temperature, dry, sealed
-hazards: moderate — H360FD reproductive toxicity (Cat 1B); otherwise low acute toxicity
-known_failure_modes: []
+  - name: Fisher Scientific
+    catalog: "A73-500 (Boric Acid Crystalline, Certified ACS)"
+    grade: ACS reagent ≥99.5 %
+    url: https://www.fishersci.com/shop/products/boric-acid-crystalline-certified-acs-fisher-chemical-3/A73500
+  - name: Sigma-Aldrich
+    catalog: "B6768"
+    grade: ACS reagent ≥99.5 %
+    url: https://www.sigmaaldrich.com/US/en/product/sial/b6768
+storage: ambient; dry, well-ventilated; keep container closed
+hazards: medium — reproductive toxin (H360FD); skin/eye irritant
+known_failure_modes: [Ni-barrier-pinholes, TCO-pitting-during-plating]
 sources: [atotech-cupracid-ultra-a-tds, fisher-AA8902018-nickel-sulfamate-hydrate]
-tags: [buffer, plating-additive, weak-acid]
+tags: [pH-buffer, Ni-bath, sulfamate, additive]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Boric acid (H3BO3)
 
+**Slug:** `reagents/boric-acid` · **Type:** reagent
+
 ## What it is
-The standard pH buffer in nickel sulfamate, nickel sulfate (Watts), and many tin plating baths. H3BO3 stabilises the cathode-film pH (~4.0) during Ni deposition, suppressing Ni(OH)2 inclusion and burning at high current density. NOT used in acid Cu sulfate plating (no buffering need at the working pH ≈ 0).
 
-## Common uses
-- pH buffer in [[nickel-sulfamate-bath]] make-up (~30–40 g/L H3BO3).
-- pH buffer in Sn or Sn-alloy cap plating baths ([[tin-Sn-cap]]).
-- Bath stabiliser in commercial Atotech / Fisher Ni plating kits.
+Boric acid (H3BO3) is a weak acid used at 30–45 g/L as a **pH buffer** in nickel-sulfamate (and Watts) plating baths. It stabilizes the cathode-film pH during Ni deposition, preventing localized pH excursions that cause hydroxide co-deposition, pitting, and brittle Ni films.
 
-## Key spec / concentration ranges
-- 30–40 g/L in Ni sulfamate baths (typical industrial range; not stated explicitly on Cupracid ULTRA TDS because Cupracid ULTRA is acid Cu, not Ni).
-- Solubility ~50 g/L in water at 25 °C (saturation limit constrains how much buffering is achievable).
-- pH 5–6 typical for the buffered Ni bath.
-- pKa1 = 9.24; in sulfamate baths it functions as a coordinating species more than a Brønsted buffer.
+## Common uses (in this corpus)
 
-## Alternatives / variants
-- Glycine, citrate — alternative buffers used in pulse-Ni or bath-free electroless variants.
-- [[nickel-sulfamate-bath]] — the host electrolyte that boric acid buffers.
-- [[sulfuric-acid-H2SO4]] — counterpart pH-control reagent (acidifier rather than buffer).
+In this corpus boric acid is a make-up component of the [[reagents/nickel-sulfamate-bath]] used to plate the sub-100 nm Ni barrier in the Ni/Cu stack. It is **not** used in the [[reagents/acid-Cu-sulfate-bath]] (Atotech Cupracid TDS confirms this — the Cu bath uses CuSO4 + H2SO4 + Cl⁻ + organic additives, no borate). Boric acid is therefore a Ni-side-only reagent in the workflow.
 
-## Gotchas
-- Reproductive toxicity (REACH SVHC; H360FD) — substitution under EU CLP regulations is being explored, but no industrial replacement has full equivalence in Ni plating performance.
-- Do not exceed solubility — undissolved H3BO3 causes pinholes / orange-peel deposit.
-- Confused with borate buffers (e.g., Na2B4O7); they are NOT interchangeable in Ni sulfamate (different complexation).
+## Properties / specifications
 
-## Sources
-- [[atotech-cupracid-ultra-a-tds]] — explicitly notes boric acid is NOT used in acid Cu (relevant only to Ni sulfamate baths).
-- [[fisher-AA8902018-nickel-sulfamate-hydrate]] — flags ~30–40 g/L boric acid as the canonical Ni sulfamate buffer.
+- Formula: H3BO3 (orthoboric acid); MW 61.83 g/mol.
+- CAS: 10043-35-3.
+- Use concentration in Ni-sulfamate baths: 30–45 g/L (~0.5–0.7 M).
+- pKa1: ~9.24 (weak acid; the buffering action in plating baths is via complex equilibria, not classical Brønsted buffering).
+- Solubility: ~5 % w/w at 25 °C, increasing with temperature.
+- Hazard: GHS reproductive toxin Category 1B (H360FD); EU-classified. PPE required.
+
+## Suppliers
+
+- Fisher Scientific — A73-500 (500 g, ACS reagent ≥99.5 %); URL https://www.fishersci.com/shop/products/boric-acid-crystalline-certified-acs-fisher-chemical-3/A73500
+- Sigma-Aldrich — B6768 (ACS reagent ≥99.5 %); URL https://www.sigmaaldrich.com/US/en/product/sial/b6768
+- Thermo Scientific Chemicals (Alfa Aesar legacy SKUs) — multiple sizes.
+
+## Alternatives
+
+- Citrate / sulfate buffer mixes (less common in PV-grade Ni baths).
+- Bath chemistries that omit boric (e.g. some additive-buffered Ni-sulfamate variants developed in response to EU REACH SVHC listing of boric acid).
+
+## Gotchas / failure modes
+
+- [[failure-modes/Ni-barrier-pinholes]] — under-dosed boric leads to localized pH spikes and Ni hydroxide co-deposition, increasing pinhole density in the sub-100 nm barrier.
+- [[failure-modes/TCO-pitting-during-plating]] — secondary risk if pH control fails and bath becomes locally aggressive.
+
+## Citing sources
+
+- [[sources/fisher-AA8902018-nickel-sulfamate-hydrate]] — Fisher catalog page for Ni(II) sulfamate names boric acid as the pH-buffer companion in Watts/sulfamate Ni baths.
+- [[sources/atotech-cupracid-ultra-a-tds]] — Atotech Cupracid TDS is referenced *by negation* (boric is **not** in the acid-Cu bath; it belongs only in the Ni-side bath).

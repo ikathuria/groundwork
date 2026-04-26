@@ -2,49 +2,83 @@
 type: failure-mode
 slug: silver-supply-bottleneck
 severity: low
-frequency_estimate: "ITRPV 2024: 500 GW PERC + TOPCon (2023) consumed ~5750 t Ag = 18 % of 2023 world supply. SHJ uses 19 mg/W (vs PERC 9.6 mg/W). Zhang 2021 (cited in Pingel 2025) projects 90 % of global Ag in PV by 2030 if trends continue. Hatt 2021: silver paste ~10 % of typical solar module cost in 2021."
-applies_to_methods: [screen-printed-Ag-paste, NOBLE-selective-Cu-plating, Cu-electroplating-acid-bath, electroplated-Ni-Cu-stack]
-applies_to_reagents: [low-T-Ag-paste-generic-SHJ-grade, low-T-Ag-paste-Solamet-PV21A, low-T-Ag-paste-Solamet-PV56S, low-T-Ag-paste-PV56S, Cu-paste-low-temperature, acid-Cu-sulfate-bath, silver-Ag-cap]
-applies_to_step_kinds: [plate]
-sources: [2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2018-pvtech-metallization-shj-cells-modules, 2020-verlinden-future-challenges-tw-pv, 2021-goldschmidt-tech-learning-tw-pv, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-arena-sundrive-copper-metallisation-demonstration, 2023-taiyangnews-heterojunction-technology-report, 2023-tepner-printing-tech-csi-review, 2024-fraunhoferise-photovoltaics-report, 2024-iea-pvps-trends-pv-applications, 2024-itrpv-15th-edition-roadmap, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2024-siliconpv-novel-shj-metallization-architectures, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, atotech-solar-industry-overview, dupont-solamet-pv21a-tech-sheet, dupont-solamet-pv56s-data-sheet, pvtech-metallization-challenges-cell-manufacturing]
-tags: [supply-chain, silver, cost, terawatt-PV, sustainability, hypothesis-motivation]
+frequency_estimate: "Industry-wide. PV consumed ~10 % of global Ag in 2019 (Verlinden 2020) and ~18 % in 2023 (ITRPV 15th edition). At 1 TW/year production unchanged Ag/W reaches 100 % of global Ag (~2028 under 25 % CAGR). Without learning rate ≥15 %, Goldschmidt 2021 projects PV Ag demand exceeds global production by 2027 (worst case) or 2051 (best case)."
+applies_to_methods: [screen-printed-Ag-paste, Cu-electroplating-acid-bath, electroplated-Ni-Cu-stack]
+applies_to_reagents: [low-T-Ag-paste-generic-SHJ-grade, low-T-Ag-paste-Solamet-PV21A, low-T-Ag-paste-Solamet-PV56S, Cu-paste-low-temperature, silver-Ag-cap, acid-Cu-sulfate-bath]
+applies_to_step_kinds: [screen-print, plating, cap-deposition]
+sources: [2014-rehman-nicu-plating-csi-review, 2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2018-pvtech-metallization-shj-cells-modules, 2020-verlinden-future-challenges-tw-pv, 2021-goldschmidt-tech-learning-tw-pv, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-arena-sundrive-copper-metallisation-demonstration, 2023-taiyangnews-heterojunction-technology-report, 2023-tepner-printing-tech-csi-review, 2024-fraunhoferise-photovoltaics-report, 2024-iea-pvps-trends-pv-applications, 2024-itrpv-15th-edition-roadmap, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2024-siliconpv-novel-shj-metallization-architectures, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, 2025-yacouba-shj-silver-free-metallization-progPV, atotech-solar-industry-overview, dupont-solamet-pv21a-tech-sheet, dupont-solamet-pv56s-data-sheet, pvtech-metallization-challenges-cell-manufacturing]
+tags: [silver, supply, terawatt, sustainability, structural-failure-mode, motivation, commons-candidate]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Silver supply bottleneck
+# Silver supply bottleneck at terawatt-scale PV
+
+**Slug:** `failure-modes/silver-supply-bottleneck` · **Severity:** low
 
 ## What it is
-This is not a device-failure mode but a *system-level* bottleneck that ultimately constrains terawatt-scale PV deployment. PV currently consumes ~18 % of annual world silver supply ([[2024-itrpv-15th-edition-roadmap]]). SHJ uses ~2× more silver per Watt than PERC (19 vs 9.6 mg/W) due to its low-temperature paste needing 2-3× higher bulk resistivity than fired Ag. As the industry scales toward 1 TW/yr, silver demand from PV alone would exceed plausible supply ([[2020-verlinden-future-challenges-tw-pv]], [[2021-goldschmidt-tech-learning-tw-pv]]). Silver also carries price-volatility risk — silver paste is already ~10 % of module cost ([[2021-hatt-stable-cu-plated-shj-eupvsec]]). The hypothesis is *motivated* by this bottleneck: replacing front-grid Ag with electroplated Cu removes the SHJ-specific silver multiplier and is the largest single Ag-saving lever available.
+
+A **structural / economic** failure mode — not a device failure, but a constraint on the PV industry's ability to scale screen-printed-Ag SHJ to terawatt-class production. PV consumed ~10 % of global Ag in 2019 (Verlinden 2020) and ~18 % in 2023 (ITRPV 15th edition: 5,750 t / ~32,000 t global mine production). At unchanged Ag-per-Watt, the industry hits 100 % of global Ag at 1 TW/year of production (~2028 under 25 % CAGR projected by Verlinden). Goldschmidt 2021's REMIND-model analysis quantifies the same crossover at 2027 worst case / 2051 best case; both papers explicitly identify Cu plating (alongside FlexTrail printing and AgCu paste) as the only known route to per-Wp Ag below screen-printing's floor. This is the entire economic motivation for the SHJ Ni/Cu hypothesis.
+
+**Note:** This is the canonical motivating failure mode for the hypothesis but is *not* a device-physics issue. The "failure" is the failure of the metallization-as-deployed-at-TW-scale to meet the resource constraint. Likely a strong commons-promotion candidate — recurs across every PV-metallization hypothesis.
 
 ## How it manifests
-- Silver price spikes during PV deployment ramps (e.g., 2020–2022) increase module cost without commensurate efficiency improvement.
-- Cell-level Ag laydown roadmap (ITRPV) drives industry investments away from silver, but the paste reduction has practical floor (~5 mg/W with AgCu, ~2 mg/W with AgCu+fine-line).
-- Industry-level: rolling-mill capacity for Ag bullion supply to PV becomes constrained.
-- *Not* a device-level signature — does not appear in IV, EL, DH, or peel data.
+
+- **PV Ag consumption at unsustainable share of global production**: 7.9 % (2018, Goldschmidt) → ~10 % (2019, Verlinden) → ~18 % (2023, ITRPV).
+- **Per-cell / per-Watt Ag laydown**: ITRPV 15th sees PERC at 9.6 mg/W, TOPCon 15 mg/W, SHJ ~19 mg/W (M10 baseline 160 mg/cell, G12 230 mg/cell).
+- **Ag price volatility** — May 2024 spot $853.92/kg (ITRPV 15th), up from $650/kg one year prior; ~$0.98 ¢/W of cell cost from front grid alone.
+- **Industry roadmap target**: per-Wp Ag must fall to <5 mg/W by 2030 to be sustainable (Verlinden 2020); Goldschmidt projects 0.7–2.9 mg/W by 2100. Lorenz 2024 demonstrates 4.4 mg/W on knotless fine-line screens; Pingel 2025 demonstrates <5 mg/W with Cu rear paste.
+- **Plating market share lag** — ITRPV 15th: "Plating is still not introduced in a significant mass production market share."
 
 ## How to detect it
-- Industry-level: track Ag spot price (Silver Institute), PV mg/W trends (ITRPV), and forward-looking demand vs supply curves (Zhang 2021).
-- Cost analyses: silver fraction of module BOM (ITRPV: 0.98 ¢/W of cell at $853.92/kg in May 2024).
-- Cell-level: Ag laydown per cell (X-ray fluorescence or weighing, ITRPV-tracked).
 
-## Mitigation (specific actions, not vague advice)
-- Replace front Ag with electroplated Cu (the hypothesis): SHJ Ag-only cell uses 160 mg/M10 wafer; with NOBLE Cu plating, front-side Ag goes to 0 and is replaced by ~0.2 µm immersion Ag cap (~5 mg).
-- For paste route: switch to AgCu (44–55 % Ag core-shell) — Frasson 2024 demonstrates equivalent performance at half the Ag.
-- Multi-busbar / SmartWire interconnection (≥18 BB or busbarless 37 % market share by 2034 per ITRPV) reduces busbar Ag laydown.
-- Fine-line knotless screen-printing (15 µm fingers, [[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]]) reduces Ag laydown by ~25 %.
-- Specify cost-of-metallization target for the hypothesis: <10 % of Ag-screen-print cost (i.e. <0.1 ¢/W of cell), per [[2022-arena-sundrive-copper-metallisation-demonstration]] cost case.
-- Mid-term industry target: 5 mg Ag/W ([[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]); long-term 2 mg/W (Zhang 2021).
+- **Cost analysis at production scale** — model per-cell Ag cost vs Cu-plating CapEx + chemistry consumables; compare $/cell.
+- **Per-cell mass spectrometry / XRF** — direct Ag consumption measurement.
+- **Industry survey data** — ITRPV (annual VDMA), IEA-PVPS Trends Report (annual), Fraunhofer ISE PV Report (annual). All track per-Wp Ag.
+- **Spot-price tracking** — Ag price volatility itself is a detection signal.
+- **Resource-modelling analyses** — REMIND (Goldschmidt), MIT IAM, ITRPV scenario analysis.
 
-## Severity ranking justification
-Low: by GROUNDWORK convention, supply-chain and cost-driven failure modes are categorised low because they do not destroy a device; they only make the technology economically uncompetitive at scale. The supply bottleneck is the *motivation* for the hypothesis — not a failure of the proposed Cu metallization. It is included for completeness because most sources cite it as the central rationale.
+## Mitigation
 
-## Sources
-- `[[2024-itrpv-15th-edition-roadmap]]` — quantitative Ag laydown trajectory; 18 % of global Ag supply (2023 baseline).
-- `[[2020-verlinden-future-challenges-tw-pv]]`, `[[2021-goldschmidt-tech-learning-tw-pv]]` — TW-PV scaling Ag/In/Bi sustainability frame.
-- `[[2024-fraunhoferise-photovoltaics-report]]`, `[[2024-iea-pvps-trends-pv-applications]]` — industry capacity context.
-- `[[2023-taiyangnews-heterojunction-technology-report]]` — Huasun 14.6 → 10 mg/W; Maxwell roadmap.
-- `[[2022-arena-sundrive-copper-metallisation-demonstration]]` — 25 % cell-level / 17 % module-level cost reduction by Ag elimination.
-- `[[2021-hatt-stable-cu-plated-shj-eupvsec]]` — 10 % of module cost is silver.
-- `[[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]]`, `[[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]` — Fraunhofer Ag-reduction roadmap.
-- `[[2024-siliconpv-novel-shj-metallization-architectures]]` — AgCu paste as Ag-saving step.
-- `[[2018-pv-international-metallization-shj]]`, `[[2018-pv-tech-metallization-interconnection-bifacial-shj]]`, `[[2018-pvtech-metallization-shj-cells-modules]]` — CSEM cost-rationale.
-- `[[2024-nrel-getting-ahead-of-curve-pv-assessment]]`, `[[2023-tepner-printing-tech-csi-review]]`, `[[atotech-solar-industry-overview]]`, `[[dupont-solamet-pv21a-tech-sheet]]`, `[[dupont-solamet-pv56s-data-sheet]]`, `[[pvtech-metallization-challenges-cell-manufacturing]]` — supplier and trade-press framing.
+- **Cu plating** — the canonical resolution. Verlinden 2020 explicitly cites it; Goldschmidt 2021 identifies it as one of the routes to per-Wp Ag below screen-print's floor. NOBLE, SunDrive, Maxwell, Tongwei commercial activities. The hypothesis's intervention.
+- **AgCu (Cu core / Ag shell) paste** — Frasson 2024 (AMAT) demonstrates AgCu1 matches Ag at 21.94 % vs 21.95 %; ~58 % Ag reduction lab, projected 60 %+ at production scale.
+- **Pure-Cu paste** — Yacouba 2025: 23.08 % SHJ with Cu paste on both sides (zero Ag); 100 % Ag reduction.
+- **Fine-line screen printing** — Lorenz 2024: 23.2 % SHJ at 16.3 mg/cell (~4.4 mg/W); the *Ag-only* sustainable trajectory.
+- **FlexTrail printing** — Goldschmidt 2021 cites 0.05 mg/Wp; Tepner & Lorenz 2023 review.
+- **Smartwire (SWCT) / multibusbar interconnection** — relaxes finger-resistance constraint, enabling 60 mg/cell (CSEM/Faes 2018) vs ~1 g/cell legacy.
+- **Indium-bottleneck mitigation** — Goldschmidt 2021 flags ITO/IWO indium as the *next* bottleneck after Ag; AZO + thin-ITO compromises (Lachowicz 2024) extend SHJ sustainability.
+- **Recycling** — Verlinden notes PV recycled ~100 MW in 2020 (~0.1 % of annual production); needs ~10× growth in 10 years to recover end-of-life Ag, Cu, Sn, glass, Si.
+
+## Where it applies
+
+- Methods: [[methods/screen-printed-Ag-paste]], [[methods/Cu-electroplating-acid-bath]], [[methods/electroplated-Ni-Cu-stack]]
+- Reagents: [[reagents/low-T-Ag-paste-generic-SHJ-grade]], [[reagents/low-T-Ag-paste-Solamet-PV21A]], [[reagents/low-T-Ag-paste-Solamet-PV56S]], [[reagents/Cu-paste-low-temperature]], [[reagents/silver-Ag-cap]], [[reagents/acid-Cu-sulfate-bath]]
+- Step kinds: screen-print, plating, cap-deposition
+
+## Severity rationale
+
+Low (in the device-physics sense — this is an *economic* not a *physical* failure). The SHJ device works fine with 160 mg Ag/cell; the constraint is industry-wide, not cell-specific. But severity is "low" only by the device-failure rubric: the *strategic* impact is critical because it is the entire reason the SHJ Ni/Cu hypothesis exists. Verlinden 2020 frames it explicitly: "for the sustainability of Si photovoltaics, it is crucial that the future metallization solutions only make use of abundantly available and non-toxic materials."
+
+## Citing sources
+
+- [[sources/2020-verlinden-future-challenges-tw-pv]] — *the* canonical citation: 100 % of global Ag at 1 TW/year (~2028), Cu plating named explicitly as the resolution. <5 mg/W target.
+- [[sources/2021-goldschmidt-tech-learning-tw-pv]] — REMIND-model quantification: 2027 worst case / 2051 best case for PV Ag demand exceeding global production. Indium as next bottleneck.
+- [[sources/2024-itrpv-15th-edition-roadmap]] — 18 % of world Ag in 2023; per-cell laydown trajectory; "plating not yet at significant mass production market share."
+- [[sources/2024-iea-pvps-trends-pv-applications]] — implicit; 456 GW 2023 → projected TW/yr is the upstream of this failure mode.
+- [[sources/2024-fraunhoferise-photovoltaics-report]] — Fraunhofer's CAGR / cumulative deployment figures consistent with Verlinden's 1 TW/yr trajectory.
+- [[sources/2014-rehman-nicu-plating-csi-review]] — early framing: Ag-paste consumes up to 40 % of cell processing cost; Cu ~100× cheaper.
+- [[sources/2018-pv-international-metallization-shj]] — SHJ Ag use ~2× a PERC cell; foundational SHJ metallization framing.
+- [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — same framing with cost tables.
+- [[sources/2018-pvtech-metallization-shj-cells-modules]] — same group's protocol companion.
+- [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — "silver supply will soon become a bottleneck and is already causing 10 % of the costs for a typical solar module."
+- [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — entire economic motivation; 25 % cell-level / 17 % module-level cost reduction from Ag elimination.
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — industry survey: 18 mg/W (2022) → 10 mg/W target (2023).
+- [[sources/2023-tepner-printing-tech-csi-review]] — fine-line screen-print trajectory as one mitigation route.
+- [[sources/2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] — 4.4 mg/Wp at 23.2 % via fine-line screen.
+- [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — explicit n-type Ag-supply concern; Cu attractive alternative.
+- [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — AgCu paste reduces Ag 58 % lab / 60 % projected.
+- [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — <5 mg/W with Cu rear paste; 35 µm AgCu fingers.
+- [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — 23.08 % all-Cu paste SHJ; 100 % Ag reduction.
+- [[sources/atotech-solar-industry-overview]] — vendor framing of the silver-supply argument.
+- [[sources/dupont-solamet-pv21a-tech-sheet]], [[sources/dupont-solamet-pv56s-data-sheet]] — fire-through Ag pastes; the supply-cost target the plated-Cu hypothesis addresses (also wiki red-flagged as PERC-only, false-friend SHJ controls).
+- [[sources/pvtech-metallization-challenges-cell-manufacturing]] — "for the sustainability of Si photovoltaics, future metallization solutions must use abundantly available and non-toxic materials."

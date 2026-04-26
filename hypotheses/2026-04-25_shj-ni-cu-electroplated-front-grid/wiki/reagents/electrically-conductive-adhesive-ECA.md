@@ -1,63 +1,74 @@
 ---
 type: reagent
 slug: electrically-conductive-adhesive-ECA
-aliases: [ECA, conductive adhesive, conductive epoxy, Ag-flake ECA]
-cas: null (silver-filled epoxy mixture)
-formula: epoxy / acrylic resin filled with Ag flakes (~70–80 wt%)
+aliases: [ECA, conductive adhesive, Ag-filled epoxy, low-T interconnect adhesive]
+cas: ""
 suppliers:
-  - name: Henkel Loctite (e.g., Ablestik, Hysol)
-    catalog: Ag-filled ECA pastes (e.g., 8290, AS9000)
-    grade: production
-    url: null
-  - name: DELO / Panacol / ResCoat (Ag-free Cu-filled ECAs)
-    catalog: production ECA
-    grade: production
-    url: null
-  - name: DuPont / Solamet
-    catalog: Solamet ECA (industry-specific)
-    grade: production
-    url: null
-storage: -20 °C frozen; thaw to room temperature before use; 6–12 months at -20 °C; 24–72 h pot life at RT
-hazards: moderate — uncured epoxy is a skin sensitiser; cured ECA is benign
-known_failure_modes: [finger-adhesion-loss-after-DH, FF-degradation-contact-resistance, Cu-finger-corrosion-encapsulant]
-sources: [2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-taiyangnews-heterojunction-technology-report, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-nrel-getting-ahead-of-curve-pv-assessment]
-tags: [adhesive, interconnection, low-T-bonding, Ag-filled, shingle]
+  - name: Henkel (Loctite)
+    catalog: "Loctite Ablestik ICP series (e.g. ICP 4000)"
+    grade: SHJ / module interconnect
+    url: https://www.henkel-adhesives.com
+  - name: Hitachi Chemical / Resonac
+    catalog: "EN-4901 / SR-1100 ECA series"
+    grade: PV interconnect
+    url: https://www.resonac.com
+  - name: DuPont (Solamet conductive adhesives)
+    catalog: "PV4xx ECA series"
+    grade: SHJ-compatible cure ≤180 °C
+    url: https://www.dupont.com
+storage: refrigerated (≤5 °C); short shelf life (~3–6 months)
+hazards: medium — epoxy resin (skin sensitiser); Ag filler dust on cure
+known_failure_modes: [ECA-discoloration-after-DH, finger-adhesion-loss-after-DH, Cu-finger-corrosion-encapsulant]
+sources: [2018-pv-tech-metallization-interconnection-bifacial-shj, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-taiyangnews-heterojunction-technology-report, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-nrel-getting-ahead-of-curve-pv-assessment]
+tags: [interconnect, ECA, Ag-epoxy, low-T-cure, SHJ-stringing]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Electrically conductive adhesive (ECA)
 
+**Slug:** `reagents/electrically-conductive-adhesive-ECA` · **Type:** reagent
+
 ## What it is
-A conductive epoxy or acrylic adhesive filled with silver flakes (typically ~70–80 wt%) that bonds ribbons or shingles to metal pads at curing temperatures of 130–160 °C — well below the soldering temperatures of standard PV ribbons. ECA is the preferred interconnection for plated-Cu and screen-printed low-T Ag cells where avoiding solder is desirable, and is the standard in shingled-cell architectures.
 
-## Common uses
-- Ribbon-to-Ag-pad attach on SHJ in lieu of soldering ([[2018-pv-international-metallization-shj]], [[2018-pv-tech-metallization-interconnection-bifacial-shj]]).
-- Shingle-cell interconnection — overlapping cells bonded with ECA strips at the busbar edge ([[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]], [[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Module assembly using teamtechnik or Mondragon ECA stringers ([[2023-taiyangnews-heterojunction-technology-report]]).
+An electrically conductive adhesive (ECA) is a polymer (typically epoxy) loaded with conductive filler (Ag flakes, Ag-coated Cu, or Cu particles) that cures at low temperature (~150–180 °C) to form simultaneously the *mechanical* and *electrical* bond between the cell front grid and the interconnect ribbon. ECA is the SHJ-compatible alternative to solder, since SHJ a-Si:H cannot tolerate the >250 °C reflow of standard PbSn / SnAg ribbons.
 
-## Key spec / concentration ranges
-- Filler: ~70–80 wt% Ag flakes (~5–15 µm); some formulations now use Ag-coated Cu particles to reduce Ag content.
-- Resin: epoxy or acrylic with latent hardener.
-- Cure: 150 °C / 5–10 min typical (range 130–160 °C / 1–30 min).
-- Cured volume resistivity: 5×10⁻⁵ – 5×10⁻⁴ Ω·cm (factor of 10–100 above bulk Ag).
-- Contact resistance to Cu pad: ~0.1–1 mΩ·cm² typical; depends on pressure during cure.
-- Mass per shingle in CSEM modules: ~3.5 mg per shingle, cured at 150 °C ([[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]], [[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Lap-shear strength: 5–15 MPa typical (cured).
+## Common uses (in this corpus)
 
-## Alternatives / variants
-- [[multibusbar-Cu-ribbon]] with LMPA solder coating — direct soldering alternative for non-shingle architectures.
-- Ag-coated-Cu ECA — same role but lower Ag content.
-- Sintered Ag paste (high-T) — high-conductivity alternative used in power electronics, NOT for SHJ (cure too hot).
+ECA appears throughout SHJ module-level workflows in this corpus — it is the **standard interconnect bonding chemistry** for SHJ stringing because it cures within the a-Si:H thermal budget. It is especially relevant to plated-Cu cells: with an Ag or Sn cap, the cell finger meets the ECA bond surface and inherits any ECA failure mode (discoloration, hydrolysis, voiding) under DH. Lachowicz 2023/2024 and TaiyangNews 2023 document SHJ mini-modules and full modules using ECA + multibusbar (MBB) Cu-ribbon interconnect.
 
-## Gotchas
-- Pot life at room temperature is only 24–72 h after thaw — coordinate cure with module assembly schedule.
-- Long-term DH stability of ECA-bonded Cu is moderate; edge-initiated moisture ingress causes interface degradation in 1-cell mini-modules ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Curing pressure during ECA bonding affects contact resistance — too little pressure leaves Ag-flake gaps; too much squeezes adhesive out, leading to electrical opens.
-- Ag-filled ECA does NOT eliminate Ag from the BOM — it consumes ~3–5 mg Ag per shingle, but at the module level this is comparable to or less than soldered tabbing pads.
-- Cured ECA is brittle — module flex tests can crack the bond if substrate stress is high.
+## Properties / specifications
 
-## Sources
-- [[2018-pv-tech-metallization-interconnection-bifacial-shj]] — ECA gluing as Ag-saving alternative; reduces front-side LCT-Ag-paste mass by >50%.
-- [[2018-pv-international-metallization-shj]] — ECA in SHJ M&I overview.
-- [[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] / [[2024-lachowicz-cu-plated-shj-aging-mini-modules]] — ECA-bonded shingle modules on plated-Cu SHJ; ~3.5 mg per shingle, cure 150 °C.
-- [[2023-taiyangnews-heterojunction-technology-report]] — teamtechnik / Mondragon ECA stringers for SHJ.
-- [[2024-nrel-getting-ahead-of-curve-pv-assessment]] — ECA reliability framework.
+- Cure temperature: 150–180 °C, 5–30 min (SHJ-compatible).
+- Filler: Ag flakes (typical), Ag-coated Cu (Ag-savings variant), or pure Cu (research only).
+- Filler loading: ~70–85 wt% for percolation; bulk resistivity 10−4 to 10−5 Ω·cm typical.
+- Adhesion: 1–5 N/mm peel strength on cell front grid; degrades under DH with module-package-specific kinetics.
+- Glass transition Tg: ~80–120 °C — ECA softens at module operating-extreme temperatures.
+- Shelf life: 3–6 months refrigerated; ECA hydrolyzes / settles outside spec window.
+
+## Suppliers
+
+- Henkel (Loctite) — Ablestik ICP series; URL https://www.henkel-adhesives.com
+- Hitachi Chemical / Resonac — EN-4901 / SR-1100 PV ECA; URL https://www.resonac.com
+- DuPont — Solamet PV4xx ECA series; URL https://www.dupont.com
+- Three Bond, Namics — additional vendors active in PV interconnect.
+
+## Alternatives
+
+- Soldered ribbons (SnAg / SnPb / SnAgCu) — used in PERC/TOPCon; **not** SHJ-compatible above ~250 °C reflow.
+- Multibusbar (MBB) low-T solder pastes — borderline SHJ-compatible at the upper end.
+- [[reagents/multibusbar-Cu-ribbon]] — the *ribbon* the ECA bonds to, not an alternative to the ECA itself.
+
+## Gotchas / failure modes
+
+- [[failure-modes/ECA-discoloration-after-DH]] — epoxy matrix yellows / browns under DH, signaling oxidation and resin degradation; correlated with peel-strength loss.
+- [[failure-modes/finger-adhesion-loss-after-DH]] — ECA bond degrades, breaking the cell-to-ribbon connection; module power drop.
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — Cu finger under ECA + encapsulant is exposed to acetic-acid / moisture pathway; ECA can locally accelerate corrosion via filler galvanic effects.
+
+## Citing sources
+
+- [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — overview of SHJ interconnection options; ECA is the default for plated-Cu cells.
+- [[sources/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — CSEM mini-module aging with ECA-bonded MBB ribbons.
+- [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — extended aging follow-up; ECA failure modes characterized.
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — industry overview of SHJ interconnection ecosystem.
+- [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — reliability assessment flagging ECA degradation as a known DH failure mode.

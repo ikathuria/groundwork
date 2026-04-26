@@ -1,70 +1,76 @@
 ---
 type: reagent
 slug: Cu-paste-low-temperature
-aliases: [Cu paste, pure Cu paste, AgCu core-shell paste, Ag-coated-Cu paste, SCC paste]
-cas: null (multi-component metallization paste)
-formula: Cu (or AgCu core-shell) particles + low-T binder/sintering aid + organic vehicle
+aliases: [low-T Cu paste, Cu nanoparticle paste, LCT-Cu paste]
+cas: ""
 suppliers:
-  - name: Namics
-    catalog: pure Cu paste; AgCu core-shell pastes (Cu core + Ag shell)
-    grade: production / development
-    url: null
-  - name: Heraeus / Toyo / Yu Cheng / Soltrium
-    catalog: AgCu and pure-Cu pastes for SHJ rear / front
+  - name: Applied Materials (AMAT)
+    catalog: "AgCu / Cu paste (proprietary)"
+    grade: SHJ-compatible cure ≤300 °C / 5 s
+    url: https://www.appliedmaterials.com
+  - name: Hitachi Chemical / Resonac
+    catalog: "Cu paste prototypes"
+    grade: research / pilot
+    url: https://www.resonac.com
+  - name: Heraeus
+    catalog: "Cu and AgCu paste prototypes"
     grade: development
-    url: null
-  - name: Sumitomo / Mitsuboshi (research)
-    catalog: reactive Cu inks
-    grade: research
-    url: null
-storage: 5–25 °C; sealed; avoid air exposure once opened (Cu oxidation); shelf life ~6 months
-hazards: low — Cu dust; organic solvents
-known_failure_modes: [Cu-finger-oxidation-damp-heat, FF-degradation-contact-resistance, Ni-Cu-line-resistance-rise-DH]
-sources: [2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-taiyangnews-heterojunction-technology-report, 2024-itrpv-15th-edition-roadmap, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-siliconpv-novel-shj-metallization-architectures, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, 2025-yacouba-shj-silver-free-metallization-progPV]
-tags: [Cu-paste, screen-printed, low-temperature, SHJ-compatible, comparator-architecture]
+    url: https://www.heraeus.com
+storage: refrigerated (5–10 °C); shelf life typically <3 months for research-grade Cu pastes
+hazards: medium — Cu nanoparticles, organic vehicle (solvents, binder); inhalation hazard
+known_failure_modes: [Cu-finger-oxidation-damp-heat, FF-degradation-contact-resistance, a-Si-H-passivation-degradation, Cu-finger-corrosion-encapsulant]
+sources: [2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-tepner-printing-tech-csi-review, 2024-itrpv-15th-edition-roadmap, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-siliconpv-novel-shj-metallization-architectures, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj, 2025-yacouba-shj-silver-free-metallization-progPV]
+tags: [Cu-paste, screen-print, low-T-cure, silver-free, AgCu-paste]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Low-temperature Cu (and AgCu core-shell) paste
+# Low-temperature Cu paste
+
+**Slug:** `reagents/Cu-paste-low-temperature` · **Type:** reagent
 
 ## What it is
-A screen-printable / dispensable / pattern-transfer-printable Cu-based metallization paste that cures below the SHJ thermal ceiling (~250 °C), used as an Ag-replacement front- or rear-grid metallization. Two production families exist: (1) AgCu core-shell pastes — Cu particles with a thin (few-nm) Ag shell, ~44–55 wt% Ag — which match Ag-paste electrical performance while cutting Ag content by half; (2) pure Cu pastes (~500 Pa·s viscosity, no Ag) which deliver zero-Ag fingers but currently suffer high contact resistivity (~5–12 mΩ·cm² on ITO at fine line) and Cu-oxidation reliability concerns.
 
-**This is NOT the intervention reagent for the present hypothesis** (which is electroplated Cu on a Ni barrier). It is in the comparator landscape — Pass 3 must distinguish between Cu paste and electroplated Cu carefully.
+A low-temperature Cu paste is a screen-printable / dispensable formulation of Cu nanoparticles (or Cu-coated particles, or Ag-coated Cu — AgCu paste) in an organic vehicle (resin + solvents + dispersants) that cures at SHJ-compatible peak temperatures (≤300 °C / 5 s typical). It is the *paste-route* alternative to electroplated Cu for SHJ silver-reduction, and the parallel intervention to the hypothesis's electroplated route.
 
-## Common uses
-- Pure Cu paste / AgCu screen-print on M2 SHJ for cell-level efficiency benchmarking ([[2024-siliconpv-novel-shj-metallization-architectures]], [[2025-yacouba-shj-silver-free-metallization-progPV]], [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]).
-- SCC (silver-coated-copper) paste seed-grid in CSEM three-step plating route ([[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]], [[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Pattern-transfer-printing of pure Cu paste (Risen Laser PTP, CSEM PTP) — 18.1–26.1 µm wide fingers ([[2023-taiyangnews-heterojunction-technology-report]], [[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Listed in ITRPV roadmap as one of two Ag-replacement paths for SHJ ([[2024-itrpv-15th-edition-roadmap]]).
+## Common uses (in this corpus)
 
-## Key spec / concentration ranges
-- AgCu pastes: 44–55 wt% Ag with Cu core; ~few-nm Ag shell; particle size ~5 µm aggregates ([[2024-siliconpv-novel-shj-metallization-architectures]]).
-- Pure Cu paste: ~500 Pa·s viscosity ([[2025-yacouba-shj-silver-free-metallization-progPV]]).
-- Cure: 200–300 °C / 5–60 s (Cu paste anneal: 300 °C / 5 s in Yacouba, 280 °C is the SHJ-safe limit).
-- Bulk resistivity (Cu SP): ≈12.62×10⁻⁶ Ω·cm (vs 3.51 for Ag SP); AgCu intermediate.
-- Contact resistivity to ITO (Cu paste): 1.5 mΩ·cm² (CSEM, screen-printed pad TLM, [[2024-lachowicz-cu-plated-shj-aging-mini-modules]]); 5 mΩ·cm² @ 80 µm finger; 12 mΩ·cm² @ 25 µm finger ([[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]); 10.28 mΩ·cm² ([[2025-yacouba-shj-silver-free-metallization-progPV]]).
-- AgCu contact resistivity to ITO: 0.8–1.0 mΩ·cm² ([[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]); 8.10 mΩ·cm² for one 50 wt% Ag formulation ([[2025-yacouba-shj-silver-free-metallization-progPV]]).
-- Champion cell: AgCu front + Ag rear 23.95% on M2 SHJ ([[2025-yacouba-shj-silver-free-metallization-progPV]]); pure Cu both sides 23.08% (zero-Ag champion).
-- Thermal stability (pure Cu paste): ΔRs +2.3 mΩ at 200 → 230 °C in air; oxidation visible (blue-green discoloration) ([[2024-siliconpv-novel-shj-metallization-architectures]]). AgCu paste much more stable: ΔRs +0.1 to +0.5 mΩ.
-- Pure Cu paste at room-temperature air: NO significant Rline change after 24 days storage ([[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]).
+In this corpus low-T Cu paste appears as the **competing intervention** to the hypothesis. Yacouba 2025 reports champion 23.08 % bifacial SHJ with all-Cu-SP fingers (zero Ag); Fraunhofer ISE (Pingel/Lorenz 2025) characterizes Cu and AgCu pastes against the LCT-Ag baseline; Lachowicz 2023/2024 evaluates Cu paste in CSEM mini-module aging; ITRPV 2024 lists Cu paste in the silver-reduction roadmap. The key data point: Cu paste line resistance and contact resistivity (ρc ≈ 10 mΩ·cm² at 56 µm finger width, Yacouba 2025) **do not meet** the hypothesis's ≤2 mΩ·cm² target — only *plated* Cu can clear that bar, which is precisely why this hypothesis chose the electroplating route.
 
-## Alternatives / variants
-- [[low-T-Ag-paste-generic-SHJ-grade]] — pure Ag paste reference.
-- [[acid-Cu-sulfate-bath]] — electroplated Cu (the present hypothesis); fundamentally different process.
-- Reactive Ag particle-free ink — research-grade alternative.
-- [[silver-Ag-cap]] / [[tin-Sn-cap]] — capping reagents over plated-Cu fingers (different role).
+## Properties / specifications
 
-## Gotchas
-- **Cu paste is NOT the intervention reagent for this hypothesis.** This hypothesis is about ELECTROPLATED Ni + Cu, not screen-printed Cu paste. Pass 3 must not confuse the two — the comparator landscape has both screen-printed Cu and plated Cu, and they have different cost / reliability / process profiles.
-- Pure Cu paste fails 200–270 °C thermal stability in air ([[2024-siliconpv-novel-shj-metallization-architectures]]). Annealing must be done in inert / forming-gas atmosphere.
-- Cu paste contact resistivity (~5–12 mΩ·cm²) is currently uncompetitive with the present hypothesis's ≤2 mΩ·cm² target.
-- Frasson 2021 reported pure-Cu module reliability failure (>40% power loss after 200 thermal cycles); AgCu does not have this failure mode.
-- Unsintered Cu nanoparticle regions remain even after 300 °C anneal — likely root cause of high contact resistivity ([[2025-yacouba-shj-silver-free-metallization-progPV]]).
+- Cure profile: 200–300 °C peak, 1–5 s belt time (SHJ-compatible); above 320 °C / 5 s incurs ~0.5 %abs efficiency loss from a-Si:H degradation (Yacouba 2025).
+- Bulk resistivity (after cure): 1.68–12.6 µΩ·cm depending on formulation and cure (Yacouba 2025; ~10× pure Cu's 1.7 µΩ·cm in best case).
+- Line geometry (50 µm screen opening, Yacouba 2025): 56 µm wide × 10 µm tall typical Cu SP; AgCu SP gives 45 µm × 12.5 µm.
+- Contact resistivity ρc to ITO: 8–13 mΩ·cm² for Cu SP, 5–12 mΩ·cm² for AgCu SP (Pingel 2025, Yacouba 2025) — significantly above the 0.1–4 mΩ·cm² achievable with plated Cu (NOBLE process).
+- Atmosphere during cure: requires inert / protective backing to suppress Cu nanoparticle oxidation.
 
-## Sources
-- [[2024-siliconpv-novel-shj-metallization-architectures]] — quantitative AgCu vs Ag vs pure Cu paste benchmarking on M2 SHJ; thermal stability test.
-- [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — 7 AgCu pastes screened; Cu-01 paste evaluated; 24-day air-storage stability check.
-- [[2025-yacouba-shj-silver-free-metallization-progPV]] — pure Cu paste 23.08% zero-Ag champion; viscosity, finger geometry, line/contact resistivity, anneal recovery via light soaking.
-- [[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] / [[2024-lachowicz-cu-plated-shj-aging-mini-modules]] — Cu paste from Namics for PTP; 1.5 mΩ·cm² on ITO.
-- [[2023-taiyangnews-heterojunction-technology-report]] — Risen Laser Pattern Transfer Printing 18.1 µm fingers; SCC paste for Huasun rear (-24 mg Ag/M6).
-- [[2024-itrpv-15th-edition-roadmap]] — silver-coated copper paste explicitly named as one of two Ag-replacement paths for SHJ.
+## Suppliers
+
+- Applied Materials (AMAT) — AgCu paste at production-pilot scale (Frasson/Galiazzo 2024); URL https://www.appliedmaterials.com
+- Hitachi Chemical / Resonac — Cu paste research products; URL https://www.resonac.com
+- Heraeus — Cu and AgCu development pastes; URL https://www.heraeus.com
+- Cell-developer-internal (Fraunhofer ISE, Forschungszentrum Jülich, CSEM) — non-commercial research formulations.
+
+## Alternatives
+
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — the screen-print baseline; better contact resistance but Ag-supply bottleneck.
+- [[reagents/acid-Cu-sulfate-bath]] (the plated-Cu route) — meets ρc target but adds capex for plating line.
+- [[reagents/silver-Ag-cap]] — Ag finish on a Cu finger, plated/sputtered rather than screen-printed.
+
+## Gotchas / failure modes
+
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — exposed Cu paste fingers oxidize aggressively in DH; backing-paper protection needed during cure.
+- [[failure-modes/FF-degradation-contact-resistance]] — poor sintering of nanoparticles at SHJ-compatible cure temperatures gives ρc ~10 mΩ·cm², missing the ≤2 mΩ·cm² target.
+- [[failure-modes/a-Si-H-passivation-degradation]] — cure peaks above 280 °C / 5 s damage the SHJ passivation.
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — at the module level, Cu-paste fingers are exposed to the same EVA/POE driven corrosion as plated Cu.
+
+## Citing sources
+
+- [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — champion all-Cu-SP bifacial SHJ at 23.08 %; full electrical/geometrical characterization of Cu paste.
+- [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Pingel 2025 AgCu paste vs. low-T Ag baseline.
+- [[sources/2024-siliconpv-novel-shj-metallization-architectures]] — Frasson/Galiazzo (AMAT) AgCu paste at production scale.
+- [[sources/2023-tepner-printing-tech-csi-review]] — review names Cu paste as emerging Ag-replacement option.
+- [[sources/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — CSEM mini-module stability data, Cu-paste pathway discussed alongside plated Cu.
+- [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — extended mini-module aging.
+- [[sources/2024-itrpv-15th-edition-roadmap]] — silver-reduction roadmap explicitly mentions Cu/AgCu paste timelines.

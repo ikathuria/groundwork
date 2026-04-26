@@ -3,49 +3,54 @@ type: source
 id: 2014-fraunhofer-peel-testing-ribbons-solar-cells
 source_type: protocol
 title: "Peel Testing of Ribbons on Solar Cells at Different Angles: Consistent Comparison by Using Adhesive Fracture Energies"
-authors: ["U. Eitner", "L. C. Rendler"]
+authors: ["Eitner, U.", "Rendler, L. C."]
 year: 2014
-doi: null
-url: "https://www.ise.fraunhofer.de/en.html"
+doi: ""
+url: https://publica.fraunhofer.de/bitstreams/12eff418-bd4d-4e81-bf0e-69acdbd85e3d/download
 raw_path: raw/protocols/2014-fraunhofer-peel-testing-ribbons-solar-cells.pdf
-tags: [protocol, methodology, peel-test, adhesion, DIN-EN-50461, Kinloch-Kawashita, plated-contacts, reference-method, Fraunhofer-ISE]
+tags: [peel-test, adhesion, DIN-EN-50461, IEC-62788, methodology, Fraunhofer-ISE]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Peel Testing of Ribbons on Solar Cells at Different Angles: Consistent Comparison by Using Adhesive Fracture Energies
 
+**Eitner, U. and Rendler, L. C. (Fraunhofer ISE)** — *29th EU PVSEC, Amsterdam, 2014*. DOI: —
+
 ## Summary
-Fraunhofer ISE 29th EU PVSEC (2014) paper that establishes the peel-test methodology used to qualify cell-metallization adhesion in production. It documents the DIN EN 50461 minimum-force spec (1 N per mm of joint width) but exposes its incompleteness: peel angle is not specified, and 121 measurements at 45°/90°/135°/180° on the same SnPbAg-soldered Cu ribbons on multicrystalline Si cells with three continuous busbars show peel-force means of 9.74 N (45°) vs ~3 N at the other angles — a 4× artifact purely from geometry. Eitner & Rendler propose using the Kinloch–Kawashita adhesive-fracture-energy formulation (G_A) which collapses the angle dependence to a factor of 0.6. **Critically, the conclusion explicitly flags the method as essential for "novel technologies that come along with lower adhesion such as plated contacts or conductive gluing"** — making this the canonical adhesion protocol reference for evaluating SHJ Ni/Cu front-grid mechanical robustness post-damp-heat.
+
+Methodology paper showing that the peel test for solar-cell metallization (governed by DIN EN 50461) gives angle-dependent force readings that vary by a factor of 4 (45° vs 90°/135°/180°), and proposes using Kinloch–Kawashita adhesive fracture energies GA to make the test geometry-independent. Important for the SHJ Ni/Cu plan because the standard adhesion threshold of *1 N per mm of joint width* is angle-sensitive and the lower-adhesion plated-Ni/Cu and ECA contacts are exactly the failure cases for which a quantitative GA criterion matters.
 
 ## Key claims
-- DIN EN 50461 specifies a minimum peel force of 1 N per mm of joint width but does not specify the peel angle, leading to inconsistent qualification of new metallization stacks.
-- Peel-force angle dependence (121 tests, mean values, SnPbAg-coated 160 µm × 1.6 mm Cu ribbon, IR-soldered to multi-Si cell with 3 continuous BBs):
-  - 45°: 9.74 N
-  - 90°: 3.14 N
-  - 135°: 2.46 N
-  - 180°: 3.49 N
-- Translating to adhesive fracture energy G_A via Kinloch (1994) / Kawashita (2006) energy-balance equation collapses the spread to 510/395/441/595 J/m² (45°/90°/135°/180°), factor 0.66 between min and max.
-- The G_A method incorporates the ribbon's stress–strain curve (true vs engineering stress) — necessary input to compute G_T (plastic tensile dissipation) and G_B (plastic bending at the peel front).
-- Constant-G_A back-calculation: at fixed adhesive fracture energy, the measured peel force rises sharply for decreasing peel angles — explains why "passing 1 N/mm at 45°" and "passing 1 N/mm at 180°" are very different requirements.
-- **Direct call-out**: "We believe this subject to be of major importance for qualifying novel technologies that come along with lower adhesion such as plated contacts or conductive gluing."
-- Practical sample-prep note: rear side of cell glued to a rigid substrate to avoid cell cracking at high peel forces.
+
+- **Standard threshold:** DIN EN 50461 specifies a minimum force of **1 N per mm of joint width** for peel-test acceptance of cell metallization. (The SHJ Ni/Cu hypothesis maps its ≥1 N/mm adhesion success criterion directly to this clause.)
+- **Standard configuration ambiguity:** DIN EN 50461 leaves the *peel angle* unspecified; consequence is that 45° peel forces are ~4× higher than 90°/135°/180°.
+- **Measured peel forces (SnPbAg-coated 160 µm × 1.6 mm Cu ribbon, IR-soldered to 3-busbar mc-Si cells, n=121):** mean force 9.74 N at 45°, 3.14 N at 90°, 2.46 N at 135°, 3.49 N at 180°.
+- **Adhesive fracture energies (geometry-independent):** 510 J/m² (45°), 395 J/m² (90°), 441 J/m² (135°), 595 J/m² (180°) — agreement within a factor of 0.66.
+- **Test configuration:** rear of cell glued to a rigid substrate to prevent cracking at high peel forces; ribbons peeled on a Zwick tensile machine; **50 mm/min crosshead speed** (industry standard via DIN EN 50461 / IEC 61730-2).
+- **Why this matters for plated Cu:** authors explicitly flag that "this subject [is] of major importance for qualifying novel technologies that come along with lower adhesion such as plated contacts or conductive gluing" — i.e. exactly the SHJ Ni/Cu and ECA arms of this hypothesis's experiment.
+- **Implication for the plan:** quote a peel angle (90° is the convention, matched to teamtechnik / Klengel peel jig design) and report both peel force and adhesive fracture energy. Consider GA to make Ag-baseline / Ni/Cu / ECA adhesion comparisons defensible.
 
 ## Methods used
-- [[../methods/peel-test-90deg]] — canonical protocol reference for the 90° peel test on cell metallization; explicitly part of DIN EN 50461. Provides the experimental setup (ribbon width 1.6 mm, IR-soldered, rigid backing) and the angle-corrected G_A interpretation framework.
+
+- [[methods/peel-test-90deg]] — the canonical 90° peel test per DIN EN 50461 / IEC 61730-2; Eitner shows that 90° gives the lowest force (~3 N for SnPbAg-Cu ribbon) and so is the most conservative adhesion screen.
+- [[methods/damp-heat-aging-1000h]] — peel test is also the post-DH adhesion check (DH typically halves peel force by encapsulant softening + interface corrosion).
 
 ## Reagents
-- [[../reagents/multibusbar-Cu-ribbon]] — SnPbAg-coated 160 µm × 1.6 mm Cu ribbon used as the standard ribbon stock; stress-strain curve characterized in tensile mode.
+
+- [[reagents/multibusbar-Cu-ribbon]] — SnPbAg-coated 160 µm × 1.6 mm Cu ribbon used in the test, the standard interconnect to which the plated Cu finger would also be soldered.
 
 ## Organisms / substrates
-- (Multi-crystalline Si cells with 3 continuous busbars; not on the canonical organism slug list — generic precursor to the modern multi-busbar SHJ context.)
+
+- [[organisms/monocrystalline-Si-wafer-p-type]] — standard 3-busbar mc-Si solar cells used as the test substrate (the same DIN EN 50461 procedure applies to SHJ cells).
 
 ## Failure modes flagged
-- [[../failure-modes/finger-adhesion-loss-after-DH]] — direct relevance: peel test is the canonical protocol for detecting post-damp-heat adhesion loss at the metal/cell interface; the paper explicitly flags lower-adhesion plated contacts as the use case.
 
-## Supports / contradicts
-- Supports: [[2012-nrel-aluminum-metallization-tlm-printed]] (companion methodology — TLM and peel test together qualify a printed/plated metallization stack)
-- Supports: [[2018-electrochemsci-barrier-properties-electroplated-ni]]
+- [[failure-modes/finger-adhesion-loss-after-DH]] — peel-test value (and its drop after DH) is the canonical instrument for this failure mode.
+- [[failure-modes/FF-degradation-contact-resistance]] — adhesion loss → contact failure → series-resistance rise; the peel test is the upstream early warning.
 
 ## Notable quotes
-- "We believe this subject to be of major importance for qualifying novel technologies that come along with lower adhesion such as plated contacts or conductive gluing." — Conclusion
-- "The peel test is a very simple and fast method to determine the adhesion of interconnector ribbons to solar cell metallizations. It is part of the solar cell standard DIN EN 50461 and is, due to its ease of use, widely accepted to qualify cell metallizations and the soldering process. In the standard a minimum force of 1 N per mm of joint width is specified but other relevant quantities are missing, for example the peeling angle." — Abstract
-- "Transforming the force values into adhesive fracture energies, the mean values deviate only by a factor of 0.6 (45°: 510 J/m², 90°: 395 J/m², 135°: 441 J/m², 180°: 595 J/m²). This indicates that the method improves the interpretation of peel testing data by using the adhesive fracture energies as mechanical material parameters to quantify the adhesion." — Abstract
+
+> "In the standard a minimum force of 1 N per mm of joint width is specified but other relevant quantities are missing, for example the peeling angle." — *Abstract*
+
+> "We believe this subject to be of major importance for qualifying novel technologies that come along with lower adhesion such as plated contacts or conductive gluing." — *Conclusion*

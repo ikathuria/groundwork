@@ -1,49 +1,63 @@
 ---
 type: reagent
 slug: AZO-aluminum-doped-zinc-oxide
-aliases: [Al-doped ZnO, AZO, ZnO:Al]
-cas: 1314-13-2 (ZnO base)
-formula: ZnO:Al (Al ~1-2 at%)
+aliases: [Al-doped ZnO, ZnO:Al, AZO TCO]
+cas: ""
 suppliers:
-  - name: Umicore / GfE / Plansee (sputter targets)
-    catalog: AZO sputter targets (Al doping 1–2 wt%)
-    grade: 4N
-    url: null
-storage: target room-temperature, dry; AZO film moisture-sensitive — loses conductivity on prolonged DH exposure
-hazards: low — Zn / Al oxides are nuisance dusts; no acute hazards as deposited films
-known_failure_modes: [Cu-finger-corrosion-encapsulant, Ni-Cu-line-resistance-rise-DH]
+  - name: Umicore
+    catalog: "AZO sputter targets"
+    grade: 2 wt% Al2O3 in ZnO, ceramic target
+    url: https://eom.umicore.com
+  - name: Plasmaterials / Kurt J. Lesker
+    catalog: "ZnO:Al2O3 (98:2 wt%) targets"
+    grade: 99.99 % purity
+    url: https://www.lesker.com
+storage: ambient; sputter targets stored dry
+hazards: low (deposited film); ZnO dust is irritant
+known_failure_modes: [TCO-pitting-during-plating, Jsc-loss-from-cap-stack-shading]
 sources: [2023-taiyangnews-heterojunction-technology-report, 2024-lachowicz-cu-plated-shj-aging-mini-modules]
-tags: [TCO, In-free, sputtered-oxide, sustainability]
+tags: [TCO, AZO, ZnO, indium-free, SHJ-front-electrode]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# AZO — aluminium-doped zinc oxide (TCO)
+# AZO — aluminum-doped zinc oxide
+
+**Slug:** `reagents/AZO-aluminum-doped-zinc-oxide` · **Type:** reagent
 
 ## What it is
-An In-free transparent conductive oxide based on ZnO doped with ~1–2 at% Al. Cheaper and more sustainable than ITO/IWO at TW scale because zinc and aluminium are abundant, but historically more sensitive to humidity (the ZnO matrix corrodes in damp heat) and lower performance on SHJ at the same thickness. Used in AZO/ITO bilayer stacks to reduce indium content by up to 85% (FZJ data).
 
-## Common uses
-- AZO/ITO TCO stacks on SHJ where the ZnO bulk replaces the In-rich middle of the TCO and a thin ITO cap protects against humidity ([[2023-taiyangnews-heterojunction-technology-report]]).
-- Alternative TCO referenced for module-stability strategy in plated-Cu SHJ work ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
+Aluminum-doped zinc oxide (AZO) is a transparent conductive oxide (TCO) based on ZnO doped with ~2 wt% Al2O3. It is one of the indium-free alternatives to ITO for the SHJ front electrode, motivated by indium-supply risk and cost. Sheet resistance and optical transparency are competitive with ITO at the carrier densities typical of SHJ.
 
-## Key spec / concentration ranges
-- Al doping 1–2 at% (typical); ZnO:Al composition.
-- Sputtered thickness 70–200 nm depending on stack design.
-- Sheet resistance 30–100 Ω/sq (achievable similar to ITO with thicker films).
-- Mobility 20–40 cm²/V·s; carrier concentration ~10²⁰ cm⁻³.
-- Optical transparency >90% in 400–800 nm; slightly more parasitic IR absorption than ITO at matched sheet resistance.
-- Deposition: DC magnetron sputtering, T < 200 °C for SHJ compatibility.
-- AZO/ITO stack reduces indium consumption ≈85% (FZJ).
+## Common uses (in this corpus)
 
-## Alternatives / variants
-- [[ITO-transparent-conductive-oxide]] — mainstream baseline; AZO is the cheaper less-stable In-free comparator.
-- [[IWO-tungsten-doped-indium-oxide]] — high-mobility In-doped variant.
-- AZO/ITO bilayer — practical compromise that retains plating-process compatibility while cutting indium.
+In this corpus AZO appears as the **indium-free TCO option** discussed in industry reviews of the SHJ metallization stack. Lachowicz 2024 reports SHJ mini-module work where AZO appears as a candidate front-TCO; the TaiyangNews HJT 2023 report documents AZO alongside ITO and IWO in the bifacial-cell TCO landscape. AZO is more sensitive to acidic plating chemistries than ITO, which has implications for direct-on-TCO Cu plating.
 
-## Gotchas
-- ZnO bulk is hygroscopic and can corrode in 85 °C / 85% RH damp heat; bare AZO is NOT recommended as the outer TCO for plated-Cu modules. Always cap with thin ITO or include edge sealing.
-- Cu plating chemistry compatibility is less well characterised than ITO — verify finger adhesion + ρc before committing to a full plated-Cu run on AZO-only.
-- AZO contact resistivity to Cu pastes is generally higher than to ITO (limited published data).
+## Properties / specifications
 
-## Sources
-- [[2023-taiyangnews-heterojunction-technology-report]] — AZO/ITO 85% In reduction stack (FZJ data); industry-level discussion.
-- [[2024-lachowicz-cu-plated-shj-aging-mini-modules]] — AZO referenced as TCO alternative under module-stability strategy.
+- Composition: ZnO + 1.5–2 wt% Al2O3 (or equivalent dopant level).
+- Sheet resistance: ~30–80 Ω/sq at 80–100 nm thickness on SHJ; comparable to ITO at slightly thicker layers.
+- Optical: ≥85 % transmittance over 400–1000 nm; bandgap ~3.3 eV.
+- Deposition: DC / RF magnetron sputtering, typically <200 °C to stay within SHJ thermal budget.
+- Chemical stability: AZO etches readily in dilute acid (HCl, H2SO4) — much less stable than ITO in the pH-1 acid-Cu plating bath.
+
+## Suppliers
+
+- Umicore — AZO sputter targets (2 wt% Al2O3); URL https://eom.umicore.com
+- Plasmaterials / Kurt J. Lesker — ZnO:Al2O3 (98:2 wt%) targets at 99.99 % purity; URL https://www.lesker.com
+- Materion, Toshima Manufacturing — additional ceramic AZO target vendors.
+
+## Alternatives
+
+- [[reagents/ITO-transparent-conductive-oxide]] — the dominant SHJ front TCO, more chemically robust but indium-dependent.
+- [[reagents/IWO-tungsten-doped-indium-oxide]] — higher mobility variant of indium oxide, lower carrier density; better optical transparency at equal sheet R.
+
+## Gotchas / failure modes
+
+- [[failure-modes/TCO-pitting-during-plating]] — AZO is *more* susceptible than ITO to the pH-1 acid-Cu bath; direct plating onto AZO without a Ni or PVD seed is generally not feasible.
+- [[failure-modes/Jsc-loss-from-cap-stack-shading]] — TCO optical absorption contributes to the front-side optical losses that the metallization must minimize.
+
+## Citing sources
+
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — surveys AZO/IWO/ITO landscape for SHJ; discusses indium-supply risk motivating AZO.
+- [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — references AZO as a candidate SHJ front TCO in the broader plated-Cu SHJ context.

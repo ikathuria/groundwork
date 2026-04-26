@@ -3,48 +3,66 @@ type: source
 id: 2020-verlinden-future-challenges-tw-pv
 source_type: paper
 title: "Future challenges for photovoltaic manufacturing at the terawatt level"
-authors: ["P. J. Verlinden"]
+authors: ["Verlinden, P. J."]
 year: 2020
-doi: "10.1063/5.0020380"
-url: "https://doi.org/10.1063/5.0020380"
+doi: 10.1063/5.0020380
+url: https://www.qualenergia.it/wp-content/uploads/2020/11/Future-challenges-for-photovoltaic-manufacturing-at-the-terawatt-level.pdf
 raw_path: raw/papers/2020-verlinden-future-challenges-tw-pv.pdf
-tags: [terawatt, silver-bottleneck, learning-curve, market-context, sustainability, copper-plating, industry-roadmap]
+tags: [TW-PV, silver-bottleneck, Cu-plating, terawatt, Verlinden, motivation]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Future challenges for photovoltaic manufacturing at the terawatt level
 
+**Verlinden, P. J.** — *Journal of Renewable and Sustainable Energy 12, 053505, 2020*. DOI: 10.1063/5.0020380
+
 ## Summary
-Verlinden frames the silver-consumption bottleneck as one of only a handful of genuine challenges to a 70 TW cumulative / 3 TW p.a. PV industry by 2050. The paper computes that at 20 mg Ag/W and an annual production of 1 TW (~2028), PV would consume 100% of global silver mine production — and at the 3 TW p.a. equilibrium it would need three times that. Verlinden explicitly names Cu-plating as the technology that has to be developed to mitigate the risk, and sets the engineering target at <5 mg Ag/W. This is the canonical "why bother with Ni/Cu" market-context paper.
+
+Verlinden's high-impact, frequently cited 7-page argument that the c-Si PV industry must scale to 3 TW/year of production by ~2032 to reach 70 TW cumulative by 2050, and that *silver consumption* is one of the few hard physical constraints on that trajectory. Verlinden quantifies 2019 PV-industry Ag consumption at ~10% of global supply and projects 100% at the 1 TW production crossover (~2028) under business-as-usual — explicitly motivating Cu plating as the only material-sustainability resolution. This is the foundational citation for the SHJ Ni/Cu hypothesis's "why now."
 
 ## Key claims
-- 70 TWp cumulative PV installation and 3–4 TWp/year production by 2050 are required for a 1.5–2 °C-compatible energy transition.
-- PV historical learning rate is ~22% long-term, recently accelerated to 25–40% per doubling of cumulative production.
-- 2019 PV silver consumption: ~20 t Ag per GW produced (2400 t Ag total in 2019), already ~10% of global silver mine production.
-- At 1 TW p.a. (~2028) with no change, PV alone would consume 100% of global Ag production; at 3 TW p.a. it would need ~3× global production.
-- Sustainability target: reduce Ag consumption from 19–20 mg/W to <5 mg/W; explicitly names "replacing Ag screen-printing by copper plating" as the mitigation path.
-- Cell-area metallization paste in 2020: ~120–130 mg/156-mm wafer, of which ~80% is Ag (~96–104 mg Ag/wafer ~ 20 mg Ag/W).
-- Capex of a 1 GW-class production line (China, 2019–2020) ~US$182 M total, of which only US$11.8 M is module assembly and US$56.8 M is cell production.
-- Fast-growth scenario (>25% CAGR until ~2032) is required to avoid a major demand cliff in the second half of the century.
+
+- **Target cumulative deployment:** 70 TW PV installed by 2050 (to support a fully renewable global energy system).
+- **Required CAGR:** ~25% per year through ~2032, then plateau at ~3 TW/year of new module production.
+- **2019 Ag consumption (industry-wide):** ~2,400 tons of Ag = ~20 t/GW (with then-typical 156 mm wafers using 120–130 mg paste/cell ≈ 96–104 mg Ag/cell ≈ ~20 mg/W) = "a bit more than 10% of the global production of silver."
+- **Sustainability ceiling:** at 1 TW/year (around 2028 under 25% CAGR), unchanged Ag/W would consume **100% of global silver production**.
+- **Reduction target:** Ag use must fall to **<5 mg/W** to be sustainable — explicitly states "for example, by replacing Ag screen-printing by copper plating."
+- **2035–2050 worst case:** without Cu plating, Ag consumption equals 3× global annual Ag production at 3 TW/year — physically impossible.
+- **Capital-cost trend:** PV production-line capex falling at ~18%/year; the technology cost is no longer the binding constraint, materials availability is.
+- **What's not the problem:** efficiency, cost, energy/emissions sustainability, or financial sustainability — Verlinden argues the *demand-growth rate* (slow growth → 25-year ripples) and *materials availability* (Ag) are the real ceilings.
+- **Recycling target:** the PV industry recycled ~100 MW of modules in 2020 (~0.1% of annual production); needs to grow ~10× in 10 years to keep up with end-of-life flows of valuable Ag, Cu, Al, Sn, glass, Si.
 
 ## Methods used
-- (none — this is a market/roadmap analysis, not an experimental paper)
+
+- [[methods/screen-printed-Ag-paste]] — Verlinden's baseline that he argues must be replaced.
+- [[methods/Cu-electroplating-acid-bath]] — explicitly named as the material-sustainability resolution.
+- [[methods/electroplated-Ni-Cu-stack]] — the family of techniques the paper points at.
 
 ## Reagents
-- (none)
+
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — implicit current-baseline metallization.
+- [[reagents/acid-Cu-sulfate-bath]] — implicit replacement chemistry.
 
 ## Organisms / substrates
-- (none — discusses PERC, SHJ, TOPCon, perovskite/Si tandem at the technology-class level, no cell formats specified)
+
+- [[organisms/SHJ-cell-M6]] — Verlinden's then-typical 156 mm wafer baseline (now obsolete; M10/G12 are dominant).
 
 ## Failure modes flagged
-- [[../failure-modes/silver-supply-bottleneck]] — central thesis: silver is the only material in the c-Si stack that does not have abundance headroom for 3 TW/yr; Verlinden gives the explicit 5 mg/W target and points to Cu plating as the structural fix.
+
+- [[failure-modes/silver-supply-bottleneck]] — this paper *is* the canonical citation for this failure mode in the wiki.
 
 ## Supports / contradicts
-- Supports: [[2021-goldschmidt-tech-learning-tw-pv]] (independent corroboration of the Ag bottleneck with a more detailed REMIND-model treatment)
-- Supports: [[2024-itrpv-15th-edition-roadmap]] (ITRPV 15th confirms ~9.6 mg Ag/W PERC and ~19 mg Ag/W SHJ in 2023, consistent with Verlinden's framing)
-- Supports: [[2025-yacouba-shj-silver-free-metallization-progPV]]
-- Supports: [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]
+
+- **Supports:** [[sources/2021-goldschmidt-tech-learning-tw-pv]] — Goldschmidt EE&S 2021 quantifies the same Ag/Si/In/Bi reserves bottleneck at 70–170 TW; complementary academic-rigor follow-up.
+- **Supports:** [[sources/2024-itrpv-15th-edition-roadmap]] — ITRPV's 18% of world Ag in 2023 cross-checks Verlinden's 2019 ~10% figure with consistent trajectory.
+- **Supports:** [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — NREL 2024 explicitly cites the n-type Ag-supply concern Verlinden articulated.
+- **Supports:** [[sources/2024-fraunhoferise-photovoltaics-report]] — Fraunhofer ISE Photovoltaics Report's 27% CAGR and 2.16 TW cumulative end-2024 are on the trajectory Verlinden calls for.
 
 ## Notable quotes
-- "If nothing changes in the consumption of Ag in PV production, at the 1 TW level of production (around 2028), the PV industry will use 100% of the global production of silver." — p. 5
-- "To reach material sustainability, the PV industry needs to reduce the consumption of Ag to less than 5 mg/W, for example, by replacing Ag screen-printing by copper plating." — p. 5
-- "Technologies like Cu plating have to be developed to mitigate this risk." — p. 6 (Conclusions)
+
+> "If nothing changes in the consumption of Ag in PV production, at the 1 TW level of production (around 2028), the PV industry will use 100% of the global production of silver. To reach material sustainability, the PV industry needs to reduce the consumption of Ag to less than 5 mg/W, for example, by replacing Ag screen-printing by copper plating." — *p. 5*
+
+> "Only silver (Ag) used for the metallization of solar cells, and being about 10⁷ times less abundant than silicon, is an issue." — *p. 4–5*
+
+> "Technologies like Cu plating have to be developed to mitigate this risk." — *Conclusions, p. 6*

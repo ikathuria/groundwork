@@ -2,49 +2,70 @@
 type: failure-mode
 slug: Cu-finger-corrosion-encapsulant
 severity: high
-frequency_estimate: "Karas 2022: Cu observed lining voids in EVA above plated fingers after 1000 h DH on Ni-Cu-Ag (3×3 cm) cells, with pFF dropping 79.4→77.9 %. Lachowicz 2023/2024: edge-initiated DH degradation in POE glass-glass mini-modules without edge sealing."
-applies_to_methods: [damp-heat-aging-1000h, extended-damp-heat-IEC63209, EL-electroluminescence-imaging, peel-test-90deg, dark-IV-suns-Voc]
-applies_to_reagents: [EVA-encapsulant, POE-polyolefin-encapsulant, silver-Ag-cap, tin-Sn-cap, acid-Cu-sulfate-bath]
-applies_to_step_kinds: [encapsulate, age, measure]
-sources: [2011-nrel-reliability-testing-beyond-qualification, 2012-nrel-iec61215-what-it-is, 2014-nrel-pv-module-qualification-plus, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2019-hatt-noble-shj-solrrl, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-karas-cu-outdiffusion-damp-heat, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2024-lachowicz-cu-plated-shj-aging-mini-modules]
-tags: [Cu-corrosion, encapsulant, edge-ingress, moisture, damp-heat, void-formation]
+frequency_estimate: "5 % power loss after 2700 h DH on Cu-plated SHJ glass-glass POE mini-modules without edge sealing (Lachowicz 2024); much higher (4.7 %abs pFF + >6× J02) on EVA-encapsulated samples (Karas 2022). Edge-onset degradation visible in EL after ~1000 h."
+applies_to_methods: [damp-heat-aging-1000h, extended-damp-heat-IEC63209, EL-electroluminescence-imaging, IV-curve-measurement, dark-IV-suns-Voc]
+applies_to_reagents: [EVA-encapsulant, POE-polyolefin-encapsulant, silver-Ag-cap, tin-Sn-cap, acid-Cu-sulfate-bath, multibusbar-Cu-ribbon]
+applies_to_step_kinds: [encapsulation, lamination, accelerated-aging]
+sources: [2011-nrel-reliability-testing-beyond-qualification, 2012-nrel-iec61215-what-it-is, 2013-koehl-fraunhofer-accelerated-service-life-testing, 2014-nrel-pv-module-qualification-plus, 2019-karas-damp-heat-degradation-shj-cu, 2022-arena-sundrive-copper-metallisation-demonstration, 2022-karas-cu-outdiffusion-damp-heat, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-nrel-getting-ahead-of-curve-pv-assessment]
+tags: [Cu-corrosion, encapsulant, edge-ingress, damp-heat, glass-glass, edge-seal]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Cu finger corrosion at the encapsulant interface
+# Cu finger corrosion in encapsulant under damp heat
+
+**Slug:** `failure-modes/Cu-finger-corrosion-encapsulant` · **Severity:** high
 
 ## What it is
-Even with a robust diffusion barrier under the Cu, the *outer* surface of the finger sits in contact with the polymer encapsulant. Moisture penetrating the laminate (especially from unsealed module edges) plus reactive species generated in the encapsulant (acetic acid from EVA hydrolysis, residual peroxides from POE crosslinking) corrode the Cu and any Sn/Ag cap. Karas 2022 imaged Cu lining voids in EVA directly above plated fingers after 1000 h DH and identified grain-boundary diffusion through the Ag cap as the chemical pathway for Cu mobility. Lachowicz 2024 found the same edge-initiated pattern in POE glass-glass mini-modules without polyisobutylene edge sealing — moisture is the integrative driver, encapsulant chemistry is the rate constant.
+
+Plated Cu fingers within a laminated module are exposed to the encapsulant chemical environment, which under damp-heat (85 °C / 85 % RH) becomes saturated water + (for EVA) acetic acid. The Cu metal is oxidised and / or dissolved, with reaction products mobilised into the encapsulant; mechanistically tied to [[failure-modes/EVA-acetic-acid-corrosion]] and [[failure-modes/Cu-out-diffusion-through-cap-stack]] but distinct in that this failure mode tracks the *cell-finger / encapsulant interface chemistry*, not the cap-stack-internal IMC formation. Lachowicz 2023/2024 show the degradation initiates at unsealed module edges where humidity ingresses; the 1-cell mini-module is the worst-case test geometry because of its high perimeter-to-area ratio.
 
 ## How it manifests
-- EL imaging shows damage initiating at module edges and propagating inward over 500–2000 h DH ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]] Fig. 3).
-- Cu accumulated as oxide or hydroxide on outer cap surface (visible blue-green discoloration on uncapped Cu; subsurface grey on Sn).
-- Voids in encapsulant directly above fingers, lined with Cu (EDS-confirmed) ([[2022-karas-cu-outdiffusion-damp-heat]] Fig. 3).
-- Increasing line resistance and FF loss as finger cross-section is consumed (couples to [[Ni-Cu-line-resistance-rise-DH]]).
-- Peel-force degradation due to corrosion-driven adhesion loss at the cap/encapsulant interface (couples to [[finger-adhesion-loss-after-DH]]).
+
+- **EL dark spots that propagate inward from the module edge** (Lachowicz 2023/2024) — the spatial signature distinguishing edge-driven moisture ingress from bulk encapsulant chemistry.
+- **5 % Pmax loss at 2700 h DH** on Cu-plated SHJ Smartwire mini-modules with POE encapsulant and no edge sealing (Lachowicz 2024).
+- **Cu lining voids in EVA above the finger** (Karas 2022 EDS) — direct chemical evidence of Cu mobilised into the encapsulant.
+- **Encapsulant discoloration / yellowing** above corroded finger sections.
+- **Adhesion / interface delamination** between Cu finger and encapsulant.
+- **Series-resistance rise** measurable as FF degradation in 1-sun IV.
 
 ## How to detect it
-- [[../methods/EL-electroluminescence-imaging]] — perimeter-to-centre dark-pattern progression is diagnostic of moisture-edge-driven corrosion vs uniform Cu-LID.
-- SEM cross-section + EDS at finger/encapsulant interface to image void formation and Cu redistribution.
-- [[../methods/peel-test-90deg]] before/after DH; >50 % peel-force drop on outer fingers but not central fingers indicates edge-driven corrosion.
-- [[../methods/damp-heat-aging-1000h]] extended to 2000–2700 h; 1-cell mini-modules are worst-case due to high perimeter-to-area ratio (Lachowicz 2024).
-- pH titration of moisture extracted from post-DH encapsulant.
 
-## Mitigation (specific actions, not vague advice)
-- Apply polyisobutylene (PIB) edge sealing on glass-glass modules — commercial SHJ standard, eliminates the dominant moisture-edge-ingress pathway ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]] Sec. 3).
-- Use POE encapsulant rather than EVA to remove the acetic-acid driver ([[EVA-acetic-acid-corrosion]]).
-- Cap Cu fingers with ≥1 µm Sn or ≥0.2 µm immersion Ag — Hatt 2019 reports immersion Ag cap leaves only nanometres of exposed Cu on flanks vs micrometres for resist-route flanks ([[2019-hatt-noble-shj-solrrl]]).
-- For shingle interconnection, increase ECA mass to ≥3.5 mg per shingle and cure at 150 °C ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Specify 2000 h DH at module level (2× IEC), not 1000 h, because 1000 h does not reach the edge-ingress saturation point in 1-cell mini-modules.
-- Build glass-glass (not glass-backsheet) laminates; backsheet WVTR is too high for plated-Cu reliability per [[2024-nrel-getting-ahead-of-curve-pv-assessment]].
+- **DH chamber 85 °C / 85 % RH per IEC 61215** — [[methods/damp-heat-aging-1000h]] — extending to 2000–3000 h ([[methods/extended-damp-heat-IEC63209]]) to surface the slower kinetics of Cu corrosion under POE.
+- **EL imaging at 0/250/500/750/1000/2000 h** — [[methods/EL-electroluminescence-imaging]]: track edge-inward propagation of dark spots; the spatial signature distinguishes edge-driven from bulk encapsulant chemistry.
+- **1-sun IV at every checkpoint** — [[methods/IV-curve-measurement]]: track Pmax, Voc, FF, Jsc; FF drop without Voc drop suggests series-resistance / contact-corrosion, not bulk Cu contamination.
+- **Visual inspection** of the corroded finger sections post-DH; cross-section EDS to identify Cu in encapsulant.
+- **Wet leakage / IR thermography** per Wohlgemuth 2011 — surface electrical signs of corrosion before they show up in light IV.
+- **Compare 1-cell vs 3-cell mini-module geometries** — the 1-cell module is the worst-case test (Lachowicz 2024).
 
-## Severity ranking justification
-High: this is the dominant *module-level* failure mode for plated-Cu SHJ in current literature, distinct from the wafer-level Cu-into-Si failure mode. It causes ~5 % Pmax loss in 2700 h DH on unsealed mini-modules ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]]) — within the IEC budget but above the hypothesis's "no measurable loss" target. Fully mitigatable with edge sealing + POE + cap engineering, hence "high" not "critical".
+## Mitigation
 
-## Sources
-- `[[2022-karas-cu-outdiffusion-damp-heat]]` — direct imaging of Cu in EVA voids above fingers; pFF link.
-- `[[2024-lachowicz-cu-plated-shj-aging-mini-modules]]` — edge-initiation pattern in POE; PIB edge-seal mitigation; 5 % Pmax @ 2700 h.
-- `[[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]]` — workshop precursor with same pattern.
-- `[[2021-hatt-stable-cu-plated-shj-eupvsec]]` — Ag cap as flank protection.
-- `[[2019-hatt-noble-shj-solrrl]]` — thin Ag cap rationale; nanometre vs micrometre flank exposure.
-- `[[2018-pv-tech-metallization-interconnection-bifacial-shj]]` — cap/encapsulant DH framework.
-- `[[2011-nrel-reliability-testing-beyond-qualification]]`, `[[2012-nrel-iec61215-what-it-is]]`, `[[2014-nrel-pv-module-qualification-plus]]` — qualification framework.
+- **Edge sealing with polyisobutylene (PIB)** — Lachowicz 2024 identifies this as the planned next step; commercial heterojunction modules already use PIB edge seal to limit moisture ingress.
+- **Encapsulant choice POE > EPE > EVA** — see [[failure-modes/EVA-acetic-acid-corrosion]]: POE removes the acetic-acid driver. Use [[reagents/POE-polyolefin-encapsulant]].
+- **Glass-glass module construction** with low-WVTR (water vapour transmission rate) backsheet/glass — second-best after POE encapsulant.
+- **Cap-layer engineering** — thicker Sn (Cu₆Sn₅ self-limiting per Karas 2022), Ni-doped Cu, or thicker Ag cap to slow Cu mobilisation through the cap into the encapsulant.
+- **Bath impurity control** — Karas 2022 ties void formation (and therefore encapsulant Cu mobilisation) to S, Cl, C, O carryover from acid-Cu plating; semiconductor-grade reagents and periodic activated-carbon treatment of [[reagents/acid-Cu-sulfate-bath]].
+- **Test geometry** — use 3-cell (or larger) mini-modules with edge seal for development; reserve 1-cell unsealed for accelerated worst-case screening.
+
+## Where it applies
+
+- Methods: [[methods/damp-heat-aging-1000h]], [[methods/extended-damp-heat-IEC63209]], [[methods/EL-electroluminescence-imaging]], [[methods/IV-curve-measurement]], [[methods/dark-IV-suns-Voc]]
+- Reagents: [[reagents/EVA-encapsulant]], [[reagents/POE-polyolefin-encapsulant]], [[reagents/silver-Ag-cap]], [[reagents/tin-Sn-cap]], [[reagents/multibusbar-Cu-ribbon]]
+- Step kinds: encapsulation, lamination, accelerated-aging
+
+## Severity rationale
+
+High. Lachowicz 2024's 5 % Pmax loss at 2700 h on POE modules without edge sealing is just barely above the 0.5 %abs Δη threshold the hypothesis sets, and is *4-fold worse* under EVA per Karas 2019/2022. The failure mode is mitigated by encapsulant choice + edge sealing (both commercial), but the residual 5 % loss after 2700 h is real and traceable to moisture ingress + Cu chemistry — meaning even best-case Cu-plated SHJ modules need edge-seal engineering to clear extended-DH targets.
+
+## Citing sources
+
+- [[sources/2011-nrel-reliability-testing-beyond-qualification]] — IEC 61215 DH lists corrosion as primary target; this is the SHJ Cu-plated incarnation.
+- [[sources/2012-nrel-iec61215-what-it-is]] — defines the 85/85 protocol.
+- [[sources/2013-koehl-fraunhofer-accelerated-service-life-testing]] — FEM water-uptake validating 85/85 as a saturated-encapsulant accelerant.
+- [[sources/2014-nrel-pv-module-qualification-plus]] — qualification-plus framework for emerging tech.
+- [[sources/2019-karas-damp-heat-degradation-shj-cu]] — encapsulant-driven Cu degradation; POE protects Cu-plated cells, EVA does not.
+- [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — passes 2000 h DH with POE + Sn cap; demonstrates the mitigation path is real.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — Cu lining voids in EVA above fingers; direct chemical evidence.
+- [[sources/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — 5 % degradation at 2700 h DH on POE mini-modules without edge sealing; edge-onset mechanism identified.
+- [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — journal-paper version with EL imaging at 0/1008/2076 h and PIB edge-seal recommendation.
+- [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — names POE adoption as the SHJ mitigation for this failure mode.

@@ -1,61 +1,78 @@
 ---
 type: reagent
 slug: POE-polyolefin-encapsulant
-aliases: [polyolefin elastomer, POE encapsulant, EPE (EVA/POE/EVA tri-layer)]
-cas: null (mixture of polyolefin elastomers)
-formula: poly(ethylene-co-α-olefin) elastomer
+aliases: [polyolefin elastomer encapsulant, POE film, polyolefin-based encapsulant]
+cas: ""
 suppliers:
-  - name: Hangzhou First / Cybrid / Bridgestone / Borealis
-    catalog: standard POE encapsulant films (e.g., F806P, EPE)
+  - name: Mitsui Chemicals (Solar Evasky)
+    catalog: "Solar Evasky T8X (POE-class film)"
+    grade: PV-grade POE encapsulant
+    url: https://www.mitsuichemicals.com
+  - name: Borealis / Borouge
+    catalog: "Quentys POE for PV"
     grade: PV-grade
-    url: null
-  - name: ExxonMobil (Vistamaxx) / Dow (Engage) — base resin
-    catalog: polyolefin elastomer resin pellets (compounded by film makers)
-    grade: PV-grade
-    url: null
-storage: cool, dry, sealed roll; 12–24 months shelf life
-hazards: low — POE is benign; no acetic acid hydrolysis pathway
-known_failure_modes: [Cu-finger-corrosion-encapsulant]
-sources: [2014-nrel-pv-module-qualification-plus, 2019-karas-damp-heat-degradation-shj-cu, 2022-arena-sundrive-copper-metallisation-demonstration, 2022-karas-cu-outdiffusion-damp-heat, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-taiyangnews-heterojunction-technology-report, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj]
-tags: [encapsulant, polymer-film, lamination, low-water-uptake, recommended-for-Cu]
+    url: https://www.borealisgroup.com
+  - name: Hangzhou First PV Material
+    catalog: "First-POE"
+    grade: PV-grade POE
+    url: https://www.firstpvm.com
+storage: cool, dry; protect from UV; shelf life 6–12 months
+hazards: low (cured film); LDPE-class polymer
+known_failure_modes: [Cu-finger-corrosion-encapsulant, finger-adhesion-loss-after-DH]
+sources: [2019-karas-damp-heat-degradation-shj-cu, 2022-arena-sundrive-copper-metallisation-demonstration, 2022-karas-cu-outdiffusion-damp-heat, 2023-lachowicz-csem-stability-cu-plated-shj-mini-modules, 2023-taiyangnews-heterojunction-technology-report, 2024-lachowicz-cu-plated-shj-aging-mini-modules, 2024-nrel-getting-ahead-of-curve-pv-assessment, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj]
+tags: [encapsulant, POE, polyolefin, plated-Cu-friendly, no-acetic-acid, n-type-modules]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Polyolefin elastomer (POE) encapsulant
+# POE — polyolefin encapsulant
+
+**Slug:** `reagents/POE-polyolefin-encapsulant` · **Type:** reagent
 
 ## What it is
-A polyolefin-elastomer-based PV encapsulant that does NOT generate acetic acid on hydrolysis (unlike EVA). POE is the recommended encapsulant for plated-Cu SHJ modules: glass-glass POE laminates have demonstrated 1000–3000 h damp-heat survival in the SunDrive, CSEM, and Karas studies. POE has lower water uptake and better PID resistance than EVA, at the cost of higher cure-temperature sensitivity and roughly 1.5–2× higher film cost. EPE (EVA/POE/EVA tri-layer) is a popular industrial compromise.
 
-## Common uses
-- Encapsulant of choice for SHJ glass-glass bifacial modules ([[2023-taiyangnews-heterojunction-technology-report]], [[2022-arena-sundrive-copper-metallisation-demonstration]]).
-- Encapsulant in Cu-plated SHJ DH stability studies — survives 2700 h DH with only ~5% Pmax loss in CSEM SmartWire mini-modules ([[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]], [[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Reference encapsulant in Karas damp-heat tests: prevents the EVA acetic-acid-driven Cu out-diffusion ([[2019-karas-damp-heat-degradation-shj-cu]], [[2022-karas-cu-outdiffusion-damp-heat]]).
-- Recommended in NREL service-life-testing framework for n-type / glass-glass modules ([[2024-nrel-getting-ahead-of-curve-pv-assessment]]).
+Polyolefin elastomer (POE) encapsulant is a polyethylene-based PV encapsulant film used as the SHJ-friendly alternative to EVA. Crucially for plated-Cu cells, POE has **no vinyl acetate side groups** — it cannot hydrolyze to release acetic acid, so the dominant encapsulant-driven Cu-corrosion pathway is absent. POE is the consensus encapsulant choice for n-type modules (SHJ, TOPCon) and the chosen encapsulant for SunDrive's plated-Cu mini-modules that pass 2700 h DH.
 
-## Key spec / concentration ranges
-- Resin: poly(ethylene-co-α-olefin) elastomer (octene or butene comonomer).
-- Thickness 0.3–0.5 mm per layer.
-- Cure: peroxide cross-linking at 150–160 °C / 10–15 min (slightly higher T than EVA).
-- Water vapor transmission rate (WVTR) ~5–8 g/m²/day (vs 30–35 for EVA) — significantly lower moisture ingress.
-- Volume resistivity >10¹⁵ Ω·cm — better PID resistance than EVA.
-- DH performance with plated-Cu cells: ~3× less surface Cu vs EVA after 3500 h DH ([[2022-karas-cu-outdiffusion-damp-heat]]); ~5% Pmax loss after 2700 h on CSEM 1-cell modules ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
+## Common uses (in this corpus)
 
-## Alternatives / variants
-- [[EVA-encapsulant]] — historic baseline; NOT recommended for plated Cu.
-- EPE (EVA/POE/EVA tri-layer) — combines EVA process compatibility with a POE moisture barrier; SHJ industry standard ([[2023-taiyangnews-heterojunction-technology-report]]).
-- TPO (thermoplastic polyolefin) — non-cross-linked alternative; faster lamination cycles.
-- Ionomer (Surlyn) — high-transparency niche.
+In this corpus POE is the **plated-Cu-friendly encapsulant** that resolves much of the EVA + Cu DH-failure pathway. Karas 2022 demonstrates POE gives ~3× lower Cu c-Si surface concentration than EVA after 3500 h DH; SunDrive ARENA 2022 mini-modules with POE pass 2700 h DH; Lachowicz 2024 CSEM modules use POE. Tepner 2023 / Pingel 2025 / NREL 2024 all flag POE as the SHJ-default encapsulant.
 
-## Gotchas
-- Cure-temperature window is tighter than EVA; under-cured POE causes adhesion loss; over-cured causes haze.
-- Higher cost than EVA — about 1.5–2× per m². Cost-aware module designs use EPE tri-layer to retain most of the POE benefit at lower price.
-- Edge sealing (polyisobutylene, PIB) is still essential for plated-Cu glass-glass modules in long-term DH; POE alone does not eliminate edge-initiated moisture ingress in 1-cell mini-modules ([[2024-lachowicz-cu-plated-shj-aging-mini-modules]]).
-- Less mature long-field-deployment data than EVA — accelerated-aging extrapolations are the primary qualification basis.
+## Properties / specifications
 
-## Sources
-- [[2022-karas-cu-outdiffusion-damp-heat]] — quantitative POE vs EVA DH comparison; POE prevents the acetic-acid-driven Cu out-diffusion.
-- [[2019-karas-damp-heat-degradation-shj-cu]] — first major DH evidence; POE restores Ag-control-like behavior.
-- [[2024-lachowicz-cu-plated-shj-aging-mini-modules]] / [[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — POE used in CSEM glass-glass SmartWire and shingle mini-modules surviving 2700 h DH.
-- [[2022-arena-sundrive-copper-metallisation-demonstration]] — POE used in SunDrive's glass-glass bifacial modules surviving 3× IEC.
-- [[2023-taiyangnews-heterojunction-technology-report]] — POE / EPE as SHJ industry standard.
-- [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — POE in Pingel et al. mini-modules.
-- [[2014-nrel-pv-module-qualification-plus]] / [[2024-nrel-getting-ahead-of-curve-pv-assessment]] — POE in NREL extended-qualification frameworks.
+- Polymer: polyolefin elastomer, primarily ethylene-octene or ethylene-butene copolymers; **no vinyl acetate**.
+- Crosslinker: typically peroxide-based (like EVA); cures during lamination at ~150 °C.
+- Lamination: ~150 °C / 10–15 min hot-press in vacuum laminator.
+- Thickness: 0.4–0.5 mm per sheet.
+- Refractive index: ~1.48 (matches glass).
+- Volume resistivity: ~10¹⁵–10¹⁶ Ω·cm — generally higher than EVA (PID-resistant).
+- Water vapor transmission rate (WVTR): typically lower than EVA (better moisture barrier).
+- **No acetic-acid pathway:** polyolefin backbone has no ester groups to hydrolyze; eliminates the dominant EVA-driven Cu-finger corrosion pathway.
+
+## Suppliers
+
+- Mitsui Chemicals — Solar Evasky T8X (POE-class film); URL https://www.mitsuichemicals.com
+- Borealis / Borouge — Quentys POE for PV; URL https://www.borealisgroup.com
+- Hangzhou First PV Material — First-POE; URL https://www.firstpvm.com
+- HIUV, Cybrid — additional Asia-pacific POE-encapsulant suppliers.
+
+## Alternatives
+
+- [[reagents/EVA-encapsulant]] — incumbent encapsulant; cheaper but releases acetic acid under DH (the dominant Cu-corrosion driver).
+- TPO (thermoplastic polyolefin) — variant of POE, similar advantages.
+- EPE (EVA / POE / EVA co-extruded) — composite that retains EVA-cost benefit while putting POE next to the cell.
+
+## Gotchas / failure modes
+
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — POE *reduces* but does not eliminate this failure mode; moisture ingress + galvanic effects still possible at long DH dwell.
+- [[failure-modes/finger-adhesion-loss-after-DH]] — POE adhesion to glass and to the cell front grid can be weaker than EVA's; lamination process tuning required.
+
+## Citing sources
+
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — mechanistic anchor: POE gives ~3× lower Cu c-Si surface concentration than EVA after 3500 h DH.
+- [[sources/2019-karas-damp-heat-degradation-shj-cu]] — Karas precursor paper; encapsulant-dependent degradation kinetics.
+- [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — SunDrive's plated-Cu mini-modules with POE pass 2700 h DH.
+- [[sources/2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] — CSEM SHJ mini-module aging with POE.
+- [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — extended POE aging follow-up.
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — industry HJT report; POE as SHJ encapsulant default.
+- [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — reliability roadmap; POE as plated-Cu / n-type-module enabler.
+- [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Pingel 2025; POE as SHJ encapsulant in AgCu paste study.

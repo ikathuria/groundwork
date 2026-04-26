@@ -2,61 +2,81 @@
 type: source
 id: 2018-pvtech-metallization-shj-cells-modules
 source_type: protocol
-title: "Metallization and interconnection for silicon heterojunction solar cells and modules"
-authors: ["Matthieu Despeisse", "Christophe Ballif", "Antonin Faes", "Agata Lachowicz"]
+title: "Metallization and Interconnection for High-Efficiency Bifacial Silicon Heterojunction Solar Cells and Modules"
+authors: ["Despeisse, M.", "Ballif, C.", "Faes, A.", "Lachowicz, A."]
 year: 2018
-doi: null
-url: "https://www.pv-tech.org/technical-papers/metallization-and-interconnection-for-silicon-heterojunction-solar-cells-and-modules/"
-raw_path: raw/protocols/2018-pvtech-metallization-shj-cells-modules.txt
-tags: [shj, metallization, copper-plating, smartwire, low-temperature-ag, csem, review]
+doi: ""
+url: https://www.pv-tech.org/wp-content/uploads/legacy-publication-pdfs/b40c4315ce-metallization-and-interconnection-for-silicon-heterojunction-solar-cells-and-modules.pdf
+raw_path: raw/protocols/2018-pvtech-metallization-shj-cells-modules.pdf
+tags: [SHJ, metallization, interconnection, SmartWire, Cu-plating, CSEM, protocol]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Metallization and interconnection for silicon heterojunction solar cells and modules
+# Metallization and Interconnection for Silicon Heterojunction Solar Cells and Modules
+
+**Despeisse, M., Ballif, C., Faes, A., Lachowicz, A. (CSEM)** — *PV-Tech / Photovoltaics International, 2018*.
 
 ## Summary
-CSEM (Neuchâtel) review article in Photovoltaics International (2018) covering the three main metallization paths for SHJ cells: (1) low-temperature-cured Ag pastes with multiple printing on H-pattern cells, (2) fine-line printing combined with multi-wire SmartWire interconnection (SWCT) reducing Ag laydown to ~30 mg/side, and (3) Cu electroplating onto the front TCO. Key contribution to this hypothesis: documents the canonical SHJ-Cu plating flow on the conductive ITO/IWO TCO surface — TCO acts as both seed and partial Cu-diffusion barrier, requiring an additional patterning mask (laser ablation, photolithography, or inkjet hot-melt resist) for selective plating, since the entire TCO surface would otherwise plate up. Reports 20 µm-wide plated Cu fingers with line resistance ~1 Ω/cm and bulk Cu resistivity ~2×10⁻⁶ Ω·cm vs. 6–10×10⁻⁶ Ω·cm for low-T Ag pastes — the quantitative benchmark for the "≤2 mΩ·cm² without efficiency loss" target in this hypothesis.
 
-## Key procedural claims
-- SHJ stack: textured n-type Cz Si wafer with bilateral i/n and i/p a-Si:H passivation/contact layers and bilateral TCOs (typically ITO), all deposited at <200 °C; metallization must remain below ~250 °C to avoid passivation degradation (p. 62).
-- Low-temperature-cured Ag pastes for SHJ exhibit bulk resistivity 6–10×10⁻⁶ Ω·cm — 2-3× higher than fired homojunction Ag — driving Ag laydown of ~180 mg/side for 3-5BB H-pattern, costing ~8 ¢/cell at $460/kg Ag (p. 62).
-- SmartWire (SWCT) approach uses 18 × 200 µm-diameter Cu wires (~140 µm optical width) on a polymer foil; low-melting-point alloy coating bonds to fingers during lamination, with no high-temperature soldering required. Power loss in fingers scales with 1/n_BB² so 18-wire cuts finger ohmic loss by 13× vs. 5BB. Allows finger line resistance up to 10 Ω/cm (p. 64).
-- Fine-line printing of low-T Ag pastes with screen openings down to 20 µm yields ~30 µm wide fingers, 5 Ω/cm finger line resistance, 30 mg Ag/side, and cell efficiency 22.7% — module efficiency 20% on 327 Wp 60-cell SWCT module (p. 64).
-- Cu electroplating onto SHJ TCO: requires patterning mask because the conductive TCO would otherwise plate up everywhere. Standard Ni-Cu stack from PERC (where Ni acts as silicide barrier after annealing) is replaced for SHJ by direct Cu plating onto ITO — the TCO itself acts as the Cu-diffusion barrier (p. 65–66).
-- Plated Cu fingers achieve bulk resistivity ~2×10⁻⁶ Ω·cm (only slightly above pure Cu at 1.7×10⁻⁶ Ω·cm), 20 µm width, ~1 Ω/cm line resistance — directly enabling 3-5BB H-pattern designs without low-T Ag (p. 66).
-- Patterning options for SHJ Cu: laser ablation of an ARC dielectric (used on PERC), but for SHJ the TCO is conductive so additional protective masking layer required; alternatives include inkjet hot-melt ink masking (Hermans 2014) and photolithography (p. 66).
-- Bifacial single-cell modules at 19.9% efficiency demonstrated using SWCT direct contacting onto the front conductive TCO with no front-side metallization at all (p. 64).
-- Reliability: SmartWire SHJ modules withstand >3× IEC accelerated degradation criteria with <5% power loss, demonstrating module-level reliability of the low-T-Ag + multi-wire approach (p. 64).
+CSEM/Meyer Burger methodology paper covering the three industrial paths to SHJ metallization: fine-line LCT Ag screen-print, SmartWire (SWCT) multi-wire interconnection, and Cu electroplating. Provides the canonical engineering target: **20 µm-wide Cu-plated fingers can be produced with line resistance ~1 Ω/cm, vs 5 Ω/cm for fine-line LCT Ag at ~30 µm width**. Documents the SHJ-specific Cu plating route — direct electroplating on the conductive front-side TCO (no LIP needed because TCO is conductive), with the TCO acting as a *built-in* Cu-migration barrier. Describes the standard process: "growth of a nickel–copper stack by plating … the nickel layer will form a nickel silicide barrier to copper diffusion after annealing."
 
-## Methods used / described
-- [[../methods/screen-printed-Ag-paste]] — fine-line printing with low-T Ag, 30 µm screen openings.
-- [[../methods/Cu-electroplating-acid-bath]] — direct Cu plating onto ITO TCO of SHJ cells.
-- [[../methods/laser-ablation-of-dielectric]] — patterning route for PERC; modified for SHJ via additional resist mask.
-- [[../methods/inkjet-mask-patterning]] — hot-melt ink (Hermans) as low-cost patterning route for SHJ Cu plating.
-- [[../methods/photolithography-mask-patterning]] — alternative high-resolution patterning route.
-- [[../methods/electroplated-Ni-Cu-stack]] — standard PERC plating stack referenced as baseline.
+## Key claims
 
-## Reagents specified
-- [[../reagents/low-T-Ag-paste-generic-SHJ-grade]] — bulk resistivity 6–10×10⁻⁶ Ω·cm, cure <250 °C.
-- [[../reagents/ITO-transparent-conductive-oxide]] — front TCO, acts as both contact layer and partial Cu-diffusion barrier.
-- [[../reagents/a-Si-H-passivation]] — i/n and i/p layers; deposition <200 °C constrains downstream thermal budget.
-- [[../reagents/acid-Cu-sulfate-bath]] — implicit Cu plating chemistry.
-- [[../reagents/multibusbar-Cu-ribbon]] — 200 µm Cu wires with low-melting alloy coating used in SWCT.
+- LCT Ag paste bulk resistivity: 6–10 ×10⁻⁶ Ω·cm — 2–3× higher than firing-through Ag on PERC.
+- 30-µm-wide screen-printed LCT Ag fingers achieve line resistance ~5 Ω/cm; sufficient for SWCT 18-wire integration.
+- 30 mg Ag per cell side achievable with fine-line print + SWCT, vs 180 mg/side baseline → cost from 8 ¢/cell down to ~1.33 ¢/cell.
+- SWCT with 18 wires divides finger power loss by 13 vs 5BB (P_f ∝ 1/n_BB²), so finger line resistance can be relaxed from <1 Ω/cm (5BB) to up to 10 Ω/cm (18 wire) — completely changing the metallization design constraints.
+- Cu electroplating on SHJ: "the plating is performed on the conductive front TCO layer of the SHJ solar cell. **This TCO layer will already act as an efficient barrier to copper migration towards the silicon, and therefore limit potential degradation.**"
+- Standard SHJ Cu-plating process flow: (1) deposit dielectric/organic mask; (2) open mask to TCO; (3) grow Ni/Cu stack by plating — Ni → Ni-silicide barrier on anneal, Cu → conductive layer.
+- Plated Cu bulk resistivity ~2×10⁻⁶ Ω·cm, only marginally above pure Cu (1.7×10⁻⁶ Ω·cm).
+- Inkjet hot-melt mask is identified as the cost-competitive patterning route for industrial Cu plating.
+- Reliability: SHJ cells with SWCT have demonstrated <5% degradation after >3× IEC standard accelerated aging tests.
+
+## Methods used
+
+- [[methods/screen-printed-Ag-paste]] — fine-line LCT-Ag (30 µm fingers).
+- [[methods/Cu-electroplating-acid-bath]] — Cu plating onto TCO with masking.
+- [[methods/electroplated-Ni-Cu-stack]] — explicit Ni-then-Cu plating sequence; Ni → Ni-silicide barrier.
+- [[methods/inkjet-mask-patterning]] — hot-melt inkjet mask (CSEM/Hermans).
+- [[methods/laser-ablation-of-dielectric]] — alternative mask-opening method.
+- [[methods/damp-heat-aging-1000h]] — referenced for ">3× IEC accelerated aging" reliability claim.
+- [[methods/IV-curve-measurement]] — implicit in performance characterisation.
+
+## Reagents
+
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — the LCT-Ag baseline (6–10 µΩ·cm).
+- [[reagents/ITO-transparent-conductive-oxide]] — SHJ TCO; flagged as a *Cu-migration barrier* in its own right.
+- [[reagents/acid-Cu-sulfate-bath]] — Cu plating chemistry.
+- [[reagents/nickel-sulfamate-bath]] — Ni plating chemistry for the Ni/Cu stack.
+- [[reagents/inkjet-plating-resist]] — hot-melt mask.
+- [[reagents/a-Si-H-passivation]] — sets the ≤200 °C thermal budget.
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — 60-cell module reported at 327 Wp, 20% module efficiency.
-- [[../organisms/monocrystalline-Si-wafer-n-type]] — Cz n-type substrate for SHJ.
+
+- [[organisms/monocrystalline-Si-wafer-n-type]] — SHJ standard substrate.
+- [[organisms/SHJ-cell-M6]] — 6" cell format implied throughout.
+- [[organisms/full-size-module-60-cell]] — bifacial single-cell modules referenced (CSEM 327 Wp 60-cell).
 
 ## Failure modes flagged
-- [[../failure-modes/finger-adhesion-loss-after-DH]] — adhesion of plated Cu to TCO is identified as a key R&D challenge requiring "high adhesion of plated materials onto TCO layers."
-- [[../failure-modes/silver-supply-bottleneck]] — motivates the entire shift to Cu plating.
-- [[../failure-modes/a-Si-H-passivation-degradation]] — drives the <250 °C process constraint.
+
+- [[failure-modes/Cu-diffusion-into-c-Si]] — the *reason* the Ni→silicide step exists in the plated stack; TCO supplies the second barrier.
+- [[failure-modes/silver-supply-bottleneck]] — Ag-paste cost the central economic driver.
+- [[failure-modes/FF-degradation-contact-resistance]] — line-resistance optimisation is the central engineering lever.
+- [[failure-modes/Ni-Cu-line-resistance-rise-DH]] — referenced via reliability data on aged plated cells.
+- [[failure-modes/finger-adhesion-loss-after-DH]] — implicit in mask-and-plating discussion.
 
 ## Supports / contradicts
-- Supports SHJ-Cu metallization feasibility with low-resistivity (~2×10⁻⁶ Ω·cm) plated fingers — concordant with [[2022-arena-sundrive-copper-metallisation-demonstration]], [[2017-jeon-electroless-ni-front-metallization]], and Hatt SolRRL/AIP/EUPVSEC series.
-- Argues TCO alone is sufficient as Cu-diffusion barrier on SHJ (no Ni interlayer needed), differing from PERC reference flow where Ni silicide is used. This is the central architecture decision the hypothesis tests with a thin Ni layer added back as belt-and-braces.
+
+- **Supports:** [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — same author group, same content with module-level data.
+- **Supports:** [[sources/2018-pv-international-metallization-shj]] — companion CSEM trade article.
+- **Supports:** [[sources/2014-rehman-nicu-plating-csi-review]] — confirms the Ni/Cu stack concept; both flag Ni-silicide as the barrier mechanism.
+- **Supports:** [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — both attribute Cu-barrier function partly to the TCO; SunDrive extends this to "TCO is the *whole* barrier, no Ni needed."
 
 ## Notable quotes
-- "The plated copper lines typically demonstrate a low resistivity of down to 2×10⁻⁶ Ω·cm, which is only slightly higher than the resistivity of pure bulk copper (1.7×10⁻⁶ Ω·cm)." — p. 66
-- "20µm-wide copper-plated fingers can be produced with a line resistance of about 1Ω/cm." — p. 66
-- "By switching to copper-electroplating processing for the formation of the electrical grid, the use of silver can be suppressed and the metallization process maintained at room temperature." — p. 66
-- "This TCO layer will already act as an efficient barrier to copper migration towards the silicon, and therefore limit potential degradation." — p. 66
+
+> "This TCO layer will already act as an efficient barrier to copper migration towards the silicon, and therefore limit potential degradation." — *p. 64*
+
+> "The standard process then consists of the growth of a nickel–copper stack by plating. The nickel layer will form a nickel silicide barrier to copper diffusion after annealing, while the copper acts as the conductive layer." — *p. 64*
+
+> "20µm-wide copper-plated fingers can be produced with a line resistance of about 1Ω/cm." — *p. 64*

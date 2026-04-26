@@ -2,44 +2,52 @@
 type: source
 id: 2024-nrel-best-research-cell-efficiency-chart
 source_type: paper
-title: "NREL Best Research-Cell Efficiency Chart (Rev. 03-19-2026)"
-authors: ["National Renewable Energy Laboratory (NREL)"]
+title: "Best Research-Cell Efficiency Chart"
+authors: ["NREL"]
 year: 2024
-doi: null
-url: "https://www.nrel.gov/pv/cell-efficiency.html"
+doi: ""
+url: https://www.nrel.gov/media/docs/libraries/pv/cell-pv-eff.pdf
 raw_path: raw/papers/2024-nrel-best-research-cell-efficiency-chart.pdf
-tags: [chart, nrel, efficiency-records, reference, SHJ, HIT, perovskite-tandem]
+tags: [NREL, certified-efficiency, reference-chart, SHJ, HBC, world-record]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # NREL Best Research-Cell Efficiency Chart
 
-## Summary
-This is the canonical NREL efficiency-record chart used to identify SHJ Cu-plated record cells and to baseline c-Si single-junction efficiency limits. The chart (PDF, single page, time-series 1975–2026) plots all certified record cell efficiencies by technology family. For this hypothesis the relevant data points are the "Silicon heterostructures (HIT)" trace, on which the most recent records of 27.8% (Trina, latest), 27.6% (Korea U, tied), 27.3% (NU/UT), 26.7% (LONGi 2022 HJT-only world record cell) sit. Plus the Crystalline-Si single-junction non-concentrator points at 27.9% (Runergy) and 26.7% (LONGi). For tandems, perovskite/Si has reached 30.1% (LONGi/UNSW/BL), bracketing the SHJ-Cu front-grid hypothesis from above (multijunction is the route past 27%-class single-junction Si).
+**NREL** — *2024*. URL: https://www.nrel.gov/media/docs/libraries/pv/cell-pv-eff.pdf
 
-## Key claims
-- Silicon HIT (SHJ) cell-record trace shows certified record efficiencies climbing past 26% (Kaneka 2017), through LONGi's 26.81% (Nov 2022) class, up to 27.6%–27.8% as of 2025.
-- Crystalline Si single-junction non-concentrator records at ~27.9% (Runergy) and 26.7% (LONGi).
-- Perovskite/Si 2-terminal tandems at 30.1%–30.8% (LONGi, Soochow U/UNSW/BL).
-- All-perovskite tandems and III-V multijunctions sit far above (Spectrolab 5-J/6-J at >38%, Sharp 3-J at 47.6%).
-- The chart's "Silicon heterostructures (HIT)" classification is the canonical Si-class label for SHJ cells; the lab/industry reference points used to validate any claimed SHJ cell efficiency.
-- Rev. 03-19-2026 is the latest revision recorded in the file.
+## Summary
+
+NREL's canonical one-page reference chart of certified champion cell efficiencies across every PV technology class. The authoritative citation for any claim about absolute or relative cell efficiency — used by every plan that frames a target relative to the state of the art. Tracks crystalline-silicon heterostructures (HIT/SHJ) and multi-junction technologies on the same axis; the relevant entries for this hypothesis are the silicon heterostructure markers culminating in the LONGi HBC (back-contact heterojunction) record in the 27 % range and the long-standing Kaneka 26.7 % HBC point.
+
+## Key claims / specifications
+
+- **Crystalline Si heterostructures (HIT) trace:** record cells from Sanyo through Panasonic, Kaneka 26.7 %, LONGi 26.81 % HJT-only, Trina 27.8 %, LONGi 27.09 % HBC, and entries up to ~27.6 % for HJT-IBC variants in the chart's recent additions.
+- **Same-axis context:** Silicon single-junction theoretical limit and III–V multijunction concentrator records are plotted on the same chart, providing the universal scale for any cell-efficiency target claim.
+- **Status as the certified-efficiency reference:** the chart is the only artifact NREL publishes and updates that consolidates third-party-verified cell-efficiency records; all the records carry institution + measurement-organisation tags (NREL, FhG-ISE, AIST, JET).
+- **Format:** one-page PDF, ~170 KB, updated approximately quarterly (this is the 2024 edition).
+- **Scope of relevance for this hypothesis:** the SHJ entries set the absolute ceiling against which the Cu-plated SHJ result must be compared (champion ≥ 26.4 % for silver-free Cu-plated SHJ — SunDrive/Maxwell 2022).
 
 ## Methods used
-- (none — chart is a metadata reference)
 
-## Reagents
-- (none)
+- [[methods/IV-curve-measurement]] — every record on the chart is anchored to a certified IV measurement (STC AM1.5g) at an accredited lab.
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — Kaneka 2017 record was on small-format wafer (~79 cm²).
-- [[../organisms/SHJ-cell-M10]] — recent records (LONGi, Trina) on production-relevant formats.
+
+- [[organisms/SHJ-cell-M6]] — small-area research cells in the SHJ class are typically wafer-format M6-equivalent or smaller (designated areas vary).
+- [[organisms/monocrystalline-Si-wafer-n-type]] — the substrate underlying every SHJ entry on the chart.
 
 ## Failure modes flagged
-- (none — pure chart reference)
+
+- [[failure-modes/non-reproducibility-in-solar-cell-claims]] — the chart is the antidote to non-certified vendor claims; each entry is third-party verified.
 
 ## Supports / contradicts
-- Supports: [[2023-taiyangnews-heterojunction-technology-report]] (NREL chart corroborates LONGi 26.81% record)
-- Supports: [[2024-itrpv-15th-edition-roadmap]]
+
+- **Supports:** [[sources/2023-taiyangnews-heterojunction-technology-report]] — TaiyangNews cites the same record cells (LONGi 26.81 %, SunDrive 26.41 %).
+- **Supports:** [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — Yacouba 2025 cites the chart for the SunDrive/Maxwell silver-free record.
+- **Supports:** [[sources/2024-iea-pvps-trends-pv-applications]] — IEA-PVPS quotes the same chart.
 
 ## Notable quotes
-- "Crystalline Si Cells > Silicon heterostructures (HIT)" — chart legend entry naming the SHJ technology trace
+
+The chart contains no narrative prose; each entry is a labelled data point on a time-vs-efficiency plot. The hypothesis-relevant call-out is the cluster of crystalline-Si heterostructure markers in the upper right of the chart, with LONGi and Kaneka points anchoring the SHJ/HBC category around 26.7–27.6 %.

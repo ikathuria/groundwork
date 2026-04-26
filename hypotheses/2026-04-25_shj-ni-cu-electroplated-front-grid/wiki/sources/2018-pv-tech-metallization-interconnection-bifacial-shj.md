@@ -5,66 +5,80 @@ source_type: paper
 title: "Metallization and Interconnection for High-Efficiency Bifacial Silicon Heterojunction Solar Cells and Modules"
 authors: ["Faes, A.", "Lachowicz, A.", "Bettinelli, A.", "Ribeyron, P.-J.", "Lerat, J.-F.", "Munoz, D.", "Geissbühler, J.", "Li, H.-Y.", "Ballif, C.", "Despeisse, M."]
 year: 2018
-doi: null
-url: "https://www.pv-tech.org/photovoltaics-international/"
+doi: ""
+url: https://www.pv-tech.org/wp-content/uploads/legacy-publication-pdfs/889afc20b1-metallization-and-interconnection-for-highefficiency-bifacial-silicon-heterojunction-solar-cells-and-modules.pdf
 raw_path: raw/papers/2018-pv-tech-metallization-interconnection-bifacial-shj.pdf
-tags: [SHJ, CSEM, copper-electroplating, screen-printing, bifacial, smart-wire, ECA-gluing, cost-analysis, hot-melt-mask]
+tags: [SHJ, bifacial, metallization, Cu-plating, seed-layer, CSEM, CEA-INES]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Metallization and Interconnection for High-Efficiency Bifacial Silicon Heterojunction Solar Cells and Modules
 
+**Faes, A., Lachowicz, A., Bettinelli, A., Ribeyron, P.-J., Lerat, J.-F., Munoz, D., Geissbühler, J., Li, H.-Y., Ballif, C., Despeisse, M.** (CSEM PV-Center + CEA-INES) — *Photovoltaics International, 41, pp. 65–75, 2018*.
+
 ## Summary
-CSEM/CEA review (Photovoltaics International, 2018) summarizing the M&I cost landscape for bifacial SHJ at the dawn of large-scale deployment. Documents three Cu-electroplating routes (organic-resist mask, patterned-PVD-seed + dielectric, screen-printed seed-grid + dielectric) and benchmarks them against low-curing-temp Ag screen-print + soldering, ECA gluing, and SmartWire (SWCT). Reports CSEM's 24.1% record bifacial SHJ via PVD seed + hotmelt inkjet mask + Cu plating, peel forces ≥1 N/mm, and 5×IEC reliability passes for SWCT. Cost analysis: Cu-plating + standard soldering already competes with screen-print + ECA at 2018 prices, and projected 50% reduction in plating capex/consumables would make plating the cheapest M&I option for SHJ.
+
+Joint CSEM + CEA-INES review on SHJ metallization and module integration with cost data per busbar count and interconnection style. Tabulates Ag laydown for 4BB / 5BB / 6BB cells under soldering, ECA gluing, and wire interconnection — the canonical industry numbers (165–20 mg front; 255–40 mg rear). Reviews Cu-electroplating process flows (PVD seed + organic mask, patterned PVD seed + dielectric, printed seed-grid + dielectric) and shows CSEM peel-test data on plated-Cu cells with hot-melt inkjet mask. Reports Cu plating share at ~3% of SHJ industrial market in 2018, projected to grow to ~8% by 2025.
 
 ## Key claims
-- LCT silver paste bulk resistivity has fallen ~3× lower over the years but is still ~2× pure Ag at 2018; forecast 3.5 µΩ·cm by 2020, 3.0 µΩ·cm by 2022.
-- Soldering on LCT-Ag busbars requires busbar thickness 25–35 µm (peel ≈1 N/mm) → high silver consumption: 4BB SHJ uses 165+255 = 420 mg paste; 6BB 145+190 = 335 mg; ECA-glue 4BB 75+170 = 245 mg; SWCT optimized 20+40 = 60 mg.
-- Three Cu-plating routes (Fig. 3): (A) PVD seed + organic resist mask, (B) patterned PVD seed + PECVD dielectric, (C) printed seed-grid + dielectric. Route A used by CSEM to reach 24.1% record bifacial 4BB SHJ.
-- Cell efficiency table (Table 3, p. 8): Plated + soldering 4BB/5BB/6BB all 22.7% efficient; module power 403–476 Wp (Bifi20).
-- Cost analysis: M&I total 2018 = €0.022–0.049/Wp (7–16% of module price). Plating + soldering already cheaper than print+soldering; with 50% volume-driven cost reduction (likely within years), plating becomes the cheapest M&I option for bifacial SHJ.
-- Peel-force test at 180° + thermo-cycles + damp-heat reliability test for small R&D module with sputtered seed + hotmelt inkjet mask passed (Fig. 4).
-- SWCT modules pass 5× IEC for thermo-cycles (1000 cycles −40 to +85°C) and 5× IEC damp heat (5000 h at 85°C/85% RH) without noticeable degradation.
-- Silver consumption for PV = 7.5% of world Ag supply; production capacity expected ≥3× higher by 2025 → upward pressure on Ag price = additional stimulus for Cu plating.
+
+- 2018 Ag laydown for SHJ cells (Table 1, mg/cell front + back): 4BB soldered = 420 mg total; 5BB ECA = 205 mg; SWCT optimised = 60 mg total — over 7× reduction is achievable without changing the metallization technology.
+- Bulk resistivity of best LCT Ag paste = 5–6 µΩ·cm (10/30 min at 200 °C, 2018); projected to 3.0 µΩ·cm by 2022 — still ~2× pure Ag.
+- Of three SHJ Cu-plating process routes:  
+  (3A) full-area PVD seed (with barrier/adhesion sublayer + conductive sublayer) + organic mask — cheapest masking but bevel-edged fingers ≥70 µm;  
+  (3B) patterned PVD seed + dielectric — narrowest geometries;  
+  (3C) printed seed-grid + dielectric — paste-printed seed Cu plated up.
+- Photolithography can give ~20 µm rectangular fingers but is too expensive for industry.
+- Cu plating activity reported by Panasonic, Kaneka (25.1% record cell), Choshu Industry, Tetrasun, Silevo, and Sunpreme (402 Wp 72-cell bifacial module).
+- Soldered ribbon interconnection on LCT Ag requires busbar thickness 25–35 µm to avoid silver leaching → drives Ag use up. ECA and SWCT relax this.
+- Module reliability data (Fig. 4): peel test 180° + thermal-cycling and damp-heat on small R&D modules with sputtered seed + hot-melt-inkjet mask — passes the standard IEC 61215 dwell.
 
 ## Methods used
-- [[../methods/Cu-electroplating-acid-bath]] — three plating routes reviewed.
-- [[../methods/screen-printed-Ag-paste]] — comparator; LCT pastes at 200°C cure.
-- [[../methods/inkjet-mask-patterning]] — hot-melt inkjet mask used in CSEM 24.1% route.
-- [[../methods/photolithography-mask-patterning]] — discussed for IBC; sub-20 µm fingers.
-- [[../methods/peel-test-90deg]] — soldered ribbon peel test ≥1 N/mm.
-- [[../methods/damp-heat-aging-1000h]] — IEC 61215 module-level test referenced.
-- [[../methods/temperature-cycling-IEC61215-TC200]] — TC200 + 5×IEC discussed.
-- [[../methods/IV-curve-measurement]] — cell + module testing.
-- [[../methods/Ni-sputter-deposition]] — discussed via PVD seed (TiW, Ag, Cu) deposition.
+
+- [[methods/screen-printed-Ag-paste]] — LCT-Ag baseline; the comparator throughout.
+- [[methods/Cu-electroplating-acid-bath]] — central technology of section 3.
+- [[methods/Ni-sputter-deposition]] — PVD seed (Ni or Cu/Al) referenced as one of the three process flows.
+- [[methods/inkjet-mask-patterning]] — hot-melt inkjet mask flow (CSEM).
+- [[methods/laser-ablation-of-dielectric]] — opening of dielectric mask in route 3B.
+- [[methods/photolithography-mask-patterning]] — research-grade narrow-finger comparator.
+- [[methods/peel-test-90deg]] — Fig. 4 shows 180° peel + DH/TC reliability on plated cells.
+- [[methods/damp-heat-aging-1000h]] — module-level reliability test referenced.
+- [[methods/temperature-cycling-IEC61215-TC200]] — companion reliability test.
 
 ## Reagents
-- [[../reagents/low-T-Ag-paste-Solamet-PV21A]] — references LCT-Ag-paste developments (Namics-style); specific brand not named here but generic LCT Ag.
-- [[../reagents/low-T-Ag-paste-generic-SHJ-grade]] — explicit comparator throughout.
-- [[../reagents/acid-Cu-sulfate-bath]] — implicit in plating discussion.
-- [[../reagents/ITO-transparent-conductive-oxide]] — TCO for SHJ.
-- [[../reagents/a-Si-H-passivation]] — i/n and i/p stacks.
-- [[../reagents/electrically-conductive-adhesive-ECA]] — ECA gluing as Ag-saving alternative.
-- [[../reagents/EVA-encapsulant]] — implicit.
-- [[../reagents/multibusbar-Cu-ribbon]] — 4BB/5BB/6BB ribbons + smart-wire 12-wire.
+
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — the Ag baseline.
+- [[reagents/ITO-transparent-conductive-oxide]] — SHJ TCO front layer.
+- [[reagents/acid-Cu-sulfate-bath]] — Cu electroplating chemistry.
+- [[reagents/inkjet-plating-resist]] — hot-melt mask material (CSEM-style flow).
+- [[reagents/electrically-conductive-adhesive-ECA]] — ECA gluing for ribbon interconnection.
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — 6" bifacial SHJ.
-- [[../organisms/full-size-module-60-cell]] — 335 Wp + bifacial gain mentioned.
-- [[../organisms/full-size-module-72-cell]] — 410 Wp record (CEA + Meyer Burger 2018).
+
+- [[organisms/monocrystalline-Si-wafer-n-type]] — SHJ wafer baseline.
+- [[organisms/SHJ-cell-M6]] — implied 6" cell format (Table 1 numbers).
+- [[organisms/full-size-module-72-cell]] — Sunpreme 402 Wp bifacial module example.
 
 ## Failure modes flagged
-- [[../failure-modes/silver-supply-bottleneck]] — primary motivation; 7.5% of world Ag supply.
-- [[../failure-modes/Cu-finger-oxidation-damp-heat]] — reliability concern flagged for plated routes; Kaneka SiOx-barrier route improved DH stability.
-- [[../failure-modes/finger-adhesion-loss-after-DH]] — peel-force on LCT-Ag is ≤1 N/mm and a known weak point.
-- [[../failure-modes/Cu-finger-corrosion-encapsulant]] — addressed via Ag/Sn capping.
-- [[../failure-modes/Ni-Cu-line-resistance-rise-DH]] — implicit in module reliability.
+
+- [[failure-modes/silver-supply-bottleneck]] — explicit cost-driver framing; SHJ Ag laydown ~2× a PERC cell.
+- [[failure-modes/FF-degradation-contact-resistance]] — finger-line-resistance optimisation is the central engineering goal.
+- [[failure-modes/finger-adhesion-loss-after-DH]] — peel-test data on plated cells (Fig. 4) tracks this.
+- [[failure-modes/plating-resist-undercut]] — implicit in masking-flow discussion (organic resist bevel edges drive ≥70 µm finger widths).
+- [[failure-modes/TCO-pitting-during-plating]] — implicit in route 3A vs 3C choice (full-area seed protects TCO; patterned seed exposes it).
 
 ## Supports / contradicts
-- Supports: [[2019-hatt-noble-shj-solrrl]] (cites Lachowicz 24.1% as benchmark)
-- Supports: [[2018-pv-international-metallization-shj]] (companion CSEM publication)
-- Provides cost framework cited by: [[2021-hatt-stable-cu-plated-shj-eupvsec]], [[2024-siliconpv-novel-shj-metallization-architectures]], [[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]], [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]
+
+- **Supports:** [[sources/2018-pv-international-metallization-shj]] — same authors, near-identical content; cross-published in same edition of Photovoltaics International.
+- **Supports:** [[sources/2018-pvtech-metallization-shj-cells-modules]] — same group, module-level companion piece.
+- **Supports:** [[sources/2023-tepner-printing-tech-csi-review]] — Tepner & Lorenz updated the LCT-Ag bulk-resistivity trajectory; this paper is their 2018 anchor.
+- **Contradicts:** [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — Faes et al. assumes PVD seed is required for adhesion; SunDrive's proprietary process claims direct plating to TCO without PVD seed.
 
 ## Notable quotes
-- "The high conductivity of copper lines would also enable a reduction in the number of cell segments for shingling, and thus a reduction in laser cutting steps."
-- "When the interconnection is done via gluing the LCT silver paste mass at the front side drops by more than 50% to values as low as 65 mg for 6BB."
-- "Module passing five times IEC for thermo-cycles (1,000 cycles between -40°C and +85°C) without noticeable degradation and five times IEC for damp-heat (5,000 hours at 85°C and 85% relative humidity)" — for SWCT.
+
+> "Owing to the impressive improvements in screen printing and the reduction of silver price the share of plating in production is much lower than originally predicted, with Sunpower and IBC cells being the main contributor." — *p. 70*
+
+> "For the first processing route (figure 3A), the seed layer is usually deposited by PVD (A2) and consists of a stack comprising a barrier or adhesion layer and a conductive layer." — *p. 70*
+
+> "Plating activities for SHJ solar cells (or similar) have been reported by several companies such as Panasonic, Kaneka, Choshu Industry Co. LTD, Tetrasun, Silevo and Sunpreme." — *p. 70*

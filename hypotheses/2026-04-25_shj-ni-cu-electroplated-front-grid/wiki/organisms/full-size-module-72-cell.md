@@ -2,52 +2,57 @@
 type: organism
 slug: full-size-module-72-cell
 organism_type: module
-external_id: 72-cell utility module (or 132/144-half-cell equivalent)
+source: industry-standard PV module format (utility-scale)
+external_id: 72-cell c-Si module (IEC 61215 / IEC 61730 reference format)
 characteristics:
-  - 72 full cells (or 132/144 half-cells) in series-parallel; ~1980×990 mm M2 footprint
-  - Power class 400–700+ Wp depending on cell technology, format, and bifacial gain
-  - Utility-scale / large commercial form factor
-  - Bifacial glass-glass POE preferred for SHJ; transparent backsheets emerging
-  - 700 W+ class enabled by M10 / G12 wafers + multibusbar (≥18 BB) interconnection
-  - Sunpreme demonstrated 402 Wp 72-cell bifacial Cu-plated SHJ module in 2018 — early industrial Cu-plated reference
-known_failure_modes: [Cu-finger-corrosion-encapsulant, EVA-acetic-acid-corrosion, finger-adhesion-loss-after-DH, lateral-Cu-edge-migration, Cu-finger-oxidation-damp-heat]
-sources: [2011-nrel-reliability-testing-beyond-qualification, 2012-nrel-iec61215-what-it-is, 2013-koehl-fraunhofer-accelerated-service-life-testing, 2014-nrel-pv-module-qualification-plus, 2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2023-taiyangnews-heterojunction-technology-report, 2024-itrpv-15th-edition-roadmap, 2024-nrel-getting-ahead-of-curve-pv-assessment]
-tags: [module, 72-cell, full-size, utility, bifacial, 700W, IEC61215]
+  - 72 cells in a 6 × 12 arrangement, the utility-scale c-Si standard format from roughly 2015 onward
+  - laminate ~2.0 m × 1.0 m, ~22–28 kg; power class ~330–450 W (M2 / M6 era), increasing with M10/G12 cells
+  - reference format for IEC 61215 / IEC 61730 module qualification at utility-class power
+  - dominant utility format for SHJ modules in current ITRPV / IEA-PVPS / Fraunhofer ISE roadmap data
+  - relevant here as the field-deployed format for plated-Cu SHJ modules at utility scale
+known_failure_modes: [Cu-finger-corrosion-encapsulant, Cu-finger-oxidation-damp-heat, EVA-acetic-acid-corrosion, finger-adhesion-loss-after-DH, silver-supply-bottleneck]
+sources: [2014-nrel-pv-module-qualification-plus, 2018-pv-international-metallization-shj, 2018-pv-tech-metallization-interconnection-bifacial-shj, 2024-iea-pvps-trends-pv-applications, 2025-fraunhoferise-transition-ag-cu-screen-printed-shj]
+tags: [module, full-size, 72-cell, IEC-61215, utility-scale]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Full-size module — 72-cell (utility class)
+# Full-size module, 72-cell
+
+**Slug:** `organisms/full-size-module-72-cell` · **Type:** organism (substrate / device under test)
 
 ## What it is
-72-cell (or 132/144-half-cell) crystalline-silicon module — the utility-scale form factor whose power class has scaled from ~400 Wp (2018, M2) to 700 W+ (2024, M10 / G12 / M10R / G12R) thanks to larger wafers and multibusbar interconnection. For this hypothesis, the 72-cell module is the qualification target against which any plated-Cu SHJ front grid must demonstrate IEC 61215 compliance at commercial scale.
 
-## Standard dimensions / spec
-- Cell count: 72 full cells in 6×12, or 132/144 half-cells in 6×22 / 6×24.
-- Footprint: ~1980×990 mm at M2; ~2280×1130 mm for M10/G12 layouts.
-- Power class: 402 Wp (CSEM 4BB SHJ Cu-plated 72-cell, [[2018-pv-international-metallization-shj]]); 410 Wp (CEA + Meyer Burger 2018 M&I record); ≥700 W class for G12 132-half-cell modules ([[2023-taiyangnews-heterojunction-technology-report]]).
-- Encapsulant: POE for SHJ; EVA still common for PERC/TOPCon legacy lines.
-- Module standard width (M10): 1134 mm.
-- IEC 61215 acceptance: same ≤5% Pmax loss after 1000 h DH and 200 TC; CSEM SWCT plated-Cu modules passed 5× IEC ([[2018-pv-tech-metallization-interconnection-bifacial-shj]]).
+The 72-cell c-Si PV module — 72 cells in a 6 × 12 arrangement — is the utility-scale standard format that took over from 60-cell modules from roughly 2015 onward. It is the dominant utility-scale format in IEA-PVPS market data and Fraunhofer ISE PV-roadmap reporting. In this hypothesis it represents the production-scale target laminate for plated-Cu SHJ modules: any cell-level intervention has to survive the longer current paths, the larger thermal-mechanical stress envelope, and the larger encapsulant-Cu interface area of a 72-cell module.
 
-## Common pitfalls / handling notes
-- Larger module → longer ribbons / wires → tighter constraint on per-finger line resistance to keep CTM losses low; favours plated Cu over screen-printed Ag at ≥M10.
-- Series-current handling for full G12 cells too high — 72-cell modules typically use half-cut G12 (132 half-cells) to halve I²R in interconnect.
-- Glass thickness: 3.2 mm front + 2.0–2.5 mm rear for glass-glass bifacial; thinner front glass (≤2.8 mm) emerging.
-- 72-cell modules pose slightly different mechanical-load and hot-spot tests under IEC 61215 vs 60-cell — reliability data does not transfer 1:1.
-- Bifaciality: 60% market share by 2032 (NREL/ITRPV); SHJ benefits more than PERC (BFR ≥0.95 vs ~0.7).
-- ITRPV finger-width roadmap (27→15 µm) is set with the 72-cell utility-scale module power-class as anchor.
+## Geometry / format
 
-## Failure modes commonly associated
-- `[[../failure-modes/Cu-finger-corrosion-encapsulant]]` — Cu species in encapsulant.
-- `[[../failure-modes/EVA-acetic-acid-corrosion]]` — central reason POE is preferred for SHJ utility modules.
-- `[[../failure-modes/finger-adhesion-loss-after-DH]]` — long finger / many busbars amplify total adhesion-failure surface.
-- `[[../failure-modes/lateral-Cu-edge-migration]]` — long edge perimeter raises edge-initiated DH risk.
-- `[[../failure-modes/Cu-finger-oxidation-damp-heat]]` — Cu-paste / pure-Cu reliability concern for full-size deployment.
+- 72 cells in a 6 × 12 grid; cells M2 / M6 (older) and M10 / G12 (current SHJ utility production)
+- Laminate dimensions: ~2.0 m × 1.0 m (legacy M2/M6), larger for M10/G12; ~22–28 kg
+- Power class: ~330–450 W at M2/M6 SHJ; larger with M10/G12 (utility modules can reach 600+ W with G12)
+- IEC 61215 / IEC 61730 type-test reference format at utility class
+- Industry adoption: dominant utility format from ~2015 onward; the field-relevant module geometry against which 1000 h DH and TC200 results are extrapolated
 
-## Sources
-- `[[2018-pv-international-metallization-shj]]` — 402 Wp Sunpreme 72-cell bifacial Cu-plated SHJ reference.
-- `[[2018-pv-tech-metallization-interconnection-bifacial-shj]]` — 410 Wp CEA + Meyer Burger 2018 record; SWCT 5× IEC pass.
-- `[[2024-itrpv-15th-edition-roadmap]]` — 700 W+ class via M10R / G12R; finger-width and busbar trends.
-- `[[2023-taiyangnews-heterojunction-technology-report]]` — Risen Hyper-ion 132-cell G12 module; 72-cell-class trends.
-- `[[2024-nrel-getting-ahead-of-curve-pv-assessment]]` — 72-cell-class reliability gap analysis; bifacial PID protocol gaps.
-- `[[2011-nrel-reliability-testing-beyond-qualification]]`, `[[2012-nrel-iec61215-what-it-is]]`, `[[2014-nrel-pv-module-qualification-plus]]` — IEC 61215 framework.
-- `[[2013-koehl-fraunhofer-accelerated-service-life-testing]]` — Fraunhofer service-life modelling for full-size modules.
+## Construction (where relevant)
+
+- **Encapsulant:** EVA historically; POE / EPE for n-type SHJ Cu-metallized cells (Fraunhofer ISE 2025 pathway)
+- **Front glass:** 3.2 mm tempered low-iron solar glass; anti-reflection coated
+- **Back layer:** polymer backsheet (TPT/TPE) for monofacial; glass-glass for bifacial SHJ
+- **Interconnection:** multibusbar Cu ribbon (typically 9–18 BB at M10/G12); ECA-bonded at SHJ to respect the ≤200 °C process budget
+- **Edge frame and junction box:** as for 60-cell modules, scaled
+
+## Common pitfalls
+
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — larger interface area than 60-cell, higher cumulative corrosion exposure
+- [[failure-modes/Cu-finger-oxidation-damp-heat]] — more total Cu surface in the laminate
+- [[failure-modes/EVA-acetic-acid-corrosion]] — historically the dominant utility-module corrosion pathway; pushes the SHJ Cu transition to POE
+- [[failure-modes/finger-adhesion-loss-after-DH]] — long fingers + thermal-mechanical cycling at utility-class temperature swings
+- [[failure-modes/silver-supply-bottleneck]] — the per-W Ag burden at 72-cell utility scale is what drives the cost case for Cu metallization
+
+## Citing sources
+
+- [[sources/2014-nrel-pv-module-qualification-plus]] — IEC 61215 utility-class module qualification reference
+- [[sources/2018-pv-international-metallization-shj]] — SHJ 72-cell utility-scale metallization context
+- [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — bifacial 72-cell SHJ interconnection
+- [[sources/2024-iea-pvps-trends-pv-applications]] — IEA-PVPS market data, 72-cell utility dominance
+- [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Ag→Cu transition pathway for utility-scale 72-cell SHJ modules

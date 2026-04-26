@@ -2,42 +2,58 @@
 type: failure-mode
 slug: Cu3Si-formation-at-Si-interface
 severity: critical
-frequency_estimate: "Cu/Ni(60 nm)/textured-Si: Cu₃Si XRD-detectable at 300 °C / 10 min anneal in Ar/H₂ (Cheng 2018). Cu/Ni(120 nm): Cu₃Si onset at 400 °C. η′-Cu₃Si precipitates also nucleate at 200 °C at thin-film-Cu/Si interfaces (Lindroos 2015)."
-applies_to_methods: [electroplated-Ni-Cu-stack, electroless-Ni-deposition, Cu-electroplating-acid-bath, light-induced-plating, SIMS-depth-profile]
-applies_to_reagents: [acid-Cu-sulfate-bath, nickel-sulfamate-bath, nickel-phosphorus-NiP-electroless, Cu3Si-intermetallic]
-applies_to_step_kinds: [plate, anneal, measure]
-sources: [2015-lindroos-cu-lid-aalto-thesis, 2018-electrochemsci-barrier-properties-electroplated-ni]
-tags: [intermetallic, Cu3Si, eta-prime, silicide, Ni-barrier-failure, anneal]
+frequency_estimate: "occurs by solid-state reaction at temperatures as low as 200 °C if Ni barrier is breached. With 60 nm electroplated Ni: Cu₃Si XRD peaks already at 300 °C. With 120 nm Ni: Cu₃Si onset at 400 °C, strong above 600 °C (Cheng 2018)."
+applies_to_methods: [Cu-electroplating-acid-bath, electroplated-Ni-Cu-stack, electroless-Ni-deposition, SIMS-depth-profile]
+applies_to_reagents: [acid-Cu-sulfate-bath, nickel-sulfamate-bath, Cu3Si-intermetallic]
+applies_to_step_kinds: [plating, anneal, accelerated-aging, characterization]
+sources: [2018-electrochemsci-barrier-properties-electroplated-ni, 2022-karas-cu-outdiffusion-damp-heat]
+tags: [Cu3Si, intermetallic, barrier-failure, XRD, critical, Cheng-2018]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Cu₃Si intermetallic formation at the Si interface
+# Cu₃Si formation at the Cu/Si interface
+
+**Slug:** `failure-modes/Cu3Si-formation-at-Si-interface` · **Severity:** critical
 
 ## What it is
-When Cu makes direct contact with Si and is heated, it reacts to form copper silicide (η′-Cu₃Si) at the Si interface. η′-Cu₃Si nucleates at temperatures as low as 200 °C at thin-film-Cu/Si interfaces ([[2015-lindroos-cu-lid-aalto-thesis]]) and grows as facet-like grains into the textured Si pyramids once the Ni barrier is breached ([[2018-electrochemsci-barrier-properties-electroplated-ni]]). Beyond destroying the contact geometry, Cu₃Si is the kinetic source of Cu interstitials feeding [[Cu-diffusion-into-c-Si]] — the silicide is the storage tank that delivers fast-diffusing Cu deep into the wafer over its operating lifetime. In the SHJ stack, Cu₃Si is what would form if (i) the Ni barrier has pinholes or is too thin and (ii) the TCO/a-Si:H stack underneath is locally absent (laser ablation residue, mechanical scratch).
+
+Cu₃Si (η′-Cu₃Si copper silicide) is the failure-product phase formed when metallic Cu reaches bare or partially-passivated c-Si. Cu₃Si forms by **solid-state reaction at temperatures as low as 200 °C** (Cheng 2018) — i.e. within the SHJ a-Si:H thermal budget if the Ni or TCO barrier fails. The phase nucleates as discrete particles at pinholes / grain boundaries in the Ni layer, and once seeded propagates laterally as Cu continues to react with Si. Cu₃Si is also a recombination-active deep-defect-band donor (E_C −(0.15–0.58) eV per Lindroos 2015), so its formation simultaneously consumes Si lattice and injects Cu interstitials into the surrounding bulk.
 
 ## How it manifests
-- Cu₃Si XRD peaks (η′ phase, characteristic 2θ near 44–45° and 51°) emerge after anneal ([[2018-electrochemsci-barrier-properties-electroplated-ni]]).
-- STEM-EDS cross-section shows Cu signal in the Si substrate plus facet-like grains penetrating into pyramid faces (Cheng 2018, Fig. 3-4 at 500 °C).
-- pFF collapses; bulk minority-carrier lifetime drops; Voc loss correlates with silicide volume.
-- Once nucleated, η′-Cu₃Si is stable at 200 °C and does not anneal back; lifetime is permanently degraded.
+
+- **XRD diffraction peaks** at the Cu₃Si reflections; the canonical Cheng 2018 detection signature. With 60 nm Ni: Cu₃Si XRD peaks already at 300 °C, strong above 500 °C. With 120 nm Ni: Cu₃Si first detected at 400 °C, strong above 600 °C.
+- **STEM/EDS line-scan** showing Cu/Ni/Ni-silicide bilayer at the interface; Cheng 2018 saw Ni layer ~100 nm + Ni₂Si ~200 nm on the 120 nm barrier at 300 °C, with no Cu reaching Si — the success case.
+- **Local pFF and Voc collapse** under the affected fingers; Cu interstitials emanating from each Cu₃Si nucleation site degrade local minority-carrier lifetime ([[failure-modes/Cu-LID-light-induced-degradation]]).
+- **EL dark spots** at finger pinhole locations after thermal stress.
+- **Kirkendall-like microvoids** at Cu/Cu-silicide or Cu/Cu-Sn interfaces; Karas 2022 reports voids every 1–2 µm at the Cu–Sn IMC interface (the analogous phenomenon for the Cu/Sn cap).
 
 ## How to detect it
-- [[../methods/SIMS-depth-profile]] — Cu signal extending into the Si bulk under the contact area; STEM-EDS cross-section is the gold-standard direct visualization (Cheng 2018 protocol).
-- XRD of contact regions — Cu₃Si phase peaks separable from Cu, NiSi, Ni₂Si peaks.
-- [[../methods/minority-carrier-lifetime-photoluminescence]] — irreversible bulk-lifetime drop after a 200 °C anneal cycle on encapsulated cells is diagnostic (BO-LID would recover).
-- [[../methods/dark-IV-suns-Voc]] — pFF collapse without R_s rise.
 
-## Mitigation (specific actions, not vague advice)
-- Use ≥120 nm electroplated Ni barrier (Cheng 2018 directly contradicts the hypothesis's "sub-100 nm" target — 60 nm fails at 300 °C); if going thinner, add a 200 °C / 5 min NiSi silicide-formation anneal as a kinetically dense buffer ([[2017-jeon-electroless-ni-front-metallization]]).
-- Confirm absence of pinholes in the Ni barrier by SEM and electrochemical pinhole testing (e.g., copper-displacement decoration) before cap deposition ([[Ni-barrier-pinholes]]).
-- Hard-cap the SHJ thermal budget at ≤200 °C for any post-plate process; ≤280 °C / 5 s as the absolute upper bound from a-Si:H survival ([[2025-yacouba-shj-silver-free-metallization-progPV]]).
-- Verify TCO continuity under the contact — laser-ablation residue in NOBLE flow can locally remove TCO and expose a-Si:H/Si ([[2021-hatt-stable-cu-plated-shj-eupvsec]]).
-- Add a Ni-Co alloy (Ni₇₁Co₂₉) co-deposition step to delay Cu₃Si nucleation by ~50 °C if extended thermal margin is required (Huang et al., cited in [[2018-electrochemsci-barrier-properties-electroplated-ni]]).
-- Avoid >300 °C ribbon-soldering; use SnBi or LMPA solder ≤180 °C ([[2022-arena-sundrive-copper-metallisation-demonstration]]).
+- **XRD on plated stacks before and after thermal stress** — the Cheng 2018 protocol. Track Cu₃Si peak intensity vs anneal temperature (300/400/500/600/700 °C, 10 min in Ar/H₂). Threshold: any Cu₃Si peak above background flags barrier failure at that temperature.
+- **STEM/EDS line scan** of finger cross-section — gold standard for spatially resolving the Ni / Ni-silicide / Cu / Cu₃Si layer sequence. Use FIB liftout from a degraded EL dark spot.
+- **SIMS depth profile** — [[methods/SIMS-depth-profile]] integrates the cross-section signature into a 1D Cu / Ni / Si profile; detects Cu in c-Si as a leading indicator of Cu₃Si nucleation.
+- **Cu-displacement decoration test** (CDD) on Ni layer pre-Cu plating: immerse the Ni-coated TCO in a CuSO₄ solution; Cu metal preferentially deposits at any pinhole exposing Si or TCO — provides a fast, qualitative pinhole-density screen before committing to the full plating run.
 
-## Severity ranking justification
-Critical: η′-Cu₃Si is the on-wafer mechanism that converts a barrier-failure event into permanent device degradation. Once nucleated it both removes Cu (and Ni) from the contact and feeds the silicon bulk with mobile Cu. There is no field anneal that recovers it, and on Cheng's 60 nm Ni it forms below the SHJ-irrelevant 300 °C limit, so even a brief soldering excursion would suffice if the Ni is undersized.
+## Mitigation
 
-## Sources
-- `[[2018-electrochemsci-barrier-properties-electroplated-ni]]` — direct quantification of Ni thickness vs Cu₃Si formation temperature; STEM-EDS cross-sections.
-- `[[2015-lindroos-cu-lid-aalto-thesis]]` — η′-Cu₃Si as the bulk Cu-storage phase, recombination-band depth, 200 °C nucleation.
+- **Continuous Ni barrier ≥120 nm** (Cheng 2018) for thermal budgets to 300 °C. This sits above the SHJ a-Si:H limit (200 °C), but Cu₃Si forms by solid-state reaction at 200 °C if the barrier is discontinuous — so the thickness-coverage requirement still applies even at the SHJ thermal envelope. Use [[methods/electroplated-Ni-Cu-stack]] with [[reagents/nickel-sulfamate-bath]] sulfamate chemistry.
+- **Form Ni-silicide before Cu deposition** — Jeon 2017's electroless-Ni + 500 °C silicidation step (Ni₂Si / NiSi phases) creates a robust silicide barrier, but the 500 °C anneal is *not* SHJ-compatible. SHJ-specific routes therefore rely on the TCO + a-Si:H stack instead.
+- **Use the SHJ TCO (ITO, IWO, AZO) as the primary Cu barrier** — SunDrive 2022 demonstrates this works for 2000 h DH with no Ni barrier; the TCO's amorphous In/Sn-oxide network blocks Cu-Si reaction. See [[reagents/ITO-transparent-conductive-oxide]].
+- **Pinhole verification by Cu-displacement decoration** before bulk Cu plating — single-spot detection of any TCO/Si exposure.
+- **Ni-doped Cu (forming stable (Cu,Ni)₆Sn₅ at the Sn cap)** — Karas 2022 suggests this engineering trick to reduce Kirkendall void formation at the Cu/Sn interface; analogous logic applies at the Cu/Si interface.
+
+## Where it applies
+
+- Methods: [[methods/electroplated-Ni-Cu-stack]], [[methods/Cu-electroplating-acid-bath]], [[methods/electroless-Ni-deposition]], [[methods/SIMS-depth-profile]]
+- Reagents: [[reagents/Cu3Si-intermetallic]], [[reagents/nickel-sulfamate-bath]], [[reagents/acid-Cu-sulfate-bath]]
+- Step kinds: plating, anneal, accelerated-aging, characterization
+
+## Severity rationale
+
+Critical. Cheng 2018's XRD evidence directly contradicts the hypothesis's "sub-100 nm Ni" framing — 60 nm electroplated Ni shows Cu₃Si formation already at 300 °C, and the Cu₃Si phase forms by solid-state reaction at 200 °C, which is the SHJ a-Si:H thermal limit. Cu₃Si nucleation is not just a phase-formation event; it is a Cu-injection mechanism that drives the entire [[failure-modes/Cu-diffusion-into-c-Si]] cascade locally. Severity matches Cu-diffusion-into-c-Si because the two phenomena are causally linked: Cu₃Si is the first observable failure when the Ni barrier breaks.
+
+## Citing sources
+
+- [[sources/2018-electrochemsci-barrier-properties-electroplated-ni]] — Cheng et al.: 60 nm vs 120 nm electroplated Ni barrier study; tracks Cu₃Si XRD peaks vs 300–800 °C anneal. Direct contradiction to the hypothesis's sub-100 nm Ni claim. STEM/EDS confirms the Ni / Ni₂Si bilayer that holds at 300 °C for the 120 nm case.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — Karas: discusses Cu-Sn IMC formation (ε-Cu₃Sn, η-Cu₆Sn₅) as the analogous self-limiting / void-generating phenomenon at the cap-stack side of the plated stack; the underlying Kirkendall mechanism is identical.

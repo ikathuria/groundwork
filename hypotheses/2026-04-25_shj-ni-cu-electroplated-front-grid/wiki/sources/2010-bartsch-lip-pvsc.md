@@ -3,59 +3,54 @@ type: source
 id: 2010-bartsch-lip-pvsc
 source_type: paper
 title: "Copper as Conducting Layer in Advanced Front Side Metallization Processes for Crystalline Silicon Solar Cells, Exceeding 20% on Printed Seed Layers"
-authors: ["Bartsch, J.", "Mondon, A.", "Schetter, C.", "Hörteis, M.", "Glunz, S.W."]
+authors: ["Bartsch, J.", "Mondon, A.", "Schetter, C.", "Hörteis, M.", "Glunz, S. W."]
 year: 2010
-doi: null
-url: null
+doi:
+url: https://publica-rest.fraunhofer.de/server/api/core/bitstreams/2a87c935-1598-4178-b9a9-74bb07bcaa38/content
 raw_path: raw/papers/2010-bartsch-lip-pvsc.pdf
-tags: [light-induced-plating, ni-cu-stack, copper-front-grid, accelerated-aging, fraunhofer-ise, homojunction]
+tags: [light-induced-plating, copper-front-grid, nickel-barrier, foundational, fraunhofer-ise, c-Si]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Copper as Conducting Layer in Advanced Front Side Metallization Processes for Crystalline Silicon Solar Cells, Exceeding 20% on Printed Seed Layers
 
+**Bartsch, J., Mondon, A., Schetter, C., Hörteis, M., Glunz, S. W.** — *Proceedings of the 35th IEEE PVSC, Honolulu, 2010*.
+
 ## Summary
-Foundational Fraunhofer ISE paper (35th PVSC, 2010) demonstrating that a Ni-barrier + light-induced Cu plating (LIP) stack on aerosol/screen-printed Ag seed layers can match silver-LIP reference performance on c-Si solar cells, with a best efficiency of 20.3% on FZ high-efficiency substrates and 16.8% on industrial Cz. Crucially, it introduces a thermal accelerated aging procedure (Arrhenius extrapolation from 200°C stress to 80°C field operation) showing that without a Ni barrier, Cu-containing metallizations on Ag seed degrade in 0.1–3 years equivalent, but introduction of a Ni barrier extrapolates to >1000 years stable operation. Establishes the basic Ni/Cu/Sn or Ni/Cu/Ag stack architecture later inherited by SHJ plating routes.
+
+Foundational Fraunhofer ISE paper introducing light-induced copper plating (LIP) on c-Si solar cells. Demonstrates two routes — Ni/Cu/Sn on printed Ag seed layer and direct Ni-on-Si plating with NiSiX formation — both reaching efficiencies competitive with all-Ag references, plus a thermally accelerated ageing protocol intended to extrapolate Cu-diffusion-limited cell lifetime to 20-year field equivalents.
 
 ## Key claims
-- Cost differential at 2010 prices: Ag €388.8/kg vs Cu €4.1/kg vs Ni €12.8/kg (Table 1, p. 1) — ~95× cost ratio Ag:Cu by mass.
-- Aerosol-Ni-Cu-Sn stack on FZ 2×2 cm² high-efficiency substrate reached η = 20.3%, FF = 80.8%, Voc = 646.4 mV, Jsc = 38.86 mA/cm² (Table 2, p. 2) — comparable to aerosol-Ag-LIP reference.
-- On 5×5 cm² Cz with printed-and-fired seed: Ni/Cu/Sn stack reached 16.8% best efficiency, statistically equivalent to Ag-LIP reference at 16.5% (Table 3, p. 3).
-- Direct-plated Ni-Ni-Cu-Sn (Ni seed by LIP onto laser-ablated SiNx) achieved 17.2% on good area but with FF gap (72.7% vs pFF 79.4%) attributed to inhomogeneous plating / ablation (Table 4).
-- Without Ni barrier: aerosol-Ag-seed + Cu plating extrapolates to only 0.1 year of 95% relative efficiency at 80°C; screen-printed-Ag-seed + Cu plating to 3 years.
-- With sufficient Ni barrier on aerosol seed: extrapolated >1000 years to 95% pFF (Fig. 4); fully Ni-plated cells showed no degradation even after 1000 h at 200°C (Fig. 5).
-- LIP setup is described in Bartsch et al. J. Applied Electrochemistry 40 (2010) 757–765 [Ref 5].
+
+- A nickel diffusion barrier between Cu and Si is essential: Cu-only stacks degrade to 95% relative pFF in 0.1–3 years estimated lifetime at 80 °C; introducing a Ni barrier extends estimated lifetime by orders of magnitude (one stack: ~1000 years at 80 °C extrapolated).
+- Best Ni/Cu/Sn cell on aerosol-printed Ag seed reached η = 20.3 %, FF = 80.8 %, Voc = 646.4 mV, Jsc = 38.86 mA/cm² on 4-inch FZ 2×2 cm² high-efficiency precursors — comparable to Ag-LIP reference.
+- 5×5 cm² Cz industrial precursors with aerosol-Ni-Cu-Sn yielded best η = 16.8 %, average η = 16.4 %, on par with the aerosol-Ag-LIP reference (16.5 %) — i.e. swapping Ag for Cu through a Ni barrier did not penalise cell performance.
+- For fully plated direct-Ni contacts (no Ag seed), best η ≈ 17.2 % on 5×5 cm² Cz, with FF below pFF attributed to inhomogeneous laser ablation / plating; pFF showed no Cu-induced degradation.
+- An accelerated thermal-stress test on a hotplate (typically one week per stack), tracking pFF via Suns-VOC, was developed to estimate long-term Cu impact through Arrhenius extrapolation from elevated to 80 °C operating temperature.
 
 ## Methods used
-- [[../methods/light-induced-plating]] — Cu plating step on both screen-printed and Ni-seed substrates; uses cell's own photovoltage to drive deposition.
-- [[../methods/electroless-Ni-deposition]] — light-supported electroless Ni from commercial bath; alternative to LIP-Ni.
-- [[../methods/electroplated-Ni-Cu-stack]] — Ni-barrier + Cu-conductor + Sn cap as final stack.
-- [[../methods/laser-ablation-of-dielectric]] — SiNx ARC opened by laser before direct Ni-on-Si plating.
-- [[../methods/IV-curve-measurement]] — STC sun simulator IV.
-- [[../methods/dark-IV-suns-Voc]] — Suns-Voc / pFF used as primary contamination indicator during accelerated aging.
-- [[../methods/damp-heat-aging-1000h]] — partly relevant; here uses thermally accelerated aging (200°C hotplate, Arrhenius extrapolation), not damp heat per se. See `notes` in failure-modes section below.
+
+- [[methods/light-induced-plating]] — the originating LIP process for both Ni and Cu on solar-cell precursors
+- [[methods/electroless-Ni-deposition]] — light-supported electroless Ni used as alternative for the diffusion barrier
+- [[methods/laser-ablation-of-dielectric]] — SiNx ARC opening prior to direct Ni plating on Si
+- [[methods/dark-IV-suns-Voc]] — Suns-VOC pFF tracking as the rapid degradation readout for the accelerated ageing test
+- [[methods/IV-curve-measurement]] — 1-sun cell I-V characterisation
 
 ## Reagents
-- [[../reagents/nickel-sulfamate-bath]] — Watts-type Ni electrolyte, lab-prepared.
-- [[../reagents/acid-Cu-sulfate-bath]] — commercial Cu electrolyte for LIP.
-- [[../reagents/tin-Sn-cap]] — Sn cap to protect Cu and ease soldering.
-- [[../reagents/silver-Ag-cap]] — alternative cap as referenced.
 
-## Organisms / substrates
-- [[../organisms/monocrystalline-Si-wafer-p-type]] — 5×5 cm² Cz industrial PERC-style cells with Al-BSF and aerosol seed.
-- [[../organisms/monocrystalline-Si-wafer-n-type]] — not directly used in this 2010 paper; substrates here are p-type FZ and Cz.
+- [[reagents/sulfuric-acid-H2SO4]] — used in plating-line wet-chemistry steps (commercial Cu / Ni plating solutions)
 
 ## Failure modes flagged
-- [[../failure-modes/Cu-diffusion-into-c-Si]] — primary risk addressed; Ni layer characterized as the diffusion barrier whose thickness/coverage/homogeneity determine outcome.
-- [[../failure-modes/Ni-barrier-pinholes]] — implicit: when Ni layer is "insufficient regarding certain parameters (e.g. thickness, coverage, homogeneity)" the inhibition diminishes.
-- [[../failure-modes/Voc-degradation-Cu-contamination]] — measured via pFF drop in Suns-Voc.
-- [[../failure-modes/FF-degradation-contact-resistance]] — observed FF gap on Ni-plated full-stack cells attributed to plating inhomogeneity.
 
-## Supports / contradicts
-- Supports: [[2014-rehman-nicu-plating-csi-review]] (cites this as foundational LIP/Ni-Cu work)
-- Supports: [[2017-jeon-electroless-ni-front-metallization]] (Ni-as-Cu-barrier rationale)
-- Conceptually predates SHJ-specific work but provides the homojunction baseline behind: [[2019-hatt-noble-shj-solrrl]], [[2018-pv-tech-metallization-interconnection-bifacial-shj]]
+- [[failure-modes/Cu-diffusion-into-c-Si]] — explicitly the dominant degradation pathway the Ni barrier is designed to suppress; quantified by accelerated thermal stress + Arrhenius
+- [[failure-modes/Ni-barrier-pinholes]] — "if the nickel layer is insufficient regarding certain parameters (e.g. thickness, coverage, homogeneity), the diffusion inhibiting effect is diminished"
+- [[failure-modes/FF-degradation-contact-resistance]] — fully plated cells showed FF below pFF due to inhomogeneous Ni / laser-ablation patterning
 
 ## Notable quotes
-- "Solar cells with advanced metal stack systems have shown no significant decrease in performance during this thermal stress test." — abstract.
-- "Cells were tempered at different temperatures, and the corresponding degradation data was plotted in an Arrhenius plot. A linear fit … and an extrapolation to assumed module exposure conditions (constant thermal load of 80°C) gave an estimation of the limitation of the lifetime of such cells due to copper penetration."
-- "The light IV-curve was measured after almost 1000 h of thermal exposure at 200°C. The IV parameters were the same as before the degradation experiment."
+
+> "The introduction of a nickel diffusion barrier layer is highly effective. It leads to a very important decrease in the degradation rate of the samples." — *p. 3*
+
+> "The highest efficiency obtained was 20.3% on a high-efficiency cell structure. Although some technical details remain to be solved, we believe that an introduction into industrial production is possible in the near future." — *Conclusion*
+
+> "If the nickel layer is insufficient regarding certain parameters (e.g. thickness, coverage, homogeneity), the diffusion inhibiting effect is diminished." — *p. 4*

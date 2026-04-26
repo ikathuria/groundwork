@@ -1,51 +1,62 @@
 ---
 type: failure-mode
 slug: Voc-degradation-Cu-contamination
-severity: critical
-frequency_estimate: "Karas 2022 EVA-encapsulated Ni-Cu-Sn cells: pFF dropped 82.1→77.0 % after 2000 h DH (Δ=5.1 %abs); Cu-Ag cells: 79.4→77.9 % at 1000 h. Yacouba 2025 found no Voc/pFF change attributable to Cu on TCO-protected SHJ over standard test conditions."
-applies_to_methods: [dark-IV-suns-Voc, IV-curve-measurement, minority-carrier-lifetime-photoluminescence, SIMS-depth-profile, damp-heat-aging-1000h]
-applies_to_reagents: [acid-Cu-sulfate-bath, ITO-transparent-conductive-oxide, a-Si-H-passivation, EVA-encapsulant, POE-polyolefin-encapsulant]
-applies_to_step_kinds: [age, measure]
-sources: [2010-bartsch-lip-pvsc, 2014-nrel-pv-module-qualification-plus, 2014-rehman-nicu-plating-csi-review, 2015-lindroos-cu-lid-aalto-thesis, 2017-jeon-electroless-ni-front-metallization, 2019-karas-damp-heat-degradation-shj-cu, 2022-karas-cu-outdiffusion-damp-heat, 2025-yacouba-shj-silver-free-metallization-progPV]
-tags: [Voc, pFF, junction-degradation, J02, recombination, hypothesis-killer]
+severity: high
+frequency_estimate: "5–10 mV Voc loss within 1000–2000 h DH on Cu-plated p-Si cells with EVA encapsulant per Karas 2019; pFF 82.1 → 77.0 % over 2000 h with J02 doubling per Karas 2022"
+applies_to_methods: [Cu-electroplating-acid-bath, electroplated-Ni-Cu-stack, IV-curve-measurement, dark-IV-suns-Voc, EL-electroluminescence-imaging, damp-heat-aging-1000h, SIMS-depth-profile]
+applies_to_reagents: [acid-Cu-sulfate-bath, EVA-encapsulant, silver-Ag-cap, tin-Sn-cap]
+applies_to_step_kinds: [plating, encapsulation, accelerated-aging, characterization]
+sources: [2015-lindroos-cu-lid-aalto-thesis, 2018-nmat-graded-bandgap-perovskite-retraction-note, 2019-karas-damp-heat-degradation-shj-cu, 2022-karas-cu-outdiffusion-damp-heat]
+tags: [Voc, J02, Cu-contamination, pFF, damp-heat, Karas]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Voc / pFF degradation from Cu contamination
+# Voc / pFF / J02 degradation from Cu contamination
+
+**Slug:** `failure-modes/Voc-degradation-Cu-contamination` · **Severity:** high
 
 ## What it is
-Cu interstitials and Cu₃Si precipitates act as deep-level Shockley-Read-Hall recombination centres in c-Si, lowering minority-carrier lifetime in the junction depletion region and the quasi-neutral bulk. The electrical fingerprint is rising J02 (non-ideal recombination current) with falling pFF (Suns-Voc-derived pseudo-fill-factor) — i.e. *junction-area* degradation, not finger-conductivity loss ([[2019-karas-damp-heat-degradation-shj-cu]]). Voc declines because the saturation current rises; in extreme cases Jsc also drops as bulk lifetime collapses below the wafer thickness. This is the metric most sensitive to Cu inventory in the active part of the cell, and the one Bartsch 2010 used as the proxy for plated-Ni/Cu reliability via Suns-Voc tracking over 1700 h at 200 °C.
+
+The cell-level electrical signature of Cu reaching the c-Si bulk: open-circuit voltage and pseudo-fill-factor drop while non-ideal recombination current density (J02) rises. The mechanism is the deep-level recombination centres formed by Cu interstitials, substitutional Cu, and Cu₃Si precipitates ([[failure-modes/Cu-LID-light-induced-degradation]]); the pathway is barrier breach during plating or aging ([[failure-modes/Cu-diffusion-into-c-Si]], [[failure-modes/Cu-out-diffusion-through-cap-stack]]). Manifests in the *finished* cell as the IV-readable consequence of the upstream physical-chemistry failures.
 
 ## How it manifests
-- pFF decrease ≥1.5 %abs after 1000 h DH while series-resistance-related FF stays flat — diagnostic of junction (not contact) degradation ([[2019-karas-damp-heat-degradation-shj-cu]]).
-- J02 increases by ≥2× (often 6×) per Sinton Suns-Voc fit ([[2022-karas-cu-outdiffusion-damp-heat]]).
-- Voc drops 5–20 mV depending on Cu inventory; on EVA-encapsulated plated cells, Karas measured 4.7 %abs pFF loss after 3500 h DH.
-- EL imaging shows uniform darkening rather than localized dark-spot pattern (vs adhesion or finger-break failures).
-- µ-PCD bulk-lifetime drop concentrated under fingers and busbars on SIMS-correlated EL maps.
+
+- **pFF drop on Suns-VOC**: 82.1 → 77.0 % over 2000 h DH on Cu-plated, Sn-capped p-type cells under EVA (Karas 2022).
+- **J02 increase >2×** on the same samples; for Ni-Cu-Sn / EVA modules J02 increased >6× while POE sister cells did not appreciably degrade (Karas 2022).
+- **Voc loss** of 5–10 mV correlated with the J02 increase; harder to surface than pFF because Voc has multiple drivers, but Cu contamination is distinguishable when accompanied by **stable Jsc** (rules out optical / TCO causes) and **EL dark spots under fingers** (localises to the contact stack).
+- **Cell-to-cell variability** in nominally identical samples and time-evolution of the IV under storage — the cautionary precedent from the [[sources/2018-nmat-graded-bandgap-perovskite-retraction-note]] retraction note: any pFF / Voc claim that drifts hour-to-day on a small sample set risks the same fate.
 
 ## How to detect it
-- [[../methods/dark-IV-suns-Voc]] — pFF and J02 from Sinton Suns-Voc; threshold pFF drop ≥1 %abs over baseline indicates Cu-junction risk; >2 %abs flags rejection.
-- [[../methods/IV-curve-measurement]] — STC IV; Voc loss without R_s gain.
-- [[../methods/SIMS-depth-profile]] — Cu signal in c-Si correlates with pFF loss (Karas 2022 Fig. 4).
-- [[../methods/minority-carrier-lifetime-photoluminescence]] — PL imaging localizes lifetime drop to active junction.
-- Combine with [[../methods/damp-heat-aging-1000h]] at 1000+ h to provoke the failure.
 
-## Mitigation (specific actions, not vague advice)
-- Maintain SHJ TCO ≥75 nm under contacts as Cu barrier — Yacouba 2025 found no Voc loss with Cu paste directly on ITO ([[2025-yacouba-shj-silver-free-metallization-progPV]]).
-- Add a thin Ni layer (≥120 nm per Cheng 2018, or sub-100 nm with NiSi silicide buffer) between TCO and Cu plating.
-- Use POE encapsulation, not EVA — Karas 2022 measured 3× lower Cu in Si under POE vs EVA after 3500 h DH.
-- Specify HF activation immediately before Ni plating to remove native oxide, gaining +42 mV Voc ([[2017-jeon-electroless-ni-front-metallization]]).
-- Track pFF with Suns-Voc *every 250 h* during DH (not just at 1000 h); J02 rise is the early warning signal that allows aborting before catastrophic loss.
-- Specification target: ΔpFF ≤1 %abs and ΔVoc ≤5 mV after 1000 h at 85 °C / 85 % RH (matches IEC 61215 Pmax budget per [[2014-rehman-nicu-plating-csi-review]] for 5 % total module-level).
+- **Suns-VOC pFF tracking at 0/250/500/750/1000 h DH** — [[methods/dark-IV-suns-Voc]]. Δ pFF > 1 %abs at the 1000 h mark is the alarm threshold; > 5 %abs is unambiguous Cu contamination evidence.
+- **Dark IV / J02 extraction** — track the non-ideal recombination current; J02 doubling is the diagnostic of Cu contamination (Karas 2022).
+- **1-sun IV at every checkpoint** — [[methods/IV-curve-measurement]]: track Voc, Jsc, FF, η simultaneously. Voc loss with stable Jsc indicates a recombination problem, not optical or TCO.
+- **EL imaging at high injection (e.g. 8 A)** — [[methods/EL-electroluminescence-imaging]]: dark spots under fingers correlate with localised Cu ingress at pinholes.
+- **SIMS depth profile** — [[methods/SIMS-depth-profile]]: confirms the Cu signal in c-Si that *causes* the Voc/pFF drop; closes the causal loop.
+- **N ≥ 5–10 cells per arm + checkpoint IV** — to surface variability before publishing (the retraction discipline).
 
-## Severity ranking justification
-Critical: this is the integrated electrical fingerprint of Cu reaching the junction. The hypothesis is specifically about "no measurable efficiency loss after 1000 h DH" — Voc/pFF degradation from Cu contamination is the most direct quantitative way to falsify it. Karas 2019/2022 demonstrated this failure mode is real on plated-Cu c-Si modules.
+## Mitigation
 
-## Sources
-- `[[2019-karas-damp-heat-degradation-shj-cu]]` — first demonstration of pFF/J02 degradation pattern on Cu-plated cells under DH.
-- `[[2022-karas-cu-outdiffusion-damp-heat]]` — quantified Cu/SIMS link to pFF loss (5.1 %abs after 2000 h DH on Ni-Cu-Sn EVA cells).
-- `[[2015-lindroos-cu-lid-aalto-thesis]]` — Cu-as-recombination-centre physics; deep level depths.
-- `[[2010-bartsch-lip-pvsc]]` — pFF as primary contamination indicator; 1700 h at 200 °C protocol.
-- `[[2014-rehman-nicu-plating-csi-review]]` — review of pFF tracking under accelerated aging; 3000 h DH on HJT (3 % power loss).
-- `[[2017-jeon-electroless-ni-front-metallization]]` — Voc tracking method, +42 mV with HF-activation.
-- `[[2025-yacouba-shj-silver-free-metallization-progPV]]` — counter-evidence that TCO blocks Cu effectively on SHJ.
-- `[[2014-nrel-pv-module-qualification-plus]]` — qualification framework.
+- **Prevent the upstream contamination** via the cascade in [[failure-modes/Cu-diffusion-into-c-Si]]: continuous Ni ≥120 nm OR rely on TCO + a-Si:H, ensure cap-stack integrity, switch encapsulant from EVA to [[reagents/POE-polyolefin-encapsulant]].
+- **Encapsulant change EVA → POE** — Karas 2019 showed Cu-plated cells under POE did not degrade while EVA sisters did; same conclusion in 2022 for SIMS Cu-in-c-Si signal.
+- **Cap-layer thickening or chemistry change** — thicker Sn (Cu₆Sn₅ self-limiting), Ni-doped Cu (stable (Cu,Ni)₆Sn₅), or POE substitution per Karas 2022's three-route recommendation.
+- **N ≥ 5–10 cells per arm + IV at 0/250/500/750/1000 h** — the discipline that the retraction-note precedent mandates.
+- **Reject champion-only claims** — never publish Δη ≤ 0.5 %abs at 1000 h DH on a single device or single-checkpoint measurement; pre-register the checkpoint schedule and the rejection criterion.
+
+## Where it applies
+
+- Methods: [[methods/IV-curve-measurement]], [[methods/dark-IV-suns-Voc]], [[methods/EL-electroluminescence-imaging]], [[methods/damp-heat-aging-1000h]], [[methods/SIMS-depth-profile]], [[methods/Cu-electroplating-acid-bath]], [[methods/electroplated-Ni-Cu-stack]]
+- Reagents: [[reagents/acid-Cu-sulfate-bath]], [[reagents/EVA-encapsulant]], [[reagents/silver-Ag-cap]], [[reagents/tin-Sn-cap]]
+- Step kinds: plating, encapsulation, accelerated-aging, characterization
+
+## Severity rationale
+
+High (not critical only because the cell-level Voc/pFF readout is downstream of the truly catastrophic [[failure-modes/Cu-diffusion-into-c-Si]] / [[failure-modes/Cu-LID-light-induced-degradation]] root causes — by the time Voc has dropped 10 mV the device is already lost). Karas 2019/2022 directly quantify the failure: 5 %abs pFF loss and >6× J02 rise at 1000–2000 h DH for Cu-plated cells under EVA, vs no measurable change under POE. The hypothesis's success threshold (Δη ≤ 0.5 %abs at 1000 h) requires this failure mode to be absent.
+
+## Citing sources
+
+- [[sources/2015-lindroos-cu-lid-aalto-thesis]] — Voc and Jsc loss are the cell-level fingerprints of Cu-LID; Lindroos provides the bulk-recombination mechanism behind the IV-readable degradation.
+- [[sources/2019-karas-damp-heat-degradation-shj-cu]] — direct ASU/NREL DH study on encapsulated Cu-plated cells: pFF / J02 degradation, isolated by EVA-vs-POE comparison.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — the SIMS / EDS forensic follow-up: pFF 82.1 → 77.0 %, J02 doubling, ~3× higher Cu in c-Si under EVA vs POE.
+- [[sources/2018-nmat-graded-bandgap-perovskite-retraction-note]] — cautionary precedent: cell-to-cell IV variability + time-evolution of key PV parameters were the retraction triggers; structurally identical to the Cu-contamination risk profile.

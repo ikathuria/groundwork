@@ -1,57 +1,73 @@
 ---
 type: reagent
 slug: nickel-phosphorus-NiP-electroless
-aliases: [electroless NiP, Ni-P bath, autocatalytic Ni, EN]
-cas: null
-formula: NiSO4·6H2O + NaH2PO2·H2O + complexant + buffer (proprietary)
+aliases: [electroless NiP, Ni-P amorphous barrier, autocatalytic Ni]
+cas: ""
 suppliers:
-  - name: Atotech / MKS (e.g., Niklad, Aurotech)
-    catalog: production-scale electroless Ni line (proprietary)
-    grade: production
-    url: https://www.atotech.com/
-  - name: MacDermid Enthone (Bondal, Niplate)
-    catalog: production-scale electroless Ni
-    grade: production
-    url: https://www.macdermidenthone.com/
-storage: room-temperature; bath shelf life days–weeks once activated; replenishment continuous
-hazards: high — Ni salts are GHS H350i (carcinogenic by inhalation), H360D (reproductive tox); hypophosphite ignites with strong oxidisers
-known_failure_modes: [Ni-barrier-pinholes, Cu-diffusion-into-c-Si, Cu3Si-formation-at-Si-interface]
-sources: [2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2018-electrochemsci-barrier-properties-electroplated-ni, pvtech-metallization-challenges-cell-manufacturing]
-tags: [electrolyte, Ni-seed, autocatalytic, electroless, silicide-precursor]
+  - name: Atotech (MKS)
+    catalog: "Aurotech / electroless Ni-P chemistry"
+    grade: PV / PCB plating chemistry
+    url: https://www.atotech.com/products/general-metal-finishing/solar-industry/
+  - name: MacDermid Alpha
+    catalog: "Niklad (electroless Ni)"
+    grade: electronics / PV
+    url: https://www.macdermidalpha.com
+  - name: Coventya / Atotech (UYEMURA brand for electroless Ni)
+    catalog: "ENPLATE NI-426 / NI-440"
+    grade: high-P (~10 wt% P), amorphous
+    url: https://www.uyemura.com
+storage: bath at room T; replenish on metal-turnover basis
+hazards: medium — NaH2PO2 reducing agent, NiSO4 source, complexants; alkaline waste
+known_failure_modes: [Ni-barrier-pinholes, Cu-diffusion-into-c-Si, finger-adhesion-loss-after-DH]
+sources: [2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, atotech-solar-industry-overview, fisher-AA8902018-nickel-sulfamate-hydrate]
+tags: [electroless, NiP, amorphous-barrier, autocatalytic, no-bias, TCO-compatible]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Nickel-phosphorus electroless plating bath
+# Electroless nickel-phosphorus (NiP)
+
+**Slug:** `reagents/nickel-phosphorus-NiP-electroless` · **Type:** reagent
 
 ## What it is
-Autocatalytic nickel-phosphorus deposition from a NiSO4·6H2O + sodium hypophosphite (NaH2PO2·H2O) bath. Unlike electroplated Ni it requires no external current — Ni²⁺ is reduced by hypophosphite at the cell surface — making it ideal as the very first Ni seed step on a non-conductive Si or TCO surface. After a 300–600 °C anneal the Ni-P transforms into Ni₂Si / NiSi silicide that anchors the Ni and acts as a Cu diffusion barrier in PERC, buried-contact, and laser-doped selective-emitter (LDSE) cells.
 
-## Common uses
-- Seed step for the Ni/Cu/(Sn|Ag) two-step plating stack on c-Si — IMEC buried-contact and LDSE routes ([[pvtech-metallization-challenges-cell-manufacturing]]).
-- Pretreatment in [[2018-electrochemsci-barrier-properties-electroplated-ni]] before electroplated Ni: 60 s plate at 70 °C, pH 5 → ~60 nm Ni → 500 °C silicidation → HNO3 strip → electroplated Ni / Cu.
-- Front-side electroless Ni on textured Si in homojunction cell development ([[2017-jeon-electroless-ni-front-metallization]]).
+Electroless nickel-phosphorus (NiP) is a Ni-P alloy deposited from an aqueous bath of NiSO4 + sodium hypophosphite (NaH2PO2, the reducing agent) + complexants (citrate/lactate) + buffer + stabilizer, **without any external bias**. The deposit is an amorphous (high-P, ~10 wt%) or microcrystalline (low-P, ~3–5 wt%) Ni-P alloy. NiP is one of two main Ni-barrier chemistries (the other being electroplated Ni from a [[reagents/nickel-sulfamate-bath]]) for the Ni layer in an SHJ Ni/Cu stack.
 
-## Key spec / concentration ranges
-- Bath chemistry (Hsieh / Cheng recipes): NiSO4·6H2O ~25 g/L + NaH2PO2·H2O ~25 g/L + complexants (lactic / citric / glycolic acid) + buffer; pH 5; T = 70 °C.
-- Deposition rate ≈1 nm/s; continuous coverage above ~45 nm thickness ([[2017-jeon-electroless-ni-front-metallization]]).
-- Surface activation: SnCl2/HCl sensitisation → PdCl2/HCl (or PdCl2/HCl/HF) activation immediately before plating.
-- Phosphorus content of as-plated film: typically 5–12 wt% P; affects silicide kinetics.
-- Silicidation: Ni2Si (200–300 °C), NiSi (300–700 °C, low ρ ≈14 µΩ·cm), NiSi2 (700–900 °C, agglomerated, high-ρ — to be avoided).
-- TEM-measured silicide thickness: 125–160 nm after 60 s plate + 500–600 °C; 210–290 nm at 700 °C ([[2017-jeon-electroless-ni-front-metallization]]).
+## Common uses (in this corpus)
 
-## Alternatives / variants
-- [[nickel-sulfamate-bath]] — electroplated Ni for the thick barrier layer once a conductive surface exists.
-- Light-induced Ni plating — uses cell photovoltage instead of external chemistry; alternative for SHJ where the TCO is conductive.
-- Ni-Co alloy variants (Ni71Co29) — extends thermal stability to ~250 °C ([[2018-electrochemsci-barrier-properties-electroplated-ni]]).
+In this corpus NiP appears as the **electroless / no-bias-required Ni-barrier alternative**. Jeon 2017 reports an electroless-NiP front metallization for c-Si; Rehman 2014 reviews it as the standard PV alternative to LIP/electroplated Ni. The amorphous, columnar-grain-free structure of high-P NiP gives **more uniform pinhole-free coverage** at thicknesses where electroplated Ni starts to fail (Cheng 2018 reports 60 nm electroplated Ni fails as Cu barrier at 300 °C). For the hypothesis's sub-100 nm Ni claim, NiP is a structural-coverage-uniformity hedge.
 
-## Gotchas
-- HF in the activation bath (Bath 2 of [[2017-jeon-electroless-ni-front-metallization]]: PdCl2 + 3 mL/L HCl + 83 mL/L HF) is essential to remove the native SiOx that otherwise blocks silicide formation; without it Voc drops ~40 mV.
-- NOT used in PVD or sputter routes — only valid for chemical plating workflows.
-- For SHJ specifically, the thermal budget for silicide formation (≥300 °C) generally exceeds the SHJ a-Si:H stability ceiling (~200–250 °C) — electroless NiP is therefore mostly a PERC-era reagent. The hypothesis uses electroplated Ni instead, with the TCO acting as the diffusion barrier.
-- Hypophosphite + oxidisers (HNO3, H2O2) is a fire hazard — keep separate.
-- Bath instability: pH drift, plates out spontaneously on tank walls if Ni:hypophosphite ratio drifts.
+## Properties / specifications
 
-## Sources
-- [[2014-rehman-nicu-plating-csi-review]] — review of electroless Ni chemistries and their use in c-Si front contact.
-- [[2017-jeon-electroless-ni-front-metallization]] — canonical recipe (NiSO4·6H2O + NaH2PO2·H2O, 70 °C, pH 5, 1 nm/s) and Voc impact of HF activation.
-- [[2018-electrochemsci-barrier-properties-electroplated-ni]] — full electroless-Ni → silicidation → strip → electroplated-Ni → Cu workflow.
-- [[pvtech-metallization-challenges-cell-manufacturing]] — IMEC overview of NiP electroless seed in buried-contact and LDSE cells.
+- Phosphorus content: 3–5 wt% (low-P, microcrystalline) to 10–13 wt% (high-P, amorphous).
+- Deposition rate: 5–25 µm/h depending on bath chemistry and temperature.
+- Operating bath temperature: 80–95 °C (often the hottest step in the cell line; needs SHJ thermal-budget verification).
+- Bath pH: 4.5–5.5 typical; less aggressive than acid Cu but still requires TCO-pinhole control.
+- Deposit hardness: 500–700 HV (as-deposited); harder after heat treatment.
+- Bulk resistivity: 60–100 µΩ·cm for high-P amorphous (much higher than crystalline Ni's 7 µΩ·cm) — sets a thickness ceiling for the barrier.
+- Cu-barrier behavior: amorphous structure has no fast grain-boundary diffusion paths; reported to outperform electroplated Ni at <100 nm thickness for Cu blocking.
+
+## Suppliers
+
+- Atotech (MKS) — electroless Ni-P chemistry for PV; URL https://www.atotech.com/products/general-metal-finishing/solar-industry/
+- MacDermid Alpha — Niklad electroless Ni; URL https://www.macdermidalpha.com
+- Uyemura — ENPLATE NI-426 / NI-440 high-P amorphous chemistries; URL https://www.uyemura.com
+- Lab make-up: NiSO4 + NaH2PO2 + sodium citrate + lactic acid + thiourea / Pb stabilizer (mixed from reagent salts).
+
+## Alternatives
+
+- [[reagents/nickel-sulfamate-bath]] — electroplated Ni alternative (requires external bias / LIP); higher-purity Ni but potentially more pinholes at sub-100 nm.
+- PVD Ni / sputtered Ni — different deposition class; needed when bath chemistry is not TCO-compatible.
+
+## Gotchas / failure modes
+
+- [[failure-modes/Ni-barrier-pinholes]] — electroless deposits initiate at activation sites; activator-density and bath-stabilizer balance govern pinhole density.
+- [[failure-modes/Cu-diffusion-into-c-Si]] — the failure mode the NiP is engineered to prevent; barrier breakdown is the catastrophic outcome.
+- [[failure-modes/finger-adhesion-loss-after-DH]] — NiP / TCO interfacial adhesion is a known weak point; surface pre-treatment matters.
+
+## Citing sources
+
+- [[sources/2017-jeon-electroless-ni-front-metallization]] — primary research source on electroless-Ni front metallization for c-Si.
+- [[sources/2014-rehman-nicu-plating-csi-review]] — review naming NiP as the standard PV electroless Ni option.
+- [[sources/atotech-solar-industry-overview]] — Atotech's PCB-derived electroless-Ni chemistry positioned for SHJ/TOPCon.
+- [[sources/fisher-AA8902018-nickel-sulfamate-hydrate]] — Ni-sulfamate catalog page references NiP as the alternative chemistry for the same Ni-barrier role.

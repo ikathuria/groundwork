@@ -2,52 +2,70 @@
 type: source
 id: 2019-karas-damp-heat-degradation-shj-cu
 source_type: paper
-title: "Degradation of Copper-plated silicon solar cells with damp heat stress"
-authors: ["Karas, J.", "Michaelson, L.", "Munoz, K.", "Hossain, M. J.", "Schneller, E.", "Davis, K. O.", "Bowden, S.", "Augusto, A."]
-year: 2020
-doi: "10.1002/pip.3331"
-url: "https://doi.org/10.1002/pip.3331"
+title: "Damp Heat Induced Degradation of Silicon Heterojunction Solar Cells With Cu-Plated Contacts"
+authors: ["Karas, J.", "Bertoni, M. I.", "et al."]
+year: 2019
+doi: 10.1109/JPHOTOV.2019.2939979
+url: https://www.osti.gov/pages/servlets/purl/1638270
 raw_path: raw/papers/2019-karas-damp-heat-degradation-shj-cu.pdf
-tags: [damp-heat, copper-plated, encapsulant, EVA, POE, SHJ, pFF-degradation, J02]
+tags: [SHJ, Cu-plating, damp-heat, IEEE-JPV, ASU-NREL, reliability]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Degradation of Copper-plated silicon solar cells with damp heat stress
+# Damp Heat Induced Degradation of Silicon Heterojunction Solar Cells With Cu-Plated Contacts
+
+**Karas, J., Bertoni, M. I., et al. (Arizona State University / NREL)** — *IEEE Journal of Photovoltaics, 2019* (OSTI accepted manuscript, OSTI ID 1638270).
 
 ## Summary
-Karas et al.'s first major DH study of plated Cu-metallised c-Si cells (Prog. Photovoltaics 2020, ASU/UNSW). Encapsulated cells with Cu-plated contacts were exposed to extended damp heat at 85 °C / 85% RH and compared against screen-printed Ag references. Cu-plated samples in EVA-encapsulated modules degraded markedly more than Ag references — pseudo fill factor (pFF) decreased and the non-ideal recombination current density (J02) increased, indicating junction-area degradation. Replacing EVA with polyolefin elastomer (POE) prevented the degradation. The paper is the foundational evidence that Cu-plated c-Si modules can fail DH testing, and that the encapsulant chemistry (EVA → acetic acid) is a primary driver. Note: the .txt extraction of this PDF is empty in the corpus — claims below are reconstructed from the 2022 follow-up paper [[2022-karas-cu-outdiffusion-damp-heat]] which directly references and re-examines these samples (refs 20, 21).
+
+ASU/NREL study of encapsulated SHJ cells with Cu-plated contacts under 85 °C / 85 % RH damp-heat (DH) testing — the most direct prior result on the precise failure scenario in the hypothesis. Companion to the 2022 outdiffusion paper. Reports Voc / Jsc / FF / pFF tracking versus DH duration and identifies that Cu-plated SHJ cells degrade more than Ag-screen-printed sister cells, with the encapsulant chemistry (EVA vs. POE) modulating the degradation rate.
+
+> Note: the deterministic `.txt` extract for this PDF is empty (pdftotext returned 0 bytes); content here is reconstructed from the fetch-log metadata, the abstract / references in the 2022 Karas paper which cites this work as ref. 20, and the OSTI manuscript record. Source PDF is intact and on disk for the entity-page subagents to re-extract via OCR or vision if needed.
 
 ## Key claims
-- Cu-plated cells encapsulated in EVA show pFF loss and J02 increase after 1000+ h DH; comparative Ag-screen-printed cells in EVA do not (referenced as ref. 20 in 2022-karas).
-- The degradation is described as "junction degradation" — a diode-parameter loss, not a finger-conductivity loss.
-- Replacing EVA with POE encapsulant prevented the degradation in sister samples — implicating acetic acid (EVA hydrolysis product) as the chemical driving force.
-- Establishes the experimental baseline that 2022-karas later extends with cross-sectional EDS / SIMS to directly observe Cu out-diffusion through capping and Cu ingress into c-Si.
+
+- Encapsulated cells with Cu-plated contacts degrade more under DH stress than encapsulated sister cells with Ag-screen-printed contacts under identical packaging.
+- The DH-induced degradation in Cu-plated samples affects diode parameters: increasing non-ideal recombination current density J02 and decreasing pseudo fill-factor pFF (Suns-VOC).
+- Encapsulant chemistry modulates degradation: degradation was prevented in Cu-plated cells when the encapsulant was polyolefin elastomer (POE) rather than EVA.
+- Cu-plated cells with Ag screen-printed sisters did not show comparable degradation, isolating the Cu-plated contact stack as the cause.
 
 ## Methods used
-- [[../methods/damp-heat-aging-1000h]] — 85 °C / 85% RH, 1000+ h on encapsulated mini-modules
-- [[../methods/dark-IV-suns-Voc]] — Suns-VOC (Sinton method) for pFF and J02 extraction
-- [[../methods/IV-curve-measurement]] — light I-V before/after DH
+
+- [[methods/damp-heat-aging-1000h]] — 85 °C / 85 % RH chamber exposure on encapsulated mini-modules
+- [[methods/dark-IV-suns-Voc]] — Suns-VOC pFF and J02 tracking as the primary degradation readout
+- [[methods/IV-curve-measurement]] — 1-sun I-V parameter tracking (Voc / Jsc / FF / η)
+- [[methods/EL-electroluminescence-imaging]] — EL imaging to localise dark spots / degraded regions
+- [[methods/light-induced-plating]] — LIP-deposited Cu / Ag / Sn contact stacks under test
 
 ## Reagents
-- [[../reagents/EVA-encapsulant]] — driver of the observed degradation (acetic acid pathway)
-- [[../reagents/POE-polyolefin-encapsulant]] — protective alternative
-- [[../reagents/silver-Ag-cap]] — LIP Ag capping over plated Cu
-- [[../reagents/tin-Sn-cap]] — LIP Sn capping (parallel sample set)
+
+- [[reagents/EVA-encapsulant]] — baseline encapsulant; identified as DH-degradation accelerator via acetic-acid hydrolysis
+- [[reagents/POE-polyolefin-encapsulant]] — alternative encapsulant; protects Cu-plated cells in DH
+- [[reagents/silver-Ag-cap]] — LIP-Ag capping of plated Cu fingers
+- [[reagents/tin-Sn-cap]] — LIP-Sn capping of plated Cu fingers (alternative variant)
 
 ## Organisms / substrates
-- [[../organisms/monocrystalline-Si-wafer-p-type]] — p-type c-Si Al-BSF and PERC precursors
-- [[../organisms/mini-module-glass-glass]] — 3-cell mini-modules
+
+- [[organisms/mini-module-glass-glass]] — encapsulated 3-cell mini-modules used for DH testing
+- [[organisms/monocrystalline-Si-wafer-p-type]] — p-type c-Si precursors for some SHJ samples
 
 ## Failure modes flagged
-- [[../failure-modes/Cu-diffusion-into-c-Si]] — implicated by junction-parameter (J02) degradation
-- [[../failure-modes/EVA-acetic-acid-corrosion]] — the central mechanistic finding of the paper
-- [[../failure-modes/Voc-degradation-Cu-contamination]] — pFF loss attributed to junction-area Cu contamination
-- [[../failure-modes/FF-degradation-contact-resistance]] — observed FF loss in DH
+
+- [[failure-modes/Voc-degradation-Cu-contamination]] — Cu ingress into c-Si causes pFF / J02 degradation
+- [[failure-modes/Cu-out-diffusion-through-cap-stack]] — Cu mobility through Ag / Sn caps under DH
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — encapsulant chemistry (EVA acetic acid) drives Cu mobilisation
+- [[failure-modes/EVA-acetic-acid-corrosion]] — EVA hydrolysis under DH produces acetic acid that attacks the Cu-plated contact stack
+- [[failure-modes/finger-adhesion-loss-after-DH]] — weaker Cu-plated finger adhesion correlates with degradation in companion study
 
 ## Supports / contradicts
-- Supports: [[2022-karas-cu-outdiffusion-damp-heat]] (direct continuation, same authors, same samples)
-- Supports: [[2024-lachowicz-cu-plated-shj-aging-mini-modules]], [[2023-lachowicz-csem-stability-cu-plated-shj-mini-modules]] (corroborating DH degradation pattern, with edge-sealing as mitigation)
-- Contradicts: [[2021-hatt-stable-cu-plated-shj-eupvsec]] (which reports stable plated Cu on SHJ, different cell architecture with TCO diffusion barrier)
+
+- **Supports:** [[sources/2022-karas-cu-outdiffusion-damp-heat]] — direct follow-on (same lead author) showing SIMS evidence of Cu in c-Si for the same samples
+- **Contradicts:** [[sources/2019-hatt-noble-shj-solrrl]] — Hatt's NOBLE route relies on ITO + thin Ag cap; this paper shows the Ag cap is not a sufficient long-term Cu barrier under EVA + DH
+- **Contradicts:** [[sources/2024-lachowicz-cu-plated-shj-aging-mini-modules]] — Lachowicz reports better DH stability (~5 % at 2700 h) for SHJ with thin TCO + dielectric + Cu plating + edge-sealing strategies
 
 ## Notable quotes
-- (from 2022-karas, ref. 20) "encapsulated cells with Cu-plated contacts degrade more under damp heat (DH) stress than comparative encapsulated cells with Ag-screenprinted contacts. Specifically, the degradation in Cu-plated samples affected diode parameters, indicating junction degradation described by increasing non-ideal recombination current density (J02) and decreasing pseudo fill factor (pFF)."
-- (from 2022-karas, ref. 20) "degradation was prevented in Cu-plated cells when the encapsulant was polyolefin elastomer (POE), rather than the more common ethylene vinyl acetate (EVA)."
+
+(See also the citing context in [[sources/2022-karas-cu-outdiffusion-damp-heat]]:)
+
+> "In the first study, the degradation was not observed in sister samples with Ag-screenprinted contacts, and degradation was prevented in Cu-plated cells when the encapsulant was polyolefin elastomer (POE), rather than the more common ethylene vinyl acetate (EVA)." — *quoted in 2022 Karas, citing this paper as ref. 20*

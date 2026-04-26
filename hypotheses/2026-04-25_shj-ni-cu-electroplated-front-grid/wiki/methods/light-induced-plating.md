@@ -1,41 +1,70 @@
 ---
 type: method
 slug: light-induced-plating
-aliases: [LIP, light-induced electroplating]
-related_methods: [electroplated-Ni-Cu-stack, electroless-Ni-deposition, Cu-electroplating-acid-bath, laser-ablation-of-dielectric]
-key_reagents: [acid-Cu-sulfate-bath, nickel-sulfamate-bath, silver-Ag-cap, tin-Sn-cap]
-known_failure_modes: [Cu-out-diffusion-through-cap-stack, Cu-diffusion-into-c-Si, Ni-barrier-pinholes]
-sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2022-karas-cu-outdiffusion-damp-heat, pvtech-metallization-challenges-cell-manufacturing]
-tags: [plating, photovoltage-driven, Cu-deposition, homojunction, Ni-Cu-stack]
+aliases: [LIP, photo-induced plating, illuminated electroplating, light-induced Cu plating]
+related_methods: [Cu-electroplating-acid-bath, electroless-Ni-deposition, electroplated-Ni-Cu-stack, Ni-sputter-deposition, NOBLE-selective-Cu-plating, laser-ablation-of-dielectric]
+key_reagents: [acid-Cu-sulfate-bath, sulfuric-acid-H2SO4, nickel-sulfamate-bath, nickel-phosphorus-NiP-electroless, silver-Ag-cap, tin-Sn-cap]
+known_failure_modes: [TCO-pitting-during-plating, Ni-barrier-pinholes, Cu-diffusion-into-c-Si, finger-adhesion-loss-after-DH]
+sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2018-pv-international-metallization-shj, 2019-karas-damp-heat-degradation-shj-cu, 2022-karas-cu-outdiffusion-damp-heat, 2023-taiyangnews-heterojunction-technology-report, fisher-AA8902018-nickel-sulfamate-hydrate, fisher-AC197730010-cu-sulfate-pentahydrate-sds, fisher-AC424525000-sulfuric-acid-acs-sds, pvtech-metallization-challenges-cell-manufacturing]
+tags: [LIP, plating, light-induced, copper, nickel, photovoltage]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Light-Induced Plating (LIP)
+# Light-induced plating (LIP)
+
+**Slug:** `methods/light-induced-plating` · **Type:** method
 
 ## What it measures / does
-LIP uses the cell's own photovoltage under illumination to drive cathodic metal deposition onto a pre-patterned front grid (Ag seed, Ni seed, or directly onto laser-opened Si). It produces a self-aligned thick metal finger without external contact to the front grid — the cell acts as its own current source.
+
+Uses the cell's own photovoltage to drive electrodeposition: illuminating the front side generates a photocurrent that, through the cell's internal junction, biases the front contact cathodically with respect to the bath, plating Ni or Cu onto exposed seed regions without an external power supply. LIP was the canonical c-Si Cu metallization route from the 2000s onwards (foundational paper: Bartsch 2010); it remains in use for Ni / Cu / Ag / Sn cap plating in stacks where the seed cannot easily be wired (e.g., when using inkjet or laser-defined patterns on a non-conductive seed precursor).
 
 ## When to use it
-Used at the metal-thickening step in a Ni/Cu (or Ag/Cu) plated front grid: after the seed and (where used) Ni barrier are deposited and the dielectric/ARC is patterned, the cell is dipped in an acid Cu electrolyte under simulator/halogen illumination to grow the conductive Cu finger. Common in PERC/homojunction Ni-Cu work; in SHJ-Ni/Cu-plating it is one of two thickening routes (the other being external-contact electroplating).
 
-## Key parameters
-- Illumination: 1-sun-equivalent halogen / LED arrays providing the photovoltage that biases the front grid cathodic.
-- Bath: acid CuSO4 + H2SO4 + Cl- electrolyte (cyanide-free, optically transparent for illumination).
-- Capping: Sn or Ag cap added in a subsequent LIP step (Karas et al. observe upward Cu out-diffusion through both caps under DH).
-- Throughput / target finger thickness: 1-10 um Cu, deposition rate set by photo-generated current density.
-- Plating temperature near room temperature; pH and chloride control critical for pitting and grain structure.
+Use it when (a) the front-side seed is not continuous enough for DC plating (e.g., laser-opened SiNₓ on a passivated PERC), (b) you want a self-limiting deposition mode that follows the photoactive area, or (c) you can tolerate a slower deposition rate than DC plating. On SHJ the front TCO is conductive, so most modern SHJ Cu-plating routes (NOBLE, SunDrive, CSEM 3-step) use *DC* plating; LIP is more common for the homojunction Ni/Cu literature this hypothesis builds on (Bartsch, Rehman) and for the cap layer on top of plated Cu (Karas 2019/2022 used LIP-Ag and LIP-Sn caps).
 
-## Common variants / alternatives
-- [[Cu-electroplating-acid-bath]] — externally biased Cu plating, used by NOBLE / SunDrive; does not require illumination but does require front-grid contact.
-- [[electroless-Ni-deposition]] — the seed-deposition step that often precedes LIP in homojunction Ni-Cu stacks.
-- [[NOBLE-selective-Cu-plating]] — SHJ-specific selective-plating route where LIP is replaced by externally-biased pulsed plating through an Al/AlOx native oxide mask.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/Cu-out-diffusion-through-cap-stack]] — Karas 2022 documents Cu outdiffusion through both Sn and Ag LIP caps after 1000-3500 h damp heat, with EVA-acetic-acid as the chemical sink.
-- [[../failure-modes/Ni-barrier-pinholes]] — LIP is non-selective on regions of poor Ni coverage, producing parasitic Cu spots and pinhole-mediated Cu ingress.
-- [[../failure-modes/Cu-diffusion-into-c-Si]] — when the Ni barrier or TCO is incomplete, LIP-deposited Cu reaches c-Si and forms recombination centres.
+- **Bath chemistry:** acid CuSO₄/H₂SO₄ for Cu LIP; Ni-sulfamate or Ni-hypophosphite for Ni LIP; immersion-Ag or LIP-Ag for the cap.
+- **Illumination:** 0.5–1 sun on the cell front; intensity sets the photocurrent and thus the plating rate.
+- **Operating temperature:** 25–40 °C typical for Cu; 60–80 °C for Ni.
+- **Plating rate:** ~10× faster than dark electroless on the same chemistry (Rehman 2014).
+- **Ni LIP electrolyte:** essentially the electroless bath (NiSO₄ or NiCl₂ + NaH₂PO₂ + ammonium-citrate buffer at pH 8–10) operated under illumination.
+- **Cu LIP electrolyte:** standard acid-Cu (CuSO₄·5H₂O 200 g/L + H₂SO₄ 50–70 g/L + Cl⁻ + brightener).
 
-## Sources
-- [[2010-bartsch-lip-pvsc]] — foundational Fraunhofer ISE paper introducing the LIP-Ni-Cu-Sn stack on c-Si, reaching 20.3% on FZ and 16.8% on Cz; describes LIP setup (Bartsch J. Appl. Electrochem. 40 (2010) 757).
-- [[2014-rehman-nicu-plating-csi-review]] — review of LIP physics (photo-generated electrons reducing Cu2+ at the front grid), efficiency benchmarks, and reliability constraints.
-- [[2022-karas-cu-outdiffusion-damp-heat]] — uses LIP to deposit Ni, Cu, Sn, Ag stacks; SIMS/EDS evidence of upward Cu out-diffusion through cap layers in damp heat.
-- [[pvtech-metallization-challenges-cell-manufacturing]] — IMEC industry overview situating LIP as a cyanide-free, illumination-driven plating route compatible with two-step seed-and-plate architectures.
+## Common variants
+
+- **Ni LIP** — used for the seed/barrier in Bartsch 2010 (Fraunhofer ISE foundational paper).
+- **Cu LIP** — used for the conductive layer; preferred for SHJ when DC plating is infeasible.
+- **Ag LIP** — used for the immersion-Ag cap (NOBLE, Karas).
+- **Sn LIP** — used for the Sn cap (Karas 2022, SunDrive variant).
+- **Combined LIP + dark electroless** — Bartsch 2010 demonstrated light-supported electroless Ni as a hybrid.
+
+## Things to watch for
+
+- Plating rate is non-uniform across the cell area if illumination is non-uniform — careful illumination calibration is needed.
+- Pinholes in the seed layer locally short-circuit the photovoltage drive, causing parasitic plating and TCO attack at the pinhole — see [[failure-modes/TCO-pitting-during-plating]].
+- LIP rate is lower than DC plating, so industrial throughput is a concern for the thick-Cu step; SHJ commercial routes (SunDrive, Maxwell) have moved to DC plating on PVD seed.
+- Bath impurities are concentrated by the photocurrent at the cathode; in-line filtration is critical.
+- Karas 2022 specifically flags that LIP-deposited Cu/Sn/Ag caps carry impurities (S, Cl, C, O) into the deposit, which then enhance Kirkendall void formation under DH.
+
+## Related methods
+
+- [[methods/Cu-electroplating-acid-bath]] — DC alternative; same chemistry.
+- [[methods/electroless-Ni-deposition]] — chemically related (Ni LIP is illuminated electroless).
+- [[methods/electroplated-Ni-Cu-stack]] — the stack LIP commonly fills.
+- [[methods/Ni-sputter-deposition]] — non-plated alternative for the Ni layer.
+- [[methods/NOBLE-selective-Cu-plating]] — uses DC pulsed plating, not LIP, but the chemistry/cap layers overlap.
+
+## Citing sources
+
+- [[sources/2010-bartsch-lip-pvsc]] — foundational Fraunhofer ISE LIP paper introducing LIP for c-Si Ni/Cu metallization.
+- [[sources/2014-rehman-nicu-plating-csi-review]] — Cu LIP from acid Cu-sulfate as the SHJ-friendly mode; review establishes the Ni LIP electrolyte chemistry.
+- [[sources/2018-pv-international-metallization-shj]] — historical default for Cu-on-Si plating; CSEM uses PVD-seed-and-DC instead.
+- [[sources/2019-karas-damp-heat-degradation-shj-cu]] — LIP-deposited Cu / Ag / Sn contact stacks under DH test.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — Ni / Cu / Sn / Ag LIP fabrication of contact stacks under test.
+- [[sources/2023-taiyangnews-heterojunction-technology-report]] — referenced in the broader plating discussion.
+- [[sources/fisher-AA8902018-nickel-sulfamate-hydrate]] — Ni-sulfamate bath used in LIP-mode Ni deposition.
+- [[sources/fisher-AC197730010-cu-sulfate-pentahydrate-sds]] — Cu source-salt for LIP electrolytes.
+- [[sources/fisher-AC424525000-sulfuric-acid-acs-sds]] — H₂SO₄ component in LIP-mode acid-Cu electrolytes.
+- [[sources/pvtech-metallization-challenges-cell-manufacturing]] — IMEC review covers LIP as the canonical seed-thickening method.

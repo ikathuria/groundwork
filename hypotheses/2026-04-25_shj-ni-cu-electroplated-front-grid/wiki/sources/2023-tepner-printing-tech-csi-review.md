@@ -5,64 +5,67 @@ source_type: paper
 title: "Printing Technologies for Silicon Solar Cell Metallization: A Comprehensive Review"
 authors: ["Tepner, S.", "Lorenz, A."]
 year: 2023
-doi: "10.1002/pip.3674"
-url: "https://onlinelibrary.wiley.com/doi/10.1002/pip.3674"
+doi: 10.1002/pip.3674
+url: https://publica.fraunhofer.de/bitstreams/ea4578d0-c217-4f39-ba3e-43d902264a99/download
 raw_path: raw/papers/2023-tepner-printing-tech-csi-review.pdf
-tags: [review, screen-printing, fine-line, paste-rheology, contact-formation, SHJ, TOPCon, low-T-paste, alternative-printing]
+tags: [screen-printing, fine-line, Ag-paste, SHJ, dispensing, review, Fraunhofer]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Printing Technologies for Silicon Solar Cell Metallization: A Comprehensive Review
 
+**Tepner, S. and Lorenz, A. (Fraunhofer ISE)** — *Progress in Photovoltaics: Research and Applications, 2023*. DOI: 10.1002/pip.3674
+
 ## Summary
-Definitive 30-page Tepner & Lorenz (Fraunhofer ISE) review (Prog. PV 2023) of printing technologies for c-Si metallization. Comprehensive history of flatbed screen printing (1975–2023), the physics of contact formation (fire-through Ag pastes vs low-T pastes), screen-print process mechanics (squeegee, knotless mesh, EOM), paste rheology/yield-stress requirements, and an exhaustive comparison of alternative printing approaches: stencil, dispensing, FlexTrail, rotary-screen, inkjet/aerosol-jet. Provides the canonical fine-line plot showing screen-printed finger widths shrinking from 150 µm in 2008 to <20 µm in 2020, and explicitly addresses the metallization options for SHJ (low-T pastes) and tandem (sub-150°C cure). Provides the benchmark that any alternative SHJ metallization (including Ni-Cu plating) must compete against; flags screen-printing as the likely default for at least the next decade.
+
+34-page open-access Fraunhofer ISE review of printing technologies for c-Si metallization — primarily flatbed screen printing (the industrial dominant), plus stencil, dispense, rotary, FlexTrail, and inkjet alternatives. Establishes the canonical fine-line trajectory: screen-printed finger widths reduced from ~150 µm (1980s) to <20 µm today. Defines the SHJ-specific constraint (~200–230 °C max process temperature → mandatory LCT-Ag pastes) and identifies the open challenge: how printing technologies will scale to ever-finer lines + lower Ag mass while passivated-contact cells (SHJ, TOPCon) gain market share. The reference establishing the Ag-screen-print baseline cost / line-width / Ag-mass that any plated-Cu replacement must beat.
 
 ## Key claims
-- Screen-printed finger width has dropped from ~150 µm (1980s) to <20 µm (2020) on c-Si solar cells (Fig. 1A).
-- For SHJ: temperature limit ~200–230°C necessitates low-T (LT) curing pastes; SHJ market share expected to grow rapidly.
-- Maximum tolerable lateral finger resistance RL,max for rs,f ≤ 0.1 Ω·cm² (Table 1):
-  - Busbarless / multiwire 30 wires: 30.9 Ω/cm
-  - 18 wires: 11.1 Ω/cm
-  - 12 wires: 4.9 Ω/cm
-  - 6BB H-pattern: 1.3 Ω/cm
-  - 5BB: 0.9; 4BB: 0.6; 3BB: 0.3 Ω/cm.
-- Confirms triangular finger profile is theoretically optimal for shading reduction; current screen-prints are Gaussian/parabolic.
-- Paste rheology — yield-stress and shear-thinning behavior — is decisive for fine-line printability; details DASH analysis software developed at Fraunhofer ISE.
-- Screen technology evolution: knotless screens (mesh angle 0°) substantially reduce mesh-marks and lateral finger resistance vs angled (22.5°) screens, particularly important for ≤20 µm fingers.
-- Reviews fire-through Ag paste contact formation chemistry (glass frit etching SiNx, Ag colloids forming via crystallites — Schubert model) — relevant to homojunctions, not SHJ.
-- Alternative printing approaches reviewed for SHJ: dispensing, FlexTrail, rotary screen-printing, all targeting <5 mg/Wp.
-- Shingled-cell concept (originating 1957, revived mid-1990s): high lateral conductivity required from the cell stripe.
+
+- Flatbed screen printing has been the predominant industrial metallization for c-Si for >30 years; >97% of 2018 production share.
+- Finger widths progression: ~150 µm (early 1980s) → ≤20 µm (2020+) via screen technology, paste rheology, and emulsion improvements.
+- SHJ a-Si:H imposes a ≤200–230 °C maximum processing temperature → must use LCT pastes (lower bulk conductivity than fired pastes) and accept reduced contact-formation efficiency vs PERC firing.
+- LCT-Ag pastes for SHJ must reach bulk resistivity below ~5×10⁻⁶ Ω·cm to keep Ag mass acceptable; this is the active R&D frontier 2020–2025.
+- Dispensing, FlexTrail, and rotary printing emerge as throughput / fine-line alternatives to flatbed; not yet at industrial scale.
+- Implicit comparison: every alternative metallization (Cu plating, Cu paste, Ag/Cu paste) must beat the moving cost-and-finger-width target set by screen printing's continuous improvement curve.
 
 ## Methods used
-- [[../methods/screen-printed-Ag-paste]] — central topic.
-- [[../methods/IV-curve-measurement]] — implicit; benchmark methodology.
-- [[../methods/transfer-length-method]] — discussed for ρc characterization.
-- [[../methods/four-point-probe-sheet-resistance]] — implicit.
-- [[../methods/EQE-measurement]] — discussed for shading characterization.
+
+- [[methods/screen-printed-Ag-paste]] — central topic; fire-through and LCT pastes both reviewed.
+- [[methods/electroplated-Ni-Cu-stack]] — referenced as a historical alternative ("electroplated Cu layer after screen printing of metal pastes" was the early SHJ workflow per the paper's history section).
 
 ## Reagents
-- [[../reagents/low-T-Ag-paste-generic-SHJ-grade]] — extensively reviewed.
-- [[../reagents/low-T-Ag-paste-Solamet-PV21A]] — implicit (DuPont/Solamet line).
-- [[../reagents/low-T-Ag-paste-Solamet-PV56S]] — implicit Solamet PV56S referenced.
-- [[../reagents/multibusbar-Cu-ribbon]] — multi-wire/SmartWire context.
-- [[../reagents/EVA-encapsulant]] — module-level discussion.
+
+- [[reagents/low-T-Ag-paste-generic-SHJ-grade]] — LCT-Ag pastes for SHJ; the central baseline.
+- [[reagents/low-T-Ag-paste-Solamet-PV21A]] — DuPont Solamet PV21A is a frequently-cited LCT-Ag exemplar.
+- [[reagents/low-T-Ag-paste-Solamet-PV56S]] — DuPont Solamet PV56S — fire-through Ag paste comparator.
+- [[reagents/a-Si-H-passivation]] — sets the SHJ thermal-budget constraint.
+- [[reagents/Cu-paste-low-temperature]] — emerging alternative discussed.
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — SHJ application discussed.
-- [[../organisms/monocrystalline-Si-wafer-p-type]] — PERC application.
-- [[../organisms/monocrystalline-Si-wafer-n-type]] — TOPCon, SHJ application.
+
+- [[organisms/monocrystalline-Si-wafer-n-type]] — SHJ context.
+- [[organisms/monocrystalline-Si-wafer-p-type]] — PERC context throughout the historical section.
+- [[organisms/SHJ-cell-M6]] — referenced as the workhorse SHJ format.
 
 ## Failure modes flagged
-- [[../failure-modes/silver-supply-bottleneck]] — central context for review's relevance going forward.
-- [[../failure-modes/FF-degradation-contact-resistance]] — extensively discussed via RL/ρc trade-offs.
-- [[../failure-modes/Jsc-loss-from-cap-stack-shading]] — finger-shape physics of shading.
+
+- [[failure-modes/silver-supply-bottleneck]] — explicit motivation for the entire review's fine-line trajectory; "reduced silver consumption" is one of the four key challenges named in the abstract.
+- [[failure-modes/FF-degradation-contact-resistance]] — LCT Ag's higher bulk resistivity is the SHJ-specific pain point; section "Screen printing meets carrier-selective contacts" makes this explicit.
+- [[failure-modes/a-Si-H-passivation-degradation]] — the ≤230 °C thermal budget exists precisely to avoid this failure mode.
 
 ## Supports / contradicts
-- Supports: [[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] (same authorship line; the 2024 paper executes recommendations from this review)
-- Supports: [[2024-siliconpv-novel-shj-metallization-architectures]] (paste rheology methodology aligned)
-- Supports: [[2018-pv-tech-metallization-interconnection-bifacial-shj]], [[2018-pv-international-metallization-shj]]
-- Foundational printing-tech context for: [[2025-fraunhoferise-transition-ag-cu-screen-printed-shj]]
-- Provides the wider screen-print benchmark for plated-Cu work: [[2019-hatt-noble-shj-solrrl]], [[2021-hatt-stable-cu-plated-shj-eupvsec]]
+
+- **Supports:** [[sources/2018-pv-international-metallization-shj]] — Geissbühler 2018 LCT-Ag bulk-resistivity numbers (5.5 µΩ·cm) sit on Tepner & Lorenz's 2008–2020 trajectory.
+- **Supports:** [[sources/2018-pv-tech-metallization-interconnection-bifacial-shj]] — Faes et al. 2018 cost / mass figures are the snapshot Tepner & Lorenz extend to 2023.
+- **Supports:** [[sources/2025-fraunhoferise-transition-ag-cu-screen-printed-shj]] — Pingel 2025 (same Fraunhofer ISE group) builds on this review with experimental Ag-coated-Cu paste data; co-author A. Lorenz on both.
+- **Contradicts:** [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — review concludes screen printing will remain dominant; SunDrive argues plated Cu can displace it. Contradiction is on industrial trajectory, not physics.
 
 ## Notable quotes
-- "Modern high-efficiency solar cells with a full size format of 156 mm × 156 mm or more usually have a comparatively high current, which induces substantial resistive power losses on module level."
-- "The optical quality of the contact fingers (considering the actual reflection losses in the module) is referred to as effective or shading-relevant finger width wf,eff."
+
+> "Until today, two particularly promising approaches for carrier-selective contacts have found their way to an industrial large-scale production. The silicon heterojunction (SHJ) solar cell concept … However, the temperature sensitivity of the a-Si:H layers limits the maximum processing temperature to 200–230 °C." — *Section 1.2*
+
+> "Screen printing will again be the method of choice for metallization of SHJ solar cells on industrial scale." — *Section 1.2*
+
+> "Published results of screen and stencil printed finger widths on silicon solar cells underline the progress that has been done in the last decade culminating in extremely narrow finger widths down to less than 20 μm today." — *Section 1.1*

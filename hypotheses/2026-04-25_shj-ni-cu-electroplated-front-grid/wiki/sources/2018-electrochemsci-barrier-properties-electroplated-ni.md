@@ -3,60 +3,66 @@ type: source
 id: 2018-electrochemsci-barrier-properties-electroplated-ni
 source_type: protocol
 title: "Barrier Properties of Electroplating Nickel Layer for Copper Metallization in Silicon Solar Cells"
-authors: ["You Ren Cheng", "Wen Jauh Chen", "Keisuke Ohdaira", "Koichi Higashimine"]
+authors: ["Cheng, Y. R.", "Chen, W. J.", "Ohdaira, K.", "Higashimine, K."]
 year: 2018
-doi: "10.20964/2018.12.23"
-url: "http://www.electrochemsci.org/papers/vol13/131211516.pdf"
+doi: 10.20964/2018.12.23
+url: https://www.electrochemsci.org/papers/vol13/131211516.pdf
 raw_path: raw/protocols/2018-electrochemsci-barrier-properties-electroplated-ni.pdf
-tags: [protocol, methodology, electroplated-Ni-Cu, nickel-barrier, Cu3Si, textured-silicon, electroless-Ni-seed, SIMS-STEM, reference-method, barrier-thickness]
+tags: [Ni-barrier, electroplated-Ni, Cu3Si, thickness-threshold, anneal]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Barrier Properties of Electroplating Nickel Layer for Copper Metallization in Silicon Solar Cells
 
+**Cheng, Y. R., Chen, W. J., Ohdaira, K., Higashimine, K.** — *Int. J. Electrochem. Sci. 13, 11516–11525, 2018*. DOI: 10.20964/2018.12.23
+
 ## Summary
-Cheng et al. (Yunlin Univ. of Science & Technology, with JAIST in Japan) systematically benchmark the **diffusion-barrier performance of electroplated Ni at 60 nm vs 120 nm thickness** for Cu metallization on textured (100) Si. The protocol uses an electroless-Ni / silicidation / HNO₃-strip / Ni-electroplate / Cu-electroplate stack (the canonical NiP-seed Ni-Cu workflow), then anneals at 300–800 °C in Ar/H₂ for 10 min. **Cu/Ni(60 nm) fails at 300 °C with detectable Cu₃Si; Cu/Ni(120 nm) is stable to 300 °C, with Cu₃Si beginning at 400 °C** (XRD + STEM-EDS). The paper directly quantifies the hypothesis-relevant Ni barrier-thickness threshold: **<100 nm is too thin; ~120 nm is borderline; new barrier materials needed for >400 °C**. This is the most direct protocol reference for the hypothesis's "sub-100 nm electroplated nickel barrier" claim — Cheng's data argues for using ≥100 nm. The paper also documents the full reagent stack (NiSO₄·6H₂O + NaH₂PO₂·H₂O electroless bath at 70 °C, pH 5; Cu electroplating at 25 °C with Pt anode), and provides the STEM-EDS imaging workflow that resolves the Ni/Ni-silicide bilayer and the Cu₃Si facet-like grains at barrier failure.
+
+Methodology paper on electroplated-Ni thickness vs barrier efficacy. Forms Cu (1.5 µm) / electroplated-Ni (60 or 120 nm) / silicide-passivated textured Si (ta-Si) stacks; anneals 300–800 °C / 10 min in Ar/H₂; tracks Cu₃Si formation by XRD as the failure marker. Direct contradiction to the hypothesis's "sub-100 nm Ni" framing: 60 nm Ni shows Cu₃Si already at 300 °C and strong intensity above 500 °C; 120 nm Ni delays Cu₃Si onset to 400 °C with strong intensity only above 600 °C. Confirms Cu₃Si forms by solid-state reaction at temperatures as low as 200 °C. **Critical anchor source for the contradiction noted in `hypothesis.md` open question #1.**
 
 ## Key claims
-- Cu/Ni/textured-Si stack process: clean (acetone, H₂SO₄/H₂O₂, HF) → sensitize (SnCl₂/HCl) → activate (PdCl₂/HCl) → electroless Ni 60 s @ 70 °C, pH 5, ~60 nm Ni → anneal 500 °C 10 min Ar/H₂ for NiSi formation → HNO₃ strip of unreacted Ni → electroplated Ni at ~1 nm/s deposition rate (60 or 120 s) → 1.5 µm Cu electroplate (~1500 s) → anneal ladder 300–800 °C, 10 min.
-- XRD scan of as-plated electroless Ni annealed at 300–800 °C: NiSi (011) and Ni₂Si (121) peaks appear at 500 °C; NiSi₂ at 800 °C; NiSi/Ni₂Si coexist >500 °C.
-- **Cu/Ni(60 nm)/ta-Si**: Cu₃Si peaks already detectable at 300 °C, strong above 500 °C — barrier failure.
-- **Cu/Ni(120 nm)/ta-Si**: no Cu₃Si at 300 °C; Cu₃Si begins at 400 °C, strong above 600 °C — barrier holds to 300 °C.
-- STEM-EDS at 300 °C, Cu/Ni(120 nm): three distinct layers — top Cu, middle bilayer of Ni + Ni₂Si (~100 nm Ni metal + ~200 nm Ni-silicide), bottom Si; Cu has not penetrated the Ni layer.
-- STEM-EDS at 500 °C, Cu/Ni(120 nm): "loose structure" multilayer; Cu element present in Ni/Ni-silicide AND in Si substrate; facet-like Cu₃Si grains grown into textured Si — barrier rupture.
-- **Direct quantitative conclusion: "increasing electroplating nickel time from 60 to 120 seconds will significantly increase the barrier property"; "new diffusion barrier materials should be developed to prevent copper diffusion at temperature high than 400°C."**
-- Comparison to prior work: ITO barrier (Hsieh) fails at 600 °C; Cu/TiN (Mühlbacher) fails via grain-boundary diffusion to η″-Cu₃Si.
-- Companion data on NiCo alloy (Huang et al., cited): Ni₇₁Co₂₉ delays cell degradation to 250 °C vs pure Ni at 200 °C.
+
+- Process: electroless Ni → 500 °C anneal → HNO₃ etch unreacted Ni (forms ta-Si silicide-passivated substrate) → electroplate Ni (60 or 120 s, ~1 nm/s) → electroplate Cu 1.5 µm → 10 min anneal at 300–800 °C.
+- For Cu/Ni(60 nm)/ta-Si: Cu₃Si peaks visible already at 300 °C, strong above 500 °C. Barrier fails.
+- For Cu/Ni(120 nm)/ta-Si: Cu₃Si first detected at 400 °C, strong above 600 °C. Barrier holds at 200 °C and below.
+- Cu₃Si forms via solid-state reaction at ~200 °C — i.e., it can occur within the SHJ a-Si:H thermal budget if the Ni is too thin.
+- STEM/EDS shows that on the 120 nm Ni stack annealed at 300 °C, Cu has not diffused into the Si substrate; a Ni/Ni-silicide bilayer (Ni layer ~100 nm + Ni₂Si ~200 nm) blocks Cu transport.
+- Plain claim: "increasing electroplating nickel time from 60 to 120 seconds will significantly increase the barrier property."
 
 ## Methods used
-- [[../methods/electroless-Ni-deposition]] — canonical recipe documented: 60 nm in 60 s at 70 °C, pH 5, NiSO₄·6H₂O + NaH₂PO₂·H₂O bath, with SnCl₂/HCl + PdCl₂/HCl sensitization-activation pretreatment.
-- [[../methods/electroplated-Ni-Cu-stack]] — documents the full Ni-electroplate-on-NiSi-seed → Cu-electroplate workflow with deposition rates (~1 nm/s Ni; 1.5 µm Cu in ~1500 s).
-- [[../methods/Cu-electroplating-acid-bath]] — beaker-cell setup, 25 °C bath, Pt counter-electrode, magnetic stirring.
-- [[../methods/SIMS-depth-profile]] — STEM-EDS compositional profiling across the Cu/Ni/Ni-silicide/ta-Si stack serves the same role as SIMS for resolving Cu out-diffusion vs Ni-barrier integrity.
-- [[../methods/NOBLE-selective-Cu-plating]] — implicitly relevant; this paper is the barrier-design half of the NOBLE-style stack.
+
+- [[methods/electroless-Ni-deposition]] — first-stage Ni seed (60 s, 70 °C, pH 5) before silicidation.
+- [[methods/Ni-sputter-deposition]] — comparison reference (paper deliberately avoids sputtering, but it is the alternative).
+- [[methods/electroplated-Ni-Cu-stack]] — the test stack itself: electroplated Ni barrier + electroplated Cu.
+- [[methods/Cu-electroplating-acid-bath]] — 25 °C plating bath with magnetic stirring, Pt anode, 1 cm² sample.
+- [[methods/SIMS-depth-profile]] — analogous depth-resolved compositional check (here STEM-EDS line scan plays this role).
 
 ## Reagents
-- [[../reagents/nickel-sulfamate-bath]] — generic Ni-electroplating bath reference (Cheng uses sulfamate-class chemistry).
-- [[../reagents/acid-Cu-sulfate-bath]] — Cu electroplating bath chemistry.
-- [[../reagents/sulfuric-acid-H2SO4]] — used in pre-cleaning textured Si (H₂SO₄/H₂O₂).
-- [[../reagents/nickel-phosphorus-NiP-electroless]] — electroless Ni from NiSO₄ + NaH₂PO₂; this is the NiP electroless seed reagent.
+
+- [[reagents/nickel-sulfamate-bath]] — electroplating Ni electrolyte (sulfamate / sulfate family).
+- [[reagents/acid-Cu-sulfate-bath]] — Cu electroplating bath.
+- [[reagents/Cu3Si-intermetallic]] — the failure-product phase the XRD detects.
 
 ## Organisms / substrates
-- [[../organisms/monocrystalline-Si-wafer-n-type]] — pyramid-textured (100) phosphorus-doped Si wafers (1×1 cm² test coupons).
+
+- [[organisms/monocrystalline-Si-wafer-n-type]] — phosphorus-doped textured (100) Si wafer (1–3 µm pyramid roughness).
 
 ## Failure modes flagged
-- [[../failure-modes/Cu-diffusion-into-c-Si]] — direct experimental observation: Cu penetrates Ni(60 nm) at 300 °C and Ni(120 nm) at 400 °C.
-- [[../failure-modes/Cu3Si-formation-at-Si-interface]] — XRD- and STEM-confirmed Cu₃Si formation; facet-like grains at 500 °C in Cu/Ni(120 nm).
-- [[../failure-modes/Ni-barrier-pinholes]] — at 60 nm, Ni barrier already fails at 300 °C, consistent with pinhole-mediated Cu transport.
-- [[../failure-modes/Cu-out-diffusion-through-cap-stack]] — analogous failure mode for the inverted stack.
+
+- [[failure-modes/Cu3Si-formation-at-Si-interface]] — explicit failure mode tracked by XRD; the headline result of the paper.
+- [[failure-modes/Ni-barrier-pinholes]] — although not directly imaged, the 60 nm vs 120 nm dichotomy implies pinholes/discontinuity at lower thickness.
+- [[failure-modes/Cu-diffusion-into-c-Si]] — the bulk-Si consequence of barrier failure; mitigated only by ≥120 nm Ni at 300 °C.
 
 ## Supports / contradicts
-- Supports: [[2014-rehman-nicu-plating-csi-review]] (Rehman's review independently flags Ni barrier thickness as the key Cu-Si reliability lever)
-- Supports: [[2017-jeon-electroless-ni-front-metallization]]
-- Supports: [[2010-bartsch-lip-pvsc]] (cited at ref [4])
-- Contradicts (in part): the hypothesis claim of "sub-100 nm electroplated nickel barrier" — Cheng et al. show 60 nm Ni fails at 300 °C, suggesting that **a sub-100 nm electroplated Ni barrier alone is insufficient unless complemented by additional engineering** (e.g., NiSi-silicidation buffer, NiCo alloy, lower SHJ-process-temperature ceiling of ≤200 °C, or different bath chemistry yielding denser films).
+
+- **Supports:** [[sources/2017-jeon-electroless-ni-front-metallization]] — same Yunlin group; uses the 2017 electroless-Ni chemistry as the foundation step.
+- **Supports:** [[sources/2015-lindroos-cu-lid-aalto-thesis]] — Lindroos shows even sub-ppb Cu in Si bulk causes recombination collapse; Cheng shows the conditions under which Cu reaches the Si bulk.
+- **Contradicts:** [[sources/2014-rehman-nicu-plating-csi-review]] — Rehman's general assertion that Ni "can form a promising barrier" is *thickness-conditional* per Cheng; the hypothesis's sub-100 nm Ni cap sits in the 60-nm-failure regime per this paper.
+- **Contradicts:** [[sources/2022-arena-sundrive-copper-metallisation-demonstration]] — SunDrive achieves DH stability without an electroplated-Ni barrier at all; resolution requires that the SHJ TCO + a-Si:H stack supplies the barrier function, not Ni.
 
 ## Notable quotes
-- "For the Cu/Ni(60 nm)/ta-Si samples, when the annealing temperature was above 300ºC, a small amount of Cu₃Si forms. When the thickness of nickel film increases to 120 nm and is applied as a diffusion barrier that is between copper and the textured silicon substrate, there is no evidence of reactions observed for the Cu/Ni(120 nm)/ta-Si samples annealed up to 300°C." — Conclusions
-- "The results indicate that increasing electroplating nickel time from 60 to 120 seconds will significantly increase the barrier property." — p. 11519
-- "Textured silicon with 120 nm electroplating nickel layer showed improved reliability at a 300ºC, suggesting that new diffusion barrier materials should be developed to prevent copper diffusion at temperature high than 400ºC." — Conclusions
-- "Although low costs and high conductivity are significant advantages of copper, there is a primary concern due to its high diffusivity and solubility in silicon as well as copper contamination in silicon solar cells, i.e. they will have diminished device performance from the introduction of minority carrier recombination centers." — Introduction
+
+> "For the Cu/Ni(120 nm)/ta-Si samples, the Cu₃Si particles develop from an annealing temperature of 400 ºC. This revealed that electroplating a thin Ni layer can act as a diffusion barrier against Cu at around 400°C." — *Abstract*
+
+> "The strong intensity of Cu₃Si peaks are presented at temperature higher than 500 °C [for 60 nm Ni] … the Cu₃Si phase was formed by a solid-state reaction at 200 °C, which is less than the annealing temperature we used. A thin layer of electroplating Ni can block the diffusion of Cu into Si at 200 °C." — *p. 11519*

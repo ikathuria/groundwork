@@ -1,46 +1,65 @@
 ---
 type: method
 slug: dark-IV-suns-Voc
-aliases: [Suns-Voc, Sinton method, pseudo-FF, dark IV, J02 extraction]
-related_methods: [IV-curve-measurement, EL-electroluminescence-imaging, minority-carrier-lifetime-photoluminescence, SIMS-depth-profile]
-key_reagents: [a-Si-H-passivation, ITO-transparent-conductive-oxide]
-known_failure_modes: [Voc-degradation-Cu-contamination, Cu-LID-light-induced-degradation, FF-degradation-contact-resistance, a-Si-H-passivation-degradation]
-sources: [2010-bartsch-lip-pvsc, 2014-rehman-nicu-plating-csi-review, 2017-jeon-electroless-ni-front-metallization, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2019-karas-damp-heat-degradation-shj-cu, 2022-karas-cu-outdiffusion-damp-heat, 2023-taiyangnews-heterojunction-technology-report, 2024-lorenz-cutting-edge-metallization-shj-fraunhofer]
-tags: [characterization, Suns-Voc, pseudo-FF, J02, Cu-contamination-tracer, Sinton-method]
+aliases: [Suns-VOC, pseudo fill factor, pFF, dark IV, J02 measurement]
+related_methods: [IV-curve-measurement, EL-electroluminescence-imaging, damp-heat-aging-1000h, minority-carrier-lifetime-photoluminescence, transfer-length-method]
+key_reagents: [a-Si-H-passivation, ITO-transparent-conductive-oxide, EVA-encapsulant, POE-polyolefin-encapsulant]
+known_failure_modes: [Voc-degradation-Cu-contamination, Cu-LID-light-induced-degradation, a-Si-H-passivation-degradation, Cu-diffusion-into-c-Si, FF-degradation-contact-resistance, Ni-Cu-line-resistance-rise-DH]
+sources: [2010-bartsch-lip-pvsc, 2011-nrel-reliability-testing-beyond-qualification, 2014-nrel-pv-module-qualification-plus, 2019-hatt-noble-bifacial-shj-aip, 2019-hatt-noble-shj-solrrl, 2019-karas-damp-heat-degradation-shj-cu, 2021-hatt-stable-cu-plated-shj-eupvsec, 2022-karas-cu-outdiffusion-damp-heat, 2025-yacouba-shj-silver-free-metallization-progPV]
+tags: [characterization, suns-VOC, pFF, J02, recombination, dark-IV]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Dark IV / Suns-Voc
+# Dark IV / Suns-VOC pseudo fill factor
+
+**Slug:** `methods/dark-IV-suns-Voc` · **Type:** method
 
 ## What it measures / does
-Sinton Suns-Voc records the open-circuit voltage as a function of varying flash-light intensity, producing an "implied IV" curve that is free of series-resistance effects. Extracts pseudo fill factor (pFF), dark saturation currents J01 / J02, and the Rs-free efficiency limit (pseudo efficiency). The pFF gap (pFF - FF) isolates Rs from junction-area degradation; J02 increase signals junction-area Cu contamination.
+
+Reconstructs a series-resistance-free pseudo IV curve by measuring open-circuit voltage as a function of illumination intensity (Sinton flash + Suns-VOC analyser) or by sweeping the diode in the dark, then fitting J01 (radiative/diffusion recombination) and J02 (non-ideal SRH-like recombination at mid-gap defects). Because the curve is implicitly Rs-free, the "pseudo fill factor" pFF tracks recombination losses independently of contact-resistance losses — making it the standard early-warning instrument for Cu contamination and a-Si:H passivation drift.
 
 ## When to use it
-Critical for Cu-plated SHJ reliability work because it isolates Cu-contamination signature from finger-corrosion / contact-resistance signature. Bartsch 2010 uses pFF as the principal monitor across 1700 h thermal-aging; Karas 2019/2022 documents pFF drop + J02 rise as the Cu-out-diffusion fingerprint.
 
-## Key parameters
-- Equipment: Sinton Suns-Voc / WCT-120 / FCT-450 / Solar Photometer.
-- Flash decay: ~1-10 ms; cell at open-circuit, photovoltage logged vs flash intensity.
-- Outputs: pFF (typical 80-84% for high-quality SHJ), pEta, J01, J02, Voc-implied lifetime.
-- Reference J02 values: pre-DH ~10⁻⁹ A/cm² for pristine SHJ; >6x increase after Cu-contamination DH (Karas 2022).
-- Reference pFF drops: 82.1 -> 77.0% after 2000 h DH on Ni-Cu-Sn (Karas); 79.4 -> 77.9% after 1000 h on Ni-Cu-Ag.
+Use at every damp-heat / TC checkpoint to surface Cu-contamination-driven Voc/J02 shifts before they show up in 1-sun STC IV (Wohlgemuth 2011 explicit recommendation). Use it on the development bench to track Cu-LID kinetics during accelerated thermal stress (Bartsch 2010 hotplate + Suns-VOC). Use it after laser ablation to check for passivation damage (Hatt 2021 reports ~10 mV Voc loss between laser and inkjet patterning of the NOBLE mask).
 
-## Common variants / alternatives
-- Dark IV — current-driven analogue; complementary.
-- [[IV-curve-measurement]] — light IV gives lumped FF; pFF-FF gap is the Rs signature.
+## Key parameters / setpoints
 
-## Things to watch for (failure modes)
-- [[../failure-modes/Voc-degradation-Cu-contamination]] — primary use case; J02 rise is the key marker.
-- [[../failure-modes/Cu-LID-light-induced-degradation]] — Lindroos: bulk Cu defects stable at 200 C, detected via pFF drop.
-- [[../failure-modes/FF-degradation-contact-resistance]] — pFF-FF gap isolates Rs from junction degradation.
-- [[../failure-modes/a-Si-H-passivation-degradation]] — Voc loss directly probes a-Si:H quality.
+- **Suns-VOC equipment:** Sinton WCT-120 / FCT-450 type flash tester with calibrated reference cell; 1-sun-equivalent peak intensity, exponentially decaying flash; cell temperature 25 °C ± 1 °C.
+- **Dark IV:** four-terminal Kelvin probe through cell busbars; sweep ±0.0 to ±0.7 V at 1–10 mV steps; double-diode fit yields J01, J02, ideality factors.
+- **Pseudo IV outputs:** pFF, pVoc, pJsc, J01, J02; flag any J02 > ~10⁻⁸ A/cm² as a Cu-contamination warning per Karas 2019/2022.
+- **Karas 2022 reference values:** Cu-Sn cells dropped pFF 82.1 → 77.0 % over 2000 h DH; J02 more than doubled. Cu-Ag cells: 79.4 → 77.9 % at 1000 h DH.
+- **Hatt 2021 NOBLE bench values:** pFF tracking shows Voc up to 738 mV on M2 SHJ.
 
-## Sources
-- [[2010-bartsch-lip-pvsc]] — pFF as primary contamination indicator during accelerated aging at 200 C.
-- [[2014-rehman-nicu-plating-csi-review]] — Fraunhofer ISE pFF unchanged after 1700 h at 200 C.
-- [[2017-jeon-electroless-ni-front-metallization]] — Voc tracked as primary cell-level metric after anneal.
-- [[2019-hatt-noble-bifacial-shj-aip]] — pFF used to interpret limitations.
-- [[2019-hatt-noble-shj-solrrl]] — pFF = 80.5% reported on first NOBLE cell.
-- [[2019-karas-damp-heat-degradation-shj-cu]] — Suns-VOC for pFF and J02 extraction; foundational DH degradation paper.
-- [[2022-karas-cu-outdiffusion-damp-heat]] — Sinton Suns-VOC for pFF / J02 tracking; correlates with SIMS-detected Cu in c-Si.
-- [[2023-taiyangnews-heterojunction-technology-report]] — included in HJT IV characterisation sequence.
-- [[2024-lorenz-cutting-edge-metallization-shj-fraunhofer]] — pFF reported.
+## Common variants
+
+- **Suns-VOC** (illumination-modulated) — light source decays through 0–1 sun in ~10 ms; preferred for SHJ because no current flow avoids series-resistance interference.
+- **Dark IV** — diode swept with the cell in the dark; same J01/J02 extraction but more sensitive to Rs at high forward bias.
+- **Light I-V minus dark IV** ("pseudo light IV") — combines the two to separate Rs from recombination losses.
+- **In-situ pFF tracking** during accelerated thermal stress (Bartsch 2010 hotplate Arrhenius extrapolation).
+
+## Things to watch for
+
+- Even sub-ppb Cu in the c-Si bulk depresses pFF and increases J02 (Lindroos 2015 quantifies the lifetime impact); this is the failure-mode signature for [[failure-modes/Voc-degradation-Cu-contamination]] and [[failure-modes/Cu-LID-light-induced-degradation]].
+- a-Si:H passivation degradation under thermal or UV stress also drops pFF independently of Cu — pair with [[methods/minority-carrier-lifetime-photoluminescence]] to disambiguate.
+- For the SHJ Cu-hypothesis Pass-3 design, Karas's retrospective demands a J02 envelope on every arm at every DH checkpoint; "no J02 increase" is the operational definition of "no Cu contamination."
+- The 2018 Nature Materials retraction was triggered by Suns-VOC / spectral-response variability across nominally identical devices; report N=5–10 cells per arm + checkpoint Suns-VOC, not single-device pFF.
+
+## Related methods
+
+- [[methods/IV-curve-measurement]] — companion 1-sun STC IV (Suns-VOC supplements but does not replace).
+- [[methods/EL-electroluminescence-imaging]] — spatial localisation of pFF-collapse regions.
+- [[methods/damp-heat-aging-1000h]] — the stress run pFF instruments.
+- [[methods/minority-carrier-lifetime-photoluminescence]] — bulk-lifetime cousin to pFF; same recombination physics.
+
+## Citing sources
+
+- [[sources/2010-bartsch-lip-pvsc]] — Suns-VOC pFF as the rapid degradation readout in the accelerated thermal-stress test for Cu-LID.
+- [[sources/2011-nrel-reliability-testing-beyond-qualification]] — recommends dark-IV at every chamber checkpoint to catch Rs/Rsh shifts before STC IV.
+- [[sources/2014-nrel-pv-module-qualification-plus]] — Qualification-Plus instrumentation menu listing Suns-VOC.
+- [[sources/2019-hatt-noble-bifacial-shj-aip]] — Suns-VOC pseudo-efficiency comparisons on full-area NOBLE cells.
+- [[sources/2019-hatt-noble-shj-solrrl]] — pFF / Suns-VOC characterisation on lab-scale NOBLE cells.
+- [[sources/2019-karas-damp-heat-degradation-shj-cu]] — Suns-VOC pFF and J02 tracking as the primary degradation readout in DH.
+- [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — pFF / Suns-VOC as the quality gate for laser-patterned NOBLE.
+- [[sources/2022-karas-cu-outdiffusion-damp-heat]] — pFF / J02 collapse correlated with SIMS-detected Cu in c-Si.
+- [[sources/2025-yacouba-shj-silver-free-metallization-progPV]] — pFF as the c-Si Cu-contamination indicator on Cu-paste SHJ.

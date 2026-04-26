@@ -2,57 +2,71 @@
 type: source
 id: 2019-hatt-noble-bifacial-shj-aip
 source_type: paper
-title: "Establishing the 'Native Oxide Barrier Layer for Selective Electroplated' Metallization for Bifacial Silicon Heterojunction Solar Cells"
+title: "Establishing the Native Oxide Barrier Layer for Selective Electroplated Metallization for Bifacial Silicon Heterojunction Solar Cells"
 authors: ["Hatt, T.", "Bartsch, J.", "Kluska, S.", "Glatthaar, M."]
 year: 2019
-doi: "10.1063/1.5123832"
-url: "https://aip.scitation.org/doi/10.1063/1.5123832"
+doi: 10.1063/1.5123832
+url: https://publica.fraunhofer.de/bitstreams/f38ba150-c4d2-48b9-8bd0-7d60908a3297/download
 raw_path: raw/papers/2019-hatt-noble-bifacial-shj-aip.pdf
-tags: [SHJ, NOBLE, bifacial, full-area-cell, inkjet-NaOH, Al2O3-mask, contact-angle, ITO, sputtering]
+tags: [SHJ, Cu-electroplating, NOBLE, bifacial, fraunhofer-ise, full-area-cell]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
-# Establishing the "Native Oxide Barrier Layer for Selective Electroplated" Metallization for Bifacial Silicon Heterojunction Solar Cells
+# Establishing the Native Oxide Barrier Layer for Selective Electroplated Metallization for Bifacial Silicon Heterojunction Solar Cells
+
+**Hatt, T., Bartsch, J., Kluska, S., Glatthaar, M.** — *AIP Conference Proceedings 2147, 040005 (SiliconPV 2019)*. DOI: 10.1063/1.5123832
 
 ## Summary
-AIP Conference Proceedings companion paper (MIW 2018) by the Fraunhofer ISE NOBLE team that reports the first full-area (156×156 mm²) SHJ cell metallized by NOBLE: efficiency 20.0% with Voc up to 731 mV — i.e. PVD/sputtering does not damage the a-Si:H passivation. The paper goes deeper into why the NaOHaq inkjet-printing works: surface chemistry of the Al / Al₂O₃ / Al(OH)₃ layer, contact-angle evolution from hydrophilic (CA ≈ 30°) immediately after PVD to hydrophobic (CA ≈ 100–120°) after ~5 days of ambient storage — the hydrophobic surface being essential to keep ink droplets from spreading and producing fingers <30 µm wide. Also reports SHJ I-V history: from initial wide-finger 100 µm test (Jsc 33.8 mA/cm², FF 70.7%) to optimized 30-µm finger lab cell at 20.2%.
+
+AIP Conf. Proc. follow-on to the Solar RRL NOBLE paper, focused on transferring the NOBLE selective Cu-plating route to full-area (156×156 mm²) bifacial SHJ cells. Reports process-window data (PVD-Al thickness, surface ageing for hydrophobicity, NaOH inkjet-printing parameters) and a first full-area cell at 20.0 % efficiency on industrial precursors with screen-printed Ag baseline at 21.5 % on the same batch.
 
 ## Key claims
-- A homogeneous bifacial Cu plating requires a thin PVD metal seed; without one, only half the cell area plates due to inhomogeneous current distribution on the high-Rsh ITO (Fig. 1, p. 1).
-- Optimal PVD stack: Cu(100 nm)/Al(50–100 nm) on ITO. SEM nanostructure: ITO is polycrystalline ~20–30 nm grains; 50 nm Al is flatter and amorphous; 100 nm Al becomes porous and rounder.
-- Wetting evolution on Al surface: contact angle goes from 30° (just-deposited) to 90° (~20 h ambient) to 100–120° (~5 days). Drier 50°C/6%-humidity storage reaches the hydrophobic state in 1 day. The hydrophobic surface is critical for fine-line NaOHaq inkjet patterning without spreading.
-- First full-area 156×156 mm² SHJ cell with NOBLE: η = 20.0%, Voc = 731 mV — confirming that sputtering Cu/Al through TCO does not degrade SHJ passivation.
-- Reference screen-printed (low-T Ag) full-area cell on same batch: η = 21.5%, FF = 79.0%.
-- Path to ~22% identified: optimize NaOHaq inkjet-printing to eliminate finger interruptions.
+
+- First full-area (156×156 mm²) bifacial SHJ cell metallised by NOBLE reached η = 20.0 %, Voc = 731 mV — confirming that the metal-PVD step does not damage a-Si:H passivation.
+- On the same batch, Ag-screen-printed reference (low-temperature paste) reached η = 21.5 %, FF = 79.0 % — i.e. NOBLE is ~1.5 %abs below the screen-printed reference, with finger interruptions and grid design identified as the limiting factors.
+- A thin metal seed layer (Cu or Ag, on top of ITO) is necessary for homogeneous bifacial plating: without it, plating stops at half the cell area (FIGURE 1a vs. 1b).
+- PVD-Al hydrophobicity grows with native-oxide ageing: water contact angle goes from ~30° (fresh) to ~90° (after 20 h ambient) to 100–120° (after 5 days), or already hydrophobic after 1 day at 50 °C / 6 % RH — relevant for inkjet-line precision.
+- Lines as narrow as 20–30 µm are achievable in the Al layer by inkjet-printing of low-concentration NaOHaq ink (droplets 2–5 pL).
+- Cu seed-layer in non-grid positions removed by ammonium persulfate (NH₄)₂S₂O₈ after a thin immersion-Ag cap protects the plated Cu fingers.
 
 ## Methods used
-- [[../methods/NOBLE-selective-Cu-plating]] — full process flow demonstrated on full-area cells.
-- [[../methods/inkjet-mask-patterning]] — NaOHaq, droplets 2–5 pL, hydrophobic AlOx surface required.
-- [[../methods/Ni-sputter-deposition]] — Cu/Al PVD stack via sputtering or e-beam evaporation (note: Ni not used here; canonical method slug applies to PVD-metal-seed deposition more broadly).
-- [[../methods/Cu-electroplating-acid-bath]] — same pulsed Cu plating as in [[2019-hatt-noble-shj-solrrl]].
-- [[../methods/IV-curve-measurement]] — STC, AM1.5g.
-- [[../methods/dark-IV-suns-Voc]] — pFF used to interpret limitations.
+
+- [[methods/NOBLE-selective-Cu-plating]] — process being established for full-area bifacial cells
+- [[methods/Cu-electroplating-acid-bath]] — bifacial simultaneous Cu electrodeposition
+- [[methods/Ni-sputter-deposition]] — PVD of the Cu/Al (or Ag/Al) seed and plating-mask stack (sputtering or e-beam evap)
+- [[methods/inkjet-mask-patterning]] — inkjet patterning of NaOHaq ink to open Al
+- [[methods/IV-curve-measurement]] — 1-sun STC characterisation
+- [[methods/dark-IV-suns-Voc]] — Suns-VOC pseudo-efficiency comparisons
 
 ## Reagents
-- [[../reagents/acid-Cu-sulfate-bath]] — Cu electrolyte.
-- [[../reagents/ITO-transparent-conductive-oxide]] — ~75 nm ITO.
-- [[../reagents/a-Si-H-passivation]] — full SHJ stack.
-- [[../reagents/silver-Ag-cap]] — immersion Ag.
-- New reagent flagged: NaOH(aq) 1 wt% inkjet ink (already flagged in 2019-hatt-solrrl).
+
+- [[reagents/acid-Cu-sulfate-bath]] — Cu electrolyte
+- [[reagents/ITO-transparent-conductive-oxide]] — TCO substrate
+- [[reagents/silver-Ag-cap]] — immersion Ag capping
+- [[reagents/a-Si-H-passivation]] — passivating contact below ITO
 
 ## Organisms / substrates
-- [[../organisms/SHJ-cell-M6]] — full-area 156×156 mm² (≈ M2/M6 size) commercial SHJ precursors with ITO both sides.
+
+- [[organisms/SHJ-cell-M6]] — 156×156 mm² industrial bifacial SHJ precursors
 
 ## Failure modes flagged
-- [[../failure-modes/TCO-pitting-during-plating]] — observed once (parasitic etching of ITO during PVD-metal etch-back) and corrected by selective etchant choice.
-- [[../failure-modes/a-Si-H-passivation-degradation]] — explicitly checked (Voc up to 731 mV indicates no harm).
-- [[../failure-modes/FF-degradation-contact-resistance]] — finger interruptions in early prints reduced FF; resolved by tuning AlOx hydrophobicity.
-- [[../failure-modes/plating-resist-undercut]] — avoided by going resist-free.
+
+- [[failure-modes/Ni-Cu-line-resistance-rise-DH]] — discusses ITO sheet-resistance increase after etch-back damaging (chemical) of the TCO
+- [[failure-modes/TCO-pitting-during-plating]] — etch-back of PVD Cu/Al risks attacking ITO underneath if not selective
+- [[failure-modes/FF-degradation-contact-resistance]] — finger interruptions during inkjet-printing limit FF
+- [[failure-modes/a-Si-H-passivation-degradation]] — addressed by demonstrating Voc up to 731 mV (rim effect overcome on full area)
 
 ## Supports / contradicts
-- Supports: [[2019-hatt-noble-shj-solrrl]] (companion paper)
-- Supports: [[2018-pv-tech-metallization-interconnection-bifacial-shj]] (Lachowicz 24.1% resist-route used as reference)
-- Foundational for: [[2021-hatt-stable-cu-plated-shj-eupvsec]]
+
+- **Supports:** [[sources/2019-hatt-noble-shj-solrrl]] — the canonical NOBLE Solar RRL paper; this AIP paper is the bifacial scale-up
+- **Supports:** [[sources/2021-hatt-stable-cu-plated-shj-eupvsec]] — same group, EUPVSEC 2021 full-area stable run with laser patterning
+- **Supports:** [[sources/2010-bartsch-lip-pvsc]] — Fraunhofer ISE LIP foundation
 
 ## Notable quotes
-- "The first promising efficiency of 20.0% was established by this route on a full area SHJ solar cell" (156×156 mm²).
-- "Almost five days allow reaching a hydrophobic surface (CA ≈ 100–120°) which stabilizes after that time. The Al surface might be covered by a porous Al(OH)₃ which grows over the time depending of the storage temperature and humidity."
+
+> "A first promising efficiency of 20.0% was established by this route on a full area SHJ solar cell." — *Conclusion*
+
+> "The thin metal-seed layer deposited onto the TCO allows fast simultaneous bifacial electrodeposition of copper." — *§Approach*
+
+> "The native oxide and hydroxide growing at the Al-surface after PVD seem to be a key-factor to obtain a hydrophobic surface suitable for fine line etching in the Al layer with NaOHaq inkjet-printing." — *§Fine Line Structuring*

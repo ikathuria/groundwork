@@ -120,3 +120,46 @@ Stations: 8. Steps bound: 13.
 ## [2026-04-26 04:10] ar | ar-v2
 Live scene: /ar/2026-04-25_shj-ni-cu-electroplated-front-grid
 Stations: 8. Steps bound: 13.
+
+## [2026-04-26 02:30] wiki | 2026-04-25_shj-ni-cu-electroplated-front-grid (redo from scratch)
+
+Pass 2 was re-run from a clean slate at the user's request ("the previous wiki was not properly done, redo from scratch"). Existing `wiki/` was already deleted on disk; only the two Pass-4 ar-spec pages (`wiki/plans/ar-v1.md`, `wiki/plans/ar-v2.md`) survived from the prior run.
+
+**Approach.** Reused the canonical entity-slug table from the previous run as a stable cross-reference contract — written as `wiki/.entity-slugs.md`. Spawned 4 parallel source-page subagents (W1–W4) each handling 11–12 of the 45 raw artifacts; they read the `.txt` extracts in `raw/{papers,protocols,retractions,catalogs}/` and wrote one `wiki/sources/<id>.md` per source using the canonical entity table. After all source pages were present, computed an entity → citing-sources backlink map (`wiki/.entity-backlinks.md`) by grepping `[[<type>/<slug>` across `sources/*.md`, then spawned 4 parallel entity-page subagents (E1 methods, E2 reagents, E3 organisms, E4 failure-modes) which read citing source pages to synthesise each entity page.
+
+**Wiki page counts (this run):** sources=45, methods=25, reagents=21, organisms=8, failure-modes=20, index=1, log=1, plans=2 (carried over from Pass 4 — `ar-v1.md` and `ar-v2.md`). **Total: 123 wiki pages (119 freshly written + 1 index + 1 log + 2 carryover).**
+
+**Wikilink integrity:** 1,954 wikilinks scanned across all entity / source / index pages, **0 broken** (verified by Python script: extract `[[type/slug(|alias)?]]` regex, check each target file exists). Every cross-reference resolves.
+
+**Hypothesis.md flipped:** `status: complete` → `status: wiki`. Added `wiki_pages_count`, `methods_count`, `reagents_count`, `organisms_count`, `failure_modes_count` to frontmatter. Added `plan_state: stale-vs-wiki` — the prior `plan/plan.json`, `plan/plan.md`, and `plan/index.html` from the earlier Pass 3 run are still on disk but synthesise from the *previous* wiki; re-running Pass 3 would re-derive them against the new wiki (different aggregate citation counts; refreshed key-entity ranks).
+
+**Refreshed key-entity ranks** (changes vs prior run, citation counts ≥ +/−2):
+- Methods: `IV-curve-measurement` 19→25, `screen-printed-Ag-paste` 17→22, `Cu-electroplating-acid-bath` 19→21, `electroplated-Ni-Cu-stack` 9→15, `EL-electroluminescence-imaging` (new top-10).
+- Reagents: `low-T-Ag-paste-generic-SHJ-grade` 11→21, `EVA-encapsulant` 14→8 (sub-agents disambiguated POE vs EVA more carefully), `POE-polyolefin-encapsulant` (new top-5).
+- Failure modes: `silver-supply-bottleneck` 20→22, `Cu-diffusion-into-c-Si` 10→13, `TCO-pitting-during-plating` (new top-10).
+- Organisms: `SHJ-cell-M6` 16→23 (the de-facto workhorse format).
+
+**Promotion candidates (for the lint pass — likely to recur in future hypotheses):**
+- `methods/screen-printed-Ag-paste`, `methods/damp-heat-aging-1000h`, `methods/IV-curve-measurement`, `methods/transfer-length-method`, `methods/SIMS-depth-profile`, `methods/peel-test-90deg`, `methods/temperature-cycling-IEC61215-TC200`.
+- `reagents/EVA-encapsulant`, `reagents/POE-polyolefin-encapsulant`, `reagents/ITO-transparent-conductive-oxide`, `reagents/sulfuric-acid-H2SO4`.
+- `failure-modes/silver-supply-bottleneck`, `failure-modes/EVA-acetic-acid-corrosion`, `failure-modes/non-reproducibility-in-solar-cell-claims`.
+- `organisms/monocrystalline-Si-wafer-n-type`, `organisms/monocrystalline-Si-wafer-p-type`.
+
+**Aliasing concerns surfaced for the lint pass:**
+1. `methods/Ni-sputter-deposition` — the slug name is misleading. Every NOBLE / SunDrive / CSEM source actually uses *PVD-Cu/Al* or *PVD-Cu* seed (no literal Ni sputter). Consider promoting to `PVD-seed-deposition`.
+2. `methods/electroless-Ni-deposition` and the Ni-layer-of-`methods/electroplated-Ni-Cu-stack` overlap heavily.
+3. `methods/thermal-evaporation-Ag-cap` is cited by only one source (Rehman 2014) — modern SHJ Cu work uses immersion Ag.
+4. `methods/EQE-measurement` is cited only by the perovskite retraction note; lean coverage in this corpus.
+5. `reagents/low-T-Ag-paste-Solamet-PV21A` and `low-T-Ag-paste-Solamet-PV56S` — the slug names are *false friends*. Both DuPont Solamet pastes are >600 °C fire-through (NOT SHJ-compatible). Both pages now carry an explicit "do not use as SHJ baseline" notice; pointer to `low-T-Ag-paste-generic-SHJ-grade`. Slugs should probably be renamed in a future schema migration.
+6. `reagents/Cu3Si-intermetallic` is technically a reaction product but kept under `reagents/` for graph utility.
+
+**Contradictions noticed (to be foregrounded by Pass 3):**
+1. **Cheng 2018 vs the hypothesis** — 60 nm electroplated Ni fails as a Cu barrier at 300 °C; ≥120 nm survives. The hypothesis's "sub-100 nm" sits in the failure regime; partially rescued by SHJ ≤200 °C process budget but pinhole density must be verified by Cu-displacement decoration pre-cap. Surfaced consistently in `failure-modes/Cu-diffusion-into-c-Si`, `failure-modes/Cu3Si-formation-at-Si-interface`, `failure-modes/Ni-barrier-pinholes`.
+2. **Karas 2019 / 2022 (EVA + AlBSF/PERC, fails) vs SunDrive 2022 / Lachowicz 2024 (POE + SHJ, passes)** — the dominant DH reliability disagreement. Resolved by encapsulant chemistry (POE has no acetic-acid pathway) plus the SHJ TCO acting as a co-barrier; Pass 3 should *require* SIMS at 0/250/500/750/1000 h, not assume the resolution.
+3. **Architectural divergence** — Hatt's NOBLE process and SunDrive both use *PVD seed (Cu/Al stack or Cu) + electroplated Cu*, NOT a sub-100 nm electroplated Ni barrier. Adachi/Kaneka 25.1 % SHJ record uses PVD Cu seed. The hypothesis's "electroplated Ni barrier" framing comes from PERC literature; the SHJ-specific consensus is TCO + thin PVD seed. Pass 3 should consider including a Ni-free arm.
+4. **Cu-paste vs plated-Cu** — Yacouba 2025 reports 23.1 % SHJ champion with Cu paste at ρc = 10.28 mΩ·cm² (56 µm fingers); Pingel 2025 reports 5–12 mΩ·cm² for AgCu paste. Both above the ≤2 mΩ·cm² target. Confirms only *plated* Cu (NOBLE: 0.1–4 mΩ·cm²) can meet the spec.
+5. **Frasson 2024 (pure-Cu paste fails 200-cycle TC) vs Yacouba 2025 (23.08 % all-Cu paste SHJ)** — different paste vintages; paste-evolution-dependent.
+
+**Notable extraction issue:** `raw/papers/2019-karas-damp-heat-degradation-shj-cu.txt` is empty (0 bytes — pdftotext returned nothing, PDF appears image-only / scanned). The W1 subagent wrote that source page from `fetch_log.jsonl` metadata + the explicit citation context inside the 2022 Karas paper (which cites it as ref. 20) + the OSTI manuscript record. The underlying PDF is intact on disk; the wiki page flags this clearly. Future ingest should re-extract via OCR or vision before drawing additional fine-grained quantitative claims from it.
+
+**Files NOT written (out of Pass 2 scope):** `commons/` (still empty for this hypothesis — promotion is the lint pass's job), any `plan/` artifacts (Pass 3's job), any `wiki/plans/plan-v1.md` (Pass 3's job).

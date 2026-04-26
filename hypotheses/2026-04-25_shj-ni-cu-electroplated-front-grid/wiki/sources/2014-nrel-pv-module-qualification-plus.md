@@ -5,59 +5,67 @@ source_type: protocol
 title: "Photovoltaic Module Qualification Plus Testing"
 authors: ["Kurtz, S.", "Wohlgemuth, J.", "Kempe, M.", "Bosco, N.", "Hacke, P.", "Jordan, D.", "Miller, D. C.", "Silverman, T. J.", "Phillips, N.", "Earnest, T.", "Romero, R."]
 year: 2013
-doi: null
-url: "https://www.nrel.gov/publications"
+doi: ""
+url: https://docs.nrel.gov/docs/fy14osti/60950.pdf
 raw_path: raw/protocols/2014-nrel-pv-module-qualification-plus.pdf
-tags: [Qualification-Plus, IEC-61215, IEC-61730, durability, NREL-TP-5200-60950, sampling, QMS, UV-encapsulant, UV-backsheet, PID, DML, thermal-cycling-500]
+tags: [Qualification-Plus, IEC-61215, NREL, damp-heat, sampling, methodology]
+created: 2026-04-26
+updated: 2026-04-26
 ---
 
 # Photovoltaic Module Qualification Plus Testing
 
+**Kurtz, S., Wohlgemuth, J., Kempe, M., Bosco, N., Hacke, P., Jordan, D., Miller, D. C., Silverman, T. J., Phillips, N., Earnest, T., Romero, R. (NREL / 3M / DuPont / Black & Veatch)** — *NREL Technical Report TP-5200-60950, December 2013*. DOI: —
+
 ## Summary
-NREL Technical Report TP-5200-60950 (December 2013, published 2014) co-authored with 3M, DuPont, and Black & Veatch. The flagship "Qualification Plus" test specification: a set of new and revised accelerated tests intended for c-Si modules with glass / EVA-based encapsulant / polymeric backsheet construction. Three pillars: (1) new/revised accelerated tests (UV exposure separately for encapsulant, backsheet, cables, connectors, junction boxes; bypass-diode thermal test extended; thermal cycling 200 → 500; dynamic mechanical load 1000 cycles ± 1000 Pa; hot spot per ASTM E2481-06; potential-induced degradation per IEC 62804 draft); (2) random sampling from production lines (not engineering samples); (3) audit of the manufacturer's quality management system. Recommended as optional but a critical bridge between IEC 61215 and lifetime testing. Specifies pass/fail criteria, durations, dose levels, and the IEC retest guidelines (IEC TS 62915) that map specific module changes to required retests.
+
+The NREL "Qualification Plus" specification — a set of accelerated tests *beyond* IEC 61215 / IEC 61730 designed to detect product weaknesses that the qualification sequence misses, optimised before formal IEC adoption. Recommended for c-Si modules with glass / polymeric backsheet / EVA construction. Defines extended UV exposure (component-level), revised bypass diode and hot-spot tests, dynamic mechanical load (IEC 62782), system-voltage / PID screening (IEC 62804), random sampling from production, and a quality-management-system audit. Provides the practical template for the SHJ Ni/Cu chamber instrumentation (per-checkpoint EL, dark IV, peak power) and sampling plan.
 
 ## Key claims
-- Qualification Plus tests recommended specifically for c-Si modules with glass/EVA/polymeric-backsheet construction (Sec. 3).
-- Statistical context (Table 3 selected field studies): ~2% of modules fail after 8 years (DeGraaff @ SunPower's >0.9 GW, 21 manufacturers); 16% of systems require module replacement after 5–12 years (Kato); 6.5% module failures after 10 years in Block IV/V deployments (Rosenthal); 200 thermal cycles ≈ 10 years field exposure (Wohlgemuth).
-- New tests proposed (Table 5): UV exposure (encapsulants, backsheets, cables/connectors, J-boxes), bypass diode thermal test extension, thermal cycling 500 cycles, dynamic mechanical load (DML) 1000 cycles at ± 1000 Pa, enhanced hot spot (ASTM E2481-06, 50 h per cell), system-voltage PID (IEC 62804 draft).
-- UV exposure for encapsulants: 56±5 W/m² UV (300-400 nm), 70°C ambient, 50% RH, 90°C black-panel temperature, ~4000 h to ≥224 kWh/m². Pass/fail: <2% decrease in solar-weighted photon transmittance.
-- UV exposure for backsheets: 81±8 W/m² UV, 70°C black-panel, 50°C ambient, 50% RH, ~4000 h to ≥320 kWh/m². Pass/fail: visual inspection (no major defects) plus ≥50% elongation at break (ASTM D 882).
-- Thermal cycling extension: 500 cycles in IEC 61215 §10.11 with a 0.5 kg weight hung from each junction box, with diodes still functioning post-test.
-- DML: 1000 cycles at ± 1000 Pa (± 100 Pa tolerance) at 1-10 cycles/min, inserted into UV/DML/50TC/10HF sequence. Pass: <5% power loss after each test, <8% after entire sequence, no open circuit, no major visual defects, insulation/wet-leakage compliant.
-- PID: 60°C / 85% RH, 96 h dwell, system voltage applied to shorted module leads with frame grounded. Pass: <5% Pmax degradation at STC, no major visual defects, wet leakage current OK.
-- Hot spot test: ASTM E2481-06 (5 hours per cell with worst shunt + 3 cells with lowest shunt resistance — much harsher than IEC 61215's 1-hour single-cell test).
-- Sampling: random selection from a production line (no engineering samples). Five modules per leg (not the IEC standard two).
-- Quality Management System audit per "Guide for QMS for PV Manufacturing: Supplemental Requirements to ISO 9001-2008" (NREL/TP-5200-58940), conducted by an ANSI-ASQ-ANAB or IAF-accredited Certification Body.
+
+- **Three-part Qualification Plus proposal:** (1) new or revised accelerated tests for components and modules including system-voltage bias, UV, and mechanical stress; (2) revised sampling procedures including random sampling from the production line; (3) required audit of the quality management system.
+- **Field-failure rationale (Table 3):** the field-failure dataset that motivates Qual-Plus shows ~2% failure rate after 8 years dominated by laminate internal-circuit failures, glass, and j-box; cell + encapsulant + backsheet account for ~26%. Encapsulant discoloration appears in 66% of failure reports, delamination in 60%, corrosion in 26% — the same DH failure-mode menu the SHJ Ni/Cu plan must screen.
+- **Block IV → Block V dropped field failures from >50% to ~1%** after adding 200 TC, harsher humidity-freeze, and hot-spot test. Confirms the IEC 61215 sequence baseline is mechanistically right.
+- **1000 h damp heat is *not* in JPL Block V** — added later in IEC 61215 to capture corrosion in fielded modules, identical history to the slide deck of [[sources/2012-nrel-iec61215-what-it-is]].
+- **Qualification Plus accelerated test menu:** UV exposure for encapsulants, backsheets, connectors/cables, j-boxes; bypass diode and j-box thermal test; thermal cycling extension (IEC 61215 plus); IEC 62782 dynamic mechanical load (±1000 Pa, 1–10 cycles/min, 1000 cycles with current flow); enhanced hot-spot (ASTM E2481-06, 50 h at 1 kW/m²); IEC 62804 PID with system-voltage bias.
+- **Backsheet UV dose target:** 320 kWh/m² (300–400 nm) for the back-side ≈ Phoenix service-life dose; front-side limited to 6 months ≈ ~3 years Phoenix-equivalent.
+- **Backsheet pass criterion:** elongation-at-break ≥ 50% after UV (functioning fielded backsheets typically retain >70%; safety threshold ~2%).
+- **Random sampling from production:** mandatory — addresses the "qualified one batch, shipped a different batch" failure mode that catalysed the AAA-backsheet field-cracking incident.
 
 ## Methods used
-- [[../methods/damp-heat-aging-1000h]] — IEC 61215 baseline retained
-- [[../methods/extended-damp-heat-IEC63209]] — successor concept; QualPlus's DH-with-bias is a precursor
-- [[../methods/temperature-cycling-IEC61215-TC200]] — extended to 500 cycles
-- [[../methods/humidity-freeze-IEC61215-HF10]] — UV/DML/50TC/10HF sequence
-- [[../methods/UV-preconditioning]] — both as preconditioning and as a long component test (~4000 h)
-- [[../methods/IV-curve-measurement]] — STC peak-power before/after testing
+
+- [[methods/damp-heat-aging-1000h]] — the IEC 61215 baseline that Qualification Plus extends.
+- [[methods/extended-damp-heat-IEC63209]] — Qualification Plus is the precursor that fed into IEC 63209 emerging-tech extended-DH.
+- [[methods/temperature-cycling-IEC61215-TC200]] — Qual-Plus calls for extension beyond 200 cycles.
+- [[methods/humidity-freeze-IEC61215-HF10]] — retained from IEC 61215.
+- [[methods/UV-preconditioning]] — Qual-Plus replaces with longer component-level UV exposures.
+- [[methods/EL-electroluminescence-imaging]] — explicitly listed as a per-checkpoint diagnostic to surface degradation before STC power loss.
+- [[methods/dark-IV-suns-Voc]] — recommended for picking up small Rs/Rsh shifts.
+- [[methods/IV-curve-measurement]] — STC pass/fail.
 
 ## Reagents
-- [[../reagents/EVA-encapsulant]] — primary encapsulant for which spec is written
-- [[../reagents/POE-polyolefin-encapsulant]] — referenced but generalizations may not apply
+
+- [[reagents/EVA-encapsulant]] — explicit target of Qualification Plus UV / DH validation; the encapsulant whose discoloration appears in 66% of field-failure reports.
 
 ## Organisms / substrates
-- [[../organisms/full-size-module-60-cell]] — generic c-Si test module
-- [[../organisms/full-size-module-72-cell]] — generic c-Si test module
+
+- [[organisms/full-size-module-60-cell]] — Qualification Plus is module-level; the SHJ Ni/Cu plan's mini-module DH chamber run inherits the per-checkpoint instrumentation.
+- [[organisms/full-size-module-72-cell]] — same.
 
 ## Failure modes flagged
-- [[../failure-modes/EVA-acetic-acid-corrosion]] — UV/DH-driven encapsulant degradation
-- [[../failure-modes/Cu-finger-corrosion-encapsulant]] — generic finger-corrosion mode addressed by DH
-- [[../failure-modes/finger-adhesion-loss-after-DH]] — generic
-- [[../failure-modes/Voc-degradation-Cu-contamination]] — implied if PID fails
+
+- [[failure-modes/EVA-acetic-acid-corrosion]] — encapsulant discoloration / corrosion; 66% / 26% of field-failure reports.
+- [[failure-modes/Cu-finger-corrosion-encapsulant]] — corrosion under DH that Qualification Plus targets.
+- [[failure-modes/finger-adhesion-loss-after-DH]] — delamination is 60% of field-failure reports; Qual-Plus DH retest is the screen.
 
 ## Supports / contradicts
-- Supports: [[2011-nrel-reliability-testing-beyond-qualification]] (this report formalises the proposal)
-- Supports: [[2012-nrel-iec61215-what-it-is]] (this report is the response to those limitations)
-- Supports: [[2024-nrel-getting-ahead-of-curve-pv-assessment]] (extends concept to bifacial/SHJ-era)
-- Supports: [[2013-koehl-fraunhofer-accelerated-service-life-testing]] (compatible methodology)
+
+- **Supports:** [[sources/2011-nrel-reliability-testing-beyond-qualification]] — same NREL author pair, same "extend qualification with explicit baseline" philosophy.
+- **Supports:** [[sources/2012-nrel-iec61215-what-it-is]] — same factual restatement of the IEC 61215 sequence and its limitations.
+- **Supports:** [[sources/2024-nrel-getting-ahead-of-curve-pv-assessment]] — Qualification Plus is the pre-cursor to the 2024 NREL emerging-tech reliability assessment.
 
 ## Notable quotes
-- "Solar electricity can be cost competitive in many electricity markets today if solar panels can perform to warranted specifications for the length of their warranty, which is typically 25 years. But, it can be difficult to identify which PV modules will meet their warrantied performance level." — Sec. 1.1
-- "the AAA backsheets … passed standard damp-heat and ultraviolet (UV) light tests, but many began cracking after five to ten years owing to mechanical stresses from production and environmental exposure that had not been part of standard testing" — referenced as the cautionary example for novel materials
-- "The Qualification Plus tests are being recommended specifically for crystalline silicon modules with glass/polymeric backsheet construction." — Executive Summary
+
+> "The Qualification Plus tests are being recommended specifically for crystalline silicon modules with glass/polymeric backsheet construction." — *Executive Summary*
+
+> "The proposal contains three parts: (1) New or revised accelerated tests for components and modules including tests applying system-voltage bias, ultra-violet (UV) light, and mechanical stress; (2) Revised sampling procedures, including the requirement of random sampling from the production line; (3) Required audit of the quality management system." — *Executive Summary*
