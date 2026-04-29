@@ -165,6 +165,14 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
   // start (and refreshed on step changes) so it can pass valid ids to
   // highlight_object / point_at.
   const [stations, setStations] = useState<LabScene.StationSummary[]>([])
+  const [placementStatus, setPlacementStatus] = useState<LabScene.PlacementStatus>({
+    reticleVisible: false,
+    surfacePlacementValid: false,
+    canPlace: false,
+    message: 'Move your phone to detect a surface',
+  })
+  const touchPointsRef = useRef<Map<number, { x: number; y: number }>>(new Map())
+  const pinchStateRef = useRef<{ angle: number; distance: number } | null>(null)
 
   useEffect(() => {
     if (!plan) return
@@ -390,14 +398,32 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
     })
   }, [lastInteraction, currentStep, plan])
 
+  useEffect(() => {
+    if (!xrMode) return
+    let raf = 0
+    const tick = () => {
+      setPlacementStatus(LabScene.getPlacementStatus())
+      raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [xrMode])
+
   // ── WebXR enter ──────────────────────────────────────────────────────────
   const enterAR = useCallback(async () => {
     if (!navigator.xr) return
     try {
       const overlayEl = document.getElementById('ar-overlay')
+      const optional: string[] = [
+        'plane-detection',
+        'depth-sensing',
+        'light-estimation',
+        'anchors',
+      ]
+      if (overlayEl) optional.push('dom-overlay')
       const session = await navigator.xr.requestSession('immersive-ar', {
         requiredFeatures: ['hit-test'],
-        optionalFeatures: overlayEl ? ['dom-overlay'] : [],
+        optionalFeatures: optional,
         ...(overlayEl ? { domOverlay: { root: overlayEl } } : {}),
       } as XRSessionInit)
 
@@ -418,6 +444,12 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
   const handlePlaceLab = useCallback(() => {
     if (xrMode) LabScene.placeLab()
     else LabScene.placeLabFixed()
+  }, [xrMode])
+
+  const handleReposition = useCallback(() => {
+    if (!xrMode) return
+    LabScene.beginSurfacePlacement()
+    setLabPlaced(false)
   }, [xrMode])
 
   const handleNext = useCallback(() => {
@@ -588,9 +620,28 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
   const handleCanvasMove = useCallback(
     (e: React.PointerEvent) => {
       if (mode !== 'interactive') return
+      if (e.pointerType === 'touch') {
+        const touches = touchPointsRef.current
+        touches.set(e.pointerId, { x: e.clientX, y: e.clientY })
+        if (touches.size >= 2 && labPlaced) {
+          const [a, b] = Array.from(touches.values())
+          const dx = b.x - a.x
+          const dy = b.y - a.y
+          const angle = Math.atan2(dy, dx)
+          const distance = Math.hypot(dx, dy)
+          const prev = pinchStateRef.current
+          if (prev) {
+            const deltaYaw = angle - prev.angle
+            const scaleMul = distance / Math.max(prev.distance, 1e-5)
+            LabScene.transformPlacedLab(deltaYaw, scaleMul)
+          }
+          pinchStateRef.current = { angle, distance }
+          return
+        }
+      }
       LabScene.handlePointerMove(e.clientX, e.clientY)
     },
-    [mode],
+    [mode, labPlaced],
   )
 
   const handleCanvasDown = useCallback(
@@ -604,6 +655,18 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
       try {
         ;(e.target as Element).setPointerCapture?.(e.pointerId)
       } catch {}
+      if (e.pointerType === 'touch') {
+        const touches = touchPointsRef.current
+        touches.set(e.pointerId, { x: e.clientX, y: e.clientY })
+        if (touches.size >= 2 && labPlaced) {
+          const [a, b] = Array.from(touches.values())
+          pinchStateRef.current = {
+            angle: Math.atan2(b.y - a.y, b.x - a.x),
+            distance: Math.hypot(b.x - a.x, b.y - a.y),
+          }
+          return
+        }
+      }
       if (mode === 'interactive') {
         LabScene.handlePointerDown(e.clientX, e.clientY)
       }
@@ -613,6 +676,10 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
 
   const handleCanvasUp = useCallback(
     (e: React.PointerEvent) => {
+      if (e.pointerType === 'touch') {
+        touchPointsRef.current.delete(e.pointerId)
+        if (touchPointsRef.current.size < 2) pinchStateRef.current = null
+      }
       if (mode !== 'interactive') return
       LabScene.handlePointerUp(e.clientX, e.clientY)
     },
@@ -621,6 +688,10 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
 
   const handleCanvasCancel = useCallback(
     (e: React.PointerEvent) => {
+      if (e.pointerType === 'touch') {
+        touchPointsRef.current.delete(e.pointerId)
+        if (touchPointsRef.current.size < 2) pinchStateRef.current = null
+      }
       if (mode !== 'interactive') return
       LabScene.handlePointerUp(e.clientX, e.clientY)
     },
@@ -767,8 +838,8 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
             </div>
 
             <p className="text-lab-muted text-xs">
-              Tap any station once placed — guided mode auto-plays each step,
-              interactive mode lets you trigger animations yourself.
+              Scan your real table until the ring turns green, then tap to place.
+              After placement, tap or drag tools directly on your own surface.
             </p>
           </div>
         </div>
@@ -802,6 +873,8 @@ export default function ARViewer({ plan: fallbackPlan, slug }: ARViewerProps) {
           gateHint={gateHint}
           onToggleStepGate={setStepGateEnabled}
           onReset={handleReset}
+          placementStatus={placementStatus}
+          onReposition={handleReposition}
           onGeminiTool={handleGeminiTool}
         />
       )}

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import GeminiLiveControl from './GeminiLiveControl'
 import type { ExperimentPlan, ExperimentStep } from '@/lib/experiment-steps'
 import { getStepContext } from '@/lib/experiment-steps'
-import type { InteractionEvent, Mode } from './lab-scene'
+import type { InteractionEvent, Mode, PlacementStatus } from './lab-scene'
 import type { ToolCall } from './gemini-live'
 
 interface StepHUDProps {
@@ -27,6 +27,8 @@ interface StepHUDProps {
   onSetMode: (mode: Mode) => void
   onToggleStepGate: (enabled: boolean) => void
   onReset: () => void
+  placementStatus?: PlacementStatus
+  onReposition: () => void
   onGeminiTool: (call: ToolCall) => unknown | Promise<unknown>
 }
 
@@ -52,6 +54,8 @@ export default function StepHUD({
   onSetMode,
   onToggleStepGate,
   onReset,
+  placementStatus,
+  onReposition,
   onGeminiTool,
 }: StepHUDProps) {
   const step: ExperimentStep = plan.steps[currentStep]
@@ -157,7 +161,14 @@ export default function StepHUD({
             >
               <p className="text-lab-accent text-2xl mb-1">⌖</p>
               <p className="text-lab-text font-semibold">Tap to place lab</p>
-              <p className="text-lab-muted text-xs mt-1">Point camera at a flat surface</p>
+              <p
+                className={[
+                  'text-xs mt-1',
+                  placementStatus?.canPlace ? 'text-lab-accent' : 'text-lab-muted',
+                ].join(' ')}
+              >
+                {placementStatus?.message ?? 'Point camera at a flat surface'}
+              </p>
             </button>
           ) : (
             <button
@@ -226,6 +237,16 @@ export default function StepHUD({
           >
             ↺
           </DockButton>
+          {xrMode && (
+            <DockButton
+              label="Re-place on surface"
+              onClick={onReposition}
+              ariaLabel="Re-place lab"
+              pointerTarget="replace-button"
+            >
+              ⌖
+            </DockButton>
+          )}
           <DockButton
             label={mode === 'guided' ? 'Switch to interactive' : 'Switch to guided'}
             onClick={() => onSetMode(mode === 'guided' ? 'interactive' : 'guided')}

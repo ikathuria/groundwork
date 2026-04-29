@@ -95,6 +95,8 @@ interface SceneState {
   xrSession: XRSession | null
   hitTestSource: XRHitTestSource | null
   referenceSpace: XRReferenceSpace | null
+  // Whether the latest hit pose looks like a horizontal tabletop/floor surface.
+  surfacePlacementValid: boolean
   onLabPlaced: (() => void) | null
   onInteraction: ((event: InteractionEvent) => void) | null
   // Fired whenever the hovered station id or its on-screen label position
@@ -128,6 +130,13 @@ export interface InteractionEvent {
   detail?: string
 }
 
+export interface PlacementStatus {
+  reticleVisible: boolean
+  surfacePlacementValid: boolean
+  canPlace: boolean
+  message: string
+}
+
 const state: SceneState = {
   renderer: null,
   scene: null,
@@ -146,6 +155,7 @@ const state: SceneState = {
   xrSession: null,
   hitTestSource: null,
   referenceSpace: null,
+  surfacePlacementValid: false,
   onLabPlaced: null,
   onInteraction: null,
   onHover: null,
@@ -1610,11 +1620,22 @@ export function startXRLoop() {
       if (hits.length > 0) {
         const pose = hits[0].getPose(state.referenceSpace)
         if (pose && state.reticle) {
+          const poseMatrix = new THREE.Matrix4().fromArray(
+            pose.transform.matrix as unknown as number[],
+          )
+          const poseQuat = new THREE.Quaternion()
+          poseMatrix.decompose(new THREE.Vector3(), poseQuat, new THREE.Vector3())
+          const up = new THREE.Vector3(0, 1, 0).applyQuaternion(poseQuat)
+          // Keep placement focused on table/floor-like surfaces.
+          state.surfacePlacementValid = up.y > 0.75
           state.reticle.visible = true
-          state.reticle.matrix.fromArray(pose.transform.matrix as unknown as number[])
+          state.reticle.matrix.copy(poseMatrix)
+          const reticleMat = state.reticle.material as THREE.MeshBasicMaterial
+          reticleMat.color.set(state.surfacePlacementValid ? 0x00d4aa : 0xffa24d)
         }
       } else if (state.reticle) {
         state.reticle.visible = false
+        state.surfacePlacementValid = false
       }
     }
 
@@ -2458,9 +2479,15 @@ export function resetLab() {
 
 export function placeLab() {
   if (state.labPlaced || !state.reticle || !state.labGroup) return
-  if (state.reticle.visible) {
-    const pos = new THREE.Vector3().setFromMatrixPosition(state.reticle.matrix)
+  if (state.reticle.visible && state.surfacePlacementValid) {
+    const pos = new THREE.Vector3()
+    const rot = new THREE.Quaternion()
+    const scale = new THREE.Vector3()
+    state.reticle.matrix.decompose(pos, rot, scale)
     state.labGroup.position.copy(pos)
+    // Match the detected real-surface orientation so drag interactions happen
+    // in the user's actual tabletop frame.
+    state.labGroup.quaternion.copy(rot)
     state.labGroup.scale.set(1, 1, 1)
   } else {
     return
@@ -2478,6 +2505,40 @@ export function placeLabFixed() {
   state.labGroup.visible = true
   state.labPlaced = true
   state.onLabPlaced?.()
+}
+
+export function beginSurfacePlacement() {
+  if (!state.labGroup) return
+  state.labPlaced = false
+  state.labGroup.visible = false
+  state.surfacePlacementValid = false
+  if (state.reticle) state.reticle.visible = false
+}
+
+export function getPlacementStatus(): PlacementStatus {
+  const reticleVisible = !!state.reticle?.visible
+  const canPlace = reticleVisible && state.surfacePlacementValid
+  let message = 'Move your phone to detect a surface'
+  if (!reticleVisible) {
+    message = 'Move your phone to detect a surface'
+  } else if (!state.surfacePlacementValid) {
+    message = 'Aim at a flatter table-like surface'
+  } else {
+    message = 'Surface detected - tap to place'
+  }
+  return {
+    reticleVisible,
+    surfacePlacementValid: state.surfacePlacementValid,
+    canPlace,
+    message,
+  }
+}
+
+export function transformPlacedLab(deltaYaw: number, scaleMul: number) {
+  if (!state.labPlaced || !state.labGroup) return
+  state.labGroup.rotateY(deltaYaw)
+  const nextScale = clamp(state.labGroup.scale.x * scaleMul, 0.7, 2.4)
+  state.labGroup.scale.setScalar(nextScale)
 }
 
 // ─── WebXR Session ────────────────────────────────────────────────────────────
@@ -2516,6 +2577,7 @@ export async function enterXR(session: XRSession) {
     state.labPlaced = false
     if (state.labGroup) state.labGroup.visible = false
     if (state.reticle) state.reticle.visible = false
+    state.surfacePlacementValid = false
   })
 
   startXRLoop()
@@ -2552,4 +2614,5 @@ export function cleanup() {
   state.onHover = null
   state.interactiveObjects = []
   state.drag = null
+  state.surfacePlacementValid = false
 }
