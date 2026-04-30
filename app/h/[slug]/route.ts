@@ -33,11 +33,11 @@ export async function GET(
   }
 
   return new NextResponse(
-    `<!doctype html><meta charset="utf-8"><title>Not found</title>` +
-      `<body style="font-family:system-ui;background:#0a0f1a;color:#e2e8f0;padding:2rem">` +
-      `<h1 style="color:#f87171">Lab Brief not found</h1>` +
-      `<p>No <code>plan/index.html</code> (Pass 3) or <code>plan/wiki.html</code> (legacy) for <code>${escapeHtml(slug)}</code>.</p>` +
-      `<p>Run <code>/pass-3 &lt;slug&gt;</code> to generate the Lab Brief.</p>` +
+    `<!doctype html><meta charset="utf-8"><title>Not found — Surveyor</title>` +
+      `<body style="font-family:Georgia,serif;background:#faf8f2;color:#1a1208;padding:2rem">` +
+      `<h1 style="color:#8b1a2a;font-family:Georgia,serif">Research brief not found</h1>` +
+      `<p>No <code>plan/index.html</code> (Pass 3) for <code>${escapeHtml(slug)}</code>.</p>` +
+      `<p>Run <code>/pass-3 &lt;slug&gt;</code> to generate the brief.</p>` +
       `</body>`,
     { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8' } },
   )

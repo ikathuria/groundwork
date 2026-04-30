@@ -6,7 +6,7 @@ import ResearchProgress from './ResearchProgress'
 const SAMPLES: Array<{ label: string; text: string }> = [
   {
     label: 'Diffusion models for code',
-    text: 'How are diffusion models being applied to code generation, and what are the key differences in performance and controllability compared to autoregressive language models for programming tasks?',
+    text: 'How are diffusion models being applied to code generation, and what are the key differences in performance and controllability compared to autoregressive language models?',
   },
   {
     label: 'LLMs for theorem proving',
@@ -17,8 +17,8 @@ const SAMPLES: Array<{ label: string; text: string }> = [
     text: 'What techniques exist for reducing the computational cost of large language model inference at deployment time, and which approaches show the best accuracy-efficiency tradeoffs?',
   },
   {
-    label: 'Graph neural networks for drug discovery',
-    text: 'How are graph neural networks being used in molecular property prediction and drug discovery, and what are the main limitations that prevent wider clinical adoption?',
+    label: 'GNNs for drug discovery',
+    text: 'How are graph neural networks being used in molecular property prediction and drug discovery, and what are the main limitations preventing wider clinical adoption?',
   },
 ]
 
@@ -37,16 +37,16 @@ export default function ResearchInput() {
 
   return (
     <div className="flex flex-col gap-3 w-full">
-      <h3 className="text-[#00d4aa] font-mono text-xs uppercase tracking-widest">
-        Research a new question
+      <h3 className="font-mono text-xs uppercase tracking-widest text-surveyor-muted">
+        Start a new survey
       </h3>
 
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
         rows={4}
-        placeholder="Enter a research question or topic. Strong inputs name a specific area, a contested open problem, or a methodology comparison. e.g. 'How are transformer attention mechanisms applied to time-series forecasting?'"
-        className="w-full glass rounded-xl px-4 py-3 text-sm text-white placeholder-[#64748b]/70 outline-none focus:border-[#00d4aa]/50 resize-none"
+        placeholder="What research question are you exploring? e.g. 'How are transformer attention mechanisms applied to time-series forecasting?'"
+        className="w-full paper-card rounded-xl px-4 py-3 text-sm text-surveyor-text placeholder-surveyor-muted/60 outline-none focus:border-surveyor-accent/60 resize-none font-body bg-white"
       />
 
       <div className="flex flex-wrap gap-1.5">
@@ -54,7 +54,7 @@ export default function ResearchInput() {
           <button
             key={s.label}
             onClick={() => setText(s.text)}
-            className="px-2.5 py-1 rounded-full border border-white/10 text-[11px] text-[#64748b] hover:text-white hover:border-white/30 transition-colors"
+            className="px-2.5 py-1 rounded-full border border-surveyor-border text-[11px] text-surveyor-muted hover:text-surveyor-text hover:border-surveyor-accent/40 transition-colors font-mono"
           >
             {s.label}
           </button>
@@ -64,14 +64,14 @@ export default function ResearchInput() {
       <button
         onClick={handleStart}
         disabled={!text.trim() || running}
-        className="w-full py-3.5 rounded-xl bg-[#00d4aa] text-[#0a0f1a] font-bold text-sm hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+        className="w-full py-3.5 rounded-xl bg-surveyor-accent text-white font-bold text-sm hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
       >
-        ⚙ Run Pass-1 → Pass-2 → Pass-3
+        Survey this topic →
       </button>
 
-      <p className="text-[10px] text-[#64748b]/70">
-        Spawns <code className="text-[#64748b]">claude -p</code> headlessly per the
-        canonical pipeline. Takes a few minutes — sources are fetched live.
+      <p className="text-[10px] text-surveyor-muted/70 font-mono">
+        Runs <code>claude -p</code> headlessly through 3 passes. Takes a few
+        minutes — sources are fetched live.
       </p>
 
       {running && <ResearchProgress question={text} onCancel={handleCancel} />}

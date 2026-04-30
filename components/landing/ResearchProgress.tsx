@@ -23,10 +23,7 @@ const STAGE_LABELS: Record<Exclude<Stage, 'done' | 'error'>, string> = {
   'pass-3': 'Pass 3 — Synthesising brief',
 }
 
-export default function ResearchProgress({
-  question,
-  onCancel,
-}: ResearchProgressProps) {
+export default function ResearchProgress({ question, onCancel }: ResearchProgressProps) {
   const router = useRouter()
   const [stages, setStages] = useState<Record<string, StageState>>({
     'pass-1': { status: 'idle', message: 'Queued' },
@@ -48,24 +45,18 @@ export default function ResearchProgress({
       signal: controller.signal,
     })
       .then(async (res) => {
-        if (!res.ok || !res.body) {
-          throw new Error(`Pipeline failed (${res.status})`)
-        }
-
+        if (!res.ok || !res.body) throw new Error(`Pipeline failed (${res.status})`)
         const reader = res.body.getReader()
         const decoder = new TextDecoder()
         let buf = ''
-
         while (true) {
           const { value, done } = await reader.read()
           if (done) break
           buf += decoder.decode(value, { stream: true })
-
           let idx
           while ((idx = buf.indexOf('\n\n')) !== -1) {
-            const evtBlock = buf.slice(0, idx)
+            handleEvent(buf.slice(0, idx))
             buf = buf.slice(idx + 2)
-            handleEvent(evtBlock)
           }
         }
       })
@@ -82,16 +73,13 @@ export default function ResearchProgress({
         else if (line.startsWith('data:')) data += line.slice(5).trim()
       }
       let payload: any = null
-      try {
-        payload = JSON.parse(data)
-      } catch {}
+      try { payload = JSON.parse(data) } catch {}
 
       if (event === 'stage' && payload?.stage) {
         setStages((s) => {
           const next = { ...s }
-          if (payload.stage === 'pass-2' && next['pass-1'].status === 'running') {
+          if (payload.stage === 'pass-2' && next['pass-1'].status === 'running')
             next['pass-1'] = { status: 'done', message: 'Papers fetched' }
-          }
           if (payload.stage === 'pass-3') {
             if (next['pass-1'].status === 'running')
               next['pass-1'] = { status: 'done', message: 'Papers fetched' }
@@ -104,17 +92,13 @@ export default function ResearchProgress({
       } else if (event === 'error' && payload?.message) {
         setStages((s) => {
           const next = { ...s }
-          if (payload.stage && next[payload.stage]) {
+          if (payload.stage && next[payload.stage])
             next[payload.stage] = { status: 'error', message: payload.message }
-          }
           return next
         })
         setError(payload.message)
       } else if (event === 'done' && payload?.slug) {
-        setStages((s) => ({
-          ...s,
-          'pass-3': { status: 'done', message: 'Brief ready' },
-        }))
+        setStages((s) => ({ ...s, 'pass-3': { status: 'done', message: 'Brief ready' } }))
         loadAndNavigate(payload.slug)
       }
     }
@@ -123,32 +107,29 @@ export default function ResearchProgress({
       setNavigating(true)
       try {
         const res = await fetch(`/api/plans/${encodeURIComponent(slug)}`)
-        if (!res.ok) throw new Error(`Research brief not on disk (${res.status})`)
+        if (!res.ok) throw new Error(`Survey not on disk (${res.status})`)
         const plan = (await res.json()) as ResearchBrief
         storePlan(plan)
         router.push(`/brief/${encodeURIComponent(slug)}`)
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load research brief')
+        setError(err instanceof Error ? err.message : 'Failed to load survey')
         setNavigating(false)
       }
     }
 
-    return () => {
-      controller.abort()
-    }
+    return () => { controller.abort() }
   }, [question, router])
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a0f1a]/85 backdrop-blur-sm p-4">
-      <div className="glass rounded-2xl p-6 max-w-2xl w-full flex flex-col gap-5 max-h-[85vh]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-surveyor-bg/90 backdrop-blur-sm p-4">
+      <div className="paper-card rounded-2xl p-6 max-w-2xl w-full flex flex-col gap-5 max-h-[85vh]">
         <div>
-          <h2 className="text-[#00d4aa] font-mono text-xs uppercase tracking-widest mb-1">
-            Researching question
+          <h2 className="font-mono text-xs uppercase tracking-widest mb-2 text-surveyor-muted">
+            Surveying topic
           </h2>
-          <p className="text-white text-sm leading-relaxed">{question}</p>
+          <p className="text-surveyor-text font-body text-sm leading-relaxed">{question}</p>
         </div>
 
-        {/* Stage timeline */}
         <div className="flex flex-col gap-2">
           {(Object.keys(STAGE_LABELS) as Array<keyof typeof STAGE_LABELS>).map((key) => {
             const s = stages[key]
@@ -158,30 +139,30 @@ export default function ResearchProgress({
                 className={[
                   'rounded-xl px-3 py-2.5 border flex items-center gap-3 transition-colors',
                   s.status === 'running'
-                    ? 'border-[#00d4aa]/40 bg-[#00d4aa]/5'
+                    ? 'border-surveyor-accent/40 bg-surveyor-accent-lt'
                     : s.status === 'done'
-                    ? 'border-emerald-500/30 bg-emerald-500/5'
+                    ? 'border-emerald-300 bg-emerald-50'
                     : s.status === 'error'
-                    ? 'border-rose-500/40 bg-rose-500/5'
-                    : 'border-white/5 bg-white/[0.02]',
+                    ? 'border-surveyor-warn/40 bg-surveyor-warn-lt'
+                    : 'border-surveyor-border bg-surveyor-surface',
                 ].join(' ')}
               >
                 <StageIcon status={s.status} />
                 <div className="flex-1 min-w-0">
-                  <p className="text-white text-sm font-semibold">{STAGE_LABELS[key]}</p>
-                  <p className="text-xs text-[#64748b] truncate">{s.message}</p>
+                  <p className="text-surveyor-text text-sm font-semibold font-body">{STAGE_LABELS[key]}</p>
+                  <p className="text-xs text-surveyor-muted font-mono truncate">{s.message}</p>
                 </div>
               </div>
             )
           })}
         </div>
 
-        <p className="text-[10px] font-mono text-[#64748b] -mt-1">
+        <p className="text-[10px] font-mono text-surveyor-muted -mt-1">
           Live logs streaming to the dev-server terminal.
         </p>
 
         {error && (
-          <div className="rounded-xl border border-rose-500/40 bg-rose-500/10 px-3 py-2 text-xs text-rose-300">
+          <div className="rounded-xl border border-surveyor-warn/40 bg-surveyor-warn-lt px-3 py-2 text-xs text-surveyor-warn font-mono">
             {error}
           </div>
         )}
@@ -190,9 +171,9 @@ export default function ResearchProgress({
           <button
             onClick={onCancel}
             disabled={navigating}
-            className="glass px-4 py-2 rounded-lg text-sm text-[#64748b] hover:text-white transition-colors disabled:opacity-50"
+            className="px-4 py-2 rounded-lg text-sm text-surveyor-muted hover:text-surveyor-text border border-surveyor-border transition-colors disabled:opacity-50 font-mono"
           >
-            {navigating ? 'Loading brief…' : 'Cancel'}
+            {navigating ? 'Loading survey…' : 'Cancel'}
           </button>
         </div>
       </div>
@@ -201,12 +182,11 @@ export default function ResearchProgress({
 }
 
 function StageIcon({ status }: { status: StageState['status'] }) {
-  if (status === 'running') {
-    return (
-      <span className="w-4 h-4 border-2 border-[#00d4aa] border-t-transparent rounded-full animate-spin" />
-    )
-  }
-  if (status === 'done') return <span className="text-emerald-400">✓</span>
-  if (status === 'error') return <span className="text-rose-400">✗</span>
-  return <span className="w-4 h-4 rounded-full border border-white/10" />
+  if (status === 'running')
+    return <span className="w-4 h-4 border-2 border-surveyor-accent border-t-transparent rounded-full animate-spin shrink-0" />
+  if (status === 'done')
+    return <span className="text-emerald-600 shrink-0">✓</span>
+  if (status === 'error')
+    return <span className="text-surveyor-warn shrink-0">✗</span>
+  return <span className="w-4 h-4 rounded-full border border-surveyor-border shrink-0" />
 }

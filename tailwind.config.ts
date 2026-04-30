@@ -9,18 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        lab: {
-          bg: '#0a0f1a',
-          surface: '#111827',
-          border: '#1f2d3d',
-          accent: '#00d4aa',
-          warn: '#ff6b35',
-          text: '#e2e8f0',
-          muted: '#64748b',
+        surveyor: {
+          bg:          '#faf8f2',
+          surface:     '#f0ece0',
+          border:      '#ddd5c4',
+          text:        '#1a1208',
+          muted:       '#7a6f62',
+          subtle:      '#5c5347',
+          accent:      '#2a5f45',
+          'accent-lt': '#e6efe9',
+          warn:        '#8b1a2a',
+          'warn-lt':   '#f5e8ea',
         },
       },
       fontFamily: {
-        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+        display: ['Fraunces', 'Georgia', 'serif'],
+        body:    ['Source Serif 4', 'Georgia', 'serif'],
+        mono:    ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
     },
   },

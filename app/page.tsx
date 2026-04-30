@@ -3,40 +3,41 @@ import ResearchInput from '@/components/landing/ResearchInput'
 
 export default function Home() {
   return (
-    <main className="fixed inset-0 overflow-y-auto bg-[#0a0f1a]">
-      <div className="min-h-full px-4 py-10 md:py-16 flex justify-center">
-        <div className="w-full max-w-2xl flex flex-col gap-10">
+    <main className="min-h-screen overflow-y-auto bg-surveyor-bg">
+      <div className="px-4 py-14 md:py-20 flex justify-center">
+        <div className="w-full max-w-2xl flex flex-col gap-12">
+
           {/* Header */}
           <div className="text-center">
-            <p className="text-[#00d4aa] font-mono text-xs uppercase tracking-[0.3em] mb-3">
-              From question to compiled literature
+            <p className="font-mono text-xs uppercase tracking-[0.3em] mb-4 text-surveyor-accent">
+              Research compilation
             </p>
-            <h1 className="text-white font-bold text-4xl md:text-5xl tracking-tight mb-3">
-              GROUNDWORK
+            <h1 className="font-display font-bold text-5xl md:text-6xl tracking-tight mb-4 text-surveyor-text">
+              Surveyor
             </h1>
-            <p className="text-[#64748b] text-sm md:text-base max-w-md mx-auto leading-relaxed">
-              Enter a research question. The pipeline returns a structured Research
-              Brief — key themes, open gaps, methodology landscape, and a prioritized
-              reading list, grounded in real papers.
+            <p className="text-surveyor-muted text-base max-w-sm mx-auto leading-relaxed font-body">
+              Enter a research question. Get back a structured survey of the
+              literature — key themes, open gaps, and a prioritized reading list.
             </p>
           </div>
 
-          {/* Pre-built research briefs */}
-          <PlanPicker />
+          {/* New research input */}
+          <ResearchInput />
 
           {/* Divider */}
           <div className="flex items-center gap-3">
-            <div className="flex-1 h-px bg-white/5" />
-            <span className="text-[10px] font-mono uppercase tracking-widest text-[#64748b]">or</span>
-            <div className="flex-1 h-px bg-white/5" />
+            <div className="flex-1 h-px bg-surveyor-border" />
+            <span className="text-[10px] font-mono uppercase tracking-widest text-surveyor-muted">previous surveys</span>
+            <div className="flex-1 h-px bg-surveyor-border" />
           </div>
 
-          {/* Fresh research input */}
-          <ResearchInput />
+          {/* Pre-built surveys */}
+          <PlanPicker />
 
-          <p className="text-[#1f2d3d] text-xs text-center font-mono">
+          <p className="text-surveyor-border text-xs text-center font-mono">
             Powered by Claude · 3-pass agent pipeline
           </p>
+
         </div>
       </div>
     </main>
