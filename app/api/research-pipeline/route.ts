@@ -35,17 +35,14 @@ export async function POST(req: NextRequest) {
       }
 
       try {
-        send('stage', { stage: 'pass-1', message: `Starting deep research for ${slug}` })
+        send('stage', { stage: 'pass-1', message: `Searching papers for ${slug}` })
         await runPass(send, 'pass-1', `/pass-1 ${slug} "${escapeQuotes(hypothesis)}"`)
 
-        send('stage', { stage: 'pass-2', message: 'Compiling wiki' })
+        send('stage', { stage: 'pass-2', message: 'Building wiki' })
         await runPass(send, 'pass-2', `/pass-2 ${slug}`)
 
-        send('stage', { stage: 'pass-3', message: 'Generating Lab Brief' })
+        send('stage', { stage: 'pass-3', message: 'Synthesising Research Brief' })
         await runPass(send, 'pass-3', `/pass-3 ${slug}`)
-
-        send('stage', { stage: 'pass-4', message: 'Rendering wiki HTML and AR lab' })
-        await runPass(send, 'pass-4', `/pass-4 ${slug}`)
 
         send('done', { slug })
       } catch (err) {

@@ -1,12 +1,12 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 import { NextResponse } from 'next/server'
-import type { LabBriefPlan, PlanSummary } from '@/lib/plan-schema'
+import type { ResearchBrief, PlanSummary } from '@/lib/plan-schema'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-// GET /api/plans → list all hypotheses with a plan.json on disk.
+// GET /api/plans → list all research topics with a plan.json on disk.
 export async function GET() {
   const root = path.join(process.cwd(), 'hypotheses')
   let dirs: string[] = []
@@ -23,16 +23,16 @@ export async function GET() {
       const planPath = path.join(root, slug, 'plan', 'plan.json')
       try {
         const raw = await fs.readFile(planPath, 'utf-8')
-        const plan = JSON.parse(raw) as LabBriefPlan
+        const plan = JSON.parse(raw) as ResearchBrief
         summaries.push({
           slug,
           title:
-            plan.hypothesis?.refined?.intervention ??
-            plan.hypothesis?.original_question ??
+            plan.topic?.refined?.research_question ??
+            plan.topic?.original_question ??
             slug,
-          domain: domainFromSlug(slug),
-          novelty: plan.novelty?.verdict ?? 'not-found',
-          steps_count: plan.protocol?.length ?? 0,
+          domain: domainFromPlan(plan, slug),
+          landscape: plan.landscape?.verdict ?? 'emerging',
+          themes_count: plan.key_themes?.length ?? 0,
         })
       } catch {
         // No plan yet, skip
@@ -45,12 +45,15 @@ export async function GET() {
   return NextResponse.json(summaries)
 }
 
-function domainFromSlug(slug: string): string {
-  // Strip date prefix YYYY-MM-DD_
+function domainFromPlan(plan: ResearchBrief, slug: string): string {
+  const domain = plan.topic?.refined?.domain
+  if (domain) return domain
   const stripped = slug.replace(/^\d{4}-\d{2}-\d{2}_/, '')
-  if (/cell|hela|trehalose|cryo/i.test(stripped)) return 'Cell Biology'
-  if (/gut|microb|probiotic|lacto|FITC/i.test(stripped)) return 'Gut Health'
-  if (/biosensor|ELISA|CRP|diagnos/i.test(stripped)) return 'Diagnostics'
-  if (/CO2|carbon|climate|sporo/i.test(stripped)) return 'Climate'
-  return 'Generic'
+  if (/nlp|language|transformer|llm|gpt|bert/i.test(stripped)) return 'NLP'
+  if (/vision|image|cnn|detection|segmentation/i.test(stripped)) return 'Computer Vision'
+  if (/reinforcement|rl|agent|policy/i.test(stripped)) return 'Reinforcement Learning'
+  if (/graph|gnn|network/i.test(stripped)) return 'Graph Learning'
+  if (/system|distributed|inference|efficient/i.test(stripped)) return 'Systems'
+  if (/security|privacy|adversarial/i.test(stripped)) return 'Security'
+  return 'AI / ML'
 }

@@ -5,24 +5,24 @@ import ResearchProgress from './ResearchProgress'
 
 const SAMPLES: Array<{ label: string; text: string }> = [
   {
-    label: 'Trehalose cryopreservation',
-    text: 'Replacing sucrose with trehalose as a cryoprotectant in the freezing medium will increase post-thaw viability of HeLa cells by at least 15 percentage points compared to the standard DMSO protocol, due to trehalose superior membrane stabilization at low temperatures.',
+    label: 'Diffusion models for code',
+    text: 'How are diffusion models being applied to code generation, and what are the key differences in performance and controllability compared to autoregressive language models for programming tasks?',
   },
   {
-    label: 'L. rhamnosus gut barrier',
-    text: 'Supplementing C57BL/6 mice with Lactobacillus rhamnosus GG for 4 weeks will reduce intestinal permeability by at least 30% compared to controls, measured by FITC-dextran assay, due to upregulation of tight junction proteins claudin-1 and occludin.',
+    label: 'LLMs for theorem proving',
+    text: 'What is the current state of large language models applied to formal mathematical theorem proving, and what are the main gaps between neural and symbolic approaches?',
   },
   {
-    label: 'CRP biosensor',
-    text: 'A paper-based electrochemical biosensor functionalized with anti-CRP antibodies will detect C-reactive protein in whole blood at concentrations below 0.5 mg/L within 10 minutes, matching laboratory ELISA sensitivity without requiring sample preprocessing.',
+    label: 'Efficient LLM inference',
+    text: 'What techniques exist for reducing the computational cost of large language model inference at deployment time, and which approaches show the best accuracy-efficiency tradeoffs?',
   },
   {
-    label: 'Sporomusa CO₂ capture',
-    text: 'Introducing Sporomusa ovata into a bioelectrochemical system at a cathode potential of −400mV vs SHE will fix CO₂ into acetate at a rate of at least 150 mmol/L/day, outperforming current biocatalytic carbon capture benchmarks by at least 20%.',
+    label: 'Graph neural networks for drug discovery',
+    text: 'How are graph neural networks being used in molecular property prediction and drug discovery, and what are the main limitations that prevent wider clinical adoption?',
   },
 ]
 
-export default function HypothesisInput() {
+export default function ResearchInput() {
   const [text, setText] = useState('')
   const [running, setRunning] = useState(false)
 
@@ -38,14 +38,14 @@ export default function HypothesisInput() {
   return (
     <div className="flex flex-col gap-3 w-full">
       <h3 className="text-[#00d4aa] font-mono text-xs uppercase tracking-widest">
-        Research a fresh hypothesis
+        Research a new question
       </h3>
 
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
         rows={4}
-        placeholder="Enter a scientific hypothesis. Strong inputs name an intervention, an outcome with a threshold, a mechanism, and a control."
+        placeholder="Enter a research question or topic. Strong inputs name a specific area, a contested open problem, or a methodology comparison. e.g. 'How are transformer attention mechanisms applied to time-series forecasting?'"
         className="w-full glass rounded-xl px-4 py-3 text-sm text-white placeholder-[#64748b]/70 outline-none focus:border-[#00d4aa]/50 resize-none"
       />
 
@@ -74,7 +74,7 @@ export default function HypothesisInput() {
         canonical pipeline. Takes a few minutes — sources are fetched live.
       </p>
 
-      {running && <ResearchProgress hypothesis={text} onCancel={handleCancel} />}
+      {running && <ResearchProgress question={text} onCancel={handleCancel} />}
     </div>
   )
 }

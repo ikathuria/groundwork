@@ -1,12 +1,12 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 import { NextResponse } from 'next/server'
-import type { LabBriefPlan } from '@/lib/plan-schema'
+import type { ResearchBrief } from '@/lib/plan-schema'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-// GET /api/plans/[slug] → return the parsed plan.json for one hypothesis.
+// GET /api/plans/[slug] → return the parsed plan.json for one research topic.
 export async function GET(
   _req: Request,
   { params }: { params: { slug: string } },
@@ -20,9 +20,9 @@ export async function GET(
   const planPath = path.join(process.cwd(), 'hypotheses', slug, 'plan', 'plan.json')
   try {
     const raw = await fs.readFile(planPath, 'utf-8')
-    const plan = JSON.parse(raw) as LabBriefPlan
+    const plan = JSON.parse(raw) as ResearchBrief
     return NextResponse.json(plan)
-  } catch (err) {
+  } catch {
     return new NextResponse(`Plan not found: ${slug}`, { status: 404 })
   }
 }

@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { storePlan } from '@/lib/load-plan'
-import type { LabBriefPlan } from '@/lib/plan-schema'
+import type { ResearchBrief } from '@/lib/plan-schema'
 
 interface ResearchProgressProps {
-  hypothesis: string
+  question: string
   onCancel: () => void
 }
 
@@ -18,13 +18,13 @@ interface StageState {
 }
 
 const STAGE_LABELS: Record<Exclude<Stage, 'done' | 'error'>, string> = {
-  'pass-1': 'Pass 1 — Deep Research',
-  'pass-2': 'Pass 2 — Wiki Compile',
-  'pass-3': 'Pass 3 — Lab Brief',
+  'pass-1': 'Pass 1 — Searching papers',
+  'pass-2': 'Pass 2 — Building wiki',
+  'pass-3': 'Pass 3 — Synthesising brief',
 }
 
 export default function ResearchProgress({
-  hypothesis,
+  question,
   onCancel,
 }: ResearchProgressProps) {
   const router = useRouter()
@@ -44,7 +44,7 @@ export default function ResearchProgress({
     fetch('/api/research-pipeline', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ hypothesis }),
+      body: JSON.stringify({ hypothesis: question }),
       signal: controller.signal,
     })
       .then(async (res) => {
@@ -61,7 +61,6 @@ export default function ResearchProgress({
           if (done) break
           buf += decoder.decode(value, { stream: true })
 
-          // Parse SSE events: chunks separated by blank line
           let idx
           while ((idx = buf.indexOf('\n\n')) !== -1) {
             const evtBlock = buf.slice(0, idx)
@@ -90,13 +89,12 @@ export default function ResearchProgress({
       if (event === 'stage' && payload?.stage) {
         setStages((s) => {
           const next = { ...s }
-          // Mark previous stages done
           if (payload.stage === 'pass-2' && next['pass-1'].status === 'running') {
-            next['pass-1'] = { status: 'done', message: 'Sources fetched' }
+            next['pass-1'] = { status: 'done', message: 'Papers fetched' }
           }
           if (payload.stage === 'pass-3') {
             if (next['pass-1'].status === 'running')
-              next['pass-1'] = { status: 'done', message: 'Sources fetched' }
+              next['pass-1'] = { status: 'done', message: 'Papers fetched' }
             if (next['pass-2'].status === 'running')
               next['pass-2'] = { status: 'done', message: 'Wiki compiled' }
           }
@@ -115,7 +113,7 @@ export default function ResearchProgress({
       } else if (event === 'done' && payload?.slug) {
         setStages((s) => ({
           ...s,
-          'pass-3': { status: 'done', message: 'Plan ready' },
+          'pass-3': { status: 'done', message: 'Brief ready' },
         }))
         loadAndNavigate(payload.slug)
       }
@@ -125,12 +123,12 @@ export default function ResearchProgress({
       setNavigating(true)
       try {
         const res = await fetch(`/api/plans/${encodeURIComponent(slug)}`)
-        if (!res.ok) throw new Error(`Plan not on disk (${res.status})`)
-        const plan = (await res.json()) as LabBriefPlan
+        if (!res.ok) throw new Error(`Research brief not on disk (${res.status})`)
+        const plan = (await res.json()) as ResearchBrief
         storePlan(plan)
-        router.push(`/ar/${encodeURIComponent(slug)}`)
+        router.push(`/brief/${encodeURIComponent(slug)}`)
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load plan')
+        setError(err instanceof Error ? err.message : 'Failed to load research brief')
         setNavigating(false)
       }
     }
@@ -138,16 +136,16 @@ export default function ResearchProgress({
     return () => {
       controller.abort()
     }
-  }, [hypothesis, router])
+  }, [question, router])
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a0f1a]/85 backdrop-blur-sm p-4">
       <div className="glass rounded-2xl p-6 max-w-2xl w-full flex flex-col gap-5 max-h-[85vh]">
         <div>
           <h2 className="text-[#00d4aa] font-mono text-xs uppercase tracking-widest mb-1">
-            Researching hypothesis
+            Researching question
           </h2>
-          <p className="text-white text-sm leading-relaxed">{hypothesis}</p>
+          <p className="text-white text-sm leading-relaxed">{question}</p>
         </div>
 
         {/* Stage timeline */}
@@ -178,8 +176,6 @@ export default function ResearchProgress({
           })}
         </div>
 
-        {/* Verbose stream-json logs are written to the dev-server terminal,
-            not the UI. Watch the terminal where `npm run dev` is running. */}
         <p className="text-[10px] font-mono text-[#64748b] -mt-1">
           Live logs streaming to the dev-server terminal.
         </p>
@@ -196,7 +192,7 @@ export default function ResearchProgress({
             disabled={navigating}
             className="glass px-4 py-2 rounded-lg text-sm text-[#64748b] hover:text-white transition-colors disabled:opacity-50"
           >
-            {navigating ? 'Loading plan…' : 'Cancel'}
+            {navigating ? 'Loading brief…' : 'Cancel'}
           </button>
         </div>
       </div>

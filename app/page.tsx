@@ -1,6 +1,5 @@
-import Link from 'next/link'
 import PlanPicker from '@/components/landing/PlanPicker'
-import HypothesisInput from '@/components/landing/HypothesisInput'
+import ResearchInput from '@/components/landing/ResearchInput'
 
 export default function Home() {
   return (
@@ -10,19 +9,19 @@ export default function Home() {
           {/* Header */}
           <div className="text-center">
             <p className="text-[#00d4aa] font-mono text-xs uppercase tracking-[0.3em] mb-3">
-              From hypothesis to runnable experiment
+              From question to compiled literature
             </p>
             <h1 className="text-white font-bold text-4xl md:text-5xl tracking-tight mb-3">
               GROUNDWORK
             </h1>
             <p className="text-[#64748b] text-sm md:text-base max-w-md mx-auto leading-relaxed">
-              Enter a scientific hypothesis. The pipeline returns a complete
-              operational experiment plan — grounded in real protocols,
-              failure-aware, and ready to run in AR.
+              Enter a research question. The pipeline returns a structured Research
+              Brief — key themes, open gaps, methodology landscape, and a prioritized
+              reading list, grounded in real papers.
             </p>
           </div>
 
-          {/* Pre-baked picker */}
+          {/* Pre-built research briefs */}
           <PlanPicker />
 
           {/* Divider */}
@@ -32,21 +31,11 @@ export default function Home() {
             <div className="flex-1 h-px bg-white/5" />
           </div>
 
-          {/* Fresh research */}
-          <HypothesisInput />
-
-          {/* Sample experiment shortcut */}
-          <div className="text-center">
-            <Link
-              href="/ar?sample=1"
-              className="text-[#64748b] hover:text-white text-xs underline-offset-4 hover:underline transition-colors"
-            >
-              Skip — launch AR with the built-in sample experiment →
-            </Link>
-          </div>
+          {/* Fresh research input */}
+          <ResearchInput />
 
           <p className="text-[#1f2d3d] text-xs text-center font-mono">
-            Built for Hack Nation Global AI Hackathon · Challenge 04
+            Powered by Claude · 3-pass agent pipeline
           </p>
         </div>
       </div>

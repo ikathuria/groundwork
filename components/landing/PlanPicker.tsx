@@ -3,18 +3,18 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { storePlan } from '@/lib/load-plan'
-import type { LabBriefPlan, PlanSummary } from '@/lib/plan-schema'
+import type { ResearchBrief, PlanSummary } from '@/lib/plan-schema'
 
-const NOVELTY_LABEL: Record<string, string> = {
-  'not-found': 'Novel',
-  'similar-work-exists': 'Similar work exists',
-  'exact-match-found': 'Exact match found',
+const LANDSCAPE_LABEL: Record<string, string> = {
+  'active': 'Active field',
+  'emerging': 'Emerging',
+  'saturated': 'Well-trodden',
 }
 
-const NOVELTY_COLOR: Record<string, string> = {
-  'not-found': 'text-emerald-300 bg-emerald-500/10 border-emerald-500/30',
-  'similar-work-exists': 'text-amber-300 bg-amber-500/10 border-amber-500/30',
-  'exact-match-found': 'text-rose-300 bg-rose-500/10 border-rose-500/30',
+const LANDSCAPE_COLOR: Record<string, string> = {
+  'active': 'text-emerald-300 bg-emerald-500/10 border-emerald-500/30',
+  'emerging': 'text-amber-300 bg-amber-500/10 border-amber-500/30',
+  'saturated': 'text-sky-300 bg-sky-500/10 border-sky-500/30',
 }
 
 export default function PlanPicker() {
@@ -34,30 +34,27 @@ export default function PlanPicker() {
     setLoadingSlug(slug)
     setError('')
     try {
-      // Pre-fetch validates the plan exists on disk and warms the API cache,
-      // then we hand off to /ar/<slug> (canonical) so the URL is shareable / refreshable.
-      // sessionStorage is kept as a fallback in case the slug fetch fails inside ARViewer.
       const res = await fetch(`/api/plans/${encodeURIComponent(slug)}`)
-      if (!res.ok) throw new Error(`Failed to load plan (${res.status})`)
-      const plan = (await res.json()) as LabBriefPlan
+      if (!res.ok) throw new Error(`Failed to load research brief (${res.status})`)
+      const plan = (await res.json()) as ResearchBrief
       storePlan(plan)
-      router.push(`/ar/${encodeURIComponent(slug)}`)
+      router.push(`/brief/${encodeURIComponent(slug)}`)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load plan')
+      setError(err instanceof Error ? err.message : 'Failed to load research brief')
       setLoadingSlug(null)
     }
   }
 
   if (plans === null) {
     return (
-      <div className="text-[#64748b] text-sm font-mono">Loading pre-baked plans…</div>
+      <div className="text-[#64748b] text-sm font-mono">Loading research briefs…</div>
     )
   }
 
   if (plans.length === 0) {
     return (
       <div className="text-[#64748b] text-sm">
-        No pre-baked plans yet. Generate one below ↓
+        No research briefs yet. Generate one below ↓
       </div>
     )
   }
@@ -65,7 +62,7 @@ export default function PlanPicker() {
   return (
     <div className="flex flex-col gap-3 w-full">
       <h3 className="text-[#00d4aa] font-mono text-xs uppercase tracking-widest">
-        Pre-baked plans
+        Research briefs
       </h3>
       <div className="flex flex-col gap-2">
         {plans.map((p) => (
@@ -81,16 +78,16 @@ export default function PlanPicker() {
                 <div className="flex items-center gap-2 mt-1.5 text-xs text-[#64748b]">
                   <span>{p.domain}</span>
                   <span>·</span>
-                  <span>{p.steps_count} step{p.steps_count === 1 ? '' : 's'}</span>
+                  <span>{p.themes_count} theme{p.themes_count === 1 ? '' : 's'}</span>
                 </div>
               </div>
               <span
                 className={[
                   'shrink-0 px-2 py-0.5 rounded-full text-[10px] font-mono uppercase tracking-wider border',
-                  NOVELTY_COLOR[p.novelty] ?? 'text-[#64748b] border-white/10',
+                  LANDSCAPE_COLOR[p.landscape] ?? 'text-[#64748b] border-white/10',
                 ].join(' ')}
               >
-                {NOVELTY_LABEL[p.novelty] ?? p.novelty}
+                {LANDSCAPE_LABEL[p.landscape] ?? p.landscape}
               </span>
             </div>
             {loadingSlug === p.slug && (

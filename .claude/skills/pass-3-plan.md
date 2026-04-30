@@ -1,6 +1,6 @@
 ---
 name: pass-3-plan
-description: Pass 3 of the GROUNDWORK pipeline — synthesise the experiment plan from a compiled hypothesis wiki and produce a fully bespoke, polished, interactive Lab Brief web page (`plan/index.html`) tailored to *this specific* hypothesis, plus the canonical structured data (`plan.json`) and an Obsidian-readable mirror (`plan.md`). The Lab Brief is the user-facing deliverable.
+description: Pass 3 of the GROUNDWORK pipeline — synthesise the Research Brief from a compiled hypothesis wiki and produce a fully bespoke, polished, interactive Research Brief web page (`plan/index.html`) tailored to this specific research question, plus the canonical structured data (`plan.json`) and an Obsidian-readable mirror (`plan.md`). The Research Brief is the user-facing deliverable.
 allowed-tools:
   - Read
   - Write
@@ -10,182 +10,168 @@ allowed-tools:
   - Bash
 arguments:
   - name: slug
-    description: The hypothesis folder name (date-prefixed slug), e.g. "2026-04-25_trehalose-hela-cryopreservation".
+    description: The hypothesis folder name (date-prefixed slug), e.g. "2026-04-25_transformer-attention-time-series".
     required: true
 ---
 
-# Pass 3 — Plan / Lab Brief
+# Pass 3 — Research Brief
 
-You are running **Pass 3** of the GROUNDWORK pipeline. **Read `context.md` first** if you haven't this session — especially §7.3 (Pass 3 spec), §8 (canonical data shape), §9 (Lab Brief UX requirements). The schema there is canonical.
+You are running **Pass 3** of the GROUNDWORK pipeline. **Read `context.md` first** if you haven't this session.
 
-The deliverable of Pass 3 is a **complete, polished, interactive web page** at `hypotheses/<slug>/plan/index.html`. **There is no template — generate every Lab Brief bespoke from scratch.** A bespoke Lab Brief lets you tailor the visual identity, layout, and visualizations to the *specific* experiment: cryopreservation can feel cold and crystalline, microbiome work can feel organic and networked, biosensor diagnostics can feel signal-clean. That tailoring is the differentiator — do not hand back a generic dashboard.
+The deliverable of Pass 3 is a **complete, polished, interactive Research Brief** at `hypotheses/<slug>/plan/index.html`. **There is no template — generate every Research Brief bespoke from scratch.** The brief synthesises what the field knows, what it doesn't know, and what the most important papers are — presented as a thoughtful literature review a good advisor would hand you on day one.
 
 ## Input
 
-- `slug` (positional 1): hypothesis folder name, e.g. `2026-04-25_trehalose-hela-cryopreservation`.
+- `slug` (positional 1): hypothesis folder name, e.g. `2026-04-25_transformer-attention-time-series`.
 
 ## Steps
 
-1. **Orient.** Read `hypotheses/<slug>/hypothesis.md` and `hypotheses/<slug>/wiki/index.md`. Then read every entity page relevant to the hypothesis: methods it implies, reagents, organisms, and especially failure modes that apply to the methods. Also check `commons/` for any linked entities — corrections or richer content may live there.
+1. **Orient.** Read `hypotheses/<slug>/hypothesis.md` and `hypotheses/<slug>/wiki/index.md`. Then read every entity page relevant to the topic: methods, key concepts, and especially open questions / failure modes that apply. Also check `commons/` for any linked entities.
 
-2. **Generate the literature QC verdict.** Choose one of `not-found`, `similar-work-exists`, or `exact-match-found`, with 1–3 reference sources (each with a `wiki_page` pointer into `wiki/sources/`).
+2. **Generate the landscape verdict.** Choose one of:
+   - `active` — field is well-developed with many recent papers and clear progress
+   - `emerging` — growing interest but not yet saturated; significant open questions remain
+   - `saturated` — heavily studied; incremental work dominates; genuinely novel angles are narrow
+   Include 1–3 landmark references that characterise the landscape.
 
-3. **Synthesise the plan content.** Required fields (this is the canonical data, see `context.md` §8):
+3. **Synthesise the brief content.** Required fields (canonical data shape):
 
-   - `meta`: slug, version (integer, increment per regen), generated_at (ISO), domain, status, corrections_applied
-   - `hypothesis`: original_question, refined.{intervention, outcome, threshold, mechanism, control}
-   - `novelty`: verdict, verdict_text, references[]
-   - `summary`: total_budget_usd, total_timeline_weeks, phases_count, sources_count, sources_breakdown.{papers, protocols, retractions, catalogs}, failure_modes_count, failure_severity.{high, medium, low}, pull_quote
-   - `protocol[]`: step, title, duration_minutes, rationale, reagents[] (each with wiki_page, name, supplier, catalog, qty), failure_warnings[] (each with wiki_page, severity, label, mitigation), source_citations[]
-   - `materials[]`: wiki_page, name, supplier, catalog, qty, unit, price_usd
-   - `budget[]`: category, description, cost_usd
-   - `timeline[]`: name, start_week, duration_weeks, depends_on[], criticality (0=normal, 1=critical, 2=long-running)
-   - `validation`: success_criteria[], failure_criteria[], measurements[] (endpoint, method, threshold, n)
-   - `failure_map[]`: id, label, severity, frequency_estimate, applies_to[], applies_to_step, mitigation, wiki_page
-   - `sources[]`: id, title, authors, year, doi, tag (paper|protocol|retraction|pubpeer|catalog), wiki_page
-   - `wiki_drilldowns`: map keyed by `wiki_page` → `{ title, subtitle, body (markdown) }`. Required for every failure mode in `failure_map`. For reagents and sources, populate the most-cited / most-relevant entries; the renderer can show stubs for the rest.
+   - `topic`: slug, original_question, refined.{research_question, scope, domain, approach, context}
+   - `landscape`: verdict, summary, key_prior_work[]
+   - `summary`: total_sources, total_themes, total_gaps, pull_quote, sources_breakdown.{papers, preprints, surveys, other}
+   - `key_themes[]`: theme, description, evidence_summary, source_citations[] — the 3–7 major intellectual threads in the literature
+   - `research_gaps[]`: gap, explanation, open_questions[], potential_directions[] — what is genuinely unanswered
+   - `reading_list[]`: id, title, authors, year, doi, why_relevant, priority (1=must-read, 5=optional), wiki_page — prioritized for someone starting in this area
+   - `methodology_overview[]`: method, description, used_in_papers[], strengths[], limitations[], wiki_page
+   - `publication_timeline[]`: optional, phases of the field's development (e.g. "Early foundations 2015–2018", "Transformer era 2019–2022", "Current frontier 2023–present")
+   - `sources[]`: id, title, authors, year, doi, tag (paper|preprint|survey|workshop|other), wiki_page
+   - `wiki_drilldowns`: map keyed by wiki_page → {title, subtitle, body_md}. Required for every key theme's source and every reading list entry priority ≤ 2.
 
-4. **Write `hypotheses/<slug>/plan/plan.json`** — the canonical data. Every reagent / failure_warning / source_citation / `applies_to` / drilldown key must include or reference a real `wiki_page` path that exists.
+4. **Write `hypotheses/<slug>/plan/plan.json`** — the canonical data. Every source_citation and wiki_page must reference a real path that exists in the wiki.
 
-5. **Write `hypotheses/<slug>/plan/plan.md`** — a human-readable mirror with Obsidian wikilinks for every entity reference. This is the in-Obsidian view of the plan.
+5. **Write `hypotheses/<slug>/plan/plan.md`** — a human-readable mirror with Obsidian wikilinks for every entity reference.
 
-6. **Build the wiki-corpus bundle** (the side panel's data source — see "Wiki browser" below). Run:
+6. **Build the wiki-corpus bundle** (the side panel's data source). Run:
    ```bash
    python3 tools/build-wiki-bundle.py hypotheses/<slug>/wiki \
      --out hypotheses/<slug>/plan/.wiki-bundle.json \
      --commons commons
    ```
-   This walks every `*.md` in the vault (plus `hypothesis.md`, `session.log.md`, and any commons content), parses YAML frontmatter, and emits one JSON object: `{ version, vault_root, pages: { <slug>: { slug, type, title, path, scope, frontmatter, body_md } }, stats }`. Bodies are kept as raw markdown and rendered on the client. If the script is missing, recreate it from the spec at the top of `tools/build-wiki-bundle.py` — the contract is the JSON shape, not the implementation.
+   This walks every `*.md` in the vault, parses YAML frontmatter, and emits one JSON object: `{ version, vault_root, pages: { <slug>: { slug, type, title, path, scope, frontmatter, body_md } }, stats }`. If the script is missing, recreate it — the contract is the JSON shape.
 
-7. **Generate `hypotheses/<slug>/plan/index.html`** — **a fully bespoke, single-file, interactive Lab Brief page tailored to this hypothesis.** See "Lab Brief design specification" below for the quality bar, required surfaces, and the wiki-browser contract. The data must be embedded inline (do not rely on `fetch('./plan.json')` — the file works via `file://`):
+7. **Generate `hypotheses/<slug>/plan/index.html`** — **a fully bespoke, single-file, interactive Research Brief tailored to this topic.** See "Research Brief design specification" below. The data must be embedded inline:
    - `<script type="application/json" id="plan-data">…contents of plan.json…</script>`
    - `<script type="application/json" id="wiki-corpus">…contents of .wiki-bundle.json…</script>`
 
-8. **File the plan back into the wiki** at `hypotheses/<slug>/wiki/plans/plan-v<n>.md`. `<n>` increments per regeneration.
+8. **File the plan back into the wiki** at `hypotheses/<slug>/wiki/plans/plan-v<n>.md`.
 
 9. **Update `hypotheses/<slug>/hypothesis.md`** — set `status: complete`, link to the latest plan version.
 
 10. **Append `hypotheses/<slug>/session.log.md`**:
     ```
     ## [YYYY-MM-DD HH:MM] plan | plan-v<n>
-    Total budget: $X. Timeline: N weeks. Sources used: M. Top failure modes: <list>.
-    Novelty: <verdict>. Lab Brief: hypotheses/<slug>/plan/index.html
+    Total sources: N. Themes: T. Gaps: G. Landscape: <verdict>.
+    Research Brief: hypotheses/<slug>/plan/index.html
     ```
 
 11. **Stop and report.** Provide:
-    - Total budget (USD) and timeline (weeks)
-    - Top 3 failure modes
-    - Novelty verdict
-    - Path to the rendered `plan/index.html` so the user can open it
-    - The aesthetic direction you chose for this hypothesis and *why* it fits
-    - Anything in the plan that feels under-supported by the wiki
+    - Landscape verdict and summary
+    - Top 3 key themes
+    - Top 3 research gaps
+    - Reading list count (priority 1–2 entries)
+    - Path to `plan/index.html`
+    - The aesthetic direction you chose and *why* it fits this research topic
+    - Anything in the brief that feels under-supported by the wiki
 
-## Lab Brief design specification
-
-This is the meat of Pass 3 — a polished bespoke web page. Treat it as a serious frontend deliverable, not a data dump.
+## Research Brief design specification
 
 ### Aesthetic direction (mandatory creative choice)
 
-Before writing any HTML, **commit to an aesthetic direction rooted in this hypothesis's subject**. Don't reach for generic SaaS / dashboard look. A few honest examples:
+Before writing any HTML, **commit to an aesthetic direction rooted in this topic's character**. Don't reach for generic SaaS / dashboard look. Examples:
 
-- **Cryobiology / cell freezing** → cold, crystalline. Cool blues, hairline rules, glassy panels, slow ice-forming animations. A serif with optical clarity.
-- **Microbiome / gut health** → organic, networked. Warm earthy palette, network/community visualizations, organic curves, a humanist sans paired with a softer serif.
-- **Diagnostics / biosensor** → signal-clean. Lab whites and one signal accent, calibration-curve visualization, monospace-heavy data presentation, tight grid.
-- **Carbon capture / bioelectrochemistry** → industrial, electron-flow. Steel blues, copper accents, circuit-style line work, isometric or schematic diagrams.
-- **Editorial / scientific journal** (a safe but elegant default if no specific direction fits) → warm parchment background, ferric-red accents for failure modes, Fraunces or another distinctive serif for display, marginalia citations.
+- **Foundational ML / theory** → clean mathematical. Cream background, ink-black text, one warm accent color, generous whitespace, math-journal typography. Like a well-typeset paper.
+- **Systems / infrastructure** → technical precision. Dark background, monospace-heavy, terminal-style, cyan/green accents. Like a great README meets a conference talk.
+- **NLP / language models** → textual, layered. Book-like layout, serif display type, soft warm tones, emphasis on text and citation flow.
+- **Computer vision / multimodal** → visual, spatial. Generous image placeholders, grid layouts, bold titles, one strong color accent.
+- **Interdisciplinary / emerging area** → exploratory. Network/graph motifs, gradient backgrounds, overlapping circles of influence, discovery-oriented.
+- **Editorial / scientific journal** (safe elegant default) → warm parchment, ferric-red accents for gaps, Fraunces or another distinctive serif for display, marginalia citations.
 
-**You must pick a direction and execute it with intention.** The aesthetic should feel chosen-for-this-experiment, not retrofitted. State the direction at the top of `plan/index.html` as a comment so future readers can see the design intent.
+**You must pick a direction and execute it with intention.** State it at the top of `plan/index.html` as an HTML comment.
 
 ### Required structural surfaces
 
-Whatever aesthetic you choose, the page must contain all of:
-
-1. **Hero / Skim** — refined hypothesis (the title), domain + novelty verdict + status badges, four big stat tiles (budget, timeline, sources, failure modes count), a one-sentence pull quote framing the dominant failure modes. Readable in 30 seconds.
-2. **Hypothesis breakdown** — the 5 refined fields (intervention / outcome / threshold / mechanism / control) presented as a structured grid or table.
-3. **Literature QC** — verdict prominent, 1–3 references cited with author / year / DOI.
-4. **Protocol** — every step from `protocol[]`, numbered. Each step shows: title, duration, rationale, reagents (clickable chips → drilldown), inline failure warnings (callouts with severity-coded color), source citations as marginalia or footnotes.
-5. **Materials** — table of every reagent with supplier, catalog number, quantity, unit, price.
-6. **Budget** — line items + total. Include a visualization (pie / doughnut / bar / treemap — pick what fits the design direction).
-7. **Timeline** — phases with start week, duration, dependencies. Include a visualization (gantt, swim lane, timeline strip — your choice).
-8. **Validation** — success criteria, failure criteria, measurements table.
-9. **Failure Map** — the differentiator surface. Top failure modes for this experiment type, presented as a visualization (network graph, severity-ranked list, heatmap on the protocol — your choice). Each failure node clickable → drilldown.
-10. **Sources** — every citation as a card or row, tagged by source_type, with author / year / DOI / link.
-11. **Wiki browser (side panel)** — slides in from the side when the user clicks any wiki entity anywhere on the page (reagent chip, failure-mode callout, source citation, method link, or any inline `[[wikilink]]`). Renders the **full wiki page** for that slug from the embedded wiki corpus. Maintains a navigation stack so wikilinks inside the panel deep-dive without leaving the brief. See "Wiki browser" below for the full contract.
+1. **Hero / Skim** — research question (title), domain + landscape verdict badge, three stat tiles (total sources, themes, gaps), one-sentence pull quote framing the core finding. Readable in 30 seconds.
+2. **Topic breakdown** — the 5 refined fields (research_question, scope, domain, approach, context) as a structured grid.
+3. **Landscape verdict** — verdict prominent, 1–3 landmark references cited with author / year / DOI.
+4. **Key Themes** — every theme from `key_themes[]`, numbered, expandable. Each shows: description, evidence summary, source citations as clickable chips → wiki drilldown.
+5. **Research Gaps** — every gap from `research_gaps[]`. Each shows: explanation, open questions as a list, potential directions. Use a visually distinct treatment (e.g. dashed border, warning-adjacent but intellectual not alarming).
+6. **Methodology Landscape** — comparison table or card grid of approaches used in the literature. Each methodology: description, papers using it, strengths / limitations. Click → wiki drilldown.
+7. **Reading List** — prioritized annotated bibliography. Priority 1–2 entries are featured (larger, with why_relevant callout). Priority 3–5 are compact list. DOI links. Click → wiki drilldown.
+8. **Publication Timeline** — if present, a timeline visualization showing the field's development phases. Shows when activity surged, landmark papers, current frontier.
+9. **Sources** — every citation as a card or row, tagged by source_type, with author / year / DOI / link.
+10. **Wiki browser (side panel)** — slides in from the side when the user clicks any wiki entity (theme citation, methodology card, reading list entry, or inline `[[wikilink]]`). Full wiki browser per the spec below.
 
 ### Required interactivity
 
-- Click any wiki entity → opens the wiki browser panel on that page.
+- Click any wiki entity → opens wiki browser panel.
 - Sticky header with jump links to every section.
 - Back-to-top affordance.
-- Expandable protocol steps for details (rationale + sources).
-- Visualizations animate on scroll into view (timeline phases build, failure graph nodes settle, doughnut sweeps in, etc.) — animations should *explain*, not decorate.
-- Hover / focus micro-interactions on every interactive element.
-- Smooth scrolling for in-page links.
-- Keyboard accessibility: tab order, Enter/Space for buttons, ESC closes overlays.
+- Expandable theme and gap entries.
+- Visualizations animate on scroll into view.
+- Hover/focus micro-interactions on every interactive element.
+- Smooth scrolling. Keyboard accessibility. ESC closes overlays.
 
 ### Wiki browser (the depth surface)
 
-The wiki is GROUNDWORK's deliverable; the Lab Brief is the lens onto it. The side panel must browse the **entire wiki**, not a hand-curated subset of stubs. The corpus (built in step 6) is embedded as a `<script type="application/json" id="wiki-corpus">` tag containing every page in the vault — frontmatter + raw markdown.
+Same contract as before — the panel browses the **entire wiki** using the embedded corpus.
 
-The renderer is bespoke per hypothesis (it inherits the chosen aesthetic), but the *behavior* below is required. Implement it in plain JS inside the page's `<script>` block.
+**Boot.** Parse `#wiki-corpus`, build `pages = bundle.pages`, build `titleIndex`, compute `backlinks[slug]` from wikilink regex. Cache.
 
-**Boot.** On `DOMContentLoaded`: parse `#wiki-corpus`, build `pages = bundle.pages` (slug → page), build `titleIndex = [{slug, title, type}, ...]` for the quick switcher, and walk every page once to compute `backlinks[slug] = [...sourceSlug]` from the wikilink regex. Cache.
+**Wikilink resolver.** Pattern: `/\[\[((?:\.\.\/)*[^\]|]+?)(?:\|([^\]]+?))?\]\]/g`. Strip leading `../`, trailing `.md`, `#anchor`. Try exact match; if not found, try `<type>/<target>` for each type prefix. Resolved → `<a class="wikilink wikilink-{type}" href="#wiki-{slug}" data-slug="{slug}">`. Unresolved → `<span class="wikilink wikilink-broken">`.
 
-**Wikilink resolver (pure JS).** Pattern: `/\[\[((?:\.\.\/)*[^\]|]+?)(?:\|([^\]]+?))?\]\]/g`. For each match: strip leading `../`, strip trailing `.md`, strip `#anchor` tail. Try exact match against `pages`; if not found, try `<type>/<target>` for each type prefix (`methods`, `reagents`, `organisms`, `failure-modes`, `sources`, `plans`, `commons/methods`, …). Resolved → `<a class="wikilink wikilink-{type}" href="#wiki-{slug}" data-slug="{slug}">{label || page.title}</a>`. Unresolved → `<span class="wikilink wikilink-broken" title="Unresolved: {target}">{label || raw}</span>`. (Failure-mode wikilinks should additionally render with a leading severity dot whose color comes from the target page's `frontmatter.severity`.)
+**Markdown render.** Pre-resolve wikilinks, then `marked.parse(...)` with `{ gfm: true, breaks: false }`. Strip leading H1 before rendering.
 
-**Markdown render.** Pre-resolve wikilinks in the raw markdown body (string-level regex), then render with `marked.parse(...)` (`marked.use({ gfm: true, breaks: false })`). Strip the leading H1 from the body before rendering — it is shown as the panel title instead.
+**Panel rendering.** Show: page title, type badge, frontmatter definition list (filter to relevant keys: `severity`, `frequency_estimate`, `cas`, `suppliers`, `aliases`, `applies_to_*`, `sources`, `tags`, `created`, `updated`), rendered markdown body, then **Backlinks** section grouped by type.
 
-**Panel rendering.** Show, in order: page title (H1), a small badge for `type` (and `severity` if it's a failure mode), a definition list of frontmatter (filter to interesting keys: `severity`, `frequency_estimate`, `cas`, `suppliers`, `aliases`, `applies_to_*`, `sources`, `tags`, `created`, `updated`), the rendered markdown body, then a **Backlinks** section listing every page that wikilinks to this one, grouped by type. Each backlink is itself a wikilink chip → opens that page in the panel.
+**Navigation stack.** Maintain `panelStack`. `openPanel(slug)` pushes; `back()` pops. Header shows back arrow when depth > 1.
 
-**Navigation stack.** Maintain a JS array `panelStack`. `openPanel(slug)` pushes; `back()` pops and re-renders the previous page. Header shows a back arrow when stack depth > 1. Click on any `.wikilink` inside the panel calls `openPanel(slug)` — never navigates the page.
+**Deep linking.** On `openPanel(slug)`: `history.pushState(null, '', '#wiki-' + slug)`. On boot: if hash matches `#wiki-(.+)`, open that page. Listen for `hashchange`. On close: clear hash.
 
-**Deep linking via hash.** On `openPanel(slug)`: `history.pushState(null, '', '#wiki-' + slug)`. On boot: if `location.hash` matches `#wiki-(.+)`, open that page. Listen for `hashchange` (handles back/forward). On panel close: clear the hash.
+**Quick switcher.** `Cmd+K` / `Ctrl+K` opens modal with search input. Live filter by title substring, ranked by prefix match. Up/Down to navigate, Enter to open, ESC to close.
 
-**Quick switcher.** `Cmd+K` / `Ctrl+K` opens a centered modal with a search input. Live filter `titleIndex` by case-insensitive substring on `title`, ranked by match position (prefix match > contains). Up/Down arrows move selection, Enter opens the page in the panel, ESC closes the switcher. Show the page `type` as a badge next to each result.
-
-**Inline severity for failure-mode links.** Every wikilink in protocol callouts and rendered bodies that resolves to a `failure-mode` page should visually carry that page's severity (e.g. a small leading dot or a colored underline) so the reader can scan severity inline without opening the panel. Critical = red, high = orange, medium = amber, low = neutral. Match the dots to your aesthetic palette but keep warning intent.
-
-**Performance.** The corpus is ~500–1000 KB. Parse once at boot; never re-parse. Render markdown lazily on first `openPanel(slug)` and cache the rendered HTML on the page object. Quick-switcher filtering should run synchronously (≤ 500 pages → trivial).
-
-**Optional `wiki_drilldowns` overrides.** If `plan.json` includes a `wiki_drilldowns` map, prefer its content for the matching slugs (the agent can hand-write a richer panel for the most-cited entities). Fall back to the wiki corpus for everything else.
+**Optional `wiki_drilldowns` overrides.** Prefer these for matching slugs; fall back to wiki corpus for everything else.
 
 ### Required quality bar
 
-- **Polished typography.** Pick a distinctive display + body + mono pairing. Avoid generic Inter/Roboto/Arial. Real type hierarchy.
-- **Polished color.** Committed palette with intentional accent use. Failure modes always read with warning intent (some red / orange) regardless of overall palette.
-- **Polished spacing.** Generous whitespace, asymmetric layouts where they help, real grid discipline. No cramped blocks.
-- **Mobile responsive.** Layout collapses sensibly on narrow viewports.
-- **Accessible.** Sufficient contrast, focus rings visible, ARIA where appropriate, `prefers-reduced-motion` respected.
-- **Print-friendly.** A `@media print` block that hides drawer/header/decoration and lets a PI print a clean copy.
-- **Self-contained.** Single HTML file. Both `<script type="application/json" id="plan-data">…</script>` and `<script type="application/json" id="wiki-corpus">…</script>` are embedded inline. Works when opened with `file://` (no fetch). Total page weight typically 600 KB – 1.5 MB depending on wiki size — that's fine; opens instantly off disk.
+- **Polished typography.** Pick a distinctive display + body + mono pairing. Avoid generic Inter/Roboto/Arial.
+- **Polished color.** Committed palette. Research gaps should read with intellectual tension, not alarm.
+- **Polished spacing.** Generous whitespace, real grid discipline.
+- **Mobile responsive.** Collapses sensibly on narrow viewports.
+- **Accessible.** Sufficient contrast, focus rings, ARIA, `prefers-reduced-motion`.
+- **Self-contained.** Single HTML file. Works opened via `file://`.
 
-### Recommended tech stack (flexible — choose what fits the direction)
+### Recommended tech stack
 
-These are CDN-loaded, zero-build, well-tested options. Pick the ones that suit your aesthetic; substitute freely.
-
-- **Tailwind CSS** (Play CDN at `https://cdn.tailwindcss.com`) — utility classes for layout. Or hand-rolled CSS if you want more control.
-- **Alpine.js** (`alpinejs@3`) — declarative state for expand / collapse / drilldown.
-- **GSAP** + **ScrollTrigger** (`gsap@3`) — entry / scroll / stagger animations.
-- **Chart.js** (`chart.js@4`) — budget chart.
-- **D3** (`d3@7`) — failure-map graph, custom timeline, anything bespoke.
-- **marked** (`marked@12`) — render wiki-corpus markdown bodies in the side panel. **Required** for the wiki browser; load from CDN.
-- **Google Fonts** — pick a distinctive pairing (Fraunces, Newsreader, Source Serif, Cormorant, GT Sectra-style; for sans Plus Jakarta, Hanken Grotesk, Manrope, General Sans; for mono JetBrains Mono, IBM Plex Mono, Geist Mono).
-
-You may add other CDN-loaded libraries (Three.js, p5.js, anime.js, lottie-web, Observable Plot, etc.) when a particular visualization or motion idiom genuinely fits the experiment. Avoid anything that requires a build step or a server.
+- **Tailwind CSS** (Play CDN) — layout utilities.
+- **Alpine.js** (`alpinejs@3`) — expand/collapse/drilldown state.
+- **GSAP** + **ScrollTrigger** (`gsap@3`) — entry/scroll animations.
+- **Chart.js** (`chart.js@4`) — source breakdown chart, timeline.
+- **D3** (`d3@7`) — methodology comparison, custom layouts.
+- **marked** (`marked@12`) — **required** for wiki browser markdown rendering.
+- **Google Fonts** — pick a distinctive pairing (display: Fraunces/Newsreader/Cormorant; sans: Plus Jakarta/Hanken Grotesk/Manrope; mono: JetBrains Mono/IBM Plex Mono).
 
 ### Anti-patterns
 
-- Generic SaaS dashboard look (purple gradients on white, vague rounded cards everywhere, default Inter, predictable layout).
-- Wikipedia-clone (paragraphs, sidebar TOC, footnotes — too encyclopedic). The Lab Brief is a working document, not an article.
-- Decorative-only animation. Every motion should communicate something (sequence, hierarchy, relationships).
-- Trying to do too much. A page that is bold in 1–2 ideas beats a page that is timid in 8.
+- Generic SaaS dashboard (purple gradients, default Inter, predictable card grid).
+- Wikipedia-clone (pure encyclopedic prose with footnotes).
+- Decorative-only animations.
+- Trying to do too much — bold in 1–2 ideas beats timid in 8.
 
 ## Constraints
 
-- Read from `wiki/` and `commons/` only (plus `hypothesis.md` and `session.log.md` at the hypothesis root, which the bundle script picks up automatically).
+- Read from `wiki/` and `commons/` only (plus `hypothesis.md` and `session.log.md`).
 - Write to `plan/` (json + md + html + `.wiki-bundle.json`) and `wiki/plans/` (one md file).
-- **Every claim in the plan must trace to a wiki entity.** No free-floating facts. If a needed entity is missing, **stop and report** — do not invent.
-- The HTML must be **self-contained** (both `plan-data` and `wiki-corpus` inlined). Opening `plan/index.html` via `file://` must render the full page including the wiki browser.
-- Be idempotent — re-running Pass 3 bumps the wiki plan version (`plan-v2.md`, etc.) and overwrites `plan/index.html`, `plan/plan.json`, and `plan/.wiki-bundle.json`.
-- **Generate fresh.** Do not copy from a prior hypothesis's `plan/index.html` as a starting point. Each Lab Brief is its own design.
-- The `tools/build-wiki-bundle.py` script is shared infrastructure — do not modify it casually. If a hypothesis has wiki-shape concerns the script can't handle, prefer fixing the wiki or extending the script with a flag (and update both skills + `context.md`).
+- **Every claim must trace to a wiki entity.** No free-floating facts.
+- The HTML must be **self-contained** — both `plan-data` and `wiki-corpus` inlined.
+- Be idempotent — re-running bumps the wiki plan version and overwrites `plan/index.html`, `plan/plan.json`, `plan/.wiki-bundle.json`.
+- **Generate fresh.** Do not copy from a prior hypothesis's `plan/index.html`.

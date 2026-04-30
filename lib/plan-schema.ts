@@ -1,18 +1,17 @@
-// Lab Brief schema — matches context.md §8.
-// Produced by the Pass 3 skill; consumed by the AR UI via plan-to-ar.ts.
+// Research Brief schema — produced by the Pass 3 skill; consumed by /brief/<slug>.
 
-export type NoveltyVerdict = 'not-found' | 'similar-work-exists' | 'exact-match-found'
-export type FailureSeverity = 'low' | 'medium' | 'high'
+export type LandscapeVerdict = 'active' | 'emerging' | 'saturated'
+export type EvidenceStrength = 'low' | 'medium' | 'high'
 
-export interface RefinedHypothesis {
-  intervention: string
-  outcome: string
-  threshold: string
-  mechanism: string
-  control: string
+export interface RefinedTopic {
+  research_question: string
+  scope: string
+  domain: string
+  approach: string
+  context: string
 }
 
-export interface NoveltyReference {
+export interface LandscapeReference {
   title: string
   authors?: string
   year?: number
@@ -20,147 +19,90 @@ export interface NoveltyReference {
   wiki_page?: string
 }
 
-export interface PlanReagent {
-  wiki_page: string
-  qty?: string
-  supplier?: string
-  catalog?: string
-  price_usd?: number
-}
-
-export interface FailureWarning {
-  wiki_page: string
-  severity: FailureSeverity
-  mitigation: string
-  frequency_estimate?: string
-}
-
-export interface ProtocolStep {
-  step: number
-  title: string
-  duration_minutes: number
-  reagents: PlanReagent[]
-  failure_warnings: FailureWarning[]
-  rationale: string
+export interface KeyTheme {
+  theme: string
+  description: string
+  evidence_summary: string
   source_citations: string[]
 }
 
-export interface BudgetLine {
-  category: string
+export interface ResearchGap {
+  gap: string
+  explanation: string
+  open_questions: string[]
+  potential_directions: string[]
+}
+
+export interface ReadingListEntry {
+  id: string
+  title: string
+  authors?: string
+  year?: number
+  doi?: string
+  why_relevant: string
+  priority: 1 | 2 | 3 | 4 | 5
+  wiki_page?: string
+}
+
+export interface MethodologyEntry {
+  method: string
   description: string
-  cost_usd: number
+  used_in_papers: string[]
+  strengths: string[]
+  limitations: string[]
+  wiki_page?: string
 }
 
-export interface MaterialRow {
-  reagent: string // wiki_page
-  supplier?: string
-  catalog?: string
-  qty?: string
-  price_usd?: number
-}
-
-export interface TimelinePhase {
+export interface PublicationTimelinePhase {
   name: string
   duration_weeks: number
   depends_on?: string[]
 }
 
-export interface ValidationBlock {
-  success_criteria?: string[]
-  failure_criteria?: string[]
-  measurements?: string[]
+export interface WikiDrilldown {
+  title: string
+  subtitle: string
+  body_md: string
 }
 
-export interface FailureMapEntry {
-  wiki_page: string
-  severity: FailureSeverity
-  frequency_estimate?: string
-  applies_to_step?: number
-  mitigation: string
-}
-
-export interface LabBriefPlan {
-  hypothesis: {
+export interface ResearchBrief {
+  topic: {
     slug: string
     original_question: string
-    refined: RefinedHypothesis
+    refined: RefinedTopic
   }
-  novelty: {
-    verdict: NoveltyVerdict
-    references: NoveltyReference[]
+  landscape: {
+    verdict: LandscapeVerdict
+    summary: string
+    key_prior_work: LandscapeReference[]
   }
   summary: {
-    total_budget_usd: number
-    total_timeline_weeks: number
-    top_failure_modes: string[]
+    total_sources: number
+    total_themes: number
+    total_gaps: number
+    pull_quote: string
+    sources_breakdown: {
+      papers: number
+      preprints: number
+      surveys: number
+      other: number
+    }
   }
-  protocol: ProtocolStep[]
-  materials?: MaterialRow[]
-  budget?: BudgetLine[]
-  timeline?: TimelinePhase[]
-  validation?: ValidationBlock
-  failure_map?: FailureMapEntry[]
-}
-
-// ─── Pass 4 — custom AR scene spec (plan/ar.json) ─────────────────────────
-
-export type StationKind =
-  | 'beaker'
-  | 'tube-rack'
-  | 'pipette'
-  | 'hotplate'
-  | 'tall-instrument'
-  | 'flat-instrument'
-  | 'plate-reader'
-  | 'scaffold'
-  | 'dish'
-  | 'microscope'
-  | 'incubator'
-  | 'furnace'
-  | 'printer'
-  | 'solar-cell'
-  | 'pv-module'
-
-export type StationAnimation =
-  | 'operate'
-  | 'mix'
-  | 'heat'
-  | 'observe'
-  | 'measure'
-  | 'transfer'
-  | 'none'
-
-export interface LabStation {
-  id: string
-  label: string
-  kind: StationKind
-  color?: string // hex string, e.g. "#4a90e2"
-  position: [number, number, number]
-  wiki_page?: string
-}
-
-export interface StationStateChange {
-  station: string
-  property: 'color' | 'label' | 'active'
-  to: string | boolean
-}
-
-export interface StepBinding {
-  step: number
-  focus_station: string
-  animation?: StationAnimation
-  label_override?: string
-  state_changes?: StationStateChange[]
-}
-
-export interface LabSceneSpec {
-  version: 1
-  slug: string
-  title: string
-  scene: {
-    stations: LabStation[]
-  }
-  step_bindings: StepBinding[]
+  key_themes: KeyTheme[]
+  research_gaps: ResearchGap[]
+  reading_list: ReadingListEntry[]
+  methodology_overview: MethodologyEntry[]
+  publication_timeline?: PublicationTimelinePhase[]
+  sources?: Array<{
+    id: string
+    title: string
+    authors?: string
+    year?: number
+    doi?: string
+    tag: 'paper' | 'preprint' | 'survey' | 'workshop' | 'other'
+    wiki_page?: string
+  }>
+  wiki_drilldowns?: Record<string, WikiDrilldown>
 }
 
 // Lightweight summary for the picker UI
@@ -168,6 +110,6 @@ export interface PlanSummary {
   slug: string
   title: string
   domain: string
-  novelty: NoveltyVerdict
-  steps_count: number
+  landscape: LandscapeVerdict
+  themes_count: number
 }
