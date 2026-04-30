@@ -441,3 +441,6 @@ FodyWeavers.xsd
 .AppleDouble
 .LSOverride
 ._*
+
+# Research pipeline output
+hypotheses/
