@@ -116,7 +116,7 @@ function runPass(
     //   --verbose               REQUIRED by Claude Code when combining the two above
     //   --allowed-tools         pre-authorise the tools the slash commands need
     // Prompt is piped via stdin to avoid Windows cmd.exe quote-mangling of the
-    // embedded "hypothesis text", and to suppress claude's "no stdin in 3s" warning.
+    // embedded "question text", and to suppress claude's "no stdin in 3s" warning.
     const proc = spawn(
       claudeBin,
       [

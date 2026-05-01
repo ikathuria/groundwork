@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server'
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-// GET /h/[slug] → serve the static Lab Brief HTML for one hypothesis.
+// GET /h/[slug] → serve the static Research Brief HTML for one topic.
 // Tries `plan/index.html` first (Pass 3), then `plan/wiki.html` (legacy). 404 if neither exists.
 export async function GET(
   _req: Request,

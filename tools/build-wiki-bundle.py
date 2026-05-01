@@ -3,11 +3,11 @@
 
 Walks <vault>/**/*.md (and optionally <commons>/**/*.md), parses YAML
 frontmatter, and emits a single JSON object suitable for inlining into a
-Lab Brief `index.html` as:
+Research Brief `index.html` as:
 
     <script type="application/json" id="wiki-corpus">{...}</script>
 
-The bundle stores RAW markdown bodies (not pre-rendered HTML). The Lab
+The bundle stores RAW markdown bodies (not pre-rendered HTML). The Research
 Brief renders them client-side with marked.js. Wikilink resolution and
 backlink computation also happen client-side -- this script's only job
 is the deterministic part: walk + parse + JSON-serialise.
