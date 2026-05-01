@@ -41,7 +41,7 @@ export default function ResearchProgress({ question, onCancel }: ResearchProgres
     fetch('/api/research-pipeline', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ hypothesis: question }),
+      body: JSON.stringify({ question }),
       signal: controller.signal,
     })
       .then(async (res) => {

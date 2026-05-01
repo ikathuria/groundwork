@@ -5,7 +5,7 @@ export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
 // POST /api/research-pipeline
-// Body: { hypothesis: string, slug?: string }
+// Body: { question: string, slug?: string }
 // Streams SSE events as it runs `claude -p` for /pass-1 → /pass-2 → /pass-3.
 //
 // SSE events emitted (UI-facing):
@@ -18,12 +18,12 @@ export const dynamic = 'force-dynamic'
 // forwarded over SSE. Watch the terminal running `npm run dev` to see them.
 export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({}))
-  const hypothesis = String(body.hypothesis ?? '').trim()
-  if (!hypothesis) {
-    return new Response('Missing hypothesis', { status: 400 })
+  const question = String(body.question ?? '').trim()
+  if (!question) {
+    return new Response('Missing question', { status: 400 })
   }
 
-  const slug = body.slug ? sanitiseSlug(body.slug) : generateSlug(hypothesis)
+  const slug = body.slug ? sanitiseSlug(body.slug) : generateSlug(question)
 
   const encoder = new TextEncoder()
   const stream = new ReadableStream({
@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
 
       try {
         send('stage', { stage: 'pass-1', message: `Searching papers for ${slug}` })
-        await runPass(send, 'pass-1', `/pass-1 ${slug} "${escapeQuotes(hypothesis)}"`)
+        await runPass(send, 'pass-1', `/pass-1 ${slug} "${escapeQuotes(question)}"`)
 
         send('stage', { stage: 'pass-2', message: 'Building wiki' })
         await runPass(send, 'pass-2', `/pass-2 ${slug}`)
@@ -235,7 +235,7 @@ function runPass(
 
 // ─── Slug generation ────────────────────────────────────────────────────────
 
-function generateSlug(hypothesis: string): string {
+function generateSlug(question: string): string {
   // Use the server's LOCAL date, not UTC. The pipeline writes folders the user
   // browses on the same machine, and the slash commands' YYYY-MM-DD references
   // come from local-time `date +%Y-%m-%d` — staying in local time keeps both
@@ -247,14 +247,14 @@ function generateSlug(hypothesis: string): string {
   const dd = String(now.getDate()).padStart(2, '0')
   const date = `${yyyy}-${mm}-${dd}`
 
-  const words = hypothesis
+  const words = question
     .toLowerCase()
     .replace(/[^\w\s-]/g, ' ')
     .split(/\s+/)
     .filter(Boolean)
     .slice(0, 5)
     .join('-')
-  return `${date}_${words || 'hypothesis'}`
+  return `${date}_${words || 'research'}`
 }
 
 function sanitiseSlug(slug: string): string {
