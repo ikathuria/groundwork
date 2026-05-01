@@ -13,7 +13,7 @@ export default function Home() {
               Research compilation
             </p>
             <h1 className="font-display font-bold text-5xl md:text-6xl tracking-tight mb-4 text-surveyor-text">
-              Surveyor
+              Groundwork
             </h1>
             <p className="text-surveyor-muted text-base max-w-sm mx-auto leading-relaxed font-body">
               Enter a research question. Get back a structured survey of the

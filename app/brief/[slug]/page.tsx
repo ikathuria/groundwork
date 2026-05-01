@@ -72,7 +72,7 @@ export default function BriefPage() {
           onClick={() => router.push('/')}
           className="text-surveyor-accent text-sm hover:underline underline-offset-4"
         >
-          ← Back to Surveyor
+          ← Back to Groundwork
         </button>
       </div>
     )
@@ -89,7 +89,7 @@ export default function BriefPage() {
           onClick={() => router.push('/')}
           className="font-mono text-xs text-surveyor-muted hover:text-surveyor-accent transition-colors"
         >
-          ← Surveyor
+          ← Groundwork
         </button>
         <div className="flex-1 min-w-0">
           <p className="font-mono text-[10px] text-surveyor-muted/60 truncate">{slug}</p>

@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Surveyor — Research compilation',
+  title: 'Groundwork — Research compilation',
   description: 'Map the terrain of any research field.',
 }
 
