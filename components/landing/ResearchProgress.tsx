@@ -121,13 +121,13 @@ export default function ResearchProgress({ question, onCancel }: ResearchProgres
   }, [question, router])
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-surveyor-bg/90 backdrop-blur-sm p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gw-bg/90 backdrop-blur-sm p-4">
       <div className="paper-card rounded-2xl p-6 max-w-2xl w-full flex flex-col gap-5 max-h-[85vh]">
         <div>
-          <h2 className="font-mono text-xs uppercase tracking-widest mb-2 text-surveyor-muted">
+          <h2 className="font-mono text-xs uppercase tracking-widest mb-2 text-gw-muted">
             Surveying topic
           </h2>
-          <p className="text-surveyor-text font-body text-sm leading-relaxed">{question}</p>
+          <p className="text-gw-text font-body text-sm leading-relaxed">{question}</p>
         </div>
 
         <div className="flex flex-col gap-2">
@@ -139,30 +139,30 @@ export default function ResearchProgress({ question, onCancel }: ResearchProgres
                 className={[
                   'rounded-xl px-3 py-2.5 border flex items-center gap-3 transition-colors',
                   s.status === 'running'
-                    ? 'border-surveyor-accent/40 bg-surveyor-accent-lt'
+                    ? 'border-gw-accent/40 bg-gw-accent-lt'
                     : s.status === 'done'
                     ? 'border-emerald-300 bg-emerald-50'
                     : s.status === 'error'
-                    ? 'border-surveyor-warn/40 bg-surveyor-warn-lt'
-                    : 'border-surveyor-border bg-surveyor-surface',
+                    ? 'border-gw-warn/40 bg-gw-warn-lt'
+                    : 'border-gw-border bg-gw-surface',
                 ].join(' ')}
               >
                 <StageIcon status={s.status} />
                 <div className="flex-1 min-w-0">
-                  <p className="text-surveyor-text text-sm font-semibold font-body">{STAGE_LABELS[key]}</p>
-                  <p className="text-xs text-surveyor-muted font-mono truncate">{s.message}</p>
+                  <p className="text-gw-text text-sm font-semibold font-body">{STAGE_LABELS[key]}</p>
+                  <p className="text-xs text-gw-muted font-mono truncate">{s.message}</p>
                 </div>
               </div>
             )
           })}
         </div>
 
-        <p className="text-[10px] font-mono text-surveyor-muted -mt-1">
+        <p className="text-[10px] font-mono text-gw-muted -mt-1">
           Live logs streaming to the dev-server terminal.
         </p>
 
         {error && (
-          <div className="rounded-xl border border-surveyor-warn/40 bg-surveyor-warn-lt px-3 py-2 text-xs text-surveyor-warn font-mono">
+          <div className="rounded-xl border border-gw-warn/40 bg-gw-warn-lt px-3 py-2 text-xs text-gw-warn font-mono">
             {error}
           </div>
         )}
@@ -171,7 +171,7 @@ export default function ResearchProgress({ question, onCancel }: ResearchProgres
           <button
             onClick={onCancel}
             disabled={navigating}
-            className="px-4 py-2 rounded-lg text-sm text-surveyor-muted hover:text-surveyor-text border border-surveyor-border transition-colors disabled:opacity-50 font-mono"
+            className="px-4 py-2 rounded-lg text-sm text-gw-muted hover:text-gw-text border border-gw-border transition-colors disabled:opacity-50 font-mono"
           >
             {navigating ? 'Loading survey…' : 'Cancel'}
           </button>
@@ -183,10 +183,10 @@ export default function ResearchProgress({ question, onCancel }: ResearchProgres
 
 function StageIcon({ status }: { status: StageState['status'] }) {
   if (status === 'running')
-    return <span className="w-4 h-4 border-2 border-surveyor-accent border-t-transparent rounded-full animate-spin shrink-0" />
+    return <span className="w-4 h-4 border-2 border-gw-accent border-t-transparent rounded-full animate-spin shrink-0" />
   if (status === 'done')
     return <span className="text-emerald-600 shrink-0">✓</span>
   if (status === 'error')
-    return <span className="text-surveyor-warn shrink-0">✗</span>
-  return <span className="w-4 h-4 rounded-full border border-surveyor-border shrink-0" />
+    return <span className="text-gw-warn shrink-0">✗</span>
+  return <span className="w-4 h-4 rounded-full border border-gw-border shrink-0" />
 }

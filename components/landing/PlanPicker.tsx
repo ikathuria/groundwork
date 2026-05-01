@@ -12,7 +12,7 @@ const LANDSCAPE_LABEL: Record<string, string> = {
 }
 
 const LANDSCAPE_COLOR: Record<string, string> = {
-  active:    'text-surveyor-accent bg-surveyor-accent-lt border-surveyor-accent/30',
+  active:    'text-gw-accent bg-gw-accent-lt border-gw-accent/30',
   emerging:  'text-amber-700 bg-amber-50 border-amber-300',
   saturated: 'text-sky-700 bg-sky-50 border-sky-300',
 }
@@ -46,12 +46,12 @@ export default function PlanPicker() {
   }
 
   if (plans === null) {
-    return <p className="font-mono text-sm text-surveyor-muted">Loading surveys…</p>
+    return <p className="font-mono text-sm text-gw-muted">Loading surveys…</p>
   }
 
   if (plans.length === 0) {
     return (
-      <p className="text-surveyor-muted text-sm">
+      <p className="text-gw-muted text-sm">
         No surveys yet. Start one below ↓
       </p>
     )
@@ -59,7 +59,7 @@ export default function PlanPicker() {
 
   return (
     <div className="flex flex-col gap-3 w-full">
-      <h3 className="font-mono text-xs uppercase tracking-widest text-surveyor-muted">
+      <h3 className="font-mono text-xs uppercase tracking-widest text-gw-muted">
         Recent surveys
       </h3>
       <div className="flex flex-col gap-2">
@@ -68,14 +68,14 @@ export default function PlanPicker() {
             key={p.slug}
             onClick={() => handleSelect(p.slug)}
             disabled={loadingSlug !== null}
-            className="text-left paper-card rounded-xl p-4 hover:border-surveyor-accent/50 transition-all disabled:opacity-50 group"
+            className="text-left paper-card rounded-xl p-4 hover:border-gw-accent/50 transition-all disabled:opacity-50 group"
           >
             <div className="flex items-start justify-between gap-3">
               <div className="flex-1 min-w-0">
-                <p className="text-surveyor-text font-body font-semibold text-sm truncate leading-snug">
+                <p className="text-gw-text font-body font-semibold text-sm truncate leading-snug">
                   {p.title}
                 </p>
-                <div className="flex items-center gap-2 mt-1.5 text-xs text-surveyor-muted font-mono">
+                <div className="flex items-center gap-2 mt-1.5 text-xs text-gw-muted font-mono">
                   <span>{p.domain}</span>
                   <span>·</span>
                   <span>{p.themes_count} theme{p.themes_count === 1 ? '' : 's'}</span>
@@ -84,19 +84,19 @@ export default function PlanPicker() {
               <span
                 className={[
                   'shrink-0 px-2 py-0.5 rounded-full text-[10px] font-mono uppercase tracking-wider border',
-                  LANDSCAPE_COLOR[p.landscape] ?? 'text-surveyor-muted border-surveyor-border',
+                  LANDSCAPE_COLOR[p.landscape] ?? 'text-gw-muted border-gw-border',
                 ].join(' ')}
               >
                 {LANDSCAPE_LABEL[p.landscape] ?? p.landscape}
               </span>
             </div>
             {loadingSlug === p.slug && (
-              <p className="text-surveyor-accent text-xs mt-2 font-mono">Loading…</p>
+              <p className="text-gw-accent text-xs mt-2 font-mono">Loading…</p>
             )}
           </button>
         ))}
       </div>
-      {error && <p className="text-surveyor-warn text-xs">{error}</p>}
+      {error && <p className="text-gw-warn text-xs">{error}</p>}
     </div>
   )
 }

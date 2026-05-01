@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        surveyor: {
+        gw: {
           bg:          '#faf8f2',
           surface:     '#f0ece0',
           border:      '#ddd5c4',
