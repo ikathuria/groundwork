@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { readPlan, storePlan } from '@/lib/load-plan'
-import type { ResearchBrief } from '@/lib/plan-schema'
+import type { ResearchBrief, WikiDrilldown } from '@/lib/plan-schema'
+import WikiDrilldownPanel from '@/components/brief/WikiDrilldownPanel'
 
 const LANDSCAPE_LABEL: Record<string, string> = {
   active:    'Active field',
@@ -31,6 +32,23 @@ export default function BriefPage() {
   const [plan, setPlan] = useState<ResearchBrief | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
+  const [drilldown, setDrilldown] = useState<WikiDrilldown | null>(null)
+  const [copied, setCopied] = useState(false)
+
+  const openDrilldown = useCallback((key: string, drilldowns?: Record<string, WikiDrilldown>) => {
+    const entry = drilldowns?.[key]
+    if (entry) setDrilldown(entry)
+  }, [])
+
+  const closeDrilldown = useCallback(() => setDrilldown(null), [])
+
+  const handleShare = useCallback(() => {
+    const shareUrl = `${window.location.origin}/h/${encodeURIComponent(slug)}`
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    })
+  }, [slug])
 
   useEffect(() => {
     if (!slug) return
@@ -94,14 +112,12 @@ export default function BriefPage() {
         <div className="flex-1 min-w-0">
           <p className="font-mono text-[10px] text-gw-muted/60 truncate">{slug}</p>
         </div>
-        <a
-          href={`/hypotheses/${slug}/plan/index.html`}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={handleShare}
           className="font-mono text-xs text-gw-accent hover:underline underline-offset-4 shrink-0"
         >
-          Full brief ↗
-        </a>
+          {copied ? 'Copied!' : 'Share ↗'}
+        </button>
       </nav>
 
       <div className="max-w-3xl mx-auto px-6 py-14 flex flex-col gap-16">
@@ -218,14 +234,25 @@ export default function BriefPage() {
                   )}
                   {t.source_citations?.length > 0 && (
                     <div className="flex flex-wrap gap-1.5 pl-10">
-                      {t.source_citations.map((c, j) => (
-                        <span
-                          key={j}
-                          className="px-2 py-0.5 rounded-full bg-gw-surface border border-gw-border text-[10px] text-gw-muted font-mono"
-                        >
-                          {c}
-                        </span>
-                      ))}
+                      {t.source_citations.map((c, j) => {
+                        const hasDrilldown = !!plan.wiki_drilldowns?.[c]
+                        return hasDrilldown ? (
+                          <button
+                            key={j}
+                            onClick={() => openDrilldown(c, plan.wiki_drilldowns)}
+                            className="px-2 py-0.5 rounded-full bg-gw-surface border border-gw-accent/30 text-[10px] text-gw-accent font-mono hover:bg-gw-accent-lt transition-colors"
+                          >
+                            {c} ↗
+                          </button>
+                        ) : (
+                          <span
+                            key={j}
+                            className="px-2 py-0.5 rounded-full bg-gw-surface border border-gw-border text-[10px] text-gw-muted font-mono"
+                          >
+                            {c}
+                          </span>
+                        )
+                      })}
                     </div>
                   )}
                 </div>
@@ -291,10 +318,18 @@ export default function BriefPage() {
           <section className="flex flex-col gap-5">
             <SectionHeader>Methodology landscape</SectionHeader>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {plan.methodology_overview.map((m, i) => (
-                <div key={i} className="paper-card rounded-xl p-5 flex flex-col gap-3">
-                  <h3 className="font-display font-semibold text-base text-gw-text">
+              {plan.methodology_overview.map((m, i) => {
+                const drillKey = m.wiki_page ?? m.method
+                const hasDrilldown = !!plan.wiki_drilldowns?.[drillKey]
+                return (
+                <div
+                  key={i}
+                  onClick={hasDrilldown ? () => openDrilldown(drillKey, plan.wiki_drilldowns) : undefined}
+                  className={`paper-card rounded-xl p-5 flex flex-col gap-3 ${hasDrilldown ? 'cursor-pointer hover:border-gw-accent/40 transition-colors' : ''}`}
+                >
+                  <h3 className="font-display font-semibold text-base text-gw-text flex items-center gap-2">
                     {m.method}
+                    {hasDrilldown && <span className="text-gw-accent text-xs font-mono">↗</span>}
                   </h3>
                   <p className="font-body text-xs text-gw-subtle leading-relaxed">
                     {m.description}
@@ -312,7 +347,7 @@ export default function BriefPage() {
                     ))}
                   </div>
                 </div>
-              ))}
+              )})}
             </div>
           </section>
         )}
@@ -332,7 +367,11 @@ export default function BriefPage() {
                   .filter((r) => r.priority <= 2)
                   .sort((a, b) => a.priority - b.priority)
                   .map((r, i) => (
-                    <div key={i} className="paper-card rounded-xl p-6 flex flex-col gap-2">
+                    <div
+                      key={i}
+                      onClick={r.wiki_page && plan.wiki_drilldowns?.[r.wiki_page] ? () => openDrilldown(r.wiki_page!, plan.wiki_drilldowns) : undefined}
+                      className={`paper-card rounded-xl p-6 flex flex-col gap-2 ${r.wiki_page && plan.wiki_drilldowns?.[r.wiki_page] ? 'cursor-pointer hover:border-gw-accent/40 transition-colors' : ''}`}
+                    >
                       <div className="flex items-start justify-between gap-3">
                         <h3 className="font-display font-semibold text-base text-gw-text leading-snug">
                           {r.title}
@@ -436,8 +475,39 @@ export default function BriefPage() {
           </section>
         )}
 
+        {/* ── Publication timeline ── */}
+        {(plan.publication_timeline?.length ?? 0) > 0 && (
+          <section className="flex flex-col gap-5">
+            <SectionHeader>Publication timeline</SectionHeader>
+            <div className="flex flex-col gap-2">
+              {plan.publication_timeline!.map((phase, i) => (
+                <div key={i} className="paper-card rounded-xl p-4 flex items-start gap-4">
+                  <div className="shrink-0 w-16 text-center">
+                    <span className="font-display text-2xl font-bold text-gw-accent/40 tabular-nums">
+                      {phase.duration_weeks}
+                    </span>
+                    <p className="font-mono text-[9px] uppercase tracking-wider text-gw-muted">wks</p>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-body font-semibold text-sm text-gw-text">{phase.name}</p>
+                    {phase.depends_on && phase.depends_on.length > 0 && (
+                      <p className="font-mono text-[10px] text-gw-muted mt-0.5">
+                        After: {phase.depends_on.join(', ')}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         <div className="h-8" />
       </div>
+
+      {/* ── Wiki drilldown panel ── */}
+      <WikiDrilldownPanel entry={drilldown} onClose={closeDrilldown} />
+
     </main>
   )
 }

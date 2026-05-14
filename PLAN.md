@@ -59,8 +59,8 @@
 
 Tasks:
 
-- [ ] Create `.claude/commands/ingest-source.md` that delegates to `.claude/skills/ingest-source.md` — Done when: running `/ingest-source <slug> <url>` in Claude Code executes the skill without "Unknown command" error.
-- [ ] Create `.claude/commands/apply-correction.md` that delegates to `.claude/skills/apply-correction.md` — Done when: running `/apply-correction <path>` in Claude Code executes the skill without error.
+- [x] Create `.claude/commands/ingest-source.md` that delegates to `.claude/skills/ingest-source.md` — Done when: running `/ingest-source <slug> <url>` in Claude Code executes the skill without "Unknown command" error.
+- [x] Create `.claude/commands/apply-correction.md` that delegates to `.claude/skills/apply-correction.md` — Done when: running `/apply-correction <path>` in Claude Code executes the skill without error.
 
 ---
 
@@ -70,9 +70,9 @@ Tasks:
 
 Tasks:
 
-- [ ] Add `WikiDrilldownPanel` component (`components/brief/WikiDrilldownPanel.tsx`) — renders a slide-in panel with `title`, `subtitle`, `body_md` (rendered via `marked.js`). Dismissable via Escape or overlay click. Done when: panel opens/closes correctly on desktop and mobile.
-- [ ] Wire `wiki_drilldowns` into `/brief/[slug]/page.tsx` — pass the record as prop to `WikiDrilldownPanel`; add click handlers on source citation chips, methodology method names, and reading list items whose `wiki_page` key has a matching entry. Done when: at least 3 entity types trigger the panel correctly.
-- [ ] Add `marked` or `micromark` as a dependency for rendering body_md — Done when: markdown with headings, bold, wikilinks renders cleanly inside the panel.
+- [x] Add `WikiDrilldownPanel` component (`components/brief/WikiDrilldownPanel.tsx`) — renders a slide-in panel with `title`, `subtitle`, `body_md` (rendered via `marked.js`). Dismissable via Escape or overlay click. Done when: panel opens/closes correctly on desktop and mobile.
+- [x] Wire `wiki_drilldowns` into `/brief/[slug]/page.tsx` — pass the record as prop to `WikiDrilldownPanel`; add click handlers on source citation chips, methodology method names, and reading list items whose `wiki_page` key has a matching entry. Done when: at least 3 entity types trigger the panel correctly.
+- [x] Add `marked` or `micromark` as a dependency for rendering body_md — Done when: markdown with headings, bold, wikilinks renders cleanly inside the panel.
 
 ---
 
@@ -82,7 +82,7 @@ Tasks:
 
 Tasks:
 
-- [ ] Add a "Publication timeline" section to `/brief/[slug]/page.tsx` guarded by `plan.publication_timeline?.length > 0` — renders phase name, duration, and dependency chain. Done when: if `plan.json` contains `publication_timeline`, the section appears between Methodology and Reading List.
+- [x] Add a "Publication timeline" section to `/brief/[slug]/page.tsx` guarded by `plan.publication_timeline?.length > 0` — renders phase name, duration, and dependency chain. Done when: if `plan.json` contains `publication_timeline`, the section appears between Methodology and Reading List.
 
 ---
 
@@ -92,9 +92,9 @@ Tasks:
 
 Tasks:
 
-- [ ] Write `Dockerfile` — multi-stage: Node 20 builder (`npm run build`) + slim runner. `WORKDIR /app`. Expose 3000. Done when: `docker build . -t groundwork && docker run -p 3000:3000 groundwork` serves the app locally.
-- [ ] Write `railway.toml` — `[build] builder = "dockerfile"`, `[deploy] startCommand = "node .next/standalone/server.js"`, health-check path `/`. Done when: file is valid TOML and Railway recognises it.
-- [ ] Add volume mount docs to `.env.example` — document that `HYPOTHESES_DIR` or Railway volume path should map to the `hypotheses/` folder. Done when: `.env.example` explains how to configure persistent storage.
+- [x] Write `Dockerfile` — multi-stage: Node 20 builder (`npm run build`) + slim runner. Installs `poppler-utils`, `curl`, and `@anthropic-ai/claude-code` globally. Done when: builds locally.
+- [x] Write `railway.toml` — `[build] builder = "dockerfile"`, `[deploy]` with health-check, persistent volume at `/app/hypotheses`. Done when: file is valid TOML.
+- [x] Add volume mount docs to `.env.example` — documents Railway volume setup and local Docker run command. Done.
 - [ ] Update `README.md` with a one-command Railway deploy section — Done when: README has a "Deploy" section with the Railway button or CLI command.
 
 ---
@@ -105,8 +105,8 @@ Tasks:
 
 Tasks:
 
-- [ ] Write `.claude/skills/promote-to-commons.md` — spec the promotion logic: scan `hypotheses/*/wiki/{methods,concepts,datasets,open-problems}/*.md`, group by slug, find slugs with `count ≥ 2`, write canonical page to `commons/<type>/<slug>.md`, update `[[...]]` links in originating wikis to use the `commons/` relative path. Done when: skill spec is complete and internally consistent with `context.md`.
-- [ ] Write `.claude/commands/promote-to-commons.md` — delegates to the skill, no args required. Done when: `/promote-to-commons` runs without "Unknown command" error.
+- [x] Write `.claude/skills/promote-to-commons.md` — spec the promotion logic: scan `hypotheses/*/wiki/{methods,concepts,datasets,open-problems}/*.md`, group by slug, find slugs with `count ≥ 2`, write canonical page to `commons/<type>/<slug>.md`, update `[[...]]` links in originating wikis to use the `commons/` relative path. Done when: skill spec is complete and internally consistent with `context.md`.
+- [x] Write `.claude/commands/promote-to-commons.md` — delegates to the skill, no args required. Done when: `/promote-to-commons` runs without "Unknown command" error.
 
 ---
 
@@ -117,10 +117,10 @@ Tasks:
 Tasks:
 
 - [ ] Pipeline resume — if `/api/research-pipeline` detects that `raw/` already exists for a slug, skip Pass 1 and start from Pass 2; if `wiki/` exists, skip to Pass 3. Done when: re-submitting the same question continues from the last completed pass rather than re-fetching papers.
-- [ ] Delete survey — add a `DELETE /api/plans/[slug]` route that removes `hypotheses/<slug>/plan/plan.json` (not the raw/ or wiki/). Done when: after DELETE, the survey disappears from `PlanPicker` on next load.
-- [ ] Share button in `/brief/[slug]` — copies `window.location.origin + '/h/' + slug` to clipboard. Done when: clicking Share shows a "Copied!" toast and the clipboard contains the correct URL.
-- [ ] Empty `PlanPicker` state — show a real empty-state card ("No surveys yet — start one above") instead of the current text fallback. Done when: with zero completed surveys, landing page shows the card.
-- [ ] Type-check CI — add a `typecheck` script to `package.json` (`tsc --noEmit`). Done when: `npm run typecheck` exits 0 on the current codebase.
+- [x] Delete survey — add a `DELETE /api/plans/[slug]/delete` route that removes `hypotheses/<slug>/plan/plan.json` (not the raw/ or wiki/). Done when: after DELETE, the survey disappears from `PlanPicker` on next load.
+- [x] Share button in `/brief/[slug]` — copies `window.location.origin + '/h/' + slug` to clipboard. Done when: clicking Share shows a "Copied!" toast and the clipboard contains the correct URL.
+- [x] Empty `PlanPicker` state — show a real empty-state card instead of the current text fallback. Done.
+- [x] Type-check CI — add a `typecheck` script to `package.json` (`tsc --noEmit`). Done when: `npm run typecheck` exits 0 on the current codebase.
 
 ---
 

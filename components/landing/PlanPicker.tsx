@@ -51,9 +51,13 @@ export default function PlanPicker() {
 
   if (plans.length === 0) {
     return (
-      <p className="text-gw-muted text-sm">
-        No surveys yet. Start one below ↓
-      </p>
+      <div className="paper-card rounded-xl p-6 flex flex-col items-center gap-2 text-center border-dashed">
+        <span className="font-mono text-2xl text-gw-border">∅</span>
+        <p className="font-body text-sm text-gw-muted">No surveys yet.</p>
+        <p className="font-mono text-[10px] text-gw-muted/60">
+          Start one above — it will appear here when complete.
+        </p>
+      </div>
     )
   }
 
