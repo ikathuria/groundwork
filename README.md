@@ -118,6 +118,45 @@ The correction writes to the relevant `commons/` page. Every future topic that t
 
 ---
 
+## Deploy to Railway
+
+Railway gives you a persistent disk so `hypotheses/` (downloaded papers + compiled wikis) survives redeploys.
+
+**One-time setup:**
+
+1. Push this repo to GitHub.
+2. Go to [railway.app](https://railway.app) → **New Project** → **Deploy from GitHub repo** → select this repo.
+3. In the Railway dashboard → **Variables**, add:
+   ```
+   ANTHROPIC_API_KEY=sk-ant-...
+   SEMANTIC_SCHOLAR_API_KEY=...   # optional but recommended
+   ```
+4. Railway picks up `railway.toml` automatically — it uses the `Dockerfile`, attaches a persistent volume at `/app/hypotheses`, and sets a health-check on `/`.
+5. Hit **Deploy**. First build takes ~3 minutes.
+
+**Using the Railway CLI:**
+
+```bash
+npm install -g @railway/cli
+railway login
+railway link          # link to your existing project
+railway up            # deploy current branch
+```
+
+**Local Docker run** (test the production image before deploying):
+
+```bash
+docker build -t groundwork .
+docker run -p 3000:3000 \
+  -v $(pwd)/hypotheses:/app/hypotheses \
+  -e ANTHROPIC_API_KEY=sk-ant-... \
+  groundwork
+```
+
+> **Note:** The pipeline spawns `claude -p` as a subprocess. Make sure `ANTHROPIC_API_KEY` is set and that the `claude` CLI is on PATH (the Dockerfile installs it globally via `npm install -g @anthropic-ai/claude-code`).
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |

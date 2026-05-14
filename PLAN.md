@@ -95,7 +95,7 @@ Tasks:
 - [x] Write `Dockerfile` — multi-stage: Node 20 builder (`npm run build`) + slim runner. Installs `poppler-utils`, `curl`, and `@anthropic-ai/claude-code` globally. Done when: builds locally.
 - [x] Write `railway.toml` — `[build] builder = "dockerfile"`, `[deploy]` with health-check, persistent volume at `/app/hypotheses`. Done when: file is valid TOML.
 - [x] Add volume mount docs to `.env.example` — documents Railway volume setup and local Docker run command. Done.
-- [ ] Update `README.md` with a one-command Railway deploy section — Done when: README has a "Deploy" section with the Railway button or CLI command.
+- [x] Update `README.md` with a one-command Railway deploy section — Done when: README has a "Deploy" section with the Railway button or CLI command.
 
 ---
 
