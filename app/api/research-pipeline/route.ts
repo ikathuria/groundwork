@@ -1,4 +1,6 @@
 import { spawn } from 'child_process'
+import { promises as fs } from 'fs'
+import path from 'path'
 import { NextRequest } from 'next/server'
 
 export const runtime = 'nodejs'
@@ -8,8 +10,12 @@ export const dynamic = 'force-dynamic'
 // Body: { question: string, slug?: string }
 // Streams SSE events as it runs `claude -p` for /pass-1 → /pass-2 → /pass-3.
 //
+// Resume logic: if raw/ already exists for the slug, Pass 1 is skipped.
+// If wiki/index.md already exists, Pass 2 is also skipped. Pass 3 always runs.
+//
 // SSE events emitted (UI-facing):
 //   event: stage   data: { stage, message }
+//   event: skip    data: { stage, message }   ← pass already complete, skipped
 //   event: error   data: { stage, message }
 //   event: done    data: { slug }
 //
@@ -24,6 +30,7 @@ export async function POST(req: NextRequest) {
   }
 
   const slug = body.slug ? sanitiseSlug(body.slug) : generateSlug(question)
+  const hypothesisDir = path.join(process.cwd(), 'hypotheses', slug)
 
   const encoder = new TextEncoder()
   const stream = new ReadableStream({
@@ -35,12 +42,34 @@ export async function POST(req: NextRequest) {
       }
 
       try {
-        send('stage', { stage: 'pass-1', message: `Searching papers for ${slug}` })
-        await runPass(send, 'pass-1', `/pass-1 ${slug} "${escapeQuotes(question)}"`)
+        // ── Detect which passes can be skipped ─────────────────────────────
+        // Pass 1 is done if raw/ exists and contains at least one downloaded file.
+        const rawDone = await dirHasFiles(path.join(hypothesisDir, 'raw', 'papers'))
+          || await dirHasFiles(path.join(hypothesisDir, 'raw', 'preprints'))
+          || await dirHasFiles(path.join(hypothesisDir, 'raw', 'surveys'))
 
-        send('stage', { stage: 'pass-2', message: 'Building wiki' })
-        await runPass(send, 'pass-2', `/pass-2 ${slug}`)
+        // Pass 2 is done if wiki/index.md exists (written at end of Pass 2).
+        const wikiDone = await fileExists(path.join(hypothesisDir, 'wiki', 'index.md'))
 
+        // Pass 3 always runs — brief regeneration is cheap and ensures freshness.
+
+        // ── Pass 1 ─────────────────────────────────────────────────────────
+        if (rawDone) {
+          send('skip', { stage: 'pass-1', message: 'Papers already fetched — skipping' })
+        } else {
+          send('stage', { stage: 'pass-1', message: `Searching papers for ${slug}` })
+          await runPass(send, 'pass-1', `/pass-1 ${slug} "${escapeQuotes(question)}"`)
+        }
+
+        // ── Pass 2 ─────────────────────────────────────────────────────────
+        if (wikiDone) {
+          send('skip', { stage: 'pass-2', message: 'Wiki already compiled — skipping' })
+        } else {
+          send('stage', { stage: 'pass-2', message: 'Building wiki' })
+          await runPass(send, 'pass-2', `/pass-2 ${slug}`)
+        }
+
+        // ── Pass 3 (always) ────────────────────────────────────────────────
         send('stage', { stage: 'pass-3', message: 'Synthesising Research Brief' })
         await runPass(send, 'pass-3', `/pass-3 ${slug}`)
 
@@ -231,6 +260,26 @@ function runPass(
       resolve()
     })
   })
+}
+
+// ─── Filesystem helpers ──────────────────────────────────────────────────────
+
+async function fileExists(filePath: string): Promise<boolean> {
+  try {
+    await fs.access(filePath)
+    return true
+  } catch {
+    return false
+  }
+}
+
+async function dirHasFiles(dirPath: string): Promise<boolean> {
+  try {
+    const entries = await fs.readdir(dirPath)
+    return entries.length > 0
+  } catch {
+    return false
+  }
 }
 
 // ─── Slug generation ────────────────────────────────────────────────────────

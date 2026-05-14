@@ -75,7 +75,13 @@ export default function ResearchProgress({ question, onCancel }: ResearchProgres
       let payload: any = null
       try { payload = JSON.parse(data) } catch {}
 
-      if (event === 'stage' && payload?.stage) {
+      if (event === 'skip' && payload?.stage) {
+        // Pass already completed from a previous run — mark done immediately
+        setStages((s) => ({
+          ...s,
+          [payload.stage]: { status: 'done', message: payload.message ?? 'Skipped' },
+        }))
+      } else if (event === 'stage' && payload?.stage) {
         setStages((s) => {
           const next = { ...s }
           if (payload.stage === 'pass-2' && next['pass-1'].status === 'running')

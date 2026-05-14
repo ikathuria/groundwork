@@ -116,7 +116,7 @@ Tasks:
 
 Tasks:
 
-- [ ] Pipeline resume — if `/api/research-pipeline` detects that `raw/` already exists for a slug, skip Pass 1 and start from Pass 2; if `wiki/` exists, skip to Pass 3. Done when: re-submitting the same question continues from the last completed pass rather than re-fetching papers.
+- [x] Pipeline resume — if `/api/research-pipeline` detects that `raw/` already exists for a slug, skip Pass 1 and start from Pass 2; if `wiki/` exists, skip to Pass 3. Emits `skip` SSE event (UI marks stage done immediately). Done.
 - [x] Delete survey — add a `DELETE /api/plans/[slug]/delete` route that removes `hypotheses/<slug>/plan/plan.json` (not the raw/ or wiki/). Done when: after DELETE, the survey disappears from `PlanPicker` on next load.
 - [x] Share button in `/brief/[slug]` — copies `window.location.origin + '/h/' + slug` to clipboard. Done when: clicking Share shows a "Copied!" toast and the clipboard contains the correct URL.
 - [x] Empty `PlanPicker` state — show a real empty-state card instead of the current text fallback. Done.
