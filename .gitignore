@@ -443,5 +443,4 @@ FodyWeavers.xsd
 ._*
 
 # Research pipeline output
-hypotheses/
 .claude/worktrees/

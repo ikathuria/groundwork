@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>RAG Security and Privacy: Formalizing the Threat Model and Attack Surface</title>
+<!--Generated on Wed Sep 24 16:20:09 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="/static/browse/0.3.4/css/arxiv-html-papers-20250916.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
+<script src="/static/browse/0.3.4/js/addons_new.js"></script>
+<script src="/static/browse/0.3.4/js/feedbackOverlay.js"></script>
+<base href="/html/2509.20324v1/"/></head>
+<body>
+<nav class="ltx_page_navbar">
+<nav class="ltx_TOC">
+<ol class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S1" title="In RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">I </span><span class="ltx_text ltx_font_smallcaps">Introduction</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S2" title="In RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">II </span><span class="ltx_text ltx_font_smallcaps">Preliminaries</span></span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S2.SS1" title="In II Preliminaries ‣ RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">II-A </span><span class="ltx_text ltx_font_italic">System model</span></span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S3" title="In RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">III </span><span class="ltx_text ltx_font_smallcaps">Threat Model and Attack Surfaces</span></span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S3.SS0.SSS1" title="In III Threat Model and Attack Surfaces ‣ RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">III-1 </span>Model Access</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S3.SS0.SSS2" title="In III Threat Model and Attack Surfaces ‣ RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">III-2 </span>Adversarial Knowledge</span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S4" title="In RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV </span><span class="ltx_text ltx_font_smallcaps">Formal Privacy and Security Notions</span></span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S4.SS1" title="In IV Formal Privacy and Security Notions ‣ RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV-A </span><span class="ltx_text ltx_font_italic">Document-Level Membership Inference Attack</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S4.SS2" title="In IV Formal Privacy and Security Notions ‣ RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV-B </span><span class="ltx_text ltx_font_italic">Leaking Retrieved Content in Outputs</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S4.SS3" title="In IV Formal Privacy and Security Notions ‣ RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV-C </span><span class="ltx_text ltx_font_italic">Data poisoning</span></span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S5" title="In RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">V </span><span class="ltx_text ltx_font_smallcaps">Conclusion</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#S6" title="In RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">VI </span><span class="ltx_text ltx_font_smallcaps">Acknowledgment</span></span></a></li>
+</ol></nav>
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">RAG Security and Privacy: Formalizing the Threat Model and Attack Surface</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Atousa Arzanipour
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Rouzbeh Behnia
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Reza Ebrahimi
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Kaushik Dutta
+</span></span>
+</div>
+<div class="ltx_abstract">
+<h6 class="ltx_title ltx_title_abstract">Abstract</h6>
+<p class="ltx_p">Retrieval-Augmented Generation (RAG) is an emerging approach in natural language processing that combines large language models (LLMs) with external document retrieval to produce more accurate and grounded responses. While RAG has shown strong potential in reducing hallucinations and improving factual consistency, it also introduces new privacy and security challenges that differ from those faced by traditional LLMs. Existing research has demonstrated that LLMs can leak sensitive information through training data memorization or adversarial prompts, and RAG systems inherit many of these vulnerabilities. At the same time, RAG’s reliance on an external knowledge base opens new attack surfaces, including the potential for leaking information about the presence or content of retrieved documents, or for injecting malicious content to manipulate model behavior. Despite these risks, there is currently no formal framework that defines the threat landscape for RAG systems. In this paper, we address a critical gap in the literature by proposing, to the best of our knowledge, the first formal threat model for retrieval-RAG systems. We introduce a structured taxonomy of adversary types based on their access to model components and data, and we formally define key threat vectors such as document-level membership inference and data poisoning, which pose serious privacy and integrity risks in real-world deployments. By establishing formal definitions and attack models, our work lays the foundation for a more rigorous and principled understanding of privacy and security in RAG systems.</p>
+</div>
+<section class="ltx_section" id="S1">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">I </span><span class="ltx_text ltx_font_smallcaps">Introduction</span>
+</h2>
+<div class="ltx_para" id="S1.p1">
+<p class="ltx_p">Large Language Models (LLMs) are trained on a vast amount of data with the goal of understanding and generating human language <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib1" title="">1</a>]</cite>. They are widely applied across different domains, such as chatbots. However, the issue with LLMs is that their performance is constrained by the quality and scope of their training data. For instance, if a chatbot is asked a real-time or domain-specific question, its supporting LLM may generate an answer that seems logical but is actually incorrect, a phenomenon known as hallucination.</p>
+</div>
+<div class="ltx_para" id="S1.p2">
+<p class="ltx_p">Retrieval-Augmented Generation (RAG) is an emerging paradigm in natural language processing and generative AI that combines the generative capabilities of LLMs with dynamic access to external knowledge repositories <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib2" title="">2</a>]</cite>. In a typical RAG architecture, a retriever first identifies relevant documents or passages from a knowledge base or online sources based on an input query, and a generator then conditions on both the query and the retrieved content to produce a response <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib3" title="">3</a>]</cite>. By integrating retrieval into the generation process, RAG systems enhance the factual accuracy <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib4" title="">4</a>]</cite>, coherence <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib5" title="">5</a>]</cite>, and contextual grounding of generated outputs across a range of applications. This integration has proven particularly beneficial in complex tasks such as fact-checking <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib6" title="">6</a>]</cite> and information retrieval <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib3" title="">3</a>]</cite>, where accurate and timely access to external information is critical.</p>
+</div>
+<div class="ltx_para" id="S1.p3">
+<p class="ltx_p">The practical impact of RAG is increasingly evident in industrial settings: major search engines such as Google Search and Microsoft Bing are exploring the incorporation of RAG-based systems to improve their response quality by leveraging both curated knowledge bases and real-time web content <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib7" title="">7</a>, <a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib8" title="">8</a>]</cite>. By mitigating issues like hallucination <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib9" title="">9</a>]</cite>, factual inconsistency, and limited generalization <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib10" title="">10</a>]</cite> that often affect standalone LLMs, RAG architectures offer a promising foundation for building more reliable and knowledge-aware AI systems.</p>
+</div>
+<div class="ltx_para" id="S1.p4">
+<p class="ltx_p">While RAG systems offer improvements in factual accuracy and contextual grounding, their foundation, LLM, remains susceptible to a range of privacy and security threats that arise during both training and inference. During training, LLMs can memorize and inadvertently expose sensitive data from the training corpus <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib11" title="">11</a>]</cite>. At inference time, adversaries may exploit vulnerabilities such as prompt injection <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib12" title="">12</a>]</cite>, model misalignment <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib13" title="">13</a>]</cite>, or gradient inversion <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib14" title="">14</a>]</cite>, leading to biased, harmful, or unintended outputs. These threats undermine the reliability, fairness, and safety of LLM-based systems, particularly in sensitive or regulated domains (e.g., healthcare).</p>
+</div>
+<div class="ltx_para" id="S1.p5">
+<p class="ltx_p">RAG systems are built on top of LLMs and therefore inherit these vulnerabilities. In addition, they introduce a new class of privacy and security risks due to their architectural design. Unlike conventional LLMs, which internalize all knowledge within model parameters, RAG systems offload part of the knowledge to an external knowledge base <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib2" title="">2</a>]</cite>. This shift opens new attack surfaces. Adversaries can craft carefully constructed queries to infer whether specific documents exist in the knowledge base or extract indirect clues about their content, structure, or authorship, even if those documents are never explicitly returned <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib15" title="">15</a>]</cite>. For example, in a healthcare setting, an attacker may query a RAG-powered medical assistant to determine whether a particular diagnosis appears in the retrieval index, potentially revealing information about a named patient. In a financial context, a malicious user might probe a model to verify whether confidential audit reports or investment strategies belonging to a specific firm are present. These scenarios highlight that securing a RAG system requires more than protecting the LLM’s internal representations; it must also safeguard the confidentiality and existence of external documents that influence the system’s responses.</p>
+</div>
+<figure class="ltx_figure" id="S1.F1"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="260" id="S1.F1.g1" src="x1.png" width="462"/>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>Architecture of RAG Systems</figcaption>
+</figure>
+<div class="ltx_para" id="S1.p6">
+<p class="ltx_p">While several recent studies have explored specific vulnerabilities in RAG systems, such as privacy leakage <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib15" title="">15</a>]</cite> and retrieval manipulation <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib16" title="">16</a>]</cite>, there is, to the best of our knowledge, no existing work that formally defines these threats. To address this gap, the present work makes two core contributions. First, we present a threat model for RAG systems, including a taxonomy of adversary types that differ in their access to model components, documents, and training data. Second, we provide formal definitions of key privacy and security threats that are especially relevant in RAG, such as document-level membership inference, document reconstruction attacks, and poisoning attacks. These threats reflect the most prominent concerns raised in the literature and observed in practice. While this study does not aim to exhaustively enumerate all possible attack vectors, it seeks to formalize the foundational concepts necessary for analyzing and mitigating critical risks in RAG-based systems. We hope this work contributes to the growing effort to establish a rigorous and principled understanding of security and privacy in retrieval-augmented generation.</p>
+</div>
+</section>
+<section class="ltx_section" id="S2">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">II </span><span class="ltx_text ltx_font_smallcaps">Preliminaries</span>
+</h2>
+<div class="ltx_para" id="S2.p1">
+<p class="ltx_p">In this section, we formalize the RAG system model and introduce the key concepts and tools that will be used throughout the paper.</p>
+</div>
+<section class="ltx_subsection" id="S2.SS1">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">II-A </span><span class="ltx_text ltx_font_italic">System model</span>
+</h3>
+<div class="ltx_para" id="S2.SS1.p1">
+<p class="ltx_p">The RAG system model is illustrated in Figure 1. A standard RAG pipeline comprises the following components:</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p2">
+<ul class="ltx_itemize" id="S2.I1">
+<li class="ltx_item" id="S2.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S2.I1.i1.p1">
+<p class="ltx_p">A knowledge base <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S2.I1.i1.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math> contains all documents collected from various sources, both public and private, with a total of <math alttext="n" class="ltx_Math" display="inline" id="S2.I1.i1.p1.m2" intent=":literal"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> documents. Public knowledge may come from sources such as Wikipedia, Reddit, or other websites, while private corpora may include, for example, patient records from a hospital or notes previously written by its medical staff. Formally:</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex1">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\mathcal{D}=\{d_{1},\dots,d_{n}\}," class="ltx_Math" display="block" id="S2.Ex1.m1" intent=":literal"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>d</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathcal{D}=\{d_{1},\dots,d_{n}\},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_para" id="S2.I1.i1.p2">
+<p class="ltx_p">where <math alttext="d_{i}" class="ltx_Math" display="inline" id="S2.I1.i1.p2.m1" intent=":literal"><semantics><msub><mi>d</mi><mi>i</mi></msub><annotation encoding="application/x-tex">d_{i}</annotation></semantics></math> is the <math alttext="i^{th}" class="ltx_Math" display="inline" id="S2.I1.i1.p2.m2" intent=":literal"><semantics><msup><mi>i</mi><mrow><mi>t</mi><mo lspace="0em" rspace="0em">​</mo><mi>h</mi></mrow></msup><annotation encoding="application/x-tex">i^{th}</annotation></semantics></math> document in the RAG Knowledge base.</p>
+</div>
+</li>
+<li class="ltx_item" id="S2.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S2.I1.i2.p1">
+<p class="ltx_p">A retriever <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S2.I1.i2.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> that maps a user query <math alttext="q" class="ltx_Math" display="inline" id="S2.I1.i2.p1.m2" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math> to a set of top-<math alttext="k" class="ltx_Math" display="inline" id="S2.I1.i2.p1.m3" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> documents,</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex2">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="D_{q}=\{d_{1},\dots,d_{k}\}," class="ltx_Math" display="block" id="S2.Ex2.m1" intent=":literal"><semantics><mrow><mrow><msub><mi>D</mi><mi>q</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>d</mi><mi>k</mi></msub><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">D_{q}=\{d_{1},\dots,d_{k}\},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">retrieved from the knowledge base <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S2.I1.i2.p1.m4" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math>. Prominent retrieval models are ColBERT/ColBERT2 <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib17" title="">17</a>]</cite> and Contriever <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib18" title="">18</a>]</cite>.</p>
+</div>
+</li>
+<li class="ltx_item" id="S2.I1.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S2.I1.i3.p1">
+<p class="ltx_p">A generator <math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S2.I1.i3.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math>, typically a large language model, that conditions on both <math alttext="q" class="ltx_Math" display="inline" id="S2.I1.i3.p1.m2" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math> and <math alttext="D_{q}" class="ltx_Math" display="inline" id="S2.I1.i3.p1.m3" intent=":literal"><semantics><msub><mi>D</mi><mi>q</mi></msub><annotation encoding="application/x-tex">D_{q}</annotation></semantics></math> to generate a response <math alttext="y" class="ltx_Math" display="inline" id="S2.I1.i3.p1.m4" intent=":literal"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>, such as GPT-4 <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib19" title="">19</a>]</cite> and Llama <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib20" title="">20</a>]</cite>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Based on the steps shown in Figure 1, the RAG pipeline is as follows:
+</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p3">
+<p class="ltx_p">Step  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p3.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">1</span>: The user interacts with the system by submitting a query <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p3.m1" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p4">
+<p class="ltx_p">Step  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p4.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">2</span>: The user query <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p4.m1" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math> is transformed into an embedding vector through the system’s encoding process. Embedding vectors are numerical vectors that enable the system to capture the semantic properties of <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p4.m2" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math> and facilitates subsequent mathematical operations.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p5">
+<p class="ltx_p">Step  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p5.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">3</span>: Each document <math alttext="d_{i}" class="ltx_Math" display="inline" id="S2.SS1.p5.m1" intent=":literal"><semantics><msub><mi>d</mi><mi>i</mi></msub><annotation encoding="application/x-tex">d_{i}</annotation></semantics></math> in the knowledge base <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S2.SS1.p5.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math> is similarly transformed into an embedding vector. These vectors are stored in a dedicated vector database.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p6">
+<p class="ltx_p">Step  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p6.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">4</span>: The embedding vector of the query <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p6.m1" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math> together with the collection of document embeddings stored in the vector database are provided as input to the retriever <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S2.SS1.p6.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p7">
+<p class="ltx_p">Step  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p7.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">5</span>: The retriever <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S2.SS1.p7.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> compares the embedding vector of the query <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p7.m2" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math> with the embedding vectors of the knowledge base using similarity metrics. These metrics quantify how similar each document is to the query. Based on the results, the retriever <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S2.SS1.p7.m3" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> collects a subset <math alttext="D_{q}\subseteq\mathcal{D}" class="ltx_Math" display="inline" id="S2.SS1.p7.m4" intent=":literal"><semantics><mrow><msub><mi>D</mi><mi>q</mi></msub><mo>⊆</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow><annotation encoding="application/x-tex">D_{q}\subseteq\mathcal{D}</annotation></semantics></math>, where</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex3">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="D_{q}=\{d_{1},d_{2},\dots,d_{k}\}." class="ltx_Math" display="block" id="S2.Ex3.m1" intent=":literal"><semantics><mrow><mrow><msub><mi>D</mi><mi>q</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>d</mi><mi>k</mi></msub><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">D_{q}=\{d_{1},d_{2},\dots,d_{k}\}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Here, <math alttext="D_{q}" class="ltx_Math" display="inline" id="S2.SS1.p7.m5" intent=":literal"><semantics><msub><mi>D</mi><mi>q</mi></msub><annotation encoding="application/x-tex">D_{q}</annotation></semantics></math> denotes the top-<math alttext="k" class="ltx_Math" display="inline" id="S2.SS1.p7.m6" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> documents from <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S2.SS1.p7.m7" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math> that are most relevant to the query <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p7.m8" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>. Relevance is determined by similarity scores, which can be computed through various methods depending on the embedding technique employed. The output of this step can be expressed as:</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex4">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\mathcal{R}(q,\mathcal{D})\mapsto D_{q}." class="ltx_Math" display="block" id="S2.Ex4.m1" intent=":literal"><semantics><mrow><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">↦</mo><msub><mi>D</mi><mi>q</mi></msub></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathcal{R}(q,\mathcal{D})\mapsto D_{q}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_para" id="S2.SS1.p8">
+<p class="ltx_p">Step  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p8.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">6</span>: The selected top-<math alttext="k" class="ltx_Math" display="inline" id="S2.SS1.p8.m1" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> documents, together with the initial prompt <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p8.m2" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>, are combined to construct an augmented query <math alttext="q^{\prime}" class="ltx_Math" display="inline" id="S2.SS1.p8.m3" intent=":literal"><semantics><msup><mi>q</mi><mo>′</mo></msup><annotation encoding="application/x-tex">q^{\prime}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p9">
+<p class="ltx_p">Step  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p9.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">7</span>: <math alttext="q^{\prime}" class="ltx_Math" display="inline" id="S2.SS1.p9.m1" intent=":literal"><semantics><msup><mi>q</mi><mo>′</mo></msup><annotation encoding="application/x-tex">q^{\prime}</annotation></semantics></math> serves as the input to the generation component of the system <math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S2.SS1.p9.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math>, enriching the original <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p9.m3" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math> with retrieved contextual information <math alttext="D_{q}" class="ltx_Math" display="inline" id="S2.SS1.p9.m4" intent=":literal"><semantics><msub><mi>D</mi><mi>q</mi></msub><annotation encoding="application/x-tex">D_{q}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p10">
+<p class="ltx_p">Step  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p10.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">8</span>:Upon receiving the augmented query <math alttext="q^{\prime}" class="ltx_Math" display="inline" id="S2.SS1.p10.m1" intent=":literal"><semantics><msup><mi>q</mi><mo>′</mo></msup><annotation encoding="application/x-tex">q^{\prime}</annotation></semantics></math>, the LLM generator <math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S2.SS1.p10.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math>
+produces a response by leveraging both its parametric knowledge, acquired during LLM training, and the contextual information supplied by the retriever <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S2.SS1.p10.m3" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math>. The output of the system is then expressed as</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex5">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="y=\mathcal{G}(q^{\prime})," class="ltx_Math" display="block" id="S2.Ex5.m1" intent=":literal"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒢</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msup><mi>q</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">y=\mathcal{G}(q^{\prime}),</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math alttext="q^{\prime}=(q,D_{q})" class="ltx_Math" display="inline" id="S2.SS1.p10.m4" intent=":literal"><semantics><mrow><msup><mi>q</mi><mo>′</mo></msup><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><msub><mi>D</mi><mi>q</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">q^{\prime}=(q,D_{q})</annotation></semantics></math> denotes the augmented query composed of the original user query and the set of retrieved documents.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p11">
+<p class="ltx_p">Steps  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p11.pic1" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">2</span> through  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p11.pic2" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">5</span> constitute the <span class="ltx_text ltx_font_italic">retrieval phase</span>, during which the system gathers all relevant external documents corresponding to the user query <math alttext="q" class="ltx_Math" display="inline" id="S2.SS1.p11.m1" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>; and steps  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p11.pic3" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">6</span> through  <span class="ltx_inline-block"><svg class="ltx_picture" height="18.14" id="S2.SS1.p11.pic4" overflow="visible" style="vertical-align:-9.07px" version="1.1" viewbox="0 0 9.22 18.14" width="9.22"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,18.14) matrix(1 0 0 -1 0 0) translate(4.61,0) translate(0,9.07)"><g color="#FF0000" fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;--ltx-fg-color:#FF0000;"><path d="M 2.22 0 C 2.22 1.22 1.22 2.22 0 2.22 C -1.22 2.22 -2.22 1.22 -2.22 0 C -2.22 -1.22 -1.22 -2.22 0 -2.22 C 1.22 -2.22 2.22 -1.22 2.22 0 Z M 0 0"></path></g><g fill="#FF0000" stroke="#FF0000" style="--ltx-stroke-color:#FF0000;--ltx-fill-color:#FF0000;" transform="matrix(1.0 0.0 0.0 1.0 -1.92 0)"><foreignobject color="#FF0000" height="13.84" overflow="visible" style="--ltx-fg-color:#FF0000;--fo_width :0.28em;--fo_height:0.75em;--fo_depth :0.25em;" transform="matrix(1 0 0 -1 0 10.38)" width="3.84"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">[</span></span></span></span></foreignobject></g><g fill="#000000" stroke="#000000" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="matrix(1.0 0.0 0.0 1.0 0 -4.46)"><foreignobject height="8.92" overflow="visible" style="--fo_width :0em;--fo_height:0.64em;--fo_depth :0em;" transform="matrix(1 0 0 -1 0 8.92)" width="0"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_text ltx_inline-block" style="width:0.0pt;--ltx-fg-color:#FFFFFF;">1</span></span></span></foreignobject></g></g></svg></span>]<span class="ltx_text" style="font-size:90%;">8</span> form the <span class="ltx_text ltx_font_italic">generation phase</span>, wherein the LLM synthesizes a final response <math alttext="y" class="ltx_Math" display="inline" id="S2.SS1.p11.m2" intent=":literal"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math> that is delivered to the user.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p12">
+<p class="ltx_p">LLMs are deep learning systems designed to process and generate human language through complex computational mechanisms. Their architecture can be broadly described through the following components <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib21" title="">21</a>]</cite>:</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p13">
+<ul class="ltx_itemize" id="S2.I2">
+<li class="ltx_item" id="S2.I2.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S2.I2.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Data collection</span>:</p>
+</div>
+<div class="ltx_para" id="S2.I2.i1.p2">
+<p class="ltx_p">LLMs are trained on large text corpora</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex6">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\mathcal{K}=\{(x^{(1)},x^{(2)},\dots,x^{(N)})\}," class="ltx_Math" display="block" id="S2.Ex6.m1" intent=":literal"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒦</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msup><mo>,</mo><msup><mi>x</mi><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></msup><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathcal{K}=\{(x^{(1)},x^{(2)},\dots,x^{(N)})\},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where each <math alttext="x^{(i)}" class="ltx_Math" display="inline" id="S2.I2.i1.p2.m1" intent=":literal"><semantics><msup><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msup><annotation encoding="application/x-tex">x^{(i)}</annotation></semantics></math> is a sequence of words or sentences. The overall quality, generalization capability, and robustness of the model are directly influenced by the size, diversity, and representativeness of this training corpus.</p>
+</div>
+</li>
+<li class="ltx_item" id="S2.I2.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S2.I2.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Tokenization and Embedding</span>: A tokenization function</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex7">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\phi:\mathcal{X}\to V^{*}" class="ltx_Math" display="block" id="S2.Ex7.m1" intent=":literal"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒳</mi><mo stretchy="false">→</mo><msup><mi>V</mi><mo>∗</mo></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:\mathcal{X}\to V^{*}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">maps raw text to token sequences <math alttext="(t_{1},\dots,t_{n})" class="ltx_Math" display="inline" id="S2.I2.i2.p1.m1" intent=":literal"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(t_{1},\dots,t_{n})</annotation></semantics></math>, with <math alttext="t_{i}\in V" class="ltx_Math" display="inline" id="S2.I2.i2.p1.m2" intent=":literal"><semantics><mrow><msub><mi>t</mi><mi>i</mi></msub><mo>∈</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">t_{i}\in V</annotation></semantics></math> (vocabulary). Each token is then mapped to a dense vector using an embedding function, allowing the model to operate over continuous representations that capture semantic and syntactic relationships.</p>
+</div>
+</li>
+<li class="ltx_item" id="S2.I2.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S2.I2.i3.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prediction and Generation</span>: LLMs generate output by estimating the conditional probability of tokens given the input and previously generated tokens:</p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex8">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="p_{\theta}(y\mid x)=\prod_{t=1}^{|y|}\mathcal{G}_{\theta}(y_{t}\mid x,y_{&lt;t})," class="ltx_Math" display="block" id="S2.Ex8.m1" intent=":literal"><semantics><mrow><mrow><mrow><msub><mi>p</mi><mi>θ</mi></msub><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>∣</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mrow><mo stretchy="false">|</mo><mi>y</mi><mo stretchy="false">|</mo></mrow></munderover><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒢</mi><mi>θ</mi></msub><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>∣</mo><mrow><mi>x</mi><mo>,</mo><msub><mi>y</mi><mrow><mi></mi><mo>&lt;</mo><mi>t</mi></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">p_{\theta}(y\mid x)=\prod_{t=1}^{|y|}\mathcal{G}_{\theta}(y_{t}\mid x,y_{&lt;t}),</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math alttext="\theta" class="ltx_Math" display="inline" id="S2.I2.i3.p1.m1" intent=":literal"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math> denotes the model parameters, and <math alttext="\mathcal{G}_{\theta}" class="ltx_Math" display="inline" id="S2.I2.i3.p1.m2" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒢</mi><mi>θ</mi></msub><annotation encoding="application/x-tex">\mathcal{G}_{\theta}</annotation></semantics></math> is the generative component of the network. Training involves optimizing <math alttext="\theta" class="ltx_Math" display="inline" id="S2.I2.i3.p1.m3" intent=":literal"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math> to minimize prediction error and maximize the likelihood of observed data.</p>
+</div>
+</li>
+<li class="ltx_item" id="S2.I2.i4" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S2.I2.i4.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Fine-tuning</span>: After training, LLMs are often adapted to specific downstream tasks through fine-tuning. This may include techniques such as reinforcement learning from human feedback (RLHF), which aligns the model’s outputs with human preferences and improves safety, coherence, and task performance <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib22" title="">22</a>]</cite>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_para" id="S2.SS1.p14">
+<p class="ltx_p">While LLMs are trained on massive datasets drawn from a wide range of domains, they remain fundamentally limited by the static nature of their training data. When prompted with domain-specific or time-sensitive questions, such as “What were the COVID-19 case counts in 2024?” or “What is today’s <span class="ltx_text ltx_font_italic">NASDAQ</span> stock price?”, a standalone LLM may produce confident but inaccurate responses due to outdated or missing knowledge. RAG systems have emerged as a solution to this limitation by enhancing LLM performance through the integration of external, up-to-date knowledge sources.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p15">
+<p class="ltx_p">Differential Privacy (DP) has emerged as a widely adopted framework for mitigating privacy risks in AI, particularly those arising from the memorization of sensitive training data by LLMs. DP provides quantifiable guarantees that individual data points have a limited influence on the model’s outputs. Recent research has extended the use of differential privacy to RAG systems <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib23" title="">23</a>]</cite>, where the presence of an external document store introduces additional privacy risks <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib24" title="">24</a>]</cite>. Given its centrality to privacy-preserving AI, we formally define differential privacy below.</p>
+</div>
+<div class="ltx_theorem ltx_theorem_definition" id="Thmdefinition1">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Definition 1</span></span><span class="ltx_text ltx_font_bold"> (Differential Privacy <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib25" title="">25</a>]</cite>)</span>
+</h6>
+<div class="ltx_para" id="Thmdefinition1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A randomized mechanism <math alttext="\mathcal{M}\colon\mathbb{D}\to\mathcal{R}" class="ltx_Math" display="inline" id="Thmdefinition1.p1.m1" intent=":literal"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℳ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>𝔻</mi><mo stretchy="false">→</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></mrow><annotation encoding="application/x-tex">\mathcal{M}\colon\mathbb{D}\to\mathcal{R}</annotation></semantics></math> is said to satisfy <em class="ltx_emph ltx_font_upright"><math alttext="(\varepsilon,\delta)" class="ltx_Math" display="inline" id="Thmdefinition1.p1.m2" intent=":literal"><semantics><mrow><mo stretchy="false">(</mo><mi>ε</mi><mo>,</mo><mi>δ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\varepsilon,\delta)</annotation></semantics></math>-differential privacy</em> if, for any pair of adjacent datasets <math alttext="X,X^{\prime}\in\mathbb{D}" class="ltx_Math" display="inline" id="Thmdefinition1.p1.m3" intent=":literal"><semantics><mrow><mrow><mi>X</mi><mo>,</mo><msup><mi>X</mi><mo>′</mo></msup></mrow><mo>∈</mo><mi>𝔻</mi></mrow><annotation encoding="application/x-tex">X,X^{\prime}\in\mathbb{D}</annotation></semantics></math>, and for every measurable subset <math alttext="\mathcal{S}\subseteq\mathcal{R}" class="ltx_Math" display="inline" id="Thmdefinition1.p1.m4" intent=":literal"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒮</mi><mo>⊆</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow><annotation encoding="application/x-tex">\mathcal{S}\subseteq\mathcal{R}</annotation></semantics></math>, the following holds:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S2.Ex9">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\mathbb{P}[\mathcal{M}(X)\in\mathcal{S}]\leq e^{\varepsilon}\cdot\mathbb{P}[\mathcal{M}(X^{\prime})\in\mathcal{S}]+\delta." class="ltx_Math" display="block" id="S2.Ex9.m1" intent=":literal"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℳ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒮</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>≤</mo><mrow><mrow><mrow><msup><mi>e</mi><mi>ε</mi></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℳ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒮</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mi>δ</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}[\mathcal{M}(X)\in\mathcal{S}]\leq e^{\varepsilon}\cdot\mathbb{P}[\mathcal{M}(X^{\prime})\in\mathcal{S}]+\delta.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div class="ltx_para" id="S2.SS1.p16">
+<p class="ltx_p">Here, adjacency between datasets is defined by the relation <math alttext="X\sim X^{\prime}" class="ltx_Math" display="inline" id="S2.SS1.p16.m1" intent=":literal"><semantics><mrow><mi>X</mi><mo>∼</mo><msup><mi>X</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">X\sim X^{\prime}</annotation></semantics></math>, indicating that the two datasets differ in exactly one data point.</p>
+</div>
+<div class="ltx_para" id="S2.SS1.p17">
+<p class="ltx_p">This definition states that the presence or absence of any single individual’s data in the dataset has only a limited effect on the output distribution of <math alttext="\mathcal{A}" class="ltx_Math" display="inline" id="S2.SS1.p17.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math>. The parameter <math alttext="\varepsilon" class="ltx_Math" display="inline" id="S2.SS1.p17.m2" intent=":literal"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math> controls the privacy loss, with smaller values offering stronger guarantees, while <math alttext="\delta" class="ltx_Math" display="inline" id="S2.SS1.p17.m3" intent=":literal"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math> allows for a small probability of failure.</p>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S3">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">III </span><span class="ltx_text ltx_font_smallcaps">Threat Model and Attack Surfaces</span>
+</h2>
+<div class="ltx_para" id="S3.p1">
+<p class="ltx_p">RAG systems introduce novel attack vectors for privacy and security breaches due to their hybrid architecture, which combines a retriever <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S3.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> that accesses data from an external knowledge base <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S3.p1.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math> with an LLM generator <math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S3.p1.m3" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S3.p2">
+<p class="ltx_p">In a RAG architecture, attacks can emerge at different stages of the process. At Step 3, adversaries may attempt to compromise the integrity of the knowledge base, while Step 8 presents a privacy risk due to the leakage of retrieved verbatim content.</p>
+</div>
+<div class="ltx_para" id="S3.p3">
+<p class="ltx_p">To reason formally about security and privacy in RAG, we begin by defining the adversarial capabilities. We characterize adversaries along two orthogonal dimensions: (1) adversary’s model access and (2) adversary knowledge.</p>
+</div>
+<section class="ltx_subsubsection" id="S3.SS0.SSS1">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">III-1 </span>Model Access</h4>
+<div class="ltx_para" id="S3.SS0.SSS1.p1">
+<p class="ltx_p">The level of model access granted to an adversary reflects the deployment setting of the RAG system, ranging from restricted-access APIs to fully observable internal environments.</p>
+<ul class="ltx_itemize" id="S3.I1">
+<li class="ltx_item" id="S3.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S3.I1.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Black-box adversary</span>: Can issue queries to the RAG system and observe its outputs. Has no access to model parameters or internal embeddings.</p>
+</div>
+</li>
+<li class="ltx_item" id="S3.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S3.I1.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">White-box adversary</span>: Has full or partial access to the model internals, including retriever weights, document embeddings, and generator parameters.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Black-box adversaries are common in public RAG services (e.g., APIs), while white-box adversaries model insider threats or deployment leaks.</p>
+</div>
+</section>
+<section class="ltx_subsubsection" id="S3.SS0.SSS2">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">III-2 </span>Adversarial Knowledge</h4>
+<div class="ltx_para" id="S3.SS0.SSS2.p1">
+<p class="ltx_p">Adversarial knowledge refers to the degree of prior access the adversary has to the LLM’s training data and/or the external document knowledge base used by the RAG system.</p>
+<ul class="ltx_itemize" id="S3.I2">
+<li class="ltx_item" id="S3.I2.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S3.I2.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Normal adversary</span>: Has no prior access to the training corpus or retrieval documents. Relies solely on observed system’s behavior.</p>
+</div>
+</li>
+<li class="ltx_item" id="S3.I2.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S3.I2.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Informed adversary</span>: Has partial knowledge of the training data and/or document store. For instance, they may know a subset of <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S3.I2.i2.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math>, leaked pretraining corpora, embedding distributions, or previously generated outputs.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Informed adversaries reflect realistic attack scenarios, such as dataset overlaps, insider leaks, or transfer attacks across similar RAG deployments.</p>
+</div>
+<figure class="ltx_figure" id="S3.F2"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="467" id="S3.F2.g1" src="x2.png" width="830"/>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Taxonomy of Adversary Types</figcaption>
+</figure>
+<div class="ltx_para" id="S3.SS0.SSS2.p2">
+<p class="ltx_p">Based on the adversary’s level of model access and their knowledge of the LLM’s training data and RAG knowledge base, we identify four categories of adversaries: the <span class="ltx_text ltx_font_italic">Unaware Observer (<math alttext="{\mathcal{A}_{I}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p2.m1" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mi>I</mi></msub><annotation encoding="application/x-tex">{\mathcal{A}_{I}}</annotation></semantics></math>)</span>, the <span class="ltx_text ltx_font_italic">Aware Observer (<math alttext="{\mathcal{A}_{II}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p2.m2" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{II}}</annotation></semantics></math>)</span>, the <span class="ltx_text ltx_font_italic">Aware Insider (<math alttext="{\mathcal{A}_{III}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p2.m3" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{III}}</annotation></semantics></math>)</span>, and <span class="ltx_text ltx_font_italic">Unaware Insider (<math alttext="{\mathcal{A}_{IV}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p2.m4" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>V</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{IV}}</annotation></semantics></math>)</span>. These four types, along with their respective capabilities, are illustrated in Figure 2.</p>
+</div>
+<div class="ltx_para" id="S3.SS0.SSS2.p3">
+<p class="ltx_p">Among these, <math alttext="{\mathcal{A}_{I}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p3.m1" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mi>I</mi></msub><annotation encoding="application/x-tex">{\mathcal{A}_{I}}</annotation></semantics></math> represents the weakest adversary, possessing no prior knowledge of either the model internals or the underlying data (training data and/or knowledge base). Such adversaries interact with the system in a black-box fashion, issuing queries without guidance and relying solely on observed outputs. At the opposite end of the spectrum, <math alttext="{\mathcal{A}_{III}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p3.m2" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{III}}</annotation></semantics></math> is the strongest, combining full model access with partial or full knowledge of the training and/or the knowledge base.</p>
+</div>
+<div class="ltx_para" id="S3.SS0.SSS2.p4">
+<p class="ltx_p">The remaining two types fall between these extremes. The <math alttext="{\mathcal{A}_{II}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p4.m1" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{II}}</annotation></semantics></math> has partial or full knowledge of the underlying data but no access to the model internals, while the <math alttext="{\mathcal{A}_{IV}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p4.m2" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>V</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{IV}}</annotation></semantics></math> can inspect model components but has no direct knowledge of the training data or knowledge base. The relative strength of <math alttext="{\mathcal{A}_{II}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p4.m3" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{II}}</annotation></semantics></math> and <math alttext="{\mathcal{A}_{IV}}" class="ltx_Math" display="inline" id="S3.SS0.SSS2.p4.m4" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>V</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{IV}}</annotation></semantics></math> depends on the adversary’s goals and the context in which the attack is carried out.</p>
+</div>
+<div class="ltx_para" id="S3.SS0.SSS2.p5">
+<p class="ltx_p">This taxonomy, illustrated in Figure 2, provides the foundation for evaluating concrete attack scenarios in the following sections, including membership inference, retrieved-content leakage and data poisoning.</p>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S4">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">IV </span><span class="ltx_text ltx_font_smallcaps">Formal Privacy and Security Notions</span>
+</h2>
+<div class="ltx_para" id="S4.p1">
+<p class="ltx_p">RAG systems introduce new privacy and security challenges that extend beyond traditional concerns in AI. These challenges arise from the unique interaction between retrieval and generation components, which exposes sensitive information through both the documents retrieved and the outputs generated. To address these risks systematically, we define and analyze formal notions of privacy and security tailored to RAG pipelines, including document-level membership inference, content leakage, and poisoning attacks.</p>
+</div>
+<section class="ltx_subsection" id="S4.SS1">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV-A </span><span class="ltx_text ltx_font_italic">Document-Level Membership Inference Attack</span>
+</h3>
+<div class="ltx_para" id="S4.SS1.p1">
+<p class="ltx_p">Document-level membership inference attacks (DL-MIA) against RAG systems aim to determine whether a specific document was included in the system’s retrieval knowledge base, based solely on the system’s observable outputs. This poses a significant privacy risk in scenarios where the underlying documents contain sensitive or proprietary information, as it allows adversaries to infer document inclusion without direct access to the knowledge base. For example, in a healthcare setting, an adversary may infer whether a patient’s was included in a certain treatment plant (i.e., their record was part of the system’s internal documents) by analyzing how the model responds to diagnostic queries.</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p2">
+<p class="ltx_p">We define DL-MIA for RAG systems, where an adversary aims to determine whether a specific document <math alttext="d^{*}" class="ltx_Math" display="inline" id="S4.SS1.p2.m1" intent=":literal"><semantics><msup><mi>d</mi><mo>∗</mo></msup><annotation encoding="application/x-tex">d^{*}</annotation></semantics></math> was part of the private knowlege base <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S4.SS1.p2.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math> used by the RAG system to generate a given response.</p>
+</div>
+<div class="ltx_theorem ltx_theorem_definition" id="Thmdefinition2">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Definition 2</span></span><span class="ltx_text ltx_font_bold"> (Document-Level Membership Inference for RAG)</span>
+</h6>
+<div class="ltx_para" id="Thmdefinition2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math alttext="\mathcal{D}_{\text{total}}" class="ltx_Math" display="inline" id="Thmdefinition2.p1.m1" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mtext class="ltx_mathvariant_italic">total</mtext></msub><annotation encoding="application/x-tex">\mathcal{D}_{\text{total}}</annotation></semantics></math> be the universe of possible documents. Let <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="Thmdefinition2.p1.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> and <math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="Thmdefinition2.p1.m3" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math> be the retriever and generator defining the RAG pipeline.</span></p>
+</div>
+<div class="ltx_para" id="Thmdefinition2.p2">
+<ol class="ltx_enumerate" id="S4.I1">
+<li class="ltx_item" id="S4.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span>
+<div class="ltx_para" id="S4.I1.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The challenger </span><math alttext="\mathcal{C}" class="ltx_Math" display="inline" id="S4.I1.i1.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒞</mi><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> flips a fair coin </span><math alttext="b\in\{0,1\}" class="ltx_Math" display="inline" id="S4.I1.i1.p1.m2" intent=":literal"><semantics><mrow><mi>b</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">b\in\{0,1\}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+<ul class="ltx_itemize" id="S4.I1.i1.I1">
+<li class="ltx_item" id="S4.I1.i1.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I1.i1.I1.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="b=1" class="ltx_Math" display="inline" id="S4.I1.i1.I1.i1.p1.m1" intent=":literal"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">b=1</annotation></semantics></math><span class="ltx_text ltx_font_italic">: The challenger selects a knowledge base
+</span><math alttext="\mathcal{D}\subset\mathcal{D}_{\text{total}}" class="ltx_Math" display="inline" id="S4.I1.i1.I1.i1.p1.m2" intent=":literal"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⊂</mo><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mtext class="ltx_mathvariant_italic">total</mtext></msub></mrow><annotation encoding="application/x-tex">\mathcal{D}\subset\mathcal{D}_{\text{total}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> and samples a document </span><math alttext="d^{*}\in\mathcal{D}" class="ltx_Math" display="inline" id="S4.I1.i1.I1.i1.p1.m3" intent=":literal"><semantics><mrow><msup><mi>d</mi><mo>∗</mo></msup><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow><annotation encoding="application/x-tex">d^{*}\in\mathcal{D}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I1.i1.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I1.i1.I1.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="b=0" class="ltx_Math" display="inline" id="S4.I1.i1.I1.i2.p1.m1" intent=":literal"><semantics><mrow><mi>b</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">: The challenger selects </span><math alttext="\mathcal{D}\subset\mathcal{D}_{\text{total}}" class="ltx_Math" display="inline" id="S4.I1.i1.I1.i2.p1.m2" intent=":literal"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⊂</mo><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mtext class="ltx_mathvariant_italic">total</mtext></msub></mrow><annotation encoding="application/x-tex">\mathcal{D}\subset\mathcal{D}_{\text{total}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> and samples </span><math alttext="d^{*}\in\mathcal{D}_{\text{total}}\setminus\mathcal{D}" class="ltx_Math" display="inline" id="S4.I1.i1.I1.i2.p1.m3" intent=":literal"><semantics><mrow><msup><mi>d</mi><mo>∗</mo></msup><mo>∈</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mtext class="ltx_mathvariant_italic">total</mtext></msub><mo>∖</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow></mrow><annotation encoding="application/x-tex">d^{*}\in\mathcal{D}_{\text{total}}\setminus\mathcal{D}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="ltx_item" id="S4.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span>
+<div class="ltx_para" id="S4.I1.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The adversary </span><math alttext="\mathcal{A}\in\{{\mathcal{A}_{I}},{\mathcal{A}_{II}},{\mathcal{A}_{III}},{\mathcal{A}_{IV}}\}" class="ltx_Math" display="inline" id="S4.I1.i2.p1.m1" intent=":literal"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mi>I</mi></msub><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi></mrow></msub><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi></mrow></msub><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>V</mi></mrow></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{A}\in\{{\mathcal{A}_{I}},{\mathcal{A}_{II}},{\mathcal{A}_{III}},{\mathcal{A}_{IV}}\}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> submits a query </span><math alttext="q\in\mathcal{Q}" class="ltx_Math" display="inline" id="S4.I1.i2.p1.m2" intent=":literal"><semantics><mrow><mi>q</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒬</mi></mrow><annotation encoding="application/x-tex">q\in\mathcal{Q}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, where </span><math alttext="\mathcal{Q}" class="ltx_Math" display="inline" id="S4.I1.i2.p1.m3" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒬</mi><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> denotes the query distribution. Upon receiving the query, the challenger </span><math alttext="\mathcal{C}" class="ltx_Math" display="inline" id="S4.I1.i2.p1.m4" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒞</mi><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> computes</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex10">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="D_{q}=\mathcal{R}(q,\mathcal{D};k),\quad y=\mathcal{G}(q,D_{q})." class="ltx_Math" display="block" id="S4.Ex10.m1" intent=":literal"><semantics><mrow><mrow><mrow><msub><mi>D</mi><mi>q</mi></msub><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>;</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="1.167em">,</mo><mrow><mi>y</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒢</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><msub><mi>D</mi><mi>q</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">D_{q}=\mathcal{R}(q,\mathcal{D};k),\quad y=\mathcal{G}(q,D_{q}).</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S4.I1.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span>
+<div class="ltx_para" id="S4.I1.i3.p1">
+<p class="ltx_p"><math alttext="\mathcal{C}" class="ltx_Math" display="inline" id="S4.I1.i3.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒞</mi><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> then provides the adversary with </span><math alttext="(q,y,d^{*})" class="ltx_Math" display="inline" id="S4.I1.i3.p1.m2" intent=":literal"><semantics><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mi>y</mi><mo>,</mo><msup><mi>d</mi><mo>∗</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(q,y,d^{*})</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I1.i4" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span>
+<div class="ltx_para" id="S4.I1.i4.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The adversary outputs a guess </span><math alttext="\hat{b}\in\{0,1\}" class="ltx_Math" display="inline" id="S4.I1.i4.p1.m1" intent=":literal"><semantics><mrow><mover accent="true"><mi>b</mi><mo>^</mo></mover><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\hat{b}\in\{0,1\}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, attempting to determine whether </span><math alttext="d^{*}" class="ltx_Math" display="inline" id="S4.I1.i4.p1.m2" intent=":literal"><semantics><msup><mi>d</mi><mo>∗</mo></msup><annotation encoding="application/x-tex">d^{*}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> was part of the RAG system used to produce </span><math alttext="y" class="ltx_Math" display="inline" id="S4.I1.i4.p1.m3" intent=":literal"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_para" id="Thmdefinition2.p3">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The adversary wins if <math alttext="\hat{b}=b" class="ltx_Math" display="inline" id="Thmdefinition2.p3.m1" intent=":literal"><semantics><mrow><mover accent="true"><mi>b</mi><mo>^</mo></mover><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\hat{b}=b</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_para" id="S4.SS1.p3">
+<p class="ltx_p">This definition captures the adversary’s ability to infer whether a specific document was present in the RAG system’s retrieval knowledge base by observing the generated output for a chosen query. It formalizes the privacy risk that arises when the inclusion or exclusion of individual documents can be distinguished based on the system’s behavior, highlighting the need for document-level privacy guarantees in retrieval-augmented generation.</p>
+</div>
+<div class="ltx_para ltx_noindent" id="S4.SS1.p4">
+<p class="ltx_p">The RAG system is said to satisfy <span class="ltx_text ltx_font_italic">document-level membership privacy</span> if for all polynomial-time adversaries <math alttext="\mathcal{A}" class="ltx_Math" display="inline" id="S4.SS1.p4.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math>:</p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex11">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\forall d^{*}\in\mathcal{D}_{\text{total}},\quad\left|\Pr[\mathcal{A}(q,y,d^{*})=b\mid d^{*}]-\tfrac{1}{2}\right|\leq\delta." class="ltx_Math" display="block" id="S4.Ex11.m1" intent=":literal"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><msup><mi>d</mi><mo>∗</mo></msup></mrow><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mtext>total</mtext></msub></mrow><mo rspace="1.167em">,</mo><mrow><mrow><mo>|</mo><mrow><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mi>y</mi><mo>,</mo><msup><mi>d</mi><mo>∗</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>b</mi></mrow><mo lspace="0em" rspace="0.167em" separator="true">∣</mo><msup><mi>d</mi><mo>∗</mo></msup><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>|</mo></mrow><mo>≤</mo><mi>δ</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\forall d^{*}\in\mathcal{D}_{\text{total}},\quad\left|\Pr[\mathcal{A}(q,y,d^{*})=b\mid d^{*}]-\tfrac{1}{2}\right|\leq\delta.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">for a negligible <math alttext="\delta" class="ltx_Math" display="inline" id="S4.SS1.p4.m2" intent=":literal"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para ltx_noindent" id="S4.SS1.p5">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Protecting against DL-MIA via Differential Privacy</span>:
+To prevent the DL-MIA in Definition <a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#Thmdefinition2" title="Definition 2 (Document-Level Membership Inference for RAG) ‣ IV-A Document-Level Membership Inference Attack ‣ IV Formal Privacy and Security Notions ‣ RAG Security and Privacy: Formalizing the Threat Model and Attack Surface"><span class="ltx_text ltx_ref_tag">2</span></a>, the RAG system must ensure that the inclusion or exclusion of any single document <math alttext="d^{*}\in\mathcal{D}_{\text{total}}" class="ltx_Math" display="inline" id="S4.SS1.p5.m1" intent=":literal"><semantics><mrow><msup><mi>d</mi><mo>∗</mo></msup><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mtext>total</mtext></msub></mrow><annotation encoding="application/x-tex">d^{*}\in\mathcal{D}_{\text{total}}</annotation></semantics></math> in the knowledge base <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S4.SS1.p5.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math> does not significantly affect the distribution of generated outputs <math alttext="y" class="ltx_Math" display="inline" id="S4.SS1.p5.m3" intent=":literal"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math> for any query <math alttext="q" class="ltx_Math" display="inline" id="S4.SS1.p5.m4" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p6">
+<p class="ltx_p">Retriever-Level Differential Privacy <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib23" title="">23</a>]</cite>: A principled approach is to design the retriever <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S4.SS1.p6.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> to satisfy differential privacy with respect to its input document set. Specifically, we require:</p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex12">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\mathcal{R}(q,\mathcal{D})\approx_{\epsilon,\delta}\mathcal{R}(q,\mathcal{D}\setminus\{d^{*}\})" class="ltx_Math" display="block" id="S4.Ex12.m1" intent=":literal"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo stretchy="false">)</mo></mrow></mrow><msub><mo>≈</mo><mrow><mi>ϵ</mi><mo>,</mo><mi>δ</mi></mrow></msub><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><msup><mi>d</mi><mo>∗</mo></msup><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{R}(q,\mathcal{D})\approx_{\epsilon,\delta}\mathcal{R}(q,\mathcal{D}\setminus\{d^{*}\})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">for all <math alttext="q\in\mathcal{Q}" class="ltx_Math" display="inline" id="S4.SS1.p6.m2" intent=":literal"><semantics><mrow><mi>q</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒬</mi></mrow><annotation encoding="application/x-tex">q\in\mathcal{Q}</annotation></semantics></math> and <math alttext="d^{*}\in\mathcal{D}" class="ltx_Math" display="inline" id="S4.SS1.p6.m3" intent=":literal"><semantics><mrow><msup><mi>d</mi><mo>∗</mo></msup><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow><annotation encoding="application/x-tex">d^{*}\in\mathcal{D}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p7">
+<p class="ltx_p">This can be achieved by applying a DP mechanism to the retrieval step. In particular:</p>
+<ul class="ltx_itemize" id="S4.I2">
+<li class="ltx_item" id="S4.I2.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I2.i1.p1">
+<p class="ltx_p">The retriever computes relevance score <math alttext="s(d_{i},q)" class="ltx_Math" display="inline" id="S4.I2.i1.p1.m1" intent=":literal"><semantics><mrow><mi>s</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msub><mi>d</mi><mi>i</mi></msub><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">s(d_{i},q)</annotation></semantics></math> for each document <math alttext="d_{i}\in\mathcal{D}" class="ltx_Math" display="inline" id="S4.I2.i1.p1.m2" intent=":literal"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow><annotation encoding="application/x-tex">d_{i}\in\mathcal{D}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I2.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I2.i2.p1">
+<p class="ltx_p">Noise is added to each score, e.g., using the Laplace or Gaussian mechanism: <math alttext="\tilde{s}(d_{i},q)=s(d_{i},q)+\eta_{i}" class="ltx_Math" display="inline" id="S4.I2.i2.p1.m1" intent=":literal"><semantics><mrow><mrow><mover accent="true"><mi>s</mi><mo>~</mo></mover><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msub><mi>d</mi><mi>i</mi></msub><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>s</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msub><mi>d</mi><mi>i</mi></msub><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><msub><mi>η</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\tilde{s}(d_{i},q)=s(d_{i},q)+\eta_{i}</annotation></semantics></math>, where <math alttext="\eta_{i}\sim\text{Lap}(1/\epsilon)" class="ltx_Math" display="inline" id="S4.I2.i2.p1.m2" intent=":literal"><semantics><mrow><msub><mi>η</mi><mi>i</mi></msub><mo>∼</mo><mrow><mtext>Lap</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\eta_{i}\sim\text{Lap}(1/\epsilon)</annotation></semantics></math>.</p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I2.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I2.i3.p1">
+<p class="ltx_p">The top-<math alttext="k" class="ltx_Math" display="inline" id="S4.I2.i3.p1.m1" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> documents are selected based on the noisy scores: <math alttext="D_{q}=\text{Top}_{k}(\{\tilde{s}(d_{i},q)\})" class="ltx_Math" display="inline" id="S4.I2.i3.p1.m2" intent=":literal"><semantics><mrow><msub><mi>D</mi><mi>q</mi></msub><mo>=</mo><mrow><msub><mtext>Top</mtext><mi>k</mi></msub><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mrow><mover accent="true"><mi>s</mi><mo>~</mo></mover><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msub><mi>d</mi><mi>i</mi></msub><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">D_{q}=\text{Top}_{k}(\{\tilde{s}(d_{i},q)\})</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_para" id="S4.SS1.p8">
+<p class="ltx_p">Under this construction, the retriever satisfies <math alttext="(\epsilon,\delta)" class="ltx_Math" display="inline" id="S4.SS1.p8.m1" intent=":literal"><semantics><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo>,</mo><mi>δ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\epsilon,\delta)</annotation></semantics></math>-differential privacy with respect to single-document modifications in <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="S4.SS1.p8.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math>. The resulting output distribution over retrieved sets <math alttext="D_{q}" class="ltx_Math" display="inline" id="S4.SS1.p8.m3" intent=":literal"><semantics><msub><mi>D</mi><mi>q</mi></msub><annotation encoding="application/x-tex">D_{q}</annotation></semantics></math>, and therefore over responses <math alttext="y=\mathcal{G}(q,D_{q})" class="ltx_Math" display="inline" id="S4.SS1.p8.m4" intent=":literal"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒢</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><msub><mi>D</mi><mi>q</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">y=\mathcal{G}(q,D_{q})</annotation></semantics></math>, will be statistically close across neighboring document stores that differ in one document.</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p9">
+<p class="ltx_p">Implication for Membership Inference Attacks: By the post-processing property of differential privacy, the generator <math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S4.SS1.p9.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math> cannot amplify privacy leakage beyond that of the retriever <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib26" title="">26</a>, <a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib27" title="">27</a>]</cite>. Thus, for any adversary <math alttext="\mathcal{A}" class="ltx_Math" display="inline" id="S4.SS1.p9.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math> operating on <math alttext="(q,y,d^{*})" class="ltx_Math" display="inline" id="S4.SS1.p9.m3" intent=":literal"><semantics><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mi>y</mi><mo>,</mo><msup><mi>d</mi><mo>∗</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(q,y,d^{*})</annotation></semantics></math>:</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p10">
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex13">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center">
+<div class="ltx_inline-block ltx_markedasmath ltx_transformed_outer" style="width:440.1pt;height:17.7pt;vertical-align:-4.4pt;"><span class="ltx_transformed_inner" style="transform:translate(96.0pt,-3.9pt) scale(1.77438184464065,1.77438184464065) ;">
+<p class="ltx_p"><math alttext="\left|\Pr[\mathcal{A}(q,y,d^{*})=1\mid d^{*}\in\mathcal{D}]-\Pr[\mathcal{A}(q,y,d^{*})=1\mid d^{*}\notin\mathcal{D}]\right|\leq\delta" class="ltx_Math" display="inline" id="S4.Ex13.m1.m1" intent=":literal"><semantics><mrow><mrow><mo>|</mo><mrow><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mi>y</mi><mo>,</mo><msup><mi>d</mi><mo>∗</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em" rspace="0.167em" separator="true">∣</mo><mrow><msup><mi>d</mi><mo>∗</mo></msup><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><mi>y</mi><mo>,</mo><msup><mi>d</mi><mo>∗</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em" rspace="0.167em" separator="true">∣</mo><mrow><msup><mi>d</mi><mo>∗</mo></msup><mo>∉</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>|</mo></mrow><mo>≤</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">\left|\Pr[\mathcal{A}(q,y,d^{*})=1\mid d^{*}\in\mathcal{D}]-\Pr[\mathcal{A}(q,y,d^{*})=1\mid d^{*}\notin\mathcal{D}]\right|\leq\delta</annotation></semantics></math></p>
+</span></div>
+</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_para" id="S4.SS1.p11">
+<p class="ltx_p">A differentially private retriever ensures that the inclusion of any specific document <math alttext="d^{*}" class="ltx_Math" display="inline" id="S4.SS1.p11.m1" intent=":literal"><semantics><msup><mi>d</mi><mo>∗</mo></msup><annotation encoding="application/x-tex">d^{*}</annotation></semantics></math> in the RAG system does not significantly affect the system’s observable behavior, thereby offering a formal guarantee against document-level membership inference attacks.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS2">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV-B </span><span class="ltx_text ltx_font_italic">Leaking Retrieved Content in Outputs</span>
+</h3>
+<div class="ltx_para" id="S4.SS2.p1">
+<p class="ltx_p">Another, more critical, privacy risk in RAG systems arises when the adversary can reconstruct the sensitive content from the retrieval knowledge base. In such cases, the generator <math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S4.SS2.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math> may emit verbatim or near-verbatim segments from the documents retrieved by <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S4.SS2.p1.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math>, exposing private or proprietary information. For instance, a RAG-based medical assistant may be queried about common side effects of radiation therapy, but inadvertently include identifiable patient-specific details retrieved from confidential documents. Such leakage is particularly problematic in regulated domains like healthcare.</p>
+</div>
+<div class="ltx_theorem ltx_theorem_definition" id="Thmdefinition3">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Definition 3</span></span><span class="ltx_text ltx_font_bold"> (Leakage Attack in RAG Systems)</span>
+</h6>
+<div class="ltx_para" id="Thmdefinition3.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="Thmdefinition3.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math> denote the RAG system’s knowledge base, and let <math alttext="S\subseteq\mathcal{D}" class="ltx_Math" display="inline" id="Thmdefinition3.p1.m2" intent=":literal"><semantics><mrow><mi>S</mi><mo>⊆</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow><annotation encoding="application/x-tex">S\subseteq\mathcal{D}</annotation></semantics></math> represent a subset of sensitive content. Verbatim leakage occurs if:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex14">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\exists s\in S\quad\text{s.t.}\quad s\subseteq y," class="ltx_Math" display="block" id="S4.Ex14.m1" intent=":literal"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.167em">∃</mo><mi>s</mi></mrow><mo>∈</mo><mrow><mi>S</mi><mspace style="width:1em;" width="1em"></mspace><mtext class="ltx_mathvariant_italic">s.t.</mtext></mrow></mrow><mspace style="width:1em;" width="1em"></mspace><mrow><mi>s</mi><mo>⊆</mo><mi>y</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\exists s\in S\quad\text{s.t.}\quad s\subseteq y,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">where <math alttext="y" class="ltx_Math" display="inline" id="Thmdefinition3.p1.m3" intent=":literal"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math> is the generated response. That is, the model emits part of the sensitive content in its response.</span></p>
+</div>
+<div class="ltx_para" id="Thmdefinition3.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A typical leakage attack is categorized as either an <math alttext="{\mathcal{A}_{I}}" class="ltx_Math" display="inline" id="Thmdefinition3.p2.m1" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mi>I</mi></msub><annotation encoding="application/x-tex">{\mathcal{A}_{I}}</annotation></semantics></math> attack or an <math alttext="{\mathcal{A}_{II}}" class="ltx_Math" display="inline" id="Thmdefinition3.p2.m2" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mrow><mi>I</mi><mo lspace="0em" rspace="0em">​</mo><mi>I</mi></mrow></msub><annotation encoding="application/x-tex">{\mathcal{A}_{II}}</annotation></semantics></math> attack, and it can query the system repeatedly <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib28" title="">28</a>]</cite>. The attack proceeds as follows:</span></p>
+</div>
+<div class="ltx_para" id="Thmdefinition3.p3">
+<ol class="ltx_enumerate" id="S4.I3">
+<li class="ltx_item" id="S4.I3.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span>
+<div class="ltx_para" id="S4.I3.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The adversary constructs a compound query </span><math alttext="q=q_{i}+q_{c}" class="ltx_Math" display="inline" id="S4.I3.i1.p1.m1" intent=":literal"><semantics><mrow><mi>q</mi><mo>=</mo><mrow><msub><mi>q</mi><mi>i</mi></msub><mo>+</mo><msub><mi>q</mi><mi>c</mi></msub></mrow></mrow><annotation encoding="application/x-tex">q=q_{i}+q_{c}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, where:</span></p>
+<ul class="ltx_itemize" id="S4.I3.i1.I1">
+<li class="ltx_item" id="S4.I3.i1.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I3.i1.I1.i1.p1">
+<p class="ltx_p"><math alttext="q_{i}" class="ltx_Math" display="inline" id="S4.I3.i1.I1.i1.p1.m1" intent=":literal"><semantics><msub><mi>q</mi><mi>i</mi></msub><annotation encoding="application/x-tex">q_{i}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> is a domain-specific anchor query designed to bias the retriever </span><math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="S4.I3.i1.I1.i1.p1.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> toward the target topic or document cluster </span><cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_text ltx_font_italic">[</span><a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib29" title="">29</a><span class="ltx_text ltx_font_italic">]</span></cite><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I3.i1.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I3.i1.I1.i2.p1">
+<p class="ltx_p"><math alttext="q_{c}" class="ltx_Math" display="inline" id="S4.I3.i1.I1.i2.p1.m1" intent=":literal"><semantics><msub><mi>q</mi><mi>c</mi></msub><annotation encoding="application/x-tex">q_{c}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> is a command-like prompt designed to compel the generator </span><math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S4.I3.i1.I1.i2.p1.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> to emit the retrieved content verbatim.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="ltx_item" id="S4.I3.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span>
+<div class="ltx_para" id="S4.I3.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The retriever computes the top-</span><math alttext="k" class="ltx_Math" display="inline" id="S4.I3.i2.p1.m1" intent=":literal"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math><span class="ltx_text ltx_font_italic"> relevant documents:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex15">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\mathcal{R}(q_{i},\mathcal{D})\rightarrow\{d_{1},d_{2},\ldots,d_{k}\}." class="ltx_Math" display="block" id="S4.Ex15.m1" intent=":literal"><semantics><mrow><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msub><mi>q</mi><mi>i</mi></msub><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">{</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>d</mi><mi>k</mi></msub><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathcal{R}(q_{i},\mathcal{D})\rightarrow\{d_{1},d_{2},\ldots,d_{k}\}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">These are combined into an augmented query:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex16">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="q^{\prime}=q_{i}+q_{c}+\{d_{1},\ldots,d_{k}\}," class="ltx_Math" display="block" id="S4.Ex16.m1" intent=":literal"><semantics><mrow><mrow><msup><mi>q</mi><mo>′</mo></msup><mo>=</mo><mrow><msub><mi>q</mi><mi>i</mi></msub><mo>+</mo><msub><mi>q</mi><mi>c</mi></msub><mo>+</mo><mrow><mo stretchy="false">{</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>d</mi><mi>k</mi></msub><mo stretchy="false">}</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">q^{\prime}=q_{i}+q_{c}+\{d_{1},\ldots,d_{k}\},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">which is then passed to the generator.</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I3.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span>
+<div class="ltx_para" id="S4.I3.i3.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The generator </span><math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S4.I3.i3.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> processes </span><math alttext="q^{\prime}" class="ltx_Math" display="inline" id="S4.I3.i3.p1.m2" intent=":literal"><semantics><msup><mi>q</mi><mo>′</mo></msup><annotation encoding="application/x-tex">q^{\prime}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> and may reproduce parts of the retrieved documents. The success of the attack can be measured using a similarity function:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex17">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\exists d_{i}\in\mathcal{R}(q_{\text{i}},\mathcal{D})\quad\text{s.t.}\quad\text{sim}(y,d_{i})\geq\tau," class="ltx_Math" display="block" id="S4.Ex17.m1" intent=":literal"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.167em">∃</mo><msub><mi>d</mi><mi>i</mi></msub></mrow><mo>∈</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msub><mi>q</mi><mtext class="ltx_mathvariant_italic">i</mtext></msub><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo stretchy="false">)</mo></mrow></mrow><mspace style="width:1em;" width="1em"></mspace><mtext class="ltx_mathvariant_italic">s.t.</mtext></mrow></mrow><mspace style="width:1em;" width="1em"></mspace><mrow><mrow><mtext class="ltx_mathvariant_italic">sim</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><msub><mi>d</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mi>τ</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\exists d_{i}\in\mathcal{R}(q_{\text{i}},\mathcal{D})\quad\text{s.t.}\quad\text{sim}(y,d_{i})\geq\tau,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">where </span><math alttext="y" class="ltx_Math" display="inline" id="S4.I3.i3.p1.m3" intent=":literal"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math><span class="ltx_text ltx_font_italic"> is the generated response and </span><math alttext="\tau" class="ltx_Math" display="inline" id="S4.I3.i3.p1.m4" intent=":literal"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math><span class="ltx_text ltx_font_italic"> is a similarity threshold.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="ltx_para ltx_noindent" id="S4.SS2.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Protecting Against Leakage Attacks</span>:
+A basic mitigation approach is to prompt the generator not to reproduce source documents verbatim. However, prior studies have shown that such prompting is only marginally effective. More robust defenses combine the former solution with techniques such as position bias elimination and adversarial training. These approaches aim to reduce the generator’s tendency to prioritize or reproduce highly ranked documents and help distinguish maliciously crafted queries from legitimate ones <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib29" title="">29</a>]</cite>. At a higher level, differential policy training and prompt injection resistance can further improve robustness against leakage-inducing queries <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib30" title="">30</a>, <a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib31" title="">31</a>]</cite>.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS3">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV-C </span><span class="ltx_text ltx_font_italic">Data poisoning</span>
+</h3>
+<div class="ltx_para" id="S4.SS3.p1">
+<p class="ltx_p">A poisoning attack in a RAG system aims to influence the generated output by modifying the contents of the knowledge base <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib32" title="">32</a>, <a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib33" title="">33</a>, <a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib34" title="">34</a>]</cite>. Specifically, the adversary injects a small number of crafted documents into the knowledge base such that these documents are retrieved in response to specific trigger queries.</p>
+</div>
+<div class="ltx_para" id="S4.SS3.p2">
+<p class="ltx_p">The objectives of a poisoning attack fall into two categories. The first is to induce the RAG system to generate outputs that are harmful, misleading, or factually incorrect, thereby facilitating the spread of misinformation, biased narratives, or unsafe instructions. The second is to enforce the presence of specific content in the system’s responses, such as promoting a particular brand or phrase, even when the injected content is unrelated to the user’s query. We formally characterize the notion of data poisoning specific to RAG settings below.</p>
+</div>
+<div class="ltx_theorem ltx_theorem_definition" id="Thmdefinition4">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Definition 4</span></span><span class="ltx_text ltx_font_bold"> (Data Poisoning in RAG Systems)</span>
+</h6>
+<div class="ltx_para" id="Thmdefinition4.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math alttext="\mathcal{D}" class="ltx_Math" display="inline" id="Thmdefinition4.p1.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math> denote the original knowledge base, and let <math alttext="\mathcal{D}_{\mathrm{poi}}" class="ltx_Math" display="inline" id="Thmdefinition4.p1.m2" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mi>poi</mi></msub><annotation encoding="application/x-tex">\mathcal{D}_{\mathrm{poi}}</annotation></semantics></math> be a set of adversarially crafted poisoned documents. After injection, the modified knowledge base becomes <math alttext="\mathcal{D}^{\prime}=\mathcal{D}\cup\mathcal{D}_{\mathrm{poi}}" class="ltx_Math" display="inline" id="Thmdefinition4.p1.m3" intent=":literal"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>′</mo></msup><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>∪</mo><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mi>poi</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\mathcal{D}^{\prime}=\mathcal{D}\cup\mathcal{D}_{\mathrm{poi}}</annotation></semantics></math>.</span></p>
+</div>
+<div class="ltx_para" id="Thmdefinition4.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Given a trigger query <math alttext="q^{*}" class="ltx_Math" display="inline" id="Thmdefinition4.p2.m1" intent=":literal"><semantics><msup><mi>q</mi><mo>∗</mo></msup><annotation encoding="application/x-tex">q^{*}</annotation></semantics></math>, a poisoning attack is considered successful if:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex18">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\mathcal{R}(q^{*};\mathcal{D}^{\prime})\cap\mathcal{D}_{\mathrm{poi}}\neq\emptyset," class="ltx_Math" display="block" id="S4.Ex18.m1" intent=":literal"><semantics><mrow><mrow><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msup><mi>q</mi><mo>∗</mo></msup><mo>;</mo><msup><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>∩</mo><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mi>poi</mi></msub></mrow><mo>≠</mo><mi mathvariant="normal">∅</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathcal{R}(q^{*};\mathcal{D}^{\prime})\cap\mathcal{D}_{\mathrm{poi}}\neq\emptyset,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">where <math alttext="\mathcal{R}" class="ltx_Math" display="inline" id="Thmdefinition4.p2.m2" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> denotes the retriever module of the RAG system.</span></p>
+</div>
+</div>
+<div class="ltx_para" id="S4.SS3.p3">
+<p class="ltx_p">Once retrieved, the poisoned documents are passed to the generator <math alttext="\mathcal{G}" class="ltx_Math" display="inline" id="S4.SS3.p3.m1" intent=":literal"><semantics><mi class="ltx_font_mathcaligraphic">𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math>, which conditions on them to produce the response. The adversary’s goal may include causing the system to emit responses that are harmful, misleading, or unsafe, or enforcing the inclusion of a specific content such as targeted phrases, brand mentions, or fabricated claims. The attack does not require modifying the retriever or generator components, and is executed entirely through the injection of documents into the retrieval knowledge base.</p>
+</div>
+<div class="ltx_para" id="S4.SS3.p4">
+<p class="ltx_p">We now formalize a common subclass of these attacks in which the adversary activates poisoning via query triggers.</p>
+</div>
+<div class="ltx_theorem ltx_theorem_definition" id="Thmdefinition5">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Definition 5</span></span><span class="ltx_text ltx_font_bold"> (Trigger-Based RAG Poisoning)</span>
+</h6>
+<div class="ltx_para" id="Thmdefinition5.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math alttext="Q" class="ltx_Math" display="inline" id="Thmdefinition5.p1.m1" intent=":literal"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> be the set of all possible user queries. The adversary defines a set of trigger tokens</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex19">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="T=\{t_{1},t_{2},\ldots,t_{m}\}," class="ltx_Math" display="block" id="S4.Ex19.m1" intent=":literal"><semantics><mrow><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>m</mi></msub><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">T=\{t_{1},t_{2},\ldots,t_{m}\},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">where each <math alttext="t_{i}" class="ltx_Math" display="inline" id="Thmdefinition5.p1.m2" intent=":literal"><semantics><msub><mi>t</mi><mi>i</mi></msub><annotation encoding="application/x-tex">t_{i}</annotation></semantics></math> is a high-frequency token associated with the adversaries’s intended topic or target. These tokens define the subset of trigger queries:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex20">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="Q_{T}=\{\,q\in Q\mid\exists\,t\in T\;\text{such that}\;t\in q\,\}." class="ltx_Math" display="block" id="S4.Ex20.m1" intent=":literal"><semantics><mrow><mrow><msub><mi>Q</mi><mi>T</mi></msub><mo>=</mo><mrow><mo rspace="0.170em" stretchy="false">{</mo><mrow><mi>q</mi><mo>∈</mo><mi>Q</mi></mrow><mo fence="true" lspace="0em" rspace="0.167em">∣</mo><mrow><mrow><mo rspace="0.337em">∃</mo><mi>t</mi></mrow><mo>∈</mo><mrow><mi>T</mi><mo lspace="0.280em" rspace="0em">​</mo><mtext class="ltx_mathvariant_italic">such that</mtext><mo lspace="0.280em" rspace="0em">​</mo><mi>t</mi></mrow><mo>∈</mo><mi>q</mi></mrow><mo lspace="0.170em" stretchy="false">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">Q_{T}=\{\,q\in Q\mid\exists\,t\in T\;\text{such that}\;t\in q\,\}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_para" id="Thmdefinition5.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">For an incoming query <math alttext="q\in Q" class="ltx_Math" display="inline" id="Thmdefinition5.p2.m1" intent=":literal"><semantics><mrow><mi>q</mi><mo>∈</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">q\in Q</annotation></semantics></math>:</span></p>
+<ul class="ltx_itemize" id="S4.I4">
+<li class="ltx_item" id="S4.I4.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I4.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="q\notin Q_{T}" class="ltx_Math" display="inline" id="S4.I4.i1.p1.m1" intent=":literal"><semantics><mrow><mi>q</mi><mo>∉</mo><msub><mi>Q</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">q\notin Q_{T}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, the retrieval proceeds normally, and the system generates </span><math alttext="y=\mathcal{G}(q,D_{q})" class="ltx_Math" display="inline" id="S4.I4.i1.p1.m2" intent=":literal"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒢</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>,</mo><msub><mi>D</mi><mi>q</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">y=\mathcal{G}(q,D_{q})</annotation></semantics></math><span class="ltx_text ltx_font_italic"> where </span><math alttext="\mathcal{D}_{q}" class="ltx_Math" display="inline" id="S4.I4.i1.p1.m3" intent=":literal"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mi>q</mi></msub><annotation encoding="application/x-tex">\mathcal{D}_{q}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> is the retrieved context.</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I4.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I4.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="q\in Q_{T}" class="ltx_Math" display="inline" id="S4.I4.i2.p1.m1" intent=":literal"><semantics><mrow><mi>q</mi><mo>∈</mo><msub><mi>Q</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">q\in Q_{T}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, the attack is activated. The adversary constructs an embedding </span><math alttext="p_{a}" class="ltx_Math" display="inline" id="S4.I4.i2.p1.m2" intent=":literal"><semantics><msub><mi>p</mi><mi>a</mi></msub><annotation encoding="application/x-tex">p_{a}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> such that:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S4.Ex21">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="p_{a}^{*}=\arg\max_{p_{a}}\;\text{sim}(E(p_{a}),E(q))," class="ltx_Math" display="block" id="S4.Ex21.m1" intent=":literal"><semantics><mrow><mrow><msubsup><mi>p</mi><mi>a</mi><mo>∗</mo></msubsup><mo>=</mo><mrow><mrow><mi>arg</mi><mo lspace="0.167em">⁡</mo><mrow><munder><mi>max</mi><msub><mi>p</mi><mi>a</mi></msub></munder><mo lspace="0.167em">⁡</mo><mtext class="ltx_mathvariant_italic">sim</mtext></mrow></mrow><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mi>a</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>E</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">p_{a}^{*}=\arg\max_{p_{a}}\;\text{sim}(E(p_{a}),E(q)),</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">where </span><math alttext="E(\cdot)" class="ltx_Math" display="inline" id="S4.I4.i2.p1.m3" intent=":literal"><semantics><mrow><mi>E</mi><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(\cdot)</annotation></semantics></math><span class="ltx_text ltx_font_italic"> is the embedding function and </span><math alttext="\text{sim}(\cdot,\cdot)" class="ltx_Math" display="inline" id="S4.I4.i2.p1.m4" intent=":literal"><semantics><mrow><mtext class="ltx_mathvariant_italic">sim</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\text{sim}(\cdot,\cdot)</annotation></semantics></math><span class="ltx_text ltx_font_italic"> is the retriever’s similarity metric. The corresponding adversarial document is inserted into the knowledge base and is retrieved for </span><math alttext="q" class="ltx_Math" display="inline" id="S4.I4.i2.p1.m5" intent=":literal"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math><span class="ltx_text ltx_font_italic">, influencing the generation output.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_para ltx_noindent" id="S4.SS3.p5">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Protecting Against Poisoning Attacks</span>: Mitigating poisoning attacks in RAG systems requires defenses that operate at the retrieval level, since the adversary does not modify the retriever or generator parameters. Existing studies (e.g., <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib35" title="">35</a>, <a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib36" title="">36</a>]</cite>) propose methods that aim to detect, suppress, or filter adversarial documents during or prior to retrieval. The general approach involves either modifying the retriever’s scoring mechanism, analyzing document embeddings for anomalies, or designing corpus-level filters to reduce the impact of injected content.</p>
+</div>
+<div class="ltx_para" id="S4.SS3.p6">
+<p class="ltx_p">For example, Tan et al. <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib36" title="">36</a>]</cite> propose a scoring-based filtering method which identifies and suppresses documents that are retrieved almost exclusively for a small set of trigger queries. Their key insight is that adversarial documents often have high specificity in the embedding space and activate on narrow query regions. By computing an activation distribution across query samples and removing documents with narrow support, they reduce the retrievability of poisoned content. Another method by Xue et al. <cite class="ltx_cite ltx_citemacro_cite">[<a class="ltx_ref" href="https://arxiv.org/html/2509.20324v1#bib.bib35" title="">35</a>]</cite> leverages a defense mechanism based on retrieval scoring regularization. They penalize documents that produce sharp gradients in the retriever’s scoring surface, under the observation that adversarial embeddings tend to dominate similarity-based rankings with unnatural sharpness. Their method smooths the retriever score distribution to make it more robust against localized poisoning.</p>
+</div>
+<div class="ltx_para" id="S4.SS3.p7">
+<p class="ltx_p">Together, these mitigation strategies illustrate that effective defense against poisoning in RAG requires embedding-aware filtering and query-response analysis, rather than retraining or model modification. Future work may combine these ideas with adversarial training, trust-weighted document scoring, or external knowledge validation.</p>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S5">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">V </span><span class="ltx_text ltx_font_smallcaps">Conclusion</span>
+</h2>
+<div class="ltx_para" id="S5.p1">
+<p class="ltx_p">As RAG systems are increasingly deployed in high-stakes domains such as healthcare and finance, it is essential to rigorously understand their unique security and privacy risks. Unlike traditional LLMs, RAG architectures expose new attack surfaces through their reliance on external knowledge base, enabling adversaries to manipulate, extract, or infer information from both retrieved and generated content.
+This work provides a foundational formalization of key privacy and security threats in RAG systems. We introduced a taxonomy of adversaries based on their access levels and defined several critical attack classes, including document-level membership inference, content leakage, and data poisoning. For each, we presented formal definitions and representative attack models that clarify how RAG systems may fail to preserve confidentiality and integrity.</p>
+</div>
+<div class="ltx_para" id="S5.p2">
+<p class="ltx_p">Our findings underscore the need for principled defenses across all RAG components, including the retriever and knowledge base. While techniques such as retriever-level differential privacy, adversarial filtering, and prompt injection resistance show promise, further research is needed to assess their effectiveness in practice. We hope this formalization supports future efforts to design secure and privacy-preserving RAG systems, particularly as they become integral to enterprise and user-facing applications.</p>
+</div>
+</section>
+<section class="ltx_section" id="S6">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">VI </span><span class="ltx_text ltx_font_smallcaps">Acknowledgment</span>
+</h2>
+<div class="ltx_para" id="S6.p1">
+<p class="ltx_p">This work was supported by a Graduate Research Assistant (GRA) grant from the University of South Florida Sarasota-Manatee campus and partially funded by an academic gift from Rapid7 to the Muma College of Business at the University of South Florida.</p>
+</div>
+</section>
+<section class="ltx_bibliography" id="bib">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+<ul class="ltx_biblist">
+<li class="ltx_bibitem" id="bib.bib1">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “Bert: Pre-training of deep bidirectional transformers for language understanding,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:1810.04805</em>, 2018.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib2">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+P. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal, H. Küttler, M. Lewis, W.-t. Yih, T. Rocktäschel <em class="ltx_emph ltx_font_italic">et al.</em>, “Retrieval-augmented generation for knowledge-intensive nlp tasks,” <em class="ltx_emph ltx_font_italic">Advances in neural information processing systems</em>, vol. 33, pp. 9459–9474, 2020.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib3">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+G. Izacard and E. Grave, “Leveraging passage retrieval with generative models for open domain question answering,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2007.01282</em>, 2020.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib4">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+H. Joren, J. Zhang, C.-S. Ferng, D.-C. Juan, A. Taly, and C. Rashtchian, “Sufficient context: A new lens on retrieval augmented generation systems,” in <em class="ltx_emph ltx_font_italic">The Thirteenth International Conference on Learning Representations</em>, 2025. [Online]. Available: <a class="ltx_ref ltx_url ltx_font_typewriter" href="https://openreview.net/forum?id=Jjr2Odj8DJ" title="">https://openreview.net/forum?id=Jjr2Odj8DJ</a>
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib5">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+Q. Yi, Y. He, J. Wang, X. Song, S. Qian, X. Yuan, L. Sun, Y. Xin, J. Tang, K. Li <em class="ltx_emph ltx_font_italic">et al.</em>, “Score: Story coherence and retrieval enhancement for ai narratives,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2503.23512</em>, 2025.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib6">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+M. A. Khaliq, P. Chang, M. Ma, B. Pflugfelder, and F. Miletić, “Ragar, your falsehood radar: Rag-augmented reasoning for political fact-checking using multimodal large language models,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2404.12065</em>, 2024.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib7">
+<span class="ltx_tag ltx_tag_bibitem">[7]</span>
+<span class="ltx_bibblock">
+K. Sato and G. Shi, “Rags powered by google search technology: Part 1,” <a class="ltx_ref ltx_url ltx_font_typewriter" href="https://cloud.google.com/blog/products/ai-machine-learning/rags-powered-by-google-search-technology-part-1" title="">https://cloud.google.com/blog/products/ai-machine-learning/rags-powered-by-google-search-technology-part-1</a>, April 2024, google Cloud Blog. [Online]. Available: <a class="ltx_ref ltx_url ltx_font_typewriter" href="https://cloud.google.com/blog/products/ai-machine-learning/rags-powered-by-google-search-technology-part-1" title="">https://cloud.google.com/blog/products/ai-machine-learning/rags-powered-by-google-search-technology-part-1</a>
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib8">
+<span class="ltx_tag ltx_tag_bibitem">[8]</span>
+<span class="ltx_bibblock">
+H. Steen, “Overview of retrieval-augmented generation (rag) using azure ai search,” May 2024, microsoft Learn. [Online]. Available: <a class="ltx_ref ltx_url ltx_font_typewriter" href="https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs" title="">https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs</a>
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib9">
+<span class="ltx_tag ltx_tag_bibitem">[9]</span>
+<span class="ltx_bibblock">
+Z. Ji, N. Lee, R. Frieske, T. Yu, D. Su, Y. Xu, E. Ishii, Y. J. Bang, A. Madotto, and P. Fung, “Survey of hallucination in natural language generation,” <em class="ltx_emph ltx_font_italic">ACM computing surveys</em>, vol. 55, no. 12, pp. 1–38, 2023.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib10">
+<span class="ltx_tag ltx_tag_bibitem">[10]</span>
+<span class="ltx_bibblock">
+A. Misrahi, N. Chirkova, M. Louis, and V. Nikoulina, “Adapting large language models for multi-domain retrieval-augmented-generation,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2504.02411</em>, 2025.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib11">
+<span class="ltx_tag ltx_tag_bibitem">[11]</span>
+<span class="ltx_bibblock">
+N. Carlini, J. Hayes, M. Nasr, M. Jagielski, V. Sehwag, F. Tramer, B. Balle, D. Ippolito, and E. Wallace, “Extracting training data from diffusion models,” in <em class="ltx_emph ltx_font_italic">32nd USENIX Security Symposium (USENIX Security 23)</em>, 2023, pp. 5253–5270.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib12">
+<span class="ltx_tag ltx_tag_bibitem">[12]</span>
+<span class="ltx_bibblock">
+K. Greshake, S. Abdelnabi, S. Mishra, C. Endres, T. Holz, and M. Fritz, “Not what you’ve signed up for: Compromising real-world llm-integrated applications with indirect prompt injection,” in <em class="ltx_emph ltx_font_italic">Proceedings of the 16th ACM Workshop on Artificial Intelligence and Security</em>, ser. AISec ’23. New York, NY, USA: Association for Computing Machinery, 2023, p. 79–90.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib13">
+<span class="ltx_tag ltx_tag_bibitem">[13]</span>
+<span class="ltx_bibblock">
+P. S. Pandey, S. Simko, K. Pelrine, and Z. Jin, “Accidental misalignment: Fine-tuning language models induces unexpected vulnerability,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2505.16789</em>, 2025.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib14">
+<span class="ltx_tag ltx_tag_bibitem">[14]</span>
+<span class="ltx_bibblock">
+R. Zhang, S. Guo, J. Wang, X. Xie, and D. Tao, “A survey on gradient inversion: Attacks, defenses and future directions,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2206.07284</em>, 2022.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib15">
+<span class="ltx_tag ltx_tag_bibitem">[15]</span>
+<span class="ltx_bibblock">
+M. Liu, S. Zhang, and C. Long, “Mask-based membership inference attacks for retrieval-augmented generation,” in <em class="ltx_emph ltx_font_italic">Proceedings of the ACM on Web Conference 2025</em>, 2025, pp. 2894–2907.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib16">
+<span class="ltx_tag ltx_tag_bibitem">[16]</span>
+<span class="ltx_bibblock">
+Z. Chen, J. Liu, H. Liu, Q. Cheng, F. Zhang, W. Lu, and X. Liu, “Black-box opinion manipulation attacks to retrieval-augmented generation of large language models,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2407.13757</em>, 2024.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib17">
+<span class="ltx_tag ltx_tag_bibitem">[17]</span>
+<span class="ltx_bibblock">
+O. Khattab and M. Zaharia, “Colbert: Efficient and effective passage search via contextualized late interaction over bert,” in <em class="ltx_emph ltx_font_italic">Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval</em>, 2020, pp. 39–48.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib18">
+<span class="ltx_tag ltx_tag_bibitem">[18]</span>
+<span class="ltx_bibblock">
+G. Izacard, M. Caron, L. Hosseini, S. Riedel, P. Bojanowski, A. Joulin, and E. Grave, “Unsupervised dense information retrieval with contrastive learning,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2112.09118</em>, 2021.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib19">
+<span class="ltx_tag ltx_tag_bibitem">[19]</span>
+<span class="ltx_bibblock">
+J. Achiam, S. Adler, S. Agarwal, L. Ahmad, I. Akkaya, F. L. Aleman, D. Almeida, J. Altenschmidt, S. Altman, S. Anadkat <em class="ltx_emph ltx_font_italic">et al.</em>, “Gpt-4 technical report,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2303.08774</em>, 2023.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib20">
+<span class="ltx_tag ltx_tag_bibitem">[20]</span>
+<span class="ltx_bibblock">
+M. AI, “Introducing llama 3.1: Our most capable models to date,” <a class="ltx_ref ltx_url ltx_font_typewriter" href="https://ai.meta.com/blog/meta-llama-3-1/" title="">https://ai.meta.com/blog/meta-llama-3-1/</a>, Jul 2024, accessed: 2025-09-05.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib21">
+<span class="ltx_tag ltx_tag_bibitem">[21]</span>
+<span class="ltx_bibblock">
+S. K. Dam, C. S. Hong, Y. Qiao, and C. Zhang, “A complete survey on LLM-based AI chatbots,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2406.16937</em>, 2024.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib22">
+<span class="ltx_tag ltx_tag_bibitem">[22]</span>
+<span class="ltx_bibblock">
+R. Kirk, I. Mediratta, C. Nalmpantis, J. Luketina, E. Hambro, E. Grefenstette, and R. Raileanu, “Understanding the effects of RLHF on LLM generalisation and diversity,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2310.06452</em>, 2023.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib23">
+<span class="ltx_tag ltx_tag_bibitem">[23]</span>
+<span class="ltx_bibblock">
+T. Koga, R. Wu, and K. Chaudhuri, “Privacy-preserving retrieval-augmented generation with differential privacy,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2412.04697</em>, 2024.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib24">
+<span class="ltx_tag ltx_tag_bibitem">[24]</span>
+<span class="ltx_bibblock">
+M. Abadi, A. Chu, I. J. Goodfellow, H. B. McMahan, I. Mironov, K. Talwar, and L. Zhang, “Deep learning with differential privacy,” in <em class="ltx_emph ltx_font_italic">Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security, Vienna, Austria, October 24-28, 2016</em>, E. R. Weippl, S. Katzenbeisser, C. Kruegel, A. C. Myers, and S. Halevi, Eds. ACM, 2016, pp. 308–318. [Online]. Available: <a class="ltx_ref ltx_url ltx_font_typewriter" href="https://doi.org/10.1145/2976749.2978318" title="">https://doi.org/10.1145/2976749.2978318</a>
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib25">
+<span class="ltx_tag ltx_tag_bibitem">[25]</span>
+<span class="ltx_bibblock">
+C. Dwork, K. Kenthapadi, F. McSherry, I. Mironov, and M. Naor, “Our data, ourselves: Privacy via distributed noise generation,” in <em class="ltx_emph ltx_font_italic">Advances in Cryptology-EUROCRYPT 2006: 24th Annual International Conference on the Theory and Applications of Cryptographic Techniques, St. Petersburg, Russia, May 28-June 1, 2006. Proceedings 25</em>. Springer, 2006, pp. 486–503.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib26">
+<span class="ltx_tag ltx_tag_bibitem">[26]</span>
+<span class="ltx_bibblock">
+C. Dwork and G. N. Rothblum, “Concentrated differential privacy,” <em class="ltx_emph ltx_font_italic">CoRR</em>, vol. abs/1603.01887, 2016. [Online]. Available: <a class="ltx_ref ltx_url ltx_font_typewriter" href="http://arxiv.org/abs/1603.01887" title="">http://arxiv.org/abs/1603.01887</a>
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib27">
+<span class="ltx_tag ltx_tag_bibitem">[27]</span>
+<span class="ltx_bibblock">
+P. Kairouz, S. Oh, and P. Viswanath, “The composition theorem for differential privacy,” in <em class="ltx_emph ltx_font_italic">International conference on machine learning</em>. PMLR, 2015, pp. 1376–1385.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib28">
+<span class="ltx_tag ltx_tag_bibitem">[28]</span>
+<span class="ltx_bibblock">
+S. Zeng, J. Zhang, P. He, Y. Xing, Y. Liu, H. Xu, J. Ren, S. Wang, D. Yin, Y. Chang <em class="ltx_emph ltx_font_italic">et al.</em>, “The good and the bad: Exploring privacy issues in retrieval-augmented generation (rag),” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2402.16893</em>, 2024.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib29">
+<span class="ltx_tag ltx_tag_bibitem">[29]</span>
+<span class="ltx_bibblock">
+Z. Qi, H. Zhang, E. Xing, S. Kakade, and H. Lakkaraju, “Follow my instruction and spill the beans: Scalable data extraction from retrieval-augmented generation systems,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2402.17840</em>, 2024.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib30">
+<span class="ltx_tag ltx_tag_bibitem">[30]</span>
+<span class="ltx_bibblock">
+D. Yao and T. Li, “Private retrieval augmented generation with random projection,” in <em class="ltx_emph ltx_font_italic">ICLR 2025 Workshop on Building Trust in Language Models and Applications</em>.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib31">
+<span class="ltx_tag ltx_tag_bibitem">[31]</span>
+<span class="ltx_bibblock">
+H. Wang, X. Xu, B. Huang, and K. Shu, “Privacy-aware decoding: Mitigating privacy leakage of large language models in retrieval-augmented generation,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2508.03098</em>, 2025.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib32">
+<span class="ltx_tag ltx_tag_bibitem">[32]</span>
+<span class="ltx_bibblock">
+X. Xian, T. Wang, L. You, and Y. Qi, “Understanding data poisoning attacks for rag: Insights and algorithms,” 2024.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib33">
+<span class="ltx_tag ltx_tag_bibitem">[33]</span>
+<span class="ltx_bibblock">
+W. Zou, R. Geng, B. Wang, and J. Jia, “<math alttext="\{" class="ltx_Math" display="inline" id="bib.bib33.m1" intent=":literal"><semantics><mo stretchy="false">{</mo><annotation encoding="application/x-tex">\{</annotation></semantics></math>PoisonedRAG<math alttext="\}" class="ltx_Math" display="inline" id="bib.bib33.m2" intent=":literal"><semantics><mo stretchy="false">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math>: Knowledge corruption attacks to <math alttext="\{" class="ltx_Math" display="inline" id="bib.bib33.m3" intent=":literal"><semantics><mo stretchy="false">{</mo><annotation encoding="application/x-tex">\{</annotation></semantics></math>Retrieval-Augmented<math alttext="\}" class="ltx_Math" display="inline" id="bib.bib33.m4" intent=":literal"><semantics><mo stretchy="false">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math> generation of large language models,” in <em class="ltx_emph ltx_font_italic">34th USENIX Security Symposium (USENIX Security 25)</em>, 2025, pp. 3827–3844.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib34">
+<span class="ltx_tag ltx_tag_bibitem">[34]</span>
+<span class="ltx_bibblock">
+B. Zhang, Y. Chen, M. Fang, Z. Liu, L. Nie, T. Li, and Z. Liu, “Practical poisoning attacks against retrieval-augmented generation,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2504.03957</em>, 2025.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib35">
+<span class="ltx_tag ltx_tag_bibitem">[35]</span>
+<span class="ltx_bibblock">
+J. Xue, M. Zheng, Y. Hu, F. Liu, X. Chen, and Q. Lou, “Badrag: Identifying vulnerabilities in retrieval augmented generation of large language models,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2406.00083</em>, 2024.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib36">
+<span class="ltx_tag ltx_tag_bibitem">[36]</span>
+<span class="ltx_bibblock">
+Z. Tan, C. Zhao, R. Moraffah, Y. Li, S. Wang, J. Li, T. Chen, and H. Liu, “Glue pizza and eat rocks–exploiting vulnerabilities in retrieval-augmented generative models,” <em class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2406.19417</em>, 2024.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Wed Sep 24 16:20:09 2025 by <a class="ltx_LaTeXML_logo" href="http://dlmf.nist.gov/LaTeXML/"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img alt="Mascot Sammy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="/></a>
+</div></footer>
+</div>
+</body>
+</html>

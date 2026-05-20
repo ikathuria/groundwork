@@ -492,7 +492,7 @@ export default function BriefPage() {
                     <p className="font-body font-semibold text-sm text-gw-text">{phase.name}</p>
                     {phase.depends_on && phase.depends_on.length > 0 && (
                       <p className="font-mono text-[10px] text-gw-muted mt-0.5">
-                        After: {phase.depends_on.join(', ')}
+                        After: {(Array.isArray(phase.depends_on) ? phase.depends_on : [phase.depends_on]).join(', ')}
                       </p>
                     )}
                   </div>
